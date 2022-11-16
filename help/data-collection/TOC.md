@@ -1,0 +1,69 @@
+---
+user-guide-title: Tutorial sulla raccolta dati
+breadcrumb-title: Tutorial su Raccolta dati
+user-guide-description: Video ed tutorial utili per utilizzare al meglio la funzione Raccolta dati in Experience Platform.
+solution: Data Collection,Experience Platform
+doc-type: video
+source-git-commit: 6f2410a66538d3e16ba27f5330ec95ef2600b154
+workflow-type: tm+mt
+source-wordcount: '244'
+ht-degree: 34%
+
+---
+
+
+# Tutorial sulla raccolta dati{#data-collection}
+
++ [Tutorial su Raccolta dati](overview.md)
++ Tag{#tags}
+   + [Panoramica e creazione di una proprietà](tags/create-a-property.md)
+   + [Scegliere un&#39;opzione di hosting](tags/choose-a-hosting-option.md)
+   + [Utilizzare gli ambienti](tags/use-environments.md)
+   + [Aggiungere e configurare estensioni](tags/add-and-configure-extensions.md)
+   + [Creare elementi dati](tags/create-data-elements.md)
+   + [Creare regole](tags/build-rules.md)
+   + [Creare e pubblicare una libreria](tags/build-and-publish-a-library.md)
+   + [Utenti e autorizzazioni](tags/users-and-permissions.md)
+   + [Implementazione nei siti web con SDK per web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it){target=&quot;_blank&quot;}
+   + [Implementazione nei siti web con SDK di soluzioni](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target=&quot;_blank&quot;}
+   + [Implementazione nelle app per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target=&quot;_blank&quot;}
++ SDK per web{#web-sdk}
+   + [Panoramica](web-sdk/overview.md)
+   + [Demo](web-sdk/demo.md)
+   + [Tutorial di implementazione (con tag)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target=&quot;_blank&quot;}
+   + Consenso{#consent}
+      + [Panoramica](web-sdk/consent/overview.md)
+      + [Impostare i valori di consenso utilizzando lo standard di Adobe](web-sdk/consent/set-consent-adobe.md)
+      + [Impostare i valori di consenso utilizzando lo standard IAB TCF 2.0](web-sdk/consent/set-consent-iab.md)
+      + [Inspect e convalida dei dati di consenso](web-sdk/consent/inspect.md)
+      + [Tutorial sull’elaborazione del consenso end-to-end](web-sdk/consent/tutorial.md)
++ Mobile SDK{#mobile-sdk}
+   + [Panoramica](mobile-sdk/overview.md)
+   + [Creare proprietà mobili](mobile-sdk/create-mobile-properties.md)
+   + [Utilizzare i responsabili della dipendenza](mobile-sdk/use-dependency-managers.md)
+   + [Implementazione nelle app per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target=&quot;_blank&quot;}
++ API server{#server-api}
+   + [Panoramica](server-api/overview.md)
+   + [Nozioni di base sulle API](server-api/introduction.md)
++ Inoltro eventi{#event-forwarding}
+   + [Panoramica](event-forwarding/overview.md)
+   + [Creare una proprietà](event-forwarding/create-a-property.md)
+   + [Configurare un datastream](event-forwarding/set-up-a-datastream.md)
+   + [Aggiungi un&#39;estensione](event-forwarding/add-an-extension.md)
+   + [Creare una regola](event-forwarding/create-a-rule.md)
+   + [Monitorare l’inoltro degli eventi](event-forwarding/monitor.md)
+   + [Spostare i tag lato client](event-forwarding/consider-moving-tags.md)
+   + [Configurare le conversioni avanzate di Google Ads](event-forwarding/set-up-google-ads-enhanced-conversions.md)
+   + [Estensione Adobe per Mailchimp](event-forwarding/adobe-extension-for-mailchimp.md)
++ Datastreams e rete Edge{#edge-network}
+   + [Configurare i flussi di dati](edge/configure-datastreams.md)
+   + [Preparazione dei dati](edge/data-prep.md)
+   + [Gestire i dati sensibili](edge/manage-sensitive-data-in-datastreams.md)
+   + [ID dispositivo di prime parti](edge/generate-first-party-device-ids.md)
++ Debugger{#debugger}
+   + [Panoramica](debugger/overview.md)
+   + Experience Cloud Debugger{#experience-cloud}
+      + [Installare il debugger](debugger/experience-cloud/add-the-extension.md)
+      + [Utilizzare il debugger](debugger/experience-cloud/use-the-experience-cloud-debugger.md)
+      + [Risolvere i problemi di Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/troubleshooting/troubleshoot-with-the-experience-cloud-debugger.html){target=&quot;_blank&quot;}
+      + [Cambiare ambienti tag](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/switch-environments.html){target=&quot;_blank&quot;}
