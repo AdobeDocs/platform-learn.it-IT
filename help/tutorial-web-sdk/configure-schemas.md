@@ -3,9 +3,9 @@ title: Creare uno schema XDM per i dati web
 description: Scopri come creare uno schema XDM per i dati web nell’interfaccia di raccolta dati. Questa lezione fa parte dell’esercitazione Implementa Adobe Experience Cloud con SDK per web.
 feature: Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: f493b0d53bba223f78683551a1a43e25bf43ee8d
+source-git-commit: fc0567823039f8a2005aa64a3f10c5a2564cbf64
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1125'
 ht-degree: 5%
 
 ---
@@ -47,7 +47,7 @@ In questo esercizio, creerai uno schema XDM utilizzando i gruppi di campi della 
 
    >[!NOTE]
    >
-   >Se sei cliente di un’applicazione basata su Platform come Real-time CDP, ti consigliamo di utilizzare una sandbox di sviluppo per questa esercitazione.
+   >Se sei cliente di un’applicazione basata su Platform come Real-time CDP, ti consigliamo di utilizzare una sandbox di sviluppo per questa esercitazione. In caso contrario, utilizza il **[!UICONTROL Prod]** sandbox.
 
 1. Vai a **[!UICONTROL Schemi]** nella navigazione a sinistra
 1. Seleziona la **[!UICONTROL Crea schema]** in alto a destra
@@ -63,10 +63,10 @@ Quando possibile, si consiglia di utilizzare i gruppi di campi esistenti e aderi
 
 >[!TIP]
 > 
->In questo esercizio, aggiungi i gruppi di campi predefiniti consigliati per la raccolta di dati web: _**[!UICONTROL Mixin ExperienceEvent SDK per web AEP]**_ e _**[!UICONTROL Evento esperienza consumatore]**_.
+>In questo esercizio, aggiungi i gruppi di campi predefiniti consigliati per la raccolta di dati web: _**[!UICONTROL ExperienceEvent AEP Web SDK]**_ e _**[!UICONTROL Evento esperienza consumatore]**_.
 
-1. Mantieni **[!UICONTROL Usa gruppo di campi esistente]** pulsante di scelta selezionato
-1. Cerca [!UICONTROL `AEP Web SDK ExperienceEvent Mixin`]
+1. In **[!UICONTROL Gruppi di campi]** sezione , seleziona **[!UICONTROL Aggiungi]**
+1. Cerca [!UICONTROL `AEP Web SDK ExperienceEvent`]
 1. Seleziona la casella
 1. Cerca [!UICONTROL `Consumer Experience Event`]
 1. Seleziona la casella
@@ -83,7 +83,7 @@ Con i gruppi di campi selezionati, è possibile assegnare un nome allo schema. U
 
 ![Dati evento web Luma](assets/schema-luma-web-event-data.png)
 
-Con entrambi i gruppi di campi, noterai di avere accesso alle coppie chiave-valore più comunemente utilizzate richieste per la raccolta di dati sul web. Quando fai clic sul nome di uno dei gruppi di campi, l’interfaccia evidenzia a cosa appartengono i raggruppamenti di coppie chiave-valore. Nell’esempio seguente, puoi vedere a quali gruppi appartengono **[!UICONTROL Evento esperienza consumatore]**.
+Con entrambi i gruppi di campi, noterai di avere accesso alle coppie chiave-valore più comunemente utilizzate richieste per la raccolta di dati sul web. La [!UICONTROL nome visualizzato] di ciascun campo viene visualizzato agli addetti al marketing nell’interfaccia di Generatore di segmenti delle applicazioni basate su Platform e puoi modificare il nome visualizzato dei campi standard in base alle tue esigenze. È inoltre possibile rimuovere i campi non desiderati. Quando fai clic sul nome di uno dei gruppi di campi, l’interfaccia evidenzia a cosa appartengono i raggruppamenti di coppie chiave-valore. Nell’esempio seguente, puoi vedere a quali gruppi appartengono **[!UICONTROL Evento esperienza consumatore]**.
 
 ![Gruppi di campi dello schema](assets/schema-consumer-experience-event.jpg)
 

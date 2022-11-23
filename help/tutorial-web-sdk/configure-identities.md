@@ -3,10 +3,10 @@ title: Configurare uno spazio dei nomi di identità
 description: Scopri come configurare i namespace di identità da utilizzare con Adobe Experience Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementa Adobe Experience Cloud con SDK per web.
 feature: Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2b5013ea01bf4e2388a6e1fc046b1685945be238
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 6%
+source-wordcount: '695'
+ht-degree: 5%
 
 ---
 
@@ -52,6 +52,11 @@ Ora crea uno spazio dei nomi per l’ID CRM Luma:
 
 1. Apri [Interfaccia di raccolta dati](https://launch.adobe.com/){target=&quot;_blank&quot;}
 1. Seleziona la sandbox utilizzata per l’esercitazione
+
+   >[!NOTE]
+   >
+   >Se sei cliente di un’applicazione basata su Platform come Real-time CDP, ti consigliamo di utilizzare una sandbox di sviluppo per questa esercitazione. In caso contrario, utilizza il **[!UICONTROL Prod]** sandbox.
+
 1. Seleziona **[!UICONTROL Identità]** nella navigazione a sinistra
 1. Seleziona **[!UICONTROL Sfoglia]**
 

@@ -3,9 +3,9 @@ title: Configurare le autorizzazioni per l’esercitazione
 description: Scopri come richiedere l’accesso ad Experience Platform Web SDK e configurare l’autorizzazione necessaria per completare l’esercitazione Implementa Adobe Experience Cloud con Web SDK.
 feature: Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7377d87394d52bc9ed1f35f071a57bc341d5f969
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '415'
 ht-degree: 6%
 
 ---
@@ -16,14 +16,14 @@ Scopri come richiedere l’accesso ad Experience Platform Web SDK e configurare 
 
 ## Raccolta dati
 
-* Autorizzare **[!UICONTROL Sviluppa]**, **[!UICONTROL Modifica]**, **[!UICONTROL Approva]**, **[!UICONTROL Pubblica]**, **[!UICONTROL Gestire le estensioni]** e **[!UICONTROL Gestire gli ambienti]** proprietà dei tag. Per ulteriori informazioni sulle autorizzazioni dei tag, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* Autorizzare **[!UICONTROL Sviluppa]**, **[!UICONTROL Modifica]**, **[!UICONTROL Approva]**, **[!UICONTROL Pubblica]**, **[!UICONTROL Gestire le estensioni]**, **[!UICONTROL Gestire gli ambienti]** e **[!UICONTROL Gestisci proprietà]**. Per ulteriori informazioni sulle autorizzazioni dei tag, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 * Se stai completando la lezione opzionale di inoltro eventi, disponi di una licenza di prodotto che include l&#39;inoltro perimetrale e l&#39;articolo di autorizzazione **[!UICONTROL Piattaforme]** > **[!UICONTROL Bordo]**
 
 ## Experience Platform
 
 Queste funzioni dovrebbero essere disponibili per tutti i clienti di Experience Cloud, anche se non sei un cliente di un’applicazione basata su piattaforma come Real-time CDP.
 
-* Accesso al **produzione predefinita** sandbox.
+* Accesso al **produzione predefinita**, **&quot;Prod&quot;** sandbox (.
 * Accesso a **[!UICONTROL Gestire gli schemi]** e **[!UICONTROL Visualizza schemi]** sotto **[!UICONTROL Modellazione dati]**
 * Accesso a **[!UICONTROL Gestire gli spazi dei nomi delle identità]** e **[!UICONTROL Visualizzare gli spazi dei nomi delle identità]** sotto **[!UICONTROL Identity Management]**
 * Accesso a **[!UICONTROL Gestire i flussi di dati]** e **[!UICONTROL Visualizza i reami di dati]** sotto **[!UICONTROL Raccolta dati]**
