@@ -3,9 +3,9 @@ title: Configurare Adobe Analytics utilizzando Experience Platform Web SDK
 description: Scopri come configurare Adobe Analytics utilizzando Experience Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementa Adobe Experience Cloud con SDK per web.
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: eb635ea8befa6a908df5bed1c05b48deaf164cb6
 workflow-type: tm+mt
-source-wordcount: '3500'
+source-wordcount: '3554'
 ht-degree: 2%
 
 ---
@@ -121,7 +121,7 @@ Quindi, acquisisci dati aggiuntivi dal livello dati Luma e inviali alla piattafo
 
 ### Creare elementi dati di e-commerce
 
-Durante la lezione Creazione di elementi dati , [elementi dati JavaScript creati](create-data-elements.md#create-data-elements-to-capture-the-data-layer) che acquisiva contenuti e dettagli di identità. Ora puoi creare elementi di dati aggiuntivi per acquisire dati di e-commerce. Perché [Sito dimostrativo Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} utilizza diverse strutture dei livelli dati per le pagine di dettaglio del prodotto e i prodotti nel carrello, è necessario creare elementi dati per ogni scenario. Utilizza i frammenti di codice forniti di seguito:
+Durante la lezione Creazione di elementi dati , [elementi dati JavaScript creati](create-data-elements.md#create-data-elements-to-capture-the-data-layer) che acquisiva contenuti e dettagli di identità. Ora puoi creare elementi di dati aggiuntivi per acquisire dati di e-commerce. Perché [Sito dimostrativo Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} utilizza diverse strutture dei livelli dati per le pagine di dettaglio del prodotto e i prodotti nel carrello, è necessario creare elementi dati per ogni scenario. Dovrai creare alcuni elementi di dati del codice personalizzato per recuperare ciò che ti serve dal livello di dati Luma, che potrebbe essere necessario o meno durante l’implementazione sul tuo sito. In questo caso, è necessario scorrere una serie di articoli del carrello per acquisire dettagli specifici di ogni prodotto. Utilizza i frammenti di codice forniti di seguito:
 
 1. Apri la proprietà tag utilizzata per l’esercitazione.
 1. Vai a **[!UICONTROL Elementi dati]**
