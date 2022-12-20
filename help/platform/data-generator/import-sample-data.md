@@ -6,7 +6,7 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1620'
 ht-degree: 4%
@@ -176,10 +176,10 @@ Esplorando i dati nella **[!UICONTROL Attributi]** e **[!UICONTROL Eventi]** sch
 Per informazioni sui criteri di unione, la governance dei dati, il servizio di query e il generatore di segmenti, passa a [lezione 11 nel tutorial Guida introduttiva per architetti di dati e data engineer](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). Le lezioni precedenti di quest&#39;altra esercitazione ti hanno permesso di creare manualmente tutto ciò che era appena stato popolato da queste raccolte Postman: scopri come iniziare!
 
 Se desideri creare un’implementazione di esempio dell’SDK per web per eseguire un collegamento a questa sandbox, passa attraverso
-[Esercitazione sull’implementazione di Adobe Experience Cloud con SDK per web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html). Dopo aver configurato le lezioni di &quot;Configurazione iniziale&quot;, &quot;Configurazione tag&quot; e &quot;Configurazione Experience Platform&quot; dell’esercitazione SDK per web, accedi al sito web Luma utilizzando i primi dieci indirizzi e-mail nella sezione `luma-crm.json` file utilizzando la password `test` per visualizzare l’unione dei frammenti di profilo con i dati caricati in questa esercitazione.
+[Esercitazione sull’implementazione di Adobe Experience Cloud con SDK per web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it). Dopo aver configurato le lezioni di &quot;Configurazione iniziale&quot;, &quot;Configurazione tag&quot; e &quot;Configurazione Experience Platform&quot; dell’esercitazione SDK per web, accedi al sito web Luma utilizzando i primi dieci indirizzi e-mail nella sezione `luma-crm.json` file utilizzando la password `test` per visualizzare l’unione dei frammenti di profilo con i dati caricati in questa esercitazione.
 
 Per generare un esempio di implementazione dell’SDK Mobile da collegare a questa sandbox, passa attraverso
-[Esercitazione sull’implementazione di Adobe Experience Cloud nelle app per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html). Dopo aver configurato le lezioni di &quot;configurazione iniziale&quot;, &quot;implementazione app&quot; e &quot;Experience Platform&quot; dell’esercitazione SDK per web, accedi al sito web Luma utilizzando i primi indirizzi e-mail nella `luma-crm.json` per visualizzare un frammento di profilo unito ai dati caricati in questa esercitazione.
+[Esercitazione sull’implementazione di Adobe Experience Cloud nelle app per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=it). Dopo aver configurato le lezioni di &quot;configurazione iniziale&quot;, &quot;implementazione app&quot; e &quot;Experience Platform&quot; dell’esercitazione SDK per web, accedi al sito web Luma utilizzando i primi indirizzi e-mail nella `luma-crm.json` per visualizzare un frammento di profilo unito ai dati caricati in questa esercitazione.
 
 ## Ripristina ambiente Sandbox {#reset-sandbox}
 

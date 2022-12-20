@@ -3,7 +3,7 @@ title: Creare uno schema XDM per i dati web
 description: Scopri come creare uno schema XDM per i dati web nell’interfaccia di raccolta dati. Questa lezione fa parte dell’esercitazione Implementa Adobe Experience Cloud con SDK per web.
 feature: Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: fc0567823039f8a2005aa64a3f10c5a2564cbf64
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 5%
@@ -47,7 +47,7 @@ In questo esercizio, creerai uno schema XDM utilizzando i gruppi di campi della 
 
    >[!NOTE]
    >
-   >Se sei cliente di un’applicazione basata su Platform come Real-time CDP, ti consigliamo di utilizzare una sandbox di sviluppo per questa esercitazione. In caso contrario, utilizza il **[!UICONTROL Prod]** sandbox.
+   >Se sei cliente di un’applicazione basata su Platform come Real-Time CDP, ti consigliamo di utilizzare una sandbox di sviluppo per questa esercitazione. In caso contrario, utilizza il **[!UICONTROL Prod]** sandbox.
 
 1. Vai a **[!UICONTROL Schemi]** nella navigazione a sinistra
 1. Seleziona la **[!UICONTROL Crea schema]** in alto a destra

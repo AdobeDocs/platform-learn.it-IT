@@ -2,7 +2,7 @@
 title: Creare uno schema XDM
 description: Scopri come creare uno schema XDM per gli eventi delle app mobili.
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 4%
@@ -53,7 +53,7 @@ In questa lezione:
 
    >[!NOTE]
    >
-   > Per questa esercitazione, i clienti di applicazioni basate su piattaforma come Real-time CDP devono utilizzare una sandbox di sviluppo. Altri clienti utilizzeranno la sandbox di produzione predefinita.
+   > Per questa esercitazione, i clienti di applicazioni basate su Platform come Real-Time CDP devono utilizzare una sandbox di sviluppo. Altri clienti utilizzeranno la sandbox di produzione predefinita.
 
 
 1. Seleziona **[!UICONTROL Schemi]** sotto **[!UICONTROL Gestione dati]**.
@@ -66,7 +66,7 @@ Ora ti trovi nella pagina principale degli schemi e ti viene presentato un elenc
 * **Classi** definire gli aspetti comportamentali dei dati contenuti nello schema. Ad esempio: `XDM ExperienceEvent` acquisisce serie temporali, dati evento e `XDM Individual Profile` acquisisce i dati degli attributi relativi a una persona.
 * **Tipi di dati** sono utilizzati come tipi di campi di riferimento in classi o gruppi di campi nello stesso modo dei campi letterali di base.
 
-Le descrizioni di cui sopra sono una panoramica di alto livello. Per ulteriori dettagli, consulta la sezione [Blocchi di creazione dello schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=it) video o lettura [Nozioni di base sulla composizione dello schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) nella documentazione del prodotto.
+Le descrizioni di cui sopra sono una panoramica di alto livello. Per ulteriori dettagli, consulta la sezione [Blocchi di creazione dello schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=it) video o lettura [Nozioni di base sulla composizione dello schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=it) nella documentazione del prodotto.
 
 In questa esercitazione, utilizzi il gruppo di campi Evento esperienza consumatore e creane uno personalizzato per illustrare il processo.
 

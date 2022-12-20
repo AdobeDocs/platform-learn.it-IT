@@ -1,24 +1,24 @@
 ---
 title: Abilita profili cliente in tempo reale
-seo-title: Enable Real-time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+seo-title: Enable Real-Time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Abilita profili cliente in tempo reale
-description: In questa lezione, abiliterai gli schemi e i set di dati per il profilo cliente in tempo reale.
+description: In questa lezione verranno abilitati gli schemi e i set di dati per il profilo cliente in tempo reale.
 role: Data Architect
 feature: Profiles
 kt: 4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1123'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 # Abilita profili cliente in tempo reale
 
 <!-- 15min-->
-In questa lezione, abiliterai gli schemi e i set di dati per il profilo cliente in tempo reale.
+In questa lezione verranno abilitati gli schemi e i set di dati per il profilo cliente in tempo reale.
 
 Ok, ho mentito quando ho detto che la lezione sui set di dati è stata la lezione più breve in questo tutorial: questo dovrebbe richiedere ancora meno tempo! Letteralmente, tutto quello che farete è ribaltare un mucchio di interruttori. Ma quello che succede quando si capovolgono questi interruttori è _davvero_ quindi volevo dedicarvi un&#39;intera pagina.
 
@@ -187,7 +187,7 @@ Puoi anche confermare che l’interfaccia utente mostra il set di dati abilitato
 
 ## Risorse aggiuntive
 
-* [Documentazione del Profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=it)
+* [Documentazione del profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=it)
 * [Riferimento API per il profilo cliente in tempo reale](https://www.adobe.io/experience-platform-apis/references/profile/)
 
 

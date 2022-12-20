@@ -2,7 +2,7 @@
 title: Trasmetti dati a Adobe Experience Platform con SDK per web
 description: Scopri come eseguire lo streaming dei dati web in Adobe Experience Platform con l’SDK per web. Questa lezione fa parte dell’esercitazione Implementa Adobe Experience Cloud con SDK per web.
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 5%
@@ -156,7 +156,7 @@ Per confermare che i dati sono atterrati nel data lake di Platform, un’opzione
 
 ## Abilita il set di dati e lo schema per il profilo cliente in tempo reale
 
-Il passaggio successivo consiste nell’abilitare il set di dati e lo schema per Profilo cliente in tempo reale. Lo streaming dei dati dall’SDK web sarà una delle molte origini dati che fluiscono in Platform e desideri unire i tuoi dati web ad altre sorgenti dati per creare profili cliente a 360 gradi. Per ulteriori informazioni sul Profilo del cliente in tempo reale, guarda questo breve video:
+Il passaggio successivo consiste nell’abilitare il set di dati e lo schema per il profilo cliente in tempo reale. Lo streaming dei dati dall’SDK web sarà una delle molte origini dati che fluiscono in Platform e desideri unire i tuoi dati web ad altre sorgenti dati per creare profili cliente a 360 gradi. Per ulteriori informazioni sul Profilo del cliente in tempo reale, guarda questo breve video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on&captions=eng)
 
@@ -235,7 +235,7 @@ Innanzitutto devi generare altri dati di esempio. Ripeti i passaggi precedenti d
 
    ![Profilo del cliente](assets/experience-platform-validate-dataset-custProfile.png)
 
-Ora hai abilitato Platform Web SDK per Experience Platform (e Real-time CDP! E Customer Journey Analytics! E Journey Optimizer!)!
+È ora abilitato Platform Web SDK per Experience Platform (e Real-Time CDP! E Customer Journey Analytics! E Journey Optimizer!)!
 
 
 [Avanti: ](setup-analytics.md)

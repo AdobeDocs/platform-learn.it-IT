@@ -1,13 +1,13 @@
 ---
 title: Configurazione delle destinazioni del marketing via e-mail o dell’archiviazione cloud basata su file
-description: Ottieni suggerimenti durante una procedura dettagliata sulla configurazione di una destinazione basata su file in Real-time CDP di Adobe. Questo vale per le destinazioni di archiviazione cloud (ad esempio S3 o SFTP) e per le destinazioni di marketing e-mail.
+description: Ottieni suggerimenti durante una procedura dettagliata sulla configurazione di una destinazione basata su file in Adobe Real-Time CDP. Questo vale per le destinazioni di archiviazione cloud (ad esempio S3 o SFTP) e per le destinazioni di marketing e-mail.
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
 kt: 6624
 thumbnail: 328175.jpg
 exl-id: fda985ad-5d56-4e61-871f-2f29a2e79b17
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 5%

@@ -3,7 +3,7 @@ title: Configurare un datastream
 description: Scopri come abilitare un datastream e configurare le soluzioni Experience Cloud. Questa lezione fa parte dell’esercitazione Implementa Adobe Experience Cloud con SDK per web.
 feature: Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 762195148f7594e30b361546941dfcd8076ab7b1
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 6%
@@ -43,7 +43,7 @@ Ora puoi creare un datastream per indicare a Platform Edge Network dove inviare 
 
    >[!NOTE]
    >
-   >Se sei cliente di un’applicazione basata su Platform come Real-time CDP, ti consigliamo di utilizzare una sandbox di sviluppo per questa esercitazione. In caso contrario, utilizza il **[!UICONTROL Prod]** sandbox.
+   >Se sei cliente di un’applicazione basata su Platform come Real-Time CDP, ti consigliamo di utilizzare una sandbox di sviluppo per questa esercitazione. In caso contrario, utilizza il **[!UICONTROL Prod]** sandbox.
 
 1. Vai a **[!UICONTROL Datastreams]** nella navigazione a sinistra
 1. Seleziona **[!UICONTROL Nuovo Datastream]** sul lato destro dello schermo.

@@ -4,7 +4,7 @@ breadcrumb-title: Tutorial
 user-guide-description: Scopri i numerosi componenti di Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 29%
@@ -56,14 +56,14 @@ ht-degree: 29%
    + [Creare e popolare un set di dati](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [Mappare un file CSV in XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html){target=&quot;_blank&quot;}
    + [Panoramica delle origini](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
-   + [Acquisire dati da Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
+   + [Acquisire dati da Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=it)
    + [Inserire dati da Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
-   + [Acquisisci dati da cloud storage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html)
-   + [Acquisisci dati da CRM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html)
+   + [Acquisisci dati da cloud storage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=it)
+   + [Acquisisci dati da CRM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=it)
    + [Acquisire dati dai database](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
    + [Panoramica sull’acquisizione in streaming](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
-   + [Trasmetti dati con l’API HTTP](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html)
-   + [Trasmettere i dati utilizzando i connettori di origini](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html)
+   + [Trasmetti dati con l’API HTTP](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=it)
+   + [Trasmettere i dati utilizzando i connettori di origini](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=it)
    + [Tutorial dell’SDK per web](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target=&quot;_blank&quot;}
    + [Tutorial dell’SDK per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target=&quot;_blank&quot;}
 + Data Science Workspace {#data-science-workspace}
@@ -184,7 +184,7 @@ ht-degree: 29%
    + [Esercitazioni sul Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target=&quot;_blank&quot;}
    + [Esercitazioni sul Journey Orchestration](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target=&quot;_blank&quot;}
    + [Esercitazioni di Offer decisioning](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html?lang=it){target=&quot;_blank&quot;}
-   + Tutorial su Real-time CDP{#rtcdp}
+   + Tutorial su Real-Time CDP{#rtcdp}
       + [Panoramica](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
       + [Panoramica di B2B Edition](/help/platform/rtcdp/b2b-overview.md)
       + [Demo end-to-end](/help/platform/rtcdp/demo.md)

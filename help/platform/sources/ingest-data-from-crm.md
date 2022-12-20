@@ -1,12 +1,12 @@
 ---
 title: Inserire dati utilizzando i connettori di origine CRM
-description: Questo video mostra come acquisire facilmente in batch i dati da fonti CRM in Adobe Experience Platform Profilo cliente in tempo reale e data lake, in modo semplice e scalabile.
+description: Questo video mostra come acquisire facilmente in batch i dati da fonti di gestione delle relazioni con i clienti in Profilo cliente in tempo reale di Adobe Experience Platform e lago di dati, in modo semplice e scalabile.
 role: Data Engineer, Data Architect
 feature: Sources
 kt: 3826
 thumbnail: 29711.jpg
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Inserire dati utilizzando i connettori sorgente CRM
 
-Questo video mostra come acquisire facilmente in batch i dati da fonti CRM in Adobe Experience Platform Profilo cliente in tempo reale e data lake, in modo semplice e scalabile. Per una documentazione più dettagliata del prodotto, consulta [gestione delle relazioni con i clienti (CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) nella pagina di panoramica dei connettori di origine.
+Questo video mostra come acquisire facilmente in batch i dati da fonti di gestione delle relazioni con i clienti in Profilo cliente in tempo reale di Adobe Experience Platform e lago di dati, in modo semplice e scalabile. Per una documentazione più dettagliata del prodotto, consulta [gestione delle relazioni con i clienti (CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) nella pagina di panoramica dei connettori di origine.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29711?quality=12&learn=on)
 

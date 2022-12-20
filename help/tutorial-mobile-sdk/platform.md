@@ -2,7 +2,7 @@
 title: Inviare dati a Adobe Experience Platform
 description: Scopri come inviare dati a Adobe Experience Platform.
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 7%
@@ -13,7 +13,7 @@ ht-degree: 7%
 
 Scopri come inviare dati a Adobe Experience Platform.
 
-Questa lezione opzionale è pertinente per tutti i clienti di Real-time Customer Data Platform (Real-time CDP), Journey Optimizer e Customer Journey Analytics. Ad Experience Platform, la base dei prodotti Experience Cloud, è un sistema aperto che trasforma tutti i tuoi dati, Adobe e non, in solidi profili cliente che si aggiornano in tempo reale e utilizzano informazioni basate sull’intelligenza artificiale per aiutarti a fornire le esperienze giuste in ogni canale.
+Questa lezione opzionale è pertinente per tutti i clienti di Real-time Customer Data Platform (Real-Time CDP), Journey Optimizer e Customer Journey Analytics. Ad Experience Platform, la base dei prodotti Experience Cloud, è un sistema aperto che trasforma tutti i tuoi dati, Adobe e non, in solidi profili cliente che si aggiornano in tempo reale e utilizzano informazioni basate sull’intelligenza artificiale per aiutarti a fornire le esperienze giuste in ogni canale.
 
 La [event](events.md), [ciclo](lifecycle-data.md)e [identità](identity.md) i dati raccolti e inviati a Platform Edge Network nelle lezioni precedenti vengono inoltrati ai servizi configurati nel datastream, incluso Adobe Experience Platform.
 
@@ -30,8 +30,8 @@ In questa lezione:
 
 * Crea un set di dati di Experience Platform.
 * Convalida i dati nel set di dati.
-* Abilita lo schema e il set di dati per Profilo cliente in tempo reale.
-* Convalida i dati in Profilo cliente in tempo reale.
+* Abilita lo schema e il set di dati per il profilo cliente in tempo reale.
+* Convalida i dati nel profilo cliente in tempo reale.
 * Convalida i dati nel grafico dell&#39;identità.
 
 

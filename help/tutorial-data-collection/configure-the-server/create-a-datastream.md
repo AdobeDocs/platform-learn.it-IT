@@ -2,7 +2,7 @@
 title: Creare un flusso di dati
 description: Creare un flusso di dati
 exl-id: 4a33a7f3-8bd8-4d28-9ae4-a0609444485f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 1%
@@ -34,7 +34,7 @@ La schermata successiva ti consente di aggiungere quali prodotti e servizi di Ad
 
 Le aziende solitamente hanno un percorso di promozione per qualsiasi aggiornamento del sito web. In genere, un addetto al marketing o un tecnico dell&#39;azienda (a seconda dei cambiamenti) verifica i propri cambiamenti in un ambiente di sviluppo utilizzato solo da tale persona. Una volta che si sentono a loro agio con le modifiche, queste vengono promosse a un ambiente di staging in cui ricevono ulteriori test. Infine, le modifiche vengono pubblicate sul sito web di produzione che gli utenti visualizzano. I datastreams supportano questo pattern di promozione.
 
-Se supporti applicazioni basate su Platform come Real-time CDP, Journey Optimizer o Customer Journey Analytics, è necessario creare altri datastreams nelle sandbox di Platform separate che corrispondono a questi ambienti.
+Se supporti applicazioni basate su Platform come Real-Time CDP, Journey Optimizer o Customer Journey Analytics, è necessario creare altri datastreams nelle sandbox di Platform separate che corrispondono a questi ambienti.
 
 Se non sei un cliente Platform, puoi creare più datastreams in un’unica sandbox e utilizzare la funzione di copia del datastream per duplicare le impostazioni.
 

@@ -3,7 +3,7 @@ title: Panoramica dell’esercitazione sull’implementazione di Adobe Experienc
 description: Scopri come implementare le applicazioni mobili Adobe Experience Cloud. Questa esercitazione ti guida attraverso un’implementazione di applicazioni Experience Cloud in un’app Swift di esempio.
 recommendation: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 10%
@@ -61,7 +61,7 @@ In queste lezioni, si presume che tu sia in possesso di un Adobe ID e delle auto
    * **[!UICONTROL Identity Management]**: elementi di autorizzazione per gestire e visualizzare i namespace di identità.
    * **[!UICONTROL Raccolta dati]**- elementi di autorizzazione per gestire e visualizzare i datastreams.
 
-   * Se sei cliente di un’applicazione basata su Platform come Real-time CDP, Journey Optimizer o Customer Journey Analytics, devi anche disporre di:
+   * Se sei cliente di un’applicazione basata su Platform come Real-Time CDP, Journey Optimizer o Customer Journey Analytics, devi anche disporre di:
       * **[!UICONTROL Gestione dati]**: elementi di autorizzazione per gestire e visualizzare i set di dati per completare _esercitazioni opzionali della piattaforma_ (richiede una licenza per un&#39;applicazione basata su Platform ).
       * Uno sviluppo **sandbox** che puoi utilizzare per questa esercitazione.
 * Per Adobe Analytics, devi sapere quale **suite di rapporti** puoi utilizzare per completare questa esercitazione.

@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 1%
@@ -141,6 +141,6 @@ Un caso d’uso chiave per i criteri di unione è la governance dei dati. Ad ese
 ## Risorse aggiuntive
 
 * [Documentazione sui criteri di unione](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
-* [Riferimento API per i criteri di unione (parte di Real-time Customer Profile API)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
+* [Riferimento API dei criteri di unione (parte del Profilo API del cliente in tempo reale)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Ora passiamo alla [quadro di riferimento per la governance dei dati](apply-data-governance-framework.md).

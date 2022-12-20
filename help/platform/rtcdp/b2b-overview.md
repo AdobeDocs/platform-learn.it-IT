@@ -6,7 +6,7 @@ role: User
 kt: 9257
 thumbnail: 338249.jpg
 exl-id: a1bde52d-33f7-4de2-953e-ff7abcc7ef84
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
@@ -21,6 +21,6 @@ Scopri come gli esperti di marketing business-to-business (B2B) possono unificar
 
 >[!INFO]
 >
-> Questo video fa parte di un corso, [Guida introduttiva a Real-time CDP, B2B Edition per gli esperti di marketing](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b)disponibile gratuitamente all&#39;Experience League!
+> Questo video fa parte di un corso, [Guida introduttiva di Real-Time CDP, B2B Edition per gli esperti di marketing](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b)disponibile gratuitamente all&#39;Experience League!
 
-Per ulteriori informazioni, visita il [Documentazione di Real-time CDP B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html).
+Per ulteriori informazioni, visita il [Documentazione di Real-Time CDP B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html).
