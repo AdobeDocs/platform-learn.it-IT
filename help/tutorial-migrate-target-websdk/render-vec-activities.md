@@ -2,9 +2,9 @@
 title: Rendering delle attività del Compositore esperienza visivo | Migrare Target da at.js 2.x all’SDK per web
 description: Scopri come recuperare e applicare le attività del compositore esperienza visivo con un’implementazione SDK per web di Adobe Target.
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: 72eaefe62bc84c81bee4930218854ec1d83e99ab
+source-git-commit: 7e6aa296429844552ad164ba209a504ddc908571
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '883'
 ht-degree: 5%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 Le attività di Target vengono configurate utilizzando il Compositore esperienza visivo o il Compositore esperienza basato su moduli. L’SDK per web di Platform può recuperare e applicare le attività basate su VEC alla pagina come at.js. Per questa parte della migrazione:
 
-* Se necessario, installa l’estensione del browser Visual Editing Helper
+* Installare l’estensione del browser Visual Editing Helper
 * Esegui un `sendEvent` chiama con Platform Web SDK per richiedere attività.
 * Aggiornare i riferimenti dall’implementazione at.js che utilizzano `getOffers()` per eseguire un target `pageLoad` richiesta.
 

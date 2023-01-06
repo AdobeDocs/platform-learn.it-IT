@@ -1,9 +1,9 @@
 ---
 title: Confronto tra at.js 2.x e SDK per web | Migrare Target da at.js 2.x all’SDK per web
 description: Scopri le differenze tra at.js 2.x e Platform Web SDK, tra cui funzioni, funzioni, impostazioni e flusso di dati.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: f690664b187c5b09f1243ce46877da6fad38efa3
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2164'
 ht-degree: 8%
 
 ---
@@ -44,7 +44,7 @@ Se hai poca esperienza con l’SDK per web di Platform, non preoccuparti; gli el
 | Offerte di reindirizzamento | Supportati | Supportati. Tuttavia, non è supportato un reindirizzamento da una pagina con SDK per web di Platform a una pagina con at.js (e nella direzione opposta). |
 | Decisioning su dispositivo | Supportati | Non supportato al momento |
 | Mbox di preacquisizione | Supportati | Supportato parzialmente. Contatta l’assistenza clienti per abilitare questa funzione in quanto modifica il comportamento di preacquisizione dell’attività. |
-| Eventi personalizzati | Supportati | Supportato parzialmente tramite [ganci di monitoraggio](https://github.com/adobe/alloy/wiki/Monitoring-Hooks) |
+| Eventi personalizzati | Supportati | Non supportati. Consulta la sezione [tabella di marcia pubblica](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) per lo stato corrente. |
 | Token di risposta | Supportati | Supportati. Fai riferimento a [documentazione dei token di risposta dedicati](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) per esempi di codice e differenze tra at.js e Platform Web SDK |
 | Fornitori dati  | Supportati | Non supportati. Il codice personalizzato può essere utilizzato per attivare un SDK per web di Platform `sendEvent` dopo il recupero dei dati da un altro provider. |
 
@@ -79,7 +79,7 @@ Molte funzioni di at.js hanno un approccio equivalente tramite l’SDK per web d
 | `trackEvent()` e `sendNotifications()` | Utilizza la `sendEvent` con un comando [specifico `eventType`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html#how-to-track-events) set:<br><br>`decisioning.propositionDisplay` segnala il rendering di un&#39;attività<br><br>`decisioning.propositionInteract` segnala l’interazione dell’utente con un’attività, ad esempio un clic del mouse. |
 | `targetGlobalSettings()` | Nessun equivalente diretto. Fai riferimento a [Confronto delle impostazioni di Target](detailed-comparison.md) per ulteriori dettagli. |
 | `targetPageParams()` e `targetPageParamsAll()` | Tutti i dati passati nel `xdm` opzione `sendEvent` è mappato ai parametri mbox di Target. Poiché i parametri mbox vengono denominati utilizzando la notazione del punto serializzato, la migrazione a Platform Web SDK potrebbe richiedere l’aggiornamento dei tipi di pubblico e delle attività esistenti per utilizzare i nuovi nomi dei parametri mbox. <br><br>Dati passati come parte di `data.__adobe.target` del `sendEvent` è mappato su [Parametri specifici del profilo di Target e di Recommendations](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html#single-profile-update). |
-| Eventi personalizzati at.js | Non supportati. Tuttavia, [token di risposta](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) sono esposti come parte del `propositions` nella risposta del `sendEvent` chiama. |
+| Eventi personalizzati at.js | Non supportati. Consulta la sezione [tabella di marcia pubblica](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) per lo stato corrente. [Token di risposta](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) sono esposti come parte del `propositions` nella risposta del `sendEvent` chiama. |
 
 ## Impostazioni di at.js ed equivalenti SDK per web di Platform
 
