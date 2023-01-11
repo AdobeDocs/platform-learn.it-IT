@@ -26,11 +26,11 @@ ht-degree: 34%
    + [Utenti e autorizzazioni](tags/users-and-permissions.md)
    + [Implementazione nei siti web con SDK per web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it){target=&quot;_blank&quot;}
    + [Implementazione nei siti web con SDK di soluzioni](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target=&quot;_blank&quot;}
-   + [Implementazione nelle app per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target=&quot;_blank&quot;}
+   + [Implementazione nelle app per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=it){target=&quot;_blank&quot;}
 + SDK per web{#web-sdk}
    + [Panoramica](web-sdk/overview.md)
    + [Demo](web-sdk/demo.md)
-   + [Tutorial di implementazione (con tag)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target=&quot;_blank&quot;}
+   + [Tutorial di implementazione (con tag)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it){target=&quot;_blank&quot;}
    + Consenso{#consent}
       + [Panoramica](web-sdk/consent/overview.md)
       + [Impostare i valori di consenso utilizzando lo standard di Adobe](web-sdk/consent/set-consent-adobe.md)
@@ -41,7 +41,7 @@ ht-degree: 34%
    + [Panoramica](mobile-sdk/overview.md)
    + [Creare proprietà mobili](mobile-sdk/create-mobile-properties.md)
    + [Utilizzare i responsabili della dipendenza](mobile-sdk/use-dependency-managers.md)
-   + [Implementazione nelle app per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target=&quot;_blank&quot;}
+   + [Implementazione nelle app per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=it){target=&quot;_blank&quot;}
 + API server{#server-api}
    + [Panoramica](server-api/overview.md)
    + [Nozioni di base sulle API](server-api/introduction.md)

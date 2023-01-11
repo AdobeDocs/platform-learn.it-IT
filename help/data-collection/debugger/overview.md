@@ -20,7 +20,7 @@ Scopri come utilizzare Adobe Experience Platform Debugger [Estensione Chrome](ht
 
 ## Risorse aggiuntive
 
-* [Scarica il componente aggiuntivo Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
+* [Scarica il componente aggiuntivo Firefox](https://addons.mozilla.org/it/firefox/addon/adobe-experience-platform-dbg/)
 * [Scarica l’estensione Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 * [Documentazione di Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=it)
 * [Debug dell’implementazione dei tag](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html)
