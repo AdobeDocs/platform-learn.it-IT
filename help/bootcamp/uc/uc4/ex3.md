@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: e634876c-2b1c-4f7f-99e5-1940f6c87d80
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 402e032fe150745893528ffbd6a01533f30fb5d6
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1615'
 ht-degree: 2%
 
 ---
@@ -175,6 +174,8 @@ Successivamente, dovrai configurare molti Dimension e metriche, come indicato ne
 | ID transazione | ID transazione |  |
 | URL (web.webPageDetails.URL) | URL |  |
 | Agente utente | Agente utente | Sessione più recente |
+| livello | Livello fedeltà |  |
+| punti | Valore del ciclo di vita del cliente |  |
 
 ### METRICHE
 
@@ -278,7 +279,7 @@ Dovresti essere reindirizzato a questa schermata:
 
 ![demo](./images/8-v2.png)
 
-In questa scheda, puoi modificare alcune impostazioni importanti per modificare la modalità di elaborazione dei dati. Cominciamo impostando il **Timeout sessione** a 30 min. Grazie alla marca temporale di ogni evento di esperienza puoi estendere il concetto di sessione su tutti i canali. Ad esempio, cosa succede se un cliente chiama il call-center dopo aver visitato il sito web? Utilizzando i timeout di sessione personalizzati hai molta flessibilità nel decidere cosa sia una sessione e come tale sessione unirà i dati.
+In questa scheda, puoi modificare alcune impostazioni importanti per modificare la modalità di elaborazione dei dati. Cominciamo impostando il **Timeout sessione** a 30 min. Grazie alla marca temporale di ogni evento di esperienza puoi estendere il concetto di sessione su tutti i canali. Ad esempio, cosa succede se un cliente chiama il call-center dopo aver visitato il sito web? Utilizzando i timeout di sessione personalizzati hai molta flessibilità nel decidere cos’è una sessione e come quella sessione unirà i dati.
 
 ![demo](./images/ext8.png)
 

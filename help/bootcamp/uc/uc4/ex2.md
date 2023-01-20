@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 47e02021-019c-4ea4-a7a8-003deef7c9e5
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f63a92b9477b47edbf6a3fee162299491399ea56
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '674'
 ht-degree: 3%
 
 ---
@@ -60,7 +59,7 @@ Cercare il set di dati `Demo System - Event Dataset for Website (Global v1.1)`. 
 
 ![demo](./images/cja7.png)
 
-Ora cerca e controlla le caselle di controllo per `Demo System - Event Dataset for Voice Assistants (Global v1.1)` e `Demo System - Event Dataset for Call Center (Global v1.1)`.
+Ora cerca e controlla le caselle di controllo per `Demo System - Profile Dataset for Loyalty (Global v1.1)` e `Demo System - Event Dataset for Call Center (Global v1.1)`.
 
 Poi avrai questo. Fai clic su **Avanti**.
 
@@ -84,7 +83,7 @@ Tuttavia, puoi comunque influenzare quale identificatore verrà utilizzato per u
 
 Come indicato, puoi impostare ID persona diversi per ogni set di dati. Questo consente di unire set di dati diversi da più origini in CJA. Immaginate di inserire dati NPS o di sondaggio che sarebbero molto interessanti e utili per capire il contesto e perché è successo qualcosa.
 
-Il nome del campo ID persona non è importante, purché il valore nei campi ID persona corrisponda. Diciamo che `email` in un unico set di dati e `emailAddress` in un altro set di dati definito come ID persona. Se `delaigle@adobe.com` è lo stesso valore del campo ID persona in entrambi i set di dati; CJA sarà in grado di unire i dati.
+Il nome del campo ID persona non è importante, purché il valore nei campi ID persona corrisponda. Ad esempio, se l’ID persona è `email` in un unico set di dati e `emailAddress` in un altro e `dnb-bootcamp@adobe.com` è lo stesso valore del campo ID persona in entrambi i set di dati; CJA sarà in grado di unire i dati.
 
 Al momento ci sono altre limitazioni, come ad esempio l&#39;unione del comportamento anonimo da conoscere. Consulta le Domande frequenti qui: [Domande frequenti](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=it).
 
@@ -107,7 +106,7 @@ Una volta uniti i tre set di dati, siamo pronti per continuare.
 | Set di dati | ID persona |
 | ----------------- |-------------| 
 | Sistema di demo - Set di dati evento per il sito web (Global v1.1) | e-mail |
-| Sistema demo - Set di dati evento per assistenti vocali (Global v1.1) | e-mail |
+| Sistema demo - Set di dati profilo per fedeltà (Global v1.1) | e-mail |
 | Sistema demo - Set di dati evento per Call Center (Global v1.1) | e-mail |
 
 È inoltre necessario assicurarsi che per ogni set di dati queste opzioni siano abilitate:

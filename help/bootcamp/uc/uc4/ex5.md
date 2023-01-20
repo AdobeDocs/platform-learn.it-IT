@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 051b5b91-56c4-414e-a4c4-74aa67219551
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: b44d2a7ad44dd113889a7f996d7e33da46402b4a
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1497'
 ht-degree: 1%
 
 ---
@@ -31,7 +30,7 @@ Usiamo il progetto creato in [4.4 Preparazione dei dati in Analysis Workspace](.
 
 Apri il progetto `yourLastName - Omnichannel Analysis`.
 
-Con il progetto aperto e la visualizzazione dati `yourLastName - Omnichannel Analysis` seleziona puoi iniziare a creare le tue prime visualizzazioni.
+Con il progetto aperto e la visualizzazione dati `CJA Bootcamp - Omnichannel Data View` seleziona puoi iniziare a creare le tue prime visualizzazioni.
 
 ![demo](./images/prodataView1.png)
 
@@ -41,7 +40,7 @@ Prima di tutto, dobbiamo selezionare le date giuste per analizzare i dati. Vai a
 
 >[!IMPORTANT]
 >
->Seleziona un intervallo di date come **Questa settimana** o **Questo mese**. I dati più recenti disponibili sono stati acquisiti il 19 settembre 2022.
+>I dati disponibili più di recente sono stati acquisiti il 19/09/2022. Seleziona un intervallo di date che includa questa data.
 
 ![demo](./images/pro1.png)
 
@@ -77,9 +76,9 @@ Quindi, fai clic su **Blocca selezione** e seleziona **Elementi selezionati** pe
 
 ![demo](./images/pro7b.png)
 
-## Primi 5 prodotti visualizzati
+## Primi 4 prodotti visualizzati
 
-Quali sono i primi 5 prodotti visualizzati?
+Quali sono i primi 4 prodotti visualizzati?
 
 Ricorda di salvare il progetto ogni tanto.
 
@@ -88,7 +87,7 @@ Ricorda di salvare il progetto ogni tanto.
 | Windows | Ctrl+S |
 | Mac | Comando+S |
 
-Cominciamo a trovare i primi 5 prodotti visualizzati. Nel menu a sinistra, trova la **Nome del prodotto** - Dimension.
+Cominciamo a trovare i primi 4 prodotti visualizzati. Nel menu a sinistra, trova la **Nome del prodotto** - Dimension.
 
 ![demo](./images/pro8.png)
 
@@ -102,7 +101,7 @@ Quindi, prova a suddividere uno dei prodotti in base al nome del marchio. Cerca 
 
 ![demo](./images/pro13.png)
 
-Quindi, eseguire un raggruppamento utilizzando l&#39;agente utente. Cerca **Agente utente** e trascinarlo sotto il nome del marchio.
+Quindi, esegui una suddivisione utilizzando il livello di fedeltà. Cerca **Livello fedeltà** e trascinarlo sotto il nome del marchio.
 
 ![demo](./images/pro15.png)
 
@@ -114,7 +113,7 @@ Infine puoi aggiungere altre visualizzazioni. Sul lato sinistro, in visualizzazi
 
 ![demo](./images/pro18.png)
 
-Quindi, nella tabella, selezionare il primo 5 **Agente utente**  righe dal raggruppamento che abbiamo fatto in **Smartphone nero Google Pixel XL da 32 GB** > **Segnale Citi**. Quando selezioni le 5 righe, tieni premuto il pulsante **CTRL** su Windows o **Comando** (su Mac).
+Quindi, nella tabella, selezionare il 3 **Livello fedeltà**  righe dal raggruppamento che abbiamo fatto in **Smartphone nero Google Pixel XL da 32 GB** > **Segnale Citi**. Quando selezioni le 3 righe, tieni premuto il pulsante **CTRL** su Windows o **Comando** (su Mac).
 
 ![demo](./images/pro20.png)
 
@@ -154,7 +153,7 @@ Fai clic sulla visualizzazione **Abbandono**.
 
 Seleziona lo stesso intervallo di date dell’esercizio precedente.
 
-![demo](./images/prodatef.png)
+![demo](./images/pro1.png)
 
 Vedrete questo.
 
@@ -216,7 +215,7 @@ Vedrai questo:
 
 Seleziona lo stesso intervallo di date dell’esercizio precedente.
 
-![demo](./images/pro0b.png)
+![demo](./images/pro1.png)
 
 Trova la dimensione **Nome pagina** sotto i componenti sul lato sinistro:
 
@@ -297,7 +296,7 @@ Ora aggiungi un nuovo pannello vuoto facendo clic su **+ Aggiungi pannello vuoto
 
 Seleziona lo stesso intervallo di date dell’esercizio precedente.
 
-![demo](./images/pro24d.png)
+![demo](./images/pro1.png)
 
 Fai clic su **Tabella a forma libera**.
 

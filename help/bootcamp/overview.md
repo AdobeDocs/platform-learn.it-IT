@@ -3,9 +3,9 @@ title: Campeggio di avvio per i creatori di esperienze
 description: Punto di partenza per i partecipanti al Bootcamp di Experience Makers
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f2af156bd09ed90e5f65e3e7730a20a7e799dccb
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -28,41 +28,45 @@ La personalizzazione su larga scala inizia con la comprensione di ciò che può 
 
 10.00 - 10.30: Kickoff e presentazioni
 
-10.30 - 11.15: Sessione della lavagna: &quot;1-1 personalizzazione, caccia all&#39;attrito, silos, punto di vista Adobe&quot;
+10.30 - 11.00: &quot;Demo del Percorso del cliente - Arte del possibile&quot;
 
-11.15 - 11.30: Interruzione
+11.00 - 11.45: Sessione della lavagna: &quot;1-1 personalizzazione, caccia all&#39;attrito, silos, punto di vista Adobe&quot;
 
-11.30 - 12.00: &quot;Demo del Percorso del cliente - Arte del possibile&quot;
+11.45 - 12.00: Interruzione
 
-12.00 - 12.45: Sessione della lavagna: &quot;Analisi approfondita dell&#39;architettura della soluzione&quot;
+12.00 - 13.00: Sessione della lavagna: &quot;Analisi approfondita dell&#39;architettura della soluzione&quot;
 
-12.45 - 13.45: Interruzione
+13.00 - 14.00: Pranzo
 
-13.45 - 15.00: Flusso utente 1: Esercizio pratico sull&#39;acquisizione
+14.00 - 15.30: Flusso utente 1: Esercizio pratico sull&#39;acquisizione
 
 15.00 - 15.15: Interruzione
 
 15.15 - 17.00: Flusso utente 2: Esercitazione pratica &quot;Registrazione e onboarding&quot;
 
+18.00 - 19.00: Esperienza &quot;Cocktail Making Competition&quot;
+
+19.00 - 22.00: Godetevi la cena
+
 ### Giorno 2
 
-08.00 - 09.30: Sessione colazione: &quot;Introduzione alla distribuzione basata su Percorso di utenti, struttura del team, backlog di consegna&quot;
+09.00 - 09.30: &quot;Introduzione alla distribuzione basata su Percorso di utenti, struttura del team, backlog di consegna&quot;
 
 09.30 - 09.45: Interruzione
 
-09.45 - 11.15: Flusso utente 3: Esercitazione pratica &quot;Blending fisici e digitali&quot;
+09.45 - 11.15: Flusso utente 4: Esercizio pratico sull’analisi dei clienti
 
 11.15 - 11.30: Interruzione
 
-11.30 - 12.30: Flusso dell&#39;utente 3 continuato
+11.30 - 12.30: &quot;Introduzione alla distribuzione basata su Percorso di utenti, struttura del team, backlog di consegna&quot;
 
 12.30 - 13.30: Pranzo
 
-13.30 - 14.30: Flusso utente 4: Esercizio pratico sull’analisi dei clienti
+13.30 - 14.30: Personalizzazione su scala - Come realizzarla
 
 14.30 - 15.00: Conclusioni, fasi successive e fasi successive
 
-15:30: Partenza
+15:00: Aggiorna
 
 ## Prerequisiti
 
