@@ -3,7 +3,7 @@ title: Campeggio di avvio per i creatori di esperienze
 description: Punto di partenza per i partecipanti al Bootcamp di Experience Makers
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: f2af156bd09ed90e5f65e3e7730a20a7e799dccb
+source-git-commit: 9658437fec6208e2688fc7857f13adcc52660caa
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 0%
@@ -40,9 +40,9 @@ La personalizzazione su larga scala inizia con la comprensione di ciò che può 
 
 14.00 - 15.30: Flusso utente 1: Esercizio pratico sull&#39;acquisizione
 
-15.00 - 15.15: Interruzione
+15.30 - 15.45: Interruzione
 
-15.15 - 17.00: Flusso utente 2: Esercitazione pratica &quot;Registrazione e onboarding&quot;
+15.45 - 17.00: Flusso utente 2: Esercitazione pratica &quot;Registrazione e onboarding&quot;
 
 18.00 - 19.00: Esperienza &quot;Cocktail Making Competition&quot;
 
