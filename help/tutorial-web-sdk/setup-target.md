@@ -3,9 +3,9 @@ title: Configurare Adobe Target con Platform Web SDK
 description: Scopri come implementare Adobe Target utilizzando Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementa Adobe Experience Cloud con SDK per web.
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: edbc433e9bd72dfa9b9025063fc90c7fdc2c2774
 workflow-type: tm+mt
-source-wordcount: '3783'
+source-wordcount: '3779'
 ht-degree: 1%
 
 ---
@@ -117,7 +117,7 @@ Target deve essere abilitato nella configurazione del datastream prima che quals
 
 Per configurare Target nel datastream:
 
-1. Vai a [Raccolta dati](https://experience.adobe.com/#/data-collection)Interfaccia {target=&quot;blank&quot;}
+1. Vai a [Raccolta dati](https://experience.adobe.com/#/data-collection){target="blank"} interfaccia
 1. Nella navigazione a sinistra, seleziona **[!UICONTROL Datastreams]**
 1. Seleziona il creato in precedenza `Luma Web SDK` datastream
 
@@ -184,7 +184,7 @@ In primo luogo, è necessario comprendere la terminologia utilizzata nelle inter
 
 Le decisioni di personalizzazione visiva da Target vengono distribuite dall’SDK per web di Platform, se Target è abilitato nel datastream. Tuttavia, _non vengono riprodotti automaticamente_. Per abilitare il rendering automatico, devi modificare la regola di caricamento della pagina globale.
 
-1. In [Raccolta dati](https://experience.adobe.com/#/data-collection)Interfaccia {target=&quot;blank&quot;}, apri la proprietà tag utilizzata per questa esercitazione
+1. In [Raccolta dati](https://experience.adobe.com/#/data-collection){target="blank"} , apri la proprietà tag utilizzata per questa esercitazione.
 1. Apri `all pages - library load - AA & AT` regola
 1. Seleziona la `Adobe Experience Platform Web SDK - Send event` action
 1. Abilita **[!UICONTROL Decisioni relative alla personalizzazione visiva del rendering]** con la casella di controllo
@@ -334,7 +334,7 @@ Ora che hai configurato Platform Web SDK per richiedere il contenuto per `homepa
    // Send a "display" event 
    alloy("sendEvent", {
       xdm: {
-         eventType: "display",
+         eventType: "propositionDisplay",
          _experience: {
             decisioning: {
                propositions: [
