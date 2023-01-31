@@ -6,9 +6,9 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1650'
 ht-degree: 4%
 
 ---
@@ -50,6 +50,7 @@ Prima di seguire i passaggi, assicurati di aver scaricato il [Postman](https://w
 
 1. Dalla cartella dei download, sposta il `platform-utils-main.zip` e decomprimere il file nella posizione desiderata sul computer.
 1. In `luma-data` cartella, apri tutte le `json` file in un editor di testo e sostituisci tutte le istanze di `_techmarketingdemos` con il tuo ID tenant, preceduto da un carattere di sottolineatura.
+1. Apri `luma-offline-purchases.json` in un editor di testo e aggiorna tutte le marche temporali in modo che gli eventi si verifichino nell’ultimo mese (ad esempio, cerca `"timestamp":"2022-06` e sostituiscono l&#39;anno e il mese)
 1. Nota il percorso della cartella decompressa, come necessario in seguito durante la configurazione della `FILE_PATH` Variabile di ambiente Postman:
 
    >[!NOTE]
