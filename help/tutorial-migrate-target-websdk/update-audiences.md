@@ -1,9 +1,9 @@
 ---
 title: Aggiornare tipi di pubblico e script di profilo | Migrare Target da at.js 2.x all’SDK per web
 description: Scopri come aggiornare i tipi di pubblico e gli script di profilo di Adobe Target per garantire la compatibilità con Experience Platform Web SDK.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,11 @@ Tutti i parametri mbox di Target devono essere trasmessi in formato XDM con un�
 * Aggiorna i tipi di pubblico che utilizzano parametri mbox
 * Aggiornare gli script di profilo che utilizzano parametri mbox
 * Aggiorna offerte e attività utilizzando la sostituzione del token del parametro mbox (ad esempio, `${mbox.parameter_name}`)
+
+
+>[!WARNING]
+>
+> Le implementazioni di Platform Web SDK iniziate dopo il 1° ottobre 2022 potrebbero dover utilizzare il [soluzione alternativa alla preacquisizione](prefetch-workaround.md) per utilizzare con successo alcune delle funzioni descritte in questa pagina.
 
 ## Regolare il pubblico
 

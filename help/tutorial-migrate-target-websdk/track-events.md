@@ -1,9 +1,9 @@
 ---
 title: Tracciare gli eventi | Migrare Target da at.js 2.x all’SDK per web
 description: Scopri come tenere traccia degli eventi di conversione di Adobe Target utilizzando Experience Platform Web SDK.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '681'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,10 @@ Gli eventi di conversione per Target possono essere tracciati con l’SDK per we
 * Eventi tracciati automaticamente che non richiedono alcuna configurazione
 * Acquistare eventi di conversione che devono essere regolati in base alle best practice per l’implementazione dell’SDK per web di Platform
 * Eventi di conversione non di acquisto che richiedono aggiornamenti del codice
+
+>[!WARNING]
+>
+> Le implementazioni di Platform Web SDK iniziate dopo il 1° ottobre 2022 potrebbero dover utilizzare il [soluzione alternativa alla preacquisizione](prefetch-workaround.md) per tenere traccia di alcuni degli eventi descritti in questa pagina.
 
 ## Confronto del tracciamento degli obiettivi
 
