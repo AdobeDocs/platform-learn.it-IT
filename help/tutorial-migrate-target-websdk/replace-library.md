@@ -1,9 +1,9 @@
 ---
 title: Sostituire la libreria | Migrare Target da at.js 2.x all’SDK per web
 description: Scopri come migrare un’implementazione Adobe Target da at.js 2.x a Adobe Experience Platform Web SDK. Gli argomenti includono la panoramica della libreria, le differenze di implementazione e altri callout importanti.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 8d41e5d6434dabff0443e932be842b37553d72a9
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1708'
 ht-degree: 1%
 
 ---
@@ -207,6 +207,12 @@ Per ulteriori informazioni su come Platform Web SDK può gestire la visualizzazi
 
 L’SDK per web di Platform deve essere configurato a ogni caricamento di pagina. La `configure` deve sempre essere il primo comando SDK chiamato. L’esempio seguente presuppone che l’intero sito sia in fase di aggiornamento a Platform Web SDK in un’unica implementazione:
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
+La `edgeConfigId` è [!UICONTROL ID Datastream]
+
 ```JavaScript
 alloy("configure", {
   "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
@@ -214,7 +220,19 @@ alloy("configure", {
 });
 ```
 
+>[!TAB tag]
+
+Nelle implementazioni dei tag, molti campi vengono compilati automaticamente o possono essere selezionati dai menu a discesa. Tieni presente che una piattaforma diversa [!UICONTROL sandbox] e [!UICONTROL datastreams] può essere selezionato per ogni ambiente. Il datastream cambierà in base allo stato della libreria di tag nel processo di pubblicazione.
+
+![configurazione dell’estensione tag SDK per web](assets/tags-config.png)
+>[!ENDTABS]
+
 Se prevedi di migrare da at.js a Platform Web SDK a livello di pagina, sono necessarie le seguenti opzioni di configurazione:
+
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("configure", {
@@ -224,6 +242,11 @@ alloy("configure", {
   "idMigrationEnabled":true
 });
 ```
+
+>[!TAB tag]
+
+![configurazione delle opzioni di migrazione dell’estensione del tag SDK per web](assets/tags-config-migration.png)
+>[!ENDTABS]
 
 Le opzioni di configurazione valide per Target sono descritte di seguito:
 
