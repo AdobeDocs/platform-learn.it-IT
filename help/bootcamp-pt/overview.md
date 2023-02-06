@@ -2,22 +2,22 @@
 title: Bootcamp di Experience Makers - Brasile
 description: Punto di partenza per i partecipanti al Bootcamp di Experience Makers
 doc-type: multipage-overview
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
 
 # Campeggio di avvio per i creatori di esperienze
 
-## Panoramica
+## Visão Geral
 
-Portoghese: Molte organizzazioni non sono consapevoli dell&#39;attrito esistente nel percorso dei clienti, che è la conseguenza di un approccio silenzioso e frammentato nell&#39;orchestrazione della comunicazione con i clienti. I dati, i profili e i contenuti devono essere perfettamente allineati per progettare e fornire esperienze cliente eccezionali.
+Muitas empresas não estão cientes do atrito que esiste na jornada dos seus clientes, consequência de uma abordagem fragmentada e não integrada ao orquestrar a comunicação com o cliente. Dados, perfil e conteúdo precisam estar perfeitamente alinhados para projetar e oferecer experiências excepcionais ao consumidor.
 
-Partecipa a questo bootcamp per scoprire come un approccio basato su piattaforma può aiutarti a ottenere le informazioni necessarie per identificare e rimuovere i punti di attrito per migliorare il percorso del cliente.
+Partecipa deste Bootcamp para aprender como uma abordagem baseada em plataforma pode ajudar na obtenção dos insights necessários para identity e remover pontos de atrito para apourar a jornada do seu cliente.
 
-La personalizzazione su larga scala inizia con la comprensione di ciò che può essere migliorato, e una visione in tempo reale del cliente è fondamentale a questo scopo. Le informazioni portano all&#39;azione, che porta a più informazioni. L’approccio esclusivo incentrato sulla piattaforma di Adobe offre gli strumenti per promuovere non solo il cambiamento tecnologico, ma anche l’impatto dell’organizzazione, del team e della capacità di offrire un’esperienza cliente olistica invece che un’esperienza cliente specifica per il canale.
+A personalização em escala começa com a compressensão do que pode ser apourado e, para isso, uma visão em tempo real do seu cliente é essencial. Approfondimenti levam à ação, o que leva a mais insights. A abordagem esclusiva da Adobe focada na plataforma fornece as ferramentas para, além de impulsionar os avanços tecnológicos, impactar sua organização, sua attrezze sua condensidade de oferecer uma experiência holística em vez de experiência do dencia por canal.
 
 >[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
 
@@ -25,88 +25,86 @@ La personalizzazione su larga scala inizia con la comprensione di ciò che può 
 
 ### Giorno 1
 
-10.00 - 10.30: Kickoff e presentazioni
+9.00 - 10.00: Café da manhã &amp; Rete
 
-10.30 - 11.15: Sessione della lavagna: &quot;1-1 personalizzazione, caccia all&#39;attrito, silos, punto di vista Adobe&quot;
+10.00 - 10.30: &#x200B; Boas-Vindas
 
-11.15 - 11.30: Interruzione
+10.30 - 11.00: Jornada do cliente: &quot;Arte del possibile&quot; (sessão em inglês) &#x200B;
 
-11.30 - 12.00: &quot;Demo del Percorso del cliente - Arte del possibile&quot;
+11.00 - 12.00: Personalização esponencial vs Ecossistemas em silos (sessão em inglês) &#x200B;
 
-12.00 - 12.45: Sessione della lavagna: &quot;Analisi approfondita dell&#39;architettura della soluzione&quot;
+12.00 - 13.30: &#x200B; di rete Almoço e
 
-12.45 - 13.45: Interruzione
+13.30 - 14.30: Arquitetura de solução (sessão em inglês) &#x200B;
 
-13.45 - 15.00: Flusso utente 1: Esercizio pratico sull&#39;acquisizione
+14.30 - 16.00: Fallo da solo: Aquisição &#x200B;
 
-15.00 - 15.15: Interruzione
+16.00 - 16.15: Ora di interruzione
 
-15.15 - 17.00: Flusso utente 2: Esercitazione pratica &quot;Registrazione e onboarding&quot;
+16.15 - 18.00: Fallo da solo: Cadastro e &#x200B; di onboarding
+
 
 ### Giorno 2
 
-08.00 - 09.30: Sessione colazione: &quot;Introduzione alla distribuzione basata su Percorso di utenti, struttura del team, backlog di consegna&quot;
+09.00 - 10.00: Café da manhã &amp; Rete
 
-09.30 - 09.45: Interruzione
+10.00 - 10.45: Introduzione: jornada do cliente, estrutura de times e backlog
 
-09.45 - 11.15: Flusso utente 3: Esercitazione pratica &quot;Blending fisici e digitali&quot;
+10.45 - 12.00: Fallo da solo: Consolidando o online o offline
 
-11.15 - 11.30: Interruzione
+12.00 - 13.40: &#x200B; di rete Almoço e
 
-11.30 - 12.30: Flusso dell&#39;utente 3 continuato
+13.45 - 14.45: Fallo da solo: Análise de jornadas - fidelizando e retendo clientes
 
-12.30 - 13.30: Pranzo
+14.45 - 16.00: Conclusões e próximos passos
 
-13.30 - 14.30: Flusso utente 4: Esercizio pratico sull’analisi dei clienti
+16.00 - 19.00: Flusso utente 4: Rete e felice ora
 
-14.30 - 15.00: Conclusioni, fasi successive e fasi successive
 
-15:30: Partenza
+## Pré-requisiti
 
-## Prerequisiti
-
-- Accesso a Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Accesso alla raccolta dati di Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Accesso al sito web del bootcamp su [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)
+- Acesso à Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Sito di Acesso ao do bootcamp em [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)
 
 >[!IMPORTANT]
 >
->Questa esercitazione è stata creata per facilitare un particolare formato del workshop. Utilizza sistemi e account specifici a cui potresti non avere accesso. Anche senza accesso, pensiamo che si possa ancora imparare molto leggendo attraverso questo contenuto molto dettagliato. Se partecipi a uno dei workshop e hai bisogno delle tue credenziali di accesso, contatta il tuo rappresentante di Adobe che ti fornirà le informazioni richieste.
+>Este tutorial foi criado para facilitar um formato pecífico de workshop. Esercitazione a favore delle Sistemas e contas eificos aos quais você pode não ter acesso são utilizados neste. Mesmo sem acesso, você ainda pode aprendmuito com a leitura deste conteúdo detalhado. Se você é um partecipante de um dos workshops e precisa das credenciais de acesso, entre em contato com seu rappresentante da Adobe para receber as informações necessárias. .
 
-## Architettura
+## Arquitetura
 
-Prima di iniziare con gli esercizi pratici, consulta l’architettura alla base di questa esercitazione. Questo bootcamp approfondisce una serie di funzioni e funzionalità intorno a Adobe Experience Platform, e discuterà anche diverse integrazioni tra diverse sorgenti e destinazioni. Per comprendere correttamente l’architettura alla base di questa esercitazione e il posizionamento complessivo di Adobe Experience Platform nell’ecosistema aziendale, guarda innanzitutto il video e il diagramma dell’architettura.
+Antes de começar os exercícios práticos, consolta un tutorial arquitetura por trás deste. Este bootcamp irá detalhar vários ricorsos e funcionalidades da Adobe Experience Platform e discussioni múltiplas integrações em várias fontes e destos. Para compressender de forma adequada a arquitetura por trás deste tutorial e o posicionamento geral da Adobe Experience Platform no seu ecossistema corporativo, comece revisando o vídeo e o diagrammi da arquitetura.
 
-Vai a [Architettura](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en).
+Acessar [Arquitetura](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=pt-BR).
 
-## Video
+## Vídeo
 
-L&#39;obiettivo principale del nostro Experience Makers Bootcamp è quello di aiutare le organizzazioni a comprendere cosa significa la personalizzazione su scala e quanto è molto diverso da quello che la maggior parte delle organizzazioni sta facendo oggi. Per fornire ai clienti esperienze coerenti, contestuali e in tempo reale in un mondo omni-channel, è necessario un approccio basato su piattaforme per definire tutto una volta sola e riutilizzarlo ovunque. All&#39;interno del bootcamp, ti portiamo su un percorso reale che combina le interazioni dei clienti tra siti web, app mobili, call center e offline, in-store per mostrare cosa significa veramente la personalizzazione su larga scala, in modo pratico.
+O objetprincipal do nosso bootcamp para Experience Makers é judar as empresas a compender o que significa personalização em escala e como isso muito diferente do que a maioria das empresas fazem ativo. Para oferecer experiências do cliente que sejam concientes, contextuais e em tempo real em um mundo omnichannel, você precisa de uma mentalidade que coloque a plataforma em primeiro ammirar, onde tudo é definido apenas uma vez e reutilizado em todos os lugares. Nessun bootcamp, levamos você em uma jornada real que combina interações com o cliente no site, no aplicativo móvel, no call center e no call center da loja para mostrar o que a personalização em escala significa, de maneira prática.
 
 >[!VIDEO](https://video.tv.adobe.com/v/345446?quality=12&enable=on)
 
-Sono stati creati molti altri video che mostrano elementi del bootcamp e potenti integrazioni tra Adobe Experience Platform e applicazioni non Adobi. Fai clic sul collegamento seguente per trovare una panoramica di questi video.
+Vários outros vídeos foram criados para dimostrar elementos do Bootcamp e integrações poderosas entre a Adobe Experience Platform e aplicativos que não são da Adobe. Clique no link abaixo para encontrar uma visão geral desses vídeos.
 
-Vai a [Video](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en).
+Acesse: [Vídeo](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=pt-BR).
 
 ## YouTube
 
-Puoi trovare altri video interessanti [sul nostro canale YouTube](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+É possível encontrar vídeos interessantes adicionais [em nosso canale do YouTube](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
 
 ## Flussi utente
 
-[1. Acquisizione](./uc/uc1/uc1.md)
+[1. Aquisição](./uc/uc1/uc1.md)
 
-In questo flusso di utenti, comprenderai tutti gli elementi necessari per implementare casi di utilizzo incentrati sull&#39;acquisizione per utenti sconosciuti e non autenticati insieme a utenti noti e autenticati tramite Real-Time CDP.
+Neste User Flow, você irá comender toos elementos necessários implementar casos de uso com foco em aquisição desconhecidos e não autentic ados, em conjunto com usuários autentic e conhecidos para a Real-Time CDP.
 
-[2. Registrazione e onboarding](./uc/uc2/uc2.md)
+[2. Cadastro e onboarding](./uc/uc2/uc2.md)
 
-In questo flusso di utenti, comprenderai tutti gli elementi necessari per implementare i casi di utilizzo di registrazione e onboarding utilizzando Real-Time CDP e Adobe Journey Optimizer.
+Neste User Flow, você irá compressender todos elementos necessários para implementar casos de cadastro e onboarding a Real-Time CDP e o Adobe Journey Optimizer.
 
-[3. Fusione fisica e digitale](./uc/uc3/uc3.md)
+[3. Combinação do físico e do digital ](./uc/uc3/uc3.md)
 
-In questo flusso di utenti, personalizzerai l’esperienza del cliente tra canali online e offline in modo coerente, utilizzando Real-Time CDP e Adobe Journey Optimizer.
+Flusso utente Nesse, você irá personalizar a experiência do cliente nos canais online e offline de maneira consistente, a Real-Time CDP e o Adobe Journey Optimizer.
 
 [4. Analisi del Percorso cliente](./uc/uc4/uc4.md)
 
-In questo flusso di utenti, acquisirai familiarità con il Customer Journey Analytics e acquisirai informazioni approfondite sull&#39;evoluzione dei clienti da un canale all&#39;altro, da online a offline a callcenter e altro ancora.
+Neste User Flow, você irá se familiarizar com o Customer Journey Analytics e obter informações sobre como os clientes estão evoluindo de um canal para outro, do online para o offline, para o call center e muito mais.

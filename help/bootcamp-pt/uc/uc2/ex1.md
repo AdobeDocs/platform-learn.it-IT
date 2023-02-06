@@ -5,69 +5,69 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '368'
 ht-degree: 2%
 
 ---
 
-# 2.1 Visita il sito web e crea il tuo account
+# 2.1 Visita sul sito e crie sua sua conta conta conta
 
-## Contesto
+## Contexto
 
-Il percorso da sconosciuto a noto è uno degli argomenti più importanti tra i marchi di oggi, così come il percorso dei clienti dall&#39;acquisizione alla fidelizzazione.
+A jornada do desconhecido ao conhecido é um dos tópicos mais importantes para as marcas atcome, assim como a jornada do cliente, da aquisição à retenção.
 
-Adobe Experience Platform gioca un ruolo enorme in questo percorso. La piattaforma è il cervello della comunicazione, **sistema di registrazione delle esperienze**.
+Un Adobe Experience Platform desempenha um celebel grande nessa jornada. A plataforma é o cérebro da comunicação, o **sistema di registrazione delle esperienze**.
 
-Platform è un ambiente in cui la parola cliente è più ampia dei soli clienti noti. Un visitatore sconosciuto sul sito web è anche un cliente dal punto di vista di Platform e, di conseguenza, a Platform viene inviato anche tutto il comportamento di un visitatore sconosciuto. Grazie a questo approccio, quando il visitatore diventa un cliente noto, un marchio può visualizzare anche ciò che è successo prima di quel momento. Questo aiuta dal punto di vista dell’attribuzione e dell’ottimizzazione dell’esperienza.
+Plataforma é um ambiente em que a palavra clienti engloba mais do que clientes conhecidos. Um visitante desconhecido no site também é cliente do ponto de vista da Plataforma e, como tal, todo o comportamento de um visitante desconhecido também é enviado à Plataforma. Graças a essa abordagem, quando esse visitante se ricompensa um clienti conhecido, uma marca também pode visualizar o que aconteceu antes daquele momento. Isso ajuda a partir de uma perspectiva de otimização de atribuição e experiência.
 
-## Flusso del percorso cliente
+## Fluxo da jornada do cliente
 
-Vai a [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Fai clic su **Consenti tutto**. In base al comportamento di navigazione nel flusso di utenti precedente, vedrai che la personalizzazione si verifica nella home page del sito web.
+Acesse [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clipart **Consenti tutto**. Com base no seu comportamento de navegação no fluxo de usuário anteriore, você verá a personalização acontecer na página inicial do site.
 
 ![DSN](./images/web8.png)
 
-Fai clic sull’icona del logo Adobe nell’angolo in alto a sinistra dello schermo per aprire il Visualizzatore profili. Guarda il pannello Visualizzatore profili e il Profilo cliente in tempo reale con **ID Experience Cloud** come identificatore principale per questo cliente attualmente sconosciuto.
+Clique no ícone do logotipo da Adobe no canto superior esquerdo da tela para abrir o Visualizador de perfil. Verificativo o dolorel do Visualizador de perfil e no Perfil do cliente em tempo reale com o **ID Experience Cloud** como identificador primário para este cliente ainda é desconhecido.
 
 ![Demo](./images/pv1.png)
 
-Puoi anche visualizzare tutti gli eventi di esperienza raccolti in base al comportamento del cliente.
+Você também pode ver todos os Eventos de experiência coletados com base no comportamento do cliente.
 
 ![Demo](./images/pv3.png)
 
-Fai clic sul pulsante **Profilo** nell’angolo in alto a destra dello schermo.
+Clique no ícone **Profilo** nessun canto superiore direito da tela.
 
 ![Demo](./images/pv4.png)
 
-Fai clic su **Creare un account**.
+Clipart **Creare un account**.
 
 ![Demo](./images/pv5.png)
 
-Compila tutti i campi del modulo. Utilizza un valore reale per l’indirizzo e-mail e il numero di telefono, in quanto verrà utilizzato in esercizi successivi per la consegna di e-mail e SMS.
+Preencha todos os campos do formulário. Usa um valor real para endereço de e-mail e número de telefone, pois será usado em exercícios posteriori para envio de e-mail e SMS.
 
 ![Demo](./images/pv7.png)
 
-Scorri verso il basso e fai clic su **Registro**.
+Ruolo para baixo e clique em **Registro**.
 
 ![Demo](./images/pv8.png)
 
-Vedrete questo.
+Em seguida, o seguinte será exibido.
 
 ![Demo](./images/pv9.png)
 
-Riceverai anche questa e-mail:
+Você também receberá o seguinte e-mail:
 
 ![Demo](./images/pv10.png)
 
-E un paio di minuti dopo, riceverai anche questa e-mail:
+E alguns minutos depois, você também receberá o seguinte e-mail:
 
 ![Demo](./images/pv11.png)
 
-Vediamo come è stato configurato il percorso di onboarding successivo.
+Vamos conferir a seguir como essa jornada de onboarding foi configurada.
 
-Passaggio successivo: [2.2 Creare un evento](./ex2.md)
+Próxima etapa [2.2 Crie seu evento](./ex2.md)
 
-[Torna al flusso utente 2](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Torna a tutti i moduli](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

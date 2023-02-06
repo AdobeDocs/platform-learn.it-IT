@@ -5,54 +5,54 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
 
-# 3.4 Testare il percorso
+# 3.4 Teste sua jornada
 
-Per testare il percorso, è necessario utilizzare l’ID evento dell’evento creato nell’esercizio 3.2, che è simile al seguente.
+Para testar sua jornada, você deve usar o eventID criado no exercício 3.2, que deve ser semelhante ao seguinte.
 
 ![ACOP](./images/payloadeventID.png)
 
-L’ID evento è ciò che deve essere inviato a Adobe Experience Platform per attivare il percorso. In questo esempio, l&#39;ID evento è:
+O eventID é o que precisa ser enviado à Adobe Experience Platform para acionar a jornada. Neste example, o eventID é:
 `e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5`.
 
-Apri l’app mobile e vai alla home page. Fai clic sul pulsante **Impostazioni** icona.
+Abra o aplicativo móvel e vá para a página inicial. Clique no ícone de **Configuração**.
 
 ![DSN](./images/appsett.png)
 
-Incolla l’ID evento nel campo . **ID evento beacon** e fai clic su **Salva**.
+Cole set eventID non campo **ID evento beacon** e clique em **Salva**.
 
 ![DSN](./images/beacon1.png)
 
-Prima di continuare, aprire questa pagina Web sul computer: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de continuar, abra esta página da Web em seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
-Vedrai questo:
+Em seguida, será exibida a tela:
 
 ![DSN](./images/screen1.png)
 
-Poi, torna alla homepage. Fai clic sul pulsante **beacon** icona.
+Retorne para a página inicial. Clique no ícone do **beacon**.
 
 ![DSN](./images/app23.png)
 
-Vedrete questo. Per prima cosa, seleziona **Beacon schermo del campeggio di avvio** quindi fai clic sul pulsante **voce** pulsante . Questo ti consente di simulare una voce del beacon.
+Primeiro, selione **Beacon schermo del campeggio di avvio** e clique no botão de **entrada** pulsante . Isso permitirá que você simule uma entrada do beacon.
 
 ![DSN](./images/app21.png)
 
-Ora, date un&#39;occhiata alla schermata in-store. L’ultimo prodotto visualizzato verrà visualizzato entro 5 secondi.
+Agora conferma a tela da loja. Você verá o último produto visualizado aparecer nessa tela em 5 segundos.
 
 ![DSN](./images/beacon3.png)
 
-Avrai anche ricevuto la notifica push.
+Você também terá recbido sua notificação push.
 
 ![DSN](./images/beacon2.png)
 
-Ora avete finito questo esercizio.
+Você terminou este exercício.
 
-[Torna al flusso utente 3](./uc3.md)
+[Retornar para Fluxo de Usuário 3](./uc3.md)
 
-[Torna a tutti i moduli](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

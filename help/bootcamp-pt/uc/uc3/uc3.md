@@ -5,43 +5,43 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 1%
+source-wordcount: '205'
+ht-degree: 0%
 
 ---
 
-# 3. Fusione fisica e digitale
+# 3. Retornar para Todos os Módulos
 
-## Finalità di apprendimento
+## Objetivos de aprendizado
 
-## Prerequisiti
+## Pré-requisiti
 
-- Accesso a Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Accesso alla raccolta dati di Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Accesso al sito web demo
+- Acesso à Adobe Experience Platform:  [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Sito Acesso ao de dimostração
 
 >[!IMPORTANT]
 >
->Questa esercitazione è stata creata per facilitare un particolare formato di bootcamp. Utilizza sistemi e account specifici a cui potresti non avere accesso. Anche senza accesso, pensiamo che si possa ancora imparare molto leggendo attraverso questo contenuto molto dettagliato. Se sei un partecipante a uno dei campi di avvio e hai bisogno delle tue credenziali di accesso, contatta il tuo rappresentante di Adobe che ti fornirà le informazioni richieste.
+>Este tutorial foi criado para facilitar um formato specífico de bootcamp. Esercitazione a favore delle Sistemas e contas eificos aos quais você pode não ter acesso são utilizados neste. Mesmo sem acesso, você ainda pode aprendmuito com a leitura deste conteúdo detalhado. Se você é um partecipante de um bootcamp e precisa das credenciais de acesso, entre em contato com seu rappresentante da Adobe para receber as informações necessárias.
 
-## Esercizi
+## Exercícios
 
-[3.1 Utilizza l’app mobile e attiva una voce beacon](./ex1.md)
+[3.1 Uso del beacon aplicativo móvel e acione sinalizador](./ex1.md)
 
-In questo esercizio imparerai come configurare un evento.
+Neste exercício, você irá aprender como configurar um evento.
 
-[3.2 Creare un evento](./ex2.md)
+[3.2 Crie seu evento](./ex2.md)
 
-In questo esercizio imparerai come configurare un evento.
+Neste exercício, você irá aprender como configurar um evento.
 
-[3.3 Creare il percorso e la notifica push](./ex3.md)
+[3.3 Crie sua jornada e notificação push](./ex3.md)
 
-In questo esercizio imparerai come configurare un percorso e una notifica push e come collegare l’evento e il messaggio a quel percorso.
+Neste exercício, você irá aprender como configurar uma jornada e uma notificação push e como vincular seu evento e mensagem para a jornada.
 
-[3.4 Testare il percorso](./ex4.md)
+[3.4 Teste sua jornada](./ex4.md)
 
-In questo esercizio imparerai come configurare un percorso e come collegare l’evento e il messaggio a quel percorso.
+Neste exercício, você irá aprender como configurar uma jornada e como vincular seu evento e mensagem para a jornada.
 
-[Torna a tutti i moduli](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

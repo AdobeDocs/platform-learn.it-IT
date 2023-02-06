@@ -5,57 +5,57 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 3%
+source-wordcount: '293'
+ht-degree: 1%
 
 ---
 
-# 1.5 Intervenire: inviare il segmento a Facebook
+# 1.5 Ação: invidia seu segmento para o Facebook
 
-Vai a [Adobe Experience Platform](https://experience.adobe.com/platform). Dopo aver effettuato l&#39;accesso, si aprirà la homepage di Adobe Experience Platform.
+Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer login, você irá acessar a página inicial da Adobe Experience Platform.
 
 ![Acquisizione dei dati](./images/home.png)
 
-Prima di continuare, devi selezionare un **sandbox**. La sandbox da selezionare è denominata ``Bootcamp``. Per eseguire questa operazione, fai clic sul testo **[!UICONTROL Produzione Prod]** nella linea blu sopra lo schermo. Dopo aver selezionato il [!UICONTROL sandbox], vedrai la modifica dello schermo e ora sei nel tuo dedicato [!UICONTROL sandbox].
+Antes de continuar, você precisa selionar um **sandbox**. O nome fare sandbox un ser selionado é Bootcamp. É possível fazer isso clicando nessun texto **[!UICONTROL Produzione Prod]** na linha azul na parte superior da tela. depois de selionar o sandbox apropriado, você verá a tela mudando e agora você está em seu [!UICONTROL sandbox] dedica.
 
 ![Acquisizione dei dati](./images/sb1.png)
 
-Nel menu a sinistra, vai a **Destinazioni**, quindi vai a **Catalogo**. Vedrai il **Catalogo delle destinazioni**. In **Destinazioni**, fai clic su **Attiva segmenti** sulla **Pubblico personalizzato facebook** il Card.
+Nessun menu à esquerda, vá para **Destinazioni** e, em seguida, vá para **Catalogo**. Você verá o **Catalogo delle destinazioni**. Em **Destinazioni**, clique em **Attiva segmenti** no cartão **Pubblico personalizzato facebook**.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-Selezionare la destinazione **bootcamp-facebook** e fai clic su **Successivo**.
+Selecione o **bootcamp-facebook** e clique em **Successivo**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
-Nell’elenco dei segmenti disponibili, seleziona il segmento creato nell’esercizio precedente. Fai clic su **Avanti**.
+Na lista de segmentos disponíveis, selione o segmento que você criou no exercício anteriore. Clipart **Successivo**.
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-Sulla **Mappatura** assicurati che **Applica trasformazione** la casella di controllo è abilitata. Fai clic su **Avanti**.
+Página **Mappatura**, verificabile se a caixa de seleção **Applica trasformazione** está marcada. Clipart **Successivo**.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-Sulla **Pianificazione del segmento** , seleziona la **Origine del pubblico** e impostarlo su **Direttamente dai clienti**. Fai clic su **Avanti**.
+Página **Pianificazione del segmento**, seleziona a **Origine del pubblico** e defina como **Direttamente dai clienti**. Clipart **Successivo**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-Infine, **Revisione** pagina, fai clic su **Fine**.
+Por fim, na página **Revisione**, clique em **Fine**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 
-Il segmento è ora collegato a tipi di pubblico personalizzati di Facebook. Ogni volta che un cliente si qualifica per questo segmento, viene inviato un segnale al server Facebook per includere tale cliente nel pubblico personalizzato sul lato Facebook.
+Seu segmento agora está vinculado aos Públicos Personalizados do Facebook. Sempre que um cliente Qualar para esse segmento, um sinal será enviado ao lado do servdor (lato server) do Facebook para incluir esse cliente no Público Personalizado no lado do do Facebook.
 
-In Facebook, troverai il segmento da Adobe Experience Platform in Tipi di pubblico personalizzati :
+No Facebook, você encontrará seu segmento da Adobe Experience Platform em Públicos Personalizados:
 
 ![RTCDP](./images/rtcdpcreatedest5b.png)
 
-Ora puoi vedere il pubblico personalizzato visualizzato in Facebook:
+Agora você pode ver seu público personalizado aparecer no Facebook:
 
 ![RTCDP](./images/rtcdpcreatedest5a.png)
 
-[Torna al flusso utente 1](./uc1.md)
+[Retornar para Fluxo de Usuário 1](./uc1.md)
 
-[Torna a tutti i moduli](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

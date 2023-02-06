@@ -5,87 +5,87 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
 
-# 2.6 Personalizzazione nel call center
+# 2.6 Personalizzazione senza call center
 
 Come già discusso più volte durante il bootcamp, personalizzare l’esperienza del cliente è qualcosa che dovrebbe accadere in modo omnicanale. Un call center è spesso completamente disconnesso dal resto del percorso di clienti e questo porta spesso a esperienze frustranti per i clienti, ma non è necessario che lo sia. Mostriamo un esempio di come il call center può essere facilmente collegato a Adobe Experience Platform in tempo reale.
 
-## Flusso del Percorso cliente
+## Fluxo da jornada do cliente
 
-Nell’esercizio precedente, utilizzando l’app mobile, hai acquistato un prodotto facendo clic sul pulsante **Acquista** pulsante .
+No exercício anteriore, o aplicativo móvel, você comprou um produto clicando no botão **Acquista**.
 
 ![DSN](./images/app20.png)
 
-Supponiamo che tu abbia una domanda sullo stato del tuo ordine, cosa faresti? In genere, il call center viene chiamato.
+Vamos supor que você tenha uma pergunta sobre o status do seu pedido, o que você faria? Normalmente, você ligaria para o call center.
 
-Prima di chiamare il call center, devi conoscere il tuo **ID fedeltà**. Puoi trovare il tuo ID fedeltà nel Visualizzatore profili del sito web.
+Antes de ligar para o call center, você precisa saber seu **ID fedeltà**. Você pode encontrar seu ID de fidelidade no Visualizador de Perfil do site.
 
 ![DSN](./images/cc1.png)
 
-In questo caso, il **ID fedeltà** è **5863105**. Come parte dell’implementazione personalizzata della funzione call center nell’ambiente demo, devi aggiungere un prefisso al tuo **ID fedeltà**. Il prefisso è **11373**, quindi l’ID fedeltà da utilizzare in questo esempio è **11373 5863105**.
+Nesse Cio, o **ID fedeltà** é **5863105**. Como parte de nossa implementação personalizada do ricorso de call center no ambiente de dimostração, você dev adicionar um prefixo ao seu **ID fedeltà**. O prefixo é **11373**, portanto, o ID de fidelidade a ser usado neste exemplo é **11373 5863105**.
 
-Facciamolo ora. Usa il telefono e chiama il numero **+1 (323) 745-1670**.
+Vamos fazer isso agora. Usa seu telefone e ligue para o número **+1 (323) 745-1670**.
 
 ![DSN](./images/cc2.png)
 
-Ti verrà chiesto di inserire il tuo ID fedeltà, seguito da **#**. Immetti il tuo ID fedeltà.
+Será solicitado que você insira seu ID de fidelidade, seguido de **#**. Digite seu ID de fidelidade.
 
 ![DSN](./images/cc3.png)
 
-A quel punto sentirete **Ciao, nome**. Questo nome viene preso dal Profilo del cliente in tempo reale in Adobe Experience Platform. Poi hai 3 scelte. Numero della stampa **1**, **Stato dell&#39;ordine**.
+Você ouvirá **Ciao, nome del seu** nome. Esse nome é retirado do Perfil do Cliente tempo reale na Adobe Experience Platform. Você tem 3 escolide. Pressione o número **1**, **Stato dell&#39;ordine**.
 
 ![DSN](./images/cc4.png)
 
-Dopo aver sentito il tuo stato d&#39;ordine, ti sarà data la possibilità di scegliere di premere **1** per tornare al menu principale o altro, premere 2. Press **2**.
+Depois de ouvir o status do seu pedido, você terá a opção de pressionar **1** para voltar ao menù principal ou pressionar 2. ssione **2**.
 
 ![DSN](./images/cc5.png)
 
-Verrà quindi chiesto di valutare l&#39;esperienza del call center selezionando un numero compreso tra 1 e 5, con 1 basso e 5 alto. Fate la vostra scelta.
+Em seguida, será solicitado que você avalie sua experiência de call center, selecionando um número entre 1 e 5, sendo 1 baixo e 5 alto. Faça a sua escolha.
 
 ![DSN](./images/cc6.png)
 
-La chiamata al call center terminerà.
+Sura chamada para o call center será encerrada.
 
-Vai a [Adobe Experience Platform](https://experience.adobe.com/platform). Dopo aver effettuato l&#39;accesso, si aprirà la homepage di Adobe Experience Platform.
+Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer login, você irá acessar a página inicial da Adobe Experience Platform.
 
 ![Acquisizione dei dati](./images/home.png)
 
-Prima di continuare, devi selezionare un **sandbox**. La sandbox da selezionare è denominata ``Bootcamp``. Per eseguire questa operazione, fai clic sul testo **[!UICONTROL Produzione Prod]** nella linea blu sopra lo schermo. Dopo aver selezionato il [!UICONTROL sandbox], vedrai la modifica dello schermo e ora sei nel tuo dedicato [!UICONTROL sandbox].
+Antes de continuar, você precisa selionar um **sandbox**. O nome do sandbox un utente selionado é ``Bootcamp``. É possível fazer isso clicando nessun texto **[!UICONTROL Produzione Prod]** na linha azul na parte superior da tela. Depois de selionar o [!UICONTROL sandbox] apropriado, você verá a tela mudando e agora você está em seu [!UICONTROL sandbox] dedica.
 
 ![Acquisizione dei dati](./images/sb1.png)
 
-Nel menu a sinistra, vai a **Profili** e **Sfoglia**.
+Nessun menu à esquerda, acesse **Profili** e **Sfoglia**.
 
 ![Profilo cliente](./images/homemenu.png)
 
-Seleziona la **Spazio dei nomi identità** **E-mail** e inserisci l&#39;indirizzo e-mail del tuo profilo cliente. Fai clic su **Visualizza**. Fai clic su per aprire il tuo profilo.
+Selecione o **Spazio dei nomi identità** **E-mail** e insira o endereço de e-mail do seu perfil de cliente. Clipart **Visualizza**. Clique para abrir seu perfil.
 
 ![DSN](./images/cc7.png)
 
-Vedrai di nuovo il tuo profilo cliente. Vai a **Eventi**.
+Você verá seu perfil de cliente novamente. Acesse **Eventi**.
 
 ![DSN](./images/cc8.png)
 
-In eventi, visualizzerai 2 eventi con un eventType di **callCenter**. Il primo evento è il risultato della tua risposta alla domanda **Valuta la tua soddisfazione di chiamata**.
+Em eventos, você verá 2 eventos com um eventType de **callCenter**. O primeiro evento é o risultante da sua resposta à pergunta Avalie o seu n **Valuta la tua soddisfazione di chiamata**.
 
 ![DSN](./images/cc9.png)
 
-Scorri un po&#39; verso il basso e vedrai l&#39;evento registrato quando hai selezionato l&#39;opzione per controllare il tuo **Stato dell&#39;ordine**.
+Ruolo um pouco para baixo e você verá o evento que foi registrado quando você selion ou a opção de verify o **Stato dell&#39;ordine**.
 
 ![DSN](./images/cc10.png)
 
-Vai a **Iscrizione al segmento**. Ora vedrai che 2 segmenti si qualificano sul tuo profilo, in tempo reale, in base alle interazioni che hai avuto attraverso il call center. Le appartenenze a questi segmenti possono e devono quindi essere utilizzate per influenzare ciò che la comunicazione e la personalizzazione si verificano in qualsiasi altro canale.
+Acesse **Iscrizione al segmento**. Agora você verá que 2 segmentos se Qualam em seu perfil, em tempo real, com base nas interações que você teve por meio do call center. Essas associações de segmento podem e devem ser usadas para impactar qual comunicação e personalização ação acontece em qualquer outro canal.
 
 ![DSN](./images/cc11.png)
 
-Ora avete finito questo esercizio.
+Você terminou este exercício.
 
-[Torna al flusso utente 2](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Torna a tutti i moduli](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

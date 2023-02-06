@@ -5,181 +5,183 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 4%
+source-wordcount: '984'
+ht-degree: 3%
 
 ---
 
-# 2.3 Creare il percorso e il messaggio e-mail
+# 2.3 Crie sua jornada e mensagem de mail
 
-In questo esercizio, configurerai il percorso da attivare quando qualcuno crea un account sul sito web demo.
+Neste exercício, você irá configurar a jornada que precisa ser acionada quando alguém parar uma conta no site de dimostração.
 
-Accedi a Adobe Journey Optimizer accedendo a [Adobe Experience Cloud](https://experience.adobe.com). Fai clic su **Journey Optimizer**.
+Accesso Faça su Adobe Journey Optimizer acessando a [Adobe Experience Cloud](https://experience.adobe.com). Clipart **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Verrai reindirizzato al **Pagina principale**  in Journey Optimizer. In primo luogo, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare è denominata `Bootcamp`. Per passare da una sandbox all’altra, fai clic su **Prod** e selezionate la sandbox dall’elenco. In questo esempio, la sandbox è denominata **Bootcamp**. Allora sarai nel **Pagina principale** visualizzazione della sandbox `Bootcamp`.
+Você será redirecionado para a visualização da a **Pagina principale**  niente Journey Optimizer. Primeiro se você está germente sandbox corrispondente. O nome do sandbox que dev ser usado é `Bootcamp`. Para alternar de um sandbox para outro, clique em **Prod** e selione o sandbox na lista. Neste esempio, o nome do sandbox é **Bootcamp**. Você estará na visualização da **Pagina principale** sandbox da fare `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-## 2.3.1 Crea il tuo percorso
+## 2.3.1 Crie a sua jornada
 
-Nel menu a sinistra, fai clic su **Percorsi**. Quindi, fai clic su **Crea Percorso** per creare un nuovo percorso.
+Nessun menu à esquerda, clique em **Percorsi**. Em seguida, clique em **Crea Percorso** para criar uma nova jornada.
 
 ![ACOP](./images/createjourney.png)
 
-Verrà visualizzata una schermata di percorso vuota.
+Você verá uma tela de jornada vazia.
 
 ![ACOP](./images/journeyempty.png)
 
-Nell’esercizio precedente, hai creato una nuova **Evento**. L&#39;hai chiamato così `yourLastNameAccountCreationEvent` e sostituito `yourLastName` con il tuo cognome. Questo è stato il risultato della creazione dell’evento:
+Nessun exercício anteriore, você criou um novo **Evento**. Você nomeou o evento `yourLastNameAccountCreationEvent` e sostituito `yourLastName` pelo seu sobrenome. Este foi o risultanti da criação do evento:
 
 ![ACOP](./images/eventdone.png)
 
-Ora devi prendere questo evento come inizio di questo Percorso. Per farlo, vai sul lato sinistro dello schermo e cerca l’evento nell’elenco degli eventi.
+Agora você deve considerar este evento como o início desta Jornada. Você pode fazer isso indo para o lado esquerdo da tela e procurando pelo seu evento na lista de eventos.
 
 ![ACOP](./images/eventlist.png)
 
-Seleziona l’evento, trascinalo sull’area di lavoro del Percorso e rilascialo. Il tuo Percorso ora si presenta così:
+Selecione seu evento, arraste e solte o evento na tela de Jornada. Jornada agora deve ser semelhante ao seguinte:
 
 ![ACOP](./images/journeyevent.png)
 
-Come secondo passaggio del percorso, devi aggiungere una breve **Wait** passo. Passa al lato sinistro dello schermo e **Orchestrazione** per trovare questo. Utilizzerai gli attributi del profilo e dovrai accertarti che siano popolati nel Profilo del cliente in tempo reale.
+Como segunda etapa da jornada, você adicionar uma etapa curta de **Wait**. Vá para o lado esquerdo da tela a seção **Orchestrazione** para encontrar isso. Você usará atributos de perfil e precisará garantir que eles sejam preenchidos no Perfil do Cliente em tempo reale.
 
 ![ACOP](./images/journeywait.png)
 
-Il tuo percorso ora assomiglia a questo. Sul lato destro dello schermo è necessario configurare il tempo di attesa. Impostalo a 1 minuto. In questo modo gli attributi del profilo saranno disponibili per un periodo di tempo sufficiente dopo l’attivazione dell’evento.
+Sua Jornada agora deve ser semelhante ao seguinte. No lado direito da tela você precisa configurar o tempo de espera. Defina como 1 . Isso dará bastante tempo para que os atributos do perfil estejam disponíveis após o disparo do evento.
 
 ![ACOP](./images/journeywait1.png)
 
-Fai clic su **Ok** per salvare le modifiche.
+Clipart **Ok** para salvar suas alterações.
 
-Come terzo passaggio del percorso, devi aggiungere un **E-mail** azione. Vai al lato sinistro dello schermo fino a **Azioni**, seleziona **E-mail** , quindi trascinalo sul secondo nodo del percorso. Ora vedete questo.
+Como terceira etapa da jornada, você adicionar uma ação **E-mail**. Vá para o lado esquerdo da tela para **Azioni**, selione a ação **E-mail** e arraste e solte a ação no segundo nó da sua jornada. Agora o seguinte será exibido.
 
 ![ACOP](./images/journeyactions.png)
 
 Imposta la **Categoria** a **Marketing** e seleziona una superficie e-mail che ti consente di inviare e-mail. In questo caso, la superficie dell’e-mail da selezionare è **E-mail**. Assicurati che le caselle di controllo per **Clic su e-mail** e **aperture e-mail** sono entrambi abilitati.
 
+Definisci a **Categoria** como **Marketing** e selecione uma superfície de e-mail que permita o envio de mail. Nesse caso, una superfície e-mail un utente selionada é E-mail. Certifique se de que as caixas de seleção **Clic su e-mail** e **aperture e-mail** estejam marcadas.
+
 ![ACOP](./images/journeyactions1.png)
 
-Il passaggio successivo consiste nel creare il messaggio. A tale scopo, fai clic su **Modifica contenuto**.
+Un próximo etapa é criar sua mensagem. Para isso, clique em **Modifica contenuto**.
 
 ![ACOP](./images/journeyactions2.png)
 
-## 2.3.2 Creare il messaggio
+## 2.3.2 Crie a sua mensagem
 
-Per creare il messaggio, fai clic su **Modifica contenuto**.
+Para criar sua mensagem, clique em **Modifica contenuto**.
 
 ![ACOP](./images/journeyactions2.png)
 
-Ora vedete questo.
+O seguinte será exibido.
 
 ![ACOP](./images/journeyactions3.png)
 
-Fai clic sul pulsante **Linea oggetto** campo di testo.
+Clique no campo de texto **Linea oggetto**.
 
 ![Journey Optimizer](./images/msg5.png)
 
-Nell’area di testo inizia la scrittura **Ciao**
+Na área de texto, comece **Olá**
 
 ![Journey Optimizer](./images/msg6.png)
 
-L&#39;oggetto non è ancora stato completato. Ora devi inserire il token di personalizzazione per il campo **Nome** che è immagazzinato in `profile.person.name.firstName`. Nel menu a sinistra, scorri verso il basso per trovare il **Persona** e fai clic sulla freccia per andare un livello più profondo.
+A linha de ainda não está. Em seguida, você precisa trazer o token de personalização para o **Nome** que está armazenado em `profile.person.name.firstName`. Nessun menu à esquerda, ruolo para baixo para encontrar o **Persona** e clique na seta para ir um nível mais profundo.
 
 ![Journey Optimizer](./images/msg7.png)
 
-Ora trova la **Nome completo** e fai clic sulla freccia per andare un livello più profondo.
+Agora incontra o costa **Nome completo** e clique na seta para ir um nível mais profundo.
 
 ![Journey Optimizer](./images/msg8.png)
 
-Infine, trova il **Nome** e fai clic sul **+** firmi accanto a esso. Il token di personalizzazione verrà visualizzato nel campo di testo.
+Por fim, localize o campo **Nome** e clique no símbolo **+**  ao lado dele. Você verá o token de personalização aparecer no campo de texto.
 
 ![Journey Optimizer](./images/msg9.png)
 
-Quindi, aggiungi il testo **Grazie per esserti registrato!**. Fai clic su **Salva**.
+Em seguida, adicione o texto, **agradecemos a sua inscrição!** Clique em Salvar. . Clipart **Salva**.
 
 ![Journey Optimizer](./images/msg10.png)
 
-Allora tornerai qui. Fai clic su **E-mail Designer** per creare il contenuto dell’e-mail.
+Então, você irá retornar para esta tela. Clipart **E-mail Designer**  para criar o conteúdo e-mail.
 
 ![Journey Optimizer](./images/msg11.png)
 
-Nella schermata successiva verranno visualizzati 3 metodi diversi per fornire il contenuto dell’e-mail:
+Na próxima tela, será solicitado que você forneça o conteúdo e-mail através de 3 métodos diferentes:
 
-- **Progettazione da zero**: Inizia con un’area di lavoro vuota e utilizza l’editor WYSIWYG per trascinare e rilasciare componenti di struttura e contenuto per creare visivamente il contenuto dell’e-mail.
-- **Codice personalizzato**: Crea il tuo modello e-mail codificandolo utilizzando HTML
-- **Importa HTML**: Importa un modello HTML esistente, che potrai modificare.
+- **Progettazione da zero**: Comece com uma tela em branco e usa l&#39;editor WYSIWYG para arrastar e soltar a estrutura e os components de conteúdo para criar visualmente o conteúdo do e-mail.
+- **Codice personalizzato**: Crie seu prómodelo de e-mail codificando HTML
+- **Importa HTML**: Importe um modelo HTML esistente, que você poderá editar.
 
-Fai clic su **Importa HTML**.
+Clipart **Importa HTML**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Trascina e rilascia il file **mailtemplatebootcamp.html**, scaricabile [qui](../../assets/html/mailtemplatebootcamp.html.zip). Fai clic su Importa.
+Arraste e solte o arquivo **mailtemplatebootcamp.html**, que você pode baixa [qui](../../assets/html/mailtemplatebootcamp.html.zip). Clique em Importar.
 
 ![Journey Optimizer](./images/msg13.png)
 
-Verrà quindi visualizzato questo modello e-mail predefinito:
+Você verá este modelo de e-mail padrão:
 
 ![Journey Optimizer](./images/msg14.png)
 
-Personalizziamo l’e-mail. Fai clic accanto al testo **Ciao** quindi fai clic sul pulsante **Aggiungi personalizzazione** icona.
+Vamos personalizar o e-mail. Clique ao lado fare testo **Olá** e, em seguida, clique no ícone **Aggiungi personalizzazione**.
 
 ![Journey Optimizer](./images/msg35.png)
 
-Successivamente, devi portare il **Nome** token di personalizzazione memorizzato in `profile.person.name.firstName`. Nel menu , trova la **Persona** elemento, scegli **Nome completo** , quindi fai clic sul **+** per aggiungere il campo Nome all’editor di espressioni.
+Em seguida, você precisa trazer o token de personalização **Nome** que está armazenado em `profile.person.name.firstName`. Nessun menu, localize o **Persona**, faça uma detalhada no **Nome completo** e clique no ícone **+** para adicionar o campo **Nome** redattore del ao de espressão.
 
-Fai clic su **Salva**.
+Clipart **Salva**.
 
 ![Journey Optimizer](./images/msg36.png)
 
-Ora noterai come il campo di personalizzazione è stato aggiunto al testo.
+Agora você verá como o campo de personalização foi adicionado ao seu texto.
 
 ![Journey Optimizer](./images/msg37.png)
 
-Fai clic su **Salva** per salvare il messaggio.
+Clipart **Salva** para salvar sua mensagem.
 
 ![Journey Optimizer](./images/msg55.png)
 
-Torna al dashboard dei messaggi facendo clic sul pulsante **freccia** accanto all’oggetto nell’angolo in alto a sinistra.
+Retorne para o antidel de mensagens clicando na seta ao lado texto da linha de no canto superior esquerdo.
 
 ![Journey Optimizer](./images/msg56.png)
 
-Hai completato la creazione del messaggio e-mail di registrazione. Fai clic sulla freccia nell&#39;angolo in alto a sinistra per tornare al percorso.
+Agora você conclude un criação do seu e-mail de cadastro. Clique na seta no canto superiore esquerdo para retornar à sua jornada.
 
 ![Journey Optimizer](./images/msg57.png)
 
-Fai clic su **Ok**.
+Clipart **Ok**.
 
 ![Journey Optimizer](./images/msg57a.png)
 
-## 2.3.3 Pubblicare il percorso
+## 2.3.3 Pubblicazione di una sua jornada
 
-Devi ancora dare un Nome al tuo percorso. Per farlo, fai clic sul pulsante **Proprietà** in alto a destra sullo schermo.
+Você ainda precisa dar um Nome à sua jornada. Você pode fazer isso clicando no ícone **Proprietà** nessun canto superiore direito da tela.
 
 ![ACOP](./images/journeyname.png)
 
-Potete quindi inserire il nome del percorso qui. Utilizzare `yourLastName - Account Creation Journey`. Fai clic su **OK** per salvare le modifiche.
+Você ainda precisa dar um Nome à sua jornada. Você pode fazer isso clicando no ícone `yourLastName - Account Creation Journey`. Clipart **OK** para salvar come mudanças.
 
 ![ACOP](./images/journeyname1.png)
 
-Ora puoi pubblicare il percorso facendo clic su **Pubblica**.
+Agora você pode pubblicitario sua jornada clicando em **Pubblica**.
 
 ![ACOP](./images/publishjourney.png)
 
-Fai clic su **Pubblica** di nuovo.
+Clipart **Pubblica**  novamente.
 
 ![ACOP](./images/publish1.png)
 
-Verrà visualizzata una barra di conferma verde che indica che il percorso è ora Pubblicato.
+Você verá uma barra de confirmação verde informando que sua jornada agora está Publicada.
 
 ![ACOP](./images/published.png)
 
-Ora avete finito questo esercizio.
+Você terminou este exercício.
 
-Passaggio successivo: [2.4 Test del percorso](./ex4.md)
+Próxima etapa: [2.4 Teste sua jornada](./ex4.md)
 
-[Torna al flusso utente 2](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Torna a tutti i moduli](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

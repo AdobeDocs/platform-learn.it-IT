@@ -5,88 +5,89 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 1%
+source-wordcount: '269'
+ht-degree: 0%
 
 ---
 
-# 2.5 Installare e utilizzare l’app mobile
+# 2.5 Uso istantaneo dell&#39;aplicativo móvel
 
 
-## Installare l’app mobile
+## Instale o aplicativo móvel
 
-Prima di installare l’app, devi attivare **Tracking** sul tuo dispositivo iOS. Per farlo, vai a **Impostazioni** > **Privacy e sicurezza** > **Tracking** e garantire che l&#39;opzione **Consenti alle app di richiedere il tracciamento**.
+Antes de installar o aplicativo, é necessário habilitar Rastreamento no seu allevativo iOS. Para isso, acesse Configurações > Privacidade e segurança > Rastreamento e conconfirm a opção Permitir que os aplicativos solicitem o rastreamento.
 
 ![DSN](./../uc3/images/app4.png)
 
-Vai ad Apple App Store e cerca `aepmobile-bootcamp`. Fai clic su **Installa** o **Scarica**.
+Acesse a App Store da Apple e pesquise `aepmobile-bootcamp`.\
+Clipart **Instalar** Tu **Scarica**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Una volta installata l’app, fai clic su **Apri**.
+Depois que o aplicativo estiver installado, clique em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
-Fai clic su **OK**.
+Clipart **OK**.
 
 ![DSN](./../uc3/images/app9.png)
 
-Fai clic su **Consenti**.
+Clipart **Permitro**.
 
 ![DSN](./../uc3/images/app3.png)
 
-Fai clic su **Sono d&#39;accordo**.
+Clipart **Concordo**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Fai clic su **Consenti durante l&#39;utilizzo dell&#39;app**.
+Clipart **Permitir enquanto uso o app**.
 
 ![DSN](./../uc3/images/app8.png)
 
-Fai clic su **Consenti**.
+Clipart **Permitro**.
 
 ![DSN](./../uc3/images/app5.png)
 
-Ora ti trovi nell’app, nella home page, pronta per il percorso dei clienti.
+Agora você está no aplicativo, na página inicial, pronto(a) para verify toda a jornada do cliente.
 
 ![DSN](./../uc3/images/app12.png)
 
-## Flusso del percorso cliente
+## Fluxo da jornada do cliente
 
-Prima di tutto, devi effettuare l&#39;accesso. Fai clic su **Accedi**.
+Primeiramente, é necessariamente ário fazer o login. Clipart **Login**.
 
 ![DSN](./../uc3/images/app13.png)
 
-Dopo aver creato il tuo account negli esercizi precedenti, lo hai visto sul sito web. Ora devi riutilizzare l’indirizzo e-mail dell’account creato nell’app per effettuare l’accesso.
+Depois de criar sua conta nos exercícios anteriori, isso é exibido nessun sito. Agora é necessário reutilizar o endereço de e-mail da conta que você criou no aplicativo para fazer o login.
 
 ![Demo](./../uc3/images/pv1.png)
 
-Inserisci l&#39;indirizzo e-mail utilizzato sul sito web qui e fai clic su **Login**.
+Digite o endereço de e-mail que você usou no site e clique em **Login**.
 
 ![DSN](./../uc3/images/app14.png)
 
-Riceverai quindi una conferma dell’accesso e riceverai una notifica push.
+Você receberá uma confirmação de que está conectado e receberá uma notificação push.
 
 ![DSN](./../uc3/images/app15.png)
 
-Torna alla home page dell’app e vedrai apparire funzionalità aggiuntive.
+Retorne para a página inicial do aplicativo e os ricorsos adicionais irão aparecer.
 
 ![DSN](./../uc3/images/app17.png)
 
-Vai a **Prodotti**. Fai clic su un prodotto, in questo esempio **Caffè da andare**.
+Acesse **Prodotti**. Clique em qualquer produto, neste exesemplo: **Caffè da andare**.
 
 ![DSN](./images/app19.png)
 
-Vedrete il **Caffè da andare** pagina di prodotto nell’app. Fai clic su **Acquista**.
+Você verá a página do produto **Caffè da andare** nessun aplicativo. Clipart **Acquista**.
 
 ![DSN](./images/app20.png)
 
-Ora hai finito questo esercizio e sei pronto per i prossimi esercizi.
+Agora você terminou este exercício e está rapidamente para as próximas atividades.
 
-Passaggio successivo: [2.6 Personalizzazione nel call center](./ex6.md)
+Próxima etapa: [ 2.6 Personalizzazione senza call center](./ex6.md)
 
-[Torna al flusso utente 2](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Torna a tutti i moduli](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

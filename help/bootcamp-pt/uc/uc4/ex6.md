@@ -5,31 +5,30 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 1%
+source-wordcount: '97'
+ht-degree: 0%
 
 ---
 
-# 4.6 Da informazioni all&#39;azione
+# 4.6 Dos insights à ação
 
 ## Obiettivi
 
-- Scopri come creare un pubblico in base a informazioni raccolte nel Customer Journey Analytics
-- Utilizzare quel pubblico in Real-Time CDP e Adobe Journey Optimizer
+- Entenda como criar um público com base em uma visão coletada no Customer Journey Analytics
+- Usa esse público no CDP em tempo reale e no Adobe Journey Optimizer
 
-## 4.6.1 Creare un pubblico e pubblicarlo
+## 4.6.1 Crie uma audiência e publique-a
 
-Nel progetto hai creato un filtro denominato
+Em seu projeto, você criou um filtro.
 
-## 4.6.2 Utilizzare il pubblico come parte di un segmento
+## 4.6.2 Utilizzare sua audiência como parte de um segmento
 
+## 4.6.2 Utilizzare seu segmento un Real-Time CDP em tempo reale
 
-## 4.6.2 Utilizzare il segmento in Real-Time CDP
-
-## 4.6.3 Utilizzare il segmento in Adobe Journey Optimizer
+## 4.6.3 Utilizzare il segmento seu su Adobe Journey Optimizer
 
 [Torna al flusso utente 4](./uc4.md)
 
-[Torna a tutti i moduli](./../../overview.md)
+[Voltar para todos os módulos](./../../overview.md)

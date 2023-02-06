@@ -5,55 +5,54 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 072179998d19c32589280defdb257a86d8728fea
 workflow-type: tm+mt
-source-wordcount: '1610'
+source-wordcount: '1655'
 ht-degree: 2%
 
 ---
 
-# 4.3 Creare una visualizzazione dati
+# 4.3 Criterio uma Visualização de Dados
 
 ## Obiettivi
 
-- Comprendere l’interfaccia utente della visualizzazione dati
-- Comprendere le impostazioni di base della definizione della visita
-- Comprendere l’attribuzione e la persistenza all’interno di una visualizzazione dati
+- Entenda a UI de Visualização de Dados
+- Compreenda come configurações básicas de definição de visita
+- Compreenda a atribuição e a Persistência em uma Visualização de de Persistência
 
-## 4.3.1 Visualizzazione dati
+## 4.3.1 Visualização de Dados
 
-Al termine della connessione, puoi ora passare all’influenza della visualizzazione. Una differenza tra Adobe Analytics e CJA è che CJA ha bisogno di una visualizzazione dati per pulire e preparare i dati prima della visualizzazione.
+Agora, com sua conexão concluída, é possível progressive para influenciar a visualização. Uma diferença entre of Adobe Analytics e o CJA é que o CJA precisa de uma visualização de dados para limpar e preparar os dados antes da visualização.
 
-Una visualizzazione dati è simile al concetto di suite di rapporti virtuali in Adobe Analytics, dove puoi definire definizioni di visite basate sul contesto, filtri e anche come vengono chiamati i componenti.
+Uma Visualização de Dados é semelhante ao concito de Virtual Report Suite no Adobe Analytics, onde você estabelece as definições de visita com reconhecimento de contexto, filtragem e também como os componentes são chamados.
 
-È necessaria almeno una visualizzazione dati per connessione. Tuttavia, per alcuni casi d’uso, è grandioso disporre di più visualizzazioni dati per la stessa connessione, con l’obiettivo di fornire informazioni diverse a diversi team.
-Se desideri che la tua azienda sia basata sui dati, devi adattare il modo in cui i dati vengono visualizzati in ciascun team. Alcuni esempi:
+Será necessário, no mínimo, uma Visualização de Dados por conexão. No entanto, para alguns casos de uso, é ótimo ter múltiplas Visualizações de Dados para a mesma conexão, com o objetivo de fornecer insights diferentes para attrezzes distintas. Se você deseja que sua empresa seja orientada por dados, deve adaptar a como os dados são vistos em cada attrezze. Gli algoritmi sfruttano:
 
-- Metriche UX solo per il team di progettazione UX
-- Utilizza gli stessi nomi per KPI e Metriche per Google Analytics e Customer Journey Analytics in modo che il team di analisi digitale possa parlare solo 1 lingua.
-- Visualizzazione dati filtrata per mostrare, ad esempio, i dati per un solo mercato, un solo marchio o solo per dispositivi mobili.
+- Métricas de UX apenas para a Equipment de UX Design
+- Usa os mesmos nomes para KPI e métricas para o Google Analytics e para o Customer Journey Analytics, para que a equipe de análise digital fale apenas 1 idioma.
+- Visualização de Dados filtrada para mostrar, por exemplo, dados para apenas um mercado, ou uma marca, ou apenas para Dispositivos móveis.
 
-Sulla **Connessioni** seleziona la casella di controllo di fronte alla connessione appena creata. Fai clic su **Crea visualizzazione dati**.
+Na tela **Connessioni** marque a caixa de seleção da conexão que você acabou de criar. Clipart  **Crea visualizzazione dati**.
 
 ![demo](./images/exta.png)
 
-Verrai reindirizzato al **Crea visualizzazione dati** workflow.
+Você será redirecionado para o fluxo de trabalho **Crea visualizzazione dati** workflow.
 
 ![demo](./images/0-v2.png)
 
-## 4.3.2 Definizione della visualizzazione dati
+## 4.3.2 Definição de Visualização de Dados
 
-Ora puoi configurare le definizioni di base per la visualizzazione dati.
+Agora você pode configurar as definições básicas para la sua Visualização de dados.
 
 ![demo](./images/0-v2.png)
 
-La **Connessione** creato nell’esercizio precedente è già selezionato. La connessione è denominata `yourLastName – Omnichannel Data Connection`.
+A **Connessione** que você criou no exercício anteriore já está selionada. Sama conexão se chama `yourLastName – Omnichannel Data Connection`.
 
 ![demo](./images/ext5.png)
 
-Successivamente, assegna alla visualizzazione dati un nome seguendo questa convenzione di denominazione: `yourLastName – Omnichannel Data View`.
+Em seguida, dê um nome à sua Visualização de Dados seguindo este modelo de nomenclatura: `yourLastName – Omnichannel Data View`.
 
-Inserisci lo stesso valore per la descrizione: `yourLastName – Omnichannel Data View`.
+Insira o mesmo valor para a description: `yourLastName – Omnichannel Data View`.
 
 | Nome | Descrizione |
 | ----------------- |-------------| 
@@ -61,75 +60,75 @@ Inserisci lo stesso valore per la descrizione: `yourLastName – Omnichannel Dat
 
 ![demo](./images/1-v2.png)
 
-Per **Fuso orario**, seleziona il fuso orario **Berlino, Stoccolma, Roma, Berna, Bruxelles, Vienna, Amsterdam GMT+01:00**. Si tratta di un ambiente molto interessante in quanto alcune aziende operano in diversi paesi e aree geografiche. Allocare il fuso orario giusto per ogni paese eviterà errori di dati tipici come credere che, per esempio, in Perù, la maggior parte delle persone compra T-shirt alle 4:00 del mattino.
+Para **Fuso orario**, selione o fuso a horário **Berlim, Estocolmo, Roma, Berna, Bruxelas, Viena, Amsterdã GMT+01:00**. Este é um cenário interessante, pois algumas empresas operam em diferentes países e geografias. Alocar o horário certo para cada país evará erros típicos de dados, como, por exemplo, acreditar que a maioria das pessoas compreso camisetas às 4h no Perù.
 
 ![demo](./images/ext7.png)
 
-Puoi anche modificare la denominazione delle metriche principali (Persona, Sessione ed Evento). Questo non è necessario, ma ad alcuni clienti piace utilizzare Persone, Visite e Hit al posto di Persona, Sessione ed Eventi (convenzione di denominazione predefinita dal Customer Journey Analytics).
+Você também pode modificar a nomenclatura das métricas princippais (Pessoa, Sessão e Evento). Isso não é obrigatório, mas alguns clientes gostam de usar Pessoas, Visitas e Acessos em vez de Pessoa, Sessão e Eventos (convocção de nomenclatura padrão do Customer Journey Analytics).
 
-A questo punto è necessario configurare le seguenti impostazioni:
+Agora você dev as seguintes configurações definidas:
 
 ![demo](./images/1-v2.png)
 
-Fai clic su **Salva e continua**.
+Clipart **Salva e continua**.
 
 ![demo](./images/12-v2.png)
 
-## 4.3.3 Componenti di visualizzazione dei dati
+## 4.3.3 Componenti da Visualização de Dados
 
-In questo esercizio, configurerai i componenti necessari per analizzare i dati e visualizzarli utilizzando Analysis Workspace. In questa interfaccia utente sono disponibili tre aree principali:
+Neste exercício, você irá configurar os componentes necessários para analisar os dados e visalizá-los o Analysis Workspace. Nesta IU, há três áreas princippais:
 
-- Lato sinistro: Componenti disponibili dai set di dati selezionati
-- Medio: Componenti aggiunti alla visualizzazione dati
-- Lato destro: Impostazioni dei componenti
+- Lado esquerdo: Componenti disponíveis dos datasets selionados
+- Meio: Componenti adicionados à Visualização de Dados
+- Lado direito: Configurações do
 
 ![demo](./images/2-v2.png)
 
 >[!IMPORTANT]
 >
->Se non riesci a trovare una metrica o una dimensione specifica, controlla se il campo `Contains data` viene rimosso dalla visualizzazione dati. In caso contrario, cancella quel campo.
+>Se você não encontrar uma métrica ou dimensão specífica, verifique se o campo `Contains data` foi removido de sua visualização de dados. Caso contrário, esclua esse campo.
 >
 >![demo](./images/2-v2a.png)
 
-Ora devi trascinare i componenti necessari per l’analisi nella sezione **Componenti aggiunti**. A questo scopo, devi selezionare i componenti nel menu a sinistra, trascinarli e rilasciarli nell’area di lavoro al centro.
+Agora você precisa arrastar e soltar os componentes necessários para a análise nos **Componenti aggiunti**. Para isso, você deve selionar os componentes no menu à esquerda e arrastá-los e soltá-los na tela no meio.
 
-Cominciamo con il primo componente: **Nome (web.webPageDetails.name)**. Cerca questo componente, quindi trascinalo sull’area di lavoro.
+Vamos começar com o primeiro: **Nome (web.webPageDetails.name)**. Pesquise esse destina e arraste-o solte-o na tela.
 
 ![demo](./images/3-v2.png)
 
-Questo componente è il nome della pagina, come è possibile derivare dalla lettura del campo schema `(web.webPageDetails.name)`.
+Sono componenti o nome da página, como vocare poderivati da leitura do campo do schema `(web.webPageDetails.name)`.
 
-Tuttavia, utilizzando **Nome** poiché il nome non è la convenzione di denominazione migliore per consentire a un utente aziendale di comprendere rapidamente questa dimensione.
+No entanto, usar **Nome** como o nome não é a melhor convocção de classificazione para um usuário corporativo compressender essa dimensão.
 
-Cambiamo il nome in modo che sia **Nome pagina**. Fai clic sul componente e rinominalo nel **Impostazioni dei componenti** area.
+Vamos mudar o nome para **Nome pagina**. Clique no deste o renomeie na área **Impostazioni dei componenti**.
 
 ![demo](./images/3-0-v2.png)
 
-Qualcosa di veramente importante è la **Impostazioni di persistenza**. Il concetto di evar e prop non esiste in CJA, ma le impostazioni di persistenza rendono possibile un comportamento simile.
+Come Configurações de persistência são **Impostazioni di persistenza**. Os concitos de eVars e prop não exists no CJA, mas as configurações de Persistência possibilitam um comportamento semelhante.
 
 ![demo](./images/3-0-v21.png)
 
-Se non modifichi queste impostazioni, CJA interpreterà la dimensione come una **Prop** (livello hit). Inoltre, possiamo cambiare la Persistenza per rendere la dimensione una **eVar** (persiste il valore in tutto il percorso).
+Se você não alterar essas configurações o CJA irá interpretar a dimensão como um **Prop** (nível de ocorrência). Além disso, podemoar alterar a Persistência para tornar a dimensão uma **eVar** (persistir o valor ao longo da jornada).
 
-Se non conosci eVar e proprietà, puoi [ulteriori informazioni nella documentazione](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
+Se você não estiver familiarizado com eVars e Props, [leia mais sobre isso documentação](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
 
-Lasciamo il Nome pagina come proprietà. In quanto tale, non è necessario modificare alcuna **Impostazioni di persistenza**.
+Vamos deixar o Nome da Página como Prop. Dessa forma, você não precisa alterar nenhuma **Impostazioni di persistenza**.
 
 | Nome componente da cercare | Nuovo nome | Impostazioni di persistenza |
 | ----------------- |-------------| --------------------| 
 | Nome (web.webPageDetails.name) | Nome pagina |  |
 
-Quindi, scegli la dimensione **phoneNumber** e rilasciarlo sull&#39;area di lavoro. Il nuovo nome deve essere **Numero di telefono**.
+Em seguida, escolha a dimensão **phoneNumber** e solte-a na tela. O nuovo nome DEVE **Numero di telefono**.
 
 ![demo](./images/3-1-v2.png)
 
-Infine, modifichiamo le impostazioni di persistenza, in quanto il numero mobile deve persistere a livello di utente.
+Por fim, vamos alterar as Configurações de persistência, pois o Número do Celular deve persistir no nível do usuário.
 
-Per modificare la persistenza, scorri verso il basso nel menu di destra e apri la **Persistenza** scheda:
+Para alterar a Persistência, ruolo para baixo no menu à direita e abra a aba **Persistenza**:
 
 ![demo](./images/5-v2.png)
 
-Seleziona la casella di controllo per modificare le impostazioni di persistenza. Seleziona **Più recente** e **Persona (intervallo di reporting)** scopo, in quanto ci importa solo dell&#39;ultimo numero di cellulare di quella persona. Se il cliente non compila il dispositivo mobile nelle visite future, visualizzerai comunque questo valore popolato.
+Marque a caixa de seleção para modificar as configurações de persistência. Selecione **Più recente** e o escopo **Persona (intervallo di reporting)**, pois nos preocupamos apenas com o último número de celular da pessoa. Se o cliente não preencher o celular em visitas futuras, você ainda verá esse valor preenchido.
 
 ![demo](./images/6-v2.png)
 
@@ -137,11 +136,11 @@ Seleziona la casella di controllo per modificare le impostazioni di persistenza.
 | ----------------- |-------------| --------------------| 
 | phoneNumber | Numero di telefono | Più recente, Persona (intervallo di reporting) |
 
-Il componente successivo è `web.webPageDetails.pageViews.value`.
+O próximo in `web.webPageDetails.pageViews.value`.
 
-Nel menu a sinistra, cerca `web.webPageDetails.pageViews.value`. Trascina e rilascia la metrica nell’area di lavoro.
+Nessun menu à esquerda, peschezza `web.webPageDetails.pageViews.value`. Arraste e solte essa métrica na tela.
 
-Modificare il nome in modo che sia **Visualizzazioni pagina** in **Impostazioni dei componenti**.
+Altere o nome para **Visualizzazioni pagina** in **Impostazioni dei componenti**.
 
 | Nome componente da cercare | Nuovo nome | Impostazioni di attribuzione |
 | ----------------- |-------------| --------------------| 
@@ -149,14 +148,13 @@ Modificare il nome in modo che sia **Visualizzazioni pagina** in **Impostazioni 
 
 ![demo](./images/7-v2.png)
 
-Per le impostazioni di attribuzione, lasceremo vuoto questo campo.
+Para as configurações de atribuição, deixaremos em branco.
 
-Nota: Le impostazioni di persistenza sulle metriche possono essere modificate anche in Analysis Workspace. In alcuni casi puoi scegliere di impostarlo qui per evitare che gli utenti aziendali debbano pensare quale sia il modello di persistenza migliore.
+Osservatorio: Come configurações de persistência nas métricas também podem ser alteradas no Analysis Workspace. Em alguns casos, você pode optar por configurá-las aqui para evitar que os usuários de negócios tenham decar qual é o melhor modelo de persistência.
 
-Successivamente, dovrai configurare molti Dimension e metriche, come indicato nella tabella seguente.
+Em seguida, você terá que configurar várias Dimensões e Métricas, conforme indicado na tabela abaixo.
 
-### Dimension
-
+### DIMENSIONS ES
 
 | Nome componente da cercare | Nuovo nome | Impostazioni di persistenza |
 | ----------------- |-------------| --------------------| 
@@ -175,39 +173,38 @@ Successivamente, dovrai configurare molti Dimension e metriche, come indicato ne
 | URL (web.webPageDetails.URL) | URL |  |
 | Agente utente | Agente utente | Sessione più recente |
 
-### METRICHE
+### MÉTRICA
 
 | Nome componente da cercare | Nuovo nome | Impostazioni di attribuzione |
 | ----------------- |-------------| --------------------| 
 | Quantità | Quantità |  |
 | commerce.order.priceTotal | Ricavi |  |
 
-La configurazione dovrebbe quindi essere simile alla seguente:
+Sua configuração deve ser semelhante ao seguinte:
 
 ![demo](./images/11-v2.png)
 
-Non dimenticarti di **Salva** visualizzazione dati. Fai clic su **Salva** ora.
+Não se esqueça de Salvar sua Visualização de Dados. Clic Então em **Salva**.
 
 ![demo](./images/12-v2s.png)
 
-## 4.3.4 Metriche calcolate
+## 4.3.4 Métricas calcoladas
 
-Anche se abbiamo organizzato tutti i componenti nella visualizzazione dati, è comunque necessario adattarli, in modo che gli utenti aziendali siano pronti per iniziare la loro analisi.
+Embora tenhamos organizado todos os componentes na Visualização de dados, você ainda deve adaptar alguns deles para que os usuários de negócios estejam prontos para iniciar suas análises.
 
-Se ricordi, non abbiamo introdotto specificatamente Metriche come Aggiungi al carrello, Visualizzazione prodotto o Acquisti nella Visualizzazione dati.
-Tuttavia, abbiamo una dimensione chiamata: **Tipo evento**. Quindi, deriviamo questi tipi di interazione creando 3 Metriche calcolate.
+Se você se lembra, não trouxemos specificamente Métricas como Adicionar ao Carrinho, Visualização do produto ou Compras para a Visualização de dados. No entanto, temos uma dimensão chamada: **Tipo evento**. Então, vamos derivati esses tipos de interação criando 3 métricas calculadas.
 
-Cominciamo con la prima metrica: **Visualizzazioni prodotto**.
+Vamos começar com a primeira Métrica: **Visualizzazioni prodotto**.
 
-Sul lato sinistro, cerca **Tipo evento** e seleziona la quota. Quindi trascinalo nella **Componenti inclusi** tela.
+Nessun lado esquerdo, peschezza **Tipo evento** e selezionate un dimensão. Em seguida, arraste-o e solte-o na tela **Componenti inclusi**.
 
 ![demo](./images/calcmetr1.png)
 
-Fai clic per selezionare la nuova metrica **Tipo evento**.
+Clique para selionar a nova métrica **Tipo evento**.
 
 ![demo](./images/calcmetr2.png)
 
-Ora modifica il nome e la descrizione del componente con i seguenti valori:
+Agora altere nome e a descrição do ceros seguintes valores:
 
 | Nome componente | Descrizione del componente |
 | ----------------- |-------------| 
@@ -215,31 +212,31 @@ Ora modifica il nome e la descrizione del componente con i seguenti valori:
 
 ![demo](./images/calcmetr3.png)
 
-Ora possiamo contare solo **Visualizzazioni prodotto** eventi. Per farlo, scorri verso il basso nella sezione **Impostazioni dei componenti** fino a quando non vedi **Includi valori di esclusione**. Assicurati di abilitare l’opzione **Imposta valori di inclusione/esclusione**.
+Agora vamos contar apenas eventos de **Visualizzazioni prodotto**. Para fazer isso, ruolo para baixo em **Impostazioni dei componenti** até ver Valores de Valores **Includi valori di esclusione**. Certifique-se de habilitar a opção **Imposta valori di inclusione/esclusione**.
 
 ![demo](./images/calcmetr4.png)
 
-Come vogliamo solo contare **Visualizzazioni prodotto**, specificare **commerce.productViews** secondo i criteri.
+Como queremos apene contadine **Visualizzazioni prodotto**, specifiche **commerce.productViews** nos critérios.
 
 ![demo](./images/calcmetr5.png)
 
-La metrica calcolata è ora pronta.
+Agora a sua sua sua Calada está pronta!
 
-Quindi, ripeti lo stesso processo per **Aggiungi al carrello** e **Acquisto** eventi.
+Em seguida, repita o mesmo sette para os eventos **Aggiungi al carrello** e **Acquisto**.
 
 ### Aggiungi al carrello
 
-Trascina e rilascia la stessa dimensione **Tipo evento**.
+Primeiro, arraste e solte a mesma dimensão **Tipo evento**.
 
 ![demo](./images/calcmetr1.png)
 
-Visualizzerai un avviso pop-up di un campo duplicato mentre utilizziamo la stessa variabile. Fai clic su **Aggiungi comunque**:
+Você verá um alerta pop-up de um Campo Duplicado, pois estamos a mesma variável. Clipart **Aggiungi comunque**:
 
 ![demo](./images/calcmetr6.png)
 
-Ora segui lo stesso processo utilizzato per la metrica Visualizzazioni prodotto :
-- Modificare innanzitutto il nome e la descrizione.
-- Aggiungi infine **commerce.productListAdd** come criteri per contare solo Aggiungi al carrello
+Agora, siga o mesmo sette fizemos para a métrica Visualizações de produto:
+- Altopiano di Primeiro o nome e una descrizione.
+- Por fim, adicione **commerce.productListAdd** como critério para contar apenas Aggiungi al carrello
 
 | Nome | Discrepione | Criteri |
 | ----------------- |-------------| -------------|
@@ -249,17 +246,17 @@ Ora segui lo stesso processo utilizzato per la metrica Visualizzazioni prodotto 
 
 ### Acquisti
 
-Trascina e rilascia la stessa dimensione **Tipo evento** come abbiamo fatto per entrambe le metriche precedenti.
+Primeiro, arraste e solte a mesma dimensão **Tipo evento** como fizemos para as duas métricas anteriori.
 
 ![demo](./images/calcmetr1.png)
 
-Visualizzerai un avviso pop-up di un campo duplicato mentre utilizziamo la stessa variabile. Fai clic su **Aggiungi comunque**:
+Você verá um alerta pop-up de um Campo Duplicado, pois estamos a mesma variável. Clipart **Aggiungi comunque**:
 
 ![demo](./images/calcmetr7.png)
 
-Ora, segui lo stesso processo delle metriche Visualizzazioni prodotto e Aggiungi al carrello:
-- Modificare innanzitutto il nome e la descrizione.
-- Aggiungi infine **commerce.purchase** come criteri per contare solo gli acquisti
+Agora, siga o mesmo sette fizemos para as métricas Visualizzazioni prodotto e Aggiungi al carrello:
+- Altopiano di Primeiro o nome e una descrizione.
+- Por fim, adicione **commerce.purchase** como critérios para contabil izar apenas come Compras
 
 | Nome | Discrepione | Criteri |
 | ----------------- |-------------| -------------|
@@ -267,36 +264,36 @@ Ora, segui lo stesso processo delle metriche Visualizzazioni prodotto e Aggiungi
 
 ![demo](./images/calcmetr7a.png)
 
-La configurazione finale dovrebbe quindi essere simile a questa. Fai clic su **Salva e continua**.
+Sana configuração finale deve ser semelhante ao seguinte. Clipart **Salva e continua**.
 
 ![demo](./images/calcmetr8.png)
 
-## 4.3.5 Impostazioni visualizzazione dati
+## 4.3.5 Componenti da Configuração de Dados
 
-Dovresti essere reindirizzato a questa schermata:
+Você deve ser redirecionado para esta tela:
 
 ![demo](./images/8-v2.png)
 
-In questa scheda, puoi modificare alcune impostazioni importanti per modificare la modalità di elaborazione dei dati. Cominciamo impostando il **Timeout sessione** a 30 min. Grazie alla marca temporale di ogni evento di esperienza puoi estendere il concetto di sessione su tutti i canali. Ad esempio, cosa succede se un cliente chiama il call-center dopo aver visitato il sito web? Utilizzando i timeout di sessione personalizzati hai molta flessibilità nel decidere cosa sia una sessione e come tale sessione unirà i dati.
+Nesta aba, você pode modificar algumas configurações importantes para alterar a forma como os dados são processados. Vamos começar definindo o **Timeout sessione** como 30 min. Graças ao registro de data e hora de cada evento de experiência, você pode estender o concito de uma sessão em todos os canais. Por exemplo que acontece se um cliente ligar para o call center depois de visitar o site? Usando Tempos Limite de Sessão personalizados, você tem muita flexibilidade para decidir o que é uma sessão e como essa sessão irá mesclar os dados.
 
 ![demo](./images/ext8.png)
 
-In questa scheda puoi modificare altri elementi, come filtrare i dati utilizzando un segmento/filtro. Non dovrete farlo in questo esercizio.
+Nesta ê pode modificar outras coisas coisas filtrar os dados segmento/filtro. Você não precisará fazer isso neste exercício.
 
 ![demo](./images/10-v2.png)
 
-Al termine, fai clic su **Salva e completa**.
+Quando terminar, clique em **Salva e completa**.
 
 ![demo](./images/13-v2.png)
 
 >[!NOTE]
 >
->Successivamente potrai tornare a questa visualizzazione dati e modificare le impostazioni e i componenti in qualsiasi momento. Le modifiche avranno effetto sulla visualizzazione dei dati storici.
+>Você pode di voltar a esta Visualização de dados posteriori e alterar as configurações e os components a qualquer momento. Come alterações afetarão a forma como os dados históricos são mostrados.
 
-Ora puoi continuare con la parte relativa alla visualizzazione e all’analisi.
+Agora você pode continuar com a parte de visualização e análise!
 
-Passaggio successivo: [4.4 Preparazione dei dati in Customer Journey Analytics](./ex4.md)
+Próxima etapa: [4.4 Customer Journey Analytics di Preparação de dados em](./ex4.md)
 
-[Torna al flusso utente 4](./uc4.md)
+[Retornar para Fluxo de Usuário 4](./uc4.md)
 
-[Torna a tutti i moduli](./../../overview.md)
+[Retornar para Todos os Módulos](./../../overview.md)

@@ -5,34 +5,36 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
 
-# 3.1 Utilizza l’app mobile e attiva una voce beacon
+# 3.1 Uso del beacon aplicativo móvel e acione um
 
-## Installare l’app mobile
+## Instale o aplicativo móvel
 
 Prima di installare l’app, devi attivare **Tracking** sul tuo dispositivo iOS. Per farlo, vai a **Impostazioni** > **Privacy e sicurezza** > **Tracking** e garantire che l&#39;opzione **Consenti alle app di richiedere il tracciamento**.
 
+Antes de installar o aplicativo, é necessário habilitar **Rastreamento** nessun seu gettare iOS. Para isso **Configurações** > **Privacidade e segurança** > **Rastreamento** e verificabile a opção **Permitir que os aplicativos solicitem o rastreamento**.
+
 ![DSN](./../uc3/images/app4.png)
 
-Vai ad Apple App Store e cerca `aepmobile-bootcamp`. Fai clic su **Installa** o **Scarica**.
+Acesse a App Store da Apple e pesquise `aepmobile-bootcamp`. Clipart **Instalar** Tu **Scarica**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Una volta installata l’app, fai clic su **Apri**.
+Depois que o aplicativo estiver installado, clique em **Apri**.
 
 ![DSN](./../uc3/images/app2.png)
 
-Fai clic su **OK**.
+Clipart **OK**.
 
 ![DSN](./../uc3/images/app9.png)
 
-Fai clic su **Consenti**.
+Clipart **Permitro**.
 
 ![DSN](./../uc3/images/app3.png)
 
@@ -40,92 +42,93 @@ Fai clic su **Sono d&#39;accordo**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Fai clic su **Consenti durante l&#39;utilizzo dell&#39;app**.
+Clipart **Permitir enquanto usa o aplicativo**.
 
 ![DSN](./../uc3/images/app8.png)
 
-Fai clic su **Consenti**.
+Clipart **Permitro**.
 
 ![DSN](./../uc3/images/app5.png)
 
-Ora ti trovi nell’app, nella home page, pronta per il percorso dei clienti.
+Agora você está no aplicativo, na página inicial, pronto(a) para verify toda a jornada do cliente.
 
 ![DSN](./../uc3/images/app12.png)
 
-## Flusso del percorso cliente
+## Fluxo da jornada do cliente
 
-Prima di tutto, devi effettuare l&#39;accesso. Fai clic su **Accedi**.
+Primeiramente, é necessariamente ário fazer o login. Clipart **Login**.
 
 ![DSN](./images/app13.png)
 
-Dopo aver creato il tuo account negli esercizi precedenti, lo hai visto sul sito web. Ora devi riutilizzare l’indirizzo e-mail dell’account creato nell’app per effettuare l’accesso.
+Depois de criar sua conta nos exercícios anteriori, isso é exibido nessun sito. Agora é necessário reutilizar o endereço de e-mail da conta que você criou no aplicativo para fazer o login.
 
 ![Demo](./images/pv1.png)
 
-Inserisci l&#39;indirizzo e-mail utilizzato sul sito web qui e fai clic su **Login**.
+Digite o endereço de e-mail que você usou no site e clique em **Login**.
 
 ![DSN](./images/app14.png)
 
-Riceverai quindi una conferma dell’accesso e riceverai una notifica push.
+Você receberá uma confirmação de que está conectado e receberá uma notificação push.
 
 ![DSN](./images/app15.png)
 
-Torna alla home page dell’app e vedrai apparire funzionalità aggiuntive.
+Retorne para a página inicial do aplicativo e os ricorsos adicionais irão aparecer.
 
 ![DSN](./images/app17.png)
 
-Per prima cosa, vai a **Prodotti**. Fai clic su un prodotto, in questo esempio **Caffè da andare**.
+Primeiro, acesse **Prodotti**. Clique em qualquer produto, neste exesemplo: **Caffè da andare**.
 
 ![DSN](./images/app19.png)
 
-Vedrete il **Caffè da andare** pagina di prodotto nell’app.
+Você verá a página do produto **Caffè da andare** nessun aplicativo.
 
 ![DSN](./images/app20.png)
 
-Ora simulerai un evento di ingresso beacon in una posizione di archiviazione offline. L&#39;obiettivo della simulazione è quello di personalizzare l&#39;esperienza del cliente sugli schermi all&#39;interno del negozio. Per visualizzare l’esperienza in-store, è stata creata una pagina che mostrerà dinamicamente le informazioni pertinenti per il cliente che è appena entrato nello store.
+Agora você irá simular um evento de entrada de sinalização (beacon) em um local de armazenamento offline. O objetivo da simulação é personalizar a experiência do cliente nas telas da loja. Para visualizar a experiência na loja, foi criada uma página mostrará de forma dinâmica as informações relevant para o cliente entrar na loja.
 
-Prima di continuare, aprire questa pagina Web sul computer: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de continuar, abra esta página da Web em seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
-Vedrai questo:
+Em seguida, a tela abaixo será exibida:
 
 ![DSN](./images/screen1.png)
 
-Poi, torna alla homepage. Fai clic sul pulsante **beacon** icona.
+Em seguida, Retorne para a página inicial. Clique no ícone do **beacon**.
 
 ![DSN](./images/app23.png)
 
 Vedrete questo. Per prima cosa, seleziona **Beacon schermo del campeggio di avvio** quindi fai clic sul pulsante **voce** pulsante . Questo ti consente di simulare una voce del beacon.
+Após essa etapa, o seguinte será exibido. Primeiro, selione **Beacon schermo del campeggio di avvio** e clique no botão de **entrada**. Isso permitirá que você simule uma entrada de sinalização com beacon.
 
 ![DSN](./images/app21.png)
 
-Ora, date un&#39;occhiata alla schermata in-store. L’ultimo prodotto visualizzato verrà visualizzato entro 5 secondi.
+Agora conferma a tela da loja. Você verá o último produto visualizado aparecer nessa tela em 5 segundos.
 
 ![DSN](./images/screen2.png)
 
-Quindi, torna a **Prodotti**. Fai clic su un prodotto, in questo esempio **Copertura spiaggia Tan**.
+Em seguida, retorne para **Prodotti**. Clique em qualquer produto, neste exesemplo: **Copertura spiaggia Tan**.
 
 ![DSN](./images/app22.png)
 
-Poi, torna alla homepage. Fai clic sul pulsante **beacon** icona.
+Em seguida, Retorne para a página inicial. Clique no ícone do **beacon**.
 
 ![DSN](./images/app23.png)
 
-Vedrete questo. Per prima cosa, seleziona **Beacon schermo del campeggio di avvio** quindi fai clic sul pulsante **voce** di nuovo. Questo ti consente di simulare una voce del beacon.
+Em seguida, selione **Beacon schermo del campeggio di avvio** e clique no botão de **Entrata** novamente. Isso permitirá que você simule uma entrada de sinalização (beacon).
 
 ![DSN](./images/app21.png)
 
-Ora, guarda di nuovo la schermata in-store. L’ultimo prodotto visualizzato verrà visualizzato entro 5 secondi.
+Agora, confira a tela da loja novamente. Você verá o último produto visualizado aparecer nessa tela em 5 segundos.
 
 ![DSN](./images/screen3.png)
 
-Diamo anche un&#39;occhiata al vostro Visualizzatore di profili sul sito web ora. Vedrai molti eventi aggiunti lì, solo per dimostrare che qualsiasi interazione con un cliente viene raccolta e memorizzata in Adobe Experience Platform.
+Agora, vamos verificato também o seu Visualizador de Perfil nessun sito. Você verá muitos eventos que foram adicionados, para mostrar que qualquer interação com um cliente coletada e armazenada na Adobe Experience Platform.
 
 ![DSN](./images/screen4.png)
 
-Negli esercizi successivi, configurerai e testerai il tuo percorso di ingresso beacon.
+nn. próximos exercícios, você irá configurar e testar sua própria jornada de entrada do beacon.
 
-Passaggio successivo: [3.2 Creare un evento](./ex2.md)
+Próxima etapa: [3.2 Crie seu evento](./ex2.md)
 
-[Torna al flusso utente 3](./uc3.md)
+[Retornar para Fluxo de Usuário 3](./uc3.md)
 
-[Torna a tutti i moduli](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

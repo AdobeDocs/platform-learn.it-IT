@@ -5,85 +5,85 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 3%
+source-wordcount: '516'
+ht-degree: 2%
 
 ---
 
-# 1.3 Creare un segmento - Interfaccia utente
+# 1.3 Crite um segmento - Interfaccia utente
 
-In questo esercizio creerai un segmento utilizzando il Generatore di segmenti di Adobe Experience Platform.
+Neste exercício, você irá criar um segmento o Construtor de Segmentos da Adobe Experience Platform.
 
-## Storia
+## História
 
-Vai a [Adobe Experience Platform](https://experience.adobe.com/platform). Dopo aver effettuato l&#39;accesso, si aprirà la homepage di Adobe Experience Platform.
+Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer login, você irá acessar a página inicial da Adobe Experience Platform.
 
 ![Acquisizione dei dati](./images/home.png)
 
-Prima di continuare, devi selezionare un **sandbox**. La sandbox da selezionare è denominata ``Bootcamp``. Per eseguire questa operazione, fai clic sul testo **[!UICONTROL Produzione Prod]** nella linea blu sopra lo schermo. Dopo aver selezionato il [!UICONTROL sandbox], vedrai la modifica dello schermo e ora sei nel tuo dedicato [!UICONTROL sandbox].
+Antes de continuar, você precisa selionar um **sandbox**. O nome do sandbox un utente selionado é ``Bootcamp``. É possível fazer isso clicando nessun texto **[!UICONTROL Produzione Prod]** na linha azul na parte superior da tela. depois de selionar o sandbox apropriado, você verá a tela mudando e agora você está em seu [!UICONTROL sandbox] dedica.
 
 ![Acquisizione dei dati](./images/sb1.png)
 
-Nel menu a sinistra, vai a **Segmenti**. In questa pagina puoi vedere una panoramica di tutti i segmenti esistenti. Fai clic sul pulsante **+ Crea segmento** per iniziare a creare un nuovo segmento.
+Nessun menu à esquerda, acesse **Segmenti**. Nesta página, você tem uma visão geral de todos os segmentos esiste. Clique no botão + Criar segmento para começar a criar um novo segmento.
 
 ![Segmentazione](./images/menuseg.png)
 
-Una volta entrato nel nuovo generatore di segmenti, noterai immediatamente il **Attributi** l&#39;opzione di menu e **Profilo individuale XDM** riferimento.
+Quando estremo no novo Construtor de segmentos, você irá perceber imediall opção de menu **Attributi** e un referência do **Profilo individuale XDM**.
 
 ![Segmentazione](./images/segmentationui.png)
 
-Poiché XDM è il linguaggio che attiva l’attività di esperienza, XDM è anche la base per il generatore di segmenti. Tutti i dati acquisiti in Platform devono essere mappati su XDM e, di conseguenza, tutti i dati diventano parte dello stesso modello di dati, indipendentemente da dove provengono. Questo ti offre un grande vantaggio nella creazione di segmenti, poiché da questa interfaccia utente del generatore di segmenti puoi combinare dati di qualsiasi origine nello stesso flusso di lavoro. I segmenti generati nel Generatore di segmenti possono essere inviati a soluzioni come Adobe Target, Adobe Campaign e Adobe Audience Manager per l’attivazione.
+Como o XDM é a linguagem que alimenta o setor de experiência, o XDM também é a base para o Construtor de segmentos. Todos os dados ingeridos na plataforma devem ser mapeados em relação ao XDM e, portanto, todos os dados se tornam parte do mesmo modelo de dados, indipendente da origem desses dados. Isso oferece uma grande vantagem ao criar segmentos, pois a partir dessa interface do usuário do Construtor de segmento, é possível combinar dados de qualquer origem no mesmo fluxo de trabalho. Os segmentos criados no Construtor de segmentos podem enviados para soluções como Adobe Target, Adobe Campaign e Adobe Audience Manager para ativação.
 
-Ora devi creare un segmento di tutti i clienti che hanno visualizzato il prodotto **Real-Time CDP**.
+Agora você precisa criar um segmento de todos os clientque visualizaram o produto **Real-Time CDP**.
 
-Per creare questo segmento, devi aggiungere un evento esperienza. Per trovare tutti gli eventi di esperienza, fai clic sul pulsante **Eventi** nella **Campi** barra dei menu.
+Para vinuir este segmento, você precisa adicionar um esperienza ência. Você pode encontrar todos os Eventos de experiência clicando no ícone **Eventi** menu a barra **Campi**.
 
 ![Segmentazione](./images/findee.png)
 
-Ora, vedrai il livello superiore, **Eventi esperienza XDM** nodo. Fai clic su **ExperienceEvent XDM**.
+Em seguida, você verá o nó **Eventi esperienza XDM** di Nível superiore. Clipart **ExperienceEvent XDM**.
 
 ![Segmentazione](./images/see.png)
 
-Vai a **Elementi elenco prodotti**.
+Acesse **Elementi elenco prodotti**.
 
 ![Segmentazione](./images/plitems.png)
 
-Seleziona **Nome** e trascina e rilascia la **Nome** dal menu di sinistra nell’area di lavoro del generatore di segmenti nel **Eventi** sezione . Vedrai questo:
+Selecione **Nome** e arraste e solte o objeto **Nome** do menu à esquerda na tela do costrutor de segmentos na seção **Eventi**. Em seguida, o seguinte será exibido:
 
 ![Segmentazione](./images/eewebpdtlname.png)
 
-Il parametro di confronto deve essere **è** e nel campo di immissione immettere **Real-time CDP**.
+O parâmetro de comparação DEVE **è** e, non campo de entrada, insira **Real-time CDP**.
 
 ![Segmentazione](./images/pv.png)
 
-Ogni volta che aggiungi un elemento al generatore di segmenti, puoi fare clic sul pulsante **Aggiorna stima** per ottenere una nuova stima della popolazione nel segmento.
+Sempre que adicionar ao costrutor de segmentos, você pode clicar no botão **Aggiorna stima** para obter uma nova estimativa da população em seu segmento.
 
 ![Segmentazione](./images/refreshest.png)
 
-Come **Metodo di valutazione**, seleziona **Bordo**.
+Para **Metodo di valutazione**, selione **Bordo**.
 
 ![Segmentazione](./images/evedge.png)
 
-Infine, diamo un nome al segmento e salvalo.
+Por fim, vamos dar um nome ao seu segmento e salvá-lo.
 
-Come convenzione di denominazione, utilizza:
+Modello comune di nomenclatura, utilizzare:
 
 - `yourLastName - Interest in Real-Time CDP`
 
-Quindi, fai clic sul pulsante **Salva e chiudi** per salvare il segmento.
+Em seguida, clique no botão **Salva e chiudi** para salvar seu segmento.
 
 ![Segmentazione](./images/segmentname.png)
 
-Verrai reindirizzato alla pagina di panoramica dei segmenti, dove vedrai un esempio di anteprima dei profili dei clienti idonei per il tuo segmento.
+Agora você irá retornar à página de visão geral do segmento, onde verá uma visualização de amostra dos perfis de clientes que se Qualam para o seu segmento.
 
 ![Segmentazione](./images/savedsegment.png)
 
-Ora puoi continuare l’esercizio successivo e utilizzare il segmento con Adobe Target.
+Agora você pode continuar no próximo exercício e usar seu segmento com su Adobe Target.
 
-Passaggio successivo: [1.4 Intervenire: inviare il segmento ad Adobe Target](./ex4.md)
+Próxima etapa: [1.4 Ação: Inviate seu segmento para o Adobe Target](./ex4.md)
 
-[Torna al flusso utente 1](./uc1.md)
+[Retornar para Fluxo de Usuário 1](./uc1.md)
 
-[Torna a tutti i moduli](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)
