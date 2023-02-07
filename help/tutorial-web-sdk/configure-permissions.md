@@ -3,7 +3,7 @@ title: Configurare le autorizzazioni per l’esercitazione
 description: Scopri come richiedere l’accesso ad Experience Platform Web SDK e configurare l’autorizzazione necessaria per completare l’esercitazione Implementa Adobe Experience Cloud con Web SDK.
 feature: Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 4eaa7ae1cf4c4c1478484eaeb877733a43c6fdf5
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 6%
@@ -23,7 +23,7 @@ Scopri come richiedere l’accesso ad Experience Platform Web SDK e configurare 
 
 Queste funzioni dovrebbero essere disponibili per tutti i clienti di Experience Cloud, anche se non sei un cliente di un’applicazione basata su Platform come Real-Time CDP.
 
-* Accesso al **produzione predefinita**, **&quot;Prod&quot;** sandbox (.
+* Accesso al **produzione predefinita**, **&quot;Prod&quot;** sandbox.
 * Accesso a **[!UICONTROL Gestire gli schemi]** e **[!UICONTROL Visualizza schemi]** sotto **[!UICONTROL Modellazione dati]**
 * Accesso a **[!UICONTROL Gestire gli spazi dei nomi delle identità]** e **[!UICONTROL Visualizzare gli spazi dei nomi delle identità]** sotto **[!UICONTROL Identity Management]**
 * Accesso a **[!UICONTROL Gestire i flussi di dati]** e **[!UICONTROL Visualizza i reami di dati]** sotto **[!UICONTROL Raccolta dati]**
