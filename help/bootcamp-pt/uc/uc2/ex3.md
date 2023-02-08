@@ -5,9 +5,9 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '934'
 ht-degree: 3%
 
 ---
@@ -34,7 +34,7 @@ Você verá uma tela de jornada vazia.
 
 ![ACOP](./images/journeyempty.png)
 
-Nessun exercício anteriore, você criou um novo **Evento**. Você nomeou o evento `yourLastNameAccountCreationEvent` e sostituito `yourLastName` pelo seu sobrenome. Este foi o risultanti da criação do evento:
+Nessun exercício anteriore, você criou um novo **Evento**. Você nomeou o evento `seuSobrenomeAccountCreationEvent` e sostituito `seuSobrenome` pelo seu sobrenome. Este foi o risultanti da criação do evento:
 
 ![ACOP](./images/eventdone.png)
 
@@ -60,9 +60,7 @@ Como terceira etapa da jornada, você adicionar uma ação **E-mail**. Vá para 
 
 ![ACOP](./images/journeyactions.png)
 
-Imposta la **Categoria** a **Marketing** e seleziona una superficie e-mail che ti consente di inviare e-mail. In questo caso, la superficie dell’e-mail da selezionare è **E-mail**. Assicurati che le caselle di controllo per **Clic su e-mail** e **aperture e-mail** sono entrambi abilitati.
-
-Definisci a **Categoria** como **Marketing** e selecione uma superfície de e-mail que permita o envio de mail. Nesse caso, una superfície e-mail un utente selionada é E-mail. Certifique se de que as caixas de seleção **Clic su e-mail** e **aperture e-mail** estejam marcadas.
+Definisci a **Categoria** como **Marketing** e selione uma **superficie posta elettronica** que permita o envio de mail. Nesse caso, a **superficie posta elettronica** un utente selionada é E-mail. Certifique se de que as caixas de seleção **Clic su e-mail** e **aperture e-mail** estejam marcadas.
 
 ![ACOP](./images/journeyactions1.png)
 
@@ -88,11 +86,11 @@ Na área de texto, comece **Olá**
 
 ![Journey Optimizer](./images/msg6.png)
 
-A linha de ainda não está. Em seguida, você precisa trazer o token de personalização para o **Nome** que está armazenado em `profile.person.name.firstName`. Nessun menu à esquerda, ruolo para baixo para encontrar o **Persona** e clique na seta para ir um nível mais profundo.
+A linha de ainda não está. Em seguida, você precisa trazer o token de personalização para o **Nome** que está armazenado em `profile.person.name.firstName`. Nessun menu à esquerda, ruolo para baixo para encontrar o **Persona** e clique na seta para visalizic mais campos
 
 ![Journey Optimizer](./images/msg7.png)
 
-Agora incontra o costa **Nome completo** e clique na seta para ir um nível mais profundo.
+Agora incontra o costa **Nome completo** e clique na seta para visualizar mais campos.
 
 ![Journey Optimizer](./images/msg8.png)
 
@@ -100,7 +98,7 @@ Por fim, localize o campo **Nome** e clique no símbolo **+**  ao lado dele. V
 
 ![Journey Optimizer](./images/msg9.png)
 
-Em seguida, adicione o texto, **agradecemos a sua inscrição!** Clique em Salvar. . Clipart **Salva**.
+Em seguida, adicione o texto, **agradecemos a sua inscrição!**. Clipart **Salva**.
 
 ![Journey Optimizer](./images/msg10.png)
 
@@ -118,7 +116,7 @@ Clipart **Importa HTML**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Arraste e solte o arquivo **mailtemplatebootcamp.html**, que você pode baixa [qui](../../assets/html/mailtemplatebootcamp.html.zip). Clique em Importar.
+Arraste e solte o arquivo **mailtemplatebootcamp.html**, que você pode baixa [aqua](../../assets/html/mailtemplatebootcamp.html.zip). Clique em Importar.
 
 ![Journey Optimizer](./images/msg13.png)
 
@@ -130,7 +128,7 @@ Vamos personalizar o e-mail. Clique ao lado fare testo **Olá** e, em seguida, c
 
 ![Journey Optimizer](./images/msg35.png)
 
-Em seguida, você precisa trazer o token de personalização **Nome** que está armazenado em `profile.person.name.firstName`. Nessun menu, localize o **Persona**, faça uma detalhada no **Nome completo** e clique no ícone **+** para adicionar o campo **Nome** redattore del ao de espressão.
+Em seguida, você precisa trazer o token de personalização **Nome** que está armazenado em `profile.person.name.firstName`. Nessun menu, localize o **Persona**, faça uma detalhada no **Nome completo** e clique no ícone **+** para adicionar o campo **Nome** editor ao.
 
 Clipart **Salva**.
 
@@ -162,7 +160,7 @@ Você ainda precisa dar um Nome à sua jornada. Você pode fazer isso clicando n
 
 ![ACOP](./images/journeyname.png)
 
-Você ainda precisa dar um Nome à sua jornada. Você pode fazer isso clicando no ícone `yourLastName - Account Creation Journey`. Clipart **OK** para salvar come mudanças.
+Você pode fazer isso clicando no item clicando no item &quot;Name&quot; e inserindo o seguinte nome `yourLastName - Account Creation Journey`. Clipart **OK** para salvar come mudanças.
 
 ![ACOP](./images/journeyname1.png)
 

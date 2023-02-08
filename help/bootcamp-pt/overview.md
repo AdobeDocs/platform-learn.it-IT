@@ -2,9 +2,9 @@
 title: Bootcamp di Experience Makers - Brasile
 description: Punto di partenza per i partecipanti al Bootcamp di Experience Makers
 doc-type: multipage-overview
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Muitas empresas não estão cientes do atrito que esiste na jornada dos seus clientes, consequência de uma abordagem fragmentada e não integrada ao orquestrar a comunicação com o cliente. Dados, perfil e conteúdo precisam estar perfeitamente alinhados para projetar e oferecer experiências excepcionais ao consumidor.
 
-Partecipa deste Bootcamp para aprender como uma abordagem baseada em plataforma pode ajudar na obtenção dos insights necessários para identity e remover pontos de atrito para apourar a jornada do seu cliente.
+Partecipa deste Bootcamp para aprender como uma abordagem baseada em Experience Platform pode ajudar na obtenção dos insights necessários para identity e remover pontos de atrito para apourar a jornada do seu cliente.
 
-A personalização em escala começa com a compressensão do que pode ser apourado e, para isso, uma visão em tempo real do seu cliente é essencial. Approfondimenti levam à ação, o que leva a mais insights. A abordagem esclusiva da Adobe focada na plataforma fornece as ferramentas para, além de impulsionar os avanços tecnológicos, impactar sua organização, sua attrezze sua condensidade de oferecer uma experiência holística em vez de experiência do dencia por canal.
+A personalização em escala começa com a compressensão do que pode ser apourado e, para isso, uma visão em tempo real do seu cliente é essencial. Approfondimenti levam à ação, o que leva a mais insights. A abordagem esclusiva da Adobe focada na fornece Experience Platform come ferramentas para, além de impulsionar os avanços tecnológicos, impactar sua organização, sua attrezze sua condensidade de oferecer uma experiência holística cliente em vez de experiência du citífica por canal.
 
 >[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
 

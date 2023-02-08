@@ -6,9 +6,9 @@ audience: all/bootcamp-pt/
 index: false
 hide: true
 doc-type: multipage
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '160'
 ht-degree: 3%
 
 ---
@@ -32,8 +32,8 @@ ht-degree: 3%
    + [2.3 Crie sua jornada e mensagem de mail](/help/bootcamp-pt/uc/uc2/ex3.md)
    + [2.4 Teste sua jornada](/help/bootcamp-pt/uc/uc2/ex4.md)
    + [2.5 Uso istantaneo dell&#39;aplicativo móvel](/help/bootcamp-pt/uc/uc2/ex5.md)
-   + [2.6 Centro chiamate senza Parsonalização](/help/bootcamp-pt/uc/uc2/ex6.md)
-+ 3 - Consolidando fisico e digitale {#uc3}
+   + [2.6 Personalizzazione senza call center](/help/bootcamp-pt/uc/uc2/ex6.md)
++ 3 - Consolidando o físico e o digitale {#uc3}
    + [Panoramica](/help/bootcamp-pt/uc/uc3/uc3.md)
    + [3.1 Uso del beacon aplicativo móvel e acione um](/help/bootcamp-pt/uc/uc3/ex1.md)
    + [3.2 Crie seu evento](/help/bootcamp-pt/uc/uc3/ex2.md)
