@@ -4,10 +4,10 @@ breadcrumb-title: Tutorial
 user-guide-description: Scopri i numerosi componenti di Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: ef085f3bdfe385d072551bbafa1ae39e847b147d
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 29%
+source-wordcount: '950'
+ht-degree: 32%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 29%
    + [Architettura di base](/help/platform/intro-to-platform/basic-architecture.md)
    + [Utilizzo dell’interfaccia utente di Platform](/help/platform/intro-to-platform/interface-tour.md)
    + [Ruoli e fasi del progetto](/help/platform/intro-to-platform/roles-and-project-phases.md)
-+ [Guida introduttiva: Architetti di dati e data engineer](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target=&quot;_blank&quot;}
++ [Guida introduttiva: Architetti di dati e data engineer](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [Autenticazione nelle API di Experience Platform](/help/platform/authentication/platform-api-authentication.md)
 + [Importazione dei dati di esempio in Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Amministrazione {#admin}
@@ -36,7 +36,7 @@ ht-degree: 29%
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [Gestire i profili di prodotto](/help/platform/admin/managing-product-profiles.md)
 + [Registri di controllo](/help/platform/governance/audit-logs.md)
-+ [Raccolta dati](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=it){target=&quot;_blank&quot;}
++ [Raccolta dati](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=it){target="_blank"}
 + Dashboard {#dashboards}
    + [Creare un dashboard](/help/platform/dashboards/create-a-dashboard.md)
 + Governance dei dati {#data-governance}
@@ -47,14 +47,12 @@ ht-degree: 29%
    + [Applica criteri di utilizzo dati](/help/platform/governance/enforce-data-usage-policies.md)
    + [Applica consenso](/help/platform/governance/enforce-consent.md)
 + Igiene dei dati {#data-hygiene}
-   + [Panoramica](/help/platform/data-hygiene/overview.md)
-   + [Eliminare i consumatori](/help/platform/data-hygiene/delete-consumers.md)
    + [Eliminare i set di dati](/help/platform/data-hygiene/delete-datasets.md)
 + Acquisizione dei dati {#data-ingestion}
    + [Panoramica](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Panoramica sull’acquisizione in batch](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Creare e popolare un set di dati](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-   + [Mappare un file CSV in XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html){target=&quot;_blank&quot;}
+   + [Mappare un file CSV in XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=it){target="_blank"}
    + [Panoramica delle origini](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Acquisire dati da Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=it)
    + [Inserire dati da Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
@@ -64,8 +62,8 @@ ht-degree: 29%
    + [Panoramica sull’acquisizione in streaming](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [Trasmetti dati con l’API HTTP](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=it)
    + [Trasmettere i dati utilizzando i connettori di origini](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=it)
-   + [Tutorial dell’SDK per web](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target=&quot;_blank&quot;}
-   + [Tutorial dell’SDK per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target=&quot;_blank&quot;}
+   + [Tutorial dell’SDK per web](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
+   + [Tutorial dell’SDK per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
 + Data Science Workspace {#data-science-workspace}
    + [Panoramica](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
    + [Architettura](data-science-workspace/architecture-overview.md)
@@ -79,9 +77,9 @@ ht-degree: 29%
    + [Creare e pubblicare un modello addestrato (interfaccia utente)](data-science-workspace/create-model-ui.md)
    + [Pianificazione dell&#39;addestramento e del punteggio automatizzati per un servizio](data-science-workspace/schedule-training-scoring.md)
    + [Arricchisci i profili dei clienti in tempo reale con informazioni sull’apprendimento automatico](data-science-workspace/dsw-profile-segmentation.md)
-   + [Creare pacchetti di file sorgente in una ricetta](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target=&quot;_blank&quot;}
-   + [Importare una ricetta imballata (interfaccia utente)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target=&quot;_blank&quot;}
-   + [Importare una ricetta imballata (API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target=&quot;_blank&quot;}
+   + [Creare pacchetti di file sorgente in una ricetta](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
+   + [Importare una ricetta imballata (interfaccia utente)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
+   + [Importare una ricetta imballata (API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + Destinazioni {#destinations}
    + [Panoramica sulle destinazioni](/help/platform/destinations/understanding-destinations.md)
    + [Connessione alle destinazioni](/help/platform/destinations/connecting-to-destinations.md)
@@ -106,7 +104,7 @@ ht-degree: 29%
    + [Informazioni sul profilo cliente in tempo reale](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [Diagramma di panoramica del profilo](/help/platform/profiles/overview-diagram.md)
    + [Inserire i dati nel profilo](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
-   + [Personalizzare i dettagli della vista del profilo](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target=&quot;_blank&quot;}
+   + [Personalizzare i dettagli della vista del profilo](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
    + [Visualizzare i profili account](/help/platform/profiles/view-account-profiles.md)
    + [Creare criteri di unione](/help/platform/profiles/create-merge-policies.md)
    + [Panoramica sugli schemi unione](/help/platform/profiles/union-schemas-overview.md)
@@ -131,12 +129,12 @@ ht-degree: 29%
    + [Funzioni definite da Adobe](/help/platform/queries/adobe-defined-functions.md)
    + [Pattern di utilizzo dei dati](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
    + [Eseguire query](/help/platform/queries/run-queries.md)
-   + [Genera set di dati dai risultati delle query](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target=&quot;_blank&quot;}
+   + [Genera set di dati dai risultati delle query](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
    + [Tableau](/help/platform/queries/psql-client-tableau.md)
    + [Analizzare e visualizzare i dati](/help/platform/queries/analyze-and-visualize.md)
    + [Creare dashboard utilizzando gli strumenti BI](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [Ricarica i dati dei clienti](/help/platform/queries/recharge-your-customer-data.md)
-   + [Connettere i client al servizio query](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target=&quot;_blank&quot;}
+   + [Connettere i client al servizio query](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
 + Schemi {#schemas}
    + [Panoramica](/help/platform/schemas/schemas-and-experience-data-model.md)
    + [Blocchi di generazione](/help/platform/schemas/schema-building-blocks.md)
@@ -151,7 +149,7 @@ ht-degree: 29%
    + [Utilizzare campi enumerati e valori consigliati](/help/platform/schemas/use-enumerated-fields.md)
    + [Copiare schemi tra sandbox](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [Aggiornare gli schemi](/help/platform/schemas/update-schemas.md)
-   + [Creare uno schema ad hoc](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target=&quot;_blank&quot;}
+   + [Creare uno schema ad hoc](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + Segmenti {#segments}
    + [Panoramica di Segment Builder](/help/platform/segments/segment-builder-overview.md)
    + [Creare segmenti](/help/platform/segments/create-segments.md)
@@ -163,8 +161,8 @@ ht-degree: 29%
    + [Creare segmenti con più entità](/help/platform/segments/create-multi-entity-segments.md)
    + [Creare segmenti con dati B2B](/help/platform/segments/create-segments-with-b2b-data.md)
    + [Demo della segmentazione in streaming](/help/platform/segments/streaming-segmentation-demo.md)
-   + [Valutare un segmento](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target=&quot;_blank&quot;}
-   + [Creare un set di dati per esportare i dati](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target=&quot;_blank&quot;}
+   + [Valutare un segmento](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
+   + [Creare un set di dati per esportare i dati](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
    + [Impostazione della connessione Segment Match](/help/platform/segments/segment-match-connection-setup.md)
    + [Governance dei dati per Segment Match](/help/platform/segments/segment-match-data-governance.md)
    + [Flusso della configurazione di Segment Match](/help/platform/segments/segment-match-configuration-flow.md)
@@ -181,9 +179,9 @@ ht-degree: 29%
    + [Trasmetti dati con l’API HTTP](/help/platform/sources/streaming-ingestion-http-api.md)
    + [Trasmettere i dati utilizzando i connettori di origini](/help/platform/sources/streaming-ingestion-source-connector.md)
 + Servizi applicazione {#application-services}
-   + [Esercitazioni sul Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target=&quot;_blank&quot;}
-   + [Esercitazioni sul Journey Orchestration](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target=&quot;_blank&quot;}
-   + [Esercitazioni di Offer decisioning](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html?lang=it){target=&quot;_blank&quot;}
+   + [Tutorial su Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target="_blank"}
+   + [Esercitazioni sul Journey Orchestration](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target="_blank"}
+   + [Esercitazioni di Offer decisioning](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html?lang=it){target="_blank"}
    + Tutorial su Real-Time CDP{#rtcdp}
       + [Panoramica](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
       + [Panoramica di B2B Edition](/help/platform/rtcdp/b2b-overview.md)
