@@ -1,9 +1,9 @@
 ---
 title: Parametri di invio | Migrare Target da at.js 2.x all’SDK per web
 description: Scopri come inviare parametri mbox, di profilo e di entità ad Adobe Target utilizzando Experience Platform Web SDK.
-source-git-commit: 10dbc8ecbfee511a97e64cb571c43dbf05e3076c
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1652'
 ht-degree: 1%
 
 ---
@@ -124,7 +124,7 @@ La tabella seguente illustra il modo in cui i parametri di esempio verranno rima
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | I parametri di entità personalizzati vengono utilizzati per aggiornare il catalogo dei prodotti Recommendations. Questi parametri personalizzati devono essere passati come parte del `data` oggetto. |
 | `cartIds` | `data.__adobe.target.cartIds` | Utilizzato per gli algoritmi di consigli basati su cart di Target. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Utilizzato per impedire la restituzione di ID entità specifici in una progettazione di consigli. |
-| `mbox3rdPartyId` | Impostato in identityMap. Vedi [Sincronizzazione dei profili con un ID cliente](#synching-profiles-with-a-customer-id) | Utilizzato per sincronizzare i profili Target tra dispositivi e attributi cliente. Lo spazio dei nomi da utilizzare per l’ID cliente deve essere specificato nella variabile [Configurazione di destinazione del datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `mbox3rdPartyId` | Impostato in identityMap. | Utilizzato per sincronizzare i profili Target tra dispositivi e attributi cliente. Lo spazio dei nomi da utilizzare per l’ID cliente deve essere specificato nella variabile [Configurazione di destinazione del datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
 | `orderId` | `xdm.commerce.order.purchaseID` | Utilizzato per identificare un ordine univoco per il tracciamento delle conversioni di Target. |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Utilizzato per tenere traccia dei totali degli ordini per gli obiettivi di conversione e ottimizzazione di Target. |
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>O<br> `xdm.productListItems[0-n].SKU` | Utilizzato per il tracciamento delle conversioni di Target e gli algoritmi di consigli. Fai riferimento a [parametri di entità](#entity-parameters) per ulteriori informazioni. |
@@ -134,7 +134,7 @@ La tabella seguente illustra il modo in cui i parametri di esempio verranno rima
 
 ## Parametri personalizzati
 
-Tutti i parametri mbox personalizzati devono essere trasmessi come dati XDM con `sendEvent` comando. È importante assicurarsi che lo schema XDM includa tutti i punti dati necessari per l’implementazione di Target.
+I parametri mbox personalizzati devono essere trasmessi come dati XDM con `sendEvent` comando. È importante assicurarsi che lo schema XDM includa tutti i campi necessari per l’implementazione di Target.
 
 esempio at.js utilizzando `targetPageParams()`:
 
@@ -359,7 +359,7 @@ E poi includi il tuo [!UICONTROL Oggetto XDM] nel tuo [!UICONTROL Invia evento] 
 >La `productPurchasedId` può anche essere passato come un elenco di ID di entità separati da virgole sotto `data` oggetto.
 
 
-## Sincronizzazione dei profili con un ID cliente
+## Id Cliente (mbox3rdPartyId)
 
 Target consente la sincronizzazione dei profili tra dispositivi e sistemi utilizzando un singolo ID cliente. Con at.js, può essere impostato come `mbox3rdPartyId` nella richiesta Target o come primo ID cliente inviato al servizio Experience Cloud Identity. A differenza di at.js, un’implementazione SDK per web di Platform consente di specificare quale ID cliente usare come `mbox3rdPartyId` se ce ne sono più. Ad esempio, se la tua azienda dispone di un ID cliente globale e di ID cliente separati per diverse linee di business, puoi configurare quale ID Target deve utilizzare.
 
@@ -411,7 +411,7 @@ La [!UICONTROL Oggetto XDM] viene quindi incluso nel [!UICONTROL Invia evento] a
 
 ![Inclusione di un elemento dati oggetto XDM in un evento Send](assets/params-tags-sendEvent-xdm.png){zoomable=&quot;yes&quot;}
 
-Nel servizio Adobe Target del datastream, assicurati di impostare il [!UICONTROL Spazio dei nomi ID di terze parti di destinazione] allo stesso namespace utilizzato nel [!UICONTROL Mappa identità] elemento dati
+Nel servizio Adobe Target del datastream, assicurati di impostare il [!UICONTROL Spazio dei nomi ID di terze parti di destinazione] allo stesso namespace utilizzato nel [!UICONTROL Mappa identità] elemento dati:
 ![Impostare lo spazio dei nomi ID di terze parti di Target nel datastream](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]

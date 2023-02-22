@@ -1,9 +1,9 @@
 ---
 title: Aggiornare tipi di pubblico e script di profilo | Migrare Target da at.js 2.x all’SDK per web
 description: Scopri come aggiornare i tipi di pubblico e gli script di profilo di Adobe Target per garantire la compatibilità con Experience Platform Web SDK.
-source-git-commit: 8209b13b745dbea418003b133a6834825947950e
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Eventuali tipi di pubblico che utilizzano parametri mbox personalizzati devono e
 
 Un approccio per garantire la compatibilità sia con at.js che con Platform Web SDK consiste nell’aggiornare tutti i tipi di pubblico rilevanti in modo che `OR` vengono utilizzate le seguenti condizioni:
 
-![Come visualizzare l’aggiornamento di un pubblico Target per la compatibilità dell’SDK per web di Platform](assets/target-audience-update.png)
+![Come visualizzare l’aggiornamento di un pubblico Target per la compatibilità dell’SDK per web di Platform](assets/target-audience-update.png){zoomable=&quot;yes&quot;}
 
 ## Modificare gli script di profilo
 
