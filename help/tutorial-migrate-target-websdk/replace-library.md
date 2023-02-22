@@ -1,9 +1,9 @@
 ---
 title: Sostituire la libreria | Migrare Target da at.js 2.x all’SDK per web
 description: Scopri come migrare un’implementazione Adobe Target da at.js 2.x a Adobe Experience Platform Web SDK. Gli argomenti includono la panoramica della libreria, le differenze di implementazione e altri callout importanti.
-source-git-commit: 8d41e5d6434dabff0443e932be842b37553d72a9
+source-git-commit: 51958a425c946fc806d38209ac4b0b4fa17945e8
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1715'
 ht-degree: 1%
 
 ---
@@ -63,6 +63,8 @@ Supponiamo una semplice implementazione di Target con at.js:
 * Una o più librerie helper di terze parti le cui funzionalità possono essere utilizzate nelle attività di Target (ad esempio, jQuery)
 * Un frammento pre-hiding per attenuare la visualizzazione momentanea di altri contenuti
 * La libreria at.js di Target viene caricata in modo asincrono con le impostazioni predefinite per richiedere e eseguire automaticamente il rendering delle attività:
+
++++vedi esempio di codice HTML di un at.js
 
 ```HTML
 <!doctype html>
@@ -126,6 +128,8 @@ Supponiamo una semplice implementazione di Target con at.js:
 </body>
 </html>
 ```
+
++++
 
 Per aggiornare Target per utilizzare l’SDK per web di Platform, rimuovi prima at.js:
 
@@ -220,7 +224,7 @@ alloy("configure", {
 });
 ```
 
->[!TAB tag]
+>[!TAB Tag]
 
 Nelle implementazioni dei tag, molti campi vengono compilati automaticamente o possono essere selezionati dai menu a discesa. Tieni presente che una piattaforma diversa [!UICONTROL sandbox] e [!UICONTROL datastreams] può essere selezionato per ogni ambiente. Il datastream cambierà in base allo stato della libreria di tag nel processo di pubblicazione.
 
