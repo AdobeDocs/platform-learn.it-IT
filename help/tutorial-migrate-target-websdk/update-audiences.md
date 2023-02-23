@@ -1,9 +1,9 @@
 ---
 title: Aggiornare tipi di pubblico e script di profilo | Migrare Target da at.js 2.x all’SDK per web
 description: Scopri come aggiornare i tipi di pubblico e gli script di profilo di Adobe Target per garantire la compatibilità con Experience Platform Web SDK.
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ if(mbox.param('pageName') == 'Product Details'){
 È stato aggiornato lo script di profilo per la compatibilità dell’SDK per web di Platform:
 
 ```Javascript
-if((mbox.param('pageName') == 'Product Details') || (mbox.param('page.webpagedetails.pageName') =='Product Details')){
+if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDetails.pageName') =='Product Details')){
   return true
 }
 ```
@@ -69,7 +69,7 @@ Esempio di offerta JSON utilizzando i nomi dei parametri SDK per web di Platform
 
 ```JSON
 {
-  "pageName" : "${mbox.web.webpagedetails.pageName}",
+  "pageName" : "${mbox.web.webPagedDetails.pageName}",
   "layoutVariation" : "grid"
 }
 ```
@@ -80,4 +80,4 @@ Quindi, scopri come [convalidare l’implementazione di Target](validate.md).
 
 >[!NOTE]
 >
->Ci impegniamo ad aiutarti a eseguire con successo la migrazione di Target da at.js all’SDK per web. Se incontri ostacoli con la tua migrazione o se ti senti che mancano informazioni critiche in questa guida, compila l&#39;invio del tuo messaggio [discussione comunitaria](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Ci impegniamo ad aiutarti a eseguire con successo la migrazione di Target da at.js all’SDK per web. Se incontri ostacoli con la tua migrazione o se ti senti che mancano informazioni critiche in questa guida, compila l&#39;invio del tuo messaggio [discussione comunitaria](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

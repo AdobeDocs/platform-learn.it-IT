@@ -1,9 +1,9 @@
 ---
 title: Sostituire la libreria | Migrare Target da at.js 2.x all’SDK per web
 description: Scopri come migrare un’implementazione Adobe Target da at.js 2.x a Adobe Experience Platform Web SDK. Gli argomenti includono la panoramica della libreria, le differenze di implementazione e altri callout importanti.
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: ac5cee1888b39e5ba0134c850c378737e142f1d4
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1654'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ Scopri come sostituire l’implementazione Adobe Target on-page per migrare da a
 * Controlla le impostazioni di amministrazione di Target e prendi nota del tuo ID organizzazione IMS
 * Sostituire la libreria at.js con l’SDK per web di Platform
 * Aggiorna il frammento pre-hiding per le implementazioni della libreria sincrona
-* Configurare l’SDK web della piattaforma sulla pagina
+* Configurare l’SDK web per Platform
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Supponiamo una semplice implementazione di Target con at.js:
 * Un frammento pre-hiding per attenuare la visualizzazione momentanea di altri contenuti
 * La libreria at.js di Target viene caricata in modo asincrono con le impostazioni predefinite per richiedere e eseguire automaticamente il rendering delle attività:
 
-+++esempio at.js di un’implementazione in una pagina HTML
+Implementazione di esempio +++at.js in una pagina HTML
 
 ```HTML
 <!doctype html>
@@ -138,7 +138,11 @@ Per aggiornare Target per utilizzare l’SDK per web di Platform, rimuovi prima 
 <script src="/libraries/at.js" async></script>
 ```
 
-E sostituisci con la versione supportata corrente di Platform Web SDK (alloy.js):
+E sostituisci con la libreria JavsScript della lega o con il codice di incorporamento dei tag e l&#39;estensione Adobe Experience Platform Web SDK:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```HTML
 <!--Platform Web SDK base code-->
@@ -152,12 +156,21 @@ E sostituisci con la versione supportata corrente di Platform Web SDK (alloy.js)
 <script src="https://cdn1.adoberesources.net/alloy/2.13.1/alloy.min.js" async></script>
 ```
 
+>[!TAB Tag]
+
+```HTML
+<!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
+<script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+```
+
+Nella proprietà tag , aggiungi l’estensione Adobe Experience Platform Web SDK:
+
+![Aggiungere l’estensione Adobe Experience Platform Web SDK](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+
+>[!ENDTABS]
+
 La versione standalone predefinita richiede un &quot;codice base&quot; aggiunto direttamente alla pagina, che crea una funzione globale denominata alloy. Usa questa funzione per interagire con l&#39;SDK. Se si desidera assegnare alla funzione globale un nome diverso, modificare la `alloy` nome.
-
->[!TIP]
->
-> Quando si utilizza la funzione tag (precedentemente Launch) per implementare l’SDK per web, la libreria alloy.js viene aggiunta alla libreria tag aggiungendo l’estensione Adobe Experience Platform Web SDK.
-
 
 Fai riferimento a [Installazione di Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=it) documentazione per ulteriori dettagli e opzioni di distribuzione.
 
@@ -168,9 +181,9 @@ L’implementazione dell’SDK per web di Platform può richiedere un frammento 
 
 ### Implementazione asincrona
 
-Come con at.js, se la libreria SDK per web Platform viene caricata in modo asincrono, il rendering della pagina potrebbe terminare prima che Target abbia eseguito uno scambio di contenuto. Questo comportamento può causare il cosiddetto &quot;sfarfallio&quot;, in cui il contenuto predefinito viene visualizzato brevemente prima di essere sostituito dal contenuto personalizzato specificato da Target. Se desideri evitare questo sfarfallio, Adobe consiglia di aggiungere uno snippet speciale per il pre-hiding immediatamente prima del riferimento allo script SDK web per la piattaforma asincrona.
+Come con at.js, se la libreria SDK per web Platform viene caricata in modo asincrono, il rendering della pagina potrebbe terminare prima che Target abbia eseguito uno scambio di contenuto. Questo comportamento può causare il cosiddetto &quot;sfarfallio&quot;, in cui il contenuto predefinito viene visualizzato brevemente prima di essere sostituito dal contenuto personalizzato specificato da Target. Per evitare questo sfarfallio, Adobe consiglia di aggiungere uno snippet speciale per il pre-hiding immediatamente prima del riferimento di script SDK web asincrono di Platform o del codice di incorporamento dei tag .
 
-Se l’implementazione è asincrona come l’esempio precedente, sostituisci il frammento pre-hiding di at.js con la versione seguente compatibile con l’SDK per web di Platform:
+Se l’implementazione è asincrona come negli esempi precedenti, sostituisci il frammento pre-hiding di at.js con la versione seguente compatibile con l’SDK per web di Platform:
 
 ```HTML
 <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
@@ -191,13 +204,13 @@ Il comportamento di pre-hiding è controllato da due configurazioni alla fine de
 
 * `3000` specifica il timeout in millisecondi per il pre-hiding. Se non viene ricevuta una risposta da Target prima del timeout, il tag di stile pre-hiding viene rimosso. Il raggiungimento di questo timeout dovrebbe essere raro.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Assicurati di utilizzare lo snippet corretto per l’SDK per web di Platform in quanto utilizza un ID di stile diverso di `alloy-prehiding`. Se si utilizza il frammento pre-hiding per at.js, potrebbe non funzionare correttamente.
 
 ### Implementazione sincrona
 
-Adobe consiglia di implementare l’SDK per web di Platform in modo asincrono per ottenere le migliori prestazioni complessive della pagina. Tuttavia, se la libreria viene caricata in modo sincrono, lo snippet per il pre-hiding non è necessario. Lo stile del pre-hiding viene invece specificato nella configurazione SDK per web di Platform.
+Adobe consiglia di implementare l’SDK per web di Platform in modo asincrono per ottenere le migliori prestazioni complessive della pagina. Tuttavia, se la libreria alloy.js o il codice di incorporamento dei tag viene caricato in modo sincrono, lo snippet di pre-hiding non è necessario. Lo stile del pre-hiding viene invece specificato nella configurazione SDK per web di Platform.
 
 Lo stile di pre-hiding per le implementazioni sincrone può essere configurato utilizzando il [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) opzione . La configurazione dell’SDK per web di Platform è descritta nella sezione successiva.
 
@@ -246,6 +259,7 @@ alloy("configure", {
 >[!TAB Tag]
 
 ![configurazione delle opzioni di migrazione dell’estensione del tag SDK per web](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
 >[!ENDTABS]
 
 Le opzioni di configurazione valide per Target sono descritte di seguito:
@@ -352,9 +366,8 @@ Codice pagina:
     (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
   </script>
 
-    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
     <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
-    <!--/Tags Header Embed Code-->
 </head>
 <body>
   <h1 id="title">Home Page</h1><br><br>
@@ -386,4 +399,4 @@ Quindi, scopri come [richiedere e applicare attività basate su VEC](render-vec-
 
 >[!NOTE]
 >
->Ci impegniamo ad aiutarti a eseguire con successo la migrazione di Target da at.js all’SDK per web. Se incontri ostacoli con la tua migrazione o se ti senti che mancano informazioni critiche in questa guida, compila l&#39;invio del tuo messaggio [discussione comunitaria](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Ci impegniamo ad aiutarti a eseguire con successo la migrazione di Target da at.js all’SDK per web. Se incontri ostacoli con la tua migrazione o se ti senti che mancano informazioni critiche in questa guida, compila l&#39;invio del tuo messaggio [discussione comunitaria](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

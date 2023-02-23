@@ -1,9 +1,9 @@
 ---
 title: Tracciare gli eventi | Migrare Target da at.js 2.x all’SDK per web
 description: Scopri come tenere traccia degli eventi di conversione di Adobe Target utilizzando Experience Platform Web SDK.
-source-git-commit: 8209b13b745dbea418003b133a6834825947950e
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '655'
 ht-degree: 1%
 
 ---
@@ -147,4 +147,4 @@ Quindi, scopri come [abilitare la condivisione ID tra più domini](cross-domain.
 
 >[!NOTE]
 >
->Ci impegniamo ad aiutarti a eseguire con successo la migrazione di Target da at.js all’SDK per web. Se incontri ostacoli con la tua migrazione o se ti senti che mancano informazioni critiche in questa guida, compila l&#39;invio del tuo messaggio [discussione comunitaria](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Ci impegniamo ad aiutarti a eseguire con successo la migrazione di Target da at.js all’SDK per web. Se incontri ostacoli con la tua migrazione o se ti senti che mancano informazioni critiche in questa guida, compila l&#39;invio del tuo messaggio [discussione comunitaria](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
