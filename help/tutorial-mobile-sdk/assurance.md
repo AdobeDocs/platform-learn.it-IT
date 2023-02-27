@@ -2,9 +2,9 @@
 title: Imposta garanzia
 description: Scopri come implementare l’estensione Assurance in un’app mobile.
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7df759ec0ea248ee91ae673e3468ffa3f6cc5be5
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '583'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ In questa lezione:
 
 Conferma che la tua organizzazione abbia accesso ad Assurance completando i seguenti passaggi:
 
-1. Visita [https://experience.adobe.com/griffon](https://experience.adobe.com/griffon){target=&quot;_blank&quot;}
+1. Visita [https://experience.adobe.com/#/assurance](https://experience.adobe.com/griffon){target="_blank"}
 1. Accedi utilizzando le tue credenziali Adobe ID per l&#39;Experience Cloud.
 1. Se vieni portato al **[!UICONTROL Sessioni]** screen, quindi hai accesso. Se vieni portato alla pagina di accesso beta, seleziona **[!UICONTROL Registro]**.
 
@@ -61,7 +61,7 @@ func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)
 }
 ```
 
-Ulteriori informazioni sono disponibili [qui](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance#implement-aep-assurance-session-start-apis-ios-only){target=&quot;_blank&quot;}.
+Ulteriori informazioni sono disponibili [qui](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance#implement-aep-assurance-session-start-apis-ios-only){target="_blank"}.
 
 ## Impostare un URL di base
 
@@ -73,13 +73,13 @@ Ulteriori informazioni sono disponibili [qui](https://aep-sdks.gitbook.io/docs/f
 
 ![url di garanzia](assets/mobile-assurance-url-type.png)
 
-Per ulteriori informazioni sugli schemi URL in iOS, consulta [Documentazione di Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target=&quot;_blank&quot;}.
+Per ulteriori informazioni sugli schemi URL in iOS, consulta [Documentazione di Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
 Questa funzione consente di aprire un URL tramite browser o codice QR e inizia con l’URL di base che apre l’app e contiene parametri aggiuntivi. Questi parametri univoci vengono utilizzati per collegare la sessione.
 
 ## Connessione a una sessione
 
-1. Passa a [Interfaccia utente di controllo](https://experience.adobe.com/griffon){target=&quot;_blank&quot;}.
+1. Passa a [Interfaccia utente di controllo](https://experience.adobe.com/griffon){target="_blank"}.
 1. Seleziona **[!UICONTROL Crea sessione]**.
 1. Fornire **[!UICONTROL Nome sessione]** quali `Luma App QA` e **[!UICONTROL URL di base]** `lumadeeplink://default`
 1. Seleziona **[!UICONTROL Avanti]**.
@@ -94,7 +94,7 @@ Questa funzione consente di aprire un URL tramite browser o codice QR e inizia c
    * Experience Cloud di eventi in arrivo nell’interfaccia utente web.
       ![eventi di assicurazione](assets/mobile-assurance-events.png)
 
-In caso di problemi, consulta la sezione [tecnico](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance){target=&quot;_blank&quot;} e [documentazione generale](https://aep-sdks.gitbook.io/docs/beta/project-griffon){target=&quot;_blank&quot;}.
+In caso di problemi, consulta la sezione [tecnico](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance){target="_blank"} and [general documentation](https://aep-sdks.gitbook.io/docs/beta/project-griffon){target="_blank"}.
 
 Avanti: **[Consenso](consent.md)**
 
