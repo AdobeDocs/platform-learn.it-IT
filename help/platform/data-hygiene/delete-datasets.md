@@ -1,24 +1,24 @@
 ---
-title: Eliminare i set di dati
-description: Scopri come eliminare i set di dati utilizzando la funzione Adobe Experience Platform Data Hygiene.
+title: Pianificare le eliminazioni dei set di dati
+description: Scopri come eliminare i set di dati utilizzando la funzione di igiene dei dati di Adobe Experience Platform.
 role: Data Engineer, Data Architect
 feature: Data Hygiene
 kt: 10697
 thumbnail: 345065.jpeg
 last-substantial-update: 2022-07-27T00:00:00Z
 exl-id: 7764de70-e0c1-48a8-8d1f-a5426f8d580a
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cd30d8f4bf37e8a3d087adf4092051d704049034
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '83'
 ht-degree: 0%
 
 ---
 
-# Eliminare i set di dati
+# Pianificare le eliminazioni dei set di dati
 
-Scopri come eliminare i set di dati utilizzando la funzione Adobe Experience Platform Data Hygiene.
+Scopri come pianificare le eliminazioni dei set di dati utilizzando la funzione di igiene dei dati di Adobe Experience Platform.
 
-L’eliminazione del set di dati consente ai responsabili della gestione dei dati e ai data engineer di impostare una data di scadenza per un set di dati. Per ulteriori informazioni, visita il [documentazione sull&#39;igiene dei dati](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html).
+L’eliminazione del set di dati consente agli amministratori di dati e ai data engineer di impostare una data di scadenza per un set di dati. Per ulteriori informazioni, visitare il [documentazione sull’igiene dei dati](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/345065?quality=12&learn=on)
 
