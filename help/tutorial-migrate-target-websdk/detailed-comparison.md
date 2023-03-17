@@ -1,9 +1,9 @@
 ---
 title: Confronto tra at.js 2.x e SDK per web | Migrare Target da at.js 2.x all’SDK per web
 description: Scopri le differenze tra at.js 2.x e Platform Web SDK, tra cui funzioni, funzioni, impostazioni e flusso di dati.
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+source-git-commit: 28a88e6865211d7d39c18bd48b95070ae0ba259b
 workflow-type: tm+mt
-source-wordcount: '2157'
+source-wordcount: '2159'
 ht-degree: 8%
 
 ---
@@ -43,7 +43,7 @@ Se hai poca esperienza con l’SDK per web di Platform, non preoccuparti; gli el
 | Offerte remote | Supportato | Supportato |
 | Offerte di reindirizzamento | Supportati | Supportati. Tuttavia, non è supportato un reindirizzamento da una pagina con SDK per web di Platform a una pagina con at.js (e nella direzione opposta). |
 | Decisioning su dispositivo | Supportati | Non supportato al momento |
-| Mbox di preacquisizione | Supportati | Abilitata per impostazione predefinita in tutte le nuove migrazioni iniziate dopo il 1° ottobre 2022 |
+| Mbox di preacquisizione | Supportato per ambiti personalizzati e VEC SPA | Attualmente non supportato per il Compositore esperienza visivo regolare |
 | Eventi personalizzati | Supportati | Non supportati. Consulta la sezione [tabella di marcia pubblica](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) per lo stato corrente. |
 | Token di risposta | Supportati | Supportati. Fai riferimento a [documentazione dei token di risposta dedicati](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) per esempi di codice e differenze tra at.js e Platform Web SDK |
 | Fornitori dati  | Supportati | Non supportati. Il codice personalizzato può essere utilizzato per attivare un SDK per web di Platform `sendEvent` dopo il recupero dei dati da un altro provider. |
