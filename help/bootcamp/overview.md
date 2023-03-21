@@ -3,10 +3,10 @@ title: Campeggio di avvio per i creatori di esperienze
 description: Punto di partenza per i partecipanti al Bootcamp di Experience Makers
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: 9658437fec6208e2688fc7857f13adcc52660caa
+source-git-commit: 3a16967ead0bf86daaf69cf920586318a5866492
 workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -26,47 +26,12 @@ La personalizzazione su larga scala inizia con la comprensione di ciò che può 
 
 ### Giorno 1
 
-10.00 - 10.30: Kickoff e presentazioni
 
-10.30 - 11.00: &quot;Demo del Percorso del cliente - Arte del possibile&quot;
-
-11.00 - 11.45: Sessione della lavagna: &quot;1-1 personalizzazione, caccia all&#39;attrito, silos, punto di vista Adobe&quot;
-
-11.45 - 12.00: Interruzione
-
-12.00 - 13.00: Sessione della lavagna: &quot;Analisi approfondita dell&#39;architettura della soluzione&quot;
-
-13.00 - 14.00: Pranzo
-
-14.00 - 15.30: Flusso utente 1: Esercizio pratico sull&#39;acquisizione
-
-15.30 - 15.45: Interruzione
-
-15.45 - 17.00: Flusso utente 2: Esercitazione pratica &quot;Registrazione e onboarding&quot;
-
-18.00 - 19.00: Esperienza &quot;Cocktail Making Competition&quot;
-
-19.00 - 22.00: Godetevi la cena
+10:00: Kickoff 10:30: Demo del Percorso del cliente: Arte del possibile 11:00: 1-1 personalizzazione, caccia all&#39;attrito, silos, POV Adobe (lavagna) 11:45: Interruzione 12:00: Analisi approfondita dell&#39;architettura della soluzione (lavagna) 13:00: Pranzo 14:00: Registrazione e onboarding dell&#39;utente 1 - Procedura dettagliata (perché-cosa-come) 15:30: Interruzione 16:00: Flusso d&#39;uso 2 Fusione fisica e digitale - Procedura dettagliata e pratica / immersione profonda 18:00: Interruzione 18:30: Passeggiata al ristorante 19:00: Cena
 
 ### Giorno 2
 
-09.00 - 09.30: &quot;Introduzione alla distribuzione basata su Percorso di utenti, struttura del team, backlog di consegna&quot;
-
-09.30 - 09.45: Interruzione
-
-09.45 - 11.15: Flusso utente 4: Esercizio pratico sull’analisi dei clienti
-
-11.15 - 11.30: Interruzione
-
-11.30 - 12.30: &quot;Introduzione alla distribuzione basata su Percorso di utenti, struttura del team, backlog di consegna&quot;
-
-12.30 - 13.30: Pranzo
-
-13.30 - 14.30: Personalizzazione su scala - Come realizzarla
-
-14.30 - 15.00: Conclusioni, fasi successive e fasi successive
-
-15:00: Aggiorna
+08:00: Colazione 08:30: Introduzione al Percorso utenti Consegna, Struttura del team, Backlog di consegna 09.45: Flusso di lavoro 3 Fusione fisica e digitale - Procedura dettagliata con esercizio 11.15: Interruzione 11.30: Ritorno a capo nei flussi di lavoro - (What-where-when) 12:00: Gruppo Presentations 12.30: Pranzo 13.30: Flusso di lavoro 4: Analisi dei clienti - approfondimenti 14.30: Conclusione, chiusura e fasi successive 15.00: Bevande e aggiornamento
 
 ## Prerequisiti
 
@@ -100,7 +65,7 @@ Puoi trovare altri video interessanti [sul nostro canale YouTube](https://www.yo
 
 ## Flussi utente
 
-[1. Acquisizione](./uc/uc1/uc1.md)
+[1. Acquisizione ](./uc/uc1/uc1.md)
 
 In questo flusso di utenti, comprenderai tutti gli elementi necessari per implementare casi di utilizzo incentrati sull&#39;acquisizione per utenti sconosciuti e non autenticati insieme a utenti noti e autenticati tramite Real-Time CDP.
 

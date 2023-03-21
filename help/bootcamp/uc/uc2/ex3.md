@@ -6,9 +6,9 @@ audience: developer
 doc-type: tutorial
 activity: develop
 exl-id: 138a70fa-fe50-4585-b47f-150db4770c3d
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f018e3aae714879de0cccb3a47b1f2242b57abc1
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '938'
 ht-degree: 4%
 
 ---
@@ -113,11 +113,11 @@ Nella schermata successiva verranno visualizzati 3 metodi diversi per fornire il
 - **Codice personalizzato**: Crea il tuo modello e-mail codificandolo utilizzando HTML
 - **Importa HTML**: Importa un modello HTML esistente, che potrai modificare.
 
-Fai clic su **Importa HTML**.
+Fai clic su **Importa HTML**. In alternativa, puoi fare clic su **Modelli salvati** e seleziona il modello **Bootcamp - Modello e-mail**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Trascina e rilascia il file **mailtemplatebootcamp.html**, scaricabile [qui](../../assets/html/mailtemplatebootcamp.html.zip). Fai clic su Importa.
+Se hai selezionato **Importa HTML**, ora puoi trascinare e rilasciare il file **mailtemplatebootcamp.html**, scaricabile [qui](../../assets/html/mailtemplatebootcamp.html.zip). Fai clic su Importa.
 
 ![Journey Optimizer](./images/msg13.png)
 
