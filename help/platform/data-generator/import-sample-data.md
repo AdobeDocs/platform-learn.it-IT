@@ -6,9 +6,9 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: a04bd682ff8d16981700598d9eef8db94c0ea568
+source-git-commit: d5988bd8e6d31b183e2a264bea4fb05cd90ef1a7
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1832'
 ht-degree: 5%
 
 ---
@@ -160,7 +160,6 @@ Ora puoi preparare e importare i dati nella sandbox di Platform. Le collezioni P
    * `2-Luma-CRM-Data.postman_collection.json` crea uno schema e un set di dati popolati per i dati CRM dei clienti. Lo schema si basa sulla classe Profilo individuale XDM che comprende Dettagli demografici, Dettagli contatto personale, Dettagli preferenza e un gruppo di campi di identità personalizzati.
    * `3-Luma-Product-Catalog.postman_collection.json` crea uno schema e un set di dati popolati per le informazioni sul catalogo dei prodotti. Lo schema si basa su una classe di catalogo prodotti personalizzata e utilizza un gruppo di campi di catalogo prodotti personalizzato.
    * `4-Luma-Offline-Purchase-Events.postman_collection.json` crea uno schema e un set di dati popolati per i dati degli eventi di acquisto offline dei clienti. Lo schema è basato sulla classe ExperienceEvent XDM e comprende gruppi di campi di identità e dettagli di commercio personalizzati.
-
    * `5-Luma-Product-Inventory-Events.postman_collection.json` crea uno schema e un set di dati popolati per gli eventi relativi a prodotti in entrata e in uscita. Lo schema si basa su una classe evento business personalizzata e su un gruppo di campi personalizzato.
    * `6-Luma-Test-Profiles.postman_collection.json` crea uno schema e un set di dati popolati con profili di test da utilizzare in Adobe Journey Optimizer
    * `7-Luma-Web-Events.postman_collection.json` crea uno schema e un set di dati popolato con semplici dati web storici.
@@ -173,7 +172,12 @@ I dati di esempio sono stati progettati in modo che, quando le raccolte sono sta
 1. Vai a **[!UICONTROL Profili]** > **[!UICONTROL Sfoglia]**
 1. Seleziona `Luma Loyalty Id` come **[!UICONTROL Spazio dei nomi identità]**
 1. Cerca `5625458` come **[!UICONTROL Valore identità]**
-1. Apri `Danny Wright` profilo
+1. Apri `Daniel Wright` profilo
+
+>[!TIP]
+>
+>Se il profilo non viene visualizzato, controlla il [!UICONTROL Set di dati] per confermare che tutti i set di dati sono stati creati e acquisiti correttamente. Se il risultato è positivo, attendi quindici minuti e scopri se il profilo è disponibile nel visualizzatore.  In caso di problemi relativi all’inserimento dei dati, controlla i messaggi di errore per cercare di individuare il problema. Puoi anche provare ad abilitare la diagnostica degli errori nel [!UICONTROL Set di dati] e trascina il file di dati json per riacquisire i dati.
+
 
 ![Apertura di un profilo](../assets/data-generator/images/validation-profile-open.png)
 
