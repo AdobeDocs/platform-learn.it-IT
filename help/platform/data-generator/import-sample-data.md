@@ -6,10 +6,10 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
+source-git-commit: a04bd682ff8d16981700598d9eef8db94c0ea568
 workflow-type: tm+mt
-source-wordcount: '1650'
-ht-degree: 4%
+source-wordcount: '1752'
+ht-degree: 5%
 
 ---
 
@@ -25,7 +25,7 @@ Questa esercitazione si concentra su un brand fittizio al dettaglio denominato L
 
 >[!NOTE]
 >
->Il risultato finale di questa esercitazione è una sandbox contenente gli stessi dati di esempio della [Esercitazione introduttiva di Adobe Experience Platform per architetti di dati e data engineer](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html).
+>Il risultato finale di questa esercitazione è una sandbox contenente dati simili al [Esercitazione introduttiva di Adobe Experience Platform per architetti di dati e data engineer](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). È stato aggiornato nell’aprile 2023 per supportare la [Sfide Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=it).
 
 
 ## Prerequisiti
@@ -48,9 +48,9 @@ Prima di seguire i passaggi, assicurati di aver scaricato il [Postman](https://w
    >
    >Dati utente contenuti nel [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) Il file è fittizio e deve essere utilizzato solo a scopo dimostrativo.
 
-1. Dalla cartella dei download, sposta il `platform-utils-main.zip` e decomprimere il file nella posizione desiderata sul computer.
-1. In `luma-data` cartella, apri tutte le `json` file in un editor di testo e sostituisci tutte le istanze di `_techmarketingdemos` con il tuo ID tenant, preceduto da un carattere di sottolineatura.
-1. Apri `luma-offline-purchases.json` in un editor di testo e aggiorna tutte le marche temporali in modo che gli eventi si verifichino nell’ultimo mese (ad esempio, cerca `"timestamp":"2022-06` e sostituiscono l&#39;anno e il mese)
+1. Dalla cartella dei download, sposta il file `platform-utils-main.zip` nella posizione desiderata nel tuo computer e decomprimilo.
+1. In `luma-data` cartella, apri tutte le `json` file in un editor di testo e sostituisci tutte le istanze di `_yourOrganizationID` con il tuo ID tenant, preceduto da un carattere di sottolineatura.
+1. Apri `luma-offline-purchases.json` e `luma-web-events.json` in un editor di testo e aggiorna tutte le marche temporali in modo che gli eventi si verifichino nell’ultimo mese (ad esempio, cerca `"timestamp":"2022-11` e sostituiscono l&#39;anno e il mese)
 1. Nota il percorso della cartella decompressa, come necessario in seguito durante la configurazione della `FILE_PATH` Variabile di ambiente Postman:
 
    >[!NOTE]
@@ -113,6 +113,9 @@ Successivamente è necessario importare le raccolte in Postman.
    * `2-Luma-CRM-Data.postman_collection.json`
    * `3-Luma-Product-Catalog.postman_collection.json`
    * `4-Luma-Offline-Purchase-Events.postman_collection.json`
+   * `5-Luma-Product-Inventory-Events.postman_collection.json`
+   * `6-Luma-Test-Profiles.postman_collection.json`
+   * `7-Luma-Web-Events.postman_collection.json`
 
    ![Importazione raccolte](../assets/data-generator/images/collection-files.png)
 
@@ -158,6 +161,11 @@ Ora puoi preparare e importare i dati nella sandbox di Platform. Le collezioni P
    * `3-Luma-Product-Catalog.postman_collection.json` crea uno schema e un set di dati popolati per le informazioni sul catalogo dei prodotti. Lo schema si basa su una classe di catalogo prodotti personalizzata e utilizza un gruppo di campi di catalogo prodotti personalizzato.
    * `4-Luma-Offline-Purchase-Events.postman_collection.json` crea uno schema e un set di dati popolati per i dati degli eventi di acquisto offline dei clienti. Lo schema è basato sulla classe ExperienceEvent XDM e comprende gruppi di campi di identità e dettagli di commercio personalizzati.
 
+   * `5-Luma-Product-Inventory-Events.postman_collection.json` crea uno schema e un set di dati popolati per gli eventi relativi a prodotti in entrata e in uscita. Lo schema si basa su una classe evento business personalizzata e su un gruppo di campi personalizzato.
+   * `6-Luma-Test-Profiles.postman_collection.json` crea uno schema e un set di dati popolati con profili di test da utilizzare in Adobe Journey Optimizer
+   * `7-Luma-Web-Events.postman_collection.json` crea uno schema e un set di dati popolato con semplici dati web storici.
+
+
 ## Convalida
 
 I dati di esempio sono stati progettati in modo che, quando le raccolte sono state eseguite, vengano creati profili cliente in tempo reale che combinano i dati provenienti da più sistemi. Un buon esempio è il primo record dei set di dati di acquisto fedeltà, CRM e offline. Cerca quel profilo per confermare che i dati sono stati acquisiti. In [Interfaccia Adobe Experience Platform](https://platform.adobe.com/):
@@ -173,6 +181,8 @@ Esplorando i dati nella **[!UICONTROL Attributi]** e **[!UICONTROL Eventi]** sch
 ![Dati evento dal file degli eventi di acquisto offline](../assets/data-generator/images/validation-profile-events.png)
 
 ## Passaggi successivi
+
+Se desideri saperne di più su Adobe Journey Optimizer, questa sandbox contiene tutto il necessario per prendere il [Sfide Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=it)
 
 Per informazioni sui criteri di unione, la governance dei dati, il servizio di query e il generatore di segmenti, passa a [lezione 11 nel tutorial Guida introduttiva per architetti di dati e data engineer](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). Le lezioni precedenti di quest&#39;altra esercitazione ti hanno permesso di creare manualmente tutto ciò che era appena stato popolato da queste raccolte Postman: scopri come iniziare!
 
