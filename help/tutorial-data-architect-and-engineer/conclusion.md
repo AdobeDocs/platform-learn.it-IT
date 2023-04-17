@@ -6,10 +6,10 @@ description: In questa lezione, configurerai le autorizzazioni utente di Adobe E
 role: Data Architect, Data Engineer
 kt: 4348
 exl-id: 73abe4bd-57cb-4acf-98f6-253b01fd79ff
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 13ecb084c5b107d48b8b7e4d2844b8c108e98bfe
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 5%
+source-wordcount: '426'
+ht-degree: 4%
 
 ---
 
@@ -50,9 +50,5 @@ Risorse chiave:
 * [Tutorial su Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html)
 * [Documentazione di Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=it)
 * [corsi di Experience League](https://experienceleague.adobe.com/?lang=it#dashboard/learning)
-
-Ecco un’altra esercitazione che puoi rivedere per ulteriori informazioni sulle connessioni alle applicazioni di terze parti:
-
-* [Tutorial tecnico completo per Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v21/overview.html)
 
 Grazie per i vostri sforzi e buona fortuna sul vostro percorso con Adobe Experience Platform!
