@@ -22,4 +22,4 @@ Scopri come etichettare i campi dati come identità, acquisire dati di identità
 
 >[!INFO]
 >
-> Questo video fa parte di un corso, [Modellare i dati sulla customer experience con XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)disponibile gratuitamente all&#39;Experience League!
+> Questo video fa parte di un corso, [Modellare i dati sulla customer experience con XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it)disponibile gratuitamente all&#39;Experience League!
