@@ -4,10 +4,10 @@ breadcrumb-title: Tutorial
 user-guide-description: Scopri i numerosi componenti di Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: ef085f3bdfe385d072551bbafa1ae39e847b147d
+source-git-commit: 6a41de42497c142913ec80b978db27d8a6e638c0
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 32%
+source-wordcount: '925'
+ht-degree: 33%
 
 ---
 
@@ -26,6 +26,12 @@ ht-degree: 32%
    + [Architettura di base](/help/platform/intro-to-platform/basic-architecture.md)
    + [Utilizzo dell’interfaccia utente di Platform](/help/platform/intro-to-platform/interface-tour.md)
    + [Ruoli e fasi del progetto](/help/platform/intro-to-platform/roles-and-project-phases.md)
++ Introduzione a Real-Time CDP {#rtcdp}
+   + [Panoramica](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
+   + [Demo end-to-end](/help/platform/rtcdp/demo.md)
+   + [Flusso di lavoro](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
+   + [Panoramica di B2B Edition](/help/platform/rtcdp/b2b-overview.md)
+   + [Organizzazione di campagne con il Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [Guida introduttiva: Architetti di dati e data engineer](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [Autenticazione nelle API di Experience Platform](/help/platform/authentication/platform-api-authentication.md)
 + [Importazione dei dati di esempio in Experience Platform](/help/platform/data-generator/import-sample-data.md)
@@ -46,13 +52,14 @@ ht-degree: 32%
    + [Creare criteri di utilizzo dei dati](/help/platform/governance/create-data-usage-policies.md)
    + [Applica criteri di utilizzo dati](/help/platform/governance/enforce-data-usage-policies.md)
    + [Applica consenso](/help/platform/governance/enforce-consent.md)
+   + [Integrazione con IAB Transparency e Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Igiene dei dati {#data-hygiene}
    + [Eliminare i set di dati](/help/platform/data-hygiene/delete-datasets.md)
 + Acquisizione dei dati {#data-ingestion}
    + [Panoramica](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Panoramica sull’acquisizione in batch](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Creare e popolare un set di dati](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-   + [Mappare un file CSV in XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=it){target="_blank"}
+   + [Mappare un file CSV in XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=it){target="_blank"}
    + [Panoramica delle origini](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Acquisire dati da Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=it)
    + [Inserire dati da Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
@@ -60,7 +67,7 @@ ht-degree: 32%
    + [Acquisisci dati da CRM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=it)
    + [Acquisire dati dai database](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
    + [Panoramica sull’acquisizione in streaming](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
-   + [Trasmetti dati con l’API HTTP](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=it)
+   + [Trasferire in streaming i dati con l’API HTTP](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=it)
    + [Trasmettere i dati utilizzando i connettori di origini](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=it)
    + [Tutorial dell’SDK per web](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [Tutorial dell’SDK per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
@@ -90,12 +97,25 @@ ht-degree: 32%
    + [Configurare la destinazione Marketo](/help/platform/destinations/configure-the-marketo-destination.md)
    + [Configurare l’archiviazione cloud basata su file o le destinazioni di e-mail marketing](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [Configurare una destinazione social](/help/platform/destinations/configure-a-social-destination.md)
-   + [Personalizzazione con hit successivo con Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=it)
+   + Adobe Target e personalizzazione personalizzata{#target}
+      + [Personalizzazione con hit successivo con Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=it)
+      + [Configurare la destinazione Adobe Target](/help/platform/destinations/target/configure-the-target-destination.md)
+      + [Attivare segmenti e attributi di profilo](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
    + [Attiva i dati nel webinar delle applicazioni non Adobe](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + Identità {#identities}
    + [Panoramica dei grafici di identità e identità](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [Etichettare, acquisire e verificare i dati di identità](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [Visualizzare i grafici delle identità](/help/platform/identities/view-identity-graphs.md)
++ Intelligent Services {#intelligent-services}
+   + [Panoramica](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
+   + [Panoramica di Attribution AI](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
+   + [Valore Attribution AI](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
+   + [Configurare Attribution AI](/help/platform/intelligent-services/configure-attribution-ai.md)
+   + [Utilizzare punteggi e informazioni di Attribution AI](/help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md)
+   + [Panoramica di Customer AI](/help/platform/intelligent-services/introduction-to-customer-ai.md)
+   + [Valore AI del cliente](/help/platform/intelligent-services/business-value-of-customer-ai.md)
+   + [Configurare Customer AI](/help/platform/intelligent-services/configure-customer-ai.md)
+   + [Utilizzare punteggi e informazioni di Customer AI](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
 + Monitoraggio {#monitoring}
    + [Monitoraggio dell’acquisizione di dati](/help/platform/monitoring/monitoring-dashboard.md)
    + [Monitorare l’attivazione dei segmenti](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
@@ -176,30 +196,9 @@ ht-degree: 32%
    + [Acquisisci dati da cloud storage](/help/platform/sources/ingest-data-from-cloud-storage.md)
    + [Acquisisci dati da CRM](/help/platform/sources/ingest-data-from-crm.md)
    + [Acquisire dati dai database](/help/platform/sources/ingest-data-from-databases.md)
-   + [Trasmetti dati con l’API HTTP](/help/platform/sources/streaming-ingestion-http-api.md)
+   + [Trasferire in streaming i dati con l’API HTTP](/help/platform/sources/streaming-ingestion-http-api.md)
    + [Trasmettere i dati utilizzando i connettori di origini](/help/platform/sources/streaming-ingestion-source-connector.md)
-+ Servizi applicazione {#application-services}
-   + [Tutorial su Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target="_blank"}
-   + [Esercitazioni sul Journey Orchestration](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target="_blank"}
-   + [Esercitazioni di Offer decisioning](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html?lang=it){target="_blank"}
-   + Tutorial su Real-Time CDP{#rtcdp}
-      + [Panoramica](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
-      + [Panoramica di B2B Edition](/help/platform/rtcdp/b2b-overview.md)
-      + [Demo end-to-end](/help/platform/rtcdp/demo.md)
-      + [Flusso di lavoro](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-      + [Organizzazione di campagne con il Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-      + [Integrazione con IAB Transparency e Consent Framework 2.0](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
-      + [Applica criteri di utilizzo dei dati](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/enforce-data-usage-policies.html)
-+ Intelligent Services {#intelligent-services}
-   + [Panoramica](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
-   + [Panoramica di Attribution AI](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
-   + [Valore Attribution AI](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
-   + [Configurare Attribution AI](/help/platform/intelligent-services/configure-attribution-ai.md)
-   + [Utilizzare punteggi e informazioni di Attribution AI](/help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md)
-   + [Panoramica di Customer AI](/help/platform/intelligent-services/introduction-to-customer-ai.md)
-   + [Valore AI del cliente](/help/platform/intelligent-services/business-value-of-customer-ai.md)
-   + [Configurare Customer AI](/help/platform/intelligent-services/configure-customer-ai.md)
-   + [Utilizzare punteggi e informazioni di Customer AI](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
+
 + Integrazioni di Experience Cloud {#experience-cloud}
    + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
    + [Organizzazione di campagne con il Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
