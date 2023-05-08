@@ -1,15 +1,15 @@
 ---
 title: Come posso condividere segmenti e attributi di profilo da Real-time CDP di Adobe ad Adobe Target?
-description: Descrizione mancante
+description: Scopri come condividere segmenti e attributi di profilo da Adobe Real-time Customer Data Platform ad Adobe Target per visualizzare contenuti personalizzati in tempo reale nei tuoi siti web, nelle tue app mobili e in altre proprietà digitali.
 feature: Destinations
 role: User
 level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2023-05-03T00:00:00Z
 jira: KT-13140
-source-git-commit: fc6d129f473e4d26f57980bb239f95462c3f3cc9
+source-git-commit: 0931e2305d8013e469aee2b015befb3d06614784
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '145'
 ht-degree: 0%
 
 ---
