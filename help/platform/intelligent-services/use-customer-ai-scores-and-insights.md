@@ -1,6 +1,6 @@
 ---
 title: Utilizzare punteggi e informazioni di Customer AI
-description: Scopri come utilizzare i punteggi e le informazioni sulla propensione di Customer AI per convertire e fidelizzare i clienti.
+description: Scopri come utilizzare i punteggi e le informazioni sulla propensione di di IA per l’analisi dei clienti per convertire e fidelizzare i clienti.
 solution: Experience Platform, Real-time Customer Data Platform
 feature: Customer AI
 role: User
@@ -16,7 +16,7 @@ ht-degree: 50%
 
 # Utilizzare punteggi e informazioni di Customer AI
 
-Scopri come utilizzare i punteggi e le informazioni sulla propensione di Customer AI per convertire e fidelizzare i clienti.
+Scopri come utilizzare i punteggi e le informazioni sulla propensione di di IA per l’analisi dei clienti per convertire e fidelizzare i clienti.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32666?quality=12&learn=on)
 
