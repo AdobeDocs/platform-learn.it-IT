@@ -1,26 +1,26 @@
 ---
-title: Come posso condividere segmenti e attributi di profilo da Real-time CDP di Adobe ad Adobe Target?
-description: Scopri come condividere segmenti e attributi di profilo da Adobe Real-time Customer Data Platform ad Adobe Target per visualizzare contenuti personalizzati in tempo reale nei tuoi siti web, nelle tue app mobili e in altre proprietà digitali.
+title: Come si attivano segmenti e attributi di profilo da Adobe Real-time CDP ad Adobe Target?
+description: Scopri come attivare segmenti e attributi di profilo da Adobe Real-time Customer Data Platform ad Adobe Target per visualizzare contenuti personalizzati in tempo reale su siti web, app mobili e altre proprietà digitali.
 feature: Destinations
 role: User
 level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2023-05-03T00:00:00Z
 jira: KT-13140
-source-git-commit: 0931e2305d8013e469aee2b015befb3d06614784
+source-git-commit: 7195ef3b361424079069202f4835728c265b12f1
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---
 
 
-# Condividere segmenti e attributi di profilo
+# Attivare segmenti e attributi di profilo
 
-Scopri come condividere segmenti e attributi di profilo da Adobe Real-time Customer Data Platform ad Adobe Target per visualizzare contenuti personalizzati in tempo reale nei tuoi siti web, nelle tue app mobili e in altre proprietà digitali. Per ulteriori informazioni, consulta la sezione [Attivare i dati del pubblico nella documentazione delle destinazioni di richiesta del profilo](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-profile-request-destinations.html).
+Scopri come attivare segmenti e attributi di profilo da Adobe Real-time Customer Data Platform ad Adobe Target per visualizzare contenuti personalizzati in tempo reale su siti web, app mobili e altre proprietà digitali. Per ulteriori informazioni, vedere [Attivare i dati del pubblico nella documentazione delle destinazioni delle richieste di profilo](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-profile-request-destinations.html).
 
 >[!IMPORTANT]
 >
->Con la versione beta del connettore di destinazione avanzato Adobe Target V2, potresti vedere due schede Adobe Target nel catalogo delle destinazioni. Il connettore di destinazione Adobe Target V2 è in versione beta ed è disponibile solo per un numero selezionato di clienti.
+>La funzione degli attributi del profilo di Real-Time CDP è attualmente in versione beta. Il connettore di destinazione Adobe Target V2 avanzato contenente la funzionalità attributi del profilo è attualmente in versione beta e disponibile solo per un numero selezionato di clienti.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419036/?learn=on)
