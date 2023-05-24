@@ -1,27 +1,40 @@
 ---
-title: Inserire dati dal Marketo Engage
-description: Scopri come acquisire dati dal Marketo Engage utilizzando il connettore di origine.
+title: Acquisire dati dal Marketo Engage
+description: Scopri come acquisire dati dal Marketo Engage utilizzando il connettore di origine utilizzando i flussi di lavoro standard e di modelli.
 solution: Real-time Customer Data Platform
 feature: Sources
 role: Data Engineer, Data Architect
-kt: 9259
+kt: 9259, 13303
+last-substantial-update: 2023-05-24T00:00:00Z
 thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
-source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
+source-git-commit: ddacac4554be54f16b533b95baba652bacc5eb1e
 workflow-type: tm+mt
-source-wordcount: '95'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
 
-# Inserire dati dal Marketo Engage
+# Acquisire dati dal Marketo Engage
 
-Scopri come acquisire dati da Marketo Engage in Real-time Customer Data Platform, B2B Edition e Adobe Experience Platform utilizzando il connettore sorgente.
+Scopri come acquisire facilmente i dati dal Marketo Engage in Real-time Customer Data Platform, B2B Edition e Adobe Experience Platform utilizzando il connettore di origine utilizzando due flussi di lavoro.
+
+## Flusso di lavoro modello
+
+Scopri come configurare il connettore di origine per Marketo utilizzando il flusso di lavoro dei modelli. Questo flusso di lavoro genera automaticamente le risorse necessarie per acquisire i dati Marketo in base ai modelli. Consente di risparmiare tempo iniziale e le risorse possono essere personalizzate in base alle tue esigenze.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419550?quality=12&learn=on)
+
+## Flusso di lavoro standard
+
+Scopri come configurare il connettore di origine per Marketo utilizzando il flusso di lavoro standard. Il flusso di lavoro standard richiede la creazione anticipata di schemi e spazi dei nomi di identità.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338250?quality=12&learn=on)
 
 >[!INFO]
 >
-> Questo video fa parte di un corso, [Guida introduttiva di Real-Time CDP, B2B Edition per gli esperti di marketing](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b)disponibile gratuitamente all&#39;Experience League!
+> Questo video fa parte del corso. [Guida introduttiva di Real-Time CDP, edizione B2B per gli esperti di marketing](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b), disponibile gratuitamente su Experience League!
 
-Per ulteriori informazioni, consulta la sezione [Documentazione del connettore di origine del Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
+Per ulteriori informazioni, consulta la seguente documentazione:
+* [Documentazione del connettore di origine del Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
+* [Creare un flusso di dati di origini utilizzando i modelli nell’interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)

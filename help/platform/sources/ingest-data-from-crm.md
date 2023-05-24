@@ -1,27 +1,40 @@
 ---
-title: Inserire dati utilizzando i connettori di origine CRM
-description: Questo video mostra come acquisire facilmente in batch i dati da fonti di gestione delle relazioni con i clienti in Profilo cliente in tempo reale di Adobe Experience Platform e lago di dati, in modo semplice e scalabile.
+title: Acquisire dati utilizzando i connettori di origini del sistema CRM
+description: Scopri come acquisire facilmente in batch i dati dalle origini CRM per inserirli direttamente nel data lake e nel profilo cliente in tempo reale di Adobe Experience Platform.
 role: Data Engineer, Data Architect
 feature: Sources
-kt: 3826
+kt: 3826, 13272
 thumbnail: 29711.jpg
+last-substantial-update: 2023-05-24T00:00:00Z
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: ddacac4554be54f16b533b95baba652bacc5eb1e
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 3%
+source-wordcount: '231'
+ht-degree: 2%
 
 ---
 
-# Inserire dati utilizzando i connettori sorgente CRM
+# Acquisire dati utilizzando i connettori di origine del CRM
 
-Questo video mostra come acquisire facilmente in batch i dati da fonti di gestione delle relazioni con i clienti in Profilo cliente in tempo reale di Adobe Experience Platform e lago di dati, in modo semplice e scalabile. Per una documentazione più dettagliata del prodotto, consulta [gestione delle relazioni con i clienti (CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) nella pagina di panoramica dei connettori di origine.
+Scopri come acquisire facilmente in batch i dati dalle origini CRM per inserirli direttamente nel data lake e nel profilo cliente in tempo reale di Adobe Experience Platform. Per la documentazione più dettagliata del prodotto, consulta [gestione delle relazioni con i clienti (CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) nella pagina di panoramica dei connettori di origine.
+
+## Flusso di lavoro standard
+
+Scopri come configurare il connettore di origine per Salesforce CRM utilizzando il flusso di lavoro standard. Il flusso di lavoro standard richiede la creazione anticipata di schemi e spazi dei nomi di identità. Altri connettori di origine del sistema di gestione delle relazioni con i clienti possono supportare solo il flusso di lavoro standard.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29711?quality=12&learn=on)
 
+## Flusso di lavoro dei modelli (Salesforce)
+
+Scopri come configurare il connettore di origine per Salesforce CRM utilizzando il flusso di lavoro del modello. Questo flusso di lavoro genera automaticamente le risorse necessarie per acquisire i dati Salesforce in base ai modelli. Consente di risparmiare tempo iniziale e le risorse possono essere personalizzate in base alle tue esigenze. Questo flusso di lavoro non è supportato per tutti i connettori di origine del sistema CRM.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3419422?quality=12&learn=on)
+
 >[!INFO]
 >
-> Questo video fa parte di un corso [Acquisizione dei dati per data engineer](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion?lang=it)disponibile gratuitamente all&#39;Experience League!
+> Questo video fa parte del corso [Acquisizione dei dati per data engineer](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it), disponibile gratuitamente su Experience League!
 
-Per ulteriori informazioni, consulta la sezione [Documentazione del connettore sorgente Salesforce](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).
+Per ulteriori informazioni, consulta la seguente documentazione:
+* [Documentazione sulla creazione di una connessione Salesforce](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).
+* [Creare un flusso di dati di origini utilizzando i modelli nell’interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#).
 
