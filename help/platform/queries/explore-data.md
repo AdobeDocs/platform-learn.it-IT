@@ -1,25 +1,21 @@
 ---
-title: Esplorare i dati
-description: Scopri come convalidare i dati acquisiti, visualizzarli in anteprima ed esplorarne le proprietà statistiche e analitiche tilizzando le funzioni SQL.
+title: Esplora i dati
+description: Scopri come convalidare i dati acquisiti, visualizzarli in anteprima ed esplorarne le proprietà statistiche e analitiche utilizzando le funzioni SQL.
 feature: Queries
 kt: 7684
 thumbnail: 333415.jpg
 exl-id: 7288da8f-4646-4519-81cc-dae33d79b86e
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 61%
+source-wordcount: '57'
+ht-degree: 77%
 
 ---
 
-# Esplorare i dati
+# Esplora i dati
 
-Scopri come convalidare i dati acquisiti, visualizzarli in anteprima ed esplorarne le proprietà statistiche e analitiche tilizzando le funzioni SQL.
+Scopri come convalidare i dati acquisiti, visualizzarli in anteprima ed esplorarne le proprietà statistiche e analitiche utilizzando le funzioni SQL.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333415?quality=12&learn=on)
 
->[!INFO]
->
-> Questo video fa parte di un corso [Creazione di dashboard tramite Query Service](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.qsvc.dash)disponibile gratuitamente all&#39;Experience League!
-
-Per ulteriori informazioni, visita il [Documentazione del servizio query](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it).
+Per ulteriori informazioni, visitare il [Documentazione di Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it).

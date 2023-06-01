@@ -6,10 +6,10 @@ feature: Profiles
 kt: 2701
 thumbnail: 27251.jpg
 exl-id: 6ef5b589-f874-4687-bee3-9650c993f383
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 57%
+source-wordcount: '68'
+ht-degree: 73%
 
 ---
 
@@ -19,8 +19,4 @@ Questo video spiega come Adobe Experience Platform assembla e aggiorna i profili
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on)
 
->[!INFO]
->
-> Questo video fa parte di un corso [Guida introduttiva di Adobe Experience Platform per data engineer](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.2)disponibile gratuitamente all&#39;Experience League!
-
-Per ulteriori informazioni, visita il [Documentazione del profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=it).
+Per ulteriori informazioni, visitare il [Documentazione del profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=it).

@@ -7,10 +7,10 @@ kt: 3826, 13272
 thumbnail: 29711.jpg
 last-substantial-update: 2023-05-24T00:00:00Z
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2
-source-git-commit: ddacac4554be54f16b533b95baba652bacc5eb1e
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 2%
+source-wordcount: '208'
+ht-degree: 0%
 
 ---
 
@@ -29,10 +29,6 @@ Scopri come configurare il connettore di origine per Salesforce CRM utilizzando 
 Scopri come configurare il connettore di origine per Salesforce CRM utilizzando il flusso di lavoro del modello. Questo flusso di lavoro genera automaticamente le risorse necessarie per acquisire i dati Salesforce in base ai modelli. Consente di risparmiare tempo iniziale e le risorse possono essere personalizzate in base alle tue esigenze. Questo flusso di lavoro non è supportato per tutti i connettori di origine del sistema CRM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419422?quality=12&learn=on)
-
->[!INFO]
->
-> Questo video fa parte del corso [Acquisizione dei dati per data engineer](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=it), disponibile gratuitamente su Experience League!
 
 Per ulteriori informazioni, consulta la seguente documentazione:
 * [Documentazione sulla creazione di una connessione Salesforce](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).

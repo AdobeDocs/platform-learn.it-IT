@@ -7,10 +7,10 @@ role: User
 kt: 4172
 thumbnail: 32665.jpg
 exl-id: 84600a0f-ec10-484d-ae36-766fc6f8ca16
-source-git-commit: e2bc058bac9dc5f95587655420ef254e896eba3b
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 27%
+source-wordcount: '91'
+ht-degree: 35%
 
 ---
 
@@ -20,12 +20,8 @@ Scopri come creare un’istanza di Customer AI per prevedere il comportamento de
 
 >[!TIP]
 >
->Customer AI supporta sia i set di dati Adobe Analytics che Adobe Audience Manager senza la necessità di eseguire l’ETL dei dati per adeguarli allo schema di Consumer Experience Event (CEE). Per ulteriori informazioni, visita il [Guida alla preparazione dei dati di Intelligent Services](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/data-preparation.html).
+>IA per l’analisi dei clienti supporta sia i set di dati di Adobe Analytics che quelli di Adobe Audience Manager senza la necessità di effettuare l’ETL dei dati per conformarsi allo schema Consumer Experience Event (CEE). Per ulteriori informazioni, visita [Guida alla preparazione dei dati di Intelligent Services](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/data-preparation.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32665?quality=12&learn=on)
 
->[!INFO]
->
-> Questo video fa parte di un corso, [Guida introduttiva ai servizi intelligenti per gli addetti al marketing](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1.intelligentservices)disponibile gratuitamente all&#39;Experience League!
-
-Per ulteriori informazioni, visita il [Documentazione di Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html)
+Per ulteriori informazioni, visitare il [Documentazione di Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html)
