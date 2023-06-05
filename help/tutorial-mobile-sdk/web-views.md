@@ -1,41 +1,41 @@
 ---
-title: Gestisci WebViews
+title: Gestisci visualizzazioni Web
 description: Scopri come gestire la raccolta dati con WebViews in un’app mobile.
 kt: 6987
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 1%
 
 ---
 
-# Gestisci WebViews
+# Gestisci visualizzazioni Web
 
 Scopri come gestire la raccolta dati con WebViews in un’app mobile.
 
 ## Prerequisiti
 
-* L’app è stata generata ed eseguita correttamente con gli SDK installati e configurati.
+* L&#39;app con gli SDK installati e configurati è stata creata ed eseguita correttamente.
 
 ## Finalità di apprendimento
 
-In questa lezione:
+In questa lezione verranno fornite le seguenti informazioni:
 
-* Comprendere perché è necessario prendere considerazioni speciali per WebViews.
+* Comprendere il motivo per cui è necessario tenere in considerazione le visualizzazioni Web.
 * Comprendi il codice necessario per evitare problemi di tracciamento.
 
 ## Potenziali problemi di tracciamento
 
-Se invii dati dalla parte nativa dell&#39;app e da una WebView, ciascuno genera il proprio ID Experience Cloud (ECID). Questo determina hit disconnessi e dati gonfiati di visite/visitatori. Ulteriori informazioni sull&#39;ECID sono disponibili nella sezione [Panoramica ECID](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
+Se invii dati dalla parte nativa dell’app e da un WebView, ciascuno di essi genera il proprio ID Experience Cloud (ECID). Questo comporta risultati disconnessi e dati gonfiati su visite/visitatori. Ulteriori informazioni sull’ECID sono disponibili nella sezione [Panoramica di ECID](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
 
-Per risolvere questa situazione indesiderabile, è importante passare l&#39;ECID dell&#39;utente dalla parte nativa a WebView.
+Per risolvere questa situazione indesiderata, è importante passare l’ECID dell’utente dalla parte nativa a WebView.
 
-L&#39;estensione JavaScript del servizio Experience Cloud ID nel WebView estrae l&#39;ECID dall&#39;URL invece di inviare una richiesta ad Adobe per un nuovo ID. Il servizio ID utilizza questo ECID per tenere traccia del visitatore.
+L&#39;estensione JavaScript del servizio ID Experience Cloud in WebView estrae l&#39;ECID dall&#39;URL invece di inviare una richiesta all&#39;Adobe per un nuovo ID. Il servizio ID utilizza questo ECID per monitorare il visitatore.
 
 ## Implementazione
 
-Nell’app di esempio Luma, trova la `TermsOfService.swift` (nel `Intro-Login_SignUp` e individua il seguente codice:
+Nell’app di esempio Luma, individua `TermsOfService.swift` file (in `Intro-Login_SignUp` cartella ) e individuare il codice seguente:
 
 ```swift
 // Show tou.html
@@ -44,9 +44,9 @@ let myRequest = URLRequest(url: url!)
 self.webView.load(myRequest)
 ```
 
-Questo è un modo semplice per caricare un WebView. In questo caso, si tratta di un file locale ma gli stessi concetti si applicano alle pagine remote.
+Questo è un modo semplice per caricare una WebView. In questo caso, si tratta di un file locale, ma gli stessi concetti si applicano alle pagine remote.
 
-Refactorizza il codice della visualizzazione web come mostrato di seguito:
+Effettua il refactoring del codice della visualizzazione Web come mostrato di seguito:
 
 ```swift
 let url = Bundle.main.url(forResource: "tou", withExtension: "html")
@@ -72,19 +72,19 @@ if var urlString = url?.absoluteString {
 }
 ```
 
-Puoi saperne di più sul `Identity.getUrlVariables` API in [Guida di riferimento per l’API di Identity for Edge Network](https://aep-sdks.gitbook.io/docs/foundation-extensions/identity-for-edge-network/api-reference#geturlvariables).
+Puoi saperne di più sulle `Identity.getUrlVariables` API in [Guida di riferimento API dell’estensione Identity for Edge Network](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 
 ## Convalida
 
-Dopo aver esaminato la [istruzioni di configurazione](assurance.md) e collegare il simulatore o il dispositivo a Assurance, caricare WebView e cercare il `Edge Identity Response URL Variables` evento dal `com.adobe.griffon.mobile` fornitore.
+Dopo aver esaminato [istruzioni di configurazione](assurance.md) e collegare il simulatore o il dispositivo ad Assurance, caricare WebView e cercare il `Edge Identity Response URL Variables` evento da `com.adobe.griffon.mobile` fornitore.
 
-Per caricare WebView, passa alla schermata iniziale dell’app Luma, seleziona l’icona &quot;account&quot;, seguita da &quot;Condizioni d’uso&quot; nel piè di pagina.
+Per caricare WebView, vai alla schermata iniziale dell’app Luma, seleziona l’icona &quot;account&quot;, seguita dalle &quot;Condizioni d’uso&quot; nel piè di pagina.
 
-Dopo aver caricato WebView, selezionare l&#39;evento e rivedere il `urlvariables` nel campo `ACPExtensionEventData` oggetto , confermando i seguenti parametri sono presenti nell&#39;URL: `adobe_mc`, `mcmid`e `mcorgid`.
+Dopo aver caricato WebView, selezionare l&#39;evento e rivedere `urlvariables` campo in `ACPExtensionEventData` , a conferma della presenza dei seguenti parametri nell&#39;URL: `adobe_mc`, `mcmid`, e `mcorgid`.
 
 ![convalida webview](assets/mobile-webview-validation.png)
 
-Un campione `urvariables` di seguito è possibile vedere il campo :
+Un esempio `urvariables` di seguito:
 
 ```html
 // Original (with escaped characters)
@@ -96,11 +96,11 @@ adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB
 
 >[!NOTE]
 >
->L’unione dei visitatori tramite questi parametri URL è attualmente supportata in Platform Web SDK (versione 2.11.0 o successiva) e `VisitorAPI.js`.
+>L’unione di visitatori tramite questi parametri URL è attualmente supportata in Platform Web SDK (versioni 2.11.0 o successive) e `VisitorAPI.js`.
 
 
-Avanti: **[Identità](identity.md)**
+Successivo: **[Identità](identity.md)**
 
 >[!NOTE]
 >
->Grazie per aver investito il tuo tempo nell&#39;apprendimento dell&#39;SDK di Adobe Experience Platform Mobile. In caso di domande, se desideri condividere feedback generali o se hai suggerimenti su contenuti futuri, condividi questi su questo [Experience League Articolo di discussione della Comunità](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

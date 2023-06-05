@@ -4,11 +4,11 @@ breadcrumb-title: Tutorial sull’app mobile
 user-guide-description: Scopri come implementare le applicazioni Adobe Experience Cloud nelle app per dispositivi mobili con Experience Platform Mobile SDK.
 solution: Data Collection
 kt: 6987
-recommendation: noDisplay,noCatalog
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+recommendations: noDisplay,noCatalog
+source-git-commit: 4bccc95ff94e9377b65771268e82b1900c003fc1
 workflow-type: tm+mt
 source-wordcount: '69'
-ht-degree: 68%
+ht-degree: 71%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 68%
    + [Creare uno schema](create-schema.md)
    + [Creare un flusso di dati](create-datastream.md)
    + [Configurare i tag](configure-tags.md)
-+ Implementazione dell&#39;app{#app-implementation}
++ Implementazione dell’app{#app-implementation}
    + [Installare gli SDK](install-sdks.md)
    + [Assurance](assurance.md)
    + [Consenso](consent.md)
@@ -32,5 +32,5 @@ ht-degree: 68%
 + Experience Cloud {#experience-cloud}
    + [Analytics](analytics.md)
    + [Experience Platform](platform.md)
-   + [Messaggi push Journey Optimizer](journey-optimizer-push.md)
+   + [Journey Optimizer messaggi push](journey-optimizer-push.md)
 + [Conclusione](conclusion.md)

@@ -1,24 +1,22 @@
 ---
-title: Utilizzare i responsabili della dipendenza
-description: Scopri come utilizzare CocoaPods e Gradle per gestire le estensioni e le dipendenze dell’SDK mobile.
+title: Utilizzare i manager delle dipendenze
+description: Scopri come utilizzare CocoaPods e Gradle per gestire le estensioni e le dipendenze dell’SDK di Mobile.
 feature: Mobile SDK
 kt: null
 exl-id: 92b8c63a-0ce5-493e-8ebd-2fabfa88d37e
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '52'
-ht-degree: 9%
+source-wordcount: '61'
+ht-degree: 0%
 
 ---
 
-# Utilizzare i responsabili della dipendenza
+# Utilizzare i manager delle dipendenze
 
-Scopri come utilizzare CocoaPods e Gradle per gestire le estensioni e le dipendenze dell’SDK di Adobe Experience Platform Mobile.
+Scopri come utilizzare CocoaPods e Gradle per gestire le estensioni e le dipendenze dell’SDK di Adobe Experience Platform Mobile. Per ulteriori informazioni sull’installazione dell’SDK con CocoaPods e Gradle, consulta [la documentazione](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
 >[!NOTE]
 >
-> Launch è ora **[!DNL tags]**
+> Il lancio è ora **[!DNL tags]**
 
 >[!VIDEO](https://video.tv.adobe.com/v/26263/?quality=12&learn=on)
-
-* [Ottenere la documentazione Experience Platform Mobile SDK](https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk).

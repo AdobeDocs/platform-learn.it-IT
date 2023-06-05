@@ -1,66 +1,66 @@
 ---
 title: Eventi
-description: Scopri come raccogliere i dati evento in un’app mobile.
+description: Scopri come raccogliere i dati di un evento in un’app mobile.
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '937'
 ht-degree: 1%
 
 ---
 
 # Eventi
 
-Scopri come tenere traccia degli eventi in un’app mobile.
+Scopri come tracciare gli eventi in un’app mobile.
 
-L’estensione Edge Network fornisce un’API per l’invio di eventi Experience a Platform Edge Network. Un evento esperienza è un oggetto che contiene dati conformi alla definizione dello schema ExperienceEvent XDM. In modo più semplice, acquisiscono ciò che le persone fanno nella tua app mobile. Una volta ricevuti i dati da Platform Edge Network, possono essere inoltrati alle applicazioni e ai servizi configurati nel datastream, come Adobe Analytics e Experience Platform. Ulteriori informazioni sulle [Eventi esperienza](https://aep-sdks.gitbook.io/docs/getting-started/initialize-the-sdk) nella documentazione del prodotto.
+L’estensione Edge Network fornisce un’API per inviare eventi esperienza a Platform Edge Network. Un Experience Event è un oggetto che contiene dati conformi alla definizione dello schema XDM ExperienceEvent. Più semplicemente, acquisiscono ciò che le persone fanno nella tua app mobile. Una volta ricevuti i dati da Platform Edge Network, questi possono essere inoltrati alle applicazioni e ai servizi configurati nel flusso di dati, come Adobe Analytics e Experience Platform. Ulteriori informazioni su [Eventi esperienza](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) nella documentazione del prodotto.
 
 ## Prerequisiti
 
-* Aggiornamento di PodFile con gli SDK richiesti.
+* PodFile aggiornato con gli SDK richiesti.
 * Estensioni registrate in AppDelegate.
-* MobileCore è stato configurato per utilizzare l&#39;AppId di sviluppo.
+* MobileCore configurato per utilizzare l&#39;AppId di sviluppo.
 * SDK importati.
-* Creazione ed esecuzione dell&#39;app con le modifiche precedenti.
+* L&#39;app è stata creata ed eseguita correttamente con le modifiche precedenti.
 
 ## Finalità di apprendimento
 
-In questa lezione:
+In questa lezione verranno fornite le seguenti informazioni:
 
 * Scopri come strutturare i dati XDM in base a uno schema.
 * Invia un evento XDM basato su un gruppo di campi standard.
 * Invia un evento XDM basato su un gruppo di campi personalizzato.
 * Invia un evento di acquisto XDM.
-* Convalida con affidabilità.
+* Convalida con Assurance.
 
 ## Creazione di un evento esperienza
 
-L’estensione Adobe Experience Platform Edge può inviare eventi che seguono uno schema XDM definito in precedenza ad Adobe Experience Platform Edge Network.
+L’estensione Adobe Experience Platform Edge può inviare a Adobe Experience Platform Edge Network eventi che seguono uno schema XDM definito in precedenza.
 
-Il processo è così...
+Il processo è simile a questo...
 
 1. Identifica l’interazione con l’app mobile che stai tentando di tracciare.
 
-1. Rivedi lo schema e identifica l’evento appropriato.
+1. Esamina lo schema e identifica l’evento appropriato.
 
-1. Rivedi lo schema e identifica eventuali campi aggiuntivi da utilizzare per descrivere l’evento.
+1. Esamina lo schema e identifica eventuali campi aggiuntivi da utilizzare per descrivere l’evento.
 
-1. Crea e compila l’oggetto dati.
+1. Costruisci e popola l’oggetto dati.
 
-1. Crea e invia un evento.
+1. Crea e invia evento.
 
 1. Convalida.
 
 Vediamo un paio di esempi.
 
-### Esempio n. 1 - gruppi di campi standard
+### Esempio #1: gruppi di campi standard
 
 Rivedi l’esempio seguente senza provare a implementarlo nell’app di esempio:
 
-1. Nello schema, identifica l’evento che stai tentando di raccogliere, in questo esempio stiamo monitorando una visualizzazione di prodotto.
-   ![schema visualizzazione prodotto](assets/mobile-datacollection-prodView-schema.png)
+1. Nello schema, identifica l’evento che stai tentando di raccogliere; in questo esempio stiamo tracciando una visualizzazione di prodotto.
+   ![schema di visualizzazione prodotto](assets/mobile-datacollection-prodView-schema.png)
 
-1. Inizia a costruire l’oggetto:
+1. Inizia a costruire l&#39;oggetto:
 
    ```swift
    var xdmData: [String: Any] = [
@@ -73,14 +73,14 @@ Rivedi l’esempio seguente senza provare a implementarlo nell’app di esempio:
    ]
    ```
 
-   * eventType: Descrive l&#39;evento che si è verificato, utilizza un [valore noto](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) quando possibile.
-   * commerce.productViews.value: Specifica il valore numerico dell&#39;evento. Se è un valore booleano (o &quot;Contatore&quot; in Adobe Analytics), il valore sarà sempre 1. Se si tratta di un evento numerico o valutario, il valore può essere > 1.
+   * eventType: descrive l’evento che si è verificato, utilizza un [valore noto](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) quando possibile.
+   * commerce.productViews.value: specifica il valore numerico dell’evento. Se è un valore booleano (o &quot;Contatore&quot; in Adobe Analytics), il valore sarà sempre 1. Se è un evento numerico o di valuta, il valore può essere > 1.
 
-1. Nello schema, identifica eventuali dati aggiuntivi associati all’evento. In questo esempio, includi `productListItems` che è un set standard di campi utilizzati con eventi relativi all’e-commerce:
-   ![schema voci elenco prodotti](assets/mobile-datacollection-prodListItems-schema.png)
+1. Nello schema, identifica eventuali dati aggiuntivi associati all’evento. In questo esempio, includi `productListItems` che è un set standard di campi utilizzati con eventi relativi al commercio:
+   ![schema elementi elenco prodotti](assets/mobile-datacollection-prodListItems-schema.png)
    * Tieni presente che `productListItems` è un array che consente di fornire più prodotti.
 
-1. Espandere l&#39;oggetto xdmData per includere dati supplementari:
+1. Espandi l’oggetto xdmData per includere dati supplementari:
 
    ```swift
    var xdmData: [String: Any] = [
@@ -101,7 +101,7 @@ Rivedi l’esempio seguente senza provare a implementarlo nell’app di esempio:
    ]
    ```
 
-1. Utilizza la struttura dati per creare un `ExperienceEvent`:
+1. Utilizza la struttura dati per creare un’ `ExperienceEvent`:
 
    ```swift
    let productViewEvent = ExperienceEvent(xdm: xdmData)
@@ -113,20 +113,20 @@ Rivedi l’esempio seguente senza provare a implementarlo nell’app di esempio:
    Edge.sendEvent(experienceEvent: productViewEvent)
    ```
 
-### Esempio n. 2 - gruppi di campi personalizzati
+### Esempio #2: gruppi di campi personalizzati
 
 Rivedi l’esempio seguente senza provare a implementarlo nell’app di esempio:
 
-1. Nello schema, identifica l&#39;evento che stai tentando di raccogliere. In questo esempio, tieni traccia di un’interazione con l’app costituita da un evento e un nome di Azione app.
-   ![schema di interazione dell&#39;app](assets/mobile-datacollection-appInteraction-schema.png)
+1. Nello schema, identifica l’evento che stai tentando di raccogliere. In questo esempio, tieni traccia di una &quot;Interazione app&quot; costituita da un nome e un evento di azione app.
+   ![schema interazione app](assets/mobile-datacollection-appInteraction-schema.png)
 
-1. Inizia a costruire l’oggetto.
+1. Inizia a costruire l&#39;oggetto.
 
    >[!NOTE]
    >
-   >  I gruppi di campi standard iniziano sempre nella directory principale dell’oggetto.
+   >  I gruppi di campi standard iniziano sempre nella radice dell&#39;oggetto.
    >
-   >  I gruppi di campi personalizzati iniziano sempre con un oggetto unico nell&#39;organizzazione di Experience Cloud, in questo esempio &quot;_techmarketingdemos&quot;.
+   >  I gruppi di campi personalizzati iniziano sempre sotto un oggetto univoco per l’organizzazione di Experienci Cloud, &quot;_techmarketingdemos&quot; in questo esempio.
 
    ```swift
    var xdmData: [String: Any] = [
@@ -143,7 +143,7 @@ Rivedi l’esempio seguente senza provare a implementarlo nell’app di esempio:
    ]
    ```
 
-   O in alternativa...
+   Oppure...
 
    ```swift
    var xdmData: [String: Any] = [:]
@@ -159,21 +159,21 @@ Rivedi l’esempio seguente senza provare a implementarlo nell’app di esempio:
    ]
    ```
 
-1. Utilizza la struttura dati per creare un `ExperienceEvent`.
+1. Utilizza la struttura dati per creare un’ `ExperienceEvent`.
 
    ```swift
    let appInteractionEvent = ExperienceEvent(xdm: xdmData)
    ```
 
-1. Invia l’evento e i dati a Platform Edge Network.
+1. Invia evento e dati a Platform Edge Network.
 
    ```swift
    Edge.sendEvent(experienceEvent: appInteractionEvent)
    ```
 
-### Aggiunta del tracciamento della visualizzazione a schermo all’app Luma
+### Aggiunta del tracciamento della visualizzazione schermata all’app Luma
 
-Gli esempi di cui sopra hanno, si spera, spiegato il processo di riflessione durante la costruzione di un oggetto dati XDM. Ora aggiungeremo il tracciamento della visualizzazione a schermo nell’app Luma.
+Gli esempi precedenti hanno spiegato il processo mentale durante la costruzione di un oggetto dati XDM. Ora aggiungeremo il tracciamento della visualizzazione a schermo nell’app Luma.
 
 1. Passa a `Home.swift`.
 1. Aggiungi il codice seguente a `viewDidAppear(...)`.
@@ -197,37 +197,37 @@ Gli esempi di cui sopra hanno, si spera, spiegato il processo di riflessione dur
            Edge.sendEvent(experienceEvent: experienceEvent)
    ```
 
-1. Ripeti per ogni schermata dell’app, aggiornamento `stateName` come vai.
+1. Ripeti per ogni schermata nell’app, aggiornando `stateName` e così via.
 
 
 
 ### Convalida
 
-1. Consulta la sezione [istruzioni di configurazione](assurance.md) e collegare il simulatore o il dispositivo a Assurance.
-1. Esegui l’azione e cerca il `hitReceived` evento dal `com.adobe.edge.konductor` fornitore.
+1. Rivedi [istruzioni di configurazione](assurance.md) e collegare il simulatore o il dispositivo ad Assurance.
+1. Eseguire l&#39;azione e cercare `hitReceived` evento da `com.adobe.edge.konductor` fornitore.
 1. Seleziona l’evento e rivedi i dati XDM nel `messages` oggetto.
    ![convalida della raccolta dati](assets/mobile-datacollection-validation.png)
 
-### Esempio n. 3 - acquisto
+### Esempio di #3 - acquisto
 
-In questo esempio, si supponga che l’utente abbia effettuato correttamente il seguente acquisto:
+In questo esempio, supponiamo che l’utente abbia effettuato correttamente il seguente acquisto:
 
-* Prodotto #1 - Tappetino Yoga.
+* #1 prodotto - Tappetino di yoga.
    * $ 49,99 x1
    * SKU: 5829
-* Prodotto #2 - Bottiglia d&#39;acqua.
+* #2 del prodotto - Bottiglia d&#39;acqua.
    * $ 10,00 x3
    * SKU: 9841
 * Totale ordine: $ 79,99
-* Id Ordine Univoco: 298234720
+* ID ordine univoco: 298234720
 * Tipo di pagamento: Carta di credito Visa
-* Id Transazione Pagamento Univoco: 847361
+* ID transazione pagamento univoco: 847361
 
 #### Schema
 
 Di seguito sono riportati i campi dello schema correlati da utilizzare:
 
-* eventType: &quot;commerce.purchase&quot;
+* eventType: &quot;commerce.purchases&quot;
 * commerce.purchases
 * commerce.order
 * productsListItems
@@ -235,9 +235,9 @@ Di seguito sono riportati i campi dello schema correlati da utilizzare:
 
 >[!TIP]
 >
->I gruppi di campi personalizzati vengono sempre inseriti sotto l&#39;identificatore dell&#39;organizzazione Experience Cloud.
+>I gruppi di campi personalizzati si trovano sempre sotto l’identificatore dell’organizzazione di Experience Cloud.
 >
->&quot;_techmarketingdemos&quot; viene sostituito con il valore univoco dell&#39;organizzazione.
+>&quot;_techmarketingdemos&quot; viene sostituito con il valore univoco della tua organizzazione.
 
 ![schema di acquisto](assets/mobile-datacollection-purchase-schema.png)
 
@@ -308,45 +308,45 @@ Edge.sendEvent(experienceEvent: experienceEvent)
 
 >[!NOTE]
 >
->Per chiarezza, tutti i valori sono codificati in modo fisso. In una situazione reale, i valori verrebbero popolati in modo dinamico.
+>Per maggiore chiarezza, tutti i valori sono hardcoded. In una situazione reale, i valori sarebbero popolati in modo dinamico.
 
 
 ### Implementazione nell’app Luma
 
-Dovresti disporre di tutti gli strumenti per iniziare ad aggiungere la raccolta dati all’app di esempio Luma. Di seguito è riportato un elenco dei requisiti di tracciamento ipotetici che puoi seguire.
+Devi disporre di tutti gli strumenti per iniziare ad aggiungere la raccolta dati all’app di esempio Luma. Di seguito è riportato un elenco di ipotetici requisiti di tracciamento che puoi seguire.
 
-* Monitora ogni visualizzazione schermo.
-   * Campi dello schema: screenType, screenName, screenView
-* Tieni traccia delle azioni non commerciali.
+* Monitora ogni visualizzazione dello schermo.
+   * Campi schema: screenType, screenName, screenView
+* Tracciare le azioni non di e-commerce.
    * Campi dello schema: appInteraction.name, appAction
-* Azioni commerciali:
-   * Pagina di prodotto: productViews
-   * Aggiungi al carrello: productListAdd
+* Azioni Commerce:
+   * Pagina prodotto: productViews
+   * Aggiungi al carrello: productListAdds
    * Rimuovi dal carrello: productListRemovals
-   * Inizio pagamento: checkout
+   * Inizio estrazione: estrazioni
    * Visualizza carrello: productListViews
    * Aggiungi alla lista dei desideri: saveForLaters
    * Acquisto: acquisti, ordine
 
 >[!TIP]
 >
->Consulta la sezione [app completamente implementata](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) per ulteriori esempi.
+>Rivedi [app completamente implementata](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) per ulteriori esempi.
 
 ### Convalida
 
-1. Consulta la sezione [istruzioni di configurazione](assurance.md) e collegare il simulatore o il dispositivo a Assurance.
+1. Rivedi [istruzioni di configurazione](assurance.md) e collegare il simulatore o il dispositivo ad Assurance.
 
-1. Esegui l’azione e cerca il `hitReceived` evento dal `com.adobe.edge.konductor` fornitore.
+1. Eseguire l&#39;azione e cercare `hitReceived` evento da `com.adobe.edge.konductor` fornitore.
 
 1. Seleziona l’evento e rivedi i dati XDM nel `messages` oggetto.
    ![convalida della raccolta dati](assets/mobile-datacollection-validation.png)
 
 ## Inviare eventi ad Analytics e Platform
 
-Dopo aver raccolto gli eventi e averli inviati a Platform Edge Network, questi verranno inviati alle applicazioni e ai servizi configurati nel tuo [datastream](create-datastream.md). Nelle lezioni successive, mapperai questi dati su [Adobe Analytics](analytics.md) e [Adobe Experience Platform](platform.md).
+Ora che hai raccolto gli eventi e li hai inviati a Platform Edge Network, questi verranno inviati alle applicazioni e ai servizi configurati nel tuo [flusso di dati](create-datastream.md). Nelle lezioni successive mapperai questi dati su [Adobe Analytics](analytics.md) e [Adobe Experience Platform](platform.md).
 
-Avanti: **[WebViews](web-views.md)**
+Successivo: **[WebViews](web-views.md)**
 
 >[!NOTE]
 >
->Grazie per aver investito il tuo tempo nell&#39;apprendimento dell&#39;SDK di Adobe Experience Platform Mobile. In caso di domande, se desideri condividere feedback generali o se hai suggerimenti su contenuti futuri, condividi questi su questo [Experience League Articolo di discussione della Comunità](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

@@ -2,9 +2,9 @@
 title: Identità
 description: Scopri come raccogliere i dati di identità in un’app mobile.
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '591'
 ht-degree: 4%
 
 ---
@@ -13,33 +13,33 @@ ht-degree: 4%
 
 Scopri come raccogliere i dati di identità in un’app mobile.
 
-Il servizio Adobe Experience Platform Identity consente di acquisire una visione migliore dei clienti e dei loro comportamenti attraverso il collegamento di identità tra dispositivi e sistemi, consentendo di fornire in tempo reale esperienze digitali personali e di forte impatto. I campi e i namespace di identità sono la colla che unisce diverse origini dati per creare il profilo cliente in tempo reale a 360 gradi.
+Il servizio Adobe Experience Platform Identity consente di ottenere una visione migliore dei clienti e dei loro comportamenti collegando le identità tra dispositivi e sistemi, consentendo di offrire esperienze digitali personali e di impatto in tempo reale. I campi di identità e gli spazi dei nomi sono l’associazione che unisce diverse origini di dati per creare il profilo cliente in tempo reale a 360 gradi.
 
-Ulteriori informazioni sulle [Estensione Identity](https://aep-sdks.gitbook.io/docs/foundation-extensions/identity-for-edge-network) e [servizio di identità](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=it) nella documentazione.
+Ulteriori informazioni su [Estensione identità](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) e [servizio identità](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=it) nella documentazione di.
 
 ## Prerequisiti
 
-* L’app è stata generata ed eseguita correttamente con gli SDK installati e configurati.
+* L&#39;app con gli SDK installati e configurati è stata creata ed eseguita correttamente.
 
 ## Finalità di apprendimento
 
-In questa lezione:
+In questa lezione verranno fornite le seguenti informazioni:
 
-* Aggiorna un&#39;identità standard.
-* Imposta un&#39;identità personalizzata.
-* Aggiorna un&#39;identità personalizzata.
-* Convalida il grafico dell&#39;identità.
+* Aggiornare un’identità standard.
+* Imposta un’identità personalizzata.
+* Aggiornare un’identità personalizzata.
+* Convalida il grafico delle identità.
 * Ottieni ECID e altre identità.
 
-## Aggiornare un&#39;identità standard
+## Aggiornare un’identità standard
 
-Per prima cosa, aggiorna la mappa di identità dell’utente al momento dell’accesso.
+Per prima cosa, aggiorna la mappa delle identità dell’utente al momento dell’accesso.
 
-1. Passa a `Login.swift` se l’app Luma e trovi la funzione denominata `loginButt`.
+1. Accedi a `Login.swift` se l’app Luma e trova la funzione denominata `loginButt`.
 
-   Nell’app di esempio Luma, non è disponibile alcuna convalida di nome utente o password. È sufficiente toccare i pulsanti per accedere.
+   Nell’app di esempio Luma non è presente alcuna convalida del nome utente o della password. È sufficiente toccare i pulsanti per accedere.
 
-1. Crea il `IdentityMap` e `IdentityItem`.
+1. Creare `IdentityMap` e `IdentityItem`.
 
    ```swift
    let identityMap: IdentityMap = IdentityMap()
@@ -52,7 +52,7 @@ Per prima cosa, aggiorna la mappa di identità dell’utente al momento dell’a
    identityMap.add(item:emailIdentity, withNamespace: "Email")
    ```
 
-1. Chiamata `updateIdentities` per inviare i dati a Platform Edge Network.
+1. Chiamata `updateIdentities` per inviare i dati alla rete Edge di Platform.
 
    ```swift
    Identity.updateIdentities(with: identityMap)
@@ -60,24 +60,24 @@ Per prima cosa, aggiorna la mappa di identità dell’utente al momento dell’a
 
 >[!NOTE]
 >
->Puoi inviare più identità in una singola chiamata updateIdentities . Puoi anche modificare le identità inviate in precedenza.
+>Puoi inviare più identità in una singola chiamata updateIdentities. Puoi anche modificare le identità inviate in precedenza.
 
 
-## Configurare uno spazio dei nomi di identità personalizzato
+## Impostare uno spazio dei nomi di identità personalizzato
 
-Gli spazi dei nomi di identità sono componenti di [Servizio identità](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) che fungono da indicatori del contesto a cui si riferisce un&#39;identità. Ad esempio, distinguono un valore di &quot;name@email.com&quot; come indirizzo e-mail o &quot;443522&quot; come ID CRM numerico.
+Gli spazi dei nomi delle identità sono componenti di [Servizio identità](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=it) che fungono da indicatori del contesto a cui si riferisce un’identità. Ad esempio, distinguono un valore di &quot;name@email.com&quot; come indirizzo e-mail o &quot;443522&quot; come ID CRM numerico.
 
-1. Nell’interfaccia Raccolta dati, seleziona **[!UICONTROL Identità]** dalla barra di navigazione a sinistra.
-1. Seleziona **[!UICONTROL Creare uno spazio dei nomi di identità]**.
-1. Fornisci un **[!UICONTROL Nome visualizzato]** di `Luma CRM ID` e **[!UICONTROL Simbolo di identità]** valore `lumaCrmId`.
+1. Nell’interfaccia di Data Collection, seleziona **[!UICONTROL Identità]** dalla barra di navigazione a sinistra.
+1. Seleziona **[!UICONTROL Crea uno spazio dei nomi delle identità]**.
+1. Fornisci un **[!UICONTROL Nome visualizzato]** di `Luma CRM ID` e un **[!UICONTROL Simbolo di identità]** valore di `lumaCrmId`.
 1. Seleziona **[!UICONTROL ID multi-dispositivo]**.
 1. Seleziona **[!UICONTROL Crea]**.
 
-![crea spazio dei nomi identità](assets/mobile-identity-create.png)
+![crea spazio dei nomi delle identità](assets/mobile-identity-create.png)
 
-## Aggiornare un&#39;identità personalizzata
+## Aggiornare un’identità personalizzata
 
-Dopo aver creato un’identità personalizzata, inizia a raccoglierla modificando il `updateIdentities` codice aggiunto nel passaggio precedente. È sufficiente creare un oggetto IdentityItem e aggiungerlo a IdentityMap. Ecco come dovrebbe essere il blocco di codice completo:
+Dopo aver creato un’identità personalizzata, inizia a raccoglierla modificando la `updateIdentities` codice aggiunto nel passaggio precedente. È sufficiente creare un elemento IdentityItem e aggiungerlo a IdentityMap. Ecco come dovrebbe apparire il blocco di codice completo:
 
 ```swift
 //Hardcoded identity values
@@ -96,11 +96,11 @@ identityMap.add(item: crmIdentity, withNamespace: "lumaCrmId")
 Identity.updateIdentities(with: identityMap)
 ```
 
-## Rimuovere un&#39;identità
+## Rimuovere un’identità
 
-È possibile utilizzare `removeIdentity` per rimuovere l&#39;identità dalla IdentityMap lato client memorizzata. L’estensione Identity interrompe l’invio dell’identificatore alla rete Edge. L’utilizzo di questa API non rimuove l’identificatore dal grafico dei profili utente o dal grafico delle identità lato server.
+È possibile utilizzare `removeIdentity` per rimuovere l’identità dalla IdentityMap memorizzata lato client. L’estensione Identity interrompe l’invio dell’identificatore alla rete Edge. L’utilizzo di questa API non rimuove l’identificatore dal grafico dei profili utente o dal grafico delle identità lato server.
 
-Aggiungi quanto segue `removeIdentity` codice al pulsante logout fai clic su in `Account.swift`.
+Aggiungi quanto segue `removeIdentity` codice per il pulsante logout click in `Account.swift`.
 
 ```swift
 // Logout
@@ -116,31 +116,31 @@ let logout = UIAlertAction(title: "Logout", style: .destructive, handler: { (act
 ```
 
 >[!NOTE]
->Negli esempi precedenti, `crmId` e `emailAddress` sono codificati ma in un’app reale i valori saranno dinamici.
+>Negli esempi precedenti, `crmId` e `emailAddress` sono codificati, ma in un’app reale i valori sarebbero dinamici.
 
-## Convalida con affidabilità
+## Convalida con garanzia
 
-1. Consulta la sezione [istruzioni di configurazione](assurance.md) e collegare il simulatore o il dispositivo a Assurance.
+1. Rivedi [istruzioni di configurazione](assurance.md) e collegare il simulatore o il dispositivo ad Assurance.
 1. Nell’app, seleziona l’icona Account in basso a destra.
 
    ![account app luma](assets/mobile-identity-login.png)
-1. Seleziona la **Accesso** pulsante .
-1. Ti viene offerta l&#39;opzione di inserire un nome utente e una password, entrambi opzionali e puoi semplicemente selezionare **Accesso**.
+1. Seleziona la **Accedi** pulsante.
+1. Hai la possibilità di inserire un nome utente e una password; entrambi sono opzionali e puoi semplicemente selezionare **Accedi**.
 
    ![accesso all’app luma](assets/mobile-identity-login-final.png)
-1. Cerca nell’interfaccia utente web di Assurance per `Edge Identity Update Identities` evento dal `com.adobe.griffon.mobile` fornitore.
-1. Seleziona l’evento e rivedi i dati nel `ACPExtensionEventData` oggetto. Dovresti vedere le identità che hai aggiornato.
+1. Cerca nell’interfaccia web di Assurance per `Edge Identity Update Identities` evento da `com.adobe.griffon.mobile` fornitore.
+1. Seleziona l’evento e rivedi i dati in `ACPExtensionEventData` oggetto. Dovresti visualizzare le identità aggiornate.
    ![convalida aggiornamento identità](assets/mobile-identity-validate-assurance.png)
 
-## Convalida con grafico dell’identità
+## Convalida con grafico delle identità
 
-Una volta completati i passaggi nel [Experience Platform](platform.md), puoi anche confermare l’acquisizione dell’identità nel visualizzatore grafico dell’identità delle piattaforme:
+Una volta completati i passaggi in [lezione di Experience Platform](platform.md), potrai anche confermare l’acquisizione dell’identità nel visualizzatore del grafico dell’identità di Platform:
 
-![convalidare il grafico di identità](assets/mobile-identity-validate.png)
+![convalida grafo identità](assets/mobile-identity-validate.png)
 
 
-Avanti: **[Profilo](profile.md)**
+Successivo: **[Profilo](profile.md)**
 
 >[!NOTE]
 >
->Grazie per aver investito il tuo tempo nell&#39;apprendimento dell&#39;SDK di Adobe Experience Platform Mobile. In caso di domande, se desideri condividere feedback generali o se hai suggerimenti su contenuti futuri, condividi questi su questo [Experience League Articolo di discussione della Comunità](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
