@@ -2,34 +2,34 @@
 title: Eseguire query
 seo-title: Run queries | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Eseguire query
-description: Questa lezione illustra come impostare, scrivere ed eseguire query per convalidare i dati acquisiti.
+description: In questa lezione imparerai a impostare, scrivere ed eseguire query per convalidare i dati acquisiti.
 role: Data Architect, Data Engineer
 feature: Queries
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '323'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # Eseguire query
 
 <!-- 15 min-->
-In questa lezione verrà illustrato come impostare, scrivere ed eseguire query per convalidare i dati acquisiti.
+In questa lezione imparerai a impostare, scrivere ed eseguire query per convalidare i dati acquisiti.
 
-Adobe Experience Platform Query Service consente di comprendere meglio i dati grazie all’utilizzo di SQL standard per eseguire query sui dati in Platform. Utilizzando Query Service, puoi unire qualsiasi set di dati nel Data Lake e acquisire i risultati della query come nuovo set di dati da utilizzare nel reporting, nell’apprendimento automatico o per l’inserimento nel Profilo cliente in tempo reale.
+Adobe Experience Platform Query Service consente di interpretare i dati in modo più appropriato, consentendo di utilizzare SQL standard per eseguire query sui dati in Platform. Utilizzando Query Service, puoi unire qualsiasi set di dati nel Data Lake e acquisire i risultati della query sotto forma di nuovo set di dati da utilizzare nel reporting, nell’apprendimento automatico o per l’inserimento in Real-Time Customer Profile.
 
-**Architetti dei dati** e **Ingegneri dati** dovrà utilizzare il servizio di query al di fuori di questa esercitazione.
+**Architetti di dati** e **Ingegneri dati** dovrà utilizzare il servizio query all’esterno di questa esercitazione.
 
-Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sul servizio Query:
+Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni su Query Service:
 >[!VIDEO](https://video.tv.adobe.com/v/29795?quality=12&learn=on)
 
-## Autorizzazioni necessarie
+## Autorizzazioni richieste
 
-In [Configurare le autorizzazioni](configure-permissions.md) per completare la lezione, è necessario impostare tutti i controlli di accesso necessari.
+In [Configurare le autorizzazioni](configure-permissions.md) Per completare questa lezione, è necessario impostare tutti i controlli di accesso necessari.
 
 <!-- Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
 * Permission items Data Management > **[!UICONTROL View Datasets]** and  **[!UICONTROL Manage Datasets]**
@@ -39,22 +39,22 @@ In [Configurare le autorizzazioni](configure-permissions.md) per completare la l
 
 ## Query semplici
 
-Cominciamo con alcune semplici domande:
+Iniziamo con alcune semplici query:
 
-1. Nell’interfaccia utente di Platform, passa a **Query** nella navigazione a sinistra
-1. Seleziona la **Crea query** pulsante in alto a destra per aprire una casella di testo per eseguire ed eseguire query
-1. Inserisci la seguente query nell’editor e premi Maiusc+Invio o Maiusc+Invio per eseguire la query.
+1. Nell’interfaccia utente di Platform, vai a **Query** nel menu di navigazione a sinistra
+1. Seleziona la **Crea query** in alto a destra per aprire una casella di testo per eseguire ed eseguire query
+1. Immettete la seguente query nell&#39;editor e premete Maiusc+Invio o Maiusc+Ritorna per eseguire la query.
 
    ```
    SHOW TABLES
    ```
 
-1. Viene visualizzato l’elenco delle tabelle disponibili
+1. Mostra l’elenco delle tabelle disponibili
 
    ![MOSTRA query TABLE](assets/queries-showTables.png)
 
 
-1. Ora prova questa query, sostituendo `_techmarketingdemos` con il tuo namespace tenant, che, se ricordi, è visibile negli schemi.
+1. Ora prova questa query, sostituendo `_techmarketingdemos` con il tuo spazio dei nomi tenant, che, se ricordi, è visibile negli schemi.
 
    ```
    SELECT person.name.lastName,loyalty.tier
@@ -62,9 +62,9 @@ Cominciamo con alcune semplici domande:
    WHERE loyalty.tier ='gold'
    ```
 
-   ![SELEZIONARE i dati dal set di dati fedeltà](assets/queries-loyaltySelect.png)
+   ![SELEZIONA dati dal set di dati fedeltà](assets/queries-loyaltySelect.png)
 
-1. In caso di errore, nella sezione **[!UICONTROL Console]** scheda , come illustrato di seguito
+1. In caso di errore, nella sezione vengono visualizzati messaggi dettagliati **[!UICONTROL Console]** come illustrato di seguito
    ![Errore nella query](assets/queries-error.png)
 
 1. Con la query riuscita, **[!UICONTROL Nome]** it `Luma Gold Level Customers`
@@ -82,7 +82,7 @@ HAVING COUNT(_techmarketingdemos.systemIdentifier.loyaltyId) > 1;-->
 
 ## Esercizi aggiuntivi
 
-Ulteriori esercitazioni del servizio query verranno aggiunte all’esercitazione in una data successiva.
+Ulteriori esercizi di Query Service verranno aggiunti all’esercitazione in un secondo momento.
 <!--
 ## Join Datasets
 
@@ -120,6 +120,6 @@ In this exercise, we will join two datasets `Luma Loyalty Dataset` and `Luma Off
 ## Risorse aggiuntive
 
 * [Documentazione del servizio query](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it)
-* [Riferimento API del servizio query](https://www.adobe.io/experience-platform-apis/references/query-service/)
+* [Riferimento API di Query Service](https://www.adobe.io/experience-platform-apis/references/query-service/)
 
-E ora per la lezione finale, [creazione di segmenti](build-segments.md)!
+E ora per l&#39;ultima lezione pratica, [creazione di segmenti](build-segments.md)!

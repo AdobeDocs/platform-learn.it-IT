@@ -3,10 +3,10 @@ title: Acquisire dati utilizzando un connettore di origine del database
 description: Questo video illustra come acquisire in batch i dati da un’origine database per inserirli nel profilo cliente in tempo reale e nel data lake di esperienze di Adobe Experience Platform, in modo semplice e scalabile.
 role: Data Engineer
 feature: Sources
-kt: 6546
+jira: KT-6546
 thumbnail: 329317.jpg
 exl-id: c881e088-9569-4342-8f27-3815f187b217
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%

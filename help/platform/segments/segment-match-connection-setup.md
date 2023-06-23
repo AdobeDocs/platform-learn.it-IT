@@ -1,13 +1,13 @@
 ---
 title: Impostazione della connessione Segment Match
-description: In questo video, scopri come impostare la connessione tra te e un partner in modo da poter condividere i tipi di pubblico. Dopo aver configurato questa funzione di corrispondenza del segmento, ... (le descrizioni devono essere comprese tra 60 e 160 caratteri)
+description: In questo video, scopri come impostare la connessione tra te e un partner in modo da poter condividere i tipi di pubblico. Dopo aver configurato questa funzione di corrispondenza segmento, ... (Le descrizioni devono essere comprese tra 60 e 160 caratteri)
 feature: Segments
 role: Admin
 level: Beginner
-kt: 10246
+jira: KT-10246
 thumbnail: 342211.jpeg
 exl-id: bf3c7297-ea60-45fc-a784-5c576e7935cf
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 45%

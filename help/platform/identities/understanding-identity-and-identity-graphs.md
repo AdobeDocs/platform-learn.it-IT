@@ -3,10 +3,10 @@ title: Panoramica dei grafici delle identità e delle identità
 description: Scopri le funzionalità chiave della risoluzione delle identità in Adobe Experience Platform&mdash;raccolta di identità, grafici delle identità e API. Scopri in che modo il servizio Identity collega le identità disconnesse per fornire un’esperienza di connessione coerente tramite la costruzione di un profilo unificato.
 role: Data Architect
 feature: Identities
-kt: 3039
+jira: KT-3039
 thumbnail: 27841.jpg
 exl-id: 5e54cae9-9c78-4296-a28a-d043570811d4
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 5%

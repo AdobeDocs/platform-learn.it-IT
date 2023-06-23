@@ -1,84 +1,85 @@
 ---
-title: Bootcamp - Customer Journey Analytics - Da informazioni all'azione - Brasile
-description: Bootcamp - Customer Journey Analytics - Da informazioni all'azione - Brasile
-kt: 5342
+title: Bootcamp - Customer Journey Analytics - Dagli approfondimenti all'azione - Brasile
+description: Bootcamp - Customer Journey Analytics - Dagli approfondimenti all'azione - Brasile
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: febeba3596d3f98b2352c5ef8688ee011d25c9fe
+exl-id: 28b87e21-3168-447e-9a93-a6ae7e969657
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
 
 ---
 
-# 4.6 Dos insights à ação
+# 4.6 Approfondimenti sul dos à ação
 
-## Obiettivi
+## Objetivos
 
 - Entenda como criar um público com base em uma visão coletada no Customer Journey Analytics
-- Usa esse público no CDP em tempo reale e no Adobe Journey Optimizer
+- Utilizza esse público no CDP em tempo real e no Adobe Journey Optimizer
 
 ## 4.6.1 Crie uma audiência e publique-a
 
-Em seu projeto, você criou um filtro chamado **Sentimenti di chiamata** e realizzati visualizzazione a quantidade de usuários que tiveram suas ligações ao call center classificadas como **positivas**. Agora, você poderá criar um segmento com esses usuários e ativação-los em jornadas ou em canais de comunicação.
+Em seu projeto, você criou um filtro chamado. **Sentimenti di chiamata** e conseguiu visualizar a quantidade de usuários que tiveram suas ligações ao call center classificadas como **positività**. Agora, você poderá criar um com esses usuários e ativação-los em jornadas ou em canais de comunicação.
 
-O primeiro passo é: No penel criado no último exercício, selione a linha **1. Sensazione di chiamata - Positivo**, clique com o botão direito de seu mouse e selecione a opção **Creare un pubblico dalla selezione**:
+O primeiro passo é: No painel criado no último exercício, selecione a linha **1. Sentimento di chiamata - Positivo**, clique com o botão direito de seu mouse e selecione a opção **Creare un pubblico dalla selezione**:
 
 ![demo](./images/aud1.png)
 
-Em seguida, dê um nome para a sua audiência seguindo o modelo **yourLastName - cia audience call che si sente positiva**:
+Em seguida, dê um nome para a sua audiência seguindo o modelo **yourLastName - la chiamata del pubblico si sente positiva**:
 
 ![demo](./images/aud2.png)
 
-Nota que é possível ter um preview da audiência que está sendo criada:
+Note que é possível ter um preview da audiência que está sendo criada:
 
 ![demo](./images/aud3.png)
 
-Para finalizar, clique em **Pubblicitario**:
+Para finalizar, cricca em **Publicar**:
 
 ![demo](./images/aud4.png)
 
-## 4.6.2 Utilizzare sua audiência como parte de um segmento
+## 4.6.2 Utilizzare la sua audiência como parte de um
 
-Voltando para a Adobe Experience Platform, vá em **Segmenti > Sfoglia** e você irá visualizzazione o seu segmento criado no CJA rapidamente e disponível para ser usado nas suas ativaçes e jornadas!
+Voltando para a Adobe Experience Platform, vá em **Segmenti > Sfoglia** e você conseguirá visualizar o seu criado no CJA pronto e disponível para ser usado nas suas ativações e jornadas!
 
 ![demo](./images/aud5.png)
 
-Vamos agora usar esse segmento em uma ativação no Facebook e em uma jornada do cliente!
+Vamos agora usar esse em uma ativação no Facebook e em uma jornada do cliente!
 
-## 4.6.3 Utilizzare seu segmento un Real-Time CDP em tempo reale
+## 4.6.3 Utilizzare seu na Real-Time CDP em tempo real
 
-Na Adobe Experience Platform, vá em **Segmenti > Sfoglia** Incontra un audiência que você criou no CJA:
+Na Adobe Experience Platform, vá em **Segmenti > Sfoglia** Incontra un’audiência que você criou no CJA:
 
 ![demo](./images/aud6.png)
 
-Clique no seu segmento e, em seguida, clique em **Attiva a destinazione**:
+Clique no seu, em seguida, cricca em **Attiva nella destinazione**:
 
 ![demo](./images/aud7.png)
 
-Selecione una destinazione chamada bootcamp-facebook e, em seguida, clique em Next:
+Selecione una destinazione chamada bootcamp-facebook e, em seguida, cricca em Next:
 
 ![demo](./images/aud8.png)
 
-Em seguida, clique em Next novamente:
+Em seguida, cricca em Next novamente:
 
 ![demo](./images/aud9.png)
 
-Selecione a opção **Origine del pubblico** e defina como **Direttamente dai clienti** e clique em Next:
+Selecione a opção **Origine del pubblico** e defina como **Direttamente dai clienti** e cricca em Successivo:
 
 ![demo](./images/aud10.png)
 
-Por fim, na página **Revisione** clicca su Fine!
+Por fim, na página **Revisione** Cricque em Finish!
 
 ![demo](./images/aud11.png)
 
-Pronto! Agora o seu segmento está vinculado aos públicos personalizados do Facebook.
-Agora, vamos utilizar esse segmento no AJO!
+Pronto! Agora o seu está vinculado aos públicos personalizados do Facebook.
+Agorà, vamos utilizar esse no AJO!
 
-## 4.6.4 Utilizzare il segmento seu su Adobe Journey Optimizer
+## 4.6.4 Uso di seu non Adobe Journey Optimizer
 
-Interfaccia da Adobe Experience Platform clique em Journey Optimizer e, em seguida, nessun menu esquerdo laterale, clique em **Percorsi** e compone un parroco uma jornada clicando em **Crea Percorso**:
+Na interfaccia da Adobe Experience Platform cricca em Journey Optimizer e, em seguida, nessun menu esquerdo laterale, cricca em **Percorsi** e comece a criar uma jornada clicando em **Crea Percorso**:
 
 ![demo](./images/aud20.png)
 
@@ -86,20 +87,20 @@ Interfaccia da Adobe Experience Platform clique em Journey Optimizer e, em segui
 
 ![demo](./images/aud22.png)
 
-Em seguida, senza menu esquerdo laterale, em Eventos, selione **Qualificazione del segmento** e arraste-o até a jornada:
+Em seguida, no menu esquerdo laterale, em Eventos, selecione **Qualificazione del segmento** e arraste-o até a jornada :
 
 ![demo](./images/aud23.png)
 
-Em seguida, em **Segmento** cricca **Modifica** para selionar um segmento:
+Em seguida, em **Segmento** cricca em **Modifica** para selecionar um:
 
 ![demo](./images/aud24.png)
 
-Selecione a audiência que você criou no CJA e clique em **Salva**:
+Voce principale: CJA e cricca em **Salva**:
 
 ![demo](./images/aud25.png)
 
-Pronto! A partir daí você pode criar uma jornada para clientque se Qualam para esse segmento!
+Pronto! Un partir daí você pode criar uma jornada para clientes que se qualificam para esse!
 
-[Torna al flusso utente 4](./uc4.md)
+[Torna a Flusso utente 4](./uc4.md)
 
 [Voltar para todos os módulos](./../../overview.md)

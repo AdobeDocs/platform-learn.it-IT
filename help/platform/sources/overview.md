@@ -3,10 +3,10 @@ title: Panoramica sulle origini
 description: Scopri come acquisire facilmente i dati dalle applicazioni di Adobe e di prime e terze parti nel profilo cliente in tempo reale e nel data lake di Platform.
 role: Data Engineer, Data Architect
 feature: Sources
-kt: 3800
+jira: KT-3800
 thumbnail: 29694.jpg
 exl-id: e38d643a-27ea-49f4-87c4-eccdb860ea92
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 33%

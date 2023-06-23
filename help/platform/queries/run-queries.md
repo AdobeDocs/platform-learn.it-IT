@@ -3,10 +3,10 @@ title: Eseguire query con Query Service
 description: Questo video mostra come eseguire query nell’interfaccia di Adobe Experience Platform e in un client PSQL. Inoltre, è possibile utilizzare singole proprietà in un oggetto XDM, utilizzare funzioni definite da Adobe e utilizzare CREATE TABLE AS SELECT (CTAS).
 role: Data Engineer,User
 feature: Queries
-kt: 3140
+jira: KT-3140
 thumbnail: 29796.jpg
 exl-id: 7b264733-a0e0-44cd-a2c0-680a473f8cf6
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 11%

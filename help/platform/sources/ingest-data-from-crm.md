@@ -3,18 +3,18 @@ title: Acquisire dati utilizzando i connettori di origini del sistema CRM
 description: Scopri come acquisire facilmente in batch i dati dalle origini CRM per inserirli direttamente nel data lake e nel profilo cliente in tempo reale di Adobe Experience Platform.
 role: Data Engineer, Data Architect
 feature: Sources
-kt: 3826, 13272
+jira: KT-3826, 13272
 thumbnail: 29711.jpg
 last-substantial-update: 2023-05-24T00:00:00Z
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# Acquisire dati utilizzando i connettori di origine del CRM
+# Acquisire dati utilizzando i connettori di sorgente CRM
 
 Scopri come acquisire facilmente in batch i dati dalle origini CRM per inserirli direttamente nel data lake e nel profilo cliente in tempo reale di Adobe Experience Platform. Per la documentazione più dettagliata del prodotto, consulta [gestione delle relazioni con i clienti (CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) nella pagina di panoramica dei connettori di origine.
 

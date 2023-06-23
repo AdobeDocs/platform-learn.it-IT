@@ -1,13 +1,13 @@
 ---
 title: Governance dei dati per Segment Match
-description: Scopri come impostare e utilizzare i controlli di governance dei dati in Real-Time CDP in modo da poter limitare quali set di dati (e quindi quali segmenti utilizzano tali set di dati... (Le descrizioni devono essere comprese tra 60 e 160 caratteri)
+description: Scopri come impostare e utilizzare i controlli di governance dei dati in Real-Time CDP in modo da poter limitare quali set di dati (e quindi quali segmenti che utilizzano tali set di dati... (Le descrizioni devono essere comprese tra 60 e 160 caratteri)
 feature: Segments
 role: Admin
 level: Beginner
-kt: 10247
+jira: KT-10247
 thumbnail: 342212.jpeg
 exl-id: d822868e-1765-4203-a700-3487460dd3a0
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 63%

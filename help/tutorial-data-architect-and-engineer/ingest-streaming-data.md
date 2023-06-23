@@ -5,10 +5,10 @@ breadcrumb-title: Acquisire dati in streaming
 description: In questa lezione, trasmetterai i dati in Experience Platform utilizzando l’SDK per web.
 role: Data Engineer
 feature: Data Ingestion
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '3346'
 ht-degree: 2%
@@ -82,7 +82,6 @@ Innanzitutto configureremo lo stream di dati. Un flusso di dati indica alla rete
 Per creare [!UICONTROL flusso di dati]:
 
 1. Accedi a [Experience Platform di interfaccia utente di Data Collection](https://experience.adobe.com/launch/)
-
    <!--when will the edge config go live?-->
 
 1. Seleziona **[!UICONTROL Flussi di dati]** nel menu di navigazione a sinistra
@@ -103,7 +102,6 @@ Nella schermata successiva, specifica dove desideri inviare i dati. Per inviare 
 1. Per **[!UICONTROL Set di dati evento]**, seleziona `Luma Web Events Dataset`
 1. Se utilizzi altre applicazioni di Adobe, puoi esplorare le altre sezioni per vedere quali informazioni sono necessarie nella configurazione Edge di queste altre soluzioni. L’SDK per web è stato sviluppato non solo per inviare in streaming i dati in Experience Platform, ma anche per sostituire tutte le librerie JavaScript precedenti utilizzate da altre applicazioni Adobe. La configurazione Edge viene utilizzata per specificare i dettagli dell’account di ogni applicazione a cui si desidera inviare i dati.
 1. Seleziona **[!UICONTROL Salva]**
-
    ![Configurare lo stream di dati e salvare](assets/websdk-edgeConfig-addEnvironment.png)
 
 Una volta salvata la configurazione Edge, la schermata risultante mostrerà tre ambienti creati per Sviluppo, Staging e Produzione. È possibile aggiungere altri ambienti di sviluppo:
@@ -124,7 +122,6 @@ Per creare una proprietà:
 1. Come **[!UICONTROL Nome]**, immetti `Luma Platform Tutorial` (aggiungi il tuo nome alla fine, se più persone della tua azienda stanno seguendo questo tutorial)
 1. Come **[!UICONTROL Domini]**, immetti `enablementadobe.com` (spiegato in seguito)
 1. Seleziona **[!UICONTROL Salva]**
-
    ![Dettagli proprietà](assets/websdk-property-propertyDetails.png)
 
 <!--
@@ -281,7 +278,6 @@ Experience Platform Debugger dispone di una funzione interessante che consente d
 1. Ora vai a **[!UICONTROL Launch]** nel menu di navigazione a sinistra
 1. Seleziona la scheda Configurazione.
 1. A destra della posizione in cui è visualizzato **[!UICONTROL Codici di incorporamento pagina]**, apri **[!UICONTROL Azioni]** e seleziona **[!UICONTROL Sostituisci]**
-
    ![Seleziona Azioni > Sostituisci](assets/websdk-debugger-replaceLibrary.png)
 1. Poiché sei autenticato, il Debugger estrae le proprietà e gli ambienti di Launch disponibili. Seleziona il `Luma Platform Tutorial` proprietà
 1. Seleziona il `Development` ambiente
@@ -364,7 +360,6 @@ Il giorno **[!UICONTROL Elementi dati]** pagina:
 1. Seleziona la `web.webPageDetails.name` campo
 1. Come **[!UICONTROL Valore]**, seleziona l’icona per aprire il modale di selezione dell’elemento dati e scegli il tuo `Page Name` elemento dati
 1. Seleziona **[!UICONTROL Salva nella libreria]**
-
    ![Mappare il nome della pagina all’elemento dati Oggetto XDM](assets/websdk-property-dataElement-createXDMObject.png)
 
 Lo stesso processo viene utilizzato per mappare dati personalizzati aggiuntivi sul sito web ai campi XDM.

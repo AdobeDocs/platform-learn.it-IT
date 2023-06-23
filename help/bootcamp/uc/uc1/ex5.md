@@ -1,12 +1,12 @@
 ---
-title: Bootcamp - Real-time CDP - Costruire un segmento e agire - Invia il segmento a DV360
-description: Bootcamp - Real-time CDP - Costruire un segmento e agire - Invia il segmento a DV360
-kt: 5342
+title: Bootcamp - Real-time CDP - Creare un segmento e intervenire - Inviare il segmento a DV360
+description: Bootcamp - Real-time CDP - Creare un segmento e intervenire - Inviare il segmento a DV360
+jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 31f46e37-f1c0-4730-8520-1ccd98df6501
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 3%
@@ -15,19 +15,19 @@ ht-degree: 3%
 
 # 1.5 Intervenire: inviare il segmento a Facebook
 
-Vai a [Adobe Experience Platform](https://experience.adobe.com/platform). Dopo aver effettuato l&#39;accesso, si aprirà la homepage di Adobe Experience Platform.
+Vai a [Adobe Experience Platform](https://experience.adobe.com/platform). Dopo aver effettuato l’accesso, accedi alla home page di Adobe Experience Platform.
 
 ![Acquisizione dei dati](./images/home.png)
 
-Prima di continuare, devi selezionare un **sandbox**. La sandbox da selezionare è denominata ``Bootcamp``. Per eseguire questa operazione, fai clic sul testo **[!UICONTROL Produzione Prod]** nella linea blu sopra lo schermo. Dopo aver selezionato il [!UICONTROL sandbox], vedrai la modifica dello schermo e ora sei nel tuo dedicato [!UICONTROL sandbox].
+Prima di continuare, è necessario selezionare una **sandbox**. La sandbox da selezionare è denominata ``Bootcamp``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella linea blu sopra lo schermo. Dopo aver selezionato la [!UICONTROL sandbox], verrà visualizzata la modifica dello schermo e ora si è nel [!UICONTROL sandbox].
 
 ![Acquisizione dei dati](./images/sb1.png)
 
-Nel menu a sinistra, vai a **Destinazioni**, quindi vai a **Catalogo**. Vedrai il **Catalogo delle destinazioni**. In **Destinazioni**, fai clic su **Attiva segmenti** sulla **Pubblico personalizzato facebook** il Card.
+Nel menu a sinistra, vai a **Destinazioni**, quindi vai a **Catalogo**. Vedrai quindi il **Catalogo delle destinazioni**. In entrata **Destinazioni**, fai clic su **Attivare segmenti** il **Pubblico personalizzato facebook** Card.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-Selezionare la destinazione **bootcamp-facebook** e fai clic su **Successivo**.
+Seleziona la destinazione **bootcamp-facebook** e fai clic su **Successivo**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
@@ -35,28 +35,28 @@ Nell’elenco dei segmenti disponibili, seleziona il segmento creato nell’eser
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-Sulla **Mappatura** assicurati che **Applica trasformazione** la casella di controllo è abilitata. Fai clic su **Avanti**.
+Il giorno **Mappatura** , assicurati che il **Applica trasformazione** la casella di controllo è attivata. Fai clic su **Avanti**.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-Sulla **Pianificazione del segmento** , seleziona la **Origine del pubblico** e impostarlo su **Direttamente dai clienti**. Fai clic su **Avanti**.
+Il giorno **Pianificazione segmento** , seleziona la **Origine del pubblico** e impostarlo su **Direttamente dai clienti**. Fai clic su **Avanti**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-Infine, **Revisione** pagina, fai clic su **Fine**.
+Infine, sulla **Revisione** pagina, fai clic su **Fine**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 
-Il segmento è ora collegato a tipi di pubblico personalizzati di Facebook. Ogni volta che un cliente si qualifica per questo segmento, viene inviato un segnale al server Facebook per includere tale cliente nel pubblico personalizzato sul lato Facebook.
+Il segmento ora è collegato ai tipi di pubblico personalizzati di Facebook. Ogni volta che un cliente si qualifica per questo segmento, viene inviato un segnale a Facebook lato server per includere tale cliente nel pubblico personalizzato sul lato Facebook.
 
-In Facebook, troverai il segmento da Adobe Experience Platform in Tipi di pubblico personalizzati :
+In Facebook, il segmento proveniente da Adobe Experience Platform è disponibile in Tipi di pubblico personalizzati:
 
 ![RTCDP](./images/rtcdpcreatedest5b.png)
 
-Ora puoi vedere il pubblico personalizzato visualizzato in Facebook:
+Ora puoi visualizzare il pubblico personalizzato in Facebook:
 
 ![RTCDP](./images/rtcdpcreatedest5a.png)
 
-[Torna al flusso utente 1](./uc1.md)
+[Torna a Flusso utente 1](./uc1.md)
 
 [Torna a tutti i moduli](../../overview.md)

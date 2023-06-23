@@ -4,11 +4,11 @@ description: Come utilizzare Adobe Client Data Layer
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog
-kt: 10447
+jira: KT-10447
 hide: true
 hidefromtoc: true
 exl-id: 33a5db8c-e49b-4073-b4d7-4abe19537fcb
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 0%
@@ -17,19 +17,19 @@ ht-degree: 0%
 
 # Come utilizzare Adobe Client Data Layer
 
-In [Che cos&#39;è un livello di dati?](whats-a-data-layer.md), hai imparato che ci sono due parti da considerare quando si parla dei livelli dati: il contenitore e il contenuto. Il Livello dati client di Adobe è il contenitore . Non importa come lei [strutturare i dati](../structuring-your-data.md) o quali informazioni si sceglie di inserire nei propri dati. I dati possono essere strutturati come [XDM](../structuring-your-data.md#xdm), come mostrano gli esempi seguenti, o puoi creare completamente la tua struttura.
+In entrata [Cos&#39;è un livello dati?](whats-a-data-layer.md)Tuttavia, hai imparato che quando si parla dei livelli di dati è necessario considerare due parti: il contenitore e il contenuto. Adobe Client Data Layer è il contenitore. Non importa come [strutturare i dati](../structuring-your-data.md) o quali informazioni inserire nei dati. I dati possono essere strutturati come [XDM](../structuring-your-data.md#xdm), come mostrano gli esempi di seguito, oppure puoi creare una struttura completamente personalizzata.
 
-Idealmente, il team di progettazione della tua azienda è responsabile di inserire nel livello dati tutti i dati necessari attraverso il codice on-page. Il team marketing recupera quindi i dati dal livello dati, preferibilmente utilizzando i tag Adobe Experience Platform.
+Idealmente, il team di progettazione della tua azienda è responsabile di inviare tutti i dati necessari al livello di dati tramite il codice su pagina. Il team marketing recupera quindi i dati dal livello dati, preferibilmente utilizzando i tag di Adobe Experience Platform.
 
 ## Invio di dati al livello dati
 
-Adobe Client Data Layer è un array JavaScript. Quando crei l’Adobe Livello dati client, questo viene lasciato vuoto:
+Adobe Client Data Layer è un array JavaScript. Quando crei Adobe Client Data Layer, questo inizia per essere vuoto:
 
 ```js
 window.adobeDataLayer = window.adobeDataLayer || [];
 ```
 
-Per inserire i dati nel livello dati, chiama il `push` sull&#39;array del livello dati:
+Per inserire dati nel livello dati, chiama il `push` metodo sull’array di livello dati:
 
 ```js
 window.adobeDataLayer.push({
@@ -41,7 +41,7 @@ window.adobeDataLayer.push({
 });
 ```
 
-Puoi inviare dati aggiuntivi al livello dati in qualsiasi momento chiamando `push` di nuovo.
+Puoi inviare dati aggiuntivi al livello dati in qualsiasi momento richiamando `push` di nuovo.
 
 ```js
 window.adobeDataLayer.push({
@@ -55,9 +55,9 @@ window.adobeDataLayer.push({
 });
 ```
 
-## Dare un senso ai dati push
+## Rilevamento dei dati inviati
 
-Se hai implementato le due precedenti `push` le chiamate, finireste con due voci nella matrice del livello dati. Il livello dati non è particolarmente utile in questo stato. In genere, si desidera accedere allo stato di unione del livello dati o, in altre parole, a un singolo oggetto che è il risultato combinato di tutti i dati inviati al livello dati. Scopriremo come accedere a questo stato unito in seguito nell’esercitazione. Per il momento, è sufficiente capire che lo stato calcolato del livello dati dopo i nostri due `push` le chiamate sono le seguenti:
+Se hai implementato i due `push` chiamate, alla fine si otterrebbero due voci nell’array di livello dati. Il livello dati non è particolarmente utile in questo stato. In genere, si desidera accedere allo stato unito del livello dati o, in altre parole, a un singolo oggetto che è il risultato combinato di tutti i dati inviati al livello dati. Scopri come accedere a questo stato unito più avanti nell’esercitazione. Per ora, è sufficiente comprendere che lo stato calcolato del livello dati dopo i nostri due `push` le chiamate sarebbero le seguenti:
 
 ```json
 {
@@ -76,9 +76,9 @@ Se hai implementato le due precedenti `push` le chiamate, finireste con due voci
 
 ## Rimozione dei dati
 
-A volte è necessario rimuovere parti di dati dal livello dati. Ciò è particolarmente comune nelle applicazioni a pagina singola quando l’utente passa da una visualizzazione all’altra. Ad esempio, se l’utente passa dalla visualizzazione di un prodotto a quella di un contatto, potrebbe essere utile cancellare tutti i dati di prodotto sul livello dati in quanto non sono più pertinenti alla visualizzazione attiva.
+A volte, è necessario rimuovere parti di dati dal livello dati. Ciò è particolarmente comune nelle applicazioni a pagina singola quando l’utente passa da una visualizzazione all’altra. Ad esempio, se l’utente passa da una visualizzazione prodotto a una visualizzazione contatto, potrebbe essere utile cancellare tutti i dati di prodotto sul livello dati, in quanto non sono più pertinenti per la visualizzazione attiva.
 
-È possibile rimuovere una parte di dati premendo un valore di `undefined` per la chiave da rimuovere. Basandosi sugli esempi precedenti, se desideri rimuovere `status` dal livello dati, il codice sarà simile al seguente:
+Per rimuovere dei dati, premi un valore di `undefined` per la chiave da rimuovere. Basandoti sugli esempi precedenti, se desideri rimuoverli `status` dal livello dati, il codice si presenterà come segue:
 
 ```js
 window.adobeDataLayer.push({
@@ -88,7 +88,7 @@ window.adobeDataLayer.push({
 });
 ```
 
-Lo stato calcolato del livello dati non includerebbe più `status`:
+Lo stato calcolato del livello dati non include più `status`:
 
 ```json
 {
@@ -106,9 +106,9 @@ Lo stato calcolato del livello dati non includerebbe più `status`:
 
 ## Invio di eventi al livello dati
 
-Adobe Client Data Layer è utilizzato non solo per memorizzare i dati, ma anche per comunicare quali eventi si verificano sulla pagina. In realtà, in genere i dati vengono inviati al livello dati _come risultato_ di un evento che si verifica sulla pagina. Questi eventi includono (1) eventi di interazione, come l&#39;apertura di una chat bot o la digitazione di un termine di ricerca in una barra di ricerca o (2) eventi di non interazione, come l&#39;impressione di un annuncio o il completamento dei calcoli delle prestazioni della pagina web.
+Adobe Client Data Layer viene utilizzato non solo per memorizzare i dati, ma anche per comunicare quali eventi si verificano sulla pagina. In genere, infatti, i dati vengono inviati al livello dati _come risultato_ di un evento che si verifica sulla pagina. Questi eventi includono (1) eventi di interazione, come l’apertura di un bot di chat o la digitazione di un termine di ricerca in una barra di ricerca oppure (2) eventi di non interazione, come l’impression di un annuncio o il completamento dei calcoli delle prestazioni della pagina web.
 
-Per comunicare che un evento si è verificato sulla pagina, includi un `event` nell’oggetto inviato al livello dati. Ad esempio, è possibile comunicare che un utente ha inserito una query di ricerca in un campo di ricerca.
+Per comunicare che si è verificato un evento sulla pagina, includi un `event` nell’oggetto inviato al livello dati. Ad esempio, è possibile comunicare che un utente ha inserito una query di ricerca in un campo di ricerca.
 
 ```js
 window.adobeDataLayer.push({
@@ -116,18 +116,18 @@ window.adobeDataLayer.push({
 });
 ```
 
-Successivamente, scoprirai come attivare le regole all’interno di Adobe Experience Platform Tags quando un particolare evento viene inviato al livello dati. Tieni presente che `event` chiave _not_ incluso nello stato calcolato. Riceve un trattamento speciale dal livello dati.
+Successivamente, scoprirai come attivare le regole nei tag Adobe Experience Platform quando un particolare evento viene inviato al livello dati. Si noti inoltre che la `event` la chiave è _non_ incluso nello stato calcolato. Riceve un trattamento speciale dal livello dati.
 
 ## Invio di eventi e dati al livello dati
 
-È utile notificare agli ascoltatori che l’utente ha immesso una query di ricerca, ma se si desidera fornire ulteriori informazioni sull’evento? Ad esempio, potrebbe essere utile includere la query di ricerca dell’utente. Puoi fornire questi dati in uno dei due modi seguenti:
+È utile avvisare i listener che l’utente ha inserito una query di ricerca, ma cosa succede se si desidera fornire informazioni aggiuntive sull’evento? Ad esempio, potrebbe essere utile includere la query di ricerca dell’utente. Puoi fornire questi dati in uno dei due modi seguenti:
 
-1. Fornire i dati in modo che **viene mantenuto** nel livello dati come parte dello stato calcolato del livello dati.
-2. Fornire i dati in modo che **non viene conservato** nel livello dati come parte dello stato calcolato del livello dati.
+1. Fornisci dati in modo che **viene conservato** nel livello dati come parte dello stato calcolato del livello dati.
+2. Fornisci dati in modo che **non viene conservato** nel livello dati come parte dello stato calcolato del livello dati.
 
-Se desideri mantenere i dati nel livello dati in genere dipende da se intendi fare riferimento a tali dati per tutta la durata dell’utente che si trova sulla pagina. In caso contrario, il mantenimento dei dati all’interno del livello dati potrebbe causare un livello dati disordinato.
+Se desideri conservare i dati nel livello dati in genere dipende dal fatto che intendi fare riferimento a tali dati per tutta la durata della permanenza dell’utente sulla pagina. In caso contrario, la conservazione dei dati all’interno del livello dati potrebbe semplicemente causare un livello dati disordinato.
 
-Ecco un esempio di invio di un evento con dati aggiuntivi che **viene mantenuto** nel livello dati:
+Ecco un esempio di invio di un evento con dati aggiuntivi che **viene conservato** nel livello dati:
 
 ```js
 window.adobeDataLayer.push({
@@ -141,9 +141,9 @@ window.adobeDataLayer.push({
 });
 ```
 
-Dopo `push` ha luogo, `siteKnowledge` viene sempre visualizzato nello stato calcolato del livello dati fino a quando la pagina non viene scaricata (a meno che tu non rimuovi o sovrascrivi intenzionalmente) `siteKnowledge`).
+Dopo questo `push` ha luogo, `siteKnowledge` viene sempre visualizzato nello stato calcolato del livello dati fino a quando la pagina non viene scaricata (a meno che tu non la rimuova intenzionalmente o non la sostituisca) `siteKnowledge`).
 
-Al contrario, ecco un esempio di invio di un evento con dati aggiuntivi che **non viene conservato** nel livello dati:
+Invece, ecco un esempio di invio di un evento con dati aggiuntivi che **non viene conservato** nel livello dati:
 
 ```js
 window.adobeDataLayer.push({
@@ -159,6 +159,6 @@ window.adobeDataLayer.push({
 });
 ```
 
-In questo esempio si noti che `siteKnowledge` è avvolto all&#39;interno `eventInfo`. La `eventInfo` key riceve un trattamento speciale dal livello dati. Indica al livello dati che questi dati _dovrebbe_ essere incluso con l&#39;evento che viene inviato ai listener, ma _non_ all’interno del livello dati. Dopo che gli ascoltatori (come Adobe Experience Platform Tags) ricevono una notifica dell’evento, questi dati vengono essenzialmente dimenticati. La `siteKnowledge` key non verrà mai visualizzato all&#39;interno dello stato di calcolo del livello dati.
+Osserva in questo esempio che `siteKnowledge` è avvolto all&#39;interno `eventInfo`. Il `eventInfo` La chiave riceve un trattamento speciale dal livello dati. Indica al livello di dati che questi dati _dovrebbe_ essere incluso nell&#39;evento che viene inviato ai listener, ma _non deve_ essere mantenuti all’interno del livello dati. Dopo che l’evento è stato notificato ai listener (come Adobe Experience Platform Tags), questi dati vengono essenzialmente dimenticati. Il `siteKnowledge` La chiave non verrà mai visualizzata all’interno dello stato calcolato del livello dati.
 
-Ogni volta che chiami `push`, Adobe Client Data Layer notifica tutti i listener. Successivamente, impareremo come ascoltare queste notifiche dai tag Adobe Experience Platform e attivare le regole di conseguenza.
+Ogni volta che chiami `push`, Adobe Client Data Layer invia una notifica a tutti i listener. Successivamente, impareremo ad ascoltare queste notifiche dai tag di Adobe Experience Platform e a attivare le regole di conseguenza.

@@ -1,67 +1,67 @@
 ---
-title: Bootcamp - Profilo cliente in tempo reale - Visualizza il tuo profilo cliente in tempo reale - Interfaccia utente
-description: Bootcamp - Profilo cliente in tempo reale - Visualizza il tuo profilo cliente in tempo reale - Interfaccia utente
-kt: 5342
+title: Bootcamp - Real-time Customer Profile - Visualizza il tuo Real-time Customer Profile - Interfaccia utente
+description: Bootcamp - Real-time Customer Profile - Visualizza il tuo Real-time Customer Profile - Interfaccia utente
+jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 4c810767-00ab-4cae-baa9-97b0cb9bf2df
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 2%
 
 ---
 
-# 1.2 Visualizzare il proprio profilo cliente in tempo reale - Interfaccia utente
+# 1.2 Visualizzare il proprio Real-time Customer Profile - UI
 
-In questo esercizio, accederai a Adobe Experience Platform e visualizzerai il tuo Profilo cliente in tempo reale nell&#39;interfaccia utente.
+In questo esercizio, accederai a Adobe Experience Platform e visualizzerai il tuo Real-time Customer Profile nell’interfaccia utente di.
 
 ## Storia
 
-Nel Profilo del cliente in tempo reale, tutti i dati del profilo vengono visualizzati insieme ai dati dell’evento, nonché alle appartenenze al segmento esistenti. I dati mostrati possono provenire da qualsiasi luogo, da applicazioni di Adobe e soluzioni esterne. Questa è la visione più potente di Adobe Experience Platform, il vero sistema di esperienza di record.
+In Real-time Customer Profile, tutti i dati di profilo vengono visualizzati insieme ai dati di evento, così come le appartenenze ai segmenti esistenti. I dati visualizzati possono provenire da qualsiasi luogo, da applicazioni Adobe e soluzioni esterne. Questa è la visualizzazione più potente di Adobe Experience Platform, il vero sistema di esperienza di registrazione.
 
-## 1.2.1 Utilizzare la visualizzazione Profilo cliente in Adobe Experience Platform
+## 1.2.1 Utilizzare la vista Profilo cliente in Adobe Experience Platform
 
-Vai a [Adobe Experience Platform](https://experience.adobe.com/platform). Dopo aver effettuato l&#39;accesso, si aprirà la homepage di Adobe Experience Platform.
+Vai a [Adobe Experience Platform](https://experience.adobe.com/platform). Dopo aver effettuato l’accesso, accedi alla home page di Adobe Experience Platform.
 
 ![Acquisizione dei dati](./images/home.png)
 
-Prima di continuare, devi selezionare un **sandbox**. La sandbox da selezionare è denominata ``Bootcamp``. Per eseguire questa operazione, fai clic sul testo **[!UICONTROL Produzione Prod]** nella linea blu sopra lo schermo. Dopo aver selezionato il [!UICONTROL sandbox], vedrai la modifica dello schermo e ora sei nel tuo dedicato [!UICONTROL sandbox].
+Prima di continuare, è necessario selezionare una **sandbox**. La sandbox da selezionare è denominata ``Bootcamp``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella linea blu sopra lo schermo. Dopo aver selezionato la [!UICONTROL sandbox], verrà visualizzata la modifica dello schermo e ora si è nel [!UICONTROL sandbox].
 
 ![Acquisizione dei dati](./images/sb1.png)
 
-Nel menu a sinistra, vai a **Profili** e **Sfoglia**.
+Nel menu a sinistra, vai a **Profili** e a **Sfoglia**.
 
 ![Profilo cliente](./images/homemenu.png)
 
-Nel pannello Visualizzatore profilo del sito web puoi trovare la panoramica dell’identità . Ogni identità è collegata a uno spazio dei nomi.
+Nel pannello Visualizzatore profili del sito web, puoi trovare la panoramica dell’identità. Ogni identità è collegata a uno spazio dei nomi.
 
 ![Profilo cliente](./images/identities.png)
 
-Al momento, nel pannello Visualizzatore profilo puoi vedere questa identità:
+Nel pannello Visualizzatore profili, è attualmente possibile visualizzare questa identità:
 
 | Namespace | Identità |
 |:-------------:| :---------------:|
 | Experience Cloud ID (ECID) | 19428085896177382402834560825640259081 |
 
-Con Adobe Experience Platform, tutti gli ID sono ugualmente importanti. In precedenza, l’ECID era l’ID più importante nel contesto di Adobe e tutti gli altri ID erano collegati all’ECID in una relazione gerarchica. Con Adobe Experience Platform questo non succede più e ogni ID può essere considerato un identificatore principale.
+Con Adobe Experience Platform, tutti gli ID sono ugualmente importanti. In precedenza, l’ECID era l’ID più importante nel contesto dell’Adobe e tutti gli altri ID erano collegati all’ECID in una relazione gerarchica. Con Adobe Experience Platform questo non avviene più e ogni ID può essere considerato un identificatore primario.
 
-In genere, l’identificatore principale dipende dal contesto. Se chiedi al tuo call center, **Qual è l&#39;ID più importante?** probabilmente risponderanno, **il numero di telefono!** Ma se chiedi al tuo team CRM, ti risponderanno, **L&#39;indirizzo e-mail!**  Adobe Experience Platform comprende questa complessità e la gestisce per voi. Ogni applicazione, sia che si tratti di un&#39;applicazione di Adobe o di un&#39;applicazione non di Adobe, parlerà con Adobe Experience Platform facendo riferimento all&#39;ID che considera primario. E funziona semplicemente.
+In genere, l’identificatore primario dipende dal contesto. Se si chiede al Call Center, **Qual è l’ID più importante?** probabilmente risponderanno, **il numero di telefono!** Ma se chiedi al tuo team di gestione delle relazioni con i clienti, ti risponderanno, **L&#39;indirizzo e-mail!**  Adobe Experience Platform è consapevole di questa complessità e la gestisce al meglio. Ogni applicazione, che sia un&#39;applicazione di Adobe o non di Adobe, parlerà con Adobe Experience Platform facendo riferimento all&#39;ID che considerano primario. E funziona semplicemente.
 
-Per il campo **Spazio dei nomi identità**, seleziona **ECID** e per il campo **Valore identità** inserisci l’ECID che puoi trovare nel pannello Visualizzatore profilo del sito web di bootcamp. Fai clic su **Visualizza**. Vedrai il tuo profilo nell&#39;elenco. Fai clic sul pulsante **ID profilo** per aprire il profilo.
+Per il campo **Spazio dei nomi dell’identità**, seleziona **ECID** e per il campo **Valore identità** immetti l’ECID che puoi trovare nel pannello Visualizzatore profili del sito web di bootcamp. Clic **Visualizza**. Visualizzerai quindi il tuo profilo nell’elenco. Fai clic su **ID profilo** per aprire il profilo.
 
 ![Profilo cliente](./images/popupecid.png)
 
-Viene visualizzata una panoramica di un paio di elementi importanti **Attributi del profilo** del tuo profilo cliente.
+Ora puoi vedere una panoramica di alcuni importanti **Attributi del profilo** del tuo profilo cliente.
 
 ![Profilo cliente](./images/profile.png)
 
-Vai a **Eventi**, dove puoi visualizzare le voci per ogni evento di esperienza collegato al tuo profilo.
+Vai a **Eventi**, dove puoi visualizzare le voci per ogni evento esperienza collegato al tuo profilo.
 
 ![Profilo cliente](./images/profileee.png)
 
-Infine, vai all&#39;opzione di menu **Iscrizione al segmento**. Ora vedrai tutti i segmenti idonei per questo profilo.
+Infine, vai all’opzione del menu **Iscrizione al segmento**. Ora vedrai tutti i segmenti idonei per questo profilo.
 
 ![Profilo cliente](./images/profileseg.png)
 
@@ -69,6 +69,6 @@ Ora creiamo un nuovo segmento che ti consentirà di personalizzare l’esperienz
 
 Passaggio successivo: [1.3 Creare un segmento - Interfaccia utente](./ex3.md)
 
-[Torna al flusso utente 1](./uc1.md)
+[Torna a Flusso utente 1](./uc1.md)
 
 [Torna a tutti i moduli](../../overview.md)

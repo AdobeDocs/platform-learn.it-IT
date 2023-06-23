@@ -1,25 +1,25 @@
 ---
-title: Ricarica i dati dei clienti per offrire esperienze elettrizzanti
-description: Scopri come mitigare l’impatto di dati di bassa qualità, ridurre il tempo a valore e moltiplicare il ROI utilizzando gli stessi dati per diversi casi d’uso.
+title: Ricarica i dati dei tuoi clienti per offrire esperienze elettrizzanti
+description: Scopri come mitigare l’impatto di dati di bassa qualità, ridurre il time-to-value e moltiplicare il ROI utilizzando gli stessi dati per molti casi d’uso.
 role: Data Engineer, Data Architect, Developer
 feature: Queries
-kt: 10323
+jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 3%
 
 ---
 
-# Ricarica i dati dei clienti per offrire esperienze elettrizzanti
+# Ricarica i dati dei tuoi clienti per offrire esperienze elettrizzanti
 
-I dati Omnichannel sono un ingrediente fondamentale per abilitare i profili cliente utilizzabili dagli esperti di marketing per orchestrare l’attivazione e misurare i percorsi di clienti risultanti. Tuttavia, le aziende devono affrontare problemi nella gestione della qualità, della scala e della varietà di questi dati. Richiedono soluzioni semplificate per mitigare l&#39;impatto di dati di bassa qualità, ridurre il tempo a valore e moltiplicare il ROI utilizzando gli stessi dati per molti casi d&#39;uso.
+I dati omni-channel sono un componente fondamentale per abilitare i profili dei clienti actionable utilizzati dagli esperti di marketing per orchestrare l’attivazione e misurare i percorsi dei clienti risultanti. Tuttavia, le organizzazioni devono affrontare problemi nella gestione della qualità, della scala e della varietà di questi dati. Richiedono soluzioni semplificate per mitigare l’impatto di dati di bassa qualità, ridurre il time-to-value e moltiplicare il ROI utilizzando gli stessi dati per molti casi d’uso.
 
-Questo video esplora:
+Questo video illustra:
 
-* Funzionalità di preparazione dei dati Adobe Experience Platform che puoi sfruttare
+* Funzionalità di preparazione dei dati di Adobe Experience Platform che puoi sfruttare
 * Aumento del ROI da Adobe Real-Time CDP, Adobe Journey Optimizer e Customer Journey Analytics
 
 >[!VIDEO](https://video.tv.adobe.com/v/342533?quality=12&learn=on)
@@ -45,8 +45,8 @@ GROUP BY customerId,sku
 order by price desc)D;
 ```
 
-Per ulteriori informazioni, visita il [Documentazione del servizio query](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it).
+Per ulteriori informazioni, visitare il [Documentazione di Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it).
 
 >[!NOTE]
 >
->Questo video è un estratto della sessione Adobe Summit 2020 *[Ricarica dei dati Omnichannel per l&#39;elettrificazione delle esperienze](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*.
+>Questo video è un estratto della sessione Adobe Summit 2020 *[Ricarica dei dati omni-channel per esperienze elettrificanti](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*.

@@ -1,12 +1,12 @@
 ---
-title: Bootcamp - Visita il sito web e crea il tuo account
-description: Bootcamp - Visita il sito web e crea il tuo account
-kt: 5342
+title: 'Bootcamp: visita il sito web e crea il tuo account'
+description: 'Bootcamp: visita il sito web e crea il tuo account'
+jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: a56cedba-3ac4-4a9b-aeb8-8036c527a878
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 2%
@@ -17,31 +17,31 @@ ht-degree: 2%
 
 ## Contesto
 
-Il percorso da sconosciuto a noto è uno degli argomenti più importanti tra i marchi di oggi, così come il percorso dei clienti dall&#39;acquisizione alla fidelizzazione.
+Il percorso da sconosciuto a noto è uno degli argomenti più importanti tra i brand di oggi, così come il percorso del cliente dall&#39;acquisizione alla conservazione.
 
-Adobe Experience Platform gioca un ruolo enorme in questo percorso. La piattaforma è il cervello della comunicazione, **sistema di registrazione delle esperienze**.
+Adobe Experience Platform gioca un ruolo fondamentale in questo percorso. Platform è il cervello per la comunicazione, **sistema di registrazione esperienza**.
 
-Platform è un ambiente in cui la parola cliente è più ampia dei soli clienti noti. Un visitatore sconosciuto sul sito web è anche un cliente dal punto di vista di Platform e, di conseguenza, a Platform viene inviato anche tutto il comportamento di un visitatore sconosciuto. Grazie a questo approccio, quando il visitatore diventa un cliente noto, un marchio può visualizzare anche ciò che è successo prima di quel momento. Questo aiuta dal punto di vista dell’attribuzione e dell’ottimizzazione dell’esperienza.
+Platform è un ambiente in cui la parola cliente è più ampia rispetto ai soli clienti noti. Un visitatore sconosciuto sul sito web è anche un cliente dal punto di vista di Platform e, come tale, anche tutto il comportamento di un visitatore sconosciuto viene inviato a Platform. Grazie a questo approccio, quando il visitatore diventa un cliente noto, un brand può visualizzare anche quello che è successo prima di quel momento. Questo è utile dal punto di vista dell’attribuzione e dell’ottimizzazione dell’esperienza.
 
-## Flusso del percorso cliente
+## Flusso di percorso cliente
 
-Vai a [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Fai clic su **Consenti tutto**. In base al comportamento di navigazione nel flusso di utenti precedente, vedrai che la personalizzazione si verifica nella home page del sito web.
+Vai a [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clic **Consenti tutto**. In base al comportamento di navigazione nel flusso utente precedente, vedrai che la personalizzazione avviene sulla pagina home del sito web.
 
 ![DSN](./images/web8.png)
 
-Fai clic sull’icona del logo Adobe nell’angolo in alto a sinistra dello schermo per aprire il Visualizzatore profili. Guarda il pannello Visualizzatore profili e il Profilo cliente in tempo reale con **ID Experience Cloud** come identificatore principale per questo cliente attualmente sconosciuto.
+Fai clic sull’icona del logo di Adobe nell’angolo in alto a sinistra dello schermo per aprire il Visualizzatore profili. Dai un’occhiata al pannello Visualizzatore profili e al Profilo cliente in tempo reale con **ID EXPERIENCE CLOUD** come identificatore principale per questo cliente attualmente sconosciuto.
 
 ![Demo](./images/pv1.png)
 
-Puoi anche visualizzare tutti gli eventi di esperienza raccolti in base al comportamento del cliente.
+Puoi anche visualizzare tutti gli eventi esperienza che sono stati raccolti in base al comportamento del cliente.
 
 ![Demo](./images/pv3.png)
 
-Fai clic sul pulsante **Profilo** nell’angolo in alto a destra dello schermo.
+Fai clic su **Profilo** nell’angolo in alto a destra dello schermo.
 
 ![Demo](./images/pv4.png)
 
-Fai clic su **Creare un account**.
+Clic **Creare un account**.
 
 ![Demo](./images/pv5.png)
 
@@ -49,11 +49,11 @@ Compila tutti i campi del modulo. Utilizza un valore reale per l’indirizzo e-m
 
 ![Demo](./images/pv7.png)
 
-Scorri verso il basso e fai clic su **Registro**.
+Scorri verso il basso e fai clic su **Registrati**.
 
 ![Demo](./images/pv8.png)
 
-Vedrete questo.
+Poi vedrai questo.
 
 ![Demo](./images/pv9.png)
 
@@ -65,10 +65,10 @@ E un paio di minuti dopo, riceverai anche questa e-mail:
 
 ![Demo](./images/pv11.png)
 
-Vediamo come è stato configurato il percorso di onboarding successivo.
+Vediamo come è stato configurato il prossimo percorso di onboarding.
 
-Passaggio successivo: [2.2 Creare un evento](./ex2.md)
+Passaggio successivo: [2.2 Creare l’evento](./ex2.md)
 
-[Torna al flusso utente 2](./uc2.md)
+[Torna a Flusso utente 2](./uc2.md)
 
 [Torna a tutti i moduli](../../overview.md)

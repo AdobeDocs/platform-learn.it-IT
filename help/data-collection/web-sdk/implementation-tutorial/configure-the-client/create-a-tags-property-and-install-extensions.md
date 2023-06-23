@@ -4,11 +4,11 @@ description: Creare una proprietà tag Adobe Experience Platform e installare le
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog
-kt: 10447
+jira: KT-10447
 hide: true
 hidefromtoc: true
 exl-id: 7403059f-b34c-48e0-9efe-b2db7a9afb27
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 1%
@@ -17,12 +17,12 @@ ht-degree: 1%
 
 # Creare una proprietà tag Adobe Experience Platform e installare le estensioni
 
-Ora che il codice su pagina sta inviando dati ed eventi al livello dati, è ora che l&#39;addetto al marketing legga i dati dal livello dati e li invii a Adobe Experience Platform. Questo richiederebbe in genere due librerie JavaScript:
+Ora che il codice nella pagina sta inviando dati ed eventi al livello dati, è ora che l’addetto al marketing legga i dati dal livello dati e li invii a Adobe Experience Platform. In genere, questo richiederebbe due librerie JavaScript:
 
-* Livello dati client di Adobe: Nei passaggi precedenti, era stato creato un array di livello dati e inserito degli oggetti. Per accedere ai dati, è necessario caricare la libreria JavaScript Adobe Client Data Layer, che fornisce modi per ricevere notifiche sulle modifiche e sugli eventi dei livelli dati e fornisce anche modi semplici per accedere ai dati.
-* Adobe Experience Platform Web SDK: Questa libreria JavaScript comunica con Adobe Experience Platform Edge Network. L’SDK gestisce identità, consenso, raccolta dati, personalizzazione, pubblico e altro ancora.
+* Adobe di Client Data Layer: nei passaggi precedenti, hai creato un array di livello dati e vi hai inserito oggetti. Per accedere ai dati, devi caricare la libreria JavaScript Adobe Client Data Layer, che offre diversi modi per ricevere notifiche su eventi e modifiche al livello dati, oltre a metodi semplici per accedere ai dati.
+* Adobe Experience Platform Web SDK: questa libreria JavaScript comunica con Adobe Experience Platform Edge Network. L’SDK gestisce l’identità, il consenso, la raccolta dati, la personalizzazione, i tipi di pubblico e altro ancora.
 
-Anche se puoi caricare queste librerie individuali sul tuo sito web e utilizzarle direttamente, ti consigliamo di utilizzare [Tag Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it). Con i tag, è possibile incorporare un singolo script in HTML e utilizzare l’interfaccia utente Tag per distribuire sia Adobe Client Data Layer che Adobe Experience Platform Web SDK. I tag consentono inoltre di creare regole per l’invio di dati, tra le altre cose. Questa esercitazione utilizza i tag a questo scopo e presuppone che tu abbia una comprensione di base del funzionamento dei tag.
+Sebbene sia possibile caricare queste singole librerie sul sito web e utilizzarle direttamente, si consiglia di utilizzare [Tag Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it). Con Tag, puoi incorporare un singolo script nel HTML e utilizzare l’interfaccia utente Tag per distribuire sia Adobe Client Data Layer che Adobe Experience Platform Web SDK. I tag consentono inoltre di creare regole per l’invio di dati, tra le altre cose. Questo tutorial utilizza i tag per questo scopo e presuppone che tu abbia una conoscenza di base del funzionamento dei tag.
 
 ## Creare una proprietà all’interno di Tag
 
@@ -30,7 +30,7 @@ Se non lo hai già fatto, [creare una proprietà all’interno di Tag](https://e
 
 ## Installare l’estensione Adobe Client Data Layer
 
-Installa l&#39;estensione Adobe Client Data Layer andando al catalogo delle estensioni, trovando l&#39;estensione e facendo clic sul rispettivo [!UICONTROL Installa] pulsante . Dovresti visualizzare una schermata di configurazione.
+Installa l’estensione Adobe Client Data Layer passando al catalogo delle estensioni, individuando l’estensione e facendo clic sulle rispettive [!UICONTROL Installa] pulsante. Dovresti visualizzare una schermata di configurazione.
 
 ![Installazione dell’estensione Adobe Client Data Layer](../../../assets/implementation-strategy/acdl-extension-installation.png)
 
@@ -38,21 +38,21 @@ Per questa esercitazione, non è necessario modificare i valori predefiniti. Fai
 
 ## Installare l’estensione Adobe Experience Platform Web SDK
 
-Quindi, installa l&#39;estensione Adobe Experience Platform Web SDK trovando l&#39;estensione nel catalogo delle estensioni e facendo clic sul rispettivo [!UICONTROL Installa] pulsante . Dovresti visualizzare una schermata di configurazione.
+Quindi, installa l&#39;estensione Adobe Experience Platform Web SDK trovando l&#39;estensione nel catalogo delle estensioni e facendo clic sul rispettivo [!UICONTROL Installa] pulsante. Dovresti visualizzare una schermata di configurazione.
 
-![Installazione dell&#39;estensione Adobe Experience Platform Web SDK](../../../assets/implementation-strategy/web-sdk-extension-installation.png)
+![Installazione dell’estensione Adobe Experience Platform Web SDK](../../../assets/implementation-strategy/web-sdk-extension-installation.png)
 
-In [Creare un datastream](../configure-the-server/create-a-datastream.md), hai creato un datastream a cui Adobe Experience Platform Edge Network fa riferimento per determinare dove inviare i dati in entrata. Quando esegui richieste da Adobe Experience Platform Web SDK a Edge Network, devi indicare a quale rete Edge di datastream deve fare riferimento.
+In entrata [Creare un flusso di dati](../configure-the-server/create-a-datastream.md), hai creato un flusso di dati a cui Adobe Experience Platform Edge Network fa riferimento per determinare dove inviare i dati in entrata. Quando esegui richieste da Adobe Experience Platform Web SDK a Edge Network, devi indicare a quale flusso di dati deve fare riferimento Edge Network.
 
-Per eseguire questa operazione, individua la variabile [!UICONTROL Datastream] e selezionare il datastream creato in precedenza. Ti vengono presentati gli stessi ambienti del datastream che hai visto in [Creare un datastream](../configure-the-server/create-a-datastream.md).
+A tale scopo, trovare il [!UICONTROL Datastream] e selezionare lo stream di dati creato in precedenza. Vengono presentati gli stessi ambienti dello stream di dati visualizzati in [Creare un flusso di dati](../configure-the-server/create-a-datastream.md).
 
-![Selezione di Datastream](../../../assets/implementation-strategy/web-sdk-datastream-selection.png)
+![Selezione dello stream di dati](../../../assets/implementation-strategy/web-sdk-datastream-selection.png)
 
-Come discusso in [Creare un datastream](../configure-the-server/create-a-dataset.md), questi ambienti di set di dati hanno una relazione con gli ambienti di tag. Supponi di completare l’installazione dell’estensione Adobe Experience Platform Web SDK, di creare una libreria di tag che include l’estensione, quindi di pubblicare la libreria in un ambiente di sviluppo Tag . Quando la libreria di tag viene caricata sulla pagina web e l&#39;estensione Adobe Experience Platform Web SDK invia una richiesta a Edge Network, l&#39;estensione include [!UICONTROL Ambiente di sviluppo] ID ambiente datastream. La rete Edge, a sua volta, utilizza tale ID per leggere la configurazione della [!UICONTROL Ambiente di sviluppo] ambiente datastream e inoltrare i dati ai prodotti di Adobe appropriati.
+Come discusso in [Creare un flusso di dati](../configure-the-server/create-a-dataset.md), questi ambienti di set di dati hanno una relazione con gli ambienti di tag. Supponiamo di completare l’installazione dell’estensione Adobe Experience Platform Web SDK, creare una libreria di tag che includa l’estensione, quindi pubblicare la libreria in un ambiente di sviluppo Tag. Quando la libreria di tag viene caricata sulla pagina web e l’estensione Adobe Experience Platform Web SDK effettua una richiesta a Edge Network, l’estensione include [!UICONTROL Ambiente di sviluppo] ID ambiente dello stream di dati. Edge Network, a sua volta, utilizza tale ID per leggere la configurazione di [!UICONTROL Ambiente di sviluppo] ambiente dello stream di dati e inoltro dei dati ai prodotti Adobe appropriati.
 
-Al momento, disponi di un solo ambiente datastream di sviluppo, un ambiente datastream di staging e un ambiente datastream di produzione. Per questo motivo l’interfaccia utente per la configurazione dell’estensione li mostra tutti preselezionati e immodificabili. È tuttavia possibile creare più ambienti di sviluppo del datastream (uno per te e uno per il tuo collega, forse) utilizzando l’interfaccia utente del datastream. Se si dispone di più ambienti di datastream di sviluppo, è possibile selezionare quello che si desidera utilizzare per questa proprietà tag.
+Al momento, disponi di un solo ambiente per lo stream di dati di sviluppo, un ambiente per lo stream di dati di staging e un ambiente per lo stream di dati di produzione. Per questo motivo, nell’interfaccia utente per la configurazione dell’estensione vengono visualizzati tutti come preselezionati e non modificabili. È tuttavia possibile creare più ambienti di sviluppo dello stream di dati (uno per te e uno per il tuo collega, ad esempio) utilizzando l’interfaccia utente dello stream di dati. Se disponi di più ambienti di flusso di dati di sviluppo, puoi selezionare quello che desideri utilizzare per questa proprietà tag.
 
-Infine, scorri verso il basso e deseleziona [!UICONTROL Abilita raccolta dati clic]. Per impostazione predefinita, l’SDK tiene traccia automaticamente dei collegamenti. In questa esercitazione, tuttavia, dimostreremo come tenere traccia dei clic sui collegamenti personalizzati utilizzando le informazioni sui collegamenti personalizzati.
+Infine, scorri verso il basso e deseleziona [!UICONTROL Abilita raccolta dati di clic]. Per impostazione predefinita, l&#39;SDK tiene traccia automaticamente dei collegamenti. Tuttavia, in questo tutorial verrà illustrato come tenere traccia dei clic sui collegamenti personalizzati utilizzando le informazioni sui collegamenti personalizzati.
 
 Fai clic sul pulsante [!UICONTROL Salva] per completare l&#39;installazione dell&#39;estensione Adobe Experience Platform Web SDK.
 

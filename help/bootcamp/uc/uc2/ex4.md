@@ -1,12 +1,12 @@
 ---
 title: Bootcamp - Journey Optimizer Crea il tuo percorso
 description: Bootcamp - Journey Optimizer Crea il tuo percorso
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
 exl-id: e4464502-60c8-4fba-a429-169b7a4516c8
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 2%
@@ -15,17 +15,17 @@ ht-degree: 2%
 
 # 2.4 Test del percorso
 
-## Flusso del percorso cliente
+## Flusso di percorso cliente
 
-Apri una nuova finestra del browser, pulita e in incognito e vai a [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Fai clic su **Consenti tutto**. In base al comportamento di navigazione nel flusso di utenti precedente, vedrai che la personalizzazione si verifica nella home page del sito web.
+Apri una nuova finestra del browser, pulita e in incognito e vai a [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clic **Consenti tutto**. In base al comportamento di navigazione nel flusso utente precedente, vedrai che la personalizzazione avviene sulla pagina home del sito web.
 
 ![DSN](./images/web8a.png)
 
-Fai clic sul pulsante **Profilo** nell’angolo in alto a destra dello schermo.
+Fai clic su **Profilo** nell’angolo in alto a destra dello schermo.
 
 ![Demo](./images/web8b.png)
 
-Fai clic su **Creare un account**.
+Clic **Creare un account**.
 
 ![Demo](./images/pv5.png)
 
@@ -33,17 +33,17 @@ Compila tutti i campi del modulo. Utilizza un valore reale per l’indirizzo e-m
 
 ![Demo](./images/pv7a.png)
 
-Scorri verso il basso. È ora necessario inserire l’ID evento dell’evento personalizzato creato nell’esercizio 2.2. È possibile trovarlo qui:
+Scorri verso il basso. Ora devi immettere l’ID evento dell’evento personalizzato creato nell’esercizio 2.2. Puoi trovarli qui:
 
 ![ACOP](./images/payloadeventID.png)
 
-L’ID evento è ciò che deve essere inviato a Adobe Experience Platform per attivare il percorso generato. Questo è l&#39;ID evento in questo esempio: `19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
+L’ID evento è ciò che deve essere inviato a Adobe Experience Platform per attivare il percorso che hai creato. Questo è l’eventID in questo esempio: `19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
 
-Compila l’ID evento nel campo . **ID evento creazione account** e fai clic su **Registro**.
+Compila l’ID evento nel campo **ID dell&#39;evento di creazione dell&#39;account** e fai clic su **Registrati**.
 
 ![Demo](./images/pv8a.png)
 
-Vedrete questo.
+Poi vedrai questo.
 
 ![Demo](./images/pv9.png)
 
@@ -51,10 +51,10 @@ Riceverai anche questa e-mail, che è l’e-mail che ti sei creato come parte di
 
 ![Demo](./images/pv10a.png)
 
-Ora avete finito questo esercizio.
+Hai terminato questo esercizio.
 
 Passaggio successivo: [2.5 Installare e utilizzare l’app mobile](./ex5.md)
 
-[Torna al flusso utente 2](./uc2.md)
+[Torna a Flusso utente 2](./uc2.md)
 
 [Torna a tutti i moduli](../../overview.md)

@@ -1,11 +1,12 @@
 ---
-title: Bootcamp - Fusione fisica e digitale - Brasile
-description: Bootcamp - Fusione fisica e digitale - Brasile
-kt: 5342
+title: Bootcamp - Miscela fisica e digitale - Brasile
+description: Bootcamp - Miscela fisica e digitale - Brasile
+jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+exl-id: 145ffaea-c630-4ec3-a12d-69661ce26f49
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -20,13 +21,13 @@ ht-degree: 0%
 
 - Acesso à Adobe Experience Platform:  [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Sito Acesso ao de dimostração
+- Acesso ao site de dimostração
 
 >[!IMPORTANT]
 >
->Este tutorial foi criado para facilitar um formato specífico de bootcamp. Esercitazione a favore delle Sistemas e contas eificos aos quais você pode não ter acesso são utilizados neste. Mesmo sem acesso, você ainda pode aprendmuito com a leitura deste conteúdo detalhado. Se você é um partecipante de um bootcamp e precisa das credenciais de acesso, entre em contato com seu rappresentante da Adobe para receber as informações necessárias.
+>Este tutorial foi criado para facilitar um formato específico de bootcamp. Sistemas e contas específicos aos quais você pode não ter acesso são utilizados neste tutorial. Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado. Se você é um participante de um bootcamp e das credenciais de acesso, entre em contato com seu Representative da Adobe para receber as informações necessárias.
 
-## Exercícios
+## Esercizio fisico
 
 [3.1 Uso del beacon aplicativo móvel e acione sinalizador](./ex1.md)
 

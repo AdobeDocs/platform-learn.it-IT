@@ -1,22 +1,22 @@
 ---
-title: Etichettare i dati di Analytics per le richieste di privacy
-description: Scopri come aggiungere le etichette Privacy dei dati alle variabili di Analytics, compreso un raggruppamento del significato di ciascun tipo di etichetta e di quando usarle.
+title: Etichettatura dei dati di Analytics per le richieste di privacy
+description: Scopri come aggiungere etichette Privacy dei dati alle variabili di Analytics, inclusa una suddivisione di cosa significa e quando usarle ogni tipo di etichetta.
 role: Data Engineer, Data Architect
 feature: Privacy
-kt: 7718
+jira: KT-7718
 thumbnail: 336077.png
 exl-id: a7662d99-d3c4-4cb1-8c72-afaa04b628a6
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 7%
 
 ---
 
-# Etichettare i dati di Analytics per le richieste di privacy
+# Etichettatura dei dati di Analytics per le richieste di privacy
 
-Scopri come aggiungere le etichette Privacy dei dati alle variabili di Analytics, compreso un raggruppamento del significato di ciascun tipo di etichetta e di quando usarle.
+Scopri come aggiungere etichette Privacy dei dati alle variabili di Analytics, inclusa una suddivisione di cosa significa e quando usarle ogni tipo di etichetta.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336077?quality=12&learn=on)
 
-Per ulteriori informazioni, visita il [Documentazione Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=it)
+Per ulteriori informazioni, visitare il [Documentazione sui Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=it)

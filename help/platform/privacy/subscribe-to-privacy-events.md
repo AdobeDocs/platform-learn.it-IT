@@ -3,10 +3,10 @@ title: Iscriviti agli eventi sulla privacy
 description: Scopri come abbonarti agli eventi sulla privacy per automatizzare i flussi di lavoro basati sullo stato del lavoro.
 role: Data Engineer, Data Architect
 feature: Privacy
-kt: 7721
+jira: KT-7721
 thumbnail: 336073.png
 exl-id: f1bc3e84-0b4b-40d0-83a5-f0f76a71f81d
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 13%
@@ -20,4 +20,4 @@ Scopri come abbonarti agli eventi sulla privacy per automatizzare i flussi di la
 
 >[!VIDEO](https://video.tv.adobe.com/v/336073?quality=12&learn=on)
 
-Per ulteriori informazioni, visita il [Documentazione Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=it)
+Per ulteriori informazioni, visitare il [Documentazione sui Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=it)
