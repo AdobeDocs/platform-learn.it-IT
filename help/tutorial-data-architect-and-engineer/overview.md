@@ -8,9 +8,9 @@ thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: e640a7e5c3a5f745462aa0d4e9d5f5c0b34ca8d7
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '777'
 ht-degree: 1%
 
 ---
@@ -73,5 +73,10 @@ La piattaforma è stata creata prima in base alle API. Anche se i flussi di lavo
 ### Tecnologie di terze parti
 
 Anche se in questa esercitazione utilizzerai più tecnologie, rimarrai quasi interamente all’interno dell’ecosistema Adobe. Nella tua implementazione di Platform, probabilmente integrerai Platform con specifiche tecnologie di terze parti. Per mantenere questa esercitazione rilevante per tutti i clienti, utilizzeremo un’implementazione più generica.
+
+## Aggiornamenti tutorial
+
+* Giugno 2023: aggiornato per includere il nuovo flusso di lavoro delle autorizzazioni e per utilizzare le credenziali API server-to-server di OAuth
+
 
 Passiamo ora alla prima lezione:[configurare le autorizzazioni](configure-permissions.md).
