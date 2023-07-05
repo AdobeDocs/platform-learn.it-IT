@@ -4,10 +4,10 @@ breadcrumb-title: Tutorial
 user-guide-description: Scopri i numerosi componenti di Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: e9ac0c059a896e552fd14e6456f121a70254bca0
+source-git-commit: 8bd3dd0cddcc7daec1b1af582b28e2dd844cc7ae
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 32%
+source-wordcount: '943'
+ht-degree: 33%
 
 ---
 
@@ -130,6 +130,7 @@ ht-degree: 32%
    + [Visualizzare i profili account](/help/platform/profiles/view-account-profiles.md)
    + [Creare criteri di unione](/help/platform/profiles/create-merge-policies.md)
    + [Panoramica sugli schemi unione](/help/platform/profiles/union-schemas-overview.md)
+   + [Aggiornare un attributo specifico utilizzando upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Privacy e sicurezza {#privacy}
    + [Introduzione a Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
    + [Dati di identità nelle richieste di accesso a dati personali](/help/platform/privacy/identity-data-in-privacy-requests.md)
@@ -162,7 +163,7 @@ ht-degree: 32%
    + [Blocchi predefiniti](/help/platform/schemas/schema-building-blocks.md)
    + [Pianificare il modello dati](/help/platform/schemas/plan-your-data-model.md)
    + [Convertire il modello dati in XDM](/help/platform/schemas/convert-your-data-model-to-xdm.md)
-   + [Creare schemi](/help/platform/schemas/create-schemas.md)
+   + [Creare gli schemi](/help/platform/schemas/create-schemas.md)
    + [Creare schemi per dati B2B](/help/platform/schemas/create-schemas-for-b2b-data.md)
    + [Creare le classi](/help/platform/schemas/create-classes.md)
    + [Creare gruppi di campi](/help/platform/schemas/create-schema-field-groups.md)
