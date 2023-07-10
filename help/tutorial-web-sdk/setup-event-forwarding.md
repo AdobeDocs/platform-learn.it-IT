@@ -1,9 +1,9 @@
 ---
 title: Impostare una proprietà di inoltro degli eventi
 description: Scopri come utilizzare la proprietà di inoltro degli eventi utilizzando i dati Experience Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
-feature: Event Forwarding
+feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '1887'
 ht-degree: 4%
@@ -20,7 +20,7 @@ Per utilizzare l’inoltro degli eventi in Adobe Experience Platform, i dati dev
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
-   <!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
 
 
 >[!NOTE]
@@ -45,7 +45,7 @@ Alla fine di questa lezione, sarai in grado di:
 * Una licenza software che include l&#39;inoltro di eventi. L’inoltro di eventi è una funzione a pagamento di Data Collection. Per ulteriori informazioni, contatta il team del tuo account di Adobe.
 * L’inoltro degli eventi è abilitato nell’organizzazione Experience Cloud.
 * Autorizzazione utente per l’inoltro di eventi. (in entrata [Admin Console](https://adminconsole.adobe.com/), nel prodotto Adobe Experience Platform Launch, elementi di autorizzazione per[!UICONTROL Piattaforme] > [!UICONTROL Bordo] e tutti [!UICONTROL Diritti di proprietà]). Una volta concesso, dovresti vedere [!UICONTROL Inoltro eventi] nel menu di navigazione a sinistra dell’interfaccia di Data Collection:
-   ![Proprietà inoltro eventi](assets/event-forwarding-menu.png)
+  ![Proprietà inoltro eventi](assets/event-forwarding-menu.png)
 
 * Adobe Experience Platform Web SDK o Mobile SDK configurato per inviare dati a Edge Network. Devi aver completato le seguenti lezioni di questa esercitazione:
 
@@ -55,13 +55,13 @@ Alla fine di questa lezione, sarai in grado di:
       * [Configurare uno schema XDM](configure-schemas.md)
       * [Configurare uno spazio dei nomi delle identità](configure-identities.md)
       * [Configurare uno stream di dati](configure-datastream.md)
+
    * Configurazione tag
 
       * [Installare l’estensione Web SDK](install-web-sdk.md)
       * [Creare elementi dati](create-data-elements.md)
       * [Creare una regola di tag](create-tag-rule.md)
       * [Convalida con Adobe Experience Platform Debugger](validate-with-debugger.md)
-
 
 
 ## Creare una proprietà di inoltro degli eventi
@@ -91,7 +91,6 @@ Per configurare Target nello stream di dati:
    ![Seleziona lo stream di dati dell’SDK web Luma](assets/datastream-luma-web-sdk.png)
 
 1. Seleziona **[!UICONTROL Aggiungi servizio]**
-
    ![Aggiungere un servizio allo stream di dati](assets/event-forwarding-datastream-addService.png)
 1. Seleziona **[!UICONTROL Inoltro eventi]** come **[!UICONTROL Servizio]**
 
@@ -183,6 +182,7 @@ In questo esercizio, inoltrerai l’altezza del riquadro di visualizzazione del 
 
 
    >[!TIP]
+   >
    Quando lavori con il tuo sito web, puoi trovare il percorso dell’oggetto XDM con gli strumenti di rete del browser web, filtrando per `/ee` richieste, apertura del beacon [!UICONTROL **Payload**] ed eseguire il drilling verso il basso fino alla variabile desiderata. Quindi fare clic con il pulsante destro del mouse e selezionare &quot;Copia percorso proprietà&quot;. Di seguito è riportato un esempio per l’altezza del riquadro di visualizzazione del browser:
    ![Percorso XDM per inoltro eventi](assets/event-forwarding-xdm-path.png)
 
@@ -277,6 +277,7 @@ Per configurare una regola per l’inoltro di dati al webhook, devi prima ottene
 Crea una libreria e crea tutte le modifiche nell’ambiente di sviluppo per l’inoltro degli eventi come si farebbe normalmente in una proprietà tag.
 
 >[!NOTE]
+>
 Se non hai collegato le proprietà di inoltro degli eventi di staging e produzione allo stream di dati, vedrai l’ambiente di sviluppo come unica opzione per generare una libreria in.
 
 ![Salva regola di inoltro degli eventi](assets/event-forwarding-initial-build.png)
@@ -319,4 +320,5 @@ Congratulazioni! Hai configurato l’inoltro degli eventi.
 [Successivo: ](conclusion.md)
 
 >[!NOTE]
+>
 Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

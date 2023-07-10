@@ -2,10 +2,12 @@
 title: Panoramica sull’inoltro degli eventi
 description: Scopri come l’inoltro degli eventi centralizza la raccolta dei dati, riduce la quantità di codice necessario nelle app web e mobile e invia i dati alle soluzioni non Adobe tramite Adobe Experience Platform Edge Network.
 feature: Event Forwarding
+role: Data Engineer
+level: Beginner
 jira: KT-6419
 thumbnail: 331937.jpeg
 exl-id: bd1a7414-b232-4ae3-98e8-b0ec1c60361b
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 62%

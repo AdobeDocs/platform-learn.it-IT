@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '3346'
+source-wordcount: '3344'
 ht-degree: 2%
 
 ---
@@ -30,6 +30,7 @@ Nell’interfaccia di Data Collection è necessario completare due attività pri
 **Ingegneri dati** dovrà acquisire dati in streaming all’esterno di questa esercitazione. Quando si implementano gli SDK per web o dispositivi mobili di Adobe Experience Platform, in genere uno sviluppatore web o mobile è coinvolto nella creazione del livello dati e nella configurazione delle proprietà dei tag.
 
 Prima di iniziare gli esercizi, guarda questi due brevi video per ulteriori informazioni sull’acquisizione di dati in streaming e Web SDK:
+
 >[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
 
 >[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
@@ -245,7 +246,7 @@ Come è possibile vedere sul [!UICONTROL Flusso di pubblicazione] , il processo 
 
 ## Convalidare i dati nella richiesta
 
-### Aggiungere Adobe Experience Platform Debugger
+### Aggiungi l’Adobe Experience Platform Debugger
 
 Experience Platform Debugger è un’estensione disponibile per i browser Chrome e Firefox che consente di visualizzare la tecnologia Adobe implementata nelle pagine web. Scarica la versione per il browser preferito:
 
@@ -454,7 +455,7 @@ Per verificare che l’ID del sistema di gestione delle relazioni con i clienti 
 
 * [Implementare Adobe Experience Cloud con Web SDK](/help/tutorial-web-sdk/overview.md)
 * [Documentazione sull’acquisizione in streaming](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=it)
-* [Riferimento API per Streaming Ingestion](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Streaming-Ingestion)
+* [Riferimento API per Streaming Ingestion](https://developer.adobe.com/experience-platform-apis/references/streaming-ingestion/)
 
 Ottimo lavoro! Queste erano molte informazioni su Web SDK e Launch. L’implementazione completa richiede molto più lavoro, ma queste sono le nozioni di base per aiutarti a iniziare e visualizzare i risultati in Platform.
 

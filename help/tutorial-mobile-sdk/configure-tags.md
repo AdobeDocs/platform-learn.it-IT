@@ -1,8 +1,9 @@
 ---
 title: Configurare una proprietà tag
 description: Scopri come configurare una proprietà tag in [!UICONTROL Raccolta dati] di rete.
+feature: Mobile SDK,Tags
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 11%
@@ -35,7 +36,6 @@ In questa lezione verranno fornite le seguenti informazioni:
 1. Crea una nuova proprietà tag mobile:
    1. In [Interfaccia di Data Collection](https://experience.adobe.com/data-collection/){target="_blank"}, seleziona **[!UICONTROL Tag]** nel menu di navigazione a sinistra
    1. Seleziona **[!UICONTROL Nuova proprietà]**
-
       ![creare una proprietà tag](assets/mobile-tags-new-property.png).
    1. Per **[!UICONTROL Nome]**, immetti `Mobile SDK Course`.
    1. Per **[!UICONTROL Piattaforma]**, seleziona **[!UICONTROL Dispositivi mobili]**.

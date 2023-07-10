@@ -1,8 +1,9 @@
 ---
 title: Mappatura di Analytics
 description: Scopri come raccogliere dati per Adobe Analytics in un’app mobile.
+solution: Data Collection,Experience Platform,Analytics
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 2%
@@ -13,28 +14,28 @@ ht-degree: 2%
 
 Scopri come mappare i dati mobili su Adobe Analytics.
 
-La [event](events.md) i dati raccolti e inviati a Platform Edge Network nelle lezioni precedenti vengono inoltrati ai servizi configurati nel datastream, incluso Adobe Analytics. È sufficiente mappare i dati sulle variabili corrette nella suite di rapporti.
+Il [evento](events.md) i dati raccolti e inviati a Platform Edge Network nelle lezioni precedenti vengono inoltrati ai servizi configurati nel flusso di dati, incluso Adobe Analytics. È sufficiente mappare i dati alle variabili corrette nella suite di rapporti.
 
 ## Prerequisiti
 
-* Informazioni sul tracciamento di ExperienceEvent.
-* L’invio dei dati XDM nell’app di esempio è riuscito.
-* Datastream configurato in Adobe Analytics
+* Informazioni sul tracciamento ExperienceEvent.
+* Invio dei dati XDM nell&#39;app di esempio completato.
+* Stream di dati configurato per Adobe Analytics
 
 ## Finalità di apprendimento
 
-In questa lezione:
+In questa lezione verranno fornite le seguenti informazioni:
 
 * Comprendere la mappatura automatica delle variabili di Analytics.
 * Imposta le regole di elaborazione per mappare i dati XDM sulle variabili di Analytics.
 
 ## Mappatura automatica
 
-Molti dei campi XDM standard vengono mappati automaticamente alle variabili di Analytics. Vedi l’elenco completo [qui](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en).
+Molti dei campi XDM standard sono mappati automaticamente alle variabili di Analytics. Vedi l’elenco completo [qui](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en).
 
-### Esempio n. 1 - s.products
+### Esempio #1 - s.products
 
-Un buon esempio è la [variabile dei prodotti](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) che non può essere compilata utilizzando le regole di elaborazione. Con un’implementazione XDM, trasmetti tutti i dati necessari in productListItems e s.products vengono compilati automaticamente tramite la mappatura Analytics.
+Un buon esempio è il [variabile dei prodotti](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) che non può essere compilato utilizzando le regole di elaborazione. Con un’implementazione XDM, trasmetti tutti i dati necessari in productListItems e s.products vengono compilati automaticamente tramite la mappatura di Analytics.
 
 Questo oggetto:
 
@@ -55,7 +56,7 @@ Questo oggetto:
 ]
 ```
 
-Ne consegue quanto segue:
+Si otterrebbe quanto segue:
 
 ```
 s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
@@ -65,9 +66,9 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 >
 >Attualmente `productListItems[N].SKU` viene ignorato dalla mappatura automatica.
 
-### Esempio n. 2 - scAdd
+### Esempio #2 - scAdd
 
-Se osservi attentamente, tutti gli eventi hanno due campi `value` (obbligatorio) e `id` (facoltativo). La `value` viene utilizzato per incrementare il conteggio degli eventi. La `id` viene utilizzato per la serializzazione.
+Se osservi attentamente, tutti gli eventi hanno due campi `value` (obbligatorio) e `id` (facoltativo). Il `value` per incrementare il conteggio degli eventi. Il `id` viene utilizzato per la serializzazione.
 
 Questo oggetto:
 
@@ -79,7 +80,7 @@ Questo oggetto:
 }
 ```
 
-Ne consegue quanto segue:
+Si otterrebbe quanto segue:
 
 ```
 s.events = "scAdd"
@@ -96,17 +97,17 @@ Questo oggetto:
 }
 ```
 
-Ne consegue quanto segue:
+Si otterrebbe quanto segue:
 
 ```
 s.events = "scAdd:321435"
 ```
 
-## Convalida con affidabilità
+## Convalida con garanzia
 
-Utilizzo della [Strumento Controllo di qualità](assurance.md) Puoi confermare che stai inviando un ExperienceEvent, che i dati XDM sono corretti e che la mappatura di Analytics avviene come previsto. Ad esempio:
+Utilizzo di [Strumento di controllo qualità Assurance](assurance.md) puoi confermare che stai inviando un ExperienceEvent, che i dati XDM sono corretti e che la mappatura di Analytics sta avvenendo come previsto. Ad esempio:
 
-1. Invia un evento productListAdd .
+1. Invia un evento productListAdds.
 
    ```swift
    var xdmData: [String: Any] = [
@@ -128,7 +129,7 @@ Utilizzo della [Strumento Controllo di qualità](assurance.md) Puoi confermare c
    Edge.sendEvent(experienceEvent: addToCartEvent)
    ```
 
-1. Visualizza l&#39;hit ExperienceEvent .
+1. Visualizza l’hit ExperienceEvent.
 
    ![hit xdm di analytics](assets/mobile-analytics-assurance-xdm.png)
 
@@ -152,22 +153,22 @@ Utilizzo della [Strumento Controllo di qualità](assurance.md) Puoi confermare c
      }
    ```
 
-1. Consulta la sezione `analytics.mapping` evento.
+1. Rivedi `analytics.mapping` evento.
 
    ![hit xdm di analytics](assets/mobile-analytics-assurance-mapping.png)
 
-Tieni presente quanto segue nella mappatura di Analytics:
+Osserva quanto segue nella mappatura di Analytics:
 
-* &#39;events&#39; è stato popolato con &#39;scAdd&#39; in base a `commerce.productListAdds`.
+* &#39;events&#39; è stato popolato con &#39;scAdd&#39; basato su `commerce.productListAdds`.
 * &#39;pl&#39; (variabile prodotti) è stato compilato con un valore concatenato basato su `productListItems`.
-* Ci sono altre informazioni interessanti in questo evento, compresi tutti i dati contestuali.
+* In questo evento sono disponibili altre informazioni interessanti, inclusi tutti i dati contestuali.
 
 
-## Mappatura con i dati contestuali
+## Mappatura con dati contestuali
 
 I dati XDM inoltrati ad Analytics vengono convertiti in [dati contestuali](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=en) inclusi i campi standard e personalizzati.
 
-La chiave di dati contestuali viene costruita seguendo questa sintassi:
+La chiave dei dati contestuali è costruita seguendo questa sintassi:
 
 ```
 a.x.[xdm path]
@@ -185,11 +186,11 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 
 >[!NOTE]
 >
->I campi personalizzati vengono inseriti sotto l’identificatore dell’organizzazione Experience Cloud.
+>I campi personalizzati si trovano sotto l’identificatore dell’organizzazione di Experience Cloud.
 >
->&quot;_techmarketingdemos&quot; viene sostituito con il valore univoco dell&#39;organizzazione.
+>&quot;_techmarketingdemos&quot; viene sostituito con il valore univoco della tua organizzazione.
 
-Esempio di una regola di elaborazione che utilizza questi dati:
+Di seguito è riportato un esempio di regola di elaborazione che utilizza questi dati:
 
 ![regole di elaborazione di analytics](assets/mobile-analytics-processing-rules.png)
 
@@ -199,18 +200,18 @@ Esempio di una regola di elaborazione che utilizza questi dati:
 >Alcune delle variabili mappate automaticamente potrebbero non essere disponibili per l’utilizzo nelle regole di elaborazione.
 >
 >
->La prima volta che esegui la mappatura su una regola di elaborazione, l’interfaccia utente non mostra le variabili di dati di contesto dall’oggetto XDM. Per correggere la selezione di qualsiasi valore, salvare e tornare alla modifica. Ora devono essere visualizzate tutte le variabili XDM.
+>La prima volta che esegui il mapping a una regola di elaborazione, l’interfaccia utente non mostra le variabili di dati di contesto dall’oggetto XDM. Per risolvere il problema, seleziona un valore qualsiasi, Salva e torna per modificarlo. Verranno visualizzate tutte le variabili XDM.
 
 
-È possibile trovare ulteriori informazioni sulle regole di elaborazione e i dati contestuali [qui](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
+Ulteriori informazioni sulle regole di elaborazione e sui dati contestuali sono disponibili [qui](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
 
 >[!TIP]
 >
->A differenza delle implementazioni precedenti dell’app mobile, non esiste alcuna distinzione tra le visualizzazioni di pagina/schermo e altri eventi. Invece puoi incrementare il **[!UICONTROL Visualizzazione a pagina]** impostando **[!UICONTROL Nome pagina]** in una regola di elaborazione. Poiché stai raccogliendo l&#39;oggetto personalizzato `screenName` nell’esercitazione, si consiglia vivamente di eseguire la mappatura su **[!UICONTROL Nome pagina]** in una regola di elaborazione.
+>A differenza delle precedenti implementazioni di app mobili, non esiste alcuna distinzione tra visualizzazioni pagina/schermata e altri eventi. È invece possibile incrementare **[!UICONTROL Visualizzazione pagina]** metrica impostando la **[!UICONTROL Nome pagina]** dimensione in una regola di elaborazione. Poiché stai raccogliendo il `screenName` nell’esercitazione, si consiglia vivamente di mappare questo campo su **[!UICONTROL Nome pagina]** in una regola di elaborazione.
 
 
-Avanti: **[Experience Platform](platform.md)**
+Successivo: **[Experience Platform](platform.md)**
 
 >[!NOTE]
 >
->Grazie per aver investito il tuo tempo nell&#39;apprendimento dell&#39;SDK di Adobe Experience Platform Mobile. In caso di domande, se desideri condividere feedback generali o se hai suggerimenti su contenuti futuri, condividi questi su questo [Experience League Articolo di discussione della Comunità](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

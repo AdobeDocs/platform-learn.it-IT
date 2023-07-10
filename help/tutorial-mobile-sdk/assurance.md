@@ -1,8 +1,9 @@
 ---
 title: Configura Assurance
 description: Scopri come implementare l’estensione Assurance in un’app mobile.
+feature: Mobile SDK,Assurance
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 2%
@@ -90,9 +91,9 @@ La garanzia funziona aprendo un URL, tramite browser o codice QR, che inizia con
    ![pin immissione garanzia](assets/mobile-assurance-enter-pin.png)
 1. Se la connessione ha avuto esito positivo, nell’interfaccia utente web di Assurance verranno visualizzati gli eventi e un’icona mobile Assurance nell’app.
    * Icona Assurance mobile.
-      ![assicurazione modale](assets/mobile-assurance-modal.png)
+     ![assicurazione modale](assets/mobile-assurance-modal.png)
    * Eventi di Experience Cloud che arrivano nell’interfaccia web.
-      ![eventi di garanzia](assets/mobile-assurance-events.png)
+     ![eventi di garanzia](assets/mobile-assurance-events.png)
 
 In caso di problemi, consulta [tecnico](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 

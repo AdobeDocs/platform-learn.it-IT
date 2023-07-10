@@ -1,9 +1,9 @@
 ---
 title: Tutorial sulla raccolta dati
-description: Video ed esercitazioni per renderti un utente potente della raccolta dati
-mini-toc-levels: 1
+description: Video ed esercitazioni per consentirti di utilizzare al meglio Data Collection
+mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 37%
@@ -12,21 +12,18 @@ ht-degree: 37%
 
 # Tutorial sulla raccolta dati
 
-La raccolta dati è la nuova generazione di funzionalità di gestione tag per siti web e SDK per dispositivi mobili di Adobe. La raccolta dati offre ai clienti un modo semplice di implementare e gestire le soluzioni di analisi, marketing e pubblicità necessarie per fornire ai clienti esperienze personalizzate. Utilizza questi video e tutorial per imparare a usare questa tecnologia fondamentale.
+La raccolta dati è la nuova generazione di funzionalità di gestione di tag per siti web e SDK per dispositivi mobili di Adobe. La raccolta dati offre ai clienti un modo semplice di implementare e gestire le soluzioni di analisi, marketing e annunci pubblicitari necessarie per fornire ai clienti esperienze personalizzate. Segui questi video e tutorial per imparare a usare questa tecnologia fondamentale.
 
 <div id="whats-new-section">
 
 ## Novità
 
 * **[Panoramica API server (video)](server-api/overview.md)**
-
-   *Inviare dati utilizzando un’API server sicura e autenticata.*
-* **[Implementare Adobe Experience Cloud nelle app per dispositivi mobili (esercitazione)](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=it)**
-
-   *Implementare applicazioni Experience Cloud con l’SDK di Mobile.*
-* **[Spostare i tag lato client (esercitazione)](event-forwarding/consider-moving-tags.md)**
-
-   *Prendi in considerazione lo spostamento di tag lato client all’inoltro di eventi.*
+  *Invia dati utilizzando un’API server sicura e autenticata.*
+* **[Implementare Adobe Experience Cloud nelle app per dispositivi mobili (tutorial)](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=it)**
+  *Implementare applicazioni Experience Cloud con Mobile SDK.*
+* **[Spostare i tag lato client (tutorial)](event-forwarding/consider-moving-tags.md)**
+  *Prendi in considerazione lo spostamento di tag lato client all’inoltro di eventi.*
 
 </div>
 
@@ -48,20 +45,20 @@ La raccolta dati è la nuova generazione di funzionalità di gestione tag per si
       <img alt="Implementare Adobe Experience Cloud con Web SDK" src="assets/thumb_websdk.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" target="_blank">
-    <strong>Implementare l’Experience Cloud con SDK per web</strong>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it" target="_blank">
+    <strong>Implementare l’Experience Cloud con Web SDK</strong>
     </a>
     </div>
     <p>
-    <em>Utilizzare i tag per implementare l’SDK per web di Platform</em>
+    <em>Utilizzare i tag per implementare Platform Web SDK</em>
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html" target="_blank">
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=it" target="_blank">
       <img alt="Implementazione nelle app per dispositivi mobili" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=it" target="_blank">
     <strong>Implementare l’Experience Cloud nelle app per dispositivi mobili</strong>
     </a>
     </div>

@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '2528'
+source-wordcount: '2526'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,7 @@ L’inserimento di dati in batch consente di acquisire una grande quantità di d
 **Ingegneri dati** dovrà acquisire dati batch all’esterno di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sull’acquisizione dei dati:
+
 >[!VIDEO](https://video.tv.adobe.com/v/27106?quality=12&learn=on)
 
 
@@ -341,6 +342,6 @@ Adobe collabora con più fornitori ETL per supportare l’acquisizione dei dati 
 ## Risorse aggiuntive
 
 * [Documentazione sull’acquisizione in batch](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
-* [Riferimento API per acquisizione in batch](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Batch-Ingestion)
+* [Riferimento API per acquisizione in batch](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 Ora andiamo [inviare dati tramite Web SDK](ingest-streaming-data.md)

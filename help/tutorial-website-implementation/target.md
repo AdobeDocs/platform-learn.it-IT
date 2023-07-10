@@ -1,9 +1,9 @@
 ---
 title: Aggiungere Adobe Target con i tag
-description: Scopri come implementare Adobe Target utilizzando i tag con at.js, una richiesta di caricamento pagina, parametri, una richiesta di ordine e un codice personalizzato di intestazione/piè di pagina. Questa lezione fa parte dell’esercitazione Implementa l’Experience Cloud in siti web .
+description: Scopri come implementare Adobe Target utilizzando i tag con at.js, una richiesta di caricamento pagina, parametri, una richiesta di ordine e un codice personalizzato di intestazione/piè di pagina. Questa lezione fa parte dell’esercitazione Implementare l’Experience Cloud su siti web.
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '4445'
 ht-degree: 75%
@@ -18,18 +18,17 @@ In questa lezione, implementeremo l’[estensione Adobe Target](https://experien
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch viene integrato in Adobe Experience Platform come suite di tecnologie per la raccolta dati. Nell’interfaccia sono state introdotte diverse modifiche terminologiche di cui tenere conto durante l’utilizzo di questo contenuto:
+>Adobe Experience Platform Launch viene integrato in Adobe Experience Platform come suite di tecnologie per la raccolta dati. Nell’interfaccia sono state introdotte diverse modifiche terminologiche di cui tenere conto quando si utilizza questo contenuto:
 >
 > * Il platform launch (lato client) è ora **[!DNL tags]**
-> * Lato server di platform launch è ora **[!DNL event forwarding]**
-> * Le configurazioni Edge sono ora **[!DNL datastreams]**
-
+> * Platform launch Server Side è ora **[!DNL event forwarding]**
+> * Le configurazioni Edge ora sono **[!DNL datastreams]**
 
 ## Finalità di apprendimento
 
 Alla fine di questa lezione, potrai:
 
-* Aggiungi il frammento pre-hiding utilizzato per gestire lo sfarfallio quando utilizzi Target con codici di incorporamento tag asincroni
+* Aggiungi il frammento pre-hiding utilizzato per gestire lo sfarfallio quando utilizzi Target con codici di incorporamento di tag asincroni
 * Aggiungere l’estensione Target v2
 * Attivare la richiesta di caricamento pagina (precedentemente denominata &quot;mbox globale&quot;)
 * Aggiungere parametri alla richiesta di caricamento pagina
@@ -44,7 +43,7 @@ Per completare le lezioni in questa sezione, devi prima completare le lezioni in
 
 ## Aggiungere il frammento pre-hiding di Target
 
-Prima di iniziare, dobbiamo effettuare un piccolo aggiornamento ai codici di incorporamento dei tag . Quando i codici di incorporamento dei tag vengono caricati in modo asincrono, la pagina potrebbe terminare il rendering prima che la libreria Target sia completamente caricata e abbia eseguito lo scambio di contenuto. Questo può causare il cosiddetto &quot;sfarfallio&quot;, in cui il contenuto predefinito viene visualizzato brevemente prima di essere sostituito dal contenuto personalizzato specificato da Target. Per evitare questo sfarfallio, consigliamo vivamente di codificare un frammento pre-hiding speciale immediatamente prima dei codici di incorporamento asincroni dei tag.
+Prima di iniziare, è necessario aggiornare leggermente i codici di incorporamento dei tag. Quando i codici di incorporamento dei tag vengono caricati in modo asincrono, la pagina potrebbe terminare il rendering prima che la libreria di Target sia completamente caricata e abbia eseguito lo scambio di contenuto. Questo può causare il cosiddetto &quot;sfarfallio&quot;, in cui il contenuto predefinito viene visualizzato brevemente prima di essere sostituito dal contenuto personalizzato specificato da Target. Per evitare questo sfarfallio, consigliamo vivamente di codificare un frammento pre-hiding speciale immediatamente prima dei codici di incorporamento asincroni dei tag.
 
 Questa operazione è già stata eseguita sul sito Luma, ma continuiamo a farlo sulla pagina di esempio in modo da riuscire a capire l’implementazione. Copia le seguenti righe di codice:
 
@@ -83,9 +82,9 @@ Questa operazione è già stata eseguita sul sito Luma, ma continuiamo a farlo s
 </script>
 ```
 
-Apri la pagina di esempio e incollala immediatamente prima del codice di incorporamento del tag come illustrato di seguito (non preoccuparti se i numeri di riga sono diversi). In questa schermata il frammento pre-hiding è stato ridotto:
+Apri la pagina di esempio e incollala immediatamente prima del codice di incorporamento di tag come illustrato di seguito (non preoccuparti se i numeri di riga sono diversi). In questa schermata il frammento pre-hiding è stato ridotto al minimo:
 
-![Passa il puntatore del mouse sull&#39;estensione](images/target-prehidingSnippet.png)
+![Passa il puntatore sull’estensione](images/target-prehidingSnippet.png)
 
 Ricarica la pagina di esempio. La pagina verrà nascosta per tre secondi prima della visualizzazione. Questo comportamento è temporaneo e sparirà dopo la distribuzione di Target. Questo comportamento di pre-hiding è controllato da due configurazioni alla fine del frammento, che possono essere personalizzate, ma che generalmente è meglio lasciare con le impostazioni predefinite:
 
@@ -96,7 +95,7 @@ Per ulteriori dettagli e per ottenere il frammento pre-hiding non minimizzato, c
 
 ## Aggiungere l’estensione Target
 
-L’estensione Adobe Target supporta implementazioni lato client tramite SDK JavaScript di Target per il moderno web, at.js. Clienti che utilizzano ancora la libreria Target precedente, mbox.js, [deve effettuare l’aggiornamento a at.js 2.x](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html) per utilizzare i tag.
+L’estensione Adobe Target supporta implementazioni lato client tramite SDK JavaScript di Target per il moderno web, at.js. I clienti che usano ancora una libreria Target precedente, mbox.js, [deve effettuare l’aggiornamento a at.js 2.x](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html) per utilizzare i tag.
 
 L’estensione Target v2 consiste in due parti principali:
 
@@ -179,7 +178,7 @@ Aggiungendo l’azione `Load Target`, at.js viene caricato sulla pagina. Tuttavi
 
 ### Convalidare la richiesta di caricamento pagina
 
-Ora che hai aggiunto l’estensione Target v2 e hai attivato il `Load Target` e `Fire Page Load Request` Azioni, deve essere effettuata una richiesta di caricamento pagina su tutte le pagine in cui viene utilizzata la proprietà tag .
+Ora che hai aggiunto l’estensione Target v2 e hai attivato `Load Target` e `Fire Page Load Request` , deve essere effettuata una richiesta di caricamento pagina su tutte le pagine in cui viene utilizzata la proprietà tag.
 
 **Per convalidare le azioni di Carica Target e Attiva Richiesta di caricamento pagina**
 
@@ -187,9 +186,9 @@ Ora che hai aggiunto l’estensione Target v2 e hai attivato il `Load Target` e 
 
 1. Apri il [sito Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Assicurati che Debugger mappi la proprietà tag in *le* Ambiente di sviluppo, come descritto in [lezione precedente](switch-environments.md)
+1. Accertati che Debugger mappi la proprietà tag a *tuo* Ambiente di sviluppo, come descritto nella sezione [lezione precedente](switch-environments.md)
 
-   ![L’ambiente di sviluppo tag visualizzato in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![L’ambiente di sviluppo dei tag mostrato in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Vai alla scheda Riepilogo del debugger
 
@@ -207,7 +206,7 @@ Congratulazioni! Hai implementato Target!
 
 ## Aggiungere i parametri
 
-Il passaggio dei parametri nella richiesta Target aggiunge funzionalità avanzate alle attività di targeting, test e personalizzazione. L&#39;estensione tag fornisce due azioni per trasmettere i parametri:
+Il passaggio dei parametri nella richiesta Target aggiunge funzionalità avanzate alle attività di targeting, test e personalizzazione. L’estensione tag fornisce due azioni per trasmettere i parametri:
 
 1. `Add Params to Page Load Request`, che aggiunge parametri alle richieste di caricamento di pagina (equivalente al metodo [targetPageParams()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html))
 
@@ -264,7 +263,7 @@ Per il momento, i parametri personalizzati passati con le richieste at.js 2.x no
 
 **Per convalidare il parametro della richiesta pageName**
 
-1. Ricarica il sito Luma, assicurandoti che sia mappato sulla tua proprietà tag
+1. Ricarica il sito Luma, verificando che sia mappato sulla tua proprietà tag
 1. Apri gli strumenti per sviluppatori del browser
 1. Fai clic sulla scheda Rete
 1. Filtra le richieste in `tt.omtrdc` (o al dominio CNAME per le richieste Target)
@@ -292,17 +291,17 @@ I parametri di entità sono parametri speciali utilizzati nelle [implementazioni
 1. Per raccogliere il comportamento dei visitatori e potenziare gli algoritmi di raccomandazioni, ad esempio &quot;Recently Viewed Products&quot; o &quot;Most Viewed Products&quot;
 1. Compilazione del catalogo Raccomandazioni. Raccomandazioni contiene un database di tutti i prodotti o articoli sul sito web, in modo che possano essere serviti nell’offerta di raccomandazione. Ad esempio, durante la raccomandazione dei prodotti, in genere si desiderano visualizzare attributi come il nome del prodotto (`entity.name`) e l’immagine (`entity.thumbnailUrl`). Alcuni clienti compilano il catalogo utilizzando i feed di backend, ma possono anche essere compilati utilizzando i parametri delle entità nelle richieste Target.
 
-Non è necessario trasmettere parametri di entità in questa esercitazione, ma il flusso di lavoro è identico a quello eseguito in precedenza al momento del passaggio del `pageName` parametro di richiesta—assegna al parametro un nome con il prefisso &quot;entity.&quot; e mappalo sull’elemento dati pertinente. Tieni presente che alcune entità comuni presentano nomi riservati che devono essere utilizzati (ad esempio, entity.id per lo SKU del prodotto). Per impostare i parametri delle entità nell’azione `Add Params to Page Load Request`:
+Non è necessario trasmettere parametri di entità in questa esercitazione, ma il flusso di lavoro è identico a quello eseguito in precedenza al momento del passaggio del `pageName` parametro di richiesta (request parameter) - assegnate al parametro un nome con il prefisso &quot;entity&quot;. e mappalo sull’elemento dati pertinente. Tieni presente che alcune entità comuni presentano nomi riservati che devono essere utilizzati (ad esempio, entity.id per lo SKU del prodotto). Per impostare i parametri delle entità nell’azione `Add Params to Page Load Request`:
 
 ![Aggiunta di parametri di entità](images/target-entityParameters.png)
 
 ### Aggiungere parametri ID cliente
 
-La raccolta di ID cliente con il servizio Adobe Experience Platform Identity semplifica l’importazione di dati CRM in Target tramite la funzione [Attributi cliente](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html) di Adobe Experience Cloud. Abilita inoltre [la combinazione di visitatori su più dispositivi](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html), consentendoti di mantenere un’esperienza utente coerente quando i clienti passano da un laptop a un dispositivo mobile.
+La raccolta di ID cliente con il servizio Adobe Experience Platform Identity semplifica l’importazione di dati CRM in Target tramite la funzione [Attributi cliente](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=it) di Adobe Experience Cloud. Abilita inoltre [la combinazione di visitatori su più dispositivi](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html), consentendoti di mantenere un’esperienza utente coerente quando i clienti passano da un laptop a un dispositivo mobile.
 
 È fondamentale impostare l’ID cliente nell’azione `Set Customer IDs` del servizio Identity prima di attivare la richiesta di caricamento pagina. A tale fine, assicurati di disporre delle seguenti funzionalità sul sito:
 
-* L’ID cliente deve essere disponibile sulla pagina prima dei tag di codice da incorporare
+* L’ID cliente deve essere disponibile sulla pagina prima del codice di incorporamento dei tag
 * L’estensione del servizio Adobe Experience Platform Identity deve essere installata
 * Devi utilizzare l’azione `Set Customer IDs` in una regola che viene attivata all’evento &quot;Libreria caricata (Pagina in alto)&quot;
 * Utilizza l’azione `Fire Page Load Request` in una regola che viene attivata *dopo* l’azione &quot;Imposta ID cliente&quot;
@@ -317,9 +316,9 @@ Per il momento, i parametri personalizzati passati con le richieste at.js 2.x no
 
 1. Apri il [sito Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Assicurati che Debugger mappi la proprietà tag in *le* Ambiente di sviluppo, come descritto in [lezione precedente](switch-environments.md)
+1. Accertati che Debugger mappi la proprietà tag a *tuo* Ambiente di sviluppo, come descritto nella sezione [lezione precedente](switch-environments.md)
 
-   ![L’ambiente di sviluppo tag visualizzato in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![L’ambiente di sviluppo dei tag mostrato in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Accedi al sito Luma utilizzando le credenziali `test@adobe.com`/`test`
 1. Torna alla [home page di Luma](https://luma.enablementadobe.com/content/luma/us/en.html)
@@ -352,10 +351,10 @@ Per il momento, i parametri personalizzati passati con le richieste at.js 2.x no
 
 Il token di proprietà è un parametro riservato utilizzato con la funzione [Autorizzazioni utente Target Premium Enterprise](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=it). Viene utilizzato per definire proprietà digitali diverse, in modo che ai diversi membri di un’organizzazione Experience Cloud possano essere assegnate autorizzazioni diverse a ciascuna proprietà. Ad esempio, potresti desiderare che un gruppo di utenti sia in grado di configurare le attività Target sul tuo sito web, ma non nell’applicazione mobile.
 
-Le proprietà di Target sono simili alle proprietà dei tag e alle suite di rapporti di Analytics. Un’azienda con più marchi, siti web e team di marketing può utilizzare una proprietà Target diversa, una proprietà tag e una suite di rapporti Analytics per ogni sito web o app mobile. Le proprietà dei tag sono differenziate dai rispettivi codici di incorporamento, le suite di rapporti di Analytics sono differenziate dal loro ID suite di rapporti e le proprietà di Target sono differenziate dal parametro token di proprietà.
+Le proprietà di Target sono simili alle proprietà dei tag e alle suite di rapporti di Analytics. Un’azienda con più marchi, siti web e team di marketing può utilizzare una proprietà Target diversa, una proprietà tag e una suite di rapporti Analytics per ogni sito web o app mobile. Le proprietà dei tag sono differenziate dai rispettivi codici di incorporamento, le suite di rapporti di Analytics sono differenziate dalla relativa suite di rapporti ID e le proprietà Target sono differenziate dal parametro token di proprietà.
 
 
-Il token di proprietà deve essere implementato utilizzando un&#39;azione di codice personalizzato nei tag con `targetPageParams()` funzione . Se implementi più siti con diversi valori at_property con una singola proprietà tag, puoi gestire il valore at_property tramite un elemento dati.
+Il token di proprietà deve essere implementato utilizzando un’azione del codice personalizzato nei tag con `targetPageParams()` funzione. Se implementi più siti con diversi utilizzando valori at_property diversi con una singola proprietà tag, puoi gestire il valore at_property tramite un elemento dati.
 
 Questo è un esercizio facoltativo, se sei un cliente Target Premium e desideri implementare un token di proprietà nella proprietà Esercitazione:
 
@@ -365,11 +364,11 @@ Questo è un esercizio facoltativo, se sei un cliente Target Premium e desideri 
 
 1. Identifica la Proprietà che desideri utilizzare e fai clic su **[!UICONTROL &lt;/>]** (o crea una nuova proprietà)
 
-1. Copia il frammento di codice all’interno del `<script></script>` negli appunti
+1. Copiare il frammento di codice all&#39;interno di `<script></script>` negli Appunti
 
    ![Ottieni il token di proprietà dall’interfaccia di Adobe Target](images/target-addATProperty-targetProperties.png)
 
-1. Nella scheda dei tag , passa alla pagina **[!UICONTROL Regole]** nel menu di navigazione a sinistra, quindi fai clic su `All Pages - Library Loaded` per aprire l’editor di regole.
+1. Nella scheda dei tag, vai a **[!UICONTROL Regole]** nel menu di navigazione a sinistra, quindi fai clic su `All Pages - Library Loaded` per aprire l’editor di regole.
 
    ![Apri All Pages - Library Loaded Rule](images/target-editRule.png)
 
@@ -377,23 +376,22 @@ Questo è un esercizio facoltativo, se sei un cliente Target Premium e desideri 
 
    ![Aprire l’azione Aggiungi parametri a richiesta di caricamento pagina](images/target-openCustomCodeAction.png)
 
-1. Apri l’editor di codice e incolla il codice dall’interfaccia di Target contenente il `targetPageParams()` Funzione
+1. Apri l’editor di codice e incolla il codice dall’interfaccia di Target contenente `targetPageParams()` funzione
 1. Fai clic sul pulsante **[!UICONTROL Salva]** pulsante
 
    ![Aprire l’azione Aggiungi parametri a richiesta di caricamento pagina](images/target-addATProperty.png)
 
-1. Controlla la **[!UICONTROL Esegui globalmente]** box così `targetPageParams()` è dichiarato nell&#39;ambito globale
+1. Controlla la **[!UICONTROL Esegui globalmente]** box so `targetPageParams()` è dichiarato nell&#39;ambito globale
 1. Fai clic su **[!UICONTROL Mantieni modifiche]**.
 
    ![Fai clic su Mantieni modifiche](images/target-addATProperty-keepChanges.png)
 
 1. Fai clic su **[!UICONTROL Salva nella libreria e genera]**
-
    ![Fai clic su Salva e genera nella libreria](images/target-addATProperty-save.png)
 
 >[!WARNING]
 >
->Se provi ad aggiungere il `at_property` tramite **[!UICONTROL Aggiungi parametri alla richiesta di caricamento pagina]** , il parametro verrà popolato nella richiesta di rete ma il Compositore esperienza visivo di Target non sarà in grado di rilevarlo automaticamente al caricamento della pagina. Compilare sempre `at_property` utilizzando `targetPageParams()` in un&#39;azione Custom Code.
+>Se tenti di aggiungere `at_property` tramite il **[!UICONTROL Aggiungere parametri alla richiesta di caricamento pagina]** azione, il parametro viene popolato nella richiesta di rete, ma il Compositore esperienza visivo di Target non sarà in grado di rilevarlo automaticamente durante il caricamento della pagina. Compila sempre `at_property` utilizzando `targetPageParams()` funzione in un&#39;azione Custom Code.
 
 #### Convalida il Token di proprietà
 
@@ -402,9 +400,9 @@ Per il momento, i parametri personalizzati passati con le richieste at.js 2.x no
 **Per convalidare il parametro Token di proprietà**
 
 1. Apri il [sito Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
-1. Assicurati che Debugger mappi la proprietà tag in *le* Ambiente di sviluppo, come descritto in [lezione precedente](switch-environments.md)
+1. Accertati che Debugger mappi la proprietà tag a *tuo* Ambiente di sviluppo, come descritto nella sezione [lezione precedente](switch-environments.md)
 
-   ![L’ambiente di sviluppo tag visualizzato in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![L’ambiente di sviluppo dei tag mostrato in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Apri gli strumenti per sviluppatori del browser
 1. Fai clic sulla scheda Rete
@@ -430,9 +428,9 @@ La richiesta di conferma dell’ordine è un tipo speciale di richiesta utilizza
 1. Utilizza un algoritmo diverso per calcolare la confidenza statistica
 1. Crea un rapporto Audit speciale scaricabile dei singoli dettagli dell&#39;ordine
 
-La best practice prevede l’utilizzo di una richiesta di conferma dell’ordine in tutti i funnel, anche nei siti non destinati alla vendita. Ad esempio, i siti di generazione di lead hanno in genere funnel lead con un &quot;ID lead&quot; univoco generato alla fine. Questi siti devono implementare una richiesta dell’ordine utilizzando un valore statico (ad esempio 1) per orderTotal.
+La best practice prevede l’utilizzo di una richiesta di conferma dell’ordine in tutti i funnel, anche sui siti non destinati alla vendita. Ad esempio, i siti di generazione di lead hanno in genere funnel lead con un &quot;ID lead&quot; univoco generato alla fine. Questi siti devono implementare una richiesta dell’ordine utilizzando un valore statico (ad esempio 1) per orderTotal.
 
-I clienti che utilizzano l’integrazione Analytics for Target (A4T) per la maggior parte dei rapporti possono anche voler implementare la richiesta dell’ordine se utilizzano attività di Automated Personalization che non supportano A4T. Inoltre, la richiesta dell’ordine è un elemento critico nelle implementazioni delle Raccomandazioni, che potenzia gli algoritmi in base al comportamento d’acquisto. Per informazioni aggiornate sul supporto A4T, consulta [la documentazione](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA).
+I clienti che utilizzano l’integrazione Analytics for Target (A4T) per la maggior parte dei rapporti possono anche implementare la richiesta dell’ordine se utilizzano attività di Automated Personalization che non supportano A4T. Inoltre, la richiesta dell’ordine è un elemento critico nelle implementazioni delle Raccomandazioni, che potenzia gli algoritmi in base al comportamento d’acquisto. Per informazioni aggiornate sul supporto A4T, consulta [la documentazione](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA).
 
 La richiesta di conferma dell’ordine dovrebbe attivarsi da una regola attivata solo nella pagina o nell’evento di conferma dell’ordine. Spesso può essere combinato con una regola che imposta l’evento di acquisto di Adobe Analytics. Deve essere configurato utilizzando l’azione Codice personalizzato dell’estensione Core, utilizzando gli elementi dati appropriati per impostare i parametri orderId, orderTotal e productPurchasedId.
 
@@ -440,7 +438,7 @@ Aggiungiamo gli elementi dati e la regola di cui abbiamo bisogno per attivare un
 
 **Per creare l’elemento dati per l’ID ordine**
 
-1. Fai clic su **[!UICONTROL Elementi dati]** nella navigazione a sinistra
+1. Clic **[!UICONTROL Elementi dati]** nel menu di navigazione a sinistra
 1. Fai clic su **[!UICONTROL Aggiungi elemento dati]**
 1. Denomina l’elemento dati `Order Id`
 1. Seleziona **[!UICONTROL Tipo di elemento dati > Variabile JavaScript]**
@@ -484,12 +482,12 @@ Ora è necessario creare una regola per attivare la richiesta di conferma dell�
 
 **Per creare la regola per la pagina Conferma ordine**
 
-1. Fai clic su **[!UICONTROL Regole]** nella navigazione a sinistra
+1. Clic **[!UICONTROL Regole]** nel menu di navigazione a sinistra
 1. Fai clic su **[!UICONTROL Aggiungi regola]**
 1. Denomina la regola `Order Confirmation Page - Library Loaded - 60`
 1. Fai clic su **[!UICONTROL Eventi > Aggiungi]**
    1. Seleziona **[!UICONTROL Tipo evento > Libreria caricata (pagina in alto)]**
-   1. Sotto **[!UICONTROL Opzioni avanzate]**, modifica `Order` a `60` in modo che si attivi dopo il `Load Target` (che è nella nostra `All Pages - Library Loaded` regola dove `Order` è impostato su `50`)
+   1. Sotto **[!UICONTROL Opzioni avanzate]**, modifica il `Order` a `60` in modo che si attivi dopo `Load Target` azione (presente nel nostro `All Pages - Library Loaded` regola dove `Order` è impostato su `50`)
    1. Fai clic su **[!UICONTROL Mantieni modifiche]**.
 1. Fai clic su **[!UICONTROL Condizioni > Aggiungi]**
    1. Seleziona **[!UICONTROL Tipo condizione > Percorso senza stringa di query]**
@@ -534,9 +532,9 @@ Per il momento, i parametri personalizzati passati con le richieste at.js 2.x no
 
 1. Apri il [sito Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Assicurati che Debugger mappi la proprietà tag in *le* Ambiente di sviluppo, come descritto in [lezione precedente](switch-environments.md)
+1. Accertati che Debugger mappi la proprietà tag a *tuo* Ambiente di sviluppo, come descritto nella sezione [lezione precedente](switch-environments.md)
 
-   ![L’ambiente di sviluppo tag visualizzato in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![L’ambiente di sviluppo dei tag mostrato in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Sfoglia il sito e aggiungi più prodotti al carrello
 1. Procedi con il pagamento
@@ -564,15 +562,15 @@ Per il momento, i parametri personalizzati passati con le richieste at.js 2.x no
 
 ### Richieste personalizzate
 
-Esistono alcune rare istanze in cui devi effettuare richieste Target diverse dalla richiesta di caricamento pagina e conferma dell’ordine. Ad esempio, a volte i dati importanti che desideri utilizzare per la personalizzazione non sono definiti sulla pagina prima dei codici di incorporamento del tag; potrebbero essere codificati in modo fisso nella parte inferiore della pagina o restituiti da una richiesta API asincrona. Questi dati possono essere inviati a Target utilizzando una richiesta aggiuntiva, anche se non sarà ottimale utilizzare questa richiesta per la distribuzione di contenuto, in quanto la pagina sarà già visibile. Questi dati possono essere utilizzati per arricchire il profilo visitatore per un uso successivo (utilizzando i parametri di profilo) o per popolare il catalogo Recommendations.
+Esistono alcune rare istanze in cui devi effettuare richieste Target diverse dalla richiesta di caricamento pagina e di conferma dell’ordine. Ad esempio, a volte i dati importanti che desideri utilizzare per la personalizzazione non vengono definiti sulla pagina prima dei codici di incorporamento dei tag; potrebbero essere codificati in modo fisso nella parte inferiore della pagina o restituiti da una richiesta API asincrona. Questi dati possono essere inviati a Target utilizzando una richiesta aggiuntiva, anche se non sarebbe ottimale utilizzare questa richiesta per la distribuzione di contenuto, in quanto la pagina è già visibile. Questi dati possono essere utilizzati per arricchire il profilo visitatore per un uso successivo (utilizzando i parametri di profilo) o per popolare il catalogo Recommendations.
 
-In queste circostanze, utilizza l’azione Codice personalizzato nell’estensione Core per attivare una richiesta utilizzando i metodi [getOffer()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-applyoffer.html) e [trackEvent()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-trackevent.html). Si tratta di un processo simile a quello dell’esercizio [Richiesta di conferma dell’ordine](#order-confirmation-request), ma utilizzerai un nome di richiesta diverso e non i parametri dell’ordine speciali. Assicurati di utilizzare l’azione **[!UICONTROL Carica Target]** prima di effettuare richieste Target dal codice personalizzato.
+In queste circostanze, utilizza l’azione Codice personalizzato nell’estensione Core per attivare una richiesta utilizzando i metodi [getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) e [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html). Si tratta di un processo simile a quello dell’esercizio [Richiesta di conferma dell’ordine](#order-confirmation-request), ma utilizzerai un nome di richiesta diverso e non i parametri dell’ordine speciali. Assicurati di utilizzare l’azione **[!UICONTROL Carica Target]** prima di effettuare richieste Target dal codice personalizzato.
 
 ## Library Header e Library Footer
 
 La schermata Edit at.js nell’interfaccia utente di Target dispone delle posizioni in cui puoi incollare JavaScript personalizzato che viene eseguito immediatamente prima o dopo il file at.js. Talvolta, il Library Header viene utilizzato per sostituire le impostazioni at.js tramite la funzione [targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) o per trasmettere dati da terze parti tramite la funzione [Data Provider](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html). A volte, il Library Footer viene utilizzato per aggiungere listener di [eventi personalizzati at.js](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/atjs-custom-events.html).
 
-Per replicare questa funzionalità nei tag , utilizza l’azione Codice personalizzato nell’estensione Core e metti in sequenza l’azione prima (Library Header) o dopo (Library Footer) l’azione Load Target . Questa operazione può essere eseguita nella stessa regola dell’azione `Load Target` (come illustrato di seguito) oppure in regole separate con eventi o impostazioni d’ordine che in modo affidabile si attivino prima o dopo la regola che contiene `Load Target`:
+Per replicare questa funzionalità nei tag, utilizza l’azione Custom Code nell’estensione Core e metti in sequenza l’azione prima (Library Header) o dopo (Library Footer) l’azione Load Target. Questa operazione può essere eseguita nella stessa regola dell’azione `Load Target` (come illustrato di seguito) oppure in regole separate con eventi o impostazioni d’ordine che in modo affidabile si attivino prima o dopo la regola che contiene `Load Target`:
 
 ![Library Header e Library Footer nella sequenza Azioni](images/target-libraryHeaderFooter.png)
 
