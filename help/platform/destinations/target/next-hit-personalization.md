@@ -1,5 +1,5 @@
 ---
-title: Cos’è la personalizzazione con hit successivo con Real-Time CDP e Adobe Target?
+title: Cos’è la personalizzazione dell’hit successivo con Real-Time CDP e Adobe Target?
 description: Scopri come personalizzare l’hit successivo con Real-time Customer Data Platform (CDP) e Adobe Target.
 role: User
 solution: Real-time Customer Data Platform,Target
@@ -8,17 +8,16 @@ feature: Integrations,Segments,Web SDK,Destinations,Datastreams,Audiences,Experi
 jira: KT-9629
 thumbnail: 340091.jpg
 exl-id: 08568a37-1450-4fdc-ba58-37ea026028c7
-source-git-commit: 0931e2305d8013e469aee2b015befb3d06614784
+source-git-commit: c25b0b613618401d51463a108dde8e4a6d3393b1
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 7%
 
 ---
 
-# Personalizzazione con hit successivo con Real-Time CDP e Adobe Target
+# Personalizzazione dell’hit successivo con Real-Time CDP e Adobe Target
 
-Scopri come personalizzare il prossimo hit con Real-time Customer Data Platform e Adobe Target. La destinazione Adobe Target in Real-Time CDP ti consente di utilizzare segmenti di Experience Platform in Adobe Target per la stessa pagina e la personalizzazione della pagina successiva con governance e supporto per la privacy.
+Scopri come personalizzare l’hit successivo con Real-time Customer Data Platform e Adobe Target. La destinazione Adobe Target in Real-Time CDP consente di utilizzare i segmenti Experience Platform in Adobe Target per la personalizzazione della stessa pagina e della pagina successiva con governance e supporto per la privacy. Per ulteriori informazioni, vedere [Configurare le destinazioni di personalizzazione per la documentazione di personalizzazione della stessa pagina e della pagina successiva](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=it)
 
 >[!VIDEO](https://video.tv.adobe.com/v/340091?quality=12&learn=on)
 
-Per ulteriori informazioni, consulta la sezione [Configurare le destinazioni di personalizzazione per la documentazione di personalizzazione della stessa pagina e della pagina successiva](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=it)
