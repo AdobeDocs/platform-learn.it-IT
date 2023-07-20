@@ -1,13 +1,13 @@
 ---
 title: Utilizzare punteggi e informazioni di Customer AI
 description: Scopri come utilizzare i punteggi e le informazioni sulla propensione di di IA per l’analisi dei clienti per convertire e fidelizzare i clienti.
-solution: Experience Platform, Real-time Customer Data Platform
+solution: Experience Platform, Real-Time Customer Data Platform
 feature: Customer AI
 role: User
 jira: KT-4171
 thumbnail: 32666.jpg
 exl-id: f3f628ef-223a-48d9-979e-86f038268923
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 72%
