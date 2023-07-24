@@ -5,8 +5,11 @@ jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
+solution: Journey Optimizer
+feature-set: Journey Optimizer
+feature: Journeys
 exl-id: 138a70fa-fe50-4585-b47f-150db4770c3d
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 4%
@@ -121,7 +124,7 @@ Se hai selezionato **Importa HTML**, è ora possibile trascinare e rilasciare il
 
 ![Journey Optimizer](./images/msg13.png)
 
-Visualizzerai quindi questo modello e-mail predefinito:
+Viene quindi visualizzato questo modello e-mail predefinito:
 
 ![Journey Optimizer](./images/msg14.png)
 
