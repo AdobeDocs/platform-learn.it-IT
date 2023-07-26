@@ -1,12 +1,13 @@
 ---
 title: Creare tipi di pubblico con più entità
 description: Questo video mostra come creare tipi di pubblico con più entità nel generatore di regole per il pubblico di Adobe Experience Platform.  La segmentazione di più entità, o segmentazione tra classi, consente di creare tipi di pubblico che combinano dati basati su più classi XDM.
-role: User
 feature: Segments
+role: User
+level: Intermediate
 jira: KT-3697
 thumbnail: 32179.jpg
 exl-id: cace814d-7124-432c-91fb-896725b701a4
-source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%

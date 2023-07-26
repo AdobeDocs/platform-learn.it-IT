@@ -1,12 +1,13 @@
 ---
 title: Panoramica sull’inserimento di dati
 description: Le funzionalità di acquisizione dei dati di Adobe Experience Platform consentono di raccogliere i dati in un’unica piattaforma aperta e scalabile allo scopo di gestire un profilo unificato.
-role: Data Engineer, Data Architect
 feature: Data Ingestion
+role: Data Architect, Data Engineer, Developer
+level: Beginner
 jira: KT-2699
 thumbnail: 27106.jpg
 exl-id: 8fcdb16f-26e1-4fb8-8e2b-1a1a3acccfe1
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 12%

@@ -1,12 +1,13 @@
 ---
 title: Importare dati nel profilo cliente in tempo reale
 description: Il profilo cliente in tempo reale consente la personalizzazione tra canali scalabile in ogni fase del percorso del cliente. È possibile abilitare i dati in batch o in streaming per Real-Time Customer Profile abilitando sia lo schema che il set di dati corrispondente.
-role: Data Architect, Data Engineer
 feature: Profiles
+role: Data Engineer, Data Architect, Developer
+level: Beginner
 jira: KT-2702
 thumbnail: 27301.jpg
 exl-id: fc7aad9e-8eaf-4101-b41e-a0d9b127f8be
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 27%

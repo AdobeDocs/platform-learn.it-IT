@@ -1,12 +1,13 @@
 ---
 title: Configurare le relazioni tra schemi
 description: Questo video mostra come configurare una relazione tra due schemi in Adobe Experience Platform. Le relazioni consentono di utilizzare un set di dati come tabella di ricerca per un altro.
-role: Data Architect
 feature: Schemas
+role: Data Architect, Developer
+level: Intermediate
 jira: KT-7935
 thumbnail: 333536.jpg
 exl-id: e52cacce-bcf7-4583-9125-113634250e19
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 39%

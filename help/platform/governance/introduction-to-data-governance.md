@@ -1,12 +1,13 @@
 ---
 title: Demo end-to-end sulla governance dei dati
-description: Scopri le funzionalità di governance dei dati di Adobe Experience Platform e come consente ai brand di fornire esperienze personalizzate ai propri clienti, fornendo al contempo un controllo completo sui dati dei clienti.
-role: Data Architect
+description: Scopri le funzionalità di governance dei dati di Adobe Experience Platform e come consente ai brand di offrire esperienze personalizzate ai propri clienti fornendo al contempo un controllo completo sui dati dei clienti.
 feature: Data Governance
+role: User, Developer, Data Architect, Admin
+level: Beginner
 jira: KT-5802
 thumbnail: 36653.jpg
 exl-id: 84ac047f-eb46-41c3-a6b0-d0a9d0ec0d79
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 8%
@@ -15,7 +16,7 @@ ht-degree: 8%
 
 # Demo end-to-end sulla governance dei dati
 
-Scopri le funzionalità di governance dei dati di Adobe Experience Platform e come consente ai brand di fornire esperienze personalizzate ai propri clienti, fornendo al contempo un controllo completo sui dati dei clienti.
+Scopri le funzionalità di governance dei dati di Adobe Experience Platform e come consente ai brand di offrire esperienze personalizzate ai propri clienti fornendo al contempo un controllo completo sui dati dei clienti.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36653?quality=12&learn=on)
 

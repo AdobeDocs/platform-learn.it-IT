@@ -1,14 +1,13 @@
 ---
 title: Creare tipi di pubblico da tipi di pubblico esistenti
-description: Il generatore di regole per il pubblico in Experience Platform consente di utilizzare i tipi di pubblico esistenti come parte di una nuova definizione di regole per i tipi di pubblico. Guarda questo video per visualizzare suggerimenti su come farlo.
+description: Il generatore di regole per il pubblico in Experienci Platform consente di utilizzare i tipi di pubblico esistenti come parte di una nuova definizione di regole per i tipi di pubblico. Guarda questo video per visualizzare suggerimenti su come farlo.
 feature: Segments
 role: User
-level: Beginner
-doc-type: feature video
-thumbnail: 333304.jpg
+level: Intermediate
 jira: KT-7891
+thumbnail: 333304.jpg
 exl-id: a98e43e1-4b5e-42fa-8806-aab702947da5
-source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 6%
@@ -17,7 +16,7 @@ ht-degree: 6%
 
 # Creare tipi di pubblico da tipi di pubblico esistenti
 
-Il generatore di regole per il pubblico in Experience Platform consente di utilizzare i tipi di pubblico esistenti come parte di una nuova definizione di regole per i tipi di pubblico. Guarda questo video per visualizzare suggerimenti su come farlo.
+Il generatore di regole per il pubblico in Experienci Platform consente di utilizzare i tipi di pubblico esistenti come parte di una nuova definizione di regole per i tipi di pubblico. Guarda questo video per visualizzare suggerimenti su come farlo.
 
 >[!NOTE]
 >

@@ -1,16 +1,17 @@
 ---
 title: Importazione dei dati di esempio in Adobe Experience Platform
 description: Scopri come impostare un ambiente sandbox di Experience Platform con alcuni dati di esempio.
-role: Developer
 feature: API
+role: Developer
+level: Experienced
 jira: KT-7349
 thumbnail: 7349.jpg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '1831'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -20,18 +21,18 @@ Scopri come configurare un ambiente sandbox di Experience Platform con dati di e
 
 ## Caso di utilizzo dei dati di esempio
 
-Gli utenti aziendali di Experience Platform spesso devono seguire una serie di passaggi che includono l’identificazione dei gruppi di campi, la creazione di schemi, la preparazione di dati, la creazione di set di dati e quindi l’acquisizione di dati prima di poter esplorare le funzionalità di marketing offerte da Experience Platform. Questa esercitazione automatizza alcuni dei passaggi per poter inserire i dati in una sandbox di Platform il più rapidamente possibile.
+Gli utenti aziendali di Experienci Platform spesso devono seguire una serie di passaggi che includono l’identificazione dei gruppi di campi, la creazione di schemi, la preparazione di dati, la creazione di set di dati e quindi l’acquisizione di dati prima di poter esplorare le funzionalità di marketing offerte da Experienci Platform. Questa esercitazione automatizza alcuni dei passaggi per poter inserire i dati in una sandbox di Platform il più rapidamente possibile.
 
 Questa esercitazione si concentra su un brand fittizio e al dettaglio chiamato Luma. Investono in Adobe Experience Platform per combinare dati su fidelizzazione, gestione delle relazioni con i clienti, catalogo dei prodotti e acquisti offline in profili cliente in tempo reale e attivare questi profili per portare il marketing al livello successivo. Abbiamo generato dati di esempio per Luma e nel resto di questa esercitazione, questi dati verranno importati in uno degli ambienti sandbox di Experience Platform.
 
 >[!NOTE]
 >
->Il risultato finale di questa esercitazione è una sandbox contenente dati simili al [Guida introduttiva a Adobe Experience Platform per architetti di dati e ingegneri di dati tutorial](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). È stato aggiornato nell’aprile 2023 per supportare [Sfide di Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=it). È stato aggiornato a giugno 2023 per passare al metodo di autenticazione OAuth.
+>Il risultato finale di questa esercitazione è una sandbox contenente dati simili al [Guida introduttiva a Adobe Experience Platform per architetti di dati e ingegneri di dati tutorial](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=it). È stato aggiornato nell’aprile 2023 per supportare [Sfide di Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=it). È stato aggiornato a giugno 2023 per passare al metodo di autenticazione OAuth.
 
 
 ## Prerequisiti
 
-* Hai accesso alle API di Experience Platform e sai come eseguire l’autenticazione. In caso contrario, rivedi [esercitazione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=it).
+* Hai accesso alle API di Experienci Platform e sai come eseguire l’autenticazione. In caso contrario, rivedi [esercitazione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=it).
 * Hai accesso a una sandbox di sviluppo di Experienci Platform.
 * Conosci il tuo ID tenant Experience Platform. Puoi ottenerlo effettuando una [richiesta API](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id)
 o estraendolo dall’URL al momento dell’accesso all’account Platform. Ad esempio, nell’URL seguente, il tenant è &quot;`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`.
@@ -81,7 +82,7 @@ Prima di seguire i passaggi, assicurati di aver scaricato [Postman](https://www.
 1. In Postman, seleziona l’ambiente nel menu a discesa in alto a destra e fai clic sull’icona a forma di occhio per visualizzare le variabili di ambiente:
    ![Selezione dell’ambiente](../assets/data-generator/images/env-selection.png)
 
-1. Assicurati che siano compilate le seguenti variabili di ambiente. Per informazioni su come ottenere il valore delle variabili di ambiente, vedi [Autenticazione per API Experience Platform](/help/platform/authentication/platform-api-authentication.md) esercitazione per istruzioni dettagliate.
+1. Assicurati che siano compilate le seguenti variabili di ambiente. Per informazioni su come ottenere il valore delle variabili di ambiente, vedi [Autenticazione per API Experienci Platform](/help/platform/authentication/platform-api-authentication.md) esercitazione per istruzioni dettagliate.
 
    * `CLIENT_SECRET`
    * `API_KEY`—`Client ID` nella console Adobe Developer

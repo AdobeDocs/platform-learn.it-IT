@@ -2,11 +2,12 @@
 title: API servizio query
 description: Scopri come scrivere ed eseguire query, e come creare query di pianificazione e modelli di query utilizzando le API di Adobe Experience Platform Query Service.
 feature: Queries
-role: Data Engineer
+role: Data Engineer, Developer
+level: Beginner
 jira: KT-7682
 thumbnail: 333700.jpg
 exl-id: dd9a2521-e1e5-44b4-bd10-c460ed895e52
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 76%

@@ -1,12 +1,13 @@
 ---
 title: Visualizzare i grafici delle identità
 description: Scopri come utilizzare la funzione di visualizzazione del grafico delle identità per cercare, esplorare e filtrare i grafici delle identità per la convalida e il debug.
-role: Data Engineer
 feature: Identities
+role: Data Architect, Data Engineer, Developer
+level: Beginner
 jira: KT-7046
 thumbnail: 331030.jpg
 exl-id: 1e289250-6b9c-4e43-84a4-7376044b3db6
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 15%

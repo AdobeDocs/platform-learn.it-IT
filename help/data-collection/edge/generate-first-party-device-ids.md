@@ -2,10 +2,11 @@
 title: Generare gli D dispositivo di prime parti
 description: Scopri come generare ID dispositivo di prime parti
 feature: Web SDK
+level: Experienced
 jira: KT-9728
 thumbnail: KT-9728.jpeg
 exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 2%
@@ -30,10 +31,10 @@ Di seguito è riportato un rapido esempio di come funziona la funzionalità:
 1. Il cliente genera un ID dispositivo (FPID) sul proprio server web o CDN (il server web deve essere associato al record A/AAAA DNS del nome di dominio).
 1. Il cliente imposta un cookie di prima parte per memorizzare l’FPID nel browser dell’utente finale.
 1. L’implementazione Adobe Experience Platform Web SDK del cliente invia una richiesta alla rete Edge di Platform, incluso l’FPID nella mappa delle identità.
-1. Experience Platform Edge Network riceve l’FPID e lo utilizza per generare un ID Experience Cloud (ECID).
+1. Experienci Platform Edge Network riceve l’FPID e lo utilizza per generare un ID Experience Cloud (ECID).
 1. La risposta di Platform Web SDK invia nuovamente l’ECID al browser dell’utente finale.
 1. Se il `idMigrationEnabled=true`, Platform Web SDK utilizza JavaScript per memorizzare l’ECID come `AMCV_` cookie nel browser dell’utente finale.
-1. Nel caso in cui `AMCV_` il cookie scade, il processo si ripete. Se è disponibile lo stesso ID dispositivo di prime parti, viene aggiunto un nuovo `AMCV_` Il cookie viene creato con lo stesso valore ECID di prima.
+1. Nel caso in cui `AMCV_` il cookie scade, il processo si ripete. Se è disponibile lo stesso ID dispositivo di prime parti, viene `AMCV_` Il cookie viene creato con lo stesso valore ECID di prima.
 
 >[!NOTE]
 >
