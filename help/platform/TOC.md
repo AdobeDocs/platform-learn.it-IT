@@ -4,10 +4,10 @@ breadcrumb-title: Tutorial
 user-guide-description: Scopri i numerosi componenti di Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 9d27093463ecf1af8ed90412475e4fd34d231265
+source-git-commit: b0d1506f538e39a519351e0325cec0f0e5ee9121
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 33%
+source-wordcount: '975'
+ht-degree: 34%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 33%
 
 + [Esercitazioni su Platform](/help/platform/overview.md)
 + Introduzione a Platform {#intro-to-platform}
-   + [Esperienza del cliente basata su Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
-   + [Dietro le quinte: un’esperienza del cliente basata su Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
+   + [Esperienza del cliente basata su Experienci Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
+   + [Dietro le quinte: un’esperienza del cliente basata su Experienci Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Panoramica di Experience Platform](/help/platform/intro-to-platform/overview.md)
    + [Funzionalità principali](/help/platform/intro-to-platform/key-capabilities.md)
    + [Applicazione e Intelligent Services](/help/platform/intro-to-platform/application-and-intelligent-services.md)
    + [Integrazioni con applicazioni Experience Cloud](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [Casi d’uso principali](/help/platform/intro-to-platform/key-use-cases.md)
    + [Architettura di base](/help/platform/intro-to-platform/basic-architecture.md)
-   + [Utilizzo dell’interfaccia utente di Platform](/help/platform/intro-to-platform/interface-tour.md)
+   + [Interfaccia utente](/help/platform/intro-to-platform/interface-tour.md)
    + [Ruoli e fasi del progetto](/help/platform/intro-to-platform/roles-and-project-phases.md)
 + Introduzione a Real-Time CDP {#rtcdp}
    + [Panoramica](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
@@ -33,7 +33,7 @@ ht-degree: 33%
    + [Panoramica dell’edizione B2B](/help/platform/rtcdp/b2b-overview.md)
    + [Orchestrare campagne con il Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [Guida introduttiva: architetti di dati e data engineer](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=it){target="_blank"}
-+ [Autenticazione per API Experience Platform](/help/platform/authentication/platform-api-authentication.md)
++ [Autenticazione per API Experienci Platform](/help/platform/authentication/platform-api-authentication.md)
 + [Importazione dei dati di esempio in Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Amministrazione {#admin}
    + [Utilizzare gli avvisi](/help/platform/admin/use-alerts.md)
@@ -82,7 +82,7 @@ ht-degree: 33%
    + [Mappare un file CSV su XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=it){target="_blank"}
    + [Panoramica sulle origini](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Acquisire dati da Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=it)
-   + [Acquisire dati da Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
+   + [Acquisire dati da Audienci Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Acquisire dati dall’archiviazione cloud](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=it)
    + [Acquisire dati da CRM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=it)
    + [Acquisire dati dai database](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
@@ -158,7 +158,7 @@ ht-degree: 33%
    + [Etichette privacy in Adobe Analytics](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
    + [Guida introduttiva all’API di Privacy Service](/help/platform/privacy/getting-started-with-privacy-services-api.md)
    + [Interfaccia utente di Privacy Service](/help/platform/privacy/using-privacy-services-ui.md)
-   + [API PRIVACY SERVICE](/help/platform/privacy/using-the-privacy-service-api.md)
+   + [API di Privacy Service](/help/platform/privacy/using-the-privacy-service-api.md)
    + [Iscriviti agli eventi sulla privacy](/help/platform/privacy/subscribe-to-privacy-events.md)
    + [Configurare le chiavi gestite dal cliente](/help/platform/privacy/set-up-customer-managed-keys.md)
    + [10 considerazioni sulla gestione responsabile dei dati dei clienti](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
@@ -196,7 +196,7 @@ ht-degree: 33%
 + Origini {#sources}
    + [Panoramica sulle origini](/help/platform/sources/overview.md)
    + [Acquisire dati da Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)
-   + [Acquisire dati da Audience Manager](/help/platform/sources/ingest-data-from-aam.md)
+   + [Acquisire dati da Audienci Manager](/help/platform/sources/ingest-data-from-aam.md)
    + [Acquisire dati da Marketo](/help/platform/sources/ingest-data-from-marketo.md)
    + [Acquisire dati dall’archiviazione cloud](/help/platform/sources/ingest-data-from-cloud-storage.md)
    + [Acquisire dati da CRM](/help/platform/sources/ingest-data-from-crm.md)
