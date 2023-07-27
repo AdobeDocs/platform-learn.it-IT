@@ -2,16 +2,18 @@
 title: Acquisire dati utilizzando il connettore di sorgente di Adobe Analytics
 description: Il connettore di origine di Adobe Analytics consente di eseguire facilmente lo streaming, la mappatura e il filtro dei dati da Adobe Analytics al profilo cliente in tempo reale e al data lake di esperienza di Adobe Experience Platform.
 feature: Sources
+topic: Integrations
+badgeIntegration: label="Integrazione" type="positive"
 role: Data Engineer, Data Architect, Developer
 level: Intermediate
 last-substantial-update: 2023-02-23T00:00:00Z
 jira: KT-3824
 thumbnail: 29687.jpg
 exl-id: b5fb1df4-b05d-426f-bdee-43e0de6bf0d6
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: bcf6079bc2e05c8c59bcc1b020ac15d1db6a02f2
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 19%
+source-wordcount: '128'
+ht-degree: 20%
 
 ---
 
