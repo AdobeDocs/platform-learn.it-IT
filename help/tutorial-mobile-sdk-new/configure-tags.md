@@ -4,9 +4,9 @@ description: Scopri come configurare una proprietà tag in [!UICONTROL Raccolta 
 feature: Mobile SDK,Tags
 hide: true
 hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: a7d20a6de8eb9bae62494ff5e71f47ed672e4681
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1015'
 ht-degree: 5%
 
 ---
@@ -23,7 +23,7 @@ Per completare la lezione, devi disporre dell’autorizzazione per creare una pr
 
 >[!NOTE]
 >
-> Il platform launch (lato client) è ora [tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)
+> Il platform launch (lato client) è ora [Tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)
 
 ## Finalità di apprendimento
 
@@ -136,7 +136,12 @@ La libreria viene creata per le nuove estensioni e configurazioni. Una build cor
 
    Le istruzioni di installazione forniscono un buon punto di partenza per l’implementazione. Puoi trovare ulteriori informazioni [qui](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
-1. Seleziona la **[!UICONTROL Swift]** scheda sotto **[!UICONTROL Aggiungi codice di inizializzazione]**. Questo blocco di codice mostra come importare gli SDK richiesti e registrare le estensioni all’avvio.
+   >[!INFO]
+   >
+   >Per il resto di questo tutorial, potrai **non** utilizza le istruzioni CocoaPods, ma utilizza una configurazione nativa basata su Swift Package Manager (SPM).
+   >
+
+1. Seleziona la **[!UICONTROL Swift]** scheda sotto **[!UICONTROL Aggiungi codice di inizializzazione]**. Questo blocco di codice mostra come importare gli SDK richiesti e registrare le estensioni all’avvio. Questo argomento verrà trattato più dettagliatamente in [Installare gli SDK](install-sdks.md).
 
 1. Copia ![Copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) il **[!UICONTROL ID file ambiente]** e conservarlo in un luogo in cui se ne ha bisogno in un secondo momento. Questo ID univoco punta all’ambiente di sviluppo. Ogni ambiente (Produzione, Staging, Sviluppo) ha un proprio valore ID univoco.
 
@@ -146,14 +151,9 @@ La libreria viene creata per le nuove estensioni e configurazioni. Una build cor
 >
 >Le istruzioni di installazione devono essere considerate un punto di partenza e non una documentazione definitiva. Le versioni più recenti dell’SDK e gli esempi di codice sono disponibili nella [documentazione](https://developer.adobe.com/client-sdks/documentation/).
 
->[!INFO]
->
->Per il resto di questa esercitazione, sei **non** utilizzando le istruzioni di CocoaPods, ma osserva una configurazione nativa basata su pacchetto Swift.
-
-
 ## Architettura dei tag per dispositivi mobili
 
-Se conosci la versione web dei tag, precedentemente Launch, è importante comprendere le differenze su dispositivi mobili.
+Se conosci la versione web di Tag, precedentemente Launch, è importante comprendere le differenze su dispositivi mobili.
 
 * Sul web, viene eseguito il rendering di una proprietà tag in JavaScript che è poi (in genere) ospitato nel cloud. Viene fatto riferimento direttamente a tale file JavaScript nel sito web.
 

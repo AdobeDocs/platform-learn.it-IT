@@ -3,9 +3,9 @@ title: Installare gli SDK di Adobe Experience Platform Mobile
 description: Scopri come implementare l’SDK di Adobe Experience Platform Mobile in un’app mobile.
 hide: true
 hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: a7d20a6de8eb9bae62494ff5e71f47ed672e4681
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '913'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Dopo aver installato tutti i pacchetti, il tuo Xcode **[!UICONTROL Dipendenze pa
 
 ## Importare estensioni
 
-In Xcode nell’origine per **[!UICONTROL AppDelegate]** e **[!UICONTROL MobileSDK]**, aggiungi le seguenti importazioni.
+In Xcode, nell’origine di **[!UICONTROL AppDelegate]** e **[!UICONTROL MobileSDK]**, aggiungi le seguenti importazioni.
 
 ```swift
 import AEPCore
@@ -86,61 +86,43 @@ In entrata **AppDelegate**,
    @AppStorage("environmentFileId") private var environmentFileId = "b5cbd1a1220e/1857ef6cacb5/launch-2594f26b23cd-development"
    ```
 
-1. Aggiungi il seguente codice evidenziato al `application(_, didFinishLaunchingWithOptions)` funzione.
+1. Aggiungi il seguente codice al `application(_, didFinishLaunchingWithOptions)` funzione.
 
-   ```swift {highlight="10-39"}
-   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+   ```swift
+   let extensions = [
+       AEPIdentity.Identity.self,
+       Lifecycle.self,
+       Signal.self,
+       Edge.self,
+       AEPEdgeIdentity.Identity.self,
+       Consent.self,
+       UserProfile.self,
+       Places.self,
+       Messaging.self,
+       Optimize.self,
+       Assurance.self
+   ]
    
-       UNUserNotificationCenter.current().delegate = self
+   MobileCore.registerExtensions(extensions, {
+       // Use the environment file id assigned to this application via Adobe Experience Platform Data Collection
+       Logger.aepMobileSDK.info("Luma - using mobile config: \(self.environmentFileId)")
+       MobileCore.configureWith(appId: self.environmentFileId)
    
-       // step-init-start
-       MobileCore.setLogLevel(.trace)
-       let appState = application.applicationState;
+       // set this to false or comment it when deploying to TestFlight (default is false),
+       // set this to true when testing on your device.
+       MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])
+       if appState != .background {
+           // only start lifecycle if the application is not in the background
+           MobileCore.lifecycleStart(additionalContextData: nil)
+       }
    
-       let extensions = [
-           AEPIdentity.Identity.self,
-           Lifecycle.self,
-           Signal.self,
-           Edge.self,
-           AEPEdgeIdentity.Identity.self,
-           Consent.self,
-           UserProfile.self,
-           Places.self,
-           Messaging.self,
-           Optimize.self,
-           Assurance.self
-       ]
+       // assume unknown, adapt to your needs.
+       MobileCore.setPrivacyStatus(.unknown)
    
-       MobileCore.registerExtensions(extensions, {
-           // Use the environment file id assigned to this application via Adobe Experience Platform Data Collection
-           Logger.aepMobileSDK.info("Luma - using mobile config: \(self.environmentFileId)")
-           MobileCore.configureWith(appId: self.environmentFileId)
-   
-           // set this to false or comment it when deploying to TestFlight (default is false),
-           // set this to true when testing on your device.
-           MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])
-           if appState != .background {
-               // only start lifecycle if the application is not in the background
-               MobileCore.lifecycleStart(additionalContextData: nil)
-           }
-   
-           // assume unknown, adapt to your needs.
-           MobileCore.setPrivacyStatus(.unknown)
-   
-           // update version and build
-           Logger.configuration.info("Luma - Updating version and build number...")
-           SettingsBundleHelper.setVersionAndBuildNumber()
-       })
-   
-       // register push notification
-       registerForPushNotifications(application: application)
-   
-       // set up core location
-       let locationManager = LocationManager()
-       locationManager.requestAuthorisation()
-   
-       return true
-   }
+       // update version and build
+       Logger.configuration.info("Luma - Updating version and build number...")
+       SettingsBundleHelper.setVersionAndBuildNumber()
+   })
    ```
 
 Il codice di cui sopra esegue le seguenti operazioni:
