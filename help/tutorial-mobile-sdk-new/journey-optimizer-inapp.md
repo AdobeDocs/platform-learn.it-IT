@@ -4,7 +4,7 @@ description: Scopri come creare messaggi in-app per un’app mobile con Platform
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 hide: true
-source-git-commit: c3c12d63762f439faa9c45d27e66468455774b43
+source-git-commit: 7de7c7e13ea6d02f1193620e0cc35299e07d59e5
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 3%
@@ -123,6 +123,7 @@ Disponi di tutti gli ingredienti necessari per inviare un messaggio in-app. Ciò
 1. Vai a **[!UICONTROL Impostazioni]** scheda.
 
 1. Tocca **[!UICONTROL Messaggio in-app]**. Il messaggio in-app viene visualizzato nell’app.
+
    <img src="assets/ajo-in-app-message.png" width="300" />
 
 

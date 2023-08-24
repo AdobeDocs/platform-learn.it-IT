@@ -3,12 +3,13 @@ title: Configurare uno stream di dati
 description: Scopri come creare uno stream di dati in Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 7de7c7e13ea6d02f1193620e0cc35299e07d59e5
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 5%
 
 ---
+
 
 # Creare un flusso di dati
 
