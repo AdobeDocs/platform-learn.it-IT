@@ -4,7 +4,7 @@ description: Scopri come creare messaggi in-app per un’app mobile con Platform
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 hide: true
-source-git-commit: 4fa65f2e39d3fa7b8b77f5d06d51f10235474b36
+source-git-commit: c3c12d63762f439faa9c45d27e66468455774b43
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 3%
@@ -73,11 +73,11 @@ In questo tutorial, utilizzerai le API generiche core per dispositivi mobili e i
 1. Scorri verso il basso fino a **[!UICONTROL Azione]**, e seleziona **[!UICONTROL Modifica contenuto]**.
 1. In **[!UICONTROL Messaggio in-app]** schermata:
    1. Seleziona **[!UICONTROL Modale]** come **[!UICONTROL Layout messaggio]**.
-   1. Invio `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` per **[!UICONTROL URL contenuto multimediale]**.
-   1. Immetti un **[!UICONTROL Intestazione]**, ad esempio `Welcome to this Luma In-App Message` e inserisci un **[!UICONTROL Corpo]**, ad esempio `Triggered by pushing that button in the app...`.
-   1. Invio **[!UICONTROL Ignora]** come **[!UICONTROL Testo #1 pulsante (primario)]**.
-   1. Nota come viene aggiornata l’anteprima.
-   1. Seleziona **[!UICONTROL Controlla per attivare]**.
+   2. Invio `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` per **[!UICONTROL URL contenuto multimediale]**.
+   3. Immetti un **[!UICONTROL Intestazione]**, ad esempio `Welcome to this Luma In-App Message` e inserisci un **[!UICONTROL Corpo]**, ad esempio `Triggered by pushing that button in the app...`.
+   4. Invio **[!UICONTROL Ignora]** come **[!UICONTROL Testo #1 pulsante (primario)]**.
+   5. Nota come viene aggiornata l’anteprima.
+   6. Seleziona **[!UICONTROL Controlla per attivare]**.
       ![Editor in-app](assets/ajo-in-app-editor.png)
 1. In **[!UICONTROL Revisione per l’attivazione (Luma - Campagna di messaggistica in-app)]** schermata, seleziona ![Modifica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) nel **[!UICONTROL Pianificazione]** affiancare.
    ![Rivedi pianificazione seleziona Pianificazione](assets/ajo-review-select-schedule.png)
@@ -88,7 +88,7 @@ In questo tutorial, utilizzerai le API generiche core per dispositivi mobili e i
    1. Fai clic su **[!UICONTROL Fine]**.
       ![Logica di attivazione](assets/ajo-trigger-logic.png)
 
-   È stata definita un&#39;azione di tracciamento, in cui **[!UICONTROL Azione]** è uguale a `in-app` e **[!UICONTROL Dati contestuali]** con l&#39;azione è una coppia chiave-valore di `showMessage = true`.
+   È stata definita un&#39;azione di tracciamento, in cui **[!UICONTROL Azione]** è uguale a `in-app` e **[!UICONTROL Dati contestuali]** con l&#39;azione è una coppia chiave-valore di `"showMessage" : "true"`.
 
 1. Torna in **[!UICONTROL Luma - Campagna di messaggistica in-app]** schermata, seleziona **[!UICONTROL Controlla per attivare]**.
 1. In **[!UICONTROL Revisione per l’attivazione (Luma - Campagna di messaggistica in-app)]** schermata, seleziona **[!UICONTROL Attiva]**.
@@ -103,14 +103,14 @@ Disponi di tutti gli ingredienti necessari per inviare un messaggio in-app. Ciò
 1. Vai a Luma > Luma > Utilità > MobileSDK nel Navigatore progetti Xcode, trova il `func sendTrackAction(action: String, data: [String: Any]?)` e aggiungi il seguente codice, che chiama il `MobileCore.track` funzione, in base ai parametri `action` e `data`.
 
 
-   ```
+   ```swift
    // send trackAction event
    MobileCore.track(action: action, data: data)
    ```
 
-1. Vai a Luma > Luma > Viste > Generale > ConfigView in Xcode Project Navigator. Trova il codice per il pulsante Messaggio in-app e aggiungi il seguente codice:
+1. Vai a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizzazioni]** > **[!UICONTROL Generale]** > **[!UICONTROL ConfigView]** in Xcode Project Navigator. Trova il codice per il pulsante Messaggio in-app e aggiungi il seguente codice:
 
-   ```
+   ```swift
    Task {
        AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
    }
