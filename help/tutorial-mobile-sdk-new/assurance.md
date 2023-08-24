@@ -3,11 +3,10 @@ title: Configura Assurance
 description: Scopri come implementare l’estensione Assurance in un’app mobile.
 feature: Mobile SDK,Assurance
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 9%
+source-wordcount: '741'
+ht-degree: 10%
 
 ---
 
@@ -43,17 +42,19 @@ Conferma che la tua organizzazione abbia accesso a Assurance completando i segue
 
 ## Implementazione
 
-Oltre al generale [Installazione SDK](install-sdks.md), hai completato la lezione precedente, iOS richiede anche la seguente aggiunta per avviare la sessione Assurance per la tua app. Aggiungi il seguente codice a **[!UICONTROL SceneDelegate]**:
+Oltre al generale [Installazione SDK](install-sdks.md), hai completato la lezione precedente, iOS richiede anche la seguente aggiunta per avviare la sessione Assurance per la tua app.
 
-```swift {highlight="5"}
-func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        // Called when the app in background is opened with a deep link.
-        if let deepLinkURL = URLContexts.first?.url {
-            // Start the Assurance session
-            Assurance.startSession(url: deepLinkURL)
-        }
-    }
-```
+1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** nel Navigatore progetti di Xcode.
+
+1. Aggiungi il codice seguente a `func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>`:
+
+   ```swift
+   // Called when the app in background is opened with a deep link.
+   if let deepLinkURL = URLContexts.first?.url {
+       // Start the Assurance session
+       Assurance.startSession(url: deepLinkURL)
+   }
+   ```
 
 Ulteriori informazioni sono disponibili [qui](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/{target="_blank"}).
 
@@ -94,7 +95,7 @@ Assurance funziona aprendo un URL, tramite il browser o il codice QR. Tale URL i
 1. Fornisci un **[!UICONTROL Nome sessione]** come `Luma Mobile App Session` e **[!UICONTROL URL di base]**, che è lo schema URL immesso in Xcode, seguito da `://`. Ad esempio: `lumatutorialswiftui://`.
 1. Seleziona **[!UICONTROL Avanti]**.
    ![sessione di creazione della garanzia di affidabilità](assets/assurance-create-session.png)
-1. Nella finestra di dialogo Crea nuova sessione:
+1. In **[!UICONTROL Crea nuova sessione]** finestra di dialogo modale:
 
    Se si utilizza un dispositivo fisico:
 
