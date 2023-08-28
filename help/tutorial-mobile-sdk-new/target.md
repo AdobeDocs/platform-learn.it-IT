@@ -5,7 +5,7 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
+source-git-commit: 78cbdc441a470448a0bc91ec4d1670ebbf251a8d
 workflow-type: tm+mt
 source-wordcount: '1394'
 ht-degree: 2%
@@ -42,7 +42,7 @@ In questa lezione, potrai
 * Aggiorna lo schema per acquisire gli eventi della proposta.
 * Convalidare l&#39;impostazione in Assurance.
 * Crea un semplice test A/B in Target.
-* Aggiorna l&#39;app per includere l&#39;estensione Optimize.
+* Aggiorna l&#39;app per includere l&#39;estensione Optimizer.
 * Implementa il test A/B nell’app.
 * Convalidare l’implementazione in Assurance.
 
@@ -192,9 +192,9 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
    * un dizionario XDM `xdmData`, contenente l’ECID per identificare il profilo per il quale si deve presentare il test A/B, e
    * il `decisionScope`, un array di posizioni in cui presentare il test A/B.
 
-   Quindi la funzione chiama due API: [`Optimizer.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  e [`Optimizer.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Queste funzioni cancellano tutte le proposte memorizzate nella cache e aggiornano le proposte per questo profilo.
+   Quindi la funzione chiama due API: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  e [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Queste funzioni cancellano tutte le proposte memorizzate nella cache e aggiornano le proposte per questo profilo.
 
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizzazioni]** > **[!UICONTROL Personalizzazione]** > **[!UICONTROL TargetOffersView]** nel Navigatore progetti Xcode. Trova il `func getPropositionAT(location: String) async` e controllare il codice di questa funzione. La parte più importante di questa funzione è la  [`Optimizer.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) Chiamata API, che
+1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizzazioni]** > **[!UICONTROL Personalizzazione]** > **[!UICONTROL TargetOffersView]** nel Navigatore progetti Xcode. Trova il `func getPropositionAT(location: String) async` e controllare il codice di questa funzione. La parte più importante di questa funzione è la  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) Chiamata API, che
    * recupera le proposte per il profilo corrente in base all’ambito della decisione (che è la posizione definita nel test A/B) e
    * consente di annullare il wrapping del risultato in un contenuto che può essere visualizzato correttamente nell’app.
 
