@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 2f9298a140c7bd483c8c533427f0e90d90d14af0
+source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '2005'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ Journey Optimizer consente di creare percorsi e inviare messaggi a tipi di pubbl
 ## Prerequisiti
 
 * L&#39;app con gli SDK installati e configurati è stata creata ed eseguita correttamente.
-* Accesso a Adobe Journey Optimizer e autorizzazioni sufficienti come descritto [qui](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Inoltre, è necessario disporre di autorizzazioni sufficienti per le seguenti funzionalità di Adobe Journey Optimizer.
+* Accesso a Adobe Journey Optimizer e autorizzazioni sufficienti come descritto [qui](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). È inoltre necessaria un&#39;autorizzazione sufficiente per le seguenti funzioni di Adobe Journey Optimizer.
    * Crea una superficie app.
    * Creare un percorso
    * Crea un messaggio.
@@ -36,7 +36,7 @@ Journey Optimizer consente di creare percorsi e inviare messaggi a tipi di pubbl
 
 ## Finalità di apprendimento
 
-In questa lezione verranno fornite le seguenti informazioni:
+In questa lezione, potrai
 
 * Registra l’ID app con il servizio di notifica push di Apple (APN).
 * Creare un **[!UICONTROL Superficie app]** in AJO.
@@ -81,8 +81,8 @@ La documentazione aggiuntiva può essere [trovato qui](https://help.apple.com/de
 1. Immetti l’ID del bundle per app mobile nel campo ID app (ID bundle iOS). Se segui insieme all’app Luma, tale valore è `com.adobe.luma.tutorial.swiftui`.
 1. Accendere il **[!UICONTROL Credenziali push]** per aggiungere le credenziali.
 1. Trascina il file `.p8` **Chiave di autenticazione per notifica push Apple** file.
-1. Fornisci **[!UICONTROL ID chiave]**, stringa di 10 caratteri assegnata durante la creazione di `p8` tasto auth. È disponibile in **[!UICONTROL Chiavi]** scheda in **Certificati, identificatori e profili** delle pagine del portale Apple Developer.
-1. Fornisci **[!UICONTROL ID team]**. L’ID team è un valore che si trova nella sezione **Iscrizione** o nella parte superiore delle pagine del portale Apple Developer.
+1. Fornisci **[!UICONTROL ID chiave]**, stringa di 10 caratteri assegnata durante la creazione di `p8` tasto auth. Si trova sotto **[!UICONTROL Chiavi]** scheda in **Certificati, identificatori e profili** delle pagine del portale Apple Developer.
+1. Fornisci **[!UICONTROL ID team]**. L’ID team è un valore che si trova nella sezione **Iscrizione** o nella parte superiore della pagina del portale Apple Developer.
 1. Seleziona **[!UICONTROL Salva]**.
 
    ![configurazione della superficie dell&#39;app](assets/push-app-surface-config.png)
@@ -105,7 +105,7 @@ La documentazione aggiuntiva può essere [trovato qui](https://help.apple.com/de
 >Se non vedi `AJO Push Tracking Experience Event Dataset` contatta l’assistenza clienti come opzione.
 >
 
-## Implementare Adobe Journey Optimizer nell’app
+## Implementare Journey Optimizer nell’app
 
 Come descritto nelle lezioni precedenti, l’installazione di un’estensione tag per dispositivi mobili fornisce solo la configurazione. Ora devi installare e registrare l’SDK di messaggistica. Se questi passaggi non sono chiari, rivedi [Installare gli SDK](install-sdks.md) sezione.
 
@@ -175,6 +175,20 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
 
 Per creare una notifica push personalizzata, devi definire un evento in Journey Optimizer che attivi un percorso che si occupi di inviare una notifica push.
 
+### Aggiorna schema
+
+Stai per definire un nuovo tipo di evento non ancora disponibile come parte dell’elenco degli eventi definito nello schema.
+
+1. Nell’interfaccia utente di Journey Optimizer, seleziona **[!UICONTROL Schemi]** dalla barra a sinistra.
+1. Seleziona **[!UICONTROL Sfoglia]** nella barra delle schede.
+1. Seleziona lo schema, ad esempio **[!UICONTROL Schema evento app mobile Luma]** per aprirlo.
+1. Nell’editor schema:
+   1. Seleziona la **[!UICONTROL eventType]** campo.
+   1. In **[!UICONTROL Proprietà campo]** , scorri verso il basso per visualizzare l’elenco dei valori possibili per il tipo di evento. Seleziona **[!UICONTROL Aggiungi riga]**, e aggiungi `application.test` come **[!UICONTROL VALORE]** e **[!UICONTROL Evento di test per notifica push]** come `DISPLAY NAME`.
+   1. Seleziona **[!UICONTROL Applica]**.
+   1. Seleziona **[!UICONTROL Salva]**.
+      ![Aggiungi valore ai tipi di evento](assets/ajo-update-schema-eventtype-enum.png)
+
 ### Definire un evento
 
 1. Nell’interfaccia utente di Journey Optimizer, seleziona **[!UICONTROL Configurazioni]** dalla barra a sinistra.
@@ -193,7 +207,7 @@ Per creare una notifica push personalizzata, devi definire un evento in Journey 
 
       ![Modifica passaggio evento 1](assets/ajo-edit-event1.png)
 
-      In **[!UICONTROL Campi]** , accertati che siano selezionati i seguenti campi (oltre ai campi predefiniti sempre selezionati (_id, id e timestamp). Utilizzando l’elenco a discesa puoi alternare tra **[!UICONTROL Selezionato]**, **[!UICONTROL Tutti]** e **[!UICONTROL Principale]** o utilizza ![Ricerca](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) campo.
+      In **[!UICONTROL Campi]** , accertati che siano selezionati i seguenti campi (oltre ai campi predefiniti sempre selezionati (**[!UICONTROL _id]**, **[!UICONTROL id]**, e **[!UICONTROL timestamp]**). Utilizzando l’elenco a discesa puoi alternare tra **[!UICONTROL Selezionato]**, **[!UICONTROL Tutti]** e **[!UICONTROL Principale]** o utilizza ![Ricerca](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) campo.
 
       * **[!UICONTROL Identificato dall’applicazione (ID)]**,
       * **[!UICONTROL Tipo evento (eventType)]**,
@@ -205,9 +219,8 @@ Per creare una notifica push personalizzata, devi definire un evento in Journey 
 
    1. Seleziona ![Modifica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) accanto al **[!UICONTROL Condizione ID evento]** campo.
 
-      1. In **[!UICONTROL Aggiungi una condizione per l’ID evento]** finestra di dialogo, trascinamento della selezione **[!UICONTROL Identificatore dell’applicazione (ID)]** sotto **[!UICONTROL Applicazione (application)]** su a **[!UICONTROL Trascina qui un elemento]**.
-      1. Nel popover, inserisci l’identificatore del bundle da Xcode, ad esempio `com.adobe.luma.tutorial.swiftui` nel campo accanto a **[!UICONTROL uguale a]**.
-      1. Clic **[!UICONTROL Ok]**.
+      1. In **[!UICONTROL Aggiungi una condizione per l’ID evento]** finestra di dialogo, trascinamento della selezione **[!UICONTROL Tipo evento (eventType)]** su a **[!UICONTROL Trascina qui un elemento]**.
+      1. Nel popover, scorri verso il basso e seleziona **[!UICONTROL application.test]**. Quindi scorri verso l’alto e seleziona **[!UICONTROL Ok]**.
       1. Clic **[!UICONTROL Ok]**.
          ![Modifica condizione evento](assets/ajo-edit-condition.png)
 
