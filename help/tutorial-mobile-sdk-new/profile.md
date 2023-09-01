@@ -2,9 +2,9 @@
 title: Profilo
 description: Scopri come raccogliere i dati del profilo in un’app mobile.
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '592'
 ht-degree: 2%
 
 ---
@@ -128,4 +128,4 @@ Dopo aver aggiornato l’attributo di un utente, questo è disponibile per altri
 >
 >Ora hai configurato l’app per aggiornare gli attributi dei profili nella rete Edge e (se configurata) con Adobe Experience Platform.<br/>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Successivo: **[Mappare i dati su Adobe Analytics](analytics.md)**
+Successivo: **[Utilizzare i servizi di geolocalizzazione](places.md)**

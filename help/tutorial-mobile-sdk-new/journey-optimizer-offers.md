@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 5f0fa0b524cd4a12aaab8c8c0cd560a31003fbd8
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '2344'
+source-wordcount: '2342'
 ht-degree: 2%
 
 ---
@@ -45,11 +45,11 @@ In questa lezione, potrai
 * Implementa nell’app le offerte di Gestione delle decisioni.
 
 
-## Configurare l’app
+## Configurazione
 
 >[!TIP]
 >
->Se hai già configurato l&#39;app come parte del [Configurare test A/B con Target](target.md) esercitazione, puoi saltare [Installare Adobe Journey Optimizer - Estensione tag Decisioning](#install-adobe-journey-optimizer---decisioning-tags-extension) e [Aggiornare lo schema](#update-your-schema).
+>Se hai già configurato l’ambiente come parte del [Configurare test A/B con Target](target.md) esercitazione, puoi saltare [Installare Adobe Journey Optimizer - Estensione tag Decisioning](#install-adobe-journey-optimizer---decisioning-tags-extension) e [Aggiornare lo schema](#update-your-schema).
 
 ### Aggiorna configurazione Edge
 
@@ -368,7 +368,7 @@ Ora dovresti disporre di tutti gli strumenti necessari per iniziare ad aggiunger
 
 * applica parametri diversi alle offerte (ad esempio, priorità, limite).
 * raccogliere gli attributi del profilo nell’app (consulta [Profilo](profile.md)) e utilizza questi attributi di profilo per creare tipi di pubblico. Quindi utilizza questi tipi di pubblico come parte delle regole di idoneità nella tua decisione.
-* combinare più ambiti decisionali
+* combinare più ambiti decisionali.
 
 >[!SUCCESS]
 >
