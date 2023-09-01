@@ -3,9 +3,9 @@ title: Panoramica tutorial sull’implementazione di Adobe Experience Cloud nell
 description: Scopri come implementare le app mobili Adobe Experience Cloud. Questa esercitazione ti guida attraverso un’implementazione di applicazioni Experience Cloud in un’app Swift di esempio.
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '659'
 ht-degree: 11%
 
 ---
@@ -39,6 +39,10 @@ Dopo aver completato questa esercitazione, sarai in grado di:
    * [Profilo](profile.md)
    * [Adobe Experience Platform](platform.md)
    * [Messaggistica push con Journey Optimizer](journey-optimizer-push.md)
+   * [Messaggistica Im-app con Journey Optimizer](journey-optimizer-inapp.md)
+   * [Offerte con Journey Optimizer](journey-optimizer-offers.md)
+   * [Test A/B con Target](target.md)
+
 * Trasmettere correttamente i parametri di Experience Cloud a una [webview](web-views.md).
 * Convalidare l’implementazione utilizzando [Adobe Experience Platform Assurance](assurance.md).
 
@@ -74,12 +78,12 @@ Inoltre, si presume che tu abbia familiarità con [!DNL Swift]. Non devi essere 
 
 Sono disponibili per il download due versioni dell’app di esempio.
 
-1. [Vuoto](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"}): versione senza codice Experience Cloud per completare gli esercizi pratici in questa esercitazione
-1. [Completamente implementato](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"}): una versione con implementazione di Experience Cloud completa come riferimento.
+1. [Vuoto](https://git.corp.adobe.com/rmaur/Luma{target="_blank"}): versione senza codice Experience Cloud per completare gli esercizi pratici in questa esercitazione
+1. [Completamente implementato](https://git.corp.adobe.com/Luma{target="_blank"}): una versione con implementazione di Experience Cloud completa come riferimento.
 
 Cominciamo.
 
->[!NOTE]
+>[!SUCCESS]
 >
 >Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 

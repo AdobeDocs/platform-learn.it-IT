@@ -2,9 +2,9 @@
 title: Profilo
 description: Scopri come raccogliere i dati del profilo in un’app mobile.
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '594'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 Sarebbe utile per il targeting e/o la personalizzazione sapere rapidamente se un utente ha effettuato un acquisto nell’app in precedenza. Impostiamolo nell’app Luma.
 
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utilità]** >  **[!UICONTROL MobileSDK]** e trovare `func updateUserAttribute(attributeName: String, attributeValue: String)` funzione. Aggiungi il seguente codice:
+1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utilità]** >  **[!UICONTROL MobileSDK]** nel Navigatore progetti Xcode e trovare il `func updateUserAttribute(attributeName: String, attributeValue: String)` funzione. Aggiungi il seguente codice:
 
    ```swift
    // Create a profile map
@@ -62,7 +62,7 @@ Sarebbe utile per il targeting e/o la personalizzazione sapere rapidamente se un
 
    1. Utilizza il `profileMap` dizionario come valore per `attributeDict` parametro di `UserProfile.updateUserAttributes` Chiamata API.
 
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizzazioni]** > **[!UICONTROL Prodotti]** > **[!UICONTROL ProductView]** nel Navigatore progetti Xcode e trova la chiamata a `updateUserAttributes` (all&#39;interno del codice per gli acquisti <img src="assets/purchase.png" width="15" /> pulsante):
+1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizzazioni]** > **[!UICONTROL Prodotti]** > **[!UICONTROL ProductView]** nel Navigator del progetto Xcode e trova la chiamata a `updateUserAttributes` (all&#39;interno del codice per gli acquisti <img src="assets/purchase.png" width="15" /> pulsante):
 
    ```swift
    // Update attributes
@@ -113,9 +113,13 @@ Dopo aver aggiornato l’attributo di un utente, questo è disponibile per altri
    1. Seleziona <img src="assets/saveforlater.png" width="15" />.
    1. Seleziona <img src="assets/addtocart.png" width="20" />.
    1. Seleziona <img src="assets/purchase.png" width="15" />.
-   1. Torna a **[!UICONTROL Home]** schermo. Dovresti visualizzare valori aggiornati per **[!UICONTROL E-mail]** e **[!UICONTROL ID CRM]**.
 
-      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200"> <img src="./assets/personbadges.png" width="200">
+      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200">
+   1. Torna a **[!UICONTROL Home]** schermo. Dovresti vedere un distintivo aggiunto <img src="assets/person-badge-icon.png" width="15" />.
+
+      <img src="./assets/personbadges.png" width="200">
+
+
 
 1. Nell’interfaccia utente Assurance, dovresti visualizzare un’ **[!UICONTROL UserProfileUpdate]** e **[!UICONTROL getUserAttributes]** eventi con aggiornato `profileMap` valore.
    ![convalida profilo](assets/profile-validate.png)

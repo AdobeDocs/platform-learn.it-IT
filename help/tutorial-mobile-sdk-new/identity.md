@@ -3,9 +3,9 @@ title: Identità
 description: Scopri come raccogliere i dati di identità in un’app mobile.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '656'
 ht-degree: 6%
 
 ---
@@ -112,7 +112,7 @@ Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzat
 
 È possibile utilizzare `removeIdentity` per rimuovere l’identità dalla IdentityMap memorizzata lato client. L’estensione Identity interrompe l’invio dell’identificatore alla rete Edge. L’utilizzo di questa API non rimuove l’identificatore dal grafico dei profili utente o dal grafico delle identità lato server.
 
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Generale]** > **[!UICONTROL MobileSDK]** nel Navigatore progetti Xcode e aggiungi il seguente codice al `func removeIdentities(emailAddress: String, crmId: String)` funzione:
+1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Generale]** > **[!UICONTROL MobileSDK]** nel Navigator del progetto Xcode e aggiungi il seguente codice al `func removeIdentities(emailAddress: String, crmId: String)` funzione:
 
    ```swift
    Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
@@ -144,7 +144,7 @@ Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzat
       <img src="./assets/identity1.png" width="300"> <img src="./assets/identity2.png" width="300">
 
 
-1. Cerca nell’interfaccia web di Assurance per il **[!UICONTROL Identità aggiornamento identità Edge]**evento da **[!UICONTROL com.adobe.griffon.mobile]** fornitore.
+1. Cerca nell’interfaccia web di Assurance per **[!UICONTROL Identità aggiornamento identità Edge]** evento da **[!UICONTROL com.adobe.griffon.mobile]** fornitore.
 1. Seleziona l’evento e rivedi i dati in **[!UICONTROL ACPExtensionEventData]** oggetto. Dovresti visualizzare le identità aggiornate.
    ![convalida aggiornamento identità](assets/identity-validate-assurance.png)
 
