@@ -3,9 +3,9 @@ title: Configurare uno stream di dati
 description: Scopri come creare uno stream di dati in Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 7de7c7e13ea6d02f1193620e0cc35299e07d59e5
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '546'
 ht-degree: 5%
 
 ---
@@ -19,7 +19,7 @@ Un flusso di dati è una configurazione lato server in Platform Edge Network. Lo
 
 ## Prerequisiti
 
-Per creare un flusso di dati, è necessario eseguire il provisioning della tua organizzazione per questa funzione nell’interfaccia di Data Collection (precedentemente [!UICONTROL Launch]) e devi disporre delle autorizzazioni utente per [!UICONTROL Experience Platform] > [!UICONTROL Raccolta dati] > **[!UICONTROL Gestire gli stream di dati]** e **[!UICONTROL Visualizzare gli stream di dati]**.
+Per creare un flusso di dati, è necessario eseguire il provisioning della tua organizzazione per questa funzione nell’interfaccia di Data Collection (precedentemente [!UICONTROL Launch]) e devi disporre delle autorizzazioni utente per gestire e visualizzare gli stream di dati.
 
 ## Finalità di apprendimento
 
@@ -88,7 +88,7 @@ Quindi, connetti i servizi Experience Cloud allo stream di dati. Quando Platform
 >
 >L’abilitazione di ciascuno dei servizi utilizzati dalla tua organizzazione garantisce che i dati raccolti nell’app mobile possano essere utilizzati ovunque. Per ulteriori informazioni sulle impostazioni dello stream di dati, consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
 
-Quando implementi l’SDK di Platform Mobile nella tua app, devi creare tre flussi di dati da mappare ai tre ambienti di tag (sviluppo, stage e produzione). Se utilizzi l’SDK di Platform Mobile con applicazioni basate su Platform, ad esempio Adobe Real-time Customer Data Platform o Adobe Journey Optimizer, assicurati di creare tali flussi di dati nelle sandbox di Platform appropriate.
+Quando implementi l’SDK di Platform Mobile nella tua app, devi creare tre flussi di dati da mappare ai tre ambienti di tag (sviluppo, stage e produzione). Se utilizzi Platform Mobile SDK con applicazioni basate su Platform, ad esempio Adobe Real-time Customer Data Platform o Adobe Journey Optimizer, assicurati di creare tali flussi di dati nelle sandbox appropriate.
 
 >[!SUCCESS]
 >

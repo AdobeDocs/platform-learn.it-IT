@@ -2,9 +2,9 @@
 title: Profilo
 description: Scopri come raccogliere i dati del profilo in un’app mobile.
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '612'
 ht-degree: 2%
 
 ---
@@ -39,18 +39,16 @@ In questa lezione verranno fornite le seguenti informazioni:
 * Recuperare gli attributi utente.
 
 
-## Imposta e aggiorna attributi utente
+## Impostare e aggiornare gli attributi utente
 
-Sarebbe utile per il targeting e/o la personalizzazione sapere rapidamente se un utente ha effettuato un acquisto nell’app in precedenza. Impostiamolo nell’app Luma.
+Sarebbe utile per il targeting e/o la personalizzazione nell’app sapere rapidamente se un utente ha effettuato un acquisto in passato o di recente. Impostiamolo nell’app Luma.
 
 1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utilità]** >  **[!UICONTROL MobileSDK]** nel Navigatore progetti Xcode e trovare il `func updateUserAttribute(attributeName: String, attributeValue: String)` funzione. Aggiungi il seguente codice:
 
    ```swift
-   // Create a profile map
+   // Create a profile map, add attributes to the map and update profile using the map
    var profileMap = [String: Any]()
-   // Add attributes to profile map
    profileMap[attributeName] = attributeValue
-   // Use profile map to update user attributes
    UserProfile.updateUserAttributes(attributeDict: profileMap)
    ```
 
@@ -60,22 +58,21 @@ Sarebbe utile per il targeting e/o la personalizzazione sapere rapidamente se un
 
    1. Aggiunge un elemento al dizionario utilizzando `attributeName` (ad esempio `isPaidUser`), e `attributeValue` (ad esempio `yes`).
 
-   1. Utilizza il `profileMap` dizionario come valore per `attributeDict` parametro di `UserProfile.updateUserAttributes` Chiamata API.
+   1. Utilizza il `profileMap` dizionario come valore per `attributeDict` parametro di [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) Chiamata API.
 
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizzazioni]** > **[!UICONTROL Prodotti]** > **[!UICONTROL ProductView]** nel Navigator del progetto Xcode e trova la chiamata a `updateUserAttributes` (all&#39;interno del codice per gli acquisti <img src="assets/purchase.png" width="15" /> pulsante):
+1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizzazioni]** > **[!UICONTROL Prodotti]** > **[!UICONTROL ProductView]** nel Navigator del progetto Xcode e trova la chiamata a `updateUserAttributes` (all&#39;interno del codice per gli acquisti <img src="assets/purchase.png" width="15" /> pulsante). Aggiungi il seguente codice:
 
    ```swift
    // Update attributes
    MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
-È possibile trovare ulteriore documentazione [qui](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
 
 ## Ottieni attributi utente
 
-Dopo aver aggiornato l’attributo di un utente, questo è disponibile per altri SDK di Adobe, ma puoi anche recuperare esplicitamente gli attributi.
+Dopo aver aggiornato l’attributo di un utente, questo è disponibile per altri SDK di Adobe, ma puoi anche recuperare gli attributi in modo esplicito, per consentire all’app di comportarsi come desideri.
 
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizzazioni]** > Generale > **[!UICONTROL HomeView]** nel Navigatore progetti Xcode e trovare il `.onAppear` modificatore. Aggiungi il seguente codice:
+1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizzazioni]** > **[!UICONTROL Generale]** > **[!UICONTROL HomeView]** nel Navigatore progetti Xcode e trovare il `.onAppear` modificatore. Aggiungi il seguente codice:
 
    ```swift
    // Get attributes
@@ -91,7 +88,7 @@ Dopo aver aggiornato l’attributo di un utente, questo è disponibile per altri
 
    Questo codice:
 
-   1. Chiama il `UserProfile.getUserAttributes` chiusura con il `iPaidUser` nome attributo come singolo elemento nel `attributeNames` array.
+   1. Chiama il [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API con `iPaidUser` nome attributo come singolo elemento nel `attributeNames` array.
    1. Quindi controlla il valore di `isPaidUser` attributo e quando `yes`, posiziona un badge sul <img src="assets/paiduser.png" width="20" /> nella barra degli strumenti in alto a destra.
 
 È possibile trovare ulteriore documentazione [qui](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
@@ -106,18 +103,25 @@ Dopo aver aggiornato l’attributo di un utente, questo è disponibile per altri
    1. Sposta l’icona Assurance a sinistra.
    1. Seleziona **[!UICONTROL Home]** nella barra delle schede.
    1. Per aprire il foglio di accesso, selezionare <img src="assets/login.png" width="15" /> pulsante.
+
+      <img src="./assets/mobile-app-events-1.png" width="300">
+
    1. Per inserire un’e-mail casuale e un ID cliente, seleziona la <img src="assets/insert.png" width="15" /> pulsante .
    1. Seleziona **[!UICONTROL Login]**.
+
+      <img src="./assets/mobile-app-events-2.png" width="300">
+
    1. Seleziona **[!UICONTROL Prodotti]** nella barra delle schede.
    1. Seleziona un prodotto.
    1. Seleziona <img src="assets/saveforlater.png" width="15" />.
    1. Seleziona <img src="assets/addtocart.png" width="20" />.
    1. Seleziona <img src="assets/purchase.png" width="15" />.
 
-      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200">
+      <img src="./assets/mobile-app-events-3.png" width="300">
+
    1. Torna a **[!UICONTROL Home]** schermo. Dovresti vedere un distintivo aggiunto <img src="assets/person-badge-icon.png" width="15" />.
 
-      <img src="./assets/personbadges.png" width="200">
+      <img src="./assets/personbadges.png" width="300">
 
 
 

@@ -3,10 +3,10 @@ title: Creare uno schema XDM
 description: Scopri come creare uno schema XDM per gli eventi delle app mobili.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 4%
+source-wordcount: '1416'
+ht-degree: 5%
 
 ---
 
@@ -100,7 +100,7 @@ A scopo di apprendimento, puoi utilizzare gruppi di campi predefiniti e personal
 
    ![Selezione di ExperienceEvent dal menu a discesa](assets/schema-create.png)
 
-1. Seleziona ![Più](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Aggiungi** accanto a [!UICONTROL Gruppi di campi].
+1. Seleziona ![Più](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Aggiungi** accanto a **[!UICONTROL Gruppi di campi]**.
 
    ![Aggiungere un gruppo di campi](assets/add-field-group.png)
 
@@ -116,7 +116,7 @@ A scopo di apprendimento, puoi utilizzare gruppi di campi predefiniti e personal
 
    Viene visualizzata di nuovo la schermata principale di composizione dello schema, in cui puoi visualizzare tutti i campi disponibili.
 
-1. Assegna un nome allo schema selezionando **[!UICONTROL Schema senza titolo]** dall&#39;alto a sinistra e quindi fornendo un **[!UICONTROL Nome visualizzato]** E **[!UICONTROL Descrizione]**, ad esempio `Luma Mobile App Event Schema` e `Schema for Luma mobile app experience events.`
+1. Assegna un nome allo schema selezionando **[!UICONTROL Schema senza titolo]** dal **[!UICONTROL Composizione]** riquadro (sotto **[!UICONTROL Schema]**) e fornendo un **[!UICONTROL Nome visualizzato]** E **[!UICONTROL Descrizione]**, ad esempio `Luma Mobile App Event Schema` e `Schema for Luma mobile app experience events.`
 
 1. Seleziona **[!UICONTROL Salva]**.
 
@@ -125,8 +125,8 @@ A scopo di apprendimento, puoi utilizzare gruppi di campi predefiniti e personal
 >[!NOTE]
 >
 >Non è necessario utilizzare tutti i campi di un gruppo. Se è utile, puoi considerare uno schema come un livello dati vuoto. Nell’app, puoi popolare i valori pertinenti al momento giusto.
->
->Il `Consumer Experience Event` ha un tipo di dati denominato `Web information`, che descrive eventi come la visualizzazione della pagina e i clic sui collegamenti. Al momento della stesura di questo articolo, non esiste una parità di app mobile con questa funzione, quindi intendi crearne una tua.
+
+Il [!UICONTROL Evento esperienza del consumatore] il gruppo di campi ha un tipo di dati denominato [!UICONTROL Informazioni web], che descrive eventi come la visualizzazione della pagina e i clic sui collegamenti. Al momento della stesura di questo articolo, non esiste una parità di app mobile con questa funzione, quindi intendi crearne una tua.
 
 ## Creare un tipo di dati personalizzato
 
@@ -152,9 +152,8 @@ Per iniziare, crea un tipo di dati personalizzato che descrive i due eventi:
 
 1. Per aggiungere un campo, seleziona la ![Più](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) pulsante.
 
-   Questo campo è un oggetto contenitore per l’interazione con l’app.
 
-1. Fornisci una custodia per cammelli **[!UICONTROL Nome campo]** `appInteraction`, **[!UICONTROL Nome visualizzato]** `App Interaction`, e seleziona `Object` dal **[!UICONTROL Tipo]** elenco.
+1. Questo campo è un oggetto contenitore per l’interazione dell’app. , quindi fornisci una notazione camel **[!UICONTROL Nome campo]** `appInteraction`, **[!UICONTROL Nome visualizzato]** `App Interaction`, e seleziona `Object` dal **[!UICONTROL Tipo]** elenco.
 
 1. Seleziona **[!UICONTROL Applica]**.
 
@@ -180,7 +179,7 @@ Per iniziare, crea un tipo di dati personalizzato che descrive i due eventi:
 
 1. Scorri fino alla parte inferiore della barra a destra e seleziona **[!UICONTROL Applica]**.
 
-1. Per creare un `appStateDetails` oggetto contenente un **[!UICONTROL Misura]** campo denominato `screenView` e due **[!UICONTROL Stringa]** campi denominati `screenName` e `screenType` segui gli stessi passaggi della creazione di **[!UICONTROL appInteraction]** oggetto.
+1. Per creare un `appStateDetails` oggetto contenente un **[!UICONTROL Misura]** campo denominato `screenView` e due **[!UICONTROL Stringa]** campi denominati `screenName` e `screenType`, segui gli stessi passaggi eseguiti durante la creazione del **[!UICONTROL appInteraction]** oggetto.
 
 1. Seleziona **[!UICONTROL Salva]**.
 
@@ -196,7 +195,7 @@ Ora aggiungi un gruppo di campi personalizzato utilizzando il tipo di dati perso
 
    ![Aggiunta di un nuovo gruppo di campi](assets/schema-fieldgroup-add.png)
 
-1. Creare un gruppo di campi personalizzato selezionando **[!UICONTROL Crea nuovo gruppo di campi]** pulsante di opzione vicino alla parte superiore.
+1. Seleziona **[!UICONTROL Crea nuovo gruppo di campi]**.
 
 1. Fornisci un **[!UICONTROL Nome visualizzato]** e **[!UICONTROL Descrizione]** ad esempio: `App Interactions` e `Fields for app interactions`.
 
@@ -210,7 +209,7 @@ Ora aggiungi un gruppo di campi personalizzato utilizzando il tipo di dati perso
 
 1. Nella barra a destra, specifica **[!UICONTROL Nome campo]** di `appInformation`, a **[!UICONTROL Nome visualizzato]** di `App Information`, e un **[!UICONTROL Tipo]** di `App Information`.
 
-1. Seleziona **[!UICONTROL Interazioni app]** dal **[!UICONTROL Tipo]** a discesa, ovvero il tipo di dati creato nell&#39;esercizio precedente.
+1. Seleziona **[!UICONTROL Interazioni app]** dal **[!UICONTROL Tipo]** a discesa, ovvero il tipo di dati personalizzato creato nell&#39;esercizio precedente.
 
 1. Seleziona **[!UICONTROL Applica]**.
 
@@ -220,7 +219,7 @@ Ora aggiungi un gruppo di campi personalizzato utilizzando il tipo di dati perso
 
 >[!NOTE]
 >
->I gruppi di campi personalizzati si trovano sempre sotto l’identificatore dell’organizzazione di Experience Cloud. Quindi `_techmarketingdemos` viene sostituito con il valore univoco della tua organizzazione.
+>I gruppi di campi personalizzati si trovano sempre sotto l’identificatore dell’organizzazione di Experience Cloud. Quindi `_techmarketingdemos`, utilizzato nelle schermate, viene sostituito con il valore univoco della tua organizzazione.
 
 
 >[!SUCCESS]

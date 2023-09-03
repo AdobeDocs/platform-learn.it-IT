@@ -3,10 +3,10 @@ title: Panoramica tutorial sull’implementazione di Adobe Experience Cloud nell
 description: Scopri come implementare le app mobili Adobe Experience Cloud. Questa esercitazione ti guida attraverso un’implementazione di applicazioni Experience Cloud in un’app Swift di esempio.
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 11%
+source-wordcount: '725'
+ht-degree: 10%
 
 ---
 
@@ -30,6 +30,8 @@ Dopo aver completato questa esercitazione, sarai in grado di:
 * Configura una proprietà tag mobile.
 * Imposta un set di dati di Experience Platform (facoltativo).
 * Installa e implementa le estensioni tag in un’app.
+* Trasmettere correttamente i parametri di Experience Cloud a una [webview](web-views.md).
+* Convalidare l’implementazione utilizzando [Adobe Experience Platform Assurance](assurance.md).
 * Aggiungi le seguenti applicazioni/estensioni Adobe Experience Cloud:
    * [Adobe Experience Platform Edge (XDM)](events.md)
    * [Raccolta dati del ciclo di vita](lifecycle-data.md)
@@ -37,14 +39,14 @@ Dopo aver completato questa esercitazione, sarai in grado di:
    * [Consenso](consent.md)
    * [Identità](identity.md)
    * [Profilo](profile.md)
+   * [Places](places.md)
+   * [Analytics](analytics.md)
    * [Adobe Experience Platform](platform.md)
    * [Messaggistica push con Journey Optimizer](journey-optimizer-push.md)
    * [Messaggistica Im-app con Journey Optimizer](journey-optimizer-inapp.md)
    * [Offerte con Journey Optimizer](journey-optimizer-offers.md)
    * [Test A/B con Target](target.md)
 
-* Trasmettere correttamente i parametri di Experience Cloud a una [webview](web-views.md).
-* Convalidare l’implementazione utilizzando [Adobe Experience Platform Assurance](assurance.md).
 
 >[!NOTE]
 >
@@ -72,14 +74,18 @@ In queste lezioni, si presume che tu sia in possesso di un Adobe ID e delle auto
 
 Tutti i clienti Experience Cloud devono avere accesso alle funzioni necessarie per distribuire l’SDK di Mobile.
 
-Inoltre, si presume che tu abbia familiarità con [!DNL Swift]. Non devi essere un esperto per completare le lezioni, ma puoi ottenere di più dalle lezioni se sei in grado di leggere e comprendere il codice senza difficoltà.
+>[!NOTE]
+>
+>Utilizzerai iOS come piattaforma, [!DNL Swift] come linguaggio di programmazione, [!DNL SwiftUI] come framework dell’interfaccia utente [!DNL Xcode] come ambiente di sviluppo integrato (IDE). Tuttavia, molti dei concetti di implementazione illustrati sono simili per altre piattaforme di sviluppo. Si presume che tu abbia una certa familiarità con [!DNL Swift] e [!DNL SwiftUI]. Non devi essere un esperto per completare le lezioni, ma puoi ottenere di più dalle lezioni se sei in grado di leggere e comprendere il codice senza difficoltà.
+
 
 ## Scaricare l’app Luma
 
-Sono disponibili per il download due versioni dell’app di esempio.
+Sono disponibili per il download due versioni dell’app di esempio. Entrambe le versioni possono essere scaricate/clonate da [Github](https://git.corp.adobe.com/rmaur/Luma). Sono disponibili due cartelle:
 
-1. [Vuoto](https://git.corp.adobe.com/rmaur/Luma{target="_blank"}): versione senza codice Experience Cloud per completare gli esercizi pratici in questa esercitazione
-1. [Completamente implementato](https://git.corp.adobe.com/Luma{target="_blank"}): una versione con implementazione di Experience Cloud completa come riferimento.
+
+1. [Inizio](https://git.corp.adobe.com/rmaur/Luma{target="_blank"}): progetto senza codice o con codice segnaposto per la maggior parte del codice SDK di Mobile di Experience Platform da utilizzare per completare gli esercizi pratici in questa esercitazione.
+1. [Fine](https://git.corp.adobe.com/Luma{target="_blank"}): una versione con l’implementazione completa come riferimento.
 
 Cominciamo.
 

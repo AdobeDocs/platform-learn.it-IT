@@ -3,9 +3,9 @@ title: Mappatura di Analytics
 description: Scopri come raccogliere dati per Adobe Analytics in un’app mobile.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '641'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Molti dei campi XDM standard sono mappati automaticamente alle variabili di Anal
 
 ### Esempio #1 - s.products
 
-Un buon esempio è il [variabile dei prodotti](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) che non può essere compilato utilizzando le regole di elaborazione. Con un’implementazione XDM, trasmetti tutti i dati necessari in productListItems e s.products vengono compilati automaticamente tramite la mappatura di Analytics.
+Un buon esempio è il [variabile dei prodotti](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) che non può essere compilato utilizzando le regole di elaborazione. Con un’implementazione XDM, trasmetti tutti i dati necessari in `productListItems` e `s.products` vengono compilati automaticamente tramite la mappatura di Analytics.
 
 Questo oggetto:
 
@@ -56,7 +56,7 @@ Questo oggetto:
 ]
 ```
 
-Si otterrebbe quanto segue:
+risultati in:
 
 ```
 s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
@@ -65,6 +65,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 >[!NOTE]
 >
 >Attualmente `productListItems[N].SKU` viene ignorato dalla mappatura automatica.
+
 
 ### Esempio #2 - scAdd
 
@@ -80,7 +81,7 @@ Questo oggetto:
 }
 ```
 
-Si otterrebbe quanto segue:
+risultati in:
 
 ```
 s.events = "scAdd"
@@ -97,7 +98,7 @@ Questo oggetto:
 }
 ```
 
-Si otterrebbe quanto segue:
+risultati in:
 
 ```
 s.events = "scAdd:321435"
@@ -105,7 +106,7 @@ s.events = "scAdd:321435"
 
 ## Convalida con garanzia
 
-Utilizzo di [Strumento di controllo qualità Assurance](assurance.md) puoi confermare che stai inviando un ExperienceEvent, che i dati XDM sono corretti e che la mappatura di Analytics sta avvenendo come previsto. Ad esempio:
+Utilizzo di [Assurance](assurance.md) puoi confermare che stai inviando un evento esperienza, che i dati XDM sono corretti e che la mappatura di Analytics sta avvenendo come previsto. Ad esempio:
 
 1. Invia un evento productListAdds.
 
@@ -157,10 +158,10 @@ a.x.[xdm path]
 Ad esempio:
 
 ```
-//Standard Field
+// Standard Field
 a.x.commerce.saveforlaters.value
 
-//Custom Field
+// Custom Field
 a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 ```
 
@@ -192,7 +193,7 @@ Ulteriori informazioni sulle regole di elaborazione e sui dati contestuali sono 
 
 >[!TIP]
 >
->A differenza delle precedenti implementazioni di app mobili, non esiste alcuna distinzione tra visualizzazioni pagina/schermata e altri eventi. È invece possibile incrementare **[!UICONTROL Visualizzazione pagina]** metrica impostando la **[!UICONTROL Nome pagina]** dimensione in una regola di elaborazione. Poiché stai raccogliendo il `screenName` nell’esercitazione, si consiglia vivamente di mappare il nome della schermata su **[!UICONTROL Nome pagina]** in una regola di elaborazione.
+>A differenza delle precedenti implementazioni di app mobili, non esiste alcuna distinzione tra visualizzazioni di pagina/schermo e altri eventi. È invece possibile incrementare **[!UICONTROL Visualizzazione pagina]** metrica impostando la **[!UICONTROL Nome pagina]** dimensione in una regola di elaborazione. Poiché stai raccogliendo il `screenName` nell’esercitazione, si consiglia vivamente di mappare il nome della schermata su **[!UICONTROL Nome pagina]** in una regola di elaborazione.
 
 >[!SUCCESS]
 >
