@@ -5,16 +5,16 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1569'
 ht-degree: 2%
 
 ---
 
 # Messaggistica in-app Journey Optimizer
 
-Scopri come creare messaggi in-app per le app mobili con Platform Mobile SDK e Journey Optimizer.
+Scopri come creare messaggi in-app per le app mobili con Experienci Platform Mobile SDK e Journey Optimizer.
 
 Journey Optimizer consente di creare campagne per inviare messaggi in-app a tipi di pubblico mirati. Prima di inviare messaggi in-app con Journey Optimizer, è necessario assicurarsi che siano presenti le configurazioni e le integrazioni corrette. Per informazioni sul flusso di dati dei messaggi in-app in Journey Optimizer, consulta [la documentazione](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
 
@@ -145,17 +145,8 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
    ]
    ```
 
-1. Aggiungi il `MobileCore.setPushIdentifier` al `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` funzione.
 
-   ```swift
-   // Send push token to Experience Platform
-   MobileCore.setPushIdentifier(deviceToken)
-   ```
-
-   Questa funzione recupera il token del dispositivo univoco per il dispositivo su cui è installata l’app. Quindi imposta il token per la consegna delle notifiche push utilizzando la configurazione impostata e che si basa sul servizio APN (Push Notification Service) di Apple.
-
-
-## Convalidare la garanzia di installazione
+## Convalida impostazione con Assurance
 
 1. Rivedi [istruzioni di configurazione](assurance.md) sezione.
 1. Installa l’app sul dispositivo fisico o sul simulatore.
@@ -166,8 +157,8 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
 1. Seleziona **[!UICONTROL Salva]**.
    ![salva](assets/assurance-in-app-config.png)
 1. Seleziona **[!UICONTROL Messaggistica in-app]** dal menu di navigazione a sinistra.
-1. Seleziona la **[!UICONTROL Convalida]** scheda.
-1. Verifica che non siano presenti errori.
+1. Seleziona la **[!UICONTROL Convalida]** scheda. Verifica che non siano presenti errori.
+
    ![Convalida in-app](assets/assurance-in-app-validate.png)
 
 
@@ -216,21 +207,22 @@ In questo tutorial, utilizzerai le API generiche core per dispositivi mobili e i
    ![Elenco delle campagne](assets/ajo-campaign-list.png)
 
 
-## Attivazione del messaggio in-app
+## Attivare il messaggio in-app
 
 Disponi di tutti gli ingredienti necessari per inviare un messaggio in-app. Ciò che rimane è come attivare questo messaggio in-app nella tua app.
 
-1. Vai a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utilità]** > **[!UICONTROL MobileSDK]** nel Navigatore progetti Xcode. Trova il `func sendTrackAction(action: String, data: [String: Any]?)` e aggiungi il seguente codice, che chiama il `MobileCore.track` funzione, in base ai parametri `action` e `data`.
+1. Vai a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utilità]** > **[!UICONTROL MobileSDK]** nel Navigatore progetti Xcode. Trova il `func sendTrackAction(action: String, data: [String: Any]?)` e aggiungi il seguente codice, che chiama il [`MobileCore.track`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) funzione, in base ai parametri `action` e `data`.
 
 
    ```swift
-   // send trackAction event
+   // Send trackAction event
    MobileCore.track(action: action, data: data)
    ```
 
 1. Vai a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizzazioni]** > **[!UICONTROL Generale]** > **[!UICONTROL ConfigView]** nel Navigatore progetti Xcode. Trova il codice per il pulsante Messaggio in-app e aggiungi il seguente codice:
 
    ```swift
+   // Setting parameters and calling function to send in-app message
    Task {
        AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
    }
