@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1433'
 ht-degree: 2%
 
 ---
@@ -218,7 +218,7 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
    * recupera le proposte per il profilo corrente in base all’ambito della decisione (che è la posizione definita nel test A/B) e
    * consente di annullare il wrapping del risultato in un contenuto che può essere visualizzato correttamente nell’app.
 
-1. Ancora in **[!UICONTROL TargetOffersView]**, trova la f`unc updatePropositions(location: String) async` e aggiungi il seguente codice:
+1. Ancora in **[!UICONTROL TargetOffersView]**, trovare il `func updatePropositions(location: String) async` e aggiungi il seguente codice:
 
    ```swift
        Task {

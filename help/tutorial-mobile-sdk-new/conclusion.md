@@ -3,7 +3,7 @@ title: Conclusione e prossime tappe
 description: Cosa fare dopo aver completato l’esercitazione
 recommendations: display,noCatalog
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 8%
@@ -49,4 +49,4 @@ E c&#39;è sempre di più da imparare! Di seguito sono riportati alcuni suggerim
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).

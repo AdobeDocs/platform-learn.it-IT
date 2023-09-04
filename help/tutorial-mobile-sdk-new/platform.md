@@ -4,10 +4,10 @@ description: Scopri come inviare dati a Adobe Experience Platform.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 3%
+source-wordcount: '965'
+ht-degree: 4%
 
 ---
 
@@ -133,6 +133,9 @@ Dalla schermata dei dettagli del profilo:
    Questa visualizzazione mostra tutte le identità collegate tra loro in un profilo e la loro origine. Di seguito è riportato un esempio di grafico delle identità costituito dai dati raccolti dal completamento di questa esercitazione dell’SDK per dispositivi mobili (Origine dati 2) e della [Tutorial su Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it) (Origine dati 1):
 
    ![acquisire un valore di identità](assets/platform-profile-identitygraph.png)
+
+
+## Passaggi successivi
 
 Gli esperti di marketing e analisi possono fare molto di più con i dati acquisiti in Experienci Platform, compresa l’analisi di Customer Journey Analytics e la creazione di segmenti in Real-time Customer Data Platform. Stai partendo bene!
 
