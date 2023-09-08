@@ -3,9 +3,9 @@ title: Creare uno schema XDM per i dati web
 description: Scopri come creare uno schema XDM per i dati web nell’interfaccia di Data Collection. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 3b57d20410dda5dc44dfbb806f6637b0fd4f4f04
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1122'
 ht-degree: 6%
 
 ---
@@ -16,7 +16,7 @@ Scopri come creare uno schema XDM per i dati web nell’interfaccia di Data Coll
 
 Gli schemi Experience Data Model (XDM) sono gli elementi costitutivi, i principi e le best practice per la composizione di schemi in Adobe Experience Platform.
 
-Platform Web SDK utilizza lo schema per standardizzare i dati dell’evento web, inviarli alla rete Edge di Platform e infine inoltrarli a qualsiasi applicazione Experience Cloud configurata nello stream di dati. Questo passaggio è fondamentale in quanto definisce un modello dati standard necessario per acquisire i dati sulla customer experience in Experience Platform e abilita servizi e applicazioni a valle basati su questi standard.
+Platform Web SDK utilizza lo schema per standardizzare i dati dell’evento web, inviarli alla rete Edge di Platform e infine inoltrarli a qualsiasi applicazione Experience Cloud configurata nello stream di dati. Questo passaggio è fondamentale in quanto definisce un modello dati standard necessario per acquisire i dati sulla customer experience in Experienci Platform e abilita servizi e applicazioni a valle basati su questi standard.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Tutte le autorizzazioni utente e di provisioning necessarie per Data Collection 
 
 ## Creare uno schema XDM
 
-Gli schemi XDM sono il modo standard per descrivere i dati in Experience Platform, consentendo a tutti i dati conformi agli schemi di essere riutilizzati in un’organizzazione senza conflitti, o anche condivisi tra più organizzazioni. Per ulteriori informazioni, consulta [Nozioni di base sulla composizione dello schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=it).
+Gli schemi XDM sono il modo standard per descrivere i dati in Experienci Platform, consentendo a tutti i dati conformi agli schemi di essere riutilizzati in un’organizzazione senza conflitti, o anche condivisi tra più organizzazioni. Per ulteriori informazioni, consulta [Nozioni di base sulla composizione dello schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=it).
 
 In questo esercizio creerai uno schema XDM utilizzando i gruppi di campi della linea di base consigliati per l’acquisizione dei dati dell’evento web sulla [Sito dimostrativo Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
 
@@ -106,7 +106,7 @@ Si tratta di un oggetto obbligatorio per qualsiasi raccolta di dati relativi al 
 >Questa impostazione viene discussa ulteriormente durante il [Experience Platform di configurazione](setup-experience-platform.md) lezione.
 >![Schema profilo](assets/schema-profile.png)
 
-Ora puoi fare riferimento a questo schema quando aggiungi l’estensione Web SDK alla tua proprietà tag.
+Ora puoi fare riferimento a questo schema quando aggiungi l’estensione Web SDK alla proprietà tag.
 
 
 [Successivo: ](configure-identities.md)
