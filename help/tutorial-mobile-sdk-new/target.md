@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
+source-git-commit: 2e70022313faac2b6d965a838c03fc6f55806506
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1519'
 ht-degree: 2%
 
 ---
@@ -140,7 +140,7 @@ Per convalidare la configurazione in Assurance:
 
       ![Esperienza B](assets/target-create-activity-experienceB.png)
 
-1. In **[!UICONTROL Targeting]** fase, controlla la configurazione del test A/B. Per impostazione predefinita, entrambe le offerte vengono allocate in modo uniforme a tutti i visitatori. Seleziona **[!UICONTROL Next]** (Avanti) per continuare.
+1. In **[!UICONTROL Targeting]** fase, controlla la configurazione del test A/B. Per impostazione predefinita, entrambe le offerte vengono allocate in modo uniforme a tutti i visitatori. Seleziona **[!UICONTROL Avanti]** per continuare.
 
    ![Targeting](assets/taget-targeting.png)
 
@@ -214,29 +214,27 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
 
    Quindi la funzione chiama due API: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  e [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Queste funzioni cancellano tutte le proposte memorizzate nella cache e aggiornano le proposte per questo profilo.
 
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizzazioni]** > **[!UICONTROL Personalizzazione]** > **[!UICONTROL TargetOffersView]** nel Navigatore progetti Xcode. Trova il `func getPropositionAT(location: String) async` e controllare il codice di questa funzione. La parte più importante di questa funzione è la  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) Chiamata API, che
-   * recupera le proposte per il profilo corrente in base all’ambito della decisione (che è la posizione definita nel test A/B) e
-   * consente di annullare il wrapping del risultato in un contenuto che può essere visualizzato correttamente nell’app.
+1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizzazioni]** > **[!UICONTROL Personalizzazione]** > **[!UICONTROL TargetOffersView]** nel Navigatore progetti Xcode. Trova il `func onPropositionsUpdateAT(location: String) async {` e controllare il codice di questa funzione. La parte più importante di questa funzione è la  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) Chiamata API, che
+   * recupera le proposte per il profilo corrente in base all’ambito della decisione (che è la posizione definita nel test A/B),
+   * recupera l’offerta dalla proposta,
+   * decomprime il contenuto dell’offerta in modo che possa essere visualizzato correttamente nell’app; e
+   * attiva il `displayed()` azione sull’offerta che invierà un evento alla rete Edge informando che l’offerta è visualizzata.
 
-1. Ancora in **[!UICONTROL TargetOffersView]**, trovare il `func updatePropositions(location: String) async` e aggiungi il seguente codice:
+1. Ancora in **[!UICONTROL TargetOffersView]**, aggiungi il seguente codice al `.onFirstAppear` modificatore. Questo codice assicurerà che il callback per l’aggiornamento delle offerte sia registrato una sola volta.
 
    ```swift
-       Task {
-           await self.updatePropositionAT(
-               ecid: currentEcid,
-               location: location
-           )
-       }
-       try? await Task.sleep(seconds: 2.0)
-       Task {
-           await self.getPropositionAT(
-               location: location
-           )
-       }
+   // Invoke callback for offer updates
+   Task {
+       await self.onPropositionsUpdateAT(location: location)
+   }
    ```
 
-   Questo codice ti assicura di aggiornare le proposte e quindi recuperare i risultati utilizzando le funzioni descritte nei passaggi 5 e 6.
+1. Ancora in **[!UICONTROL TargetOffersView]**, aggiungi il seguente codice al `.task` modificatore. Questo codice aggiorna le offerte quando la vista viene aggiornata.
 
+   ```swift
+   // Clear and update offers
+   await self.updatePropositionsAT(ecid: currentEcid, location: location)
+   ```
 
 ## Convalida tramite l’app
 
@@ -262,11 +260,11 @@ Per convalidare il test A/B in Assurance:
 1. Seleziona **[!UICONTROL Richieste]** nella barra superiore. Vedi il tuo **[!UICONTROL Target]** richieste.
    ![Convalida delle decisioni AJO](assets/assurance-decisioning-requests.png)
 
-1. Puoi esplorare le schede Simula ed Elenco eventi per ulteriori funzionalità, verificando la configurazione per le offerte Target.
+1. Puoi esplorare **[!UICONTROL Simula]** e **[!UICONTROL Elenco eventi]** schede per ulteriori funzionalità, verificando la configurazione delle offerte Target.
 
 ## Passaggi successivi
 
-Ora dovresti disporre di tutti gli strumenti necessari per iniziare ad aggiungere all’app Luma più test A/B o altre attività di Target (come Targeting esperienza, Test multivariato), laddove pertinente e applicabile.
+Ora dovresti disporre di tutti gli strumenti necessari per iniziare ad aggiungere all’app Luma più test A/B o altre attività di Target (come Targeting esperienza, Test multivariato), laddove pertinente e applicabile. Ulteriori informazioni sono disponibili nella sezione [Archivio Github per l’estensione Optimize](https://github.com/adobe/aepsdk-optimize-ios) dove puoi anche trovare un collegamento a un [esercitazione](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) su come tenere traccia delle offerte di Adobe Target.
 
 >[!SUCCESS]
 >
