@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 2e70022313faac2b6d965a838c03fc6f55806506
+source-git-commit: a49311ffc7791621b360ea7fe4f945669d0d0990
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2412'
 ht-degree: 2%
 
 ---
@@ -326,6 +326,23 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
    * recupera l’offerta dalla proposta,
    * decomprime il contenuto dell’offerta in modo che possa essere visualizzato correttamente nell’app; e
    * attiva il `displayed()` azione sull’offerta che invierà un evento alla rete Edge informando che l’offerta è visualizzata.
+
+1. Ancora in **[!UICONTROL EdgeOffersView]**, aggiungi il seguente codice al `.onFirstAppear` modificatore. Questo codice assicurerà che il callback per l’aggiornamento delle offerte sia registrato una sola volta.
+
+   ```swift
+   // Invoke callback for offer updates
+   Task {
+       await self.onPropositionsUpdateOD(activityId: decision.activityId, placementId: decision.placementId, itemCount: decision.itemCount)
+   }
+   ```
+
+1. Ancora in **[!UICONTROL EdgeOffersView]**, aggiungi il seguente codice al `.task` modificatore. Questo codice aggiorna le offerte quando la vista viene aggiornata.
+
+   ```swift
+   // Clear and update offers
+   await self.updatePropositionsOD(ecid: currentEcid, activityId: decision.activityId, placementId: decision.placementId, itemCount: decision.itemCount)
+   ```
+
 
 
 ## Convalida tramite l’app
