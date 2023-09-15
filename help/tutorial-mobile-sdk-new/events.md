@@ -2,10 +2,10 @@
 title: Eventi
 description: Scopri come raccogliere i dati di un evento in un’app mobile.
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1310'
-ht-degree: 1%
+source-wordcount: '1321'
+ht-degree: 0%
 
 ---
 
@@ -78,7 +78,7 @@ Per i gruppi di campi standard, il processo è simile al seguente:
    * `commerce.productViews.id`: valore stringa che rappresenta lo SKU del prodotto
    * `commerce.productViews.value`: valore numerico o booleano dell’evento. Se è un valore booleano (o &quot;Contatore&quot; in Adobe Analytics), il valore è sempre impostato su 1. Se è un evento numerico o di valuta, il valore può essere > 1.
 
-* Nello schema, identifica eventuali dati aggiuntivi associati all’evento di visualizzazione del prodotto Commerce. In questo esempio, includi **[!UICONTROL productListItem]** che è un set standard di campi utilizzati con qualsiasi evento correlato a commerce:
+* Nello schema, identifica eventuali dati aggiuntivi associati all’evento di visualizzazione del prodotto Commerce. In questo esempio, includi **[!UICONTROL productListItems]** che è un set standard di campi utilizzati con qualsiasi evento correlato a commerce:
 
   ![schema elementi elenco prodotti](assets/datacollection-prodListItems-schema.png)
    * Tieni presente che **[!UICONTROL productListItems]** è un array che consente di fornire più prodotti.
@@ -123,7 +123,7 @@ Nell’app sono presenti diverse azioni relative al prodotto commerce e desideri
 * view: si verifica quando un utente visualizza un prodotto specifico,
 * aggiungi al carrello: quando un utente tocca <img src="assets/addtocart.png" width="20" /> in una schermata di dettaglio del prodotto,
 * salva per dopo: quando un utente tocca <img src="assets/saveforlater.png" width="15" /> in una schermata di dettaglio del prodotto,
-* buyer: quando un utente tocca <img src="assets/purchase.png" width="20" /> in una schermata di dettaglio del prodotto.
+* acquisto: quando un utente tocca <img src="assets/purchase.png" width="20" /> in una schermata di dettaglio del prodotto.
 
 Per implementare l’invio di eventi di esperienza relativi al commercio in modo riutilizzabile, utilizza una funzione dedicata:
 
@@ -189,6 +189,11 @@ Per implementare l’invio di eventi di esperienza relativi al commercio in modo
          // Send purchases commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
          ```
+
+>[!TIP]
+>
+>Se stai sviluppando per Android, utilizza Map (`java.util.Map`) come interfaccia fondamentale per creare il payload XDM.
+
 
 ### Gruppi di campi personalizzati
 
@@ -339,15 +344,7 @@ Di nuovo, possiamo implementare questo codice nel progetto Xcode.
 1. Esegui l’app, accedi e interagisci con un prodotto.
 
    1. Sposta l’icona Assurance a sinistra.
-   1. Seleziona **[!UICONTROL Home]** nella barra delle schede.
-   1. Seleziona <img src="assets/login.png" width="15" /> per aprire il foglio di accesso.
-
-      <img src="./assets/mobile-app-events-1.png" width="300">
-
-   1. Seleziona <img src="assets/insert.png" width="15" /> per inserire un’e-mail casuale e un id cliente.
-   1. Seleziona **[!UICONTROL Login]**.
-
-      <img src="./assets/mobile-app-events-2.png" width="300">
+   1. Seleziona **[!UICONTROL Home]** nella barra delle schede e verificare di aver visualizzato **[!UICONTROL ECID]**, **[!UICONTROL E-mail]** e **[!UICONTROL ID CRM]** nella schermata iniziale.
    1. Seleziona **[!UICONTROL Prodotti]** nella barra delle schede.
    1. Seleziona un prodotto.
    1. Seleziona <img src="assets/saveforlater.png" width="15" />.

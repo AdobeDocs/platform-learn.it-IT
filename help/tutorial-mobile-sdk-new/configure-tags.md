@@ -3,9 +3,9 @@ title: Configurare una proprietà tag
 description: Scopri come configurare una proprietà tag in [!UICONTROL Raccolta dati] di rete.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1095'
 ht-degree: 5%
 
 ---
@@ -45,7 +45,7 @@ In questa lezione verranno fornite le seguenti informazioni:
 
       >[!NOTE]
       >
-      > Le impostazioni di consenso predefinite per le implementazioni di Mobile Sdk basate su Edge, come quella che esegui in questa esercitazione, provengono da [!UICONTROL Estensione del consenso] e non il [!UICONTROL Privacy] nella configurazione della proprietà tag. Puoi aggiungere e configurare l’estensione Consent più avanti in questa lezione. Per ulteriori informazioni, consulta [la documentazione](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+      > Le impostazioni di consenso predefinite per le implementazioni dell’SDK per dispositivi mobili basate su Edge, come quella che stai eseguendo in questa lezione, provengono da [!UICONTROL Estensione del consenso] e non il [!UICONTROL Privacy] nella configurazione della proprietà tag. Puoi aggiungere e configurare l’estensione Consent più avanti in questa lezione. Per ulteriori informazioni, consulta [la documentazione](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
 
 
 1. Apri la nuova proprietà.
@@ -112,7 +112,7 @@ In questa lezione verranno fornite le seguenti informazioni:
 
    1. In entrata **[!UICONTROL Flussi di dati]** seleziona la **[!UICONTROL Datastream]** che hai creato in [passaggio precedente](create-datastream.md) per ciascuno degli ambienti, ad esempio **[!UICONTROL App mobile Luma]**.
 
-   1. Specifica la **[!UICONTROL Dominio rete Edge]** entro **[!UICONTROL Configurazione del dominio]**. Il dominio della rete Edge è il nome della sandbox, seguito da `data.adobedc.net`, ad esempio `techmarketingdemos.data.adobedc.net`.
+   1. Specifica la **[!UICONTROL Dominio rete Edge]** entro **[!UICONTROL Configurazione del dominio]**. Il dominio della rete Edge è il nome dell’organizzazione, seguito da `data.adobedc.net`, ad esempio `techmarketingdemos.data.adobedc.net`.
 
    1. Dalla sezione **[!UICONTROL Salva nella libreria]** menu, seleziona **[!UICONTROL Salva nella libreria e genera]**.
 
@@ -131,7 +131,7 @@ La libreria viene creata per le nuove estensioni e configurazioni. Una build cor
 
 1. In **[!UICONTROL Istruzioni di installazione per dispositivi mobili]** , seleziona la **[!UICONTROL iOS]** scheda.
 
-1. Puoi copiare ![Copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) le istruzioni per configurare il progetto con CocoaPods. I CocoaPod vengono utilizzati per gestire le versioni e i download dell’SDK. Per ulteriori informazioni, consulta [documentazione](https://cocoapods.org/).
+1. Puoi copiare ![Copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) le istruzioni per configurare il progetto con CocoaPods. I CocoaPod vengono utilizzati per gestire le versioni e i download dell’SDK. Per ulteriori informazioni, consulta [Documentazione di Cocoapods](https://cocoapods.org/). Se utilizzi Android come piattaforma di sviluppo, Gradle è lo strumento per gestire la versione SDK, i download e le dipendenze. Per ulteriori informazioni, consulta [Documentazione di Gradle](https://gradle.org/)
 
    Le istruzioni di installazione forniscono un buon punto di partenza per l’implementazione. Puoi trovare ulteriori informazioni [qui](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
@@ -156,7 +156,7 @@ Se conosci la versione web di Tag, precedentemente Launch, è importante compren
 
 * Sul web, viene eseguito il rendering di una proprietà tag in JavaScript che è poi (in genere) ospitato nel cloud. Viene fatto riferimento direttamente a tale file JavaScript nel sito web.
 
-* In una proprietà di tag mobile, le regole e le configurazioni vengono sottoposte a rendering in file JSON ospitati nel cloud. I file JSON vengono scaricati e letti dall’estensione core per dispositivi mobili nell’app mobile. Le estensioni sono SDK separati che funzionano insieme. Se aggiungi un’estensione alla proprietà tag, devi aggiornare anche l’app. Se modifichi l’impostazione di un’estensione o crei una regola, tali modifiche vengono applicate nell’app dopo che la libreria di tag aggiornata è stata pubblicata.
+* In una proprietà di tag mobile, le regole e le configurazioni vengono sottoposte a rendering in file JSON ospitati nel cloud. I file JSON vengono scaricati e letti dall’estensione core per dispositivi mobili nell’app mobile. Le estensioni sono SDK separati che funzionano insieme. Se aggiungi un’estensione alla proprietà tag, devi aggiornare anche l’app. Se modifichi l’impostazione di un’estensione o crei una regola, tali modifiche vengono applicate nell’app dopo che la libreria di tag aggiornata è stata pubblicata. Questa flessibilità ti consente di modificare le impostazioni (come ad Adobe l’ID suite di rapporti di Analytics) o anche cambiare il comportamento dell’app (utilizzando elementi dati e regole, come vedrai nelle lezioni successive) senza dover modificare il codice nell’app e inviare nuovamente l’app all’app store.
 
 >[!SUCCESS]
 >

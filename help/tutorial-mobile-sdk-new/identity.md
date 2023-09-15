@@ -3,9 +3,9 @@ title: Identità
 description: Scopri come raccogliere i dati di identità in un’app mobile.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '681'
 ht-degree: 6%
 
 ---
@@ -108,7 +108,7 @@ Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzat
 
 ## Rimuovere un’identità
 
-È possibile utilizzare [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API per rimuovere l&#39;identità dalla mappa di identità lato client memorizzata. L’estensione Identity interrompe l’invio dell’identificatore alla rete Edge. L’utilizzo di questa API non rimuove l’identificatore dal grafico dei profili utente o dal grafico delle identità lato server.
+È possibile utilizzare [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API per rimuovere l&#39;identità dalla mappa di identità lato client memorizzata. L’estensione Identity interrompe l’invio dell’identificatore alla rete Edge. L’utilizzo di questa API non rimuove l’identificatore dal grafico delle identità lato server. Consulta [Visualizzare i grafici delle identità](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) per ulteriori informazioni sui grafici delle identità.
 
 1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Generale]** > **[!UICONTROL MobileSDK]** nel Navigator del progetto Xcode e aggiungi il seguente codice al `func removeIdentities(emailAddress: String, crmId: String)` funzione:
 
@@ -144,13 +144,13 @@ Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzat
       <img src="./assets/identity2.png" width="300">
 
 
-1. Cerca nell’interfaccia web di Assurance per **[!UICONTROL Identità aggiornamento identità Edge]** evento da **[!UICONTROL com.adobe.griffon.mobile]** fornitore.
+1. Cerca nell’interfaccia web Assurance per **[!UICONTROL Identità aggiornamento identità Edge]** evento da **[!UICONTROL com.adobe.griffon.mobile]** fornitore.
 1. Seleziona l’evento e rivedi i dati in **[!UICONTROL ACPExtensionEventData]** oggetto. Dovresti visualizzare le identità aggiornate.
    ![convalida aggiornamento identità](assets/identity-validate-assurance.png)
 
 ## Convalida con grafico delle identità
 
-Una volta completati i passaggi in [lezione di Experience Platform](platform.md), puoi confermare l’acquisizione dell’identità nel visualizzatore del grafico dell’identità di Platform:
+Una volta completati i passaggi in [lezione di Experience Platform](platform.md), puoi confermare l’acquisizione delle identità nel visualizzatore del grafico delle identità di Platform:
 
 1. Seleziona **[!UICONTROL Identità]** nell’interfaccia utente di Data Collection.
 1. Seleziona **[!UICONTROL Grafico delle identità]** dalla barra superiore.

@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2241'
 ht-degree: 2%
 
 ---
@@ -18,6 +18,8 @@ Scopri come creare messaggi push per le app mobili con Experienci Platform Mobil
 
 Journey Optimizer consente di creare percorsi e inviare messaggi a tipi di pubblico mirati. Prima di inviare le notifiche push con Journey Optimizer, devi verificare che siano presenti le configurazioni e le integrazioni corrette. Per informazioni sul flusso di dati delle notifiche push in Journey Optimizer, consulta [documentazione](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
 
+![Architettura](assets/architecture-ajo.png)
+
 >[!NOTE]
 >
 >Questa lezione è facoltativa e si applica solo agli utenti di Journey Optimizer che desiderano inviare messaggi push.
@@ -26,6 +28,7 @@ Journey Optimizer consente di creare percorsi e inviare messaggi a tipi di pubbl
 ## Prerequisiti
 
 * L&#39;app con gli SDK installati e configurati è stata creata ed eseguita correttamente.
+* Configura l’app per Adobe Experience Platform.
 * Accesso a Journey Optimizer e autorizzazioni sufficienti come descritto [qui](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). È inoltre necessaria un&#39;autorizzazione sufficiente per le seguenti funzioni di Journey Optimizer.
    * Crea una superficie app.
    * Creare un percorso.
@@ -42,7 +45,7 @@ In questa lezione, potrai
 * Crea una superficie app in Journey Optimizer.
 * Aggiorna lo schema per includere i campi di messaggistica push.
 * Installa e configura l’estensione tag Journey Optimizer.
-* Aggiorna l’app per includere l’estensione tag Journey Optimizer.
+* Aggiorna l’app per registrare l’estensione tag Journey Optimizer.
 * Convalidare l&#39;impostazione in Assurance.
 * Invia un messaggio di prova da Assurance
 * Definisci in Journey Optimizer l’evento, il percorso e l’esperienza della notifica push.
@@ -55,9 +58,9 @@ In questa lezione, potrai
 >
 >Se hai già configurato l’ambiente come parte del [Messaggistica in-app Journey Optimizer](journey-optimizer-inapp.md) esercitazione, puoi saltare questa sezione.
 
-### Registra ID app con APNS
+### Registra ID app con APN
 
-I passaggi seguenti non sono specifici per Adobe Experience Cloud e sono progettati per guidarti nella configurazione di APNS.
+I passaggi seguenti non sono specifici per Adobe Experience Cloud e sono progettati per guidarti nella configurazione di APN.
 
 ### Creare una chiave privata
 
@@ -70,7 +73,7 @@ I passaggi seguenti non sono specifici per Adobe Experience Cloud e sono progett
 1. Seleziona **[!UICONTROL Continua]**.
    ![configura nuova chiave](assets/mobile-push-apple-dev-config-key.png)
 1. Rivedi la configurazione e seleziona **[!UICONTROL Registrati]**.
-1. Scarica il file `.p8` chiave privata. Viene utilizzato nella configurazione della superficie dell’app.
+1. Scarica il file `.p8` chiave privata. Viene utilizzato nella configurazione della superficie dell’app più avanti in questa lezione.
 1. Prendi nota di **[!UICONTROL ID chiave]**. Viene utilizzato nella configurazione della superficie dell’app.
 1. Prendi nota di **[!UICONTROL ID team]**. Viene utilizzato nella configurazione della superficie dell’app.
    ![Dettagli chiave](assets/push-apple-dev-key-details.png)
@@ -194,7 +197,7 @@ Stai per definire un nuovo tipo di evento, non ancora disponibile, come parte de
 1. Seleziona lo schema, ad esempio **[!UICONTROL Schema evento app mobile Luma]** per aprirlo.
 1. Nell’editor schema:
    1. Seleziona la **[!UICONTROL eventType]** campo.
-   1. In **[!UICONTROL Proprietà campo]** , scorri verso il basso per visualizzare l’elenco dei valori possibili per il tipo di evento. Seleziona **[!UICONTROL Aggiungi riga]**, e aggiungi `application.test` come **[!UICONTROL VALORE]** e **[!UICONTROL Evento di test per notifica push]** come `DISPLAY NAME`.
+   1. In **[!UICONTROL Proprietà campo]** , scorri verso il basso per visualizzare l’elenco dei valori possibili per il tipo di evento. Seleziona **[!UICONTROL Aggiungi riga]**, e aggiungi `application.test` come **[!UICONTROL VALORE]** e `[!UICONTROL Test event for push notification]` come `DISPLAY NAME`.
    1. Seleziona **[!UICONTROL Applica]**.
    1. Seleziona **[!UICONTROL Salva]**.
       ![Aggiungi valore ai tipi di evento](assets/ajo-update-schema-eventtype-enum.png)
@@ -357,7 +360,7 @@ Questa volta l’evento esperienza che stai per inviare non è costruito per cre
 
 ## Passaggi successivi
 
-Ora dovresti disporre di tutti gli strumenti necessari per iniziare a creare percorsi che inviano notifiche push e per gestire le notifiche push in app da Journey Optimizer. Ad esempio, dare il benvenuto all’utente quando effettua l’accesso all’app.
+Ora dovresti disporre di tutti gli strumenti per gestire le notifiche push nell’app. Ad esempio, puoi creare un percorso in Journey Optimizer che invia una notifica push di benvenuto quando un utente dell’app accede. Oppure un messaggio push di conferma quando un utente acquista un prodotto nell’app. Oppure entra nel recinto geografico di una posizione (come vedrai nella [Places](places.md) lezione).
 
 >[!SUCCESS]
 >

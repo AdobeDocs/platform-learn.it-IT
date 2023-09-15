@@ -3,10 +3,10 @@ title: Configurare uno stream di dati
 description: Scopri come creare uno stream di dati in Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 6%
+source-wordcount: '598'
+ht-degree: 8%
 
 ---
 
@@ -16,6 +16,8 @@ ht-degree: 6%
 Scopri come creare uno stream di dati in Experience Platform.
 
 Un flusso di dati è una configurazione lato server in Platform Edge Network. Lo stream di dati garantisce che i dati in arrivo nella rete Edge di Platform vengano instradati in modo appropriato alle applicazioni e ai servizi Adobe Experience Cloud. Per ulteriori informazioni, vedere [documentazione](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it) o questo [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=it).
+
+![Architettura](assets/architecture.png)
 
 ## Prerequisiti
 
@@ -27,7 +29,7 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 * Sapere quando utilizzare un flusso di dati.
 * Creare un flusso di dati.
-* Configurare un flusso di dati.
+* Configurare uno stream di dati.
 
 ## Creare un flusso di dati
 
@@ -40,6 +42,11 @@ Gli stream di dati possono essere creati in [!UICONTROL Raccolta dati] tramite l
    ![home stream di dati](assets/datastream-new.png)
 
 1. Fornisci un **[!UICONTROL Nome]**, ad esempio `Luma Mobile App` e un **[!UICONTROL Descrizione]**, ad esempio `Datastream for Luma Mobile App`.
+
+   >[!NOTE]
+   >
+   >Promemoria finale: se segui questa esercitazione con più persone su una singola sandbox o se utilizzi un account condiviso, puoi aggiungere o anteporre un’identificazione come parte delle convenzioni di denominazione. Ad esempio, usa `Luma Mobile App Event Dataset - Joe Smith` invece di `Luma Mobile App Event Dataset`. Vedi anche la nota in [Panoramica](overview.md).
+
 1. Seleziona lo schema creato nella lezione precedente da **Schema Evento** un elenco.
 1. Seleziona **[!UICONTROL Salva]**.
 
@@ -62,7 +69,7 @@ Quindi, connetti i servizi Experience Cloud allo stream di dati. Quando Platform
 
 1. Seleziona **[!UICONTROL Salva]**.
 
-   ![Aggiungere Adobe Analytics come servizio Datastream](assets/datastream-service-aa.png)
+   ![Aggiungere Adobe Analytics come servizio di flusso di dati](assets/datastream-service-aa.png)
 
 
 ### Adobe Experience Platform
@@ -83,7 +90,7 @@ Quindi, connetti i servizi Experience Cloud allo stream di dati. Quando Platform
 
 1. Seleziona **[!UICONTROL Salva]**.
 
-   ![Aggiungere Adobe Experience Platform come servizio Datastream](assets/datastream-service-aep.png)
+   ![Aggiungere Adobe Experience Platform come servizio per lo stream di dati](assets/datastream-service-aep.png)
 1. La configurazione finale sarà simile alla seguente.
 
    ![impostazioni dello stream di dati](assets/datastream-settings.png)

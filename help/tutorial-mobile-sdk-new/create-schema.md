@@ -3,9 +3,9 @@ title: Creare uno schema XDM
 description: Scopri come creare uno schema XDM per gli eventi delle app mobili.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1473'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ La standardizzazione e l&#39;interoperabilità sono concetti chiave alla base di
 
 ## Cosa sono gli schemi XDM?
 
-XDM è una specifica documentata pubblicamente progettata per migliorare la potenza delle esperienze digitali. Fornisce strutture e definizioni comuni che consentono a qualsiasi applicazione di comunicare con i servizi di Platform. Aderendo agli standard XDM, tutti i dati sulla customer experience possono essere incorporati in una rappresentazione comune che può fornire informazioni in modo più veloce e integrato. Puoi ottenere informazioni preziose dalle azioni dei clienti, definire i tipi di pubblico dei clienti attraverso i segmenti ed esprimere gli attributi dei clienti a scopo di personalizzazione.
+XDM è una specifica documentata pubblicamente progettata per migliorare la potenza delle esperienze digitali. Fornisce strutture e definizioni comuni che consentono a qualsiasi applicazione di comunicare con i servizi di Platform. Aderendo agli standard XDM, tutti i dati sulla customer experience possono essere incorporati in una rappresentazione comune che può fornire informazioni in modo più veloce e integrato. Ottieni informazioni preziose dalle azioni dei clienti, definisci i tipi di pubblico dei clienti attraverso i segmenti e utilizzi gli attributi del cliente a scopo di personalizzazione.
 
 Experience Platform utilizza gli schemi per descrivere la struttura dei dati in modo coerente e riutilizzabile. Definendo i dati in modo coerente tra i sistemi, diventa più semplice mantenere un significato e quindi ottenere valore dai dati.
 
@@ -92,7 +92,7 @@ A scopo di apprendimento, puoi utilizzare gruppi di campi predefiniti e personal
 
 <!--Later in the tutorial, you can [update the schema](lifecycle-data.md) to include the **[!UICONTROL AEP Mobile Lifecycle Details]** field group.-->
 
-## Creare uno schema
+## Crea uno schema
 
 1. Seleziona **[!UICONTROL Crea schema]**.
 
@@ -118,13 +118,18 @@ A scopo di apprendimento, puoi utilizzare gruppi di campi predefiniti e personal
 
 1. Assegna un nome allo schema selezionando **[!UICONTROL Schema senza titolo]** dal **[!UICONTROL Composizione]** riquadro (sotto **[!UICONTROL Schema]**) e fornendo un **[!UICONTROL Nome visualizzato]** E **[!UICONTROL Descrizione]**, ad esempio `Luma Mobile App Event Schema` e `Schema for Luma mobile app experience events.`
 
+   >[!NOTE]
+   >
+   >Se segui questa esercitazione con più persone su una singola sandbox o se utilizzi un account condiviso, puoi aggiungere o anteporre un’identificazione come parte delle convenzioni di denominazione. Ad esempio, usa `Luma Mobile App Event Schema - Joe Smith` invece di `Luma Mobile App Event Schema`. Vedi anche la nota in [Panoramica](overview.md).
+
+
 1. Seleziona **[!UICONTROL Salva]**.
 
    ![Selezione dell&#39;opzione Applica](assets/schema-name-save.png)
 
 >[!NOTE]
 >
->Non è necessario utilizzare tutti i campi di un gruppo. Se è utile, puoi considerare uno schema come un livello dati vuoto. Nell’app, puoi popolare i valori pertinenti al momento giusto.
+>Non è necessario utilizzare tutti i campi di un gruppo. Puoi anche rimuovere i campi se questo consente di mantenere lo schema conciso e comprensibile. Se è utile, puoi considerare uno schema come un livello dati vuoto. Nell’app, puoi popolare i valori pertinenti al momento giusto.
 
 Il [!UICONTROL Evento esperienza del consumatore] il gruppo di campi ha un tipo di dati denominato [!UICONTROL Informazioni web], che descrive eventi come la visualizzazione della pagina e i clic sui collegamenti. Al momento della stesura di questo articolo, non esiste una parità di app mobile con questa funzione, quindi intendi crearne una tua.
 

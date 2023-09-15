@@ -2,7 +2,7 @@
 title: Places
 description: Scopri come utilizzare il servizio di geolocalizzazione Places nella tua app mobile.
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
 source-wordcount: '1754'
 ht-degree: 3%
@@ -31,7 +31,7 @@ In questa lezione, potrai
 * Aggiorna la proprietà tag con l’estensione Places.
 * Aggiorna lo schema per acquisire eventi di geolocalizzazione.
 * Convalidare l&#39;impostazione in Assurance.
-* Aggiorna l’app per includere l’estensione Luoghi.
+* Aggiorna l’app per registrare l’estensione Luoghi.
 * Implementa il tracciamento della geolocalizzazione dal servizio Places nell’app.
 
 
@@ -49,7 +49,7 @@ In questa lezione, potrai
 * Aggiorna lo schema per acquisire gli eventi della proposta.
 * Convalidare l&#39;impostazione in Assurance.
 * Creare una decisione di offerta, basata sulle offerte disponibili in Journey Optimizer - Gestione delle decisioni.
-* Aggiorna l&#39;app per includere l&#39;estensione Optimizer.
+* Aggiorna l&#39;app per registrare l&#39;estensione Optimizer.
 * Implementa nell’app le offerte di Gestione delle decisioni.
 
 
@@ -106,7 +106,7 @@ Affinché il servizio Places funzioni all’interno dell’app e nell’SDK di M
 
 Verifica se lo schema, come definito in [Crea schema](create-schema.md), incorpora i gruppi di campi e le classi necessari per raccogliere i dati di POI e geolocalizzazione.
 
-1. Passa all’interfaccia utente di Data Collection e seleziona **[!UICONTROL Schemi]** dalla barra a sinistra.
+1. Passa all’interfaccia di Data Collection e seleziona **[!UICONTROL Schemi]** dalla barra a sinistra.
 1. Seleziona **[!UICONTROL Sfoglia]** dalla barra superiore.
 1. Seleziona lo schema per aprirlo.
 1. Nell’editor schema, seleziona **[!UICONTROL Evento esperienza del consumatore]**.
@@ -258,7 +258,7 @@ Per convalidare la configurazione in Assurance:
    ![Convalida delle decisioni AJO](assets/places-events.png)
 
 
-## Implementare i luoghi nell’app
+## Implementare Places nell’app
 
 Come descritto nelle lezioni precedenti, l’installazione di un’estensione tag per dispositivi mobili fornisce solo la configurazione. Ora devi installare e registrare l’SDK Places. Se questi passaggi non sono chiari, rivedi [Installare gli SDK](install-sdks.md) sezione.
 
@@ -320,7 +320,7 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
    }
    ```
 
-Oltre all’oggetto di questa esercitazione, puoi spiegare i dettagli sull’implementazione di Location Manager in iOS.
+Oltre all’argomento di questa lezione, puoi spiegare i dettagli sull’implementazione di Location Manager in iOS.
 
 
 ## Convalida tramite l’app

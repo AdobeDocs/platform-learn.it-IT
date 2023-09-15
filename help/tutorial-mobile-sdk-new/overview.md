@@ -3,10 +3,10 @@ title: Panoramica tutorial sull’implementazione di Adobe Experience Cloud nell
 description: Scopri come implementare le app mobili Adobe Experience Cloud. Questa esercitazione ti guida attraverso un’implementazione di applicazioni Experience Cloud in un’app Swift di esempio.
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: 4f4bb2fdb1db4d9af8466c4e6d8c61e094bf6a1c
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 10%
+source-wordcount: '873'
+ht-degree: 9%
 
 ---
 
@@ -16,7 +16,7 @@ Scopri come implementare le applicazioni Adobe Experience Cloud nella tua app mo
 
 Experienci Platform Mobile SDK è un SDK lato client che consente ai clienti di Adobe Experience Cloud di interagire sia con le applicazioni Adobe che con i servizi di terze parti tramite la rete Edge di Adobe Experience Platform. Consulta la [Documentazione di Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/) per informazioni più dettagliate.
 
-![impostazioni di build](assets/data-collection-mobile-sdk.png)
+![Architettura](assets/architecture.png)
 
 
 Questa esercitazione ti guida attraverso l’implementazione dell’SDK di Platform Mobile in un’app di esempio per la vendita al dettaglio denominata Luma. Il [App Luma](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) dispone di funzionalità che consentono di realizzare un’implementazione realistica. Dopo aver completato questa esercitazione, dovresti essere in grado di iniziare a implementare tutte le soluzioni di marketing tramite l’SDK di Experienci Platform Mobile nelle tue app mobili.
@@ -35,7 +35,6 @@ Dopo aver completato questa esercitazione, sarai in grado di:
 * Aggiungi le seguenti applicazioni/estensioni Adobe Experience Cloud:
    * [Adobe Experience Platform Edge (XDM)](events.md)
    * [Raccolta dati del ciclo di vita](lifecycle-data.md)
-   * [Adobe Analytics tramite XDM](analytics.md)
    * [Consenso](consent.md)
    * [Identità](identity.md)
    * [Profilo](profile.md)
@@ -43,7 +42,7 @@ Dopo aver completato questa esercitazione, sarai in grado di:
    * [Analytics](analytics.md)
    * [Adobe Experience Platform](platform.md)
    * [Messaggistica push con Journey Optimizer](journey-optimizer-push.md)
-   * [Messaggistica Im-app con Journey Optimizer](journey-optimizer-inapp.md)
+   * [Messaggistica in-app con Journey Optimizer](journey-optimizer-inapp.md)
    * [Offerte con Journey Optimizer](journey-optimizer-offers.md)
    * [Test A/B con Target](target.md)
 
@@ -70,13 +69,19 @@ In queste lezioni, si presume che tu sia in possesso di un Adobe ID e delle auto
    * Se sei cliente di un’applicazione basata su Platform come Real-Time CDP, Journey Optimizer o un Customer Journey Analytics, dovresti anche disporre di:
       * **[!UICONTROL Gestione dati]**: elementi di autorizzazione per gestire e visualizzare i set di dati per completare la _esercizi facoltativi di Platform_ (richiede una licenza per un’applicazione basata su Platform ).
       * Uno sviluppo **sandbox** che puoi utilizzare per questa esercitazione.
+
 * Per Adobe Analytics, è necessario sapere quale **suite di rapporti** puoi utilizzare per completare questa esercitazione.
+
+* Per Adobe Target, devi disporre di autorizzazioni, configurate correttamente **ruoli**, **workspace**, e **proprietà** come descritto [qui](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=it).
+
+* Per Adobe Journey Optimizer, è necessario disporre di autorizzazioni sufficienti per configurare **servizio di notifica push** e per creare un’ **superficie dell&#39;app**, a **percorso**, a **messaggio** e **predefiniti per messaggi**. Per la gestione delle decisioni, è necessario disporre delle autorizzazioni appropriate per **gestire le offerte** e **decisioni** come descritto [qui](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 Tutti i clienti Experience Cloud devono avere accesso alle funzioni necessarie per distribuire l’SDK di Mobile.
 
+
 >[!NOTE]
 >
->Utilizzerai iOS come piattaforma, [!DNL Swift] come linguaggio di programmazione, [!DNL SwiftUI] come framework dell’interfaccia utente [!DNL Xcode] come ambiente di sviluppo integrato (IDE). Tuttavia, molti dei concetti di implementazione illustrati sono simili per altre piattaforme di sviluppo. Si presume che tu abbia una certa familiarità con [!DNL Swift] e [!DNL SwiftUI]. Non devi essere un esperto per completare le lezioni, ma puoi ottenere di più dalle lezioni se sei in grado di leggere e comprendere il codice senza difficoltà.
+>Come parte di questa esercitazione, creerai schemi, set di dati, identità e così via. Se segui questa esercitazione con più persone su una singola sandbox o se utilizzi un account condiviso, puoi aggiungere o anteporre un’identificazione come parte delle convenzioni di denominazione durante la creazione di questi oggetti. Ad esempio, aggiungi ` - <your name or initials>` al nome dell&#39;oggetto che si desidera creare.
 
 
 ## Scaricare l’app Luma
@@ -86,6 +91,11 @@ Sono disponibili per il download due versioni dell’app di esempio. Entrambe le
 
 1. [Inizio](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}: progetto senza codice o con codice segnaposto per la maggior parte del codice SDK di Mobile di Experience Platform da utilizzare per completare gli esercizi pratici in questa esercitazione.
 1. [Fine](https://git.corp.adobe.com/Luma){target="_blank"}: una versione con l’implementazione completa come riferimento.
+
+>[!NOTE]
+>
+>Utilizzerai iOS come piattaforma, [!DNL Swift] come linguaggio di programmazione, [!DNL SwiftUI] come framework dell’interfaccia utente [!DNL Xcode] come ambiente di sviluppo integrato (IDE). Tuttavia, molti dei concetti di implementazione illustrati sono simili per altre piattaforme di sviluppo. E molti hanno già completato correttamente questa esercitazione con poca o nessuna precedente esperienza iOS/Swift(UI). Non devi essere un esperto per completare le lezioni, ma puoi ottenere di più dalle lezioni se sei in grado di leggere e comprendere il codice senza difficoltà.
+
 
 Cominciamo.
 

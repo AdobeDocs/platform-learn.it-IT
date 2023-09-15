@@ -4,20 +4,22 @@ description: Scopri come inviare dati a Adobe Experience Platform.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '968'
 ht-degree: 4%
 
 ---
 
 # Inviare dati a Adobe Experience Platform
 
-Scopri come inviare dati a Adobe Experience Platform.
+Scopri come inviare dati da app mobili a Adobe Experience Platform.
 
 Questa lezione facoltativa è valida per tutti i clienti di Real-time Customer Data Platform (Real-Time CDP), Journey Optimizer e Customer Journey Analytics. Ad Experience Platform, la base dei prodotti Experience Cloud, è un sistema aperto che trasforma tutti i tuoi dati (Adobi e non Adobi) in solidi profili cliente. Questi profili cliente vengono aggiornati in tempo reale e utilizzano informazioni basate sull’intelligenza artificiale per aiutarti a fornire le esperienze giuste su ogni canale.
 
 Il [evento](events.md), [ciclo di vita](lifecycle-data.md), e [identità](identity.md) I dati raccolti e inviati a Platform Edge Network nelle lezioni precedenti vengono inoltrati ai servizi configurati nel flusso di dati, incluso Adobe Experience Platform.
+
+![Architettura](assets/architecture-aep.png)
 
 
 ## Prerequisiti
