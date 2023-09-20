@@ -1,16 +1,16 @@
 ---
-title: Identità
+title: Raccogliere dati di identità
 description: Scopri come raccogliere i dati di identità in un’app mobile.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 6%
+source-wordcount: '760'
+ht-degree: 5%
 
 ---
 
-# Identità
+# Raccogliere dati di identità
 
 Scopri come raccogliere i dati di identità in un’app mobile.
 
@@ -36,6 +36,13 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 Gli spazi dei nomi delle identità sono componenti di [Servizio identità](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=it) che fungono da indicatori del contesto a cui si riferisce un’identità. Ad esempio, distinguono un valore di `name@email.com` come indirizzo e-mail o `443522` come ID CRM numerico.
 
+>[!NOTE]
+>
+>Quando l’app viene installata, l’SDK di Mobile genera un’identità univoca nel proprio spazio dei nomi, denominata ID Experience Cloud (ECID). Questo ECID viene memorizzato nella memoria persistente del dispositivo mobile e inviato con ogni hit. L’ECID viene rimosso quando l’utente disinstalla l’app o imposta lo stato di privacy globale dell’SDK di Mobile su optedout. Nell’app Luma di esempio, devi rimuovere e reinstallare l’app per creare un nuovo profilo con il proprio ECID univoco.
+
+
+Per creare un nuovo spazio dei nomi dell’identità:
+
 1. Nell’interfaccia di Data Collection, seleziona **[!UICONTROL Identità]** dalla barra di navigazione a sinistra.
 1. Seleziona **[!UICONTROL Crea uno spazio dei nomi delle identità]**.
 1. Fornisci un **[!UICONTROL Nome visualizzato]** di `Luma CRM ID` e un **[!UICONTROL Simbolo di identità]** valore di `lumaCRMId`.
@@ -51,7 +58,7 @@ Gli spazi dei nomi delle identità sono componenti di [Servizio identità](https
 
 Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzata (ID CRM Luma) quando l’utente accede all’app.
 
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utilità]** > **[!UICONTROL MobileSDK]** nel Navigatore progetti Xcode e trovare il `func updateIdentities(emailAddress: String, crmId: String)` implementazione di funzioni. Aggiungi il codice seguente alla funzione.
+1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** nel Navigatore progetti Xcode e trovare il `func updateIdentities(emailAddress: String, crmId: String)` implementazione di funzioni. Aggiungi il codice seguente alla funzione.
 
    ```swift
    // Set up identity map, add identities to map and update identities
@@ -93,7 +100,7 @@ Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzat
       Identity.updateIdentities(with: identityMap) 
       ```
 
-1. Accedi a **[!UICONTROL Luma]** **[!UICONTROL Luma]** > **[!UICONTROL Visualizzazioni]** > **[!UICONTROL Generale]** > **[!UICONTROL FoglioAccesso]** nel Navigatore progetti Xcode e trova il codice da eseguire quando selezioni il **[!UICONTROL Login]** pulsante. Aggiungi il seguente codice:
+1. Accedi a **[!DNL Luma]** **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL FoglioAccesso]** nel Navigatore progetti Xcode e trova il codice da eseguire quando selezioni il **[!UICONTROL Login]** pulsante. Aggiungi il seguente codice:
 
    ```swift
    // Update identities
@@ -110,7 +117,7 @@ Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzat
 
 È possibile utilizzare [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API per rimuovere l&#39;identità dalla mappa di identità lato client memorizzata. L’estensione Identity interrompe l’invio dell’identificatore alla rete Edge. L’utilizzo di questa API non rimuove l’identificatore dal grafico delle identità lato server. Consulta [Visualizzare i grafici delle identità](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) per ulteriori informazioni sui grafici delle identità.
 
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Generale]** > **[!UICONTROL MobileSDK]** nel Navigator del progetto Xcode e aggiungi il seguente codice al `func removeIdentities(emailAddress: String, crmId: String)` funzione:
+1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL General]** > **[!UICONTROL MobileSDK]** nel Navigator del progetto Xcode e aggiungi il seguente codice al `func removeIdentities(emailAddress: String, crmId: String)` funzione:
 
    ```swift
    // Remove identities and reset email and CRM Id to their defaults
@@ -120,7 +127,7 @@ Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzat
    currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
    ```
 
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizzazioni]** > **[!UICONTROL Generale]** > **[!UICONTROL FoglioAccesso]** nel Navigatore progetti Xcode e trova il codice da eseguire quando selezioni il **[!UICONTROL Disconnetti]** pulsante. Aggiungi il seguente codice:
+1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL FoglioAccesso]** nel Navigatore progetti Xcode e trova il codice da eseguire quando selezioni il **[!UICONTROL Disconnetti]** pulsante. Aggiungi il seguente codice:
 
    ```swift
    // Remove identities

@@ -3,9 +3,9 @@ title: Creare uno schema XDM
 description: Scopri come creare uno schema XDM per gli eventi delle app mobili.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1482'
 ht-degree: 5%
 
 ---
@@ -28,7 +28,7 @@ Per ulteriori informazioni sul modello di composizione dello schema, inclusi i p
 
 >[!TIP]
 >
->Se conosci Analytics Solution Design Reference (SDR), puoi considerare uno schema come un SDR più affidabile.
+>Se conosci Analytics Solution Design Reference (SDR), puoi considerare uno schema come un SDR più affidabile. Consulta [Creare e gestire un documento Solution Design Reference (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=it) per ulteriori informazioni.
 
 ## Prerequisiti
 
@@ -214,7 +214,7 @@ Ora aggiungi un gruppo di campi personalizzato utilizzando il tipo di dati perso
 
 1. Nella barra a destra, specifica **[!UICONTROL Nome campo]** di `appInformation`, a **[!UICONTROL Nome visualizzato]** di `App Information`, e un **[!UICONTROL Tipo]** di `App Information`.
 
-1. Seleziona **[!UICONTROL Interazioni app]** dal **[!UICONTROL Tipo]** a discesa, ovvero il tipo di dati personalizzato creato nell&#39;esercizio precedente.
+1. Seleziona **[!UICONTROL Interazioni app]** dal **[!UICONTROL Gruppo di campi]** , per assegnare i campi al nuovo gruppo di campi.
 
 1. Seleziona **[!UICONTROL Applica]**.
 
@@ -224,7 +224,7 @@ Ora aggiungi un gruppo di campi personalizzato utilizzando il tipo di dati perso
 
 >[!NOTE]
 >
->I gruppi di campi personalizzati si trovano sempre sotto l’identificatore dell’organizzazione di Experience Cloud. Quindi `_techmarketingdemos`, utilizzato nelle schermate, viene sostituito con il valore univoco della tua organizzazione.
+>I gruppi di campi personalizzati si trovano sempre sotto l’identificatore dell’organizzazione di Experience Cloud.
 
 
 >[!SUCCESS]

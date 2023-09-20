@@ -1,15 +1,15 @@
 ---
-title: Profilo
+title: Raccogliere dati profilo
 description: Scopri come raccogliere i dati del profilo in un’app mobile.
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 2%
+source-wordcount: '601'
+ht-degree: 1%
 
 ---
 
-# Profilo
+# Raccogliere dati profilo
 
 Scopri come raccogliere i dati del profilo in un’app mobile.
 
@@ -43,7 +43,7 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 Sarebbe utile per il targeting e/o la personalizzazione nell’app sapere rapidamente se un utente ha effettuato un acquisto in passato o di recente. Impostiamolo nell’app Luma.
 
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utilità]** >  **[!UICONTROL MobileSDK]** nel Navigatore progetti Xcode e trovare il `func updateUserAttribute(attributeName: String, attributeValue: String)` funzione. Aggiungi il seguente codice:
+1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** nel Navigatore progetti Xcode e trovare il `func updateUserAttribute(attributeName: String, attributeValue: String)` funzione. Aggiungi il seguente codice:
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -60,7 +60,7 @@ Sarebbe utile per il targeting e/o la personalizzazione nell’app sapere rapida
 
    1. Utilizza il `profileMap` dizionario come valore per `attributeDict` parametro di [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) Chiamata API.
 
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizzazioni]** > **[!UICONTROL Prodotti]** > **[!UICONTROL ProductView]** nel Navigator del progetto Xcode e trova la chiamata a `updateUserAttributes` (all&#39;interno del codice per gli acquisti <img src="assets/purchase.png" width="15" /> pulsante). Aggiungi il seguente codice:
+1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** nel Navigator del progetto Xcode e trova la chiamata a `updateUserAttributes` (all&#39;interno del codice per gli acquisti <img src="assets/purchase.png" width="15" /> pulsante). Aggiungi il seguente codice:
 
    ```swift
    // Update attributes
@@ -72,7 +72,7 @@ Sarebbe utile per il targeting e/o la personalizzazione nell’app sapere rapida
 
 Dopo aver aggiornato l’attributo di un utente, questo è disponibile per altri SDK di Adobe, ma puoi anche recuperare gli attributi in modo esplicito, per consentire all’app di comportarsi come desideri.
 
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizzazioni]** > **[!UICONTROL Generale]** > **[!UICONTROL HomeView]** nel Navigatore progetti Xcode e trovare il `.onAppear` modificatore. Aggiungi il seguente codice:
+1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!DNL HomeView]** nel Navigatore progetti Xcode e trovare il `.onAppear` modificatore. Aggiungi il seguente codice:
 
    ```swift
    // Get attributes
@@ -111,7 +111,7 @@ Dopo aver aggiornato l’attributo di un utente, questo è disponibile per altri
 
       <img src="./assets/mobile-app-events-2.png" width="300">
 
-   1. Seleziona **[!UICONTROL Prodotti]** nella barra delle schede.
+   1. Seleziona **[!DNL Products]** nella barra delle schede.
    1. Seleziona un prodotto.
    1. Seleziona <img src="assets/saveforlater.png" width="15" />.
    1. Seleziona <img src="assets/addtocart.png" width="20" />.

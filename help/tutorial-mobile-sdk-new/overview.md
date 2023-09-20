@@ -3,7 +3,7 @@ title: Panoramica tutorial sull’implementazione di Adobe Experience Cloud nell
 description: Scopri come implementare le app mobili Adobe Experience Cloud. Questa esercitazione ti guida attraverso un’implementazione di applicazioni Experience Cloud in un’app Swift di esempio.
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 9%
@@ -103,4 +103,4 @@ Cominciamo.
 >
 >Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Successivo: **[Creare uno schema XDM](create-schema.md)**.
+Successivo: **[Creare uno schema XDM](create-schema.md)**

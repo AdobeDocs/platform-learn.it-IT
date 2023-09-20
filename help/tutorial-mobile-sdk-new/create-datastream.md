@@ -3,10 +3,10 @@ title: Configurare uno stream di dati
 description: Scopri come creare uno stream di dati in Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 8%
+source-wordcount: '615'
+ht-degree: 7%
 
 ---
 
@@ -47,7 +47,7 @@ Gli stream di dati possono essere creati in [!UICONTROL Raccolta dati] tramite l
    >
    >Promemoria finale: se segui questa esercitazione con più persone su una singola sandbox o se utilizzi un account condiviso, puoi aggiungere o anteporre un’identificazione come parte delle convenzioni di denominazione. Ad esempio, usa `Luma Mobile App Event Dataset - Joe Smith` invece di `Luma Mobile App Event Dataset`. Vedi anche la nota in [Panoramica](overview.md).
 
-1. Seleziona lo schema creato nella lezione precedente da **Schema Evento** un elenco.
+1. Seleziona lo schema creato nella lezione precedente da **Schema Evento** elenco.
 1. Seleziona **[!UICONTROL Salva]**.
 
    ![nuovi flussi di dati](assets/datastream-name.png)
@@ -55,7 +55,7 @@ Gli stream di dati possono essere creati in [!UICONTROL Raccolta dati] tramite l
 
 ## Aggiungi servizi
 
-Quindi, connetti i servizi Experience Cloud allo stream di dati. Quando Platform Mobile SDK invia i dati a Edge Network, lo stream di dati li invia a questi servizi:
+Quando si passa attraverso il (facoltativo) [Analytics](analytics.md) e [Experience Platform](platform.md) lezioni in questa esercitazione, stai aggiungendo servizi allo stream di dati per garantire che, quando l’SDK di Platform Mobile invia i dati alla rete Edge, lo stream di dati inoltri tali dati ai servizi configurati.
 
 ### Adobe Analytics
 

@@ -1,16 +1,16 @@
 ---
-title: Consenso
+title: Implementare il consenso
 description: Scopri come implementare il consenso in un’app mobile.
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '523'
 ht-degree: 2%
 
 ---
 
-# Consenso
+# Implementare il consenso
 
 Scopri come implementare il consenso in un’app mobile.
 
@@ -36,7 +36,7 @@ Per iniziare a raccogliere i dati, devi ottenere il consenso dell’utente. In q
 
 1. Si desidera chiedere all&#39;utente una sola volta. Pertanto, vuoi combinare il consenso Mobile SDK con le autorizzazioni necessarie per il tracciamento tramite Apple [Framework trasparenza tracciamento app](https://developer.apple.com/documentation/apptrackingtransparency). In questa app, si presuppone che quando l’utente autorizza il tracciamento, l’utente acconsenta anche alla raccolta degli eventi.
 
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utilità]** > **[!UICONTROL MobileSDK]** nel Navigatore progetti Xcode.
+1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** nel Navigatore progetti Xcode.
 
    Aggiungi questo codice al `updateConsent` funzione.
 
@@ -48,7 +48,7 @@ Per iniziare a raccogliere i dati, devi ottenere il consenso dell’utente. In q
    MobileCore.updateConfigurationWith(configDict: currentConsents)
    ```
 
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizzazioni]** > **[!UICONTROL Generale]** > **[!UICONTROL Visualizzazione disclaimer]** nel Navigatore progetti di Xcode, che è la visualizzazione mostrata dopo l’installazione o la reinstallazione dell’applicazione e il primo avvio dell’app. All’utente viene richiesto di autorizzare il tracciamento in base ai requisiti di Apple [Framework trasparenza tracciamento app](https://developer.apple.com/documentation/apptrackingtransparency). Se l’utente autorizza, aggiorna anche il consenso.
+1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL Visualizzazione disclaimer]** nel Navigatore progetti di Xcode, che è la visualizzazione mostrata dopo l’installazione o la reinstallazione dell’applicazione e il primo avvio dell’app. All’utente viene richiesto di autorizzare il tracciamento in base ai requisiti di Apple [Framework trasparenza tracciamento app](https://developer.apple.com/documentation/apptrackingtransparency). Se l’utente autorizza, aggiorna anche il consenso.
 
    Aggiungi il seguente codice al `ATTrackingManager.requestTrackingAuthorization { status in` chiusura.
 
@@ -68,7 +68,7 @@ Per iniziare a raccogliere i dati, devi ottenere il consenso dell’utente. In q
 
 L’estensione per dispositivi mobili Consenso sopprime/termina/consente automaticamente il tracciamento in base al valore di consenso corrente. Puoi anche accedere autonomamente allo stato di consenso corrente:
 
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utilità]** > **[!UICONTROL MobileSDK]** nel Navigatore progetti di Xcode.
+1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** nel Navigatore progetti di Xcode.
 
    Aggiungi il seguente codice al `getConsents` funzione:
 
@@ -82,7 +82,7 @@ L’estensione per dispositivi mobili Consenso sopprime/termina/consente automat
    }
    ```
 
-2. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizzazioni]** > **[!UICONTROL Generale]** > **[!UICONTROL HomeView]** nel Navigatore progetti di Xcode.
+2. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL HomeView]** nel Navigatore progetti di Xcode.
 
    Aggiungi il seguente codice al `.task` modificatore:
 

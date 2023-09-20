@@ -1,15 +1,15 @@
 ---
-title: Places
+title: Utilizzare i servizi di geolocalizzazione
 description: Scopri come utilizzare il servizio di geolocalizzazione Places nella tua app mobile.
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1745'
 ht-degree: 3%
 
 ---
 
-# Places
+# Utilizzare i servizi di geolocalizzazione
 
 Scopri come utilizzare il servizio di geolocalizzazione nell’app.
 
@@ -72,7 +72,7 @@ Affinché il servizio Places funzioni all’interno dell’app e nell’SDK di M
 1. Per chiudere **[!UICONTROL Gestisci librerie]** finestra di dialogo, seleziona **[!UICONTROL Chiudi]**.
 1. Torna in **[!UICONTROL Gestione POI]**, seleziona **[!UICONTROL Importa POI]**.
 1. Seleziona **[!UICONTROL Inizio]** in t**[!UICONTROL Importa luoghi]Finestra di dialogo **.
-1. Seleziona **[!UICONTROL Luma]** dall&#39;elenco delle biblioteche,
+1. Seleziona **[!DNL Luma]** dall&#39;elenco delle biblioteche,
 1. Seleziona **[!UICONTROL Avanti]**.
    ![Seleziona libreria](assets/places-import-select-library.png)
 1. Scarica il file [File ZIP Luma POI](assets/luma_pois.csv.zip) ed estrarlo in una posizione sul computer.
@@ -94,7 +94,7 @@ Affinché il servizio Places funzioni all’interno dell’app e nell’SDK di M
    ![Aggiungere l’estensione Decisioning](assets/tag-places-extension.png)
 
 1. In **[!UICONTROL Installa estensione]** finestra di dialogo:
-   1. Seleziona **[!UICONTROL Luma]** dal **[!UICONTROL Seleziona una libreria]** elenco.
+   1. Seleziona **[!DNL Luma]** dal **[!UICONTROL Seleziona una libreria]** elenco.
    1. Assicurati di aver scelto la libreria di lavoro, ad esempio **[!UICONTROL Build iniziale]**.
    1. Seleziona **[!UICONTROL Salva nella libreria e genera]** da **[!UICONTROL Salva nella libreria]**.
       ![Estensione Install Places](assets/places-install-extension.png).
@@ -268,7 +268,7 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
 >
 
 1. In Xcode, assicurati che [AEP Places](https://github.com/adobe/aepsdk-places-ios) viene aggiunto all’elenco dei pacchetti in Dipendenze dai pacchetti. Consulta [Gestione pacchetti Swift](install-sdks.md#swift-package-manager).
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** nel Navigatore progetti Xcode.
+1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** nel Navigatore progetti Xcode.
 1. Assicurare `AEPPlaces` fa parte dell’elenco delle importazioni.
 
    `import AEPPlaces`
@@ -291,7 +291,7 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
    ]
    ```
 
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utilità]** > **[!UICONTROL MobileSDK]** nel Navigatore progetti Xcode e trovare il `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.Aggiungi il seguente codice:
+1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** nel Navigatore progetti Xcode e trovare il `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.Aggiungi il seguente codice:
 
    ```swift
    // Process geolocation event
@@ -300,7 +300,7 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
 
    Questo [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API comunica le informazioni di geolocalizzazione al servizio Places.
 
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizzazioni]** > **[!UICONTROL Posizione]** > **[!UICONTROL FoglioRecintoGeografico]** nel Navigatore progetti di Xcode.
+1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Location]** > **[!DNL GeofenceSheet]** nel Navigatore progetti di Xcode.
 
    1. Per il pulsante Immissione, immettere il codice seguente
 

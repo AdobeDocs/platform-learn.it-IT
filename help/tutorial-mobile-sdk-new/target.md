@@ -5,10 +5,10 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 2%
+source-wordcount: '1771'
+ht-degree: 3%
 
 ---
 
@@ -48,17 +48,19 @@ In questa lezione, potrai
 * Convalidare l’implementazione in Assurance.
 
 
-## Configurare l’app
+## Configurazione
 
 >[!TIP]
 >
->Se hai già configurato l&#39;app come parte di [Offerte Journey Optimizer](journey-optimizer-offers.md) lezione, puoi saltare entrambe [Installare Adobe Journey Optimizer - Estensione tag Decisioning](#install-adobe-journey-optimizer---decisioning-tags-extension) e [Aggiornare lo schema](#update-your-schema).
+>Se hai già configurato l&#39;app come parte di [Offerte Journey Optimizer](journey-optimizer-offers.md) In questa lezione è possibile che siano già stati eseguiti alcuni dei passaggi descritti in questa sezione di configurazione.
 
 ### Aggiorna configurazione dello stream di dati
 
+### Adobe Target
+
 Per fare in modo che i dati inviati dalla tua app mobile ad Experienci Platform Edge Network vengano inoltrati ad Adobe Target, devi aggiornare la configurazione dello stream di dati.
 
-1. Nell’interfaccia utente di Data Collection, seleziona **[!UICONTROL Flussi di dati]** e seleziona il flusso di dati, ad esempio **[!UICONTROL App mobile Luma]**.
+1. Nell’interfaccia utente di Data Collection, seleziona **[!UICONTROL Flussi di dati]** e seleziona il flusso di dati, ad esempio **[!DNL Luma Mobile App]**.
 1. Seleziona **[!UICONTROL Aggiungi servizio]** e seleziona **[!UICONTROL Adobe Target]** dal **[!UICONTROL Servizio]** elenco.
 1. Se sei un cliente Target Premium e desideri utilizzare i token di proprietà, immetti Target **[!UICONTROL Token proprietà]** valore che desideri utilizzare per questa integrazione. Gli utenti di Target Standard possono saltare questo passaggio.
 
@@ -67,6 +69,18 @@ Per fare in modo che i dati inviati dalla tua app mobile ad Experienci Platform 
 1. Seleziona **[!UICONTROL Salva]**.
 
    ![Aggiungere Target allo stream di dati](assets/edge-datastream-target.png)
+
+
+#### Adobe Journey Optimizer
+
+Per fare in modo che i dati inviati dalla tua app mobile alla rete Edge vengano inoltrati a Journey Optimizer - Gestione delle decisioni, aggiorna la configurazione di Experience Edge.
+
+1. Nell’interfaccia utente di Data Collection, seleziona **[!UICONTROL Flussi di dati]** e seleziona il flusso di dati, ad esempio **[!DNL Luma Mobile App]**.
+1. Seleziona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) per **[!UICONTROL Experience Platform]** e seleziona ![Modifica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Modifica]** dal menu di scelta rapida.
+1. In **[!UICONTROL Flussi di dati]** > ![Cartella](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** schermata, assicurati **[!UICONTROL Offer decisioning]**, **[!UICONTROL Segmentazione Edge]**, e **[!UICONTROL Destinazioni di personalizzazione]** sono selezionati. Se segui anche le lezioni di Journey Optimizer, seleziona **[!UICONTROL Adobe Journey Optimizer]** anche. Consulta [Impostazioni Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) per ulteriori informazioni.
+1. Per salvare la configurazione dello stream di dati, seleziona **[!UICONTROL Salva]** .
+
+   ![Configurazione dello stream di dati AEP](assets/datastream-aep-configuration-target.png)
 
 
 ### Installare Adobe Journey Optimizer - Estensione tag Decisioning
@@ -143,7 +157,7 @@ Esistono molti tipi di attività che è possibile creare in Adobe Target e imple
 
       ![Esperienza B](assets/target-create-activity-experienceB.png)
 
-1. In **[!UICONTROL Targeting]** fase, controlla la configurazione del test A/B. Per impostazione predefinita, entrambe le offerte vengono allocate in modo uniforme a tutti i visitatori. Seleziona **[!UICONTROL Avanti]** per continuare.
+1. In **[!DNL Targeting]** fase, controlla la configurazione del test A/B. Per impostazione predefinita, entrambe le offerte vengono allocate in modo uniforme a tutti i visitatori. Seleziona **[!UICONTROL Avanti]** per continuare.
 
    ![Targeting](assets/taget-targeting.png)
 
@@ -151,7 +165,7 @@ Esistono molti tipi di attività che è possibile creare in Adobe Target e imple
 
    1. Rinomina l’attività senza titolo, ad esempio in `Luma Mobile SDK Tutorial - A/B Test Example`.
    1. Immetti un **[!UICONTROL Obiettivo]** per il test A/B, ad esempio `A/B Test for Luma mobile app tutorial`.
-   1. Seleziona **[!UICONTROL Conversione]**, **[!UICONTROL Clic su una mbox]** nel **[!UICONTROL Metrica per obiettivo]** > **[!UICONTROL IL MIO OBIETTIVO PRINCIPALE]** affiancare e immettere il nome della posizione (mbox), ad esempio `luma-mobileapp-abtest`.
+   1. Seleziona **[!UICONTROL Conversione]**, **[!UICONTROL Visualizzazione di una mbox]** nel **[!UICONTROL Metrica per obiettivo]** > **[!UICONTROL IL MIO OBIETTIVO PRINCIPALE]** affiancare e immettere il nome della posizione (mbox), ad esempio `luma-mobileapp-abtest`.
    1. Seleziona **[!UICONTROL Salva e chiudi]**.
 
       ![Impostazioni obiettivi](assets/target-goals.png)
@@ -174,7 +188,7 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
 >
 
 1. In Xcode, assicurati che [Ottimizzazione AEP](https://github.com/adobe/aepsdk-messaging-ios.git) viene aggiunto all’elenco dei pacchetti in Dipendenze dai pacchetti. Consulta [Gestione pacchetti Swift](install-sdks.md#swift-package-manager).
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** nel Navigatore progetti Xcode.
+1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** nel Navigatore progetti Xcode.
 1. Assicurare `AEPOptimize` fa parte dell’elenco delle importazioni.
 
    `import AEPOptimize`
@@ -197,7 +211,7 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
    ]
    ```
 
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utilità]** > **[!UICONTROL MobileSDK]** nel Navigatore progetti Xcode. Trova il ` func updatePropositionAT(ecid: String, location: String) async` funzione. Aggiungi il seguente codice:
+1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!DNL MobileSDK]** nel Navigatore progetti Xcode. Trova il ` func updatePropositionAT(ecid: String, location: String) async` funzione. Aggiungi il seguente codice:
 
    ```swift
    Task {
@@ -217,13 +231,13 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
 
    Quindi la funzione chiama due API: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  e [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Queste funzioni cancellano tutte le proposte memorizzate nella cache e aggiornano le proposte per questo profilo.
 
-1. Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizzazioni]** > **[!UICONTROL Personalizzazione]** > **[!UICONTROL TargetOffersView]** nel Navigatore progetti Xcode. Trova il `func onPropositionsUpdateAT(location: String) async {` e controllare il codice di questa funzione. La parte più importante di questa funzione è la  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) Chiamata API, che:
+1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Personalization]** > **[!DNL TargetOffersView]** nel Navigatore progetti Xcode. Trova il `func onPropositionsUpdateAT(location: String) async {` e controllare il codice di questa funzione. La parte più importante di questa funzione è la  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) Chiamata API, che:
    * recupera le proposte per il profilo corrente in base all’ambito della decisione (che è la posizione definita nel test A/B),
    * recupera l’offerta dalla proposta,
    * decomprime il contenuto dell’offerta in modo che possa essere visualizzato correttamente nell’app; e
    * attiva il `displayed()` azione sull’offerta che invierà un evento alla rete Edge informando che l’offerta è visualizzata.
 
-1. Ancora in **[!UICONTROL TargetOffersView]**, aggiungi il seguente codice al `.onFirstAppear` modificatore. Questo codice assicurerà che il callback per l’aggiornamento delle offerte sia registrato una sola volta.
+1. Ancora in **[!DNL TargetOffersView]**, aggiungi il seguente codice al `.onFirstAppear` modificatore. Questo codice assicurerà che il callback per l’aggiornamento delle offerte sia registrato una sola volta.
 
    ```swift
    // Invoke callback for offer updates
@@ -232,12 +246,15 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
    }
    ```
 
-1. Ancora in **[!UICONTROL TargetOffersView]**, aggiungi il seguente codice al `.task` modificatore. Questo codice aggiorna le offerte quando la vista viene aggiornata.
+1. Ancora in **[!DNL TargetOffersView]**, aggiungi il seguente codice al `.task` modificatore. Questo codice aggiorna le offerte quando la vista viene aggiornata.
 
    ```swift
    // Clear and update offers
    await self.updatePropositionsAT(ecid: currentEcid, location: location)
    ```
+
+Puoi inviare parametri Target aggiuntivi (come mbox, profilo, prodotto o parametri di ordine) in una richiesta di query di personalizzazione alla rete Experience Edge, aggiungendoli in un dizionario dati quando chiami il [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions) API. Per ulteriori informazioni, consulta [Parametri di Target](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/#target-parameters).
+
 
 ## Convalida tramite l’app
 
@@ -260,7 +277,7 @@ Per convalidare il test A/B in Assurance:
 1. Seleziona **[!UICONTROL Configura]** nella barra a sinistra e seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) accanto a **[!UICONTROL Revisione e simulazione]** sotto **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. Seleziona **[!UICONTROL Salva]**.
 1. Seleziona **[!UICONTROL Revisione e simulazione]** nella barra a sinistra. La configurazione di entrambi gli stream di dati viene convalidata e la configurazione dell’SDK nell’applicazione.
-1. Seleziona **[!UICONTROL Richieste]** nella barra superiore. Vedi il tuo **[!UICONTROL Target]** richieste.
+1. Seleziona **[!UICONTROL Richieste]** nella barra superiore. Vedi il tuo **[!DNL Target]** richieste.
    ![Convalida delle decisioni AJO](assets/assurance-decisioning-requests.png)
 
 1. Puoi esplorare **[!UICONTROL Simula]** e **[!UICONTROL Elenco eventi]** schede per ulteriori funzionalità, verificando la configurazione delle offerte Target.

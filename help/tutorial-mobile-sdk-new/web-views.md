@@ -3,9 +3,9 @@ title: Gestisci visualizzazioni Web
 description: Scopri come gestire la raccolta dati con WebViews in un’app mobile.
 jira: KT-6987
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '477'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ L&#39;estensione AEP Edge Identity utilizzata all&#39;interno di WebView raccogl
 
 ## Implementazione
 
-Accedi a **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizzazioni]** > **[!UICONTROL Info]** > **[!UICONTROL NoteCondizioniDiServizio]**, e individuare `func loadUrl()` funzione in `final class SwiftUIWebViewModel: ObservableObject` classe. Aggiungi la seguente chiamata per gestire la visualizzazione web:
+Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Info]** > **[!DNL TermsOfServiceSheet]**, e individuare `func loadUrl()` funzione in `final class SwiftUIWebViewModel: ObservableObject` classe. Aggiungi la seguente chiamata per gestire la visualizzazione web:
 
 ```swift
 // Handle web view
@@ -68,7 +68,7 @@ Puoi saperne di più sulle `Identity.getUrlVariables` API in [Guida di riferimen
 Per eseguire il codice:
 
 1. Vai a **[!UICONTROL Impostazioni]** nell’app
-1. Tocca il **[!UICONTROL Visualizza...]** per visualizzare **[!UICONTROL Condizioni d’uso]**.
+1. Tocca il **[!DNL View...]** per visualizzare **[!DNL Terms of Use]**.
 
    <img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
 
@@ -90,6 +90,8 @@ Per eseguire il codice:
      ```html
      adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
      ```
+
+Sfortunatamente, il debug della sessione Web è limitato. Non è possibile utilizzare l&#39;Adobe Experience Platform Debugger nel browser, ad esempio per continuare il debug della sessione WebView.
 
 >[!NOTE]
 >

@@ -1,16 +1,16 @@
 ---
-title: Mappatura di Analytics
-description: Scopri come raccogliere dati per Adobe Analytics in un’app mobile.
+title: Raccogliere e mappare dati di Analytics
+description: Scopri come raccogliere e mappare dati per Adobe Analytics in un’app mobile.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '629'
 ht-degree: 2%
 
 ---
 
-# Mappatura di Analytics
+# Raccogliere e mappare dati di Analytics
 
 Scopri come mappare i dati mobili su Adobe Analytics.
 
@@ -28,8 +28,28 @@ Il [evento](events.md) i dati raccolti e inviati a Platform Edge Network nelle l
 
 In questa lezione verranno fornite le seguenti informazioni:
 
+* Configura lo stream di dati con il servizio Adobe Analytics.
 * Comprendere la mappatura automatica delle variabili di Analytics.
 * Imposta le regole di elaborazione per mappare i dati XDM sulle variabili di Analytics.
+
+## Aggiungere il servizio dello stream di dati di Adobe Analytics
+
+Per inviare i dati XDM da Edge Network ad Adobe Analytics, configura il servizio Adobe Analytics allo stream di dati configurato come parte di [Creare un flusso di dati](create-datastream.md).
+
+1. Nell’interfaccia utente di Data Collection, seleziona **[!UICONTROL Flussi di dati]** e lo stream di dati.
+
+1. Quindi seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Aggiungi servizio]**.
+
+1. Aggiungi **[!UICONTROL Adobe Analytics]** dal [!UICONTROL Servizio] elenco,
+
+1. Immetti il nome della suite di rapporti di Adobe Analytics che desideri utilizzare in **[!UICONTROL ID suite di rapporti]**.
+
+1. Attiva il servizio cambiando **[!UICONTROL Abilitato]** su.
+
+1. Seleziona **[!UICONTROL Salva]**.
+
+   ![Aggiungere Adobe Analytics come servizio di flusso di dati](assets/datastream-service-aa.png)
+
 
 ## Mappatura automatica
 
@@ -164,7 +184,7 @@ Ad esempio:
 a.x.commerce.saveforlaters.value
 
 // Custom Field
-a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
+a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 ```
 
 >[!NOTE]
@@ -173,29 +193,38 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 >
 >`_techmarketingdemos` viene sostituito con il valore univoco della tua organizzazione.
 
+Per mappare questi dati contestuali XDM sui dati di Analytics nella suite di rapporti, puoi:
 
-Di seguito è riportato un esempio di regola di elaborazione che utilizza questi dati:
+* Aggiungi il **[!UICONTROL Estensione completa Adobe Analytics ExperienceEvent]** gruppo di campi allo schema.
 
-* Tu **[!UICONTROL Sovrascrivi valore di]** 1) **[!UICONTROL Nome schermo app (eVar2)]** (2) con il valore di **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) se **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** 4) **[!UICONTROL è impostato]** (5).
+  ![Gruppo di campi FullExtension di Analytics ExperienceEvent](assets/schema-analytics-extension.png)
+* Crea regole nella proprietà Tags per mappare i dati contestuali ai campi nel gruppo di campi Estensione completa Adobe Analytics ExperienceEvent. Ad esempio, mappa `_techmarketingdemo.appinformation.appstatedetails.screenname` a `_experience.analytics.customDimensions.eVars.eVar2`.
 
-* Tu **[!UICONTROL Imposta evento]** 6) **[!UICONTROL Aggiungi alla lista dei desideri (evento 3)]** da (7) a **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) se **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** 9) **[!UICONTROL è impostato]** (10)
+<!-- Old processing rules section
+Here is what a processing rule using this data might look like:
 
-![regole di elaborazione di analytics](assets/analytics-processing-rules.png)
+* You **[!UICONTROL Overwrite value of]** (1) **[!UICONTROL App Screen Name (eVar2)]** (2) with the value of **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) if **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL is set]** (5).
+
+* You **[!UICONTROL Set event]** (6) **[!UICONTROL Add to Wishlist (Event 3)]** (7) to **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) if **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL is set]** (10).
+
+![analytics processing rules](assets/analytics-processing-rules.png)
 
 >[!IMPORTANT]
 >
 >
->Alcune delle variabili mappate automaticamente potrebbero non essere disponibili per l’utilizzo nelle regole di elaborazione.
+>Some of the automatically mapped variables may not be available for use in processing rules.
 >
 >
->La prima volta che esegui il mapping a una regola di elaborazione, l’interfaccia non mostra le variabili di dati di contesto dall’oggetto XDM. Per risolvere il problema, seleziona un valore qualsiasi, Salva e torna per modificarlo. Verranno visualizzate tutte le variabili XDM.
+>The first time you map to a processing rule, the interface does not show you the context data variables from the XDM object. To fix that select any value, Save, and come back to edit. All XDM variables should now appear.
 
 
-Ulteriori informazioni sulle regole di elaborazione e i dati contestuali sono disponibili [qui](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
+Additional information about processing rules and context data can be found [here](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
 
 >[!TIP]
 >
->A differenza delle precedenti implementazioni di app mobili, non esiste alcuna distinzione tra visualizzazioni di pagina/schermo e altri eventi. È invece possibile incrementare **[!UICONTROL Visualizzazione pagina]** metrica impostando la **[!UICONTROL Nome pagina]** dimensione in una regola di elaborazione. Poiché stai raccogliendo il `screenName` nell’esercitazione, si consiglia vivamente di mappare il nome della schermata su **[!UICONTROL Nome pagina]** in una regola di elaborazione.
+>Unlike previous mobile app implementations, there is no distinction between a page / screen views and other events. Instead you can increment the **[!UICONTROL Page View]** metric by setting the **[!UICONTROL Page Name]** dimension in a processing rule. Since you are collecting the custom `screenName` field in the tutorial, it is highly recommended to map screen name to **[!UICONTROL Page Name]** in a processing rule.
+
+-->
 
 >[!SUCCESS]
 >

@@ -3,9 +3,9 @@ title: Configurare una proprietà tag
 description: Scopri come configurare una proprietà tag in [!UICONTROL Raccolta dati] di rete.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1096'
 ht-degree: 5%
 
 ---
@@ -110,9 +110,9 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 1. Utilizza il ![Ricerca](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Ricerca]** per trovare e installare **Adobe Experience Platform Edge Network** estensione.
 
-   1. In entrata **[!UICONTROL Flussi di dati]** seleziona la **[!UICONTROL Datastream]** che hai creato in [passaggio precedente](create-datastream.md) per ciascuno degli ambienti, ad esempio **[!UICONTROL App mobile Luma]**.
+   1. In entrata **[!UICONTROL Flussi di dati]** seleziona la **[!UICONTROL Datastream]** che hai creato in [passaggio precedente](create-datastream.md) per ciascuno degli ambienti, ad esempio **[!DNL Luma Mobile App]**.
 
-   1. Specifica la **[!UICONTROL Dominio rete Edge]** entro **[!UICONTROL Configurazione del dominio]**. Il dominio della rete Edge è il nome dell’organizzazione, seguito da `data.adobedc.net`, ad esempio `techmarketingdemos.data.adobedc.net`.
+   1. Se non è già stato popolato, specifica **[!UICONTROL Dominio rete Edge]** entro **[!UICONTROL Configurazione del dominio]**. Il dominio della rete Edge è il nome dell’organizzazione, seguito da `data.adobedc.net`, ad esempio `techmarketingdemos.data.adobedc.net`.
 
    1. Dalla sezione **[!UICONTROL Salva nella libreria]** menu, seleziona **[!UICONTROL Salva nella libreria e genera]**.
 

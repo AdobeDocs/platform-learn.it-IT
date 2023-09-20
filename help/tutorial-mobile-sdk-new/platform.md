@@ -4,9 +4,9 @@ description: Scopri come inviare dati a Adobe Experience Platform.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '1056'
 ht-degree: 4%
 
 ---
@@ -33,6 +33,7 @@ Se non hai accesso, puoi [salta questa lezione](install-sdks.md).
 In questa lezione verranno fornite le seguenti informazioni:
 
 * Crea un set di dati di Experience Platform.
+* Configura lo stream di dati per inoltrare i dati ad Experienci Platform.
 * Convalida i dati nel set di dati.
 * Abilita lo schema e il set di dati per Real-Time Customer Profile.
 * Convalidare i dati in Real-Time Customer Profile.
@@ -54,7 +55,7 @@ Tutti i dati acquisiti correttamente in Adobe Experience Platform vengono memori
    ![home set di dati](assets/dataset-create.png)
 
 1. Cerca lo schema. ad esempio utilizzando `Luma Mobile` nel campo di ricerca.
-1. Seleziona lo schema, ad esempio **[!UICONTROL Schema evento app mobile Luma]**.
+1. Seleziona lo schema, ad esempio **[!DNL Luma Mobile App Event Schema]**.
 
 1. Seleziona **[!UICONTROL Avanti]**.
    ![configurazione set di dati](assets/dataset-configure.png)
@@ -64,9 +65,32 @@ Tutti i dati acquisiti correttamente in Adobe Experience Platform vengono memori
 1. Seleziona **[!UICONTROL Fine]**.
    ![fine set di dati](assets/dataset-finish.png)
 
-## Aggiornare lo stream di dati
 
-Dopo aver creato il set di dati, assicurati di [aggiornare lo stream di dati](create-datastream.md#adobe-experience-platform) per aggiungere Adobe Experience Platform. Questo aggiornamento garantisce il flusso dei dati in Platform.
+## Aggiungi servizio flusso di dati Adobe Experience Platform
+
+Per inviare i dati XDM da Edge Network a Adobe Experience Platform, configura il servizio Adobe Experience Platform allo stream di dati configurato come parte di [Creare un flusso di dati](create-datastream.md).
+
+>[!IMPORTANT]
+>
+>Puoi abilitare il servizio Adobe Experience Platform solo dopo aver creato un set di dati evento.
+
+1. Nell’interfaccia utente di Data Collection, seleziona **[!UICONTROL Flussi di dati]** e lo stream di dati.
+
+1. Quindi seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Aggiungi servizio]**.
+
+1. Seleziona **[!UICONTROL Adobe Experience Platform]** dal [!UICONTROL Servizio] elenco.
+
+1. Attiva il servizio cambiando **[!UICONTROL Abilitato]** su.
+
+1. Seleziona la **[!UICONTROL Set di dati evento]** create in precedenza, ad esempio **[!DNL Luma Mobile App Event Dataset]**.
+
+1. Seleziona **[!UICONTROL Salva]**.
+
+   ![Aggiungere Adobe Experience Platform come servizio per lo stream di dati](assets/datastream-service-aep.png)
+1. La configurazione finale sarà simile alla seguente.
+
+   ![impostazioni dello stream di dati](assets/datastream-settings.png)
+
 
 ## Convalidare i dati nel set di dati
 
@@ -89,7 +113,7 @@ Il profilo cliente in tempo reale di Experienci Platform consente di creare una 
 
 ### Abilita lo schema
 
-1. Apri lo schema, ad esempio **[!UICONTROL Schema evento app mobile Luma]**.
+1. Apri lo schema, ad esempio **[!DNL Luma Mobile App Event Schema]**.
 1. Abilita **[!UICONTROL Profilo]**.
 1. Seleziona **[!UICONTROL I dati per questo schema conterranno un’identità primaria nel campo identityMap.]** nella finestra di dialogo.
 1. **[!UICONTROL Salva]** lo schema.
@@ -98,7 +122,7 @@ Il profilo cliente in tempo reale di Experienci Platform consente di creare una 
 
 ### Abilitare il set di dati
 
-1. Apri il set di dati, ad esempio **[!UICONTROL Set di dati evento app mobile Luma]**.
+1. Apri il set di dati, ad esempio **[!DNL Luma Mobile App Event Dataset]**.
 1. Abilita **[!UICONTROL Profilo]**.
 
    ![abilitare il set di dati per il profilo](assets/platform-profile-dataset.png)
