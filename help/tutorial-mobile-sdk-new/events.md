@@ -1,15 +1,15 @@
 ---
-title: Raccogliere dati evento
-description: Scopri come raccogliere i dati di un evento in un’app mobile.
+title: Tracciare i dati dell’evento
+description: Scopri come tenere traccia dei dati evento in un’app mobile.
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1309'
-ht-degree: 1%
+source-wordcount: '1310'
+ht-degree: 0%
 
 ---
 
-# Raccogliere dati evento
+# Tracciare i dati dell’evento
 
 Scopri come tracciare gli eventi in un’app mobile.
 
@@ -380,4 +380,4 @@ Ora che hai raccolto gli eventi e li hai inviati a Platform Edge Network, questi
 >
 >Ora hai configurato l’app per tenere traccia degli eventi di e-commerce, interazione con l’app e tracciamento dello schermo su Adobe Experience Platform Edge Network e su tutti i servizi definiti nello stream di dati.<br/>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Successivo: **[WebViews](web-views.md)**
+Successivo: **[Gestisci visualizzazioni Web](web-views.md)**

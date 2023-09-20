@@ -3,9 +3,9 @@ title: Raccogliere dati di identità
 description: Scopri come raccogliere i dati di identità in un’app mobile.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '762'
 ht-degree: 5%
 
 ---
@@ -171,4 +171,4 @@ Una volta completati i passaggi in [lezione di Experience Platform](platform.md)
 >
 >Ora hai configurato l’app per aggiornare le identità in Edge Network e (se configurata) in Adobe Experience Platform.<br/>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
-Successivo: **[Profilo](profile.md)**
+Successivo: **[Raccogliere dati profilo](profile.md)**

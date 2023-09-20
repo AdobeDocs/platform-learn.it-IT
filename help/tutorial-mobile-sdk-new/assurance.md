@@ -3,9 +3,9 @@ title: Configura Assurance
 description: Scopri come implementare l’estensione Assurance in un’app mobile.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '775'
 ht-degree: 9%
 
 ---
@@ -68,7 +68,7 @@ Prima di eseguire l’applicazione per la prima volta in Xcode, assicurati di ag
 
    >[!IMPORTANT]
    >
-   >Assicurati di selezionare un identificatore bundle univoco diverso da quello predefinito già inserito nel progetto iniziale, in quanto ogni identificatore bundle deve essere univoco.
+   >Assicurati di utilizzare un identificatore bundle univoco, diverso da quello predefinito `com.adobe.luma.tutorial.swiftui`  immessi nel progetto iniziale, poiché ogni identificatore del bundle deve essere univoco.
 
 
    ![Funzionalità di firma Xcode](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
@@ -139,4 +139,4 @@ In caso di problemi, consulta [tecnico](https://developer.adobe.com/client-sdks/
 >Ora hai configurato l’app per utilizzare Assurance per il resto dell’esercitazione.<br/>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
-Successivo: **[Consenso](consent.md)**
+Successivo: **[Implementare il consenso](consent.md)**
