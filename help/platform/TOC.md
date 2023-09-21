@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial
 user-guide-description: Scopri i numerosi componenti di Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 78b5ee6e1bcda449d8adf453088ddba6f0e42f36
+source-git-commit: c61d9d10c25cba92136d1dca635e12cbf222b947
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '994'
 ht-degree: 34%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 34%
    + [Flusso della configurazione di Segment Match](/help/platform/segments/segment-match-configuration-flow.md)
    + [Approfondimenti Segment Match pre-condivisione](/help/platform/segments/segment-match-pre-share-insights.md)
    + [Ricezione dei dati con Segment Match](/help/platform/segments/segment-match-receiving-data.md)
-+ [Registri di controllo](/help/platform/governance/audit-logs.md)
++ [Registri di audit](/help/platform/governance/audit-logs.md)
 + [Raccolta dati](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=it){target="_blank"}
 + Dashboard {#dashboards}
    + [Creare un dashboard](/help/platform/dashboards/create-a-dashboard.md)
@@ -112,6 +112,7 @@ ht-degree: 34%
    + [Connessione alle destinazioni](/help/platform/destinations/connecting-to-destinations.md)
    + [Creare destinazioni e attivare dati](/help/platform/destinations/create-destinations-and-activate-data.md)
    + [Attivare profili e segmenti in una destinazione](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
+   + [Configurare una destinazione di esportazione del set di dati](/help/platform/destinations/configure-dataset-export-destination.md)
    + [Integrare con Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
    + [Configurare la destinazione BLOB di Azure](/help/platform/destinations/configure-the-azure-blob-destination.md)
    + [Configurare la destinazione Marketo](/help/platform/destinations/configure-the-marketo-destination.md)
