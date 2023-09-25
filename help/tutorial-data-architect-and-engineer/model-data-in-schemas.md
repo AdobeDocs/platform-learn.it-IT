@@ -8,10 +8,10 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '2485'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -24,7 +24,7 @@ La standardizzazione e l&#39;interoperabilità sono concetti chiave alla base di
 
 XDM è una specifica documentata pubblicamente progettata per migliorare la potenza delle esperienze digitali. Fornisce strutture e definizioni comuni per qualsiasi applicazione da utilizzare per comunicare con i servizi di Platform. Aderendo agli standard XDM, tutti i dati sulla customer experience possono essere incorporati in una rappresentazione comune che può fornire informazioni in modo più veloce e integrato. Puoi ottenere informazioni preziose dalle azioni dei clienti, definire i tipi di pubblico dei clienti attraverso i segmenti ed esprimere gli attributi dei clienti a scopo di personalizzazione.
 
-XDM è il framework fondamentale che consente a Adobe Experience Cloud, basato su Experience Platform, di inviare il messaggio giusto alla persona giusta, sul canale giusto, nel momento esatto giusto. La metodologia su cui si basa l&#39;Experience Platform, **Sistema XDM**, rende operativi gli schemi Experience Data Model per l’utilizzo da parte dei servizi Platform.
+XDM è il framework fondamentale che consente a Adobe Experience Cloud, basato su Experienci Platform, di inviare il messaggio giusto alla persona giusta, sul canale giusto, nel momento esatto giusto. La metodologia su cui si basa l&#39;Experience Platform, **Sistema XDM**, rende operativi gli schemi Experience Data Model per l’utilizzo da parte dei servizi Platform.
 
 <!--
 This seems too lengthy. The video should suffice
@@ -43,11 +43,11 @@ Key terms:
 **Architetti di dati** dovrà creare schemi al di fuori di questa esercitazione, ma **Ingegneri dati** opererà a stretto contatto con gli schemi creati dall’architetto di dati.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sugli schemi e sull’Experience Data Model (XDM):
->[!VIDEO](https://video.tv.adobe.com/v/27105?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on)
 
 >[!TIP]
 >
-> Per un approfondimento sulla modellazione dei dati in Experience Platform, consigliamo di seguire il corso [Modellare i dati sull’esperienza del cliente con XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it), disponibile gratuitamente su Experience League!
+> Per un approfondimento sulla modellazione dei dati in Experienci Platform, consigliamo di seguire il corso [Modellare i dati sull’esperienza del cliente con XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it), disponibile gratuitamente su Experience League!
 
 ## Autorizzazioni richieste
 
@@ -77,7 +77,7 @@ In questo esercizio, creeremo uno schema per i dati fedeltà di Luma.
 
 ### Aggiungi gruppi di campi standard
 
-Verrà quindi richiesto di aggiungere gruppi di campi allo schema. Tutti i campi devono essere aggiunti agli schemi utilizzando i gruppi. Puoi scegliere tra un ampio set di gruppi di campi standard del settore forniti da Adobe o crearne di personalizzati. Quando inizi a modellare i tuoi dati in Experience Platform, è bene acquisire familiarità con i gruppi di campi standard di settore forniti da Adobe. Quando possibile, è consigliabile utilizzarli in quanto a volte forniscono servizi a valle, come IA per l’analisi dei clienti, Attribution AI e Adobe Analytics.
+Verrà quindi richiesto di aggiungere gruppi di campi allo schema. Tutti i campi devono essere aggiunti agli schemi utilizzando i gruppi. Puoi scegliere tra un ampio set di gruppi di campi standard del settore forniti da Adobe o crearne di personalizzati. Quando inizi a modellare i tuoi dati in Experienci Platform, è bene acquisire familiarità con i gruppi di campi standard di settore forniti da Adobe. Quando possibile, è consigliabile utilizzarli in quanto a volte forniscono servizi a valle, come IA per l’analisi dei clienti, Attribution AI e Adobe Analytics.
 
 Quando lavori con i tuoi dati, un grande passo sarà determinare quali dei tuoi dati devono essere acquisiti in Platform e come devono essere modellati. Questo argomento di grandi dimensioni viene discusso in modo più approfondito nel corso [Modellare i dati sull’esperienza del cliente con XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it). In questa esercitazione, ti guiderò attraverso l&#39;implementazione di alcuni schemi predeterminati.
 
@@ -312,7 +312,7 @@ Ora creeremo un altro schema per i dati del sito web di Luma. A questo punto dov
 |---------------|-----------------|
 | Classe | XDM ExperienceEvent |
 | Gruppo di campi | Mixin ExperienceEvent AEP Web SDK |
-| Gruppo di campi | Evento esperienza del consumatore |
+| Gruppo di campi | Evento esperienza consumatore |
 | Nome schema | Schema eventi web Luma |
 
 Seleziona la **[!UICONTROL Evento esperienza del consumatore]** gruppo di campi. Questo gruppo di campi contiene gli oggetti commerce e productListItems presenti [!UICONTROL Dettagli Commerce]. Infatti [!UICONTROL Evento esperienza del consumatore] è una combinazione di diversi altri gruppi di campi standard disponibili separatamente. [!UICONTROL Mixin ExperienceEvent AEP Web SDK] gruppo di campi contiene anche altri gruppi di campi, inclusi alcuni degli stessi in [!UICONTROL Evento esperienza del consumatore]. Fortunatamente, si fondono perfettamente.

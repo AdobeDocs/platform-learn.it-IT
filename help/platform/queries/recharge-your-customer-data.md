@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 3%
@@ -17,13 +17,14 @@ ht-degree: 3%
 # Ricarica i dati dei tuoi clienti per offrire esperienze elettrizzanti
 
 I dati omni-channel sono un componente fondamentale per abilitare i profili dei clienti actionable utilizzati dagli esperti di marketing per orchestrare l’attivazione e misurare i percorsi dei clienti risultanti. Tuttavia, le organizzazioni devono affrontare problemi nella gestione della qualità, della scala e della varietà di questi dati. Richiedono soluzioni semplificate per mitigare l’impatto di dati di bassa qualità, ridurre il time-to-value e moltiplicare il ROI utilizzando gli stessi dati per molti casi d’uso.
+Per ulteriori informazioni, visitare il [Documentazione di Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it).
 
 Questo video illustra:
 
 * Funzionalità di preparazione dei dati di Adobe Experience Platform che puoi sfruttare
 * Aumento del ROI da Adobe Real-Time CDP, Adobe Journey Optimizer e Customer Journey Analytics
 
->[!VIDEO](https://video.tv.adobe.com/v/342533?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on)
 
 ## Esempio SQL
 
@@ -45,8 +46,6 @@ AND timestamp > current_date - interval '4 day'
 GROUP BY customerId,sku
 order by price desc)D;
 ```
-
-Per ulteriori informazioni, visitare il [Documentazione di Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it).
 
 >[!NOTE]
 >

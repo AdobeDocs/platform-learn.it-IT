@@ -8,10 +8,10 @@ feature: Data Management
 jira: KT-4348
 thumbnail: 4348-create-datasets.jpg
 exl-id: 80227af7-4976-4fd2-b1d4-b26bc4626fa0
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -26,7 +26,7 @@ Tutti i dati acquisiti correttamente in Adobe Experience Platform vengono manten
 **Architetti di dati** dovrà creare set di dati al di fuori di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sui set di dati:
->[!VIDEO](https://video.tv.adobe.com/v/27269?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on)
 
 ## Autorizzazioni richieste
 

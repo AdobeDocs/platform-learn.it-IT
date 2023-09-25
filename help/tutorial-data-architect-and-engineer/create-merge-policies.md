@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Per questa lezione verrà utilizzata l’interfaccia utente, ma sono disponibili
 **Architetti di dati** dovrà creare criteri di unione al di fuori di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sui criteri di unione:
->[!VIDEO](https://video.tv.adobe.com/v/330433?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on)
 
 ## Autorizzazioni richieste
 

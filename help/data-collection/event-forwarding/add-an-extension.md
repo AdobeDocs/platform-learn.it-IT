@@ -6,7 +6,7 @@ level: Intermediate
 jira: KT-6422
 thumbnail: 331941.jpeg
 exl-id: 00a0b2c5-8b71-446b-9b20-612a9efbca62
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 18%
@@ -15,7 +15,7 @@ ht-degree: 18%
 
 # Aggiungere un’estensione per l’inoltro degli eventi
 
-Scopri come aggiungere un’estensione per l’inoltro di eventi in Raccolta dati.
+Scopri come aggiungere un’estensione per l’inoltro di eventi in Raccolta dati. Per ulteriori informazioni, visitare il [documentazione sull’inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
 
 >[!NOTE]
 >
@@ -25,6 +25,4 @@ Scopri come aggiungere un’estensione per l’inoltro di eventi in Raccolta dat
 > * Platform launch Server Side è ora **[!DNL event forwarding]**
 > * Le configurazioni Edge ora sono **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331941?quality=12&learn=on)
-
-Per ulteriori informazioni, visitare il [documentazione sull’inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
+>[!VIDEO](https://video.tv.adobe.com/v/331941?learn=on)

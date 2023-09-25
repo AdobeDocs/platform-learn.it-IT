@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-4332
 thumbnail: 32502.jpg
 exl-id: d46373b9-4a80-4fe0-a072-51ec48585b3f
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Funzionalità chiave di Adobe Experience Platform
 
-Scopri le funzionalità chiave di Experience Platform:
+Scopri le funzionalità chiave di Experienci Platform:
 
 1. Creare profili cliente fruibili, intelligenti e in tempo reale
 1. Arricchisci i dati e ottieni ulteriori informazioni con modelli AI/ML e query di dati
@@ -23,5 +23,5 @@ Scopri le funzionalità chiave di Experience Platform:
 1. Migliorare la consegna e la personalizzazione delle esperienze in tempo reale
 1. Ottieni la fiducia con la governance, la sicurezza e i controlli sulla privacy
 
->[!VIDEO](https://video.tv.adobe.com/v/32502?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32502?learn=on)
 

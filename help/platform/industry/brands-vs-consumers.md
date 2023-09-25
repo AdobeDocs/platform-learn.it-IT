@@ -9,7 +9,7 @@ thumbnail: 332060.jpg
 jira: KT-7335
 type: Event
 exl-id: 58cd1c30-1a72-4b21-94a6-b29d73b824c2
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 26%
@@ -18,8 +18,7 @@ ht-degree: 26%
 
 # Un racconto di due percezioni: marchi e consumatori
 
-Oggi, gli esperti di marketing sono sommersi da informazioni dedicate alle procedure sull’identità. E solo il 37% dei professionisti del marketing ha detto che sono molto preparati per un futuro senza cookie, secondo una recente ricerca di Adobi e [!DNL Advanis]. In questo Adobe del webinar vengono illustrati il livello di preparazione di inserzionisti ed editori a un futuro senza cookie, l’impatto sui loro casi d’uso e la percezione dell’ecosistema in generale.
+Oggi, gli esperti di marketing sono sommersi da informazioni dedicate alle procedure sull’identità. E solo il 37% dei professionisti del marketing ha detto che sono molto preparati per un futuro senza cookie, secondo una recente ricerca di Adobi e [!DNL Advanis]. In questo Adobe del webinar vengono illustrati il livello di preparazione di inserzionisti ed editori a un futuro senza cookie, l’impatto sui loro casi d’uso e la percezione dell’ecosistema in generale. Per integrare questo video, puoi anche [scarica un white paper](assets/whitepaper-a-tale-of-two-perceptions.pdf)
 
->[!VIDEO](https://video.tv.adobe.com/v/332060/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332060/?learn=on)
 
-Per integrare questo video, puoi anche [scarica un white paper](assets/whitepaper-a-tale-of-two-perceptions.pdf)

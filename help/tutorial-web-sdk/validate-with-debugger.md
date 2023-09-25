@@ -1,27 +1,27 @@
 ---
-title: Convalidare le implementazioni Web SDK con Experience Platform Debugger
+title: Convalidare le implementazioni Web SDK con Experienci Platform Debugger
 description: Scopri come convalidare l’implementazione di Platform Web SDK con l’Adobe Experience Platform Debugger. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 5%
 
 ---
 
-# Convalidare le implementazioni Web SDK con Experience Platform Debugger
+# Convalidare le implementazioni Web SDK con Experienci Platform Debugger
 
 Scopri come convalidare l’implementazione di Platform Web SDK con l’Adobe Experience Platform Debugger.
 
-Experience Platform Debugger è un’estensione disponibile per i browser Chrome e Firefox che consente di visualizzare la tecnologia Adobe implementata nelle pagine web. Scarica la versione per il browser preferito:
+Experienci Platform Debugger è un’estensione disponibile per i browser Chrome e Firefox che consente di visualizzare la tecnologia Adobe implementata nelle pagine web. Scarica la versione per il browser preferito:
 
 * [Estensione Firefox](https://addons.mozilla.org/it/firefox/addon/adobe-experience-platform-dbg/)
 * [Estensione Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 Se non hai mai utilizzato il debugger prima, e questo è diverso dal precedente Adobe Experience Cloud Debugger, guarda questo video introduttivo di cinque minuti:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 In questa lezione, utilizzerai [Estensione Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) per sostituire la proprietà di tag in codifica fissa [Sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html) con la tua proprietà.
 
@@ -53,9 +53,9 @@ Questa esercitazione utilizza una versione in hosting pubblico del [Sito web di 
 
 ![Home page Luma](assets/validate-luma-site.png)
 
-Experience Platform Debugger dispone di una funzione interessante che consente di sostituire una libreria di tag esistente con una diversa. Questa tecnica è utile per la convalida e ci consente di saltare molti passaggi di implementazione in questa esercitazione.
+Experienci Platform Debugger dispone di una funzione interessante che consente di sostituire una libreria di tag esistente con una diversa. Questa tecnica è utile per la convalida e ci consente di saltare molti passaggi di implementazione in questa esercitazione.
 
-1. Assicurati di avere aperto il sito Luma e seleziona l’icona dell’estensione Experience Platform Debugger
+1. Assicurati di avere aperto il sito Luma e seleziona l’icona dell’estensione Experienci Platform Debugger
 1. Debugger si aprirà e mostrerà alcuni dettagli dell’implementazione hardcoded, che non è correlata a questa esercitazione (potrebbe essere necessario ricaricare il sito Luma dopo aver aperto Debugger)
 1. Conferma che il debugger è &quot;**[!UICONTROL Connesso a Luma]**&quot; come illustrato di seguito, quindi selezionare la&quot;**[!UICONTROL blocca]**&quot; per bloccare Debugger sul sito Luma.
 1. Seleziona la **[!UICONTROL Accedi]** e accedi a Adobe Experience Cloud utilizzando il tuo ID Adobe.
@@ -80,7 +80,7 @@ Experience Platform Debugger dispone di una funzione interessante che consente d
 
 Continuando l’esercitazione, utilizzerai questa tecnica per mappare il sito Luma sulla tua proprietà tag per convalidare l’implementazione dell’SDK web per Platform. Quando inizi a utilizzare i tag sul sito web di produzione, puoi usare questa stessa tecnica per convalidare le modifiche.
 
-## Convalidare l’implementazione in Experience Platform Debugger
+## Convalidare l’implementazione in Experienci Platform Debugger
 
 Puoi utilizzare il debugger per convalidare l’implementazione di Platform Web SDK e visualizzare i dati inviati a Platform Edge Network:
 
@@ -88,7 +88,7 @@ Puoi utilizzare il debugger per convalidare l’implementazione di Platform Web 
 
    ![Scheda Riepilogo](assets/validate-summary.png)
 
-1. Ora vai a **[!UICONTROL Experience Platform Web SDK]** nel menu di navigazione a sinistra per visualizzare **[!UICONTROL Richieste di rete]**
+1. Ora vai a **[!UICONTROL Experienci Platform Web SDK]** nel menu di navigazione a sinistra per visualizzare **[!UICONTROL Richieste di rete]**
 1. Apri **[!UICONTROL Eventi]** row (non preoccuparti se questa schermata mostra più richieste della tua, include richieste da lezioni future e per ora puoi ignorarle)
 
    ![richiesta Adobe Experience Platform Web SDK](assets/validate-aep-screen.png)
@@ -107,7 +107,7 @@ Puoi anche convalidare i dettagli di Identity Map:
 
 1. Torna alla [home page di Luma](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. Apri **[!UICONTROL Experience Platform Web SDK]** sezione nel menu di navigazione a sinistra
+1. Apri **[!UICONTROL Experienci Platform Web SDK]** sezione nel menu di navigazione a sinistra
 
    ![SDK per web nel debugger](assets/identity-debugger-websdk-dark.png)
 

@@ -3,7 +3,7 @@ title: Configurare uno spazio dei nomi delle identità
 description: Scopri come configurare gli spazi dei nomi delle identità da utilizzare con Adobe Experience Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 11%
@@ -46,7 +46,7 @@ Devi avere già completato le lezioni precedenti:
 In questo esercizio creerai uno spazio dei nomi delle identità per il campo di identità personalizzato di Luma, `lumaCrmId`. Gli spazi dei nomi delle identità svolgono un ruolo fondamentale nella creazione di profili cliente in tempo reale, in quanto due valori corrispondenti nello stesso spazio dei nomi consentono a due origini di dati di formare un grafo identità.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sull’identità in Adobe Experience Platform:
->[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
 
 Ora crea uno spazio dei nomi per l’ID CRM Luma:
 

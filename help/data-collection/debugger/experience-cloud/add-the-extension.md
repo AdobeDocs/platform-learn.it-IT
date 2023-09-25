@@ -6,24 +6,19 @@ feature: Debugger
 level: Beginner
 thumbnail: 23114.jpeg
 exl-id: ba94065e-ef18-4b8c-8f83-c772287bbfe4
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: 8cddffe88b2d15970d4d742a839577333a29d966
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 16%
+source-wordcount: '111'
+ht-degree: 10%
 
 ---
 
 # Aggiungi il Experience Cloud Debugger
 
-Scopri come [aggiungere l’estensione Adobe Experience Cloud Debugger al browser web Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) in modo da comprendere e risolvere i problemi relativi alle implementazioni di Experienci Cloud.
+Scopri come [aggiungere l’estensione Adobe Experience Cloud Debugger al browser web Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) in modo da comprendere e risolvere i problemi relativi alle implementazioni di Experienci Cloud. Per ulteriori informazioni, vedere [Documentazione del Experience Cloud Debugger](https://docs.adobe.com/content/help/it-IT/experience-cloud/user-guides/home.translate.html).
 
 >[!NOTE]
 >
 >Prendi in considerazione l’aggiornamento a [Adobe Experience Platform Debugger](../overview.md), che è una versione aggiornata dell’estensione presentata in questo video e contiene il supporto per funzioni più recenti come Platform Web SDK.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23114/?quality=12)
-
-## Risorse aggiuntive
-
-* [Scaricare l’estensione Adobe Experience Cloud Debugger dallo store di Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
-* [Documentazione del Experience Cloud Debugger](https://docs.adobe.com/content/help/it-IT/experience-cloud/user-guides/home.translate.html)

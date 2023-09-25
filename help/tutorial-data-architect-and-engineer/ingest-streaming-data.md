@@ -2,13 +2,13 @@
 title: Acquisire dati in streaming
 seo-title: Ingest streaming data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Acquisire dati in streaming
-description: In questa lezione, trasmetterai i dati in Experience Platform utilizzando l’SDK per web.
+description: In questa lezione, trasmetterai i dati in Experienci Platform utilizzando l’SDK per web.
 role: Data Engineer
 feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '3344'
 ht-degree: 2%
@@ -31,9 +31,9 @@ Nell’interfaccia di Data Collection è necessario completare due attività pri
 
 Prima di iniziare gli esercizi, guarda questi due brevi video per ulteriori informazioni sull’acquisizione di dati in streaming e Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on)
 
 >[!NOTE]
 >
@@ -101,7 +101,7 @@ Nella schermata successiva, specifica dove desideri inviare i dati. Per inviare 
 1. Attiva **[!UICONTROL Adobe Experience Platform]** per esporre campi aggiuntivi
 1. Per **[!UICONTROL Sandbox]**, seleziona `Luma Tutorial`
 1. Per **[!UICONTROL Set di dati evento]**, seleziona `Luma Web Events Dataset`
-1. Se utilizzi altre applicazioni di Adobe, puoi esplorare le altre sezioni per vedere quali informazioni sono necessarie nella configurazione Edge di queste altre soluzioni. L’SDK per web è stato sviluppato non solo per inviare in streaming i dati in Experience Platform, ma anche per sostituire tutte le librerie JavaScript precedenti utilizzate da altre applicazioni Adobe. La configurazione Edge viene utilizzata per specificare i dettagli dell’account di ogni applicazione a cui si desidera inviare i dati.
+1. Se utilizzi altre applicazioni di Adobe, puoi esplorare le altre sezioni per vedere quali informazioni sono necessarie nella configurazione Edge di queste altre soluzioni. L’SDK per web è stato sviluppato non solo per inviare in streaming i dati in Experienci Platform, ma anche per sostituire tutte le librerie JavaScript precedenti utilizzate da altre applicazioni Adobe. La configurazione Edge viene utilizzata per specificare i dettagli dell’account di ogni applicazione a cui si desidera inviare i dati.
 1. Seleziona **[!UICONTROL Salva]**
    ![Configurare lo stream di dati e salvare](assets/websdk-edgeConfig-addEnvironment.png)
 
@@ -248,14 +248,14 @@ Come è possibile vedere sul [!UICONTROL Flusso di pubblicazione] , il processo 
 
 ### Aggiungi l’Adobe Experience Platform Debugger
 
-Experience Platform Debugger è un’estensione disponibile per i browser Chrome e Firefox che consente di visualizzare la tecnologia Adobe implementata nelle pagine web. Scarica la versione per il browser preferito:
+Experienci Platform Debugger è un’estensione disponibile per i browser Chrome e Firefox che consente di visualizzare la tecnologia Adobe implementata nelle pagine web. Scarica la versione per il browser preferito:
 
 * [Estensione Firefox](https://addons.mozilla.org/it/firefox/addon/adobe-experience-platform-dbg/)
 * [Estensione Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 Se non hai mai utilizzato il debugger prima, e questo è diverso dal precedente Adobe Experience Cloud Debugger, potresti voler guardare questo video di panoramica di cinque minuti:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 ### Apri il sito web Luma.
 
@@ -268,11 +268,11 @@ Questo sito in hosting è il motivo per cui abbiamo utilizzato `enablementadobe.
 
 ![Home page Luma](assets/websdk-luma-homepage.png)
 
-### Utilizza Experience Platform Debugger per eseguire il mapping alla proprietà tag
+### Utilizza Experienci Platform Debugger per eseguire il mapping alla proprietà tag
 
-Experience Platform Debugger dispone di una funzione interessante che consente di sostituire una proprietà tag esistente con una diversa. Questo è utile per la convalida e ci consente di saltare molti passaggi di implementazione in questa esercitazione.
+Experienci Platform Debugger dispone di una funzione interessante che consente di sostituire una proprietà tag esistente con una diversa. Questo è utile per la convalida e ci consente di saltare molti passaggi di implementazione in questa esercitazione.
 
-1. Assicurati di avere aperto il sito Luma e seleziona l’icona dell’estensione Experience Platform Debugger
+1. Assicurati di avere aperto il sito Luma e seleziona l’icona dell’estensione Experienci Platform Debugger
 1. Debugger si aprirà e mostrerà alcuni dettagli dell’implementazione hardcoded, che non è correlata a questa esercitazione (potrebbe essere necessario ricaricare il sito Luma dopo aver aperto Debugger)
 1. Conferma che il debugger è &quot;**[!UICONTROL Connesso a Luma]**&quot; come illustrato di seguito, quindi selezionare la&quot;**[!UICONTROL blocca]**&quot; per bloccare Debugger sul sito Luma.
 1. Seleziona la **[!UICONTROL Accedi]** in alto a destra per eseguire l’autenticazione.
@@ -301,7 +301,7 @@ Experience Platform Debugger dispone di una funzione interessante che consente d
 
 
 
-## Convalidare i dati in Experience Platform
+## Convalidare i dati in Experienci Platform
 
 Puoi verificare che i dati stiano arrivando in Platform osservando i batch di dati in arrivo in `Luma Web Events Dataset`. (Lo so, si chiama acquisizione di dati in streaming, ma ora sto dicendo che arriva in batch! Viene inviato in streaming al profilo in tempo reale, quindi può essere utilizzato per la segmentazione e l’attivazione in tempo reale, ma viene inviato in batch ogni 15 minuti al data lake.)
 
@@ -332,7 +332,7 @@ Puoi anche verificare che il nuovo profilo sia visualizzato:
 1. Ora vai a **[!UICONTROL Elementi dati]** nel menu di navigazione a sinistra
 1. Seleziona la **[!UICONTROL Creare un nuovo elemento dati]** pulsante
 
-   ![Creare un nuovo elemento dati](assets/websdk-property-createNewDataElement.png)
+   ![Crea un nuovo elemento di dati](assets/websdk-property-createNewDataElement.png)
 1. Come **[!UICONTROL Nome]**, immetti `Page Name`
 1. Come **[!UICONTROL Tipo di elemento dati]**, seleziona `JavaScript Variable`
 1. Come **[!UICONTROL Nome variabile JavaScript]**, immetti `digitalData.page.pageInfo.pageName`
@@ -352,7 +352,7 @@ Ora mapperemo il nome della nostra pagina all’SDK per web.
 
 Il giorno **[!UICONTROL Elementi dati]** pagina:
 
-1. Creare un nuovo elemento dati
+1. Crea un nuovo elemento di dati
 1. Come **[!UICONTROL Nome]**, immetti `XDM Object`
 1. Come **[!UICONTROL Estensione]**, seleziona `Adobe Experience Platform Web SDK`
 1. Come **[!UICONTROL Tipo di elemento dati]**, seleziona `XDM object`
@@ -445,7 +445,7 @@ Per verificare che l’ID del sistema di gestione delle relazioni con i clienti 
 1. Mappare il file alla proprietà tag utilizzando Debugger, come indicato nelle istruzioni precedenti
 1. Seleziona la **Login** collegamento in alto a destra del sito web Luma
 1. Accedi utilizzando le credenziali `test@adobe.com`/`test`
-1. Una volta autenticata, controlla la chiamata Experience Platform Web SDK nel debugger (**[!UICONTROL Adobe Experience Platform Web SDK]** > **[!UICONTROL Richieste di rete]** > **[!UICONTROL Eventi]** della richiesta più recente) e dovresti vedere `lumaCrmId`:
+1. Una volta autenticata, controlla la chiamata Experienci Platform Web SDK nel debugger (**[!UICONTROL Adobe Experience Platform Web SDK]** > **[!UICONTROL Richieste di rete]** > **[!UICONTROL Eventi]** della richiesta più recente) e dovresti vedere `lumaCrmId`:
    ![Convalidare l’identità nel debugger](assets/websdk-debugger-confirmIdentity.png)
 1. Cerca di nuovo il profilo utente utilizzando lo spazio dei nomi e il valore ECID. Nel profilo troverai l’ID del sistema di gestione delle relazioni con i clienti, l’ID fedeltà e i dettagli del profilo, come il nome e il numero di telefono. Tutte le identità e i dati sono stati uniti in un unico profilo cliente in tempo reale.
    ![Convalidare l’identità in Platform](assets/websdk-platform-lumaCrmIdProfile.png)

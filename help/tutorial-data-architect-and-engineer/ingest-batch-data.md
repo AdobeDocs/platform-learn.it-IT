@@ -2,13 +2,13 @@
 title: Acquisire dati batch
 seo-title: Ingest batch data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Acquisire dati batch
-description: In questa lezione, acquisirai dati batch in Experience Platform utilizzando vari metodi.
+description: In questa lezione, acquisirai dati batch in Experienci Platform utilizzando vari metodi.
 role: Data Engineer
 feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '2526'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 # Acquisire dati batch
 
 <!-- 1hr-->
-In questa lezione, acquisirai dati batch in Experience Platform utilizzando vari metodi.
+In questa lezione, acquisirai dati batch in Experienci Platform utilizzando vari metodi.
 
 L’inserimento di dati in batch consente di acquisire una grande quantità di dati in Adobe Experience Platform contemporaneamente. Puoi acquisire dati batch in un caricamento una tantum nell’interfaccia di Platform o utilizzando l’API. Puoi anche configurare caricamenti in batch pianificati regolarmente da servizi di terze parti, come i servizi di archiviazione cloud, utilizzando i connettori di origine.
 
@@ -26,7 +26,7 @@ L’inserimento di dati in batch consente di acquisire una grande quantità di d
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sull’acquisizione dei dati:
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on)
 
 
 ## Autorizzazioni richieste
@@ -237,7 +237,7 @@ Vediamo un altro modo di caricare i dati. La funzione Flussi di lavoro consente 
 1. Dovresti avere già scaricato e decompresso [luma-data.zip](assets/luma-data.zip) nel tuo `Luma Tutorial Assets` cartella.
 1. Conferma di avere`luma-products.csv`
 
-### Creare un flusso di lavoro
+### Crea un flusso di lavoro
 
 Ora configuriamo il flusso di lavoro:
 
@@ -298,7 +298,7 @@ Molte delle origini hanno un flusso di lavoro di configurazione simile, in cui:
 1. Tieni presente che nella sezione sono presenti collegamenti utili per la documentazione di `...`
 1. Nella casella del fornitore di archiviazione cloud preferito, seleziona la **[!UICONTROL Configura]** pulsante
    ![Seleziona configura](assets/ingestion-offline-selectFTP.png)
-1. **[!UICONTROL Autenticazione]** è il primo passaggio. Inserisci il nome dell’account, ad esempio `Luma's FTP Account` e i dettagli di autenticazione. Questo passaggio dovrebbe essere abbastanza simile per tutte le origini di archiviazione cloud, anche se i campi possono variare leggermente. Dopo aver immesso i dettagli di autenticazione per un account, è possibile riutilizzarli per altre connessioni di origine che potrebbero inviare dati diversi su pianificazioni diverse da altri file nello stesso account
+1. **[!UICONTROL Autenticazione]** è il primo passaggio. Inserisci il nome dell’account, ad esempio `Luma's FTP Account` e i dettagli di autenticazione. Questo passaggio dovrebbe essere abbastanza simile per tutte le origini di archiviazione cloud, anche se i campi possono variare leggermente. Dopo aver immesso i dettagli di autenticazione per un account, puoi riutilizzarli per altre connessioni di origine che potrebbero inviare dati diversi su pianificazioni diverse da altri file nello stesso account
 1. Seleziona la **[!UICONTROL Pulsante Connetti all&#39;origine]**
 1. Una volta che Platform si è connessa correttamente all’origine, seleziona **[!UICONTROL Successivo]** pulsante
    ![Autentica nell&#39;origine](assets/ingestion-offline-authentication.png)
@@ -332,7 +332,7 @@ Cercare il profilo con il valore `5625458` nel `loyaltyId` per verificare se nel
 
 ## Strumenti ETL
 
-Adobe collabora con più fornitori ETL per supportare l’acquisizione dei dati in Experience Platform. A causa della varietà di fornitori di terze parti, ETL non è trattato in questa esercitazione, anche se è opportuno rivedere alcune di queste risorse:
+Adobe collabora con più fornitori ETL per supportare l’acquisizione dei dati in Experienci Platform. A causa della varietà di fornitori di terze parti, ETL non è trattato in questa esercitazione, anche se è opportuno rivedere alcune di queste risorse:
 
 * [Sviluppo di integrazioni ETL per Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [Pagina Connettore Adobe Experience Platform Informatica su Adobe Exchange](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)

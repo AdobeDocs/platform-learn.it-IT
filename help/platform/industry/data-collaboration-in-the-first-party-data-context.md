@@ -8,10 +8,10 @@ doc-type: Event
 thumbnail: 337665.jpg
 jira: KT-9145
 exl-id: 84d900c4-662e-486c-97c9-38c55fd5bf28
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '163'
-ht-degree: 27%
+ht-degree: 34%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 27%
 
 Mantenere la promessa dell’esperienza, con accesso a meno dati. Che tu sia un inserzionista, un editore o un’agenzia, questo webinar aiuterà a sbloccare le opportunità di collaborazione sui dati in un futuro senza cookie di terze parti.
 
->[!VIDEO](https://video.tv.adobe.com/v/337665/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/337665/?learn=on)
 
 ## Conclusioni principali:
 
@@ -33,4 +33,4 @@ Mantenere la promessa dell’esperienza, con accesso a meno dati. Che tu sia un 
 
 [Audience Marketplace per gli acquirenti di dati](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/audience-marketplace/audience-marketplace-for-data-buyers/marketplace-data-buyers.html?lang=en)
 
-[Destinazioni basate su persone](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/people-based-destinations-overview.html?lang=en)
+[Destinazioni basate su persone](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/people-based-destinations-overview.html?lang=it)

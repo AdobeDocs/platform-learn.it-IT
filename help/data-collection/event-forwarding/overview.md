@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-6419
 thumbnail: 331937.jpeg
 exl-id: bd1a7414-b232-4ae3-98e8-b0ec1c60361b
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 62%
@@ -15,7 +15,7 @@ ht-degree: 62%
 
 # Panoramica sull’inoltro degli eventi
 
-Scopri come l’inoltro degli eventi centralizza la raccolta dei dati, riduce la quantità di codice necessario nelle app web e mobile e invia i dati alle soluzioni non Adobe tramite Adobe Experience Platform Edge Network.
+Scopri come l’inoltro degli eventi centralizza la raccolta dei dati, riduce la quantità di codice necessario nelle app web e mobile e invia i dati alle soluzioni non Adobe tramite Adobe Experience Platform Edge Network. Per ulteriori informazioni, visitare il [documentazione sull’inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
 
 >[!NOTE]
 >
@@ -25,6 +25,4 @@ Scopri come l’inoltro degli eventi centralizza la raccolta dei dati, riduce la
 > * Platform launch Server Side è ora **[!DNL event forwarding]**
 > * Le configurazioni Edge ora sono **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331937?quality=12&learn=on)
-
-Per ulteriori informazioni, visitare il [documentazione sull’inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
+>[!VIDEO](https://video.tv.adobe.com/v/331937?learn=on)

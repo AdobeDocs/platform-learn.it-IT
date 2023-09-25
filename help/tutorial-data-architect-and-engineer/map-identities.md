@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 9%
@@ -26,7 +26,7 @@ Il servizio Adobe Experience Platform Identity consente di ottenere una visione 
 **Architetti di dati** dovrà mappare le identità al di fuori di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sull’identità in Adobe Experience Platform:
->[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
 
 >[!NOTE]
 >

@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-7684
 thumbnail: 333415.jpg
 exl-id: 7288da8f-4646-4519-81cc-dae33d79b86e
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 77%
@@ -16,8 +16,6 @@ ht-degree: 77%
 
 # Esplora i dati
 
-Scopri come convalidare i dati acquisiti, visualizzarli in anteprima ed esplorarne le proprietà statistiche e analitiche utilizzando le funzioni SQL.
+Scopri come convalidare i dati acquisiti, visualizzarli in anteprima ed esplorarne le proprietà statistiche e analitiche utilizzando le funzioni SQL. Per ulteriori informazioni, visitare il [Documentazione di Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/333415?quality=12&learn=on)
-
-Per ulteriori informazioni, visitare il [Documentazione di Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it).
+>[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on)

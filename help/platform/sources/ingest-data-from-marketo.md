@@ -11,7 +11,7 @@ jira: KT-9259, KT-13303
 last-substantial-update: 2023-05-24T00:00:00Z
 thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
-source-git-commit: bcf6079bc2e05c8c59bcc1b020ac15d1db6a02f2
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -26,13 +26,13 @@ Scopri come acquisire facilmente i dati dal Marketo Engage in Real-time Customer
 
 Scopri come configurare il connettore di origine per Marketo utilizzando il flusso di lavoro dei modelli. Questo flusso di lavoro genera automaticamente le risorse necessarie per acquisire i dati Marketo in base ai modelli. Consente di risparmiare tempo iniziale e le risorse possono essere personalizzate in base alle tue esigenze.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419550?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419550?learn=on)
 
 ## Flusso di lavoro standard
 
 Scopri come configurare il connettore di origine per Marketo utilizzando il flusso di lavoro standard. Il flusso di lavoro standard richiede la creazione anticipata di schemi e spazi dei nomi di identità.
 
->[!VIDEO](https://video.tv.adobe.com/v/338250?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on)
 
 Per ulteriori informazioni, consulta la seguente documentazione:
 * [Documentazione del connettore di origine del Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).

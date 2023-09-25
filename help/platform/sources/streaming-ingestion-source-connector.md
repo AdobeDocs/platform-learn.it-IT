@@ -1,25 +1,25 @@
 ---
 title: Trasmettere i dati utilizzando i connettori di origini
-description: Questo video mostra come eseguire lo streaming dei dati in tempo reale da un’origine di archiviazione cloud a Platform e utilizzarli in tempo reale per il coinvolgimento dei clienti.
+description: Scopri come eseguire lo streaming dei dati in tempo reale da un’origine di archiviazione cloud a Platform e utilizzarli in tempo reale per il coinvolgimento dei clienti.
 feature: Sources
 role: Data Engineer, Data Architect, Developer
 level: Intermediate
 jira: KT-7100
 thumbnail: 331943.jpg
 exl-id: bd788a1e-123f-488f-8df7-23336aae88fd
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 52%
+source-wordcount: '113'
+ht-degree: 10%
 
 ---
 
 # Trasmettere i dati utilizzando i connettori di origini
 
-Questo video mostra come eseguire lo streaming dei dati in tempo reale da un’origine di archiviazione cloud a Platform e utilizzarli in tempo reale per il coinvolgimento dei clienti.
+Scopri come eseguire lo streaming dei dati in tempo reale da un’origine di archiviazione cloud a Platform e utilizzarli in tempo reale per il coinvolgimento dei clienti.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/331943?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331943?learn=on)
 
 ## Risorse aggiuntive
 
