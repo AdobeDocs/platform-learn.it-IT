@@ -1,5 +1,5 @@
 ---
-title: Come si attivano segmenti e attributi di profilo da Adobe Real-time CDP ad Adobe Target?
+title: Come si attivano segmenti e attributi di profilo da Adobe Real-Time CDP ad Adobe Target?
 description: Scopri come attivare segmenti e attributi di profilo da Adobe Real-time Customer Data Platform ad Adobe Target per visualizzare contenuti personalizzati in tempo reale su siti web, app mobili e altre proprietà digitali.
 solution: Real-Time Customer Data Platform,Target
 feature-set: Experience Platform,Target
@@ -12,7 +12,7 @@ doc-type: Feature Video
 last-substantial-update: 2023-05-03T00:00:00Z
 jira: KT-13140
 exl-id: 10d19094-0fc3-4075-b52e-684805c85213
-source-git-commit: bcf6079bc2e05c8c59bcc1b020ac15d1db6a02f2
+source-git-commit: 7c471d9da851c594c33e00473a04996fd247bb84
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 5%
