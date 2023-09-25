@@ -5,7 +5,7 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+source-git-commit: 7f77a26dfae71c2f0e643deba6c72a8ecdb0de02
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 2%
@@ -153,7 +153,7 @@ Affinché l’app funzioni con Journey Optimizer, devi aggiornare la proprietà 
    <img src="assets/luma-app-push.png" width="300" />
 
 
-### Aggiungere funzionalità di notifica push all’app
+## Aggiungere funzionalità di notifica push all’app
 
 >[!IMPORTANT]
 >
@@ -172,7 +172,7 @@ Ora dovresti avere aggiunto all’app un’estensione per le notifiche push, sim
 ![Estensione notifiche push](assets/xcode-signing-capabilities-pushnotifications.png)
 
 
-### Implementare Journey Optimizer nell’app
+## Implementare Journey Optimizer nell’app
 
 Come descritto nelle lezioni precedenti, l’installazione di un’estensione tag per dispositivi mobili fornisce solo la configurazione. Ora devi installare e registrare l’SDK di messaggistica. Se questi passaggi non sono chiari, rivedi [Installare gli SDK](install-sdks.md) sezione.
 
@@ -205,7 +205,7 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
    ]
    ```
 
-### Registra token dispositivo per notifiche push
+## Registra token dispositivo per notifiche push
 
 1. Aggiungi il [`MobileCore.setPushIdentifier`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) API per `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` funzione.
 
@@ -318,7 +318,7 @@ Il passaggio successivo consiste nel creare il percorso che attiva l’invio del
    ![Percorso finito](assets/ajo-journey-finished.png)
 
 
-## Attivazione della notifica push
+## Attivare la notifica push
 
 Sono disponibili tutti gli ingredienti per inviare una notifica push. Ciò che rimane è come attivare questa notifica push. In sostanza, è lo stesso che hai visto prima: invia semplicemente un evento di esperienza con il payload corretto (come in [Eventi](events.md)).
 
