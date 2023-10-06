@@ -5,10 +5,10 @@ user-guide-description: Scopri i numerosi componenti di Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 906993f14376f7a1a6344436c7068c747d275fb4
+source-git-commit: 6564012147237b1ccd25e1507030f846c8564321
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 34%
+source-wordcount: '998'
+ht-degree: 35%
 
 ---
 
@@ -38,7 +38,8 @@ ht-degree: 34%
 + [Importazione dei dati di esempio in Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Amministrazione {#admin}
    + [Utilizzare gli avvisi](/help/platform/admin/use-alerts.md)
-   + [Utilizzare le sandbox](/help/platform/admin/use-sandboxes.md)
+   + [Utilizzare le sandbox](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [Copiare oggetti da una sandbox a un’altra](/help/platform/admin/use-sandboxes.md)
    + [Configurare il controllo degli accessi basato su attributi](/help/platform/admin/configure-attribute-based-access-control.md)
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [Gestire i profili di prodotto](/help/platform/admin/managing-product-profiles.md)
@@ -113,7 +114,7 @@ ht-degree: 34%
    + [Connessione alle destinazioni](/help/platform/destinations/connecting-to-destinations.md)
    + [Creare destinazioni e attivare dati](/help/platform/destinations/create-destinations-and-activate-data.md)
    + [Attivare profili e segmenti in una destinazione](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
-   + [Configurare una destinazione di esportazione del set di dati](/help/platform/destinations/configure-dataset-export-destination.md)
+   + [Configurare la destinazione di esportazione per un set di dati](/help/platform/destinations/configure-dataset-export-destination.md)
    + [Integrare con Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
    + [Configurare la destinazione BLOB di Azure](/help/platform/destinations/configure-the-azure-blob-destination.md)
    + [Configurare la destinazione Marketo](/help/platform/destinations/configure-the-marketo-destination.md)
