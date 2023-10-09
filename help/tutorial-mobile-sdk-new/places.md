@@ -1,17 +1,18 @@
 ---
-title: Utilizzare i servizi di geolocalizzazione
+title: Usa luoghi
 description: Scopri come utilizzare il servizio di geolocalizzazione Places nella tua app mobile.
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1666'
 ht-degree: 3%
 
 ---
 
-# Utilizzare i servizi di geolocalizzazione
+# Usa luoghi
 
-Scopri come utilizzare il servizio di geolocalizzazione nell’app.
+Scopri come utilizzare il servizio di geolocalizzazione Places nella tua app.
 
 Il servizio Adobe Experience Platform Data Collection Places è un servizio di geolocalizzazione che consente alle app mobili dotate di awareness della posizione di contestualizzare quest’ultima. Il servizio utilizza interfacce SDK avanzate e facili da usare, associate a un database flessibile di punti di interesse (POI).
 
@@ -81,7 +82,7 @@ Affinché il servizio Places funzioni all’interno dell’app e nell’SDK di M
    1. Seleziona **[!UICONTROL Salva nella libreria e genera]** da **[!UICONTROL Salva nella libreria]**.
       ![Estensione Install Places](assets/places-install-extension.png).
 
-1. È in corso la rigenerazione della libreria.
+1. La libreria viene ricreata.
 
 
 ### Verifica lo schema
@@ -96,7 +97,7 @@ Verifica se lo schema, come definito in [Crea schema](create-schema.md), incorpo
    ![Posizioni schema](assets/schema-places-context.png).
 
 
-### Aggiornare il tag
+### Aggiornare la proprietà tag
 
 L’estensione Luoghi per i tag fornisce funzionalità per monitorare gli eventi di geolocalizzazione e consente di attivare azioni basate su tali eventi. Puoi utilizzare questa funzionalità per ridurre al minimo la codifica API da implementare nell’app.
 
@@ -132,7 +133,7 @@ Innanzitutto, puoi creare diversi elementi dati.
 
 Ora devi definire le regole da utilizzare con questi elementi dati.
 
-1. Nella proprietà tag. seleziona **[!UICONTROL Regole]** dalla barra a sinistra.
+1. Nella proprietà tag, seleziona **[!UICONTROL Regole]** dalla barra a sinistra.
 1. Seleziona **[!UICONTROL Aggiungi regola]**.
 1. In **[!UICONTROL Crea regola]** immettere un nome per la regola, ad esempio `POI - Entry`.
 1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) sotto **[!UICONTROL EVENTI]**.
@@ -215,6 +216,10 @@ Creiamo un’altra regola
 1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) accanto al **[!UICONTROL Core mobile - Allega dati]** azione.
    1. Seleziona **[!UICONTROL Adobe Experience Platform Edge Network]** dal **[!UICONTROL Estensione]** elenca e seleziona **[!UICONTROL Inoltra evento a Edge Network]**.
    1. Seleziona **[!UICONTROL Mantieni modifiche]**.
+
+1. Per salvare la regola, seleziona **[!UICONTROL Salva nella libreria]**.
+
+   ![Regola](assets/tags-rule-poi-exit.png)
 
 
 Per pubblicare tutte le modifiche apportate al tag
@@ -302,18 +307,15 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
    }
    ```
 
-Oltre all’argomento di questa lezione, puoi spiegare i dettagli sull’implementazione di Location Manager in iOS.
-
-
 ## Convalida tramite l’app
 
 1. Apri l’app su un dispositivo o nel simulatore.
 
 1. Vai a **[!UICONTROL Posizione]** scheda.
 
-1. Sposta la mappa per assicurarti che il cerchio blu al centro sia sopra uno dei punti di interesse, ad esempio Londra.
+1. Sposta (trascina) la mappa per far sì che il cerchio blu centrale sia sopra uno dei punti di interesse, ad esempio Londra.
 
-1. Tocca <img src="assets/geobutton.png" width="20" /> ripetutamente fino a visualizzare la categoria e il nome in basso a destra.
+1. Tocca <img src="assets/geobutton.png" width="20" /> fino a quando la categoria e il nome non vengono visualizzati nell’etichetta in rosso con il pin.
 
 1. Tocca l’etichetta del POI, che apre il **[!UICONTROL POI nelle vicinanze]** foglio.
 

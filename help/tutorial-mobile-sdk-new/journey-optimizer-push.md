@@ -5,9 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 7f77a26dfae71c2f0e643deba6c72a8ecdb0de02
+exl-id: 37d5b52e-c0d0-4ca1-9629-5c3dd2b2a5d5
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '2554'
+source-wordcount: '2607'
 ht-degree: 2%
 
 ---
@@ -102,8 +103,13 @@ Per fare in modo che i dati inviati dalla tua app mobile a Edge Network vengano 
 
 1. Nell’interfaccia utente di Data Collection, seleziona **[!UICONTROL Flussi di dati]** e seleziona il flusso di dati, ad esempio **[!DNL Luma Mobile App]**.
 1. Seleziona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) per **[!UICONTROL Experience Platform]** e seleziona ![Modifica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Modifica]** dal menu di scelta rapida.
-1. In **[!UICONTROL Flussi di dati]** > ![Cartella](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** schermata, assicurati **[!UICONTROL Adobe Journey Optimizer]** è selezionato. Consulta [Impostazioni Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) per ulteriori informazioni.
-1. Per salvare la configurazione dello stream di dati, seleziona **[!UICONTROL Salva]**.
+1. In **[!UICONTROL Flussi di dati]** > ![Cartella](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** schermata:
+
+   1. Se non è già selezionato, seleziona **[!UICONTROL Set di dati profilo push AJO]** da **[!UICONTROL Set di dati profilo]**. Questo set di dati di profilo è necessario quando si utilizza `MobileCore.setPushIdentifier` Chiamata API (vedi [Registra token dispositivo per notifiche push](#register-device-token-for-push-notifications)) che garantisce che l’identificatore univoco per le notifiche push (ovvero l’identificatore push) venga memorizzato come parte del profilo dell’utente.
+
+   1. **[!UICONTROL Adobe Journey Optimizer]** è selezionato. Consulta [Impostazioni Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) per ulteriori informazioni.
+
+   1. Per salvare la configurazione dello stream di dati, seleziona **[!UICONTROL Salva]**.
 
    ![Configurazione dello stream di dati AEP](assets/datastream-aep-configuration.png)
 
@@ -131,9 +137,7 @@ Affinché l’app funzioni con Journey Optimizer, devi aggiornare la proprietà 
 
 ## Convalida impostazione con Assurance
 
-1. Rivedi [istruzioni di configurazione](assurance.md) sezione.
-1. Installa l’app sul dispositivo fisico o sul simulatore.
-1. Avvia l’app utilizzando l’URL generato da Assurance.
+1. Rivedi [istruzioni di configurazione](assurance.md#connecting-to-a-session) per collegare il simulatore o il dispositivo ad Assurance.
 1. Nell’interfaccia utente Assurance, seleziona **[!UICONTROL Configura]**.
    ![configura clic](assets/push-validate-config.png)
 1. Seleziona ![Più](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) accanto a **[!UICONTROL Debug push]**.
@@ -386,7 +390,7 @@ Questa volta l’evento esperienza che stai per inviare non è costruito per cre
 
 ## Convalida tramite l’app
 
-1. Apri l’app su un dispositivo o nel simulatore.
+1. Rigenera ed esegui l’app nel simulatore o su un dispositivo fisico da Xcode, utilizzando ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. Vai a **[!UICONTROL Impostazioni]** scheda.
 
@@ -404,4 +408,3 @@ Ora dovresti disporre di tutti gli strumenti per gestire le notifiche push nell�
 >Ora hai abilitato l’app per le notifiche push tramite Journey Optimizer e l’estensione Journey Optimizer per l’SDK di Experienci Platform Mobile.<br/>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Successivo: **[Creare e inviare messaggi in-app](journey-optimizer-inapp.md)**
-

@@ -3,10 +3,11 @@ title: Configura Assurance
 description: Scopri come implementare l’estensione Assurance in un’app mobile.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 9%
+source-wordcount: '962'
+ht-degree: 7%
 
 ---
 
@@ -68,7 +69,7 @@ Prima di eseguire l’applicazione per la prima volta in Xcode, assicurati di ag
 
    >[!IMPORTANT]
    >
-   >Assicurati di utilizzare un identificatore bundle univoco, diverso da quello predefinito `com.adobe.luma.tutorial.swiftui`  immessi nel progetto iniziale, poiché ogni identificatore del bundle deve essere univoco.
+   >Assicurati di utilizzare un’ _univoco_ identificatore del bundle e sostituisci il `Luma` identificatore del bundle, in quanto ogni identificatore del bundle deve essere univoco. In genere si utilizza il formato DNS inverso per le stringhe ID bundle, come `com.organization.brand.uniqueidentifier`. La versione finale di questa esercitazione, ad esempio, utilizza `com.adobe.luma.tutorial.swiftui`.
 
 
    ![Funzionalità di firma Xcode](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
@@ -91,7 +92,7 @@ Assurance funziona aprendo un URL, tramite il browser o il codice QR. Tale URL i
 
 ## Connessione a una sessione
 
-1. Eseguire l&#39;applicazione nel simulatore o su un dispositivo fisico collegato.
+1. Rigenera ed esegui l’app nel simulatore o su un dispositivo fisico da Xcode, utilizzando ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 1. Seleziona **[!UICONTROL Assurance]** dalla barra a sinistra nell’interfaccia utente di Data Collection.
 1. Seleziona **[!UICONTROL Crea sessione]**.
 1. Seleziona **[!UICONTROL Inizio]**.
@@ -133,6 +134,34 @@ Assurance funziona aprendo un URL, tramite il browser o il codice QR. Tale URL i
          ![eventi di garanzia](assets/assurance-events.png)
 
 In caso di problemi, consulta [tecnico](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
+
+
+## Verificare le estensioni
+
+Per verificare se l’app utilizza le estensioni più aggiornate:
+
+1. Seleziona **[!UICONTROL Configura]**.
+
+1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) per ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Versioni dell&#39;estensione]**.
+
+1. Seleziona **[!UICONTROL Salva]**.
+
+   ![Configurare le versioni delle estensioni](assets/assurance-configure-extension-versions.png)
+
+1. Seleziona ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Versioni dell&#39;estensione]**. Vedrai una panoramica delle ultime estensioni disponibili e delle estensioni utilizzate nella tua versione dell’app.
+
+   ![Versioni delle estensioni](assets/assurance-extension-versions.png)
+
+1. Per aggiornare le versioni dell’estensione (ad esempio **[!UICONTROL Messaggistica]** e **[!UICONTROL Ottimizza]**), in Xcode, per le estensioni specifiche che richiedono un aggiornamento, seleziona il pacchetto (estensione) da **[!UICONTROL Dipendenze pacchetto]** (ad es. **[!UICONTROL AEPMessaging]**) e dal menu di scelta rapida selezionare **[!UICONTROL Aggiorna pacchetto]**. Xcode aggiornerà le dipendenze del pacchetto.
+
+
+>[!NOTE]
+>
+>Dopo aver aggiornato le estensioni (pacchetti) in Xcode, devi chiudere ed eliminare la sessione corrente e ripetere tutti i passaggi da [Connessione a una sessione](#connecting-to-a-session) e [Verificare le estensioni](#verify-extensions) affinché Assurance segnali correttamente le estensioni corrette in una nuova sessione Assurance.
+
+
+
+
 
 >[!SUCCESS]
 >

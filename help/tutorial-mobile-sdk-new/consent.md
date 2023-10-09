@@ -3,10 +3,11 @@ title: Implementare il consenso
 description: Scopri come implementare il consenso in un’app mobile.
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 2%
+source-wordcount: '558'
+ht-degree: 1%
 
 ---
 
@@ -32,9 +33,9 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 Se hai seguito l’esercitazione fin dall’inizio, ricorda di aver impostato il consenso predefinito nell’estensione Consenso su **[!UICONTROL In sospeso: mette in coda eventi che si verificano prima che l’utente fornisca le preferenze di consenso.]**
 
-Per iniziare a raccogliere i dati, devi ottenere il consenso dell’utente. In questa esercitazione, ottieni il consenso dell’utente semplicemente richiedendolo con un avviso. In un’app reale, vorresti consultare le best practice sul consenso per la tua area geografica.
+Per iniziare a raccogliere i dati, devi ottenere il consenso dell’utente. In un’app reale, vorresti consultare le best practice sul consenso per la tua regione. In questa esercitazione, ottieni il consenso dell’utente semplicemente richiedendolo con un avviso:
 
-1. Si desidera chiedere all&#39;utente una sola volta. Pertanto, vuoi combinare il consenso Mobile SDK con le autorizzazioni necessarie per il tracciamento tramite Apple [Framework trasparenza tracciamento app](https://developer.apple.com/documentation/apptrackingtransparency). In questa app, si presuppone che quando l’utente autorizza il tracciamento, l’utente acconsenta anche alla raccolta degli eventi.
+1. Desideri chiedere all’utente il consenso solo una volta. Pertanto, vuoi combinare il consenso Mobile SDK con le autorizzazioni necessarie per il tracciamento tramite Apple [Framework trasparenza tracciamento app](https://developer.apple.com/documentation/apptrackingtransparency). In questa app, si presuppone che quando l’utente autorizza il tracciamento, l’utente acconsenta anche alla raccolta degli eventi.
 
 1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** nel Navigatore progetti Xcode.
 
@@ -95,9 +96,7 @@ Nell’esempio precedente, stai semplicemente registrando lo stato del consenso 
 
 ## Convalida con garanzia
 
-1. Rivedi [Assurance](assurance.md) lezione.
-1. Installa l’app.
-1. Avvia l’app utilizzando l’URL generato da Assurance.
+1. Rivedi [istruzioni di configurazione](assurance.md#connecting-to-a-session) per collegare il simulatore o il dispositivo ad Assurance.
 1. Se hai aggiunto correttamente il codice precedente, ti viene richiesto di fornire il consenso.
 
    Seleziona **[!UICONTROL Continua...]** e quindi seleziona **[!UICONTROL Consenti]**.
@@ -107,6 +106,17 @@ Nell’esempio precedente, stai semplicemente registrando lo stato del consenso 
 
 1. Dovresti vedere un **[!UICONTROL Ottieni risposta consenso]** nell’interfaccia utente Assurance.
    ![convalida consenso](assets/consent-update.png)
+
+
+## Reimposta consenso
+
+Se desideri reimpostare il consenso:
+
+1. Vai a **[!UICONTROL Impostazioni]** nell’app.
+
+1. Seleziona **[!UICONTROL Impostazioni app...]** Si aprono le impostazioni dell’app Luma nell’app Impostazioni iOS.
+
+1. Attiva/Disattiva **[!UICONTROL Consenti tracciamento]** disattivato.
 
 
 

@@ -2,9 +2,10 @@
 title: Raccogliere dati profilo
 description: Scopri come raccogliere i dati del profilo in un’app mobile.
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '597'
 ht-degree: 1%
 
 ---
@@ -64,7 +65,7 @@ Sarebbe utile per il targeting e/o la personalizzazione nell’app sapere rapida
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -95,9 +96,7 @@ Dopo aver aggiornato l’attributo di un utente, questo è disponibile per altri
 
 ## Convalida con garanzia
 
-1. Rivedi [istruzioni di configurazione](assurance.md) sezione.
-1. Installa l’app.
-1. Avvia l’app utilizzando l’URL generato da Assurance.
+1. Rivedi [istruzioni di configurazione](assurance.md#connecting-to-a-session) per collegare il simulatore o il dispositivo ad Assurance.
 1. Esegui l’app per accedere e interagire con un prodotto.
 
    1. Sposta l’icona Assurance a sinistra.
@@ -132,4 +131,4 @@ Dopo aver aggiornato l’attributo di un utente, questo è disponibile per altri
 >
 >Ora hai configurato l’app per aggiornare gli attributi dei profili nella rete Edge e (se configurata) con Adobe Experience Platform.<br/>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Successivo: **[Utilizzare i servizi di geolocalizzazione](places.md)**
+Successivo: **[Usa luoghi](places.md)**

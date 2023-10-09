@@ -3,13 +3,13 @@ title: Configurare uno stream di dati
 description: Scopri come creare uno stream di dati in Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: d8b9df3d-49ee-4578-92c6-0f920a86fe7e
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 7%
+source-wordcount: '459'
+ht-degree: 8%
 
 ---
-
 
 # Creare un flusso di dati
 
@@ -57,43 +57,47 @@ Gli stream di dati possono essere creati in [!UICONTROL Raccolta dati] tramite l
 
 Quando si passa attraverso il (facoltativo) [Analytics](analytics.md) e [Experience Platform](platform.md) lezioni in questa esercitazione, stai aggiungendo servizi allo stream di dati per garantire che, quando l’SDK di Platform Mobile invia i dati alla rete Edge, lo stream di dati inoltri tali dati ai servizi configurati.
 
+<!--
+
 ### Adobe Analytics
 
-1. Seleziona **[!UICONTROL Aggiungi servizio]**.
+1. Select **[!UICONTROL Add Service]**.
 
-1. Aggiungi **[!UICONTROL Adobe Analytics]** dal [!UICONTROL Servizio] elenco,
+1. Add **[!UICONTROL Adobe Analytics]** from the [!UICONTROL Service] list, 
 
-1. Immettere il nome del sito del report che si desidera utilizzare in **[!UICONTROL ID suite di rapporti]**.
+1. Enter the name of the report site that you want to use in **[!UICONTROL Report Suite ID]**.
 
-1. Attiva il servizio cambiando **[!UICONTROL Abilitato]** su.
+1. Enable the service by switching **[!UICONTROL Enabled]** on.
 
-1. Seleziona **[!UICONTROL Salva]**.
+1. Select **[!UICONTROL Save]**.
 
-   ![Aggiungere Adobe Analytics come servizio di flusso di dati](assets/datastream-service-aa.png)
+   ![Add Adobe Analytics as datastream service](assets/datastream-service-aa.png)
 
 
 ### Adobe Experience Platform
 
-È inoltre possibile abilitare il servizio Adobe Experience Platform.
+You might also want to enable the Adobe Experience Platform service. 
 
 >[!IMPORTANT]
 >
->Puoi abilitare il servizio Adobe Experience Platform solo dopo aver creato un set di dati evento. Se non hai già creato un set di dati evento, segui le istruzioni [qui](platform.md).
+>You can only enable the Adobe Experience Platform service when having created an event dataset. If you don't already have an event dataset created, follow the instructions [here](platform.md).
 
-1. Clic ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Aggiungi servizio]** per aggiungere un altro servizio.
+1. Click ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add Service]** to add another service.
 
-1. Seleziona **[!UICONTROL Adobe Experience Platform]** dal [!UICONTROL Servizio] elenco.
+1. Select **[!UICONTROL Adobe Experience Platform]** from the [!UICONTROL Service] list.
 
-1. Attiva il servizio cambiando **[!UICONTROL Abilitato]** su.
+1. Enable the service by switching **[!UICONTROL Enabled]** on.
 
-1. Seleziona la **[!UICONTROL Set di dati evento]** che hai creato come parte del [Creare un set di dati](platform.md#create-a-dataset) istruzioni, ad esempio **Set di dati evento app mobile Luma**
+1. Select the **[!UICONTROL Event Dataset]** that you created as part of the [Create a dataset](platform.md#create-a-dataset) instructions, for example **Luma Mobile App Event Dataset**
 
-1. Seleziona **[!UICONTROL Salva]**.
+1. Select **[!UICONTROL Save]**.
 
-   ![Aggiungere Adobe Experience Platform come servizio per lo stream di dati](assets/datastream-service-aep.png)
-1. La configurazione finale sarà simile alla seguente.
+   ![Add Adobe Experience Platform as a datastream service](assets/datastream-service-aep.png)
+1. The final configuration should look something like this.
+   
+   ![datastream settings](assets/datastream-settings.png)
 
-   ![impostazioni dello stream di dati](assets/datastream-settings.png)
+-->
 
 
 >[!NOTE]

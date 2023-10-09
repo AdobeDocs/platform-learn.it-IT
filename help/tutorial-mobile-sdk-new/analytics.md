@@ -3,10 +3,11 @@ title: Mappare i dati ai dati di Analytics
 description: Scopri come raccogliere e mappare dati per Adobe Analytics in un’app mobile.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 631588df-a540-41b5-94e3-c8e1dc5f240b
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 2%
+source-wordcount: '901'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +23,7 @@ Il [evento](events.md) i dati raccolti e inviati a Platform Edge Network nelle l
 
 * Informazioni sul tracciamento ExperienceEvent.
 * Invio dei dati XDM nell&#39;app di esempio completato.
-* Stream di dati configurato per Adobe Analytics
+* Una suite di rapporti di Adobe Analytics che puoi utilizzare per questa lezione.
 
 ## Finalità di apprendimento
 
@@ -128,9 +129,11 @@ s.events = "scAdd:321435"
 
 ## Convalida con garanzia
 
-Utilizzo di [Assurance](assurance.md) puoi confermare che stai inviando un evento esperienza, che i dati XDM sono corretti e che la mappatura di Analytics sta avvenendo come previsto. Ad esempio:
+Utilizzo di [Assurance](assurance.md) puoi confermare che stai inviando un evento esperienza, che i dati XDM sono corretti e che la mappatura di Analytics sta avvenendo come previsto.
 
-1. Invia un evento productListAdds.
+1. Rivedi [istruzioni di configurazione](assurance.md#connecting-to-a-session) per collegare il simulatore o il dispositivo ad Assurance.
+
+1. Invia un **[!UICONTROL productListAdds]** evento (aggiungi un prodotto al carrello).
 
 1. Visualizza l’hit ExperienceEvent.
 
@@ -149,7 +152,6 @@ Utilizzo di [Assurance](assurance.md) puoi confermare che stai inviando un event
    "eventType" : "commerce.productListAdds",
    "commerce" : {
      "productListAdds" : {
-       "id" : "LLWS05.1-XS",
        "value" : 1
      }
    }
@@ -193,38 +195,45 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >
 >`_techmarketingdemos` viene sostituito con il valore univoco della tua organizzazione.
 
+
+
 Per mappare questi dati contestuali XDM sui dati di Analytics nella suite di rapporti, puoi:
+
+### Utilizzare un gruppo di campi
 
 * Aggiungi il **[!UICONTROL Estensione completa Adobe Analytics ExperienceEvent]** gruppo di campi allo schema.
 
   ![Gruppo di campi FullExtension di Analytics ExperienceEvent](assets/schema-analytics-extension.png)
-* Crea regole nella proprietà Tags per mappare i dati contestuali ai campi nel gruppo di campi Estensione completa Adobe Analytics ExperienceEvent. Ad esempio, mappa `_techmarketingdemo.appinformation.appstatedetails.screenname` a `_experience.analytics.customDimensions.eVars.eVar2`.
 
-<!-- Old processing rules section
-Here is what a processing rule using this data might look like:
+* Crea payload XDM nell’app, in conformità al gruppo di campi Estensione completa Adobe Analytics ExperienceEvent, in modo simile a quanto eseguito nel [Tracciamento dati evento](events.md) lezione, oppure
+* Crea regole nella proprietà Tags che utilizzano azioni regola per allegare o modificare dati al gruppo di campi Estensione completa Adobe Analytics ExperienceEvent. Vedi per ulteriori dettagli [Allegare dati agli eventi SDK](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) o [Modificare i dati negli eventi SDK](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/).
 
-* You **[!UICONTROL Overwrite value of]** (1) **[!UICONTROL App Screen Name (eVar2)]** (2) with the value of **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) if **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL is set]** (5).
 
-* You **[!UICONTROL Set event]** (6) **[!UICONTROL Add to Wishlist (Event 3)]** (7) to **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) if **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL is set]** (10).
+### Utilizzare le regole di elaborazione
 
-![analytics processing rules](assets/analytics-processing-rules.png)
+Di seguito è riportato un esempio di regola di elaborazione che utilizza questi dati:
+
+* Tu **[!UICONTROL Sovrascrivi valore di]** 1) **[!UICONTROL Nome schermo app (eVar2)]** (2) con il valore di **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) se **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** 4) **[!UICONTROL è impostato]** (5).
+
+* Tu **[!UICONTROL Imposta evento]** 6) **[!UICONTROL Aggiungi alla lista dei desideri (evento 3)]** da (7) a **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) se **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** 9) **[!UICONTROL è impostato]** (10)
+
+![regole di elaborazione di analytics](assets/analytics-processing-rules.png)
 
 >[!IMPORTANT]
 >
 >
->Some of the automatically mapped variables may not be available for use in processing rules.
+>Alcune delle variabili mappate automaticamente potrebbero non essere disponibili per l’utilizzo nelle regole di elaborazione.
 >
 >
->The first time you map to a processing rule, the interface does not show you the context data variables from the XDM object. To fix that select any value, Save, and come back to edit. All XDM variables should now appear.
+>La prima volta che esegui il mapping a una regola di elaborazione, l’interfaccia non mostra le variabili di dati di contesto dall’oggetto XDM. Per risolvere il problema, seleziona un valore qualsiasi, Salva e torna per modificarlo. Verranno visualizzate tutte le variabili XDM.
 
 
-Additional information about processing rules and context data can be found [here](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
+Ulteriori informazioni sulle regole di elaborazione e i dati contestuali sono disponibili [qui](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
 
 >[!TIP]
 >
->Unlike previous mobile app implementations, there is no distinction between a page / screen views and other events. Instead you can increment the **[!UICONTROL Page View]** metric by setting the **[!UICONTROL Page Name]** dimension in a processing rule. Since you are collecting the custom `screenName` field in the tutorial, it is highly recommended to map screen name to **[!UICONTROL Page Name]** in a processing rule.
+>A differenza delle precedenti implementazioni di app mobili, non esiste alcuna distinzione tra visualizzazioni di pagina/schermo e altri eventi. È invece possibile incrementare **[!UICONTROL Visualizzazione pagina]** metrica impostando la **[!UICONTROL Nome pagina]** dimensione in una regola di elaborazione. Poiché stai raccogliendo il `screenName` nell’esercitazione, si consiglia vivamente di mappare il nome della schermata su **[!UICONTROL Nome pagina]** in una regola di elaborazione.
 
--->
 
 >[!SUCCESS]
 >

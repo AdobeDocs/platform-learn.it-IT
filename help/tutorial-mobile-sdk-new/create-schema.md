@@ -3,9 +3,10 @@ title: Creare uno schema XDM
 description: Scopri come creare uno schema XDM per gli eventi delle app mobili.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 66a3c062-93e5-4183-8fb4-1f72cacb6552
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1506'
 ht-degree: 5%
 
 ---
@@ -96,9 +97,22 @@ A scopo di apprendimento, puoi utilizzare gruppi di campi predefiniti e personal
 
 1. Seleziona **[!UICONTROL Crea schema]**.
 
-1. Seleziona **[!UICONTROL XDM ExperienceEvent]** dal menu.
+1. In **[!UICONTROL Seleziona una classe]** passaggio del **[!UICONTROL Crea schema]** procedura guidata, seleziona **[!UICONTROL Evento esperienza]** sotto **[!UICONTROL Seleziona una classe base per questo schema]**.
 
-   ![Selezione di ExperienceEvent dal menu a discesa](assets/schema-create.png)
+1. Seleziona **[!UICONTROL Avanti]**.
+
+   ![Classe base di Creazione guidata schemi](assets/schema-wizard-base-class.png)
+
+1. In **[!UICONTROL Nome e recensione]** passaggio del **[!UICONTROL Crea schema]** procedura guidata, immetti un **[!UICONTROL Nome visualizzato schema]**, ad esempio `Luma Mobile Event Schema` e un [!UICONTROL Descrizione], ad esempio `Schema for Luma mobile app experience events`.
+
+   >[!NOTE]
+   >
+   >Se segui questa esercitazione con più persone su una singola sandbox o se utilizzi un account condiviso, puoi aggiungere o anteporre un’identificazione come parte delle convenzioni di denominazione. Ad esempio, usa `Luma Mobile App Event Schema - Joe Smith` invece di `Luma Mobile App Event Schema`. Vedi anche la nota in [Panoramica](overview.md).
+
+1. Seleziona **[!UICONTROL Fine]** per completare la procedura guidata.
+
+   ![Nome e revisione dello schema](assets/schema-wizard-name-and-review.png)
+
 
 1. Seleziona ![Più](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Aggiungi** accanto a **[!UICONTROL Gruppi di campi]**.
 
@@ -116,16 +130,7 @@ A scopo di apprendimento, puoi utilizzare gruppi di campi predefiniti e personal
 
    Viene visualizzata di nuovo la schermata principale di composizione dello schema, in cui puoi visualizzare tutti i campi disponibili.
 
-1. Assegna un nome allo schema selezionando **[!UICONTROL Schema senza titolo]** dal **[!UICONTROL Composizione]** riquadro (sotto **[!UICONTROL Schema]**) e fornendo un **[!UICONTROL Nome visualizzato]** E **[!UICONTROL Descrizione]**, ad esempio `Luma Mobile App Event Schema` e `Schema for Luma mobile app experience events.`
-
-   >[!NOTE]
-   >
-   >Se segui questa esercitazione con più persone su una singola sandbox o se utilizzi un account condiviso, puoi aggiungere o anteporre un’identificazione come parte delle convenzioni di denominazione. Ad esempio, usa `Luma Mobile App Event Schema - Joe Smith` invece di `Luma Mobile App Event Schema`. Vedi anche la nota in [Panoramica](overview.md).
-
-
 1. Seleziona **[!UICONTROL Salva]**.
-
-   ![Selezione dell&#39;opzione Applica](assets/schema-name-save.png)
 
 >[!NOTE]
 >
