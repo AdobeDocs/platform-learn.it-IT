@@ -3,10 +3,10 @@ title: Tutorial su Adobe Mix Modeler
 description: Informazioni sull’Adobe Mix Modeler
 doc-type: overview-page
 mini-toc-levels: 1
-source-git-commit: fd2fd5720103af9ad8b3147a4d1e5ef773f3bdeb
+source-git-commit: c639fabb5c710e322c727eb3a1b7a0bc4ecf492e
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 1%
+source-wordcount: '113'
+ht-degree: 3%
 
 ---
 
@@ -23,6 +23,8 @@ L’Adobe Mix Modeler consente alle organizzazioni di misurare, ottimizzare e pi
 <div id="recs-overview-body-4"></div>
 <div id="recs-overview-body-5"></div>
 <div id="recs-overview-body-6"></div>
+
+## Proposte del nostro staff
 
 <div id="staff-picks-section">
 <table style="margin-top: 0 !important">

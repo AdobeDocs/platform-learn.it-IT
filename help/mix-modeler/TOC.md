@@ -5,10 +5,10 @@ audience: all
 doc-type: video
 auto-video-transcripts: true
 solution: Mix Modeler
-source-git-commit: 90b6865292f0e6b4da7535256a524a327f23bfe3
+source-git-commit: c639fabb5c710e322c727eb3a1b7a0bc4ecf492e
 workflow-type: tm+mt
-source-wordcount: '23'
-ht-degree: 13%
+source-wordcount: '24'
+ht-degree: 16%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 13%
 
 + [Tutorials Mix Modeler](/help/mix-modeler/overview.md)
 + Introduzione a Mix Modeler {#intro}
+   + [Panoramica](/help/mix-modeler/intro/overview.md)
    + [Casi di utilizzo](/help/mix-modeler/intro/use-cases.md)
    + [Flusso di lavoro utente](/help/mix-modeler/intro/user-workflow.md)
    + [Presentazione interfaccia utente](/help/mix-modeler/intro/user-interface-tour.md)
