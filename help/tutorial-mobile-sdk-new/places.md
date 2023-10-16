@@ -3,9 +3,9 @@ title: Usa luoghi
 description: Scopri come utilizzare il servizio di geolocalizzazione Places nella tua app mobile.
 hide: true
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1691'
 ht-degree: 3%
 
 ---
@@ -239,7 +239,10 @@ Per convalidare la configurazione in Assurance:
 1. Se non è già disponibile nella barra a sinistra, seleziona **[!UICONTROL Configura]** nella barra a sinistra e seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) accanto a **[!UICONTROL Eventi]** e **[!UICONTROL Mappa e simula]** sotto **[!UICONTROL PLACES SERVICE]**.
 1. Seleziona **[!UICONTROL Salva]**.
 1. Seleziona **[!UICONTROL Mappa e simula]** nella barra a sinistra.
-1. Seleziona uno dei punti di interesse definiti nel servizio Luoghi e dal pop-up seleziona ![Ingranaggio](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simula evento di ingresso]**.
+1. Sposta la mappa nella posizione di uno dei punti di interesse.
+1. Seleziona ![Ingranaggio](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Simula punti di interesse di caricamento.  Il punto di interesse viene identificato mediante un cerchio e un pin.
+1. Seleziona il punto di interesse.
+1. Dal popup, seleziona ![Ingranaggio](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simula evento di ingresso]**.
    ![Simula evento di ingresso](assets/places-simulate.png)
 1. Seleziona **[!UICONTROL Eventi]** dalla barra a sinistra, dovresti vedere gli eventi simulati.
    ![Convalida delle decisioni AJO](assets/places-events.png)
@@ -258,7 +261,9 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
 1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** nel Navigatore progetti Xcode.
 1. Assicurare `AEPPlaces` fa parte dell’elenco delle importazioni.
 
-   `import AEPPlaces`
+   ```swift
+   import AEPPlaces
+   ```
 
 1. Assicurare `Places.self` fa parte dell’array di estensioni che si stanno registrando.
 

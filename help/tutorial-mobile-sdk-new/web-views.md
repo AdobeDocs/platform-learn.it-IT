@@ -3,13 +3,13 @@ title: Gestisci visualizzazioni Web
 description: Scopri come gestire la raccolta dati con WebViews in un’app mobile.
 jira: KT-6987
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 0c8818f7-39d3-496e-a835-2d85d50e50d6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
-
 
 # Gestisci visualizzazioni Web
 
@@ -67,6 +67,7 @@ Puoi saperne di più sulle `Identity.getUrlVariables` API in [Guida di riferimen
 
 Per eseguire il codice:
 
+1. Rivedi [istruzioni di configurazione](assurance.md#connecting-to-a-session) per collegare il simulatore o il dispositivo ad Assurance.
 1. Vai a **[!UICONTROL Impostazioni]** nell’app
 1. Tocca il **[!DNL View...]** per visualizzare **[!DNL Terms of Use]**.
 

@@ -4,10 +4,10 @@ description: Scopri come implementare il consenso in un’app mobile.
 feature: Mobile SDK,Consent
 hide: true
 exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 1%
+source-wordcount: '542'
+ht-degree: 2%
 
 ---
 
@@ -96,28 +96,10 @@ Nell’esempio precedente, stai semplicemente registrando lo stato del consenso 
 
 ## Convalida con garanzia
 
+1. Elimina l’applicazione dal dispositivo o simulatore in quanto desideri reimpostare e inizializzare correttamente il tracciamento e il consenso.
 1. Rivedi [istruzioni di configurazione](assurance.md#connecting-to-a-session) per collegare il simulatore o il dispositivo ad Assurance.
-1. Se hai aggiunto correttamente il codice precedente, ti viene richiesto di fornire il consenso.
-
-   Seleziona **[!UICONTROL Continua...]** e quindi seleziona **[!UICONTROL Consenti]**.
-
-   <img src="./assets/consent-update-1.png" width="300" /> 
-   <img src="./assets/consent-update-2.png" width="300" />
-
-1. Dovresti vedere un **[!UICONTROL Ottieni risposta consenso]** nell’interfaccia utente Assurance.
+1. Quando si sposta nell’app da **[!UICONTROL Home]** screen to **[!UICONTROL Prodotti]** schermata e torna a **[!UICONTROL Home]** schermo, dovresti vedere un **[!UICONTROL Ottieni risposta consenso]** nell’interfaccia utente Assurance.
    ![convalida consenso](assets/consent-update.png)
-
-
-## Reimposta consenso
-
-Se desideri reimpostare il consenso:
-
-1. Vai a **[!UICONTROL Impostazioni]** nell’app.
-
-1. Seleziona **[!UICONTROL Impostazioni app...]** Si aprono le impostazioni dell’app Luma nell’app Impostazioni iOS.
-
-1. Attiva/Disattiva **[!UICONTROL Consenti tracciamento]** disattivato.
-
 
 
 >[!SUCCESS]

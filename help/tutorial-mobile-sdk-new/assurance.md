@@ -4,9 +4,9 @@ description: Scopri come implementare l’estensione Assurance in un’app mobil
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '976'
 ht-degree: 7%
 
 ---
@@ -57,22 +57,28 @@ Oltre al generale [Installazione SDK](install-sdks.md), hai completato la lezion
 
 Ulteriori informazioni sono disponibili [qui](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
-## Firma
+<!-- not initially required
 
-Prima di eseguire l’applicazione per la prima volta in Xcode, assicurati di aggiornare la firma.
+## Signing
 
-1. Apri il progetto in Xcode.
-1. Seleziona **[!DNL Luma]** nel Navigatore progetti.
-1. Seleziona la **[!DNL Luma]** target.
-1. Seleziona la **Firma e funzionalità** scheda.
-1. Configura **[!UICONTROL Gestisci firma automatica]**, **[!UICONTROL Team]**, e **[!UICONTROL Identificatore bundle]**, oppure utilizza i dettagli specifici del provisioning per lo sviluppo di Apple.
+Signing the application is only required for the [Create and send push notifications](journey-optimizer-push.md) and the [Create and send in-app messages](journey-optimizer-inapp.md) lessons in this tutorial. These lessons require an Apple provisioning profile which **requires a paid Apple developer account**.
 
+To update the signing for the lessons that require that you sign the application:
+
+1. Open the project in Xcode.
+1. Select **[!DNL Luma]** in the Project navigator.
+1. Select the **[!DNL Luma]** target.
+1. Select the **Signing & Capabilities** tab.
+1. Configure **[!UICONTROL Automatic manage signing]**, **[!UICONTROL Team]**, and **[!UICONTROL Bundle Identifier]**, or use your specific Apple development provisioning details. 
+ 
    >[!IMPORTANT]
    >
-   >Assicurati di utilizzare un’ _univoco_ identificatore del bundle e sostituisci il `Luma` identificatore del bundle, in quanto ogni identificatore del bundle deve essere univoco. In genere si utilizza il formato DNS inverso per le stringhe ID bundle, come `com.organization.brand.uniqueidentifier`. La versione finale di questa esercitazione, ad esempio, utilizza `com.adobe.luma.tutorial.swiftui`.
+   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
 
 
-   ![Funzionalità di firma Xcode](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
+    ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
+
+-->
 
 ## Configurare un URL di base
 
@@ -81,9 +87,13 @@ Prima di eseguire l’applicazione per la prima volta in Xcode, assicurati di ag
 1. Seleziona la **[!DNL Luma]** target.
 1. Seleziona la **Info** scheda.
 1. Per aggiungere un URL di base, scorri verso il basso fino a **Tipi di URL** e seleziona la **+** pulsante.
-1. Imposta **Identificatore** all&#39;identificatore del bundle configurato in [Firma](#signing) (ad esempio `com.adobe.luma.tutorial.swiftui`) e impostare un **Schemi URL**, ad esempio `lumatutorialswiftui`.
+1. Imposta **Identificatore** all&#39;identificatore del bundle desiderato e imposta un **Schemi URL** di tua scelta.
 
    ![url di garanzia](assets/assurance-url-type.png)
+
+   >[!IMPORTANT]
+   >
+   >Assicurati di utilizzare un’ _univoco_ identificatore del bundle e sostituisci il `com.adobe.luma.tutorial.swiftui` identificatore del bundle, in quanto ogni identificatore del bundle deve essere univoco. In genere si utilizza il formato DNS inverso per le stringhe ID bundle, come `com.organization.brand.uniqueidentifier`.<br/>Allo stesso modo, utilizza uno schema URL univoco e sostituisci quello già fornito `lumatutorialswiftui` con il tuo schema URL univoco.
 
 Per ulteriori informazioni sugli schemi URL in iOS, consulta [Documentazione di Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
@@ -92,8 +102,31 @@ Assurance funziona aprendo un URL, tramite il browser o il codice QR. Tale URL i
 
 ## Connessione a una sessione
 
-1. Rigenera ed esegui l’app nel simulatore o su un dispositivo fisico da Xcode, utilizzando ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
-1. Seleziona **[!UICONTROL Assurance]** dalla barra a sinistra nell’interfaccia utente di Data Collection.
+In Xcode:
+
+1. Genera o rigenera ed esegui l’app nel simulatore o su un dispositivo fisico da Xcode, utilizzando ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+
+1. In **[!UICONTROL Consenti all’app Luma di utilizzare la tua posizione]** finestra di dialogo, seleziona **[!UICONTROL Consenti durante l&#39;utilizzo dell&#39;app]**.
+
+   <img src="assets/geolocation-permissions.png" width="300">
+
+1. In **[!UICONTROL &quot;App Luma&quot; desidera inviarti notifiche]** finestra di dialogo, seleziona **[!UICONTROL Consenti]**.
+
+   <img src="assets/notification-permissions.png" width="300">
+
+1. Seleziona **[!UICONTROL Continua...]** per consentire all&#39;app di tenere traccia dell&#39;attività.
+
+   <img src="assets/tracking-continue.png" width="300">
+
+1. In **[!UICONTROL Consenti a &quot;App Luma&quot; di tracciare la tua attività tra app e siti web di altre aziende]** finestra di dialogo, seleziona **[!UICONTROL Consenti]**.
+
+   <img src="assets/tracking-allow.png" width="300">
+
+
+Nel browser:
+
+1. Passa all’interfaccia utente di Data Collection.
+1. Seleziona **[!UICONTROL Assurance]** dalla barra a sinistra.
 1. Seleziona **[!UICONTROL Crea sessione]**.
 1. Seleziona **[!UICONTROL Inizio]**.
 1. Fornisci un **[!UICONTROL Nome sessione]** come `Luma Mobile App Session` e **[!UICONTROL URL di base]**, che è lo schema URL immesso in Xcode, seguito da `://` Ad esempio: `lumatutorialswiftui://`

@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Offers
 hide: true
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
 source-wordcount: '2618'
 ht-degree: 2%
@@ -296,7 +296,9 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
 1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** nel Navigatore progetti Xcode.
 1. Assicurare `AEPOptimize` fa parte dell’elenco delle importazioni.
 
-   `import AEPOptimize`
+   ```swift
+   import AEPOptimize
+   ```
 
 1. Assicurare `Optimize.self` fa parte dell’array di estensioni che si stanno registrando.
 
