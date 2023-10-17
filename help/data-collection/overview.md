@@ -1,16 +1,16 @@
 ---
-title: Tutorial sulla raccolta dati
+title: Tutorial su Raccolta dati
 description: Video ed esercitazioni per consentirti di utilizzare al meglio Data Collection
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '241'
 ht-degree: 37%
 
 ---
 
-# Tutorial sulla raccolta dati
+# Tutorial su Raccolta dati
 
 La raccolta dati è la nuova generazione di funzionalità di gestione di tag per siti web e SDK per dispositivi mobili di Adobe. La raccolta dati offre ai clienti un modo semplice di implementare e gestire le soluzioni di analisi, marketing e annunci pubblicitari necessarie per fornire ai clienti esperienze personalizzate. Segui questi video e tutorial per imparare a usare questa tecnologia fondamentale.
 
@@ -64,6 +64,19 @@ La raccolta dati è la nuova generazione di funzionalità di gestione di tag per
     </div>
     <p>
     <em>Utilizzare i tag per implementare l’SDK di Platform Mobile</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=it" target="_blank">
+      <img alt="Migrare Target a Web SDK" src="assets/thumb_targetWebSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=it" target="_blank">
+    <strong>Migrare da Adobe Target a Web SDK</strong>
+    </a>
+    </div>
+    <p>
+    <em>Migrare da at.js a Web SDK</em>
     <p>
   </td>
 </tr>
