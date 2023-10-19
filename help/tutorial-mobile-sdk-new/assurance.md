@@ -4,9 +4,9 @@ description: Scopri come implementare l’estensione Assurance in un’app mobil
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 68610d961e4825706a5f524652f7ec103c615ecf
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1002'
 ht-degree: 7%
 
 ---
@@ -105,6 +105,11 @@ Assurance funziona aprendo un URL, tramite il browser o il codice QR. Tale URL i
 In Xcode:
 
 1. Genera o rigenera ed esegui l’app nel simulatore o su un dispositivo fisico da Xcode, utilizzando ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+
+   >[!TIP]
+   >
+   >Facoltativamente, potresti voler &quot;ripulire&quot; la build, soprattutto quando vengono visualizzati risultati imprevisti. A questo scopo, seleziona **[!UICONTROL Pulisci cartella di compilazione...]** da Xcode **[!UICONTROL Prodotto]** menu.
+
 
 1. In **[!UICONTROL Consenti all’app Luma di utilizzare la tua posizione]** finestra di dialogo, seleziona **[!UICONTROL Consenti durante l&#39;utilizzo dell&#39;app]**.
 
