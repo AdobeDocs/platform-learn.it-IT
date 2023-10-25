@@ -1,27 +1,22 @@
 ---
 title: Funzionalità principali
-description: Questo video illustra le funzionalità principali di Adobe Experience Platform.
+description: Scopri le funzionalità chiave di Experienci Platform e come apportano valore alla tua azienda.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
+last-substantial-update: 2023-10-24T00:00:00Z
 jira: KT-4332
 thumbnail: 32502.jpg
 exl-id: d46373b9-4a80-4fe0-a072-51ec48585b3f
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: ca7acd3678b4af4a5b5a040d931a79b7a570fc51
 workflow-type: tm+mt
-source-wordcount: '66'
+source-wordcount: '40'
 ht-degree: 0%
 
 ---
 
 # Funzionalità chiave di Adobe Experience Platform
 
-Scopri le funzionalità chiave di Experienci Platform:
-
-1. Creare profili cliente fruibili, intelligenti e in tempo reale
-1. Arricchisci i dati e ottieni ulteriori informazioni con modelli AI/ML e query di dati
-1. Innovazione con componenti aperti e componibili
-1. Migliorare la consegna e la personalizzazione delle esperienze in tempo reale
-1. Ottieni la fiducia con la governance, la sicurezza e i controlli sulla privacy
+Scopri le funzionalità chiave di Experienci Platform e come apportano valore alla tua azienda.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32502?learn=on)
 
