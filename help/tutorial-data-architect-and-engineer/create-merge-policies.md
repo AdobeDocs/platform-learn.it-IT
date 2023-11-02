@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 915502e54365eedb09b12a92aa3b1af71f6de1f4
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 1%
@@ -61,7 +61,7 @@ Quando più schemi sono abilitati per il profilo, viene [!UICONTROL Schema di un
 
 Non esiste uno schema di unione per la classe ExperienceEvent. Anche se i dati ExperienceEvent arrivano ancora nel profilo, poiché si basano su serie temporali, ogni evento include una marca temporale e un ID; le collisioni non rappresentano un problema.
 
-E se non ti piace questo criterio di unione predefinito? E se Luma decidesse che il proprio sistema CRM dovrebbe essere la fonte di verità quando c’è un conflitto? A tale scopo, verrà creato un criterio di unione.
+E se non ti piace questo criterio di unione predefinito? E se Luma decidesse che il loro sistema di fedeltà dovrebbe essere la fonte di verità quando c’è un conflitto? A tale scopo, verrà creato un criterio di unione.
 
 ## Creare un criterio di unione nell’interfaccia utente
 
