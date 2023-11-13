@@ -1,13 +1,13 @@
 ---
 title: Casi d’uso principali
-description: Ottieni una panoramica dei cinque casi d’uso principali di Experienci Platform&mdash;Intelligent Re-engagement, "Don’t Lose" Campaigns, Customer Conversion Optimization, Contextual Recognition e One-Time Value to Lifetime Value.
+description: Ottieni una panoramica dei cinque casi d’uso principali di Experienci Platform&mdash;Intelligent Re-engagement, Don’t Lose Campaigns, Customer Conversion Optimization, Contextual Recognition e One-Time Value to Lifetime Value.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
 last-substantial-update: 2023-11-01T00:00:00Z
 jira: KT-4337
 thumbnail: 32806.jpg
 exl-id: fcc80ca6-8163-4a4c-b164-4f12f76c03e3
-source-git-commit: cc38679e0e7f27a10fe2513b4b4986347e501010
+source-git-commit: 4809c5e9b7ef031dd57f710b5e1fe39a55edf134
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 0%
