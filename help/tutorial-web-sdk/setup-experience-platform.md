@@ -2,9 +2,9 @@
 title: Trasmettere dati a Adobe Experience Platform con Web SDK
 description: Scopri come inviare dati web a Adobe Experience Platform con Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1606'
+source-wordcount: '1605'
 ht-degree: 7%
 
 ---
@@ -240,4 +240,4 @@ Ora hai abilitato Platform Web SDK, ad Experience Platform (e Real-Time CDP! E C
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

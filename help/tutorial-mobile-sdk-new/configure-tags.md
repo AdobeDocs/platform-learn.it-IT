@@ -3,10 +3,11 @@ title: Configurare una proprietà tag
 description: Scopri come configurare una proprietà tag in [!UICONTROL Raccolta dati] di rete.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 4d67b52e-db72-4ee6-be02-aa11a1d32481
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 5%
+source-wordcount: '1090'
+ht-degree: 4%
 
 ---
 
@@ -45,7 +46,7 @@ In questa lezione verranno fornite le seguenti informazioni:
 
       >[!NOTE]
       >
-      > Le impostazioni di consenso predefinite per le implementazioni dell’SDK per dispositivi mobili basate su Edge, come quella che stai eseguendo in questa lezione, provengono da [!UICONTROL Estensione del consenso] e non il [!UICONTROL Privacy] nella configurazione della proprietà tag. Puoi aggiungere e configurare l’estensione Consent più avanti in questa lezione. Per ulteriori informazioni, consulta [la documentazione](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+      > Le impostazioni di consenso predefinite per le implementazioni dell’SDK per dispositivi mobili basate su Edge, come quella che stai eseguendo in questa lezione, provengono da [!UICONTROL Estensione del consenso] e non il [!UICONTROL Privacy] nella configurazione della proprietà tag. Puoi aggiungere e configurare l’estensione Consent più avanti in questa lezione. Per ulteriori informazioni, consulta [la documentazione](https://developer.adobe.com/client-sdks/edge/consent-for-edge-network/).
 
 
 1. Apri la nuova proprietà.
@@ -131,7 +132,7 @@ La libreria viene creata per le nuove estensioni e configurazioni. Una build cor
 
 1. In **[!UICONTROL Istruzioni di installazione per dispositivi mobili]** , seleziona la **[!UICONTROL iOS]** scheda.
 
-1. Puoi copiare ![Copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) le istruzioni per configurare il progetto con CocoaPods. I CocoaPod vengono utilizzati per gestire le versioni e i download dell’SDK. Per ulteriori informazioni, consulta [Documentazione di Cocoapods](https://cocoapods.org/). Se utilizzi Android come piattaforma di sviluppo, Gradle è lo strumento per gestire la versione SDK, i download e le dipendenze. Per ulteriori informazioni, consulta [Documentazione di Gradle](https://gradle.org/)
+1. Puoi copiare ![Copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) le istruzioni per configurare il progetto con CocoaPods. I CocoaPod vengono utilizzati per gestire le versioni e i download dell’SDK. Per ulteriori informazioni, consulta [Documentazione di CocoaPods](https://cocoapods.org/). Se utilizzi Android™ come piattaforma di sviluppo, Gradle è lo strumento per gestire la versione SDK, i download e le dipendenze. Per ulteriori informazioni, consulta [Documentazione di Gradle](https://gradle.org/)
 
    Le istruzioni di installazione forniscono un buon punto di partenza per l’implementazione. Puoi trovare ulteriori informazioni [qui](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
@@ -140,7 +141,7 @@ La libreria viene creata per le nuove estensioni e configurazioni. Una build cor
    >Per il resto di questo tutorial, potrai **non** utilizza le istruzioni CocoaPods, ma utilizza una configurazione nativa basata su Swift Package Manager (SPM).
    >
 
-1. Seleziona la **[!UICONTROL Swift]** scheda sotto **[!UICONTROL Aggiungi codice di inizializzazione]**. Questo blocco di codice mostra come importare gli SDK richiesti e registrare le estensioni all’avvio. Questo argomento verrà trattato più dettagliatamente in [Installare gli SDK](install-sdks.md).
+1. Seleziona la **[!UICONTROL Swift]** scheda sotto **[!UICONTROL Aggiungi codice di inizializzazione]**. Questo blocco di codice mostra come importare gli SDK richiesti e registrare le estensioni all’avvio. Questo argomento è trattato più dettagliatamente in [Installare gli SDK](install-sdks.md).
 
 1. Copia ![Copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) il **[!UICONTROL ID file ambiente]** e conservarlo in un luogo in cui se ne ha bisogno in un secondo momento. Questo ID univoco punta all’ambiente di sviluppo. Ogni ambiente (Produzione, Staging, Sviluppo) ha un proprio valore ID univoco.
 
@@ -148,7 +149,7 @@ La libreria viene creata per le nuove estensioni e configurazioni. Una build cor
 
 >[!NOTE]
 >
->Le istruzioni di installazione devono essere considerate un punto di partenza e non una documentazione definitiva. Le versioni più recenti dell’SDK e gli esempi di codice sono disponibili nella [documentazione](https://developer.adobe.com/client-sdks/documentation/).
+>Le istruzioni di installazione devono essere considerate un punto di partenza e non una documentazione definitiva. Le versioni più recenti dell’SDK e gli esempi di codice sono disponibili nella [documentazione](https://developer.adobe.com/client-sdks/home/).
 
 ## Architettura dei tag per dispositivi mobili
 
@@ -156,10 +157,12 @@ Se conosci la versione web di Tag, precedentemente Launch, è importante compren
 
 * Sul web, viene eseguito il rendering di una proprietà tag in JavaScript che è poi (in genere) ospitato nel cloud. Viene fatto riferimento direttamente a tale file JavaScript nel sito web.
 
-* In una proprietà di tag mobile, le regole e le configurazioni vengono sottoposte a rendering in file JSON ospitati nel cloud. I file JSON vengono scaricati e letti dall’estensione core per dispositivi mobili nell’app mobile. Le estensioni sono SDK separati che funzionano insieme. Se aggiungi un’estensione alla proprietà tag, devi aggiornare anche l’app. Se modifichi l’impostazione di un’estensione o crei una regola, tali modifiche vengono applicate nell’app dopo che la libreria di tag aggiornata è stata pubblicata. Questa flessibilità ti consente di modificare le impostazioni (come ad Adobe l’ID suite di rapporti di Analytics) o anche cambiare il comportamento dell’app (utilizzando elementi dati e regole, come vedrai nelle lezioni successive) senza dover modificare il codice nell’app e inviare nuovamente l’app all’app store.
+* In una proprietà di tag mobile, le regole e le configurazioni vengono sottoposte a rendering in file JSON ospitati nel cloud. I file JSON vengono scaricati e letti dall’estensione core per dispositivi mobili nell’app mobile. Le estensioni sono SDK separati che funzionano insieme. Se aggiungi un’estensione alla proprietà tag, devi aggiornare anche l’app. Se modifichi l’impostazione di un’estensione o crei una regola, tali modifiche vengono applicate nell’app dopo che la libreria di tag aggiornata è stata pubblicata. Questa flessibilità ti consente di modificare le impostazioni (come l’ID suite di rapporti di Adobe Analytics) o anche cambiare il comportamento dell’app (utilizzando elementi dati e regole, come vedrai nelle lezioni successive) senza dover modificare il codice nell’app e inviare nuovamente l’app store.
 
 >[!SUCCESS]
 >
->Nel resto dell&#39;esercitazione è disponibile una proprietà di tag per dispositivi mobili.<br/>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Nel resto dell&#39;esercitazione è disponibile una proprietà di tag per dispositivi mobili.
+>
+>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Successivo: **[Installare gli SDK](install-sdks.md)**

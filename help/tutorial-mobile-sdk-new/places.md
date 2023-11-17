@@ -3,9 +3,9 @@ title: Usa luoghi
 description: Scopri come utilizzare il servizio di geolocalizzazione Places nella tua app mobile.
 hide: true
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1692'
 ht-degree: 3%
 
 ---
@@ -54,7 +54,7 @@ Affinché il servizio Places funzioni all’interno dell’app e nell’SDK di M
    ![Crea libreria](assets/places-create-library.png)
 1. Per chiudere **[!UICONTROL Gestisci librerie]** finestra di dialogo, seleziona **[!UICONTROL Chiudi]**.
 1. Torna in **[!UICONTROL Gestione POI]**, seleziona **[!UICONTROL Importa POI]**.
-1. Seleziona **[!UICONTROL Inizio]** in t**[!UICONTROL Importa luoghi]Finestra di dialogo **.
+1. Seleziona **[!UICONTROL Inizio]** nel **[!UICONTROL Importa luoghi]** .
 1. Seleziona **[!DNL Luma]** dall&#39;elenco delle biblioteche,
 1. Seleziona **[!UICONTROL Avanti]**.
    ![Seleziona libreria](assets/places-import-select-library.png)
@@ -172,7 +172,7 @@ Ora devi definire le regole da utilizzare con questi elementi dati.
       ![Azione tag](assets/tags-action-mobile-core.png)
 
 1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) accanto al **[!UICONTROL Core mobile - Allega dati]** azione.
-   1. Seleziona **[!UICONTROL Adobe Experience Platform Edge Network]** dal **[!UICONTROL Estensione]** elenca e seleziona **[!UICONTROL Inoltra evento a Edge Network]**. Questa azione assicura che l’evento e i dati di payload aggiuntivi vengano inoltrati alla rete Edge.
+   1. Seleziona **[!UICONTROL Adobe Experience Platform Edge Network]** dal **[!UICONTROL Estensione]** elenca e seleziona **[!UICONTROL Inoltra evento a Edge Network]**. Questa azione assicura che l’evento e i dati di payload aggiuntivi vengano inoltrati a Platform Edge Network.
    1. Seleziona **[!UICONTROL Mantieni modifiche]**.
 
 1. Per salvare la regola, seleziona **[!UICONTROL Salva nella libreria]**.
@@ -240,9 +240,9 @@ Per convalidare la configurazione in Assurance:
 1. Seleziona **[!UICONTROL Salva]**.
 1. Seleziona **[!UICONTROL Mappa e simula]** nella barra a sinistra.
 1. Sposta la mappa nella posizione di uno dei punti di interesse.
-1. Seleziona ![Ingranaggio](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Simula punti di interesse di caricamento.  Il punto di interesse viene identificato mediante un cerchio e un pin.
+1. Seleziona ![Ingranaggio](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Simula punti di interesse di caricamento. Il punto di interesse viene identificato mediante un cerchio e un pin.
 1. Seleziona il punto di interesse.
-1. Dal popup, seleziona ![Ingranaggio](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simula evento di ingresso]**.
+1. Dalla finestra a comparsa, seleziona ![Ingranaggio](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simula evento di ingresso]**.
    ![Simula evento di ingresso](assets/places-simulate.png)
 1. Seleziona **[!UICONTROL Eventi]** dalla barra a sinistra, dovresti vedere gli eventi simulati.
    ![Convalida delle decisioni AJO](assets/places-events.png)
@@ -283,7 +283,7 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
    ]
    ```
 
-1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** nel Navigatore progetti Xcode e trovare il `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.Aggiungi il seguente codice:
+1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** nel Navigatore progetti Xcode e trovare il `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` funzione. Aggiungi il seguente codice:
 
    ```swift
    // Process geolocation event
@@ -318,9 +318,9 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
 
 1. Vai a **[!UICONTROL Posizione]** scheda.
 
-1. Sposta (trascina) la mappa per far sì che il cerchio blu centrale sia sopra uno dei punti di interesse, ad esempio Londra.
+1. Sposta (trascina) la mappa per assicurarti che il cerchio blu centrale sia sopra uno dei punti di interesse, ad esempio Londra.
 
-1. Tocca <img src="assets/geobutton.png" width="20" /> fino a quando la categoria e il nome non vengono visualizzati nell’etichetta in rosso con il pin.
+1. Tocca <img src="assets/geobutton.png" width="20" /> fino a quando la categoria e il nome non vengono visualizzati nell’etichetta nella posizione rossa con il pin.
 
 1. Tocca l’etichetta del POI, che apre il **[!UICONTROL POI nelle vicinanze]** foglio.
 
@@ -344,6 +344,8 @@ Hai visto un’implementazione delle funzionalità dell’app, principalmente gu
 
 >[!SUCCESS]
 >
->Ora hai abilitato l’app per i servizi di geolocalizzazione utilizzando l’estensione Places nell’SDK di Experienci Platform Mobile.<br/>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Ora hai abilitato l’app per i servizi di geolocalizzazione utilizzando l’estensione Places nell’SDK di Experienci Platform Mobile.
+>
+>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Successivo: **[Mappare i dati su Adobe Analytics](analytics.md)**

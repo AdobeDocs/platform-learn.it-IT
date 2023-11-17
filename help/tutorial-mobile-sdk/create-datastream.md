@@ -3,10 +3,10 @@ title: Configurare uno stream di dati
 description: Scopri come creare uno stream di dati in Experience Platform.
 feature: Mobile SDK,Datastreams
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
+source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 7%
+source-wordcount: '425'
+ht-degree: 8%
 
 ---
 
@@ -73,4 +73,4 @@ Successivo: **[Configurare i tag](configure-tags.md)**
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

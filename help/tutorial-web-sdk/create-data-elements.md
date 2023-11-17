@@ -3,16 +3,16 @@ title: Creare elementi dati
 description: Scopri come creare un oggetto XDM e mappare ad esso gli elementi dati nei tag. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: fe03ee89bfccd0105b45383c84403b6a3d230235
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1201'
 ht-degree: 5%
 
 ---
 
 # Creare elementi dati
 
-Scopri come creare gli elementi dati essenziali necessari per acquisire i dati con Experience Platform Web SDK. Acquisire sia contenuti che dati di identità sul [Sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Scopri come utilizzare lo schema XDM creato in precedenza per la raccolta di dati tramite Platform Web SDK tramite un nuovo tipo di elemento dati denominato Oggetto XDM.
+Scopri come creare gli elementi dati essenziali necessari per acquisire i dati con Experienci Platform Web SDK. Acquisire sia contenuti che dati di identità sul [Sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Scopri come utilizzare lo schema XDM creato in precedenza per la raccolta di dati tramite Platform Web SDK tramite un nuovo tipo di elemento dati denominato Oggetto XDM.
 
 >[!NOTE]
 >
@@ -226,4 +226,4 @@ Una volta impostati questi elementi dati, puoi iniziare a inviare dati a Platfor
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -3,9 +3,9 @@ title: Configurare una proprietà tag
 description: Scopri come configurare una proprietà tag in [!UICONTROL Raccolta dati] di rete.
 feature: Mobile SDK,Tags
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
+source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '732'
 ht-degree: 11%
 
 ---
@@ -135,4 +135,4 @@ Successivo: **[Installare gli SDK](install-sdks.md)**
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

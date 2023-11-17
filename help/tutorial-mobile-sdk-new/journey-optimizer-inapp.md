@@ -6,10 +6,10 @@ feature-set: Journey Optimizer
 feature: In App
 hide: true
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1690'
-ht-degree: 3%
+source-wordcount: '1546'
+ht-degree: 4%
 
 ---
 
@@ -32,9 +32,8 @@ Prima di inviare messaggi in-app con Journey Optimizer, è necessario assicurars
 
 * L&#39;app con gli SDK installati e configurati è stata creata ed eseguita correttamente.
 * Configura l’app per Adobe Experience Platform.
-* Accesso a Journey Optimizer e autorizzazioni sufficienti come descritto [qui](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). È inoltre necessaria un&#39;autorizzazione sufficiente per le seguenti funzioni di Journey Optimizer.
+* Accesso a Journey Optimizer e autorizzazioni sufficienti come descritto [qui](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html). È inoltre necessaria un&#39;autorizzazione sufficiente per le seguenti funzioni di Journey Optimizer.
    * Gestire le campagne.
-* Account sviluppatore Apple a pagamento con accesso sufficiente per creare certificati, identificatori e chiavi.
 * Dispositivo fisico iOS o simulatore per test.
 
 
@@ -67,23 +66,26 @@ In questa lezione, potrai
 1. Immetti l’ID del bundle dell’app mobile in **[!UICONTROL ID app (ID bundle iOS)]** campo. Ad esempio,  `com.adobe.luma.tutorial.swiftui`.
 1. Seleziona **[!UICONTROL Salva]**.
 
-   ![configurazione della superficie dell&#39;app](assets/push-app-surface-config.png)
+   ![configurazione della superficie dell&#39;app](assets/push-app-surface-config-inapp.png)
 
 ### Aggiorna configurazione dello stream di dati
 
 Per fare in modo che i dati inviati dalla tua app mobile a Edge Network vengano inoltrati a Journey Optimizer, aggiorna la configurazione di Experience Edge.
+
+
 
 1. Nell’interfaccia utente di Data Collection, seleziona **[!UICONTROL Flussi di dati]** e seleziona il flusso di dati, ad esempio **[!DNL Luma Mobile App]**.
 1. Seleziona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) per **[!UICONTROL Experience Platform]** e seleziona ![Modifica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Modifica]** dal menu di scelta rapida.
 1. In **[!UICONTROL Flussi di dati]** > ![Cartella](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** schermata, assicurati **[!UICONTROL Adobe Journey Optimizer]** è selezionato. Consulta [Impostazioni Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) per ulteriori informazioni.
 1. Per salvare la configurazione dello stream di dati, seleziona **[!UICONTROL Salva]**.
 
+
    ![Configurazione dello stream di dati AEP](assets/datastream-aep-configuration.png)
 
 
 ### Installare l’estensione dei tag di Journey Optimizer
 
-Affinché l’app funzioni con Journey Optimizer, devi aggiornare la proprietà del tag.
+Affinché l&#39;app funzioni con Journey Optimizer, devi aggiornare la proprietà del tag.
 
 1. Accedi a **[!UICONTROL Tag]** > **[!UICONTROL Estensioni]** > **[!UICONTROL Catalogo]**.
 1. Apri la proprietà, ad esempio **[!DNL Luma Mobile App Tutorial]**.
@@ -101,27 +103,6 @@ Affinché l’app funzioni con Journey Optimizer, devi aggiornare la proprietà 
 >Se non vedi `AJO Push Tracking Experience Event Dataset` contatta l’assistenza clienti come opzione.
 >
 
-
-## Firma
-
-La firma dell’app Luma è necessaria solo per [Creare e inviare notifiche push](journey-optimizer-push.md) e [Creare e inviare messaggi in-app](journey-optimizer-inapp.md) lezioni in questa esercitazione. Queste lezioni richiedono un profilo di provisioning Apple che **richiede un account sviluppatore Apple a pagamento**.
-
-Per aggiornare la firma per l&#39;app:
-
-1. Vai all’app in Xcode.
-1. Seleziona **[!DNL Luma]** nel Navigatore progetti.
-1. Seleziona la **[!DNL Luma]** target.
-1. Seleziona la **Firma e funzionalità** scheda.
-1. Configura **[!UICONTROL Gestisci firma automatica]**, **[!UICONTROL Team]**, e **[!UICONTROL Identificatore bundle]**, oppure utilizza i dettagli specifici del provisioning per lo sviluppo di Apple.
-
-   >[!IMPORTANT]
-   >
-   >Assicurati di utilizzare un’ _univoco_ identificatore del bundle e sostituisci il `com.adobe.luma.tutorial.swiftui` identificatore del bundle, in quanto ogni identificatore del bundle deve essere univoco. In genere si utilizza il formato DNS inverso per le stringhe ID bundle, come `com.organization.brand.uniqueidentifier`. La versione finale di questa esercitazione, ad esempio, utilizza `com.adobe.luma.tutorial.swiftui`.
-
-
-   ![Funzionalità di firma Xcode](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
-
-
 ### Implementare Journey Optimizer nell’app
 
 Come descritto nelle lezioni precedenti, l’installazione di un’estensione tag per dispositivi mobili fornisce solo la configurazione. Ora devi installare e registrare l’SDK di messaggistica. Se questi passaggi non sono chiari, rivedi [Installare gli SDK](install-sdks.md) sezione.
@@ -131,7 +112,7 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
 >Se hai completato il [Installare gli SDK](install-sdks.md) , l&#39;SDK è già installato e puoi saltare questo passaggio.
 >
 
-1. In Xcode, assicurati che [Messaggistica AEP](https://github.com/adobe/aepsdk-messaging-ios.git) viene aggiunto all’elenco dei pacchetti in Dipendenze dai pacchetti. Consulta [Gestione pacchetti Swift](install-sdks.md#swift-package-manager).
+1. In Xcode, assicurati che [Messaggistica AEP](https://github.com/adobe/aepsdk-messaging-ios) viene aggiunto all’elenco dei pacchetti in Dipendenze dai pacchetti. Consulta [Gestione pacchetti Swift](install-sdks.md#swift-package-manager).
 1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** nel Navigatore progetti Xcode.
 1. Assicurare `AEPMessaging` fa parte dell’elenco delle importazioni.
 
@@ -263,10 +244,12 @@ Puoi convalidare i messaggi in-app nell’interfaccia utente Assurance.
 
 ## Passaggi successivi
 
-Ora dovresti disporre di tutti gli strumenti necessari per iniziare ad aggiungere messaggi in-app, laddove opportuno e applicabile.  Ad esempio, la promozione di prodotti in base a interazioni specifiche che tieni traccia nell’app.
+Ora dovresti disporre di tutti gli strumenti necessari per iniziare ad aggiungere messaggi in-app, laddove opportuno e applicabile. Ad esempio, la promozione di prodotti in base a interazioni specifiche che tieni traccia nell’app.
 
 >[!SUCCESS]
 >
->Hai abilitato l’app per la messaggistica in-app e aggiunto una campagna di messaggistica in-app tramite Journey Optimizer e l’estensione Journey Optimizer per l’SDK di Mobile di Experience Platform.<br/>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Hai abilitato l’app per la messaggistica in-app e aggiunto una campagna di messaggistica in-app tramite Journey Optimizer e l’estensione Journey Optimizer per l’SDK di Mobile di Experience Platform.
+>
+>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Successivo: **[Creare e visualizzare le offerte](journey-optimizer-offers.md)**

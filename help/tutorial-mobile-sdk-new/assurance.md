@@ -4,9 +4,9 @@ description: Scopri come implementare l’estensione Assurance in un’app mobil
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 68610d961e4825706a5f524652f7ec103c615ecf
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '985'
 ht-degree: 7%
 
 ---
@@ -111,7 +111,7 @@ In Xcode:
    >Facoltativamente, potresti voler &quot;ripulire&quot; la build, soprattutto quando vengono visualizzati risultati imprevisti. A questo scopo, seleziona **[!UICONTROL Pulisci cartella di compilazione...]** da Xcode **[!UICONTROL Prodotto]** menu.
 
 
-1. In **[!UICONTROL Consenti all’app Luma di utilizzare la tua posizione]** finestra di dialogo, seleziona **[!UICONTROL Consenti durante l&#39;utilizzo dell&#39;app]**.
+1. In **[!UICONTROL Consenti a &quot;App Luma&quot; di utilizzare la tua posizione]** finestra di dialogo, seleziona **[!UICONTROL Consenti durante l&#39;utilizzo dell&#39;app]**.
 
    <img src="assets/geolocation-permissions.png" width="300">
 
@@ -141,7 +141,7 @@ Nel browser:
 
    Se si utilizza un dispositivo fisico:
 
-   * Seleziona **[!UICONTROL Scansiona codice QR]**. Usa la fotocamera sul dispositivo fisico per scansionare il codice QR e tocca il collegamento per aprire l’app.
+   * Seleziona **[!UICONTROL Scansiona codice QR]**. Per aprire l&#39;app, usa la fotocamera sul tuo dispositivo fisico per scansionare il codice QR e toccare il collegamento.
 
      ![codice di controllo qualità assicurazione](assets/assurance-qr-code.png)
 
@@ -186,16 +186,16 @@ Per verificare se l’app utilizza le estensioni più aggiornate:
 
    ![Configurare le versioni delle estensioni](assets/assurance-configure-extension-versions.png)
 
-1. Seleziona ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Versioni dell&#39;estensione]**. Vedrai una panoramica delle ultime estensioni disponibili e delle estensioni utilizzate nella tua versione dell’app.
+1. Seleziona ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Versioni dell&#39;estensione]** per visualizzare una panoramica delle ultime estensioni disponibili e delle estensioni utilizzate nella tua versione dell’app.
 
    ![Versioni delle estensioni](assets/assurance-extension-versions.png)
 
-1. Per aggiornare le versioni dell’estensione (ad esempio **[!UICONTROL Messaggistica]** e **[!UICONTROL Ottimizza]**), in Xcode, per le estensioni specifiche che richiedono un aggiornamento, seleziona il pacchetto (estensione) da **[!UICONTROL Dipendenze pacchetto]** (ad es. **[!UICONTROL AEPMessaging]**) e dal menu di scelta rapida selezionare **[!UICONTROL Aggiorna pacchetto]**. Xcode aggiornerà le dipendenze del pacchetto.
+1. Per aggiornare le versioni dell’estensione (ad esempio, **[!UICONTROL Messaggistica]** e **[!UICONTROL Ottimizza]**) seleziona il pacchetto (estensione) da **[!UICONTROL Dipendenze pacchetto]** (ad esempio, **[!UICONTROL AEPMessaging]**) e dal menu di scelta rapida selezionare **[!UICONTROL Aggiorna pacchetto]**. Xcode aggiornerà le dipendenze del pacchetto.
 
 
 >[!NOTE]
 >
->Dopo aver aggiornato le estensioni (pacchetti) in Xcode, devi chiudere ed eliminare la sessione corrente e ripetere tutti i passaggi da [Connessione a una sessione](#connecting-to-a-session) e [Verificare le estensioni](#verify-extensions) affinché Assurance segnali correttamente le estensioni corrette in una nuova sessione Assurance.
+>Dopo aver aggiornato le estensioni (pacchetti) in Xcode, chiudi ed elimina la sessione corrente e ripeti tutti i passaggi da [Connessione a una sessione](#connecting-to-a-session) e [Verificare le estensioni](#verify-extensions) affinché Assurance segnali correttamente le estensioni corrette in una nuova sessione Assurance.
 
 
 
@@ -203,7 +203,9 @@ Per verificare se l’app utilizza le estensioni più aggiornate:
 
 >[!SUCCESS]
 >
->Ora hai configurato l’app per utilizzare Assurance per il resto dell’esercitazione.<br/>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Ora hai configurato l’app per utilizzare Assurance per il resto dell’esercitazione.
+>
+>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
 Successivo: **[Implementare il consenso](consent.md)**

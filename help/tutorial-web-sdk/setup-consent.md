@@ -1,18 +1,18 @@
 ---
 title: Configurare il consenso con Platform Web SDK
-description: Scopri come configurare le impostazioni di privacy dell’estensione tag Experience Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
+description: Scopri come configurare le impostazioni di privacy dell’estensione tag Experienci Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
 
 # Configurare il consenso con Platform Web SDK
 
-Scopri come configurare le impostazioni di privacy dell’estensione tag Experience Platform Web SDK. Imposta il consenso in base all’interazione del visitatore con un banner di una piattaforma di gestione del consenso (CMP).
+Scopri come configurare le impostazioni di privacy dell’estensione tag Experienci Platform Web SDK. Imposta il consenso in base all’interazione del visitatore con un banner di una piattaforma di gestione del consenso (CMP).
 
 >[!NOTE]
 > 
@@ -24,12 +24,12 @@ Scopri come configurare le impostazioni di privacy dell’estensione tag Experie
 Alla fine di questa lezione, sarai in grado di:
 
 * Caricare una CMP utilizzando i tag
-* Configurare le impostazioni della privacy nell’estensione tag Experience Platform Web SDK
+* Configurare le impostazioni della privacy nell’estensione tag Experienci Platform Web SDK
 * Imposta il consenso per l’SDK per web di Experience Platform in base all’azione del visitatore
 
 ## Prerequisiti
 
-Devi acquisire familiarità con i tag e i passaggi per creare regole, elementi di dati, creare librerie in ambienti e cambiare le librerie di tag utilizzando Experience Platform Debugger.
+Devi acquisire familiarità con i tag e i passaggi per creare regole, elementi di dati, creare librerie in ambienti e cambiare le librerie di tag utilizzando Experienci Platform Debugger.
 
 Prima di iniziare a configurare le impostazioni della privacy e a creare le regole per l’impostazione del consenso, assicurati di aver inserito lo script della piattaforma di gestione del consenso sul sito web e di funzionare correttamente. Una CMP può essere caricata direttamente nel codice sorgente con l’aiuto degli sviluppatori del sito o attraverso i tag stessi. Questa lezione illustra quest&#39;ultimo approccio.
 >[!NOTE]
@@ -104,7 +104,7 @@ Il consenso implicito significa che l’azienda non deve ottenere il consenso de
 
 Ora configurerai e implementerai il consenso per questo scenario:
 
-1. In **[!UICONTROL Privacy]** dell&#39;estensione tag Experience Platform Web SDK, assicurati che il  **[!UICONTROL Consenso predefinito]** è impostato su **[!UICONTROL In entrata]** :
+1. In **[!UICONTROL Privacy]** dell&#39;estensione tag Experienci Platform Web SDK, assicurati che il  **[!UICONTROL Consenso predefinito]** è impostato su **[!UICONTROL In entrata]** :
 
 
    ![Consenso configurazione privacy estensione AEP](assets/consent-web-sdk-privacy-in.png)
@@ -113,14 +113,14 @@ Ora configurerai e implementerai il consenso per questo scenario:
    > 
    >Per una soluzione dinamica, seleziona l’opzione &quot;Provide a data element&quot; (Fornisci un elemento dati) e passa un elemento dati che restituisce il valore di ```klaro.getManager().consents```
    >
-   >Questa opzione viene utilizzata se la CMP viene inserita nel codice sorgente *prima di* il codice di incorporamento di tag in modo che il consenso predefinito sia disponibile prima che l’estensione Experience Platform Web SDK inizi a essere caricata. Nel nostro esempio, non è possibile utilizzare questa opzione perché la CMP è caricata con i tag e non prima dei tag.
+   >Questa opzione viene utilizzata se la CMP viene inserita nel codice sorgente *prima di* il codice di incorporamento di tag in modo che il consenso predefinito sia disponibile prima che l’estensione Experienci Platform Web SDK inizi a essere caricata. Nel nostro esempio, non è possibile utilizzare questa opzione perché la CMP è caricata con i tag e non prima dei tag.
 
 
 
 2. Salva e genera questa modifica nella libreria tag
 3. Caricare la libreria di tag nel sito di dimostrazione Luma
 4. Abilita il debug dei tag durante la visita al sito Luma e ricarica la pagina. Nella console per sviluppatori del browser, dovresti notare che defaultConsent è uguale a **[!UICONTROL In entrata]**
-5. Con questa configurazione, l’estensione Experience Platform Web SDK continua a effettuare richieste di rete, a meno che un visitatore non decida di rifiutare i cookie e la rinuncia:
+5. Con questa configurazione, l’estensione Experienci Platform Web SDK continua a effettuare richieste di rete, a meno che un visitatore non decida di rifiutare i cookie e la rinuncia:
 
    ![Consenso implicito Opt-in](assets/consent-Implied-optin-default.png)
 
@@ -175,13 +175,13 @@ Ecco come impostare la configurazione per uno scenario di rinuncia implicita:
 
 1. In Klaro, disattiva il **Stato predefinito del servizio** nel tuo `aep web sdk` e salva la configurazione aggiornata.
 
-1. In entrata **[!UICONTROL Privacy]** dell’estensione Experience Platform Web SDK, imposta il consenso predefinito su **[!UICONTROL Uscita]** o **[!UICONTROL In sospeso]** secondo necessità.
+1. In entrata **[!UICONTROL Privacy]** dell’estensione Experienci Platform Web SDK, imposta il consenso predefinito su **[!UICONTROL Uscita]** o **[!UICONTROL In sospeso]** secondo necessità.
 
    ![Consenso configurazione privacy estensione AEP](assets/consent-implied-opt-out.png)
 
 1. **Salva** la configurazione aggiornata alla libreria tag e ricrearla.
 
-   Con questa configurazione, Experience Platform Web SDK garantisce che nessuna richiesta venga attivata a meno che l’autorizzazione di consenso non cambi in **[!UICONTROL In entrata]**. Ciò potrebbe verificarsi in seguito all’accettazione manuale dei cookie da parte di un visitatore che acconsente.
+   Con questa configurazione, Experienci Platform Web SDK garantisce che nessuna richiesta venga attivata a meno che l’autorizzazione di consenso non cambi in **[!UICONTROL In entrata]**. Ciò potrebbe verificarsi in seguito all’accettazione manuale dei cookie da parte di un visitatore che acconsente.
 
 1. In Debugger, assicurati che il sito Luma sia mappato alla proprietà tag e che la registrazione della console tag sia attiva.
 1. Usa la Developer Console del browser per **Cancella dati sito** in **Applicazione** > **Storage**
@@ -198,7 +198,7 @@ Se un visitatore decide di dare il consenso (accettare i cookie di tracciamento)
 
    ![L’utente con la condizione della regola fa clic su &quot;Tutto ok&quot;](assets/consent-optIn-clickEvent.png)
 
-1. Aggiungere un’azione tramite Experience Platform Web SDK [!UICONTROL Estensione], **[!UICONTROL Tipo di azione]** di **[!UICONTROL Impostare il consenso]**, **[!UICONTROL Consenso generale]** as **[!UICONTROL In entrata]**.
+1. Aggiungere un’azione tramite Experienci Platform Web SDK [!UICONTROL Estensione], **[!UICONTROL Tipo di azione]** di **[!UICONTROL Impostare il consenso]**, **[!UICONTROL Consenso generale]** as **[!UICONTROL In entrata]**.
 
    ![Azione di consenso della regola di consenso](assets/consent-rule-optin-action.png)
 
@@ -224,4 +224,4 @@ Per ulteriori informazioni su [!UICONTROL Impostare il consenso] azione, vedi [I
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

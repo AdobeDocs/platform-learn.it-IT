@@ -3,9 +3,9 @@ title: Raccogliere dati profilo
 description: Scopri come raccogliere i dati del profilo in un’app mobile.
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '596'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 Sarebbe utile per il targeting e/o la personalizzazione nell’app sapere rapidamente se un utente ha effettuato un acquisto in passato o di recente. Impostiamolo nell’app Luma.
 
-1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** nel Navigatore progetti Xcode e trovare il `func updateUserAttribute(attributeName: String, attributeValue: String)` funzione. Aggiungi il seguente codice:
+1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** nel Navigatore progetti Xcode e trovare il `func updateUserAttributes(attributeName: String, attributeValue: String)` funzione. Aggiungi il seguente codice:
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -56,11 +56,11 @@ Sarebbe utile per il targeting e/o la personalizzazione nell’app sapere rapida
 
    1. Utilizza il `profileMap` dizionario come valore per `attributeDict` parametro di [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) Chiamata API.
 
-1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** nel Navigator del progetto Xcode e trova la chiamata a `updateUserAttributes` (all&#39;interno del codice per gli acquisti <img src="assets/purchase.png" width="15" /> pulsante). Aggiungi il seguente codice:
+1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** nel Navigator del progetto Xcode e trova la chiamata a `updateUserAttributes` (all&#39;interno del codice per gli acquisti <img src="assets/purchase.png" width="15" /> ). Aggiungi il seguente codice:
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -115,7 +115,7 @@ Dopo aver aggiornato l’attributo di un utente, questo è disponibile per altri
 
       <img src="./assets/mobile-app-events-3.png" width="300">
 
-   1. Torna a **[!UICONTROL Home]** schermo. Dovresti vedere un distintivo aggiunto <img src="assets/person-badge-icon.png" width="15" />.
+   1. Torna a **[!UICONTROL Home]** schermo. Dovresti notare che è stato aggiunto un badge <img src="assets/person-badge-icon.png" width="15" />.
 
       <img src="./assets/personbadges.png" width="300">
 
@@ -126,6 +126,8 @@ Dopo aver aggiornato l’attributo di un utente, questo è disponibile per altri
 
 >[!SUCCESS]
 >
->Ora hai configurato l’app per aggiornare gli attributi dei profili nella rete Edge e (se configurata) con Adobe Experience Platform.<br/>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Ora hai configurato l’app per aggiornare gli attributi dei profili nella rete Edge e (se configurata) con Adobe Experience Platform.
+>
+>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Successivo: **[Usa luoghi](places.md)**

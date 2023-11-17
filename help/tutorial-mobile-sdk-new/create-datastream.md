@@ -4,10 +4,10 @@ description: Scopri come creare uno stream di dati in Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
 exl-id: d8b9df3d-49ee-4578-92c6-0f920a86fe7e
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 8%
+source-wordcount: '444'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 Scopri come creare uno stream di dati in Experience Platform.
 
-Un flusso di dati è una configurazione lato server in Platform Edge Network. Lo stream di dati garantisce che i dati in arrivo nella rete Edge di Platform vengano instradati in modo appropriato alle applicazioni e ai servizi Adobe Experience Cloud. Per ulteriori informazioni, vedere [documentazione](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it) o questo [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=it).
+Un flusso di dati è una configurazione lato server in Platform Edge Network. Lo stream di dati garantisce che i dati in arrivo nella rete Edge di Platform vengano instradati in modo appropriato alle applicazioni e ai servizi Adobe Experience Cloud. Per ulteriori informazioni, vedere [documentazione](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=it) o questo [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=it).
 
 ![Architettura](assets/architecture.png)
 
@@ -55,7 +55,7 @@ Gli stream di dati possono essere creati in [!UICONTROL Raccolta dati] tramite l
 
 ## Aggiungi servizi
 
-Quando si passa attraverso il (facoltativo) [Analytics](analytics.md) e [Experience Platform](platform.md) lezioni in questa esercitazione, stai aggiungendo servizi allo stream di dati per garantire che, quando l’SDK di Platform Mobile invia i dati alla rete Edge, lo stream di dati inoltri tali dati ai servizi configurati.
+Quando si passa attraverso il (facoltativo) [Analytics](analytics.md) e [Experience Platform](platform.md) lezioni in questa esercitazione, aggiungi servizi allo stream di dati in modo che i dati inviati a Platform Edge Network vengano inoltrati a queste applicazioni.
 
 <!--
 
@@ -102,12 +102,14 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->L’abilitazione di ciascuno dei servizi utilizzati dalla tua organizzazione garantisce che i dati raccolti nell’app mobile possano essere utilizzati ovunque. Per ulteriori informazioni sulle impostazioni dello stream di dati, consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
+>L’abilitazione di ciascuno dei servizi utilizzati dalla tua organizzazione garantisce che i dati raccolti nell’app mobile possano essere utilizzati ovunque. Per ulteriori informazioni sulle impostazioni dello stream di dati, consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=it).
 
 Quando implementi l’SDK di Platform Mobile nella tua app, devi creare tre flussi di dati da mappare ai tre ambienti di tag (sviluppo, stage e produzione). Se utilizzi Platform Mobile SDK con applicazioni basate su Platform, ad esempio Adobe Real-time Customer Data Platform o Adobe Journey Optimizer, assicurati di creare tali flussi di dati nelle sandbox appropriate.
 
 >[!SUCCESS]
 >
->Ora disponi di un flusso di dati da utilizzare per il resto dell’esercitazione.<br/>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Ora disponi di un flusso di dati da utilizzare per il resto dell’esercitazione.
+>
+>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Successivo: **[Configurare una proprietà tag](configure-tags.md)**

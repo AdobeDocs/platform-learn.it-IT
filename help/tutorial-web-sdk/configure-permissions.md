@@ -1,18 +1,18 @@
 ---
 title: Configurare le autorizzazioni per l’esercitazione
-description: Scopri come richiedere l’accesso a Experience Platform Web SDK e configurare le autorizzazioni necessarie per completare l’esercitazione Implementare Adobe Experience Cloud con Web SDK.
+description: Scopri come richiedere l’accesso a Experienci Platform Web SDK e configurare le autorizzazioni necessarie per completare l’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '414'
 ht-degree: 6%
 
 ---
 
 # Configurare le autorizzazioni per l’esercitazione
 
-Scopri come richiedere l’accesso a Experience Platform Web SDK e configurare l’autorizzazione necessaria per completare questa esercitazione. Per implementare Platform Web SDK utilizzando i tag nell’interfaccia di raccolta dati, è necessario disporre delle autorizzazioni utente appropriate configurate in [Admin Console](https://adminconsole.adobe.com).
+Scopri come richiedere l’accesso a Experienci Platform Web SDK e configurare l’autorizzazione necessaria per completare questa esercitazione. Per implementare Platform Web SDK utilizzando i tag nell’interfaccia di raccolta dati, è necessario disporre delle autorizzazioni utente appropriate configurate in [Admin Console](https://adminconsole.adobe.com).
 
 ## Raccolta dati
 
@@ -44,7 +44,7 @@ Per la lezione facoltativa su Adobe Target, è necessario disporre di [Editor o 
 
 ## Adobe Audience Manager
 
-* Per utilizzare la lezione di Audience Manager facoltativa, è necessario avere accesso alle funzioni di creazione, lettura e scrittura di caratteristiche, segmenti e destinazioni. Per ulteriori informazioni, consulta l’esercitazione su [Controllo degli accessi basato sul ruolo di Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* Per utilizzare la lezione di Audience Manager facoltativa, è necessario avere accesso alle funzioni di creazione, lettura e scrittura di caratteristiche, segmenti e destinazioni. Per ulteriori informazioni, consulta l’esercitazione su [Controllo degli accessi basato sul ruolo di Audienci Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
 
 Ora puoi iniziare i passaggi di configurazione iniziali.
 
@@ -52,4 +52,4 @@ Ora puoi iniziare i passaggi di configurazione iniziali.
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

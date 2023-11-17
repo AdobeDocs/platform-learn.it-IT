@@ -4,9 +4,9 @@ description: Scopri come creare uno schema XDM per gli eventi delle app mobili.
 feature: Mobile SDK,Schemas
 hide: true
 exl-id: 66a3c062-93e5-4183-8fb4-1f72cacb6552
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1505'
 ht-degree: 5%
 
 ---
@@ -134,7 +134,7 @@ A scopo di apprendimento, puoi utilizzare gruppi di campi predefiniti e personal
 
 >[!NOTE]
 >
->Non è necessario utilizzare tutti i campi di un gruppo. Puoi anche rimuovere i campi se questo consente di mantenere lo schema conciso e comprensibile. Se è utile, puoi considerare uno schema come un livello dati vuoto. Nell’app, puoi popolare i valori pertinenti al momento giusto.
+>Non è necessario utilizzare tutti i campi di un gruppo. Puoi anche rimuovere i campi per mantenere lo schema conciso e comprensibile. Se è utile, puoi considerare uno schema come un livello dati vuoto. Nell’app, puoi popolare i valori pertinenti al momento giusto.
 
 Il [!UICONTROL Evento esperienza del consumatore] il gruppo di campi ha un tipo di dati denominato [!UICONTROL Informazioni web], che descrive eventi come la visualizzazione della pagina e i clic sui collegamenti. Al momento della stesura di questo articolo, non esiste una parità di app mobile con questa funzione, quindi intendi crearne una tua.
 
@@ -163,7 +163,7 @@ Per iniziare, crea un tipo di dati personalizzato che descrive i due eventi:
 1. Per aggiungere un campo, seleziona la ![Più](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) pulsante.
 
 
-1. Questo campo è un oggetto contenitore per l’interazione dell’app. , quindi fornisci una notazione camel **[!UICONTROL Nome campo]** `appInteraction`, **[!UICONTROL Nome visualizzato]** `App Interaction`, e seleziona `Object` dal **[!UICONTROL Tipo]** elenco.
+1. Questo campo è un oggetto contenitore per l’interazione dell’app, quindi fornisci una camel-case **[!UICONTROL Nome campo]** `appInteraction`, **[!UICONTROL Nome visualizzato]** `App Interaction`, e seleziona `Object` dal **[!UICONTROL Tipo]** elenco.
 
 1. Seleziona **[!UICONTROL Applica]**.
 
@@ -234,6 +234,8 @@ Ora aggiungi un gruppo di campi personalizzato utilizzando il tipo di dati perso
 
 >[!SUCCESS]
 >
->Ora disponi di uno schema da utilizzare per il resto dell’esercitazione.<br/>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Ora disponi di uno schema da utilizzare per il resto dell’esercitazione.
+>
+>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Successivo: **[Creare un [!UICONTROL flusso di dati]](create-datastream.md)**
