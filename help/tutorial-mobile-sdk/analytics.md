@@ -3,16 +3,21 @@ title: Mappatura di Analytics
 description: Scopri come raccogliere dati per Adobe Analytics in un’app mobile.
 solution: Data Collection,Experience Platform,Analytics
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 2%
+source-wordcount: '609'
+ht-degree: 1%
 
 ---
 
 # Mappatura di Analytics
 
 Scopri come mappare i dati mobili su Adobe Analytics.
+
+>[!INFO]
+>
+> Questo tutorial verrà sostituito da un nuovo tutorial che utilizzerà una nuova app mobile di esempio a fine novembre 2023
+
 
 Il [evento](events.md) i dati raccolti e inviati a Platform Edge Network nelle lezioni precedenti vengono inoltrati ai servizi configurati nel flusso di dati, incluso Adobe Analytics. È sufficiente mappare i dati alle variabili corrette nella suite di rapporti.
 

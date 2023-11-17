@@ -2,9 +2,9 @@
 title: Profilo
 description: Scopri come raccogliere i dati del profilo in un’app mobile.
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '459'
 ht-degree: 2%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 2%
 # Profilo
 
 Scopri come raccogliere i dati del profilo in un’app mobile.
+
+>[!INFO]
+>
+> Questo tutorial verrà sostituito da un nuovo tutorial che utilizzerà una nuova app mobile di esempio a fine novembre 2023
 
 Puoi utilizzare l’estensione Profilo per memorizzare gli attributi dell’utente sul client. Queste informazioni possono essere utilizzate in un secondo momento per eseguire il targeting e personalizzare i messaggi durante scenari online o offline, senza dover connettersi a un server per ottenere prestazioni ottimali. L’estensione Profile gestisce il profilo operativo lato client (CSOP, Client-Side Operation Profile), fornisce un modo per reagire alle API, aggiorna gli attributi del profilo utente e condivide gli attributi del profilo utente con il resto del sistema come evento generato.
 
@@ -27,9 +31,9 @@ I dati di profilo vengono utilizzati da altre estensioni per eseguire azioni rel
 * L&#39;app con gli SDK installati e configurati è stata creata ed eseguita correttamente.
 * Importazione dell’SDK del profilo.
 
-   ```swift
-   import AEPUserProfile
-   ```
+  ```swift
+  import AEPUserProfile
+  ```
 
 ## Finalità di apprendimento
 

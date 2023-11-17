@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '899'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 1%
 # Messaggi push di Adobe Journey Optimizer
 
 Scopri come creare messaggi push per le app mobili con Platform Mobile SDK e Adobe Journey Optimizer.
+
+>[!INFO]
+>
+> Questo tutorial verrà sostituito da un nuovo tutorial che utilizzerà una nuova app mobile di esempio a fine novembre 2023
 
 Journey Optimizer consente di creare percorsi e inviare messaggi a tipi di pubblico mirati. Prima di inviare le notifiche push con Journey Optimizer, devi verificare che siano presenti le configurazioni e le integrazioni corrette. Per informazioni sul flusso di dati delle notifiche push in Adobe Journey Optimizer, consulta [la documentazione](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
 

@@ -3,9 +3,9 @@ title: Panoramica tutorial sull’implementazione di Adobe Experience Cloud nell
 description: Scopri come implementare le app mobili Adobe Experience Cloud. Questa esercitazione ti guida attraverso un’implementazione di applicazioni Experience Cloud in un’app Swift di esempio.
 recommendations: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 4bccc95ff94e9377b65771268e82b1900c003fc1
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '661'
 ht-degree: 11%
 
 ---
@@ -14,7 +14,11 @@ ht-degree: 11%
 
 Scopri come implementare le applicazioni Adobe Experience Cloud nella tua app mobile utilizzando Adobe Experience Platform Mobile SDK.
 
-Experience Platform Mobile SDK è un SDK lato client che consente ai clienti di Adobe Experience Cloud di interagire sia con le applicazioni Adobe che con i servizi di terze parti tramite la rete Edge di Adobe Experience Platform. Consulta la [Documentazione di Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/) per informazioni più dettagliate.
+>[!INFO]
+>
+> Questo tutorial verrà sostituito da un nuovo tutorial che utilizzerà una nuova app mobile di esempio a fine novembre 2023
+
+Experienci Platform Mobile SDK è un SDK lato client che consente ai clienti di Adobe Experience Cloud di interagire sia con le applicazioni Adobe che con i servizi di terze parti tramite la rete Edge di Adobe Experience Platform. Consulta la [Documentazione di Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/) per informazioni più dettagliate.
 
 ![impostazioni di build](assets/data-collection-mobile-sdk.png)
 
@@ -55,7 +59,7 @@ In queste lezioni, si presume che tu sia in possesso di un Adobe ID e delle auto
    * **[!UICONTROL Diritti di proprietà]**- elementi di autorizzazione per **[!UICONTROL Sviluppa]**, **[!UICONTROL Approva]**, **[!UICONTROL Pubblica]**, **[!UICONTROL Gestire le estensioni]**, e **[!UICONTROL Gestisci ambienti]**.
    * **[!UICONTROL Diritti aziendali]**- elementi di autorizzazione per **[!UICONTROL Gestisci proprietà]** e, se completi la lezione opzionale di messaggistica push, **[!UICONTROL Gestione configurazioni app]**
 
-      Per ulteriori informazioni sulle autorizzazioni per i tag, consulta [Autorizzazioni utente per i tag](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=it){target="_blank"} nella documentazione del prodotto.
+     Per ulteriori informazioni sulle autorizzazioni per i tag, consulta [Autorizzazioni utente per i tag](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=it){target="_blank"} nella documentazione del prodotto.
 * Ad Experience Platform, devi disporre di:
    * **[!UICONTROL Modellazione dati]**- autorizzazioni per gestire e visualizzare gli schemi.
    * **[!UICONTROL Identity Management]**: elementi di autorizzazione per gestire e visualizzare gli spazi dei nomi delle identità.

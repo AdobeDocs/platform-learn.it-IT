@@ -3,9 +3,9 @@ title: Gestisci visualizzazioni Web
 description: Scopri come gestire la raccolta dati con WebViews in un’app mobile.
 jira: KT-6987
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '415'
 ht-degree: 1%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 1%
 # Gestisci visualizzazioni Web
 
 Scopri come gestire la raccolta dati con WebViews in un’app mobile.
+
+>[!INFO]
+>
+> Questo tutorial verrà sostituito da un nuovo tutorial che utilizzerà una nuova app mobile di esempio a fine novembre 2023
 
 ## Prerequisiti
 

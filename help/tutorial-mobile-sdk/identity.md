@@ -3,9 +3,9 @@ title: Identità
 description: Scopri come raccogliere i dati di identità in un’app mobile.
 feature: Mobile SDK,Identities
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '609'
 ht-degree: 4%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 4%
 # Identità
 
 Scopri come raccogliere i dati di identità in un’app mobile.
+
+>[!INFO]
+>
+> Questo tutorial verrà sostituito da un nuovo tutorial che utilizzerà una nuova app mobile di esempio a fine novembre 2023
 
 Il servizio Adobe Experience Platform Identity consente di ottenere una visione migliore dei clienti e dei loro comportamenti collegando le identità tra dispositivi e sistemi, consentendo di offrire esperienze digitali personali e di impatto in tempo reale. I campi di identità e gli spazi dei nomi sono l’associazione che unisce diverse origini di dati per creare il profilo cliente in tempo reale a 360 gradi.
 

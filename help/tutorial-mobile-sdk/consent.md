@@ -3,16 +3,20 @@ title: Consenso
 description: Scopri come implementare il consenso in un’app mobile.
 feature: Mobile SDK,Consent
 exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 7%
+source-wordcount: '391'
+ht-degree: 6%
 
 ---
 
 # Consenso
 
 Scopri come implementare il consenso in un’app mobile.
+
+>[!INFO]
+>
+> Questo tutorial verrà sostituito da un nuovo tutorial che utilizzerà una nuova app mobile di esempio a fine novembre 2023
 
 L’estensione per dispositivi mobili Adobe Experience Platform Consent abilita la raccolta delle preferenze di consenso dalla tua app mobile quando utilizzi l’SDK di Adobe Experience Platform Mobile e l’estensione Edge Network. Ulteriori informazioni su [Estensione del consenso](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/), nella documentazione di.
 

@@ -3,10 +3,10 @@ title: Configura Assurance
 description: Scopri come implementare l’estensione Assurance in un’app mobile.
 feature: Mobile SDK,Assurance
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 2%
+source-wordcount: '603'
+ht-degree: 11%
 
 ---
 
@@ -14,9 +14,13 @@ ht-degree: 2%
 
 Scopri come configurare Adobe Experience Platform Assurance in un’app mobile.
 
+>[!INFO]
+>
+> Questo tutorial verrà sostituito da un nuovo tutorial che utilizzerà una nuova app mobile di esempio a fine novembre 2023
+
 Assurance, formalmente noto come Project Griffon, è progettato per aiutarti a ispezionare, verificare, simulare e convalidare come raccolgi dati o distribuisci esperienze nella tua app mobile.
 
-Assurance consente di esaminare gli eventi SDK non elaborati generati dall’SDK di Adobe Experience Platform Mobile. Tutti gli eventi raccolti dall’SDK sono disponibili per l’ispezione. Gli eventi SDK vengono caricati in una vista a elenco, ordinati in base all’ora. Ogni evento ha una vista dettagliata che fornisce ulteriori dettagli. Sono inoltre disponibili viste aggiuntive per sfogliare la configurazione dell’SDK, gli elementi dati, gli stati condivisi e le versioni delle estensioni SDK. Ulteriori informazioni su [Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html) nella documentazione del prodotto.
+Assurance consente di controllare gli eventi SDK non elaborati generati da Adobe Experience Platform Mobile SDK. Tutti gli eventi raccolti dall’SDK sono disponibili per il controllo. Gli eventi SDK vengono caricati in una vista a elenco, ordinati in ordine cronologico. Ogni evento dispone di una vista dettagliata che fornisce ulteriori dettagli. Sono inoltre disponibili viste aggiuntive per sfogliare la configurazione dell’SDK, gli elementi dati, gli stati condivisi e le versioni delle estensioni SDK. Ulteriori informazioni su [Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html) nella documentazione del prodotto.
 
 
 ## Prerequisiti

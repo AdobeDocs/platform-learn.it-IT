@@ -4,9 +4,9 @@ description: Scopri come inviare dati a Adobe Experience Platform.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '862'
 ht-degree: 7%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 7%
 # Inviare dati a Adobe Experience Platform
 
 Scopri come inviare dati a Adobe Experience Platform.
+
+>[!INFO]
+>
+> Questo tutorial verrà sostituito da un nuovo tutorial che utilizzerà una nuova app mobile di esempio a fine novembre 2023
 
 Questa lezione facoltativa è valida per tutti i clienti di Real-time Customer Data Platform (Real-Time CDP), Journey Optimizer e Customer Journey Analytics. Ad Experience Platform, la base dei prodotti Experience Cloud, è un sistema aperto che trasforma tutti i tuoi dati, Adobe Adobi e non, in solidi profili cliente da aggiornare in tempo reale e utilizza informazioni basate sull’intelligenza artificiale per aiutarti a fornire le esperienze giuste su ogni canale.
 
@@ -66,7 +70,7 @@ Dopo aver creato il set di dati, assicurati di [aggiornare lo stream di dati](cr
 
 ## Convalidare i dati nel set di dati
 
-Dopo aver creato un set di dati e aggiornato lo stream di dati per inviare i dati ad Experience Platform, tutti i dati XDM inviati a Platform Edge Network vengono inoltrati a Platform e inseriti nel set di dati.
+Dopo aver creato un set di dati e aggiornato lo stream di dati per inviare i dati ad Experienci Platform, tutti i dati XDM inviati a Platform Edge Network vengono inoltrati a Platform e inseriti nel set di dati.
 
 Apri l’app e passa alle schermate in cui tieni traccia degli eventi. Puoi anche attivare le metriche del ciclo di vita.
 
@@ -81,7 +85,7 @@ Uno strumento più affidabile per la convalida dei dati è [servizio query](http
 
 ## Abilita Real-Time Customer Profile
 
-Il profilo cliente in tempo reale di Experience Platform ti consente di creare una visualizzazione olistica di ogni singolo cliente che combina dati provenienti da più canali, inclusi dati online, offline, del sistema CRM e di terze parti. Il profilo ti consente di consolidare i diversi dati dei clienti in una visualizzazione unificata che offre un account utilizzabile e con marca temporale per ogni interazione con il cliente.
+Il profilo cliente in tempo reale di Experienci Platform consente di creare una visualizzazione olistica di ogni singolo cliente che combina dati provenienti da più canali, inclusi dati online, offline, del sistema CRM e di terze parti. Il profilo ti consente di consolidare i diversi dati dei clienti in una visualizzazione unificata che offre un account utilizzabile e con marca temporale per ogni interazione con il cliente.
 
 ### Abilita lo schema
 
@@ -128,7 +132,7 @@ Dalla schermata dei dettagli del profilo, fai clic sul collegamento per visualiz
 
 ![acquisire un valore di identità](assets/mobile-platform-profile-identitygraph.png)
 
-Gli esperti di marketing e analisi possono fare molto di più con i dati acquisiti in Experience Platform, compresa l’analisi di Customer Journey Analytics e la creazione di segmenti in Real-time Customer Data Platform. Stai partendo bene!
+Gli esperti di marketing e analisi possono fare molto di più con i dati acquisiti in Experienci Platform, compresa l’analisi di Customer Journey Analytics e la creazione di segmenti in Real-time Customer Data Platform. Stai partendo bene!
 
 Successivo: **[Messaggistica push con Journey Optimizer](journey-optimizer-push.md)**
 

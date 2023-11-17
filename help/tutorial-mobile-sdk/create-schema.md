@@ -3,9 +3,9 @@ title: Creare uno schema XDM
 description: Scopri come creare uno schema XDM per gli eventi delle app mobili.
 feature: Mobile SDK,Schemas
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1315'
 ht-degree: 4%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 4%
 # Creare uno schema XDM
 
 Scopri come creare uno schema XDM per gli eventi delle app mobili.
+
+>[!INFO]
+>
+> Questo tutorial verrà sostituito da un nuovo tutorial che utilizzerà una nuova app mobile di esempio a fine novembre 2023
 
 La standardizzazione e l&#39;interoperabilità sono concetti chiave alla base di Adobe Experience Platform. Experience Data Model (XDM), guidato da Adobe, è un tentativo di standardizzare i dati sull’esperienza del cliente e definire schemi per la gestione della customer experience.
 
@@ -73,7 +77,7 @@ In questa esercitazione utilizzi il gruppo di campi Evento esperienza del consum
 
 >[!NOTE]
 >
->Adobe continua ad aggiungere altri gruppi di campi standard che devono essere utilizzati quando possibile, in quanto questi campi sono implicitamente compresi dai servizi Experience Platform e forniscono maggiore coerenza quando vengono utilizzati tra i componenti Platform. L’utilizzo di gruppi di campi standard offre vantaggi tangibili, come la mappatura automatica nelle funzioni di Analytics e AI in Platform.
+>Adobe continua ad aggiungere altri gruppi di campi standard che devono essere utilizzati quando possibile, in quanto questi campi sono implicitamente compresi dai servizi Experienci Platform e forniscono maggiore coerenza quando vengono utilizzati tra i componenti Platform. L’utilizzo di gruppi di campi standard offre vantaggi tangibili, come la mappatura automatica nelle funzioni di Analytics e AI in Platform.
 
 ## Architettura dello schema dell’app Luma
 
@@ -90,7 +94,7 @@ A scopo di apprendimento, utilizzerai gruppi di campi predefiniti e personalizza
 
 <!--Later in the tutorial, you can [update the schema](lifecycle-data.md) to include the **[!UICONTROL AEP Mobile Lifecycle Details]** field group.-->
 
-## Creare uno schema
+## Crea uno schema
 
 1. Seleziona **[!UICONTROL Crea schema]** per visualizzare il menu a discesa delle opzioni, seleziona **[!UICONTROL XDM ExperienceEvent]**.
 

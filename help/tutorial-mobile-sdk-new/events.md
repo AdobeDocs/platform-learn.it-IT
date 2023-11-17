@@ -3,7 +3,7 @@ title: Tracciare i dati dell’evento
 description: Scopri come tenere traccia dei dati evento in un’app mobile.
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 0%
@@ -367,7 +367,7 @@ Ora dovresti disporre di tutti gli strumenti necessari per iniziare ad aggiunger
 
 >[!TIP]
 >
->Rivedi [app completata](https://git.corp.adobe.com/rmaur/Luma) per ulteriori esempi.
+>Rivedi [app completata](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) per ulteriori esempi.
 
 
 ## Inviare eventi ad Analytics e Platform

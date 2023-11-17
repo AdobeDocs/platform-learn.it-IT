@@ -3,16 +3,20 @@ title: Configurare uno stream di dati
 description: Scopri come creare uno stream di dati in Experience Platform.
 feature: Mobile SDK,Datastreams
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 6%
+source-wordcount: '426'
+ht-degree: 7%
 
 ---
 
 # Creare un flusso di dati
 
 Scopri come creare uno stream di dati in Experience Platform.
+
+>[!INFO]
+>
+> Questo tutorial verrà sostituito da un nuovo tutorial che utilizzerà una nuova app mobile di esempio a fine novembre 2023
 
 Un flusso di dati è una configurazione lato server in Platform Edge Network.  Lo stream di dati garantisce che i dati in arrivo nella rete Edge di Platform vengano instradati in modo appropriato alle applicazioni e ai servizi Adobe Experience Cloud. Per ulteriori informazioni, vedere [documentazione](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it) o questo [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=it).
 
@@ -26,7 +30,7 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 * Sapere quando utilizzare un flusso di dati.
 * Creare un flusso di dati.
-* Configurare un flusso di dati.
+* Configurare uno stream di dati.
 
 ## Creare un flusso di dati
 
