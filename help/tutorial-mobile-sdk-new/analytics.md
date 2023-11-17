@@ -4,7 +4,7 @@ description: Scopri come raccogliere e mappare dati per Adobe Analytics in un’
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 exl-id: 631588df-a540-41b5-94e3-c8e1dc5f240b
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: f2d64236d7d5a0b56ead3fd0e69818813c907b03
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -54,7 +54,7 @@ Per inviare i dati XDM da Edge Network ad Adobe Analytics, configura il servizio
 
 ## Mappatura automatica
 
-Molti dei campi XDM standard sono mappati automaticamente alle variabili di Analytics. Vedi l’elenco completo [qui](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en).
+Molti dei campi XDM standard sono mappati automaticamente alle variabili di Analytics. Vedi l’elenco completo [qui](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en).
 
 ### Esempio #1 - s.products
 
@@ -199,7 +199,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 
 Per mappare questi dati contestuali XDM sui dati di Analytics nella suite di rapporti, puoi:
 
-### Utilizzare un gruppo di campi
+### Utilizza un gruppo di campi
 
 * Aggiungi il **[!UICONTROL Estensione completa Adobe Analytics ExperienceEvent]** gruppo di campi allo schema.
 
@@ -237,6 +237,6 @@ Ulteriori informazioni sulle regole di elaborazione e i dati contestuali sono di
 
 >[!SUCCESS]
 >
->Hai configurato l’app per mappare gli oggetti XDM di Experience Edge alle variabili di Adobe Analytics abilitando il servizio Adobe Analytics nello stream di dati e utilizzando le regole di elaborazione, se applicabili.<br/> Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Hai configurato l’app per mappare gli oggetti XDM di Experience Edge alle variabili di Adobe Analytics abilitando il servizio Adobe Analytics nello stream di dati e utilizzando le regole di elaborazione, se applicabili.<br/> Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Successivo: **[Invia dati all’Experience Platform](platform.md)**
