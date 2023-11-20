@@ -5,9 +5,9 @@ feature: Web SDK, Tags
 level: Intermediate
 doc-type: tutorial
 exl-id: bee792c3-17b7-41fb-a422-289ca018097d
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '3321'
+source-wordcount: '3320'
 ht-degree: 2%
 
 ---
@@ -236,7 +236,7 @@ Se utilizzi il [libreria di lavoro](https://experienceleague.adobe.com/docs/plat
 
 ### Passaggio 4: Inspect e convalida la raccolta dati
 
-Sul nostro sito, aggiorna la pagina e confermiamo la build della libreria in [Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) Estensione Chrome, nella sezione del menu dei tag:
+Sul nostro sito, aggiorna la pagina e confermiamo la build della libreria in [Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Estensione Chrome, nella sezione del menu dei tag:
 
 ![](./images/build-date.png)
 

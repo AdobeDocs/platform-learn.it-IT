@@ -3,7 +3,7 @@ title: Aggiungere Adobe Target con i tag
 description: Scopri come implementare Adobe Target utilizzando i tag con at.js, una richiesta di caricamento pagina, parametri, una richiesta di ordine e un codice personalizzato di intestazione/piè di pagina. Questa lezione fa parte dell’esercitazione Implementare l’Experience Cloud su siti web.
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
 source-wordcount: '4445'
 ht-degree: 75%
@@ -168,7 +168,7 @@ Aggiungendo l’azione `Load Target`, at.js viene caricato sulla pagina. Tuttavi
 
 1. Fai clic su **[!UICONTROL Mantieni modifiche]**.
 
-   ![Attiva la Richiesta di caricamento pagina](images/target-fireGlobalMbox.png)
+   ![Azione Attiva richiesta di caricamento pagina](images/target-fireGlobalMbox.png)
 
 1. La nuova azione viene aggiunta in sequenza dopo l’azione `Load Target` e le azioni vengono eseguite in questo ordine. Puoi trascinare le azioni per riordinare l’ordine, ma in questo caso `Load Target` deve essere precedente a `Fire Page Load Request`.
 
@@ -297,13 +297,13 @@ Non è necessario trasmettere parametri di entità in questa esercitazione, ma i
 
 ### Aggiungere parametri ID cliente
 
-La raccolta di ID cliente con il servizio Adobe Experience Platform Identity semplifica l’importazione di dati CRM in Target tramite la funzione [Attributi cliente](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=it) di Adobe Experience Cloud. Abilita inoltre [la combinazione di visitatori su più dispositivi](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html), consentendoti di mantenere un’esperienza utente coerente quando i clienti passano da un laptop a un dispositivo mobile.
+La raccolta di ID cliente con il servizio Adobe Experience Platform Identity semplifica l’importazione di dati CRM in Target tramite la funzione [Attributi cliente](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=it) di Adobe Experience Cloud. Abilita inoltre [la combinazione di visitatori su più dispositivi](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html), per mantenere un’esperienza utente coerente quando i clienti passano da un laptop a un dispositivo mobile.
 
 È fondamentale impostare l’ID cliente nell’azione `Set Customer IDs` del servizio Identity prima di attivare la richiesta di caricamento pagina. A tale fine, assicurati di disporre delle seguenti funzionalità sul sito:
 
 * L’ID cliente deve essere disponibile sulla pagina prima del codice di incorporamento dei tag
 * L’estensione del servizio Adobe Experience Platform Identity deve essere installata
-* Devi utilizzare l’azione `Set Customer IDs` in una regola che viene attivata all’evento &quot;Libreria caricata (Pagina in alto)&quot;
+* Devi utilizzare l’azione `Set Customer IDs` in una regola che viene attivata all’evento “Library Loaded (Page Top)” (Libreria caricata (Inizio pagina))
 * Utilizza l’azione `Fire Page Load Request` in una regola che viene attivata *dopo* l’azione &quot;Imposta ID cliente&quot;
 
 Nella lezione precedente, [Aggiungere il servizio Adobe Experience Platform Identity](id-service.md), hai creato la regola `All Pages - Library Loaded - Authenticated - 10` per attivare l’azione &quot;Imposta ID cliente&quot;. Poiché questa regola presenta un’impostazione `Order` di `10`, gli ID cliente vengono impostati prima che la nostra richiesta di caricamento pagina venga attivata dalla regola `All Pages - Library Loaded` con l’impostazione `Order` di `50`. Pertanto, hai già implementato la raccolta degli ID cliente per Target!
@@ -486,7 +486,7 @@ Ora è necessario creare una regola per attivare la richiesta di conferma dell�
 1. Fai clic su **[!UICONTROL Aggiungi regola]**
 1. Denomina la regola `Order Confirmation Page - Library Loaded - 60`
 1. Fai clic su **[!UICONTROL Eventi > Aggiungi]**
-   1. Seleziona **[!UICONTROL Tipo evento > Libreria caricata (pagina in alto)]**
+   1. Seleziona **[!UICONTROL Tipo evento > Library Loaded (Page Top)]** (Libreria caricata (Inizio pagina))
    1. Sotto **[!UICONTROL Opzioni avanzate]**, modifica il `Order` a `60` in modo che si attivi dopo `Load Target` azione (presente nel nostro `All Pages - Library Loaded` regola dove `Order` è impostato su `50`)
    1. Fai clic su **[!UICONTROL Mantieni modifiche]**.
 1. Fai clic su **[!UICONTROL Condizioni > Aggiungi]**
@@ -568,7 +568,7 @@ In queste circostanze, utilizza l’azione Codice personalizzato nell’estensio
 
 ## Library Header e Library Footer
 
-La schermata Edit at.js nell’interfaccia utente di Target dispone delle posizioni in cui puoi incollare JavaScript personalizzato che viene eseguito immediatamente prima o dopo il file at.js. Talvolta, il Library Header viene utilizzato per sostituire le impostazioni at.js tramite la funzione [targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) o per trasmettere dati da terze parti tramite la funzione [Data Provider](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html). A volte, il Library Footer viene utilizzato per aggiungere listener di [eventi personalizzati at.js](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/atjs-custom-events.html).
+La schermata Edit at.js nell’interfaccia utente di Target dispone delle posizioni in cui puoi incollare JavaScript personalizzato che viene eseguito immediatamente prima o dopo il file at.js. Talvolta, il Library Header viene utilizzato per sostituire le impostazioni at.js tramite la funzione [targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) o per trasmettere dati da terze parti tramite la funzione [Data Provider](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html). A volte, il Library Footer viene utilizzato per aggiungere listener di [eventi personalizzati at.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html).
 
 Per replicare questa funzionalità nei tag, utilizza l’azione Custom Code nell’estensione Core e metti in sequenza l’azione prima (Library Header) o dopo (Library Footer) l’azione Load Target. Questa operazione può essere eseguita nella stessa regola dell’azione `Load Target` (come illustrato di seguito) oppure in regole separate con eventi o impostazioni d’ordine che in modo affidabile si attivino prima o dopo la regola che contiene `Load Target`:
 

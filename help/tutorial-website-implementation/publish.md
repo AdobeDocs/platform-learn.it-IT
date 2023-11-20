@@ -1,11 +1,11 @@
 ---
 title: Pubblicare la proprietà tag
-description: Scopri come pubblicare la proprietà tag dall’ambiente di sviluppo agli ambienti di staging e produzione. Questa lezione fa parte dell’esercitazione Implementa l’Experience Cloud in siti web .
+description: Scopri come pubblicare la proprietà tag dall’ambiente di sviluppo agli ambienti di staging e produzione. Questa lezione fa parte dell’esercitazione Implementare l’Experience Cloud su siti web.
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 72%
+source-wordcount: '597'
+ht-degree: 69%
 
 ---
 
@@ -15,12 +15,11 @@ Ora che hai implementato alcune soluzioni chiave di Adobe Experience Cloud nell�
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch viene integrato in Adobe Experience Platform come suite di tecnologie per la raccolta dati. Nell’interfaccia sono state introdotte diverse modifiche terminologiche di cui tenere conto durante l’utilizzo di questo contenuto:
+>Adobe Experience Platform Launch viene integrato in Adobe Experience Platform come suite di tecnologie per la raccolta dati. Nell’interfaccia sono state introdotte diverse modifiche terminologiche di cui tenere conto quando si utilizza questo contenuto:
 >
 > * Il platform launch (lato client) è ora **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)**
-> * Lato server di platform launch è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * Le configurazioni Edge sono ora **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)**
-
+> * Platform launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Le configurazioni Edge ora sono **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)**
 
 ## Finalità di apprendimento
 
@@ -34,7 +33,7 @@ Alla fine di questa lezione, potrai:
 
 Ora che hai creato e convalidato la libreria nell’ambiente di sviluppo, è necessario pubblicarla nell’ambiente di staging.
 
-1. Vai a **[!UICONTROL Flusso di pubblicazione]** page
+1. Vai a **[!UICONTROL Flusso di pubblicazione]** pagina
 
 1. Apri il menu a discesa accanto alla libreria e seleziona **[!UICONTROL Invia per approvazione]**
 
@@ -56,7 +55,7 @@ In uno scenario reale, il passaggio successivo nel processo in genere consistere
 
 **Convalidare le modifiche nella libreria di staging**
 
-1. Nella proprietà tag , apri la [!UICONTROL Ambienti] page
+1. Nella proprietà tag, apri la [!UICONTROL Ambienti] pagina
 
 1. Nella riga [!UICONTROL Staging], fai clic sull’icona ![icona Installa](images/launch-installIcon.png) per aprire il modale
 
@@ -70,22 +69,22 @@ In uno scenario reale, il passaggio successivo nel processo in genere consistere
 
 1. Apri il [sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html) nel browser Chrome
 
-1. Apri l’estensione [Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) facendo clic sull’icona dell’icona ![icona debugger](images/icon-debugger.png)
+1. Apri [Estensione Experienci Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) facendo clic su ![Icona debugger](images/icon-debugger.png) icona
 
    ![Fai clic sull’icona Debugger](images/switchEnvironments-openDebugger.png)
 
 1. Passa alla scheda Strumenti
 
-1. In **[!UICONTROL Adobe Launch > Sostituisci codice di incorporamento Launch]** incolla il codice di incorporamento di staging presente negli Appunti
-1. Accendere **[!UICONTROL Applica a luma.enablementadobe.com]** interruttore
+1. In **[!UICONTROL Adobe Launch > Sostituisci codice di incorporamento Launch]** Incolla il codice di incorporamento di staging presente negli Appunti
+1. Attiva **[!UICONTROL Applica in luma.enablementadobe.com]** switch
 
 1. Fai clic sull’icona del disco per salvare
 
-   ![ambiente tag mostrato in Debugger](images/switchEnvironments-debugger-save.png)
+   ![ambiente di tag visualizzato in Debugger](images/switchEnvironments-debugger-save.png)
 
-1. Ricarica e controlla la scheda Riepilogo del debugger. Nella sezione Launch, dovresti vedere che la proprietà di staging è implementata, mostrando il nome della tua proprietà (ovvero &quot;tags Tutorial&quot; o qualsiasi altro nome assegnato alla tua proprietà)!
+1. Ricarica e controlla la scheda Riepilogo del debugger. Nella sezione Launch, dovresti vedere che la proprietà di staging è implementata, con il nome della tua proprietà visualizzato (ad esempio, &quot;esercitazione sui tag&quot; o qualsiasi altro nome assegnato alla proprietà).
 
-   ![ambiente tag mostrato in Debugger](images/publishing-debugger-staging.png)
+   ![ambiente di tag visualizzato in Debugger](images/publishing-debugger-staging.png)
 
 In uno scenario, dopo che il team di QA ha dato l’approvazione esaminando le modifiche nell’ambiente di staging, è ora di pubblicare in produzione.
 
@@ -115,4 +114,4 @@ In uno scenario, dopo che il team di QA ha dato l’approvazione esaminando le m
 
    ![Pubblicato](images/publishing-published.png)
 
-Tutto qui. Hai completato l’esercitazione e hai pubblicato la tua prima proprietà in tags!
+Tutto qui. Hai completato l’esercitazione e hai pubblicato la tua prima proprietà nei tag.
