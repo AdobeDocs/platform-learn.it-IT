@@ -4,9 +4,9 @@ description: Cosa fare dopo aver completato l’esercitazione
 recommendations: display,noCatalog
 hide: true
 exl-id: be256529-fd4f-428b-b023-409b7a35c204
-source-git-commit: f2d64236d7d5a0b56ead3fd0e69818813c907b03
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '490'
 ht-degree: 8%
 
 ---
@@ -48,6 +48,7 @@ E c&#39;è sempre di più da imparare! Per sviluppare ulteriormente l’implemen
 * **Ulteriori informazioni su Experienci Platform**. Ulteriori informazioni su come acquisire dati da altre origini e combinarli con i dati dell’SDK di Mobile in [Guida introduttiva di Adobe Experience Platform per architetti di dati e data engineer](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=it)
 
 
->[!NOTE]
+>[!SUCCESS]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>**Congratulazioni!** Hai completato questa esercitazione per Mobile SDK di Experience Platform. Rivedi il tutorial regolarmente in quanto apporteremo aggiornamenti e aggiungeremo altri contenuti nel tempo.<br/><br/>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+

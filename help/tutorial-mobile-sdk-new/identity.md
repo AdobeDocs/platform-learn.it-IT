@@ -4,10 +4,10 @@ description: Scopri come raccogliere i dati di identità in un’app mobile.
 feature: Mobile SDK,Identities
 hide: true
 exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 5%
+source-wordcount: '919'
+ht-degree: 4%
 
 ---
 
@@ -66,7 +66,7 @@ Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzat
    let identityMap: IdentityMap = IdentityMap()
    
    let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated, primary: true)
    identityMap.add(item:emailIdentity, withNamespace: "Email")
    identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
    
@@ -81,12 +81,14 @@ Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzat
       let identityMap: IdentityMap = IdentityMap()
       ```
 
-   1. Configura `IdentityItem` oggetti per e-mail e ID CRM.
+   1. Configura `IdentityItem` oggetti per e-mail e ID CRM. L’Adobe consiglia di inviare come identità primaria le identità che rappresentano una persona, ad esempio l’ID CRM Luma. Se la mappa di identità contiene l’identificatore della persona (ad esempio, ID CRM Luma), tale identificatore diventerà l’identità primaria. In caso contrario, ECID diventa l’identità primaria. L’impostazione di un ID persona come ID primario facilita le ricerche più efficienti di un profilo nelle chiamate API successive.
 
       ```swift
       let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-      let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+      let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated, primary: true)
       ```
+
+
 
    1. Aggiunge questi `IdentityItem` oggetti al `IdentityMap` oggetto.
 

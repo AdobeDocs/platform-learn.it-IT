@@ -3,9 +3,9 @@ title: Tracciare i dati dell’evento
 description: Scopri come tenere traccia dei dati evento in un’app mobile.
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: 4434bee35591d7cf79b7dddc03faba83d00b31f5
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1388'
 ht-degree: 0%
 
 ---
@@ -322,7 +322,7 @@ Di nuovo, possiamo implementare questo codice nel progetto Xcode.
 
 1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL FoglioAccesso]**.
 
-   1. Aggiungi il seguente codice evidenziato alla chiusura del pulsante di accesso:
+   1. Aggiungi il seguente codice evidenziato al `Button("Login") {` chiusura:
 
       ```swift
       // Send app interaction event

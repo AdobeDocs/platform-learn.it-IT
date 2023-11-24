@@ -3,7 +3,7 @@ title: Raccogliere dati profilo
 description: Scopri come raccogliere i dati del profilo in un’app mobile.
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 8f77843aec76e49c5e774016ed6cca5df510d3a4
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 1%
@@ -96,8 +96,8 @@ Dopo aver aggiornato l’attributo di un utente, questo è disponibile per altri
 1. Rivedi [istruzioni di configurazione](assurance.md#connecting-to-a-session) per collegare il simulatore o il dispositivo ad Assurance.
 1. Esegui l’app per accedere e interagire con un prodotto.
 
-   1. Sposta l’icona Assurance a sinistra.
    1. Seleziona **[!UICONTROL Home]** nella barra delle schede.
+   1. Sposta l’icona Assurance a sinistra.
    1. Per aprire il foglio di accesso, selezionare <img src="assets/login.png" width="15" /> pulsante.
 
       <img src="./assets/mobile-app-events-1.png" width="300">

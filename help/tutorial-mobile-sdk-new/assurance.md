@@ -4,9 +4,9 @@ description: Scopri come implementare l’estensione Assurance in un’app mobil
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '987'
 ht-degree: 7%
 
 ---
@@ -86,14 +86,14 @@ To update the signing for the lessons that require that you sign the application
 1. Seleziona **[!DNL Luma]** nel Navigatore progetti.
 1. Seleziona la **[!DNL Luma]** target.
 1. Seleziona la **Info** scheda.
-1. Per aggiungere un URL di base, scorri verso il basso fino a **Tipi di URL** e seleziona la **+** pulsante.
+1. Scorri verso il basso fino a **Tipi di URL (1)** e apri la sezione utilizzando la freccia (>), se non è già aperta.
 1. Imposta **Identificatore** all&#39;identificatore del bundle desiderato e imposta un **Schemi URL** di tua scelta.
 
    ![url di garanzia](assets/assurance-url-type.png)
 
    >[!IMPORTANT]
    >
-   >Assicurati di utilizzare un’ _univoco_ identificatore del bundle e sostituisci il `com.adobe.luma.tutorial.swiftui` identificatore del bundle, in quanto ogni identificatore del bundle deve essere univoco. In genere si utilizza il formato DNS inverso per le stringhe ID bundle, come `com.organization.brand.uniqueidentifier`.<br/>Allo stesso modo, utilizza uno schema URL univoco e sostituisci quello già fornito `lumatutorialswiftui` con il tuo schema URL univoco.
+   >Assicurati di utilizzare un’ _univoco_ identificatore del bundle, quindi sostituisci il `com.adobe.luma.tutorial.swiftui` identificatore del bundle, in quanto ogni identificatore del bundle deve essere univoco. In genere si utilizza il formato DNS inverso per le stringhe ID bundle, come `com.organization.brand.uniqueidentifier`.<br/>Allo stesso modo, utilizza uno schema URL univoco, quindi sostituisci quello già fornito `lumatutorialswiftui` con il tuo schema URL univoco.
 
 Per ulteriori informazioni sugli schemi URL in iOS, consulta [Documentazione di Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 

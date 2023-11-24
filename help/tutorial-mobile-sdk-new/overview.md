@@ -4,9 +4,9 @@ description: Scopri come implementare le app mobili Adobe Experience Cloud. Ques
 recommendations: noDisplay,catalog
 hide: true
 exl-id: 378bdf5d-c3ce-4a4c-b188-ab9e8265627f
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: 6726b0d0570311987b7edac4bf0cd2da35e72f30
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '850'
 ht-degree: 6%
 
 ---
@@ -91,10 +91,14 @@ Sono disponibili per il download due versioni dell’app di esempio. Entrambe le
 1. [Inizio](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: progetto senza codice o con codice segnaposto per la maggior parte del codice SDK di Mobile di Experience Platform da utilizzare per completare gli esercizi pratici in questa esercitazione.
 1. [Fine](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: una versione con l’implementazione completa come riferimento.
 
-
 >[!NOTE]
 >
 >Utilizzi iOS come piattaforma, [!DNL Swift] come linguaggio di programmazione, [!DNL SwiftUI] come framework dell’interfaccia utente [!DNL Xcode] come ambiente di sviluppo integrato (IDE). Tuttavia, molti dei concetti di implementazione illustrati sono simili per altre piattaforme di sviluppo. Molti hanno già completato correttamente questa esercitazione con poca o nessuna esperienza precedente di iOS/Swift(UI). Non devi essere un esperto per completare le lezioni, ma puoi ottenere di più dalle lezioni se sei in grado di leggere e comprendere il codice senza difficoltà.
+
+>[!INFO]
+>
+>Se desideri semplicemente provare l’app finale, puoi anche scaricarla direttamente dall’App Store di Apple.
+>[![Scarica](assets/download-app.svg)](https://apps.apple.com/us/app/luma-app/id6466588487)
 
 
 Cominciamo.

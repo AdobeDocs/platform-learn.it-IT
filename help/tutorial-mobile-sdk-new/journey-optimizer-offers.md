@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Offers
 hide: true
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '2630'
+source-wordcount: '2672'
 ht-degree: 2%
 
 ---
@@ -140,6 +140,7 @@ Per creare il posizionamento JSON per dispositivi mobili:
    1. Seleziona ![Dispositivi mobili](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL Dispositivi mobili]** da **[!UICONTROL Canale]** e seleziona **[!UICONTROL JSON mobile]** dal **[!UICONTROL Posizione]** elenco.
    1. Seleziona **[!UICONTROL Personalizzato]** per **[!UICONTROL Contenuto]**.
    1. Seleziona **[!UICONTROL Aggiungi contenuto]**. In **[!UICONTROL Aggiungi personalizzazione]** finestra di dialogo:
+      1. Nel caso in cui [!UICONTROL Modalità] è disponibile, assicurati che sia impostato su **[!UICONTROL JSON]**.
       1. Immetti il seguente JSON:
 
          ```json
@@ -348,7 +349,8 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
      ]
      ```
 
-     Tuttavia, puoi utilizzare qualsiasi tipo di implementazione per garantire che le API di ottimizzazione ottengano i parametri corretti (`activityId`, `placementId` e `itemCount`), per creare un [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) oggetto per l’implementazione.
+     Tuttavia, puoi utilizzare qualsiasi tipo di implementazione per garantire che le API di ottimizzazione ottengano i parametri corretti (`activityId`, `placementId` e `itemCount`), per creare un [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) oggetto per l’implementazione. <br/>Per informazioni: gli altri valori chiave in `decisions.json` I file sono destinati a un utilizzo futuro e non sono rilevanti e vengono attualmente utilizzati in questa lezione e come parte dell’esercitazione.
+
    * chiama due API: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  e [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  Queste funzioni cancellano tutte le proposte memorizzate nella cache e aggiornano le proposte per questo profilo.
 
 1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!UICONTROL Personalizzazione]** > **[!UICONTROL EdgeOffersView]** nel Navigatore progetti Xcode. Trova il `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` e controllare il codice di questa funzione. La parte più importante di questa funzione è la [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) Chiamata API, che
