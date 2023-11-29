@@ -1,27 +1,25 @@
 ---
-title: Inviare dati a Adobe Experience Platform
-description: Scopri come inviare dati a Adobe Experience Platform.
+title: Inviare dati all’Experience Platform con Platform Mobile SDK
+description: Scopri come inviare dati ad Experienci Platform.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 7%
+source-wordcount: '1072'
+ht-degree: 4%
 
 ---
 
-# Inviare dati a Adobe Experience Platform
+# Invia dati all’Experience Platform
 
-Scopri come inviare dati a Adobe Experience Platform.
+Scopri come inviare dati da app mobili a Adobe Experience Platform.
 
->[!INFO]
->
-> Questo tutorial verrà sostituito da un nuovo tutorial che utilizzerà una nuova app mobile di esempio a fine novembre 2023
-
-Questa lezione facoltativa è valida per tutti i clienti di Real-time Customer Data Platform (Real-Time CDP), Journey Optimizer e Customer Journey Analytics. Ad Experience Platform, la base dei prodotti Experience Cloud, è un sistema aperto che trasforma tutti i tuoi dati, Adobe Adobi e non, in solidi profili cliente da aggiornare in tempo reale e utilizza informazioni basate sull’intelligenza artificiale per aiutarti a fornire le esperienze giuste su ogni canale.
+Questa lezione facoltativa è valida per tutti i clienti di Real-time Customer Data Platform (Real-Time CDP), Journey Optimizer e Customer Journey Analytics. Ad Experience Platform, la base dei prodotti Experience Cloud, è un sistema aperto che trasforma tutti i tuoi dati (Adobi e non Adobi) in solidi profili cliente. Questi profili cliente vengono aggiornati in tempo reale e utilizzano informazioni basate sull’intelligenza artificiale per aiutarti a fornire le esperienze giuste su ogni canale.
 
 Il [evento](events.md), [ciclo di vita](lifecycle-data.md), e [identità](identity.md) I dati raccolti e inviati a Platform Edge Network nelle lezioni precedenti vengono inoltrati ai servizi configurati nel flusso di dati, incluso Adobe Experience Platform.
+
+![Architettura](assets/architecture-aep.png)
 
 
 ## Prerequisiti
@@ -35,6 +33,7 @@ Se non hai accesso, puoi [salta questa lezione](install-sdks.md).
 In questa lezione verranno fornite le seguenti informazioni:
 
 * Crea un set di dati di Experience Platform.
+* Configura lo stream di dati per inoltrare i dati ad Experienci Platform.
 * Convalida i dati nel set di dati.
 * Abilita lo schema e il set di dati per Real-Time Customer Profile.
 * Convalidare i dati in Real-Time Customer Profile.
@@ -43,43 +42,68 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 ## Creare un set di dati
 
-Tutti i dati acquisiti correttamente in Adobe Experience Platform vengono memorizzati nel data lake come set di dati. Un set di dati è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella, che contiene uno schema (colonne) e dei campi (righe). I set di dati contengono anche metadati che descrivono vari aspetti dei dati memorizzati. Consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=it) per informazione.
+Tutti i dati acquisiti correttamente in Adobe Experience Platform vengono memorizzati nel data lake come set di dati. Un set di dati è un costrutto di archiviazione e gestione per una raccolta di dati (in genere una tabella) che contiene uno schema (colonne) e dei campi (righe). I set di dati contengono anche metadati che descrivono vari aspetti dei dati memorizzati. Consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=it) per informazione.
 
-1. Passa all’interfaccia di Experience Platform selezionandola dal menu 3x3 in alto a destra.
-   ![menu del set di dati](assets/mobile-dataset-menu.png)
+1. Passa all’interfaccia di Experience Platform selezionandola dall’elenco App ![App](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) in alto a destra.
+
 
 1. Seleziona **[!UICONTROL Set di dati]** dal menu di navigazione sinistro.
 
-1. **[!UICONTROL Creare un set di dati]**.
-   ![home set di dati](assets/mobile-dataset-home.png)
+1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Crea set di dati]**.
 
 1. Seleziona **[!UICONTROL Crea set di dati dallo schema]**.
-   ![home set di dati](assets/mobile-dataset-create.png)
+   ![home set di dati](assets/dataset-create.png)
 
-1. Cerca lo schema e seleziona.
+1. Cerca lo schema. ad esempio utilizzando `Luma Mobile` nel campo di ricerca.
+1. Seleziona lo schema, ad esempio **[!DNL Luma Mobile App Event Schema]**.
 
 1. Seleziona **[!UICONTROL Avanti]**.
-   ![configurazione set di dati](assets/mobile-dataset-configure.png)
+   ![configurazione set di dati](assets/dataset-configure.png)
 
-1. Fornisci un **[!UICONTROL Nome]**, **[!UICONTROL Descrizione]**, e seleziona **[!UICONTROL Fine]**.
-   ![fine set di dati](assets/mobile-dataset-finish.png)
+1. Fornisci un **[!UICONTROL Nome]**, ad esempio `Luma Mobile App Events Dataset` e un **[!UICONTROL Descrizione]**.
 
-## Aggiornare lo stream di dati
+1. Seleziona **[!UICONTROL Fine]**.
+   ![fine set di dati](assets/dataset-finish.png)
 
-Dopo aver creato il set di dati, assicurati di [aggiornare lo stream di dati](create-datastream.md) per aggiungere Adobe Experience Platform. Questo aggiornamento garantisce il flusso dei dati in Platform.
+
+## Aggiungi servizio flusso di dati Adobe Experience Platform
+
+Per inviare i dati XDM da Edge Network a Adobe Experience Platform, aggiungi il servizio Adobe Experience Platform allo stream di dati configurato come parte di [Creare un flusso di dati](create-datastream.md).
+
+>[!IMPORTANT]
+>
+>Puoi abilitare il servizio Adobe Experience Platform solo dopo aver creato un set di dati evento.
+
+1. Nell’interfaccia utente di Data Collection, seleziona **[!UICONTROL Flussi di dati]** e lo stream di dati.
+
+1. Quindi seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Aggiungi servizio]**.
+
+1. Seleziona **[!UICONTROL Adobe Experience Platform]** dal [!UICONTROL Servizio] elenco.
+
+1. Attiva il servizio cambiando **[!UICONTROL Abilitato]** su.
+
+1. Seleziona la **[!UICONTROL Set di dati evento]** create in precedenza, ad esempio **[!DNL Luma Mobile App Event Dataset]**.
+
+1. Seleziona **[!UICONTROL Salva]**.
+
+   ![Aggiungere Adobe Experience Platform come servizio per lo stream di dati](assets/datastream-service-aep.png)
+1. La configurazione finale sarà simile alla seguente.
+
+   ![impostazioni dello stream di dati](assets/datastream-settings.png)
+
 
 ## Convalidare i dati nel set di dati
 
-Dopo aver creato un set di dati e aggiornato lo stream di dati per inviare i dati ad Experienci Platform, tutti i dati XDM inviati a Platform Edge Network vengono inoltrati a Platform e inseriti nel set di dati.
+Dopo aver creato un set di dati e aggiornato lo stream di dati per inviare i dati ad Experienci Platform, tutti i dati XDM inviati a Platform Edge Network vengono inoltrati a Platform e vengono inseriti nel set di dati.
 
 Apri l’app e passa alle schermate in cui tieni traccia degli eventi. Puoi anche attivare le metriche del ciclo di vita.
 
-Apri il set di dati nell’interfaccia di Platform. Dovresti visualizzare i dati in arrivo in batch nel set di dati
+Apri il set di dati nell’interfaccia di Platform. Dovresti visualizzare i dati in arrivo in batch nel set di dati. I dati in genere arrivano in microbatch ogni 15 minuti, pertanto potresti non visualizzare immediatamente i dati.
 
-![convalidare i batch del set di dati di Platform di destinazione](assets/mobile-platform-dataset-batches.png)
+![convalidare i batch del set di dati di Platform di destinazione](assets/platform-dataset-batches.png)
 
 Dovresti anche poter visualizzare record e campi di esempio utilizzando **[!UICONTROL Anteprima set di dati]** funzionalità:
-![convalida ciclo di vita inviato al set di dati della piattaforma](assets/mobile-lifecycle-platform-dataset.png)
+![convalida ciclo di vita inviato al set di dati della piattaforma](assets/lifecycle-platform-dataset.png)
 
 Uno strumento più affidabile per la convalida dei dati è [servizio query](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html?lang=it).
 
@@ -89,53 +113,61 @@ Il profilo cliente in tempo reale di Experienci Platform consente di creare una 
 
 ### Abilita lo schema
 
-1. Apri lo schema
-1. Abilita **[!UICONTROL Profilo]**
-1. Seleziona **[!UICONTROL I dati per questo schema conterranno un’identità primaria nel campo identityMap.]** nel modale
-1. **[!UICONTROL Salva]** lo schema
+1. Apri lo schema, ad esempio **[!DNL Luma Mobile App Event Schema]**.
+1. Abilita **[!UICONTROL Profilo]**.
+1. Seleziona **[!UICONTROL I dati per questo schema conterranno un’identità primaria nel campo identityMap.]** nella finestra di dialogo.
+1. **[!UICONTROL Salva]** lo schema.
 
-   ![abilitare lo schema per il profilo](assets/mobile-platform-profile-schema.png)
+   ![abilitare lo schema per il profilo](assets/platform-profile-schema.png)
 
 ### Abilitare il set di dati
 
-1. Apri il set di dati
-1. Abilita **[!UICONTROL Profilo]**
+1. Apri il set di dati, ad esempio **[!DNL Luma Mobile App Event Dataset]**.
+1. Abilita **[!UICONTROL Profilo]**.
 
-   ![abilitare il set di dati per il profilo](assets/mobile-platform-profile-dataset.png)
+   ![abilitare il set di dati per il profilo](assets/platform-profile-dataset.png)
 
 ### Convalidare i dati nel profilo
 
-Apri l’app e passa alle schermate in cui tieni traccia degli eventi. Accedi all’app Luma e fai un acquisto.
+Apri l’app e passa alle schermate in cui stai tracciando gli eventi, ad esempio: accedi all’app Luma e fai un acquisto.
 
-Utilizza Assurance per trovare una delle identità passate in identityMap (E-mail, lumaCrmId o ECID):
+Utilizza Assurance per trovare una delle identità passate in identityMap (E-mail, lumaCrmId o ECID), ad esempio l’ID del sistema di gestione delle relazioni con i clienti.
 
->[!TIP]
->
->   Il valore della proprietà `lumaCrmId` è `112ca06ed53d3db37e4cea49cc45b71e`
+![acquisire un valore di identità](assets/platform-identity.png)
 
+Nell’interfaccia di Platform,
 
-![acquisire un valore di identità](assets/mobile-platform-identity.png)
+1. Accedi a **[!UICONTROL Profili]**, e seleziona **[!UICONTROL Sfoglia]** dalla barra superiore.
+1. Specifica i dettagli di identità appena acquisiti, ad esempio `Luma CRM ID` per **[!UICONTROL Spazio dei nomi dell’identità]** e il valore per cui hai copiato **[!UICONTROL Valore identità]**. Quindi seleziona **[!UICONTROL Visualizza]**.
+1. Per visualizzare i dettagli, seleziona il profilo.
 
-Nell’interfaccia di Platform, passa a **[!UICONTROL Profili]** > **[!UICONTROL Sfoglia]**, cerca il valore di identità appena ottenuto e apri il profilo:
+![cercare un valore di identità](assets/platform-profile-lookup.png)
 
-![cercare un valore di identità](assets/mobile-platform-profile-lookup.png)
-
-Il giorno **[!UICONTROL Dettaglio]** schermo puoi visualizzare le informazioni di base sull’utente, tra cui **[!UICONTROL ** identità collegate **]**:
-![dettagli profilo](assets/mobile-platform-profile-details.png)
+Il giorno **[!UICONTROL Dettaglio]** , è possibile visualizzare le informazioni di base sull&#39;utente, tra cui **[!UICONTROL ** identità collegate **]**:
+![dettagli profilo](assets/platform-profile-details.png)
 
 Il giorno **[!UICONTROL Eventi]**, puoi visualizzare gli eventi raccolti dall’implementazione dell’app mobile per questo utente:
 
-![eventi profilo](assets/mobile-platform-profile-events.png)
+![eventi profilo](assets/platform-profile-events.png)
 
 
-Dalla schermata dei dettagli del profilo, fai clic sul collegamento per visualizzare il grafico delle identità o accedi a **[!UICONTROL Identità]** > **[!UICONTROL Grafico delle identità]** e cerca il valore di identità. Questa visualizzazione mostra tutte le identità collegate tra loro in un profilo e la loro origine. Di seguito è riportato un esempio di grafico delle identità costituito dai dati raccolti dal completamento di questa esercitazione dell’SDK per dispositivi mobili (Origine dati 2) e della [Tutorial su Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it) (Origine dati 1):
+Dalla schermata dei dettagli del profilo:
 
-![acquisire un valore di identità](assets/mobile-platform-profile-identitygraph.png)
+1. Per visualizzare il grafo delle identità, fai clic sul collegamento o passa a **[!UICONTROL Identità]**, quindi seleziona **[!UICONTROL Grafico delle identità]** dalla barra superiore.
+1. Per cercare il valore di identità, specifica `Luma CRM ID` come **[!UICONTROL Spazio dei nomi dell’identità]** e il valore copiato come **[!UICONTROL Valore identità]**. Quindi seleziona **[!UICONTROL Visualizza]**.
+
+   Questa visualizzazione mostra tutte le identità collegate tra loro in un profilo e la loro origine. Di seguito è riportato un esempio di grafico delle identità costituito dai dati raccolti dal completamento di questa esercitazione dell’SDK per dispositivi mobili (Origine dati 2) e della [Tutorial su Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it) (Origine dati 1):
+
+   ![acquisire un valore di identità](assets/platform-profile-identitygraph.png)
+
+
+## Passaggi successivi
 
 Gli esperti di marketing e analisi possono fare molto di più con i dati acquisiti in Experienci Platform, compresa l’analisi di Customer Journey Analytics e la creazione di segmenti in Real-time Customer Data Platform. Stai partendo bene!
 
-Successivo: **[Messaggistica push con Journey Optimizer](journey-optimizer-push.md)**
 
->[!NOTE]
+>[!SUCCESS]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Ora hai configurato l’app per inviare dati non solo a Edge Network, ma anche a Adobe Experience Platform.<br>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+
+Successivo: **[Creare e inviare notifiche push](journey-optimizer-push.md)**

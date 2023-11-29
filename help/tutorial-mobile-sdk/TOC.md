@@ -4,14 +4,14 @@ breadcrumb-title: Tutorial sull’app mobile
 user-guide-description: Scopri come implementare le applicazioni Adobe Experience Cloud nelle app per dispositivi mobili con Experience Platform Mobile SDK.
 solution: Data Collection
 feature: Mobile SDK
-role: Data Engineer, Developer
+role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 779ce60b8e89520231d4d9cbaecfe09a8cabc38f
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 71%
+source-wordcount: '75'
+ht-degree: 73%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 71%
 
 + [Panoramica del tutorial](overview.md)
 + Configurazione iniziale {#initial-configuration}
-   + [Creare uno schema](create-schema.md)
+   + [Crea uno schema](create-schema.md)
    + [Creare un flusso di dati](create-datastream.md)
    + [Configurare i tag](configure-tags.md)
 + Implementazione dell’app{#app-implementation}
@@ -32,8 +32,14 @@ ht-degree: 71%
    + [WebViews](web-views.md)
    + [Identità](identity.md)
    + [Profilo](profile.md)
+   + [Places](places.md)
 + Experience Cloud {#experience-cloud}
    + [Analytics](analytics.md)
    + [Experience Platform](platform.md)
-   + [Journey Optimizer messaggi push](journey-optimizer-push.md)
+   + Percorsi Optimizer{#journey-optimizer}
+      + [Notifiche push](journey-optimizer-push.md)
+      + [Messaggi in-app](journey-optimizer-inapp.md)
+      + [Gestione delle decisioni](journey-optimizer-offers.md)
+   + [Target](target.md)
 + [Conclusione](conclusion.md)
+
