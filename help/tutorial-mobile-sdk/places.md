@@ -2,7 +2,7 @@
 title: Utilizzare Places con Platform Mobile SDK
 description: Scopri come utilizzare il servizio di geolocalizzazione Places nella tua app mobile.
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 87477cce0f0c5c0bb140927bed22dbc6e11f2af9
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 3%
@@ -182,7 +182,7 @@ Creiamo un’altra regola
 
 1. In **[!UICONTROL Crea regola]** immettere un nome per la regola, ad esempio `POI - Exit`.
 1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) sotto **[!UICONTROL EVENTI]**.
-   1. Seleziona **[!UICONTROL Places]** dal **[!UICONTROL Estensione]** elenca e seleziona **[!UICONTROL Inserisci POI]** dal **[!UICONTROL Tipo di evento]** elenco.
+   1. Seleziona **[!UICONTROL Places]** dal **[!UICONTROL Estensione]** elenca e seleziona **[!UICONTROL Esci da POI]** dal **[!UICONTROL Tipo di evento]** elenco.
    1. Seleziona **[!UICONTROL Mantieni modifiche]**.
 1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) sotto **[!UICONTROL AZIONI]**.
    1. Seleziona **[!UICONTROL Core mobile]** da **[!UICONTROL Estensione]** elenco, seleziona **[!UICONTROL Allega dati]** da **[!UICONTROL Tipo di azione]** elenco.
