@@ -6,7 +6,7 @@ role: Admin, Developer, Architect, Data Engineer
 level: Intermediate, Experienced
 jira: KT-9921
 exl-id: f8fd351a-435c-4cc1-b987-ed2ead20d4d6
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 7edf8fc46943ae2f1e6e2e20f4d589d7959310c8
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 3%
@@ -31,7 +31,7 @@ I fornitori di browser stanno cambiando il modo in cui trattano i cookie di terz
 
 ## Casi d’uso e dati {#use-cases-data}
 
-Il primo passaggio consiste nel definire i casi d’uso implementati con il tag fornitore lato client. Ad esempio, considera il pixel Facebook (Meta). Spostarlo dal sito alla pagina [API per conversioni facebook](https://exchange.adobe.com/apps/ec/105509/facebook-conversions-api-extension) con l’estensione di inoltro degli eventi significa documentare prima i casi d’uso specifici.
+Il primo passaggio consiste nel definire i casi d’uso implementati con il tag fornitore lato client. Ad esempio, considera il pixel Facebook (Meta). Spostarlo dal sito alla pagina [API di metaconversione](https://exchange.adobe.com/apps/ec/109168/meta-conversions-api) con l’estensione di inoltro degli eventi significa documentare prima i casi d’uso specifici.
 
 Per il codice fornitore lato client corrente:
 
