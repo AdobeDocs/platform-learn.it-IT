@@ -2,8 +2,9 @@
 title: Panoramica tutorial sull’implementazione di Adobe Experience Cloud nelle app per dispositivi mobili
 description: Scopri come implementare le app mobili Adobe Experience Cloud. Questa esercitazione ti guida attraverso un’implementazione di applicazioni Experience Cloud in un’app Swift di esempio.
 recommendations: noDisplay,catalog
+last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: ebc283c041dcacd262dfa6cdb3b8a05a288e6664
+source-git-commit: 4bd8d0cdcf9c5d29434de4968a048fd46e163b54
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 6%
