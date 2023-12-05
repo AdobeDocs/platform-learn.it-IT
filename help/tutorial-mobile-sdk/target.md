@@ -4,11 +4,12 @@ description: Scopri come utilizzare un test A/B di Target nell’app mobile con 
 solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
+jira: KT-14641
 exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1918'
-ht-degree: 3%
+source-wordcount: '1745'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +34,7 @@ Prima di poter eseguire test A/B con Target, è necessario assicurarsi che siano
 * Accedi ad Adobe Target con le autorizzazioni, i ruoli configurati correttamente, le aree di lavoro e le proprietà come descritto [qui](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=it).
 
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 In questa lezione verranno fornite le seguenti informazioni:
 

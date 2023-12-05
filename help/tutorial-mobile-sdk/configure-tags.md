@@ -2,11 +2,12 @@
 title: Configurare una proprietà tag per le implementazioni dell’SDK di Platform Mobile
 description: Scopri come configurare una proprietà tag in [!UICONTROL Raccolta dati] di rete.
 feature: Mobile SDK,Tags
+jira: KT-14626
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 4%
+source-wordcount: '1005'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +25,7 @@ Per completare la lezione, devi disporre dell’autorizzazione per creare una pr
 >
 > Il platform launch (lato client) è ora [Tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 In questa lezione verranno fornite le seguenti informazioni:
 
@@ -39,7 +40,7 @@ In questa lezione verranno fornite le seguenti informazioni:
       ![creare una proprietà tag](assets/tags-new-property.png).
    1. Per **[!UICONTROL Nome]**, immetti `Luma Mobile App Tutorial`.
    1. Per **[!UICONTROL Piattaforma]**, seleziona **[!UICONTROL Dispositivi mobili]**.
-   1. Seleziona **[!UICONTROL Salva]**.
+   1. Seleziona  **[!UICONTROL Salva]**.
 
       ![configurare la proprietà tag](assets/tags-property-config.png)
 

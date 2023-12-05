@@ -4,11 +4,12 @@ description: Scopri come creare notifiche push per un’app mobile con Platform 
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
+jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '2705'
-ht-degree: 2%
+source-wordcount: '2556'
+ht-degree: 0%
 
 ---
 
@@ -31,13 +32,13 @@ Journey Optimizer consente di creare percorsi e inviare messaggi a tipi di pubbl
 * Configura l’app per Adobe Experience Platform.
 * Accesso a Journey Optimizer e autorizzazioni sufficienti come descritto [qui](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en). È inoltre necessaria un&#39;autorizzazione sufficiente per le seguenti funzioni di Journey Optimizer.
    * Crea una superficie app.
-   * Creare un percorso.
+   * Creazione di un percorso.
    * Crea un messaggio.
    * Creare predefiniti per messaggi.
 * **Account sviluppatore Apple a pagamento** con accesso sufficiente per creare certificati, identificatori e chiavi.
 * Dispositivo fisico iOS o simulatore per test.
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 In questa lezione, potrai
 
@@ -87,7 +88,7 @@ La documentazione aggiuntiva può essere [trovato qui](https://help.apple.com/de
    ![app surface home](assets/push-app-surface.png)
 1. Immetti un **[!UICONTROL Nome]** per la configurazione, ad esempio `Luma App Tutorial`  .
 1. Da **[!UICONTROL Configurazione applicazione mobile]**, seleziona **[!UICONTROL Apple iOS]**.
-1. Immetti l’ID del bundle dell’app mobile in **[!UICONTROL ID app (ID bundle iOS)]** campo. Ad esempio,  `com.adobe.luma.tutorial.swiftui`.
+1. Immetti l’ID del bundle dell’app mobile in **[!UICONTROL ID app (ID bundle iOS)]** campo. Ad esempio:  `com.adobe.luma.tutorial.swiftui`.
 1. Accendere il **[!UICONTROL Credenziali push]** per aggiungere le credenziali.
 1. Trascina il file `.p8` **Chiave di autenticazione per notifica push Apple** file.
 1. Fornisci **[!UICONTROL ID chiave]**, stringa di 10 caratteri assegnata durante la creazione di `p8` tasto auth. Si trova sotto **[!UICONTROL Chiavi]** scheda in **Certificati, identificatori e profili** delle pagine del portale Apple Developer. Vedi anche [Creare una chiave privata](#create-a-private-key).

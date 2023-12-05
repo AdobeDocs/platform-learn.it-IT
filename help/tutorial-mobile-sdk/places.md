@@ -1,11 +1,12 @@
 ---
 title: Utilizzare Places con Platform Mobile SDK
 description: Scopri come utilizzare il servizio di geolocalizzazione Places nella tua app mobile.
+jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 87477cce0f0c5c0bb140927bed22dbc6e11f2af9
+source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 3%
+source-wordcount: '1588'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +24,7 @@ Il servizio Adobe Experience Platform Data Collection Places è un servizio di g
 * SDK importati.
 * L&#39;app è stata creata ed eseguita correttamente con le modifiche precedenti.
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 In questa lezione, potrai
 

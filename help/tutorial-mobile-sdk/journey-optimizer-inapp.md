@@ -4,11 +4,12 @@ description: Scopri come creare e inviare messaggi in-app a un’app mobile con 
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
+jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 4%
+source-wordcount: '1434'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +37,7 @@ Prima di inviare messaggi in-app con Journey Optimizer, è necessario assicurars
 * Dispositivo fisico iOS o simulatore per test.
 
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 In questa lezione, potrai
 
@@ -61,7 +62,7 @@ In questa lezione, potrai
    ![app surface home](assets/push-app-surface.png)
 1. Immetti un **[!UICONTROL Nome]** per la configurazione, ad esempio `Luma App Tutorial`  .
 1. Da **[!UICONTROL Configurazione applicazione mobile]**, seleziona **[!UICONTROL Apple iOS]**.
-1. Immetti l’ID del bundle dell’app mobile in **[!UICONTROL ID app (ID bundle iOS)]** campo. Ad esempio,  `com.adobe.luma.tutorial.swiftui`.
+1. Immetti l’ID del bundle dell’app mobile in **[!UICONTROL ID app (ID bundle iOS)]** campo. Ad esempio:  `com.adobe.luma.tutorial.swiftui`.
 1. Seleziona **[!UICONTROL Salva]**.
 
    ![configurazione della superficie dell&#39;app](assets/push-app-surface-config-inapp.png)
@@ -169,7 +170,7 @@ L’hub eventi SDK pubblica e riceve i dati dell’evento da estensioni registra
    1. Seleziona **[!UICONTROL Crea]**
       ![Proprietà campagna](assets/ajo-campaign-properties.png)
 1. Nella schermata di definizione di Campaign, in **[!UICONTROL Proprietà]**, immetti un **[!UICONTROL Nome]** per la campagna, ad esempio `Luma - In-App Messaging Campaign`, e un **[!UICONTROL Descrizione]**, ad esempio `In-app messaging campaign for Luma app`.
-   ![Nome della campagna](assets/ajo-campaign-properties-name.png)
+   ![Nome campagna](assets/ajo-campaign-properties-name.png)
 1. Scorri verso il basso fino a **[!UICONTROL Azione]**, e seleziona **[!UICONTROL Modifica contenuto]**.
 1. In **[!UICONTROL Messaggio in-app]** schermata:
    1. Seleziona **[!UICONTROL Modale]** come **[!UICONTROL Layout messaggio]**.

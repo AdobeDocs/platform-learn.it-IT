@@ -1,10 +1,11 @@
 ---
 title: Tracciare i dati dell’evento nelle app mobili con Platform Mobile SDK
 description: Scopri come tenere traccia dei dati evento in un’app mobile.
+jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1328'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ L’estensione Edge Network fornisce un’API per inviare eventi esperienza a Pl
 * SDK importati.
 * L&#39;app è stata creata ed eseguita correttamente con le modifiche precedenti.
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 In questa lezione, potrai
 

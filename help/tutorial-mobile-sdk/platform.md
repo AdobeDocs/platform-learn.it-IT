@@ -3,11 +3,12 @@ title: Inviare dati all’Experience Platform con Platform Mobile SDK
 description: Scopri come inviare dati ad Experienci Platform.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
+jira: KT-14637
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 4%
+source-wordcount: '1032'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +29,7 @@ Il [evento](events.md), [ciclo di vita](lifecycle-data.md), e [identità](identi
 
 Se non hai accesso, puoi [salta questa lezione](install-sdks.md).
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 In questa lezione verranno fornite le seguenti informazioni:
 

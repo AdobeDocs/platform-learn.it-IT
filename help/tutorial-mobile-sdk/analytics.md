@@ -2,11 +2,12 @@
 title: Mappare i dati raccolti con Platform Mobile SDK su Adobe Analytics
 description: Scopri come raccogliere e mappare dati per Adobe Analytics in un’app mobile.
 solution: Data Collection,Experience Platform,Analytics
+jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 1025e7a7f0e8f994ecc05ddb5362a66c8d89a978
+source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 2%
+source-wordcount: '878'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +25,7 @@ Il [evento](events.md) i dati raccolti e inviati a Platform Edge Network nelle l
 * Invio dei dati XDM nell&#39;app di esempio completato.
 * Una suite di rapporti di Adobe Analytics che puoi utilizzare per questa lezione.
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 In questa lezione verranno fornite le seguenti informazioni:
 
@@ -86,7 +87,7 @@ s.products = ";5829,1,49.99;9841,3,30.00"
 
 >[!NOTE]
 >
->Se `productListItems[].SKU` e `productListItems[].name` contengono entrambi dati, il valore in `productListItems[].SKU` viene utilizzato. Consulta [Mappatura delle variabili di Analytics in Adobe Experience Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en) per ulteriori informazioni.
+>Se `productListItems[].SKU` e `productListItems[].name` entrambi contengono dati, il valore in `productListItems[].SKU` viene utilizzato. Consulta [Mappatura delle variabili di Analytics in Adobe Experience Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en) per ulteriori informazioni.
 
 
 ### Esempio #2 - scAdd

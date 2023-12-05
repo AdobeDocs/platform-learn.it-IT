@@ -2,11 +2,12 @@
 title: Configurare uno stream di dati per le implementazioni dell’SDK di Platform Mobile
 description: Scopri come creare uno stream di dati in Experience Platform.
 feature: Mobile SDK,Datastreams
+jira: KT-14625
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 9%
+source-wordcount: '428'
+ht-degree: 2%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 9%
 
 Scopri come creare uno stream di dati in Experience Platform.
 
-Un flusso di dati è una configurazione lato server in Platform Edge Network. Lo stream di dati garantisce che i dati in arrivo nella rete Edge di Platform vengano instradati in modo appropriato alle applicazioni e ai servizi Adobe Experience Cloud. Per ulteriori informazioni, vedere [documentazione](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=it) o questo [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=it).
+Un flusso di dati è una configurazione lato server in Platform Edge Network. Lo stream di dati garantisce che i dati in arrivo nella rete Edge di Platform vengano instradati in modo appropriato alle applicazioni e ai servizi Adobe Experience Cloud. Per ulteriori informazioni, vedere [documentazione](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) o questo [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=it).
 
 ![Architettura](assets/architecture.png)
 
@@ -22,13 +23,13 @@ Un flusso di dati è una configurazione lato server in Platform Edge Network. Lo
 
 Per creare un flusso di dati, è necessario eseguire il provisioning della tua organizzazione per questa funzione nell’interfaccia di Data Collection (precedentemente [!UICONTROL Launch]) e devi disporre delle autorizzazioni utente per gestire e visualizzare gli stream di dati.
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 In questa lezione verranno fornite le seguenti informazioni:
 
 * Sapere quando utilizzare un flusso di dati.
 * Creare un flusso di dati.
-* Configurare uno stream di dati.
+* Configurare un flusso di dati.
 
 ## Creare un flusso di dati
 
@@ -44,7 +45,7 @@ Gli stream di dati possono essere creati in [!UICONTROL Raccolta dati] tramite l
 
    >[!NOTE]
    >
-   >Promemoria finale: se segui questa esercitazione con più persone su una singola sandbox o se utilizzi un account condiviso, puoi aggiungere o anteporre un’identificazione come parte delle convenzioni di denominazione. Ad esempio, usa `Luma Mobile App Event Dataset - Joe Smith` invece di `Luma Mobile App Event Dataset`. Vedi anche la nota in [Panoramica](overview.md).
+   >Promemoria finale: se segui questa esercitazione con più persone su una singola sandbox o se utilizzi un account condiviso, puoi aggiungere o anteporre un’identificazione come parte delle convenzioni di denominazione. Ad esempio, invece di `Luma Mobile App Event Dataset`, utilizza `Luma Mobile App Event Dataset - Joe Smith`. Vedi anche la nota in [Panoramica](overview.md).
 
 1. Seleziona lo schema creato nella lezione precedente da **Schema Evento** elenco.
 1. Seleziona **[!UICONTROL Salva]**.
@@ -101,7 +102,7 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->L’abilitazione di ciascuno dei servizi utilizzati dalla tua organizzazione garantisce che i dati raccolti nell’app mobile possano essere utilizzati ovunque. Per ulteriori informazioni sulle impostazioni dello stream di dati, consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=it).
+>L’abilitazione di ciascuno dei servizi utilizzati dalla tua organizzazione garantisce che i dati raccolti nell’app mobile possano essere utilizzati ovunque. Per ulteriori informazioni sulle impostazioni dello stream di dati, consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
 
 Quando implementi l’SDK di Platform Mobile nella tua app, devi creare tre flussi di dati da mappare ai tre ambienti di tag (sviluppo, stage e produzione). Se utilizzi Platform Mobile SDK con applicazioni basate su Platform, ad esempio Adobe Real-time Customer Data Platform o Adobe Journey Optimizer, assicurati di creare tali flussi di dati nelle sandbox appropriate.
 

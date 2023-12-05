@@ -2,11 +2,12 @@
 title: Raccogliere dati di identità in un’app mobile con Mobile SDK
 description: Scopri come raccogliere i dati di identità in un’app mobile.
 feature: Mobile SDK,Identities
+jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 4%
+source-wordcount: '815'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +23,7 @@ Ulteriori informazioni su [Estensione identità](https://developer.adobe.com/cli
 
 * L&#39;app con gli SDK installati e configurati è stata creata ed eseguita correttamente.
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 In questa lezione verranno fornite le seguenti informazioni:
 
@@ -140,7 +141,7 @@ Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzat
 1. Rivedi [istruzioni di configurazione](assurance.md#connecting-to-a-session) per collegare il simulatore o il dispositivo ad Assurance.
 1. Nell’app Luma
    1. Seleziona la **[!UICONTROL Home]** e spostare l&#39;icona Assurance a sinistra.
-   1. Seleziona <img src="assets/login.png" width="15" /> in alto a destra.
+   1. Seleziona la <img src="assets/login.png" width="15" /> in alto a destra.
 
       <img src="./assets/identity1.png" width="300">
 

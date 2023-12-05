@@ -2,11 +2,12 @@
 title: Creare uno schema XDM per le implementazioni dell’SDK di Platform Mobile
 description: Scopri come creare uno schema XDM per gli eventi delle app mobili.
 feature: Mobile SDK,Schemas
+jira: KT-14624
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 5%
+source-wordcount: '1414'
+ht-degree: 3%
 
 ---
 
@@ -34,7 +35,7 @@ Per ulteriori informazioni sul modello di composizione dello schema, inclusi i p
 
 Per completare la lezione, è necessario disporre dell&#39;autorizzazione per la creazione di uno schema di Experience Platform.
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 In questa lezione verranno fornite le seguenti informazioni:
 
@@ -106,7 +107,7 @@ A scopo di apprendimento, puoi utilizzare gruppi di campi predefiniti e personal
 
    >[!NOTE]
    >
-   >Se segui questa esercitazione con più persone su una singola sandbox o se utilizzi un account condiviso, puoi aggiungere o anteporre un’identificazione come parte delle convenzioni di denominazione. Ad esempio, usa `Luma Mobile App Event Schema - Joe Smith` invece di `Luma Mobile App Event Schema`. Vedi anche la nota in [Panoramica](overview.md).
+   >Se segui questa esercitazione con più persone su una singola sandbox o se utilizzi un account condiviso, puoi aggiungere o anteporre un’identificazione come parte delle convenzioni di denominazione. Ad esempio, invece di `Luma Mobile App Event Schema`, utilizza `Luma Mobile App Event Schema - Joe Smith`. Vedi anche la nota in [Panoramica](overview.md).
 
 1. Seleziona **[!UICONTROL Fine]** per completare la procedura guidata.
 

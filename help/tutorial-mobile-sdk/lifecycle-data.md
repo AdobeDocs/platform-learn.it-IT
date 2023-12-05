@@ -1,11 +1,12 @@
 ---
 title: Raccogliere dati sul ciclo di vita con Platform Mobile SDK
 description: Scopri come raccogliere i dati del ciclo di vita in un’app mobile.
+jira: KT-14630
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 2%
+source-wordcount: '601'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +22,7 @@ L&#39;estensione del ciclo di vita Adobe Experience Platform Mobile SDK abilita 
 * L&#39;app con gli SDK installati e configurati è stata creata ed eseguita correttamente. Come parte di questa lezione, hai già iniziato il monitoraggio del ciclo di vita. Consulta [Installare gli SDK - Aggiornare AppDelegate](install-sdks.md#update-appdelegate) da rivedere.
 * L&#39;estensione Assurance è stata registrata come descritto in [lezione precedente](install-sdks.md).
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 In questa lezione verranno fornite le seguenti informazioni:
 

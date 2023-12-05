@@ -4,11 +4,12 @@ description: Scopri come creare e visualizzare le offerte con Platform Mobile SD
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
+jira: KT-14640
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '2676'
-ht-degree: 2%
+source-wordcount: '2470'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +38,7 @@ La gestione delle decisioni semplifica la personalizzazione con una libreria cen
 * Accesso a Journey Optimizer - Gestione delle decisioni con le autorizzazioni appropriate per gestire offerte e decisioni come descritto [qui](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 In questa lezione, potrai
 

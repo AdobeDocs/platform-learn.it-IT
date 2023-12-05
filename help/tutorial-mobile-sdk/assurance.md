@@ -2,11 +2,12 @@
 title: Configurare Assurance per le implementazioni dell’SDK di Platform Mobile
 description: Scopri come implementare l’estensione Assurance in un’app mobile.
 feature: Mobile SDK,Assurance
+jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 7%
+source-wordcount: '925'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +24,7 @@ Assurance consente di controllare gli eventi SDK non elaborati generati da Adobe
 
 * L&#39;app con gli SDK installati e configurati è stata configurata.
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 In questa lezione verranno fornite le seguenti informazioni:
 
