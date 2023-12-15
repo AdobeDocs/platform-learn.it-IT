@@ -1,24 +1,20 @@
 ---
-title: Panoramica dei tag e creazione di una proprietà (precedentemente Launch)
-description: Ottieni una rapida panoramica dei tag in Raccolta dati e scopri come creare proprietà per ospitare il codice per il tuo sito.
-original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/launch-web/launch-overview-and-creating-properties.html
+title: Creare una proprietà di tag
+description: Scopri come creare proprietà tag per gestire i tag di marketing sul tuo sito web.
 feature: Tags
 level: Beginner
 jira: KT-3524
+last-substantial-update: 2023-12-15T00:00:00Z
 exl-id: db2e1818-81bb-4d4c-b6ee-b537b48d3b21
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 65a1b8a042fa4330a1aed8bdcf319312c76eac22
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 72%
+source-wordcount: '36'
+ht-degree: 0%
 
 ---
 
-# Panoramica sui tag e creazione di una proprietà
+# Creare una proprietà di tag
 
-Ottieni una rapida panoramica dei tag in Raccolta dati e scopri come creare proprietà per ospitare il codice per il tuo sito.
-
->[!NOTE]
->
-> Il lancio è ora **[!DNL tags]**
+Scopri come creare proprietà tag per gestire i tag di marketing sul tuo sito web.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28727/?learn=on)
