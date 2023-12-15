@@ -5,9 +5,9 @@ user-guide-description: Scopri i numerosi componenti di Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: cb97521c7906bcb16c7352f6c2447e07abb828c7
+source-git-commit: d60e457874f1f05a4a86a6b37b8aee58d4b3f067
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '849'
 ht-degree: 16%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 16%
    + [Utilizzare le sandbox](/help/platform/admin/use-sandboxes.md)
    + [Copiare oggetti da una sandbox a un’altra](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [Aggiunta di utenti](/help/platform/admin/add-users.md)
+   + [Aggiungi sviluppatori](/help/platform/admin/add-developers.md)
    + [Aggiungi amministratori di prodotto](/help/platform/admin/add-product-administrators.md)
    + [Configurare il controllo degli accessi basato su attributi](/help/platform/admin/configure-attribute-based-access-control.md)
 + Tipi di pubblico e segmentazione {#audiences}
