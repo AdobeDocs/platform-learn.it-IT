@@ -4,10 +4,10 @@ description: Scopri come implementare l’estensione Assurance in un’app mobil
 feature: Mobile SDK,Assurance
 jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: 576f85eda6e5888b9eafa15a705a99c3a70fed07
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 6%
+source-wordcount: '1021'
+ht-degree: 5%
 
 ---
 
@@ -57,28 +57,25 @@ Oltre al generale [Installazione SDK](install-sdks.md), hai completato la lezion
 
 Ulteriori informazioni sono disponibili [qui](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
-<!-- not initially required
 
-## Signing
 
-Signing the application is only required for the [Create and send push notifications](journey-optimizer-push.md) and the [Create and send in-app messages](journey-optimizer-inapp.md) lessons in this tutorial. These lessons require an Apple provisioning profile which **requires a paid Apple developer account**.
+## Definisci identificatore bundle
 
-To update the signing for the lessons that require that you sign the application:
+Devi fornire un identificatore univoco del bundle per l’app.
 
-1. Open the project in Xcode.
-1. Select **[!DNL Luma]** in the Project navigator.
-1. Select the **[!DNL Luma]** target.
-1. Select the **Signing & Capabilities** tab.
-1. Configure **[!UICONTROL Automatic manage signing]**, **[!UICONTROL Team]**, and **[!UICONTROL Bundle Identifier]**, or use your specific Apple development provisioning details. 
- 
+1. Apri il progetto in Xcode.
+1. Seleziona **[!DNL Luma]** nel Navigatore progetti.
+1. Seleziona la **[!DNL Luma]** target.
+1. Seleziona la **Firma e funzionalità** scheda.
+1. Definisci un **[!UICONTROL Identificatore bundle]**.
+
    >[!IMPORTANT]
    >
-   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
+   >Assicurati di utilizzare un’ _univoco_ identificatore del bundle e sostituisci il `com.adobe.luma.tutorial.swiftui` identificatore del bundle, in quanto ogni identificatore del bundle deve essere univoco. In genere si utilizza il formato DNS inverso per le stringhe ID bundle, come `com.organization.brand.uniqueidentifier`. La versione finale di questa esercitazione, ad esempio, utilizza `com.adobe.luma.tutorial.swiftui`.
 
 
-    ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
+   ![Funzionalità di firma Xcode](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
--->
 
 ## Configurare un URL di base
 
@@ -93,7 +90,7 @@ To update the signing for the lessons that require that you sign the application
 
    >[!IMPORTANT]
    >
-   >Assicurati di utilizzare un’ _univoco_ identificatore del bundle e sostituisci il `com.adobe.luma.tutorial.swiftui` identificatore del bundle, in quanto ogni identificatore del bundle deve essere univoco. In genere si utilizza il formato DNS inverso per le stringhe ID bundle, come `com.organization.brand.uniqueidentifier`.<br/>Allo stesso modo, utilizza uno schema URL univoco e sostituisci quello già fornito `lumatutorialswiftui` con il tuo schema URL univoco.
+   >Assicurati di utilizzare un’ _univoco_ identificatore del bundle e sostituisci il `com.adobe.luma.tutorial.swiftui` identificatore del bundle, in quanto ogni identificatore del bundle deve essere univoco. In genere si utilizza il formato DNS inverso per le stringhe ID bundle, come `com.organization.brand.uniqueidentifier`. Puoi utilizzare lo stesso identificatore bundle utilizzato in [Definisci identificatore bundle](#define-bundle-identifier).<br/>Allo stesso modo, utilizza uno schema URL univoco e sostituisci quello già fornito `lumatutorialswiftui` con il tuo schema URL univoco.
 
 Per ulteriori informazioni sugli schemi URL in iOS, consulta [Documentazione di Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
