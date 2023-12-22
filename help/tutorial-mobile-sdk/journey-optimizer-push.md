@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2584'
 ht-degree: 0%
 
 ---
@@ -333,6 +333,7 @@ Il passaggio successivo consiste nel creare il percorso che attiva l’invio del
       In **[!UICONTROL Notifica push]** editor:
 
       1. Immetti un **[!UICONTROL Titolo]**, ad esempio `Luma Test Push Notification` e inserisci un **[!UICONTROL Corpo]**, ad esempio `Test push notification for Luma mobile app`.
+      1. Facoltativamente, puoi inserire un collegamento a un’immagine (.png o .jpg) in **[!UICONTROL Aggiungi file multimediali]**. In tal caso, l’immagine farà parte della notifica push.
       1. Per salvare e lasciare l’editor, seleziona ![Freccia sinistra](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronLeft_18_N.svg).
          ![Editor push](assets/ajo-push-editor.png)
 

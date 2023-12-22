@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: In App
 jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1447'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Per fare in modo che i dati inviati dalla tua app mobile a Edge Network vengano 
 1. Per salvare la configurazione dello stream di dati, seleziona **[!UICONTROL Salva]**.
 
 
-   ![Configurazione dello stream di dati AEP](assets/datastream-aep-configuration.png)
+   ![Configurazione dello stream di dati AEP](assets/datastream-ajo-inapp-configuration.png)
 
 
 ### Installare l’estensione dei tag di Journey Optimizer
@@ -91,16 +91,9 @@ Affinché l&#39;app funzioni con Journey Optimizer, devi aggiornare la propriet�
 1. Seleziona **[!UICONTROL Catalogo]**.
 1. Cerca **[!UICONTROL Adobe Journey Optimizer]** estensione.
 1. Installa l’estensione.
-1. In **[!UICONTROL Installa estensione]** finestra di dialogo
-   1. Seleziona un ambiente, ad esempio **[!UICONTROL Sviluppo]**.
-   1. Seleziona la **[!UICONTROL Set di dati evento di tracciamento push AJO]** set di dati da **[!UICONTROL Set di dati evento]** elenco.
-   1. Seleziona **[!UICONTROL Salva nella libreria e genera]**.
-      ![Impostazioni estensione AJO](assets/push-tags-ajo.png)
 
->[!NOTE]
->
->Se non vedi `AJO Push Tracking Experience Event Dataset` contatta l’assistenza clienti come opzione.
->
+Quando *solo* utilizzo dei messaggi in-app nell’app, in **[!UICONTROL Installa estensione]** o **[!UICONTROL Configura estensione]**, non è necessario configurare nulla. Tuttavia, se hai già seguito il [Notifiche push](journey-optimizer-push.md) nell&#39;esercitazione, questo sarà visibile per **[!UICONTROL Sviluppo]** ambiente, **[!UICONTROL Set di dati evento di tracciamento push AJO]** il set di dati è selezionato da **[!UICONTROL Set di dati evento]** elenco.
+
 
 ### Implementare Journey Optimizer nell’app
 
