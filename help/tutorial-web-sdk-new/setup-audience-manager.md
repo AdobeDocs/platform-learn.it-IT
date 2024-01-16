@@ -2,7 +2,7 @@
 title: Configurare un Audience Manager con Platform Web SDK
 description: Scopri come configurare Adobe Audience Manager utilizzando Platform Web SDK e convalidare l’implementazione utilizzando una destinazione cookie. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 solution: Data Collection, Audience Manager
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 1%
@@ -85,7 +85,7 @@ Dopo il salvataggio dell&#39;origine dati, impostare un [caratteristica](https:/
 1. Seleziona la **[!UICONTROL Origine dati]** creato nella sezione precedente.
 1. **[!UICONTROL Seleziona una cartella]** in cui salvare le caratteristiche nel riquadro a destra. È possibile creare una cartella tramite **selezione dell’icona +** accanto a una cartella padre esistente. Puoi denominare questa nuova cartella `Platform Web SDK tutorial`.
 1. Espandi **[!UICONTROL Espressione di caratteristica]** cursore e selezione **[!UICONTROL Generatore di espressioni]** Devi fornire una coppia chiave-valore che indichi una visita alla pagina home.
-1. Apri [Home page Luma](https://luma.enablementadobe.com/content/luma/us/en.html) (mappato alla proprietà tag) e **Debugger di Platform Web SDK** e aggiorna la pagina.
+1. Apri [Home page Luma](https://luma.enablementadobe.com/content/luma/us/en.html) (mappato alla proprietà tag) e **Adobe Experience Platform Debugger** e aggiorna la pagina.
 1. Osserva le Richieste di rete e i dettagli dell’evento per Platform Web SDK per trovare la chiave e il valore del nome per la home page.
    ![Dati XDM di Audience Manager Adobe Experience Platform](assets/xdm-keyvalue.jpg)
 1. Torna al Generatore di espressioni nell’interfaccia utente di Audienci Manager e immetti la chiave come **`web.webPageDetails.name`** e il valore di **`content:luma:us:en`**. Questo passaggio ti assicura di attivare una caratteristica ogni volta che carichi la pagina home.
@@ -100,7 +100,8 @@ Il passaggio successivo consiste nel creare un **segmento**, e assegna la caratt
 1. Seleziona **[!UICONTROL Aggiungi nuovo]** in alto a sinistra nella pagina per aprire il generatore di segmenti
 1. Assegna al segmento un nome descrittivo e una descrizione, ad esempio `Platform Web SDK - Homepage visitors`
 1. **[!UICONTROL Seleziona una cartella]** dove verrà salvato il segmento nel riquadro a destra. È possibile creare una cartella tramite **selezione dell’icona +** accanto a una cartella padre esistente. Puoi denominare questa nuova cartella `Platform Web SDK tutorial`.
-1. Aggiungi un codice di integrazione, che in questo caso è un set casuale di numeri. 1. Nel **[!UICONTROL Origine dati]** sezione, seleziona **[!UICONTROL Audience Manager]** e l’origine dati creata in precedenza
+1. Aggiungi un codice di integrazione, che in questo caso è un set casuale di numeri.
+1. In **[!UICONTROL Origine dati]** sezione, seleziona **[!UICONTROL Audience Manager]** e l’origine dati creata in precedenza
 1. Espandi **[!UICONTROL Caratteristiche]** e cercare la caratteristica creata
 1. Seleziona **[!UICONTROL Aggiungi caratteristica]**.
 1. Seleziona **[!UICONTROL Salva]** nella parte inferiore della pagina
@@ -181,4 +182,4 @@ Dopo aver completato questa lezione, dovresti essere in grado di vedere in che m
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

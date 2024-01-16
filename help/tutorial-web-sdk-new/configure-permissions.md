@@ -2,9 +2,9 @@
 title: Configurare le autorizzazioni per l’esercitazione
 description: Scopri come richiedere l’accesso a Experienci Platform Web SDK e configurare le autorizzazioni necessarie per completare l’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Access Control
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '367'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ Scopri come richiedere l’accesso a Experienci Platform Web SDK e configurare l
 
 ## Raccolta dati
 
-* Autorizza a **[!UICONTROL Sviluppa]**, **[!UICONTROL Modifica]**, **[!UICONTROL Approva]**, **[!UICONTROL Pubblica]**, **[!UICONTROL Gestire le estensioni]**, **[!UICONTROL Gestisci ambienti]**, e **[!UICONTROL Gestisci proprietà]**. Per ulteriori informazioni sulle autorizzazioni dei tag, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* Autorizza a **[!UICONTROL Sviluppa]**, **[!UICONTROL Modifica]**, **[!UICONTROL Approva]**, **[!UICONTROL Pubblica]**, **[!UICONTROL Gestire le estensioni]**, **[!UICONTROL Gestisci ambienti]**, e **[!UICONTROL Gestisci proprietà]**. Per ulteriori informazioni sulle autorizzazioni per i tag, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 * Se completerai la lezione facoltativa sull’inoltro degli eventi, è necessario disporre di una licenza del prodotto che includa l’inoltro Edge e l’elemento di autorizzazione **[!UICONTROL Piattaforme]** > **[!UICONTROL Bordo]**
 
 ## Experience Platform
@@ -23,9 +23,9 @@ Scopri come richiedere l’accesso a Experienci Platform Web SDK e configurare l
 Queste funzioni dovrebbero essere disponibili per tutti i clienti di Experience Cloud, anche se non sei cliente di un’applicazione basata su Platform come Real-Time CDP.
 
 * Accesso al **produzione predefinita**, **Prod** sandbox.
-* Accesso a **[!UICONTROL Gestire gli schemi]** e **[!UICONTROL Visualizzare gli schemi]** in **[!UICONTROL Modellazione dati]**
-* Accesso a **[!UICONTROL Gestire gli spazi dei nomi delle identità]** e **[!UICONTROL Visualizzare gli spazi dei nomi delle identità]** in **[!UICONTROL Identity Management]**
-* Accesso a **[!UICONTROL Gestire gli stream di dati]** e **[!UICONTROL Visualizzare gli stream di dati]** in **[!UICONTROL Raccolta dati]**
+* Accesso a **[!UICONTROL Gestire gli schemi]** e **[!UICONTROL Visualizzare gli schemi]** in **[!UICONTROL Modellazione dati]**.
+* Accesso a **[!UICONTROL Gestire gli spazi dei nomi delle identità]** e **[!UICONTROL Visualizzare gli spazi dei nomi delle identità]** in **[!UICONTROL Identity Management]**.
+* Accesso a **[!UICONTROL Gestire gli stream di dati]** e **[!UICONTROL Visualizzare gli stream di dati]** in **[!UICONTROL Raccolta dati]**.
 * Se sei cliente di un’applicazione basata su Platform e completerai il [Experience Platform configurazione](setup-experience-platform.md) lezione, dovresti anche avere:
    * Accesso a **sviluppo** sandbox.
    * Tutti gli elementi di autorizzazione in **[!UICONTROL Gestione dati]**, e **[!UICONTROL Gestione profilo]**:
@@ -51,4 +51,4 @@ Ora puoi iniziare i passaggi di configurazione iniziali.
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
