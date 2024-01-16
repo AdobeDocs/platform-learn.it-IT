@@ -4,10 +4,10 @@ description: Scopri come implementare le app mobili Adobe Experience Cloud. Ques
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 4bd8d0cdcf9c5d29434de4968a048fd46e163b54
+source-git-commit: 0d5914ee0e63719c0439f02a5aa2a1e1c1d11a2f
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 6%
+source-wordcount: '826'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,7 @@ Le lezioni sono progettate per iOS e scritte in Swift/SwiftUI, ma molti dei conc
 Dopo aver completato questa esercitazione, sarai in grado di:
 
 * Crea uno schema utilizzando gruppi di campi standard e personalizzati.
-* Configurare un flusso di dati.
+* Imposta un flusso di dati.
 * Configura una proprietà tag mobile.
 * Imposta un set di dati di Experience Platform (facoltativo).
 * Installa e implementa le estensioni tag in un’app.
@@ -95,10 +95,14 @@ Sono disponibili per il download due versioni dell’app di esempio. Entrambe le
 1. [Inizio](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: progetto senza codice o con codice segnaposto per la maggior parte del codice SDK di Mobile di Experience Platform da utilizzare per completare gli esercizi pratici in questa esercitazione.
 1. [Fine](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: una versione con l’implementazione completa come riferimento.
 
-
 >[!NOTE]
 >
 >Utilizzi iOS come piattaforma, [!DNL Swift] come linguaggio di programmazione, [!DNL SwiftUI] come framework dell’interfaccia utente [!DNL Xcode] come ambiente di sviluppo integrato (IDE). Tuttavia, molti dei concetti di implementazione illustrati sono simili per altre piattaforme di sviluppo. Molti hanno già completato correttamente questa esercitazione con poca o nessuna esperienza precedente di iOS/Swift(UI). Non devi essere un esperto per completare le lezioni, ma puoi ottenere di più dalle lezioni se sei in grado di leggere e comprendere il codice senza difficoltà.
+
+
+Puoi scaricare la versione finale prodotta dell’app da App Store.
+
+[![Scarica](assets/download-app.svg)](https://apps.apple.com/us/app/luma-app/id6466588487)
 
 
 Cominciamo.
