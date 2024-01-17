@@ -3,10 +3,10 @@ title: Creare elementi dati
 description: Scopri come creare un oggetto XDM e mappare ad esso gli elementi dati nei tag. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: aea1b1a88361f2ae0082772b5e7eeb6b25cec4c6
 workflow-type: tm+mt
-source-wordcount: '1201'
-ht-degree: 5%
+source-wordcount: '1174'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,7 @@ Per il passaggio 1, continui a mappare il livello dati agli elementi dati nello 
 
 Questa lezione si concentra sui tipi di elementi dati di tipo Oggetto XDM e Mappa delle identità. Verranno creati oggetti XDM per acquisire l’attività e lo stato di autenticazione dei visitatori Luma.
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 Alla fine di questa lezione, sarai in grado di:
 
@@ -70,7 +70,7 @@ Prima di iniziare la creazione dell’oggetto XDM, crea il seguente set di eleme
 1. Denomina l’elemento dati `page.pageInfo.pageName`
 1. Utilizza il **[!UICONTROL Variabile JavaScript]** **[!UICONTROL Tipo di elemento dati]** per puntare a un valore nel livello dati di Luma: `digitalData.page.pageInfo.pageName`
 
-1. Seleziona le caselle per **[!UICONTROL Forza valori minuscoli]** e **[!UICONTROL Pulisci testo]** per standardizzare l’uso di maiuscole/minuscole e rimuovere spazi estranei
+1. Seleziona le caselle per **[!UICONTROL Forza valore minuscolo]** e **[!UICONTROL Pulisci testo]** per standardizzare l&#39;uso di maiuscole/minuscole e rimuovere spazi estranei
 
 1. Esci `None` come **[!UICONTROL Durata archiviazione]** poiché questo valore è diverso su ogni pagina
 
@@ -166,13 +166,13 @@ Successivamente puoi creare l’elemento dati Identity Map:
 
 Tutti gli elementi dati creati devono essere mappati su un oggetto XDM. Questo oggetto deve essere conforme allo schema XDM creato durante la [Configurare uno schema](configure-schemas.md) lezione.
 
-Esistono diversi modi per mappare gli elementi dati ai campi oggetto XDM. È possibile mappare singoli elementi dati a singoli campi XDM o mappare elementi dati a interi oggetti XDM, purché l’elemento dati corrisponda esattamente allo schema della coppia chiave-valore presente nell’oggetto XDM. In questa lezione, acquisirai i dati del contenuto mediante il mapping a singoli campi. Imparerai a [mappare un elemento dati a un intero oggetto XDM](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) nel [Configurazione analisi](setup-analytics.md) lezione.
+Esistono diversi modi per mappare gli elementi dati ai campi oggetto XDM. È possibile mappare singoli elementi dati a singoli campi XDM o mappare elementi dati a interi oggetti XDM, purché l’elemento dati corrisponda esattamente allo schema della coppia chiave-valore presente nell’oggetto XDM. In questa lezione verranno acquisiti i dati del contenuto mediante il mapping a singoli campi. Imparerai a [mappare un elemento dati a un intero oggetto XDM](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) nel [Configurazione analisi](setup-analytics.md) lezione.
 
 Crea un oggetto XDM per acquisire i dati del contenuto:
 
 1. Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Elementi dati]**
 1. Seleziona **[!UICONTROL Aggiungi elemento dati]**
-1. **** Denomina l’elemento dati **`xdm.content`**
+1. **[!UICONTROL Nome]** l’elemento dati **`xdm.content`**
 1. Come **[!UICONTROL Estensione]** seleziona `Adobe Experience Platform Web SDK`
 1. Come **[!UICONTROL Tipo di elemento dati]** seleziona `XDM object`
 1. Seleziona la piattaforma **[!UICONTROL Sandbox]** in cui hai creato lo schema XDM in durante la [Configurare uno schema XDM](configure-schemas.md) lezione, in questo esempio `DEVELOPMENT Mobile and Web SDK Courses`
@@ -192,9 +192,9 @@ Crea un oggetto XDM per acquisire i dati del contenuto:
 
 1. Mappa le seguenti variabili XDM web su elementi di dati
 
-   * **`web.webPageDetials.name`** in `%page.pageInfo.pageName%`
-   * **`web.webPageDetials.server`** in `%page.pageInfo.server%`
-   * **`web.webPageDetials.siteSection`** in `%page.pageInfo.hierarchie1%`
+   * **`web.webPageDetials.name`** a `%page.pageInfo.pageName%`
+   * **`web.webPageDetials.server`** a `%page.pageInfo.server%`
+   * **`web.webPageDetials.siteSection`** a `%page.pageInfo.hierarchie1%`
 
    ![Oggetto XDM](assets/data-element-xdm.content.png)
 
