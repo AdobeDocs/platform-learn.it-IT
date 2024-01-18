@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
+source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 42%
+source-wordcount: '185'
+ht-degree: 28%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 42%
 # Tutorial sulla raccolta dati{#data-collection}
 
 + [Tutorial su Raccolta dati](overview.md)
++ [Utenti e autorizzazioni](admin/users-and-permissions.md)
 + Tag{#tags}
    + [Panoramica e creazione di una proprietà](tags/create-a-property.md)
    + [Scegli un&#39;opzione di hosting](tags/choose-a-hosting-option.md)
@@ -25,7 +26,6 @@ ht-degree: 42%
    + [Creare elementi dati](tags/create-data-elements.md)
    + [Creare regole](tags/build-rules.md)
    + [Creare e pubblicare una libreria](tags/build-and-publish-a-library.md)
-   + [Utenti e autorizzazioni](tags/users-and-permissions.md)
    + [Implementare nei siti web con Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it){target="_blank"}
    + [Implementazione nei siti web con SDK per soluzioni](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
    + [Implementazione nelle app per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=it){target="_blank"}
@@ -40,7 +40,7 @@ ht-degree: 42%
       + [Imposta i valori del consenso utilizzando lo standard IAB TCF 2.0](web-sdk/consent/set-consent-iab.md)
       + [Inspect e convalida i dati del consenso](web-sdk/consent/inspect.md)
       + [Tutorial sull’elaborazione del consenso end-to-end](web-sdk/consent/tutorial.md)
-+ Mobile SDK{#mobile-sdk}
++ SDK per dispositivi mobili{#mobile-sdk}
    + [Panoramica](mobile-sdk/overview.md)
    + [Creare proprietà mobili](mobile-sdk/create-mobile-properties.md)
    + [Utilizzare i manager delle dipendenze](mobile-sdk/use-dependency-managers.md)
