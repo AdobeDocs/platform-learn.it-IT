@@ -3,10 +3,10 @@ title: Configurare Adobe Target con Platform Web SDK
 description: Scopri come implementare Adobe Target utilizzando Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 1eb67da6513106aa0339ddd65a6f86fed2a029f1
 workflow-type: tm+mt
-source-wordcount: '3800'
-ht-degree: 2%
+source-wordcount: '3582'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ Scopri come implementare Adobe Target utilizzando Platform Web SDK. Scopri come 
 [Adobe Target](https://docs.adobe.com/content/help/it-IT/experience-cloud/user-guides/home.translate.html) è l’applicazione Adobe Experience Cloud che offre tutto il necessario per adattare e personalizzare l’esperienza dei clienti in modo da massimizzare i ricavi sui siti web e mobili, applicazioni e altri canali digitali.
 
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 Alla fine di questa lezione, potrai:
 
@@ -67,7 +67,7 @@ Questo frammento è già presente nel sito Luma, ma diamo uno sguardo più da vi
   if (a) return;
   var o=e.createElement("style");
   o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
-  (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  (document, document.location.href.indexOf("adobe_authoring_enabled") !== -1, ".personalization-container { opacity: 0 !important }", 3000);
 </script>
 ```
 
@@ -122,7 +122,7 @@ Target deve essere abilitato nella configurazione dello stream di dati prima che
 
 Per configurare Target nello stream di dati:
 
-1. Vai a [Raccolta dati](https://experience.adobe.com/it#/data-collection){target="blank"} Interfaccia
+1. Vai a [Raccolta dati](https://experience.adobe.com/#/data-collection){target="blank"} Interfaccia
 1. Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Flussi di dati]**
 1. Seleziona il creato in precedenza `Luma Web SDK` flusso di dati
 
@@ -151,7 +151,7 @@ Per impostare o trovare i token di proprietà, passa a **Adobe Target** > **[!UI
 
 ### ID ambiente di destinazione
 
-Gli [](https://experienceleague.adobe.com/docs/target/using/administer/environments.html)ambienti in Target consentono di gestire l’implementazione in tutte le fasi di sviluppo. Questa impostazione opzionale specifica l’ambiente Target da utilizzare con ogni flusso di dati.
+[Ambienti](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) in Target aiuta a gestire la tua implementazione attraverso tutte le fasi di sviluppo. Questa impostazione opzionale specifica l’ambiente Target da utilizzare con ogni flusso di dati.
 
 L’Adobe consiglia di impostare l’ID dell’ambiente di Target in modo diverso per ciascuno dei flussi di dati di sviluppo, staging e produzione per semplificare le operazioni.
 
@@ -188,7 +188,7 @@ Innanzitutto, devi comprendere la terminologia utilizzata nelle interfacce Targe
 
 Le decisioni di personalizzazione visiva da Target vengono consegnate da Platform Web SDK, se Target è abilitato nello stream di dati. Tuttavia, _non vengono renderizzati automaticamente_. È necessario modificare la regola di caricamento pagina globale per abilitare il rendering automatico.
 
-1. In [Raccolta dati](https://experience.adobe.com/it#/data-collection){target="blank"} , apri la proprietà tag utilizzata per questa esercitazione
+1. In [Raccolta dati](https://experience.adobe.com/#/data-collection){target="blank"} , apri la proprietà tag utilizzata per questa esercitazione
 1. Apri `all pages - library load - AA & AT` regola
 1. Seleziona la `Adobe Experience Platform Web SDK - Send event` azione
 1. Abilita **[!UICONTROL Eseguire il rendering delle decisioni di personalizzazione visiva]** con la casella di controllo
