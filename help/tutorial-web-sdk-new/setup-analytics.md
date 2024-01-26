@@ -2,9 +2,9 @@
 title: Configurare Adobe Analytics utilizzando Experienci Platform Web SDK
 description: Scopri come configurare Adobe Analytics utilizzando Experienci Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 solution: Data Collection, Analytics
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
-source-wordcount: '4649'
+source-wordcount: '4675'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Devi aver completato tutti i passaggi delle sezioni precedenti nell’esercitazi
    * [Creare una regola di tag](create-tag-rule.md)
    * [Convalida con Adobe Experience Platform Debugger](validate-with-debugger.md)
 
-È inoltre necessario [Abilitare l’accesso degli utenti a Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html) in modo da poter convalidare i dati di Adobe Analytics con Adobe Experience Platform Assurance.
+È inoltre necessario [Abilitare l’accesso degli utenti a Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html) in modo da poter convalidare i dati di Adobe Analytics con Adobe Experience Platform Assurance. Se disponi di schemi di accesso, spazi dei nomi delle identità e flussi di dati, potrai già accedere ad Assurance.
 
 ## Schemi XDM e variabili Analytics
 
@@ -65,7 +65,7 @@ Congratulazioni! Hai già configurato uno schema compatibile con Adobe Analytics
 
 To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en). Any variable that is not auto-mapped must be manually mapped. -->
 
-1. **XDM indipendente dal prodotto**: gestisci uno schema XDM di coppia chiave-valore semantico e utilizza [Regole di elaborazione di Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) mappare i campi XDM su eVar, prop e così via.
+1. **XDM indipendente dal prodotto**: gestisci uno schema XDM di coppia chiave-valore semantico e utilizza [Regole di elaborazione di Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) mappare i campi XDM su eVar, prop e così via. Con uno schema XDM semantico, intendiamo che i nomi dei campi stessi hanno un significato. Ad esempio, il nome del campo `web.webPageDetails.pageName` ha più significato di dire `prop1` o `evar3`.
 
    >[!IMPORTANT]
    >
@@ -140,7 +140,7 @@ Platform Web SDK invia i dati dal sito web a Platform Edge Network. Lo stream di
 
 Puoi modificare i dati della suite di rapporti di Adobe Analytics a cui vengono inviati i visitatori quando si trovano su determinate pagine. Per configurare un’impostazione di sostituzione dello stream di dati per Adobe Analytics:
 
-1. Modifica il **[!UICONTROL Adobe Analytics]** aprendo il menu shish-kabab e selezionando **[!UICONTROL Modifica]**
+1. Modifica il **[!UICONTROL Adobe Analytics]** mediante l&#39;apertura della ![altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) menu e selezione **[!UICONTROL Modifica]**
 
    ![Sovrascrivere lo stream di dati](assets/datastream-edit-analytics.png)
 
@@ -306,19 +306,16 @@ In [Creare una regola di tag](create-tag-rule.md) lezione, hai impostato un `all
 
 ### Incrementare le visualizzazioni di pagina
 
-Poiché ora invii dati ad Adobe Analytics, devi anche mappare un campo XDM aggiuntivo per indicare che un beacon deve essere elaborato come visualizzazione di pagina di Analytics.
+Poiché ora invii dati ad Adobe Analytics, ti consigliamo di mappare un campo XDM aggiuntivo per indicare una visualizzazione di pagina. Anche se tecnicamente non è necessario per Analytics elaborare un beacon come visualizzazione di pagina, è utile disporre di un modo standard per indicare una visualizzazione di pagina per altre applicazioni a valle.
 
 1. Apri `all pages global content variables - page bottom - AA (order 1)` regola
+1. Apri **[!UICONTROL Aggiorna variabile]** azione
 1. Scorri verso il basso e seleziona per aprire fino a `web.webPageDetails`
 1. Seleziona per aprire **[!UICONTROL pageViews]** oggetto
 1. Imposta **[!UICONTROL valore]** a `1`
 1. Seleziona **[!UICONTROL Mantieni modifiche]**
 
    ![Oggetto XDM visualizzazioni pagina](assets/set-up-analytics-pageviews.png)
-
-   >[!TIP]
-   >
-   >Questo campo equivale a inviare un **`s.t()`** beacon di visualizzazione pagina per Analytics tramite `AppMeasurement.js`. Per un beacon clic collegamento, imposta `webInteraction.linkClicks.value` a `1`
 
 
 ### Inviare una visualizzazione di pagina a una suite di rapporti diversa con la sostituzione dello stream di dati
@@ -381,9 +378,9 @@ Crea una regola per inviare una chiamata aggiuntiva di visualizzazione pagina a 
 1. Sotto **[!UICONTROL Suite di rapporti]**, seleziona il sito di report che desideri utilizzare per la sostituzione. In questo caso, `tmd-websdk-course-stg`.
 
 
->[!TIP]
->
->L’elenco delle suite di rapporti mostrato qui è determinato da [configurare una sostituzione suite di rapporti per lo stream di dati](configure-datastream.md###configure-a-datastream-report-suite-override) passaggio. L’aggiunta di suite di rapporti equivale all’assegnazione di tag per più suite.
+   >[!TIP]
+   >
+   >L’elenco delle suite di rapporti mostrato qui è determinato da [configurare una sostituzione suite di rapporti per lo stream di dati](configure-datastream.md###configure-a-datastream-report-suite-override) passaggio. L’aggiunta di suite di rapporti equivale all’assegnazione di tag per più suite.
 
 1. Seleziona **[!UICONTROL Mantieni modifiche]**
 
@@ -415,6 +412,7 @@ Per iniziare, monitora le visualizzazioni del prodotto nella pagina dei dettagli
 
 1. Dal menu di navigazione a sinistra, seleziona **[!UICONTROL Regole]** e quindi seleziona **[!UICONTROL Aggiungi regola]**
 1. Assegna un nome  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. Seleziona la ![simbolo +](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) in Evento per aggiungere un nuovo trigger
 1. Sotto **[!UICONTROL Estensione]**, seleziona **[!UICONTROL Core]**
 1. Sotto **[!UICONTROL Tipo di evento]**, seleziona **[!UICONTROL Page Bottom]**
 1. Assegna un nome `Core - Page Bottom - order 20`
@@ -520,6 +518,7 @@ Confronta l’elemento dati con `productListItems` struttura (suggerimento, deve
 Ora si torna a mappare l’oggetto XDM su un intero array. Ripeti gli stessi passaggi della creazione di `ecommerce - pdp page bottom - AA (order 20)` regola:
 
 1. Assegna un nome  [!UICONTROL `ecommerce - cart page bottom - AA (order 20)`]
+1. Seleziona la ![simbolo +](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) in Evento per aggiungere un nuovo trigger
 1. Sotto **[!UICONTROL Estensione]**, seleziona **[!UICONTROL Core]**
 1. Sotto **[!UICONTROL Tipo di evento]**, seleziona **[!UICONTROL Page Bottom]**
 1. Assegna un nome `Core - Page Bottom - order 20`
@@ -670,16 +669,10 @@ Scopri come verificare che Adobe Analytics acquisisca ECID, visualizzazioni di p
 
 ### Convalida dell’ID Experience Cloud
 
-1. Vai a [Sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} e utilizza Experienci Platform Debugger per: [modifica la proprietà tag sul sito con la tua proprietà di sviluppo](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Vai a [Sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}
+1. Seleziona il pulsante di accesso in alto a destra e utilizza le credenziali u: test@adobe.com p: test per autenticare
+1. Apri Experienci Platform Debugger e [modifica la proprietà tag sul sito con la tua proprietà di sviluppo](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 
-
-   >[!WARNING]
-   >
-   >Prima di continuare, assicurati di aver effettuato l’accesso al sito Luma.  Se non hai effettuato l’accesso, il sito Luma non ti consente di effettuare l’estrazione.
-   >
-   > 1. In Luma, seleziona il pulsante di accesso in alto a destra e utilizza le credenziali. **u: `test@adobe.com` p: test** per autenticare
-   >
-   > 1. Verrai automaticamente reindirizzato al [Pagina prodotto Didi Sport Watch](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) al successivo caricamento della pagina
 
 1. Per abilitare Edge Trace, passa a Debugger di Experienci Platform e, nel menu di navigazione a sinistra, seleziona **[!UICONTROL Registri]**, quindi seleziona la **[!UICONTROL Bordo]** e seleziona **[!UICONTROL Connetti]**
 
@@ -689,7 +682,7 @@ Scopri come verificare che Adobe Analytics acquisisca ECID, visualizzazioni di p
 
    ![Traccia bordi connessi](assets/analytics-debugger-edge-connected.png)
 
-1. Aggiorna il [Pagina prodotto Didi Sport Watch](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) e controlla di nuovo Experienci Platform Debugger, dovresti vedere i dati arrivare attraverso. La riga che inizia con **[!UICONTROL Mappatura automatica di Analytics]** è il beacon di Adobe Analytics
+1. Aggiorna la pagina Luma e controlla di nuovo Debugger Experience Platform: dovresti vedere i dati arrivare. La riga che inizia con **[!UICONTROL Mappatura automatica di Analytics]** è il beacon di Adobe Analytics
 1. Seleziona per aprire entrambi `[!UICONTROL mappedQueryParams]` e il secondo a discesa per visualizzare le variabili di Analytics
 
    ![Traccia Edge beacon di Analytics](assets/analytics-debugger-edge-analytics.png)
@@ -700,6 +693,7 @@ Scopri come verificare che Adobe Analytics acquisisca ECID, visualizzazioni di p
 
 1. Scorri verso il basso per trovare `[!UICONTROL c.a.x.identitymap.ecid.[0].id]`. È una variabile di dati contestuali che acquisisce ECID
 1. Continua a scorrere verso il basso fino a visualizzare il pannello Analytics `[!UICONTROL mid]` variabile. Entrambi gli ID corrispondono all’ID Experience Cloud del dispositivo.
+1. Sul sito Luma,
 
    ![ECID di Analytics](assets/analytics-debugger-ecid.png)
 
@@ -711,7 +705,7 @@ Scopri come verificare che Adobe Analytics acquisisca ECID, visualizzazioni di p
 
 Sopra hai configurato una sostituzione dello stream di dati per [Home page Luma](https://luma.enablementadobe.com/content/luma/us/en.html).  Per convalidare questa configurazione
 
-1. Cerca una riga con **[!UICONTROL Configurazione dello stream di dati dopo l’applicazione della sostituzione.]**. Qui puoi trovare la suite di rapporti principale e le suite di rapporti aggiuntive configurate per le sostituzioni della suite di rapporti.
+1. Cerca una riga con **[!UICONTROL Configurazione dello stream di dati dopo l’applicazione della sostituzione]**. Qui puoi trovare la suite di rapporti principale e le suite di rapporti aggiuntive configurate per le sostituzioni della suite di rapporti.
 
    ![Convalida elenco di sostituzione suite di rapporti di Analytics](assets/aep-debugger-datastream-override.png)
 
@@ -721,9 +715,9 @@ Sopra hai configurato una sostituzione dello stream di dati per [Home page Luma]
 
 ### Visualizzazioni della pagina del contenuto
 
-Torna a [Pagina prodotto Didi Sport Watch](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02).  Questa volta verifichi che le visualizzazioni della pagina di contenuto vengano acquisite da Analytics.
+Vai a una pagina di prodotto come [Pagina prodotto Didi Sport Watch](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02).  Verifica che le visualizzazioni della pagina di contenuto siano acquisite da Analytics.
 
-1. Cerca `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`. Ti dice una `s.t()` il beacon di visualizzazione pagina viene inviato ad Analytics
+1. Cerca `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`.
 1. Scorri verso il basso per visualizzare `[!UICONTROL gn]` variabile. È la sintassi dinamica di Analytics per `[!UICONTROL s.pageName]` variabile. Acquisisce il nome della pagina dal livello dati.
 
    ![Stringa di prodotto di Analytics](assets/analytics-debugger-edge-page-view.png)
@@ -737,7 +731,7 @@ Poiché ti trovi già in una pagina di prodotto, questo esercizio continua a uti
 1. Cerca `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]`. La variabile acquisisce il valore dell&#39;elemento dati mappato al `productListItems.item1.sku` all&#39;inizio di questa lezione
 1. Cerca anche `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL _experience.analytics.customdimensions.evars.evar1]`. La variabile acquisisce il valore dell’elemento dati su cui hai eseguito il mapping `productListItems.item1._experience.analytics.customdimensions.evars.evar1`
 1. Scorri verso il basso per visualizzare `[!UICONTROL pl]` variabile. È la sintassi dinamica della variabile della stringa di prodotto Analytics
-1. Il nome del prodotto dal livello dati è mappato sia al `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]` e `[!UICONTROL product]` parametro della stringa di produzione.  Inoltre, il titolo del prodotto dal livello dati viene mappato su evar1 di merchandising nella stringa di produzione.
+1. Il nome del prodotto dal livello dati è mappato sia al `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]` e `[!UICONTROL product]` parametro della stringa prodotti.  Inoltre, il titolo del prodotto dal livello dati viene mappato su evar1 merchandising nella stringa prodotti.
 
    ![Stringa di prodotto di Analytics](assets/analytics-debugger-prodstring.png)
 
@@ -840,9 +834,9 @@ In precedenza hai convalidato la cattura da parte di Adobe Analytics dell’ECID
 
 Esistono diversi modi per accedere ad Assurance:
 
-1. Garanzia di accesso tramite Adobe Experience Platform
-1. Garanzia di accesso tramite Raccolta dati di Adobe Experience Platform
-1. Accedere a Assurance tramite i registri all’interno dell’Adobe Experience Platform Debugger
+1. Tramite interfaccia Adobe Experience Platform
+1. Tramite l’interfaccia di Adobe Experience Platform Data Collection
+1. Attraverso i registri all’interno dell’Adobe Experience Platform Debugger (consigliato)
 
 Per accedere ad Assurance tramite Adobe Experience Platform, scorri verso il basso e seleziona **[!UICONTROL Assurance]** nella barra di navigazione a sinistra sotto **[!UICONTROL RACCOLTA DATI]**.  Seleziona la **[!UICONTROL &quot;Esercitazione Web SDK 3&quot;]** per accedere agli eventi generati nella sezione precedente.
 ![Garanzia tramite Adobe Experience Platform](assets/assurance-open-aep.png)
@@ -850,7 +844,7 @@ Per accedere ad Assurance tramite Adobe Experience Platform, scorri verso il bas
 Per accedere a Assurance tramite Raccolta dati di Adobe Experience Platform, seleziona **[!UICONTROL Assurance]** nella barra di navigazione a sinistra sotto **[!UICONTROL RACCOLTA DATI]**.  Seleziona la **[!UICONTROL &quot;Esercitazione Web SDK 3&quot;]** per accedere agli eventi generati nella sezione precedente.\
 ![Garanzia tramite la raccolta dati di Adobe Experience Platform](assets/assurance-open-data-collection.png)
 
-Per accedere ad Assurance tramite Adobi Experience Platform Debugger, passa ad Experienci Platform Debugger e, nel menu di navigazione a sinistra, seleziona **[!UICONTROL Registri]**, quindi seleziona la **[!UICONTROL Bordo]** e seleziona **[!UICONTROL Connetti]**.  Una volta stabilita la connessione a Edge Network, seleziona l’icona del collegamento esterno\
+Per accedere ad Assurance tramite Adobi Experience Platform Debugger, passa ad Experienci Platform Debugger e, nel menu di navigazione a sinistra, seleziona **[!UICONTROL Registri]**, quindi seleziona la **[!UICONTROL Bordo]** e seleziona **[!UICONTROL Connetti]**.  Una volta stabilita la connessione a Edge Network, seleziona l’icona del collegamento esterno. È consigliabile accedere ad Assurance tramite il debugger, in quanto al momento le sessioni web devono essere avviate dal debugger.
 ![Garanzia tramite la raccolta dati di Adobe Experience Platform](assets/assurance-open-aep-debugger.png)
 
 All&#39;interno del **[!UICONTROL &quot;Esercitazione Web SDK 3&quot;]** Invio sessione di garanzia **[!UICONTROL &quot;hitdebugger&quot;]** nella barra di ricerca degli eventi per filtrare i risultati in base ai dati post-elaborati di Adobe Analytics.

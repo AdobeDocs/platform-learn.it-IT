@@ -4,9 +4,9 @@ description: Scopri come implementare la gestione delle decisioni utilizzando Pl
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
-source-wordcount: '2455'
+source-wordcount: '2464'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Scopri come implementare la gestione delle decisioni utilizzando Platform Web SDK. Questa guida descrive i prerequisiti fondamentali per la gestione delle decisioni, i passaggi dettagliati per la configurazione e un approfondimento del caso d’uso incentrato sullo stato di fedeltà.
 
-Seguendo questa documentazione, gli utenti di Journey Optimizer sono in grado di applicare in modo efficace le funzioni offer decisioning, migliorando la personalizzazione e la rilevanza delle interazioni con i clienti.
+Seguendo questa esercitazione, gli utenti di Journey Optimizer sono in grado di applicare in modo efficace le funzioni offer decisioning, migliorando la personalizzazione e la rilevanza delle interazioni con i clienti.
 
 ## Finalità di apprendimento
 
@@ -24,7 +24,7 @@ Alla fine di questa lezione, sarai in grado di:
 
 * Acquisisci i concetti fondamentali della gestione delle decisioni in Adobe Journey Optimizer e la sua integrazione con Adobe Experience Platform Web SDK.
 
-* Scopri la procedura dettagliata per configurare l’SDK per web, ad Offer decisioning, garantendo un’integrazione perfetta con AJO.
+* Scopri la procedura dettagliata per configurare l’SDK per web, ad Offer decisioning, garantendo un’integrazione perfetta con Journey Optimizer.
 
 * Esplora un caso d’uso dettagliato incentrato sulle offerte di stato della fedeltà, acquisendo informazioni sulla creazione e la gestione efficaci di offerte, decisioni e posizionamenti.
 
@@ -38,13 +38,11 @@ Alla fine di questa lezione, sarai in grado di:
 
 Per completare le lezioni in questa sezione, devi prima:
 
-* Assicurati che la tua organizzazione abbia accesso a Adobe Journey Optimizer Ultimate (AJO e Offer Decisioning) o Adobe Experience Platform e al componente aggiuntivo del servizio applicativo Offer Decisioning.
+* Assicurati che la tua organizzazione abbia accesso a Adobe Journey Optimizer Ultimate (Journey Optimizer e Offer Decisioning) o Adobe Experience Platform e al componente aggiuntivo del servizio applicativo Offer Decisioning.
 
 * Completa tutte le lezioni per la configurazione iniziale di Platform Web SDK.
 
 * Abilita la tua organizzazione per Edge Decisioning.
-
-* Pubblicare lo stream di dati.
 
 * Scopri come configurare un posizionamento e creare istanze degli ID posizionamento e attività nel JSON dell’ambito decisionale.
 
@@ -143,7 +141,7 @@ Questo caso d’uso consente di comprendere meglio in che modo Journey Optimizer
 
 >[!NOTE]
 >
-> Poiché questo tutorial è destinato agli implementatori, vale la pena notare che questa lezione richiede un notevole lavoro sull’interfaccia utente in AJO. Anche se tali attività di interfaccia utente sono in genere gestite dagli esperti di marketing, può essere utile per gli implementatori ottenere informazioni approfondite sul processo, anche se non sono responsabili della creazione di campagne di gestione delle decisioni nel lungo periodo.
+> Poiché questo tutorial è destinato agli implementatori, vale la pena notare che questa lezione richiede un notevole lavoro sull’interfaccia in Journey Optimizer. Anche se tali attività di interfaccia sono in genere gestite dagli esperti di marketing, può essere utile che i responsabili dell’implementazione possano acquisire informazioni approfondite sul processo, anche se non sono responsabili della creazione di campagne di gestione delle decisioni nel lungo periodo.
 
 ## Componenti
 
@@ -173,7 +171,7 @@ Per creare il posizionamento, effettuate le seguenti operazioni:
 
 1. Fai clic su **Salva**.
 1. Una volta creato, il posizionamento viene visualizzato nell’elenco dei posizionamenti.
-1. Prendi nota dell’ID posizionamento, poiché potrebbe essere necessario per la configurazione nell’ambito delle decisioni.
+1. Seleziona la riga contenente il nuovo posizionamento e prendi nota dell’ID posizionamento, in quanto potrebbe essere necessario per la configurazione all’interno dell’ambito decisionale.
 
    ![Consulta ID posizionamento ](../assets/decisioning-placement-id.png)
 
@@ -189,7 +187,7 @@ Per creare le regole di decisione, segui questi passaggi:
 
    ![Creare la regola](../assets/decisioning-create-rule.png)
 
-1. Diamo un nome alla prima regola &#39;*Regola stato Gold Loyalty*&quot;. Puoi utilizzare i campi XDM per definire la regola. Adobe Experience Platform **Generatore di segmenti** è un’interfaccia utente intuitiva che puoi utilizzare per creare le condizioni della regola.
+1. Diamo un nome alla prima regola &#39;*Regola stato Gold Loyalty*&quot;. Puoi utilizzare i campi XDM per definire la regola. Adobe Experience Platform **Generatore di segmenti** è un’interfaccia intuitiva che puoi utilizzare per creare le condizioni della regola.
 
    ![Definire la regola](../assets/decisioning-define-rule.png)
 
