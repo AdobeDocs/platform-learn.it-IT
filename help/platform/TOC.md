@@ -5,9 +5,9 @@ user-guide-description: Scopri i numerosi componenti di Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
+source-git-commit: b38cd5cf681415defae1dab77ad19fd00d41fda2
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '868'
 ht-degree: 16%
 
 ---
@@ -207,7 +207,7 @@ ht-degree: 16%
    + [Aggiornare schemi](/help/platform/schemas/update-schemas.md)
    + [Creare uno schema ad hoc](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + Origini {#sources}
-   + [Panoramica sulle origini](/help/platform/sources/overview.md)
+   + [Panoramica](/help/platform/sources/overview.md)
    + [Acquisire dati da Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)
    + [Acquisire dati da Audienci Manager](/help/platform/sources/ingest-data-from-aam.md)
    + [Acquisire dati da Marketo](/help/platform/sources/ingest-data-from-marketo.md)
@@ -217,6 +217,10 @@ ht-degree: 16%
    + [Trasmettere i dati con API HTTP](/help/platform/sources/streaming-ingestion-http-api.md)
    + [Trasmettere i dati utilizzando i connettori di origini](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [Risoluzione dei problemi: connettore SFTP](/help/platform/sources/troubleshoot-sftp-connector.md)
++ Usa i playbook sui casi d’uso {#use-case-playbooks}
+   + [Panoramica](/help/platform/use-case-playbooks/overview.md)
+   + [Configurare una sandbox di playbook](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
+   + [Creare e pubblicare un’istanza del playbook](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
 + Integrazioni Experience Cloud {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=it)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
