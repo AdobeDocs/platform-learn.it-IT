@@ -5,7 +5,7 @@ user-guide-description: Scopri i numerosi componenti di Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: b38cd5cf681415defae1dab77ad19fd00d41fda2
+source-git-commit: 6068feccb23c8485390e64cd79e021167b1271a8
 workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 16%
@@ -219,7 +219,7 @@ ht-degree: 16%
    + [Risoluzione dei problemi: connettore SFTP](/help/platform/sources/troubleshoot-sftp-connector.md)
 + Usa i playbook sui casi d’uso {#use-case-playbooks}
    + [Panoramica](/help/platform/use-case-playbooks/overview.md)
-   + [Configurare una sandbox di playbook](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
+   + [Configurare una sandbox del playbook](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
    + [Creare e pubblicare un’istanza del playbook](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
 + Integrazioni Experience Cloud {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=it)
