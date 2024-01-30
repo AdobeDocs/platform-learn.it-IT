@@ -2,9 +2,9 @@
 title: Configurare uno stream di dati
 description: Scopri come abilitare un flusso di dati e configurare le soluzioni Experience Cloud. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Datastreams
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '557'
 ht-degree: 4%
 
 ---
@@ -14,6 +14,9 @@ ht-degree: 4%
 Scopri come abilitare uno stream di dati e configurare le applicazioni Experience Cloud.
 
 Gli stream di dati indicano a Adobe Experience Platform Edge Network dove inviare i dati raccolti da Platform Web SDK. Nella configurazione dei flussi di dati, abilita le applicazioni di Experience Cloud, l’account di Experience Platform e l’inoltro di eventi. Consulta la [Nozioni di base sulla configurazione di uno stream di dati](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it) per informazioni più dettagliate.
+
+
+![Diagramma dell’SDK per web, degli stream di dati e della rete Edge](assets/dc-websdk-datastreams.png)
 
 ## Obiettivi di apprendimento
 

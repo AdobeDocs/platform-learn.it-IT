@@ -2,9 +2,9 @@
 title: Impostare una proprietà di inoltro eventi
 description: Scopri come utilizzare la proprietà di inoltro degli eventi utilizzando i dati Experienci Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1862'
 ht-degree: 3%
 
 ---
@@ -14,6 +14,9 @@ ht-degree: 3%
 Scopri come utilizzare la proprietà di inoltro degli eventi utilizzando i dati Experienci Platform Web SDK.
 
 L’inoltro degli eventi è un nuovo tipo di proprietà disponibile in Raccolta dati. L’inoltro di eventi consente di inviare dati a fornitori di terze parti non Adobi direttamente da Adobe Experience Platform Edge Network anziché dal tradizionale browser lato client. Ulteriori informazioni sui vantaggi dell’inoltro degli eventi nel [Panoramica sull’inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+
+
+![Diagramma dell’SDK per web e dell’inoltro degli eventi](assets/dc-websdk-eventforwarding.png)
 
 Per utilizzare l’inoltro degli eventi in Adobe Experience Platform, i dati devono essere inviati a Adobe Experience Platform Edge Network utilizzando una o più delle tre opzioni seguenti:
 
@@ -50,7 +53,6 @@ Alla fine di questa lezione, sarai in grado di:
 
    * Configurazione iniziale
 
-      * [Configurare le autorizzazioni](configure-permissions.md)
       * [Configurare uno schema XDM](configure-schemas.md)
       * [Configurare uno spazio dei nomi delle identità](configure-identities.md)
       * [Configurare uno stream di dati](configure-datastream.md)
