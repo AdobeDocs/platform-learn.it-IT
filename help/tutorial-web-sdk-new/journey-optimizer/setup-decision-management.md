@@ -4,9 +4,9 @@ description: Scopri come implementare la gestione delle decisioni utilizzando Pl
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
-source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
+source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2470'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,9 @@ ht-degree: 0%
 Scopri come implementare la gestione delle decisioni utilizzando Platform Web SDK. Questa guida descrive i prerequisiti fondamentali per la gestione delle decisioni, i passaggi dettagliati per la configurazione e un approfondimento del caso d’uso incentrato sullo stato di fedeltà.
 
 Seguendo questa esercitazione, gli utenti di Journey Optimizer sono in grado di applicare in modo efficace le funzioni offer decisioning, migliorando la personalizzazione e la rilevanza delle interazioni con i clienti.
+
+
+![SDK per web e diagramma di Adobe Analytics](../assets/dc-websdk-ajo.png)
 
 ## Finalità di apprendimento
 

@@ -2,9 +2,9 @@
 title: Configurare Adobe Target con Platform Web SDK
 description: Scopri come implementare Adobe Target utilizzando Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 solution: Data Collection, Target
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '4288'
+source-wordcount: '4264'
 ht-degree: 0%
 
 ---
@@ -394,22 +394,9 @@ Alcuni punti dati possono essere utili per Target e non sono mappati dall’ogge
 * [Parametri riservati di Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=en#pass-behavioral)
 * Valori categoria per [affinità tra categorie](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=en)
 
-### Creare elementi di dati per i parametri di Target
+### Creare un elemento dati per parametri di Target speciali
 
-Innanzitutto, puoi impostare alcuni elementi di dati aggiuntivi per un attributo di profilo, un attributo di entità, un valore di categoria, quindi creare l’ `data` oggetto utilizzato per trasmettere dati non XDM:
-
-* **`target.entity.id`** mappato a `digitalData.product.0.productInfo.sku`
-* **`target.entity.name`** mappato a `digitalData.product.0.productInfo.title`
-* **`target.user.categoryId`** utilizzando il seguente codice personalizzato per analizzare l’URL del sito per la categoria di livello principale:
-
-  ```javascript
-  var cat = location.pathname.split(/[/.]+/);
-  if (cat[5] == 'products') {
-     return (cat[6]);
-  } else if (cat[5] != 'html') { 
-     return (cat[5]);
-  }
-  ```
+Innanzitutto, utilizza gli elementi dati creati in [Creare elementi dati](create-data-elements.md) lezione per creare `data` oggetto utilizzato per trasmettere dati non XDM:
 
 * **`data.content`** utilizzando il seguente codice personalizzato:
 
@@ -417,10 +404,10 @@ Innanzitutto, puoi impostare alcuni elementi di dati aggiuntivi per un attributo
   var data = {
      __adobe: {
         target: {
-           "entity.id": _satellite.getVar("target.entity.id"),
-           "entity.name": _satellite.getVar("target.entity.name"),
+           "entity.id": _satellite.getVar("product.productInfo.sku"),
+           "entity.name": _satellite.getVar("product.productInfo.title"),
            "profile.loggedIn": _satellite.getVar("user.profile.attributes.loggedIn"),
-           "user.categoryId": _satellite.getVar("target.user.categoryId")
+           "user.categoryId": _satellite.getVar("product.category")
         }
      }
   }
