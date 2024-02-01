@@ -8,10 +8,10 @@ doc-type: Feature Video
 duration: 355
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14074
-source-git-commit: 6068feccb23c8485390e64cd79e021167b1271a8
+source-git-commit: c0466656d0133055d809a9304aec5cd65c67c49c
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 9%
+source-wordcount: '70'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,3 @@ Scopri come configurare una sandbox per i playbook basati su casi d’uso. Per i
 Per ulteriori informazioni, consulta [Introduzione](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on)
-
->[!AVAILABILITY]
->
->Questa funzionalità è disponibile in versione beta e non è disponibile per tutti gli utenti. La documentazione e le funzionalità sono soggette a modifiche.
