@@ -2,7 +2,7 @@
 title: Creare elementi dati
 description: Scopri come creare un oggetto XDM e mappare ad esso gli elementi dati nei tag. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1212'
 ht-degree: 1%
@@ -154,7 +154,7 @@ Prima di creare l’oggetto XDM, crea il seguente set di elementi dati per [Sito
 
 1. Vai a **[!UICONTROL Elementi dati]** e seleziona **[!UICONTROL Aggiungi elemento dati]** (o **[!UICONTROL Creare un nuovo elemento dati]** se nella proprietà tag non sono presenti elementi dati)
 
-   ![Crea elemento dati](assets/data-element-create.jpg)
+   ![Crea elemento dati](assets/data-element-create.png)
 
 1. Denomina l’elemento dati `page.pageInfo.pageName`
 1. Utilizza il **[!UICONTROL Variabile JavaScript]** **[!UICONTROL Tipo di elemento dati]** per puntare a un valore nel livello dati di Luma: `digitalData.page.pageInfo.pageName`
@@ -165,7 +165,7 @@ Prima di creare l’oggetto XDM, crea il seguente set di elementi dati per [Sito
 
 1. Seleziona **[!UICONTROL Salva]**
 
-   ![Elemento dati Nome pagina](assets/data-element-pageName.jpg)
+   ![Elemento dati Nome pagina](assets/data-element-pageName.png)
 
 Crea questi elementi di dati aggiuntivi seguendo gli stessi passaggi:
 

@@ -2,7 +2,7 @@
 title: Impostare una proprietà di inoltro eventi
 description: Scopri come utilizzare la proprietà di inoltro degli eventi utilizzando i dati Experienci Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1862'
 ht-degree: 3%
@@ -88,9 +88,9 @@ Per configurare Target nello stream di dati:
 
 1. Vai a [Raccolta dati](https://experience.adobe.com/#/data-collection){target="blank"} Interfaccia
 1. Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Flussi di dati]**
-1. Seleziona il creato in precedenza `Luma Web SDK` flusso di dati
+1. Seleziona il creato in precedenza `Luma Web SDK: Development Environment` flusso di dati
 
-   ![Seleziona lo stream di dati dell’SDK web Luma](assets/datastream-luma-web-sdk.png)
+   ![Seleziona lo stream di dati dell’SDK web Luma](assets/datastream-luma-web-sdk-development.png)
 
 1. Seleziona **[!UICONTROL Aggiungi servizio]**
    ![Aggiungere un servizio allo stream di dati](assets/event-forwarding-datastream-addService.png)

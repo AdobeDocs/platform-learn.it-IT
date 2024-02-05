@@ -2,7 +2,7 @@
 title: Configurare Adobe Target con Platform Web SDK
 description: Scopri come implementare Adobe Target utilizzando Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 solution: Data Collection, Target
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '4264'
 ht-degree: 0%
@@ -125,9 +125,9 @@ Per configurare Target nello stream di dati:
 
 1. Vai a [Raccolta dati](https://experience.adobe.com/#/data-collection){target="blank"} Interfaccia
 1. Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Flussi di dati]**
-1. Seleziona il creato in precedenza `Luma Web SDK` flusso di dati
+1. Seleziona il creato in precedenza `Luma Web SDK: Development Environment` flusso di dati
 
-   ![Seleziona lo stream di dati dell’SDK web Luma](assets/datastream-luma-web-sdk.png)
+   ![Seleziona lo stream di dati dell’SDK web Luma](assets/datastream-luma-web-sdk-development.png)
 
 1. Seleziona **[!UICONTROL Aggiungi servizio]**
    ![Aggiungere un servizio allo stream di dati](assets/target-datastream-addService.png)

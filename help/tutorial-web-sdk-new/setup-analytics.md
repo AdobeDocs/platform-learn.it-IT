@@ -2,7 +2,7 @@
 title: Configurare Adobe Analytics utilizzando Experienci Platform Web SDK
 description: Scopri come configurare Adobe Analytics utilizzando Experienci Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 solution: Data Collection, Analytics
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '4681'
 ht-degree: 0%
@@ -304,13 +304,13 @@ Dopo aver aggiunto questi elementi dati e aver creato quelli precedenti in [Crea
 
 ## Creare regole aggiuntive
 
-In [Creare una regola di tag](create-tag-rule.md) lezione, hai impostato un `all pages global content variables - page bottom - AA (order 1)` regola che [ha creato un oggetto XDM della baseline utilizzando **[!UICONTROL Aggiorna variabile]** **[!UICONTROL tipi di azioni]**](create-tag-rule.md#create-tag-rule). Gli esercizi seguenti arricchiscono l’oggetto XDM per acquisire dati aggiuntivi specifici per determinate pagine.
+In [Creare una regola di tag](create-tag-rule.md) lezione, hai impostato un `all pages global content variables - library loaded - AA (order 1)` regola che [ha creato un oggetto XDM della baseline utilizzando **[!UICONTROL Aggiorna variabile]** **[!UICONTROL tipi di azioni]**](create-tag-rule.md#create-tag-rule). Gli esercizi seguenti arricchiscono l’oggetto XDM per acquisire dati aggiuntivi specifici per determinate pagine.
 
 ### Incrementare le visualizzazioni di pagina
 
 Poiché ora invii dati ad Adobe Analytics, ti consigliamo di mappare un campo XDM aggiuntivo per indicare una visualizzazione di pagina. Anche se tecnicamente non è necessario per Analytics elaborare un beacon come visualizzazione di pagina, è utile disporre di un modo standard per indicare una visualizzazione di pagina per altre applicazioni a valle.
 
-1. Apri `all pages global content variables - page bottom - AA (order 1)` regola
+1. Apri `all pages global content variables - library loaded - AA (order 1)` regola
 1. Apri **[!UICONTROL Aggiorna variabile]** azione
 1. Scorri verso il basso e seleziona per aprire fino a `web.webPageDetails`
 1. Seleziona per aprire **[!UICONTROL pageViews]** oggetto
@@ -324,17 +324,17 @@ Poiché ora invii dati ad Adobe Analytics, ti consigliamo di mappare un campo XD
 
 Crea una regola per inviare una chiamata aggiuntiva di visualizzazione pagina a una suite di rapporti diversa. Utilizza la funzione di sostituzione dello stream di dati per modificare la suite di rapporti per una pagina utilizzando **[!UICONTROL Invia evento]** Azione.
 
-1. Crea una nuova regola, denominala `homepage report suite override - page bottom - AA (order 51)`
+1. Crea una nuova regola, denominala `homepage report suite override - library loaded - AA (order 51)`
 
 1. Seleziona il segno più sotto **[!UICONTROL Evento]** per aggiungere un nuovo trigger
 
 1. Sotto **[!UICONTROL Estensione]**, seleziona **[!UICONTROL Core]**
 
-1. Sotto **[!UICONTROL Tipo di evento]**, seleziona **[!UICONTROL Page Bottom]**
+1. Sotto **[!UICONTROL Tipo di evento]**, seleziona **[!UICONTROL libreria caricata]**
 
-1. Assegna un nome `Core - Page Bottom - order 51`
+1. Assegna un nome `Core - library loaded - order 51`
 
-1. Seleziona per aprire **[!UICONTROL Opzioni avanzate]**, digitare `51`. In questo modo la regola viene eseguita dopo il `all pages global content variables - page bottom - AA (order 50)` che imposta l&#39;XDM della linea di base con **[!UICONTROL Aggiorna variabile]** tipo di azione.
+1. Seleziona per aprire **[!UICONTROL Opzioni avanzate]**, digitare `51`. In questo modo la regola viene eseguita dopo il `all pages global content variables - library loaded - AA (order 50)` che imposta l&#39;XDM della linea di base con **[!UICONTROL Aggiorna variabile]** tipo di azione.
 
    ![Override suite di rapporti di Analytics](assets/set-up-analytics-rs-override.png)
 
@@ -392,7 +392,7 @@ Crea una regola per inviare una chiamata aggiuntiva di visualizzazione pagina a 
 
 ### Arricchire l’oggetto XDM utilizzando la variabile di aggiornamento
 
-Utilizzo di **[!UICONTROL Aggiorna variabile]** tipo di azione puoi creare regole aggiuntive per arricchire il &quot;contenuto globale XDM&quot; prima che venga inviato al [!UICONTROL Rete Edge di Platform]. Per ottenere questo risultato, sequenziare le nuove regole prima di `all pages send event - page bottom - AA (order 50)` che invia l’evento [!UICONTROL Rete Edge di Platform].
+Utilizzo di **[!UICONTROL Aggiorna variabile]** tipo di azione puoi creare regole aggiuntive per arricchire il &quot;contenuto globale XDM&quot; prima che venga inviato al [!UICONTROL Rete Edge di Platform]. Per ottenere questo risultato, sequenziare le nuove regole prima di `all pages send event - library loaded - AA (order 50)` che invia l’evento [!UICONTROL Rete Edge di Platform].
 
 >[!TIP]
 >
@@ -413,12 +413,12 @@ Consulta [Raccogliere dati su prodotti e commerce](https://experienceleague.adob
 Per iniziare, monitora le visualizzazioni del prodotto nella pagina dei dettagli del prodotto di Luma.
 
 1. Dal menu di navigazione a sinistra, seleziona **[!UICONTROL Regole]** e quindi seleziona **[!UICONTROL Aggiungi regola]**
-1. Assegna un nome  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. Assegna un nome  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
 1. Seleziona la ![simbolo +](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) in Evento per aggiungere un nuovo trigger
 1. Sotto **[!UICONTROL Estensione]**, seleziona **[!UICONTROL Core]**
-1. Sotto **[!UICONTROL Tipo di evento]**, seleziona **[!UICONTROL Page Bottom]**
-1. Assegna un nome `Core - Page Bottom - order 20`
-1. Seleziona per aprire **[!UICONTROL Opzioni avanzate]**, digitare `20`. In questo modo la regola viene eseguita dopo il `all pages global content variables - page bottom - AA (order 1)` che imposta le variabili di contenuto globali, ma prima del `all pages send event - page bottom - AA (order 50)` che invia l’evento XDM.
+1. Sotto **[!UICONTROL Tipo di evento]**, seleziona **[!UICONTROL libreria caricata]**
+1. Assegna un nome `Core - library loaded - order 20`
+1. Seleziona per aprire **[!UICONTROL Opzioni avanzate]**, digitare `20`. In questo modo la regola viene eseguita dopo il `all pages global content variables - library loaded - AA (order 1)` che imposta le variabili di contenuto globali, ma prima del `all pages send event - library loaded - AA (order 50)` che invia l’evento XDM.
 
    ![Regole XDM per Analytics](assets/set-up-analytics-pdp.png)
 
@@ -517,13 +517,13 @@ Confronta l’elemento dati con `productListItems` struttura (suggerimento, deve
 >Nota come le variabili numeriche vengono tradotte, con valori stringa nel livello dati come `price` e `qty` viene riformattato in numeri nell’elemento dati. Questi requisiti di formato sono importanti per l’integrità dei dati in Platform e vengono determinati durante [configurare gli schemi](configure-schemas.md) passaggio. Nell’esempio, **[!UICONTROL quantità]** utilizza **[!UICONTROL Intero]** tipo di dati.
 > ![Tipo di dati dello schema XDM](assets/set-up-analytics-quantity-integer.png)
 
-Ora si torna a mappare l’oggetto XDM su un intero array. Ripeti gli stessi passaggi della creazione di `ecommerce - pdp page bottom - AA (order 20)` regola:
+Ora si torna a mappare l’oggetto XDM su un intero array. Ripeti gli stessi passaggi della creazione di `ecommerce - pdp library loaded - AA (order 20)` regola:
 
-1. Assegna un nome  [!UICONTROL `ecommerce - cart page bottom - AA (order 20)`]
+1. Assegna un nome  [!UICONTROL `ecommerce - cart library loaded - AA (order 20)`]
 1. Seleziona la ![simbolo +](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) in Evento per aggiungere un nuovo trigger
 1. Sotto **[!UICONTROL Estensione]**, seleziona **[!UICONTROL Core]**
-1. Sotto **[!UICONTROL Tipo di evento]**, seleziona **[!UICONTROL Page Bottom]**
-1. Assegna un nome `Core - Page Bottom - order 20`
+1. Sotto **[!UICONTROL Tipo di evento]**, seleziona **[!UICONTROL libreria caricata]**
+1. Assegna un nome `Core - library loaded - order 20`
 1. Seleziona per aprire **[!UICONTROL Opzioni avanzate]**, digitare `20`
 1. Seleziona **[!UICONTROL Mantieni modifiche]**
 
@@ -574,7 +574,7 @@ Ora si torna a mappare l’oggetto XDM su un intero array. Ripeti gli stessi pas
 
 Crea altre due regole per il pagamento e l’acquisto seguendo lo stesso pattern con le seguenti differenze:
 
-**Nome regola**: `ecommerce - checkout page bottom - AA (order 20)`
+**Nome regola**: `ecommerce - checkout library loaded - AA (order 20)`
 
 * **[!UICONTROL Condizione]**: /content/luma/us/en/user/checkout.html
 * Imposta `eventType` su `commerce.checkouts`.
@@ -584,7 +584,7 @@ Crea altre due regole per il pagamento e l’acquisto seguendo lo stesso pattern
   >
   >Equivale all&#39;impostazione `scCheckout` evento in Analytics
 
-**Nome regola**: `ecommerce - purchase page bottom - AA (order 20)`
+**Nome regola**: `ecommerce - purchase library loaded - AA (order 20)`
 
 * **[!UICONTROL Condizione]**: /content/luma/us/en/user/checkout/order/thank-you.html
 * Imposta `eventType` su `commerce.purchases`.
@@ -745,7 +745,7 @@ Poiché ti trovi già in una pagina di prodotto, questo esercizio continua a uti
 
    >[!TIP]
    >
-   > Il `ecommerce - pdp page bottom - AA (order 20)` la regola sta sovrascrivendo il valore di `eventType` impostato da `all pages global content variables - page bottom - AA (order 1)` regola impostata per essere attivata successivamente nella sequenza
+   > Il `ecommerce - pdp library loaded - AA (order 20)` la regola sta sovrascrivendo il valore di `eventType` impostato da `all pages global content variables - library loaded - AA (order 1)` regola impostata per essere attivata successivamente nella sequenza
 
 
    ![Visualizzazione prodotto di Analytics](assets/analytics-debugger-prodView.png)
