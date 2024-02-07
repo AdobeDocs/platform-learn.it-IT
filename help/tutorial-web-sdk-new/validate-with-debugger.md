@@ -2,9 +2,9 @@
 title: Convalidare le implementazioni Web SDK con Experienci Platform Debugger
 description: Scopri come convalidare l’implementazione di Platform Web SDK con l’Adobe Experience Platform Debugger. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Debugger
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1226'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Alla fine di questa lezione, potrai utilizzare il debugger per:
 
 ## Prerequisiti
 
-Conosci i tag di raccolta dati e la [Sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} e hanno completato le seguenti lezioni precedenti nell’esercitazione:
+Conosci i tag di raccolta dati e la [Sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} e hanno completato le lezioni precedenti nell’esercitazione:
 
 * [Configurare uno schema XDM](configure-schemas.md)
 * [Configurare uno spazio dei nomi delle identità](configure-identities.md)
@@ -49,14 +49,10 @@ Conosci i tag di raccolta dati e la [Sito di dimostrazione Luma](https://luma.en
 
 ## Caricare librerie di tag alternative con Debugger
 
-Questa esercitazione utilizza una versione in hosting pubblico del [Sito web di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Apri la home page e aggiungi un segnalibro.
-
-![Home page Luma](assets/validate-luma-site.png)
-
 Experienci Platform Debugger dispone di una funzione interessante che consente di sostituire una libreria di tag esistente con una diversa. Questa tecnica è utile per la convalida e ci consente di saltare molti passaggi di implementazione in questa esercitazione.
 
-1. Assicurati di avere aperto il sito Luma e seleziona l’icona dell’estensione Experienci Platform Debugger
-1. Debugger si aprirà e mostrerà alcuni dettagli dell’implementazione hardcoded, che non è correlata a questa esercitazione (potrebbe essere necessario ricaricare il sito Luma dopo aver aperto Debugger)
+1. Assicurati di avere [Sito web di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} apri e seleziona l’icona dell’estensione Experienci Platform Debugger
+1. Verrà aperto Debugger e verranno visualizzati alcuni dettagli dell’implementazione hardcoded (potrebbe essere necessario ricaricare il sito Luma dopo aver aperto Debugger)
 1. Conferma che il debugger è &quot;**[!UICONTROL Connesso a Luma]**&quot; come illustrato di seguito, quindi selezionare la&quot;**[!UICONTROL blocca]**&quot; per bloccare Debugger sul sito Luma.
 1. Seleziona la **[!UICONTROL Accedi]** e accedi a Adobe Experience Cloud utilizzando il tuo ID Adobe.
 1. Ora vai a **[!UICONTROL Tag Experience Platform]** nel menu di navigazione a sinistra
@@ -78,7 +74,7 @@ Experienci Platform Debugger dispone di una funzione interessante che consente d
 
    ![proprietà tag sostituita](assets/validate-switch-success.png)
 
-Continuando l’esercitazione, utilizzi questa tecnica per mappare il sito Luma sulla tua proprietà tag per convalidare l’implementazione dell’SDK web per Platform. Quando inizi a utilizzare i tag sul sito web di produzione, puoi usare questa stessa tecnica per convalidare le modifiche.
+Continuando l’esercitazione, utilizzi questa tecnica per mappare il sito Luma sulla tua proprietà tag per convalidare l’implementazione dell’SDK web per Platform. Quando inizi a utilizzare i tag sul sito web di produzione, puoi usare questa stessa tecnica per convalidare le modifiche apportate nell’ambiente di sviluppo dei tag.
 
 ## Convalidare richieste di rete lato client con Experienci Platform Debugger
 
@@ -138,18 +134,20 @@ Questi tipi di dettagli della richiesta sono visibili anche negli strumenti di s
 
    ![Scheda Rete](assets/validate-dev-console-ecid.png)
 
+   >[!NOTE]
+   >
+   > Il valore ECID è visibile nella risposta di rete. Non è incluso nel `identityMap` parte della richiesta di rete, né viene memorizzata in questo formato in un cookie.
 
 ## Convalidare le richieste di rete lato server con Experienci Platform Debugger
 
-Come hai imparato nella [Configurare uno stream di dati](configure-datastream.md) lezione, Platform Web SDK invia prima i dati dalla proprietà digitale a Platform Edge Network. Quindi, Platform Edge Network effettua richieste aggiuntive lato server ai servizi corrispondenti abilitati nello stream di dati.
+Come hai imparato nella [Configurare uno stream di dati](configure-datastream.md) lezione, Platform Web SDK invia prima i dati dalla proprietà digitale a Platform Edge Network. Quindi, Platform Edge Network effettua richieste aggiuntive lato server ai servizi corrispondenti abilitati nello stream di dati. Puoi convalidare le richieste lato server effettuate da Platform Edge Network utilizzando Edge Trace nel debugger.
 
-Puoi convalidare le richieste lato server abilitando Edge Trace nel Debugger. Inoltre, puoi anche convalidare il payload completamente elaborato dopo aver raggiunto un’applicazione di Adobe utilizzando [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en). -->
 
-Nei due esercizi successivi, abiliti Edge Trace e visualizzi l’ID Experience Cloud generato da Platform Edge Network utilizzando Assurance.
 
 ### Abilita traccia perimetrale
 
-Per abilitare la traccia Edge
+Per abilitare Edge Trace:
 
 1. Nella barra di navigazione a sinistra di **[!UICONTROL Debugger Experienci Platform]** seleziona **[!UICONTROL Registri]**
 1. Seleziona la **[!UICONTROL Bordo]** e seleziona **[!UICONTROL Connetti]**
@@ -164,37 +162,9 @@ Per abilitare la traccia Edge
 
    ![Traccia Edge beacon di Analytics](assets/validate-edge-trace.png)
 
-A questo punto, non è possibile visualizzare le richieste di Platform Edge Network indirizzate a un’applicazione di Adobe perché non ne hai abilitato alcuna nello stream di dati. Nelle lezioni future, utilizzi Edge Trace per visualizzare le richieste lato server in uscita alle applicazioni Adobe. Tuttavia, utilizzando Assurance è ancora possibile visualizzare l’ID Experience Cloud generato da Platform Edge Network.
+A questo punto, non è possibile visualizzare le richieste di Platform Edge Network indirizzate a un’applicazione di Adobe perché non ne hai abilitato alcuna nello stream di dati. Nelle lezioni future, utilizzi Edge Trace per visualizzare le richieste lato server in uscita alle applicazioni Adobe e all’inoltro di eventi. Ma prima di tutto, scopri un altro strumento per convalidare le richieste lato server effettuate da Platform Edge Network: Adobe Experience Platform Assurance.
 
-### Avviare una sessione Assurance
-
-Adobe Experience Platform Assurance è un prodotto di Adobe Experience Cloud che consente di verificare, verificare, simulare e convalidare le modalità di raccolta dei dati o di gestione delle esperienze.
-
-Ulteriori informazioni su [Adobe Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
-
-Ogni volta che abiliti Edge Trace, viene avviata in background una sessione Assurance.
-
-Per visualizzare la sessione Assurance:
-
-1. Con Edge Trace abilitato, puoi visualizzare un’icona di collegamento in uscita in alto. Seleziona l’icona per aprire Assurance. Viene visualizzata una nuova scheda nel browser.
-
-   ![Avvia sessione Assurance](assets/validate-debugger-start-assurnance.png)
-
-1. Seleziona la riga con l’evento denominato Adobe Response Handle.
-1. A destra viene visualizzato un menu. Seleziona la `+` accedi a `[!UICONTROL ACPExtensionEvent]`
-1. Espandere selezionando `[!UICONTROL payload > 0 > payload > 0 > namespace]`. L’ID mostrato sotto l’ultimo `0` corrisponde al `ECID`. Lo sai dal valore che viene visualizzato in `namespace` corrispondenza `ECID`
-
-   ![Convalida garanzia ECID](assets/validate-assurance-ecid.png)
-
-   >[!CAUTION]
-   >
-   >Il valore ECID potrebbe essere troncato a causa della larghezza della finestra. Seleziona la barra della maniglia nell’interfaccia e trascina a sinistra per visualizzare l’intero ECID.
-
-Nelle lezioni future, utilizzi Assurance per convalidare i payload completamente elaborati raggiungendo un’applicazione di Adobe abilitata nel flusso di dati.
-
-Ora che un oggetto XDM viene attivato su una pagina e sai come convalidare la raccolta dati, puoi configurare le singole applicazioni Adobe utilizzando Platform Web SDK.
-
-[Successivo: ](setup-experience-platform.md)
+[Successivo: ](validate-with-assurance.md)
 
 >[!NOTE]
 >

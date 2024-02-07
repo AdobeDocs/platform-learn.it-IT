@@ -2,9 +2,9 @@
 title: Configurare uno stream di dati
 description: Scopri come abilitare un flusso di dati e configurare le soluzioni Experience Cloud. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Datastreams
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '547'
 ht-degree: 4%
 
 ---
@@ -43,7 +43,7 @@ Ora puoi creare un flusso di dati per indicare a Platform Edge Network dove invi
 
    >[!NOTE]
    >
-   >Se sei il cliente di un’applicazione basata su Platform come Real-Time CDP, per questa esercitazione ti consigliamo di utilizzare una sandbox di sviluppo. In caso contrario, utilizza **[!UICONTROL Prod]** sandbox.
+   >Se sei il cliente di un’applicazione basata su Platform come Real-Time CDP o Journey Optimizer, per questa esercitazione ti consigliamo di utilizzare una sandbox di sviluppo. In caso contrario, utilizza **[!UICONTROL Prod]** sandbox.
 
 1. Vai a **[!UICONTROL Flussi di dati]** nel menu di navigazione a sinistra
 1. Seleziona **[!UICONTROL Nuovo flusso di dati]** sul lato destro dello schermo.
@@ -52,13 +52,6 @@ Ora puoi creare un flusso di dati per indicare a Platform Edge Network dove invi
 1. Seleziona **[!UICONTROL Salva]**
 
    ![Creare lo stream di dati](assets/datastream-create-new-datastream.png)
-
-   >[!AVAILABILITY]
-   >
-   >La funzione di mappatura verrà incorporata in questa esercitazione in un secondo momento.
-
-
-
 
 Nella schermata successiva è possibile aggiungere al flusso di dati servizi quali applicazioni Adobe, ma a questo punto dell’esercitazione non verrà aggiunto alcun servizio. Lo farai più avanti nelle lezioni [Experience Platform configurazione](setup-experience-platform.md), [Configurare Analytics](setup-analytics.md), [Audience Manager configurazione](setup-audience-manager.md), [Imposta Target](setup-target.md), o [Inoltro eventi](setup-event-forwarding.md).
 
@@ -76,9 +69,9 @@ La sostituzione della configurazione dello stream di dati è un processo in due 
 1. Innanzitutto, definisci le sostituzioni dello stream di dati nella configurazione dello stream di dati. Questa operazione deve essere eseguita per ogni applicazione di Adobe che si desidera sostituire.
 1. Quindi, invii le sostituzioni alla rete Edge tramite un’azione Invia evento SDK per web o tramite una configurazione nell’estensione tag SDK per web.
 
-Consulta la [documentazione sulle sostituzioni della configurazione dello stream di dati](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) per istruzioni dettagliate su come ignorare le configurazioni dello stream di dati.
+In [Configurare Adobe Analytics](setup-analytics.md) lezione si sostituisce la suite di rapporti per una pagina utilizzando l’azione Invia evento di Platform Web SDK.
 
-Nella lezione Configurazione di Adobe Analytics puoi [sovrascrivere la suite di rapporti per una pagina utilizzando Platform Web SDK Send Event Action](setup-analytics.md).
+Consulta la [documentazione sulle sostituzioni della configurazione dello stream di dati](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) per istruzioni dettagliate su come ignorare le configurazioni dello stream di dati.
 
 Ora puoi installare l’estensione Platform Web SDK nella tua proprietà tag.
 

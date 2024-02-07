@@ -2,9 +2,9 @@
 title: Creare elementi dati
 description: Scopri come creare un oggetto XDM e mappare ad esso gli elementi dati nei tag. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Tags
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1189'
 ht-degree: 1%
 
 ---
@@ -24,13 +24,13 @@ Scopri come creare elementi dati nei tag per contenuti, eCommerce e dati di iden
 Alla fine di questa lezione, sarai in grado di:
 
 * Comprendere diversi approcci per la mappatura di un livello dati su XDM
-* Creare elementi dati per acquisire dati di contenuto
-* Mappare elementi dati a un elemento dati di oggetti XDM
+* Creare elementi dati per acquisire dati
+* Mappare elementi dati a un oggetto XDM
 
 
 ## Prerequisiti
 
-Conoscere cos’è un livello dati e hai completato le seguenti lezioni precedenti nell’esercitazione:
+Conosci cos’è un livello dati e hai completato le lezioni precedenti nell’esercitazione:
 
 * [Configurare uno schema XDM](configure-schemas.md)
 * [Configurare uno spazio dei nomi delle identità](configure-identities.md)
@@ -41,9 +41,9 @@ Conoscere cos’è un livello dati e hai completato le seguenti lezioni preceden
 
 Esistono diversi modi per mappare i dati dal livello dati a XDM utilizzando la funzionalità tag di Adobe Experience Platform. Di seguito sono riportati alcuni pro e contro di tre diversi approcci:
 
-* [Implementare XDM nel livello dati](create-data-elements.md#implement-xdm-in-the-data-layer)
-* [Mappa su XDM nello stream di dati](create-data-elements.md#map-to-xdm-in-the-datastream)
-* [Mappare su XDM nei tag](create-data-elements.md#map-data-layer-in-tags)
+1. Implementare XDM nel livello dati
+1. Mappare su XDM nei tag
+1. Mappa su XDM nello stream di dati
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Esistono diversi modi per mappare i dati dal livello dati a XDM utilizzando la f
 
 ### Implementare XDM nel livello dati
 
-Questo approccio comporta l’utilizzo dell’oggetto XDM completamente definito come struttura per il livello dati. Quindi mappi l’intero livello dati a un elemento dati di oggetti XDM in Adobe Tags. Se l’implementazione non utilizza un gestore di tag, questo approccio può essere ideale perché puoi inviare dati a XDM direttamente dall’applicazione utilizzando [XDM sendEvent, comando](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). Se utilizzi i tag Adobe, puoi creare un elemento dati con codice personalizzato che acquisisce l’intero livello dati come oggetto JSON pass-through per XDM. Quindi, mappi il JSON pass-through al campo dell’oggetto XDM nell’azione Invia evento.
+Questo approccio comporta l’utilizzo dell’oggetto XDM completamente definito come struttura per il livello dati. Quindi mappi l’intero livello dati a un elemento dati di oggetti XDM nei tag. Se l’implementazione non utilizza un gestore di tag, questo approccio può essere ideale perché puoi inviare dati a XDM direttamente dall’applicazione utilizzando [XDM sendEvent, comando](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). Se utilizzi i tag, puoi creare un elemento dati con codice personalizzato che acquisisce l’intero livello dati come oggetto JSON pass-through per XDM. Quindi, mappi il JSON pass-through al campo dell’oggetto XDM nell’azione Invia evento.
 
 Di seguito è riportato un esempio dell’aspetto del livello dati utilizzando il formato Livello dati client di Adobe:
 
@@ -97,7 +97,7 @@ window.adobeDataLayer.push({
 
 Pro
 
-* Ignora i passaggi per mappare singole variabili del livello dati su XDM
+* Elimina passaggi aggiuntivi per la mappatura delle variabili del livello dati su XDM
 * Può essere più rapido da implementare se il team di sviluppo è responsabile del comportamento digitale dei tag
 
 Contro
@@ -108,41 +108,44 @@ Contro
 * Impossibile utilizzare il livello dati per pixel di terze parti
 * Impossibilità di trasformare i dati tra il livello dati e XDM
 
-### Mappa su XDM nello stream di dati
-
-Questo approccio utilizza funzionalità integrate nella configurazione dello stream di dati denominate [Preparazione per la raccolta dati](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) e ignora la mappatura delle variabili del livello dati su XDM nei tag.
-
-Pro
-
-* Flessibile in quanto è possibile mappare singole variabili su XDM
-* Possibilità di [calcola nuovi valori](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=it) o [trasformare tipi di dati](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) da un livello dati prima di passare a XDM
-* Utilizzo di un [Interfaccia utente di mappatura](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) per mappare i campi dei dati di origine su XDM con un’interfaccia utente semplice e intuitiva
-
-Contro
-
-* Non è possibile utilizzare le variabili del livello dati come elementi dati per pixel di terze parti lato client, ma può utilizzarle con tag di Adobe per l’inoltro degli eventi
-* Impossibile utilizzare la funzionalità di raschiamento della funzionalità tag di Adobe Experience Platform
-* La complessità di manutenzione aumenta se si esegue la mappatura del livello dati sia nei tag che nello stream di dati
-
 ### Mappare il livello dati nei tag
 
 Questo approccio comporta la mappatura di singole variabili del livello dati O di oggetti del livello dati su elementi dati nei tag e infine su XDM. Si tratta dell’approccio tradizionale all’implementazione tramite un sistema di gestione dei tag.
 
-Pro
+#### Pro
 
 * L’approccio più flessibile, in quanto è possibile controllare singole variabili e trasformare i dati prima che arrivino a XDM
 * Può utilizzare i trigger di tag Adobe e la funzionalità di scraping per trasmettere dati a XDM
 * È in grado di mappare gli elementi dati su pixel di terze parti lato client
 
-Contro
+#### Contro
 
-* L&#39;implementazione potrebbe richiedere più tempo
+* Ci vuole del tempo per ricostruire il livello dati come elementi dati
+
 
 >[!TIP]
 >
 > Google Data Layer
 > 
-> Se la tua organizzazione utilizza già Google Analytics e dispone del tradizionale oggetto Google dataLayer sul sito web, puoi utilizzare [Estensione Google Data Layer](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) in Tag di Adobe. Questo consente di implementare la tecnologia Adobe più rapidamente senza dover richiedere supporto al team IT. La mappatura del livello dati di Google su XDM segue gli stessi passaggi indicati sopra.
+> Se la tua organizzazione utilizza già Google Analytics e dispone del tradizionale oggetto Google dataLayer sul sito web, puoi utilizzare [Estensione Google Data Layer](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) nei tag. Questo consente di implementare la tecnologia Adobe più rapidamente senza dover richiedere supporto al team IT. La mappatura del livello dati di Google su XDM segue gli stessi passaggi indicati sopra.
+
+### Mappa su XDM nello stream di dati
+
+Questo approccio utilizza funzionalità integrate nella configurazione dello stream di dati denominate [Preparazione per la raccolta dati](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) e ignora la mappatura delle variabili del livello dati su XDM nei tag.
+
+#### Pro
+
+* Flessibile in quanto è possibile mappare singole variabili su XDM
+* Possibilità di [calcola nuovi valori](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=it) o [trasformare tipi di dati](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) da un livello dati prima di passare a XDM
+* Utilizzo di un [Interfaccia utente di mappatura](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) per mappare i campi dei dati di origine su XDM con un’interfaccia utente semplice e intuitiva
+
+#### Contro
+
+* Non è possibile utilizzare le variabili del livello dati come elementi dati per pixel di terze parti lato client, ma può utilizzarle con l’inoltro degli eventi
+* Impossibile utilizzare la funzionalità di raschiamento della funzionalità tag di Adobe Experience Platform
+* La complessità di manutenzione aumenta se si esegue la mappatura del livello dati sia nei tag che nello stream di dati
+
+
 
 >[!IMPORTANT]
 >
@@ -270,7 +273,7 @@ Per creare l&#39;elemento dati Variable:
 
 Al termine di questi passaggi, dovresti aver creato i seguenti elementi di dati:
 
-| Elementi dati dell&#39;estensione CORE | Elementi dati di Platform Web SDK |
+| Elementi dati dell&#39;estensione core | Elementi dati dell’estensione Platform Web SDK |
 -----------------------------|-------------------------------
 | `cart.orderId` | `xdm.variable.content` |
 | `cart.productInfo` | |
@@ -278,6 +281,7 @@ Al termine di questi passaggi, dovresti aver creato i seguenti elementi di dati:
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.category` | |
 | `product.productInfo.sku` | |
 | `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
@@ -285,7 +289,7 @@ Al termine di questi passaggi, dovresti aver creato i seguenti elementi di dati:
 
 >[!TIP]
 >
->In un futuro [Creare una regola di tag](create-tag-rule.md) lezione, si impara come **[!UICONTROL Variabile]** elemento dati consente di sovrapporre più regole nei tag utilizzando **[!UICONTROL Aggiorna tipo di azione variabile]**. Quindi, puoi inviare in modo indipendente l’oggetto XDM a Adobe Experience Platform Edge Network utilizzando un **[!UICONTROL Invia tipo di azione evento]**.
+>In un futuro [Creare una regola di tag](create-tag-rule.md) lezione, si impara come **[!UICONTROL Variabile]** elemento dati consente di sovrapporre più regole nei tag utilizzando **[!UICONTROL Aggiorna tipo di azione variabile]**.
 
 Una volta impostati questi elementi dati, puoi iniziare a inviare dati a Platform Edge Network con una regola di tag. Ma prima, scopri come raccogliere le identità con Web SDK.
 
