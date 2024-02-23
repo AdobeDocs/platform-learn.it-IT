@@ -3,29 +3,16 @@ title: Tutorial su Raccolta dati
 description: Video ed esercitazioni per consentirti di utilizzare al meglio Data Collection
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
+source-git-commit: d04a9dbe0f148e7ef210f1f4472a7771db5bb511
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 37%
+source-wordcount: '165'
+ht-degree: 32%
 
 ---
 
 # Tutorial su Raccolta dati
 
 La raccolta dati è la nuova generazione di funzionalità di gestione di tag per siti web e SDK per dispositivi mobili di Adobe. La raccolta dati offre ai clienti un modo semplice di implementare e gestire le soluzioni di analisi, marketing e annunci pubblicitari necessarie per fornire ai clienti esperienze personalizzate. Segui questi video e tutorial per imparare a usare questa tecnologia fondamentale.
-
-<div id="whats-new-section">
-
-## Novità
-
-* **[Panoramica API server (video)](server-api/overview.md)**
-  *Invia dati utilizzando un’API server sicura e autenticata.*
-* **[Implementare Adobe Experience Cloud nelle app per dispositivi mobili (tutorial)](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=it)**
-  *Implementare applicazioni Experience Cloud con Mobile SDK.*
-* **[Spostare i tag lato client (tutorial)](event-forwarding/consider-moving-tags.md)**
-  *Prendi in considerazione lo spostamento di tag lato client all’inoltro di eventi.*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
