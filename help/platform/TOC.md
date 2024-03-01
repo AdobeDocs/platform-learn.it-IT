@@ -5,9 +5,9 @@ user-guide-description: Scopri i numerosi componenti di Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 6068feccb23c8485390e64cd79e021167b1271a8
+source-git-commit: 9c4e85a75f640ec9c2eaae6874e2331bf54c3ca7
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '869'
 ht-degree: 16%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 16%
    + [Creare tipi di pubblico sequenziali](audiences/create-sequential-audiences.md)
    + [Creare un pubblico dinamico](audiences/create-dynamic-audiences.md)
    + [Creare tipi di pubblico con più entità](audiences/create-multi-entity-audiences.md)
-   + [Creare tipi di pubblico con dati B2B](audiences/create-audiences-with-b2b-data.md)
+   + [Creare e attivare il pubblico dell’account (B2B)](audiences/create-audiences-with-b2b-data.md)
    + [Demo della segmentazione in streaming](/help/platform/audiences/streaming-segmentation-demo.md)
    + [Valutare una regola di pubblico](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
    + [Creare un set di dati per esportare i dati](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
