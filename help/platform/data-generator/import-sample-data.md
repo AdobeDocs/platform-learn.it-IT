@@ -1,21 +1,20 @@
 ---
-title: Importazione dei dati di esempio in Adobe Experience Platform
+title: Importare dati di esempio in Adobe Experience Platform
 description: Scopri come impostare un ambiente sandbox di Experience Platform con alcuni dati di esempio.
 feature: API
 role: Developer
 level: Experienced
 jira: KT-7349
-thumbnail: 7349.jpg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 4db88dbae923d37884391a65ff8fc16f53e19187
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 6%
+source-wordcount: '1776'
+ht-degree: 3%
 
 ---
 
-# Importazione dei dati di esempio in Adobe Experience Platform
+# Importare dati di esempio in Adobe Experience Platform
 
 Scopri come configurare un ambiente sandbox di Experience Platform con dati di esempio. Utilizzando una raccolta Postman, puoi creare gruppi di campi, schemi, set di dati e quindi importare dati di esempio in Experience Platform.
 
@@ -129,7 +128,7 @@ Successivamente, devi autenticare e generare un token utente. I metodi di genera
 
 1. Rivedi le variabili di ambiente e osserva che `ACCESS_TOKEN` è ora popolato.
 
-### Importare i dati
+### Importare dati
 
 Ora puoi preparare e importare i dati nella sandbox di Platform. Le collezioni Postman che hai importato faranno tutto il sollevamento pesante!
 
