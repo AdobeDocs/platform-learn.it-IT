@@ -2,22 +2,16 @@
 title: Creare elementi dati
 description: Scopri come creare un oggetto XDM e mappare ad esso gli elementi dati nei tag. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1199'
 ht-degree: 1%
 
 ---
 
 # Creare elementi dati
 
-Scopri come creare elementi dati nei tag per contenuti, eCommerce e dati di identità sulla [Sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Quindi, e popola i campi nello schema XDM utilizzando il tipo di elemento dati Variabile.
-
-
->[!IMPORTANT]
->
->I dati per questa lezione provengono da `[!UICONTROL digitalData]` sul sito Luma. Per visualizzare il livello dati, apri la console per sviluppatori e digita `[!UICONTROL digitalData]` per visualizzare l’intero livello dati disponibile.![livello dati digitalData](assets/data-element-data-layer.png)
-
+Scopri come creare elementi dati nei tag per contenuti, eCommerce e dati di identità sulla [Sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Quindi popola i campi nello schema XDM con il tipo di elemento dati Variabile dell’estensione Platform Web SDK.
 
 ## Obiettivi di apprendimento
 
@@ -37,9 +31,15 @@ Conosci cos’è un livello dati e hai completato le lezioni precedenti nell’e
 * [Configurare uno stream di dati](configure-datastream.md)
 * [Estensione Web SDK installata nella proprietà tag](install-web-sdk.md)
 
+
+>[!IMPORTANT]
+>
+>I dati per questa lezione provengono da `[!UICONTROL digitalData]` sul sito Luma. Per visualizzare il livello dati, apri la console per sviluppatori e digita `[!UICONTROL digitalData]` per visualizzare l’intero livello dati disponibile.![livello dati digitalData](assets/data-element-data-layer.png)
+
+
 ## Approcci al livello dati
 
-Esistono diversi modi per mappare i dati dal livello dati a XDM utilizzando la funzionalità tag di Adobe Experience Platform. Di seguito sono riportati alcuni pro e contro di tre diversi approcci:
+Esistono diversi modi per mappare i dati dal livello dati a XDM utilizzando la funzionalità tag di Adobe Experience Platform. Di seguito sono riportati alcuni pro e contro di tre diversi approcci. Se necessario, è possibile combinare gli approcci:
 
 1. Implementare XDM nel livello dati
 1. Mappare su XDM nei tag
@@ -104,7 +104,7 @@ Contro
 
 * Completa dipendenza dal team di sviluppo e dal ciclo di sviluppo per aggiornare i dati da inviare a XDM
 * Flessibilità limitata, poiché XDM riceve il payload esatto dal livello dati
-* Non è possibile utilizzare le funzioni incorporate nei tag, ad esempio scraping, persistenza e funzioni per distribuzioni rapide
+* Non è possibile utilizzare le funzioni dei tag incorporate, ad esempio raschiamento, persistenza e funzioni per distribuzioni rapide
 * Impossibile utilizzare il livello dati per pixel di terze parti
 * Impossibilità di trasformare i dati tra il livello dati e XDM
 
@@ -289,7 +289,7 @@ Al termine di questi passaggi, dovresti aver creato i seguenti elementi di dati:
 
 >[!TIP]
 >
->In un futuro [Creare una regola di tag](create-tag-rule.md) lezione, si impara come **[!UICONTROL Variabile]** elemento dati consente di sovrapporre più regole nei tag utilizzando **[!UICONTROL Aggiorna tipo di azione variabile]**.
+>In un futuro [Creare regole di tag](create-tag-rule.md) lezione, si impara come **[!UICONTROL Variabile]** elemento dati consente di sovrapporre più regole nei tag utilizzando **[!UICONTROL Aggiorna tipo di azione variabile]**.
 
 Una volta impostati questi elementi dati, puoi iniziare a inviare dati a Platform Edge Network con una regola di tag. Ma prima, scopri come raccogliere le identità con Web SDK.
 

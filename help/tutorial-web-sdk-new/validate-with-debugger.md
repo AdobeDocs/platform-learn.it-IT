@@ -2,9 +2,9 @@
 title: Convalidare le implementazioni Web SDK con Experienci Platform Debugger
 description: Scopri come convalidare l’implementazione di Platform Web SDK con l’Adobe Experience Platform Debugger. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Debugger
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1206'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,6 @@ Alla fine di questa lezione, potrai utilizzare il debugger per:
 * Caricare una libreria di tag alternativa
 * Verificare che l’evento XDM lato client acquisisca e invii i dati come previsto a Platform Edge Network
 * Abilita Edge Trace per visualizzare le richieste lato server inviate da Platform Edge Network
-* Avvia una sessione di Adobe Experience Platform Assurance per visualizzare un ID Experience Cloud generato da Platform Edge Network
 
 ## Prerequisiti
 
@@ -45,7 +44,7 @@ Conosci i tag di raccolta dati e la [Sito di dimostrazione Luma](https://luma.en
 * [Estensione Web SDK installata nella proprietà tag](install-web-sdk.md)
 * [Creare elementi dati](create-data-elements.md)
 * [Creare identità](create-identities.md)
-* [Creare una regola di tag](create-tag-rule.md)
+* [Creare regole di tag](create-tag-rule.md)
 
 ## Caricare librerie di tag alternative con Debugger
 

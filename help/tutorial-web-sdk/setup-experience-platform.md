@@ -2,14 +2,19 @@
 title: Trasmettere dati a Adobe Experience Platform con Web SDK
 description: Scopri come inviare dati web a Adobe Experience Platform con Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1605'
-ht-degree: 7%
+source-wordcount: '1600'
+ht-degree: 5%
 
 ---
 
 # Trasmettere i dati per dare Experience Platform con Web SDK
+
+
+>[!CAUTION]
+>
+>Prevediamo di pubblicare modifiche principali a questo tutorial venerdì 15 marzo 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
 
 Scopri come inviare dati web a Adobe Experience Platform con Platform Web SDK.
 
@@ -17,7 +22,7 @@ Experienci Platform è la spina dorsale di tutte le nuove applicazioni Experienc
 
 Experienci Platform utilizza lo stesso schema XDM creato in precedenza per acquisire i dati dell’evento dal sito web Luma. Quando tali dati vengono inviati a Platform Edge Network, la configurazione dello stream di dati può inoltrarli a Experienci Platform.
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 Alla fine di questa lezione, potrai:
 
@@ -78,7 +83,7 @@ Ora è configurato un set di dati per iniziare a raccogliere dati dall’impleme
 
 Ora puoi configurare il [!UICONTROL flusso di dati] per inviare dati a [!UICONTROL Adobe Experience Platform]. Lo stream di dati è il collegamento tra la proprietà tag, la rete Edge di Platform e il set di dati di Experience Platform.
 
-1. Apri [Raccolta dati](https://experience.adobe.com/it#/data-collection){target="blank"} Interfaccia
+1. Apri [Raccolta dati](https://experience.adobe.com/#/data-collection){target="blank"} Interfaccia
 1. Seleziona **[!UICONTROL Flussi di dati]** dal menu di navigazione a sinistra
 1. Apri lo stream di dati creato in [Configurare uno stream di dati](configure-datastream.md) lezione, `Luma Web SDK`
 

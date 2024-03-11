@@ -2,9 +2,9 @@
 title: Impostare una proprietà di inoltro eventi
 description: Scopri come utilizzare la proprietà di inoltro degli eventi utilizzando i dati Experienci Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1861'
 ht-degree: 3%
 
 ---
@@ -62,7 +62,7 @@ Alla fine di questa lezione, sarai in grado di:
       * [Installare l’estensione Web SDK](install-web-sdk.md)
       * [Creare elementi dati](create-data-elements.md)
       * [Creare identità](create-identities.md)
-      * [Creare una regola di tag](create-tag-rule.md)
+      * [Creare regole di tag](create-tag-rule.md)
       * [Convalida con Adobe Experience Platform Debugger](validate-with-debugger.md)
 
 
@@ -185,8 +185,8 @@ In questo esercizio, inoltrerai l’altezza del riquadro di visualizzazione del 
 
    >[!TIP]
    >
-   Quando lavori con il tuo sito web, puoi trovare il percorso dell’oggetto XDM con gli strumenti di rete del browser web, filtrando per `/ee` richieste, apertura del beacon [!UICONTROL **Payload**] ed eseguire il drilling verso il basso fino alla variabile desiderata. Quindi fare clic con il pulsante destro del mouse e selezionare &quot;Copia percorso proprietà&quot;. Di seguito è riportato un esempio per l’altezza del riquadro di visualizzazione del browser:
-   ![Percorso XDM per inoltro eventi](assets/event-forwarding-xdm-path.png)
+   >Quando lavori con il tuo sito web, puoi trovare il percorso dell’oggetto XDM con gli strumenti di rete del browser web, filtrando per `/ee` richieste, apertura del beacon [!UICONTROL **Payload**] ed eseguire il drilling verso il basso fino alla variabile desiderata. Quindi fare clic con il pulsante destro del mouse e selezionare &quot;Copia percorso proprietà&quot;. Di seguito è riportato un esempio per l’altezza del riquadro di visualizzazione del browser:
+   > ![Percorso XDM per inoltro eventi](assets/event-forwarding-xdm-path.png)
 
 ### Installare l’estensione Adobe Cloud Connector
 
@@ -280,7 +280,7 @@ Crea una libreria e crea tutte le modifiche nell’ambiente di sviluppo per l’
 
 >[!NOTE]
 >
-Se non hai collegato le proprietà di inoltro degli eventi di staging e produzione allo stream di dati, vedrai l’ambiente di sviluppo come unica opzione per generare una libreria in.
+>Se non hai collegato le proprietà di inoltro degli eventi di staging e produzione allo stream di dati, vedrai l’ambiente di sviluppo come unica opzione per generare una libreria in.
 
 ![Salva regola di inoltro degli eventi](assets/event-forwarding-initial-build.png)
 
@@ -323,4 +323,4 @@ Congratulazioni! Hai configurato l’inoltro degli eventi.
 
 >[!NOTE]
 >
-Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

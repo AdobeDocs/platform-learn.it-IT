@@ -3,21 +3,26 @@ title: Configurare un Audience Manager con Platform Web SDK
 description: Scopri come configurare Adobe Audience Manager utilizzando Platform Web SDK e convalidare l’implementazione utilizzando una destinazione cookie. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 4%
+source-wordcount: '1368'
+ht-degree: 1%
 
 ---
 
 # Configurare un Audience Manager con Platform Web SDK
+
+
+>[!CAUTION]
+>
+>Prevediamo di pubblicare modifiche principali a questo tutorial venerdì 15 marzo 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
 
 Scopri come configurare Adobe Audience Manager utilizzando Platform Web SDK e convalidare l’implementazione utilizzando una destinazione cookie.
 
 [Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html?lang=it) è la soluzione di Adobe Experience Cloud che offre tutto il necessario per raccogliere informazioni rilevanti dal punto di vista commerciale sui visitatori del sito, creare segmenti commerciabili e distribuire contenuti e pubblicità mirati al pubblico giusto.
 
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 Alla fine di questa lezione, potrai:
 
@@ -36,7 +41,7 @@ Per completare questa lezione, devi prima:
 
 L’implementazione di Audience Manager che utilizza Platform Web SDK è diversa dall’implementazione che utilizza [inoltro lato server (SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=it). L’inoltro lato server trasmette ad Audienci Manager i dati della richiesta di Adobe Analytics. Un’implementazione di Platform Web SDK trasmette ad Audience Manager i dati XDM inviati a Platform Edge Network. Audience Manager abilitato nello stream di dati:
 
-1. Vai a [Raccolta dati](https://experience.adobe.com/it#/data-collection){target="blank"} Interfaccia
+1. Vai a [Raccolta dati](https://experience.adobe.com/#/data-collection){target="blank"} Interfaccia
 1. Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Flussi di dati]**
 1. Seleziona il creato in precedenza `Luma Web SDK` flusso di dati
 
@@ -93,7 +98,7 @@ Dopo il salvataggio dell&#39;origine dati, impostare un [caratteristica](https:/
 1. **[!UICONTROL Salva]** la caratteristica.
 
 
-## Crea un segmento
+## Creare un segmento
 
 Il passaggio successivo consiste nel creare un **segmento**, e assegna la caratteristica appena definita a questo segmento.
 

@@ -1,10 +1,10 @@
 ---
 title: Trasmettere dati a Adobe Experience Platform con Web SDK
 description: Scopri come inviare dati web a Adobe Experience Platform con Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1608'
-ht-degree: 5%
+source-wordcount: '1587'
+ht-degree: 4%
 
 ---
 
@@ -13,7 +13,6 @@ ht-degree: 5%
 Scopri come inviare dati web a Adobe Experience Platform con Platform Web SDK.
 
 Experienci Platform è la spina dorsale di tutte le nuove applicazioni Experience Cloud, come Adobe Real-time Customer Data Platform, Adobe Customer Journey Analytics e Adobe Journey Optimizer. Queste applicazioni sono progettate per utilizzare Platform Web SDK come metodo ottimale per la raccolta di dati web.
-
 
 ![SDK per web e diagramma di Adobe Experience Platform](assets/dc-websdk-aep.png)
 
@@ -30,29 +29,17 @@ Alla fine di questa lezione, potrai:
 
 ## Prerequisiti
 
-Dovresti aver già completato le seguenti lezioni:
+Per completare questa lezione, devi prima:
 
-* Il **Configurazione iniziale** lezioni:
-   * [Configurare uno schema XDM](configure-schemas.md)
-   * [Configurare uno stream di dati](configure-datastream.md)
-   * [Configurare uno spazio dei nomi delle identità](configure-identities.md)
-
-* Il **Configurazione tag** lezioni:
-   * [Installare l’estensione Web SDK](install-web-sdk.md)
-   * [Creare elementi dati](create-data-elements.md)
-   * [Creare identità](create-identities.md)
-   * [Creare regole di tag](create-tag-rule.md)
+* Accedere a un’applicazione Adobe Experience Platform come Real-time Customer Data Platform, Journey Optimizer o Customer Journey Analytics
+* Completa le lezioni precedenti nelle sezioni Configurazione iniziale e Configurazione tag di questa esercitazione.
 
 
 ## Creare un set di dati
 
 Tutti i dati acquisiti correttamente in Adobe Experience Platform vengono memorizzati nel data lake come set di dati. A [set di dati](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella, che contiene uno schema (colonne) e dei campi (righe). I set di dati contengono anche metadati che descrivono vari aspetti dei dati memorizzati.
 
-In questo esercizio creerai un set di dati per tenere traccia del contenuto e dei dettagli di e-commerce per [Sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
-
->[!WARNING]
->
->Devi avere già creato il `Luma Web Event Data` come descritto nella lezione precedente, [Configurare uno schema XDM](configure-schemas.md).
+Configuriamo un set di dati per i dati dell’evento web Luma:
 
 
 1. Vai a [Interfaccia Experienci Platform](https://experience.adobe.com/platform/)
@@ -211,7 +198,7 @@ Ora lo schema è abilitato anche per il profilo.
 > * Innanzitutto, acquisisci alcuni dati nei set di dati.
 > * Risolvi eventuali problemi che sorgono durante il processo di acquisizione dei dati (ad esempio, problemi di convalida o mappatura dei dati).
 > * Abilitare i set di dati e gli schemi per il profilo
-> * Riacquisire i dati
+> * Riacquisire i dati, se necessario
 
 
 ### Convalidare un profilo

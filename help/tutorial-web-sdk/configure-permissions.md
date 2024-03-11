@@ -3,14 +3,19 @@ title: Configurare le autorizzazioni per l’esercitazione
 description: Scopri come richiedere l’accesso a Experienci Platform Web SDK e configurare le autorizzazioni necessarie per completare l’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 6%
+source-wordcount: '403'
+ht-degree: 3%
 
 ---
 
 # Configurare le autorizzazioni per l’esercitazione
+
+
+>[!CAUTION]
+>
+>Prevediamo di pubblicare modifiche principali a questo tutorial venerdì 15 marzo 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
 
 Scopri come richiedere l’accesso a Experienci Platform Web SDK e configurare l’autorizzazione necessaria per completare questa esercitazione. Per implementare Platform Web SDK utilizzando i tag nell’interfaccia di raccolta dati, è necessario disporre delle autorizzazioni utente appropriate configurate in [Admin Console](https://adminconsole.adobe.com).
 

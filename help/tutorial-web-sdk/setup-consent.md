@@ -3,14 +3,19 @@ title: Configurare il consenso con Platform Web SDK
 description: Scopri come configurare le impostazioni di privacy dell’estensione tag Experienci Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: a8c7b94bafcde421d5f95ea53c7ecebb648319ab
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1640'
 ht-degree: 0%
 
 ---
 
 # Configurare il consenso con Platform Web SDK
+
+
+>[!CAUTION]
+>
+>Prevediamo di pubblicare modifiche principali a questo tutorial venerdì 15 marzo 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
 
 Scopri come configurare le impostazioni di privacy dell’estensione tag Experienci Platform Web SDK. Imposta il consenso in base all’interazione del visitatore con un banner di una piattaforma di gestione del consenso (CMP).
 

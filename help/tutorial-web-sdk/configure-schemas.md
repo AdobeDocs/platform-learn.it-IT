@@ -3,14 +3,19 @@ title: Creare uno schema XDM per i dati web
 description: Scopri come creare uno schema XDM per i dati web nell’interfaccia di Data Collection. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 6%
+source-wordcount: '1093'
+ht-degree: 2%
 
 ---
 
 # Creare uno schema XDM per i dati web
+
+
+>[!CAUTION]
+>
+>Prevediamo di pubblicare modifiche principali a questo tutorial venerdì 15 marzo 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
 
 Scopri come creare uno schema XDM per i dati web nell’interfaccia di Data Collection.
 
@@ -24,7 +29,7 @@ Platform Web SDK utilizza lo schema per standardizzare i dati dell’evento web,
 
 Per ulteriori informazioni sugli schemi XDM, segui il corso &quot;[Modellare i dati sull’esperienza del cliente con XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it)&quot; o visualizzare [Panoramica del sistema XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=it).
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 Alla fine di questa lezione, potrai:
 
@@ -50,7 +55,7 @@ In questo esercizio creerai uno schema XDM utilizzando i gruppi di campi della l
    >Se sei il cliente di un’applicazione basata su Platform come Real-Time CDP, per questa esercitazione ti consigliamo di utilizzare una sandbox di sviluppo. In caso contrario, utilizza **[!UICONTROL Prod]** sandbox.
 
 1. Vai a **[!UICONTROL Schemi]** nel menu di navigazione a sinistra
-1. Seleziona il pulsante **[!UICONTROL Crea schema]** in alto a destra
+1. Seleziona la **[!UICONTROL Crea schema]** pulsante in alto a destra
 1. Dal menu a discesa, seleziona **[!UICONTROL XDM ExperienceEvent]**
 
 ![Evento esperienza schema](assets/schema-XDM-experience-event.jpg)

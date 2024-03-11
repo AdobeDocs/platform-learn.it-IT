@@ -3,14 +3,19 @@ title: Creare una regola di tag
 description: Scopri come inviare un evento a Platform Edge Network con il tuo oggetto XDM utilizzando una regola di tag. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 5%
+source-wordcount: '871'
+ht-degree: 3%
 
 ---
 
 # Creare una regola di tag
+
+
+>[!CAUTION]
+>
+>Prevediamo di pubblicare modifiche principali a questo tutorial venerdì 15 marzo 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
 
 Scopri come inviare un evento a Platform Edge Network con il tuo oggetto XDM utilizzando una regola di tag. Una regola di tag è una combinazione di eventi, condizioni e azioni che indica alla proprietà tag di eseguire un&#39;operazione.
 
@@ -19,7 +24,7 @@ Scopri come inviare un evento a Platform Edge Network con il tuo oggetto XDM uti
 > A scopo dimostrativo, gli esercizi di questa lezione si basano sull’esempio utilizzato durante la [Creare elementi dati](create-data-elements.md) passaggio; invio di un’azione evento XDM per acquisire contenuto e identità dagli utenti sul [Sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 Alla fine di questa lezione, potrai:
 
@@ -45,7 +50,7 @@ Per gestire meglio le regole nei tag, si consiglia di seguire una convenzione di
 
 * [posizione] - [evento] - [strumento]
 
-Dove;
+dove;
 
 1. posizione è la pagina o le pagine del sito in cui viene attivata la regola
 1. è il trigger che attiva il beacon

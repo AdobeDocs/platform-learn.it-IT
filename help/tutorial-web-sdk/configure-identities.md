@@ -3,14 +3,19 @@ title: Configurare uno spazio dei nomi delle identità
 description: Scopri come configurare gli spazi dei nomi delle identità da utilizzare con Adobe Experience Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 11%
+source-wordcount: '694'
+ht-degree: 7%
 
 ---
 
 # Configurare uno spazio dei nomi delle identità
+
+
+>[!CAUTION]
+>
+>Prevediamo di pubblicare modifiche principali a questo tutorial venerdì 15 marzo 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
 
 Scopri come configurare gli spazi dei nomi delle identità da utilizzare con Adobe Experience Platform Web SDK.
 
@@ -22,7 +27,7 @@ Se il tuo sito web utilizza già il servizio ID Experience Cloud sul tuo sito we
 >
 > A scopo dimostrativo, gli esercizi di questa lezione consentono di acquisire i dettagli di identità di un cliente fittizio connesso a [Sito dimostrativo Luma](https://luma.enablementadobe.com/content/luma/us/en.html) utilizzando le credenziali, **utente: test@adobe.com / password: test**. Anche se puoi utilizzare questi passaggi per creare un’identità diversa per le tue finalità, per scoprire le funzionalità di Identity Map nell’interfaccia di Data Collection è consigliabile procedere prima di tutto per acquisire l’identità di esempio.
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 Alla fine di questa lezione, potrai:
 
@@ -62,7 +67,7 @@ Ora crea uno spazio dei nomi per l’ID CRM Luma:
 
    Nell’interfaccia principale della pagina viene visualizzato un elenco di spazi dei nomi di identità, con i nomi, i simboli di identità, la data dell’ultimo aggiornamento e se si tratta di spazi dei nomi standard o personalizzati. La barra a destra contiene informazioni sulla forza del grafico Identità.
 
-1. Seleziona **[!UICONTROL Crea uno spazio dei nomi delle identità]**
+1. Seleziona **[!UICONTROL Creare lo spazio dei nomi delle identità]**
 
    ![Visualizza identità](assets/configure-identities-screen.png)
 

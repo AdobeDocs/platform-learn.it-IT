@@ -3,20 +3,25 @@ title: Configurare uno stream di dati
 description: Scopri come abilitare un flusso di dati e configurare le soluzioni Experience Cloud. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 9%
+source-wordcount: '471'
+ht-degree: 5%
 
 ---
 
 # Configurare uno stream di dati
 
+
+>[!CAUTION]
+>
+>Prevediamo di pubblicare modifiche principali a questo tutorial venerdì 15 marzo 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
+
 Scopri come abilitare un flusso di dati e configurare le soluzioni Experience Cloud.
 
 Gli stream di dati indicano a Adobe Experience Platform Edge Network dove inviare i dati raccolti da Platform Web SDK. Nella configurazione dei flussi di dati, abilita le applicazioni di Experience Cloud, l’account di Experience Platform e l’inoltro di eventi. Consulta la [Nozioni di base sulla configurazione di uno stream di dati](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it) per informazioni più dettagliate.
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 Alla fine di questa lezione, potrai:
 
@@ -47,7 +52,7 @@ Ora puoi creare un flusso di dati per indicare a Platform Edge Network dove invi
 
 1. Vai a **[!UICONTROL Flussi di dati]** nel menu di navigazione a sinistra
 1. Seleziona **[!UICONTROL Nuovo flusso di dati]** sul lato destro dello schermo.
-1. Inserisci `Luma Web SDK` come **[!UICONTROL Nome]**. Questo nome viene utilizzato successivamente quando configuri l’estensione Web SDK nella proprietà tag.
+1. Invio `Luma Web SDK` come **[!UICONTROL Nome]**. Questo nome viene utilizzato successivamente quando configuri l’estensione Web SDK nella proprietà tag.
 1. Seleziona il `Luma Web Event Data` come **[!UICONTROL Schema Evento]**
 1. Seleziona **[!UICONTROL Salva]**
 

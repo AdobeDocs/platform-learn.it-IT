@@ -3,14 +3,19 @@ title: Impostare una proprietà di inoltro eventi
 description: Scopri come utilizzare la proprietà di inoltro degli eventi utilizzando i dati Experienci Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1886'
-ht-degree: 5%
+source-wordcount: '1893'
+ht-degree: 3%
 
 ---
 
 # Impostare una proprietà di inoltro eventi
+
+
+>[!CAUTION]
+>
+>Prevediamo di pubblicare modifiche principali a questo tutorial venerdì 15 marzo 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
 
 Scopri come utilizzare la proprietà di inoltro degli eventi utilizzando i dati Experienci Platform Web SDK.
 
@@ -28,7 +33,7 @@ Per utilizzare l’inoltro degli eventi in Adobe Experience Platform, i dati dev
 
 Dopo aver completato le lezioni precedenti in questa esercitazione, dovresti inviare dati a Platform Edge Network utilizzando Web SDK. Una volta che i dati sono in Platform Edge Network, puoi abilitare l’inoltro degli eventi e utilizzare una proprietà di inoltro degli eventi per inviare dati a soluzioni non basate su Adobi.
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 Alla fine di questa lezione, sarai in grado di:
 
@@ -68,12 +73,12 @@ Alla fine di questa lezione, sarai in grado di:
 
 Per prima cosa, crea una proprietà di inoltro degli eventi:
 
-1. Apri [Interfaccia di Data Collection](https://experience.adobe.com/it#/data-collection)
+1. Apri [Interfaccia di Data Collection](https://experience.adobe.com/#/data-collection)
 1. Seleziona **[!UICONTROL Inoltro eventi]** dal menu di navigazione a sinistra
 1. Seleziona **[!UICONTROL Nuova proprietà]**.
    ![Proprietà inoltro eventi](assets/event-forwarding-new.png)
 
-1. Assegna un nome alla proprietà. In questo caso `Server-Side - Web SDK Course`
+1. Denomina la proprietà. In questo caso `Server-Side - Web SDK Course`
 
 1. Seleziona **[!UICONTROL Salva]**.
    ![salvataggio proprietà inoltro eventi](assets/event-forwarding-save.png)
@@ -84,7 +89,7 @@ Affinché l’inoltro degli eventi possa utilizzare i dati inviati alla rete Edg
 
 Per configurare Target nello stream di dati:
 
-1. Vai a [Raccolta dati](https://experience.adobe.com/it#/data-collection){target="blank"} Interfaccia
+1. Vai a [Raccolta dati](https://experience.adobe.com/#/data-collection){target="blank"} Interfaccia
 1. Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Flussi di dati]**
 1. Seleziona il creato in precedenza `Luma Web SDK` flusso di dati
 
@@ -149,7 +154,7 @@ In questo esercizio, inoltrerai l’altezza del riquadro di visualizzazione del 
 
    ![Inoltro eventi - Nuovo elemento dati](assets/event-forwarding-new-dataelement.png)
 
-1. **** Denomina l’elemento dati `environment.browserDetails.viewportHeight`
+1. **[!UICONTROL Nome]** l’elemento dati `environment.browserDetails.viewportHeight`
 
 1. Sotto **[!UICONTROL Estensione]**, congedo `CORE`
 
@@ -183,8 +188,8 @@ In questo esercizio, inoltrerai l’altezza del riquadro di visualizzazione del 
 
    >[!TIP]
    >
-   Quando lavori con il tuo sito web, puoi trovare il percorso dell’oggetto XDM con gli strumenti di rete del browser web, filtrando per `/ee` richieste, apertura del beacon [!UICONTROL **Payload**] ed eseguire il drilling verso il basso fino alla variabile desiderata. Quindi fare clic con il pulsante destro del mouse e selezionare &quot;Copia percorso proprietà&quot;. Di seguito è riportato un esempio per l’altezza del riquadro di visualizzazione del browser:
-   ![Percorso XDM per inoltro eventi](assets/event-forwarding-xdm-path.png)
+   >Quando lavori con il tuo sito web, puoi trovare il percorso dell’oggetto XDM con gli strumenti di rete del browser web, filtrando per `/ee` richieste, apertura del beacon [!UICONTROL **Payload**] ed eseguire il drilling verso il basso fino alla variabile desiderata. Quindi fare clic con il pulsante destro del mouse e selezionare &quot;Copia percorso proprietà&quot;. Di seguito è riportato un esempio per l’altezza del riquadro di visualizzazione del browser:
+   > ![Percorso XDM per inoltro eventi](assets/event-forwarding-xdm-path.png)
 
 ### Installare l’estensione Adobe Cloud Connector
 
@@ -209,7 +214,7 @@ Esistono alcune differenze principali tra la configurazione delle regole in una 
    * **Tag**: tutte le regole vengono attivate da un evento che deve essere specificato nella regola, ad esempio, `Library Loaded - Page Top`. Le condizioni sono facoltative.
    * **Inoltro eventi**: si presume che ogni evento inviato a Platform Edge Network sia un trigger per l’inoltro di dati. Pertanto, non vi sono [!UICONTROL Eventi] che deve essere selezionato nelle regole di inoltro degli eventi. Per gestire gli eventi che attivano una regola di inoltro degli eventi, è necessario configurare le condizioni.
 
-* **Tokenizzazione dell&#39;elemento dati**:
+* **Tokenizzazione degli elementi dati**:
 
    * **Tag**: i nomi degli elementi dati sono tokenizzati con un simbolo `%` all&#39;inizio e alla fine del nome dell&#39;elemento dati quando viene utilizzato in una regola. Ad esempio, `%viewportHeight%`.
 
@@ -278,7 +283,7 @@ Crea una libreria e crea tutte le modifiche nell’ambiente di sviluppo per l’
 
 >[!NOTE]
 >
-Se non hai collegato le proprietà di inoltro degli eventi di staging e produzione allo stream di dati, vedrai l’ambiente di sviluppo come unica opzione per generare una libreria in.
+>Se non hai collegato le proprietà di inoltro degli eventi di staging e produzione allo stream di dati, vedrai l’ambiente di sviluppo come unica opzione per generare una libreria in.
 
 ![Salva regola di inoltro degli eventi](assets/event-forwarding-initial-build.png)
 
@@ -321,4 +326,4 @@ Congratulazioni! Hai configurato l’inoltro degli eventi.
 
 >[!NOTE]
 >
-Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

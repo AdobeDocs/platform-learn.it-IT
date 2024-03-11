@@ -2,9 +2,9 @@
 title: Configurare il consenso con Platform Web SDK
 description: Scopri come configurare le impostazioni di privacy dell’estensione tag Experienci Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Consent
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1602'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Prima di passare alle configurazioni di tag, scopri di più sulla piattaforma di
 >La best practice per implementare una piattaforma di gestione dei consensi è in genere quella di caricare la CMP _prima di_ caricamento del gestore di tag. Per facilitare questa esercitazione, verrà caricata la CMP _con_ il gestore di tag. Questa lezione è progettata per mostrare come utilizzare le funzioni di consenso in Platform Web SDK e non deve essere utilizzata come guida per configurare correttamente Klaro o qualsiasi altra CMP.
 
 
-Ora, una volta completate le configurazioni di Klaro, crea una regola di tag con le seguenti configurazioni:
+Ora, una volta completate le configurazioni di Klaro, crea regole tag con le seguenti configurazioni:
 
 * [!UICONTROL Nome]: `all pages - library load - Klaro`
 * [!UICONTROL Evento]: [!UICONTROL Library Loaded (Page Top)] con [!UICONTROL Opzioni avanzate] > [!UICONTROL Ordine] impostato su 1

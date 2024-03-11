@@ -3,20 +3,25 @@ title: Configurare Adobe Analytics utilizzando Experienci Platform Web SDK
 description: Scopri come configurare Adobe Analytics utilizzando Experienci Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '3545'
-ht-degree: 2%
+source-wordcount: '3473'
+ht-degree: 0%
 
 ---
 
 # Configurare Adobe Analytics con Platform Web SDK
 
+
+>[!CAUTION]
+>
+>Prevediamo di pubblicare modifiche principali a questo tutorial venerdì 15 marzo 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
+
 Scopri come configurare Adobe Analytics utilizzando [Experienci Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html), crea regole di tag per inviare dati ad Adobe Analytics e verifica che Analytics stia acquisendo i dati come previsto.
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=it) è un&#39;applicazione leader di settore che ti consente di comprendere i tuoi clienti come persone e gestire la tua attività grazie alle informazioni sul cliente.
 
-## Finalità di apprendimento
+## Obiettivi di apprendimento
 
 Alla fine di questa lezione, potrai:
 
@@ -91,7 +96,7 @@ Lo schema creato in [Configurare uno schema](configure-schemas.md) La lezione co
 
 Platform Web SDK invia i dati dal sito web a Platform Edge Network. Lo stream di dati indica quindi a Platform Edge Network dove inoltrare tali dati, in questo caso, quale delle suite di rapporti di Adobe Analytics.
 
-1. Vai a [Raccolta dati](https://experience.adobe.com/it#/data-collection){target="blank"} Interfaccia
+1. Vai a [Raccolta dati](https://experience.adobe.com/#/data-collection){target="blank"} Interfaccia
 1. Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Flussi di dati]**
 1. Seleziona il creato in precedenza `Luma Web SDK` flusso di dati
 
@@ -263,8 +268,8 @@ Puoi eseguire il mapping a singole variabili per acquisire dati sulla pagina dei
 1. Seleziona per aprire **[!UICONTROL Elemento 1]**
 1. Mappa le seguenti variabili XDM su elementi dati
 
-   * **`productListItems.item1.SKU`** in `%product.productInfo.sku%`
-   * **`productListItems.item1.name`** in `%product.productInfo.title%`
+   * **`productListItems.item1.SKU`** a `%product.productInfo.sku%`
+   * **`productListItems.item1.name`** a `%product.productInfo.title%`
 
    ![Variabile oggetto XDM SKU del prodotto](assets/data-element-xdm-productlistitem-sku.png)
 
@@ -554,7 +559,7 @@ In questo esercizio, mappi una variabile XDM a una proprietà in modo da poterla
 
 1. Ripeti i passaggi di convalida e osserva che i rapporti in tempo reale compilano i dati di conseguenza.
 
-   **Page Views**
+   **Visualizzazioni pagina**
    ![Contenuti in tempo reale](assets/analytics-real-time-content.png)
 
    **Visualizzazioni prodotto**
