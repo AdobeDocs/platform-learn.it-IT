@@ -2,9 +2,9 @@
 title: Creare regole di tag
 description: Scopri come inviare un evento a Platform Edge Network con il tuo oggetto XDM utilizzando una regola di tag. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Tags
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
 workflow-type: tm+mt
-source-wordcount: '2009'
+source-wordcount: '2025'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,9 @@ Scopri come inviare eventi a Platform Edge Network con l’oggetto XDM utilizzan
 Alla fine di questa lezione, sarai in grado di:
 
 * Utilizza una convenzione di denominazione per gestire le regole all’interno dei tag
-* Inviare un evento XDM utilizzando i tipi di azione Aggiorna variabile e Invia evento in una regola di tag
+* Inviare un evento con campi XDM utilizzando le azioni Aggiorna variabile e Invia evento
+* Sovrapponi più set di campi XDM in più regole
+* Mappare singoli o interi elementi di dati array all’oggetto XDM
 * Pubblicare una regola di tag in una libreria di sviluppo
 
 
