@@ -5,12 +5,12 @@ jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-feature: Profiles, Segments, Integrations, Destinations
+feature: Profiles, Audiences, Integrations, Destinations
 exl-id: 4500dc9b-cc1a-4de8-aa39-7d4e849d65c4
-source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
+source-git-commit: 0474808b42925bf95529e10a42a0563f0ecc43b8
 workflow-type: tm+mt
 source-wordcount: '215'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 ## Prerequisiti
 
 - Accesso a Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Accesso alla raccolta dati di Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Accesso alla raccolta dati di Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/)
 - Accesso al sito web della demo
 
 >[!IMPORTANT]
@@ -38,16 +38,16 @@ In questo esercizio seguirai uno script e percorrerai il sito Web.
 
 In questo esercizio, accederai a Adobe Experience Platform e visualizzerai il tuo Real-time Customer Profile nell’interfaccia utente di.
 
-[1.3 Creare un segmento - Interfaccia utente](./ex3.md)
+[1.3 Creare un pubblico - Interfaccia utente](./ex3.md)
 
-In questo esercizio creerai un segmento utilizzando il Generatore di segmenti di Adobe Experience Platform.
+In questo esercizio creerai un pubblico utilizzando Audience Builder di Adobe Experience Platform.
 
-[1.4 Intervenire: inviare il segmento ad Adobe Target](./ex4.md)
+[1.4 Intervenire: inviare il pubblico ad Adobe Target](./ex4.md)
 
-Utilizza il segmento creato nell&#39;esercizio 1.1 per configurare un&#39;attività Targeting esperienze in Adobe Target.
+Utilizza il pubblico creato nell&#39;esercizio 1.1 per configurare un&#39;attività Targeting esperienze in Adobe Target.
 
-[1.5 Intervenire: inviare il segmento a Facebook](./ex5.md)
+[1.5 Intervenire: inviare il pubblico a Facebook](./ex5.md)
 
-Collega il segmento generato nell’esercizio 1.1 al Facebook di destinazione.
+Connetti il pubblico creato nell’esercizio 1.1 al Facebook di destinazione.
 
 [Torna a tutti i moduli](../../overview.md)
