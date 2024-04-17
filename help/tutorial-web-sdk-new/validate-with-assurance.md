@@ -2,9 +2,10 @@
 title: Convalidare le implementazioni dell’SDK web con Experienci Platform Assurance
 description: Scopri come convalidare l’implementazione di Platform Web SDK con Adobe Experience Platform Assurance. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Assurance
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
+source-git-commit: 5e778dde1698110fade7163ed2585f059c27274c
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '595'
 ht-degree: 2%
 
 ---
@@ -19,7 +20,7 @@ Adobe Experience Platform Assurance è un prodotto di Adobe Experience Cloud che
 Alla fine di questa lezione, potrai:
 
 * Avviare una sessione Assurance
-* Visualizzare le richieste inviate a e da Platform Edge Network
+* Edge Network di visualizzazione delle richieste inviate a e da Platform
 
 ## Prerequisiti
 
@@ -31,7 +32,7 @@ Conosci i tag di raccolta dati e la [Sito di dimostrazione Luma](https://luma.en
 * [Estensione Web SDK installata nella proprietà tag](install-web-sdk.md)
 * [Creare elementi dati](create-data-elements.md)
 * [Creare identità](create-identities.md)
-* [Creare regole di tag](create-tag-rule.md)
+* [Creare una regola di tag](create-tag-rule.md)
 * [Convalida con Debugger](validate-with-debugger.md)
 
 
