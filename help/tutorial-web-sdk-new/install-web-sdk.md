@@ -2,7 +2,8 @@
 title: Installare e configurare l’estensione tag di Adobe Experience Platform Web SDK
 description: Scopri come installare e configurare l’estensione tag Platform Web SDK nell’interfaccia di Data Collection. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+exl-id: 7dedf9ea-eeda-4738-9633-b5a5a5f5f9ae
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 12%
@@ -53,7 +54,7 @@ Una volta create le proprietà dello schema XDM, dello stream di dati e dei tag,
 1. Cerca `Adobe Experience Platform Web SDK`
 1. Seleziona **[!UICONTROL Installa]**
 
-   ![Installare l’estensione Web SDK](assets/extension-platform-web-sdk.jpg)
+   ![Installare l’estensione Web SDK](assets/extension-platform-web-sdk.png)
 
 
 ## Collegare l’SDK per web di Platform allo stream di dati

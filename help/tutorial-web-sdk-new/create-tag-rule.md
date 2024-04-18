@@ -1,8 +1,9 @@
 ---
 title: Creare regole di tag
-description: Scopri come inviare un evento a Platform Edge Network con il tuo oggetto XDM utilizzando una regola di tag. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
+description: Scopri come inviare un evento all’Edge Network di Platform con l’oggetto XDM utilizzando una regola di tag. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Tags
-source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
+exl-id: c77ab8a1-922b-481e-b3cb-d2c5ca7bb8cb
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '2025'
 ht-degree: 1%
@@ -11,7 +12,7 @@ ht-degree: 1%
 
 # Creare regole di tag
 
-Scopri come inviare eventi a Platform Edge Network con l’oggetto XDM utilizzando le regole di tag. Una regola di tag è una combinazione di eventi, condizioni e azioni che indica alla proprietà tag di eseguire un&#39;operazione. Con Platform Web SDK, le regole vengono utilizzate per inviare eventi a Platform Edge Network con i campi XDM corretti.
+Scopri come inviare eventi all’Edge Network Platform con l’oggetto XDM utilizzando le regole di tag. Una regola di tag è una combinazione di eventi, condizioni e azioni che indica alla proprietà tag di eseguire un&#39;operazione. Con Platform Web SDK, le regole vengono utilizzate per inviare eventi all’Edge Network di Platform con i campi XDM corretti.
 
 >[!NOTE]
 >
@@ -68,7 +69,7 @@ Nel resto di questa lezione:
 
 1. Crea regole aggiuntive che sovrascrivono la &quot;configurazione globale&quot; di o contribuiscono ad altri campi XDM (utilizzando [!UICONTROL Aggiorna variabile] ) che sono pertinenti solo in determinate condizioni (ad esempio, l’aggiunta di dettagli di prodotto nelle pagine dei prodotti).
 
-1. Crea un&#39;altra regola con **[!UICONTROL Invia evento]** azione che invia l&#39;oggetto XDM completo a Adobe Experience Platform Edge Network.
+1. Crea un&#39;altra regola con **[!UICONTROL Invia evento]** azione che invia l’oggetto XDM completo all’Edge Network di Adobe Experience Platform.
 
 Tutte queste regole saranno sequenziate correttamente utilizzando il comando &quot;[!UICONTROL ordine]&quot;.
 
@@ -105,7 +106,7 @@ Per creare regole di tag per i campi XDM globali:
    > Minore è il numero d&#39;ordine, prima viene eseguito. Pertanto, alla nostra &quot;configurazione globale&quot; viene assegnato un numero d&#39;ordine basso.
 
 1. Seleziona **[!UICONTROL Mantieni modifiche]** per tornare alla schermata principale delle regole
-   ![Seleziona attivatore caricato dalla libreria](assets/create-tag-rule-trigger-bottom.png)
+   ![Seleziona attivatore caricato dalla libreria](assets/create-tag-rule-trigger-loaded.png)
 
 1. In **[!UICONTROL Azioni]** sezione, seleziona **[!UICONTROL Aggiungi]**
 
@@ -167,7 +168,7 @@ Ora mappa il tuo [!UICONTROL elementi dati] al [!UICONTROL schema] utilizzato da
 
 #### Campi pagina prodotto
 
-Ora, inizia a utilizzare **[!UICONTROL Aggiorna variabile]** in regole aggiuntive in sequenza per arricchire l’oggetto XDM prima di inviarlo a [!UICONTROL Rete Edge di Platform].
+Ora, inizia a utilizzare **[!UICONTROL Aggiorna variabile]** in regole aggiuntive in sequenza per arricchire l’oggetto XDM prima di inviarlo a [!UICONTROL Edge Network piattaforma].
 
 >[!TIP]
 >
@@ -339,7 +340,7 @@ Al termine dell’operazione, dovresti vedere che sono state create le seguenti 
 
 ### Invia regola evento
 
-Dopo aver impostato le variabili, puoi creare la regola per inviare l’oggetto XDM completo a Platform Edge Network con **[!UICONTROL Invia evento]** azione.
+Dopo aver impostato le variabili, puoi creare la regola per inviare l’oggetto XDM completo all’Edge Network di Platform con **[!UICONTROL Invia evento]** azione.
 
 1. A destra, seleziona **[!UICONTROL Aggiungi regola]** per creare un&#39;altra regola
 
@@ -352,7 +353,7 @@ Dopo aver impostato le variabili, puoi creare la regola per inviare l’oggetto 
 1. Seleziona **[!UICONTROL Avanzate]** a discesa e immettere `50` in **[!UICONTROL Ordine]**. In questo modo la seconda regola verrà attivata dopo la prima regola impostata per l’attivazione come `1`.
 
 1. Seleziona **[!UICONTROL Mantieni modifiche]** per tornare alla schermata principale delle regole
-   ![Seleziona attivatore caricato dalla libreria](assets/create-tag-rule-trigger-bottom-send.png)
+   ![Seleziona attivatore caricato dalla libreria](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. In **[!UICONTROL Azioni]** sezione, seleziona **[!UICONTROL Aggiungi]**
 

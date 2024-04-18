@@ -3,9 +3,9 @@ title: Convalidare le implementazioni dell’SDK web con Experienci Platform Ass
 description: Scopri come convalidare l’implementazione di Platform Web SDK con Adobe Experience Platform Assurance. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 5e778dde1698110fade7163ed2585f059c27274c
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '607'
 ht-degree: 2%
 
 ---
@@ -61,13 +61,16 @@ Rivedi come abbiamo fatto questo nella lezione di Debugger:
 1. Apri [Interfaccia di Data Collection](https://experience.adobe.com/#/data-collection/home){target="_blank"}
 1. Seleziona Assurance nel menu di navigazione a sinistra
 1. Seleziona Crea sessione
+   ![Creare una sessione Assurance](assets/assurance-create-session.png)
 1. Seleziona Inizio
 1. Assegna un nome alla sessione, ad esempio: `Luma Web SDK validation`
 1. Come **[!UICONTROL URL di base]** Invio `https://luma.enablementadobe.com/`
+   ![Assegnare un nome alla sessione Assurance](assets/assurance-name-session.png)
 1. Nella schermata successiva, seleziona **[!UICONTROL Copia collegamento]**
 1. Seleziona l’icona per copiare il collegamento negli Appunti
 1. Incolla l’URL nel browser, che aprirà il sito web Luma con uno speciale parametro URL `adb_validation_sessionid` e avvia la sessione
 1. Nell’interfaccia Assurance viene visualizzato un messaggio che indica che la connessione alla sessione è avvenuta correttamente e nell’interfaccia Assurance vengono visualizzati gli eventi.
+   ![La sessione di verifica è connessa](assets/assurance-success.png)
 
 ## Convalidare lo stato corrente dell’implementazione dell’SDK web
 

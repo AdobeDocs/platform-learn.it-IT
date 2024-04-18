@@ -2,7 +2,8 @@
 title: Creare identità
 description: Scopri come creare identità in XDM e utilizzare l’elemento dati Identity Map per acquisire gli ID utente. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 1%
@@ -47,7 +48,7 @@ Il [ID Experience Cloud (ECID)](https://experienceleague.adobe.com/docs/experien
 
 Ulteriori informazioni su come [Gli ECID vengono tracciati utilizzando Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en).
 
-Gli ECID vengono impostati utilizzando una combinazione di cookie di prime parti e Platform Edge Network. Per impostazione predefinita, i cookie di prime parti sono impostati dall’SDK per web. Per tenere conto delle restrizioni del browser sulla durata dei cookie, puoi scegliere di impostare e gestire i cookie di prime parti. Questi sono denominati ID dispositivo di prime parti (FPID, first party device ID).
+Gli ECID vengono impostati utilizzando una combinazione di cookie di prime parti e Edge Network di Platform. Per impostazione predefinita, i cookie di prime parti sono impostati lato client dall’SDK web. Per tenere conto delle restrizioni del browser sulla durata dei cookie, puoi scegliere di impostare cookie di prima parte lato server. Questi sono denominati ID dispositivo di prime parti (FPID, first party device ID).
 
 >[!IMPORTANT]
 >
@@ -57,7 +58,7 @@ Gli ECID vengono impostati utilizzando una combinazione di cookie di prime parti
 
 Gli FPID sono cookie di prime parti _si imposta utilizzando i propri server web_ L’Adobe utilizza quindi per creare l’ECID, invece di utilizzare il cookie di prime parti impostato dall’SDK web. Anche se il supporto del browser può variare, i cookie di prime parti tendono a essere più duraturi quando sono impostati da un server che sfrutta un record A DNS (per IPv4) o AAAA (per IPv6), rispetto a quando sono impostati da un CNAME DNS o da un codice JavaScript.
 
-Una volta impostato un cookie FPID, il relativo valore può essere recuperato e inviato all’Adobe durante la raccolta dei dati dell’evento. Gli FPID raccolti vengono utilizzati come seed per generare ECID su Platform Edge Network, che continuano a essere gli identificatori predefiniti nelle applicazioni Adobe Experience Cloud.
+Una volta impostato un cookie FPID, il relativo valore può essere recuperato e inviato all’Adobe durante la raccolta dei dati dell’evento. Gli FPID raccolti vengono utilizzati come seed per generare ECID sull’Edge Network di Platform, che continuano a essere gli identificatori predefiniti nelle applicazioni Adobe Experience Cloud.
 
 Anche se gli FPID non vengono utilizzati in questa esercitazione, si consiglia di utilizzarli nella propria implementazione dell’SDK per web. Ulteriori informazioni su [ID dispositivo di prime parti nell’SDK per web di Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=it)
 
@@ -147,7 +148,7 @@ Al termine di questi passaggi, dovresti aver creato i seguenti elementi di dati:
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 
-Una volta impostati questi elementi dati, puoi iniziare a inviare dati a Platform Edge Network tramite l’oggetto XDM creando una regola nei tag.
+Una volta impostati questi elementi dati, puoi iniziare a inviare dati all’Edge Network di Platform tramite l’oggetto XDM creando una regola nei tag.
 
 [Successivo: ](create-tag-rule.md)
 
