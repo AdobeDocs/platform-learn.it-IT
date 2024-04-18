@@ -3,7 +3,7 @@ title: Conclusione e prossime tappe
 description: Cosa fare dopo aver completato l’esercitazione
 recommendations: display,noCatalog
 exl-id: bb0ef04d-fd01-4c24-8670-a84a9e33f1b6
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->Prevediamo di pubblicare modifiche principali a questo tutorial venerdì 15 marzo 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
+>Prevediamo di pubblicare modifiche principali a questo tutorial martedì 23 aprile 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
 
 Congratulazioni! Hai completato l’esercitazione &quot;Implementare Adobe Experience Cloud con Web SDK&quot;.
 
@@ -24,14 +24,14 @@ Esaminiamo rapidamente tutto ciò che hai realizzato. Hai:
 * È stato creato uno schema utilizzando gruppi di campi standard e personalizzati.
 * Configurato un flusso di dati.
 * Creare una proprietà tag.
-* Campi acquisiti da un livello di dati, trasformati in XDM e inviati a Platform Edge Network.
+* Campi acquisiti da un livello di dati, trasformati in XDM e inviati all’Edge Network di Platform.
 * Consenso acquisito e identità autenticate.
 * L’implementazione dell’SDK web è stata connessa ai seguenti Experienci Cloud di applicazioni:
    * Adobe Experience Platform
    * Adobe Analytics
    * Adobe Audience Manager
    * Adobe Target
-* Utilizzava l’inoltro di eventi per inviare dati da Platform Edge Network a un hook web.
+* Utilizzava l’inoltro di eventi per inviare dati dall’Edge Network di Platform a un hook web.
 * L’implementazione è stata convalidata tramite Adobi Experience Platform Debugger.
 
 Sei pronto per iniziare la fase successiva del percorso, implementando Adobe Experience Cloud nel tuo sito Web.

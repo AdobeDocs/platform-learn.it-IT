@@ -1,9 +1,9 @@
 ---
 title: Creare una regola di tag
-description: Scopri come inviare un evento a Platform Edge Network con il tuo oggetto XDM utilizzando una regola di tag. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
+description: Scopri come inviare un evento all’Edge Network di Platform con l’oggetto XDM utilizzando una regola di tag. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 3%
@@ -15,9 +15,9 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->Prevediamo di pubblicare modifiche principali a questo tutorial venerdì 15 marzo 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
+>Prevediamo di pubblicare modifiche principali a questo tutorial martedì 23 aprile 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
 
-Scopri come inviare un evento a Platform Edge Network con il tuo oggetto XDM utilizzando una regola di tag. Una regola di tag è una combinazione di eventi, condizioni e azioni che indica alla proprietà tag di eseguire un&#39;operazione.
+Scopri come inviare un evento all’Edge Network di Platform con l’oggetto XDM utilizzando una regola di tag. Una regola di tag è una combinazione di eventi, condizioni e azioni che indica alla proprietà tag di eseguire un&#39;operazione.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ dove;
 
 ## Crea regola di tag
 
-Nei tag, le regole vengono utilizzate per eseguire azioni (chiamate di attivazione) in varie condizioni. Questa prima regola verrà utilizzata per inviare l’oggetto XDM alla rete Edge utilizzando l’SDK per web [!UICONTROL Invia evento] azione. Più avanti in questo tutorial, invierai diverse versioni dell’oggetto XDM in base al tipo di pagina su cui si trova il visitatore. Per questo motivo, utilizzerai le condizioni della regola per escludere questi altri tipi di pagine.
+Nei tag, le regole vengono utilizzate per eseguire azioni (chiamate di attivazione) in varie condizioni. Questa prima regola verrà utilizzata per inviare l’oggetto XDM all’Edge Network utilizzando l’ di Web SDK [!UICONTROL Invia evento] azione. Più avanti in questo tutorial, invierai diverse versioni dell’oggetto XDM in base al tipo di pagina su cui si trova il visitatore. Per questo motivo, utilizzerai le condizioni della regola per escludere questi altri tipi di pagine.
 
 Per creare una regola di tag:
 

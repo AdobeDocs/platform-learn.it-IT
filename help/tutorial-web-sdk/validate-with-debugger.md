@@ -3,7 +3,7 @@ title: Convalidare le implementazioni Web SDK con Experienci Platform Debugger
 description: Scopri come convalidare l’implementazione di Platform Web SDK con l’Adobe Experience Platform Debugger. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->Prevediamo di pubblicare modifiche principali a questo tutorial venerdì 15 marzo 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
+>Prevediamo di pubblicare modifiche principali a questo tutorial martedì 23 aprile 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
 
 Scopri come convalidare l’implementazione di Platform Web SDK con l’Adobe Experience Platform Debugger.
 
@@ -87,7 +87,7 @@ Continuando l’esercitazione, utilizzerai questa tecnica per mappare il sito Lu
 
 ## Convalidare l’implementazione in Experienci Platform Debugger
 
-Puoi utilizzare il debugger per convalidare l’implementazione di Platform Web SDK e visualizzare i dati inviati a Platform Edge Network:
+Puoi utilizzare il debugger per convalidare l’implementazione dell’SDK web per Platform e visualizzare i dati inviati a Platform, ad Edge Network:
 
 1. Vai a **[!UICONTROL Riepilogo]** nel menu di navigazione a sinistra, per visualizzare i dettagli della proprietà tag
 

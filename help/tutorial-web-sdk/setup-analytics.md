@@ -3,7 +3,7 @@ title: Configurare Adobe Analytics utilizzando Experienci Platform Web SDK
 description: Scopri come configurare Adobe Analytics utilizzando Experienci Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '3473'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Prevediamo di pubblicare modifiche principali a questo tutorial venerdì 15 marzo 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
+>Prevediamo di pubblicare modifiche principali a questo tutorial martedì 23 aprile 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
 
 Scopri come configurare Adobe Analytics utilizzando [Experienci Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html), crea regole di tag per inviare dati ad Adobe Analytics e verifica che Analytics stia acquisendo i dati come previsto.
 
@@ -94,7 +94,7 @@ Lo schema creato in [Configurare uno schema](configure-schemas.md) La lezione co
 
 ## Configurare lo stream di dati
 
-Platform Web SDK invia i dati dal sito web a Platform Edge Network. Lo stream di dati indica quindi a Platform Edge Network dove inoltrare tali dati, in questo caso, quale delle suite di rapporti di Adobe Analytics.
+Platform Web SDK invia i dati dal sito web all’Edge Network di Platform. Lo stream di dati indica quindi all’Edge Network di Platform dove inoltrare tali dati, in questo caso, quale delle suite di rapporti di Adobe Analytics.
 
 1. Vai a [Raccolta dati](https://experience.adobe.com/#/data-collection){target="blank"} Interfaccia
 1. Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Flussi di dati]**
@@ -121,7 +121,7 @@ Platform Web SDK invia i dati dal sito web a Platform Edge Network. Lo stream di
 
 ## Creare elementi di dati aggiuntivi
 
-Quindi, acquisisci dati aggiuntivi dal livello dati Luma e inviali alla rete Edge di Platform. Mentre la lezione si concentra sui requisiti comuni di Adobe Analytics, tutti i dati acquisiti possono essere facilmente inviati ad altre destinazioni in base alla configurazione dello stream di dati. Ad esempio, se hai completato la lezione di Adobe Experience Platform, i dati aggiuntivi acquisiti in questa lezione vengono inviati anche a Platform.
+Quindi, acquisisci dati aggiuntivi dal livello dati Luma e inviali all’Edge Network della piattaforma. Mentre la lezione si concentra sui requisiti comuni di Adobe Analytics, tutti i dati acquisiti possono essere facilmente inviati ad altre destinazioni in base alla configurazione dello stream di dati. Ad esempio, se hai completato la lezione di Adobe Experience Platform, i dati aggiuntivi acquisiti in questa lezione vengono inviati anche a Platform.
 
 ### Creare elementi di dati di e-commerce
 
@@ -233,7 +233,7 @@ Prima di eseguire il mapping alla stringa di prodotto, è importante comprendere
 1. Il `commerce` set di oggetti eventi di Analytics come `prodView`, `scView`, e `purchase`
 1. Il `productListItems` oggetti imposta dimensioni di Analytics quali `productID`.
 
-Consulta [Raccogliere dati su prodotti e commerce](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en) per ulteriori dettagli.
+Consulta [Raccogliere dati di Commerce e prodotti](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en) per ulteriori dettagli.
 
 È anche importante capire che è possibile **[!UICONTROL fornire attributi individuali]** ai singoli campi XDM o **[!UICONTROL fornire un intero array]** a un oggetto XDM.
 
@@ -439,7 +439,7 @@ Aggiungi nuovi elementi dati e regole al tuo `Luma Web SDK Tutorial` libreria di
 
 In [Debugger](validate-with-debugger.md) lezione, hai imparato a ispezionare il beacon dell’oggetto XDM lato client con Platform Debugger e la console per sviluppatori del browser, in modo simile a come si esegue il debug di un `AppMeasurement.js` Implementazione di Analytics. Per verificare che Analytics acquisisca correttamente i dati tramite Platform Web SDK, devi effettuare due passaggi ulteriori:
 
-1. Convalida il modo in cui i dati vengono elaborati dall’oggetto XDM sulla rete Edge di Platform, utilizzando la funzione Edge Trace di Experienci Platform Debugger
+1. Convalida il modo in cui i dati vengono elaborati dall’oggetto XDM nell’Edge Network di Platform, utilizzando la funzione Edge Trace di Experienci Platform Debugger
 1. Convalida il modo in cui i dati vengono elaborati da Analytics utilizzando le Regole di elaborazione e i rapporti in tempo reale.
 
 ### Usa traccia spigoli
@@ -496,7 +496,7 @@ Utilizza lo stesso beacon per verificare che le visualizzazioni della pagina di 
 
 ### Stringa di prodotto ed eventi di e-commerce
 
-Poiché ti trovi già in una pagina di prodotto, questo esercizio continua a utilizzare la stessa traccia Edge per convalidare i dati del prodotto acquisiti da Analytics. Sia la stringa di prodotto che gli eventi di e-commerce vengono mappati automaticamente le variabili XDM su Analytics. Se hai mappato al corretto `productListItem` Variabile XDM durante [configurazione di uno schema XDM per Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics), Platform Edge Network si occupa della mappatura dei dati sulle variabili di analisi appropriate.
+Poiché ti trovi già in una pagina di prodotto, questo esercizio continua a utilizzare la stessa traccia Edge per convalidare i dati del prodotto acquisiti da Analytics. Sia la stringa di prodotto che gli eventi di e-commerce vengono mappati automaticamente le variabili XDM su Analytics. Se hai mappato al corretto `productListItem` Variabile XDM durante [configurazione di uno schema XDM per Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics), l’Edge Network di Platform si occupa della mappatura dei dati sulle variabili di analisi appropriate.
 
 1. Verifica innanzitutto che il `Product String` è impostato
 1. Cerca `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]`. La variabile acquisisce il valore dell&#39;elemento dati mappato al `productListItems.item1.sku` all&#39;inizio di questa lezione

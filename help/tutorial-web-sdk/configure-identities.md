@@ -3,7 +3,7 @@ title: Configurare uno spazio dei nomi delle identità
 description: Scopri come configurare gli spazi dei nomi delle identità da utilizzare con Adobe Experience Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->Prevediamo di pubblicare modifiche principali a questo tutorial venerdì 15 marzo 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
+>Prevediamo di pubblicare modifiche principali a questo tutorial martedì 23 aprile 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
 
 Scopri come configurare gli spazi dei nomi delle identità da utilizzare con Adobe Experience Platform Web SDK.
 
@@ -90,7 +90,7 @@ Ora crea uno spazio dei nomi per l’ID CRM Luma:
 
 >[!INFO]
 >
-> In [Creare elementi dati](create-data-elements.md) lezione, scoprirai come utilizzare questo spazio dei nomi quando invii identità a Platform Edge Network.
+> In [Creare elementi dati](create-data-elements.md) lezione, scoprirai come utilizzare questo spazio dei nomi quando invii identità all’Edge Network di Platform.
 
 ## Creare lo spazio dei nomi delle identità nella sandbox di produzione
 
