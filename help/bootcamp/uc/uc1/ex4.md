@@ -1,21 +1,21 @@
 ---
-title: Bootcamp - Real-time CDP - Creare un pubblico e intervenire - Inviare il pubblico ad Adobe Target
-description: Bootcamp - Real-time CDP - Creare un pubblico e intervenire - Inviare il pubblico ad Adobe Target
+title: Bootcamp - Real-time CDP - Creare un segmento e intervenire - Inviare il segmento ad Adobe Target
+description: Bootcamp - Real-time CDP - Creare un segmento e intervenire - Inviare il segmento ad Adobe Target
 jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 solution: Experience Platform, Target
-feature: Audiences, Integrations
+feature: Segments, Integrations
 exl-id: 6a76c2ab-96b7-4626-a6d3-afd555220b1e
-source-git-commit: 9d12b3e3ad2238cf79aca3d9723e7e60d72e765c
+source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 1%
 
 ---
 
-# 1.4 Intervenire: inviare il pubblico ad Adobe Target
+# 1.4 Intervenire: inviare il segmento ad Adobe Target
 
 Vai a [Adobe Experience Platform](https://experience.adobe.com/platform). Dopo aver effettuato l’accesso, accedi alla home page di Adobe Experience Platform.
 
@@ -25,11 +25,11 @@ Prima di continuare, è necessario selezionare una **sandbox**. La sandbox da se
 
 ![Acquisizione dei dati](./images/sb1.png)
 
-## 1.4.1 Attiva il pubblico nella destinazione Adobe Target
+## 1.4.1 Attiva il segmento nella destinazione Adobe Target
 
 Adobe Target è disponibile come destinazione da Real-Time CDP. Per configurare la tua integrazione con Adobe Target, vai a **Destinazioni**, a **Catalogo**.
 
-Clic **Personalizzazione** nel **Categorie** menu. Vedrai quindi il **Adobe Target** scheda di destinazione. Clic **Attiva tipi di pubblico**.
+Clic **Personalizzazione** nel **Categorie** menu. Vedrai quindi il **Adobe Target** scheda di destinazione. Clic **Attivare segmenti**.
 
 ![A](./images/atdest1.png)
 
@@ -37,7 +37,7 @@ Seleziona la destinazione ``Bootcamp Target`` e fai clic su **Successivo**.
 
 ![A](./images/atdest3.png)
 
-Nell’elenco dei tipi di pubblico disponibili, seleziona il pubblico creato in [1.3 Creare un pubblico](./ex3.md), che è denominato `yourLastName - Interest in Real-Time CDP`. Quindi, fai clic su **Successivo**.
+Nell’elenco dei segmenti disponibili, seleziona il segmento creato in [1.3 Creare un segmento](./ex3.md), che è denominato `yourLastName - Interest in Real-Time CDP`. Quindi, fai clic su **Successivo**.
 
 ![A](./images/atdest8.png)
 
@@ -49,17 +49,17 @@ Fai clic su **Fine**.
 
 ![A](./images/atdest10.png)
 
-Il pubblico è ora attivato nei confronti di Adobe Target.
+Il segmento è ora attivato verso Adobe Target.
 
 ![A](./images/atdest11.png)
 
 >[!IMPORTANT]
 >
->Quando hai appena creato la destinazione Adobe Target in Real-Time CDP, la pubblicazione della destinazione potrebbe richiedere fino a un’ora. Si tratta di un tempo di attesa una tantum, dovuto alla configurazione del back-end. Al termine della configurazione del tempo di attesa iniziale di 1 ora e del back-end, i nuovi tipi di pubblico edge aggiunti, inviati alla destinazione Adobe Target, saranno disponibili per il targeting in tempo reale.
+>Quando hai appena creato la destinazione Adobe Target in Real-Time CDP, la pubblicazione della destinazione potrebbe richiedere fino a un’ora. Si tratta di un tempo di attesa una tantum, dovuto alla configurazione del back-end. Al termine della configurazione del tempo di attesa iniziale di 1 ora e del back-end, i nuovi segmenti edge aggiunti inviati alla destinazione Adobe Target saranno disponibili per il targeting in tempo reale.
 
 ## 1.4.2 Configurare l’attività basata su moduli di Adobe Target
 
-Ora che il pubblico di Real-Time CDP è configurato per essere inviato ad Adobe Target, puoi configurare la tua attività Targeting esperienza in Adobe Target. In questo esercizio configurerai un’attività basata sul Compositore esperienza visivo.
+Ora che il segmento di Real-Time CDP è configurato per essere inviato ad Adobe Target, puoi configurare l’attività Targeting esperienze in Adobe Target. In questo esercizio configurerai un’attività basata sul Compositore esperienza visivo.
 
 Vai alla home page di Adobe Experience Cloud da [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Clic **Target** per aprirlo.
 
@@ -98,11 +98,11 @@ Il pubblico predefinito è al momento **Tutti i visitatori**. Fai clic sul pulsa
 
 ![RTCDP](./images/atform3.png)
 
-Ora visualizzi l’elenco dei tipi di pubblico disponibili e il pubblico Adobe Experience Platform creato in precedenza e inviato ad Adobe Target ora fa parte di questo elenco. Seleziona il pubblico creato in precedenza in Adobe Experience Platform. Clic **Assegna pubblico**.
+Ora visualizzi l’elenco dei tipi di pubblico disponibili e il segmento Adobe Experience Platform creato in precedenza e inviato ad Adobe Target ora fa parte di questo elenco. Seleziona il segmento creato in precedenza in Adobe Experience Platform. Clic **Assegna pubblico**.
 
 ![RTCDP](./images/exclatvecchaud.png)
 
-Il pubblico di Adobe Experience Platform ora fa parte di questa attività Targeting esperienza.
+Il segmento Adobe Experience Platform ora fa parte di questa attività Targeting esperienza.
 
 ![RTCDP](./images/atform4.png)
 
@@ -170,7 +170,7 @@ Otterrai quindi una conferma visiva che l’attività è ora live.
 
 La tua attività è ora live e può essere testata sul sito web di bootcamp.
 
-Se ora torni al sito web della demo e visita la pagina del prodotto per **Real-Time CDP**, potrai quindi qualificarti immediatamente per il pubblico creato e vedere l’attività di Adobe Target visualizzata nella home page in tempo reale.
+Se ora torni al sito web della demo e visita la pagina del prodotto per **Real-Time CDP**, potrai quindi qualificarti immediatamente per il segmento creato e vedere l’attività Adobe Target visualizzata nella home page in tempo reale.
 
 >[!IMPORTANT]
 >
@@ -182,7 +182,7 @@ Se ora torni al sito web della demo e visita la pagina del prodotto per **Real-T
 
 ![RTCDP](./images/atform12a.png)
 
-Passaggio successivo: [1.5 Intervenire: inviare il pubblico a Facebook](./ex5.md)
+Passaggio successivo: [1.5 Intervenire: inviare il segmento a Facebook](./ex5.md)
 
 [Torna a Flusso utente 1](./uc1.md)
 

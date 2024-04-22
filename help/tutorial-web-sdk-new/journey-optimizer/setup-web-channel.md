@@ -1,20 +1,21 @@
 ---
-title: Configurare un canale web con Platform Web SDK
-description: Scopri come implementare il canale web utilizzando Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
+title: Configurare il canale web Journey Optimizer con Platform Web SDK
+description: Scopri come implementare il canale web Journey Optimizer utilizzando Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
-source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
+exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
+source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2587'
 ht-degree: 0%
 
 ---
 
 
-# Configurare un canale web con Platform Web SDK
+# Configurare il canale web Journey Optimizer
 
-Scopri come implementare il canale web utilizzando Platform Web SDK. Questa guida descrive i prerequisiti fondamentali per il canale web, i passaggi dettagliati per la configurazione e un approfondimento del caso d’uso incentrato sullo stato di fedeltà.
+Scopri come implementare il canale web Journey Optimizer utilizzando Platform Web SDK. Questa guida descrive i prerequisiti fondamentali per il canale web, i passaggi dettagliati per la configurazione e un approfondimento del caso d’uso incentrato sullo stato di fedeltà.
 
 Seguendo questa guida, gli utenti di Journey Optimizer sono in grado di applicare in modo efficace il canale web per la personalizzazione online avanzata utilizzando Journey Optimizer Web Designer.
 
@@ -48,7 +49,7 @@ Per completare le lezioni in questa sezione, devi prima:
 * Se utilizzi la funzione di sperimentazione dei contenuti, assicurati che il set di dati web sia incluso anche nella configurazione di reporting.
 * Attualmente, sono supportati due tipi di implementazioni per abilitare l’authoring e la distribuzione di campagne canale web sulle proprietà web:
    * Solo lato client: per modificare il sito web, è necessario implementare Adobe Experience Platform Web SDK.
-   * Modalità ibrida: puoi utilizzare l’API del server di rete Edge di Platform per richiedere la personalizzazione lato server. La risposta dell’API viene quindi fornita a Adobe Experience Platform Web SDK per il rendering delle modifiche sul lato client. Per ulteriori informazioni, consultare la documentazione relativa all&#39;API del server di rete Edge di Adobe Experience Platform. Ulteriori dettagli ed esempi di implementazione per la modalità ibrida sono disponibili in questo post di blog.
+   * Modalità ibrida: puoi utilizzare l’API del server Edge Network di Platform per richiedere la personalizzazione lato server. La risposta dell’API viene quindi fornita a Adobe Experience Platform Web SDK per il rendering delle modifiche sul lato client. Per ulteriori informazioni, consulta la documentazione sulle API di Adobe Experience Platform Edge Network Server. Ulteriori dettagli ed esempi di implementazione per la modalità ibrida sono disponibili in questo post di blog.
 
 >[!NOTE]
 >
@@ -124,9 +125,16 @@ Questo caso d’uso consente di comprendere meglio in che modo Journey Optimizer
 >
 >Poiché questo tutorial è destinato agli implementatori, vale la pena notare che questa lezione richiede un notevole lavoro sull’interfaccia in Journey Optimizer. Anche se tali attività di interfaccia vengono in genere gestite dagli esperti di marketing, può essere utile che i responsabili dell’implementazione possano acquisire informazioni approfondite sul processo, anche se alla fine non sono responsabili della creazione delle campagne per i canali web.
 
+### Creare uno schema Fedeltà e acquisire dati di esempio
+
+Quando i dati dell’SDK web vengono acquisiti in Adobe Experience Platform, possono essere arricchiti da tutti gli altri dati che hai acquisito. Quando un utente si autentica nel sito Luma e un’identità autenticata viene inviata a Platform che rappresenta un’identità nel sistema CRM di Luma. In Experienci Platform viene costruito un grafico delle identità e tutti gli altri set di dati abilitati per il profilo contenenti anche identità con `lumaCrmId` Lo spazio dei nomi può essere unito per creare profili cliente in tempo reale. Creeremo rapidamente un altro set di dati in Adobe Experience Platform con alcuni dati di fedeltà di esempio in modo da poter dimostrare come i Real-Time Customer Profile possono essere utilizzati nelle campagne web di Journey Optimizer. Poiché hai già fatto esercizi simili, le istruzioni saranno brevi.
+
+
+
+
 ### Crea campagna di premi fedeltà
 
-Iniziamo con la creazione della campagna per il canale web dei Premi fedeltà in Adobe Journey Optimizer.
+Ora che abbiamo acquisito i dati di fedeltà di esempio, possiamo creare la campagna per il canale web Loyalty Rewards in Adobe Journey Optimizer.
 
 Per creare la campagna di esempio:
 
@@ -297,7 +305,7 @@ Per iniziare la convalida tramite il debugger:
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. Puoi quindi accedere al sito con vari account fedeltà Luma e utilizzare il debugger per convalidare le richieste inviate alla rete Edge di Adobe Experience Platform.
+1. Puoi quindi accedere al sito con vari account fedeltà Luma e utilizzare il debugger per convalidare le richieste inviate all’Edge Network Adobe Experience Platform.
    <!--
     ![ADD SCREENSHOT](#)
     -->

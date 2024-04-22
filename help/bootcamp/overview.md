@@ -3,9 +3,9 @@ title: Bootcamp di Experience Makers
 description: Punto di partenza per i partecipanti al Bootcamp di Experience Makers
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: 7ee17ab7d847b82dc56c91f552d79b24649a8c6a
+source-git-commit: 3a16967ead0bf86daaf69cf920586318a5866492
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '716'
 ht-degree: 1%
 
 ---
@@ -20,55 +20,18 @@ Unisciti a questo campo di avvio per scoprire come un approccio basato su piatta
 
 La personalizzazione su larga scala inizia con la comprensione di cosa può essere migliorato e una visualizzazione in tempo reale del cliente è fondamentale a questo scopo. Le informazioni portano all’azione, che porta a ulteriori informazioni. L’approccio esclusivo di Adobe, incentrato sulla piattaforma, offre gli strumenti per favorire non solo il cambiamento tecnologico, ma anche l’impatto sulla tua organizzazione, sul tuo team e sulla tua capacità di fornire un’esperienza olistica al cliente invece di un’esperienza specifica per il canale.
 
+>[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
+
 ## Agenda
 
 ### Giorno 1
 
 
-9:30: Introduzione
-
-10:00: Sfida di lancio/introduzione e bootcamp
-
-11:00: 1-1 personalizzazione, caccia agli attriti, silos, POV Adobe (lavagna)
-
-12:00: Interrompi
-
-12:15: Suddivisione dell’architettura della soluzione (lavagna)
-
-13:00: Pranzo
-
-14:00: Flusso utente 1: procedura dettagliata di &quot;acquisizione&quot; e approfondimento pratico
-
-15:30: Interrompi
-
-16:00: Flusso di utenti 2 - Registrazione e onboarding
-
-17:30: Golfclinic e Borrel
-
-19:30: Cena
+10:00: Avvio 10:30: Dimostrazione di Percorso del cliente: Art of the possible 11:00: 1-1 personalizzazione, caccia all&#39;attrito, silos, POV Adobe (lavagna) 11:45: Interruzione 12:00: Suddivisione dell&#39;architettura della soluzione (lavagna) 13:00: Pranzo 14:00: Flusso di lavoro 1 Registrazione e onboarding - procedura dettagliata (perché-cosa-come) 15:30: Interruzione 16:00: Flusso d&#39;uso 2 Miscela fisica e digitale - procedura dettagliata e pratico / immersione profonda 18:00: Interruzione 18:30: Passeggiata al ristorante 19:00: Cena
 
 ### Giorno 2
 
-08:30: Sessione colazione: introduzione alla consegna basata sul Percorso di utenti, struttura del team, backlog di consegna
-
-09.45: Informazioni sui flussi di dati AEP attraverso scenari pratici
-
-10.15: Autorizzare la privacy: approfondimenti sulla governance dei dati con AEP
-
-10.45: Interruzione
-
-12:00: Flusso utente 3 &quot; Blending Physical &amp; digital&quot;
-
-12.30: Pranzo
-
-13.30: Customer Journey Analytics - approfondimento
-
-14.15: Esplorare le innovazioni più recenti intorno a GenAI per AEP e oltre
-
-14.45: Conversione e avvolgimento
-
-15:00: Bevande e aggiornamento
-
+08:00: Colazione 08:30: Introduzione a Consegna basata sul Percorso di utenti, Struttura del team, Backlog delle consegne 09.45: Flusso di utenti 3 Fusione fisica e digitale - Procedura dettagliata con esercizio pratico 11.15: Interruzione 11.30: I flussi di utenti si concludono - (cosa-dove-quando) 12:00: Gruppo Presentations 12.30: Pranzo 13.30: Flusso d&#39;uso 4: Analisi dei clienti - approfondimento 14.30: Conclusione, conclusione e passaggi successivi 15.00: Bevande e aggiornamento
 
 ## Prerequisiti
 
