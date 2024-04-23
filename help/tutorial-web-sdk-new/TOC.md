@@ -9,10 +9,10 @@ jira: KT-6953
 recommendations: noDisplay,noCatalog
 index: false
 hide: true
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+source-git-commit: e9e5e1dec8a0595bb789f0324c3263cf914dec31
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 23%
+source-wordcount: '95'
+ht-degree: 24%
 
 ---
 
@@ -38,9 +38,8 @@ ht-degree: 23%
    + [Configurare Adobe Analytics](setup-analytics.md)
    + [Audience Manager configurazione](setup-audience-manager.md)
    + [Configurare Target](setup-target.md)
-   + Configurare le funzioni di Journey Optimizer {#journey-optimizer}
-      + [Configurare un canale web](journey-optimizer/setup-web-channel.md)
-      + [Configurare la gestione delle decisioni](journey-optimizer/setup-decision-management.md)
+   + [Configurare Journey Optimizer Web Channel](setup-web-channel.md)
+   + [Configurare Journey Optimizer Decision Management](setup-decision-management.md)
 
 + Gestione del consenso {#consent-management}
    + [Configurare il consenso](setup-consent.md)
