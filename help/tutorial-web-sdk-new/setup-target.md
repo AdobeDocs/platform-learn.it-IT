@@ -2,9 +2,10 @@
 title: Configurare Adobe Target con Platform Web SDK
 description: Scopri come implementare Adobe Target utilizzando Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 solution: Data Collection, Target
-source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
+exl-id: 5bf95d05-a651-438e-a4f2-4b8f210d7f63
+source-git-commit: 6a741604cd2eb026600c2d4cb8c0ddcb15f64e3f
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4307'
 ht-degree: 0%
 
 ---
@@ -19,16 +20,16 @@ Scopri come implementare Adobe Target utilizzando Platform Web SDK. Scopri come 
 
 ## Obiettivi di apprendimento
 
-Alla fine di questa lezione, potrai:
+Alla fine di questa lezione, sarai in grado di fare quanto segue con un’implementazione Web SDK di Target:
 
-* Scopri come aggiungere il frammento pre-hiding di Platform Web SDK per evitare sfarfallii quando utilizzi Target con codici di incorporamento di tag asincroni
+* Aggiungi il frammento pre-hiding per evitare sfarfallii
 * Configurare uno stream di dati per abilitare la funzionalità di Target
 * Attività del compositore esperienza visivo rendering
 * Attività del compositore moduli rendering
 * Trasmettere i dati XDM a Target e comprendere la mappatura dei parametri di Target
 * Trasmettere dati personalizzati a Target, ad esempio parametri di profilo ed entità
-* Convalidare un’implementazione di Target con Platform Web SDK
-* Inviare richieste di proposte Target separate dalle richieste di Adobe Analytics e risolverne gli eventi di visualizzazione in un secondo momento
+* Convalidare un’implementazione di Target
+* Separare le richieste di personalizzazione dalle richieste di Analytics
 
 >[!TIP]
 >
@@ -48,7 +49,7 @@ Per completare le lezioni in questa sezione, devi prima:
    * [Utilizzare il Compositore esperienza basato su moduli](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
    * [Creare attività Targeting esperienza](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
 
-## Aggiungi attenuazione sfarfallio
+## Aggiungi gestione sfarfallio
 
 Prima di iniziare, determina se è necessaria un’ulteriore soluzione di gestione della visualizzazione momentanea di altri contenuti a seconda di come viene caricata la libreria di tag.
 
@@ -59,7 +60,7 @@ Prima di iniziare, determina se è necessaria un’ulteriore soluzione di gestio
 
 ### Implementazione asincrona
 
-Quando una libreria di tag viene caricata in modo asincrono, la pagina potrebbe terminare il rendering prima che Target abbia eseguito uno scambio di contenuto. Questo comportamento può causare il cosiddetto &quot;sfarfallio&quot;, in cui il contenuto predefinito viene visualizzato brevemente prima di essere sostituito dal contenuto personalizzato specificato da Target. Per evitare questo sfarfallio, l’Adobe consiglia di aggiungere uno speciale frammento pre-hiding immediatamente prima del codice di incorporamento di tag asincrono.
+Quando una libreria di tag viene caricata in modo asincrono, la pagina potrebbe terminare il rendering prima che Target abbia sostituito il contenuto predefinito con il contenuto personalizzato. Questo comportamento può causare il cosiddetto &quot;sfarfallio&quot;, in cui il contenuto predefinito viene visualizzato brevemente prima di essere sostituito dal contenuto personalizzato specificato da Target. Per evitare questo sfarfallio, l’Adobe consiglia di aggiungere uno speciale frammento pre-hiding immediatamente prima del codice di incorporamento di tag asincrono.
 
 Questo frammento è già presente nel sito Luma, ma diamo uno sguardo più da vicino per capire il funzionamento del codice:
 
@@ -181,7 +182,7 @@ Ai fini di questa esercitazione utilizzando il sito Luma, utilizza il simbolo di
 
 ## Eseguire il rendering delle decisioni di personalizzazione visiva
 
-Innanzitutto, devi comprendere la terminologia utilizzata nelle interfacce Target e tag.
+Per decisioni sulla personalizzazione visiva si intendono le esperienze create nel Compositore esperienza visivo di Adobe Target. Innanzitutto, devi comprendere la terminologia utilizzata nelle interfacce Target e tag:
 
 * **Attività**: un set di esperienze indirizzato a uno o più tipi di pubblico. Ad esempio, un semplice test A/B potrebbe essere un’attività con due esperienze.
 * **Esperienza**: un set di azioni indirizzate a una o più posizioni o ambiti decisionali.
