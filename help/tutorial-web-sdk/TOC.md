@@ -7,10 +7,12 @@ role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+index: false
+hide: true
+source-git-commit: a56a63c79417fc98f2c3ec4a9613e39c46ac098a
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 32%
+source-wordcount: '95'
+ht-degree: 24%
 
 ---
 
@@ -19,7 +21,6 @@ ht-degree: 32%
 
 + [Panoramica del tutorial](overview.md)
 + Configurazione iniziale {#initial-configuration}
-   + [Configurare le autorizzazioni](configure-permissions.md)
    + [Configurare uno schema XDM](configure-schemas.md)
    + [Configurare uno spazio dei nomi delle identità](configure-identities.md)
    + [Configurare uno stream di dati](configure-datastream.md)
@@ -27,14 +28,18 @@ ht-degree: 32%
 + Configurazione tag {#tags-configuration}
    + [Installare l’estensione Web SDK](install-web-sdk.md)
    + [Creare elementi dati](create-data-elements.md)
-   + [Creare una regola di tag](create-tag-rule.md)
+   + [Creare identità](create-identities.md)
+   + [Creare regole di tag](create-tag-rule.md)
    + [Convalida con Debugger](validate-with-debugger.md)
+   + [Convalida con garanzia](validate-with-assurance.md)
 
 + Impostazione applicazioni {#applications-setup}
    + [Experience Platform configurazione](setup-experience-platform.md)
    + [Configurare Adobe Analytics](setup-analytics.md)
    + [Audience Manager configurazione](setup-audience-manager.md)
    + [Configurare Target](setup-target.md)
+   + [Configurare Journey Optimizer Web Channel](setup-web-channel.md)
+   + [Configurare Journey Optimizer Decision Management](setup-decision-management.md)
 
 + Gestione del consenso {#consent-management}
    + [Configurare il consenso](setup-consent.md)
