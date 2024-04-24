@@ -3,7 +3,7 @@ title: Tutorial sull’implementazione di Adobe Experience Cloud con Web SDK
 description: Scopri come implementare applicazioni Experience Cloud utilizzando Adobe Experience Platform Web SDK.
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 Scopri come implementare applicazioni Experience Cloud utilizzando Adobe Experience Platform Web SDK.
 
-Experienci Platform Web SDK è una libreria JavaScript lato client che consente ai clienti di Adobe Experience Cloud di interagire sia con le applicazioni Adobe che con i servizi di terze parti tramite l’Edge Network Adobe Experience Platform. Consulta [Panoramica di Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=it) per informazioni più dettagliate.
+Experienci Platform Web SDK è una libreria JavaScript lato client che consente ai clienti di Adobe Experience Cloud di interagire sia con le applicazioni Adobe che con i servizi di terze parti tramite l’Edge Network Adobe Experience Platform. Consulta [Panoramica di Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/home) per informazioni più dettagliate.
 
 ![Architettura Experienci Platform Web SDK](assets/dc-websdk.png)
 
@@ -48,7 +48,7 @@ In queste lezioni, si presume che tu abbia un account di Adobe e le autorizzazio
    * **[!UICONTROL Diritti di proprietà]**—autorizzazione a **[!UICONTROL Approva]**, **[!UICONTROL Sviluppa]**, **[!UICONTROL Modifica proprietà]**, **[!UICONTROL Gestisci ambienti]**, **[!UICONTROL Gestire le estensioni]**, e **[!UICONTROL Pubblica]**,
    * **[!UICONTROL Diritti aziendali]**—autorizzazione a **[!UICONTROL Gestisci proprietà]**
 
-     Per ulteriori informazioni sulle autorizzazioni per i tag, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+     Per ulteriori informazioni sulle autorizzazioni per i tag, consulta [la documentazione](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
 
 * Per **Experience Platform**, è necessario disporre di:
 
@@ -62,13 +62,13 @@ In queste lezioni, si presume che tu abbia un account di Adobe e le autorizzazio
 
      Le funzioni richieste devono essere disponibili per tutti i clienti di Experience Cloud, anche se non sei cliente di un’applicazione basata su Platform come Real-Time CDP.
 
-     Per ulteriori informazioni sul controllo degli accessi alla piattaforma, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=it).
+     Per ulteriori informazioni sul controllo degli accessi alla piattaforma, consulta [la documentazione](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
 
-* Per l&#39;opzione **Adobe Analytics** lezione, devi avere [accesso come amministratore alle impostazioni della suite di rapporti, alle regole di elaborazione e ad Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=it)
+* Per l&#39;opzione **Adobe Analytics** lezione, devi avere [accesso come amministratore alle impostazioni della suite di rapporti, alle regole di elaborazione e ad Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
 * Per l&#39;opzione **Adobe Target** lezione, devi avere [Editor o Approvatore](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) accesso.
 
-* Per l&#39;opzione **Audience Manager** lezione, devi avere accesso a creare, leggere e scrivere caratteristiche, segmenti e destinazioni. Per ulteriori informazioni, consulta l’esercitazione su [Controllo degli accessi basato sul ruolo di Audienci Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* Per l&#39;opzione **Audience Manager** lezione, devi avere accesso a creare, leggere e scrivere caratteristiche, segmenti e destinazioni. Per ulteriori informazioni, consulta l’esercitazione su [Controllo degli accessi basato sul ruolo di Audienci Manager](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 
 >[!NOTE]

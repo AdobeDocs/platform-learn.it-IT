@@ -3,7 +3,7 @@ title: Creare elementi dati
 description: Scopri come creare un oggetto XDM e mappare ad esso gli elementi dati nei tag. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 1%
@@ -53,7 +53,7 @@ Esistono diversi modi per mappare i dati dal livello dati a XDM utilizzando la f
 
 ### Implementare XDM nel livello dati
 
-Questo approccio comporta l’utilizzo dell’oggetto XDM completamente definito come struttura per il livello dati. Quindi mappi l’intero livello dati a un elemento dati di oggetti XDM nei tag. Se l’implementazione non utilizza un gestore di tag, questo approccio può essere ideale perché puoi inviare dati a XDM direttamente dall’applicazione utilizzando [XDM sendEvent, comando](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). Se utilizzi i tag, puoi creare un elemento dati con codice personalizzato che acquisisce l’intero livello dati come oggetto JSON pass-through per XDM. Quindi, mappi il JSON pass-through al campo dell’oggetto XDM nell’azione Invia evento.
+Questo approccio comporta l’utilizzo dell’oggetto XDM completamente definito come struttura per il livello dati. Quindi mappi l’intero livello dati a un elemento dati di oggetti XDM nei tag. Se l’implementazione non utilizza un gestore di tag, questo approccio può essere ideale perché puoi inviare dati a XDM direttamente dall’applicazione utilizzando [XDM sendEvent, comando](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Se utilizzi i tag, puoi creare un elemento dati con codice personalizzato che acquisisce l’intero livello dati come oggetto JSON pass-through per XDM. Quindi, mappi il JSON pass-through al campo dell’oggetto XDM nell’azione Invia evento.
 
 Di seguito è riportato un esempio dell’aspetto del livello dati utilizzando il formato Livello dati client di Adobe:
 
@@ -128,16 +128,16 @@ Questo approccio comporta la mappatura di singole variabili del livello dati O d
 >
 > Google Data Layer
 > 
-> Se la tua organizzazione utilizza già Google Analytics e dispone del tradizionale oggetto Google dataLayer sul sito web, puoi utilizzare [Estensione Google Data Layer](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) nei tag. Questo consente di implementare la tecnologia Adobe più rapidamente senza dover richiedere supporto al team IT. La mappatura del livello dati di Google su XDM segue gli stessi passaggi indicati sopra.
+> Se la tua organizzazione utilizza già Google Analytics e dispone del tradizionale oggetto Google dataLayer sul sito web, puoi utilizzare [Estensione Google Data Layer](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) nei tag. Questo consente di implementare la tecnologia Adobe più rapidamente senza dover richiedere supporto al team IT. La mappatura del livello dati di Google su XDM segue gli stessi passaggi indicati sopra.
 
 ### Mappa su XDM nello stream di dati
 
-Questo approccio utilizza funzionalità integrate nella configurazione dello stream di dati denominate [Preparazione per la raccolta dati](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) e ignora la mappatura delle variabili del livello dati su XDM nei tag.
+Questo approccio utilizza funzionalità integrate nella configurazione dello stream di dati denominate [Preparazione per la raccolta dati](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) e ignora la mappatura delle variabili del livello dati su XDM nei tag.
 
 #### Pro
 
 * Flessibile in quanto è possibile mappare singole variabili su XDM
-* Possibilità di [calcola nuovi valori](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=it) o [trasformare tipi di dati](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) da un livello dati prima di passare a XDM
+* Possibilità di [calcola nuovi valori](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) o [trasformare tipi di dati](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) da un livello dati prima di passare a XDM
 * Utilizzo di un [Interfaccia utente di mappatura](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) per mappare i campi dei dati di origine su XDM con un’interfaccia utente semplice e intuitiva
 
 #### Contro

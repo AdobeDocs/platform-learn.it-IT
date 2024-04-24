@@ -5,7 +5,7 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '2511'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Prendi nota della seguente limitazione:
 
 ## Concedere l’accesso alla gestione delle decisioni
 
-Per concedere l’accesso alla funzionalità di gestione delle decisioni, devi creare un’ **Profilo di prodotto** e assegna le autorizzazioni corrispondenti ai tuoi utenti. [Ulteriori informazioni sulla gestione di utenti e autorizzazioni di Journey Optimizer in questa sezione](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
+Per concedere l’accesso alla funzionalità di gestione delle decisioni, devi creare un’ **Profilo di prodotto** e assegna le autorizzazioni corrispondenti ai tuoi utenti. [Ulteriori informazioni sulla gestione di utenti e autorizzazioni di Journey Optimizer in questa sezione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## Configurare lo stream di dati
 
@@ -340,7 +340,7 @@ Per iniziare il test, seleziona la **Simulazioni** scheda da **Offerte** menu.
 
 ### Verifica delle offerte fedeltà
 
-1. Seleziona un profilo di test da utilizzare per la simulazione. Clic **Gestisci profilo**. [Per creare o designare un nuovo profilo di test per il test dell’offerta, segui questa guida](https://experienceleague.adobe.com/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles.html?lang=en#create-test-profiles-csv).
+1. Seleziona un profilo di test da utilizzare per la simulazione. Clic **Gestisci profilo**. [Per creare o designare un nuovo profilo di test per il test dell’offerta, segui questa guida](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -372,7 +372,7 @@ Il **Adobe Experience Platform Debugger** L’estensione, disponibile sia per Ch
 
 Puoi utilizzare il debugger sul sito Luma per convalidare la logica decisionale in produzione. Questa è una buona pratica una volta che il caso di utilizzo dei premi fedeltà è attivo e in esecuzione, per garantire che tutto sia configurato correttamente.
 
-[Scopri come configurare il debugger nel browser utilizzando la guida qui](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=en).
+[Scopri come configurare il debugger nel browser utilizzando la guida qui](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 Per iniziare la convalida tramite il debugger:
 

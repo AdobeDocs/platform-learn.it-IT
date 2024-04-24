@@ -3,10 +3,10 @@ title: Conclusione e prossime tappe
 description: Cosa fare dopo aver completato l’esercitazione
 recommendations: display,noCatalog
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '390'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -34,11 +34,11 @@ Sei pronto per iniziare la fase successiva del percorso, implementando Adobe Exp
 E c&#39;è sempre di più da imparare! Di seguito sono riportati alcuni suggerimenti di altri contenuti da sviluppare sulla tua implementazione:
 
 
-* **Attivare un percorso in Journey Optimizer**. Gli eventi implementati nel sito web Luma possono essere utilizzati per attivare i percorsi. Ulteriori informazioni [tutorial video](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-transactional-journey.html?lang=it).
-* **Connetti Customer Journey Analytics**. Se hai creato [Set di dati della piattaforma](setup-experience-platform.md), puoi collegare il set di dati al Customer Journey Analytics. Ulteriori informazioni [tutorial video](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html)
-* **Creare un segmento in Platform**. Se hai attivato [Schema e set di dati per Real-Time Customer Profile](setup-experience-platform.md), puoi creare segmenti in base ai tuoi eventi web, combinarli con dati provenienti da altre origini e quindi inviare questi segmenti alle destinazioni in Real-time Customer Data Platform. Ulteriori informazioni sul generatore di segmenti sono disponibili in questo [tutorial video](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html).
-* **Implementare Platform Mobile SDK**. Ora che hai acquisito dimestichezza con un SDK, imparane un altro. L’SDK di Adobe Experience Platform Mobile viene utilizzato per alimentare i servizi Experience Cloud e di terze parti sulle app mobili. Esiste un [esercitazione pratica per Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=it). Completa entrambe le operazioni e vedi l’unione dei profili tra i dispositivi.
-* **Ulteriori informazioni su Experienci Platform**. Scopri come acquisire dati da altre origini e combinarli con i dati dell’SDK per web, in [Guida introduttiva di Adobe Experience Platform per architetti di dati e data engineer](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=it)
+* **Attivare un percorso in Journey Optimizer**. Gli eventi implementati nel sito web Luma possono essere utilizzati per attivare i percorsi. Ulteriori informazioni [tutorial video](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-transactional-journey).
+* **Connetti Customer Journey Analytics**. Se hai creato [Set di dati della piattaforma](setup-experience-platform.md), puoi collegare il set di dati al Customer Journey Analytics. Ulteriori informazioni [tutorial video](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform)
+* **Creare un segmento in Platform**. Se hai attivato [Schema e set di dati per Real-Time Customer Profile](setup-experience-platform.md), puoi creare segmenti in base ai tuoi eventi web, combinarli con dati provenienti da altre origini e quindi inviare questi segmenti alle destinazioni in Real-time Customer Data Platform. Ulteriori informazioni sul generatore di segmenti sono disponibili in questo [tutorial video](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/segments/create-segments).
+* **Implementare Platform Mobile SDK**. Ora che hai acquisito dimestichezza con un SDK, imparane un altro. L’SDK di Adobe Experience Platform Mobile viene utilizzato per alimentare i servizi Experience Cloud e di terze parti sulle app mobili. Esiste un [esercitazione pratica per Mobile SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview). Completa entrambe le operazioni e vedi l’unione dei profili tra i dispositivi.
+* **Ulteriori informazioni su Experienci Platform**. Scopri come acquisire dati da altre origini e combinarli con i dati dell’SDK per web, in [Guida introduttiva di Adobe Experience Platform per architetti di dati e data engineer](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview)
 
 
 >[!NOTE]

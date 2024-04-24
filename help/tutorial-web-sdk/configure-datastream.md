@@ -3,7 +3,7 @@ title: Configurare uno stream di dati
 description: Scopri come abilitare un flusso di dati e configurare le soluzioni Experience Cloud. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Datastreams
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 Scopri come abilitare uno stream di dati e configurare le applicazioni Experience Cloud.
 
-Gli stream di dati indicano all’Edge Network di Adobe Experience Platform dove inviare i dati raccolti da Platform Web SDK. Nella configurazione dei flussi di dati, abilita le applicazioni di Experience Cloud, l’account di Experience Platform e l’inoltro di eventi. Consulta la [Nozioni di base sulla configurazione di uno stream di dati](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it) per informazioni più dettagliate.
+Gli stream di dati indicano all’Edge Network di Adobe Experience Platform dove inviare i dati raccolti da Platform Web SDK. Nella configurazione dei flussi di dati, abilita le applicazioni di Experience Cloud, l’account di Experience Platform e l’inoltro di eventi. Consulta la [Nozioni di base sulla configurazione di uno stream di dati](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/datastreams) per informazioni più dettagliate.
 
 
 ![SDK per web, flussi di dati e diagramma di Edge Network](assets/dc-websdk-datastreams.png)
@@ -72,7 +72,7 @@ La sostituzione della configurazione dello stream di dati è un processo in due 
 
 In [Configurare Adobe Analytics](setup-analytics.md) lezione si sostituisce la suite di rapporti per una pagina utilizzando l’azione Invia evento di Platform Web SDK.
 
-Consulta la [documentazione sulle sostituzioni della configurazione dello stream di dati](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) per istruzioni dettagliate su come ignorare le configurazioni dello stream di dati.
+Consulta la [documentazione sulle sostituzioni della configurazione dello stream di dati](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) per istruzioni dettagliate su come ignorare le configurazioni dello stream di dati.
 
 Ora puoi installare l’estensione Platform Web SDK nella tua proprietà tag.
 
