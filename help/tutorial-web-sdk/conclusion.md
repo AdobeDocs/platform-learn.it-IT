@@ -2,20 +2,15 @@
 title: Conclusione e prossime tappe
 description: Cosa fare dopo aver completato l’esercitazione
 recommendations: display,noCatalog
-exl-id: bb0ef04d-fd01-4c24-8670-a84a9e33f1b6
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '390'
 ht-degree: 3%
 
 ---
 
 # Conclusione e prossime tappe
-
-
->[!CAUTION]
->
->Prevediamo di pubblicare modifiche principali a questo tutorial martedì 23 aprile 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
 
 Congratulazioni! Hai completato l’esercitazione &quot;Implementare Adobe Experience Cloud con Web SDK&quot;.
 
@@ -48,4 +43,4 @@ E c&#39;è sempre di più da imparare! Di seguito sono riportati alcuni suggerim
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

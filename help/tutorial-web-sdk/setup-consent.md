@@ -3,25 +3,20 @@ title: Configurare il consenso con Platform Web SDK
 description: Scopri come configurare le impostazioni di privacy dell’estensione tag Experienci Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1602'
 ht-degree: 0%
 
 ---
 
 # Configurare il consenso con Platform Web SDK
 
-
->[!CAUTION]
->
->Prevediamo di pubblicare modifiche principali a questo tutorial martedì 23 aprile 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
-
 Scopri come configurare le impostazioni di privacy dell’estensione tag Experienci Platform Web SDK. Imposta il consenso in base all’interazione del visitatore con un banner di una piattaforma di gestione del consenso (CMP).
 
 >[!NOTE]
 > 
->A scopo dimostrativo, questa esercitazione utilizza [Klaro](https://heyklaro.com/){target="_blank"} come CMP. Siete invitati a seguire l&#39;utilizzo di Klaro o la CMP che usate con il vostro sito web.
+>A scopo dimostrativo, questa esercitazione utilizza [Klaro](https://heyklaro.com/) come CMP. Siete invitati a seguire l&#39;utilizzo di Klaro o la CMP che usate con il vostro sito web.
 
 
 ## Obiettivi di apprendimento
@@ -69,7 +64,7 @@ Prima di passare alle configurazioni di tag, scopri di più sulla piattaforma di
 >La best practice per implementare una piattaforma di gestione dei consensi è in genere quella di caricare la CMP _prima di_ caricamento del gestore di tag. Per facilitare questa esercitazione, verrà caricata la CMP _con_ il gestore di tag. Questa lezione è progettata per mostrare come utilizzare le funzioni di consenso in Platform Web SDK e non deve essere utilizzata come guida per configurare correttamente Klaro o qualsiasi altra CMP.
 
 
-Ora, una volta completate le configurazioni di Klaro, crea una regola di tag con le seguenti configurazioni:
+Ora, una volta completate le configurazioni di Klaro, crea regole tag con le seguenti configurazioni:
 
 * [!UICONTROL Nome]: `all pages - library load - Klaro`
 * [!UICONTROL Evento]: [!UICONTROL Library Loaded (Page Top)] con [!UICONTROL Opzioni avanzate] > [!UICONTROL Ordine] impostato su 1
@@ -229,4 +224,4 @@ Per ulteriori informazioni su [!UICONTROL Impostare il consenso] azione, vedi [I
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

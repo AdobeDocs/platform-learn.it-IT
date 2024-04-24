@@ -3,21 +3,16 @@ title: Installare e configurare l’estensione tag di Adobe Experience Platform 
 description: Scopri come installare e configurare l’estensione tag Platform Web SDK nell’interfaccia di Data Collection. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 11%
+source-wordcount: '604'
+ht-degree: 12%
 
 ---
 
 # Installare l’estensione tag Adobe Experience Platform Web SDK
 
-
->[!CAUTION]
->
->Prevediamo di pubblicare modifiche principali a questo tutorial martedì 23 aprile 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
-
-Scopri come installare e configurare l’estensione tag Platform Web SDK nell’interfaccia di Data Collection. Questa estensione tag è _Solo estensione tag_ necessario per inviare dati a _tutte le applicazioni Adobe Experience Cloud_, tra cui [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform e Journey Optimizer.
+Scopri come installare e configurare l’estensione tag Platform Web SDK. Il modo più semplice per implementare Web SDK è utilizzare i tag di Adobe Tag Manager (precedentemente noti come Launch). L’estensione tag Platform Web SDK è _Solo estensione tag_ necessario per inviare dati a _tutte le applicazioni Adobe Experience Cloud_, tra cui [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), REAL-TIME CUSTOMER DATA PLATFORM e [Journey Optimizer](setup-web-channel.md)!
 
 ## Obiettivi di apprendimento
 
@@ -31,9 +26,6 @@ Alla fine di questa lezione, potrai:
 
 Devi aver completato le lezioni precedenti in questa esercitazione:
 
-* [Configurare le autorizzazioni](configure-permissions.md)
-* [Configurare uno schema XDM](configure-schemas.md)
-* [Configurare uno spazio dei nomi delle identità](configure-identities.md)
 * [Configurare uno stream di dati](configure-datastream.md)
 
 ## Installare l’estensione Experienci Platform Web SDK
@@ -62,7 +54,7 @@ Una volta create le proprietà dello schema XDM, dello stream di dati e dei tag,
 1. Cerca `Adobe Experience Platform Web SDK`
 1. Seleziona **[!UICONTROL Installa]**
 
-   ![Installare l’estensione Web SDK](assets/extension-platform-web-sdk.jpg)
+   ![Installare l’estensione Web SDK](assets/extension-platform-web-sdk.png)
 
 
 ## Collegare l’SDK per web di Platform allo stream di dati
@@ -72,6 +64,7 @@ Lascia la maggior parte delle impostazioni predefinite e aggiornale in un second
 1. Sotto **[!UICONTROL Flussi di dati]**, seleziona la **[!UICONTROL Scegli dall’elenco]** metodo di input
 1. Seleziona lo stream di dati creato in precedenza, `Luma Web SDK`
 1. Seleziona **[!UICONTROL Salva]**
+
    >[!NOTE]
    >
    > Se non riesci a trovare il flusso di dati, vai al [Configurare uno stream di dati](configure-datastream.md) lezione e segui i passaggi per crearne uno
@@ -82,9 +75,7 @@ Dopo aver installato Platform Web SDK e averlo associato allo stream di dati, pu
 
 >[!NOTE]
 >
->Durante questa esercitazione, puoi configurare un solo stream di dati e associarlo a tutti gli ambienti di tag (sviluppo, stage e produzione). Quando implementi Platform Web SDK sul tuo sito web, devi configurare un flusso di dati separato per ogni ambiente e mapparlo agli ambienti di tag utilizzando **[!UICONTROL Metodo di input]** > **[!UICONTROL Inserisci i valori]**
->
->![Selezione dello stream di dati](assets/extension-luma-web-sdk-datastream-extension-enterValues.png)
+>Durante questa esercitazione, puoi configurare un solo stream di dati e associarlo a tutti gli ambienti di tag (sviluppo, stage e produzione). Quando implementi Platform Web SDK sul tuo sito web, devi configurare un flusso di dati separato per ogni ambiente e mapparlo agli ambienti di tag.
 
 >[!NOTE]
 >
@@ -98,4 +89,4 @@ Per ulteriori informazioni su ciascuna sezione dell&#39;estensione, vedi [Config
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -3,23 +3,21 @@ title: Impostare una proprietà di inoltro eventi
 description: Scopri come utilizzare la proprietà di inoltro degli eventi utilizzando i dati Experienci Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1861'
 ht-degree: 3%
 
 ---
 
 # Impostare una proprietà di inoltro eventi
 
-
->[!CAUTION]
->
->Prevediamo di pubblicare modifiche principali a questo tutorial martedì 23 aprile 2024. Dopo questo punto molti esercizi cambieranno e potrebbe essere necessario riavviare l&#39;esercitazione dall&#39;inizio per completare tutte le lezioni.
-
 Scopri come utilizzare la proprietà di inoltro degli eventi utilizzando i dati Experienci Platform Web SDK.
 
 L’inoltro degli eventi è un nuovo tipo di proprietà disponibile in Raccolta dati. L’inoltro degli eventi consente di inviare dati a fornitori di terze parti non Adobi direttamente dall’Edge Network di Adobe Experience Platform anziché dal browser tradizionale lato client. Ulteriori informazioni sui vantaggi dell’inoltro degli eventi nel [Panoramica sull’inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+
+
+![Diagramma dell’SDK per web e dell’inoltro degli eventi](assets/dc-websdk-eventforwarding.png)
 
 Per utilizzare l’inoltro degli eventi in Adobe Experience Platform, i dati devono essere inviati all’Edge Network di Adobe Experience Platform utilizzando una o più delle tre opzioni seguenti:
 
@@ -56,7 +54,6 @@ Alla fine di questa lezione, sarai in grado di:
 
    * Configurazione iniziale
 
-      * [Configurare le autorizzazioni](configure-permissions.md)
       * [Configurare uno schema XDM](configure-schemas.md)
       * [Configurare uno spazio dei nomi delle identità](configure-identities.md)
       * [Configurare uno stream di dati](configure-datastream.md)
@@ -65,7 +62,8 @@ Alla fine di questa lezione, sarai in grado di:
 
       * [Installare l’estensione Web SDK](install-web-sdk.md)
       * [Creare elementi dati](create-data-elements.md)
-      * [Creare una regola di tag](create-tag-rule.md)
+      * [Creare identità](create-identities.md)
+      * [Creare regole di tag](create-tag-rule.md)
       * [Convalida con Adobe Experience Platform Debugger](validate-with-debugger.md)
 
 
@@ -91,9 +89,9 @@ Per configurare Target nello stream di dati:
 
 1. Vai a [Raccolta dati](https://experience.adobe.com/#/data-collection){target="blank"} Interfaccia
 1. Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Flussi di dati]**
-1. Seleziona il creato in precedenza `Luma Web SDK` flusso di dati
+1. Seleziona il creato in precedenza `Luma Web SDK: Development Environment` flusso di dati
 
-   ![Seleziona lo stream di dati dell’SDK web Luma](assets/datastream-luma-web-sdk.png)
+   ![Seleziona lo stream di dati dell’SDK web Luma](assets/datastream-luma-web-sdk-development.png)
 
 1. Seleziona **[!UICONTROL Aggiungi servizio]**
    ![Aggiungere un servizio allo stream di dati](assets/event-forwarding-datastream-addService.png)
@@ -326,4 +324,4 @@ Congratulazioni! Hai configurato l’inoltro degli eventi.
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
