@@ -5,9 +5,9 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: b3c5144d69f6be03ac05921513fd518fe42ca68c
+source-git-commit: 2dd47879db018710ba2883ea49cc483901359907
 workflow-type: tm+mt
-source-wordcount: '2716'
+source-wordcount: '2885'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 # Configurare il canale web Journey Optimizer
 
-Scopri come implementare il canale web Journey Optimizer utilizzando Platform Web SDK. Questa guida descrive i prerequisiti fondamentali per il canale web, i passaggi dettagliati per la configurazione e un approfondimento del caso d’uso incentrato sullo stato di fedeltà.
+Scopri come implementare Journey Optimizer [canale web](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) tramite Platform Web SDK. Questa lezione descrive i prerequisiti fondamentali per il canale web, i passaggi dettagliati per la configurazione e un approfondimento su un caso d’uso incentrato sullo stato di fedeltà.
 
-Seguendo questa guida, gli utenti di Journey Optimizer sono in grado di applicare in modo efficace il canale web per la personalizzazione online avanzata utilizzando Journey Optimizer Web Designer.
+Seguendo questa lezione, gli utenti di Journey Optimizer sono in grado di applicare in modo efficace il canale web per la personalizzazione online avanzata utilizzando il web designer di Journey Optimizer.
 
 ![SDK per web e diagramma di Adobe Analytics](assets/dc-websdk-ajo.png)
 
@@ -29,7 +29,7 @@ Alla fine di questa lezione, sarai in grado di:
 * Comprendi il processo di creazione di una campagna per canale web dall’inizio alla fine utilizzando il caso d’uso dei premi fedeltà Luma di esempio.
 * Configura le proprietà, le azioni e le pianificazioni della campagna all’interno dell’interfaccia.
 * Scopri le funzionalità e i vantaggi dell’estensione Adobe Experience Cloud Visual Editing Helper.
-* Scopri come modificare il contenuto delle pagine web, incluse immagini, intestazioni e altri elementi, utilizzando Progettazione web.
+* Scopri come modificare il contenuto delle pagine web, incluse immagini, intestazioni e altri elementi, utilizzando la finestra di progettazione web.
 * Scopri come inserire le offerte in una pagina web utilizzando il componente Decisione offerta.
 * Acquisisci familiarità con le best practice per garantire la qualità e il successo di una campagna canale web.
 
@@ -37,23 +37,32 @@ Alla fine di questa lezione, sarai in grado di:
 
 Per completare le lezioni in questa sezione, devi prima:
 
+* Completa tutte le lezioni per la configurazione iniziale di Platform Web SDK, inclusa la configurazione di elementi dati e regole.
 * Assicurati che la versione dell’estensione tag Adobe Experience Platform Web SDK sia 2.16 o successiva.
 * Se utilizzi Journey Optimizer Web Designer per creare la tua esperienza di canale web, assicurati di utilizzare i browser Google Chrome o Microsoft® Edge.
-* Verifica inoltre di aver scaricato l’estensione del browser Adobe Experience Cloud Visual Editing Helper. Abilita l’estensione del browser Helper per editing video nella barra degli strumenti del browser prima di creare l’esperienza del canale web.
-   * In Journey Optimizer Web Designer, alcuni siti Web potrebbero non essere aperti in modo affidabile per uno dei motivi seguenti:
-      1. Il sito web dispone di criteri di sicurezza rigorosi.
-      1. Il sito web è incorporato in un iframe.
-      1. Il sito per il controllo qualità o il sito di staging del cliente non è accessibile esternamente (è un sito interno).
+* Inoltre, assicurati di aver scaricato e abilitato [Estensione del browser Helper per editing video Adobe Experience Cloud](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
 * Assicurati che i cookie di terze parti siano consentiti nel browser. Potrebbe essere necessario disattivare anche i blocchi degli annunci nel browser.
-* Durante la creazione di esperienze web e l’inclusione di contenuto dalla libreria Adobe Experience Manager Assets Essentials, è necessario configurare il sottodominio per la pubblicazione di questo contenuto. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/journey-optimizer/using/web/web-delegated-subdomains.html?lang=en).
+
+  >[!CAUTION]
+  >
+  > In Journey Optimizer Web Designer, alcuni siti Web potrebbero non essere aperti in modo affidabile per uno dei motivi seguenti:
+  > 
+  > 1. Il sito web dispone di criteri di sicurezza rigorosi.
+  > 1. Il sito web è incorporato in un iframe.
+  > 1. Il sito per il controllo qualità o il sito di staging del cliente non è accessibile esternamente (è un sito interno).
+
+* Durante la creazione di esperienze web e l’inclusione di contenuti dalla libreria Adobe Experience Manager Assets Essentials, è necessario: [configura il sottodominio per la pubblicazione di questo contenuto](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/web-delegated-subdomains).
 * Se utilizzi la funzione di sperimentazione dei contenuti, assicurati che il set di dati web sia incluso anche nella configurazione di reporting.
 * Attualmente, sono supportati due tipi di implementazioni per abilitare l’authoring e la distribuzione di campagne canale web sulle proprietà web:
    * Solo lato client: per modificare il sito web, è necessario implementare Adobe Experience Platform Web SDK.
    * Modalità ibrida: puoi utilizzare l’API del server Edge Network di Platform per richiedere la personalizzazione lato server. La risposta dell’API viene quindi fornita a Adobe Experience Platform Web SDK per il rendering delle modifiche sul lato client. Per ulteriori informazioni, consulta la documentazione sulle API di Adobe Experience Platform Edge Network Server. Ulteriori dettagli ed esempi di implementazione per la modalità ibrida sono disponibili in questo post di blog.
 
->[!NOTE]
->
->L’implementazione solo lato server non è attualmente supportata.
+  >[!NOTE]
+  >
+  >L’implementazione solo lato server non è attualmente supportata.
+
+
+
 
 ## Terminologia
 
@@ -61,21 +70,21 @@ Innanzitutto, devi comprendere la terminologia utilizzata nelle campagne del can
 
 * **Canale web**: mezzo di comunicazione o per la distribuzione di contenuti tramite web. Nel contesto di questa guida, si riferisce al meccanismo attraverso il quale i contenuti personalizzati vengono consegnati ai visitatori del sito web utilizzando Platform Web SDK, all’interno di Adobe Journey Optimizer.
 * **Superficie web**: si riferisce a una proprietà web identificata da un URL in cui viene distribuito il contenuto. Può includere una o più pagine web.
-* **Journey Optimizer Web Designer**: strumento o interfaccia specifica all’interno di Journey Optimizer che consente agli utenti di progettare le esperienze dei canali web.
+* **web designer Journey Optimizer**: strumento o interfaccia specifica all’interno di Journey Optimizer che consente agli utenti di progettare le esperienze dei canali web.
 * **Helper per editing video Adobe Experience Cloud**: estensione del browser per la modifica visiva e la progettazione delle esperienze del canale web.
 * **Datastream**: configurazione all’interno del servizio Adobe Experience Platform che consente di fornire esperienze del canale web.
 * **Criterio di unione**: configurazione che assicura l’attivazione e la pubblicazione accurate delle campagne in entrata.
 * **Pubblico**: segmento specifico di utenti o visitatori del sito che soddisfano determinati criteri.
 * **Designer web**: interfaccia o strumento per la modifica visiva e la progettazione di esperienze web senza immergersi nel codice.
-* **Editor espressioni**: strumento all’interno di Web Designer che consente agli utenti di aggiungere personalizzazioni al contenuto web, potenzialmente in base ad attributi di dati o altri criteri.
-* **Componente decisione offerta**: componente di Web Designer che consente di decidere quale offerta è più adatta per essere visualizzata da un visitatore specifico in base alla gestione delle decisioni.
-* **Esperimento contenuti**: metodo per testare diverse varianti di contenuto e individuare quella che offre le migliori prestazioni in termini di metrica desiderata, ad esempio i clic in entrata.
+* **Editor espressioni**: strumento all’interno della finestra di progettazione web che consente agli utenti di aggiungere personalizzazioni al contenuto web, potenzialmente in base ad attributi di dati o altri criteri.
+* **Componente decisione offerta**: componente della finestra di progettazione web che consente di decidere quale offerta è più adatta per essere visualizzata a un visitatore specifico in base alla gestione delle decisioni.
+* **Esperimento sui contenuti**: metodo per testare diverse varianti di contenuto e individuare quella che offre le migliori prestazioni in termini di metrica desiderata, ad esempio i clic in entrata.
 * **Trattamento**: nel contesto degli esperimenti sui contenuti, un trattamento si riferisce a una specifica variante di contenuto in fase di test rispetto a un’altra.
 * **Simulazione**: meccanismo di anteprima per visualizzare l’esperienza del canale web prima di attivarla per i tipi di pubblico live.
 
 ## Configurare lo stream di dati
 
-Assicurati che all’interno del servizio Adobe Experience Platform sia definito uno stream di dati e che l’opzione Adobe Journey Optimizer sia abilitata. Questa deve essere configurata prima che l’SDK web di Platform possa distribuire qualsiasi esperienza di canale web.
+Il servizio Adobe Experience Platform è già stato aggiunto allo stream di dati. Ora devi abilitare l’opzione Adobe Journey Optimizer per poter fornire esperienze di canale web.
 
 Per configurare Adobe Journey Optimizer nello stream di dati:
 
@@ -95,7 +104,7 @@ Per configurare Adobe Journey Optimizer nello stream di dati:
 
 1. Seleziona **[!UICONTROL Salva]**.
 
-In questo modo gli eventi in entrata per Journey Optimizer vengono gestiti correttamente da Adobe Experience Platform Edge.
+In questo modo gli eventi in entrata per Journey Optimizer vengono gestiti correttamente dall’Edge Network di Adobe Experience Platform.
 
 ## Configurare il criterio di unione
 
@@ -105,7 +114,7 @@ Per configurare l’opzione nel criterio di unione:
 
 1. Vai a **[!UICONTROL Cliente]** > **[!UICONTROL Profili]** nell’interfaccia Experienci Platform o Journey Optimizer.
 1. Seleziona la **[!UICONTROL Criteri di unione]** scheda.
-1. Seleziona il criterio e attiva/disattiva **[!UICONTROL Criterio di unione Attivo su Edge]** all&#39;interno del **[!UICONTROL Configura]** passaggio.
+1. Seleziona la policy (in genere è meglio utilizzare la [!UICONTROL Basato su tempo predefinito] ) e attiva/disattiva la **[!UICONTROL Criterio di unione Attivo su Edge]** all&#39;interno del **[!UICONTROL Configura]** passaggio.
 
    ![Attiva/disattiva criterio di unione](assets/web-channel-active-on-edge-merge-policy.png)
 
@@ -113,32 +122,31 @@ Per configurare l’opzione nel criterio di unione:
 
 Per utilizzare esperimenti sui contenuti nelle campagne per canali web, devi assicurarti che il set di dati web utilizzato sia incluso anche nella configurazione di reporting. Il sistema di reporting di Journey Optimizer utilizza il set di dati in modalità di sola lettura per popolare i rapporti di sperimentazione dei contenuti preconfigurati.
 
-[L’aggiunta di set di dati per il reporting degli esperimenti sui contenuti è descritta in questa sezione](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html?lang=en#add-datasets).
+[L’aggiunta di set di dati per il reporting degli esperimenti sui contenuti è descritta in questa sezione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration#add-datasets).
 
 ## Panoramica del caso d’uso: premi fedeltà
 
 In questa lezione, un esempio di caso di utilizzo dei premi fedeltà viene utilizzato per descrivere nel dettaglio l’implementazione di un’esperienza di canale web utilizzando l’SDK per web.
 
-Questo caso d’uso consente di comprendere meglio in che modo Journey Optimizer può contribuire a fornire ai clienti le migliori esperienze in entrata, utilizzando le campagne Journey Optimizer e Web Designer.
+Questo caso d’uso consente di comprendere meglio in che modo Journey Optimizer può contribuire a fornire ai clienti le migliori esperienze in entrata, utilizzando le campagne Journey Optimizer e il web designer.
 
->[!NOTE]
->
->Poiché questo tutorial è destinato agli implementatori, vale la pena notare che questa lezione richiede un notevole lavoro sull’interfaccia in Journey Optimizer. Anche se tali attività di interfaccia vengono in genere gestite dagli esperti di marketing, può essere utile che i responsabili dell’implementazione possano acquisire informazioni approfondite sul processo, anche se alla fine non sono responsabili della creazione delle campagne per i canali web.
+Poiché questo tutorial è destinato agli implementatori, vale la pena notare che questa lezione richiede un notevole lavoro sull’interfaccia in Journey Optimizer. Anche se tali attività di interfaccia vengono in genere gestite dagli esperti di marketing, può essere utile che i responsabili dell’implementazione possano acquisire informazioni approfondite sul processo, anche se non sono in genere responsabili della creazione delle campagne per i canali web.
 
 ### Creare uno schema Fedeltà e acquisire dati di esempio
 
-Quando i dati dell’SDK web vengono acquisiti in Adobe Experience Platform, possono essere arricchiti da altre origini dati acquisite in Platform. Ad esempio, quando un utente accede al sito Luma, il `lumaCrmId` è inviato a Platform che rappresenta un’identità nel sistema CRM di Luma. In Experienci Platform è costruito un grafo di identità e tutti gli altri set di dati abilitati per il profilo possono potenzialmente essere uniti per creare profili cliente in tempo reale. Creeremo rapidamente un altro set di dati in Adobe Experience Platform con alcuni dati di fedeltà di esempio in modo da poter dimostrare come i Real-Time Customer Profile possono essere utilizzati nelle campagne web di Journey Optimizer. Poiché hai già fatto esercizi simili, le istruzioni saranno brevi.
+Quando i dati dell’SDK web vengono acquisiti in Adobe Experience Platform, possono essere arricchiti da altre origini dati acquisite in Platform. Ad esempio, quando un utente accede al sito Luma, in Experienci Platform viene creato un grafico delle identità e tutti gli altri set di dati abilitati per il profilo possono essere potenzialmente uniti per creare profili cliente in tempo reale. Per vedere questo in azione, crea rapidamente un altro set di dati in Adobe Experience Platform con alcuni dati di fedeltà di esempio, in modo da poter utilizzare i profili cliente in tempo reale nelle campagne web Journey Optimizer. Poiché hai già fatto esercizi simili, le istruzioni saranno brevi.
 
-Per creare lo schema:
+Creare lo schema fedeltà:
 
 1. Crea un nuovo schema
 1. Scegli **[!UICONTROL Profilo individuale]** come [!UICONTROL classe base]
 1. Denomina lo schema `Luma Loyalty Schema`
-1. Seleziona la `personID` il campo e il contrassegno sono come [!UICONTROL Identità] e [!UICONTROL Identità primaria] utilizzando `Luma CRM Id` [!UICONTROL Spazio dei nomi dell’identità].
 1. Aggiungi il [!UICONTROL Dettagli fedeltà] gruppo di campi
+1. Aggiungi il [!UICONTROL Dettagli demografici] gruppo di campi
+1. Seleziona la `Person ID` e contrassegnarlo come [!UICONTROL Identità] e [!UICONTROL Identità primaria] utilizzando `Luma CRM Id` [!UICONTROL Spazio dei nomi dell’identità].
 1. Abilita lo schema per [!UICONTROL Profilo]
 
-SCHERMATA DELLO SCHEMA
+   ![Schema fedeltà](assets/web-channel-loyalty-schema.png)
 
 Per creare il set di dati e acquisire i dati di esempio:
 
@@ -149,13 +157,41 @@ Per creare il set di dati e acquisire i dati di esempio:
 1. Trascinare il file nel set di dati
 1. Conferma che i dati siano stati acquisiti correttamente
 
-SCHERMATA DEL SET DI DATI E DELLA CONFERMA
+   ![Schema fedeltà](assets/web-channel-loyalty-dataset.png)
+
+### Creazione di un pubblico
+
+I tipi di pubblico raggruppano i profili in base alle caratteristiche comuni. Crea un pubblico rapido da utilizzare nella campagna web:
+
+1. Nell’interfaccia di Experience Platform, vai a **[!UICONTROL Tipi di pubblico]** nel menu di navigazione a sinistra
+1. Seleziona **[!UICONTROL Creare un pubblico]**
+1. Seleziona **[!UICONTROL Genera regola]**
+1. Seleziona **[!UICONTROL Crea]**
+
+   ![Creazione di un pubblico](assets/web-campaign-create-audience.png)
+
+1. Seleziona **[!UICONTROL Attributi]**
+1. Trova il **[!UICONTROL Fedeltà]** > **[!UICONTROL Livello]** e trascinarlo sulla **[!UICONTROL Attributi]** sezione
+1. Definisci il pubblico come utenti il cui `tier` è `gold`
+1. Assegna un nome al pubblico `Luma Loyalty Rewards – Gold Status`
+1. Seleziona **[!UICONTROL Bordo]** come **[!UICONTROL Metodo di valutazione]**
+1. Seleziona **[!UICONTROL Salva]**
+
+   ![Definire il pubblico](assets/web-campaign-define-audience.png)
+
+Poiché si tratta di un pubblico molto semplice, possiamo utilizzare il metodo di valutazione Edge. I tipi di pubblico Edge valutano il Edge di, quindi, nella stessa richiesta effettuata dall’SDK web all’Edge Network di Platform, possiamo valutare la definizione del pubblico e confermare immediatamente se l’utente sarà idoneo.
 
 ### Crea campagna di premi fedeltà
 
-Ora che abbiamo acquisito i dati di fedeltà di esempio, possiamo creare la campagna per il canale web Loyalty Rewards in Adobe Journey Optimizer.
+Dopo aver acquisito i dati di esempio sulla fedeltà e creato il segmento, crea la campagna per il canale web Loyalty Rewards in Adobe Journey Optimizer.
 
 Per creare la campagna di esempio:
+
+1. Apri [Journey Optimizer](https://experience.adobe.com/journey-optimizer/home){target="_blank"} Interfaccia
+
+   >[!NOTE]
+   >
+   > Schema, set di dati e tipi di pubblico possono essere generati anche nell’interfaccia di Journey Optimizer in quanto sono tutti costrutti di Experience Platform comuni.
 
 1. Accedi a **[!UICONTROL Gestione percorso]** > **[!UICONTROL Campagne]** nel menu di navigazione a sinistra
 1. Clic **[!UICONTROL Crea campagna]** in alto a destra.
@@ -165,17 +201,17 @@ Per creare la campagna di esempio:
 
 1. In **[!UICONTROL Azioni]** , scegli il **[!UICONTROL Canale web]**. Come  **[!UICONTROL Superficie web]**, seleziona **[!UICONTROL URL della pagina]**.
 
->[!NOTE]
->
->Una superficie web si riferisce a una proprietà web identificata da un URL in cui viene distribuito il contenuto. Può corrispondere a un URL di pagina singola o comprendere più pagine, consentendo di applicare modifiche su una o più pagine web.
+   >[!NOTE]
+   >
+   >Una superficie web si riferisce a una proprietà web identificata da un URL in cui viene distribuito il contenuto. Può corrispondere a un URL di pagina singola o comprendere più pagine, consentendo di applicare modifiche su una o più pagine web.
 
-Scegli la **[!UICONTROL URL della pagina]** opzione superficie web per distribuire l’esperienza su una pagina per questa campagna. Immetti l’URL per la pagina Luma.
+1. Scegli la **[!UICONTROL URL della pagina]** opzione superficie web per distribuire l’esperienza su una pagina per questa campagna. Immetti l’URL per la pagina Luma. `https://luma.enablementadobe.com/content/luma/us/en.html`
 
 1. Una volta definita la superficie web, seleziona **[!UICONTROL Crea]**.
 
    ![Seleziona la superficie web](assets/web-channel-web-surface.png)
 
-1. Ora aggiungi alcuni dettagli aggiuntivi alla nuova campagna per canali web. Innanzitutto, assegna un nome alla campagna. Chiamalo `Luma Loyalty Rewards – Gold Status – October 2023`. Facoltativamente, puoi aggiungere una descrizione alla campagna. Aggiungi anche **[!UICONTROL Tag]** migliorare la tassonomia complessiva della campagna.
+1. Ora aggiungi alcuni dettagli aggiuntivi alla nuova campagna per canali web. Innanzitutto, assegna un nome alla campagna. Chiamalo `Luma Loyalty Rewards – Gold Status`. Facoltativamente, puoi aggiungere una descrizione alla campagna. Aggiungi anche **[!UICONTROL Tag]** migliorare la tassonomia complessiva della campagna.
 
    ![Assegna un nome alla campagna](assets/web-channel-campaign-name.png)
 
@@ -185,7 +221,7 @@ Scegli la **[!UICONTROL URL della pagina]** opzione superficie web per distribui
 
    ![Scegli il tipo di identità](assets/web-channel-indentity-type.png)
 
-1. Pianifica la campagna a partire dal 1° dicembre utilizzando **[!UICONTROL Inizio campagna]** e termina il 31 dicembre utilizzando il **[!UICONTROL Fine campagna]** opzione.
+1. Pianifica la campagna affinché inizi nella data odierna utilizzando **[!UICONTROL Inizio campagna]** e termina in una settimana utilizzando **[!UICONTROL Fine campagna]** opzione.
 
    ![Pianificazione della campagna](assets/web-channel-campaign-schedule.png)
 
@@ -195,7 +231,7 @@ Scegli la **[!UICONTROL URL della pagina]** opzione superficie web per distribui
 
 ### Sperimentazione con contenuti di premi fedeltà
 
-In **[!UICONTROL Azione]** è possibile creare un esperimento per verificare quale contenuto funziona meglio per la sezione `Luma Loyalty Rewards – Gold Status` pubblico. Creiamo e testiamo due trattamenti come componente della configurazione della campagna.
+Se scorri verso l’alto, nella **[!UICONTROL Azione]** è possibile creare un esperimento per verificare quale contenuto funziona meglio per la sezione `Luma Loyalty Rewards – Gold Status` pubblico. Creiamo e testiamo due trattamenti come componente della configurazione della campagna.
 
 Per creare l’esperimento sui contenuti:
 
@@ -213,7 +249,7 @@ Per creare l’esperimento sui contenuti:
 
 1. Inoltre, se lo desideri, scegli di **[!UICONTROL Distribuisci uniformemente]**. Selezionare questa opzione per assicurarsi che le divisioni del trattamento siano sempre divise in modo uniforme.
 
-[Ulteriori informazioni sugli esperimenti di contenuto in Adobe Journey Optimizer Web Channel](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment.html?lang=en).
+[Ulteriori informazioni sugli esperimenti di contenuto nel canale web Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment.html?lang=en).
 
 ### Modificare il contenuto con Visual Helper
 
@@ -298,11 +334,17 @@ Infine, attiva la campagna del canale web.
 
 ### Premi fedeltà QA
 
+Sono disponibili alcuni accessi che puoi utilizzare per simulare gli utenti con stato Gold e che sono idonei per la tua campagna:
+
+1. `cleavlandeuler@emailsim.io`/`test`
+1. `leftybeagen@emailsim.io`/`test`
+1. `jenimartinho@emailsim.io`/`test`
+
 Come best practice, monitora **[!UICONTROL Web]** scheda dei rapporti live e globali della campagna per i KPI specifici della campagna. Per questa campagna, monitora le impression dell’esperienza e la percentuale di clic.
 
 ![Visualizza rapporto web](assets/web-channel-web-report.png)
 
-### Convalida del canale web con Adobi Experience Platform Debugger
+### Convalida del canale web con Adobe Experience Platform Debugger
 
 L’estensione Adobi Experience Platform Debugger, disponibile sia per Chrome che per Firefox, analizza le pagine web per identificare i problemi nell’implementazione delle soluzioni Adobe Experience Cloud.
 
