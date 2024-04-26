@@ -3,16 +3,16 @@ title: Convalidare le implementazioni dell’SDK web con Experienci Platform Ass
 description: Scopri come convalidare l’implementazione di Platform Web SDK con Adobe Experience Platform Assurance. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '609'
 ht-degree: 2%
 
 ---
 
 # Convalidare le implementazioni dell’SDK web con Experienci Platform Assurance
 
-Adobe Experience Platform Assurance è un prodotto di Adobe Experience Cloud che consente di verificare, verificare, simulare e convalidare le modalità di raccolta dei dati o di gestione delle esperienze. Ulteriori informazioni su [Adobe Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
+Adobe Experience Platform Assurance è una funzione che consente di ispezionare, verificare, simulare e convalidare le modalità di raccolta dei dati o di gestione delle esperienze. Ulteriori informazioni su [Adobe Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
 
 
 ## Obiettivi di apprendimento
@@ -51,10 +51,11 @@ Rivedi come abbiamo fatto questo nella lezione di Debugger:
 1. Seleziona la **[!UICONTROL Bordo]** e seleziona **[!UICONTROL Connetti]**
 
    ![Connetti traccia spigolo](assets/analytics-debugger-edgeTrace.png)
-1. Con Edge Trace abilitato, puoi visualizzare un’icona di collegamento in uscita in alto. Seleziona l’icona per aprire Assurance. Viene visualizzata una nuova scheda nel browser.
+1. Con Edge Trace abilitato, puoi visualizzare un’icona di collegamento in uscita in alto. Seleziona l’icona per aprire Assurance.
 
    ![Avvia sessione Assurance](assets/validate-debugger-start-assurnance.png)
 
+1. Viene visualizzata una nuova scheda del browser con l’interfaccia Assurance.
 
 ### Avviare una sessione Assurance dall&#39;interfaccia Assurance
 
@@ -88,7 +89,7 @@ Le informazioni da visualizzare in questa fase dell’implementazione sono limit
 
 Nelle lezioni future, utilizzi Assurance per convalidare i payload completamente elaborati raggiungendo un’applicazione di Adobe abilitata nel flusso di dati.
 
-Ora che un oggetto XDM viene attivato su una pagina e sai come convalidare la raccolta dati, puoi configurare le singole applicazioni Adobe utilizzando Platform Web SDK.
+Ora che un oggetto XDM viene attivato su una pagina e sai come convalidare la raccolta dati, puoi configurare le applicazioni Experienci Platform e i singoli Adobi utilizzando Platform Web SDK.
 
 [Successivo: ](setup-experience-platform.md)
 

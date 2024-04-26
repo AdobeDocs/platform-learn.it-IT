@@ -3,21 +3,16 @@ title: Creare regole di tag
 description: Scopri come inviare un evento all’Edge Network di Platform con l’oggetto XDM utilizzando una regola di tag. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '1957'
 ht-degree: 1%
 
 ---
 
 # Creare regole di tag
 
-Scopri come inviare eventi all’Edge Network Platform con l’oggetto XDM utilizzando le regole di tag. Una regola di tag è una combinazione di eventi, condizioni e azioni che indica alla proprietà tag di eseguire un&#39;operazione. Con Platform Web SDK, le regole vengono utilizzate per inviare eventi all’Edge Network di Platform con i campi XDM corretti.
-
->[!NOTE]
->
-> A scopo dimostrativo, gli esercizi di questa lezione si basano sulle lezioni precedenti per inviare eventi dagli utenti su [Sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}.
-
+Scopri come inviare eventi all’Edge Network Platform con l’oggetto XDM utilizzando le regole di tag. Una regola di tag è una combinazione di eventi, condizioni e azioni che indica alla proprietà tag di eseguire un&#39;operazione. Con Platform Web SDK, le regole vengono utilizzate per inviare eventi all’Edge Network di Platform con i dati corretti.
 
 ## Obiettivi di apprendimento
 
@@ -45,29 +40,28 @@ Conosci i tag di raccolta dati e la [Sito di dimostrazione Luma](https://luma.en
 
 Per gestire meglio le regole nei tag, si consiglia di seguire una convenzione di denominazione standard. Questa esercitazione utilizza una convenzione di denominazione in cinque parti:
 
-* [**posizione**] - [**evento**] - [**scopo**] - [**strumento**] - [**ordine**]
+* [**posizione**] - [**evento**] - [**scopo**] - [**ordine**]
 
 dove;
 
 1. **posizione** è la pagina o le pagine del sito in cui viene attivata la regola
 1. **evento** è il trigger della regola
 1. **scopo** è l’azione principale eseguita dalla regola
-1. **strumento** è l’applicazione o le applicazioni specifiche utilizzate nel passaggio di azione per tale regola, che dovrebbe essere rara con Web SDK
-1. **sequenza** è l&#39;ordine in cui la regola deve essere attivata in relazione ad altre regole
+1. **ordine** è l&#39;ordine in cui la regola deve essere attivata in relazione ad altre regole
 <!-- minor update -->
 
 ## Creare regole di tag
 
 Nei tag, le regole vengono utilizzate per eseguire azioni (chiamate di attivazione) in varie condizioni. L’estensione dei tag di Platform Web SDK include due azioni che verranno utilizzate in questa lezione:
 
-* **[!UICONTROL Aggiorna variabile]** mappa gli elementi dati sui campi XDM
+* **[!UICONTROL Aggiorna variabile]** mappa gli elementi dati alle proprietà in un oggetto XDM
 * **[!UICONTROL Invia evento]** invia l&#39;oggetto XDM ad Experienci Platform Edge Network
 
 Nel resto di questa lezione:
 
-1. Crea una regola per definire una &quot;configurazione globale&quot; di campi XDM (utilizzando [!UICONTROL Aggiorna variabile] che vogliamo inviare su ogni pagina del sito web (ad esempio, il nome della pagina) utilizzando **[!UICONTROL Aggiorna variabile]** azione.
+1. Creare una regola con **[!UICONTROL Aggiorna variabile]** azione per definire una &quot;configurazione globale&quot; di campi XDM.
 
-1. Crea regole aggiuntive che sovrascrivono la &quot;configurazione globale&quot; di o contribuiscono ad altri campi XDM (utilizzando [!UICONTROL Aggiorna variabile] ) che sono pertinenti solo in determinate condizioni (ad esempio, l’aggiunta di dettagli di prodotto nelle pagine dei prodotti).
+1. Creare regole aggiuntive con **[!UICONTROL Aggiorna variabile]** azione che sovrascrive la &quot;configurazione globale&quot; e contribuisce con campi XDM aggiuntivi in determinate condizioni (ad esempio, l’aggiunta di dettagli del prodotto nelle pagine dei prodotti).
 
 1. Crea un&#39;altra regola con **[!UICONTROL Invia evento]** azione che invia l’oggetto XDM completo all’Edge Network di Adobe Experience Platform.
 
@@ -77,11 +71,9 @@ Questo video offre una panoramica del processo:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
 
-### Aggiorna regole variabili
+### Campi di configurazione globali
 
-#### Configurazione globale
-
-Per creare regole di tag per i campi XDM globali:
+Per creare una regola di tag per i campi XDM globali:
 
 1. Apri la proprietà tag utilizzata per questa esercitazione
 
@@ -118,11 +110,7 @@ Per creare regole di tag per i campi XDM globali:
 
    ![Aggiorna schema variabile](assets/create-rule-update-variable.png)
 
-Ora mappa il tuo [!UICONTROL elementi dati] al [!UICONTROL schema] utilizzato dall’oggetto XDM.
-
->[!NOTE]
-> 
-> È possibile eseguire il mapping a singole proprietà o a interi oggetti. In questo esempio, esegui il mapping a singole proprietà.
+Ora mappa il tuo [!UICONTROL elementi dati] al [!UICONTROL schema] utilizzato dall’oggetto XDM. È possibile eseguire il mapping a singole proprietà o a interi oggetti. In questo esempio, esegui il mapping a singole proprietà:
 
 1. Individuare il campo eventType e selezionarlo
 
@@ -160,13 +148,13 @@ Ora mappa il tuo [!UICONTROL elementi dati] al [!UICONTROL schema] utilizzato da
 
    >[!TIP]
    >
-   > Mentre nessuno dei due `eventType` imposta su `web.webpagedetails.pageViews` né `web.webPageDetials.pageViews.value` sono necessari affinché Adobe Analytics possa elaborare un beacon come visualizzazione di pagina; è utile disporre di una modalità standard per indicare una visualizzazione di pagina per altre applicazioni a valle.
+   > Mentre nessuno dei due `eventType` imposta su `web.webpagedetails.pageViews` né `web.webPageDetails.pageViews.value` sono necessari affinché Adobe Analytics possa elaborare un beacon come visualizzazione di pagina; è utile disporre di una modalità standard per indicare una visualizzazione di pagina per altre applicazioni a valle.
 
 
 1. Seleziona **[!UICONTROL Mantieni modifiche]** e poi **[!UICONTROL Salva]** la regola nella schermata successiva per completare la creazione della regola
 
 
-#### Campi pagina prodotto
+### Campi pagina prodotto
 
 Ora, inizia a utilizzare **[!UICONTROL Aggiorna variabile]** in regole aggiuntive in sequenza per arricchire l’oggetto XDM prima di inviarlo a [!UICONTROL Edge Network piattaforma].
 
@@ -235,7 +223,7 @@ Per iniziare, monitora le visualizzazioni del prodotto nella pagina dei dettagli
 1. Seleziona **[!UICONTROL Salva]** per salvare la regola
 
 
-#### Campi carrello
+### Campi carrello
 
 Puoi mappare l’intero array a un oggetto XDM, purché l’array corrisponda al formato dello schema XDM. Elemento dati del codice personalizzato `cart.productInfo` sono stati creati cicli precedenti in `digitalData.cart.cartEntries` oggetto livello dati su Luma e lo traduce nel formato richiesto del `productListItems` oggetto dello schema XDM.
 

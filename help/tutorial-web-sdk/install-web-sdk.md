@@ -3,9 +3,9 @@ title: Installare e configurare l’estensione tag di Adobe Experience Platform 
 description: Scopri come installare e configurare l’estensione tag Platform Web SDK nell’interfaccia di Data Collection. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '589'
 ht-degree: 12%
 
 ---
@@ -28,9 +28,7 @@ Devi aver completato le lezioni precedenti in questa esercitazione:
 
 * [Configurare uno stream di dati](configure-datastream.md)
 
-## Installare l’estensione Experienci Platform Web SDK
-
-### Aggiungi una proprietà
+### Aggiungi una proprietà tag
 
 Innanzitutto devi avere una proprietà tag. Una proprietà è un contenitore per tutti i JavaScript, le regole e le altre funzioni necessarie per raccogliere i dettagli da una pagina web e inviarla a varie posizioni.
 
@@ -57,7 +55,7 @@ Una volta create le proprietà dello schema XDM, dello stream di dati e dei tag,
    ![Installare l’estensione Web SDK](assets/extension-platform-web-sdk.png)
 
 
-## Collegare l’SDK per web di Platform allo stream di dati
+## Collegare l’estensione allo stream di dati
 
 Lascia la maggior parte delle impostazioni predefinite e aggiornale in un secondo momento, in base alle esigenze. L’unica cosa da fare ora è collegare l’estensione allo stream di dati:
 
@@ -71,19 +69,17 @@ Lascia la maggior parte delle impostazioni predefinite e aggiornale in un second
 
    ![Selezione dello stream di dati](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Dopo aver installato Platform Web SDK e averlo associato allo stream di dati, puoi iniziare a mappare gli elementi dati a un oggetto XDM con lo schema creato.
-
->[!NOTE]
->
->Durante questa esercitazione, puoi configurare un solo stream di dati e associarlo a tutti gli ambienti di tag (sviluppo, stage e produzione). Quando implementi Platform Web SDK sul tuo sito web, devi configurare un flusso di dati separato per ogni ambiente e mapparlo agli ambienti di tag.
+Per ulteriori informazioni su ciascuna sezione dell&#39;estensione, vedi [Configurare l’estensione Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
 >Anche se non hai configurato un CNAME in [!UICONTROL Dominio Edge] In questa lezione, l’Adobe consiglia di utilizzare un CNAME quando si implementa Platform Web SDK sul proprio sito web. Nonostante un’implementazione CNAME non offra vantaggi in termini di durata dei cookie, potrebbero esserci altri vantaggi. Questi vantaggi includono ad blocker e browser meno comuni che impediscono l’invio dei dati ai domini classificati come tracciatori. In questi casi, l’utilizzo di un CNAME potrebbe agevolare la raccolta di dati relativi agli utenti che utilizzano tali strumenti.
 
-Per ulteriori informazioni su ciascuna sezione dell&#39;estensione, vedi [Configurare l’estensione Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration)
+>[!NOTE]
+>
+>Durante questa esercitazione, puoi configurare un solo stream di dati e associarlo a tutti gli ambienti di tag (sviluppo, stage e produzione). Quando implementi Platform Web SDK sul tuo sito web, devi configurare un flusso di dati separato per ogni ambiente e mapparlo di conseguenza nella configurazione dell’estensione.
 
-
+Ora che hai installato Platform Web SDK e lo hai associato allo stream di dati, puoi iniziare a raccogliere dati.
 
 [Successivo: ](create-data-elements.md)
 
