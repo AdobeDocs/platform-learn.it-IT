@@ -4,20 +4,21 @@ description: Scopri come implementare il canale web Journey Optimizer utilizzand
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
+jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2885'
+source-wordcount: '2892'
 ht-degree: 0%
 
 ---
 
 
-# Configurare il canale web Journey Optimizer
+# Configurare il canale web Journey Optimizer con Web SDK
 
-Scopri come implementare Journey Optimizer [canale web](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) tramite Platform Web SDK. Questa lezione descrive i prerequisiti fondamentali per il canale web, i passaggi dettagliati per la configurazione e un approfondimento su un caso d’uso incentrato sullo stato di fedeltà.
+Scopri come implementare Adobe Journey Optimizer [canale web](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) tramite Adobe Experience Platform Web SDK. Questa lezione descrive i prerequisiti fondamentali per il canale web, i passaggi dettagliati per la configurazione e un approfondimento su un caso d’uso incentrato sullo stato di fedeltà.
 
-Seguendo questa lezione, gli utenti di Journey Optimizer sono in grado di applicare in modo efficace il canale web per la personalizzazione online avanzata utilizzando il web designer di Journey Optimizer.
+Seguendo questa lezione, gli utenti di Journey Optimizer possono utilizzare il canale web per la personalizzazione online avanzata utilizzando il web designer di Journey Optimizer.
 
 ![SDK per web e diagramma di Adobe Analytics](assets/dc-websdk-ajo.png)
 
@@ -51,7 +52,7 @@ Per completare le lezioni in questa sezione, devi prima:
   > 1. Il sito web è incorporato in un iframe.
   > 1. Il sito per il controllo qualità o il sito di staging del cliente non è accessibile esternamente (è un sito interno).
 
-* Durante la creazione di esperienze web e l’inclusione di contenuti dalla libreria Adobe Experience Manager Assets Essentials, è necessario: [configura il sottodominio per la pubblicazione di questo contenuto](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/web-delegated-subdomains).
+* Durante la creazione di esperienze web e l’inclusione di contenuti dalla libreria Adobe Experience Manager Assets Essentials, è necessario: [configura il sottodominio per la pubblicazione di questo contenuto](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
 * Se utilizzi la funzione di sperimentazione dei contenuti, assicurati che il set di dati web sia incluso anche nella configurazione di reporting.
 * Attualmente, sono supportati due tipi di implementazioni per abilitare l’authoring e la distribuzione di campagne canale web sulle proprietà web:
    * Solo lato client: per modificare il sito web, è necessario implementare Adobe Experience Platform Web SDK.
@@ -296,7 +297,7 @@ Nell’editor, aggiungi il HTML per `Luma Loyalty Rewards – Gold Status` pubbl
 
 ![Convalida HTML](assets/web-channel-add-custom-html-validate.png)
 
-Ora controlla il nuovo componente HTML personalizzato per adattarlo alle esigenze.
+Ora controlla il nuovo componente HTML personalizzato per adattarlo alle tue esigenze.
 
 ![Rivedi HTML personalizzato](assets/web-channel-review-custom-html.png)
 
@@ -348,7 +349,7 @@ Come best practice, monitora **[!UICONTROL Web]** scheda dei rapporti live e glo
 
 L’estensione Adobi Experience Platform Debugger, disponibile sia per Chrome che per Firefox, analizza le pagine web per identificare i problemi nell’implementazione delle soluzioni Adobe Experience Cloud.
 
-Puoi utilizzare il debugger sul sito Luma per convalidare l’esperienza del canale web in produzione. Questa è una best practice una volta che il caso di utilizzo dei premi fedeltà è attivo e in esecuzione, per garantire che tutto sia configurato correttamente.
+Puoi utilizzare il debugger sul sito Luma per convalidare l’esperienza del canale web in produzione. Si tratta di una best practice una volta che il caso di utilizzo Fedeltà e premi è attivo e in esecuzione, per garantire che tutto sia configurato correttamente.
 
 [Scopri come configurare il debugger nel browser utilizzando la guida qui](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
@@ -387,4 +388,4 @@ Per iniziare la convalida tramite il debugger:
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

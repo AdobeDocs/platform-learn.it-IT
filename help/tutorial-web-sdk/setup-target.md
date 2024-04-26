@@ -2,17 +2,18 @@
 title: Configurare Adobe Target con Platform Web SDK
 description: Scopri come implementare Adobe Target utilizzando Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 solution: Data Collection, Target
+jira: KT-15410
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: dc23b39e4311d618022fb1c70c2a106c0e901c8e
 workflow-type: tm+mt
-source-wordcount: '4307'
+source-wordcount: '4305'
 ht-degree: 0%
 
 ---
 
 # Configurare Adobe Target con Platform Web SDK
 
-Scopri come implementare Adobe Target utilizzando Platform Web SDK. Scopri come distribuire esperienze e come trasmettere parametri aggiuntivi a Target.
+Scopri come implementare Adobe Target utilizzando Adobe Experience Platform Web SDK. Scopri come distribuire esperienze e come trasmettere parametri aggiuntivi a Target.
 
 [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home) è l’applicazione Adobe Experience Cloud che offre tutto il necessario per adattare e personalizzare l’esperienza dei clienti in modo da massimizzare i ricavi sui siti web e mobili, applicazioni e altri canali digitali.
 
@@ -20,7 +21,7 @@ Scopri come implementare Adobe Target utilizzando Platform Web SDK. Scopri come 
 
 ## Obiettivi di apprendimento
 
-Alla fine di questa lezione, sarai in grado di fare quanto segue con un’implementazione Web SDK di Target:
+Alla fine di questa lezione, sei in grado di effettuare le seguenti operazioni con un’implementazione Web SDK di Target:
 
 * Aggiungi il frammento pre-hiding per evitare sfarfallii
 * Configurare uno stream di dati per abilitare la funzionalità di Target
@@ -41,7 +42,7 @@ Alla fine di questa lezione, sarai in grado di fare quanto segue con un’implem
 Per completare le lezioni in questa sezione, devi prima:
 
 * Completa tutte le lezioni per la configurazione iniziale di Platform Web SDK, inclusa la configurazione di elementi dati e regole.
-* Assicurati di avere [Ruolo editor o approvatore](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) in Adobe Target.
+* Assicurati di avere [Ruolo editor o approvatore](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) in Adobe Target.
 * Installare [Estensione Helper per Compositore esperienza visivo](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) se utilizzi il browser Google Chrome.
 * Scopri come impostare le attività in Target. Se hai bisogno di un aggiornamento, i seguenti tutorial e guide sono utili per questa lezione:
    * [Utilizzare l’estensione VEC Helper](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
@@ -55,12 +56,12 @@ Prima di iniziare, determina se è necessaria un’ulteriore soluzione di gestio
 
 >[!NOTE]
 >
->Questa esercitazione utilizza [Sito Luma](https://luma.enablementadobe.com/content/luma/us/en.html) con un’implementazione asincrona dei tag e una mitigazione della visualizzazione momentanea di altri contenuti. Questa sezione serve come riferimento per comprendere come funziona la mitigazione della visualizzazione momentanea di altri contenuti con Platform Web SDK.
+>Questa esercitazione utilizza [Sito web Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target=_blank}, con un’implementazione asincrona dei tag e una mitigazione della visualizzazione momentanea di altri contenuti. Questa sezione serve come riferimento per comprendere come funziona la mitigazione della visualizzazione momentanea di altri contenuti con Platform Web SDK.
 
 
 ### Implementazione asincrona
 
-Quando una libreria di tag viene caricata in modo asincrono, la pagina potrebbe terminare il rendering prima che Target abbia sostituito il contenuto predefinito con il contenuto personalizzato. Questo comportamento può causare il cosiddetto &quot;sfarfallio&quot;, in cui il contenuto predefinito viene visualizzato brevemente prima di essere sostituito dal contenuto personalizzato specificato da Target. Per evitare questo sfarfallio, l’Adobe consiglia di aggiungere uno speciale frammento pre-hiding immediatamente prima del codice di incorporamento di tag asincrono.
+Quando una libreria di tag viene caricata in modo asincrono, la pagina potrebbe terminare il rendering prima che Target abbia sostituito il contenuto predefinito con il contenuto personalizzato. Questo comportamento può causare il cosiddetto &quot;sfarfallio&quot;, in cui il contenuto predefinito viene visualizzato brevemente prima di essere sostituito dal contenuto personalizzato. Per evitare questo sfarfallio, l’Adobe consiglia di aggiungere uno speciale frammento pre-hiding immediatamente prima del codice di incorporamento di tag asincrono.
 
 Questo frammento è già presente nel sito Luma, ma diamo uno sguardo più da vicino per capire il funzionamento del codice:
 
@@ -182,13 +183,13 @@ Ai fini di questa esercitazione utilizzando il sito Luma, utilizza il simbolo di
 
 ## Eseguire il rendering delle decisioni di personalizzazione visiva
 
-Per decisioni sulla personalizzazione visiva si intendono le esperienze create nel Compositore esperienza visivo di Adobe Target. Innanzitutto, devi comprendere la terminologia utilizzata nelle interfacce Target e tag:
+Le decisioni sulla personalizzazione visiva si riferiscono alle esperienze create nel Compositore esperienza visivo di Adobe Target. Innanzitutto, devi comprendere la terminologia utilizzata nelle interfacce Target e tag:
 
 * **Attività**: un set di esperienze indirizzato a uno o più tipi di pubblico. Ad esempio, un semplice test A/B potrebbe essere un’attività con due esperienze.
 * **Esperienza**: un set di azioni indirizzate a una o più posizioni o ambiti decisionali.
 * **Ambito della decisione**: posizione in cui viene distribuita un’esperienza Target. Gli ambiti decisionali sono equivalenti a &quot;mbox&quot; se hai familiarità con l’utilizzo di versioni precedenti di Target.
 * **Decisione di personalizzazione**: azione che il server determina da applicare. Queste decisioni possono essere basate sui criteri di pubblico e sulla definizione delle priorità delle attività di Target.
-* **Proposta**: risultato delle decisioni prese dal server e consegnate nella risposta di Platform Web SDK. Ad esempio, la sostituzione di un&#39;immagine del banner rappresenta una proposta.
+* **Proposta**: risultato delle decisioni prese dal server, consegnate nella risposta di Platform Web SDK. Ad esempio, la sostituzione di un&#39;immagine del banner rappresenta una proposta.
 
 ### Aggiornare il [!UICONTROL Invia evento] azione
 
@@ -231,7 +232,7 @@ Ora che la sezione sull’implementazione di base è stata completata, crea un�
 
    ![Creare una nuova attività XT](assets/target-xt-create-activity.png)
 
-1. Modifica la pagina, ad esempio modifica il testo sul banner principale della pagina home.  Al termine, seleziona **[!UICONTROL Salva]** allora **[!UICONTROL Successivo]**.
+1. Modificare la pagina, ad esempio modificare il testo sul banner principale della home page.  Al termine, seleziona **[!UICONTROL Salva]** allora **[!UICONTROL Successivo]**.
 
    ![Modifica VEC di Target](assets/target-xt-vec-modification.png)
 
@@ -302,7 +303,7 @@ Modifica la regola di caricamento pagina per aggiungere un ambito di decisione p
 
 ### Elabora la risposta da Target
 
-Ora che hai configurato Platform Web SDK per richiedere contenuti per `homepage-hero` ambito, devi intervenire sulla risposta. L’estensione tag Platform Web SDK fornisce una [!UICONTROL Invia evento completato] che può essere utilizzato per attivare immediatamente una nuova regola quando una risposta da un [!UICONTROL Invia evento] azione ricevuta.
+Ora che hai configurato Platform Web SDK per richiedere contenuti per `homepage-hero` ambito, devi intervenire sulla risposta. L’estensione tag Platform Web SDK fornisce una [!UICONTROL Invia evento completato] , che può essere utilizzato per attivare immediatamente una nuova regola quando una risposta da un [!UICONTROL Invia evento] azione ricevuta.
 
 1. Creare una regola denominata `homepage - send event complete - render homepage-hero`.
 1. Aggiungi un evento alla regola. Utilizza il **Adobe Experience Platform Web SDK** e **[!UICONTROL Invio evento completato]** tipo di evento.
@@ -393,7 +394,7 @@ In questa sezione, trasmetterai dati specifici di Target e vedrai più da vicino
 
 ### Parametri di pagina (mbox) e XDM
 
-Tutti i campi XDM vengono passati automaticamente a Target come [parametri di pagina](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page) o parametri mbox.
+Tutti i campi XDM vengono passati automaticamente a Target come [parametri di pagina](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters) o parametri mbox.
 
 Alcuni di questi campi XDM verranno mappati su oggetti speciali nel backend di Target. Ad esempio: `web.webPageDetails.URL` sarà automaticamente disponibile per creare condizioni di targeting basate su URL o come `page.url` durante la creazione di script di profilo.
 
@@ -401,7 +402,7 @@ Alcuni di questi campi XDM verranno mappati su oggetti speciali nel backend di T
 
 Alcuni punti dati possono essere utili per Target e non sono mappati dall’oggetto XDM. Questi parametri speciali di Target includono:
 
-* [Attributi del profilo](https://experienceleague.adobe.com/en/docs/target/using/implement-target/before-implement/methods/in-page-profile-attributes)
+* [Attributi del profilo](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
 * [Attributi di entità Recommendations](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes)
 * [Parametri riservati di Recommendations](https://experienceleague.adobe.com/en/docs/target/using/recommendations/plan-implement#pass-behavioral)
 * Valori categoria per [affinità tra categorie](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/category-affinity)
@@ -543,7 +544,7 @@ Inoltre, puoi utilizzare la funzione Assurance quando appropriato per confermare
 
    ![Convalida nell’hit di Analytics per la garanzia](assets/validate-in-assurance-analyticsevent.png)
 
-Ciò conferma che le informazioni A4T che erano in coda per una trasmissione successiva quando abbiamo effettuato la chiamata di decisione di Target sono state inviate correttamente quando la chiamata di tracciamento di Analytics è stata attivata più avanti sulla pagina.
+Ciò conferma che le informazioni A4T che erano in coda per una trasmissione successiva quando abbiamo effettuato la chiamata di Target Decisioning sono state inviate correttamente quando la chiamata di tracciamento di Analytics è stata attivata più avanti sulla pagina.
 
 Dopo aver completato questa lezione, è necessario disporre di un’implementazione funzionante di Adobe Target utilizzando Platform Web SDK.
 
@@ -551,4 +552,4 @@ Dopo aver completato questa lezione, è necessario disporre di un’implementazi
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -1,22 +1,23 @@
 ---
-title: Configurare la gestione delle decisioni con Platform Web SDK
+title: Configurare Journey Optimizer Decision Management con Platform Web SDK
 description: Scopri come implementare la gestione delle decisioni utilizzando Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
+jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2515'
 ht-degree: 0%
 
 ---
 
 # Configurare la gestione delle decisioni con Platform Web SDK
 
-Scopri come implementare la gestione delle decisioni utilizzando Platform Web SDK. Questa guida descrive i prerequisiti fondamentali per la gestione delle decisioni, i passaggi dettagliati per la configurazione e un approfondimento del caso d’uso incentrato sullo stato di fedeltà.
+Scopri come implementare la funzionalità di gestione delle decisioni di Adobe Journey Optimizer utilizzando Platform Web SDK. Questa guida descrive i prerequisiti fondamentali per la gestione delle decisioni, i passaggi dettagliati per la configurazione e un approfondimento del caso d’uso incentrato sullo stato di fedeltà.
 
-Seguendo questa esercitazione, gli utenti di Journey Optimizer sono in grado di applicare in modo efficace le funzioni offer decisioning, migliorando la personalizzazione e la rilevanza delle interazioni con i clienti.
+Seguendo questa esercitazione, gli utenti di Journey Optimizer possono utilizzare le funzioni di gestione delle decisioni, migliorando la personalizzazione e la rilevanza delle interazioni con i clienti.
 
 
 ![SDK per web e diagramma di Adobe Analytics](assets/dc-websdk-ajo.png)
@@ -51,9 +52,7 @@ Per completare le lezioni in questa sezione, devi prima:
 
 ## Limitazioni
 
-Prendi nota della seguente limitazione:
-
-* Le offerte basate su eventi non sono attualmente supportate in Adobe Journey Optimizer. Se crei una regola di decisione basata su un evento, non puoi applicarla a un’offerta.
+Le offerte basate su eventi non sono attualmente supportate in Adobe Journey Optimizer. Se crei una regola di decisione basata su un evento, non puoi applicarla a un’offerta.
 
 ## Concedere l’accesso alla gestione delle decisioni
 
@@ -140,7 +139,7 @@ Innanzitutto, devi comprendere la terminologia utilizzata nell’interfaccia di 
 
 In questa lezione viene implementato un caso di utilizzo di esempio dei premi fedeltà per comprendere la gestione delle decisioni tramite Web SDK.
 
-Questo caso d’uso consente di comprendere meglio in che modo Journey Optimizer può contribuire a fornire la migliore offerta ai clienti, utilizzando la libreria di offerte centralizzata e il motore di decisione delle offerte.
+Questo caso d’uso consente di comprendere meglio in che modo Journey Optimizer può contribuire a fornire la migliore offerta ai clienti, utilizzando la libreria di offerte centralizzata e il motore decisionale per la gestione delle decisioni.
 
 >[!NOTE]
 >
@@ -311,7 +310,7 @@ Per creare la decisione, segui questi passaggi:
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Ora devi aggiungere **criteri di valutazione** per l&#39;ambito della decisione. Clic **Aggiungi** e scegli il creato in precedenza &#39;*Premi fedeltà*&#39; **raccolta** che contiene tutte le offerte fedeltà da considerare.
+1. Ora devi aggiungere **criteri di valutazione** per l&#39;ambito della decisione. Clic **Aggiungi** e scegli il creato in precedenza &#39;*Premi fedeltà*&#39; **collection, che contiene tutte le offerte fedeltà da considerare.
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -334,7 +333,7 @@ Per creare la decisione, segui questi passaggi:
 
 ## Simulazioni
 
-Come best practice, è necessario convalidare la logica decisionale della fidelizzazione Luma per garantire che le offerte corrette vengano consegnate al pubblico fedeltà corretto. Per farlo, utilizza **profili di test**. È inoltre consigliabile testare le modifiche apportate alle offerte tramite i profili di test prima di inviare nuove versioni di offerta alla produzione.
+Come best practice, è necessario convalidare la logica decisionale relativa alla fedeltà Luma per garantire che le offerte corrette siano consegnate al pubblico di fidelizzazione giusto. Puoi eseguire questa convalida utilizzando **profili di test**. È inoltre consigliabile testare le modifiche apportate alle offerte tramite i profili di test prima di inviare nuove versioni di offerta alla produzione.
 
 Per iniziare il test, seleziona la **Simulazioni** scheda da **Offerte** menu.
 
@@ -370,7 +369,7 @@ Per iniziare il test, seleziona la **Simulazioni** scheda da **Offerte** menu.
 
 Il **Adobe Experience Platform Debugger** L’estensione, disponibile sia per Chrome che per Firefox, analizza le pagine web per identificare i problemi nell’implementazione delle soluzioni Adobe Experience Cloud.
 
-Puoi utilizzare il debugger sul sito Luma per convalidare la logica decisionale in produzione. Questa è una buona pratica una volta che il caso di utilizzo dei premi fedeltà è attivo e in esecuzione, per garantire che tutto sia configurato correttamente.
+Puoi utilizzare il debugger sul sito Luma per convalidare la logica decisionale in produzione. Questa convalida è una buona pratica una volta che il caso di utilizzo dei premi fedeltà è attivo e in esecuzione, per garantire che tutto sia configurato correttamente.
 
 [Scopri come configurare il debugger nel browser utilizzando la guida qui](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
@@ -405,4 +404,4 @@ Per iniziare la convalida tramite il debugger:
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

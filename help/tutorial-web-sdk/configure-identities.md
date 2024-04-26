@@ -2,11 +2,12 @@
 title: Configurare uno spazio dei nomi delle identità
 description: Scopri come configurare gli spazi dei nomi delle identità da utilizzare con Adobe Experience Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Identities
+jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 7%
+source-wordcount: '576'
+ht-degree: 8%
 
 ---
 
@@ -38,9 +39,9 @@ Devi avere già completato le lezioni precedenti:
 
 >[!IMPORTANT]
 >
->Il [Estensione ID Experience Cloud](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) non è necessario quando si implementa Adobe Experience Platform Web SDK, in quanto la libreria JavaScript dell’SDK Web contiene la funzionalità del servizio ID visitatore.
+>Il [Estensione ID Experience Cloud](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) non è necessario quando si implementa Adobe Experience Platform Web SDK, in quanto la libreria JavaScript dell’SDK Web contiene la funzionalità del servizio ID visitatore.
 >
-> Se il tuo sito web utilizza già il servizio ID Experience Cloud sul tuo sito web, tramite API Visitor o l’estensione tag del servizio ID Experience Cloud, e desideri continuare a utilizzarlo durante la migrazione a Adobe Experience Platform Web SDK, devi utilizzare la versione più recente dell’API Visitor o l’estensione tag del servizio ID Experience Cloud. Consulta [Migrazione degli ID](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) per ulteriori informazioni.
+> Se il sito web utilizza già il servizio ID Experience Cloud sul sito web, tramite API Visitor o l’estensione tag del servizio ID Experience Cloud, e desideri continuare a utilizzarlo durante la migrazione a Adobe Experience Platform Web SDK, devi utilizzare la versione più recente dell’API Visitor o l’estensione tag del servizio ID Experience Cloud. Consulta [Migrazione degli ID](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) per ulteriori informazioni.
 
 ## Creare uno spazio dei nomi delle identità
 
@@ -89,14 +90,10 @@ Ora crea uno spazio dei nomi per l’ID CRM Luma:
 >
 > In [Creare le identità](create-identities.md) lezione, scoprirai come utilizzare questo spazio dei nomi quando invii identità all’Edge Network di Platform.
 
-## Creare lo spazio dei nomi delle identità nella sandbox di produzione
-
-A causa di una limitazione corrente nell’estensione Web SDK, è necessario creare spazi dei nomi di identità anche nella sandbox di produzione per utilizzare lo spazio dei nomi per inviare dati a una sandbox di sviluppo. Quindi, se per questa esercitazione hai utilizzato una sandbox di sviluppo, crea anche la `Luma CRM ID` dello spazio dei nomi nella sandbox di produzione.
-
 Ora che le identità sono presenti, è possibile configurare lo stream di dati.
 
 [Successivo: ](configure-datastream.md)
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

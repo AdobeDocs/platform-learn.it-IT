@@ -3,7 +3,7 @@ title: Tutorial sull’implementazione di Adobe Experience Cloud con Web SDK
 description: Scopri come implementare applicazioni Experience Cloud utilizzando Adobe Experience Platform Web SDK.
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 4%
@@ -20,7 +20,7 @@ Experienci Platform Web SDK è una libreria JavaScript lato client che consente 
 
 Questa esercitazione ti guida attraverso l’implementazione di Platform Web SDK su un sito web di esempio per la vendita al dettaglio denominato Luma. Il [Sito Luma](https://luma.enablementadobe.com/content/luma/us/en.html) dispone di un livello dati e funzionalità avanzati che consentono di realizzare un’implementazione realistica. Per questo tutorial:
 
-* Crea una tua proprietà di tag nel tuo account con un’implementazione Platform Web SDK per il sito web Luma.
+* Crea una tua proprietà di tag, nel tuo account, con un’implementazione Platform Web SDK per il sito web Luma.
 * Configura tutte le funzioni di raccolta dati per le implementazioni Web SDK, come stream di dati, schemi e spazi dei nomi di identità.
 * Aggiungi le seguenti applicazioni Adobe Experience Cloud:
    * **[Adobe Experience Platform](setup-experience-platform.md)** (e applicazioni basate su Platform come Adobe Real-time Customer Data Platform, Adobe Journey Optimizer e Adobe Customer Journey Analytics)
@@ -48,7 +48,7 @@ In queste lezioni, si presume che tu abbia un account di Adobe e le autorizzazio
    * **[!UICONTROL Diritti di proprietà]**—autorizzazione a **[!UICONTROL Approva]**, **[!UICONTROL Sviluppa]**, **[!UICONTROL Modifica proprietà]**, **[!UICONTROL Gestisci ambienti]**, **[!UICONTROL Gestire le estensioni]**, e **[!UICONTROL Pubblica]**,
    * **[!UICONTROL Diritti aziendali]**—autorizzazione a **[!UICONTROL Gestisci proprietà]**
 
-     Per ulteriori informazioni sulle autorizzazioni per i tag, consulta [la documentazione](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
+     Per ulteriori informazioni sulle autorizzazioni tag, consulta [la documentazione](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
 
 * Per **Experience Platform**, è necessario disporre di:
 
@@ -66,7 +66,7 @@ In queste lezioni, si presume che tu abbia un account di Adobe e le autorizzazio
 
 * Per l&#39;opzione **Adobe Analytics** lezione, devi avere [accesso come amministratore alle impostazioni della suite di rapporti, alle regole di elaborazione e ad Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
-* Per l&#39;opzione **Adobe Target** lezione, devi avere [Editor o Approvatore](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) accesso.
+* Per l&#39;opzione **Adobe Target** lezione, devi avere [Editor o Approvatore](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) accesso.
 
 * Per l&#39;opzione **Audience Manager** lezione, devi avere accesso a creare, leggere e scrivere caratteristiche, segmenti e destinazioni. Per ulteriori informazioni, consulta l’esercitazione su [Controllo degli accessi basato sul ruolo di Audienci Manager](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
@@ -77,7 +77,7 @@ In queste lezioni, si presume che tu abbia un account di Adobe e le autorizzazio
 
 ## Aggiornamenti
 
-* 24 aprile 2024: aggiornamento principale, che include l’aggiunta di Imposta variabile/Aggiorna variabile, richieste di suddivisione personalizzazione e analisi, lezioni di Journey Optimizer
+* 24 aprile 2024: aggiornamenti principali, tra cui l’aggiunta di Imposta variabile/aggiorna variabile, richieste di suddivisione personalizzazione e analisi, lezioni di Journey Optimizer
 
 ## Caricare il sito web Luma
 
@@ -91,4 +91,4 @@ Cominciamo.
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

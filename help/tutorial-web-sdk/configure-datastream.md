@@ -1,21 +1,21 @@
 ---
-title: Configurare uno stream di dati
+title: Configurare uno stream di dati per Platform Web SDK
 description: Scopri come abilitare un flusso di dati e configurare le soluzioni Experience Cloud. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Datastreams
+jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '531'
 ht-degree: 4%
 
 ---
 
 # Configurare uno stream di dati
 
-Scopri come abilitare uno stream di dati e configurare le applicazioni Experience Cloud.
+Scopri come configurare uno stream di dati per Adobe Experience Platform Web SDK.
 
-Gli stream di dati indicano all’Edge Network di Adobe Experience Platform dove inviare i dati raccolti da Platform Web SDK. Nella configurazione dei flussi di dati, abilita le applicazioni di Experience Cloud, l’account di Experience Platform e l’inoltro di eventi. Consulta la [Nozioni di base sulla configurazione di uno stream di dati](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/datastreams) per informazioni più dettagliate.
-
+[Flussi di dati](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) indica a un Edge Network di Adobe Experience Platform dove inviare i dati raccolti da Platform Web SDK. Nella configurazione dei flussi di dati, abilita le applicazioni di Experience Cloud, l’account di Experience Platform e l’inoltro di eventi.
 
 ![SDK per web, flussi di dati e diagramma di Edge Network](assets/dc-websdk-datastreams.png)
 
@@ -47,12 +47,15 @@ Ora puoi creare un flusso di dati per indicare all’Edge Network di Platform do
    >Se sei il cliente di un’applicazione basata su Platform come Real-Time CDP o Journey Optimizer, per questa esercitazione ti consigliamo di utilizzare una sandbox di sviluppo. In caso contrario, utilizza **[!UICONTROL Prod]** sandbox.
 
 1. Vai a **[!UICONTROL Flussi di dati]** nel menu di navigazione a sinistra
-1. Seleziona **[!UICONTROL Nuovo flusso di dati]** sul lato destro dello schermo.
+1. Seleziona **[!UICONTROL Nuovo flusso di dati]**
 1. Invio `Luma Web SDK: Development Environment` come **[!UICONTROL Nome]**. Questo nome viene utilizzato successivamente quando configuri l’estensione Web SDK nella proprietà tag.
-1. Seleziona il `Luma Web Event Data` come **[!UICONTROL Schema Evento]**
 1. Seleziona **[!UICONTROL Salva]**
 
    ![Creare lo stream di dati](assets/datastream-create-new-datastream.png)
+
+   >[!NOTE]
+   >
+   >È necessario selezionare uno schema solo se si utilizza [Preparazione per la raccolta dati](/help/data-collection/edge/data-prep.md) funzionalità.
 
 Nella schermata successiva è possibile aggiungere al flusso di dati servizi quali applicazioni Adobe, ma a questo punto dell’esercitazione non verrà aggiunto alcun servizio. Lo farai più avanti nelle lezioni [Experience Platform configurazione](setup-experience-platform.md), [Configurare Analytics](setup-analytics.md), [Audience Manager configurazione](setup-audience-manager.md), [Imposta Target](setup-target.md), o [Inoltro eventi](setup-event-forwarding.md).
 
@@ -62,17 +65,14 @@ Nella schermata successiva è possibile aggiungere al flusso di dati servizi qua
 
 ## Sostituire uno stream di dati
 
-Le sostituzioni dello stream di dati consentono di definire configurazioni aggiuntive per gli stream di dati e quindi di ignorare la configurazione predefinita in determinate condizioni dall’implementazione.
-
+[Override dello stream di dati](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) consente di definire configurazioni aggiuntive per lo stream di dati e quindi di ignorare la configurazione predefinita in determinate condizioni.
 
 La sostituzione della configurazione dello stream di dati è un processo in due fasi:
 
-1. Innanzitutto, definisci le sostituzioni dello stream di dati nella configurazione dello stream di dati. Questa operazione deve essere eseguita per ogni applicazione di Adobe che si desidera sostituire.
+1. Innanzitutto, puoi definire le sostituzioni dello stream di dati nella configurazione del servizio dello stream di dati. Ad esempio, puoi definire suite di rapporti di Analytics alternative, aree di lavoro di Target o set di dati di Platform da utilizzare come sostituzioni.
 1. Quindi, invii le sostituzioni all’Edge Network tramite un’azione Invia evento SDK per web o tramite una configurazione nell’estensione tag SDK per web.
 
-In [Configurare Adobe Analytics](setup-analytics.md) lezione si sostituisce la suite di rapporti per una pagina utilizzando l’azione Invia evento di Platform Web SDK.
-
-Consulta la [documentazione sulle sostituzioni della configurazione dello stream di dati](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) per istruzioni dettagliate su come ignorare le configurazioni dello stream di dati.
+In [Configurare Adobe Analytics](setup-analytics.md) Nella lezione, sostituisci la suite di rapporti per una pagina utilizzando l’azione Invia evento di Platform Web SDK.
 
 Ora puoi installare l’estensione Platform Web SDK nella tua proprietà tag.
 
@@ -80,4 +80,4 @@ Ora puoi installare l’estensione Platform Web SDK nella tua proprietà tag.
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

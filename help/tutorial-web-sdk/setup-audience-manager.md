@@ -2,17 +2,18 @@
 title: Configurare un Audience Manager con Platform Web SDK
 description: Scopri come configurare Adobe Audience Manager utilizzando Platform Web SDK e convalidare l’implementazione utilizzando una destinazione cookie. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 solution: Data Collection, Audience Manager
+jira: KT-15409
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1340'
 ht-degree: 1%
 
 ---
 
 # Configurare un Audience Manager con Platform Web SDK
 
-Scopri come configurare Adobe Audience Manager utilizzando Platform Web SDK e convalidare l’implementazione utilizzando una destinazione cookie.
+Scopri come configurare Adobe Audience Manager utilizzando Adobe Experience Platform Web SDK e convalidare l’implementazione utilizzando una destinazione cookie.
 
 [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) è la soluzione di Adobe Experience Cloud che offre tutto il necessario per raccogliere informazioni rilevanti dal punto di vista commerciale sui visitatori del sito, creare segmenti commerciabili e distribuire contenuti e pubblicità mirati al pubblico giusto.
 
@@ -35,7 +36,7 @@ Per completare questa lezione, devi prima:
 
 ## Configurare lo stream di dati
 
-L’implementazione di Audience Manager che utilizza Platform Web SDK è diversa dall’implementazione che utilizza [inoltro lato server (SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/server-side-forwarding/ssf). L’inoltro lato server trasmette ad Audienci Manager i dati della richiesta di Adobe Analytics. Un’implementazione di Platform Web SDK trasmette i dati XDM inviati all’Edge Network di Platform all’Audience Manager. Audience Manager abilitato nello stream di dati:
+L’implementazione di Audience Manager che utilizza Platform Web SDK è diversa dall’implementazione che utilizza [inoltro lato server (SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). L’inoltro lato server trasmette ad Audienci Manager i dati della richiesta di Adobe Analytics. Un’implementazione di Platform Web SDK trasmette i dati XDM inviati all’Edge Network di Platform all’Audience Manager. Audience Manager abilitato nello stream di dati:
 
 1. Vai a [Raccolta dati](https://experience.adobe.com/#/data-collection){target="blank"} Interfaccia
 1. Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Flussi di dati]**
@@ -96,12 +97,12 @@ Dopo il salvataggio dell&#39;origine dati, impostare un [caratteristica](https:/
 
 ## Creare un segmento
 
-Il passaggio successivo consiste nel creare un **segmento**, e assegna la caratteristica appena definita a questo segmento.
+I passaggi successivi consistono nel creare un **segmento** e assegna la caratteristica appena definita a questo segmento.
 
 1. Seleziona **[!UICONTROL Dati sul pubblico]** nella navigazione in alto e seleziona **[!UICONTROL Segmenti]**
 1. Seleziona **[!UICONTROL Aggiungi nuovo]** in alto a sinistra nella pagina per aprire il generatore di segmenti
 1. Assegna al segmento un nome descrittivo e una descrizione, ad esempio `Platform Web SDK - Homepage visitors`
-1. **[!UICONTROL Seleziona una cartella]** dove verrà salvato il segmento nel riquadro a destra. È possibile creare una cartella tramite **selezione dell’icona +** accanto a una cartella padre esistente. Puoi denominare questa nuova cartella `Platform Web SDK tutorial`.
+1. **[!UICONTROL Seleziona una cartella]** in cui il segmento viene salvato nel riquadro a destra. È possibile creare una cartella tramite **selezione dell’icona +** accanto a una cartella padre esistente. Puoi denominare questa nuova cartella `Platform Web SDK tutorial`.
 1. Aggiungi un codice di integrazione, che in questo caso è un set casuale di numeri.
 1. In **[!UICONTROL Origine dati]** sezione, seleziona **[!UICONTROL Audience Manager]** e l’origine dati creata in precedenza
 1. Espandi **[!UICONTROL Caratteristiche]** e cercare la caratteristica creata
@@ -184,4 +185,4 @@ Dopo aver completato questa lezione, dovresti essere in grado di vedere in che m
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

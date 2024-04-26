@@ -1,18 +1,19 @@
 ---
-title: Creare regole di tag
+title: Creare regole di tag per Platform Web SDK
 description: Scopri come inviare un evento all’Edge Network di Platform con l’oggetto XDM utilizzando una regola di tag. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Tags
+jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1963'
 ht-degree: 1%
 
 ---
 
 # Creare regole di tag
 
-Scopri come inviare eventi all’Edge Network Platform con l’oggetto XDM utilizzando le regole di tag. Una regola di tag è una combinazione di eventi, condizioni e azioni che indica alla proprietà tag di eseguire un&#39;operazione. Con Platform Web SDK, le regole vengono utilizzate per inviare eventi all’Edge Network di Platform con i dati corretti.
+Scopri come inviare eventi all’Edge Network di Adobe Experience Platform con l’oggetto XDM utilizzando le regole di tag. Una regola di tag è una combinazione di eventi, condizioni e azioni che indica alla proprietà tag di eseguire un&#39;operazione. Con Platform Web SDK, le regole vengono utilizzate per inviare eventi all’Edge Network di Platform con i dati corretti.
 
 ## Obiettivi di apprendimento
 
@@ -38,7 +39,7 @@ Conosci i tag di raccolta dati e la [Sito di dimostrazione Luma](https://luma.en
 
 ## Convenzioni di denominazione
 
-Per gestire meglio le regole nei tag, si consiglia di seguire una convenzione di denominazione standard. Questa esercitazione utilizza una convenzione di denominazione in cinque parti:
+Per gestire le regole nei tag, si consiglia di seguire una convenzione di denominazione standard. Questa esercitazione utilizza una convenzione di denominazione in cinque parti:
 
 * [**posizione**] - [**evento**] - [**scopo**] - [**ordine**]
 
@@ -52,7 +53,7 @@ dove;
 
 ## Creare regole di tag
 
-Nei tag, le regole vengono utilizzate per eseguire azioni (chiamate di attivazione) in varie condizioni. L’estensione dei tag di Platform Web SDK include due azioni che verranno utilizzate in questa lezione:
+Nei tag, le regole vengono utilizzate per eseguire azioni (chiamate di attivazione) in varie condizioni. L’estensione dei tag di Platform Web SDK include due azioni utilizzate in questa lezione:
 
 * **[!UICONTROL Aggiorna variabile]** mappa gli elementi dati alle proprietà in un oggetto XDM
 * **[!UICONTROL Invia evento]** invia l&#39;oggetto XDM ad Experienci Platform Edge Network
@@ -63,7 +64,7 @@ Nel resto di questa lezione:
 
 1. Creare regole aggiuntive con **[!UICONTROL Aggiorna variabile]** azione che sovrascrive la &quot;configurazione globale&quot; e contribuisce con campi XDM aggiuntivi in determinate condizioni (ad esempio, l’aggiunta di dettagli del prodotto nelle pagine dei prodotti).
 
-1. Crea un&#39;altra regola con **[!UICONTROL Invia evento]** azione che invia l’oggetto XDM completo all’Edge Network di Adobe Experience Platform.
+1. Crea un&#39;altra regola con **[!UICONTROL Invia evento]** , che invierà l&#39;oggetto XDM completo all&#39;Edge Network di Adobe Experience Platform.
 
 Tutte queste regole saranno sequenziate correttamente utilizzando il comando &quot;[!UICONTROL ordine]&quot;.
 
@@ -110,7 +111,7 @@ Per creare una regola di tag per i campi XDM globali:
 
    ![Aggiorna schema variabile](assets/create-rule-update-variable.png)
 
-Ora mappa il tuo [!UICONTROL elementi dati] al [!UICONTROL schema] utilizzato dall’oggetto XDM. È possibile eseguire il mapping a singole proprietà o a interi oggetti. In questo esempio, esegui il mapping a singole proprietà:
+Ora, mappa il tuo [!UICONTROL elementi dati] al [!UICONTROL schema] utilizzato dall’oggetto XDM. È possibile eseguire il mapping a singole proprietà o a interi oggetti. In questo esempio, esegui il mapping a singole proprietà:
 
 1. Individuare il campo eventType e selezionarlo
 
@@ -171,7 +172,7 @@ Per iniziare, monitora le visualizzazioni del prodotto nella pagina dei dettagli
 1. Seleziona la ![simbolo +](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) in Evento per aggiungere un nuovo trigger
 1. Sotto **[!UICONTROL Estensione]**, seleziona **[!UICONTROL Core]**
 1. Sotto **[!UICONTROL Tipo di evento]**, seleziona **[!UICONTROL Library Loaded (Page Top)]**
-1. Seleziona per aprire **[!UICONTROL Opzioni avanzate]**, digitare `20`. In questo modo la regola viene eseguita dopo il `all pages - library loaded - set global variables - 1` che imposta la configurazione globale.
+1. Seleziona per aprire **[!UICONTROL Opzioni avanzate]**, digitare `20`. Questo valore di ordine assicura che la regola venga eseguita dopo il `all pages - library loaded - set global variables - 1` che imposta la configurazione globale.
 
    ![Regole XDM per Analytics](assets/set-up-analytics-pdp.png)
 
@@ -345,9 +346,9 @@ Dopo aver impostato le variabili, puoi creare la regola per inviare l’oggetto 
 
 1. In **[!UICONTROL Azioni]** sezione, seleziona **[!UICONTROL Aggiungi]**
 
-1. Come **[!UICONTROL Estensione]**, seleziona  **[!UICONTROL Adobe Experience Platform Web SDK]**
+1. Come **[!UICONTROL Estensione]**, seleziona **[!UICONTROL Adobe Experience Platform Web SDK]**
 
-1. Come  **[!UICONTROL Tipo di azione]**, seleziona  **[!UICONTROL Invia evento]**
+1. Come  **[!UICONTROL Tipo di azione]**, seleziona **[!UICONTROL Invia evento]**
 
 1. Come **[!UICONTROL XDM]**, seleziona la `xdm.variable.content` elemento dati creato nella lezione precedente
 
@@ -358,7 +359,7 @@ Dopo aver impostato le variabili, puoi creare la regola per inviare l’oggetto 
 
    ![Salva la regola](assets/create-rule-save-rule.png)
 
-## Pubblicare la regola in una libreria
+## Pubblicare le regole in una libreria
 
 Successivamente, pubblica la regola nell&#39;ambiente di sviluppo in modo da poterne verificare il funzionamento.
 
@@ -385,7 +386,7 @@ La creazione della libreria potrebbe richiedere alcuni minuti e al termine viene
 
 ![Compilazione completata](assets/create-rule-development-success.png)
 
-Come è possibile vedere sul [!UICONTROL Flusso di pubblicazione] , il processo di pubblicazione richiede molto di più, il che va oltre l’ambito di questa esercitazione. Questo tutorial utilizza una sola libreria nell’ambiente di sviluppo.
+Come è possibile vedere sul [!UICONTROL Flusso di pubblicazione] , il processo di pubblicazione offre molto di più, che va oltre l’ambito di questa esercitazione. Questo tutorial utilizza una sola libreria nell’ambiente di sviluppo.
 
 Ora puoi convalidare i dati nella richiesta utilizzando l’Adobe Experience Platform Debugger.
 
@@ -393,4 +394,4 @@ Ora puoi convalidare i dati nella richiesta utilizzando l’Adobe Experience Pla
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

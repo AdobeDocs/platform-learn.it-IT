@@ -2,21 +2,22 @@
 title: Configurare il consenso con Platform Web SDK
 description: Scopri come configurare le impostazioni di privacy dell’estensione tag Experienci Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Consent
+jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
 
 # Configurare il consenso con Platform Web SDK
 
-Scopri come configurare le impostazioni di privacy dell’estensione tag Experienci Platform Web SDK. Imposta il consenso in base all’interazione del visitatore con un banner di una piattaforma di gestione del consenso (CMP).
+Scopri come configurare le impostazioni di privacy dell’estensione tag Adobe Experience Platform Web SDK. Imposta il consenso in base all’interazione del visitatore con un banner di una piattaforma di gestione del consenso (CMP).
 
 >[!NOTE]
 > 
->A scopo dimostrativo, questa esercitazione utilizza [Klaro](https://heyklaro.com/) come CMP. Siete invitati a seguire l&#39;utilizzo di Klaro o la CMP che usate con il vostro sito web.
+>A scopo dimostrativo, questa esercitazione utilizza [Klaro](https://klaro.org/) come CMP. Siete invitati a seguire l&#39;utilizzo di Klaro o la CMP che usate con il vostro sito web.
 
 
 ## Obiettivi di apprendimento
@@ -32,6 +33,7 @@ Alla fine di questa lezione, sarai in grado di:
 Devi acquisire familiarità con i tag e i passaggi per creare regole, elementi di dati, creare librerie in ambienti e cambiare le librerie di tag utilizzando Experienci Platform Debugger.
 
 Prima di iniziare a configurare le impostazioni della privacy e a creare le regole per l’impostazione del consenso, assicurati di aver inserito lo script della piattaforma di gestione del consenso sul sito web e di funzionare correttamente. Una CMP può essere caricata direttamente nel codice sorgente con l’aiuto degli sviluppatori del sito o attraverso i tag stessi. Questa lezione illustra quest&#39;ultimo approccio.
+
 >[!NOTE]
 > 
 >1. Una piattaforma di gestione del consenso (o CMP) viene utilizzata dalle organizzazioni per documentare e gestire legalmente le scelte di consenso di un visitatore prima di raccogliere, condividere o vendere i dati del visitatore da fonti online come siti web e app.
@@ -42,10 +44,10 @@ Prima di iniziare a configurare le impostazioni della privacy e a creare le rego
 
 Prima di passare alle configurazioni di tag, scopri di più sulla piattaforma di gestione del consenso utilizzata in questo tutorial Klaro.
 
-1. Visita [Klaro](https://heyklaro.com/) e impostare un account.
+1. Visita [Klaro](https://klaro.org/) e impostare un account.
 1. Vai a **Gestione della privacy** e crea un’istanza seguendo le istruzioni.
 1. Utilizza il **Codice di integrazione** per iniettare Klaro nella proprietà del tag (le istruzioni sono riportate nell’esercizio successivo).
-1. Ignora **Scansione** , poiché rileverà la proprietà tag che è codificata nel sito web di dimostrazione Luma e non quella creata per questa esercitazione.
+1. Ignora **Scansione** , poiché rileva la proprietà tag codificata nel sito web di dimostrazione Luma e non quella creata per questa esercitazione.
 1. Aggiungi un servizio denominato `aep web sdk` e attivare **Stato predefinito del servizio**. Quando è attivata, il valore di consenso predefinito è `true`, altrimenti è `false`. Questa configurazione è utile quando desideri decidere quale sarà lo stato di consenso predefinito (prima del consenso del visitatore) per l’applicazione web. Ad esempio:
    * Per il CCPA, il consenso predefinito è solitamente impostato su `true`. State per fare riferimento a questo scenario come **Consenso implicito** in questa esercitazione
    * Per il RGPD, il consenso predefinito è comunemente impostato su `false`. State per fare riferimento a questo scenario come **Rinuncia implicita** in questa esercitazione.
@@ -183,7 +185,7 @@ Ecco come impostare la configurazione per uno scenario di rinuncia implicita:
 
    Con questa configurazione, Experienci Platform Web SDK garantisce che nessuna richiesta venga attivata a meno che l’autorizzazione di consenso non cambi in **[!UICONTROL In entrata]**. Ciò potrebbe verificarsi in seguito all’accettazione manuale dei cookie da parte di un visitatore che acconsente.
 
-1. In Debugger, assicurati che il sito Luma sia mappato alla proprietà tag e che la registrazione della console tag sia attiva.
+1. In Debugger, assicurati che il sito Luma sia mappato sulla proprietà tag e che la registrazione della console tag sia attiva.
 1. Usa la Developer Console del browser per **Cancella dati sito** in **Applicazione** > **Storage**
 
 1. Ricarica il sito Luma e dovresti visualizzarlo `defaultConsent` è impostato su **[!UICONTROL Uscita]** e non è stata effettuata alcuna richiesta SDK web
@@ -218,10 +220,10 @@ Dopo aver impostato questa regola, la raccolta di eventi deve iniziare quando un
 Per ulteriori informazioni sul consenso in Web SDK, consulta [Preferenze di supporto del consenso dei clienti](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-Per ulteriori informazioni su [!UICONTROL Impostare il consenso] azione, vedi [Impostare il consenso](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/action-types#set-consent).
+Per ulteriori informazioni su [!UICONTROL Impostare il consenso] azione, vedi [Impostare il consenso](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 [Successivo: ](setup-event-forwarding.md)
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -1,18 +1,19 @@
 ---
-title: Impostare una proprietà di inoltro eventi
+title: Configurare l’inoltro di eventi con i dati dell’SDK web di Platform
 description: Scopri come utilizzare la proprietà di inoltro degli eventi utilizzando i dati Experienci Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Event Forwarding
+jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1861'
-ht-degree: 3%
+source-wordcount: '1873'
+ht-degree: 2%
 
 ---
 
-# Impostare una proprietà di inoltro eventi
+# Configurare l’inoltro degli eventi con i dati di Platform Web SDK
 
-Scopri come utilizzare la proprietà di inoltro degli eventi utilizzando i dati Experienci Platform Web SDK.
+Scopri come utilizzare l’inoltro degli eventi con i dati di Adobe Experience Platform Web SDK.
 
 L’inoltro degli eventi è un nuovo tipo di proprietà disponibile in Raccolta dati. L’inoltro degli eventi consente di inviare dati a fornitori di terze parti non Adobi direttamente dall’Edge Network di Adobe Experience Platform anziché dal browser tradizionale lato client. Ulteriori informazioni sui vantaggi dell’inoltro degli eventi nel [Panoramica sull’inoltro degli eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
@@ -22,7 +23,7 @@ L’inoltro degli eventi è un nuovo tipo di proprietà disponibile in Raccolta 
 Per utilizzare l’inoltro degli eventi in Adobe Experience Platform, i dati devono essere inviati all’Edge Network di Adobe Experience Platform utilizzando una o più delle tre opzioni seguenti:
 
 * [Adobe Experience Platform Web SDK](overview.md)
-* [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
+* [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)
   <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
@@ -45,12 +46,12 @@ Alla fine di questa lezione, sarai in grado di:
 
 ## Prerequisiti
 
-* Una licenza software che include l&#39;inoltro di eventi. L’inoltro di eventi è una funzione a pagamento di Data Collection. Per ulteriori informazioni, contatta il team del tuo account di Adobe.
+* Licenza software che include l&#39;inoltro di eventi. L’inoltro di eventi è una funzione a pagamento di Data Collection. Per ulteriori informazioni, contatta il team del tuo account di Adobe.
 * L’inoltro degli eventi è abilitato nell’organizzazione Experience Cloud.
 * Autorizzazione utente per l’inoltro di eventi. (in entrata [Admin Console](https://adminconsole.adobe.com/), nel prodotto Adobe Experience Platform Launch, elementi di autorizzazione per[!UICONTROL Piattaforme] > [!UICONTROL Bordo] e tutti [!UICONTROL Diritti di proprietà]). Una volta concesso, dovresti vedere [!UICONTROL Inoltro eventi] nel menu di navigazione a sinistra dell’interfaccia di Data Collection:
   ![Proprietà inoltro eventi](assets/event-forwarding-menu.png)
 
-* Adobe Experience Platform Web SDK o Mobile SDK configurato per inviare dati ad Edge Network. Devi aver completato le seguenti lezioni di questa esercitazione:
+* Adobe Experience Platform Web SDK o Mobile SDK è configurato per inviare dati ad Edge Network. Devi aver completato le seguenti lezioni di questa esercitazione:
 
    * Configurazione iniziale
 
@@ -76,14 +77,14 @@ Per prima cosa, crea una proprietà di inoltro degli eventi:
 1. Seleziona **[!UICONTROL Nuova proprietà]**.
    ![Proprietà inoltro eventi](assets/event-forwarding-new.png)
 
-1. Denomina la proprietà. In questo caso `Server-Side - Web SDK Course`
+1. Denomina la proprietà. In questo caso, `Server-Side - Web SDK Course`
 
 1. Seleziona **[!UICONTROL Salva]**.
    ![salvataggio proprietà inoltro eventi](assets/event-forwarding-save.png)
 
 ## Configurare lo stream di dati
 
-Affinché l’inoltro degli eventi possa utilizzare i dati inviati alla rete Edge, è necessario collegare la proprietà di inoltro degli eventi appena creata allo stesso flusso di dati utilizzato per inviare dati alle soluzioni Adobe.
+Affinché l’inoltro degli eventi possa utilizzare i dati inviati all’Edge Network di Platform, è necessario collegare la nuova proprietà di inoltro degli eventi creata allo stesso flusso di dati utilizzato per inviare dati alle soluzioni di Adobe.
 
 Per configurare Target nello stream di dati:
 
@@ -113,7 +114,7 @@ Ripeti questi passaggi per gli stream di dati di staging e produzione quando sei
 
 ## Inoltrare dati dall’Edge Network di Platform a una soluzione non di Adobe
 
-In questo esercizio imparerai a impostare un elemento dati per l’inoltro degli eventi, configurare una regola per l’inoltro degli eventi e convalidare utilizzando uno strumento di terza parte denominato [Webhook.site](https://webhook.site/).
+In questo esercizio imparerai a impostare un elemento dati per l’inoltro degli eventi, configurare una regola per l’inoltro degli eventi e convalidare utilizzando uno strumento di terze parti denominato [Webhook.site](https://webhook.site/).
 
 >[!NOTE]
 >
@@ -220,7 +221,7 @@ Esistono alcune differenze principali tra la configurazione delle regole in una 
 
 * **Sequenza di azioni della regola**:
 
-   * La sezione Azioni di una regola di inoltro degli eventi viene sempre eseguita in sequenza. Quando si salva una regola, occorre assicurarsi che l&#39;ordine delle azioni sia corretto. Questa sequenza di esecuzione non può essere eseguita in modo asincrono come con i tag.
+   * La sezione Azioni di una regola di inoltro degli eventi viene sempre eseguita in sequenza. Quando salvi una regola, assicurati che l’ordine delle azioni sia corretto. Questa sequenza di esecuzione non può essere eseguita in modo asincrono come con i tag.
 
 <!--
   * **Tags**: Rule actions can easily be reordered using drag-and-drop functionality.
@@ -231,7 +232,7 @@ Per configurare una regola per l’inoltro di dati al webhook, devi prima ottene
 
 1. Vai a [Webhook.site](https://webhook.site)
 
-1. Trova **L’URL univoco**, utilizzerai questo come richiesta URL nella regola di inoltro degli eventi
+1. Trova **L’URL univoco**, utilizzalo come richiesta URL nella regola di inoltro degli eventi
 
 1. Seleziona **[!UICONTROL Copia negli Appunti]**
 
@@ -324,4 +325,4 @@ Congratulazioni! Hai configurato l’inoltro degli eventi.
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

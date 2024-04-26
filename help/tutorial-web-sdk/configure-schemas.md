@@ -2,17 +2,18 @@
 title: Creare uno schema XDM per i dati web
 description: Scopri come creare uno schema XDM per i dati web nell’interfaccia di Data Collection. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Schemas
+jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1498'
 ht-degree: 1%
 
 ---
 
 # Creare uno schema XDM per i dati web
 
-Scopri come creare uno schema XDM per i dati web nell’interfaccia di Data Collection.
+Scopri come creare uno schema XDM per i dati web nell’interfaccia di raccolta dati di Adobe Experience Platform.
 
 Gli schemi Experience Data Model (XDM) sono gli elementi costitutivi, i principi e le best practice per la raccolta di dati in Adobe Experience Platform.
 
@@ -111,7 +112,7 @@ Quando possibile, si consiglia di utilizzare i gruppi di campi esistenti e di ad
 >In questo esercizio aggiungerai i gruppi di campi predefiniti consigliati per la raccolta di dati web: _**[!UICONTROL ExperienceEvent di AEP Web SDK]**_ e _**[!UICONTROL Evento esperienza del consumatore]**_.
 >
 >
-> Se implementi solo **Adobe Analytics** con Web SDK e non inviare dati a **Experience Platform**, utilizza [!UICONTROL Modello Adobe Analytics ExperienceEvent] per definire lo schema XDM. Questo verrà utilizzato nel [Configurazione analisi](setup-analytics.md) lezione.
+> Se implementi solo **Adobe Analytics** con Web SDK e non inviare dati a **Experience Platform**, utilizza [!UICONTROL Modello Adobe Analytics ExperienceEvent] per definire lo schema XDM. Questo viene utilizzato nel [Configurazione analisi](setup-analytics.md) lezione.
 
 1. In **[!UICONTROL Gruppi di campi]** sezione, seleziona **[!UICONTROL Aggiungi]**
 
@@ -125,7 +126,7 @@ Quando possibile, si consiglia di utilizzare i gruppi di campi esistenti e di ad
 
    ![Aggiungi gruppo di campi](assets/schema-add-field-group.png)
 
-Con entrambi i gruppi di campi, puoi accedere alle coppie chiave-valore più comunemente utilizzate, necessarie per la raccolta di dati sul web. Il [!UICONTROL nome visualizzato] di ciascun campo viene visualizzato dagli addetti al marketing nell’interfaccia di segment builder delle applicazioni basate su Platform e puoi modificare il nome visualizzato dei campi standard in base alle tue esigenze. È inoltre possibile rimuovere i campi non desiderati. Quando fai clic sul nome di uno dei gruppi di campi, l’interfaccia evidenzia quali gruppi di coppie chiave-valore appartengono ad esso. Nell’esempio seguente, puoi vedere a quali gruppi appartengono **[!UICONTROL Evento esperienza del consumatore]**.
+Con entrambi i gruppi di campi, puoi accedere alle coppie chiave-valore più comunemente utilizzate, necessarie per la raccolta di dati sul web. Il [!UICONTROL nome visualizzato] di ciascun campo viene visualizzato dagli addetti al marketing nell’interfaccia di segment builder delle applicazioni basate su Platform e puoi modificare il nome visualizzato dei campi standard in base alle tue esigenze. È inoltre possibile rimuovere i campi non desiderati. Quando fai clic sul nome di uno dei gruppi di campi, l’interfaccia evidenzia quali gruppi di coppie chiave-valore appartengono ad esso. Nell’esempio seguente, puoi vedere a quali campi appartengono **[!UICONTROL Evento esperienza del consumatore]**.
 
 ![Gruppi di campi schema](assets/schema-consumer-experience-event.png)
 
@@ -143,7 +144,7 @@ Si tratta di un oggetto obbligatorio per qualsiasi raccolta di dati relativi al 
 
 >[!IMPORTANT]
 >
-> È possibile abilitare **[!UICONTROL Profilo]** per uno schema prima di salvarlo. **Do not** attivala a questo punto. Una volta che uno schema è abilitato per il profilo, non può essere disabilitato o eliminato. A questo punto non è possibile rimuovere i campi dagli schemi, anche se è possibile [Campi obsoleti nell’interfaccia utente](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Queste implicazioni sono importanti da tenere presenti in un secondo momento quando si lavora con i propri dati nell’ambiente di produzione.
+> È possibile abilitare **[!UICONTROL Profilo]** per uno schema prima di salvarlo. **Do not** attivala a questo punto. Una volta abilitato lo schema per il profilo, non è possibile disattivarlo o eliminarlo senza ripristinare l’intera sandbox. A questo punto non è possibile rimuovere i campi dagli schemi, anche se è possibile [Campi obsoleti nell’interfaccia utente](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Queste implicazioni sono importanti da tenere presenti in un secondo momento quando si lavora con i propri dati nell’ambiente di produzione.
 >
 >
 >Questa impostazione viene discussa ulteriormente durante il [Experience Platform di configurazione](setup-experience-platform.md) lezione.
@@ -154,11 +155,11 @@ Per completare questa lezione, seleziona **[!UICONTROL Salva]** in alto a destra
 ![Salva schema](assets/schema-select-save.png)
 
 
-Ora puoi fare riferimento a questo schema quando aggiungi l’estensione Web SDK alla proprietà tag.
+Ora è possibile fare riferimento a questo schema quando si aggiunge l’estensione Web SDK alla proprietà tag.
 
 
 [Successivo: ](configure-identities.md)
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

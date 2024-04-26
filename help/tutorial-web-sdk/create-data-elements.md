@@ -1,18 +1,19 @@
 ---
-title: Creare elementi dati
+title: Creare elementi dati per Platform Web SDK
 description: Scopri come creare un oggetto XDM e mappare ad esso gli elementi dati nei tag. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 feature: Tags
+jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1205'
 ht-degree: 1%
 
 ---
 
 # Creare elementi dati
 
-Scopri come creare elementi dati nei tag per contenuti, eCommerce e dati di identità sulla [Sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Quindi popola i campi nello schema XDM con il tipo di elemento dati Variabile dell’estensione Platform Web SDK.
+Scopri come creare elementi dati nei tag per contenuti, eCommerce e dati di identità sulla [Sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Quindi popola i campi nello schema XDM con il tipo di elemento dati Variabile dell’estensione Adobe Experience Platform Web SDK.
 
 ## Obiettivi di apprendimento
 
@@ -99,7 +100,7 @@ window.adobeDataLayer.push({
 Pro
 
 * Elimina passaggi aggiuntivi per la mappatura delle variabili del livello dati su XDM
-* Può essere più rapido da implementare se il team di sviluppo è responsabile del comportamento digitale dei tag
+* L’implementazione può essere più rapida se il team di sviluppo è responsabile dell’assegnazione tag al comportamento digitale
 
 Contro
 
@@ -138,7 +139,7 @@ Questo approccio utilizza funzionalità integrate nella configurazione dello str
 
 * Flessibile in quanto è possibile mappare singole variabili su XDM
 * Possibilità di [calcola nuovi valori](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) o [trasformare tipi di dati](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) da un livello dati prima di passare a XDM
-* Utilizzo di un [Interfaccia utente di mappatura](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) per mappare i campi dei dati di origine su XDM con un’interfaccia utente semplice e intuitiva
+* Utilizzo di un [Interfaccia utente di mappatura](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) per mappare i campi dei dati di origine su XDM con un’interfaccia utente semplice e intuitiva
 
 #### Contro
 
@@ -298,4 +299,4 @@ Una volta impostati questi elementi dati, puoi iniziare a inviare dati all’Edg
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -2,19 +2,20 @@
 title: Configurare Adobe Analytics utilizzando Experienci Platform Web SDK
 description: Scopri come configurare Adobe Analytics utilizzando Experienci Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
 solution: Data Collection, Analytics
+jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2810'
 ht-degree: 0%
 
 ---
 
-# Configurare Adobe Analytics con Platform Web SDK
+# Configurare Adobe Analytics con Adobe Experience Platform Web SDK
 
-Scopri come configurare Adobe Analytics utilizzando [Experienci Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview), crea regole di tag per inviare dati ad Adobe Analytics e verifica che Analytics stia acquisendo i dati come previsto.
+Scopri come configurare Adobe Analytics utilizzando [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview), crea regole di tag per inviare dati ad Adobe Analytics e verifica che Analytics stia acquisendo i dati come previsto.
 
-[Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics) è un&#39;applicazione leader di settore che ti consente di comprendere i tuoi clienti come persone e gestire la tua attività grazie alle informazioni sul cliente.
+[Adobe Analytics](https://experienceleague.adobe.com/it/docs/analytics) è un&#39;applicazione leader di settore che ti consente di comprendere i tuoi clienti come persone e gestire la tua attività grazie alle informazioni sul cliente.
 
 ![Diagramma da SDK per web ad Adobe Analytics](assets/dc-websdk-aa.png)
 
@@ -23,7 +24,7 @@ Scopri come configurare Adobe Analytics utilizzando [Experienci Platform Web SDK
 Alla fine di questa lezione, potrai:
 
 * Configurare uno stream di dati per abilitare Adobe Analytics
-* Scopri quali campi XDM standard verranno mappati automaticamente sulle variabili di Analytics
+* Scopri quali campi XDM standard vengono mappati automaticamente sulle variabili di Analytics
 * Impostare variabili Analytics personalizzate utilizzando il gruppo di campi Modello Adobe Analytics ExperienceEvent o le regole di elaborazione
 * Inviare dati a un’altra suite di rapporti ignorando lo stream di dati
 * Convalidare le variabili di Adobe Analytics utilizzando Debugger e Assurance
@@ -34,13 +35,13 @@ Per completare questa lezione, devi prima:
 
 * Acquisisci familiarità con Adobe Analytics e accedi ad esso.
 
-* Avere almeno un ID suite per report test/dev. Se non hai una suite per report test/dev che puoi usare per questa esercitazione, [creane uno](https://experienceleague.adobe.com/en/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite).
+* Avere almeno un ID suite per report test/dev. Se non hai una suite per report test/dev che puoi usare per questa esercitazione, [creane uno](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Completa le lezioni precedenti nelle sezioni Configurazione iniziale e Configurazione tag di questa esercitazione.
 
 ## Configurare lo stream di dati
 
-Platform Web SDK invia i dati dal sito web all’Edge Network di Platform. Lo stream di dati comunica quindi all’Edge Network di Platform a quali suite di rapporti Adobe Analytics i dati devono essere inoltrati.
+Platform Web SDK invia i dati dal sito web all’Edge Network di Platform. Lo stream di dati comunica quindi all’Edge Network di Platform le suite di rapporti di Adobe Analytics a cui devono essere inviati i dati.
 
 1. Vai a [Raccolta dati](https://experience.adobe.com/#/data-collection){target="blank"} Interfaccia
 1. Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Flussi di dati]**
@@ -51,7 +52,7 @@ Platform Web SDK invia i dati dal sito web all’Edge Network di Platform. Lo st
 1. Seleziona **[!UICONTROL Aggiungi servizio]**
    ![Aggiungere un servizio allo stream di dati](assets/datastream-analytics-addService.png)
 1. Seleziona **[!UICONTROL Adobe Analytics]** come **[!UICONTROL Servizio]**
-1. Inserisci il  **[!UICONTROL ID suite di rapporti]** della suite di rapporti per lo sviluppo
+1. Inserisci il **[!UICONTROL ID suite di rapporti]** della suite di rapporti per lo sviluppo
 1. Seleziona **[!UICONTROL Salva]**
 
    ![Analisi del salvataggio dello stream di dati](assets/datastream-add-analytics.png)
@@ -62,7 +63,7 @@ Platform Web SDK invia i dati dal sito web all’Edge Network di Platform. Lo st
 
 >[!WARNING]
 >
->In questa esercitazione, puoi configurare solo la suite di rapporti di Adobe Analytics per il tuo ambiente di sviluppo. Quando crei flussi di dati per il tuo sito web, puoi creare flussi di dati e suite di rapporti aggiuntivi per gli ambienti di staging e produzione.
+>In questa esercitazione, puoi configurare solo la suite di rapporti di Adobe Analytics per il tuo ambiente di sviluppo. Quando crei flussi di dati per il tuo sito web, devi creare flussi di dati e suite di rapporti aggiuntivi per gli ambienti di staging e produzione.
 
 ## Schemi XDM e variabili Analytics
 
@@ -117,7 +118,7 @@ Lo schema creato in [Configurare uno schema](configure-schemas.md) La lezione co
 Le singole sezioni della stringa di prodotto Analytics sono impostate tramite diverse variabili XDM sotto `productListItems` oggetto.
 >Dal 18 agosto 2022, `productListItems[].SKU` ha priorità nella mappatura al nome del prodotto nella variabile s.products.
 >Il valore impostato su `productListItems[].name` è mappato al nome del prodotto solo se `productListItems[].SKU` non esiste. In caso contrario, non è mappato ed è disponibile nei dati contestuali.
->Non impostare una stringa vuota o null su  `productListItems[].SKU`. Questo ha l’effetto indesiderato di mappare al nome del prodotto nella variabile s.products.
+>Non impostare una stringa vuota o null su `productListItems[].SKU`. Questo ha l’effetto indesiderato di mappare al nome del prodotto nella variabile s.products.
 
 Per un elenco aggiornato delle mappature, consulta [Mappatura delle variabili di Analytics in Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
@@ -126,7 +127,7 @@ Per un elenco aggiornato delle mappature, consulta [Mappatura delle variabili di
 
 Tutti i campi nello schema XDM diventano disponibili per Adobe Analytics come variabili di dati contestuali con il seguente prefisso `a.x.`. Ad esempio, `a.x.web.webinteraction.region`
 
-In questo esercizio mapperai una variabile XDM su una proprietà. Segui questi stessi passaggi per qualsiasi mappatura personalizzata da eseguire per qualsiasi `eVar`, `prop`, `event`, o variabile accessibile tramite Regole di elaborazione.
+In questo esercizio mapperai una variabile XDM su una proprietà. Segui questi stessi passaggi per qualsiasi mappatura personalizzata che devi eseguire per qualsiasi `eVar`, `prop`, `event`, o variabile accessibile tramite Regole di elaborazione.
 
 1. Passa all’interfaccia di Analytics
 1. Vai a [!UICONTROL Amministratore] > [!UICONTROL Strumenti di amministrazione] > [!UICONTROL Suite di rapporti]
@@ -156,7 +157,7 @@ Per aggiungere `Adobe Analytics ExperienceEvent Template` gruppo di campi allo s
 1. Trova il `Adobe Analytics ExperienceEvent Template` e aggiungerlo allo schema
 
 
-Ora imposta un eVar di merchandising nella stringa di prodotto. Con il `Adobe Analytics ExperienceEvent Template` gruppo di campi, puoi mappare le variabili a eVar o eventi di merchandising all’interno della stringa di prodotto. Questa operazione è nota anche come impostazione **Merchandising con sintassi prodotto**.
+Ora, imposta un eVar di merchandising nella stringa di prodotto. Con il `Adobe Analytics ExperienceEvent Template` gruppo di campi, puoi mappare le variabili a eVar o eventi di merchandising all’interno della stringa di prodotto. Questa operazione è nota anche come impostazione **Merchandising con sintassi prodotto**.
 
 1. Torna alla proprietà tag
 
@@ -187,7 +188,7 @@ Puoi modificare i dati della suite di rapporti di Adobe Analytics a cui vengono 
 
 ### Configurare lo stream di dati per una sostituzione della suite di rapporti
 
-Per configurare un’impostazione di sostituzione della suite di rapporti di Adobe Analytics nello stream di dati:
+Per configurare l’impostazione di sostituzione della suite di rapporti di Adobe Analytics nello stream di dati:
 
 1. Apri lo stream di dati
 1. Modifica il **[!UICONTROL Adobe Analytics]** mediante l&#39;apertura della ![altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) menu e selezione **[!UICONTROL Modifica]**
@@ -229,7 +230,7 @@ Creiamo una regola per inviare una chiamata aggiuntiva di visualizzazione della 
 
 1. A destra, lascia il **[!UICONTROL Regex]** interruttore disabilitato
 
-1. Sotto **[!UICONTROL path è uguale a]** set `/content/luma/us/en.html`. Per il sito di dimostrazione Luma, garantisce che la regola venga attivata solo sulla home page
+1. Sotto **[!UICONTROL path è uguale a]** set `/content/luma/us/en.html`. Per il sito di dimostrazione Luma, assicura che la regola venga attivata solo sulla pagina Home
 
 1. Seleziona **[!UICONTROL Mantieni modifiche]**
 
@@ -243,7 +244,7 @@ Creiamo una regola per inviare una chiamata aggiuntiva di visualizzazione della 
 
 1. Come **[!UICONTROL Tipo]**, seleziona `web.webpagedetails.pageViews`
 
-1. Come **[!UICONTROL Dati XDM]**, seleziona la `xdm.variable.content` creato in [Creare elementi dati](create-data-elements.md) lezione
+1. Come **[!UICONTROL Dati XDM]**, seleziona la `xdm.variable.content` elemento dati creato in [Creare elementi dati](create-data-elements.md) lezione
 
    ![Sostituzione dello stream di dati di Analytics](assets/set-up-analytics-datastream-override-1.png)
 
@@ -452,4 +453,4 @@ Congratulazioni! Ce l&#39;hai fatta! Questa è la fine della lezione e ora sei p
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
