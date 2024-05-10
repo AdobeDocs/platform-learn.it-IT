@@ -9,10 +9,10 @@ solution: Journey Optimizer
 feature-set: Journey Optimizer
 feature: Journeys
 exl-id: 138a70fa-fe50-4585-b47f-150db4770c3d
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: cd59a41f4533f18a54d80298ee9faf3a8ba3c6e7
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 4%
+source-wordcount: '948'
+ht-degree: 0%
 
 ---
 
@@ -160,7 +160,7 @@ Clic **Ok**.
 
 ## 2.3.3 Pubblicare il percorso
 
-È comunque necessario assegnare un nome al percorso. Per farlo, fai clic sul pulsante **Proprietà** in alto a destra.
+È comunque necessario assegnare un nome al percorso. Per farlo, fai clic sul pulsante **Matita** in alto a sinistra sullo schermo.
 
 ![ACOP](./images/journeyname.png)
 

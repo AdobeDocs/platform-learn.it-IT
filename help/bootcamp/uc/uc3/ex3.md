@@ -9,10 +9,10 @@ solution: Journey Optimizer
 feature-set: Journey Optimizer
 feature: Events
 exl-id: be8c23ec-c5f8-4abc-849f-994446072a84
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: cd59a41f4533f18a54d80298ee9faf3a8ba3c6e7
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 2%
+source-wordcount: '839'
+ht-degree: 0%
 
 ---
 
@@ -141,7 +141,7 @@ Il **sendMessageToScreen** action è un’azione personalizzata che pubblicherà
 
 Ora devi impostare i valori per ogni parametro di azione. Segui questa tabella per capire quali valori sono richiesti e dove.
 
-| Parametro | Valore  |
+| Parametro | valore |
 |:-------------:| :---------------:|
 | CONSEGNA | `'image'` |
 | ECID | `@{yourLastNameBeaconEntryEvent._experienceplatform.identification.core.ecid}` |
@@ -181,7 +181,7 @@ Scorri verso l’alto e fai clic su **Ok**.
 
 ![ACOP](./images/jomsg21.png)
 
-È comunque necessario assegnare un nome al percorso. Per farlo, fai clic sul pulsante **Proprietà** in alto a destra.
+È comunque necessario assegnare un nome al percorso. Per farlo, fai clic sul pulsante **Matita** in alto a sinistra sullo schermo.
 
 ![ACOP](./images/journeyname.png)
 
