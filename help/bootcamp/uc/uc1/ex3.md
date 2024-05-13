@@ -1,22 +1,22 @@
 ---
-title: Bootcamp - Profilo cliente in tempo reale - Creare un segmento - Interfaccia utente
-description: Bootcamp - Profilo cliente in tempo reale - Creare un segmento - Interfaccia utente
+title: Bootcamp - Profilo cliente in tempo reale - Creare un pubblico - Interfaccia utente
+description: Bootcamp - Profilo cliente in tempo reale - Creare un pubblico - Interfaccia utente
 jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-feature: Segments
+feature: Audiences
 exl-id: 37d4a5e8-e2bc-4c8c-a74f-09f74ea79962
-source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
+source-git-commit: 5876de5015e4c8c337c235c24cc28b0a32e274dd
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '533'
 ht-degree: 3%
 
 ---
 
-# 1.3 Creare un segmento - Interfaccia utente
+# 1.3 Creare un pubblico - Interfaccia utente
 
-In questo esercizio creerai un segmento utilizzando il Generatore di segmenti di Adobe Experience Platform.
+In questo esercizio creerai un pubblico utilizzando Audience Builder di Adobe Experience Platform.
 
 ## Storia
 
@@ -28,19 +28,27 @@ Prima di continuare, è necessario selezionare una **sandbox**. La sandbox da se
 
 ![Acquisizione dei dati](./images/sb1.png)
 
-Nel menu a sinistra, vai a **Segmenti**. In questa pagina è disponibile una panoramica di tutti i segmenti esistenti. Fai clic sul pulsante **+ Crea segmento** per iniziare a creare un nuovo segmento.
+Nel menu a sinistra, vai a **Tipi di pubblico**. In questa pagina vengono visualizzate dashboard con informazioni essenziali su **Pubblico** prestazioni.
 
 ![Segmentazione](./images/menuseg.png)
 
-Quando ti trovi nel nuovo generatore di segmenti, noterai immediatamente **Attributi** e la **Profilo individuale XDM** riferimento.
+Fai clic su **Sfoglia** per visualizzare una panoramica di tutti i tipi di pubblico esistenti. Fai clic sul pulsante **+ Crea pubblico** per iniziare a creare un nuovo pubblico.
+
 
 ![Segmentazione](./images/segmentationui.png)
 
-Poiché XDM è il linguaggio che alimenta il business dell’esperienza, XDM è anche la base per il generatore di segmenti. Tutti i dati acquisiti in Platform devono essere mappati su XDM e, come tale, tutti i dati diventano parte dello stesso modello di dati, indipendentemente da dove provengono. Questo ti offre un grande vantaggio durante la creazione di segmenti: da questa interfaccia utente di Generatore di segmenti puoi combinare dati di qualsiasi origine nello stesso flusso di lavoro. I segmenti generati in Segment Builder possono essere inviati a soluzioni come Adobe Target, Adobe Campaign e Adobe Audience Manager per l&#39;attivazione.
+Verrà visualizzato un messaggio pop-ip in cui viene chiesto se si desidera **&#39;Componi pubblico&#39;** o **&#39;Genera regola&#39;**. Scegli **&#39;Genera regola&#39;** per continuare e fare clic su **creare**.
 
-Ora devi creare un segmento di tutti i clienti che hanno visualizzato il prodotto **Real-Time CDP**.
+![Segmentazione][def]
 
-Per creare questo segmento, devi aggiungere un evento esperienza. Puoi trovare tutti gli eventi esperienza facendo clic sul pulsante **Eventi** icona in **Campi** barra dei menu.
+Una volta entrati nel generatore di pubblico, noterai immediatamente **Attributi** e la **Profilo individuale XDM** riferimento.
+
+
+Poiché XDM è il linguaggio che alimenta il business dell’esperienza, XDM è anche la base per il generatore di pubblico. Tutti i dati acquisiti in Platform devono essere mappati su XDM e, come tale, tutti i dati diventano parte dello stesso modello di dati, indipendentemente da dove provengono. Questo ti offre un grande vantaggio durante la creazione di tipi di pubblico; infatti, da questa interfaccia utente di audience builder puoi combinare dati di qualsiasi origine nello stesso flusso di lavoro. I tipi di pubblico generati in Audience Builder possono essere inviati a soluzioni come Adobe Target, Adobe Campaign o qualsiasi altro canale di attivazione.
+
+Ora devi creare un pubblico di tutti i clienti che hanno visualizzato il prodotto **Real-Time CDP**.
+
+Per creare questo pubblico, devi aggiungere un evento esperienza. Puoi trovare tutti gli eventi esperienza facendo clic sul pulsante **Eventi** icona in **Campi** barra dei menu.
 
 ![Segmentazione](./images/findee.png)
 
@@ -52,7 +60,7 @@ Vai a **Elementi elenco prodotti**.
 
 ![Segmentazione](./images/plitems.png)
 
-Seleziona **Nome** e trascina **Nome** dal menu a sinistra nell’area di lavoro del generatore di segmenti in **Eventi** sezione. A questo punto viene visualizzato quanto segue:
+Seleziona **Nome** e trascina **Nome** dal menu a sinistra all&#39;area di lavoro di audience builder nel **Eventi** sezione. A questo punto viene visualizzato quanto segue:
 
 ![Segmentazione](./images/eewebpdtlname.png)
 
@@ -60,7 +68,7 @@ Il parametro di confronto deve essere **è uguale a** e nel campo di immissione,
 
 ![Segmentazione](./images/pv.png)
 
-Ogni volta che aggiungi un elemento al generatore di segmenti, puoi fare clic sul pulsante **Aggiorna stima** per ottenere una nuova stima della popolazione nel segmento.
+Ogni volta che aggiungi un elemento al generatore di pubblico, puoi fare clic sul pulsante **Aggiorna stima** per ottenere una nuova stima della popolazione nel pubblico.
 
 ![Segmentazione](./images/refreshest.png)
 
@@ -68,24 +76,27 @@ As **Metodo di valutazione**, seleziona **Bordo**.
 
 ![Segmentazione](./images/evedge.png)
 
-Infine, diamo un nome al segmento e salvalo.
+Infine, diamo un nome al pubblico e salvalo.
 
 Come convenzione di denominazione, utilizza:
 
 - `yourLastName - Interest in Real-Time CDP`
 
-Quindi, fai clic su **Salva e chiudi** per salvare il segmento.
+Quindi, fai clic su **Salva e chiudi** per salvare il pubblico.
 
 ![Segmentazione](./images/segmentname.png)
 
-Ora passerai alla pagina di panoramica dei segmenti, in cui vedrai un’anteprima di esempio dei profili cliente idonei per il tuo segmento.
+Ora viene visualizzata la pagina di panoramica del pubblico, in cui è disponibile un’anteprima di esempio dei profili cliente idonei per il pubblico.
 
 ![Segmentazione](./images/savedsegment.png)
 
-Ora puoi continuare con l’esercizio successivo e utilizzare il segmento con Adobe Target.
+Ora puoi continuare con l’esercizio successivo e utilizzare il pubblico con Adobe Target.
 
-Passaggio successivo: [1.4 Intervenire: inviare il segmento ad Adobe Target](./ex4.md)
+Passaggio successivo: [1.4 Intervenire: inviare il pubblico ad Adobe Target](./ex4.md)
 
 [Torna a Flusso utente 1](./uc1.md)
 
 [Torna a tutti i moduli](../../overview.md)
+
+
+[def]: ./images/segmentationpopup.png
