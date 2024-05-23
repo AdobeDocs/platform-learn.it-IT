@@ -4,9 +4,9 @@ description: Scopri come segnalare e analizzare le interazioni con la tua app mo
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 9607ec77a891a85a8bae2a2622e74d59588e1dbf
+source-git-commit: 7237bc0e6fabd74157022b99e6edee47ef83f1c9
 workflow-type: tm+mt
-source-wordcount: '3415'
+source-wordcount: '3410'
 ht-degree: 1%
 
 ---
@@ -85,9 +85,9 @@ Una connessione in Customer Journey Analytics definisce i set di dati (e i dati 
          | ODE DecisionEvents - *nome sandbox* decisioning | identityMap | timestamp | Dati app mobili | abilita | abilita |
          | Set di dati evento di tracciamento push AJO | identityMap | timestamp | Dati app mobili | abilita | abilita |
 
-         ![Connessioni CJA 3](assets/cja-connections-3.png)
-
       1. Seleziona **[!UICONTROL Aggiungere set di dati]**.
+
+         ![Connessioni CJA 3](assets/cja-connections-3.png)
 
 1. Torna in **[!UICONTROL Connessioni]** > **[!UICONTROL App Luma - Connessione tutorial SDK per dispositivi mobili AEP]**, seleziona **[!UICONTROL Salva]** per salvare la connessione.
 
@@ -156,8 +156,6 @@ Per creare la visualizzazione dati:
       ![Impostazioni del componente Visualizzazione dati di CJA](assets/cja-dataview-component-settings.png)
 
    1. Dopo aver compreso come aggiungere campi alla visualizzazione dati e configurare il componente risultante, utilizza le tabelle seguenti per un elenco di campi schema da aggiungere come metrica o dimensione. Utilizza il **Percorso schema** valore della colonna dalla tabella seguente per cercare o scorrere fino al campo dello schema specifico. Una volta trascinati, controlla **Impostazioni dei componenti** nella tabella se sono necessarie impostazioni specifiche per un componente, come la modifica del relativo **[!UICONTROL Nome componente]** o definizione **[!UICONTROL INCLUDI VALORI DI ESCLUSIONE]**.
-
-      ![Impostazioni del componente Visualizzazione dati di CJA](assets/cja-dataview-component-settings.png)
 
       **METRICHE**
 
@@ -232,9 +230,9 @@ Per creare il progetto:
 
    1. Seleziona **[!UICONTROL Progetto Workspace vuoto]** dalla finestra di dialogo a comparsa.
 
-      ![Progetti CJA - 1](assets/cja-projects-1.png)
-
    1. Seleziona **[!UICONTROL Crea]**.
+
+      ![Progetti CJA - 1](assets/cja-projects-1.png)
 
 1. Ti viene presentato il **[!UICONTROL Nuovo progetto]** di rete. In questa interfaccia puoi creare rapporti e visualizzazioni.
 
@@ -357,8 +355,10 @@ In base al rapporto precedente, desideri visualizzare l’abbandono nel funnel d
    ![Progetti CJA 18](assets/cja-projects-18.png)
 In alternativa, puoi trascinare e rilasciare la **[!UICONTROL Visualizzazione prodotti]** dimensione sotto il **[!UICONTROL Tutte le persone]** dimensione in **[!UICONTROL Abbandono]** visualizzazione.
 
-1. Ripeti il passaggio precedente per **[!UICONTROL Aggiunta di prodotti agli elenchi]** e **[!UICONTROL Acquisti]** dimensioni. Il tuo **[!UICONTROL Abbandono]** la visualizzazione mostra ora una rappresentazione visiva del funnel di conversione per i prodotti.
-   ![Progetti CJA 19](assets/cja-projects-19.png)
+1. Ripeti il passaggio precedente per **[!UICONTROL Aggiunta di prodotti agli elenchi]** e **[!UICONTROL Acquisti]** dimensioni.
+
+Il tuo **[!UICONTROL Abbandono]** la visualizzazione mostra ora una rappresentazione visiva del funnel di conversione per i prodotti.
+![Progetti CJA 19](assets/cja-projects-19.png)
 
 Non dimenticare di salvare il progetto.
 
