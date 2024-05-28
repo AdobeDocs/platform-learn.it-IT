@@ -1,14 +1,14 @@
 ---
 user-guide-title: Tutorial su Adobe Experience Platform
 breadcrumb-title: Tutorial
-user-guide-description: Scopri i numerosi componenti di Experience Platform.
+user-guide-description: Scopri i numerosi componenti di Experienci Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: fd571fccc93e8d99beb9dafbe432961488a4d94d
+source-git-commit: 39a2297c90162bde5ae9c99d5a2061a801434215
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 16%
+source-wordcount: '876'
+ht-degree: 15%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 16%
 
 + [Tutorials di Platform](/help/platform/overview.md)
 + Introduzione a Platform {#intro-to-platform}
-   + [Esperienza del cliente basata su Experienci Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
+   + [Una customer experience offerta da Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [Dietro le quinte: un’esperienza del cliente basata su Experienci Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Panoramica di Experience Platform](/help/platform/intro-to-platform/overview.md)
    + [Funzionalità principali](/help/platform/intro-to-platform/key-capabilities.md)
@@ -40,7 +40,7 @@ ht-degree: 16%
    + [Utilizzare gli avvisi](/help/platform/admin/use-alerts.md)
    + [Utilizzare le sandbox](/help/platform/admin/use-sandboxes.md)
    + [Copiare oggetti da una sandbox a un’altra](/help/platform/admin/copy-objects-between-sandboxes.md)
-   + [Aggiunta di utenti](/help/platform/admin/add-users.md)
+   + [Aggiungi utenti](/help/platform/admin/add-users.md)
    + [Aggiungere utenti alla raccolta dati](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
    + [Aggiungi sviluppatori](/help/platform/admin/add-developers.md)
    + [Aggiungi amministratori di prodotto](/help/platform/admin/add-product-administrators.md)
@@ -49,12 +49,12 @@ ht-degree: 16%
    + [Introduzione a Audience Portal e Composizione](audiences/introduction-to-audience-portal-and-composition.md)
    + [Carica tipi di pubblico](audiences/upload-audiences.md)
    + [Panoramica del generatore di regole per il pubblico](audiences/audience-rule-builder-overview.md)
-   + [Creare tipi di pubblico](audiences/create-audiences.md)
+   + [Crea tipi di pubblico](audiences/create-audiences.md)
    + [Creare un pubblico basato sui contenuti](audiences/create-content-based-audiences.md)
    + [Creare tipi di pubblico di conversione](audiences/create-conversion-audiences.md)
    + [Creare tipi di pubblico da tipi di pubblico esistenti](audiences/create-audiences-from-existing-audiences.md)
    + [Creare tipi di pubblico sequenziali](audiences/create-sequential-audiences.md)
-   + [Creare un pubblico dinamico](audiences/create-dynamic-audiences.md)
+   + [Crea tipi di pubblico dinamici](audiences/create-dynamic-audiences.md)
    + [Creare tipi di pubblico con più entità](audiences/create-multi-entity-audiences.md)
    + [Creare e attivare il pubblico dell’account (B2B)](audiences/create-audiences-with-b2b-data.md)
    + [Demo della segmentazione in streaming](/help/platform/audiences/streaming-segmentation-demo.md)
@@ -78,13 +78,12 @@ ht-degree: 16%
    + [Imponi consenso](/help/platform/governance/enforce-consent.md)
    + [Integrare con IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Igiene dei dati {#data-hygiene}
-   + [Eliminare i set di dati](/help/platform/data-hygiene/delete-datasets.md)
    + [Profilo pseudonimo e scadenza evento](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
-+ Inserimento dei dati {#data-ingestion}
++ Acquisizione dei dati {#data-ingestion}
    + [Panoramica](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Panoramica dell’acquisizione in batch](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Creare e popolare un set di dati](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-   + [Mappare un file CSV su XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=it){target="_blank"}
+   + [Mappare un file CSV su XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [Panoramica sulle origini](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Acquisire dati da Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=it)
    + [Acquisire dati da Audienci Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
@@ -96,6 +95,8 @@ ht-degree: 16%
    + [Trasmettere i dati utilizzando i connettori di origini](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=it)
    + [Tutorial dell’SDK per web](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [Tutorial dell’SDK per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
++ Ciclo di vita dei dati {#data-lifecycle}
+   + [Set di dati in scadenza](/help/platform/data-lifecycle/expire-datasets.md)
 + Data Science Workspace {#data-science-workspace}
    + [Panoramica](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
    + [Architettura](data-science-workspace/architecture-overview.md)
@@ -145,7 +146,7 @@ ht-degree: 16%
    + [Valore IA per l’analisi dei clienti](/help/platform/intelligent-services/business-value-of-customer-ai.md)
    + [Configurare Customer AI](/help/platform/intelligent-services/configure-customer-ai.md)
    + [Utilizzare punteggi e informazioni di Customer AI](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
-+ Monitoraggio {#monitoring}
++ Monitorare {#monitoring}
    + [Monitorare l’acquisizione dei dati](/help/platform/monitoring/monitoring-dashboard.md)
    + [Monitorare l’attivazione dei segmenti](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [Monitorare i flussi di dati](/help/platform/monitoring/data-monitoring.md)
@@ -157,7 +158,7 @@ ht-degree: 16%
 + Profili {#profiles}
    + [Informazioni sul profilo cliente in tempo reale](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [Diagramma di panoramica del profilo](/help/platform/profiles/overview-diagram.md)
-   + [Importare dati nel profilo](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
+   + [Importa dati nel profilo](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
    + [Personalizzare i dettagli della visualizzazione del profilo](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
    + [Visualizzare i profili account](/help/platform/profiles/view-account-profiles.md)
    + [Creare criteri di unione](/help/platform/profiles/create-merge-policies.md)
