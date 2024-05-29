@@ -8,10 +8,10 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: e0289aeaf2d987e4690c08b1695a3356442b15f6
 workflow-type: tm+mt
-source-wordcount: '2485'
-ht-degree: 5%
+source-wordcount: '2611'
+ht-degree: 2%
 
 ---
 
@@ -70,22 +70,31 @@ In [Configurare le autorizzazioni](configure-permissions.md) Per completare ques
 In questo esercizio, creeremo uno schema per i dati fedeltà di Luma.
 
 1. Vai all’interfaccia utente di Platform e accertati che la sandbox sia selezionata.
-1. Vai a **[!UICONTROL Schemi]** nel menu di navigazione a sinistra
-1. Seleziona il pulsante **[!UICONTROL Crea schema]** in alto a destra
-1. Dal menu a discesa, seleziona **[!UICONTROL Profilo individuale XDM]**, in quanto verranno modellati gli attributi di un singolo cliente (punti, stato e così via).
+1. Vai a **[!UICONTROL Schemi]** nel menu di navigazione a sinistra.
+1. Seleziona la **[!UICONTROL Crea schema]** in alto a destra.
    ![Schema con gruppo di campi OOTB](assets/schemas-loyaltyCreateSchema.png)
+
+1. Nel flusso di lavoro Crea schema, seleziona **[!UICONTROL Profilo individuale]** come classe base per lo schema, poiché modelleremo gli attributi di un singolo cliente (punti, stato e così via).
+1. Seleziona **[!UICONTROL Successivo]**.
+   ![Seleziona classe base](assets/schemas-loyaltySelectBaseClass.png)
+
+1. Invio `Luma Loyalty Schema` nel **[!UICONTROL Nome visualizzato schema]** campo di testo. Nell’area di lavoro seguente, puoi anche rivedere e verificare la struttura dello schema di base fornita dalla classe scelta.
+1. Seleziona **[!UICONTROL Fine]** per creare lo schema.
+   ![Completa la creazione dello schema fedeltà](assets/schemas-loyaltyFinishSchemaCreation.png)
 
 ### Aggiungi gruppi di campi standard
 
-Verrà quindi richiesto di aggiungere gruppi di campi allo schema. Tutti i campi devono essere aggiunti agli schemi utilizzando i gruppi. Puoi scegliere tra un ampio set di gruppi di campi standard del settore forniti da Adobe o crearne di personalizzati. Quando inizi a modellare i tuoi dati in Experienci Platform, è bene acquisire familiarità con i gruppi di campi standard di settore forniti da Adobe. Quando possibile, è consigliabile utilizzarli in quanto a volte forniscono servizi a valle, come IA per l’analisi dei clienti, Attribution AI e Adobe Analytics.
+Una volta creato lo schema, verrai reindirizzato all’editor schema, dove potrai aggiungere campi allo schema. Puoi aggiungere campi singoli direttamente allo schema o utilizzare gruppi di campi. È importante notare che tutti i singoli campi sono ancora associati a una classe o a un gruppo di campi. Puoi scegliere tra un ampio set di gruppi di campi standard del settore forniti da Adobe o crearne di personalizzati. Quando inizi a modellare i tuoi dati in Experienci Platform, è bene acquisire familiarità con i gruppi di campi standard di settore forniti da Adobe. Quando possibile, è consigliabile utilizzarli in quanto a volte forniscono servizi a valle, come IA per l’analisi dei clienti, Attribution AI e Adobe Analytics.
 
 Quando lavori con i tuoi dati, un grande passo sarà determinare quali dei tuoi dati devono essere acquisiti in Platform e come devono essere modellati. Questo argomento di grandi dimensioni viene discusso in modo più approfondito nel corso [Modellare i dati sull’esperienza del cliente con XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it). In questa esercitazione, ti guiderò attraverso l&#39;implementazione di alcuni schemi predeterminati.
 
 Per aggiungere gruppi di campi:
 
-1. In **[!UICONTROL Aggiungi gruppi di campi]** modale, seleziona i seguenti gruppi di campi:
+1. Seleziona **[!UICONTROL Aggiungi]** sotto **[!UICONTROL Gruppi di campi]** intestazione.
+   ![Aggiungi un nuovo gruppo di campi](assets/schemas-loyalty-addFieldGroup.png)
+1. In **[!UICONTROL Aggiungi gruppi di campi]** a scelta obbligatoria, seleziona i seguenti gruppi di campi:
    1. **[!UICONTROL Dettagli demografici]** per dati cliente di base come nome e data di nascita
-   1. **[!UICONTROL Dettagli di contatto personali]** per dettagli di contatto di base come l’indirizzo e-mail e il numero di telefono
+   1. **[!UICONTROL Dettagli di contatto personali]** per dettagli di contatto di base come indirizzo e-mail e numero di telefono
 1. Puoi visualizzare in anteprima i campi che hanno contribuito nel gruppo di campi selezionando l’icona a destra della riga.
    ![Selezionare gruppi di campi standard](assets/schemas-loyalty-addFirstTwoFieldGroups.png)
 
@@ -97,12 +106,8 @@ Per aggiungere gruppi di campi:
 
 Ora prendi un po’ di tempo per esplorare lo stato corrente dello schema. I gruppi di campi hanno aggiunto campi standard relativi a una persona, ai relativi dettagli di contatto e allo stato del programma fedeltà. Questi due gruppi di campi possono risultare utili quando si creano schemi per i dati della propria azienda. Seleziona una riga specifica del gruppo di campi o seleziona la casella accanto al nome del gruppo di campi per visualizzare le modifiche apportate alla visualizzazione.
 
-Per salvare lo schema:
-
-1. Seleziona il nodo principale dello schema.
-1. Invio `Luma Loyalty Schema` come **[!UICONTROL Nome visualizzato]**.
-1. Seleziona **[!UICONTROL Salva]**.
-   ![Denomina e salva lo schema](assets/schemas-loyalty-nameAndSave.png)
+Per salvare lo schema, seleziona **[!UICONTROL Salva]**.
+![Salvare lo schema](assets/schemas-loyalty-saveSchema.png)
 
 >[!NOTE]
 >
@@ -114,7 +119,9 @@ Ora creiamo un gruppo di campi personalizzato.
 
 Mentre il gruppo di campi fedeltà conteneva `loyaltyID` Luma desidera gestire tutti i propri identificatori di sistema in un unico gruppo per garantire la coerenza tra i diversi schemi.
 
-I gruppi di campi devono essere creati nel flusso di lavoro dello schema. Per creare il gruppo di campi:
+I gruppi di campi devono essere creati nel flusso di lavoro dello schema. È possibile aggiungere un nuovo campo personalizzato allo schema e creare un gruppo di campi personalizzato in questo modo oppure è possibile creare prima un gruppo di campi personalizzato e quindi aggiungervi campi. Questo tutorial inizia con la creazione di un gruppo di campi personalizzato.
+
+Per creare il gruppo di campi:
 
 1. Seleziona **[!UICONTROL Aggiungi]** sotto **[!UICONTROL Gruppi di campi schema]** intestazione
    ![Aggiungi un nuovo gruppo di campi](assets/schemas-loyalty-addFieldGroup.png)
@@ -131,9 +138,10 @@ Il nuovo gruppo di campi vuoto viene aggiunto allo schema. Il **[!UICONTROL +]**
    1. **[!UICONTROL Nome campo]**: `systemIdentifier`
    1. **[!UICONTROL Nome visualizzato]**: `System Identifier`
    1. **[!UICONTROL Tipo]**: **[!UICONTROL Oggetto]**
+   1. In **[!UICONTROL Gruppo di campi]** a discesa, seleziona la **Gruppo di campi del profilo Identità Luma** che abbiamo creato.
+      ![Aggiungi un nuovo gruppo di campi](assets/schemas-loyalty-addSystemIdentifier.png)
    1. Seleziona **[!UICONTROL Applica]**
-
-   ![Aggiungi un nuovo gruppo di campi](assets/schemas-loyalty-addSystemIdentifier.png)
+      ![Applica nuove proprietà campo](assets/schemas-loyalty-applySystemIdentifier.png)
 
 Ora aggiungi due campi sotto `systemIdentifier` oggetto:
 
@@ -172,7 +180,7 @@ Ora creeremo uno schema utilizzando l’API.
 >
 > Se preferisci saltare l’esercizio API, puoi creare il seguente schema utilizzando il metodo dell’interfaccia utente:
 >
-> 1. Utilizza il [!UICONTROL Profilo individuale XDM] classe
+> 1. Utilizza il [!UICONTROL Profilo individuale] classe
 > 1. Assegna un nome `Luma CRM Schema`
 > 1. Utilizza i seguenti gruppi di campi: Dettagli demografici, Dettagli contatto personale e Gruppo di campi del profilo Identità Luma
 
@@ -280,21 +288,21 @@ Verifica che il gruppo di campi sia stato aggiunto allo schema controllando sia 
 
 ## Crea schema eventi di acquisto offline
 
-Ora creiamo uno schema basato su **[!UICONTROL XDM ExperienceEvent]** classe per i dati di acquisto offline di Luma. Poiché ora conosci l’interfaccia utente dell’editor schema, ridurrò il numero di schermate nelle istruzioni:
+Ora creiamo uno schema basato su **[!UICONTROL Evento esperienza]** classe per i dati di acquisto offline di Luma. Poiché ora conosci l’interfaccia utente dell’editor schema, ridurrò il numero di schermate nelle istruzioni:
 
-1. Creare uno schema con **[!UICONTROL XDM ExperienceEvent]** classe
+1. Creare uno schema con **[!UICONTROL Evento esperienza]** classe.
+1. Denomina lo schema `Luma Offline Purchase Events Schema`.
 1. Aggiungi il gruppo di campi standard **[!UICONTROL Dettagli Commerce]** per acquisire i dettagli comuni dell’ordine. Trascorri qualche minuto ad esplorare gli oggetti al loro interno.
 1. Cerca `Luma Identity profile field group`. Non è disponibile. Ricorda che i gruppi di campi sono legati a una classe e che non è possibile utilizzarlo poiché per questo schema viene utilizzata una classe diversa. È necessario aggiungere un nuovo gruppo di campi per la classe ExperienceEvent XDM contenente i campi di identità. Il nostro tipo di dati lo renderà molto semplice!
 1. Seleziona la **[!UICONTROL Crea nuovo gruppo di campi]** pulsante di opzione
 1. Inserisci il **[!UICONTROL Nome visualizzato]** as `Luma Identity ExperienceEvent field group` e seleziona la **[!UICONTROL Aggiungi gruppi di campi]** pulsante
-1. Assicurati che le **[!UICONTROL +]** pulsanti visualizzati in **[!UICONTROL Struttura]** per aggiungere nuovi campi
-1. In entrata **[!UICONTROL Struttura]** sezione, seleziona **[!UICONTROL +]** al livello principale dello schema
-1. Come **[!UICONTROL Nome campo]**, immetti `systemIdentifier`
-1. Come **[!UICONTROL Nome visualizzato]**, immetti `System Identifier`
-1. Come **[!UICONTROL Tipo]**, seleziona **Identificatore di sistema** che è il tipo di dati personalizzato creato in precedenza
-1. Seleziona la **[!UICONTROL Applica]** pulsante
-1. Assegnare un nome allo schema `Luma Offline Purchase Events Schema`
-1. Seleziona il pulsante **[!UICONTROL Salva]**
+1. Seleziona **[!UICONTROL +]** accanto al nome dello schema.
+1. Come **[!UICONTROL Nome campo]**, immetti `systemIdentifier`.
+1. Come **[!UICONTROL Nome visualizzato]**, immetti `System Identifier`.
+1. Come **[!UICONTROL Tipo]**, seleziona **Identificatore di sistema** che è il tipo di dati personalizzato creato in precedenza.
+1. Come **[!UICONTROL Gruppo di campi]** seleziona **Gruppo di campi ExperienceEvent identità Luma**.
+1. Seleziona la **[!UICONTROL Applica]** pulsante.
+1. Seleziona la **[!UICONTROL Salva]** pulsante.
 
 Il tipo di dati ha aggiunto tutti i campi.
 
@@ -310,12 +318,12 @@ Ora creeremo un altro schema per i dati del sito web di Luma. A questo punto dov
 
 | Proprietà | Valore |
 |---------------|-----------------|
-| Classe | XDM ExperienceEvent |
-| Gruppo di campi | Mixin ExperienceEvent AEP Web SDK |
-| Gruppo di campi | Evento esperienza consumatore |
+| Classe | Evento esperienza |
 | Nome schema | Schema eventi web Luma |
+| Gruppo di campi | ExperienceEvent di AEP Web SDK |
+| Gruppo di campi | Evento esperienza del consumatore |
 
-Seleziona la **[!UICONTROL Evento esperienza del consumatore]** gruppo di campi. Questo gruppo di campi contiene gli oggetti commerce e productListItems presenti [!UICONTROL Dettagli Commerce]. Infatti [!UICONTROL Evento esperienza del consumatore] è una combinazione di diversi altri gruppi di campi standard disponibili separatamente. [!UICONTROL Mixin ExperienceEvent AEP Web SDK] gruppo di campi contiene anche altri gruppi di campi, inclusi alcuni degli stessi in [!UICONTROL Evento esperienza del consumatore]. Fortunatamente, si fondono perfettamente.
+Seleziona la **[!UICONTROL Evento esperienza del consumatore]** gruppo di campi. Questo gruppo di campi contiene gli oggetti commerce e productListItems presenti [!UICONTROL Dettagli Commerce]. Infatti [!UICONTROL Evento esperienza del consumatore] è una combinazione di diversi altri gruppi di campi standard disponibili separatamente. [!UICONTROL ExperienceEvent di AEP Web SDK] gruppo di campi contiene anche altri gruppi di campi, inclusi alcuni degli stessi in [!UICONTROL Evento esperienza del consumatore]. Fortunatamente, si fondono perfettamente.
 
 Non è stato aggiunto il `Luma Identity ExperienceEvent field group` a questo schema. Questo perché l’SDK per web ha un modo diverso di raccogliere le identità. Se si seleziona la **[!UICONTROL XDM ExperienceEvent]** classe in **[!UICONTROL Composizione]** nell’editor schema, noterai che uno dei campi aggiunti per impostazione predefinita è denominato **[!UICONTROL IdentityMap]**. [!DNL IdentityMap] viene utilizzato da varie applicazioni di Adobe per il collegamento a Platform. Nella lezione di acquisizione in streaming, vedrai come le identità vengono inviate a Platform tramite identityMap.
 
@@ -330,13 +338,17 @@ Utilizzando il  [!UICONTROL Dettagli Commerce] e [!UICONTROL Evento esperienza d
 
 Innanzitutto, devi creare uno schema per il catalogo prodotti di Luma utilizzando una classe personalizzata:
 
-1. Seleziona la **[!UICONTROL Crea schema]** e selezionare il pulsante **[!UICONTROL Sfoglia]** opzione dal menu a discesa
+1. Seleziona la **[!UICONTROL Crea schema]** pulsante.
+1. Nel flusso di lavoro Crea schema, seleziona **[!UICONTROL Altro]** opzione.
    ![Crea nuovo schema](assets/schemas-newSchema-browseClasses.png)
-1. Seleziona la **[!UICONTROL Crea nuova classe]** pulsante di opzione
+1. Seleziona la **[!UICONTROL Crea classe]** pulsante
 1. Assegna un nome `Luma Product Catalog Class`
 1. Lascia **[!UICONTROL Comportamento]** as **[!UICONTROL Registra]**
-1. Seleziona la **[!UICONTROL Assegna classe]** pulsante
+1. Seleziona la **[!UICONTROL Crea]** pulsante.
    ![Crea nuova classe](assets/schemas-productClass.png)
+1. Il **Classe catalogo prodotti Luma** creato viene visualizzato nella tabella Classi seguente. Assicurati che la classe sia selezionata, quindi seleziona **[!UICONTROL Successivo]**.
+   ![Nuova classe aggiunta](assets/schemas-productClassSelected.png)
+1. Denomina lo schema `Luma Product Catalog Schema`.
 1. Crea un nuovo [!UICONTROL gruppo di campi] ha chiamato `Luma Product Catalog field group` con i seguenti campi:
    1. productName: Product Name: String
    1. productCategory: ProductCategory: String
@@ -344,7 +356,6 @@ Innanzitutto, devi creare uno schema per il catalogo prodotti di Luma utilizzand
    1. productSku: Product SKU: String | Obbligatorio
    1. productSize: Product Size: String
    1. productPrice: Product Price: Double
-1. Denomina lo schema `Luma Product Catalog Schema` (assicurati di aggiornare il campo corretto e non aggiornare il nome della classe)
 1. **[!UICONTROL Salva]** lo schema
 
 Il nuovo schema deve essere simile al seguente. Nota come `productSku` è elencato nel [!UICONTROL Campi obbligatori] sezione:

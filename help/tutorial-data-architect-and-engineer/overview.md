@@ -8,10 +8,10 @@ thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: e640a7e5c3a5f745462aa0d4e9d5f5c0b34ca8d7
+source-git-commit: efef0389cedfec7dfa19d876df96c58b7463ee12
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 1%
+source-wordcount: '771'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ _Guida introduttiva di Adobe Experience Platform per architetti di dati e data e
 
 ## Finalità di apprendimento
 
-Gli architetti di dati e i data engineer devono collaborare strettamente per una corretta distribuzione degli Experienci Platform. Questa esercitazione pratica illustra le attività chiave eseguite da _entrambi i ruoli_ in modo da sapere come iniziare a implementare Platform per la tua attività. Sarai guidato attraverso esercizi che ti presenteranno la terminologia chiave, le funzioni, l&#39;interfaccia e l&#39;API di Experience Platform. Anche i clienti di applicazioni Adobe Experience Cloud come Real-time Customer Data Platform, Customer Journey Analytics e Journey Optimizer troveranno utili tali contenuti, in quanto i servizi Platform sono fondamentali per tali applicazioni.
+Gli architetti di dati e i data engineer devono collaborare strettamente per una corretta distribuzione degli Experienci Platform. Questa esercitazione pratica illustra le attività chiave eseguite da _entrambi i ruoli_ in modo da sapere come iniziare a implementare Platform per la tua attività. Sarai guidato attraverso esercizi che ti presenteranno la terminologia chiave, le funzioni, l’interfaccia e le API di Experience Platform. Anche i clienti di applicazioni Adobe Experience Cloud come Real-time Customer Data Platform, Customer Journey Analytics e Journey Optimizer troveranno utili tali contenuti, in quanto i servizi Platform sono fondamentali per tali applicazioni.
 
 ![Marketecture di Adobe Experience Cloud che evidenzia i servizi Platform descritti in questo tutorial: identità, profilo, segmentazione, acquisizione, query e governance](assets/marketecture.png)
 
