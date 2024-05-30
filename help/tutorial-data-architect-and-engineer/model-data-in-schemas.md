@@ -8,10 +8,10 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: e0289aeaf2d987e4690c08b1695a3356442b15f6
+source-git-commit: 8e470d8a0c9fee7389ac60a743431fe81012fa0f
 workflow-type: tm+mt
-source-wordcount: '2611'
-ht-degree: 2%
+source-wordcount: '2619'
+ht-degree: 1%
 
 ---
 
@@ -86,7 +86,7 @@ In questo esercizio, creeremo uno schema per i dati fedeltà di Luma.
 
 Una volta creato lo schema, verrai reindirizzato all’editor schema, dove potrai aggiungere campi allo schema. Puoi aggiungere campi singoli direttamente allo schema o utilizzare gruppi di campi. È importante notare che tutti i singoli campi sono ancora associati a una classe o a un gruppo di campi. Puoi scegliere tra un ampio set di gruppi di campi standard del settore forniti da Adobe o crearne di personalizzati. Quando inizi a modellare i tuoi dati in Experienci Platform, è bene acquisire familiarità con i gruppi di campi standard di settore forniti da Adobe. Quando possibile, è consigliabile utilizzarli in quanto a volte forniscono servizi a valle, come IA per l’analisi dei clienti, Attribution AI e Adobe Analytics.
 
-Quando lavori con i tuoi dati, un grande passo sarà determinare quali dei tuoi dati devono essere acquisiti in Platform e come devono essere modellati. Questo argomento di grandi dimensioni viene discusso in modo più approfondito nel corso [Modellare i dati sull’esperienza del cliente con XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it). In questa esercitazione, ti guiderò attraverso l&#39;implementazione di alcuni schemi predeterminati.
+Quando lavori con i tuoi dati, un passaggio importante consisterà nel determinare quali dei tuoi dati devono essere acquisiti in Platform e come devono essere modellati. Questo argomento di grandi dimensioni viene discusso in modo più approfondito nel corso [Modellare i dati sull’esperienza del cliente con XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it). In questa esercitazione, ti guiderò attraverso l&#39;implementazione di alcuni schemi predeterminati.
 
 Per aggiungere gruppi di campi:
 
@@ -99,19 +99,19 @@ Per aggiungere gruppi di campi:
    ![Selezionare gruppi di campi standard](assets/schemas-loyalty-addFirstTwoFieldGroups.png)
 
 1. Controlla la **[!UICONTROL Settore]** > **[!UICONTROL Retail]** per esporre gruppi di campi specifici del settore.
-1. Seleziona **[!UICONTROL Fedeltà]** per aggiungere i campi programma fedeltà.
-1. Seleziona **[!UICONTROL Aggiungi gruppo di campi]** per aggiungere tutti e tre i gruppi di campi allo schema.
+1. Seleziona **[!UICONTROL Dettagli fedeltà]** per aggiungere i campi programma fedeltà.
+1. Seleziona **[!UICONTROL Aggiungi gruppi di campi]** per aggiungere tutti e tre i gruppi di campi allo schema.
    ![Aggiungere gruppi di campi standard allo schema fedeltà](assets/schemas-loyalty-saveOotbMixins.png)
 
 
-Ora prendi un po’ di tempo per esplorare lo stato corrente dello schema. I gruppi di campi hanno aggiunto campi standard relativi a una persona, ai relativi dettagli di contatto e allo stato del programma fedeltà. Questi due gruppi di campi possono risultare utili quando si creano schemi per i dati della propria azienda. Seleziona una riga specifica del gruppo di campi o seleziona la casella accanto al nome del gruppo di campi per visualizzare le modifiche apportate alla visualizzazione.
+Ora, prendi un po’ di tempo per esplorare lo stato corrente dello schema. I gruppi di campi hanno aggiunto campi standard relativi a una persona, ai relativi dettagli di contatto e allo stato del programma fedeltà. Questi due gruppi di campi possono risultare utili quando si creano schemi per i dati della propria azienda. Seleziona una riga specifica del gruppo di campi o seleziona la casella accanto al nome del gruppo di campi per visualizzare le modifiche apportate alla visualizzazione.
 
 Per salvare lo schema, seleziona **[!UICONTROL Salva]**.
 ![Salvare lo schema](assets/schemas-loyalty-saveSchema.png)
 
 >[!NOTE]
 >
->È possibile aggiungere un campo per un punto dati che non viene raccolto da un gruppo di campi. Ad esempio, &quot;faxPhone&quot; potrebbe essere un campo per il quale Luma non raccoglie dati. Va bene. Solo perché un campo è definito nello schema non significa che i dati per esso *deve* vengono acquisiti in un secondo momento.
+>È possibile aggiungere un campo per un punto dati che non viene raccolto da un gruppo di campi. Ad esempio, &quot;faxPhone&quot; potrebbe essere un campo per il quale Luma non raccoglie dati. Va bene. Solo perché un campo è definito nello schema non significa che i dati per esso *deve* vengono acquisiti in un secondo momento. Puoi anche rimuovere il campo dallo schema.
 
 ### Aggiungere un gruppo di campi personalizzato
 
@@ -119,7 +119,12 @@ Ora creiamo un gruppo di campi personalizzato.
 
 Mentre il gruppo di campi fedeltà conteneva `loyaltyID` Luma desidera gestire tutti i propri identificatori di sistema in un unico gruppo per garantire la coerenza tra i diversi schemi.
 
-I gruppi di campi devono essere creati nel flusso di lavoro dello schema. È possibile aggiungere un nuovo campo personalizzato allo schema e creare un gruppo di campi personalizzato in questo modo oppure è possibile creare prima un gruppo di campi personalizzato e quindi aggiungervi campi. Questo tutorial inizia con la creazione di un gruppo di campi personalizzato.
+I gruppi di campi devono essere creati nel flusso di lavoro dello schema. Puoi effettuare le seguenti operazioni:
+
+* Aggiungere prima un nuovo campo personalizzato allo schema, quindi creare un gruppo di campi personalizzato oppure
+* Creare prima un gruppo di campi personalizzato e quindi aggiungervi campi.
+
+Questa esercitazione inizia con la creazione di un gruppo di campi personalizzato.
 
 Per creare il gruppo di campi:
 

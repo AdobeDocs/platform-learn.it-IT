@@ -5,9 +5,9 @@ user-guide-description: Scopri i numerosi componenti di Experienci Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 39a2297c90162bde5ae9c99d5a2061a801434215
+source-git-commit: bad48d8b5845aa2812630a07cada2d465b729325
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '890'
 ht-degree: 15%
 
 ---
@@ -78,7 +78,10 @@ ht-degree: 15%
    + [Imponi consenso](/help/platform/governance/enforce-consent.md)
    + [Integrare con IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Igiene dei dati {#data-hygiene}
-   + [Profilo pseudonimo e scadenza evento](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+   + [Profilo pseudonimo e scadenza evento (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+   + [Preparazione dei dati per l’igiene dei dati](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
+   + [Set di dati in scadenza](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
+   + [Aggiornare un attributo di profilo](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + Acquisizione dei dati {#data-ingestion}
    + [Panoramica](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Panoramica dell’acquisizione in batch](/help/platform/data-ingestion/batch-ingestion-overview.md)
