@@ -1,23 +1,27 @@
 ---
 title: Configurare uno spazio dei nomi delle identità
-description: Scopri come configurare gli spazi dei nomi delle identità da utilizzare con Adobe Experience Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
+description: Scopri come configurare gli spazi dei nomi delle identità da utilizzare con Adobe Experience Platform Web SDK. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 8%
+source-wordcount: '655'
+ht-degree: 12%
 
 ---
 
 # Configurare uno spazio dei nomi delle identità
 
-Scopri come configurare gli spazi dei nomi delle identità da utilizzare con Adobe Experience Platform Web SDK.
+Scopri come configurare gli spazi dei nomi di identità da utilizzare con Adobe Experience Platform Web SDK.
 
 Il [Servizio Adobe Experience Cloud Identity](https://experienceleague.adobe.com/en/docs/id-service/using/home) imposta un ID visitatore comune (ECID) tra le applicazioni Adobe basate su SDK per abilitare le funzionalità di Experience Cloud, ad esempio la condivisione del pubblico tra le applicazioni. Puoi anche inviare i tuoi ID cliente personalizzati al Servizio per abilitare il targeting su più dispositivi e le integrazioni con altri sistemi, come il sistema di gestione delle relazioni con i clienti (CRM).
 
 Il [Servizio Adobe Experience Platform Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (sì, sono due!) utilizza gli ECID e gli ID cliente per generare grafici di identità, che consentono di unire attributi e comportamenti in profili cliente in tempo reale.
+
+>[!NOTE]
+>
+>Uno spazio dei nomi di identità personalizzato è _non obbligatorio_ per implementare Adobe Analytics, Adobe Target o Adobe Audience Manager con Web SDK (le identità autenticate possono essere trasmesse `data` oggetto invece del `xdm` come vedrai in seguito). Gli spazi dei nomi di identità sono necessari per le applicazioni native per la piattaforma come Journey Optimizer, Real-time Customer Data Platform, Customer Journey Analytics. Anche se puoi decidere di non utilizzare uno spazio dei nomi delle identità nella tua implementazione, è previsto che tu lo faccia come parte di questa esercitazione.
 
 >[!NOTE]
 >
@@ -75,7 +79,7 @@ Ora crea uno spazio dei nomi per l’ID CRM Luma:
    |---------------|-----------|
    | Nome visualizzato | ID CRM Luma |
    | Simbolo di identità | lumaCrmId |
-   | Tipo | ID individuale multi-dispositivo |
+   | Tipo | ID individuale per più dispositivi |
 
 
    ![Creare spazi dei nomi](assets/identities-create-namespace.png)

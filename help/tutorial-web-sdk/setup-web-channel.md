@@ -1,14 +1,14 @@
 ---
 title: Configurare il canale web Journey Optimizer con Platform Web SDK
-description: Scopri come implementare il canale web Journey Optimizer utilizzando Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
+description: Scopri come implementare il canale web Journey Optimizer utilizzando Platform Web SDK. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
-source-wordcount: '2892'
+source-wordcount: '2563'
 ht-degree: 0%
 
 ---
@@ -133,55 +133,6 @@ Questo caso d’uso consente di comprendere meglio in che modo Journey Optimizer
 
 Poiché questo tutorial è destinato agli implementatori, vale la pena notare che questa lezione richiede un notevole lavoro sull’interfaccia in Journey Optimizer. Anche se tali attività di interfaccia vengono in genere gestite dagli esperti di marketing, può essere utile che i responsabili dell’implementazione possano acquisire informazioni approfondite sul processo, anche se non sono in genere responsabili della creazione delle campagne per i canali web.
 
-### Creare uno schema Fedeltà e acquisire dati di esempio
-
-Quando i dati dell’SDK web vengono acquisiti in Adobe Experience Platform, possono essere arricchiti da altre origini dati acquisite in Platform. Ad esempio, quando un utente accede al sito Luma, in Experienci Platform viene creato un grafico delle identità e tutti gli altri set di dati abilitati per il profilo possono essere potenzialmente uniti per creare profili cliente in tempo reale. Per vedere questo in azione, crea rapidamente un altro set di dati in Adobe Experience Platform con alcuni dati di fedeltà di esempio, in modo da poter utilizzare i profili cliente in tempo reale nelle campagne web Journey Optimizer. Poiché hai già fatto esercizi simili, le istruzioni saranno brevi.
-
-Creare lo schema fedeltà:
-
-1. Crea un nuovo schema
-1. Scegli **[!UICONTROL Profilo individuale]** come [!UICONTROL classe base]
-1. Denomina lo schema `Luma Loyalty Schema`
-1. Aggiungi il [!UICONTROL Dettagli fedeltà] gruppo di campi
-1. Aggiungi il [!UICONTROL Dettagli demografici] gruppo di campi
-1. Seleziona la `Person ID` e contrassegnarlo come [!UICONTROL Identità] e [!UICONTROL Identità primaria] utilizzando `Luma CRM Id` [!UICONTROL Spazio dei nomi dell’identità].
-1. Abilita lo schema per [!UICONTROL Profilo]
-
-   ![Schema fedeltà](assets/web-channel-loyalty-schema.png)
-
-Per creare il set di dati e acquisire i dati di esempio:
-
-1. Creare un nuovo set di dati da `Luma Loyalty Schema`
-1. Denomina il set di dati `Luma Loyalty Dataset`
-1. Abilita il set di dati per [!UICONTROL Profilo]
-1. Scarica il file di esempio [luma-loyalty-forWeb.json](assets/luma-loyalty-forWeb.json)
-1. Trascinare il file nel set di dati
-1. Conferma che i dati siano stati acquisiti correttamente
-
-   ![Schema fedeltà](assets/web-channel-loyalty-dataset.png)
-
-### Creazione di un pubblico
-
-I tipi di pubblico raggruppano i profili in base alle caratteristiche comuni. Crea un pubblico rapido da utilizzare nella campagna web:
-
-1. Nell’interfaccia di Experience Platform, vai a **[!UICONTROL Tipi di pubblico]** nel menu di navigazione a sinistra
-1. Seleziona **[!UICONTROL Creare un pubblico]**
-1. Seleziona **[!UICONTROL Genera regola]**
-1. Seleziona **[!UICONTROL Crea]**
-
-   ![Creazione di un pubblico](assets/web-campaign-create-audience.png)
-
-1. Seleziona **[!UICONTROL Attributi]**
-1. Trova il **[!UICONTROL Fedeltà]** > **[!UICONTROL Livello]** e trascinarlo sulla **[!UICONTROL Attributi]** sezione
-1. Definisci il pubblico come utenti il cui `tier` è `gold`
-1. Assegna un nome al pubblico `Luma Loyalty Rewards – Gold Status`
-1. Seleziona **[!UICONTROL Bordo]** come **[!UICONTROL Metodo di valutazione]**
-1. Seleziona **[!UICONTROL Salva]**
-
-   ![Definire il pubblico](assets/web-campaign-define-audience.png)
-
-Poiché si tratta di un pubblico molto semplice, possiamo utilizzare il metodo di valutazione Edge. I tipi di pubblico Edge valutano il Edge di, quindi, nella stessa richiesta effettuata dall’SDK web all’Edge Network di Platform, possiamo valutare la definizione del pubblico e confermare immediatamente se l’utente sarà idoneo.
-
 ### Crea campagna di premi fedeltà
 
 Dopo aver acquisito i dati di esempio sulla fedeltà e creato il segmento, crea la campagna per il canale web Loyalty Rewards in Adobe Journey Optimizer.
@@ -258,7 +209,7 @@ Ora creiamo l’esperienza del canale web. A tale scopo, utilizza Adobe Experien
 
 1. All&#39;interno del **[!UICONTROL Azione]** scheda della campagna, fai clic su **[!UICONTROL Modifica contenuto]**. Poiché hai inserito come superficie un URL a pagina singola, dovresti essere pronto per iniziare a lavorare nel compositore.
 
-   ![Modificare i contenuti](assets/web-channel-edit-content.png)
+   ![Modifica contenuto](assets/web-channel-edit-content.png)
 
 1. Ora fai clic su **[!UICONTROL Modifica pagina web]** per iniziare l’authoring.
 
@@ -270,7 +221,7 @@ Ora creiamo l’esperienza del canale web. A tale scopo, utilizza Adobe Experien
 
 1. Aggiungi anche la personalizzazione al contenitore utilizzando **[!UICONTROL Editor espressioni]**.
 
-   ![Aggiungere la personalizzazione](assets/web-channel-add-basic-personalization.png)
+   ![Aggiungi personalizzazione](assets/web-channel-add-basic-personalization.png)
 
 1. Assicurati che l’esperienza sia correttamente tracciata per i clic. Scegli **[!UICONTROL Fai clic sull’elemento di tracciamento]** dal menu contestuale.
 

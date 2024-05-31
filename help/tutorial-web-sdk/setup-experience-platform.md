@@ -1,18 +1,18 @@
 ---
 title: Trasmettere i dati a Adobe Experience Platform con Platform Web SDK
-description: Scopri come inviare dati web a Adobe Experience Platform con Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
+description: Scopri come inviare dati web a Adobe Experience Platform con Web SDK. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
-source-wordcount: '1592'
-ht-degree: 4%
+source-wordcount: '1940'
+ht-degree: 5%
 
 ---
 
 # Trasmettere i dati per dare Experience Platform con Web SDK
 
-Scopri come inviare dati web a Adobe Experience Platform con Platform Web SDK.
+Scopri come trasferire i dati web in streaming a Adobe Experience Platform con Platform Web SDK.
 
 Experienci Platform è la spina dorsale di tutte le nuove applicazioni Experience Cloud, come Adobe Real-time Customer Data Platform, Adobe Customer Journey Analytics e Adobe Journey Optimizer. Queste applicazioni sono progettate per utilizzare Platform Web SDK come metodo ottimale per la raccolta di dati web.
 
@@ -53,7 +53,7 @@ Configuriamo un set di dati per i dati dell’evento web Luma:
 
 1. Seleziona la **[!UICONTROL Crea set di dati dallo schema]** opzione
 
-   ![Creare un set di dati da uno schema](assets/experience-platform-create-dataset-schema.png)
+   ![Crea set di dati dallo schema](assets/experience-platform-create-dataset-schema.png)
 
 1. Seleziona la `Luma Web Event Data` schema creato in [lezione precedente](configure-schemas.md) e quindi seleziona **[!UICONTROL Successivo]**
 
@@ -232,6 +232,57 @@ Innanzitutto devi generare più dati campione. Ripeti i passaggi precedenti di q
    ![Profilo cliente](assets/experience-platform-validate-dataset-custProfile.png)
 
 Ora hai abilitato Platform Web SDK, ad Experience Platform (e Real-Time CDP! E Journey Optimizer! E Customer Journey Analytics!).
+
+### Creare uno schema Fedeltà e acquisire dati di esempio
+
+Il completamento di questo esercizio è previsto per i clienti di Real-time Customer Data Platform e Journey Optimizer.
+
+Quando i dati dell’SDK web vengono acquisiti in Adobe Experience Platform, possono essere arricchiti da altre origini dati acquisite in Platform. Ad esempio, quando un utente accede al sito Luma, in Experienci Platform viene creato un grafico delle identità e tutti gli altri set di dati abilitati per il profilo possono essere potenzialmente uniti per creare profili cliente in tempo reale. Per vedere questo in azione, crea rapidamente un altro set di dati in Adobe Experience Platform con alcuni dati di fedeltà di esempio, in modo da poter utilizzare i profili cliente in tempo reale con Real-time Customer Data Platform e Journey Optimizer. Poiché hai già fatto esercizi simili, le istruzioni saranno brevi.
+
+Creare lo schema fedeltà:
+
+1. Crea un nuovo schema
+1. Scegli **[!UICONTROL Profilo individuale]** come [!UICONTROL classe base]
+1. Denomina lo schema `Luma Loyalty Schema`
+1. Aggiungi il [!UICONTROL Dettagli fedeltà] gruppo di campi
+1. Aggiungi il [!UICONTROL Dettagli demografici] gruppo di campi
+1. Seleziona la `Person ID` e contrassegnarlo come [!UICONTROL Identità] e [!UICONTROL Identità primaria] utilizzando `Luma CRM Id` [!UICONTROL Spazio dei nomi dell’identità].
+1. Abilita lo schema per [!UICONTROL Profilo]
+
+   ![Schema fedeltà](assets/web-channel-loyalty-schema.png)
+
+Per creare il set di dati e acquisire i dati di esempio:
+
+1. Creare un nuovo set di dati da `Luma Loyalty Schema`
+1. Denomina il set di dati `Luma Loyalty Dataset`
+1. Abilita il set di dati per [!UICONTROL Profilo]
+1. Scarica il file di esempio [luma-loyalty-forWeb.json](assets/luma-loyalty-forWeb.json)
+1. Trascinare il file nel set di dati
+1. Conferma che i dati siano stati acquisiti correttamente
+
+   ![Schema fedeltà](assets/web-channel-loyalty-dataset.png)
+
+### Creazione di un pubblico
+
+I tipi di pubblico raggruppano i profili in base alle caratteristiche comuni. Crea un pubblico rapido da utilizzare nella campagna web:
+
+1. Nell’interfaccia di Experience Platform, vai a **[!UICONTROL Tipi di pubblico]** nel menu di navigazione a sinistra
+1. Seleziona **[!UICONTROL Creare un pubblico]**
+1. Seleziona **[!UICONTROL Genera regola]**
+1. Seleziona **[!UICONTROL Crea]**
+
+   ![Creazione di un pubblico](assets/web-campaign-create-audience.png)
+
+1. Seleziona **[!UICONTROL Attributi]**
+1. Trova il **[!UICONTROL Fedeltà]** > **[!UICONTROL Livello]** e trascinarlo sulla **[!UICONTROL Attributi]** sezione
+1. Definisci il pubblico come utenti il cui `tier` è `gold`
+1. Assegna un nome al pubblico `Luma Loyalty Rewards – Gold Status`
+1. Seleziona **[!UICONTROL Bordo]** come **[!UICONTROL Metodo di valutazione]**
+1. Seleziona **[!UICONTROL Salva]**
+
+   ![Definire il pubblico](assets/web-campaign-define-audience.png)
+
+Poiché si tratta di un pubblico molto semplice, possiamo utilizzare il metodo di valutazione Edge. I tipi di pubblico Edge valutano il Edge di, quindi, nella stessa richiesta effettuata dall’SDK web all’Edge Network di Platform, possiamo valutare la definizione del pubblico e confermare immediatamente se l’utente sarà idoneo.
 
 
 [Successivo: ](setup-analytics.md)

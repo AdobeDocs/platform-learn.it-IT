@@ -1,13 +1,13 @@
 ---
 title: Creare uno schema XDM per i dati web
-description: Scopri come creare uno schema XDM per i dati web nell’interfaccia di Data Collection. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
+description: Scopri come creare uno schema XDM per i dati web nell’interfaccia di Data Collection. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 1%
+source-wordcount: '1542'
+ht-degree: 3%
 
 ---
 
@@ -18,6 +18,10 @@ Scopri come creare uno schema XDM per i dati web nell’interfaccia di raccolta 
 Gli schemi Experience Data Model (XDM) sono gli elementi costitutivi, i principi e le best practice per la raccolta di dati in Adobe Experience Platform.
 
 Platform Web SDK utilizza lo schema per standardizzare i dati dell’evento web, inviarli all’Edge Network di Platform e infine inoltrarli a qualsiasi applicazione Experience Cloud configurata nello stream di dati. Questo passaggio è fondamentale in quanto definisce un modello dati standard necessario per acquisire i dati sulla customer experience in Experienci Platform e abilita servizi e applicazioni a valle basati su questi standard.
+
+>[!NOTE]
+>
+>Uno schema XDM è _non obbligatorio_ per implementare Adobe Analytics, Adobe Target o Adobe Audience Manager con Web SDK (i dati possono essere trasmessi nel `data` oggetto invece del `xdm` come vedrai in seguito). È necessario uno schema XDM per le implementazioni più performanti di applicazioni native per la piattaforma come Journey Optimizer, Real-time Customer Data Platform, Customer Journey Analytics. Anche se puoi decidere di non utilizzare uno schema XDM nella tua implementazione, è previsto che tu lo faccia come parte di questa esercitazione.
 
 ## Perché modellare i dati?
 
@@ -111,8 +115,7 @@ Quando possibile, si consiglia di utilizzare i gruppi di campi esistenti e di ad
 > 
 >In questo esercizio aggiungerai i gruppi di campi predefiniti consigliati per la raccolta di dati web: _**[!UICONTROL ExperienceEvent di AEP Web SDK]**_ e _**[!UICONTROL Evento esperienza del consumatore]**_.
 >
->
-> Se implementi solo **Adobe Analytics** con Web SDK e non inviare dati a **Experience Platform**, utilizza [!UICONTROL Modello Adobe Analytics ExperienceEvent] per definire lo schema XDM. Questo viene utilizzato nel [Configurazione analisi](setup-analytics.md) lezione.
+
 
 1. In **[!UICONTROL Gruppi di campi]** sezione, seleziona **[!UICONTROL Aggiungi]**
 

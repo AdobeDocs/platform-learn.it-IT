@@ -9,18 +9,18 @@ solution: Customer Journey Analytics
 feature-set: Customer Journey Analytics
 feature: Connections, Data Views, Workspace Basics, Calculated Metrics, Visualizations, Audiences
 exl-id: cd4b423c-cd0b-44cf-8ac7-23c25876457c
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '384'
 ht-degree: 1%
 
 ---
 
 # 4. Analisi del Percorso di clienti
 
-In questo flusso di utenti, avrai un’esperienza pratica con il servizio applicativo di Customer Journey Analytics.
+In questo flusso di utenti, avrai un’esperienza pratica con l’applicazione di Customer Journey Analytics.
 
-Customer Journey Analytics fornisce un toolkit ai team di business intelligence e data science per l’unione e l’analisi dei dati cross-channel (online e offline). Le funzionalità all&#39;interno del Customer Journey Analytics forniscono contesto e chiarezza ai complessi percorsi di clienti multicanale. Il contesto fornito genera informazioni utili su come rimuovere i punti critici dal processo di conversione del cliente e fornire esperienze positive nei momenti più importanti.
+Customer Journey Analytics fornisce un toolkit ai team di business intelligence e di data science per l’unione e l’analisi dei dati cross-channel (online e offline). Le funzionalità all&#39;interno del Customer Journey Analytics forniscono contesto e chiarezza ai complessi percorsi di clienti multicanale. Il contesto fornito genera informazioni utili su come rimuovere i punti critici dal processo di conversione del cliente e fornire esperienze positive nei momenti più importanti.
 
 Dai un&#39;occhiata a questo video per comprendere il valore, il percorso del cliente e la procedura di configurazione:
 
@@ -40,7 +40,7 @@ Ulteriori informazioni sul Customer Journey Analytics sono disponibili [qui](htt
 
 - È preferibile acquisire familiarità con Analysis Workspace, ma non è necessario
 - Accesso a Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Accesso al servizio applicazioni di Customer Journey Analytics
+- Accesso all&#39;applicazione di Customer Journey Analytics
 
 >[!IMPORTANT]
 >
