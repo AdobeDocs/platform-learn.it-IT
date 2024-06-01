@@ -1,13 +1,13 @@
 ---
 title: Creare regole di tag per Platform Web SDK
-description: Scopri come inviare un evento all’Edge Network di Platform con l’oggetto XDM utilizzando una regola di tag. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
+description: Scopri come inviare un evento all’Edge Network di Platform con l’oggetto XDM utilizzando una regola di tag. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1963'
-ht-degree: 1%
+source-wordcount: '1983'
+ht-degree: 2%
 
 ---
 
@@ -163,7 +163,6 @@ Ora, inizia a utilizzare **[!UICONTROL Aggiorna variabile]** in regole aggiuntiv
 >
 >L&#39;ordine delle regole determina quale regola viene eseguita per prima quando viene attivato un evento. Se due regole hanno lo stesso tipo di evento, viene eseguito per primo quello con il numero più basso.
 > 
->![ordine delle regole](assets/set-up-analytics-sequencing.png)
 
 Per iniziare, monitora le visualizzazioni del prodotto nella pagina dei dettagli del prodotto di Luma:
 
@@ -172,7 +171,8 @@ Per iniziare, monitora le visualizzazioni del prodotto nella pagina dei dettagli
 1. Seleziona la ![simbolo +](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) in Evento per aggiungere un nuovo trigger
 1. Sotto **[!UICONTROL Estensione]**, seleziona **[!UICONTROL Core]**
 1. Sotto **[!UICONTROL Tipo di evento]**, seleziona **[!UICONTROL Library Loaded (Page Top)]**
-1. Seleziona per aprire **[!UICONTROL Opzioni avanzate]**, digitare `20`. Questo valore di ordine assicura che la regola venga eseguita dopo il `all pages - library loaded - set global variables - 1` che imposta la configurazione globale.
+1. Seleziona per aprire **[!UICONTROL Opzioni avanzate]**, digitare `20`. Questo valore dell’ordine garantisce l’esecuzione della regola _dopo_ il `all pages - library loaded - set global variables - 1` che imposta la configurazione globale.
+1. Seleziona **[!UICONTROL Mantieni modifiche]**
 
    ![Regole XDM per Analytics](assets/set-up-analytics-pdp.png)
 
@@ -189,6 +189,7 @@ Per iniziare, monitora le visualizzazioni del prodotto nella pagina dei dettagli
 1. Sotto **[!UICONTROL Azioni]** seleziona **[!UICONTROL Aggiungi]**
 1. Seleziona **[!UICONTROL Adobe Experience Platform Web SDK]** estensione
 1. Seleziona **[!UICONTROL Tipo di azione]** as **[!UICONTROL Aggiorna variabile]**
+1. Seleziona `xdm.variable.content` come **[!UICONTROL Elemento dati]**
 1. Scorri verso il basso fino a `commerce` oggetto
 1. Apri **[!UICONTROL productViews]** oggetto e set **[!UICONTROL valore]** a `1`
 
@@ -202,7 +203,7 @@ Per iniziare, monitora le visualizzazioni del prodotto nella pagina dei dettagli
 
    >[!NOTE]
    >
-   >Poiché questa regola ha un ordine più alto, sovrascriverà il `eventType` impostato nella regola &quot;configurazione globale&quot;. `eventType` può contenere un solo valore e si consiglia di impostarlo con l’evento di valore più alto.
+   >Poiché questa regola ha un ordine più alto, sovrascriverà il `eventType` impostato nella regola &quot;configurazione globale&quot;. `eventType` può contenere un solo valore e si consiglia di impostarlo con l’evento più prezioso.
 
 1. Scorri verso il basso fino a e seleziona `productListItems` array
 1. Seleziona **[!UICONTROL Fornisci singoli elementi]**
@@ -264,6 +265,7 @@ Ora associamo il nostro array all’oggetto XDM:
 1. Sotto **[!UICONTROL Azioni]** seleziona **[!UICONTROL Aggiungi]**
 1. Seleziona **[!UICONTROL Adobe Experience Platform Web SDK]** estensione
 1. Seleziona **[!UICONTROL Tipo di azione]** as **[!UICONTROL Aggiorna variabile]**
+1. Seleziona `xdm.variable.content` come **[!UICONTROL Elemento dati]**
 1. Scorri verso il basso fino a `commerce` e selezionare per aprirlo.
 1. Apri **[!UICONTROL productListViews]** oggetto e set **[!UICONTROL valore]** a `1`
 
@@ -320,6 +322,7 @@ Crea altre due regole per il pagamento e l’acquisto seguendo lo stesso pattern
 1. Scorri verso il basso fino a e seleziona **[!UICONTROL productListItems]** array
 1. Seleziona **[!UICONTROL Fornire l&#39;intero array]**
 1. Mappa a **`cart.productInfo.purchase`** elemento dati
+1. Seleziona **[!UICONTROL Mantieni modifiche]**
 1. Seleziona **[!UICONTROL Salva]**
 
 Al termine dell’operazione, dovresti vedere che sono state create le seguenti regole.
@@ -339,7 +342,7 @@ Dopo aver impostato le variabili, puoi creare la regola per inviare l’oggetto 
 
 1. Utilizza il **[!UICONTROL Estensione core]** e seleziona `Library Loaded (Page Top)` come **[!UICONTROL Tipo di evento]**
 
-1. Seleziona **[!UICONTROL Avanzate]** a discesa e immettere `50` in **[!UICONTROL Ordine]**. In questo modo la seconda regola verrà attivata dopo la prima regola impostata per l’attivazione come `1`.
+1. Seleziona **[!UICONTROL Avanzate]** a discesa e immettere `50` in **[!UICONTROL Ordine]**. Questo assicurerà che questa regola venga attivata dopo tutte le altre regole configurate (che avevano `1` o `20` come loro [!UICONTROL Ordine]).
 
 1. Seleziona **[!UICONTROL Mantieni modifiche]** per tornare alla schermata principale delle regole
    ![Seleziona attivatore caricato dalla libreria](assets/create-tag-rule-trigger-loaded-send.png)
@@ -390,7 +393,7 @@ Come è possibile vedere sul [!UICONTROL Flusso di pubblicazione] , il processo 
 
 Ora puoi convalidare i dati nella richiesta utilizzando l’Adobe Experience Platform Debugger.
 
-[Successivo ](validate-with-debugger.md)
+[Next ](validate-with-debugger.md)
 
 >[!NOTE]
 >

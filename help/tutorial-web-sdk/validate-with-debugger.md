@@ -1,19 +1,19 @@
 ---
 title: Convalidare le implementazioni Web SDK con Experienci Platform Debugger
-description: Scopri come convalidare l’implementazione di Platform Web SDK con l’Adobe Experience Platform Debugger. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
+description: Scopri come convalidare l’implementazione di Platform Web SDK con l’Adobe Experience Platform Debugger. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 1%
+source-wordcount: '1172'
+ht-degree: 3%
 
 ---
 
 # Convalidare le implementazioni Web SDK con Experienci Platform Debugger
 
-Scopri come convalidare l’implementazione di Adobe Experience Platform Web SDK con Adobi Experience Platform Debugger.
+Scopri come convalidare l’implementazione di Adobe Experience Platform Web SDK con Adobe Experience Platform Debugger.
 
 Experienci Platform Debugger è un’estensione disponibile per i browser Chrome e Firefox, che consente di visualizzare la tecnologia Adobe implementata nelle pagine web. Scarica la versione per il browser preferito:
 
@@ -75,7 +75,7 @@ Experienci Platform Debugger dispone di una funzione interessante che consente d
 
    ![proprietà tag sostituita](assets/validate-switch-success.png)
 
-Continuando l’esercitazione, utilizzi questa tecnica per mappare il sito Luma sulla tua proprietà tag per convalidare l’implementazione dell’SDK web per Platform. Quando inizi a utilizzare i tag sul sito web di produzione, puoi usare questa stessa tecnica per convalidare le modifiche apportate nell’ambiente di sviluppo dei tag.
+Continuando l’esercitazione, utilizzi questa tecnica per mappare il sito Luma sulla tua proprietà tag per convalidare l’implementazione dell’SDK web per Platform. Quando utilizzi i tag sul tuo sito web, puoi usare questa stessa tecnica per convalidare le librerie di tag di sviluppo sul sito web di produzione.
 
 ## Convalidare richieste di rete lato client con Experienci Platform Debugger
 
@@ -131,7 +131,7 @@ Questi tipi di dettagli della richiesta sono visibili anche negli strumenti di s
 
    ![Scheda Rete](assets/validate-dev-console.png)
 
-1. Vai a **Risposta** e osserva come il valore ECID viene incluso nella risposta. Copia questo valore così come lo utilizzerai per convalidare le informazioni sul profilo nel prossimo esercizio
+1. Vai a **Risposta** e osserva come il valore ECID viene incluso nella risposta.
 
    ![Scheda Rete](assets/validate-dev-console-ecid.png)
 

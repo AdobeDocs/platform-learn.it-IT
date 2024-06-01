@@ -4,9 +4,9 @@ description: Scopri come configurare Adobe Analytics utilizzando Experienci Plat
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '2735'
+source-wordcount: '2865'
 ht-degree: 1%
 
 ---
@@ -74,15 +74,15 @@ Esistono diversi modi per impostare le variabili di Analytics in un’implementa
 1. Mappa i campi XDM sulle variabili di Analytics nelle regole di elaborazione di Analytics (non più consigliato).
 1. Mappa sulle variabili di Analytics direttamente nello schema XDM (non più consigliato).
 
-A partire da maggio 2024, non è più necessario creare uno schema XDM per implementare Adobe Analytics con Platform Web SDK. Il `data` oggetto (e `data.variable` elemento dati creato in questa esercitazione) può essere utilizzato per impostare tutte le variabili di Analytics personalizzate. L’impostazione di queste variabili nell’oggetto dati sarà familiare ai clienti Analytics esistenti, è più efficiente dell’utilizzo dell’interfaccia delle regole di elaborazione e impedisce che dati non necessari occupino spazio in Real-Time Customer Profiles (importante se si dispone di Real-time Customer Data Platform o Journey Optimizer).
+A partire da maggio 2024, non è più necessario creare uno schema XDM per implementare Adobe Analytics con Platform Web SDK. Il `data` oggetto (e `data.variable` elemento dati creato in [Creare elementi dati](create-data-elements.md) lezione) può essere utilizzato per impostare tutte le variabili di Analytics personalizzate. L’impostazione di queste variabili nell’oggetto dati sarà familiare ai clienti Analytics esistenti, è più efficiente dell’utilizzo dell’interfaccia delle regole di elaborazione e impedisce che dati non necessari occupino spazio in Real-Time Customer Profiles (importante se si dispone di Real-time Customer Data Platform o Journey Optimizer).
 
 ### Campi mappati automaticamente
 
 Molti campi XDM vengono mappati automaticamente alle variabili di Analytics. Per un elenco aggiornato delle mappature, consulta [Mappatura delle variabili di Analytics in Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
-Ciò si verifica se _anche se non hai definito uno schema personalizzato_. Experienci Platform Web SDK raccoglie automaticamente alcuni dati e li invia a Platform Edge Network come campi XDM. Ad esempio, Web SDK legge l’URL della pagina corrente e lo invia come `web.webPageDetails.URL`. Questo campo viene inoltrato ad Adobe Analytics e viene automaticamente popolato nei rapporti URL pagina in Adobe Analytics.
+Ciò si verifica se _anche se non hai definito uno schema personalizzato_. Experienci Platform Web SDK raccoglie automaticamente alcuni dati e li invia a Platform Edge Network come campi XDM. Ad esempio, Web SDK legge l’URL della pagina corrente e lo invia come campo XDM `web.webPageDetails.URL`. Questo campo viene inoltrato ad Adobe Analytics e automaticamente popola i rapporti URL pagina in Adobe Analytics.
 
-Quando implementi Web SDK per Analytics e l’applicazione basata su piattaforma, crei uno schema XDM personalizzato, come descritto in questa esercitazione in [Configurare uno schema](configure-schemas.md) lezione. Alcuni dei campi XDM implementati sono mappati automaticamente alle variabili di Analytics, come descritto in questa tabella:
+Se implementi Web SDK per Adobe Analytics con uno schema XDM, come hai fatto in questa esercitazione, alcuni dei campi XDM che hai implementato sono mappati automaticamente alle variabili Analytics, come descritto in questa tabella:
 
 | Variabili mappate automaticamente da XDM ad Analytics | Variabile Adobe Analytics |
 |-------|---------|
@@ -103,15 +103,18 @@ Quando implementi Web SDK per Analytics e l’applicazione basata su piattaforma
 
 Le singole sezioni della stringa di prodotto Analytics sono impostate tramite diverse variabili XDM sotto `productListItems` oggetto.
 
+>[!NOTE]
+>
 >Dal 18 agosto 2022, `productListItems[].SKU` ha priorità nella mappatura al nome del prodotto nella variabile s.products.
 >Il valore impostato su `productListItems[].name` è mappato al nome del prodotto solo se `productListItems[].SKU` non esiste. In caso contrario, non è mappato ed è disponibile nei dati contestuali.
 >Non impostare una stringa vuota o null su `productListItems[].SKU`. Questo ha l’effetto indesiderato di mappare al nome del prodotto nella variabile s.products.
 
+
 ### Impostare le variabili nell’oggetto dati
 
-Impostazione delle variabili in `data` L’oggetto è il metodo consigliato per impostare le variabili di Analytics con Web SDK. L’impostazione delle variabili nell’oggetto dati può inoltre sovrascrivere qualsiasi variabile mappata automaticamente.
+Ma cosa dire di eVar, prop ed eventi? Impostazione delle variabili in `data` L’oggetto è il metodo consigliato per impostare queste variabili di Analytics con Web SDK. L’impostazione delle variabili nell’oggetto dati può inoltre sovrascrivere qualsiasi variabile mappata automaticamente.
 
-Prima di tutto, qual è la `data` oggetto? In qualsiasi evento Web SDK è possibile inviare due oggetti con dati personalizzati, il `data` oggetto e `xdm` oggetto. Entrambi vengono inviati all’Edge Network di Platform, ma solo `xdm` L’oggetto viene inviato al set di dati Experienci Platform. Proprietà in `data` L&#39;oggetto può essere mappato sul server Edge a `xdm` I campi che utilizzano la funzione Preparazione per la raccolta dati, ma che in caso contrario non vengono inviati ad Experienci Platform. Questo lo rende un modo ideale per inviare dati ad applicazioni come Analytics, che non sono native di Experienci Platform.
+Prima di tutto, qual è la `data` oggetto? In qualsiasi evento Web SDK è possibile inviare due oggetti con dati personalizzati, il `xdm` oggetto e `data` oggetto. Entrambi vengono inviati all’Edge Network di Platform, ma solo `xdm` L’oggetto viene inviato al set di dati Experienci Platform. Proprietà in `data` L&#39;oggetto può essere mappato sul server Edge a `xdm` I campi che utilizzano la funzione Preparazione per la raccolta dati, ma che in caso contrario non vengono inviati ad Experienci Platform. Questo lo rende un modo ideale per inviare dati ad applicazioni come Analytics, che non sono native di Experienci Platform.
 
 Di seguito sono riportati i due oggetti in una chiamata Web SDK generica:
 
@@ -119,9 +122,28 @@ Di seguito sono riportati i due oggetti in una chiamata Web SDK generica:
 
 Adobe Analytics è configurato per cercare eventuali proprietà in `data.__adobe.analytics` e utilizzarli per le variabili di Analytics.
 
-Ora facciamo questo.
+Ora vediamo come funziona. Impostiamo `eVar1` e `prop1` con il nome della pagina e scopri come il valore mappato da XDM può essere sovrascritto
 
-Utilizziamo `data.variable` elemento dati t
+1. Apri la regola di tag `all pages - library loaded - set global variables - 1`
+1. Aggiungi un nuovo **[!UICONTROL Azione]**
+1. Seleziona **[!UICONTROL Adobe Experience Platform Web SDK]** estensione
+1. Seleziona **[!UICONTROL Tipo di azione]** as **[!UICONTROL Aggiorna variabile]**
+1. Seleziona `data.variable` come **[!UICONTROL Elemento dati]**
+1. Seleziona la **[!UICONTROL analisi]** oggetto
+1. Imposta `eVar1` come `page.pageInfo.pageName` elemento dati
+1. Imposta `prop1` per copiare il valore di `eVar1`
+1. Per verificare la sovrascrittura dei valori mappati XDM, in **[!UICONTROL Proprietà aggiuntiva]** impostare il nome della pagina come valore statico `test`
+1. Salva la regola
+
+
+Ora è necessario includere l’oggetto dati nella regola dell’evento di invio.
+
+1. Apri la regola di tag `all pages - library loaded - send event - 50`
+1. Apri **[!UICONTROL Invia evento]** azione
+1. Seleziona `data.variable` come **[!UICONTROL Dati]**
+1. Seleziona **[!UICONTROL Mantieni modifiche]**
+1. Seleziona **[!UICONTROL Salva]**
+
 
 
 <!--
@@ -200,7 +222,7 @@ Per configurare l’impostazione di sostituzione della suite di rapporti di Adob
 
    ![Sovrascrivere lo stream di dati](assets/datastream-edit-analytics.png)
 
-1. Seleziona la **[!UICONTROL Opzioni avanzate]** per aprire **[!UICONTROL Sostituzioni suite di rapporti]**
+1. Seleziona **[!UICONTROL Opzioni avanzate]** per aprire **[!UICONTROL Sostituzioni suite di rapporti]**
 
 1. Seleziona le suite di rapporti da ignorare. In questo caso, `Web SDK Course Dev` e `Web SDK Course Stg`
 
@@ -219,9 +241,10 @@ Creiamo una regola per inviare una chiamata aggiuntiva di visualizzazione della 
 
 1. Sotto **[!UICONTROL Estensione]**, seleziona **[!UICONTROL Core]**
 
-1. Sotto **[!UICONTROL Tipo di evento]**, seleziona **[!UICONTROL libreria caricata]**
+1. Sotto **[!UICONTROL Tipo di evento]**, seleziona **[!UICONTROL Library Loaded (Page Top)]**
 
 1. Seleziona per aprire **[!UICONTROL Opzioni avanzate]**, digitare `51`. In questo modo la regola viene eseguita dopo il `all pages - library loaded - send event - 50` che imposta l&#39;XDM della linea di base con **[!UICONTROL Aggiorna variabile]** tipo di azione.
+1. Seleziona **[!UICONTROL Mantieni modifiche]**
 
    ![Override suite di rapporti di Analytics](assets/set-up-analytics-rs-override.png)
 
@@ -247,9 +270,9 @@ Creiamo una regola per inviare una chiamata aggiuntiva di visualizzazione della 
 
 1. Come **[!UICONTROL Tipo di azione]**, seleziona **[!UICONTROL Invia evento]**
 
-1. Come **[!UICONTROL Tipo]**, seleziona `web.webpagedetails.pageViews`
-
 1. Come **[!UICONTROL Dati XDM]**, seleziona la `xdm.variable.content` elemento dati creato in [Creare elementi dati](create-data-elements.md) lezione
+
+1. Come **[!UICONTROL Dati]**, seleziona la `data.variable` elemento dati creato in [Creare elementi dati](create-data-elements.md) lezione
 
    ![Sostituzione dello stream di dati di Analytics](assets/set-up-analytics-datastream-override-1.png)
 
@@ -261,7 +284,7 @@ Creiamo una regola per inviare una chiamata aggiuntiva di visualizzazione della 
    >
    >    Questa scheda determina in quale ambiente di tag si verifica l’esclusione. Per questo estratto, specifichi solo l’ambiente di sviluppo, ma quando lo distribuisci in produzione ricorda di farlo anche nel **[!UICONTROL Produzione]** ambiente.
 
-
+1. Seleziona la **[!UICONTROL Sandbox]** stai utilizzando per l’esercitazione
 1. Seleziona la **[!UICONTROL Datastream]**, in questo caso `Luma Web SDK: Development Environment`
 
 1. Sotto **[!UICONTROL Suite di rapporti]**, seleziona il sito di report che desideri utilizzare per la sostituzione. In questo caso, `tmd-websdk-course-stg`.
@@ -275,7 +298,7 @@ Creiamo una regola per inviare una chiamata aggiuntiva di visualizzazione della 
 
 ## Creare l’ambiente di sviluppo
 
-Aggiungi nuovi elementi dati e regole al tuo `Luma Web SDK Tutorial` libreria di tag e ricreare l’ambiente di sviluppo.
+Aggiungi le regole aggiornate al tuo `Luma Web SDK Tutorial` libreria di tag e ricreare l’ambiente di sviluppo.
 
 Congratulazioni! Il passaggio successivo consiste nel convalidare l’implementazione di Adobe Analytics tramite Experienci Platform Web SDK.
 

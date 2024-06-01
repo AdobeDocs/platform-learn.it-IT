@@ -4,9 +4,9 @@ description: Scopri come creare un oggetto XDM e mappare ad esso gli elementi da
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1337'
 ht-degree: 2%
 
 ---
@@ -100,14 +100,14 @@ window.adobeDataLayer.push({
 Pro
 
 * Elimina passaggi aggiuntivi per la mappatura delle variabili del livello dati su XDM
-* L’implementazione può essere più rapida se il team di sviluppo è responsabile dell’assegnazione tag al comportamento digitale
+* L’implementazione può essere più rapida se il team di sviluppo web è anche proprietario di tag per il comportamento digitale
 
 Contro
 
 * Completa dipendenza dal team di sviluppo e dal ciclo di sviluppo per aggiornare i dati da inviare a XDM
 * Flessibilità limitata, poiché XDM riceve il payload esatto dal livello dati
 * Non è possibile utilizzare le funzioni dei tag incorporate, ad esempio raschiamento, persistenza e funzioni per distribuzioni rapide
-* Impossibile utilizzare il livello dati per pixel di terze parti
+* È più difficile utilizzare il livello dati per i pixel di terze parti, ma potrebbe essere utile spostare questi pixel in [inoltro eventi](setup-event-forwarding.md)!
 * Impossibilità di trasformare i dati tra il livello dati e XDM
 
 ### Mappare il livello dati nei tag
@@ -267,7 +267,7 @@ Per creare l&#39;elemento dati Variable per XDM, è necessario collegarlo allo s
 1. Seleziona la **[!UICONTROL Adobe Experience Platform Web SDK]** come **[!UICONTROL Estensione]**
 1. Seleziona la **[!UICONTROL Variabile]** come **[!UICONTROL Tipo di elemento dati]**
 1. Seleziona **[!UICONTROL XDM]** come **[!UICONTROL proprietà]**
-1. Seleziona l’Experience Platform appropriato **[!UICONTROL Sandbox]**
+1. Seleziona la **[!UICONTROL Sandbox]** in cui è stato creato lo schema
 1. Seleziona la scheda appropriata **[!UICONTROL Schema]**, in questo caso `Luma Web Event Data`
 1. Seleziona **[!UICONTROL Salva]**
 
@@ -280,6 +280,7 @@ Quindi, crea l’elemento dati Variable per l’oggetto dati:
 1. Seleziona la **[!UICONTROL Adobe Experience Platform Web SDK]** come **[!UICONTROL Estensione]**
 1. Seleziona la **[!UICONTROL Variabile]** come **[!UICONTROL Tipo di elemento dati]**
 1. Seleziona **[!UICONTROL dati]** come **[!UICONTROL proprietà]**
+1. Seleziona le soluzioni di Experience Cloud da implementare come parte di questa esercitazione
 1. Seleziona **[!UICONTROL Salva]**
 
    ![Elemento dati variabile per oggetto dati](assets/data-element-data-variable.png.png)

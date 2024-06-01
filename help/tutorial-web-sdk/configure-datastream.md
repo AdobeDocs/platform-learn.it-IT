@@ -1,13 +1,13 @@
 ---
 title: Configurare uno stream di dati per Platform Web SDK
-description: Scopri come abilitare un flusso di dati e configurare le soluzioni Experience Cloud. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
+description: Scopri come abilitare un flusso di dati e configurare le soluzioni Experience Cloud. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 4%
+source-wordcount: '536'
+ht-degree: 8%
 
 ---
 
@@ -55,9 +55,9 @@ Ora puoi creare un flusso di dati per indicare all’Edge Network di Platform do
 
    >[!NOTE]
    >
-   >È necessario selezionare uno schema solo se si utilizza [Preparazione per la raccolta dati](/help/data-collection/edge/data-prep.md) funzionalità.
+   >Non è necessario selezionare uno schema. La selezione dello schema è necessaria solo se si utilizza [Preparazione per la raccolta dati](/help/data-collection/edge/data-prep.md) funzionalità.
 
-Nella schermata successiva è possibile aggiungere al flusso di dati servizi quali applicazioni Adobe, ma a questo punto dell’esercitazione non verrà aggiunto alcun servizio. Lo farai più avanti nelle lezioni [Experience Platform configurazione](setup-experience-platform.md), [Configurare Analytics](setup-analytics.md), [Audience Manager configurazione](setup-audience-manager.md), [Imposta Target](setup-target.md), o [Inoltro eventi](setup-event-forwarding.md).
+Nella schermata successiva, è possibile aggiungere al flusso di dati servizi quali applicazioni Adobe, tuttavia a questo punto non si aggiungeranno servizi. Lo farai più avanti nelle lezioni [Experience Platform configurazione](setup-experience-platform.md), [Configurare Analytics](setup-analytics.md), [Audience Manager configurazione](setup-audience-manager.md), [Imposta Target](setup-target.md), o [Inoltro eventi](setup-event-forwarding.md).
 
 >[!NOTE]
 >

@@ -1,13 +1,13 @@
 ---
 title: Convalidare le implementazioni dell’SDK web con Experienci Platform Assurance
-description: Scopri come convalidare l’implementazione di Platform Web SDK con Adobe Experience Platform Assurance. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
+description: Scopri come convalidare l’implementazione di Platform Web SDK con Adobe Experience Platform Assurance. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 2%
+source-wordcount: '606'
+ht-degree: 7%
 
 ---
 
@@ -76,10 +76,10 @@ Rivedi come abbiamo fatto questo nella lezione di Debugger:
 
 ## Convalidare lo stato corrente dell’implementazione dell’SDK web
 
-Le informazioni da visualizzare in questa fase dell’implementazione sono limitate. Un valore visibile è l’ID Experience Cloud (ECID) generato su Platform Edge Network:
+Le informazioni da visualizzare in questa fase dell’implementazione sono limitate. Un valore visibile è l’ID dell’Experience Cloud (ECID) generato nell’Edge Network della piattaforma:
 
-1. Seleziona la riga con l’evento denominato Adobe Response Handle.
-1. A destra viene visualizzato un menu. Seleziona la `+` accedi a `[!UICONTROL ACPExtensionEvent]`
+1. Seleziona la riga con l’evento denominato `Alloy Response Handle`.
+1. A destra viene visualizzato un menu. Seleziona la `+` accedi a `[!UICONTROL ACPExtensionEventData]`
 1. Espandere selezionando `[!UICONTROL payload > 0 > payload > 0 > namespace]`. L’ID mostrato sotto l’ultimo `0` corrisponde al `ECID`. Lo sai dal valore che viene visualizzato in `namespace` corrispondenza `ECID`
 
    ![Convalida garanzia ECID](assets/validate-assurance-ecid.png)

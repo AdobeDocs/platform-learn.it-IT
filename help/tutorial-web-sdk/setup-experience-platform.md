@@ -3,10 +3,10 @@ title: Trasmettere i dati a Adobe Experience Platform con Platform Web SDK
 description: Scopri come inviare dati web a Adobe Experience Platform con Web SDK. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1940'
-ht-degree: 5%
+source-wordcount: '2107'
+ht-degree: 4%
 
 ---
 
@@ -28,6 +28,8 @@ Alla fine di questa lezione, potrai:
 * Configurare lo stream di dati per inviare dati Web SDK a Adobe Experience Platform
 * Abilitare lo streaming dei dati web per Real-Time Customer Profile
 * Convalidare i dati sono stati inseriti sia nel set di dati di Platform che nel profilo cliente in tempo reale
+* Acquisire i dati del programma fedeltà di esempio in Platform
+* Creare un pubblico di Platform semplice
 
 ## Prerequisiti
 
@@ -36,6 +38,9 @@ Per completare questa lezione, devi prima:
 * Accedere a un’applicazione Adobe Experience Platform come Real-time Customer Data Platform, Journey Optimizer o Customer Journey Analytics
 * Completa le lezioni precedenti nelle sezioni Configurazione iniziale e Configurazione tag di questa esercitazione.
 
+>[!NOTE]
+>
+>Se non disponi di applicazioni Platform, puoi saltare questa lezione o continuare a leggerla.
 
 ## Creare un set di dati
 
@@ -44,7 +49,7 @@ Tutti i dati acquisiti correttamente in Adobe Experience Platform vengono memori
 Configuriamo un set di dati per i dati dell’evento web Luma:
 
 
-1. Vai a [Interfaccia Experienci Platform](https://experience.adobe.com/platform/)
+1. Vai a [Experience Platform](https://experience.adobe.com/platform/) o [Journey Optimizer](https://experience.adobe.com/journey-optimizer/) Interfaccia
 1. Conferma di trovarti nella sandbox di sviluppo che stai utilizzando per questa esercitazione
 1. Apri **[!UICONTROL Gestione dati > Set di dati]** dal menu di navigazione a sinistra
 1. Seleziona **[!UICONTROL Crea set di dati]**
@@ -139,14 +144,28 @@ Per confermare che i dati sono arrivati nel data lake di Platform, un’opzione 
 
    ![Anteprima set di dati 1](assets/experience-platform-dataset-preview-1.png)
 
+
+### Eseguire una query sui dati
+
+1. In [Experience Platform](https://experience.adobe.com/platform/) interfaccia, seleziona **[!UICONTROL Gestione dati > Query]** nel menu di navigazione a sinistra per aprire **[!UICONTROL Query]** schermo.
+1. Seleziona **[!UICONTROL Crea query]**
+1. Eseguire innanzitutto una query per visualizzare tutti i nomi delle tabelle nel data lake. Invio `SHOW TABLES` nell’editor delle query e fai clic sull’icona play per eseguire la query.
+1. Nei risultati, noterai che il nome della tabella è simile a `luma_web_event_data`
+1. Eseguire una query sulla tabella con una semplice query che fa riferimento alla tabella (si noti che per impostazione predefinita la query è limitata a 100 risultati): `SELECT * FROM "luma_web_event_data"`
+1. Dopo alcuni istanti dovresti vedere dei record di esempio dei tuoi dati web.
+
+>[!ERROR]
+>
+>Se ricevi un errore di tipo &quot;Tabella non predisposta&quot;, controlla nuovamente il nome della tabella. Potrebbe anche darsi che il microbatch di dati non sia ancora approdato nel data lake. Riprova tra 10-15 minuti.
+
 >[!INFO]
 >
->Il servizio query di Adobe Experience Platform è un metodo più affidabile per convalidare i dati nel data lake, ma va oltre l’ambito di questa esercitazione. Per ulteriori dettagli, consulta [Esplora i dati](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) nella sezione Esercitazioni di Platform.
+>  Per ulteriori dettagli sul servizio query di Adobe Experience Platform, consulta [Esplora i dati](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) nella sezione Esercitazioni di Platform.
 
 
 ## Abilitare il set di dati e lo schema per Real-Time Customer Profile
 
-Il passaggio successivo consiste nell’abilitare il set di dati e lo schema per Real-Time Customer Profile. Lo streaming di dati da Web SDK sarà una delle molte origini dati che fluiranno in Platform e desideri unire i tuoi dati web con altre origini dati per creare profili cliente a 360 gradi. Per ulteriori informazioni su Real-Time Customer Profile, guarda questo breve video:
+Per i clienti di Real-time Customer Data Platform e Journey Optimizer, il passaggio successivo consiste nell’abilitare il set di dati e lo schema per Real-Time Customer Profile. Lo streaming di dati da Web SDK sarà una delle molte origini dati che fluiranno in Platform e desideri unire i tuoi dati web con altre origini dati per creare profili cliente a 360 gradi. Per ulteriori informazioni su Real-Time Customer Profile, guarda questo breve video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
@@ -179,7 +198,7 @@ Il passaggio successivo consiste nell’abilitare il set di dati e lo schema per
 
    >[!IMPORTANT]
    >
-   >    Le identità primarie sono necessarie in ogni record inviato a Real-Time Customer Profile. In genere, i campi di identità sono etichettati all’interno dello schema. Quando si utilizzano le mappe di identità, tuttavia, i campi di identità non sono visibili all’interno dello schema. Questa finestra di dialogo conferma che hai in mente un’identità primaria e che la specificherai in una mappa di identità al momento dell’invio dei dati. Come sai, Web SDK utilizza una mappa di identità e l’ID Experience Cloud (ECID) è l’identità primaria predefinita.
+   >    Le identità primarie sono necessarie in ogni record inviato a Real-Time Customer Profile. In genere, i campi di identità sono etichettati all’interno dello schema. Quando si utilizzano le mappe di identità, tuttavia, i campi di identità non sono visibili all’interno dello schema. Questa finestra di dialogo conferma che hai in mente un’identità primaria e che la specificherai in una mappa di identità al momento dell’invio dei dati. Come sai, Web SDK utilizza una mappa di identità con l’ID Experience Cloud (ECID) come identità primaria predefinita e un ID autenticato come identità primaria, se disponibile.
 
 
 1. Seleziona **[!UICONTROL Abilita]**
@@ -192,7 +211,7 @@ Ora lo schema è abilitato anche per il profilo.
 
 >[!IMPORTANT]
 >
->    Una volta che uno schema è abilitato per il profilo, non può essere disabilitato o eliminato. Inoltre, i campi non possono essere rimossi dallo schema dopo questo punto. Queste implicazioni sono importanti da tenere presenti in un secondo momento quando si lavora con i propri dati nell’ambiente di produzione. In questa esercitazione dovresti utilizzare una sandbox di sviluppo, che può essere eliminata in qualsiasi momento.
+>    Una volta abilitato lo schema per il profilo, non è possibile disattivarlo o eliminarlo senza reimpostare o eliminare l’intera sandbox. Inoltre, i campi non possono essere rimossi dallo schema dopo questo punto.
 >
 >   
 > Quando lavori con i tuoi dati, ti consigliamo di eseguire le operazioni nel seguente ordine:
@@ -209,7 +228,7 @@ Puoi cercare un profilo cliente nell’interfaccia di Platform (o nell’interfa
 
 Innanzitutto devi generare più dati campione. Ripeti i passaggi precedenti di questa lezione per accedere al sito web Luma quando è mappato alla proprietà tag. Inspect richiede l’SDK web per Platform per assicurarsi che invii dati con `lumaCRMId`.
 
-1. In [Experience Platform](https://experience.adobe.com/platform/) interfaccia, seleziona **[!UICONTROL Profili]** nel menu di navigazione a sinistra
+1. In [Experience Platform](https://experience.adobe.com/platform/) interfaccia, seleziona **[!UICONTROL Cliente]** > **[!UICONTROL Profili]** nel menu di navigazione a sinistra
 
 1. Come **[!UICONTROL Spazio dei nomi dell’identità]** utilizzare `lumaCRMId`
 1. Copia e incolla il valore del `lumaCRMId` ha passato la chiamata esaminata nel debugger di Experienci Platform, in questo caso `112ca06ed53d3db37e4cea49cc45b71e`.
@@ -247,7 +266,8 @@ Creare lo schema fedeltà:
 1. Aggiungi il [!UICONTROL Dettagli fedeltà] gruppo di campi
 1. Aggiungi il [!UICONTROL Dettagli demografici] gruppo di campi
 1. Seleziona la `Person ID` e contrassegnarlo come [!UICONTROL Identità] e [!UICONTROL Identità primaria] utilizzando `Luma CRM Id` [!UICONTROL Spazio dei nomi dell’identità].
-1. Abilita lo schema per [!UICONTROL Profilo]
+1. Abilita lo schema per [!UICONTROL Profilo]. Se non riesci a trovare l’interruttore Profilo, prova a fare clic sul nome dello schema in alto a sinistra.
+1. Salvare lo schema
 
    ![Schema fedeltà](assets/web-channel-loyalty-schema.png)
 
@@ -266,7 +286,7 @@ Per creare il set di dati e acquisire i dati di esempio:
 
 I tipi di pubblico raggruppano i profili in base alle caratteristiche comuni. Crea un pubblico rapido da utilizzare nella campagna web:
 
-1. Nell’interfaccia di Experience Platform, vai a **[!UICONTROL Tipi di pubblico]** nel menu di navigazione a sinistra
+1. Nell’interfaccia di Experience Platform o Journey Optimizer, vai a **[!UICONTROL Cliente]** > **[!UICONTROL Tipi di pubblico]** nel menu di navigazione a sinistra
 1. Seleziona **[!UICONTROL Creare un pubblico]**
 1. Seleziona **[!UICONTROL Genera regola]**
 1. Seleziona **[!UICONTROL Crea]**
