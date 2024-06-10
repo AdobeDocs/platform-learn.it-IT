@@ -4,9 +4,10 @@ description: Scopri come segnalare e analizzare le interazioni con la tua app mo
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 686cb15eceb8faa375280f5d5ee8c925b841a601
+exl-id: c41b76eb-2ed7-4a82-80c1-b67476c464ad
+source-git-commit: 0af0ca0fe85fd1ba53861a1635bc0b54d0939141
 workflow-type: tm+mt
-source-wordcount: '3291'
+source-wordcount: '3282'
 ht-degree: 1%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 Scopri come segnalare e analizzare le interazioni dell’app mobile con il Customer Journey Analytics.
 
-I dati dell’evento dell’app mobile, che hai raccolto e inviato all’Edge Network di Platform nelle lezioni precedenti, vengono inoltrati ai servizi configurati nello stream di dati. Se hai seguito il [Invia dati all’Experience Platform](platform.md) lezione, tali dati vengono ora memorizzati nel data lake di Experienci Platform come set di dati. A questo punto, i dati sono ora disponibili per l’utilizzo da parte del Customer Journey Analytics a scopo di reporting e analisi.
+I dati dell’evento dell’app mobile, che hai raccolto e inviato all’Edge Network di Platform nelle lezioni precedenti, vengono inoltrati ai servizi configurati nello stream di dati. Se hai seguito il [Invia dati all’Experience Platform](platform.md) lezione, tali dati sono ora memorizzati in un set di dati di Experience Platform e sono disponibili per essere utilizzati dal Customer Journey Analytics a scopo di reporting e analisi.
 
 Contrariamente ad Adobe Analytics, il Customer Journey Analytics *utilizza* dati dei set di dati creati in Experienci Platform. I dati non vengono inviati direttamente al Customer Journey Analytics utilizzando l’SDK di Adobe Experience Platform Mobile, ma vengono inviati ai set di dati. Le connessioni vengono quindi configurate in Customer Journey Analytics per selezionare i set di dati da utilizzare nei progetti di reporting e analisi.
 
