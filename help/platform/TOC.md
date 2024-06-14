@@ -5,9 +5,9 @@ user-guide-description: Scopri i numerosi componenti di Experienci Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: bad48d8b5845aa2812630a07cada2d465b729325
+source-git-commit: 66165c7b55a6c7483b58ce4d6da7eda11baee08a
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '896'
 ht-degree: 15%
 
 ---
@@ -80,6 +80,7 @@ ht-degree: 15%
 + Igiene dei dati {#data-hygiene}
    + [Profilo pseudonimo e scadenza evento (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [Preparazione dei dati per l’igiene dei dati](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
+   + [Eliminare set di dati e batch](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [Set di dati in scadenza](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [Aggiornare un attributo di profilo](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + Acquisizione dei dati {#data-ingestion}
@@ -167,6 +168,7 @@ ht-degree: 15%
    + [Creare criteri di unione](/help/platform/profiles/create-merge-policies.md)
    + [Panoramica sugli schemi di unione](/help/platform/profiles/union-schemas-overview.md)
    + [Creare un attributo calcolato](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
+   + [Eliminare i profili](/help/platform/profiles/delete-profiles.md)
    + [Aggiornare un attributo specifico utilizzando upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Privacy e sicurezza {#privacy}
    + [Introduzione a Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
