@@ -5,9 +5,9 @@ user-guide-description: Scopri i numerosi componenti di Experienci Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 66165c7b55a6c7483b58ce4d6da7eda11baee08a
+source-git-commit: e3aeab8a3627b9fd962f4169957a7af2f856259e
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '899'
 ht-degree: 15%
 
 ---
@@ -37,6 +37,7 @@ ht-degree: 15%
 + [Autenticazione per API Experienci Platform](/help/platform/authentication/platform-api-authentication.md)
 + [Importa dati di esempio in Experienci Platform](/help/platform/data-generator/import-sample-data.md)
 + Amministrazione {#admin}
+   + [Utilizza l’Assistente AI](/help/platform/admin/ai-assistant.md)
    + [Utilizzare gli avvisi](/help/platform/admin/use-alerts.md)
    + [Utilizzare le sandbox](/help/platform/admin/use-sandboxes.md)
    + [Copiare oggetti da una sandbox a un’altra](/help/platform/admin/copy-objects-between-sandboxes.md)
