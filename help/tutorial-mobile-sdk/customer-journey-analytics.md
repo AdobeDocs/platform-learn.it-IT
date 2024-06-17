@@ -2,10 +2,8 @@
 title: Segnala e analizza i dati delle app mobili con il Customer Journey Analytics
 description: Scopri come segnalare e analizzare le interazioni con la tua app mobile utilizzando il Customer Journey Analytics.
 solution: Data Collection,Experience Platform,Analytics
-hide: true
-hidefromtoc: true
 exl-id: c41b76eb-2ed7-4a82-80c1-b67476c464ad
-source-git-commit: 0af0ca0fe85fd1ba53861a1635bc0b54d0939141
+source-git-commit: b61be86cfa55e597539c05404182af33e33aaac9
 workflow-type: tm+mt
 source-wordcount: '3282'
 ht-degree: 1%
