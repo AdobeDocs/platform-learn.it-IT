@@ -1,19 +1,19 @@
 ---
 title: Configurare Adobe Target con Platform Web SDK
-description: Scopri come implementare Adobe Target utilizzando Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
+description: Scopri come implementare Adobe Target utilizzando Platform Web SDK. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
 solution: Data Collection, Target
 jira: KT-15410
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: dc23b39e4311d618022fb1c70c2a106c0e901c8e
+source-git-commit: e7bb1a7856d04c30da63cc013c2d5a5fea3d718e
 workflow-type: tm+mt
-source-wordcount: '4305'
-ht-degree: 0%
+source-wordcount: '4363'
+ht-degree: 1%
 
 ---
 
 # Configurare Adobe Target con Platform Web SDK
 
-Scopri come implementare Adobe Target utilizzando Adobe Experience Platform Web SDK. Scopri come distribuire esperienze e come trasmettere parametri aggiuntivi a Target.
+Scopri come implementare Adobe Target utilizzando Adobe Experience Platform Web SDK. Scopri come offrire esperienze e come trasmettere parametri aggiuntivi a Target.
 
 [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home) è l’applicazione Adobe Experience Cloud che offre tutto il necessario per adattare e personalizzare l’esperienza dei clienti in modo da massimizzare i ricavi sui siti web e mobili, applicazioni e altri canali digitali.
 
@@ -188,7 +188,7 @@ Le decisioni sulla personalizzazione visiva si riferiscono alle esperienze creat
 * **Attività**: un set di esperienze indirizzato a uno o più tipi di pubblico. Ad esempio, un semplice test A/B potrebbe essere un’attività con due esperienze.
 * **Esperienza**: un set di azioni indirizzate a una o più posizioni o ambiti decisionali.
 * **Ambito della decisione**: posizione in cui viene distribuita un’esperienza Target. Gli ambiti decisionali sono equivalenti a &quot;mbox&quot; se hai familiarità con l’utilizzo di versioni precedenti di Target.
-* **Decisione di personalizzazione**: azione che il server determina da applicare. Queste decisioni possono essere basate sui criteri di pubblico e sulla definizione delle priorità delle attività di Target.
+* **Decisione Personalization**: azione che il server determina da applicare. Queste decisioni possono essere basate sui criteri di pubblico e sulla definizione delle priorità delle attività di Target.
 * **Proposta**: risultato delle decisioni prese dal server, consegnate nella risposta di Platform Web SDK. Ad esempio, la sostituzione di un&#39;immagine del banner rappresenta una proposta.
 
 ### Aggiornare il [!UICONTROL Invia evento] azione
@@ -263,11 +263,11 @@ Se imposti un’attività, il contenuto dovrebbe essere visualizzato nella pagin
 >
 >Se utilizzi Google Chrome e disponi di [Estensione VEC Helper](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) installate, assicuratevi che **Inserisci librerie di Target** è disabilitata. Se abiliti questa impostazione, si otterranno richieste Target aggiuntive.
 
-1. Apri l’estensione del browser Adobi Experience Platform Debugger
+1. Apri l’estensione del browser Adobe Experience Platform Debugger
 1. Vai a [Sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html) e utilizza il debugger per [modifica la proprietà tag sul sito con la tua proprietà di sviluppo](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Ricarica la pagina
 1. Seleziona la **[!UICONTROL Rete]** strumento nel debugger
-1. Filtra per **[!UICONTROL Adobe Experience Platform Web SDK]**
+1. Filtra per **[!UICONTROL Experience Platform Web SDK]**
 1. Seleziona il valore nella riga degli eventi per la prima chiamata
 
    ![Chiamata di rete nel debugger di Adobe Experience Platform](assets/target-debugger-network.png)
@@ -321,11 +321,57 @@ Ora che hai configurato Platform Web SDK per richiedere contenuti per `homepage-
 1. Per **[!UICONTROL Ambito]** input campo `homepage-hero`
 1. Per **[!UICONTROL Selettore]** input campo `div.heroimage`
 1. Per **[!UICONTROL Tipo di azione]** seleziona **[!UICONTROL Imposta HTML]**
+1. Seleziona **[!UICONTROL Mantieni modifiche]**
 
    ![Rendering dell&#39;azione principale della home page](assets/target-action-render-hero.png)
 
+   Oltre a eseguire il rendering dell’attività, devi effettuare una chiamata aggiuntiva a Target per indicare che è stato eseguito il rendering dell’attività basata su modulo:
+
+1. Aggiungi un’altra azione alla regola. Utilizza il **Core** e **[!UICONTROL Codice personalizzato]** tipo azione:
+1. Incolla il seguente codice JavaScript:
+
+   ```javascript
+   var propositions = event.propositions;
+   var heroProposition;
+   if (propositions) {
+      // Find the hero proposition, if it exists.
+      for (var i = 0; i < propositions.length; i++) {
+         var proposition = propositions[i];
+         if (proposition.scope === "homepage-hero") {
+            heroProposition = proposition;
+            break;
+         }xw
+      }
+   }
+   // Send a "display" event
+   if (heroProposition !== undefined){
+      alloy("sendEvent", {
+         xdm: {
+            eventType: "display",
+            _experience: {
+               decisioning: {
+                  propositions: [{
+                     id: heroProposition.id,
+                     scope: heroProposition.scope,
+                     scopeDetails: heroProposition.scopeDetails
+                  }]
+               }
+            }
+         }
+      });
+   }
+   ```
+
+   ![Rendering dell&#39;azione principale della home page](assets/target-action-fire-display.png)
+
+1. Seleziona **[!UICONTROL Mantieni modifiche]**
+
 1. Salvare le modifiche e generare nella libreria
 1. Carica la home page di Luma alcune volte, il che dovrebbe essere sufficiente per creare la nuova `homepage-hero` registro dell’ambito decisionale nell’interfaccia di Target.
+
+
+
+
 
 ### Configurare un’attività Target con il Compositore esperienza basato su moduli
 
@@ -381,10 +427,10 @@ Se hai attivato l’attività, sulla pagina dovrebbe essere visualizzato il rend
 
 1. Tieni presente che ci sono chiavi in `query` > `personalization` e  `decisionScopes` ha un valore di `__view__` come prima, ma ora c&#39;è anche un `homepage-hero` ambito incluso. Questa chiamata di Platform Web SDK ha richiesto a Target decisioni per le modifiche effettuate utilizzando il Compositore esperienza visivo e gli `homepage-hero` posizione.
 
-   ![`__view__` richiesta decisionScope](assets/target-debugger-view-scope.png)
+   ![`__view__` richiesta decisionScope](assets/target-debugger-view-custom-scope.png)
 
 1. Chiudi la sovrapposizione e seleziona i dettagli dell’evento per la seconda chiamata di rete. Questa chiamata è presente solo se Target ha restituito un’attività.
-1. Tieni presente che ci sono dettagli sull’attività e sull’esperienza restituite da Target. Questa chiamata di Platform Web SDK invia una notifica indicante che è stato eseguito il rendering di un’attività Target all’utente e incrementa un’impression.
+1. Tieni presente che ci sono dettagli sull’attività e sull’esperienza restituite da Target. Questa chiamata di Platform Web SDK invia una notifica indicante che è stato eseguito il rendering di un’attività Target all’utente e incrementa un’impression. È stato avviato dall&#39;azione del codice personalizzato aggiunta in precedenza.
 
    ![Impression dell&#39;attività di Target](assets/target-debugger-activity-impression.png)
 
@@ -397,6 +443,8 @@ In questa sezione, trasmetterai dati specifici di Target e vedrai più da vicino
 Tutti i campi XDM vengono passati automaticamente a Target come [parametri di pagina](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters) o parametri mbox.
 
 Alcuni di questi campi XDM verranno mappati su oggetti speciali nel backend di Target. Ad esempio: `web.webPageDetails.URL` sarà automaticamente disponibile per creare condizioni di targeting basate su URL o come `page.url` durante la creazione di script di profilo.
+
+Puoi anche aggiungere parametri di pagina utilizzando l’oggetto dati.
 
 ### Parametri speciali e oggetto dati
 
@@ -440,14 +488,13 @@ Il passaggio di dati aggiuntivi per Target all’esterno dell’oggetto XDM rich
    ![Aggiungi dati di destinazione alla regola](assets/target-rule-data.png)
 
 1. Salvare le modifiche e generare nella libreria
-1. Ripetere i passaggi da 1 a 4 per **e-commerce - libreria caricata - imposta variabili dettagli prodotto - 20** regola
 
 >[!NOTE]
 >
 >L’esempio precedente utilizza un `data` oggetto che non è completamente popolato su tutti i tipi di pagina. I tag gestiscono questa situazione in modo appropriato e omettono le chiavi con un valore non definito. Ad esempio: `entity.id` e `entity.name` non verrebbe trasmesso ad alcuna pagina oltre ai dettagli del prodotto.
 
 
-## Suddivisione delle richieste di personalizzazione e analisi
+## Suddivisione delle richieste di Personalization e Analytics
 
 Il livello dati sul sito Luma è completamente definito prima che il codice di incorporamento dei tag. Questo ci consente di utilizzare una singola chiamata sia per recuperare contenuti personalizzati (ad esempio da Adobe Target) che per inviare dati analitici (ad esempio ad Adobe Analytics).
 
@@ -517,7 +564,7 @@ Se disponi di Target Premium, puoi anche verificare che i dati delle entità sia
 
    ![Convalida nella ricerca del catalogo di Target](assets/validate-in-target-catalogsearch.png)
 
-### Convalida con garanzia
+### Convalidare con Assurance
 
 Inoltre, puoi utilizzare la funzione Assurance quando appropriato per confermare che le richieste di decisioni di Target ricevono i dati corretti e che eventuali trasformazioni lato server si verificano correttamente. Puoi anche verificare che le informazioni sulla campagna e sull’esperienza siano contenute nelle chiamate di Adobe Analytics anche quando le chiamate a Target decisioning e Adobe Analytics vengono inviate separatamente.
 
