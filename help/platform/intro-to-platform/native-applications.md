@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ---
 
-# Applicazioni basate su Experienci Platform
+# Applicazioni basate su Experience Platform
 
 Scopri le applicazioni create in modalità nativa su Adobe Experience Platform: Customer Journey Analytics, Real-time Customer Data Platform, Journey Optimizer e Mix Modeler.
 

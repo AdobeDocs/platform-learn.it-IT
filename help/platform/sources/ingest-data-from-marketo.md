@@ -13,14 +13,14 @@ thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 0%
+source-wordcount: '148'
+ht-degree: 18%
 
 ---
 
 # Acquisire dati dal Marketo Engage
 
-Scopri come acquisire facilmente i dati dal Marketo Engage in Real-time Customer Data Platform, B2B Edition e Adobe Experience Platform utilizzando il connettore di origine utilizzando due flussi di lavoro.
+Scopri come acquisire facilmente i dati da Marketo Engage in Real-time Customer Data Platform, B2B Edition e in Adobe Experience Platform grazie al connettore di origine utilizzando due flussi di lavoro.
 
 ## Flusso di lavoro modello
 
@@ -36,4 +36,4 @@ Scopri come configurare il connettore di origine per Marketo utilizzando il flus
 
 Per ulteriori informazioni, consulta la seguente documentazione:
 * [Documentazione del connettore di origine del Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
-* [Creare un flusso di dati di origini utilizzando i modelli nell’interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)
+* [Crea un flusso di dati di origini utilizzando i modelli nell&#39;interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)

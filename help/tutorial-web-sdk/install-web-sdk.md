@@ -13,7 +13,7 @@ ht-degree: 11%
 
 # Installare l’estensione tag Adobe Experience Platform Web SDK
 
-Scopri come installare e configurare l’estensione tag Adobe Experience Platform Web SDK. Il modo più semplice per implementare Web SDK è utilizzare i tag di Adobe Tag Manager (precedentemente noti come Launch). L’estensione tag Platform Web SDK è _Solo estensione tag_ necessario per inviare dati a _tutte le applicazioni Adobe Experience Cloud_, tra cui [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), REAL-TIME CUSTOMER DATA PLATFORM e [Journey Optimizer](setup-web-channel.md)!
+Scopri come installare e configurare l’estensione tag Adobe Experience Platform Web SDK. Il modo più semplice per implementare Web SDK è utilizzare i tag di Adobe Tag Manager (precedentemente noti come Launch). L&#39;estensione tag di Platform Web SDK è l&#39;_unica estensione tag_ necessaria per inviare dati a _tutte le applicazioni Adobe Experience Cloud_, incluse [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform e [Journey Optimizer](setup-web-channel.md).
 
 ## Obiettivi di apprendimento
 
@@ -31,16 +31,16 @@ Devi aver completato le lezioni precedenti in questa esercitazione:
 
 ### Aggiungi una proprietà tag
 
-Innanzitutto devi avere una proprietà tag. Una proprietà è un contenitore per tutti i JavaScript, le regole e le altre funzioni necessarie per raccogliere i dettagli da una pagina web e inviarla a varie posizioni.
+Innanzitutto devi avere una proprietà tag. Una proprietà è un contenitore per tutte le JavaScript, le regole e le altre funzioni necessarie per raccogliere i dettagli da una pagina web e inviarli a varie posizioni.
 
 Crea una nuova proprietà tag per l’esercitazione:
 
-1. Apri [Interfaccia di Data Collection](https://launch.adobe.com/){target="_blank"}
+1. Apri l&#39;interfaccia [Data Collection](https://launch.adobe.com/){target="_blank"}
 1. Seleziona **[!UICONTROL Tag]** nel menu di navigazione a sinistra
-1. Seleziona la **[!UICONTROL Nuova proprietà]** pulsante
+1. Seleziona il pulsante **[!UICONTROL Nuova proprietà]**
    ![Aggiungi una nuova proprietà](assets/websdk-property-addNewProperty.png)
-1. Come **[!UICONTROL Nome]**, immetti `Web SDK Course` (aggiungi il tuo nome alla fine, se più persone della tua azienda stanno seguendo questo tutorial)
-1. Come **[!UICONTROL Domini]**, immetti `enablementadobe.com` (spiegato in seguito)
+1. Come **[!UICONTROL Nome]**, immetti `Web SDK Course` (aggiungi il tuo nome alla fine, se più persone della tua azienda stanno seguendo questa esercitazione)
+1. Come **[!UICONTROL Domini]**, immetti `enablementadobe.com` (spiegato più tardi)
 1. Seleziona **[!UICONTROL Salva]**
    ![Dettagli proprietà](assets/websdk-property-propertyDetails.png)
 
@@ -53,29 +53,29 @@ Una volta create le proprietà dello schema XDM, dello stream di dati e dei tag,
 1. Cerca `Adobe Experience Platform Web SDK`
 1. Seleziona **[!UICONTROL Installa]**
 
-   ![Installare l’estensione Web SDK](assets/extension-platform-web-sdk.png)
+   ![Installa estensione Web SDK](assets/extension-platform-web-sdk.png)
 
 
 ## Collegare l’estensione allo stream di dati
 
 Lascia la maggior parte delle impostazioni predefinite e aggiornale in un secondo momento, in base alle esigenze. L’unica cosa da fare ora è collegare l’estensione allo stream di dati:
 
-1. Sotto **[!UICONTROL Flussi di dati]**, seleziona la **[!UICONTROL Scegli dall’elenco]** metodo di input
+1. In **[!UICONTROL Datastreams]**, seleziona il metodo di input **[!UICONTROL Scegli dall&#39;elenco]**
 1. Seleziona la sandbox in cui hai creato lo schema, lo spazio dei nomi delle identità e lo stream di dati
 1. Seleziona lo stream di dati creato in precedenza, `Luma Web SDK`
 1. Seleziona **[!UICONTROL Salva]**
 
    >[!NOTE]
    >
-   > Se non riesci a trovare il flusso di dati, vai al [Configurare uno stream di dati](configure-datastream.md) lezione e segui i passaggi per crearne uno
+   > Se non riesci a trovare lo stream di dati, vai alla lezione [Configurare uno stream di dati](configure-datastream.md) e segui i passaggi per crearne uno
 
    ![Selezione dello stream di dati](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Per ulteriori informazioni su ciascuna sezione dell&#39;estensione, vedi [Configurare l’estensione Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+Per ulteriori informazioni su ciascuna sezione dell&#39;estensione, vedere [Configurare l&#39;estensione Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
->Anche se non hai configurato un CNAME in [!UICONTROL Dominio Edge] In questa lezione, l’Adobe consiglia di utilizzare un CNAME quando si implementa Platform Web SDK sul proprio sito web. Nonostante un’implementazione CNAME non offra vantaggi in termini di durata dei cookie, potrebbero esserci altri vantaggi. Questi vantaggi includono ad blocker e browser meno comuni che impediscono l’invio dei dati a domini classificati come tracciatori. In questi casi, l’utilizzo di un CNAME potrebbe agevolare la raccolta di dati relativi agli utenti che utilizzano tali strumenti.
+>Anche se non hai configurato un CNAME nell&#39;impostazione [!UICONTROL Dominio Edge] in questa lezione, l&#39;Adobe consiglia di utilizzare un CNAME quando implementi Platform Web SDK sul tuo sito Web. Nonostante un’implementazione CNAME non offra vantaggi in termini di durata dei cookie, potrebbero esserci altri vantaggi. Questi vantaggi includono ad blocker e browser meno comuni che impediscono l’invio dei dati a domini classificati come tracciatori. In questi casi, l’utilizzo di un CNAME potrebbe agevolare la raccolta di dati relativi agli utenti che utilizzano tali strumenti.
 
 >[!NOTE]
 >
@@ -87,4 +87,4 @@ Ora che hai installato Platform Web SDK e lo hai associato allo stream di dati, 
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [Experience League post di discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -16,6 +16,6 @@ ht-degree: 31%
 
 # Creare una proprietà tag
 
-Scopri come creare proprietà tag per gestire i tag di marketing sul tuo sito web. Per ulteriori informazioni, vedere [proprietà](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html) documentazione.
+Scopri come creare proprietà tag per gestire i tag di marketing sul tuo sito web. Per ulteriori informazioni, consulta la documentazione di [properties](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28727/?learn=on)

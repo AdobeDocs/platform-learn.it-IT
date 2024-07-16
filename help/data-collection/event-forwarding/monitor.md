@@ -8,13 +8,13 @@ thumbnail: 343999.jpeg
 exl-id: 15948005-53d7-413d-9379-0d7b5189b839
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '44'
-ht-degree: 63%
+source-wordcount: '38'
+ht-degree: 28%
 
 ---
 
 # Monitorare l’inoltro degli eventi
 
-Scopri come monitorare l’inoltro degli eventi nell’interfaccia di raccolta dati. Per ulteriori informazioni, visitare il [documentazione sull’inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Scopri come monitorare l’inoltro degli eventi nell’interfaccia di Data Collection. Per ulteriori informazioni, visita la [documentazione sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/343999?learn=on)

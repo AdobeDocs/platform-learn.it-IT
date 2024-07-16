@@ -11,7 +11,7 @@ feature: Journeys
 exl-id: 674a9baa-5900-405e-b744-ea211f60a16d
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '225'
 ht-degree: 2%
 
 ---
@@ -20,15 +20,15 @@ ht-degree: 2%
 
 ## Fluxo da jornada do cliente
 
-Abra uma nova janela e anônima do navegador e vá para [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clique em **Consenti tutto**. Com base no seu de navegação no fluxo de usuário anteriore, você verá a personalização acontecer na página inicial do site.
+Abra uma nova janela e anônima do navegador e vá para [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). **Consenti tutti**. Com base no seu de navegação no fluxo de usuário anteriore, você verá a personalização acontecer na página inicial do site.
 
 ![DSN](./images/web8a.png)
 
-Clique no ícone **Profilo** nessun canto superiore direito da tela.
+Cricca no ícone **Profilo** no canto superior direito da tela.
 
 ![Demo](./images/web8b.png)
 
-Clique em **Creare un account**.
+**Crea un account**.
 
 ![Demo](./images/pv5.png)
 
@@ -43,7 +43,7 @@ Ruolo para baixo. Agora você deve inserir o eventID do seu evento personalizado
 O eventID é o que ser enviado à Adobe Experience Platform para acionar a jornada que você costrutto. Esempio Este é o eventID neste:
 `19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
 
-Preencha o eventID no campo **ID dell&#39;evento di creazione dell&#39;account** e cricca em **Registrati**.
+Preencha o eventID no campo **ID evento creazione account** e clique em **Registrati**.
 
 ![Demo](./images/pv8a.png)
 
@@ -57,7 +57,7 @@ Você também receberá este e-mail, que é o e-mail que você mesmo criou como 
 
 Você terminou este exercício
 
-Próxima etapa [2.5 Instale e use o aplicativo móvel](./ex5.md)
+Próxima etapa: [2.5 Instale e use o aplicativo móvel](./ex5.md)
 
 [Retornar para Fluxo de Usuário 2](./uc2.md)
 

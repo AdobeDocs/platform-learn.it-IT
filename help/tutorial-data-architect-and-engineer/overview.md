@@ -19,22 +19,22 @@ ht-degree: 0%
 
 <!--5min-->
 
-_Guida introduttiva di Adobe Experience Platform per architetti di dati e data engineer_ è il punto di partenza ideale per mettersi in contatto con gli Experienci Platform.
+_Guida introduttiva di Adobe Experience Platform per architetti di dati e ingegneri di dati_ è il punto di partenza ideale per iniziare a utilizzare Experience Platform.
 
 
 <!--How do we address ETL-->
 
 ## Finalità di apprendimento
 
-Gli architetti di dati e i data engineer devono collaborare strettamente per una corretta distribuzione degli Experienci Platform. Questa esercitazione pratica illustra le attività chiave eseguite da _entrambi i ruoli_ in modo da sapere come iniziare a implementare Platform per la tua attività. Sarai guidato attraverso esercizi che ti presenteranno la terminologia chiave, le funzioni, l’interfaccia e le API di Experience Platform. Anche i clienti di applicazioni Adobe Experience Cloud come Real-time Customer Data Platform, Customer Journey Analytics e Journey Optimizer troveranno utili tali contenuti, in quanto i servizi Platform sono fondamentali per tali applicazioni.
+Gli architetti di dati e i data engineer devono collaborare strettamente per una corretta distribuzione degli Experienci Platform. Questa esercitazione pratica illustra le attività chiave eseguite da _entrambi i ruoli_ per consentirti di iniziare a implementare Platform per la tua attività. Sarai guidato attraverso esercizi che ti presenteranno la terminologia chiave, le funzioni, l’interfaccia e le API di Experience Platform. Anche i clienti di applicazioni Adobe Experience Cloud come Real-time Customer Data Platform, Customer Journey Analytics e Journey Optimizer troveranno utili tali contenuti, in quanto i servizi Platform sono fondamentali per tali applicazioni.
 
-![Marketecture di Adobe Experience Cloud che evidenzia i servizi Platform descritti in questo tutorial: identità, profilo, segmentazione, acquisizione, query e governance](assets/marketecture.png)
+![Adobe Experience Cloud marketecture che evidenzia i servizi Platform descritti in questo tutorial: identità, profilo, segmentazione, acquisizione, query e governance](assets/marketecture.png)
 
 Gli argomenti includono:
 
 * Configurazione delle autorizzazioni utente
 * Creazione di sandbox
-* Configurazione di un progetto Developer Console e utilizzo dell’API Platform
+* Configurazione di un progetto Developer Console e utilizzo dell’API della piattaforma
 * Gestione dei dati, inclusa la creazione di schemi, set di dati, identità, criteri di unione e governance dei dati
 * Acquisizione dei dati utilizzando le modalità batch e streaming
 * Acquisizione di dati web con Adobe Experience Platform Web SDK
@@ -48,9 +48,9 @@ Adobe Experience Platform è una piattaforma tecnica progettata per aiutarti a r
 
 ## Prerequisiti
 
-* Hai completato il [Introduzione al corso Adobe Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1&amp;lang=it) su Experience League e hanno familiarità con le funzionalità di Platform
+* Hai completato il [Introduzione al corso Adobe Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1&amp;lang=it) su Experience League e conosci le funzionalità di Platform
 * Hai accesso a un account fornito con Adobe Experience Platform (o un’applicazione basata su Platform come Real-Time CDP o Journey Optimizer) e Data Collection (precedentemente Launch).
-* Sei un amministratore di sistema di tale account o puoi averne uno [configurare le autorizzazioni utente](configure-permissions.md) per te.
+* L&#39;utente è un amministratore di sistema dell&#39;account oppure può disporre di un [autorizzazione utente](configure-permissions.md).
 
 ## Utilizzo di questa esercitazione
 
@@ -58,7 +58,7 @@ Questa esercitazione combina attività per data engineer e architetti di dati. T
 
 Mentre crei vari elementi di Platform durante questa esercitazione, cerca di attenersi il più possibile ai nomi che ti consiglio. Tuttavia, esistono alcuni nomi di elementi di alto livello che è possibile personalizzare nel caso in cui più persone dell’organizzazione partecipino contemporaneamente a questa esercitazione. Ad esempio, potrebbe essere utile denominare la sandbox Platform &quot;Luma Tutorial Platform - Ignatius J Reilly&quot; invece di &quot;Luma Tutorial Platform&quot;.
 
-Se si blocca, provare a rileggere prima le istruzioni, quindi utilizzare ![Segnala un problema](https://experienceleague.adobe.com/assets/img/feedback.svg) sulla barra laterale di ogni pagina per contattarmi.
+Se ti blocchi, prova a leggere di nuovo le istruzioni, quindi utilizza il collegamento ![Segnala un problema](https://experienceleague.adobe.com/assets/img/feedback.svg) nella barra laterale di ogni pagina per contattarmi.
 
 ## Note tecniche
 
@@ -68,7 +68,7 @@ Nell’esercitazione, creerai un ambiente sandbox e lo utilizzerai per completar
 
 ### API
 
-La piattaforma è stata creata prima in base alle API. Anche se i flussi di lavoro di interfaccia esistono per tutti i principali flussi di lavoro di Platform e verranno utilizzati principalmente, l’esercitazione contiene alcuni esercizi orientati all’API. Ti guiderò attraverso la configurazione del progetto di base nella console Adobe Developer e ti fornirò [!DNL Postman] ambienti e raccolte per iniziare a utilizzare l’API di Platform. Dopo aver completato l’esercitazione, potrebbe essere utile avere familiarità con l’API di Platform e utilizzarla nella propria distribuzione.
+La piattaforma è stata creata prima in base alle API. Anche se i flussi di lavoro di interfaccia esistono per tutti i principali flussi di lavoro di Platform e verranno utilizzati principalmente, l’esercitazione contiene alcuni esercizi orientati all’API. Ti guiderò attraverso la configurazione del progetto di base in Adobe Developer Console e ti fornirò [!DNL Postman] ambienti e raccolte per iniziare con l&#39;API di Platform. Dopo aver completato l’esercitazione, potrebbe essere utile avere familiarità con l’API di Platform e utilizzarla nella propria distribuzione.
 
 ### Tecnologie di terze parti
 
@@ -79,4 +79,4 @@ Anche se in questa esercitazione utilizzerai più tecnologie, rimarrai quasi int
 * Giugno 2023: aggiornato per includere il nuovo flusso di lavoro delle autorizzazioni e per utilizzare le credenziali API server-to-server di OAuth
 
 
-Passiamo ora alla prima lezione:[configurare le autorizzazioni](configure-permissions.md).
+Passiamo ora alla prima lezione: [configurare le autorizzazioni](configure-permissions.md).

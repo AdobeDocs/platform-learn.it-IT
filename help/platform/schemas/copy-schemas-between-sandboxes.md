@@ -16,10 +16,10 @@ ht-degree: 1%
 
 # Copiare schemi tra sandbox
 
-Questo video mostra come copiare uno schema da una sandbox a un’altra in Adobe Experience Platform utilizzando lo schema API Export/Import. Crea e verifica gli schemi nelle sandbox di sviluppo, quindi copiali in produzione. Per ulteriori informazioni, visitare il [documentazione sugli schemi](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=it).
+Questo video mostra come copiare uno schema da una sandbox a un’altra in Adobe Experience Platform utilizzando lo schema API Export/Import. Crea e verifica gli schemi nelle sandbox di sviluppo, quindi copiali in produzione. Per ulteriori informazioni, visita la [documentazione sugli schemi](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=it).
 
 >[!TIP]
 >
->Verso la fine del 2023 è stato introdotto un processo molto più semplice e incentrato sull’interfaccia per spostare schemi e altri oggetti tra sandbox, che consigliamo invece di utilizzare. Consulta [Copiare oggetti tra sandbox](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html?lang=it).
+>Verso la fine del 2023 è stato introdotto un processo molto più semplice e incentrato sull’interfaccia per spostare schemi e altri oggetti tra sandbox, che consigliamo invece di utilizzare. Vedi [Copia oggetti tra sandbox](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333592?learn=on)

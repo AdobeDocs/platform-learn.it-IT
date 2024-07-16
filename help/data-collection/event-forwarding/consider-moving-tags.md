@@ -8,8 +8,8 @@ jira: KT-9921
 exl-id: f8fd351a-435c-4cc1-b987-ed2ead20d4d6
 source-git-commit: 7edf8fc46943ae2f1e6e2e20f4d589d7959310c8
 workflow-type: tm+mt
-source-wordcount: '1369'
-ht-degree: 3%
+source-wordcount: '1279'
+ht-degree: 2%
 
 ---
 
@@ -17,21 +17,21 @@ ht-degree: 3%
 
 Ci sono diversi motivi validi per prendere in considerazione lo spostamento di tag fornitore lato client da browser e dispositivi e su un server. In questo articolo viene descritto come valutare un tag fornitore lato client per spostarlo potenzialmente in una proprietà di inoltro eventi.
 
-Questa valutazione è necessaria solo se stai valutando di rimuovere un tag fornitore lato client e sostituirlo con la distribuzione dei dati lato server in una proprietà di inoltro degli eventi. Questo articolo presuppone che tu abbia familiarità con le nozioni di base di [raccolta dati](https://experienceleague.adobe.com/docs/data-collection.html), e [inoltro eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Questa valutazione è necessaria solo se stai valutando di rimuovere un tag fornitore lato client e sostituirlo con la distribuzione dei dati lato server in una proprietà di inoltro degli eventi. In questo articolo si presuppone che tu abbia familiarità con le nozioni di base di [raccolta dati](https://experienceleague.adobe.com/docs/data-collection.html) e [inoltro eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch è stato ridefinito come suite di tecnologie di raccolta dati in Adobe Experience Platform. Di conseguenza, sono state introdotte diverse modifiche terminologiche nella documentazione del prodotto. Consulta questo [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) come riferimento consolidato delle modifiche terminologiche.
 
-I fornitori di browser stanno cambiando il modo in cui trattano i cookie di terze parti. I fornitori e le tecnologie pubblicitarie e di marketing spesso richiedono l’uso di molti tag lato client. Queste sfide sono solo due ragioni convincenti per cui i nostri clienti stanno aggiungendo la distribuzione dei dati lato server.
+I fornitori di browser stanno cambiando il modo in cui trattano i cookie di terze parti. I fornitori e le tecnologie Advertising e marketing richiedono spesso l’utilizzo di molti tag lato client. Queste sfide sono solo due ragioni convincenti per cui i nostri clienti stanno aggiungendo la distribuzione dei dati lato server.
 
 >[!NOTE]
 >
->`Tag` in questo articolo indica il codice lato client, in genere JavaScript di un fornitore utilizzato per la raccolta dei dati nel browser o nel dispositivo mentre un visitatore interagisce con il sito o l’app. `Website` o `site` qui si riferisce a un sito web, un’applicazione web o un’applicazione per dispositivo mobile. Un &quot;tag&quot; per questi scopi è spesso chiamato anche pixel.
+>`Tag` in questo articolo significa codice lato client, in genere JavaScript di un fornitore utilizzato per la raccolta dati nel browser o nel dispositivo mentre un visitatore interagisce con il sito o l&#39;app. `Website` o `site` fa riferimento a un sito Web, un&#39;applicazione Web o un&#39;applicazione per un dispositivo mobile. Un &quot;tag&quot; per questi scopi è spesso chiamato anche pixel.
 
 ## Casi d’uso e dati {#use-cases-data}
 
-Il primo passaggio consiste nel definire i casi d’uso implementati con il tag fornitore lato client. Ad esempio, considera il pixel Facebook (Meta). Spostarlo dal sito alla pagina [API di metaconversione](https://exchange.adobe.com/apps/ec/109168/meta-conversions-api) con l’estensione di inoltro degli eventi significa documentare prima i casi d’uso specifici.
+Il primo passaggio consiste nel definire i casi d’uso implementati con il tag fornitore lato client. Ad esempio, considera il pixel Facebook (Meta). Spostarlo dal sito all&#39;API [Meta Conversions](https://exchange.adobe.com/apps/ec/109168/meta-conversions-api) con l&#39;estensione di inoltro degli eventi significa documentare prima i casi d&#39;uso specifici.
 
 Per il codice fornitore lato client corrente:
 
@@ -44,7 +44,7 @@ Nel nostro esempio, monitoriamo le conversioni con il pixel di Facebook quando i
 
 ### Dati {#data}
 
-Con il tag lato client esistente, quando viene eseguito o eseguito sul sito, cosa succede con i dati del caso d’uso? Possiamo acquisire i dati di cui abbiamo bisogno nel client, senza il tag del fornitore, in modo da poterli inviare all’inoltro degli eventi? Quando si utilizza [tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it) Per altri sistemi di gestione dei tag, la maggior parte dei dati di interazione dei visitatori è disponibile per la raccolta e la distribuzione. Ma i dati di cui abbiamo bisogno per il nostro caso d’uso sono disponibili quando ne abbiamo bisogno, dove ne abbiamo bisogno e nel formato che ci serve, senza il tag fornitore lato client? Ecco alcune ulteriori domande sui dati da considerare:
+Con il tag lato client esistente, quando viene eseguito o eseguito sul sito, cosa succede con i dati del caso d’uso? Possiamo acquisire i dati di cui abbiamo bisogno nel client, senza il tag del fornitore, in modo da poterli inviare all’inoltro degli eventi? Quando si utilizzano [tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it) o altri sistemi di gestione dei tag, la maggior parte dei dati di interazione del visitatore è disponibile per la raccolta e la distribuzione. Ma i dati di cui abbiamo bisogno per il nostro caso d’uso sono disponibili quando ne abbiamo bisogno, dove ne abbiamo bisogno e nel formato che ci serve, senza il tag fornitore lato client? Ecco alcune ulteriori domande sui dati da considerare:
 
 - È necessario un ID utente fornitore per ogni evento?
 - In caso affermativo, come può essere raccolta o generata senza il tag lato client?
@@ -69,7 +69,7 @@ Il fornitore dispone di API progettate per il trasferimento server-to-server dei
 
 - Esistono gli endpoint API per inviare i dati richiesti? Per trovare gli endpoint che supportano i casi di utilizzo, consulta la documentazione per sviluppatori o API del fornitore.
 - Consentono dati di eventi in streaming o solo dati batch?
-- Quali metodi di autenticazione sono supportati? Token, HTTP, versione delle credenziali client OAuth o altro? Consulta [qui](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html) per i metodi supportati dall’inoltro di eventi.
+- Quali metodi di autenticazione sono supportati? Token, HTTP, versione delle credenziali client OAuth o altro? Consulta [qui](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html) per i metodi supportati dall&#39;inoltro di eventi.
 - Qual è lo scostamento di aggiornamento delle loro API? Questa limitazione è compatibile con i minimi di inoltro degli eventi? Dettagli [qui](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html#:~:text=you%20can%20configure%20the%20Refresh%20Offset%20value%20for%20the%20secret).
 - Quali dati richiedono per gli endpoint rilevanti?
 - Richiedono un identificatore utente specifico del fornitore per ogni chiamata all’endpoint?
@@ -87,20 +87,20 @@ Se il fornitore non dispone degli endpoint API per supportare i nostri casi d’
 
 Cosa succede se dispongono di API, ma richiedono anche un ID visitatore o utente univoco per ogni chiamata API? Come possiamo accedere a tale ID se il codice lato client (tag) del fornitore non è in esecuzione sul sito?
 
-Alcuni fornitori stanno cambiando i loro sistemi per il nuovo mondo senza cookie di terze parti. Tali modifiche includono l’uso di identificatori univoci alternativi, come ad esempio [UUID](https://developer.mozilla.org/en-US/docs/Glossary/UUID) o altro [ID generato dal cliente](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html). Se il fornitore consente un ID generato dal cliente, possiamo inviarlo dal client a Platform Edge Network con Web SDK o Mobile SDK, o eventualmente riceverlo da una chiamata API nell’inoltro degli eventi. Quando inviamo i dati a quel fornitore in una regola di inoltro degli eventi, includiamo semplicemente l’identificatore in base alle esigenze.
+Alcuni fornitori stanno cambiando i loro sistemi per il nuovo mondo senza cookie di terze parti. Queste modifiche includono l&#39;uso di identificatori univoci alternativi, come un [UUID](https://developer.mozilla.org/en-US/docs/Glossary/UUID) o un altro [ID generato dal cliente](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html). Se il fornitore consente un ID generato dal cliente, possiamo inviarlo dal client all’Edge Network di Platform con Web SDK o Mobile SDK, oppure possiamo riceverlo da una chiamata API nell’inoltro degli eventi. Quando inviamo i dati a quel fornitore in una regola di inoltro degli eventi, includiamo semplicemente l’identificatore in base alle esigenze.
 
-Se il fornitore richiede dati (ad esempio, un ID univoco specifico del fornitore) che possono essere generati o accessibili solo dal proprio tag lato client, è probabile che il tag del fornitore non sia adatto allo spostamento. _È sconsigliato tentare di decodificare un tag lato client con l’idea di spostare tale raccolta di dati all’inoltro di eventi senza le API appropriate._
+Se il fornitore richiede dati (ad esempio, un ID univoco specifico del fornitore) che possono essere generati o accessibili solo dal proprio tag lato client, è probabile che il tag del fornitore non sia adatto allo spostamento. _Si sconsiglia di decodificare un tag lato client con l&#39;idea di spostare la raccolta dati nell&#39;inoltro eventi senza le API appropriate._
 
-Il [Connettore Adobe Experience Platform Cloud](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/cloud-connector/overview.html) L&#39;estensione può effettuare richieste HTTP secondo necessità con fornitori che dispongono delle API appropriate per il trasferimento di dati evento server-to-server. Anche se è preferibile avere estensioni specifiche per fornitore e al momento altre estensioni sono in fase di sviluppo attivo, è possibile implementare oggi le regole di inoltro degli eventi utilizzando l’estensione Cloud Connector, senza attendere estensioni aggiuntive per il fornitore.
+L&#39;estensione [Adobe Experience Platform Cloud Connector](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/cloud-connector/overview.html) può effettuare richieste HTTP in base alle esigenze con i fornitori che dispongono delle API appropriate per il trasferimento dei dati evento server-to-server. Anche se è preferibile avere estensioni specifiche per fornitore e al momento altre estensioni sono in fase di sviluppo attivo, è possibile implementare oggi le regole di inoltro degli eventi utilizzando l’estensione Cloud Connector, senza attendere estensioni aggiuntive per il fornitore.
 
 ## Strumenti {#tools}
 
-Esaminare e testare gli endpoint API dei fornitori è più semplice con strumenti come [Postman](https://www.postman.com/)o estensioni dell&#39;editor di testo come Visual Studio Code [Client Thunder](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client), o [Client HTTP](https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-http-client).
+L&#39;analisi e la verifica degli endpoint API del fornitore sono più semplici con strumenti come [Postman](https://www.postman.com/) o estensioni dell&#39;editor di testo come Visual Studio Code [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) o [HTTP Client](https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-http-client).
 
 ## Passaggi successivi {#next-steps}
 
 Questo articolo fornisce una sequenza di passaggi per valutare un tag lato client del fornitore e potenzialmente spostarlo lato server in una proprietà di inoltro degli eventi. Per ulteriori informazioni sugli argomenti correlati, vedere i collegamenti seguenti:
 
-- [Gestione dei tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it) in Adobe Experience Platform
-- [Inoltro eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) per l&#39;elaborazione lato server
+- [Gestione tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it) in Adobe Experience Platform
+- [Inoltro eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) per elaborazione lato server
 - [Aggiornamenti terminologici](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) nella raccolta dati

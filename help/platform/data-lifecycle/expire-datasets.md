@@ -19,11 +19,11 @@ ht-degree: 1%
 
 Scopri come pianificare le eliminazioni dei set di dati utilizzando la funzione di igiene dei dati di Adobe Experience Platform.
 
-L’eliminazione del set di dati consente agli amministratori di dati e ai data engineer di impostare una data di scadenza per un set di dati. Per ulteriori informazioni, visitare il [documentazione sull’igiene dei dati](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=it).
+L’eliminazione del set di dati consente agli amministratori di dati e ai data engineer di impostare una data di scadenza per un set di dati. Per ulteriori informazioni, visita la [documentazione sull&#39;igiene dei dati](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=it).
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on)
 
 >[!NOTE]
 >
-> Tutti i clienti di Platform possono [elimina set di dati su richiesta](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#delete). La pianificazione dell’eliminazione del set di dati è attualmente disponibile solo per i clienti di Healthcare Shield o Privacy and Security Shield.
+> Tutti i clienti Platform possono [eliminare i set di dati su richiesta](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#delete). La pianificazione dell’eliminazione del set di dati è attualmente disponibile solo per i clienti di Healthcare Shield o Privacy and Security Shield.

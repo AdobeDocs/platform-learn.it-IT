@@ -11,8 +11,8 @@ feature: Journeys
 exl-id: d486d1aa-7b8e-4301-91e6-4c84fba0c72a
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 3%
+source-wordcount: '944'
+ht-degree: 0%
 
 ---
 
@@ -20,17 +20,17 @@ ht-degree: 3%
 
 Neste exercício, você irá configurar a jornada que ser acionada quando alguém criar uma conta no site de dimostração.
 
-Accesso a Faça da Adobe Journey Optimizer acessando a [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Journey Optimizer**.
+Accesso Faça a Adobe Journey Optimizer acessando a [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Você será redirecionado para a visualização da **Home**  nessuna Journey Optimizer. Primeiro, verifique se você está o sandbox correto. O nome do sandbox que deve ser usado é `Bootcamp`. Para alternar de um sandbox para outro, cricca em **Prod** e selecione o sandbox na lista Neste exemplo, o nome do sandbox é **Bootcamp**. Você estará na visualização da **Home** do seu sandbox `Bootcamp`.
+Você será redirecionado para a visualização da **Home** no Journey Optimizer. Primeiro, verifique se você está o sandbox correto. O nome do sandbox que deve ser usado é `Bootcamp`. Para alternar de um sandbox para outro, cricca em **Prod** e selecione o sandbox na lista. Neste exemplo, o nome do sandbox é **Bootcamp**. Você estará na visualização da **Home** do seu sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
 ## 2.3.1 Crie a sua jornada
 
-Nessun menu à esquerda, cricca em **Percorsi**. Em seguida, cricca em **Crea Percorso** para criar uma nova jornada.
+Nessun menu à esquerda, cricca em **Percorsi**. Em seguida, cricca em **Crea Percorso** para criar uma nova jornada.
 
 ![ACOP](./images/createjourney.png)
 
@@ -38,7 +38,7 @@ Você verá uma tela de jornada vazia
 
 ![ACOP](./images/journeyempty.png)
 
-Nessun exercício anteriore, você criou um novo **Evento**. Você nomeou o evento `seuSobrenomeAccountCreationEvent` e substituiu `seuSobrenome` pelo seu sobrenome. Este foi o resultado da criação do Evento:
+Nessun exercício anteriore, você criou um novo **Evento**. Você nomeou o evento `seuSobrenomeAccountCreationEvent` e substituiu `seuSobrenome` pelo seu sobrenome. Este foi o resultado da criação do Evento:
 
 ![ACOP](./images/eventdone.png)
 
@@ -50,7 +50,7 @@ Selecione seu evento, arraste e solte o evento na tela de Jornada. Sua Jornada a
 
 ![ACOP](./images/journeyevent.png)
 
-Como segunda etapa da jornada, você deve adicionar uma etapa curta de **Wait**. Vá para o lado esquerdo da tela até a seção **Orchestrazione** para encontrar isso. Você usará atributos de perfil e precisará garantir que eles sejam preenchidos no Perfil do Cliente em tempo real.
+Como segunda etapa da jornada, você deve adicionar uma etapa curta de **Aspetta**. Vá para o lado esquerdo da tela até a seção **Orchestrazione** para encontrar isso. Você usará atributos de perfil e precisará garantir que eles sejam preenchidos no Perfil do Cliente em tempo real.
 
 ![ACOP](./images/journeywait.png)
 
@@ -58,13 +58,13 @@ Sua jornada agora deve ser semelhante ao seguinte. Non c&#39;è nessun lado dire
 
 ![ACOP](./images/journeywait1.png)
 
-Clique em **Ok** para salvar suas alterações.
+Cricca em **Ok** para salvar suas alterações.
 
-Como terceira etapa da jornada, você deve adicionar uma ação **E-mail**. Vá para o lado esquerdo da tela para **Azioni**, selecione a ação **E-mail** e arraste e solte a ação no segundo nó da sua jornada. Agora o seguinte será exibido.
+Como terceira etapa da jornada, você deve adicionar uma ação **E-mail**. Vá para o lado esquerdo da tela para **Azioni**, selecione a ação **Email** e arraste e solte a ação no segundo nó da sua jornada. Agora o seguinte será exibido.
 
 ![ACOP](./images/journeyactions.png)
 
-Definisci un **Categoria** como **Marketing** e selecione uma **superficie di posta elettronica** que permita o envio de e-mail Nesse caso, a **superficie di posta elettronica** a ser selecionada é E-mail. Certifique-se de que come caixas de seleção **Clic sull’e-mail** e **aperture e-mail** estejam marcadas.
+Definisci una **Categoria** como **Marketing** e selecione uma **superficie e-mail** que permita o envio de e-mail. Nesse caso, una **superficie di posta elettronica** un utente selecionada é E-mail. Certifique-se de que as caixas de seleção **Clicks on email** e **email opens** estejam marcadas.
 
 ![ACOP](./images/journeyactions1.png)
 
@@ -90,33 +90,33 @@ Na área de texto, comece **Olá**
 
 ![Journey Optimizer](./images/msg6.png)
 
-Una linha de l&#39;assunzione da não está pronta. Em seguida, você trazer o token de personalização para o **Nome** que está armazenado em `profile.person.name.firstName`. Nessun menu à esquerda, ruolo para baixo para encontrar o elemento **Persona** e clique na seta para visualizar mais campos
+Una linha de l&#39;assunzione da não está pronta. Em seguida, você trazer o token de personalização para o **First name** que está armazenado em `profile.person.name.firstName`. Nessun menu à esquerda, ruolo para baixo para encontrar o elemento **Persona** e clique na seta para visualizar mais campos
 
 ![Journey Optimizer](./images/msg7.png)
 
-Agora encontre o elemento **Nome e cognome** e clique na seta para visualizar mais campos.
+Agora encontre o elemento **Nome completo** e clique na seta para visualizar mais campos.
 
 ![Journey Optimizer](./images/msg8.png)
 
-Por fim, localizza o campo **Nome** e cricca no símbolo **+**  addio al cielo. Você verá o token de personalização aparecer no campo de texto.
+Por fim, localizza o campo **Nome** e cricca no símbolo **+** ao lado dele. Você verá o token de personalização aparecer no campo de texto.
 
 ![Journey Optimizer](./images/msg9.png)
 
-Em seguida, adicione o texto **agradecemos a sua inscrição!**. Clique em **Salva**.
+Em seguida, adicione o texto, **agradecemos a sua inscrição!**. **Salva**.
 
 ![Journey Optimizer](./images/msg10.png)
 
-Voce irá retornar para esta tela. Clique em **E-mail Designer**  para criar o conteúdo do do email.
+Voce irá retornar para esta tela. Clique em **Invia un&#39;email a Designer** para criar o conteúdo do e-mail.
 
 ![Journey Optimizer](./images/msg11.png)
 
 Na próxima tela, será solicitado que você forneça o conteúdo do e-mail através de 3 métodos diferentes:
 
-- **Progettare da zero**: Comece com uma tela em branco e use o editor WYSIWYG para arrastar e soltar a estrutura e os componentes de conteúdo para criar visualmente o conteúdo do e-mail.
-- **Crea il codice**: Crie seu próprio modelo de e-mail codificando HTML
+- **Disegno da zero**: Comece com uma tela em branco e use o editor WYSIWYG para arrastar e soltar a estrutura e os componentes de conteúdo para criar visualmente o conteúdo do e-mail.
+- **Crea il tuo codice**: Crie seu próprio modelo de e-mail codificando HTML
 - **Importa HTML**: Importe um modelo HTML EXISTente, que você poderá editar.
 
-Clique em **Importa HTML**.
+Coppia em **Importa HTML**.
 
 ![Journey Optimizer](./images/msg12.png)
 
@@ -128,13 +128,13 @@ Você verá este modelo de e-mail padrão
 
 ![Journey Optimizer](./images/msg14.png)
 
-Vamos personalizar o e-mail. Cricche e texto **Olá** e, em seguida, cricca no ícone **Aggiungi personalizzazione**.
+Vamos personalizar o e-mail. Clique ao lado do texto **Olá** e, em seguida, clique no ícone **Aggiungi Personalization**.
 
 ![Journey Optimizer](./images/msg35.png)
 
-Em seguida, você trazer o token de personalização **Nome** que está armazenado em `profile.person.name.firstName`. Nessun menu, localizza o elemento **Persona**, faça uma busca detalhada no elemento **Nome e cognome** e cricca no ícone **+** para adicionar o campo **Nome** un editor.
+Em seguida, você trazer o token de personalização **Nome** que está armazenado em `profile.person.name.firstName`. Nessun menu, localizzare o elemento **Persona**, faça uma busca detalhada no elemento **Nome completo** e cricca no ícone **+** para adicionar o campo **Nome** ao editor.
 
-Clique em **Salva**.
+**Salva**.
 
 ![Journey Optimizer](./images/msg36.png)
 
@@ -154,25 +154,25 @@ Agora você concludere una criação do seu e-mail de cadastro. Cricca na seta n
 
 ![Journey Optimizer](./images/msg57.png)
 
-Clique em **Ok**.
+Coppia em **Ok**.
 
 ![Journey Optimizer](./images/msg57a.png)
 
 ## 2.3.3 Publlique a sua jornada
 
-Você ainda dar um Nome à sua jornada. Você pode fazer isso clicando no ícone **Proprietà** nessun canto superiore direito da tela.
+Você ainda dar um Nome à sua jornada. Você pode fazer isso clicando no ícone **Proprietà** no canto superior direito da tela.
 
 ![ACOP](./images/journeyname.png)
 
-Você pode fazer isso clicando no item clicar no item &quot;Name&quot; e inserindo o seguinte nome `yourLastName - Account Creation Journey`. Clique em **OK** para salvar è mudanças.
+Você pode fazer isso clicando no item clicar no item &quot;Name&quot; e inserindo o seguinte nome `yourLastName - Account Creation Journey`. Cricca em **OK** para salvar come mudanças.
 
 ![ACOP](./images/journeyname1.png)
 
-Agora você pode publicar sua jornada clicando em **Pubblica**.
+Agora você pode publicar sua jornada clicando em **Publish**.
 
 ![ACOP](./images/publishjourney.png)
 
-Clique em **Pubblica**  novamente.
+Clique em **Publish** novamente.
 
 ![ACOP](./images/publish1.png)
 
@@ -182,7 +182,7 @@ Você verá uma barra de confirm mação verde informando que sua jornada agora 
 
 Você terminou este exercício
 
-Próxima etapa [2.4 Teste sua jornada](./ex4.md)
+Eta di Próxima: [2.4 Teste sua jornada](./ex4.md)
 
 [Retornar para Fluxo de Usuário 2](./uc2.md)
 

@@ -2,52 +2,53 @@
 title: CSC Bootcamp - Informazioni per un Marketing Manager
 description: CSC Bootcamp - Informazioni per un Marketing Manager
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: 8a979899-7b56-427e-aede-6d4e045c89c1
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
 
-# Informazioni per un Marketing Manager
+# Approfondimenti per un Marketing Manager
 
-## Vista settimanale del Project Leader
+## Visualizzazione settimanale del responsabile del progetto
 
-Nella colonna a sinistra, fai clic su &quot;Visualizzazione settimanale del Project Leader&quot;:
+Nella colonna sinistra, fare clic su &#39;Visualizzazione settimanale di Project Leader&#39;:
 
-![visualizzazione settimanale dei responsabili del progetto](./images/weekly-view.png)
+![visualizzazione settimanale dei project leader](./images/weekly-view.png)
 
 Questo copre una vasta gamma di rapporti, sempre cliccabili/actionable per ulteriori dettagli:
 
-- La **Attività in scadenza per progetto**
+- Le **attività in scadenza questa settimana per progetto**
 
-![dovuto questa settimana](./images/tasks-due.png)
+![scade questa settimana](./images/tasks-due.png)
 
-- La **Le prossime tappe della gestione dei progetti** :
+- Le prossime attività cardine di **Project Management**:
 
-![tappe future](./images/upcoming-milestones.png)
+![attività cardine future](./images/upcoming-milestones.png)
 
-- La **Problemi aperti per priorità**
+- I **problemi aperti per priorità**
 
-![questioni prioritarie](./images/open-issues.png)
+![problemi per priorità](./images/open-issues.png)
 
-- La **Attività in ritardo per reparto**
+- Le **attività in ritardo per reparto**
 
 ![attività in ritardo](./images/late-tasks.png)
 
-- La **Attività in ritardo per singoli utenti**
+- Le **attività in ritardo per singolo**
 
-![singoli ritardi](./images/individual-late-tasks.png)
+![singole attività in ritardo](./images/individual-late-tasks.png)
 
-## Approfondimenti relativi a SCRUM
+## Informazioni relative a SCRUM
 
-Nella colonna a sinistra, fai clic su &quot;Stato iterazione&quot;
+Nella colonna sinistra, fare clic su &#39;Stato iterazione&#39;
 
-![stato iterazione clic](./images/iteration-status.png)
+![fai clic sullo stato dell&#39;iterazione](./images/iteration-status.png)
 
-Se i team lavorano con la Metodologia SCRUM, questo è un interessante insieme di rapporti di gestione:
+Se i tuoi team utilizzano la metodologia SCRUM, si tratta di un interessante set di rapporti di gestione:
 
-- **Velocity per iterazione**
+- **Velocità per iterazione**
 
 ![velocità](./images/velocity.png)
 
@@ -55,21 +56,21 @@ Se i team lavorano con la Metodologia SCRUM, questo è un interessante insieme d
 
 ![velocità media](./images/average-velocity.png)
 
-- **Totali orari completati dalle iterazioni correnti per assegnatario**
+- **Totali ore iterazioni correnti completate per assegnatario**
 
-![totali in ore completate](./images/iteration-status.png)
+![totali ore completate](./images/iteration-status.png)
 
 - **Iterazioni per team**
 
 ![iterazioni per team](./images/iterations-by-team.png)
 
-## Reporting sull’efficienza
+## Reporting sull&#39;efficienza
 
-Sempre a sinistra, clicca su &#39;Efficienza&#39;
+Sempre nella colonna sinistra, fai clic su &quot;Efficienza&quot;.
 
-![efficienza del clic](./images/efficiency.png)
+![efficienza dei clic](./images/efficiency.png)
 
-- **Rapporto pianificato/Non pianificato** (del lavoro svolto)
+- **Rapporto Pianificato/Non Pianificato** (del lavoro svolto)
 
 ![rapporto pianificato/non pianificato](./images/planned-unplanned.png)
 
@@ -77,29 +78,29 @@ Sempre a sinistra, clicca su &#39;Efficienza&#39;
 
 ![richieste completate](./images/completed-requests.png)
 
-## Approfondimenti progetto in volo
+## Informazioni sul progetto in volo
 
-Sempre a sinistra, clicca su &#39;Marketing - Projects In-flight&#39;
+Sempre nella colonna sinistra, fai clic su &quot;Marketing - Progetti in corso&quot;
 
 - **Stato dei progetti in volo**
 
-![progetti in volo](./images/inflight-projects.png)
+![progetti in-flight](./images/inflight-projects.png)
 
-- **Progetti per condizione per mese**
+- **Progetti per Condizione per Mese**
 
 ![progetti per condizione](./images/project-by-condition.png)
 
-- Elenco, stato di avanzamento e dati finanziari **Progetti in volo**
+- Elenco, avanzamento e dettagli finanziari dei **progetti in-flight**
 
 ![dettagli finanziari](./images/inflights-projects.png)
 
-## Visualizzare le dipendenze (tra progetti)
+## Visualizza dipendenze (tra progetti)
 
-Torna alla linea &quot;PIN&quot;, fai clic su &quot;Visualizzazione Gant Portfolio&quot;:
+Tornando alla riga &#39;PIN&#39;, fare clic su &#39;Vista Gant Portfolio&#39;:
 
-![fare clic su gant view](./images/gant-view.png)
+![fai clic sulla visualizzazione Gant portfolio](./images/gant-view.png)
 
-Qui hai un **Vista Gant Chart di un gruppo di progetti** con eventuali dipendenze (predecessori) tra progetti
+Qui hai una **visualizzazione Diagramma di Gant di un gruppo di progetti** con possibili dipendenze (predecessori) tra progetti
 
 ![dipendenze tra progetti](./images/gant-chart.png)
 
@@ -107,24 +108,24 @@ Qui hai un **Vista Gant Chart di un gruppo di progetti** con eventuali dipendenz
 
 >[!NOTE]
 >
-> Questo è un esempio di integrazione con un software di terze parti. Questa è un’integrazione con Adobe Campaign come illustrazione. Importa i risultati delle campagne completate in Adobe Campaign.
+> Esempio di integrazione con un software di terze parti. Si tratta di un’integrazione con Adobe Campaign a titolo illustrativo. Importa i risultati delle campagne completate in Adobe Campaigns.
 
-Sulla linea &quot;PIN&quot;, fai clic su &quot;Riepilogo campagna&quot;:
+Nella riga PIN, fare clic su Riepilogo campagna:
 
 - **Riepilogo Adobe Campaign**
 
-![sommario](./images/campaign-summary.png)
+![riepilogo](./images/campaign-summary.png)
 
-- **Adobe Campaign inviato alle aperture**
+- **Adobe Campaign inviato ad Opens**
 
 ![inviato ad open](./images/sent-to-open.png)
 
-- **Adobe Campaign apre ai clic**
+- **Adobe Campaign si apre ai clic**
 
 ![apri per fare clic](./images/open-to-click.png)
 
 Passaggio successivo: [Conclusione](../../conclusion.md)
 
-[Torna alla fase 4 - Informazioni per un Project Manager](./project-manager.md)
+[Torna alla Fase 4 - Approfondimenti per un Project Manager](./project-manager.md)
 
 [Torna a tutti i moduli](../../overview.md)

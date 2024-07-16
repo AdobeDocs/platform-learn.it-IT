@@ -11,7 +11,7 @@ feature: Events
 exl-id: 45c77177-9ea9-4c3d-a40e-c04a747938eb
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Per testare il percorso, dovrai utilizzare l’ID evento dell’evento creato ne
 L’ID evento è ciò che deve essere inviato a Adobe Experience Platform per attivare il percorso. In questo esempio, eventID è:
 `e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5`.
 
-Apri l’app mobile e vai alla home page. Fai clic su **Impostazioni** icona.
+Apri l’app mobile e vai alla home page. Fai clic sull&#39;icona **Impostazioni**.
 
 ![DSN](./images/appsett.png)
 
@@ -33,17 +33,17 @@ Incolla il tuo eventID nel campo **Beacon EventID** e fai clic su **Salva**.
 
 ![DSN](./images/beacon1.png)
 
-Prima di continuare, aprire la pagina Web nel computer: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Prima di continuare, apri questa pagina Web nel computer: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
 A questo punto viene visualizzato quanto segue:
 
 ![DSN](./images/screen1.png)
 
-Quindi, torna alla home page. Fai clic su **beacon** icona.
+Quindi, torna alla home page. Fai clic sull&#39;icona **beacon**.
 
 ![DSN](./images/app23.png)
 
-Poi vedrai questo. Seleziona innanzitutto **Beacon schermo bootcamp** e quindi fare clic su **voce** pulsante. Questo consente di simulare una voce beacon.
+Poi vedrai questo. Selezionare innanzitutto **Bootcamp Screen Beacon** e quindi fare clic sul pulsante **entry**. Questo consente di simulare una voce beacon.
 
 ![DSN](./images/app21.png)
 

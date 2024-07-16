@@ -1,11 +1,11 @@
 ---
-title: Implementare integrazioni di Experienci Cloud con i tag
-description: Scopri come convalidare le integrazioni Audiences, A4T e Attributi del cliente nell’implementazione di Adobe Experience Cloud. Questa lezione fa parte dell’esercitazione Implementa l’Experience Cloud in siti web .
+title: Implementare integrazioni Experience Cloud con i tag
+description: Scopri come convalidare le integrazioni Audiences, A4T e Attributi del cliente nell’implementazione di Adobe Experience Cloud. Questa lezione fa parte dell’esercitazione Implementare l’Experience Cloud su siti web.
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
-source-wordcount: '1272'
-ht-degree: 91%
+source-wordcount: '1213'
+ht-degree: 86%
 
 ---
 
@@ -32,14 +32,13 @@ Prima di seguire le istruzioni fornite in questa lezione, è necessario completa
 >* Verifica i requisiti completi dell&#39;[integrazione di Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html)
 >* Chiedi a un amministratore della tua organizzazione Experience Cloud [di richiedere il provisioning di queste integrazioni](https://www.adobe.com/go/audiences)
 
-
 ## Audiences
 
-[Audiences](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=it) fa parte del servizio core Persone e consente di condividere i tipi di pubblico tra le soluzioni. Ad esempio, puoi creare un tipo di pubblico in Audience Manager e utilizzarlo per distribuire contenuti personalizzati con Target.
+[Audiences](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html) fa parte del servizio core Persone e consente di condividere i tipi di pubblico tra le soluzioni. Ad esempio, puoi creare un tipo di pubblico in Audience Manager e utilizzarlo per distribuire contenuti personalizzati con Target.
 
 I requisiti principali per implementare A4T, operazione che hai già eseguito, sono i seguenti:
 
-1. Implementare il servizio Adobe Experience Platform Identity
+1. Implementare Adobe Experience Platform Identity Service
 1. Implementare Audience Manager
 1. Implementare altre soluzioni per ricevere o creare tipi di pubblico, ad esempio Target e Analytics
 
@@ -51,9 +50,9 @@ Questi passaggi di convalida si concentreranno sulla parte critica visibile nell
 
 1. Apri il [sito Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Assicurati che Debugger mappi la proprietà tag in *le* Ambiente di sviluppo, come descritto in [lezione precedente](switch-environments.md)
+1. Accertati che Debugger mappi la proprietà tag nell&#39;ambiente di sviluppo *your*, come descritto nella [lezione precedente](switch-environments.md)
 
-   ![L’ambiente di sviluppo tag visualizzato in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![L&#39;ambiente di sviluppo dei tag visualizzato in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Vai alla scheda Rete del debugger
 
@@ -73,11 +72,11 @@ Questi passaggi di convalida si concentreranno sulla parte critica visibile nell
 
 ## Analytics for Target (A4T)
 
-L’integrazione [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=it) ti consente di sfruttare i dati di Analytics come origine per le metriche di reporting in Target.
+L’integrazione [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) ti consente di sfruttare i dati di Analytics come origine per le metriche di reporting in Target.
 
 I requisiti principali per implementare A4T, operazione che hai già eseguito, sono i seguenti:
 
-1. Implementare il servizio Adobe Experience Platform Identity
+1. Implementare Adobe Experience Platform Identity Service
 1. Attiva la richiesta di caricamento pagina di Target prima del beacon di visualizzazione della pagina di Analytics
 
 A4T funziona combinando una richiesta lato server da Target ad Analytics con il beacon di visualizzazione della pagina di Analytics, che chiamiamo &quot;hit-stitching&quot;. Il processo di hit-stitching richiede che la richiesta Target che distribuisce l’attività (o che incrementa una metrica di obiettivo basata su Target) includa un parametro che corrisponda a un parametro nel beacon di visualizzazione della pagina di Analytics. Questo parametro è denominato ID dati supplementare (SDID).
@@ -90,9 +89,9 @@ Il modo migliore per convalidare l’integrazione A4T consiste nel creare effett
 
 1. Apri il [sito Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Assicurati che Debugger mappi la proprietà tag in *le* Ambiente di sviluppo, come descritto in [lezione precedente](switch-environments.md)
+1. Accertati che Debugger mappi la proprietà tag nell&#39;ambiente di sviluppo *your*, come descritto nella [lezione precedente](switch-environments.md)
 
-   ![L’ambiente di sviluppo tag visualizzato in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![L&#39;ambiente di sviluppo dei tag visualizzato in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Vai alla scheda Rete del debugger
 
@@ -116,12 +115,12 @@ Se esegui richieste aggiuntive di Target nell’ambito di un caricamento di pagi
 
 I requisiti principali per implementare gli attributi del cliente, operazione che hai già eseguito, sono i seguenti:
 
-1. Implementare il servizio Adobe Experience Platform Identity
-1. Impostare gli ID cliente tramite il servizio ID *prima* Target e Analytics attivano le loro richieste (che si ottiene utilizzando la funzione di ordinamento delle regole nei tag)
+1. Implementare Adobe Experience Platform Identity Service
+1. Impostare gli ID cliente tramite il servizio ID *prima* che Target e Analytics attivino le loro richieste (che può essere realizzato utilizzando la funzione di ordinamento delle regole nei tag)
 
 ### Convalidare l’implementazione di Attributi cliente
 
-Hai già verificato che gli ID cliente vengano passati sia al servizio Identity che a Target nelle lezioni precedenti. Puoi anche convalidare l’ID cliente nell’hit di Analytics. 
+Hai già verificato che gli ID cliente vengano passati sia a Identity Service che a Target nelle lezioni precedenti. Puoi anche convalidare l’ID cliente nell’hit di Analytics. 
 Al momento, l’ID cliente è uno dei pochi parametri che non vengono visualizzati nel debugger di Experience Cloud, ma puoi utilizzare la console JavaScript del browser per visualizzarlo.
 
 1. Apri il sito Luma.
@@ -131,7 +130,7 @@ Al momento, l’ID cliente è uno dei pochi parametri che non vengono visualizza
 
    ![Apri gli Strumenti per sviluppatori e filtra la scheda Rete per visualizzare solo le richieste di Analytics](images/aam-openTheJSConsole.png)
 
-1. Fai clic sul collegamento **[!UICONTROL ACCESSO]** nell’angolo in alto a destra del sito
+1. Fai clic sul collegamento **[!UICONTROL ACCESSO]** nell&#39;angolo superiore destro del sito
 
    ![Fai clic su Accesso in alto a destra](images/idservice-loginNav.png)
 
@@ -145,10 +144,10 @@ Al momento, l’ID cliente è uno dei pochi parametri che non vengono visualizza
 1. Fai clic sulla richiesta e seleziona la scheda Intestazioni
 1. Scorri verso il basso fino a visualizzare alcuni parametri nidificati
    1. cid: delimitatore standard per la porzione ID cliente della richiesta
-   1. crm_id: è il codice di integrazione personalizzato, specificato nella lezione del servizio Identity
+   1. crm_id: è il codice di integrazione personalizzato, specificato nella lezione su Identity Service
    1. id: il valore ID cliente proviene dall’elemento dati `Email (Hashed)`
    1. as: lo stato di autenticazione, con &quot;1&quot; che significa &quot;accesso eseguito&quot;
 
    ![Convalida ID cliente Analytics](images/integrations-analyticsCustomerIDValidation.png)
 
-[Avanti “Pubblica la tua proprietà” >](publish.md)
+[Avanti &quot;Publish la tua proprietà&quot; >](publish.md)

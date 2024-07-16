@@ -16,7 +16,7 @@ ht-degree: 9%
 
 # Creare set di dati e acquisire dati
 
-Questo video mostra come creare set di dati e acquisire dati nell’interfaccia di Adobe Experience Platform. Per la documentazione più dettagliata del prodotto, consulta [acquisire dati batch tramite l’interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html?lang=it) e [creare un set di dati utilizzando le API](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/create.html). Per ulteriori informazioni, visitare il [Documentazione sull’acquisizione dei dati](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=it).
+Questo video mostra come creare set di dati e acquisire dati nell’interfaccia di Adobe Experience Platform. Per una documentazione del prodotto più dettagliata, consulta [Acquisire dati batch utilizzando l&#39;interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html?lang=it) e [creare un set di dati utilizzando le API](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/create.html). Per ulteriori informazioni, visita la [documentazione sull&#39;acquisizione dei dati](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on)
 

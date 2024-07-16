@@ -16,35 +16,35 @@ ht-degree: 1%
 
 # 1.5 Ação: envie seu para o Facebook
 
-Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Accesso Depois de fazer, você irá acessar a página inicial da Adobe Experience Platform.
+[Adobe Experience Platform](https://experience.adobe.com/platform). Accesso Depois de fazer, você irá acessar a página inicial da Adobe Experience Platform.
 
 ![Acquisizione dei dati](./images/home.png)
 
-Antes de continuar, você selecionar um **sandbox**. O nome do sandbox a ser selecionado é Bootcamp. É possível fazer isso clicando no texto **[!UICONTROL Prod produzione]** è una linha azul na parte superior da tela. Depois de selecionar o sandbox apropriado, você verá a tela mudando e agora você está em seu [!UICONTROL sandbox] dedicado.
+Antes de continuar, você selecionar um **sandbox**. O nome do sandbox a ser selecionado é Bootcamp. É possível fazer isso clicando no texto **[!UICONTROL Prod]** na linha azul na parte superior da tela. Depois de selecionar o sandbox apropriado, você verá a tela mudando e agora você está em seu [!UICONTROL sandbox] dedicado.
 
 ![Acquisizione dei dati](./images/sb1.png)
 
-Nessun menu à esquerda, vá para **Destinazioni** e, em seguida, vá para **Catalogo**. Você verá o **Catalogo delle destinazioni**. Em **Destinazioni**, cricca em **Attivare segmenti** nessun cartone **Pubblico personalizzato facebook**.
+Nessun menu à esquerda, vá para **Destinazioni** e, em seguida, vá para **Catalogo**. Você verá o **Catalogo delle destinazioni**. **Destinazioni**, Cricca em **Attiva segmenti** senza cartone **Pubblico personalizzato Facebook**.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-Selecione o **bootcamp-facebook** e cricca em **Successivo**.
+Selecione o **bootcamp-facebook** e cricca em **Successivo**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
-Na lista de segmentos disponíveis, selecione o você criou no exercício anteriore. Clique em **Successivo**.
+Na lista de segmentos disponíveis, selecione o você criou no exercício anteriore. **Avanti**.
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-Na página **Mappatura**, verifique se a caixa de seleção **Applica trasformazione** está marcada. Clique em **Successivo**.
+Na página **Mappatura**, verifica se a caixa de seleção **Applica trasformazione** está marcada. **Avanti**.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-Na página **Pianificazione segmento**, selecione a **Origine del pubblico** e defina como **Direttamente dai clienti**. Clique em **Successivo**.
+Na página **Pianificazione segmento**, seleziona una **Origine del pubblico** e definisce un como **Direttamente dai clienti**. **Avanti**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-Por fim, na página **Revisione**, cricca em **Fine**.
+Por fim, na página **Recensione**, cricca em **Fine**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 

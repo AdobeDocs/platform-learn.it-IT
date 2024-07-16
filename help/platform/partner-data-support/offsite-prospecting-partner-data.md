@@ -1,5 +1,5 @@
 ---
-title: Supporta i casi di utilizzo di ricerca di potenziali clienti fuori sede utilizzando i dati dei partner in [!DNL Real-Time CDP]
+title: Supporta casi di utilizzo di individuazione di potenziali clienti fuori sede utilizzando i dati dei partner in [!DNL Real-Time CDP]
 description: Scopri il flusso di lavoro utilizzato per acquisire nuovi potenziali clienti dai partner in [!DNL Real-Time CDP] per il targeting pre-visita. 
 feature: Integrations
 topic: Integrations
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Supporta i casi di utilizzo di ricerca di potenziali clienti fuori sede utilizzando i dati dei partner in [!DNL Real-Time CDP]
+# Supporta casi di utilizzo di individuazione di potenziali clienti fuori sede utilizzando i dati dei partner in [!DNL Real-Time CDP]
 
-Scopri il flusso di lavoro utilizzato per acquisire nuovi potenziali clienti dai partner in [!DNL Real-Time CDP] per il targeting pre-visita. Per ulteriori informazioni, visitare il [Coinvolgi e acquisisci nuovi clienti attraverso la ricerca di casi d’uso](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/prospecting.html) documentazione.
+Scopri il flusso di lavoro utilizzato per acquisire nuovi potenziali clienti dai partner in [!DNL Real-Time CDP] per il targeting pre-visita. Per ulteriori informazioni, visita la documentazione di [Coinvolgi e acquisisci nuovi clienti attraverso la ricerca di potenziali casi d&#39;uso](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/prospecting.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423071/?learn=on)

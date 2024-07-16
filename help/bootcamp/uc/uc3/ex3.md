@@ -20,17 +20,17 @@ ht-degree: 0%
 
 In questo esercizio configurerai il percorso e il messaggio da attivare quando qualcuno entra in un beacon utilizzando l&#39;app mobile.
 
-Accedi a Adobe Journey Optimizer da [Adobe Experience Cloud](https://experience.adobe.com). Clic **Journey Optimizer**.
+Accedi a Adobe Journey Optimizer da [Adobe Experience Cloud](https://experience.adobe.com). Fare clic su **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Verrai reindirizzato al **Home**  in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `Bootcamp`. Per passare da una sandbox all’altra, fai clic su **Prod** e seleziona la sandbox dall’elenco. In questo esempio, la sandbox è denominata **Bootcamp**. Sarai quindi nel **Home** visualizzazione della sandbox `Bootcamp`.
+Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `Bootcamp`. Per passare da una sandbox all&#39;altra, fare clic su **Prod** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **Bootcamp**. Ti troverai quindi nella **Home** della tua sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
 ## 3.3.1 Creare il percorso
 
-Nel menu a sinistra, fai clic su **Percorsi**. Quindi, fai clic su **Crea Percorso** per creare un nuovo percorso.
+Nel menu a sinistra, fai clic su **Percorsi**. Fare clic su **Crea Percorso** per creare un nuovo percorso.
 
 ![ACOP](./images/createjourney.png)
 
@@ -38,7 +38,7 @@ Viene quindi visualizzata una schermata di percorso vuota.
 
 ![ACOP](./images/journeyempty.png)
 
-Nell’esercizio precedente, hai creato una nuova **Evento**. L&#39;hai chiamato così `yourLastNameBeaconEntryEvent` e sostituito `yourLastName` con il tuo cognome. Questo è stato il risultato della creazione dell’evento:
+Nell&#39;esercizio precedente è stato creato un nuovo **evento**. L&#39;utente ha assegnato un nome simile a `yourLastNameBeaconEntryEvent` e ha sostituito `yourLastName` con il cognome. Questo è stato il risultato della creazione dell’evento:
 
 ![ACOP](./images/eventdone.png)
 
@@ -46,23 +46,23 @@ Ora devi prendere questo evento come inizio di questo Percorso. Per farlo, vai s
 
 ![ACOP](./images/eventlist.png)
 
-Seleziona l’evento, trascinalo sull’area di lavoro del percorso. Il tuo percorso ora si presenta così. Clic **Ok** per salvare le modifiche.
+Seleziona l’evento, trascinalo sull’area di lavoro del percorso. Il tuo percorso ora si presenta così. Fai clic su **Ok** per salvare le modifiche.
 
 ![ACOP](./images/journeyevent.png)
 
-Come secondo passaggio del percorso, devi aggiungere una **Push** azione. Vai sul lato sinistro dello schermo per **Azioni**, seleziona la **Push** , quindi trascinarlo e rilasciarlo sul secondo nodo del percorso.
+Come secondo passaggio del percorso, devi aggiungere un&#39;azione **Push**. Vai sul lato sinistro della schermata a **Azioni**, seleziona l&#39;azione **Invia**, quindi trascinala sul secondo nodo del percorso.
 
 ![ACOP](./images/journeyactions.png)
 
 Sul lato destro dello schermo, ora è necessario creare la notifica push.
 
-Imposta il **Categoria** a **Marketing** e seleziona una superficie push che ti consenta di inviare notifiche push. In questo caso, la superficie push da selezionare è **meeewis-app-mobile-bootcamp**.
+Imposta **Categoria** su **Marketing** e seleziona una superficie push che ti consenta di inviare notifiche push. In questo caso, la superficie push da selezionare è **mmeeewis-app-mobile-bootcamp**.
 
 ![ACOP](./images/journeyactions1.png)
 
 ## 3.3.2 Creare il messaggio
 
-Clic **Modifica contenuto**.
+Fare clic su **Modifica contenuto**.
 
 ![ACOP](./images/emptymsg.png)
 
@@ -72,19 +72,19 @@ A questo punto viene visualizzato quanto segue:
 
 Definiamo il contenuto della notifica push.
 
-Fai clic su **Titolo** campo di testo.
+Fai clic sul campo di testo **Titolo**.
 
 ![Journey Optimizer](./images/msg5.png)
 
-Nell&#39;area di testo iniziare a scrivere **Ciao**. Fai clic sull’icona di personalizzazione.
+Nell&#39;area di testo inizia a scrivere **Ciao**. Fai clic sull’icona di personalizzazione.
 
 ![Journey Optimizer](./images/msg6.png)
 
-Ora devi inserire il token di personalizzazione per il campo **Nome** che è memorizzato in `profile.person.name.firstName`. Nel menu a sinistra, seleziona **Attributi del profilo**, scorri verso il basso/naviga per trovare **Persona** e fai clic sulla freccia per andare a un livello più profondo fino a raggiungere il campo `profile.person.name.firstName`. Fai clic su **+** per aggiungere il campo all’area di lavoro. Fai clic su **Salva**.
+È ora necessario inserire il token di personalizzazione per il campo **First name** memorizzato in `profile.person.name.firstName`. Nel menu a sinistra, seleziona **Attributi profilo**, scorri verso il basso/sfoglia per trovare l&#39;elemento **Persona** e fai clic sulla freccia per andare più a fondo fino a raggiungere il campo `profile.person.name.firstName`. Fai clic sull&#39;icona **+** per aggiungere il campo all&#39;area di lavoro. Fai clic su **Salva**.
 
 ![Journey Optimizer](./images/msg7.png)
 
-Allora tornerai qui. Fai clic sull’icona di personalizzazione accanto al campo **Corpo**.
+Allora tornerai qui. Fai clic sull&#39;icona di personalizzazione accanto al campo **Corpo**.
 
 ![Journey Optimizer](./images/msg11.png)
 
@@ -92,31 +92,31 @@ Nell&#39;area di testo, scrivere `Welcome at the `.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Quindi, fai clic su **Attributi contestuali** e poi **Journey Orchestration**.
+Fare clic su **Attributi contestuali** e quindi su **Journey Orchestration**.
 
 ![ACOP](./images/jomsg3.png)
 
-Clic **Eventi**.
+Fai clic su **Eventi**.
 
 ![ACOP](./images/jomsg4.png)
 
-Fai clic sul nome dell’evento, che avrà un aspetto simile al seguente: **yourLastNameBeaconEntryEvent**.
+Fai clic sul nome dell&#39;evento, che avrà un aspetto simile al seguente: **yourLastNameBeaconEntryEvent**.
 
 ![ACOP](./images/jomsg5.png)
 
-Clic **Contesto del luogo**.
+Fare clic su **Inserisci contesto**.
 
 ![ACOP](./images/jomsg6.png)
 
-Clic **Interazione POI**.
+Fai clic su **Interazione POI**.
 
 ![ACOP](./images/jomsg7.png)
 
-Clic **Dettagli POI**.
+Fai clic su **Dettagli POI**.
 
 ![ACOP](./images/jomsg8.png)
 
-Fai clic su **+** icona su **Nome punto di interesse**.
+Fai clic sull&#39;icona **+** in **Nome POI**.
 Poi vedrai questo. Fai clic su **Salva**.
 
 ![ACOP](./images/jomsg9.png)
@@ -125,17 +125,17 @@ Il messaggio è ora pronto. Fai clic sulla freccia nell’angolo in alto a sinis
 
 ![ACOP](./images/jomsg11.png)
 
-Clic **Ok**.
+Fare clic su **Ok**.
 
 ![ACOP](./images/jomsg14.png)
 
 ## 3.3.2 Inviare un messaggio a uno schermo
 
-Come terzo passaggio del percorso, devi aggiungere una **sendMessageToScreen** azione. Vai sul lato sinistro dello schermo per **Azioni**, seleziona la **sendMessageToScreen** , quindi trascinarlo e rilasciarlo sul terzo nodo del percorso. Poi vedrai questo.
+Come terzo passaggio del percorso, devi aggiungere un&#39;azione **sendMessageToScreen**. Vai sul lato sinistro della schermata a **Azioni**, seleziona l&#39;azione **inviaMessaggioAlloSchermo**, quindi trascinala e rilasciala sul terzo nodo del percorso. Poi vedrai questo.
 
 ![ACOP](./images/jomsg15.png)
 
-Il **sendMessageToScreen** action è un’azione personalizzata che pubblicherà un messaggio sull’endpoint utilizzato dalla visualizzazione in-store. Il **sendMessageToScreen** L&#39;azione richiede la definizione di un numero di variabili. Puoi visualizzare queste variabili scorrendo verso il basso fino a visualizzare **Parametri azione**.
+L&#39;azione **sendMessageToScreen** è un&#39;azione personalizzata che pubblicherà un messaggio sull&#39;endpoint utilizzato dalla visualizzazione in-store. L&#39;azione **sendMessageToScreen** prevede la definizione di una serie di variabili. Puoi visualizzare queste variabili scorrendo verso il basso fino a visualizzare **Parametri azione**.
 
 ![ACOP](./images/jomsg16.png)
 
@@ -155,15 +155,15 @@ Ora devi impostare i valori per ogni parametro di azione. Segui questa tabella p
 
 {style="table-layout:auto"}
 
-Per impostare tali valori, fare clic su **Modifica** icona.
+Per impostare tali valori, fare clic sull&#39;icona **Modifica**.
 
 ![ACOP](./images/jomsg17.png)
 
-Quindi, seleziona **Modalità avanzata**.
+Selezionare **Modalità avanzata**.
 
 ![ACOP](./images/jomsg18.png)
 
-Quindi, incolla il valore in base alla tabella precedente. Clic **Ok**.
+Quindi, incolla il valore in base alla tabella precedente. Fare clic su **Ok**.
 
 ![ACOP](./images/jomsg19.png)
 
@@ -171,29 +171,29 @@ Ripetere questo processo per aggiungere valori per ogni campo.
 
 >[!IMPORTANT]
 >
->Per il campo ECID, esiste un riferimento all’evento `yourLastNameBeaconEntryEvent`. Sostituire `yourLastName` con il tuo cognome.
+>Per il campo ECID, esiste un riferimento all&#39;evento `yourLastNameBeaconEntryEvent`. Sostituire `yourLastName` con il cognome.
 
 Il risultato finale dovrebbe essere simile al seguente:
 
 ![ACOP](./images/jomsg20.png)
 
-Scorri verso l’alto e fai clic su **Ok**.
+Scorri verso l&#39;alto e fai clic su **Ok**.
 
 ![ACOP](./images/jomsg21.png)
 
-È comunque necessario assegnare un nome al percorso. Per farlo, fai clic sul pulsante **Matita** in alto a sinistra sullo schermo.
+È comunque necessario assegnare un nome al percorso. Per farlo, fai clic sull&#39;icona **Matita** in alto a sinistra nella schermata.
 
 ![ACOP](./images/journeyname.png)
 
-È quindi possibile immettere qui il nome del percorso. Utilizza `yourLastName - Beacon Entry Journey`. Clic **OK** per salvare le modifiche.
+È quindi possibile immettere qui il nome del percorso. Utilizzare `yourLastName - Beacon Entry Journey`. Fai clic su **OK** per salvare le modifiche.
 
 ![ACOP](./images/journeyname1.png)
 
-Ora puoi pubblicare il percorso facendo clic su **Pubblica**.
+È ora possibile pubblicare il percorso facendo clic su **Publish**.
 
 ![ACOP](./images/publishjourney.png)
 
-Clic **Pubblica** di nuovo.
+Fai di nuovo clic su **Publish**.
 
 ![ACOP](./images/publish1.png)
 
@@ -205,7 +205,7 @@ Il percorso è ora attivo e può essere attivato.
 
 Hai terminato questo esercizio.
 
-Passaggio successivo: [3.4 Test del percorso](./ex4.md)
+Passaggio successivo: [3.4 Verifica il percorso](./ex4.md)
 
 [Torna a Flusso utente 3](./uc3.md)
 

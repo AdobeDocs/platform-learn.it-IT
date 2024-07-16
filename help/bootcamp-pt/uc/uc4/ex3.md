@@ -11,7 +11,7 @@ feature: Data Views
 exl-id: 8cfd4467-167d-4235-a305-4596e3a7d4fb
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '1655'
+source-wordcount: '1667'
 ht-degree: 2%
 
 ---
@@ -36,11 +36,11 @@ Será necessário, no mínimo, uma Visualização de Dados por conexão. No enta
 - Usare os mesmos nomes para KPIs e métricas para o Google Analytics e para o Customer Journey Analytics, para que a equipe de análise digital fale apenas 1 idioma.
 - Visualização de Dados filtrada para mostrar, por exemplo, dados para apenas um mercado, ou uma marca, ou apenas para Dispositivos móveis.
 
-Na tela **Connessioni** marque a caixa de seleção da conexão que você acabou de criar. Clique em  **Crea visualizzazione dati**.
+Na tela de **Connessioni** marque a caixa de seleção da conexão que você acabou de criar. **Crea visualizzazione dati**.
 
 ![demo](./images/exta.png)
 
-Você será redirecionado para o fluxo de trabalho **Crea visualizzazione dati** flusso di lavoro.
+Você será redirecionado para o fluxo de trabalho **Crea visualizzazione dati**.
 
 ![demo](./images/0-v2.png)
 
@@ -50,13 +50,13 @@ Agora você pode configurar as definições básicas para sua Visualização de 
 
 ![demo](./images/0-v2.png)
 
-A **Connessione** que você criou no exercício anteriore já está selecionada. Sua conexão se chama `yourLastName – Omnichannel Data Connection`.
+Una **Connessione** que você criou no exercício anteriore já está selecionada. Sua conexão se chama `yourLastName – Omnichannel Data Connection`.
 
 ![demo](./images/ext5.png)
 
 Em seguida, dê um nome à sua Visualização de Dados seguindo este modelo de nomenclatura: `yourLastName – Omnichannel Data View`.
 
-Insira o mesmo valor para a descrição: `yourLastName – Omnichannel Data View`.
+Insira o mesmo valor para a descrição: `yourLastName – Omnichannel Data View`.
 
 | Nome | Descrizione |
 | ----------------- |-------------| 
@@ -64,7 +64,7 @@ Insira o mesmo valor para a descrição: `yourLastName – Omnichannel Data Vi
 
 ![demo](./images/1-v2.png)
 
-Paragrafo **Fuso orario**, selecione o fuso horário **Berlim, Estocolmo, Roma, Berna, Bruxelas, Viena, Amsterdã GMT+01:00**. Este é um cenário, pois algumas empresas operam em diferentes países e geografias. Alocar o fuso horário certo para cada país evitará erros típicos de dados, como, por exemplo, acreditar que a maioria das pessoas compra camisetas às 4h no Peru.
+Para **Fuso orario**, selecione o fuso horário **Berlim, Estocolmo, Roma, Berna, Bruxelas, Viena, Amsterdã GMT+01:00**. Este é um cenário, pois algumas empresas operam em diferentes países e geografias. Alocar o fuso horário certo para cada país evitará erros típicos de dados, como, por exemplo, acreditar que a maioria das pessoas compra camisetas às 4h no Peru.
 
 ![demo](./images/ext7.png)
 
@@ -74,7 +74,7 @@ Agora você deve ter come seguintes configurações definidas:
 
 ![demo](./images/1-v2.png)
 
-Clique em **Salva e continua**.
+**Salva e continua**.
 
 ![demo](./images/12-v2.png)
 
@@ -102,37 +102,37 @@ Vamos começar com o primeiro componente: **Nome (web.webPageDetails.name)**. Pe
 
 Esse componenti é o nome da página, como você pode derivar da leitura do campo do schema `(web.webPageDetails.name)`.
 
-Nessun entanto, usar **Nome** como o nome não é a melhor convocção de nomenclatura para um usuário corporativo comprender essa dimensão.
+No entanto, usar **Nome** como o nome não é a melhor convocção de nomenclatura para um usuário corporativo comprender essa dimensão.
 
-Vamos mudar o nome para **Nome pagina**. Cricca no componente e o renomeie na área **Impostazioni dei componenti**.
+Vamos mudar o nome para **Nome pagina**. Clique no componente e o renomeie na área **Impostazioni componenti**.
 
 ![demo](./images/3-0-v2.png)
 
-Come Configurações de persistência são **Impostazioni persistenza**. Os concepitos de eVars e prop não exist no CJA, mas as configurações de Persistência possibilitam um semelhante.
+Come Configurações de persistência são **Impostazioni di persistenza**. Os concepitos de eVars e prop não exist no CJA, mas as configurações de Persistência possibilitam um semelhante.
 
 ![demo](./images/3-0-v21.png)
 
-Se você não alterar essas configurações, o CJA irá interpretar a dimensão como um **Prop** (nível de ocorrência). Além disso, podemos alterar a Persistência para tornar a dimensão uma **eVar** (persistir o valor ao longo da jornada).
+Se você não alterar essas configurações, o CJA irá interpretar a dimensão como um **Prop** (nível de ocorrência). Além disso, podemos alterar a Persistência para tornar a dimensão uma **eVar** (persistir o valor ao longo da jornada).
 
-Se você não estiver familiarizado com eVars e Props [leia mais sobre isso na documentação](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html)..
+Se você não estiver familiarizado com eVars e Props, [leia mais sobre isso na documentação](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
 
-Vamos deixar o Nome da Página como Prop. Dessa forma, você não nenhuma **Impostazioni persistenza**.
+Vamos deixar o Nome da Página como Prop. Dessa forma, você não alterar nenhuma **Impostazioni di persistenza**.
 
 | Nome componente da cercare | Nuovo nome | Impostazioni persistenza |
 | ----------------- |-------------| --------------------| 
 | Nome (web.webPageDetails.name) | Nome pagina |          |
 
-Em seguida, escolha a dimensão **phoneNumber** e solte-a na tela. O novo nome deve ser **Numero di telefono**.
+Em seguida, escolha un **phoneNumber** e solte-a na tela. O novo nome deve ser **Numero di telefono**.
 
 ![demo](./images/3-1-v2.png)
 
 Por fim, vamos alterar come Configurações de persistência, pois o Número do Celular deve persistir no nível do usuário.
 
-Para alterar a Persistência, ruolo para baixo no menu à direita e abra a aba **Persistenza**:
+Para alterar a Persistência, role para baixo no menu à direita e abra a aba **Persistenza**:
 
 ![demo](./images/5-v2.png)
 
-Marque a caixa de seleção para modificar come configurações de persistência. Selecione **Più recente** e o escopo **Persona (intervallo di reporting)**, pois nos preocupamos apenas com o último número de celular da pessoa. Se o cliente não preencher o celular em visitas futuras, você ainda verá esse valor preenchido.
+Marque a caixa de seleção para modificar come configurações de persistência. Selecione **Più recente** e o escopo **Persona (finestra di segnalazione)**, pois nos preocupamos apenas com o último número de celular da pessoa. Se o cliente não preencher o celular em visitas futuras, você ainda verá esse valor preenchido.
 
 ![demo](./images/6-v2.png)
 
@@ -140,11 +140,11 @@ Marque a caixa de seleção para modificar come configurações de persistência
 | ----------------- |-------------| --------------------| 
 | phoneNumber | Numero di telefono | Più recente, persona (intervallo di reporting) |
 
-O próximo componente `web.webPageDetails.pageViews.value`.
+O próximo componente é `web.webPageDetails.pageViews.value`.
 
 Nessun menu à esquerda, pesquise `web.webPageDetails.pageViews.value`. Arraste e solte essa métrica na tela.
 
-Altere o nome para **Visualizzazioni pagina** sotto **Impostazioni dei componenti**.
+Altere o nome para **Visualizzazioni pagina** in **Impostazioni componente**.
 
 | Nome componente da cercare | Nuovo nome | Impostazioni di attribuzione |
 | ----------------- |-------------| --------------------| 
@@ -169,10 +169,10 @@ Em seguida, você terá que configurar várias Dimensões e Métricas, conforme 
 | ecid | ECID | Più recente, persona (intervallo di reporting) |
 | e-mail | ID e-mail | Più recente, persona (intervallo di reporting) |
 | Tipo di pagamento | Tipo di pagamento |          |
-| Metodo di aggiunta prodotto | Metodo di aggiunta prodotto | Più recente, sessione |
+| Metodo di aggiunta del prodotto | Metodo di aggiunta del prodotto | Più recente, sessione |
 | Tipo evento | Tipo evento |         |
-| Nome (productListItems.name) | Nome prodotto |         |
-| SKU | SKU (sessione) | Più recente, sessione |
+| Nome (productListItems.name) | nome del prodotto |         |
+| SKU (Stock Keeping Unit) | SKU (sessione) | Più recente, sessione |
 | ID transazione | ID transazione |         |
 | URL (web.webPageDetails.URL) | URL |         |
 | Agente utente | Agente utente | Più recente, sessione |
@@ -188,7 +188,7 @@ Sua configuração deve ser semelhante ao seguinte:
 
 ![demo](./images/11-v2.png)
 
-Não se esqueça de Salvar sua Visualização de Dados. Então cricca em **Salva**.
+Não se esqueça de Salvar sua Visualização de Dados. Então Cricca em **Salva**.
 
 ![demo](./images/12-v2s.png)
 
@@ -196,15 +196,15 @@ Não se esqueça de Salvar sua Visualização de Dados. Então cricca em **Salva
 
 Embora tenhamos organizado todos os componentes na Visualização de dados, você ainda deve adaptar alguns deles para que os usuários de negócios estejam prontos para iniciar suas análises.
 
-Se você se lembra, não trouxemos especificamente Métricas como Adicionar ao Carrinho, Visualização do produto ou Compras para a Visualização de dados. Nessun entanto, temos uma dimensão chamada: **Tipo di evento**. Então, vamos derivar esses tipos de interação criando 3 métricas calculadas.
+Se você se lembra, não trouxemos especificamente Métricas como Adicionar ao Carrinho, Visualização do produto ou Compras para a Visualização de dados. Nessun entanto, temos uma dimensão chamada: **Tipo evento**. Então, vamos derivar esses tipos de interação criando 3 métricas calculadas.
 
-Vamos começar com a primeira Métrica **Visualizzazioni prodotto**.
+Vamos começar com a primeira Métrica: **Visualizzazioni prodotto**.
 
-Nessun lado esquerdo, pesquise **Tipo di evento** Abbiamo selezionato una dimensione. Em seguida, arraste-o e solte-o na tela **Componenti inclusi**.
+Nessun lado esquerdo, pesquise **Tipo evento** e selecione a dimensão. Em seguida, arraste-o e solte-o na tela **Componenti inclusi**.
 
 ![demo](./images/calcmetr1.png)
 
-Clique para selecionar a nova métrica **Tipo di evento**.
+Clique para selecionar a nova métrica **Tipo evento**.
 
 ![demo](./images/calcmetr2.png)
 
@@ -216,25 +216,25 @@ Agora altere o nome e a descrição do componente para os seguintes valores:
 
 ![demo](./images/calcmetr3.png)
 
-Agora vamos contar apenas eventos de **Visualizzazioni prodotto**. Para fazer isso, ruolo para baixo em **Impostazioni dei componenti** até ver Valores de **Includi valori di esclusione**. Certifique-se de habilitar a opção **Impostare i valori di inclusione/esclusione**.
+Agora vamos contar apenas eventos de **Visualizzazioni prodotto**. Para fazer isso, ruolo para baixo em **Impostazioni componente** até ver Valores de **Includi valori di esclusione**. Certifique-se de habilitar a opção **Imposta i valori di inclusione/esclusione**.
 
 ![demo](./images/calcmetr4.png)
 
-Como queremos apena contar **Visualizzazioni prodotto**, speciifique **commerce.productViews** nos critérios
+Como queremos contar apenas **Visualizzazioni prodotto**, in particolare **commerce.productViews** nos critérios.
 
 ![demo](./images/calcmetr5.png)
 
 Agora a sua métrica calcolada está pronta!
 
-Em seguida, repita o mesmo processore para os eventos **Aggiungi al carrello** e **Acquisto**.
+Em seguida, repita o mesmo processore para os eventos **Aggiungi al carrello** e **Acquista**.
 
 ### Aggiungi al carrello
 
-Primeiro, arraste e solte a mesma dimensão **Tipo di evento**.
+Primeiro, arraste e solte una dimensione mesma **Tipo evento**.
 
 ![demo](./images/calcmetr1.png)
 
-Você verá um alerta pop-up de um Campo Duplicado, pois estamos a mesma variável. Clique em **Aggiungi comunque**:
+Você verá um alerta pop-up de um Campo Duplicado, pois estamos a mesma variável. **Aggiungi comunque**:
 
 ![demo](./images/calcmetr6.png)
 
@@ -250,17 +250,17 @@ Agora, siga o mesmo processo que fizemos para a métrica Visualizações de prod
 
 ### Acquisti
 
-Primeiro, arraste e solte a mesma dimensão **Tipo di evento** como fizemos para as duas métricas anteriores.
+Primeiro, arraste e solte un mesma dimensão **Tipo evento** como fizemos para as duas métricas anteriores.
 
 ![demo](./images/calcmetr1.png)
 
-Você verá um alerta pop-up de um Campo Duplicado, pois estamos a mesma variável. Clique em **Aggiungi comunque**:
+Você verá um alerta pop-up de um Campo Duplicado, pois estamos a mesma variável. **Aggiungi comunque**:
 
 ![demo](./images/calcmetr7.png)
 
 Agora, siga o mesmo processore que fizemos para as métricas Visualizzazioni del prodotto e Aggiungi al carrello:
 - Primeiro altere o nome e a descrição.
-- Por fim, adicione **commerce.purchases** como critérios para apenas come Compras
+- Por fim, adicione **commerce.purchases** como critérios para apenas as Compras
 
 | Nome | Descrizione | Criteri |
 | ----------------- |-------------| -------------|
@@ -268,7 +268,7 @@ Agora, siga o mesmo processore que fizemos para as métricas Visualizzazioni del
 
 ![demo](./images/calcmetr7a.png)
 
-Sua configuração final deve ser semelhante ao seguinte. Clique em **Salva e continua**.
+Sua configuração final deve ser semelhante ao seguinte. **Salva e continua**.
 
 ![demo](./images/calcmetr8.png)
 
@@ -278,7 +278,7 @@ Você deve ser redirecionado para esta tela:
 
 ![demo](./images/8-v2.png)
 
-Nesta aba, você pode modificar algumas configurações importantes para alterar a forma como os dados são processados. Vamos começar definizione o **Timeout sessione** como 30 min Graças ao registro de data e hora de cada evento de experiência, você pode estender o concepito de uma sessão em todos os canais. Por exemplo, o que acontece se um cliente ligar para o call center depois de visitar o site? Usando Tempos Limite de Sessão personalizados, você tem muita flexibilidade para decidir o que é uma sessão e como essa sessão irá mesclar os dados.
+Nesta aba, você pode modificar algumas configurações importantes para alterar a forma como os dados são processados. Vamos começar definindo o **Timeout sessione** como 30 min. Graças ao registro de data e hora de cada evento de experiência, você pode estender o concepito de uma sessão em todos os canais. Por exemplo, o que acontece se um cliente ligar para o call center depois de visitar o site? Usando Tempos Limite de Sessão personalizados, você tem muita flexibilidade para decidir o que é uma sessão e como essa sessão irá mesclar os dados.
 
 ![demo](./images/ext8.png)
 
@@ -286,7 +286,7 @@ Nesta aba você pode modificar outras coisas como os dados filtrar um/. Você n�
 
 ![demo](./images/10-v2.png)
 
-Quando terminale, cricca em **Salva e termina**.
+Quando terminar, clique em **Salva e termina**.
 
 ![demo](./images/13-v2.png)
 
@@ -296,7 +296,7 @@ Quando terminale, cricca em **Salva e termina**.
 
 Agora você pode continuar com a parte de visualização e análise!
 
-Próxima etapa [4.4 Preparação de dados em Customer Journey Analytics](./ex4.md)
+Próxima etapa: [4.4 Preparação de dados em Customer Journey Analytics](./ex4.md)
 
 [Retornar para Fluxo de Usuário 4](./uc4.md)
 

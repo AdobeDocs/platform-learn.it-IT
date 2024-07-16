@@ -1,13 +1,13 @@
 ---
 title: Configurare l’inoltro di eventi con i dati dell’SDK web di Platform
-description: Scopri come utilizzare la proprietà di inoltro degli eventi utilizzando i dati Experienci Platform Web SDK. Questa lezione fa parte dell’esercitazione Implementare Adobe Experience Cloud con Web SDK.
+description: Scopri come utilizzare la proprietà di inoltro degli eventi utilizzando i dati Experience Platform Web SDK. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Event Forwarding
 jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
 source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
 source-wordcount: '1873'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -15,10 +15,10 @@ ht-degree: 2%
 
 Scopri come utilizzare l’inoltro degli eventi con i dati di Adobe Experience Platform Web SDK.
 
-L’inoltro degli eventi è un nuovo tipo di proprietà disponibile in Raccolta dati. L’inoltro degli eventi consente di inviare dati a fornitori di terze parti non Adobi direttamente dall’Edge Network di Adobe Experience Platform anziché dal browser tradizionale lato client. Ulteriori informazioni sui vantaggi dell’inoltro degli eventi nel [Panoramica sull’inoltro degli eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
+L’inoltro degli eventi è un nuovo tipo di proprietà disponibile in Raccolta dati. L’inoltro degli eventi consente di inviare dati a fornitori di terze parti non Adobi direttamente dall’Edge Network di Adobe Experience Platform anziché dal browser tradizionale lato client. Ulteriori informazioni sui vantaggi dell&#39;inoltro degli eventi nella [Panoramica sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
 
-![Diagramma dell’SDK per web e dell’inoltro degli eventi](assets/dc-websdk-eventforwarding.png)
+![Diagramma di Web SDK e inoltro eventi](assets/dc-websdk-eventforwarding.png)
 
 Per utilizzare l’inoltro degli eventi in Adobe Experience Platform, i dati devono essere inviati all’Edge Network di Adobe Experience Platform utilizzando una o più delle tre opzioni seguenti:
 
@@ -48,7 +48,7 @@ Alla fine di questa lezione, sarai in grado di:
 
 * Licenza software che include l&#39;inoltro di eventi. L’inoltro di eventi è una funzione a pagamento di Data Collection. Per ulteriori informazioni, contatta il team del tuo account di Adobe.
 * L’inoltro degli eventi è abilitato nell’organizzazione Experience Cloud.
-* Autorizzazione utente per l’inoltro di eventi. (in entrata [Admin Console](https://adminconsole.adobe.com/), nel prodotto Adobe Experience Platform Launch, elementi di autorizzazione per[!UICONTROL Piattaforme] > [!UICONTROL Bordo] e tutti [!UICONTROL Diritti di proprietà]). Una volta concesso, dovresti vedere [!UICONTROL Inoltro eventi] nel menu di navigazione a sinistra dell’interfaccia di Data Collection:
+* Autorizzazione utente per l’inoltro di eventi. (In [Admin Console](https://adminconsole.adobe.com/), nel prodotto Adobe Experience Platform Launch, elementi di autorizzazione per [!UICONTROL Piattaforme] > [!UICONTROL Edge] e tutti [!UICONTROL Diritti proprietà]). Una volta concesso, dovresti visualizzare [!UICONTROL Inoltro eventi] nell&#39;area di navigazione a sinistra dell&#39;interfaccia di Data Collection:
   ![Proprietà inoltro eventi](assets/event-forwarding-menu.png)
 
 * Adobe Experience Platform Web SDK o Mobile SDK è configurato per inviare dati ad Edge Network. Devi aver completato le seguenti lezioni di questa esercitazione:
@@ -72,7 +72,7 @@ Alla fine di questa lezione, sarai in grado di:
 
 Per prima cosa, crea una proprietà di inoltro degli eventi:
 
-1. Apri [Interfaccia di Data Collection](https://experience.adobe.com/#/data-collection)
+1. Apri l&#39;interfaccia di [Data Collection](https://experience.adobe.com/#/data-collection)
 1. Seleziona **[!UICONTROL Inoltro eventi]** dal menu di navigazione a sinistra
 1. Seleziona **[!UICONTROL Nuova proprietà]**.
    ![Proprietà inoltro eventi](assets/event-forwarding-new.png)
@@ -80,7 +80,7 @@ Per prima cosa, crea una proprietà di inoltro degli eventi:
 1. Denomina la proprietà. In questo caso, `Server-Side - Web SDK Course`
 
 1. Seleziona **[!UICONTROL Salva]**.
-   ![salvataggio proprietà inoltro eventi](assets/event-forwarding-save.png)
+   ![salvataggio proprietà di inoltro eventi](assets/event-forwarding-save.png)
 
 ## Configurare lo stream di dati
 
@@ -88,41 +88,41 @@ Affinché l’inoltro degli eventi possa utilizzare i dati inviati all’Edge Ne
 
 Per configurare Target nello stream di dati:
 
-1. Vai a [Raccolta dati](https://experience.adobe.com/#/data-collection){target="blank"} Interfaccia
+1. Vai all&#39;interfaccia [Raccolta dati](https://experience.adobe.com/#/data-collection){target="blank"}
 1. Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Flussi di dati]**
-1. Seleziona il creato in precedenza `Luma Web SDK: Development Environment` flusso di dati
+1. Seleziona lo stream di dati `Luma Web SDK: Development Environment` creato in precedenza
 
-   ![Seleziona lo stream di dati dell’SDK web Luma](assets/datastream-luma-web-sdk-development.png)
+   ![Seleziona lo stream di dati di Luma Web SDK](assets/datastream-luma-web-sdk-development.png)
 
 1. Seleziona **[!UICONTROL Aggiungi servizio]**
-   ![Aggiungere un servizio allo stream di dati](assets/event-forwarding-datastream-addService.png)
+   ![Aggiungi un servizio allo stream di dati](assets/event-forwarding-datastream-addService.png)
 1. Seleziona **[!UICONTROL Inoltro eventi]** come **[!UICONTROL Servizio]**
 
-1. Sotto **[!UICONTROL ID proprietà]** , in questo caso seleziona il nome assegnato alla proprietà di inoltro degli eventi `Server-Side - Web SDK Course`
+1. Nel menu a discesa **[!UICONTROL ID proprietà]**, seleziona il nome assegnato alla proprietà di inoltro degli eventi, in questo caso `Server-Side - Web SDK Course`
 
-1. Sotto **[!UICONTROL ID ambiente]** a discesa, seleziona l’ambiente di tag a cui stai collegando l’ambiente di inoltro degli eventi, in questo caso `Development`
+1. Nel menu a discesa **[!UICONTROL ID ambiente]**, seleziona l&#39;ambiente di tag a cui stai collegando l&#39;ambiente di inoltro degli eventi, in questo caso `Development`
 
    >[!TIP]
    >
-   >    Per inviare i dati a un ambiente di inoltro degli eventi che si trova all’esterno dell’organizzazione Adobe, seleziona **[!UICONTROL Immetti manualmente gli ID]** e incolla un ID. L’ID viene fornito quando crei una proprietà di inoltro degli eventi.
+   >    Per inviare i dati a un ambiente di inoltro degli eventi che si trova all&#39;esterno dell&#39;organizzazione Adobe, selezionare **[!UICONTROL Immetti manualmente gli ID]** e incollali in un ID. L’ID viene fornito quando crei una proprietà di inoltro degli eventi.
 
 1. Seleziona **[!UICONTROL Salva]**.
 
-   ![Abilitazione dello stream di dati di inoltro degli eventi](assets/event-forwarding-datastream-enable.png)
+   ![Abilitazione Datastream Inoltro Eventi](assets/event-forwarding-datastream-enable.png)
 
 Ripeti questi passaggi per gli stream di dati di staging e produzione quando sei pronto per promuovere le modifiche tramite il flusso di pubblicazione.
 
 ## Inoltrare dati dall’Edge Network di Platform a una soluzione non di Adobe
 
-In questo esercizio imparerai a impostare un elemento dati per l’inoltro degli eventi, configurare una regola per l’inoltro degli eventi e convalidare utilizzando uno strumento di terze parti denominato [Webhook.site](https://webhook.site/).
+In questo esercizio imparerai a impostare un elemento dati per l&#39;inoltro degli eventi, configurare una regola per l&#39;inoltro degli eventi e convalidare utilizzando uno strumento di terze parti denominato [Webhook.site](https://webhook.site/).
 
 >[!NOTE]
 >
->Un webhook è un modo per integrare diversi sistemi in tempo semi-reale. [Webhook.site](https://webhook.site/) è uno strumento di terze parti che consente di verificare, testare e automatizzare facilmente (con il generatore di azioni personalizzate visive o WebhookScript) eventuali richieste HTTP o e-mail in arrivo.
+>Un webhook è un modo per integrare diversi sistemi in tempo semi-reale. [Webhook.site](https://webhook.site/) è uno strumento di terze parti che consente di verificare, testare e automatizzare facilmente (con il generatore di azioni personalizzate visive o WebhookScript) eventuali richieste HTTP o messaggi di posta elettronica in arrivo.
 
 >[!IMPORTANT]
 >
->Per procedere ulteriormente, devi aver già creato e mappato elementi dati su un oggetto XDM, nonché configurato regole di tag e creato tali modifiche all’interno di una libreria in un ambiente di tag. In caso contrario, fare riferimento al **Configurazione tag** passaggi in [prerequisiti](setup-event-forwarding.md#prerequisites) sezione. Questi passaggi assicurano che i dati vengano inviati alla rete Edge di Platform e da lì puoi configurare una proprietà di inoltro degli eventi per inoltrare i dati a una soluzione non Adobe.
+>Per procedere ulteriormente, devi aver già creato e mappato elementi dati su un oggetto XDM, nonché configurato regole di tag e creato tali modifiche all’interno di una libreria in un ambiente di tag. In caso contrario, consulta i passaggi **Configurazione tag** nella sezione [prerequisiti](setup-event-forwarding.md#prerequisites). Questi passaggi assicurano che i dati vengano inviati all’Edge Network di Platform e da lì puoi configurare una proprietà di inoltro degli eventi per inoltrare i dati a una soluzione non Adobe.
 
 
 ### Creare un elemento dati per l’inoltro degli eventi
@@ -131,35 +131,35 @@ L’oggetto XDM configurato in precedenza utilizzando l’estensione tag Platfor
 
 >[!IMPORTANT]
 >
->Esiste una differenza di sintassi chiave quando si fa riferimento a campi XDM nell’inoltro degli eventi rispetto ad altri contesti. Per fare riferimento ai dati in una proprietà di inoltro degli eventi, il percorso dell&#39;elemento dati deve includere `arc.event` prefisso:
+>Esiste una differenza di sintassi chiave quando si fa riferimento a campi XDM nell’inoltro degli eventi rispetto ad altri contesti. Per fare riferimento ai dati in una proprietà di inoltro degli eventi, il percorso dell&#39;elemento dati deve includere il prefisso `arc.event`:
 >
 > * `arc` sta per Adobe Response Context (Contesto di risposta Adobe).
 > * Ad esempio: `arc.event.xdm.web.webPageDetails.URL`
 >
 >Se il percorso specificato non è corretto, i dati non vengono raccolti.
 
-In questo esercizio, inoltrerai l’altezza del riquadro di visualizzazione del browser e l’ID Experience Cloud dall’oggetto XDM a un webhook. Il percorso del campo XDM è determinato dallo schema XDM creato durante il [Configurare uno schema XDM](configure-schemas.md) lezione.
+In questo esercizio, inoltrerai l’altezza del riquadro di visualizzazione del browser e l’ID Experience Cloud dall’oggetto XDM a un webhook. Il percorso del campo XDM è determinato dallo schema XDM creato durante la lezione [Configurare uno schema XDM](configure-schemas.md).
 
 >[!TIP]
 >
->Puoi anche trovare il percorso dell’oggetto XDM utilizzando gli strumenti di rete del browser web, filtrando per `/ee` richieste, apertura del beacon [!UICONTROL **Payload**] ed eseguire il drilling verso il basso fino alla variabile desiderata. Quindi fare clic con il pulsante destro del mouse e selezionare &quot;Copia percorso proprietà&quot;. Di seguito è riportato un esempio per l’altezza del riquadro di visualizzazione del browser:
+>Puoi anche trovare il percorso dell&#39;oggetto XDM utilizzando gli strumenti di rete del browser Web, filtrando per `/ee` richieste, aprendo il beacon [!UICONTROL **Payload**] ed eseguendo il drilling verso il basso alla variabile cercata. Quindi fare clic con il pulsante destro del mouse e selezionare &quot;Copia percorso proprietà&quot;. Di seguito è riportato un esempio per l’altezza del riquadro di visualizzazione del browser:
 > ![Percorso XDM per inoltro eventi](assets/event-forwarding-xdm-path.png)
 
-1. Vai a **[!UICONTROL Inoltro eventi]** proprietà creata di recente
+1. Vai alla proprietà **[!UICONTROL Inoltro eventi]** creata di recente
 
 1. Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Elementi dati]**
 
-1. Seleziona per **[!UICONTROL Creare un nuovo elemento dati]**
+1. Seleziona per **[!UICONTROL creare un nuovo elemento dati]**
 
-   ![Inoltro eventi - Nuovo elemento dati](assets/event-forwarding-new-dataelement.png)
+   ![Inoltro eventi nuovo elemento dati](assets/event-forwarding-new-dataelement.png)
 
-1. **[!UICONTROL Nome]** l’elemento dati `environment.browserDetails.viewportHeight`
+1. **[!UICONTROL Denomina]** l&#39;elemento dati `environment.browserDetails.viewportHeight`
 
-1. Sotto **[!UICONTROL Estensione]**, congedo `CORE`
+1. In **[!UICONTROL Estensione]**, lascia `CORE`
 
-1. Sotto **[!UICONTROL Tipo di elemento dati]**, seleziona `Path`
+1. In **[!UICONTROL Tipo elemento dati]**, selezionare `Path`
 
-1. Digitare il percorso dell&#39;oggetto XDM contenente l&#39;altezza del riquadro di visualizzazione del browser `arc.event.xdm.environment.browserDetails.viewportHeight`
+1. Digitare il percorso dell&#39;oggetto XDM che contiene l&#39;altezza del riquadro di visualizzazione del browser `arc.event.xdm.environment.browserDetails.viewportHeight`
 
 1. Seleziona **[!UICONTROL Salva]**
 
@@ -168,11 +168,11 @@ In questo esercizio, inoltrerai l’altezza del riquadro di visualizzazione del 
 
 1. Creare un altro elemento dati
 
-1. **[!UICONTROL Nome]** it `ecid`
+1. **[!UICONTROL Nome]** `ecid`
 
-1. Sotto **[!UICONTROL Estensione]**, congedo `CORE`
+1. In **[!UICONTROL Estensione]**, lascia `CORE`
 
-1. Sotto **[!UICONTROL Tipo di elemento dati]**, seleziona `Path`
+1. In **[!UICONTROL Tipo elemento dati]**, selezionare `Path`
 
 1. Digitare il percorso dell&#39;oggetto XDM che contiene l&#39;ID Experience Cloud `arc.event.xdm.identityMap.ECID.0.id`
 
@@ -182,23 +182,23 @@ In questo esercizio, inoltrerai l’altezza del riquadro di visualizzazione del 
 
    >[!CAUTION]
    >
-   > Assicurati di includere `arc.event.` nel percorso. Inoltre, accertati di seguire la stessa maiuscola del nome del campo Oggetto XDM: lo spazio dei nomi ECID deve essere in maiuscolo.
+   > Assicurarsi di includere il prefisso `arc.event.` nel percorso. Inoltre, accertati di seguire la stessa maiuscola del nome del campo Oggetto XDM: lo spazio dei nomi ECID deve essere in maiuscolo.
 
 
    >[!TIP]
    >
-   >Quando lavori con il tuo sito web, puoi trovare il percorso dell’oggetto XDM con gli strumenti di rete del browser web, filtrando per `/ee` richieste, apertura del beacon [!UICONTROL **Payload**] ed eseguire il drilling verso il basso fino alla variabile desiderata. Quindi fare clic con il pulsante destro del mouse e selezionare &quot;Copia percorso proprietà&quot;. Di seguito è riportato un esempio per l’altezza del riquadro di visualizzazione del browser:
+   >Quando lavori con il tuo sito web, puoi trovare il percorso dell&#39;oggetto XDM con gli strumenti di rete del browser web, filtrare `/ee` richieste, aprire il beacon [!UICONTROL **Payload**] ed espandere la variabile che stai cercando. Quindi fare clic con il pulsante destro del mouse e selezionare &quot;Copia percorso proprietà&quot;. Di seguito è riportato un esempio per l’altezza del riquadro di visualizzazione del browser:
    > ![Percorso XDM per inoltro eventi](assets/event-forwarding-xdm-path.png)
 
 ### Installare l’estensione Adobe Cloud Connector
 
-Per inviare dati a percorsi di terze parti, installi prima il [!UICONTROL Connettore cloud Adobe] estensione.
+Per inviare dati a percorsi di terze parti, installi prima l&#39;estensione [!UICONTROL Adobe Cloud Connector].
 
 1. Seleziona **[!UICONTROL Estensioni]** nel menu di navigazione a sinistra
 
-1. Seleziona la **[!UICONTROL Catalogo]** scheda
+1. Seleziona la scheda **[!UICONTROL Catalogo]**
 
-1. Cerca **[!UICONTROL Connettore cloud Adobe]**, seleziona **[!UICONTROL Installa]**
+1. Cerca il **[!UICONTROL connettore cloud Adobe]**, seleziona **[!UICONTROL Installa]**
 
    ![Percorso ECID di inoltro eventi](assets/event-forwarding-adobe-cloud-connector.png)
 
@@ -208,16 +208,16 @@ Non è necessaria alcuna configurazione di estensione. Con questa estensione, or
 
 Esistono alcune differenze principali tra la configurazione delle regole in una proprietà tag e una regola in una proprietà di inoltro eventi:
 
-* **[!UICONTROL Eventi] E [!UICONTROL Condizioni]**:
+* **[!UICONTROL Eventi] e [!UICONTROL Condizioni]**:
 
-   * **Tag**: tutte le regole vengono attivate da un evento che deve essere specificato nella regola, ad esempio, `Library Loaded - Page Top`. Le condizioni sono facoltative.
-   * **Inoltro eventi**: si presume che ogni evento inviato all’Edge Network di Platform sia un trigger per l’inoltro di dati. Pertanto, non vi sono [!UICONTROL Eventi] che deve essere selezionato nelle regole di inoltro degli eventi. Per gestire gli eventi che attivano una regola di inoltro degli eventi, è necessario configurare le condizioni.
+   * **Tag**: tutte le regole vengono attivate da un evento che deve essere specificato nella regola, ad esempio `Library Loaded - Page Top`. Le condizioni sono facoltative.
+   * **Inoltro eventi**: si presume che ogni evento inviato all&#39;Edge Network di Platform sia un trigger per l&#39;inoltro di dati. Non ci sono quindi [!UICONTROL Eventi] da selezionare nelle regole di inoltro degli eventi. Per gestire gli eventi che attivano una regola di inoltro degli eventi, è necessario configurare le condizioni.
 
-* **Tokenizzazione degli elementi dati**:
+* **Tokenizzazione elemento dati**:
 
-   * **Tag**: i nomi degli elementi dati sono tokenizzati con un simbolo `%` all&#39;inizio e alla fine del nome dell&#39;elemento dati quando viene utilizzato in una regola. Ad esempio, `%viewportHeight%`.
+   * **Tag**: i nomi degli elementi dati sono tokenizzati con un simbolo `%` all&#39;inizio e alla fine del nome quando vengono utilizzati in una regola. Ad esempio, `%viewportHeight%`.
 
-   * **Inoltro eventi**: i nomi degli elementi dati sono tokenizzati con `{{` all&#39;inizio e `}}` alla fine del nome dell’elemento dati quando viene utilizzato in una regola. Ad esempio, `{{viewportHeight}}`.
+   * **Inoltro eventi**: i nomi degli elementi dati sono tokenizzati con `{{` all&#39;inizio e `}}` alla fine del nome quando vengono utilizzati in una regola. Ad esempio, `{{viewportHeight}}`.
 
 * **Sequenza di azioni della regola**:
 
@@ -232,7 +232,7 @@ Per configurare una regola per l’inoltro di dati al webhook, devi prima ottene
 
 1. Vai a [Webhook.site](https://webhook.site)
 
-1. Trova **L’URL univoco**, utilizzalo come richiesta URL nella regola di inoltro degli eventi
+1. Trova **l&#39;URL univoco**, utilizzalo come richiesta URL nella regola di inoltro degli eventi
 
 1. Seleziona **[!UICONTROL Copia negli Appunti]**
 
@@ -240,41 +240,41 @@ Per configurare una regola per l’inoltro di dati al webhook, devi prima ottene
 
    ![Copia URL webhook](assets/event-forwarding-webhook.png)
 
-1. Torna indietro **[!UICONTROL Raccolta dati]** > **[!UICONTROL Inoltro eventi]** > **[!UICONTROL Regole]** dal menu di navigazione a sinistra
+1. Torna indietro **[!UICONTROL Raccolta dati]** > **[!UICONTROL Inoltro eventi]** > **[!UICONTROL Regole]** dalla navigazione a sinistra
 
 1. Seleziona **[!UICONTROL Crea nuova regola]**
 
    ![Inoltro eventi: nuova regola](assets/event-forwarding-new-rules.png)
 
-1. Assegna un nome `all events - ad cloud connector - webhook`
+1. Denomina `all events - ad cloud connector - webhook`
 
 1. Aggiungi un&#39;azione
 
-1. Sotto **[!UICONTROL Estensione]**, seleziona **[!UICONTROL Connettore cloud Adobe]**
+1. In **[!UICONTROL Estensione]**, seleziona **[!UICONTROL Connettore cloud Adobe]**
 
-1. Sotto **[!UICONTROL Tipo di azione]**, seleziona **[!UICONTROL Effettua chiamata di recupero]**
+1. In **[!UICONTROL Tipo azione]**, seleziona **[!UICONTROL Esegui chiamata di recupero]**
 
-1. Incolla l’URL del webhook in **[!UICONTROL URL]** campo
+1. Incolla l&#39;URL del webhook nel campo **[!UICONTROL URL]**
 
    ![Copia URL webhook](assets/event-forwarding-rule.png)
 
-1. Sotto **[Parametri query]**, verranno aggiunti entrambi gli elementi dati creati in precedenza.
+1. In **[Parametri query]** verranno aggiunti entrambi gli elementi dati creati in precedenza.
 
-1. Il giorno **[!UICONTROL Chiave]** tipo di colonna in `viewPortHeight`. Il giorno **[!UICONTROL Valore]** , immetti il `{{environment.browserDetails.viewportHeight}}` elemento dati digitandolo o selezionandolo dall&#39;icona del selettore dell&#39;elemento dati
+1. Nella **[!UICONTROL Chiave]** tipo di colonna in `viewPortHeight`. Nella colonna **[!UICONTROL Valore]** immettere l&#39;elemento dati `{{environment.browserDetails.viewportHeight}}` digitandolo o selezionandolo dall&#39;icona del selettore dell&#39;elemento dati
 
 1. Seleziona [!UICONTROL **+ Aggiungi altro**] per aggiungere un altro parametro di query
 
-1. Il giorno **[!UICONTROL Chiave]** tipo di colonna in `ecid`. Nella colonna Valore immettere il valore `{{ecid}}` elemento dati
+1. Nella **[!UICONTROL Chiave]** tipo di colonna in `ecid`. Nella colonna Valore immettere l&#39;elemento dati `{{ecid}}`
 
 1. Seleziona **[!UICONTROL Mantieni modifiche]**
 
-   ![Aggiungi parametro di query](assets/event-forwarding-rule-query-parameter.png)
+   ![Aggiungi parametro query](assets/event-forwarding-rule-query-parameter.png)
 
 1. La regola dovrebbe essere simile a quella riportata di seguito
 
 1. Seleziona **[!UICONTROL Salva]**
 
-   ![Salva regola di inoltro degli eventi](assets/event-forwarding-rule-save.png)
+   ![Salva regola di inoltro eventi](assets/event-forwarding-rule-save.png)
 
 ### Creare e generare la libreria
 
@@ -284,17 +284,17 @@ Crea una libreria e crea tutte le modifiche nell’ambiente di sviluppo per l’
 >
 >Se non hai collegato le proprietà di inoltro degli eventi di staging e produzione allo stream di dati, vedrai l’ambiente di sviluppo come unica opzione per generare una libreria in.
 
-![Salva regola di inoltro degli eventi](assets/event-forwarding-initial-build.png)
+![Salva regola di inoltro eventi](assets/event-forwarding-initial-build.png)
 
 ## Convalida regola di inoltro eventi
 
 Ora puoi convalidare la proprietà di inoltro degli eventi utilizzando Platform Debugger e Webhook.site:
 
-1. Segui i passaggi per [cambiare la libreria di tag](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) il [Sito dimostrativo Luma](https://luma.enablementadobe.com/content/luma/us/en/men.html) alla proprietà tag dell’SDK web a cui è stata mappata la proprietà di inoltro degli eventi nello stream di dati.
+1. Segui i passaggi per [cambiare la libreria di tag](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) sul [sito dimostrativo Luma](https://luma.enablementadobe.com/content/luma/us/en/men.html) nella proprietà tag dell&#39;SDK Web a cui hai mappato la proprietà di inoltro eventi nello stream di dati.
 
-1. Prima di ricaricare la pagina, apri Experienci Platform Debugger **[!UICONTROL Registri]** dal menu di navigazione a sinistra
+1. Prima di ricaricare la pagina, nel Debugger di Experience Platform apri **[!UICONTROL Registri]** dalla navigazione a sinistra
 
-1. Seleziona la **[!UICONTROL Bordo]** , quindi seleziona **[!UICONTROL Connetti]** per visualizzare le richieste di Edge Network di Platform
+1. Seleziona la scheda **[!UICONTROL Edge]**, quindi seleziona **[!UICONTROL Connetti]** per visualizzare le richieste di Edge Network della piattaforma
 
    ![Sessione rete Edge di inoltro eventi](assets/event-forwarding-edge-session.png)
 
@@ -309,15 +309,15 @@ Ora puoi convalidare la proprietà di inoltro degli eventi utilizzando Platform 
 
 1. Osserva i parametri viewPortHeight e della stringa di query ecid
 
-   ![Inoltro eventi: convalida stringhe di query](assets/event-forwarding-validate-data.png)
+   ![L&#39;inoltro degli eventi convalida le stringhe di query](assets/event-forwarding-validate-data.png)
 
 1. Corrispondono ai dati visualizzati nell’oggetto XDM
 
-   ![Dati corrispondenti per l’inoltro degli eventi](assets/event-forwarding-matching-data.png)
+   ![Dati corrispondenti all&#39;inoltro eventi](assets/event-forwarding-matching-data.png)
 
-1. Infine, convalida le corrispondenze dei dati in [Webhook.site](https://webhook.site) nonché visualizzando la finestra del webhook aperta
+1. Infine, convalida le corrispondenze dei dati in [Webhook.site](https://webhook.site) visualizzando la finestra del webhook aperta
 
-   ![Dati del sito del webhook di inoltro eventi](assets/event-forwarding-webhook-data.png)
+   ![Dati del sito Web del webhook di inoltro eventi](assets/event-forwarding-webhook-data.png)
 
 Congratulazioni! Hai configurato l’inoltro degli eventi.
 
@@ -325,4 +325,4 @@ Congratulazioni! Hai configurato l’inoltro degli eventi.
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [Experience League post di discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

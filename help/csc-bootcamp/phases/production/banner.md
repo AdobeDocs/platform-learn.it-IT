@@ -1,166 +1,167 @@
 ---
-title: CSC Bootcamp - Creare il banner home page del prodotto
-description: CSC Bootcamp - Creare il banner home page del prodotto
+title: CSC Bootcamp - Crea banner della home page del prodotto
+description: CSC Bootcamp - Crea banner della home page del prodotto
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: c78b6ba2-1a1a-4e95-a8ab-1b572fa2d8b1
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1148'
 ht-degree: 0%
 
 ---
 
-# Creare il banner della homepage del prodotto
+# Banner per creare la home page del prodotto
 
 ## Produzione del banner
 
-L’automazione dei contenuti porta la potenza di Adobe Creative Cloud a Experience Manager Assets, offrendo agli addetti al marketing la possibilità di automatizzare la produzione delle risorse su larga scala, velocizzando notevolmente la creazione delle varianti. Usiamo queste funzionalità per generare un banner da utilizzare sulla homepage!
+L’automazione dei contenuti porta la potenza di Adobe Creative Cloud a Experience Manager Assets, consentendo agli addetti al marketing di automatizzare la produzione delle risorse su larga scala, velocizzando notevolmente la creazione di varianti. Usiamo queste funzionalità per generare un banner da utilizzare nella home page.
 
-- Vai all&#39;autore AEM su [https://author-p105462-e991028.adobeaemcloud.com/](https://author-p105462-e991028.adobeaemcloud.com/) e accedi con le credenziali fornite.
+- Vai all&#39;autore AEM su [https://author-p105462-e991028.adobeaemcloud.com/](https://author-p105462-e991028.adobeaemcloud.com/) e accedi con le credenziali che abbiamo fornito.
 
-- Dalla home page, passa a Strumenti \> Risorse \> Profili elaborazione.
+- Dalla home page, passa a Strumenti \> Assets \> Profili di elaborazione.
 
-![Strumenti > Risorse > Profili di elaborazione](./images/prod-processing-profiles.png)
+![Strumenti > Assets > Profili elaborazione](./images/prod-processing-profiles.png)
 
-- Nell’interfaccia di vengono visualizzati tutti i profili di elaborazione esistenti. Questi possono essere utilizzati per abilitare determinate automazioni.
+- Nell’interfaccia vengono visualizzati tutti i profili di elaborazione esistenti. Questi possono essere utilizzati fino a per abilitare determinate automazioni.
 
 ![elenco dei profili di elaborazione](./images/prod-profile-list.png)
 
 
-- I seguenti sono di tuo interesse:
-   - Banner Adobe scuro: crea un banner Adobe con sovrapposizione scura, in base alla risorsa selezionata
-      ![banner scuro](./images/prod-banner-dark.jpg)
-   - Luce banner Adobe: crea un banner Adobe con una sovrapposizione leggera, in base alla risorsa selezionata
-      ![banner luminoso](./images/prod-banner-light.jpg)
-   - Verde banner Adobe: crea un banner Adobe con una sovrapposizione verde, in base alla risorsa selezionata
-      ![banner verde](./images/prod-banner-green.jpg)
+- Di seguito sono elencate le opzioni più interessanti:
+   - Adobike Banner Dark: crea un banner Adobike con una sovrapposizione scura, basato sulla risorsa selezionata
+     ![banner scuro](./images/prod-banner-dark.jpg)
+   - Adobike Banner Light: crea un banner Adobike con una sovrapposizione leggera, in base alla risorsa selezionata
+     ![banner chiaro](./images/prod-banner-light.jpg)
+   - Adobike Banner Green: crea un banner Adobike con una sovrapposizione verde, in base alla risorsa selezionata
+     ![banner verde](./images/prod-banner-green.jpg)
 
-- Dopo aver scelto il tipo di banner che si desidera creare, selezionare il profilo di elaborazione, quindi selezionare &quot;Applica profilo alle cartelle&quot;.
+- Dopo aver scelto il tipo di banner da creare, seleziona il profilo di elaborazione, quindi seleziona &quot;Applica profilo a cartelle&quot;.
 
 ![applica profilo alla cartella](./images/prod-apply-profile.png)
 
-- Nella schermata successiva, individua la cartella del team in AEM Assets. Quindi, dall&#39;alto a sinistra, seleziona il pulsante &quot;Crea&quot; per creare una nuova cartella e assegnargli un nome significativo, ad esempio &quot;Crea banner scuro&quot;.
+- Nella schermata successiva, individua la cartella del team in AEM Assets. Quindi, dalla parte superiore sinistra, seleziona il pulsante &quot;Crea&quot; per creare una nuova cartella e assegnargli un nome significativo, ad esempio &quot;Crea banner scuro&quot;.
 
 ![crea cartella](./images/prod-create-profile-folder.png)
 
-![creare i dettagli della cartella](./images/prod-profile-folder-details.png)
+![crea dettagli cartella](./images/prod-profile-folder-details.png)
 
-- Dopo aver creato la cartella, selezionare la casella accanto al suo nome, quindi fare clic sul pulsante &quot;Applica&quot; in alto a destra.
+- Dopo aver creato la cartella, seleziona la casella accanto al nome, quindi fai clic sul pulsante &quot;Applica&quot; a destra in alto.
 
 ![applica alla cartella creata](./images/prod-select-profile-folder.png)
 
 Ora che abbiamo fatto la configurazione necessaria, generiamo il nostro banner.
 
-- Fai clic sul Logo AEM nell’angolo in alto a sinistra per aprire la navigazione, quindi vai a Navigazione \> Risorse \> File.
+- Fai clic sul Logo AEM nell’angolo in alto a sinistra per aprire la navigazione, quindi passa a Navigazione \> Assets \> File.
 
-![home screen di aem](./images/prod-select-assets.png)
+![schermata iniziale di aem](./images/prod-select-assets.png)
 ![schermata risorse aem](./images/prod-select-assets-2.png)
 
-- Individua la cartella &quot;Risorse Adobe generate&quot; e aprila facendo clic sulla scheda . Qui vengono visualizzati i banner generati.
+- Individua la cartella &quot;Generated Adobike Assets&quot; e aprila facendo clic sulla scheda. Qui verranno visualizzati i banner generati.
 
 ![risorse adobike generate](./images/prod-generated-banners.png)
 
-- Apri una nuova scheda e passa di nuovo a AEM Assets. Quindi, accedi alla cartella a cui è stato applicato il profilo di elaborazione.
+- Apri una nuova scheda e passa di nuovo ad AEM Assets. Quindi, passa alla cartella in cui è stato applicato il profilo di elaborazione.
 
-- Nella cartella , carica l’immagine per la quale vuoi creare un banner trascinandola e rilasciandola sul browser oppure facendo clic su Crea file nell’angolo in alto a destra dell’interfaccia.
+- Nella cartella, carica l’immagine per la quale vuoi creare un banner trascinandola e rilasciandola sul browser o facendo clic su Crea \> File nell’angolo in alto a destra dell’interfaccia.
 
-![caricare tramite trascinamento n rilascio](./images/prod-drag-drop-banner.png)
+![caricamento tramite trascinamento della selezione](./images/prod-drag-drop-banner.png)
 
-![caricare utilizzando crea file](./images/prod-create-file.png)
+![carica tramite crea file](./images/prod-create-file.png)
 
 
-- Attendi un minuto per l’elaborazione della risorsa, quindi ricarica lo schermo. Se trovi la risorsa nello stato &quot;Nuovo&quot;, sai che è stata elaborata.
+- Attendi un minuto per l’elaborazione della risorsa, quindi ricarica lo schermo. Se la risorsa è nello stato &quot;Nuovo&quot;, l’elaborazione è completata.
 
-![risorsa in nuovo stato](./images/prod-asset-processed.png)
+![risorsa nel nuovo stato](./images/prod-asset-processed.png)
 
-- Torna alla scheda precedente e ricarica la schermata anche qui. Dovresti notare una nuova risorsa nello stato &quot;Nuovo&quot;. Questo è il nostro banner generato, tutto dal DAM! Non la vedi ancora? Attendi un altro minuto, quindi ricarica lo schermo.
+- Torna alla scheda precedente e ricarica la schermata qui. Dovresti notare una nuova risorsa che si trova nello stato &quot;Nuovo&quot;. Questo è il nostro banner generato, tutto dal DAM! Non lo vedi ancora? Attendi un altro minuto, quindi ricarica lo schermo.
 
 ![banner generato](./images/prod-new-banner.png)
 
 >[!NOTE]
 >
-> Non sei soddisfatto del risultato? Puoi applicare un altro profilo di elaborazione alla cartella e ricaricare la risorsa per generare un banner diverso (o ovviamente caricare un’altra risorsa). Durante il ricaricamento, il sistema ti chiederà cosa vuoi fare con la risorsa esistente, seleziona &quot;Sostituisci&quot;.
+> Non sei soddisfatto del risultato? Puoi applicare un altro profilo di elaborazione alla cartella e ricaricare la risorsa per generare un banner diverso (o ovviamente caricare un’altra risorsa). Durante il ricaricamento, il sistema ti chiederà cosa vuoi fare con la risorsa esistente e seleziona &quot;Sostituisci&quot;.
 > ![sostituisci esistente](./images/prod-replace-asset.png)
 
-Ora disponiamo del banner generato che possiamo utilizzare in seguito durante la distribuzione della campagna. Assicurati di pubblicare il banner selezionandolo, quindi cliccando sul pulsante &quot;Pubblicazione rapida&quot; sulla barra multifunzione.
+Ora abbiamo il banner generato che possiamo utilizzare in un secondo momento durante la consegna della nostra campagna. Assicurarsi di pubblicare il banner selezionandolo, quindi facendo clic sul pulsante &quot;Publish rapido&quot; sulla barra multifunzione.
 
-![pubblicare risorsa](./images/prod-publish-banner.png)
+![pubblica risorsa](./images/prod-publish-banner.png)
 
 ## Follow-up in Workfront
 
-Se hai bisogno di un processo formale e verificabile di revisione e approvazione delle tue risorse, Workfront è il posto giusto per essere.
+Se hai bisogno di un processo di revisione e approvazione formale e verificabile del tuo Assets, Workfront è il posto giusto.
 
 >[!NOTE]
 >
-> Anche se lo menzioniamo esplicitamente qui, è l&#39;intenzione di aggiornare le attività in Workfront dopo averle completate. Devi sempre cercare un flusso Crea > Rivedi > Approva .
+> Anche se qui viene menzionato esplicitamente, si tratta dell’intenzione di aggiornare le attività in Workfront dopo averle completate. Devi sempre cercare un flusso Crea > Revisione > Approva.
 
-- Torniamo al nostro progetto ed espandiamo il pannello &#39;Go/No Go Banner Review&#39; per aprire l&#39;attività facendo clic su di esso:
+- Torniamo al nostro progetto ed espandiamo il pannello a soffietto &#39;Go/No Go Banner Review&#39; per aprire tale attività facendo clic su di essa:
 
-![banner go/no-go](./images/banner-gonogo.png)
+![banner vai/non vai](./images/banner-gonogo.png)
 
-- Fai clic sulla sezione documenti dell&#39;attività (colonna a sinistra), quindi fai clic sulla cartella collegata AEM Assets &quot;Finale&quot;. Seleziona la risorsa facendo clic sulla relativa zona e fai clic su &quot;Crea bozza&quot;. Una prova è la capacità di controllare il contenuto, ad esempio immagine, testo, video, sito web, ecc., in modo strutturato e collaborativo, dove vengono raccolti commenti, correzioni, modifiche dei soggetti interessati, versioni e risultati possono essere confrontati e approvati definitivamente con un solo clic.
+- Fai clic sulla sezione documenti dell’attività (colonna a sinistra), quindi fai clic sulla cartella collegata AEM Assets &quot;Final&quot;. Seleziona la nostra risorsa facendo clic sulla sua zona e fai clic su &quot;Crea bozza&quot;. Una bozza è la capacità di correggere in modo strutturato e collaborativo i contenuti, ad esempio immagini, testo, video, siti web ecc., in cui si raccolgono i commenti, le correzioni, le modifiche delle parti interessate coinvolte, si possono confrontare le versioni e i risultati e si può procedere all’approvazione finale con un solo clic.
 
 ![crea bozza](./images/wf-create-proof.png)
 
-- Poiché vogliamo un processo di approvazione elaborato, seleziona &quot;Proof avanzato&quot;.
+- Poiché si desidera un processo di approvazione elaborato, selezionare &quot;Advanced Proof&quot; (Bozza avanzata).
 
-![prova avanzata](./images/wf-advanced-proof.png)
+![bozza avanzata](./images/wf-advanced-proof.png)
 
 >[!NOTE]
 >
-> Decideremo manualmente chi esaminerà e/o approverà le nostre prove in questo bootcamp. Nella maggior parte dei casi d’uso reali, utilizzeremmo un modello predefinito di flusso di approvazione già definito per ciascun tipo di prova.
+> Decideremo manualmente chi rivedrà e/o approverà la bozza in questo campo di avvio. Nella maggior parte dei casi d’uso reali, utilizzeremmo un modello predefinito di flussi di approvazione già definiti per ogni tipo di bozza.
 
-- Per impostazione predefinita, siamo in un tipo di flusso di lavoro &quot;base&quot; e sceglieremo il tuo Workfront Bootcamp Specialist come revisore e approvatore. Digita il nome del tuo Specialist Workfront Bootcamp dove c&#39;è scritto &#39;Digita il nome del contatto o l&#39;indirizzo e-mail per aggiungere un destinatario:
+- Per impostazione predefinita, il flusso di lavoro è di tipo &quot;base&quot; e sceglieremo il tuo specialista di bootcamp Workfront come revisore e approvatore. Digitare il nome dello specialista di Workfront Bootcamp in cui è indicato &#39;Digitare il nome del contatto o l&#39;indirizzo di posta elettronica per aggiungere un destinatario:
 
-![assegnare una bozza](./images/wf-proof-assign.png)
+![assegna bozza](./images/wf-proof-assign.png)
 
-![assegnare una bozza](./images/wf-assign-proof-2.png)
+![assegna bozza](./images/wf-assign-proof-2.png)
 
-- Imposta come &#39;Revisore e approvatore&#39;:
+- Impostale come &quot;Revisore e Approvatore&quot;:
 
 ![revisore e approvatore](./images/wf-review-approve.png)
 
-- Fai clic su &quot;Crea prova&quot;. Workfront impiegherà alcuni minuti per generare la bozza:
+- Fai clic su &quot;Crea bozza&quot;. La generazione della bozza in Workfront richiede alcuni minuti:
 
-![prova generatrice](./images/wf-generating-proof.png)
+![generazione della bozza](./images/wf-generating-proof.png)
 
-- I Workfront Specialist avranno ricevuto una nuova notifica per informarli di disporre di una prova per la revisione e/o l&#39;approvazione:
+- Ora i Workfront Specialist Dealer ricevono una nuova notifica con la quale si informano della disponibilità di una bozza da rivedere e/o approvare:
 
-![compito anteriore](./images/wf-proof-task.png)
+![attività Workfront](./images/wf-proof-task.png)
 
-- Dopo aver fatto clic sulla notifica, verranno mostrate le tue prove e saranno in grado di commentare e/o approvare questa bozza.
+- Dopo aver fatto clic sulla notifica, l’utente verrà inserito nella bozza e potrà inserire alcuni commenti e/o approvare la bozza.
 
-   - Possono fare clic su &quot;Aggiungi commento&quot; nella parte superiore dello schermo se hanno osservazioni:
+   - Se hanno delle osservazioni, possono fare clic su &quot;Aggiungi commento&quot; nella parte superiore dello schermo:
 
-   ![Aggiungi commento](./images/wf-proof-add-comment.png)
+  ![Aggiungi commento](./images/wf-proof-add-comment.png)
 
-   - Potranno quindi non solo aggiungere commenti, ma anche utilizzare la piccola barra degli strumenti puntatori per definire chiaramente quale area deve essere modificata.
+   - Potranno quindi non solo aggiungere commenti, ma anche utilizzare la piccola barra degli strumenti dei puntatori per definire chiaramente quale area deve essere modificata.
 
-   ![Commento punto](./images/wf-proof-comment.png)
+  ![Aggiungi commento](./images/wf-proof-comment.png)
 
-   - Aggiungendo il commento, è possibile comunicare che è necessario eseguire un ulteriore lavoro su una nuova versione della bozza. Aggiorna la scheda Workfront e avrai una nuova notifica che ti informa esattamente di questo. Una volta che sai quali modifiche devi apportare, apporta le modifiche in AEM e quindi vieni a caricare la nuova versione qui:
+   - Aggiungendo il commento, si può sapere che è necessario fare qualche lavoro extra su una nuova versione della bozza. Aggiorna la scheda Workfront e riceverai una nuova notifica che ti informa esattamente di questo. Una volta comprese le modifiche da apportare, effettuate le modifiche in AEM e caricate la nuova versione qui:
 
-   ![carica nuova versione](./images/wf-upload-version.png)
+  ![carica nuova versione](./images/wf-upload-version.png)
 
-   - Seleziona la risorsa aggiornata (se non sono necessarie modifiche nello scenario di bootcamp, carica di nuovo la stessa risorsa) e fai clic su &quot;Collega&quot;:
+   - Seleziona la risorsa aggiornata (se non sono necessarie modifiche nello scenario di bootcamp, carica nuovamente la stessa risorsa) e fai clic su &quot;Collegamento&quot;:
 
-   ![risorsa di collegamento](./images/wf-link-new-asset.png)
+  ![collega risorsa](./images/wf-link-new-asset.png)
 
    - Quindi, fai clic su &quot;crea bozza&quot; sul lato destro.
 
-   ![crea bozza](./images/create-new-proof.png)
+  ![crea bozza](./images/create-new-proof.png)
 
-   - Una volta generata la prova (che può richiedere alcuni minuti), il tuo Workfront Specialist riceverà una notifica e sarà in grado di rivedere e, si spera, approvare questa nuova versione.  Ad esempio, utilizzando il pulsante di confronto delle prove, è possibile vedere un confronto affiancato tra V1 e V2 e tutti i commenti effettuati.
+   - Una volta generata la bozza (l&#39;operazione può richiedere alcuni minuti), il tuo Workfront Specialist riceverà una notifica e potrà rivedere e, si spera, approvare questa nuova versione.  Ad esempio, utilizzando il pulsante per il confronto delle bozze, è possibile visualizzare un confronto affiancato di V1 e V2 con tutti i commenti inseriti.
 
-   ![confronto delle prove](./images/wf-proof-compare.png)
+  ![confronto bozze](./images/wf-proof-compare.png)
 
-   ![decidere](./images/make-decision-proof.png)
+  ![prendere una decisione](./images/make-decision-proof.png)
 
-   ![approvato](./images/approved.png)
+  ![approvato](./images/approved.png)
 
-Ora abbiamo un&#39;approvazione formale per l&#39;uso del nostro banner. È facile seguire dove siamo nel processo, e gli aggiornamenti che si fanno attivare automaticamente le notifiche, in modo da poter lavorare nel modo più efficiente possibile.
+Ora disponiamo di un&#39;approvazione formale per l&#39;utilizzo del banner. È facile seguire la nostra posizione nel processo e gli aggiornamenti che effettui attivano automaticamente le notifiche, in modo da poter lavorare nel modo più efficiente possibile.
 
-Passaggio successivo: [Fase 2 - Produzione: Crea annuncio social media](./social.md)
+Passaggio successivo: [Fase 2 - Produzione: creare annunci per social media](./social.md)
 
-[Torna alla fase 1 - Pianificazione: Altri lavori preliminari](../planning/prework.md)
+[Torna alla Fase 1 - Pianificazione: altre attività preliminari](../planning/prework.md)
 
 [Torna a tutti i moduli](../../overview.md)

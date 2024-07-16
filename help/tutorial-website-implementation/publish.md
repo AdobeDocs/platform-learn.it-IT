@@ -1,15 +1,15 @@
 ---
-title: Pubblicare la proprietà tag
+title: Publish, proprietà tag
 description: Scopri come pubblicare la proprietà tag dall’ambiente di sviluppo agli ambienti di staging e produzione. Questa lezione fa parte dell’esercitazione Implementare l’Experience Cloud su siti web.
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
 source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 69%
+source-wordcount: '571'
+ht-degree: 58%
 
 ---
 
-# Pubblicare la proprietà tag
+# Publish, proprietà tag
 
 Ora che hai implementato alcune soluzioni chiave di Adobe Experience Cloud nell’ambiente di sviluppo, è ora di imparare il flusso di lavoro di pubblicazione.
 
@@ -18,8 +18,8 @@ Ora che hai implementato alcune soluzioni chiave di Adobe Experience Cloud nell�
 >Adobe Experience Platform Launch viene integrato in Adobe Experience Platform come suite di tecnologie per la raccolta dati. Nell’interfaccia sono state introdotte diverse modifiche terminologiche di cui tenere conto quando si utilizza questo contenuto:
 >
 > * Il platform launch (lato client) è ora **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)**
-> * Platform launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * Le configurazioni Edge ora sono **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)**
+> * Platform Launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Le configurazioni di Edge sono ora **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)**
 
 ## Finalità di apprendimento
 
@@ -33,7 +33,7 @@ Alla fine di questa lezione, potrai:
 
 Ora che hai creato e convalidato la libreria nell’ambiente di sviluppo, è necessario pubblicarla nell’ambiente di staging.
 
-1. Vai a **[!UICONTROL Flusso di pubblicazione]** pagina
+1. Vai alla pagina **[!UICONTROL Flusso di pubblicazione]**
 
 1. Apri il menu a discesa accanto alla libreria e seleziona **[!UICONTROL Invia per approvazione]**
 
@@ -45,7 +45,7 @@ Ora che hai creato e convalidato la libreria nell’ambiente di sviluppo, è nec
 
 1. La libreria verrà ora visualizzata nella colonna [!UICONTROL Inviato] in uno stato non generato:
 
-1. Apri il menu a discesa e seleziona **[!UICONTROL Generazione per staging]**:
+1. Apri il menu a discesa e seleziona **[!UICONTROL Build per staging]**:
 
    ![Generazione per staging](images/publishing-buildForStaging.png)
 
@@ -55,7 +55,7 @@ In uno scenario reale, il passaggio successivo nel processo in genere consistere
 
 **Convalidare le modifiche nella libreria di staging**
 
-1. Nella proprietà tag, apri la [!UICONTROL Ambienti] pagina
+1. Nella proprietà tag, apri la pagina [!UICONTROL Ambienti]
 
 1. Nella riga [!UICONTROL Staging], fai clic sull’icona ![icona Installa](images/launch-installIcon.png) per aprire il modale
 
@@ -69,22 +69,22 @@ In uno scenario reale, il passaggio successivo nel processo in genere consistere
 
 1. Apri il [sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html) nel browser Chrome
 
-1. Apri [Estensione Experienci Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) facendo clic su ![Icona debugger](images/icon-debugger.png) icona
+1. Apri l&#39;estensione [Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) facendo clic sull&#39;icona ![icona Debugger](images/icon-debugger.png)
 
    ![Fai clic sull’icona Debugger](images/switchEnvironments-openDebugger.png)
 
 1. Passa alla scheda Strumenti
 
-1. In **[!UICONTROL Adobe Launch > Sostituisci codice di incorporamento Launch]** Incolla il codice di incorporamento di staging presente negli Appunti
-1. Attiva **[!UICONTROL Applica in luma.enablementadobe.com]** switch
+1. Nella sezione **[!UICONTROL Adobe Launch > Replace Launch Embed Code]** incolla il codice di incorporamento di staging presente negli Appunti
+1. Attiva l&#39;opzione **[!UICONTROL Applica in luma.enablementadobe.com]**
 
 1. Fai clic sull’icona del disco per salvare
 
-   ![ambiente di tag visualizzato in Debugger](images/switchEnvironments-debugger-save.png)
+   ![ambiente tag visualizzato in Debugger](images/switchEnvironments-debugger-save.png)
 
 1. Ricarica e controlla la scheda Riepilogo del debugger. Nella sezione Launch, dovresti vedere che la proprietà di staging è implementata, con il nome della tua proprietà visualizzato (ad esempio, &quot;esercitazione sui tag&quot; o qualsiasi altro nome assegnato alla proprietà).
 
-   ![ambiente di tag visualizzato in Debugger](images/publishing-debugger-staging.png)
+   ![ambiente tag visualizzato in Debugger](images/publishing-debugger-staging.png)
 
 In uno scenario, dopo che il team di QA ha dato l’approvazione esaminando le modifiche nell’ambiente di staging, è ora di pubblicare in produzione.
 
@@ -92,7 +92,7 @@ In uno scenario, dopo che il team di QA ha dato l’approvazione esaminando le m
 
 1. Passa alla pagina [!UICONTROL Pubblicazione]
 
-1. Dal menu a discesa, fai clic su **[!UICONTROL Approva per la Pubblicazione]**:
+1. Dal menu a discesa, fai clic su **[!UICONTROL Approva per la pubblicazione]**:
 
    ![Approva per la Pubblicazione](images/publishing-approveForPublishing.png)
 
@@ -102,11 +102,11 @@ In uno scenario, dopo che il team di QA ha dato l’approvazione esaminando le m
 
 1. La libreria verrà ora visualizzata nella colonna [!UICONTROL Approvato] in uno stato non generato (punto giallo):
 
-1. Apri il menu a discesa e seleziona **[!UICONTROL Genera e pubblica in produzione]**:
+1. Apri il menu a discesa e seleziona **[!UICONTROL Genera e Publish in produzione]**:
 
    ![Selezione di Build &amp; Publish to Production](images/publishing-buildAndPublishToProduction.png)
 
-1. Nella finestra di dialogo, fai clic su **[!UICONTROL Pubblica]**:
+1. Fai clic su **[!UICONTROL Publish]** nella finestra di dialogo:
 
    ![Selezione di Pubblica](images/publishing-publish.png)
 

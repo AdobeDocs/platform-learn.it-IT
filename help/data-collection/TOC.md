@@ -9,7 +9,7 @@ role: Developer, Data Engineer
 source-git-commit: 0df82796a5885954102f7496fa043c0f3ef4b89e
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 27%
+ht-degree: 25%
 
 ---
 
@@ -27,14 +27,14 @@ ht-degree: 27%
    + [Creare regole](tags/build-rules.md)
    + [Regole dello stack](tags/stack-rules.md)
    + [Creare e pubblicare una libreria](tags/build-and-publish-a-library.md)
-   + [Implementare nei siti web con Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it){target="_blank"}
-   + [Implementazione nei siti web con SDK per soluzioni](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
+   + [Implementare nei siti Web con Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it){target="_blank"}
+   + [Implementare nei siti Web con gli SDK della soluzione](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
    + [Implementazione nelle app per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=it){target="_blank"}
-+ SDK per web{#web-sdk}
++ SDK Web{#web-sdk}
    + [Panoramica](web-sdk/overview.md)
    + [Demo](web-sdk/demo.md)
-   + [Tutorial sull’implementazione (con tag)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it){target="_blank"}
-   + [Esercitazione sulla migrazione di Target](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=it){target="_blank"}
+   + [Esercitazione sull&#39;implementazione (con tag)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it){target="_blank"}
+   + [Esercitazione sulla migrazione di Target](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target="_blank"}
    + Consenso{#consent}
       + [Panoramica](web-sdk/consent/overview.md)
       + [Imposta i valori del consenso utilizzando lo standard Adobe](web-sdk/consent/set-consent-adobe.md)
@@ -60,7 +60,7 @@ ht-degree: 27%
    + [Spostare i tag lato client](event-forwarding/consider-moving-tags.md)
    + [Configurare le conversioni avanzate di Google Ads](event-forwarding/set-up-google-ads-enhanced-conversions.md)
    + [Estensione di Adobe per Mailchimp](event-forwarding/adobe-extension-for-mailchimp.md)
-+ Flussi di dati e rete Edge{#edge-network}
++ Datastream e Edge Network{#edge-network}
    + [Configurare i flussi di dati](edge/configure-datastreams.md)
    + [Preparazione dei dati](edge/data-prep.md)
    + [Gestire i dati sensibili](edge/manage-sensitive-data-in-datastreams.md)

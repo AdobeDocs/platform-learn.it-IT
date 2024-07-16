@@ -11,8 +11,8 @@ feature: Visualizations
 exl-id: 051b5b91-56c4-414e-a4c4-74aa67219551
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '1497'
-ht-degree: 1%
+source-wordcount: '1479'
+ht-degree: 0%
 
 ---
 
@@ -28,13 +28,13 @@ ht-degree: 1%
 
 In questo esercizio utilizzerai Analysis Workspace in CJA per analizzare le visualizzazioni dei prodotti, i funnel di prodotto, l’abbandono, ecc.
 
-Utilizziamo il progetto creato in [4.4 Preparazione dei dati in Analysis Workspace](./ex4.md), quindi vai a [https://analytics.adobe.com](https://analytics.adobe.com).
+Utilizziamo il progetto creato in [4.4 Preparazione dati in Analysis Workspace](./ex4.md), quindi vai a [https://analytics.adobe.com](https://analytics.adobe.com).
 
 ![demo](./images/prohome.png)
 
 Apri il progetto `yourLastName - Omnichannel Analysis`.
 
-Con il progetto aperto e la visualizzazione dati `CJA Bootcamp - Omnichannel Data View` Selezionando questa opzione, puoi iniziare a creare le prime visualizzazioni.
+Con il progetto aperto e la visualizzazione dati `CJA Bootcamp - Omnichannel Data View` selezionata, puoi iniziare a creare le prime visualizzazioni.
 
 ![demo](./images/prodataView1.png)
 
@@ -48,11 +48,11 @@ Prima di tutto, dobbiamo selezionare le date giuste per analizzare i dati. Vai a
 
 ![demo](./images/pro1.png)
 
-Nel menu a sinistra (area dei componenti), individua la metrica calcolata **Visualizzazioni prodotto**. Selezionala e trascinala nell’area di lavoro, in alto a destra all’interno della tabella a forma libera.
+Nel menu a sinistra (area componenti), individua la metrica calcolata **Visualizzazioni prodotto**. Selezionala e trascinala nell’area di lavoro, in alto a destra all’interno della tabella a forma libera.
 
 ![demo](./images/pro2.png)
 
-Automaticamente la dimensione **Giorno** per creare la prima tabella. Ora puoi vedere la tua domanda rispondere al volo.
+Automaticamente la dimensione **Day** verrà aggiunta per creare la prima tabella. Ora puoi vedere la tua domanda rispondere al volo.
 
 ![demo](./images/pro3.png)
 
@@ -60,7 +60,7 @@ Quindi, fai clic con il pulsante destro del mouse sul riepilogo delle metriche.
 
 ![demo](./images/pro4.png)
 
-Fai clic su **Visualizza** e quindi seleziona **Linea** come visualizzazione.
+Fai clic su **Visualizza**, quindi seleziona **Riga** come visualizzazione.
 
 ![demo](./images/pro5.png)
 
@@ -68,11 +68,11 @@ Visualizzerai le visualizzazioni dei prodotti in base al giorno.
 
 ![demo](./images/pro6.png)
 
-Per cambiare l’ambito orario in giorno, fai clic su **Impostazioni** nella visualizzazione.
+Puoi cambiare l&#39;ambito orario in giorno facendo clic su **Impostazioni** all&#39;interno della visualizzazione.
 
 ![demo](./images/pro7.png)
 
-Fai clic sul punto accanto a **Linea** a **Gestire l’origine dati**.
+Fai clic sul punto accanto a **Riga** per **Gestire Data Source**.
 
 ![demo](./images/pro7a.png)
 
@@ -91,21 +91,21 @@ Ricorda di salvare il progetto di tanto in tanto.
 | Windows | Ctrl+S |
 | Mac | Comando+S |
 
-Iniziamo a trovare i primi 4 prodotti visualizzati. Nel menu a sinistra, individua **Nome prodotto** - Dimension.
+Iniziamo a trovare i primi 4 prodotti visualizzati. Nel menu a sinistra, individua il **Nome prodotto** - Dimension.
 
 ![demo](./images/pro8.png)
 
-Trascina **Nome prodotto** per sostituire **Giorno** dimensione:
+Trascina e rilascia **Nome prodotto** per sostituire la dimensione **Giorno**:
 
 Questo sarà il risultato
 
 ![demo](./images/pro10a.png)
 
-Quindi, prova a suddividere uno dei prodotti per Marchio. Cerca **brandName** e trascinarlo sotto il nome del primo prodotto.
+Quindi, prova a suddividere uno dei prodotti per Marchio. Cerca **brandName** e trascinalo sotto il nome del primo prodotto.
 
 ![demo](./images/pro13.png)
 
-Quindi, effettua un raggruppamento utilizzando il livello di fedeltà. Cerca **Livello di fedeltà** e trascinarlo sotto il nome del marchio.
+Quindi, effettua un raggruppamento utilizzando il livello di fedeltà. Cerca **Livello di fedeltà** e trascinalo sotto il nome del brand.
 
 ![demo](./images/pro15.png)
 
@@ -113,11 +113,11 @@ A questo punto viene visualizzato quanto segue:
 
 ![demo](./images/pro15a.png)
 
-Infine, puoi aggiungere altre visualizzazioni. Sul lato sinistro, in Visualizzazioni, cerca `Donut`. Acquisisci `Donut`, trascinarlo sull’area di lavoro sotto il **Linea** visualizzazione.
+Infine, puoi aggiungere altre visualizzazioni. Sul lato sinistro, in Visualizzazioni, cerca `Donut`. Prendi `Donut` e trascinalo sull&#39;area di lavoro sotto la visualizzazione **Line**.
 
 ![demo](./images/pro18.png)
 
-Quindi, nella tabella, seleziona il 3 **Livello di fedeltà**  righe dal raggruppamento in cui abbiamo eseguito **Smartphone nero Google Pixel XL da 32 GB** > **Segnale Citi**. Quando selezioni le 3 righe, tieni premuto il tasto **CTRL** (su Windows) o **Comando** (su Mac).
+Quindi, nella tabella, seleziona le 3 **righe del livello di fedeltà** dal raggruppamento eseguito in **Smartphone nero Google Pixel XL da 32 GB** > **Segnale Citi**. Durante la selezione delle 3 righe, tenere premuto il pulsante **CTRL** (in Windows) o il pulsante **Comando** (in Mac).
 
 ![demo](./images/pro20.png)
 
@@ -125,29 +125,29 @@ Il grafico ad anello verrà modificato:
 
 ![demo](./images/pro21.png)
 
-È inoltre possibile adattare il progetto in modo da renderlo più leggibile, rendendo **Linea** grafico e **Anello** grafico un po&#39; più piccolo in modo che possano stare l&#39;uno accanto all&#39;altro:
+Puoi anche adattare la progettazione in modo da renderla più leggibile, riducendo leggermente sia il grafico **Line** che il grafico **Donut** in modo che possano adattarsi l&#39;uno accanto all&#39;altro:
 
 ![demo](./images/pro22.png)
 
-Fai clic sul punto accanto a **Anello** a **Gestire l’origine dati**.
+Fai clic sul punto accanto a **Anello** per **Gestire Data Source**.
 Quindi, fai clic su **Blocca selezione** per bloccare questa visualizzazione in modo che visualizzi sempre una timeline di Visualizzazioni prodotto.
 
 ![demo](./images/pro22b.png)
 
 Ulteriori informazioni sulle visualizzazioni con Analysis Workspace disponibili qui:
 
-- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=it](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=it)
+- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)
 - [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html)
 
 ## Funnel di interazione del prodotto, dalla visualizzazione all’acquisto
 
-Ci sono molti modi per risolvere questa domanda. Una di queste consiste nell’utilizzare il tipo di interazione prodotto e utilizzarlo in una tabella a forma libera. Un altro modo consiste nell’utilizzare una **Visualizzazione Abbandono**. Usiamo l’ultimo dato che vogliamo visualizzare e analizzare allo stesso tempo.
+Ci sono molti modi per risolvere questa domanda. Una di queste consiste nell’utilizzare il tipo di interazione prodotto e utilizzarlo in una tabella a forma libera. Un altro modo consiste nell&#39;utilizzare una **Visualizzazione di fallout**. Usiamo l’ultimo dato che vogliamo visualizzare e analizzare allo stesso tempo.
 
 Per chiudere il pannello corrente, fai clic qui:
 
 ![demo](./images/pro23.png)
 
-Ora aggiungi un nuovo pannello vuoto facendo clic su **+ Aggiungi pannello vuoto**.
+Aggiungere ora un nuovo pannello vuoto facendo clic su **+ Aggiungi pannello vuoto**.
 
 ![demo](./images/pro24.png)
 
@@ -163,7 +163,7 @@ Poi vedrai questo.
 
 ![demo](./images/prodatefa.png)
 
-Trovare la dimensione **Tipo di evento** sotto i componenti sul lato sinistro:
+Trova la dimensione **Tipo evento** sotto i componenti sul lato sinistro:
 
 ![demo](./images/pro26.png)
 
@@ -175,17 +175,17 @@ Verranno visualizzati tutti i tipi di evento disponibili.
 
 ![demo](./images/pro28.png)
 
-Seleziona l’elemento **commerce.productViews** e trascinarlo sulla **Aggiungi punto di contatto** campo all&#39;interno del **Visualizzazione Abbandono**.
+Seleziona l&#39;elemento **commerce.productViews** e trascinalo sul campo **Aggiungi punto di contatto** all&#39;interno della **Visualizzazione di abbandono**.
 
 ![demo](./images/pro29.png)
 
-Fai lo stesso con **commerce.productListAdds** e **commerce.purchases** e rilasciarli sul **Aggiungi punto di contatto** campo all&#39;interno del **Visualizzazione Abbandono**. La visualizzazione sarà ora simile alla seguente:
+Fai lo stesso con **commerce.productListAdds** e **commerce.purchases** e rilasciali nel campo **Aggiungi punto di contatto** all&#39;interno della **Visualizzazione di fallout**. La visualizzazione sarà ora simile alla seguente:
 
 ![demo](./images/props1.png)
 
 Puoi fare molte cose qui. Alcuni esempi: confronta nel tempo, confronta ogni passaggio per dispositivo o confronta per fedeltà. Tuttavia, se vogliamo analizzare aspetti interessanti come il motivo per cui i clienti non acquistano dopo aver aggiunto un articolo al carrello, possiamo utilizzare il migliore strumento in CJA: fai clic con il pulsante destro del mouse.
 
-Clic destro sul punto di contatto **commerce.productListAdds**. Quindi fai clic su **Abbandono raggruppamento in questo punto di contatto**.
+Fai clic con il pulsante destro del mouse sul punto di contatto **commerce.productListAdds**. Quindi fai clic su **Abbandono raggruppamento in questo punto di contatto**.
 
 ![demo](./images/pro32.png)
 
@@ -193,7 +193,7 @@ Verrà creata una nuova tabella a forma libera per analizzare le azioni intrapre
 
 ![demo](./images/pro33.png)
 
-Modificare il **Tipo di evento** da **Nome pagina**, nella nuova tabella a forma libera, per vedere quali pagine andranno invece della pagina di conferma dell’acquisto.
+Modificare **Tipo evento** in **Nome pagina** nella nuova tabella a forma libera per vedere quali pagine vanno invece della pagina di conferma dell&#39;acquisto.
 
 ![demo](./images/pro34.png)
 
@@ -205,7 +205,7 @@ Per chiudere il pannello corrente, fai clic qui:
 
 ![demo](./images/pro0.png)
 
-Ora aggiungi un nuovo pannello vuoto facendo clic su **+ Aggiungi pannello vuoto**.
+Aggiungere ora un nuovo pannello vuoto facendo clic su **+ Aggiungi pannello vuoto**.
 
 ![demo](./images/pro0a.png)
 
@@ -221,7 +221,7 @@ Selezionare lo stesso intervallo di date dell&#39;esercizio precedente.
 
 ![demo](./images/pro1.png)
 
-Trovare la dimensione **Nome pagina** sotto i componenti sul lato sinistro:
+Trova la dimensione **Nome pagina** sotto i componenti sul lato sinistro:
 
 ![demo](./images/pro36.png)
 
@@ -230,7 +230,7 @@ Fare clic sulla freccia per aprire la dimensione:
 ![demo](./images/pro37.png)
 
 Troverai tutte le pagine visualizzate. Trovare il nome della pagina: **Annulla servizio**.
-Trascina **Annulla servizio** nella visualizzazione Flusso nel campo centrale:
+Trascina e rilascia **Annulla servizio** nella visualizzazione Flusso nel campo centrale:
 
 ![demo](./images/pro38.png)
 
@@ -238,18 +238,18 @@ A questo punto viene visualizzato quanto segue:
 
 ![demo](./images/pro40.png)
 
-Ora analizziamo se i clienti che hanno visitato il **Annulla servizio** sul sito web chiamato anche callcenter, e quale fosse il risultato.
+Analizziamo ora se i clienti che hanno visitato la pagina **Annulla servizio** del sito Web hanno chiamato anche il callcenter e qual è stato il risultato.
 
-Sotto le dimensioni, torna indietro e quindi trova **Tipo di interazione chiamata**.
-Trascina **Tipo di interazione chiamata** per sostituire la prima interazione a destra all’interno del **Visualizzazione Flusso**.
+Nelle dimensioni, torna indietro e trova **Tipo di interazione chiamata**.
+Trascina e rilascia **Tipo di interazione chiamata** per sostituire la prima interazione a destra nella **Visualizzazione flusso**.
 
 ![demo](./images/pro43.png)
 
-Ora puoi vedere il ticket di supporto dei clienti che hanno chiamato il call center dopo aver visitato il **Annulla servizio** pagina.
+Stai visualizzando il ticket di supporto dei clienti che hanno chiamato il call center dopo aver visitato la pagina **Annulla servizio**.
 
 ![demo](./images/pro44.png)
 
-Quindi, sotto le dimensioni, cerca **Sentimento di chiamata**.  Trascinalo per sostituire la prima interazione a destra all’interno della **Visualizzazione Flusso**.
+Quindi, nelle dimensioni, cerca **Sentimento chiamata**.  Trascinarlo e rilasciarlo per sostituire la prima interazione a destra nella **Visualizzazione flusso**.
 
 ![demo](./images/pro46.png)
 
@@ -262,7 +262,7 @@ Come puoi vedere, abbiamo eseguito un’analisi omnicanale utilizzando la Visual
 
 ## Quali sono le prestazioni dei clienti con un contatto del centro chiamate positivo rispetto ai KPI principali?
 
-Segmentiamo innanzitutto i dati per ottenere solo gli utenti con **positivo** chiamate. In CJA, i segmenti sono denominati Filtri. Passa ai filtri all’interno dell’area dei componenti (a sinistra) e fai clic su **+**.
+Segmentiamo innanzitutto i dati per ottenere solo gli utenti con **chiamate positive**. In CJA, i segmenti sono denominati Filtri. Vai ai filtri all&#39;interno dell&#39;area dei componenti (a sinistra) e fai clic su **+**.
 
 ![demo](./images/pro58.png)
 
@@ -274,7 +274,7 @@ All’interno del Generatore di filtri, assegna un nome al filtro
 
 ![demo](./images/pro47.png)
 
-Sotto i componenti (all’interno del Generatore di filtri), trova **Sentimento di chiamata** e trascinarlo nella Definizione del Generatore di filtri.
+Sotto i componenti (nel Generatore di filtri), trova **Sentimento chiamata** e trascinalo nella definizione del Generatore di filtri.
 
 ![demo](./images/pro48.png)
 
@@ -282,11 +282,11 @@ Ora seleziona **positivo** come valore per il filtro.
 
 ![demo](./images/pro49.png)
 
-Modifica l’ambito in modo che sia **Persona** livello.
+Modifica l&#39;ambito impostandolo al livello **Persona**.
 
 ![demo](./images/pro50.png)
 
-Per terminare fai clic su **Salva**.
+Per terminare, fai clic su **Salva**.
 
 ![demo](./images/pro51.png)
 
@@ -294,7 +294,7 @@ Allora tornerai qui. Se non l’hai ancora fatto, chiudi il pannello precedente.
 
 ![demo](./images/pro0c.png)
 
-Ora aggiungi un nuovo pannello vuoto facendo clic su **+ Aggiungi pannello vuoto**.
+Aggiungere ora un nuovo pannello vuoto facendo clic su **+ Aggiungi pannello vuoto**.
 
 ![demo](./images/pro24c.png)
 
@@ -310,11 +310,11 @@ Trascina il filtro appena creato.
 
 ![demo](./images/pro53.png)
 
-È ora di aggiungere alcune metriche. Inizia con **Visualizzazioni prodotto**. Trascina nella tabella a forma libera. È inoltre possibile eliminare **Eventi** metrica.
+È ora di aggiungere alcune metriche. Inizia con **Visualizzazioni prodotto**. Trascina nella tabella a forma libera. Puoi anche eliminare la metrica **Eventi**.
 
 ![demo](./images/pro54.png)
 
-Fai lo stesso con **Persone**,  **Aggiungi al carrello** e **Acquisti**. Finirai con un tavolo come questo.
+Fai lo stesso con **Persone**, **Aggiungi al carrello** e **Acquisti**. Finirai con un tavolo come questo.
 
 ![demo](./images/pro55.png)
 
@@ -325,7 +325,7 @@ Grazie alla prima analisi di flusso, mi è venuta in mente una nuova domanda. Qu
 Come hai imparato in questo laboratorio, Analysis Workspace unisce i dati di tutti i canali per analizzare l’intero percorso di clienti. Inoltre, ricorda che puoi inserire dati nella stessa area di lavoro che non è unita al percorso.
 Può essere molto utile inserire nell’analisi dati disconnessi per dare contesto al percorso. Alcuni esempi includono dati NPS, sondaggi, eventi Facebook Ads o interazioni offline (non identificate).
 
-Passaggio successivo: [4.6 Da informazioni approfondite ad azioni](./ex6.md)
+Passaggio successivo: [4.6 Da approfondimenti all&#39;azione](./ex6.md)
 
 [Torna a Flusso utente 4](./uc4.md)
 

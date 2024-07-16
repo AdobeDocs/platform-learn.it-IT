@@ -9,15 +9,15 @@ thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 3%
+source-wordcount: '163'
+ht-degree: 0%
 
 ---
 
 # Ricarica i dati dei tuoi clienti per offrire esperienze elettrizzanti
 
 I dati omni-channel sono un componente fondamentale per abilitare i profili dei clienti actionable utilizzati dagli esperti di marketing per orchestrare l’attivazione e misurare i percorsi dei clienti risultanti. Tuttavia, le organizzazioni devono affrontare problemi nella gestione della qualità, della scala e della varietà di questi dati. Richiedono soluzioni semplificate per mitigare l’impatto di dati di bassa qualità, ridurre il time-to-value e moltiplicare il ROI utilizzando gli stessi dati per molti casi d’uso.
-Per ulteriori informazioni, visitare il [Documentazione di Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it).
+Per ulteriori informazioni, visitare la [documentazione di Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it).
 
 Questo video illustra:
 
@@ -49,4 +49,4 @@ order by price desc)D;
 
 >[!NOTE]
 >
->Questo video è un estratto della sessione Adobi Summit 2020 *[Ricarica dei dati omni-channel per esperienze elettrificanti](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*.
+>Questo video è un estratto della sessione Adobe Summit 2020 *[Ricarica dei dati omnichannel per elettrificare le esperienze](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*.

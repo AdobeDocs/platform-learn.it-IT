@@ -10,16 +10,16 @@ thumbnail: 328175.jpg
 exl-id: fda985ad-5d56-4e61-871f-2f29a2e79b17
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 10%
+source-wordcount: '145'
+ht-degree: 0%
 
 ---
 
-# Configurazione dei file [!UICONTROL archiviazione cloud] o [!UICONTROL e-mail marketing] destinazioni
+# Configurazione delle destinazioni [!UICONTROL cloud storage] o [!UICONTROL email marketing] basate su file
 
-Ottieni suggerimenti durante la procedura dettagliata sulla configurazione di una destinazione basata su file nel Real-time Customer Data Platform (CDP) di Adobe. Questo vale per [!UICONTROL archiviazione cloud] destinazioni (ad esempio S3 o SFTP) e anche [!UICONTROL e-mail marketing] destinazioni. Per la documentazione più dettagliata del prodotto, consulta:
+Ottieni suggerimenti durante la procedura dettagliata sulla configurazione di una destinazione basata su file nel Real-time Customer Data Platform (CDP) di Adobe. Questo vale per [!UICONTROL destinazioni archiviazione cloud] (ad esempio S3 o SFTP) e anche per [!UICONTROL destinazioni e-mail marketing]. Per la documentazione più dettagliata del prodotto, consulta:
 
-* [Attivare i dati del pubblico nelle destinazioni di esportazione del profilo batch](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html?lang=it) per istruzioni su come attivare i dati in destinazioni di marketing batch o e-mail tramite l’interfaccia utente di Experienci Platform
-* [Connettersi alle destinazioni batch e attivare i dati utilizzando l’API del servizio Flusso](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html) per istruzioni su come attivare i dati nelle destinazioni di marketing batch o e-mail tramite l’API del servizio Flusso
+* [Attiva i dati del pubblico nelle destinazioni di esportazione del profilo batch](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html) per istruzioni su come attivare i dati nelle destinazioni di marketing batch o e-mail tramite l&#39;interfaccia utente di Experience Platform
+* [Connettiti a destinazioni batch e attiva i dati utilizzando l&#39;API del servizio Flusso](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html) per istruzioni su come attivare i dati a destinazioni di marketing batch o e-mail utilizzando l&#39;API del servizio Flusso
 
 >[!VIDEO](https://video.tv.adobe.com/v/328175/?learn=on)

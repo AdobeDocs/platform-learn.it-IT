@@ -1,5 +1,5 @@
 ---
-title: Collaborazione dei dati nel contesto dei dati di prime parti
+title: Data Collaboration nel contesto dei dati di prime parti
 description: Mantenere la promessa dell’esperienza, con accesso a meno dati. Che tu sia un inserzionista, un editore o un’agenzia, questo webinar aiuterà a sbloccare le opportunità di collaborazione sui dati in un futuro senza cookie di terze parti.
 feature: Data Management
 role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
@@ -10,18 +10,18 @@ jira: KT-9145
 exl-id: 84d900c4-662e-486c-97c9-38c55fd5bf28
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 34%
+source-wordcount: '135'
+ht-degree: 17%
 
 ---
 
-# Collaborazione dei dati nel contesto dei dati di prime parti
+# Data Collaboration nel contesto dei dati di prime parti
 
 Mantenere la promessa dell’esperienza, con accesso a meno dati. Che tu sia un inserzionista, un editore o un’agenzia, questo webinar aiuterà a sbloccare le opportunità di collaborazione sui dati in un futuro senza cookie di terze parti.
 
 >[!VIDEO](https://video.tv.adobe.com/v/337665/?learn=on)
 
-## Conclusioni principali:
+## Principali soluzioni:
 
 * Come incorporare modelli di collaborazione sui dati nel contesto dei dati di prime parti, con il consenso dei consumatori.
 * Creazione di partnership brand-to-brand ed editore-dirette che mantengano la promessa dell’esperienza.
@@ -29,8 +29,8 @@ Mantenere la promessa dell’esperienza, con accesso a meno dati. Che tu sia un 
 
 ## Informazioni aggiuntive
 
-[Panoramica di Segment Match](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match.html?lang=en)
+[Panoramica sulla corrispondenza dei segmenti](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match.html?lang=en)
 
-[Audience Marketplace per gli acquirenti di dati](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/audience-marketplace/audience-marketplace-for-data-buyers/marketplace-data-buyers.html?lang=en)
+[Audience Marketplace per acquirenti dati](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/audience-marketplace/audience-marketplace-for-data-buyers/marketplace-data-buyers.html?lang=en)
 
 [Destinazioni basate su persone](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/people-based-destinations-overview.html?lang=it)

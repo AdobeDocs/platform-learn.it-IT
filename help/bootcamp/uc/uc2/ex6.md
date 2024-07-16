@@ -1,6 +1,6 @@
 ---
-title: Bootcamp - Personalizzazione nel call center
-description: Bootcamp - Personalizzazione nel call center
+title: Bootcamp - Personalization nel call center
+description: Bootcamp - Personalization nel call center
 jira: KT-5342
 audience: developer
 doc-type: tutorial
@@ -9,42 +9,42 @@ feature: Profiles
 exl-id: f7697673-38f9-41f6-ac4d-2561db2ece67
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
 
-# 2.6 Personalizzazione nel call center
+# 2.6 Personalization nel call center
 
 Come discusso più volte durante il bootcamp, la personalizzazione dell’esperienza del cliente è qualcosa che dovrebbe accadere in modo omnicanale. Un call center è spesso abbastanza disconnesso dal resto del percorso di clienti e questo spesso porta a esperienze frustranti per il cliente, ma non è necessario che lo sia. Ecco un esempio di come il call center può essere facilmente collegato a Adobe Experience Platform in tempo reale.
 
 ## Flusso di Percorso cliente
 
-Nell’esercizio precedente, utilizzando l’app mobile, hai acquistato un prodotto facendo clic sul pulsante **Acquista** pulsante.
+Nell&#39;esercizio precedente, utilizzando l&#39;app mobile, hai acquistato un prodotto facendo clic sul pulsante **Acquista**.
 
 ![DSN](./images/app20.png)
 
 Supponiamo che tu abbia una domanda sullo stato del tuo ordine, cosa faresti? In genere si chiama il call center.
 
-Prima di chiamare il call center, è necessario conoscere **ID fedeltà**. Puoi trovare il tuo ID fedeltà nel Visualizzatore profili del sito web.
+Prima di chiamare il call center, è necessario conoscere il proprio **ID fedeltà**. Puoi trovare il tuo ID fedeltà nel Visualizzatore profili del sito web.
 
 ![DSN](./images/cc1.png)
 
-In questo caso, il **ID fedeltà** è **5863105**. Come parte dell’implementazione personalizzata della funzione call center nell’ambiente demo, devi aggiungere un prefisso al tuo **ID fedeltà**. Il prefisso è **11373**, quindi l’ID fedeltà da utilizzare in questo esempio è **5863105 11373**.
+In questo caso, l&#39;**ID fedeltà** è **5863105**. Come parte dell&#39;implementazione personalizzata della funzionalità del call center nell&#39;ambiente demo, devi aggiungere un prefisso al tuo **ID fedeltà**. Il prefisso è **11373**, pertanto l&#39;ID fedeltà da utilizzare in questo esempio è **11373 5863105**.
 
 Facciamolo adesso. Usa il telefono e chiama il numero **+1 (323) 745-1670**.
 
 ![DSN](./images/cc2.png)
 
-Ti verrà chiesto di inserire il tuo ID fedeltà, seguito da **N.**. Immetti il tuo ID fedeltà.
+Ti verrà chiesto di immettere il tuo ID fedeltà, seguito da **#**. Immetti il tuo ID fedeltà.
 
 ![DSN](./images/cc3.png)
 
-Allora sentirai **Ciao, nome**. Questo nome viene preso dal profilo cliente in tempo reale in Adobe Experience Platform. Sono quindi disponibili 3 opzioni. Premi il numero **1**, **Stato ordine**.
+Sentirai quindi **Ciao, nome**. Questo nome viene preso dal profilo cliente in tempo reale in Adobe Experience Platform. Sono quindi disponibili 3 opzioni. Premere il numero **1**, **Stato ordine**.
 
 ![DSN](./images/cc4.png)
 
-Dopo aver sentito lo stato dell’ordine, potrai scegliere di premere **1** per tornare al menu principale oppure premere 2. Premi **2**.
+Dopo aver sentito lo stato dell&#39;ordine, potrai scegliere se premere **1** per tornare al menu principale oppure premere 2. Premere **2**.
 
 ![DSN](./images/cc5.png)
 
@@ -58,7 +58,7 @@ Vai a [Adobe Experience Platform](https://experience.adobe.com/platform). Dopo a
 
 ![Acquisizione dei dati](./images/home.png)
 
-Prima di continuare, è necessario selezionare una **sandbox**. La sandbox da selezionare è denominata ``Bootcamp``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella linea blu sopra lo schermo. Dopo aver selezionato la [!UICONTROL sandbox], verrà visualizzata la modifica dello schermo e ora si è nel [!UICONTROL sandbox].
+Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``Bootcamp``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella riga blu nella parte superiore dello schermo. Dopo aver selezionato la [!UICONTROL sandbox] appropriata, la schermata verrà modificata e ora sei nella [!UICONTROL sandbox] dedicata.
 
 ![Acquisizione dei dati](./images/sb1.png)
 
@@ -66,7 +66,7 @@ Nel menu a sinistra, vai a **Profili** e a **Sfoglia**.
 
 ![Profilo cliente](./images/homemenu.png)
 
-Seleziona la **Spazio dei nomi dell’identità** **E-mail** e inserisci l’indirizzo e-mail del tuo profilo cliente. Clic **Visualizza**. Fai clic su per aprire il profilo.
+Seleziona lo spazio dei nomi **Identity** **Email** e immetti l&#39;indirizzo e-mail del tuo profilo cliente. Fare clic su **Visualizza**. Fai clic su per aprire il profilo.
 
 ![DSN](./images/cc7.png)
 
@@ -74,15 +74,15 @@ Visualizzerai di nuovo il tuo profilo cliente. Vai a **Eventi**.
 
 ![DSN](./images/cc8.png)
 
-In events verranno visualizzati 2 eventi con eventType impostato su **callCenter**. Il primo evento è il risultato della risposta alla domanda **Valuta la soddisfazione della tua chiamata**.
+In eventi verranno visualizzati 2 eventi con eventType **callCenter**. Il primo evento è il risultato della risposta alla domanda **Valuta la soddisfazione della tua chiamata**.
 
 ![DSN](./images/cc9.png)
 
-Scorri verso il basso per visualizzare l’evento registrato quando hai selezionato l’opzione per controllare la **Stato ordine**.
+Scorri verso il basso e vedrai l&#39;evento registrato quando hai selezionato l&#39;opzione per controllare il tuo **stato ordine**.
 
 ![DSN](./images/cc10.png)
 
-Vai a **Iscrizione al segmento**. Ora vedrai che 2 segmenti si qualificano sul tuo profilo, in tempo reale, in base alle interazioni che hai avuto attraverso il call center. Queste appartenenze a segmenti possono e devono quindi essere utilizzate per influire su ciò che avviene nella comunicazione e nella personalizzazione attraverso qualsiasi altro canale.
+Vai a **Appartenenza al segmento**. Ora vedrai che 2 segmenti si qualificano sul tuo profilo, in tempo reale, in base alle interazioni che hai avuto attraverso il call center. Queste appartenenze a segmenti possono e devono quindi essere utilizzate per influire su ciò che avviene nella comunicazione e nella personalizzazione attraverso qualsiasi altro canale.
 
 ![DSN](./images/cc11.png)
 

@@ -24,11 +24,11 @@ Vai a [Adobe Experience Platform](https://experience.adobe.com/platform). Dopo a
 
 ![Acquisizione dei dati](./images/home.png)
 
-Prima di continuare, è necessario selezionare una **sandbox**. La sandbox da selezionare è denominata ``Bootcamp``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella linea blu sopra lo schermo. Dopo aver selezionato la [!UICONTROL sandbox], verrà visualizzata la modifica dello schermo e ora si è nel [!UICONTROL sandbox].
+Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``Bootcamp``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella riga blu nella parte superiore dello schermo. Dopo aver selezionato la [!UICONTROL sandbox] appropriata, la schermata verrà modificata e ora sei nella [!UICONTROL sandbox] dedicata.
 
 ![Acquisizione dei dati](./images/sb1.png)
 
-Nel menu a sinistra, vai a **Tipi di pubblico**. In questa pagina vengono visualizzate dashboard con informazioni essenziali su **Pubblico** prestazioni.
+Nel menu a sinistra, vai a **Tipi di pubblico**. In questa pagina verranno visualizzate dashboard con informazioni essenziali sulle prestazioni di **Audience**.
 
 ![Segmentazione](./images/menuseg.png)
 
@@ -37,22 +37,22 @@ Fai clic su **Sfoglia** per visualizzare una panoramica di tutti i tipi di pubbl
 
 ![Segmentazione](./images/segmentationui.png)
 
-Verrà visualizzato un messaggio pop-ip in cui viene chiesto se si desidera **&#39;Componi pubblico&#39;** o **&#39;Genera regola&#39;**. Scegli **&#39;Genera regola&#39;** per continuare e fare clic su **creare**.
+Verrà visualizzato un pop-ip che ti chiederà se desideri **&#39;Componi pubblico&#39;** o **&#39;Genera regola&#39;**. Scegliere **&#39;Genera regola&#39;** per continuare e fare clic su **crea**.
 
 ![Segmentazione][def]
 
-Una volta entrati nel generatore di pubblico, noterai immediatamente **Attributi** e la **Profilo individuale XDM** riferimento.
+Quando ti trovi nel generatore di tipi di pubblico, noterai immediatamente l&#39;opzione di menu **Attributi** e il riferimento a **Profilo individuale XDM**.
 
 
 Poiché XDM è il linguaggio che alimenta il business dell’esperienza, XDM è anche la base per il generatore di pubblico. Tutti i dati acquisiti in Platform devono essere mappati su XDM e, come tale, tutti i dati diventano parte dello stesso modello di dati, indipendentemente da dove provengono. Questo ti offre un grande vantaggio durante la creazione di tipi di pubblico; infatti, da questa interfaccia utente di audience builder puoi combinare dati di qualsiasi origine nello stesso flusso di lavoro. I tipi di pubblico generati in Audience Builder possono essere inviati a soluzioni come Adobe Target, Adobe Campaign o qualsiasi altro canale di attivazione.
 
-Ora devi creare un pubblico di tutti i clienti che hanno visualizzato il prodotto **Real-Time CDP**.
+È ora necessario creare un pubblico di tutti i clienti che hanno visualizzato il prodotto **Real-Time CDP**.
 
-Per creare questo pubblico, devi aggiungere un evento esperienza. Puoi trovare tutti gli eventi esperienza facendo clic sul pulsante **Eventi** icona in **Campi** barra dei menu.
+Per creare questo pubblico, devi aggiungere un evento esperienza. Per trovare tutti gli eventi esperienza, fai clic sull&#39;icona **Eventi** nella barra dei menu **Campi**.
 
 ![Segmentazione](./images/findee.png)
 
-Poi, vedrai il livello superiore, **XDM ExperienceEvents** nodo. Fai clic su **XDM ExperienceEvent**.
+Verrà visualizzato il nodo principale **XDM ExperienceEvents**. Fai clic su **XDM ExperienceEvent**.
 
 ![Segmentazione](./images/see.png)
 
@@ -60,11 +60,11 @@ Vai a **Elementi elenco prodotti**.
 
 ![Segmentazione](./images/plitems.png)
 
-Seleziona **Nome** e trascina **Nome** dal menu a sinistra all&#39;area di lavoro di audience builder nel **Eventi** sezione. A questo punto viene visualizzato quanto segue:
+Seleziona **Name** e trascina l&#39;oggetto **Name** dal menu a sinistra nell&#39;area di lavoro di audience builder nella sezione **Events**. A questo punto viene visualizzato quanto segue:
 
 ![Segmentazione](./images/eewebpdtlname.png)
 
-Il parametro di confronto deve essere **è uguale a** e nel campo di immissione, immetti **Real-time CDP**.
+Il parametro di confronto deve essere **uguale a** e nel campo di input immettere **Real-time CDP**.
 
 ![Segmentazione](./images/pv.png)
 
@@ -72,7 +72,7 @@ Ogni volta che aggiungi un elemento al generatore di pubblico, puoi fare clic su
 
 ![Segmentazione](./images/refreshest.png)
 
-As **Metodo di valutazione**, seleziona **Bordo**.
+Come **Metodo di valutazione**, selezionare **Edge**.
 
 ![Segmentazione](./images/evedge.png)
 
@@ -82,7 +82,7 @@ Come convenzione di denominazione, utilizza:
 
 - `yourLastName - Interest in Real-Time CDP`
 
-Quindi, fai clic su **Salva e chiudi** per salvare il pubblico.
+Quindi, fai clic sul pulsante **Salva e chiudi** per salvare il pubblico.
 
 ![Segmentazione](./images/segmentname.png)
 
@@ -92,7 +92,7 @@ Ora viene visualizzata la pagina di panoramica del pubblico, in cui è disponibi
 
 Ora puoi continuare con l’esercizio successivo e utilizzare il pubblico con Adobe Target.
 
-Passaggio successivo: [1.4 Intervenire: inviare il pubblico ad Adobe Target](./ex4.md)
+Passaggio successivo: [1.4 Azione: inviare il pubblico ad Adobe Target](./ex4.md)
 
 [Torna a Flusso utente 1](./uc1.md)
 

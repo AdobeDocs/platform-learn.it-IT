@@ -1,9 +1,10 @@
 ---
-title: Pianificazione | Migrare Target da at.js 2.x all’SDK per web
+title: Pianificazione | Migrare Target da at.js 2.x a Web SDK
 description: Scopri come pianificare l’implementazione di Adobe Target da at.js 2.x a Adobe Experience Platform Web SDK.
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+exl-id: 0e8f9cde-f361-4f69-886d-aad3074cd9b2
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -12,44 +13,44 @@ ht-degree: 0%
 
 Prima di eseguire l’aggiornamento a Platform Web SDK sul sito, è necessario valutare l’implementazione corrente.
 
-## Valutare l’implementazione corrente di at.js
+## Valuta l’implementazione at.js corrente
 
-Il primo passo per una migrazione di successo è quello di avere una chiara comprensione dell’implementazione di at.js Target corrente. È possibile utilizzare funzioni, funzioni e codice personalizzato che richiedono aggiornamenti. Considera quanto segue durante la valutazione:
+Il primo passaggio per una migrazione di successo consiste nel comprendere a fondo l’attuale implementazione di Target at.js. Potresti utilizzare funzioni, funzioni e codice personalizzato che richiedono aggiornamenti. Durante la valutazione, considera quanto segue:
 
 ### Quali funzioni sono supportate?
 
-L’SDK per web di Platform è in continuo sviluppo attivo e le funzioni e i miglioramenti vengono aggiunti regolarmente. Quando valuta l’implementazione corrente di at.js, fai riferimento alla sezione [casi di utilizzo supportati](https://github.com/orgs/adobe/projects/18/views/1) per informazioni aggiornate.
+Platform Web SDK è in fase di sviluppo continuo attivo e vengono aggiunte regolarmente funzionalità e miglioramenti. Durante la valutazione dell&#39;implementazione at.js corrente, consulta la pagina [casi d&#39;uso supportati](https://github.com/orgs/adobe/projects/18/views/1) per informazioni aggiornate.
 
-### Quali funzioni utilizzate oggi?
+### Quali funzioni utilizza oggi?
 
-Platform Web SDK è una nuova libreria che consolida tutte le soluzioni Adobe per i siti web in un unico SDK. Ciò consente un&#39;integrazione più stretta e offre nuove funzionalità esclusive di Adobe Experience Platform. Tuttavia, ciò significa anche che le funzioni at.js non sono compatibili con l’SDK per web di Platform. Quando valuti l’implementazione corrente, prendi nota di quanto segue:
+Platform Web SDK è una nuova libreria che consolida in un unico SDK tutte le soluzioni Adobe per i siti web. Ciò consente una maggiore integrazione e nuove funzionalità esclusive di Adobe Experience Platform. Tuttavia, significa anche che le funzioni di at.js non sono compatibili con le versioni precedenti di Platform Web SDK. Nel valutare l’implementazione corrente, prendi nota di quanto segue:
 
-- funzioni di at.js come `getOffer()` e `applyOffer()`
+- Funzioni di at.js come `getOffer()` e `applyOffer()`
 - Modifiche alle impostazioni globali di Target
 - Integrazione con Adobe Analytics
-- Utilizzo di uno script di mitigazione della visualizzazione momentanea di altri contenuti
+- Utilizzo di uno script di mitigazione dello sfarfallio
 - Utilizzo dei token di risposta
-- Utilizzo di parametri mbox, di profilo e di entità
-- Codice personalizzato univoco per la tua implementazione
+- Utilizzo di parametri mbox, di profilo ed entità
+- Codice personalizzato univoco per l’implementazione
 
-### Quale approccio di migrazione adotterà?
+### Quale approccio di migrazione adotterai?
 
 Dopo aver rivisto l’implementazione di at.js, devi determinare un approccio di migrazione. Sono disponibili due opzioni:
 
-- Migrazione simultanea di tutte le applicazioni Adobe nell&#39;intero sito
+- Eseguire la migrazione di tutte le applicazioni Adobe contemporaneamente in tutto il sito
 - Eseguire la migrazione pagina per pagina
 
-Poiché Platform Web SDK combina e abilita più applicazioni di Adobe, devi coordinare la migrazione di Target di altre applicazioni di Adobe come Analytics e Audience Manager. Tutte le librerie di Adobi in una determinata pagina devono essere migrate contemporaneamente. Non è supportata un’implementazione mista di Platform Web SDK per Target e AppMeasurement per Analytics in una particolare pagina. Tuttavia, è supportata un’implementazione mista tra pagine diverse, ad esempio Platform Web SDK a pagina A e at.js con AppMeasurement a pagina B.
+Poiché Platform Web SDK combina e abilita più applicazioni Adobe, è necessario coordinare la migrazione di Target di altre applicazioni Adobe come Analytics e Audience Manager. Tutte le librerie di Adobi in una determinata pagina devono essere migrate contemporaneamente. Non è supportata un’implementazione mista di Platform Web SDK per Target e AppMeasurement per Analytics su una pagina particolare. Tuttavia, è supportata un’implementazione mista in diverse pagine, ad esempio Platform Web SDK a pagina A e at.js con AppMeasurement a pagina B.
 
-Durante la migrazione, devi pianificare il seguito del processo aziendale per il test e il rilascio di nuovo codice e utilizzare elementi come lo sviluppo, il controllo qualità e gli ambienti di staging prima del rilascio in produzione.
+Durante la migrazione, prima di rilasciare il codice in produzione, è necessario pianificare il rispetto del processo aziendale per il test e il rilascio del nuovo codice e l&#39;utilizzo di elementi quali gli ambienti di sviluppo, controllo qualità e staging.
 
 >[!CAUTION]
 >
 >Le offerte di reindirizzamento non sono supportate nelle migrazioni pagina per pagina se si esegue il reindirizzamento da una pagina con una libreria a una pagina con una libreria diversa
 
 
-Quindi, rivedi il [confronto tra at.js e Platform Web SDK](detailed-comparison.md) per comprendere meglio le differenze tecniche e individuare le aree che richiedono un&#39;ulteriore attenzione.
+Quindi, controlla il [confronto dettagliato di at.js con Platform Web SDK](detailed-comparison.md) per comprendere meglio le differenze tecniche e identificare le aree che richiedono un ulteriore approfondimento.
 
 >[!NOTE]
 >
->Ci impegniamo ad aiutarti a eseguire con successo la migrazione di Target da at.js all’SDK per web. Se incontri ostacoli con la tua migrazione o se ti senti che mancano informazioni critiche in questa guida, compila l&#39;invio del tuo messaggio [discussione comunitaria](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Ci impegniamo ad aiutarti con la migrazione di Target da at.js a Web SDK. Se incontri ostacoli con la migrazione o pensi che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

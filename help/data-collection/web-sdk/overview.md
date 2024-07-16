@@ -11,8 +11,8 @@ thumbnail: 34141.jpg
 exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 38%
+source-wordcount: '187'
+ht-degree: 41%
 
 ---
 
@@ -24,13 +24,13 @@ Scopri come Adobe Experience Platform Web SDK e la rete Edge consentono ai clien
 
 >[!NOTE]
 >
->Questo video è un estratto della sessione Adobi Summit 2020 *[Scopri Alloy.js e non aggiungere mai più tag per un eVar o una Mbox](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
+>Questo video è un estratto della sessione Adobe Summit 2020 *[Meet Alloy.js and Never Tag for an eVar or Mbox Again](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
 >
->La funzionalità di inoltro lato server descritta in questo video è ora generalmente disponibile per tutti i clienti con licenza. Consulta la [Documentazione sull’inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
+>La funzionalità di inoltro lato server descritta in questo video è ora generalmente disponibile per tutti i clienti con licenza. Consulta la [documentazione sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
 
 ## Risorse aggiuntive
 
-* [Documentazione di Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=it)
-* [Post sul blog Semplificare i flussi di lavoro dei clienti con Adobe Experience Platform Web SDK](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
+* [Documentazione di Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)
+* [Post del blog Semplificazione dei flussi di lavoro dei clienti con Adobe Experience Platform Web SDK](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
 * [Post sul blog di Adobe Experience Platform Experience Edge che semplifica le integrazioni client-server](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
-* [Post sul blog Unify Your Adobe Experience Platform Services with Adobe Experience Platform Web SDK (Unificare i servizi di con Web SDK)](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)
+* [Post del blog Unify Your Adobe Experience Platform Services with Adobe Experience Platform Web SDK](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)

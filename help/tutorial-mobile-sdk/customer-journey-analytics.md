@@ -14,11 +14,11 @@ ht-degree: 1%
 
 Scopri come segnalare e analizzare le interazioni dell’app mobile con il Customer Journey Analytics.
 
-I dati dell’evento dell’app mobile, che hai raccolto e inviato all’Edge Network di Platform nelle lezioni precedenti, vengono inoltrati ai servizi configurati nello stream di dati. Se hai seguito il [Invia dati all’Experience Platform](platform.md) lezione, tali dati sono ora memorizzati in un set di dati di Experience Platform e sono disponibili per essere utilizzati dal Customer Journey Analytics a scopo di reporting e analisi.
+I dati dell’evento dell’app mobile, che hai raccolto e inviato all’Edge Network di Platform nelle lezioni precedenti, vengono inoltrati ai servizi configurati nello stream di dati. Se hai seguito la lezione [Invia dati a Experience Platform](platform.md), questi dati vengono ora memorizzati in un set di dati Experience Platform e sono disponibili per essere utilizzati dal Customer Journey Analytics per reportistica e analisi.
 
-Contrariamente ad Adobe Analytics, il Customer Journey Analytics *utilizza* dati dei set di dati creati in Experienci Platform. I dati non vengono inviati direttamente al Customer Journey Analytics utilizzando l’SDK di Adobe Experience Platform Mobile, ma vengono inviati ai set di dati. Le connessioni vengono quindi configurate in Customer Journey Analytics per selezionare i set di dati da utilizzare nei progetti di reporting e analisi.
+A differenza di Adobe Analytics, il Customer Journey Analytics *utilizza* dati dei set di dati creati in Experience Platform. I dati non vengono inviati direttamente al Customer Journey Analytics utilizzando l’SDK di Adobe Experience Platform Mobile, ma vengono inviati ai set di dati. Le connessioni vengono quindi configurate in Customer Journey Analytics per selezionare i set di dati da utilizzare nei progetti di reporting e analisi.
 
-Questa lezione nell’esercitazione si concentra sul reporting e l’analisi dei dati acquisiti dall’app di esercitazione Luma. Una delle funzionalità esclusive di Customer Journey Analytics è la combinazione di dati provenienti da più origini (CRM, punto vendita, applicazione fedeltà, call center) e canali (web, mobile, offline) per ottenere informazioni approfondite sui percorsi dei clienti. Questa capacità va oltre lo scopo di questa lezione. Consulta [Panoramica del Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) per ulteriori informazioni.
+Questa lezione nell’esercitazione si concentra sul reporting e l’analisi dei dati acquisiti dall’app di esercitazione Luma. Una delle funzionalità esclusive di Customer Journey Analytics è la combinazione di dati provenienti da più origini (CRM, punto vendita, applicazione fedeltà, call center) e canali (web, mobile, offline) per ottenere informazioni approfondite sui percorsi dei clienti. Questa capacità va oltre lo scopo di questa lezione. Per ulteriori informazioni, vedere [Panoramica Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview).
 
 
 ## Prerequisiti
@@ -30,7 +30,7 @@ Questa lezione nell’esercitazione si concentra sul reporting e l’analisi dei
 
 In questa lezione verranno fornite le seguenti informazioni:
 
-- Crea una connessione per definire i set di dati da Experienci Platform che desideri utilizzare nel Customer Journey Analytics.
+- Crea una connessione per definire i set di dati da Experience Platform che desideri utilizzare nel Customer Journey Analytics.
 - Creare una visualizzazione dati per preparare i dati dai set di dati per le attività di reporting e analisi
 - Crea un progetto per creare rapporti e visualizzazioni in modo da poter analizzare i dati dalla tua app mobile.
 
@@ -39,56 +39,56 @@ La sequenza è intenzionale. Le connessioni utilizzano i set di dati, mentre le 
 
 ## Creare una connessione
 
-Una connessione in Customer Journey Analytics definisce i set di dati (e i dati all’interno di tali set di dati) di Experienci Platform che desideri utilizzare per il reporting e l’analisi.
+Una connessione in Customer Journey Analytics definisce i set di dati (e i dati all’interno di tali set di dati) di Experience Platform che desideri utilizzare per il reporting e l’analisi.
 
-1. Passare all&#39;interfaccia di Customer Journey Analytics utilizzando le app ![App](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) in alto a destra.
+1. Passa all&#39;interfaccia di Customer Journey Analytics utilizzando il menu App ![App](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) in alto a destra.
 
 1. Seleziona **[!UICONTROL Connessioni]** dalla barra dei menu superiore.
 
-1. Assicurati di selezionare **[!UICONTROL Elenco]** nell&#39;interfaccia Connessioni. Viene visualizzato un elenco delle connessioni esistenti.
+1. Assicurarsi di selezionare la scheda **[!UICONTROL Elenco]** nell&#39;interfaccia Connessioni. Viene visualizzato un elenco delle connessioni esistenti.
 
-1. Seleziona **[!UICONTROL Crea nuova connessione]**.
+1. Selezionare **[!UICONTROL Crea nuova connessione]**.
 
-1. In **[!UICONTROL Connessioni]** > **[!UICONTROL Connessione senza titolo]** schermo, in **[!UICONTROL Impostazioni di connessione]**
+1. Nella schermata **[!UICONTROL Connessioni]** > **[!UICONTROL Connessione senza titolo]**, in **[!UICONTROL Impostazioni connessione]**
 
-   1. Immetti un **[!UICONTROL Nome connessione]**, ad esempio `Luma App - AEP Mobile SDK Tutorial Connection`.
-   2. Immetti un **[!UICONTROL Descrizione della connessione]**, ad esempio `Connection for the Luma app used in the AEP Mobile SDK tutorial`.
+   1. Immettere un **[!UICONTROL nome connessione]**, ad esempio `Luma App - AEP Mobile SDK Tutorial Connection`.
+   2. Immettere una **[!UICONTROL descrizione connessione]**, ad esempio `Connection for the Luma app used in the AEP Mobile SDK tutorial`.
 
-      In entrata **[!UICONTROL Impostazioni dati]**:
+      In **[!UICONTROL Impostazioni dati]**:
 
-   3. Seleziona la sandbox utilizzata per raccogliere i dati dell’app mobile, ad esempio **[!UICONTROL Corsi Mobile e Web SDK]**.
-   4. Seleziona **[!UICONTROL meno di 1 milione]** dal **[!UICONTROL Numero medio di eventi giornalieri]**.
+   3. Seleziona la sandbox utilizzata per raccogliere i dati dell&#39;app mobile, ad esempio **[!UICONTROL Corsi Mobile e Web SDK]**.
+   4. Seleziona **[!UICONTROL meno di 1 milione]** dal **[!UICONTROL numero medio di eventi giornalieri]**.
 
-   5. Seleziona **[!UICONTROL Aggiungere set di dati]** per selezionare i set di dati dall’Experience Platform da utilizzare nel Customer Journey Analytics.
+   5. Selezionare **[!UICONTROL Aggiungi set di dati]** per selezionare i set di dati dall&#39;Experience Platform da utilizzare nel Customer Journey Analytics.
 
       ![Connessioni CJA 1](assets/cja-connections-1.png)
 
-   6. In **[!UICONTROL Aggiungere set di dati]** procedura guidata, **[!UICONTROL Seleziona set di dati]** passaggio,
+   6. Nella procedura guidata **[!UICONTROL Aggiungi set di dati]**, **[!UICONTROL Seleziona set di dati]** passaggio,
 
       1. Seleziona i seguenti set di dati:
 
-         - **[!UICONTROL Set di dati evento app mobile Luma]**, il set di dati creato come parte del [Creare un set di dati](platform.md#create-a-dataset) nella lezione di Experience Platform.
+         - **[!UICONTROL Set di dati evento app mobile Luma]**, il set di dati creato come parte della sezione [Creazione di un set di dati](platform.md#create-a-dataset) nella lezione di Experience Platform.
          - **[!UICONTROL ODE DecisionEvents - *nome sandbox*] decisioning**
          - **[!UICONTROL Set di dati evento di tracciamento push AJO]**
 
-      1. Seleziona **[!UICONTROL Successivo]**.
+      1. Seleziona **[!UICONTROL Avanti]**.
 
          ![Connessioni CJA 2](assets/cja-connections-2.png)
 
-   7. In **[!UICONTROL Aggiungere set di dati]** procedura guidata, **[!UICONTROL Impostazioni dei set di dati]** passaggio, è necessario definire i dettagli per ciascuno dei set di dati dell’evento.
+   7. Nel passaggio **[!UICONTROL Aggiungi set di dati]**, **[!UICONTROL Impostazioni set di dati]**, è necessario definire i dettagli per ciascuno dei set di dati evento.
       1. Per una configurazione corretta, consultare le tabelle seguenti:
 
          | Set di dati | ID persona<br/>① | Timestamp<br>② | ③ del tipo di origine dati | Importa tutti i nuovi ④ dati | Recupera tutti i dati esistenti ⑤ |
          |---|---|---|---|---|---|
          | Set di dati evento app mobile Luma | identityMap | timestamp | Dati app mobili | abilita | abilita |
          | ODE DecisionEvents - *nome sandbox* decisioning | identityMap | timestamp | Dati app mobili | abilita | abilita |
-         | Set di dati evento di tracciamento push AJO | identityMap | timestamp | Dati app mobili | abilita | abilita |
+         | Set di dati evento di tracciamento push di AJO | identityMap | timestamp | Dati app mobili | abilita | abilita |
 
-      1. Seleziona **[!UICONTROL Aggiungere set di dati]**.
+      1. Seleziona **[!UICONTROL Aggiungi set di dati]**.
 
          ![Connessioni CJA 3](assets/cja-connections-3.png)
 
-1. Torna in **[!UICONTROL Connessioni]** > **[!UICONTROL App Luma - Connessione tutorial SDK per dispositivi mobili AEP]**, seleziona **[!UICONTROL Salva]** per salvare la connessione.
+1. Torna alla **[!UICONTROL Connessione]** > **[!UICONTROL App Luma - Connessione tutorial SDK AEP Mobile]**, seleziona **[!UICONTROL Salva]** per salvare la connessione.
 
    ![Connessioni CJA 4](assets/cja-connections-4.png)
 
@@ -97,11 +97,11 @@ Ora hai definito la connessione e il Customer Journey Analytics aggiunge i dati 
 Per visualizzare lo stato della connessione:
 
 1. Seleziona **[!UICONTROL Connessioni]** nell&#39;interfaccia principale del Customer Journey Analytics.
-1. Seleziona il nome della connessione, ad esempio **[!UICONTROL App Luma - Connessione tutorial SDK per dispositivi mobili AEP]**.
+1. Seleziona il nome della connessione, ad esempio **[!UICONTROL App Luma - Connessione tutorial SDK di AEP Mobile]**.
 
-In **[!UICONTROL Connessioni]** > **[!UICONTROL App Luma - Connessione tutorial SDK per dispositivi mobili AEP]**, puoi vedere:
+Nell&#39;esercitazione **[!UICONTROL Connessioni]** > **[!UICONTROL App Luma - Connessione SDK mobile AEP]**, vedi:
 
-1. Informazioni sui record totali aggiunti, sui record ignorati e sui record eliminati. Assicurati di selezionare **[!UICONTROL Tutti i set di dati]** e seleziona un periodo di tempo appropriato per visualizzare i dettagli della connessione. È possibile utilizzare ![Calendario](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) per aprire una finestra di dialogo e selezionare il periodo di tempo.
+1. Informazioni sui record totali aggiunti, sui record ignorati e sui record eliminati. Accertati di selezionare **[!UICONTROL Tutti i set di dati]** e di selezionare un periodo di tempo appropriato per visualizzare i dettagli della connessione. È possibile utilizzare ![Calendario](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) per aprire una finestra di dialogo e selezionare il periodo di tempo.
 1. Informazioni per singoli set di dati su record aggiunti, record saltati, record eliminati e altro ancora.
 
    ![Connessioni CJA 6](assets/cja-connections-6.png)
@@ -113,60 +113,60 @@ Dopo aver aggiunto i record dai set di dati al Customer Journey Analytics, puoi 
 
 Una visualizzazione dati è un contenitore specifico del Customer Journey Analytics che consente di determinare come interpretare i dati di una connessione. Puoi configurare campi standard e di schema da qualsiasi set di dati definito nella Connessione come componenti (dimensioni, metriche) in Analysis Workspace.
 
-Una visualizzazione dati nel Customer Journey Analytics offre un’enorme flessibilità per configurare e definire correttamente i dati dalla connessione. In questo tutorial utilizzi solo la funzionalità necessaria per le attività di reporting e analisi. Consulta [Visualizzazioni dati](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views) per ulteriori informazioni.
+Una visualizzazione dati nel Customer Journey Analytics offre un’enorme flessibilità per configurare e definire correttamente i dati dalla connessione. In questo tutorial utilizzi solo la funzionalità necessaria per le attività di reporting e analisi. Per ulteriori informazioni, vedi [Visualizzazioni dati](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views).
 
 
 Per creare la visualizzazione dati:
 
-1. Passare all&#39;interfaccia di Customer Journey Analytics utilizzando le app ![App](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) in alto a destra.
+1. Passa all&#39;interfaccia di Customer Journey Analytics utilizzando il menu App ![App](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) in alto a destra.
 
 1. Seleziona **[!UICONTROL Visualizzazioni dati]** dalla barra dei menu superiore.
-1. Seleziona **[!UICONTROL Creare una nuova visualizzazione dati]**.
-1. In entrata **[!UICONTROL Visualizzazioni dati >]**, assicurano che **[!UICONTROL Configura]** è selezionata.
+1. Selezionare **[!UICONTROL Crea nuova visualizzazione dati]**.
+1. In **[!UICONTROL Visualizzazioni dati >]**, verificare che la scheda **[!UICONTROL Configura]** sia selezionata.
 
-   1. Seleziona la connessione dall’elenco a discesa Connessione impostazioni, ad esempio **[!UICONTROL App Luma - Connessione tutorial SDK per dispositivi mobili AEP]**.
-   1. Immetti un Nome per la visualizzazione dati, ad esempio: `Luma App - AEP Mobile SDK Tutorial Data view`.
+   1. Seleziona la tua connessione dall&#39;elenco a discesa Connessione impostazioni, ad esempio **[!UICONTROL App Luma - Connessione esercitazione SDK AEP Mobile]**.
+   1. Immettere un nome per la visualizzazione dati, ad esempio: `Luma App - AEP Mobile SDK Tutorial Data view`.
    1. Seleziona **[!UICONTROL Salva e continua]**.
 
-      ![Visualizzazione dati di CJA 1](assets/cja-dataview-1.png)
+      ![Visualizzazione dati CJA 1](assets/cja-dataview-1.png)
 
-1. In **[!UICONTROL Componenti]** scheda di **[!UICONTROL App Luma: visualizzazione dati dell’esercitazione dell’SDK di AEP Mobile]**, puoi definire le metriche e la dimensione da utilizzare per i rapporti sull’app mobile. Per impostazione predefinita, per la visualizzazione dati sono già configurate diverse metriche e dimensioni standard (con riferimento congiunto a un componente). Tuttavia, la visualizzazione dati richiede più componenti. <br/>Per aggiungere un campo schema dallo schema definito in precedenza o da schemi predefiniti (consulta [Creare uno schema](create-schema.md) lezione), come componente (dimensione o metrica):
+1. Nella scheda **[!UICONTROL Componenti]** della **[!UICONTROL visualizzazione dati dell&#39;esercitazione dell&#39;app Luma - SDK di AEP Mobile]**, puoi definire le metriche e la dimensione da utilizzare per la generazione dei rapporti nell&#39;app mobile. Per impostazione predefinita, per la visualizzazione dati sono già configurate diverse metriche e dimensioni standard (con riferimento congiunto a un componente). Tuttavia, la visualizzazione dati richiede più componenti. <br/>Per aggiungere un campo schema dallo schema definito in precedenza o da schemi predefiniti (vedere [Creare uno schema](create-schema.md) lezione), come componente (dimensione o metrica):
 
    1. Trova il campo schema:
 
-      - cercare il componente utilizzando ![Ricerca](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) ***[!UICONTROL Cerca campi schema]*** campo di ricerca. Ad esempio: `productListAdd`, o
+      - cercare il componente utilizzando il campo di ricerca ![Cerca](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) ***[!UICONTROL Cerca campi schema]***. Ad esempio, `productListAdd` oppure
 
-        ![Vista dati CJA 2a](assets/cja-dataview-2a.png)
+        ![Visualizzazione dati CJA 2a](assets/cja-dataview-2a.png)
 
-      - scorri verso il basso fino al campo schema in ![Cartella](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Set di dati evento]** ![Freccia](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg). <br/>Ad esempio: ![Cartella](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Set di dati evento]** ![Freccia](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) ![Cartella](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL commerce]** ![Freccia](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) ![Cartella](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL productListAdds]** ![Freccia](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)
+      - Scorri verso il basso fino al campo dello schema all&#39;interno di ![Cartella](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Set di dati evento]** ![Casuale](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg). <br/>Ad esempio, ![Cartella](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Set di dati evento]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) ![Cartella](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL commerce]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) ![Cartella](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL productListAdds]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)
 
-        ![Vista dati CJA 2a](assets/cja-dataview-2b.png)
+        ![Visualizzazione dati CJA 2a](assets/cja-dataview-2b.png)
 
-   1. Trascina il campo schema specifico dal riquadro Campi schema e rilascialo sulla **[!UICONTROL METRICHE]** o **[!UICONTROL DIMENSION]** elenco in [!UICONTROL Componenti inclusi] riquadro.
+   1. Trascina il campo dello schema specifico dal riquadro Campi schema e rilascialo nell&#39;elenco **[!UICONTROL METRICHE]** o **[!UICONTROL DIMENSION]** nel riquadro [!UICONTROL Componenti inclusi].
 
-      ![Vista dati CJA 2a](assets/cja-dataview-3.png)
+      ![Visualizzazione dati CJA 2a](assets/cja-dataview-3.png)
 
-   1. È possibile configurare le impostazioni di un componente. Seleziona il componente e configura le impostazioni nel riquadro a destra. <br/>Ad esempio, puoi rinominare **[!UICONTROL commerce.productListAdds]** a `Product Add To Lists` utilizzando **[!UICONTROL IMPOSTAZIONI DEI COMPONENTI]** > **[!UICONTROL Nome componente]** nel riquadro di destra.
+   1. È possibile configurare le impostazioni di un componente. Seleziona il componente e configura le impostazioni nel riquadro a destra. <br/>Ad esempio, è possibile rinominare **[!UICONTROL commerce.productListAdds]** in `Product Add To Lists` utilizzando il campo **[!UICONTROL IMPOSTAZIONI COMPONENTE]** > **[!UICONTROL Nome componente]** nel riquadro di destra.
 
-      ![Vista dati CJA 3b](assets/cja-dataview-3b.png)
+      ![Visualizzazione dati CJA 3b](assets/cja-dataview-3b.png)
 
-      Oppure configura **[!UICONTROL INCLUDI VALORI DI ESCLUSIONE]**.
+      Oppure configura **[!UICONTROL INCLUDE EXCLUDE VALUES]**.
 
       ![Impostazioni del componente Visualizzazione dati di CJA](assets/cja-dataview-component-settings.png)
 
-   1. Dopo aver compreso come aggiungere campi alla visualizzazione dati e configurare il componente risultante, utilizza le tabelle seguenti per un elenco di campi schema da aggiungere come metriche o dimensioni. Utilizza il **Percorso schema** valore della colonna dalla tabella seguente per cercare o scorrere fino al campo dello schema specifico. Una volta aggiunte le metriche e le dimensioni, seleziona la **Impostazioni dei componenti** nella tabella se sono necessarie impostazioni specifiche per un componente, come il relativo **[!UICONTROL Nome componente]** o definizione **[!UICONTROL INCLUDI VALORI DI ESCLUSIONE]**.
+   1. Dopo aver compreso come aggiungere campi alla visualizzazione dati e configurare il componente risultante, utilizza le tabelle seguenti per un elenco di campi schema da aggiungere come metriche o dimensioni. Utilizza il valore della colonna **Percorso schema** dalla tabella seguente per cercare o scorrere fino al campo dello schema specifico. Una volta aggiunte le metriche e le dimensioni, controlla nella tabella il valore della colonna **Impostazioni componente** per verificare se sono necessarie impostazioni specifiche per un componente, come il suo **[!UICONTROL Nome componente]** o la definizione di **[!UICONTROL INCLUDI VALORI ESCLUSI]**.
 
       **METRICHE**
 
       | Nome componente | Set di dati | Tipo di dati dello schema | Percorso schema | Impostazioni dei componenti |
       |---|---|---|---|---|
-      | Ignora | Set di dati evento di tracciamento push AJO, set di dati evento app mobile Luma | Intero | _experience.decisioning.<br/>propositionEventType.dismiss | Nome componente: `Dismiss` |
-      | Annulla iscrizione | Set di dati evento di tracciamento push AJO, set di dati evento app mobile Luma | Intero | _experience.decisioning.<br/>propositionEventType.unsubscribe | Nome componente: `Unsubscribe` |
-      | Trigger | Set di dati evento di tracciamento push AJO, set di dati evento app mobile Luma | Intero | _experience.decisioning.<br/>propositionEventType.trigger | Nome componente: `Trigger` |
-      | Visualizzazione | Set di dati evento di tracciamento push AJO, set di dati evento app mobile Luma | Intero | _experience.decisioning.<br/>propositionEventType.display | Nome componente: `Display` |
-      | Invia | Set di dati evento di tracciamento push AJO, set di dati evento app mobile Luma | Intero | _experience.decisioning.<br/>propositionEventType.send | Nome componente: `Send` |
-      | Interagisci | Set di dati evento di tracciamento push AJO, set di dati evento app mobile Luma | Intero | _experience.decisioning.<br/>propositionEventType.interact | Nome componente: `Interact` |
-      | Eventi di posizione | Set di dati evento di tracciamento push AJO, set di dati evento app mobile Luma, eventi decisionali ODE - decisioning di corsi sdk per dispositivi mobili e web | Stringa | Tipo evento | Nome componente: `Location Events`<br/><br/>![Includi/escludi](assets/cja-dataview-include-exclude.png) |
+      | Ignora | Set di dati evento esperienza tracciamento push AJO, set di dati evento app mobile Luma | Intero | _experience.decisioning.<br/>propositionEventType.dismiss | Nome componente: `Dismiss` |
+      | Annulla iscrizione | Set di dati evento esperienza tracciamento push AJO, set di dati evento app mobile Luma | Intero | _experience.decisioning.<br/>propositionEventType.unsubscribe | Nome componente: `Unsubscribe` |
+      | Trigger | Set di dati evento esperienza tracciamento push AJO, set di dati evento app mobile Luma | Intero | _experience.decisioning.<br/>propositionEventType.trigger | Nome componente: `Trigger` |
+      | Visualizzazione | Set di dati evento esperienza tracciamento push AJO, set di dati evento app mobile Luma | Intero | _experience.decisioning.<br/>propositionEventType.display | Nome componente: `Display` |
+      | Invia | Set di dati evento esperienza tracciamento push AJO, set di dati evento app mobile Luma | Intero | _experience.decisioning.<br/>propositionEventType.send | Nome componente: `Send` |
+      | Interagisci | Set di dati evento esperienza tracciamento push AJO, set di dati evento app mobile Luma | Intero | _experience.decisioning.<br/>propositionEventType.interact | Nome componente: `Interact` |
+      | Eventi di posizione | Set di dati evento esperienza tracciamento push di AJO, set di dati evento app mobile Luma, eventi decisionali ODE - decisioning per dispositivi mobili e web-sdk-corsi | Stringa | Tipo evento | Nome componente: `Location Events`<br/><br/>![Includi/escludi](assets/cja-dataview-include-exclude.png) |
       | Visualizzazioni prodotto | Set di dati evento app mobile Luma | Doppio | commerce.productViews.value | Nome componente: `Product Views` |
       | Aggiunta di prodotti agli elenchi | Set di dati evento app mobile Luma | Doppio | commerce.productListAdds.value | Nome componente: `Product Add To Lists` |
       | Acquisti | Set di dati evento app mobile Luma | Doppio | commerce.purchases.value | Nome componente: `Purchases` |
@@ -178,10 +178,10 @@ Per creare la visualizzazione dati:
 
       >[!NOTE]
       >
-      >Nota come il campo schema per la metrica Eventi posizione utilizza **[!UICONTROL INCLUDI VALORI DI ESCLUSIONE]** per contare i tipi di evento che contengono `location`.
+      >Nota come il campo schema per la metrica Eventi posizione utilizza **[!UICONTROL INCLUDE EXCLUDE VALUES]** per contare i tipi di evento che contengono `location`.
 
 
-      Configurazione della visualizzazione dati per **[!UICONTROL METRICHE]** deve corrispondere a quello di seguito dopo aver aggiunto come componente metrica tutti i campi schema della tabella precedente:
+      La configurazione della visualizzazione dati per **[!UICONTROL METRICS]** deve corrispondere di seguito dopo aver aggiunto tutti i campi schema della tabella precedente come componente metrica:
 
       ![Visualizzazione dati CJA 4](assets/cja-dataview-4.png)
 
@@ -189,9 +189,9 @@ Per creare la visualizzazione dati:
 
       | Nome componente | Set di dati | Tipo di dati dello schema | Percorso schema | Impostazioni dei componenti |
       |---|---|---|---|---|
-      | Città | Set di dati evento di tracciamento push AJO, set di dati evento app mobile Luma | Stringa | placeContext.geo.city | Nome componente: `City` |
-      | Tipi di evento | Set di dati evento di tracciamento push AJO, set di dati evento app mobile Luma, eventi decisionali ODE - decisioning di corsi sdk per dispositivi mobili e web | Stringa | eventType | Nome componente: `Event Types` |
-      | Nome opzione di decisione | Set di dati evento di tracciamento push AJO, set di dati evento app mobile Luma, eventi decisionali ODE - decisioning di corsi sdk per dispositivi mobili e web | Stringa | _experience.decisioning.<br/>propositions.items.name | Nome componente: `Decision Option Name` |
+      | Città | Set di dati evento esperienza tracciamento push AJO, set di dati evento app mobile Luma | Stringa | placeContext.geo.city | Nome componente: `City` |
+      | Tipi di evento | Set di dati evento esperienza tracciamento push di AJO, set di dati evento app mobile Luma, eventi decisionali ODE - decisioning per dispositivi mobili e web-sdk-corsi | Stringa | eventType | Nome componente: `Event Types` |
+      | Nome opzione di decisione | Set di dati evento esperienza tracciamento push di AJO, set di dati evento app mobile Luma, eventi decisionali ODE - decisioning per dispositivi mobili e web-sdk-corsi | Stringa | _experience.decisioning.<br/>propositions.items.name | Nome componente: `Decision Option Name` |
       | Nome interazione app | Set di dati evento app mobile Luma | Stringa | _techmarketingdemos.appInformation.<br/>appInteraction.name | Nome componente: `App Interaction Name` |
       | Nome visualizzato | Set di dati evento app mobile Luma | Stringa | _techmarketingdemos.appInformation.<br/>appStateDetails.screenName | Nome componente: `Screen Name` |
       | Nome attività | ODE DecisionEvents - mobile-and-web-sdk-courses decisioning | Stringa | _experience.decisioning.<br/>propositionDetails.activity.name | Nome componente: `Activity Name` |
@@ -199,13 +199,13 @@ Per creare la visualizzazione dati:
 
       {style="table-layout:auto"}
 
-      Configurazione della visualizzazione dati per **[!UICONTROL DIMENSION]** deve corrispondere a quello di seguito dopo aver aggiunto tutti i campi schema della tabella precedente come componente dimensione:
+      La configurazione della visualizzazione dati per **[!UICONTROL DIMENSION]** deve corrispondere di seguito dopo aver aggiunto tutti i campi schema della tabella precedente come componente dimensione:
 
       ![Visualizzazione dati CJA 4](assets/cja-dataview-5.png)
 
    1. Seleziona **[!UICONTROL Salva e continua]**.
 
-1. Il **[!UICONTROL Impostazioni]** scheda di **[!UICONTROL App Luma: visualizzazione dati dell’esercitazione dell’SDK di AEP Mobile]** consente di configurare filtri e impostazioni di sessione. Per questa esercitazione, non è richiesta alcuna configurazione aggiuntiva.
+1. La scheda **[!UICONTROL Impostazioni]** della **[!UICONTROL visualizzazione dati dell&#39;esercitazione dell&#39;app Luma - SDK di AEP Mobile]** consente di configurare filtri e impostazioni di sessione. Per questa esercitazione, non è richiesta alcuna configurazione aggiuntiva.
 
    - Seleziona **[!UICONTROL Salva e termina]**.
 
@@ -213,7 +213,7 @@ Hai definito la tua visualizzazione dati e tutto è pronto per iniziare a creare
 
 ## Creare un progetto
 
-I progetti Workspace vengono utilizzati in Customer Journey Analytics per creare rapporti e visualizzazioni. Ci sono molte possibilità per creare rapporti completi e visualizzazioni coinvolgenti, ma questo esula dall&#39;ambito di questa esercitazione. Consulta [Panoramica di Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) e [Crea un nuovo progetto](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) per ulteriori informazioni.
+I progetti Workspace vengono utilizzati in Customer Journey Analytics per creare rapporti e visualizzazioni. Ci sono molte possibilità per creare rapporti completi e visualizzazioni coinvolgenti, ma questo esula dall&#39;ambito di questa esercitazione. Per ulteriori informazioni, vedere [Panoramica di Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) e [Creare un nuovo progetto](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project).
 
 In questa sezione della lezione, crei un progetto che mostra rapporti e visualizzazioni su:
 
@@ -224,7 +224,7 @@ In questa sezione della lezione, crei un progetto che mostra rapporti e visualiz
 
 Per creare il progetto:
 
-1. Passare all&#39;interfaccia di Customer Journey Analytics utilizzando le app ![App](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) in alto a destra.
+1. Passa all&#39;interfaccia di Customer Journey Analytics utilizzando il menu App ![App](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) in alto a destra.
 
 1. Seleziona **[!UICONTROL Workspace]** dalla barra dei menu superiore.
 
@@ -236,55 +236,55 @@ Per creare il progetto:
 
       ![Progetti CJA - 1](assets/cja-projects-1.png)
 
-1. Ti viene presentato il **[!UICONTROL Nuovo progetto]** di rete. In questa interfaccia puoi creare rapporti e visualizzazioni.
+1. Ti viene presentata l&#39;interfaccia **[!UICONTROL Nuovo progetto]**. In questa interfaccia puoi creare rapporti e visualizzazioni.
 
-1. Seleziona il nome del progetto (**[!UICONTROL Nuovo progetto]**) e specifica il nome del progetto. Ad esempio, `Luma App - AEP Mobile SDK Tutorial Project`.
+1. Selezionare il nome del progetto (**[!UICONTROL Nuovo progetto]**) e specificare il proprio nome per il progetto. Ad esempio, `Luma App - AEP Mobile SDK Tutorial Project`.
    ![Progetto CJA 2](assets/cja-projects-2.png)
 
-1. Per salvare il progetto, seleziona **[!UICONTROL Progetto]** > **[!UICONTROL Salva]**.
+1. Per salvare il progetto, selezionare **[!UICONTROL Progetto]** > **[!UICONTROL Salva]**.
    ![Progetto CJA 3](assets/cja-projects-3.png)
 
-1. In **[!UICONTROL Salva]** , ignora tutti gli altri campi e seleziona **[!UICONTROL Salva]**.
+1. Nella finestra di dialogo **[!UICONTROL Salva]**, ignora tutti gli altri campi e seleziona **[!UICONTROL Salva]**.
    ![Progetto CJA 4](assets/cja-projects-4.png)
 
 
 >[!IMPORTANT]
 >
->   Ricorda di salvare il progetto regolarmente, altrimenti le modifiche andranno perse. Puoi salvare rapidamente il progetto utilizzando **[!UICONTROL Ctrl+S]** (Windows) o **[!UICONTROL ⌘ (cmd) + s]** (macOS)
+>   Ricorda di salvare il progetto regolarmente, altrimenti le modifiche andranno perse. Puoi salvare rapidamente il progetto utilizzando **[!UICONTROL ctrl + s]** (Windows) o **[!UICONTROL ⌘ (cmd) + s]** (macOS).
 
 Ora hai configurato il progetto. Per impostazione predefinita, viene fornita una tabella a forma libera. Prima di aggiungere i componenti, assicurati che il pannello a forma libera utilizzi la visualizzazione dati e il periodo di tempo corretti.
 
-1. Seleziona la visualizzazione dati dall’elenco a discesa. Ad esempio: **[!UICONTROL App Luma: visualizzazione dati dell’esercitazione dell’SDK di AEP Mobile]**. Se non riesci a visualizzare la visualizzazione dati nell’elenco, seleziona **[!UICONTROL Mostra tutto]** nella parte inferiore dell’elenco a discesa.
+1. Seleziona la visualizzazione dati dall’elenco a discesa. Ad esempio, **[!UICONTROL App Luma - Visualizzazione dati tutorial SDK di AEP Mobile]**. Se la visualizzazione dati non è visibile nell&#39;elenco, selezionare **[!UICONTROL Mostra tutto]** nella parte inferiore dell&#39;elenco a discesa.
    ![Progetto CJA 5](assets/cja-projects-5.png)
 
-1. Per definire il periodo di tempo appropriato per il pannello, selezionate il predefinito di default **[!UICONTROL Questo mese]** immettere una data di inizio e una data di fine personalizzate oppure utilizzare una **[!UICONTROL Predefinito]** (like **[!UICONTROL Ultimi 6 mesi interi]**) e seleziona **[!UICONTROL Applica]**.
+1. Per definire il periodo di tempo appropriato per il pannello, seleziona il predefinito predefinito predefinito **[!UICONTROL Questo mese]** immetti una data di inizio e una data di fine personalizzate oppure utilizza un **[!UICONTROL predefinito]** (come **[!UICONTROL Ultimi 6 mesi interi]**) e seleziona **[!UICONTROL Applica]**.
    ![Progetto CJA 6](assets/cja-projects-6.png)
 
 
 ### Utilizzo app
 
-Ora puoi creare un rapporto sull’utilizzo dell’app. Hai aggiunto il codice necessario nell’app per registrare le interazioni dell’app e quali schermate vengono utilizzate nell’app (consulta la sezione [Tracciare gli eventi](events.md) lezione) e ora desideri creare un rapporto su questi dati.
+Ora puoi creare un rapporto sull’utilizzo dell’app. Hai aggiunto il codice necessario nell&#39;app per registrare le interazioni dell&#39;app e quali schermate vengono utilizzate nell&#39;app (consulta la lezione [Traccia eventi](events.md)) e ora desideri creare un rapporto su questi dati.
 
 #### Nomi schermo
 
 Per creare rapporti sugli schermi visualizzati nell’app:
 
-1. Rinomina il **[!UICONTROL Figura a mano libera]** pannello a `App Usage`.
+1. Rinomina il pannello **[!UICONTROL Freeform]** in `App Usage`.
 
-1. Rinomina il **[!UICONTROL Tabella a forma libera]** a `Screen Names`.
+1. Rinomina la **[!UICONTROL tabella a forma libera]** in `Screen Names`.
 
-1. Seleziona **[!UICONTROL Mostra tutto]** sotto **[!UICONTROL METRICHE]** elenco.
+1. Seleziona **[!UICONTROL Mostra tutti]** sotto l&#39;elenco **[!UICONTROL METRICHE]**.
 
-1. Trascina la **[!UICONTROL Visualizzazioni schermo]** componente attivato [!UICONTROL _Rilascia un **metrica**qui (o qualsiasi altro componente)_)].
+1. Trascina e rilascia il componente **[!UICONTROL Visualizzazioni schermo]** in [!UICONTROL _Rilascia qui (o in qualsiasi altro componente_)] una **metrica**.
    ![Progetti CJA 7](assets/cja-projects-7.png)
 La tabella a forma libera ora mostra le visualizzazioni dello schermo per ogni giorno per il periodo di tempo selezionato. Tuttavia, vuoi mostrare il numero di visualizzazioni dello schermo per ciascuna delle diverse schermate utilizzate nell’app.
 
-1. Per visualizzare **[!UICONTROL DIMENSION]** elenco dei componenti, seleziona ![Croce](https://spectrum.adobe.com/static/icons/ui_18/CrossSize100.svg) per rimuovere ![Evento](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) **[!UICONTROL Metriche]** filtrare dalla barra dei componenti.
+1. Per visualizzare l&#39;elenco di componenti **[!UICONTROL DIMENSION]**, selezionare ![Cross](https://spectrum.adobe.com/static/icons/ui_18/CrossSize100.svg) per rimuovere il filtro ![Event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) **[!UICONTROL Metrics]** dalla barra dei componenti.
    ![Progetto CJA 8](assets/cja-projects-8.png)
 
-1. Seleziona **[!UICONTROL Mostra tutto]** sotto **[!UICONTROL DIMENSION]** elenco.
+1. Seleziona **[!UICONTROL Mostra tutti]** sotto l&#39;elenco **[!UICONTROL DIMENSION]**.
 
-1. Trascina la **[!UICONTROL Nome visualizzato]** componente sul **[!UICONTROL Giorno]** intestazione. L’operazione mostra ![Switch](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Switch_18_N.svg) **[!UICONTROL Sostituisci]** per indicare la sostituzione della quota.
+1. Trascina e rilascia il componente **[!UICONTROL Nome schermo]** nell&#39;intestazione **[!UICONTROL Giorno]**. L&#39;operazione mostra ![Switch](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Switch_18_N.svg) **[!UICONTROL Replace]** per indicare la sostituzione della dimensione.
    ![Progetti CJA 9](assets/cja-projects-9.png)
 
 La prima tabella a forma libera nel report è stata completata.
@@ -300,19 +300,19 @@ La prima tabella a forma libera nel report è stata completata.
 
 Successivamente, creerai una tabella a forma libera per segnalare il modo in cui gli utenti hanno interagito con l’app.
 
-1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) e dal popup ![Tabella a forma libera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) per aggiungere una nuova tabella a forma libera.
+1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) e dalla finestra a comparsa ![Tabella a forma libera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) per aggiungere una nuova tabella a forma libera.
    ![Progetti CJA 11](assets/cja-projects-11.png)
 
-1. Rinomina **[!UICONTROL Tabella a forma libera (2)]** a `App Interactions`.
+1. Rinomina **[!UICONTROL Tabella a forma libera (2)]** in `App Interactions`.
 
-1. Trascina la **[!UICONTROL Interazioni app]** metrica su [!UICONTROL _Rilascia un **metrica**qui (o qualsiasi altro componente)_)].
+1. Trascina e rilascia la metrica **[!UICONTROL Interazioni app]** su [!UICONTROL _Rilascia una **metrica**qui (o qualsiasi altro componente_)].
 
-1. Trascina la **[!UICONTROL Nome interazione app]** dimensione sul **[!UICONTROL Giorno]** per sostituire questa dimensione.
+1. Trascina e rilascia la dimensione **[!UICONTROL Nome interazione app]** nell&#39;intestazione **[!UICONTROL Day]** per sostituire questa dimensione.
 
 Il secondo rapporto è ora pronto e mostra le interazioni dell’app.
 ![Progetti CJA 12](assets/cja-projects-12.png)
 
-Le informazioni sono limitate principalmente perché hai implementato `MobileSDK.shared.sendAppInteractionEvent(actionName: "<actionName>")` Le chiamate API vengono effettuate solo nella schermata di accesso. Se aggiungi questa chiamata API a più schermate dell’app, il rapporto diventa più informativo.
+Le informazioni sono limitate principalmente perché hai implementato `MobileSDK.shared.sendAppInteractionEvent(actionName: "<actionName>")` chiamate API solo nella schermata di accesso. Se aggiungi questa chiamata API a più schermate dell’app, il rapporto diventa più informativo.
 
 >[!NOTE]
 >
@@ -325,7 +325,7 @@ Ora vuoi segnalare, in un pannello separato, gli eventi di e-commerce che si ver
 
 #### Eventi Commerce
 
-1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) al di fuori della corrente [!UICONTROL Utilizzo app] per creare un nuovo pannello.
+1. Per creare un nuovo pannello, seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) all&#39;esterno del pannello [!UICONTROL Utilizzo app] corrente.
    ![Progetti CJA 13](assets/cja-projects-13.png)
 
 1. Assicurati di selezionare il periodo di tempo appropriato.
@@ -333,18 +333,18 @@ Ora vuoi segnalare, in un pannello separato, gli eventi di e-commerce che si ver
 1. Seleziona ![Tabella a forma libera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) **[!UICONTROL Tabella a forma libera]** per creare una nuova tabella a forma libera.
    ![Progetti CJA 14](assets/cja-projects-14.png)
 
-1. Rinomina **[!UICONTROL Pannello]** a `Commerce`.
+1. Rinomina **[!UICONTROL Pannello]** in `Commerce`.
 
-1. Rinomina **[!UICONTROL Tabella a forma libera]** a `Commerce Events`.
+1. Rinomina **[!UICONTROL Tabella a forma libera]** in `Commerce Events`.
 
-1. Trascina **[!UICONTROL Visualizzazioni prodotto]** metrica su a [!UICONTROL _Rilascia un **metrica**qui (o qualsiasi altro componente)_)].
+1. Trascina e rilascia la metrica **[!UICONTROL Visualizzazioni prodotto]** su [!UICONTROL _Rilascia una **metrica**qui (o qualsiasi altro componente_)].
 
-1. Trascina la **[!UICONTROL Aggiunta di prodotti agli elenchi]** metrica a destra della **[!UICONTROL Visualizzazioni prodotto]** per inserire questa colonna nella tabella a forma libera. Assicurare **[!UICONTROL + Aggiungi]** (in blu) quando si inserisce la colonna.
+1. Trascina e rilascia la metrica **[!UICONTROL Product Add To Lists]** a destra della colonna **[!UICONTROL Product Views]** per inserire questa colonna nella tabella a forma libera. Accertati che **[!UICONTROL + Add]** (in blu) sia visualizzato durante l&#39;inserimento della colonna.
    ![Progetti CJA 15](assets/cja-projects-15.png)
 
-1. Ripeti il passaggio precedente per aggiungere **[!UICONTROL Salva per dopo]** e la **[!UICONTROL Acquisti]** nella tabella a forma libera.
+1. Ripeti il passaggio precedente per aggiungere la metrica **[!UICONTROL Salva per dopo]** e la metrica **[!UICONTROL Acquisti]** alla tabella a forma libera.
 
-1. Trascina la **[!UICONTROL Mese]** dimensione sopra il **[!UICONTROL Giorno]** per cambiare il reporting da giornaliero a mensile.
+1. Trascina e rilascia la dimensione **[!UICONTROL Mese]** sopra la dimensione **[!UICONTROL Giorno]** per cambiare il reporting da giornaliero a mensile.
 
 Il rapporto Eventi Commerce è stato completato.
 
@@ -358,13 +358,13 @@ Il rapporto Eventi Commerce è stato completato.
 
 Ora creerai una visualizzazione dell’abbandono per il funnel commerce che mostra quanti utenti che hanno visualizzato i prodotti hanno aggiunto questi prodotti al carrello e, da lì, quanti utenti hanno salvato questi prodotti per dopo.
 
-1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) all&#39;interno del **[!UICONTROL Commerce]** e dal menu a comparsa seleziona ![Abbandono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ConversionFunnel_18_N.svg) (che rappresenta la visualizzazione Abbandono).
+1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) nel pannello **[!UICONTROL Commerce]** e dal popup seleziona ![Abbandono](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ConversionFunnel_18_N.svg) (che rappresenta la visualizzazione Abbandono).
 
-1. Seleziona **[!UICONTROL Visualizzazioni prodotto]** dal [!UICONTROL *Aggiungi punto di contatto*] elenco a discesa.
+1. Seleziona **[!UICONTROL Visualizzazioni prodotto]** dall&#39;elenco a discesa [!UICONTROL *Aggiungi punto di contatto*].
    ![Progetti CJA 18](assets/cja-projects-18.png)
-In alternativa, puoi trascinare e rilasciare la **[!UICONTROL Visualizzazione prodotti]** dimensione sotto il **[!UICONTROL Tutte le persone]** dimensione in **[!UICONTROL Abbandono]** visualizzazione.
+In alternativa, puoi trascinare la dimensione **[!UICONTROL Visualizzazione prodotti]** sotto la dimensione **[!UICONTROL Tutte le persone]** nella visualizzazione **[!UICONTROL Abbandono]**.
 
-1. Ripeti il passaggio precedente per **[!UICONTROL Aggiunta di prodotti agli elenchi]** e **[!UICONTROL Acquisti]** dimensioni.
+1. Ripeti il passaggio precedente per le dimensioni **[!UICONTROL Product Add To Lists]** e **[!UICONTROL Purchases]**.
 
 Il rapporto di visualizzazione Abbandono è stato completato.
 ![Progetti CJA 19](assets/cja-projects-19.png)
@@ -380,19 +380,19 @@ Desideri generare rapporti sul numero di offerte e sulle offerte visualizzate ag
 
 #### Panoramica mensile
 
-1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) al di fuori del pannello Commerce corrente, per creare un nuovo pannello.
+1. Per creare un nuovo pannello, seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) all&#39;esterno del pannello Commerce corrente.
 
-1. Rinomina il **[!UICONTROL Pannello]** a `Offers`.
+1. Rinomina il **[!UICONTROL pannello]** in `Offers`.
 
 1. Accertati di selezionare il periodo appropriato.
 
-1. Seleziona ![Tabella a forma libera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) Tabella a forma libera per creare una nuova tabella a forma libera.
+1. Seleziona ![Tabella a forma libera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) per creare una nuova tabella a forma libera.
 
-1. Rinomina il **[!UICONTROL Tabella a forma libera]** a `Monthly Overview`.
+1. Rinomina la **[!UICONTROL tabella a forma libera]** in `Monthly Overview`.
 
-1. Trascina la **[!UICONTROL Visualizzazione]** metrica su a [!UICONTROL _Rilascia un **metrica**qui (o qualsiasi altro componente)_)].
+1. Trascina e rilascia la metrica **[!UICONTROL Visualizzazione]** su [!UICONTROL _Rilascia una **metrica**qui (o qualsiasi altro componente_)].
 
-1. Trascina la **[!UICONTROL Mese]** dimensione sul **[!UICONTROL Giorno]** per sostituire la dimensione.
+1. Trascina e rilascia la dimensione **[!UICONTROL Mese]** nella colonna **[!UICONTROL Giorno]** per sostituire la dimensione.
 
 La panoramica mensile delle offerte è completa.
 
@@ -407,17 +407,17 @@ La panoramica mensile delle offerte è completa.
 
 Desideri inoltre disporre di un rapporto che mostri quali offerte sono state mostrate agli utenti dell’app, in base a quali numeri.
 
-1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) all&#39;interno del **[!UICONTROL Offerte]** pannello e ![Tabella a forma libera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg)dalla finestra a comparsa per aggiungere una nuova tabella a forma libera.
+1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) nel pannello **[!UICONTROL Offerte]** e ![Tabella a forma libera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) dal popup per aggiungere una nuova tabella a forma libera.
 
-1. Rinomina **[!UICONTROL Tabella a forma libera (2)]** a `People`.
+1. Rinomina **[!UICONTROL Tabella a forma libera (2)]** in `People`.
 
-1. Trascina la **[!UICONTROL Persone]** metrica su a [!UICONTROL _Rilascia un **metrica**qui (o qualsiasi altro componente)_)].
+1. Trascina e rilascia la metrica **[!UICONTROL Persone]** su [!UICONTROL _Rilascia una **metrica**qui (o qualsiasi altro componente_)].
 
-1. Trascina la **[!UICONTROL Nome attività]** il **[!UICONTROL Giorno]** per sostituire la dimensione.
+1. Trascina e rilascia **[!UICONTROL Nome attività]** nella colonna **[!UICONTROL Giorno]** per sostituire la dimensione.
 
-1. Fai clic con il pulsante destro del mouse sulla riga, identificando una o più decisioni di offerta definite nell’ [Creare e visualizzare le offerte con Gestione delle decisioni](journey-optimizer-offers.md) lezione. Ad esempio: **[!UICONTROL Luma - Decisione sull’app mobile]**.
+1. Fare clic con il pulsante destro del mouse sulla riga, identificando una o più decisioni sulle offerte definite nella lezione [Creare e visualizzare le offerte con Gestione delle decisioni](journey-optimizer-offers.md). Ad esempio, **[!UICONTROL Luma - Decisione app mobile]**.
 
-1. Dal menu di scelta rapida, selezionare **[!UICONTROL Raggruppamento]** > **[!UICONTROL Dimension]** > **[!UICONTROL Nome offerta]**. Questa selezione suddividerà la dimensione Nome attività in Nomi offerta.
+1. Dal menu di scelta rapida, seleziona **[!UICONTROL Raggruppamento]** > **[!UICONTROL Dimension]** > **[!UICONTROL Nome offerta]**. Questa selezione suddividerà la dimensione Nome attività in Nomi offerta.
    ![Progetti CJA 20b](assets/cja-projects-20b.png)
 
 Il report Offerte a persone è stato completato.
@@ -433,29 +433,29 @@ Il report Offerte a persone è stato completato.
 
 Infine, vuoi generare rapporti sulle visite ai negozi.
 
-1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) al di fuori del pannello Offerte corrente, per creare un nuovo pannello.
+1. Per creare un nuovo pannello, seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) all&#39;esterno del pannello Offerte corrente.
 
-1. Rinomina il **[!UICONTROL Pannello]** a `Store Visits`.
+1. Rinomina il **[!UICONTROL pannello]** in `Store Visits`.
 
 1. Accertati di selezionare il periodo appropriato.
 
-1. Seleziona ![Tabella a forma libera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) Tabella a forma libera per creare una nuova tabella a forma libera.
+1. Seleziona ![Tabella a forma libera](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) per creare una nuova tabella a forma libera.
 
-1. Rinomina **[!UICONTROL Tabella a forma libera]** a `Store Entries / Exits Across Cities`.
+1. Rinomina **[!UICONTROL Tabella a forma libera]** in `Store Entries / Exits Across Cities`.
 
-1. Trascina la **[!UICONTROL Eventi di posizione]** metrica su a [!UICONTROL _Rilascia un **metrica**qui (o qualsiasi altro componente)_)]. Il rapporto ora mostra una panoramica giornaliera di tutti gli eventi di posizione che si sono verificati nell’app. Ricorda come hai configurato in modo specifico questa dimensione come parte della tua [visualizzazione dati](#create-a-data-view).
+1. Trascina e rilascia la metrica **[!UICONTROL Eventi posizione]** su [!UICONTROL _Rilascia una **metrica**qui (o qualsiasi altro componente_)]. Il rapporto ora mostra una panoramica giornaliera di tutti gli eventi di posizione che si sono verificati nell’app. Ricorda come hai configurato in modo specifico questa dimensione come parte della [visualizzazione dati](#create-a-data-view).
 
-1. Trascina la **[!UICONTROL Città]** dimensione sul **[!UICONTROL Giorno]** per sostituire la dimensione. Il rapporto ora mostra le città per gli eventi di posizione.
+1. Trascina e rilascia la dimensione **[!UICONTROL Città]** nell&#39;intestazione di colonna **[!UICONTROL Giorno]** per sostituire la dimensione. Il rapporto ora mostra le città per gli eventi di posizione.
 
-1. Per rimuovere gli eventi di geolocalizzazione senza città associate, seleziona ![Filtro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), e dal **[!UICONTROL Ricerca]** popup, disattiva **[!UICONTROL Includi &quot;Nessun valore&quot;]**, quindi seleziona **[!UICONTROL Applica]**.
+1. Per rimuovere gli eventi di geolocalizzazione a cui non è associata alcuna città, selezionare ![Filtro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) e dal popup **[!UICONTROL Ricerca]**, disattivare **[!UICONTROL Includi &quot;Nessun valore&quot;]**, quindi selezionare **[!UICONTROL Applica]**.
 
    ![Progetti CJA 22](assets/cja-projects-22.png)
 
-   Questa azione rimuove **[!UICONTROL Nessun valore]** riga dal report.
+   Questa azione rimuove la riga **[!UICONTROL Nessun valore]** dal report.
 
 1. Seleziona tutte le righe della tabella, fai clic con il pulsante destro del mouse e, dal menu di scelta rapida, seleziona Raggruppamento > Dimension > Tipi di evento.
 
-Il rapporto Visite al Negozio è stato completato. Ora disponi di un rapporto che mostra gli utenti che si trovano dentro e fuori dalle vicinanze delle posizioni del negozio (come hai definito queste posizioni in [Places](places.md) lezione).
+Il rapporto Visite al Negozio è stato completato. È ora disponibile un report che mostra gli utenti che si trovano dentro e fuori dalle vicinanze delle posizioni dei punti vendita (come definito nella lezione [Luoghi](places.md)).
 
 ![Progetto CJA 23](assets/cja-projects-23.png)
 
@@ -468,6 +468,6 @@ Ora dovresti avere una conoscenza di base di come creare rapporti e visualizzare
 >[!SUCCESS]
 >
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [Experience League post di discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Successivo: **[Conclusione e prossime tappe](conclusion.md)**
+Successivo: **[Conclusione e passaggi successivi](conclusion.md)**

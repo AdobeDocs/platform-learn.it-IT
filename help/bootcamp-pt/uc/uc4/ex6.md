@@ -11,7 +11,7 @@ feature: Audiences
 exl-id: 28b87e21-3168-447e-9a93-a6ae7e969657
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,13 @@ ht-degree: 0%
 
 ## 4.6.1 Crie uma audiência e publique-a
 
-Em seu projeto, você criou um filtro chamado. **Sentimenti di chiamata** e conseguiu visualizar a quantidade de usuários que tiveram suas ligações ao call center classificadas como **positività**. Agora, você poderá criar um com esses usuários e ativação-los em jornadas ou em canais de comunicação.
+Em seu projeto, você criou um filtro chamado **Chiama i sentimenti** e conseguiu visualizar a quantidade de usuários que tiveram suas ligações ao call center classificadas como **positivas**. Agora, você poderá criar um com esses usuários e ativação-los em jornadas ou em canais de comunicação.
 
-O primeiro passo é: No painel criado no último exercício, selecione a linha **1. Sentimento di chiamata - Positivo**, clique com o botão direito de seu mouse e selecione a opção **Creare un pubblico dalla selezione**:
+O primeiro passo é: No painel criado no último exercício, selecione a linha **1. Sentimento di chiamata - Positivo**, cricca com o botão direito de seu mouse e selecione a opção **Crea pubblico da selezione**:
 
 ![demo](./images/aud1.png)
 
-Em seguida, dê um nome para a sua audiência seguindo o modelo **yourLastName - la chiamata del pubblico si sente positiva**:
+Em seguida, dê um nome para a sua audiência seguindo o modelo **yourLastName - cia audience call sensazione positiva**:
 
 ![demo](./images/aud2.png)
 
@@ -45,7 +45,7 @@ Para finalizar, cricca em **Publicar**:
 
 ## 4.6.2 Utilizzare la sua audiência como parte de um
 
-Voltando para a Adobe Experience Platform, vá em **Segmenti > Sfoglia** e você conseguirá visualizar o seu criado no CJA pronto e disponível para ser usado nas suas ativações e jornadas!
+Voltando para a Adobe Experience Platform, vá em **Segmenti > Sfoglia** e você irá visualizar o seu criado no CJA pronto e ível para ser usado nas suas ativações e jornadas!
 
 ![demo](./images/aud5.png)
 
@@ -53,11 +53,11 @@ Vamos agora usar esse em uma ativação no Facebook e em uma jornada do cliente!
 
 ## 4.6.3 Utilizzare seu na Real-Time CDP em tempo real
 
-Na Adobe Experience Platform, vá em **Segmenti > Sfoglia** Incontra un’audiência que você criou no CJA:
+Na Adobe Experience Platform, vá em **Segmenti > Sfoglia** e contre a audiência que você criou no CJA:
 
 ![demo](./images/aud6.png)
 
-Clique no seu, em seguida, cricca em **Attiva nella destinazione**:
+Clique no seu, em seguida, em **Attiva nella destinazione**:
 
 ![demo](./images/aud7.png)
 
@@ -69,11 +69,11 @@ Em seguida, cricca em Next novamente:
 
 ![demo](./images/aud9.png)
 
-Selecione a opção **Origine del pubblico** e defina como **Direttamente dai clienti** e cricca em Successivo:
+Selecione a opção **Origine del pubblico** e defina como **Direttamente dai clienti** e clique em Avanti:
 
 ![demo](./images/aud10.png)
 
-Por fim, na página **Revisione** Cricque em Finish!
+Por fim, na página **Recensione** cricca em Finish!
 
 ![demo](./images/aud11.png)
 
@@ -82,7 +82,7 @@ Agorà, vamos utilizar esse no AJO!
 
 ## 4.6.4 Uso di seu non Adobe Journey Optimizer
 
-Na interfaccia da Adobe Experience Platform cricca em Journey Optimizer e, em seguida, nessun menu esquerdo laterale, cricca em **Percorsi** e comece a criar uma jornada clicando em **Crea Percorso**:
+Interfaccia Na da Adobe Experience Platform cricca em Journey Optimizer e, em seguida, nessun menu esquerdo laterale, cricca em **Percorsi** e comece un criar uma jornada clicando em **Crea Percorso**:
 
 ![demo](./images/aud20.png)
 
@@ -90,7 +90,7 @@ Na interfaccia da Adobe Experience Platform cricca em Journey Optimizer e, em se
 
 ![demo](./images/aud22.png)
 
-Em seguida, no menu esquerdo laterale, em Eventos, selecione **Qualificazione del segmento** e arraste-o até a jornada :
+Em seguida, nessun menu laterale esquerdo, em Eventos, selecione **Qualificazione del segmento** e arraste-o até a jornada:
 
 ![demo](./images/aud23.png)
 
@@ -98,7 +98,7 @@ Em seguida, em **Segmento** cricca em **Modifica** para selecionar um:
 
 ![demo](./images/aud24.png)
 
-Voce principale: CJA e cricca em **Salva**:
+Selecione a audiência que você criou no CJA e clique em **Salva**:
 
 ![demo](./images/aud25.png)
 

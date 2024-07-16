@@ -10,13 +10,13 @@ thumbnail: 38180.jpg
 exl-id: 6888eeed-e091-4dd4-a34f-f00be887ab21
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 8%
+source-wordcount: '80'
+ht-degree: 0%
 
 ---
 
 # Integrare Google Customer Match
 
-Scopri in che modo le funzionalità Real-time Customer Data Platform di Adobe e Customer Match di Google consentono ai brand di interagire con i clienti sulle proprietà possedute e gestite da Google per scalare le campagne di outreach. Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html).
+Scopri in che modo le funzionalità Real-time Customer Data Platform di Adobe e Customer Match di Google consentono ai brand di interagire con i clienti sulle proprietà possedute e gestite da Google per scalare le campagne di outreach. Per ulteriori informazioni, visita la [documentazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/38180?learn=on)

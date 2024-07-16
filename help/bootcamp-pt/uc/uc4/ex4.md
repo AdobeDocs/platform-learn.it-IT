@@ -11,8 +11,8 @@ feature: Workspace Basics, Calculated Metrics
 exl-id: d56128af-dd1e-47ea-922f-85418e9da687
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 1%
+source-wordcount: '808'
+ht-degree: 0%
 
 ---
 
@@ -38,11 +38,11 @@ Se você nunca usou o Analysis Workspace antes, consiglio:
 
 ### Crie Seu Projeto
 
-Agora é hora de criar seu primeiro projeto do CJA. Vá para a aba de projetos dentro do CJA. Clique em **Crea nuovo**.
+Agora é hora de criar seu primeiro projeto do CJA. Vá para a aba de projetos dentro do CJA. **Crea nuovo**.
 
 ![demo](./images/prmenu.png)
 
-Em seguida, você verá a tela abaixo. Selecione **Progetto vuoto** então clique em **Crea**.
+Em seguida, você verá a tela abaixo. **Progetto vuoto** então clique em **Crea**.
 
 ![demo](./images/prmenu1.png)
 
@@ -50,7 +50,7 @@ Você verá um projeto vazio.
 
 ![demo](./images/premptyprojects.png)
 
-Primeiro, certifique-se de selecionar a Visualização de dados correta no canto superior direito da tela. Neste exemplo, una Visualização de dados a ser selecionada é `vangeluwe - Omnichannel Data View`.
+Primeiro, certifique-se de selecionar a Visualização de dados correta no canto superior direito da tela. Neste exemplo, a Visualização de dados a ser selecionada é `vangeluwe - Omnichannel Data View`.
 
 ![demo](./images/prdv.png)
 
@@ -83,7 +83,7 @@ Como exemplo, criaremos uma Taxa de conversão calcolada a métrica/evento Compr
 
 ## Taxa de conversão
 
-Vamos começar a abrir o construtor de métricas calculadas. Clique em **+** para criar sua primeira Métrica calculada no Analysis Workspace.
+Vamos começar a abrir o construtor de métricas calculadas. Clique em **+** para criar sua primeira Métrica calculada no Analysis Workspace.
 
 ![demo](./images/pradd.png)
 
@@ -91,15 +91,15 @@ O **Generatore di metriche calcolate** aparecer irá:
 
 ![demo](./images/prbuilder.png)
 
-Incontra **Acquisti** una lista de métricas no menu do lado esquerdo Em **Metriche** cricca em **Mostra tutto**
+Encontre **Acquisti** na lista de métricas no menu do lado esquerdo. **Metriche** Cricca em **Mostra tutto**
 
 ![demo](./images/calcbuildercr1.png)
 
-Agora arraste e solte a métrica **Acquisti** una definição da métrica calculada
+Agora arraste e solte a métrica **Acquisti** na definição da métrica calculada.
 
 ![demo](./images/calcbuildercr2.png)
 
-Normalmente, taxa di conversione **Conversioni/Sessioni**. Então, vamos fazer o mesmo cálculo na tela de definição de métrica calculada. Encontre a métrica **Sessioni** e arraste e solte-a no criador de definição, no evento **Acquisti**.
+Normalmente, taxa de conversão **Conversioni/Sessioni**. Então, vamos fazer o mesmo cálculo na tela de definição de métrica calculada. Encontre a métrica **Sessioni** e arraste e solte-a no criador de definição, no evento **Acquisti**.
 
 ![demo](./images/calcbuildercr3.png)
 
@@ -121,7 +121,7 @@ Por fim, altere o nome e a descrição da métrica calculada:
 
 ![demo](./images/calcbuildercr6.png)
 
-Não se esqueça de **Salvar** una Métrica calculada.
+Não se esqueça de **Salvar** a Métrica calculada.
 
 ![demo](./images/pr9.png)
 
@@ -129,7 +129,7 @@ Não se esqueça de **Salvar** una Métrica calculada.
 
 ### Filtros: Calcoli di Dimensões
 
-Cálculos não devem ser apenas para métricas. Antes de iniciar qualquer análise, também é interessante criar algumas **Dimension calcolati**. Isso, essencialmente, **segmenti** nessun Adobe Analytics. Nessun Customer Journey Analytics, ses segmentos são chamados de **Filtri**.
+Cálculos não devem ser apenas para métricas. Antes de iniciar qualquer análise, também é interessante algume criar **Dimension calcolati**. Isso, essencialmente, **segmenti** su Adobe Analytics. Nessun Customer Journey Analytics, ses segmentos são chamados de **Filters**.
 
 ![demo](./images/prfilters.png)
 
@@ -155,7 +155,7 @@ Essas Dimensões de tempo calculado ajudarão analistas e usuários de negócios
 
 Agora você conclusiu o exercício de preparação de dados o Analysis Workspace do CJA.
 
-Próxima etapa [4.5 Customer Journey Analytics Visualização](./ex5.md)
+Próxima etapa: [4,5 Visualização Customer Journey Analytics di](./ex5.md)
 
 [Retornar para Fluxo de Usuário 4](./uc4.md)
 

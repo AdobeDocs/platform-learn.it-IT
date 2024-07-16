@@ -1,36 +1,37 @@
 ---
-title: Aggiornare tipi di pubblico e script di profilo | Migrare Target da at.js 2.x all’SDK per web
-description: Scopri come aggiornare i tipi di pubblico e gli script di profilo di Adobe Target per garantire la compatibilità con Experience Platform Web SDK.
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+title: Aggiornare tipi di pubblico e script di profilo | Migrare Target da at.js 2.x a Web SDK
+description: Scopri come aggiornare i tipi di pubblico e gli script di profilo di Adobe Target per verificarne la compatibilità con Experience Platform Web SDK.
+exl-id: 2c0f85f7-6e8c-4d0b-8ed5-53897d06e563
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
 
-# Aggiornare i tipi di pubblico e gli script di profilo di Target per la compatibilità con l’SDK per web di Platform
+# Aggiornamento dei tipi di pubblico e degli script di profilo di Target per la compatibilità con Platform Web SDK
 
-Dopo aver completato gli aggiornamenti tecnici per la migrazione di Target all’SDK per web di Platform, potrebbe essere necessario aggiornare alcuni dei tipi di pubblico, gli script di profilo e le attività per garantire una transizione senza problemi.
+Dopo aver completato gli aggiornamenti tecnici per la migrazione di Target a Platform Web SDK, potrebbe essere necessario aggiornare alcuni tipi di pubblico, script di profilo e attività per garantire una transizione senza problemi.
 
-Tutti i parametri mbox di Target devono essere trasmessi in formato XDM con un’implementazione Platform Web SDK. Prima di pubblicare le modifiche in produzione, devi:
+Tutti i parametri mbox di Target devono essere trasmessi in formato XDM con un’implementazione Platform Web SDK. Prima di pubblicare le modifiche nell’ambiente di produzione, è necessario:
 
-* Aggiorna i tipi di pubblico che utilizzano parametri mbox
-* Aggiornare gli script di profilo che utilizzano parametri mbox
-* Aggiorna offerte e attività utilizzando la sostituzione del token del parametro mbox (ad esempio, `${mbox.parameter_name}`)
+* Aggiornare i tipi di pubblico che utilizzano i parametri mbox
+* Aggiornare gli script di profilo che utilizzano i parametri mbox
+* Aggiorna offerte e attività che utilizzano la sostituzione del token di parametro mbox (ad esempio, `${mbox.parameter_name}`)
 
-## Regolare il pubblico
+## Regolare i tipi di pubblico
 
-Eventuali tipi di pubblico che utilizzano parametri mbox personalizzati devono essere aggiornati per utilizzare i nuovi nomi dei parametri XDM. Ad esempio, un parametro personalizzato per `page_name` probabilmente verrà mappato su `web.webpagedetails.pageName`.
+Tutti i tipi di pubblico che utilizzano parametri mbox personalizzati devono essere aggiornati per l’utilizzo dei nuovi nomi di parametri XDM. Ad esempio, è probabile che un parametro personalizzato per `page_name` venga mappato a `web.webpagedetails.pageName`.
 
-Un approccio per garantire la compatibilità sia con at.js che con Platform Web SDK consiste nell’aggiornare tutti i tipi di pubblico rilevanti in modo che `OR` vengono utilizzate le seguenti condizioni:
+Un approccio per garantire la compatibilità sia con at.js che con Platform Web SDK consiste nell’aggiornare tutti i tipi di pubblico rilevanti in modo che vengano utilizzate `OR` condizioni, come illustrato di seguito:
 
-![Come visualizzare l’aggiornamento di un pubblico Target per la compatibilità dell’SDK per web di Platform](assets/target-audience-update.png){zoomable=&quot;yes&quot;}
+![Come visualizzare l&#39;aggiornamento di un pubblico Target per la compatibilità con Platform Web SDK](assets/target-audience-update.png){zoomable="yes"}
 
 ## Modificare gli script di profilo
 
-Gli script di profilo devono essere aggiornati per fare riferimento ai nuovi nomi di parametri XDM, simili ai tipi di pubblico. A parte la modifica dei nomi dei parametri mbox, non c’è differenza nel modo in cui gli script di profilo funzionano tra un’implementazione at.js e un’implementazione SDK per web di Platform.
+Gli script di profilo devono essere aggiornati per fare riferimento ai nuovi nomi dei parametri XDM, in modo simile ai tipi di pubblico. A parte la modifica dei nomi dei parametri mbox, non vi è alcuna differenza nel modo in cui gli script di profilo funzionano tra un’implementazione at.js e un’implementazione Platform Web SDK.
 
-Un approccio per garantire la compatibilità è quello di utilizzare `OR` condizioni nel codice dello script del profilo.
+Un approccio per garantire la compatibilità consiste nell&#39;utilizzare le condizioni `OR` nel codice dello script di profilo.
 
 Esempio di script di profilo:
 
@@ -40,7 +41,7 @@ if(mbox.param('pageName') == 'Product Details'){
 }
 ```
 
-È stato aggiornato lo script di profilo per la compatibilità dell’SDK per web di Platform:
+È stato aggiornato lo script di profilo per compatibilità con Platform Web SDK:
 
 ```Javascript
 if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDetails.pageName') =='Product Details')){
@@ -48,13 +49,13 @@ if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDeta
 }
 ```
 
-Per ulteriori informazioni e best practice, consulta la documentazione dedicata sulle [script di profilo](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html).
+Per ulteriori informazioni e best practice, consulta la documentazione dedicata su [script di profilo](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html).
 
-## Aggiornamento dei token dei parametri per il contenuto dinamico
+## Aggiornare i token dei parametri per il contenuto dinamico
 
-Se hai offerte, progettazioni di consigli o attività che utilizzano [sostituzione di contenuti dinamici](https://experienceleague.adobe.com/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer.html), potrebbe essere necessario aggiornarli di conseguenza per tenere conto dei nuovi nomi di parametri XDM.
+Se hai offerte, progetti di consigli o attività che utilizzano [la sostituzione dinamica dei contenuti](https://experienceleague.adobe.com/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer.html), potrebbe essere necessario aggiornarle di conseguenza per tenere conto dei nuovi nomi dei parametri XDM.
 
-A seconda di come utilizzi la sostituzione del token per i parametri mbox, puoi migliorare la configurazione esistente per tenere conto dei nomi dei parametri vecchi e nuovi. Tuttavia, in situazioni in cui il codice JavaScript personalizzato non è possibile, come nelle offerte JSON, devi creare copie e effettuare aggiornamenti al termine della migrazione e live sul sito di produzione.
+A seconda di come utilizzi la sostituzione del token per i parametri mbox, potresti essere in grado di migliorare la configurazione esistente per tenere conto dei nomi dei parametri vecchi e nuovi. Tuttavia, in situazioni in cui il codice JavaScript personalizzato non è possibile, ad esempio nelle offerte JSON, devi creare copie e apportare aggiornamenti dopo che la migrazione è stata completata e pubblicata sul sito di produzione.
 
 Esempio di offerta JSON:
 
@@ -65,7 +66,7 @@ Esempio di offerta JSON:
 }
 ```
 
-Esempio di offerta JSON utilizzando i nomi dei parametri SDK per web di Platform:
+Esempio di offerta JSON con i nomi dei parametri dell’SDK web di Platform:
 
 ```JSON
 {
@@ -74,10 +75,10 @@ Esempio di offerta JSON utilizzando i nomi dei parametri SDK per web di Platform
 }
 ```
 
-Se scegli di effettuare regolazioni dopo la migrazione per tenere conto dei nuovi nomi di parametri mbox XDM, assicurati di mettere in pausa tutte le attività interessate durante l’evento di migrazione per evitare errori di visualizzazione dell’attività ai visitatori.
+Se scegli di apportare modifiche dopo la migrazione per tenere conto dei nuovi nomi dei parametri mbox XDM, assicurati di mettere in pausa le attività interessate durante l’evento di migrazione per evitare errori di visualizzazione delle attività per i visitatori.
 
-Quindi, scopri come [convalidare l’implementazione di Target](validate.md).
+Quindi, scopri come [convalidare l&#39;implementazione di Target](validate.md).
 
 >[!NOTE]
 >
->Ci impegniamo ad aiutarti a eseguire con successo la migrazione di Target da at.js all’SDK per web. Se incontri ostacoli con la tua migrazione o se ti senti che mancano informazioni critiche in questa guida, compila l&#39;invio del tuo messaggio [discussione comunitaria](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Ci impegniamo ad aiutarti con la migrazione di Target da at.js a Web SDK. Se incontri ostacoli con la migrazione o pensi che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

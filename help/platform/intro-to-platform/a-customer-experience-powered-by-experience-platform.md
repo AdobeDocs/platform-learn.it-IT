@@ -1,6 +1,6 @@
 ---
 title: Un'esperienza del cliente con tecnologia Adobe Experience Platform
-description: Scopri un’esperienza ipotetica creata con Adobe Experience Platform dal punto di vista di un cliente. Scopri come Experienci Platform crea un’esperienza ricca, rilevante e in tempo reale.
+description: Scopri un’esperienza ipotetica creata con Adobe Experience Platform dal punto di vista di un cliente. Scopri come Experience Platform crea un’esperienza ricca, rilevante e in tempo reale.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
 jira: KT-4339
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Esperienza del cliente basata su Adobe Experience Platform
 
-Scopri un’esperienza ipotetica creata con Adobe Experience Platform dal punto di vista di un cliente. Scopri come Experienci Platform crea un’esperienza ricca, rilevante e in tempo reale.
+Scopri un’esperienza ipotetica creata con Adobe Experience Platform dal punto di vista di un cliente. Scopri come Experience Platform crea un’esperienza ricca, rilevante e in tempo reale.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27361?learn=on)
 

@@ -1,5 +1,5 @@
 ---
-title: Acquisire dati utilizzando i connettori di origini del sistema CRM
+title: Acquisire dati utilizzando i connettori Source CRM
 description: Scopri come acquisire facilmente in batch i dati dalle origini CRM per inserirli direttamente nel data lake e nel profilo cliente in tempo reale di Adobe Experience Platform.
 feature: Sources
 role: Data Engineer, Data Architect, Developer
@@ -10,14 +10,14 @@ last-substantial-update: 2023-05-24T00:00:00Z
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 2%
+source-wordcount: '186'
+ht-degree: 0%
 
 ---
 
-# Acquisire dati utilizzando i connettori di sorgente CRM
+# Acquisire dati utilizzando i connettori di origine del CRM
 
-Scopri come acquisire facilmente in batch i dati dalle origini CRM per inserirli direttamente nel data lake e nel profilo cliente in tempo reale di Adobe Experience Platform. Per la documentazione più dettagliata del prodotto, consulta [gestione delle relazioni con i clienti (CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) nella pagina di panoramica dei connettori di origine.
+Scopri come acquisire facilmente in batch i dati dalle origini CRM per inserirli direttamente nel data lake e nel profilo cliente in tempo reale di Adobe Experience Platform. Per una documentazione del prodotto più dettagliata, vedere [Customer Relationship Management (CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) nella pagina di panoramica di Source Connectors.
 
 ## Flusso di lavoro standard
 
@@ -32,6 +32,6 @@ Scopri come configurare il connettore di origine per Salesforce CRM utilizzando 
 >[!VIDEO](https://video.tv.adobe.com/v/3419422?learn=on)
 
 Per ulteriori informazioni, consulta la seguente documentazione:
-* [Documentazione sulla creazione di una connessione Salesforce](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).
-* [Creare un flusso di dati di origini utilizzando i modelli nell’interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#).
+* [Creazione di una documentazione di connessione da parte di Salesforce](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).
+* [Crea un flusso di dati di origine utilizzando i modelli nell&#39;interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#).
 

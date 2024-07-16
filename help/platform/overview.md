@@ -6,14 +6,14 @@ mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
 source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 33%
+source-wordcount: '154'
+ht-degree: 7%
 
 ---
 
 # Tutorial su Adobe Experience Platform
 
-Adobe Experience Platform è il sistema più potente, flessibile e aperto sul mercato per la creazione e la gestione di soluzioni complete che guidano la customer experience. Experience Platform consente alle organizzazioni di centralizzare e standardizzare i dati e i contenuti dei clienti da qualsiasi sistema, e di applicare tecniche di data science e apprendimento automatico al fine di migliorare la progettazione e la consegna di esperienze personalizzate. Segui questi video e tutorial per scoprire i numerosi componenti di Experienci Platform.
+Adobe Experience Platform è il sistema più potente, flessibile e aperto sul mercato per la creazione e la gestione di soluzioni complete che guidano la customer experience. Experience Platform consente alle organizzazioni di centralizzare e standardizzare i dati e i contenuti dei clienti da qualsiasi sistema, e di applicare tecniche di data science e apprendimento automatico al fine di migliorare la progettazione e la consegna di esperienze personalizzate. Segui questi video e tutorial per scoprire i numerosi componenti di Experience Platform.
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -34,11 +34,11 @@ Adobe Experience Platform è il sistema più potente, flessibile e aperto sul me
     </a>
     <div>
       <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
-    <strong>Esperienza del cliente basata su Experienci Platform</strong>
+    <strong>Esperienza del cliente basata su Experience Platform</strong>
     </a>
     </div>
     <p>
-    <em>Scopri come utilizzare Platform per migliorare l’esperienza di un cliente</em>
+    <em>Scopri come utilizzare Platform per migliorare l'esperienza di un cliente</em>
     <p>
   </td>
   <td>
@@ -64,7 +64,7 @@ Adobe Experience Platform è il sistema più potente, flessibile e aperto sul me
     </a>
     </div>
     <p>
-    <em>Acquisire facilmente i dati</em>
+    <em>Acquisisci facilmente i tuoi dati</em>
     <p>
   </td>
    <!--

@@ -1,5 +1,5 @@
 ---
-title: Generare gli D dispositivo di prime parti
+title: Generare ID dispositivo di prime parti
 description: Scopri come generare ID dispositivo di prime parti
 feature: Web SDK
 level: Experienced
@@ -8,12 +8,12 @@ thumbnail: KT-9728.jpeg
 exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
 source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 2%
+source-wordcount: '682'
+ht-degree: 1%
 
 ---
 
-# Generare gli D dispositivo di prime parti
+# Generare ID dispositivo di prime parti
 
 Tradizionalmente, le applicazioni Adobe Experience Cloud generano cookie per memorizzare gli ID dispositivo utilizzando diverse tecnologie, tra cui:
 
@@ -30,15 +30,15 @@ Di seguito è riportato un rapido esempio di come funziona la funzionalità:
 1. Il browser di un utente finale richiede una pagina web dal server web o dalla rete CDN di un cliente.
 1. Il cliente genera un ID dispositivo (FPID) sul proprio server web o CDN (il server web deve essere associato al record A/AAAA DNS del nome di dominio).
 1. Il cliente imposta un cookie di prima parte per memorizzare l’FPID nel browser dell’utente finale.
-1. L’implementazione Adobe Experience Platform Web SDK del cliente invia una richiesta alla rete Edge di Platform, incluso l’FPID nella mappa delle identità.
-1. Experienci Platform Edge Network riceve l’FPID e lo utilizza per generare un ID Experience Cloud (ECID).
+1. L’implementazione Adobe Experience Platform Web SDK del cliente invia una richiesta all’Edge Network di Platform, incluso l’FPID nella mappa delle identità.
+1. L’Edge Network di Experience Platform riceve l’FPID e lo utilizza per generare un ID di Experience Cloud (ECID).
 1. La risposta di Platform Web SDK invia nuovamente l’ECID al browser dell’utente finale.
-1. Se il `idMigrationEnabled=true`, Platform Web SDK utilizza JavaScript per memorizzare l’ECID come `AMCV_` cookie nel browser dell’utente finale.
-1. Nel caso in cui `AMCV_` il cookie scade, il processo si ripete. Se è disponibile lo stesso ID dispositivo di prime parti, viene `AMCV_` Il cookie viene creato con lo stesso valore ECID di prima.
+1. Se `idMigrationEnabled=true`, Platform Web SDK utilizza JavaScript per memorizzare l&#39;ECID come cookie `AMCV_` nel browser dell&#39;utente finale.
+1. Nel caso in cui il cookie `AMCV_` scada, il processo si ripete. Se è disponibile lo stesso ID dispositivo di prima parte, viene creato un nuovo cookie `AMCV_` con lo stesso valore ECID di prima.
 
 >[!NOTE]
 >
->Il `idMigrationEnabled` non deve essere impostato su `true` per utilizzare FPID. Con `idMigrationEnabled=false` potrebbe non vedere `AMCV_` cookie, tuttavia, e dovranno cercare il valore ECID nella risposta di rete.
+>Non è necessario impostare `idMigrationEnabled` su `true` per utilizzare l&#39;FPID. Con `idMigrationEnabled=false` è possibile che non venga visualizzato un cookie `AMCV_` e che sia necessario cercare il valore ECID nella risposta di rete.
 
 
 Per questo tutorial, viene utilizzato un esempio specifico che utilizza il linguaggio di script PHP per mostrare come:
@@ -134,7 +134,7 @@ Il passaggio finale consiste nell’utilizzare PHP per copiare il valore del coo
 
 >[!IMPORTANT]
 >
->Il simbolo dello spazio dei nomi dell’identità utilizzato nella mappa di identità, deve essere chiamato `FPID`.
+>Il simbolo dello spazio dei nomi dell&#39;identità utilizzato nella mappa identità deve essere denominato `FPID`.
 >
 > `FPID` è uno spazio dei nomi di identità riservato non visibile negli elenchi di interfaccia degli spazi dei nomi di identità.
 
@@ -144,10 +144,10 @@ Il passaggio finale consiste nell’utilizzare PHP per copiare il valore del coo
 Convalida l’implementazione confermando che lo stesso ECID viene generato dal tuo ID dispositivo di prime parti:
 
 1. Genera un cookie FPID.
-1. Invia una richiesta a Platform Edge Network utilizzando Platform Web SDK.
-1. Un cookie con il formato `AMCV_<IMSORGID@AdobeOrg>` viene generato. Questo cookie contiene l’ECID.
-1. Prendi nota del valore del cookie generato, quindi elimina tutti i cookie del sito ad eccezione di `FPID` cookie.
-1. Invia un’altra richiesta a Platform Edge Network.
-1. Conferma il valore in `AMCV_<IMSORGID@AdobeOrg>` cookie è lo stesso `ECID` valore come in `AMCV_` cookie eliminato. Se il valore del cookie è lo stesso per un determinato FPID, il processo di seeding per l’ECID è riuscito.
+1. Invia una richiesta all’Edge Network di Platform tramite Platform Web SDK.
+1. È stato generato un cookie con il formato `AMCV_<IMSORGID@AdobeOrg>`. Questo cookie contiene l’ECID.
+1. Prendere nota del valore del cookie generato, quindi eliminare tutti i cookie del sito ad eccezione del cookie `FPID`.
+1. Invia un’altra richiesta all’Edge Network di Platform.
+1. Confermare che il valore nel cookie `AMCV_<IMSORGID@AdobeOrg>` è uguale al valore `ECID` del cookie `AMCV_` eliminato. Se il valore del cookie è lo stesso per un determinato FPID, il processo di seeding per l’ECID è riuscito.
 
 Per ulteriori informazioni su questa funzione, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html).

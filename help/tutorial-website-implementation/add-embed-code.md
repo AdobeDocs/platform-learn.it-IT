@@ -4,8 +4,8 @@ description: Scopri come ottenere i codici da incorporare della proprietà tag e
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
 source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 48%
+source-wordcount: '1037'
+ht-degree: 45%
 
 ---
 
@@ -18,8 +18,8 @@ In questa lezione, implementerai il codice di incorporamento asincrono dell’am
 >Adobe Experience Platform Launch viene integrato in Adobe Experience Platform come suite di tecnologie per la raccolta dati. Nell’interfaccia sono state introdotte diverse modifiche terminologiche di cui tenere conto quando si utilizza questo contenuto:
 >
 > * Il platform launch (lato client) è ora **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)**
-> * Platform launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * Le configurazioni Edge ora sono **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)**
+> * Platform Launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Le configurazioni di Edge sono ora **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)**
 
 ## Finalità di apprendimento
 
@@ -28,13 +28,13 @@ Alla fine di questa lezione, potrai:
 * Ottieni il codice di incorporamento per la proprietà tag
 * Comprendere la differenza tra ambiente di sviluppo, ambiente di staging e ambiente di produzione.
 * Aggiungere un codice di incorporamento di tag a un documento HTML
-* Spiega la posizione ottimale del codice di incorporamento di tag in relazione ad un altro codice nel `<head>` di un documento html
+* Spiega la posizione ottimale del codice di incorporamento del tag in relazione ad altro codice nel `<head>` di un documento html
 
 ## Copiare il codice di incorporamento
 
-Il codice di incorporamento è un `<script>` che hai inserito nelle pagine web per caricare ed eseguire la logica generata nei tag. Se carichi la libreria in modo asincrono, il browser continua a caricare la pagina, recupera la libreria di tag ed esegue le operazioni in parallelo. In questo caso, esiste un solo codice da incorporare, che collochi in `<head>`. (Quando i tag vengono distribuiti in modo sincrono, esistono due codici di incorporamento, uno inserito in `<head>` e un altro che hai messo davanti al `</body>`).
+Il codice di incorporamento è un tag `<script>` inserito nelle pagine Web per caricare ed eseguire la logica generata nei tag. Se carichi la libreria in modo asincrono, il browser continua a caricare la pagina, recupera la libreria di tag ed esegue le operazioni in parallelo. In questo caso, esiste un solo codice da incorporare, che collochi in `<head>`. (Quando i tag vengono distribuiti in modo sincrono, esistono due codici di incorporamento, uno inserito in `<head>` e un altro che hai inserito prima di `</body>`).
 
-Dalla schermata Overview della proprietà, fai clic su **[!UICONTROL Ambienti]** nella barra di navigazione a sinistra per passare alla pagina ambienti. Vi sono già stati creati gli ambienti di sviluppo, staging e produzione.
+Dalla schermata Panoramica della proprietà, fai clic su **[!UICONTROL Ambienti]** nel menu di navigazione a sinistra per passare alla pagina degli ambienti. Vi sono già stati creati gli ambienti di sviluppo, staging e produzione.
 
 ![Selezione di Ambienti nell’area di navigazione in alto](images/launch-environments.png)
 
@@ -46,7 +46,7 @@ Questi sono gli unici ambienti necessari per completare l’esercitazione. Gli a
 
 Ora copiamo il codice da incorporare:
 
-1. Nella riga **[!UICONTROL Sviluppo]**, fai clic sull’icona Installa ![icona Installa](images/launch-installIcon.png) per aprire il modale.
+1. Nella riga **[!UICONTROL Sviluppo]**, fai clic sull&#39;icona Installa ![icona Installa](images/launch-installIcon.png) per aprire il modale.
 
 1. I tag verranno impostati per impostazione predefinita sui codici di incorporamento asincroni
 
@@ -58,7 +58,7 @@ Ora copiamo il codice da incorporare:
 
 ## Implementare il codice di incorporamento nell’`<head>` della pagina HTML di esempio
 
-Il codice di incorporamento deve essere implementato nell’elemento `<head>` di tutte le pagine HTML che condivideranno la proprietà. Potresti avere uno o più file di modelli che controllano `<head>` a livello globale all’interno del sito, rendendolo un processo semplice per aggiungere tag.
+Il codice di incorporamento deve essere implementato nell’elemento `<head>` di tutte le pagine HTML che condivideranno la proprietà. Potresti avere uno o più file di modelli che controllano `<head>` globalmente in tutto il sito, rendendolo un processo semplice per aggiungere i tag.
 
 Se non lo hai già fatto, copia il codice della pagina HTML di esempio e incollalo in un editor di codice. [Brackets](https://brackets.io/) è un editor gratuito open source, se necessario.
 
@@ -130,17 +130,17 @@ Dedichiamo un momento alla verifica di alcune delle best practice di implementaz
 
 * **Livello dati**:
 
-   * Noi *fortemente* consiglia di creare un livello di dati sul sito contenente tutti gli attributi necessari per comporre variabili in Analytics, Target e altre soluzioni di marketing. Questa pagina di esempio contiene solo un livello di dati molto semplice, ma un livello dati reale potrebbe contenere ulteriori dettagli sulla pagina, il visitatore, i dettagli del carrello, ecc. Per ulteriori informazioni sui livelli dati, consulta [Customer Experience Digital Data Layer 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf)
+   * *vivamente* consigliamo di creare un livello dati sul tuo sito contenente tutti gli attributi necessari per comporre variabili in Analytics, Target e altre soluzioni di marketing. Questa pagina di esempio contiene solo un livello di dati molto semplice, ma un livello dati reale potrebbe contenere ulteriori dettagli sulla pagina, il visitatore, i dettagli del carrello, ecc. Per ulteriori informazioni sui livelli dati, consulta [Customer Experience Digital Data Layer 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf)
 
    * Definisci il livello di dati prima del codice di incorporamento di tag, in modo da massimizzare ciò che puoi fare con le soluzioni Experience Cloud.
 
-* **Helper librerie JavaScript**: se disponi già di una libreria come JQuery implementata in `<head>` delle pagine, caricala prima dei tag per sfruttarne la sintassi in tag e Target
+* **Helper librerie di JavaScript**: se disponi già di una libreria come JQuery implementata nelle `<head>` pagine, caricala prima dei tag per sfruttare la sintassi nei tag e in Target
 
 * **Doctype HTML5**: per Target è necessario il doctype HTML5
 
 * **preconnect e dns-prefetch**: utilizza preconnect e il dns-prefetch per migliorare il tempo di caricamento della pagina. Vedi anche: [https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/)
 
-* **frammento pre-hiding per le implementazioni asincrone di Target**: per ulteriori informazioni, consulta la lezione di Target. Quando Target viene distribuito tramite codici di incorporamento di tag asincroni, è necessario codificare un frammento pre-hiding nelle pagine prima dei codici di incorporamento di tag per gestire lo sfarfallio del contenuto
+* **frammento pre-hiding per le implementazioni asincrone di Target**: per ulteriori informazioni, consulta la lezione di Target; tuttavia, quando Target viene distribuito tramite codici di incorporamento tag asincroni, è necessario codificare un frammento pre-hiding nelle pagine prima dei codici di incorporamento tag per gestire lo sfarfallio del contenuto
 
 Di seguito viene riportato un riepilogo delle best practice nell’ordine suggerito. Tieni presente che esistono alcuni segnaposto per i dettagli specifici dell’account:
 

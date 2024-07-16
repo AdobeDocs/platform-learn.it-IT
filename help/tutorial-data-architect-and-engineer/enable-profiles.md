@@ -10,7 +10,7 @@ thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1089'
 ht-degree: 0%
 
 ---
@@ -20,24 +20,24 @@ ht-degree: 0%
 <!-- 15min-->
 In questa lezione, abiliterai gli schemi e i set di dati per Real-Time Customer Profile.
 
-Ok, ho mentito quando ho detto che la lezione sui set di dati era la lezione più breve di questa esercitazione. Questa dovrebbe richiedere ancora meno tempo! Letteralmente tutto quello che farete è invertire una serie di interruttori. Ma ciò che accade quando si capovolgono questi interruttori è _davvero_ importante, quindi ho voluto dedicarvi un&#39;intera pagina.
+Ok, ho mentito quando ho detto che la lezione sui set di dati era la lezione più breve di questa esercitazione. Questa dovrebbe richiedere ancora meno tempo! Letteralmente tutto quello che farete è invertire una serie di interruttori. Ma ciò che accade quando si capovolgono questi interruttori è _veramente_ importante, quindi volevo dedicarvi un&#39;intera pagina.
 
 Con Real-Time Customer Profile puoi visualizzare una visualizzazione olistica di ogni singolo cliente che combina dati provenienti da più canali, inclusi dati online, offline, del sistema CRM e di terze parti. Il profilo ti consente di consolidare i diversi dati dei clienti in una visualizzazione unificata che offre un account utilizzabile e con marca temporale per ogni interazione con il cliente.
 
-Per quanto sembri incredibile, non è necessario attivare *tutti i tuoi dati* per il profilo. In realtà, devi abilitare solo i dati necessari per i casi di utilizzo dell’attivazione. Abilita i dati che desideri utilizzare per casi di utilizzo di marketing, integrazioni di call center e così via, dove devi accedere rapidamente a un solido profilo cliente. Se carichi i dati solo per l’analisi, è probabile che non sia necessario abilitarli per il profilo.
+Per quanto sorprendente possa sembrare, non devi attivare *tutti i tuoi dati* per il profilo. In realtà, devi abilitare solo i dati necessari per i casi di utilizzo dell’attivazione. Abilita i dati che desideri utilizzare per casi di utilizzo di marketing, integrazioni di call center e così via, dove devi accedere rapidamente a un solido profilo cliente. Se carichi i dati solo per l’analisi, è probabile che non sia necessario abilitarli per il profilo.
 
-Ci sono importanti [guardrail per i dati Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) che dovresti esaminare quando decidi quali dei tuoi dati abilitare per il profilo.
+Esistono [guardrail importanti per i dati del Profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) che dovresti esaminare quando decidi quali dei tuoi dati abilitare per il profilo.
 
 <!--is this accurate. Are there other considerations to point out? -->
 
-**Architetti di dati** dovrà abilitare Real-Time Customer Profile al di fuori di questa esercitazione.
+**Gli architetti di dati** dovranno abilitare Real-Time Customer Profile all&#39;esterno di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sul profilo cliente in tempo reale:
 >[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on)
 
 ## Autorizzazioni richieste
 
-In [Configurare le autorizzazioni](configure-permissions.md) Per completare questa lezione, è necessario impostare tutti i controlli di accesso necessari.
+Nella lezione [Configurare le autorizzazioni](configure-permissions.md) è possibile impostare tutti i controlli di accesso necessari per completare la lezione.
 
 
 <!--* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
@@ -51,16 +51,16 @@ In [Configurare le autorizzazioni](configure-permissions.md) Per completare ques
 
 Iniziamo con la semplice attività di abilitazione di uno schema:
 
-1. Nell’interfaccia utente di Platform, apri la sezione **Schema fedeltà Luma**
-1. In entrata **[!UICONTROL Proprietà schema]**, attiva/disattiva **Profilo** switch
-1. Nella finestra modale di conferma, premi **[!UICONTROL Abilita]** pulsante per confermare
-1. Seleziona la **[!UICONTROL Salva]** per salvare le modifiche
+1. Nell’interfaccia utente di Platform, apri lo **Schema fedeltà Luma**
+1. In **[!UICONTROL Proprietà schema]**, attiva l&#39;opzione **Profilo**
+1. Nella finestra modale di conferma, premi il pulsante **[!UICONTROL Abilita]** per confermare
+1. Seleziona il pulsante **[!UICONTROL Salva]** per salvare le modifiche
 
    >[!IMPORTANT]
    >
    >Una volta che uno schema è abilitato per il profilo, non può essere disabilitato o eliminato. Inoltre, i campi non possono essere rimossi dallo schema dopo questo punto. Queste implicazioni sono importanti da tenere presenti in un secondo momento quando si lavora con i propri dati nell’ambiente di produzione. In questa esercitazione dovresti utilizzare una sandbox di sviluppo, che può essere eliminata in qualsiasi momento.
    >
-   >Nell’ambiente controllato di questa esercitazione, abiliterai gli schemi e i set di dati per il profilo, _prima di acquisire qualsiasi dato_. Quando lavori con i tuoi dati, ti consigliamo di eseguire le operazioni nel seguente ordine:
+   >Nell&#39;ambiente controllato di questa esercitazione, abiliterai gli schemi e i set di dati per il profilo, _prima di acquisire qualsiasi dato_. Quando lavori con i tuoi dati, ti consigliamo di eseguire le operazioni nel seguente ordine:
    >
    > 1. Innanzitutto, acquisisci alcuni dati nei set di dati.
    > 1. Risolvi eventuali problemi che sorgono durante il processo di acquisizione dei dati (ad esempio, problemi di convalida o mappatura dei dati).
@@ -68,7 +68,7 @@ Iniziamo con la semplice attività di abilitazione di uno schema:
    > 1. Riacquisire i dati
 
 
-   ![Attiva/disattiva profilo](assets/profile-loyalty-enableSchema.png)
+   ![Cambia profilo](assets/profile-loyalty-enableSchema.png)
 
 Facile, vero? Ripeti i passaggi precedenti per questi altri schemi:
 
@@ -78,27 +78,27 @@ Facile, vero? Ripeti i passaggi precedenti per questi altri schemi:
 
 ## Abilitare gli schemi per Real-Time Customer Profile tramite API Platform
 
-Ora è il momento di abilitare `Luma CRM Schema` con l’API. Se desideri saltare questo esercizio e abilitarlo nell’interfaccia utente, procedi subito.
+Ora è il momento di abilitare `Luma CRM Schema` con l&#39;API. Se desideri saltare questo esercizio e abilitarlo nell’interfaccia utente, procedi subito.
 
 ### Ottenere il meta:altId dello schema
 
-Per prima cosa, prendiamo `meta:altId` del `Luma CRM Schema`:
+Ottieni `meta:altId` di `Luma CRM Schema`:
 
 1. Apri [!DNL Postman]
-1. Se non hai un token di accesso, apri la richiesta **[!DNL OAuth: Request Access Token]** e seleziona **Invia** per richiedere un nuovo token di accesso, proprio come hai fatto in [!DNL Postman] lezione.
+1. Se non disponi di un token di accesso, apri la richiesta **[!DNL OAuth: Request Access Token]** e seleziona **Invia** per richiedere un nuovo token di accesso, proprio come hai fatto nella lezione [!DNL Postman].
 1. Apri la richiesta **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
-1. Seleziona la **Invia** pulsante
+1. Seleziona il pulsante **Invia**
 1. Dovresti ricevere una risposta 200
-1. Cerca nella risposta per `Luma CRM Schema` elemento e copia `meta:altId` valore
-   ![Copiare il meta:altId](assets/profile-crm-getMetaAltId.png)
+1. Cerca nella risposta per l&#39;elemento `Luma CRM Schema` e copia il valore `meta:altId`
+   ![Copia il meta:altIid](assets/profile-crm-getMetaAltId.png)
 
 ### Abilita lo schema
 
 Ora che disponiamo del meta:altId dello schema, è possibile abilitarlo per il profilo:
 
 1. Apri la richiesta **[!DNL Schema Registry API > Schemas > Update one or more attributes of a custom schema specified by ID.]**
-1. In **Parametri** incolla il `meta:altId` valore come `SCHEMA_ID` valore param
-1. In **Corpo** , incolla il seguente codice
+1. In **Params** incolla il valore `meta:altId` come valore di parametro `SCHEMA_ID`
+1. Nella scheda **Corpo**, incolla il seguente codice
 
    ```json
    [{
@@ -108,12 +108,12 @@ Ora che disponiamo del meta:altId dello schema, è possibile abilitarlo per il p
    }]
    ```
 
-1. Seleziona la **Invia** pulsante
+1. Seleziona il pulsante **Invia**
 1. Dovresti ricevere una risposta 200
 
-   ![Abilita lo schema del sistema di gestione delle relazioni con i clienti per il profilo con il meta:altId personalizzato utilizzato come parametro SCHEMA_ID](assets/profile-crm-enableProfile.png)
+   ![Abilita lo schema CRM per il profilo con il tuo meta:altIid personalizzato utilizzato come parametro SCHEMA_ID](assets/profile-crm-enableProfile.png)
 
-Dovresti essere in grado di vedere nell’interfaccia utente che tutti e cinque gli schemi sono abilitati per Profilo (potrebbe essere necessario premere MAIUSC e Ricarica per vedere che `Luma CRM Schema` è attivato):
+Nell&#39;interfaccia utente dovrebbe essere possibile vedere che tutti e cinque gli schemi sono abilitati per il profilo (potrebbe essere necessario premere MAIUSC+Ricarica per verificare che `Luma CRM Schema` sia abilitato):
 ![Tutti gli schemi abilitati](assets/profile-allSchemasEnabled.png)
 
 
@@ -121,11 +121,11 @@ Dovresti essere in grado di vedere nell’interfaccia utente che tutti e cinque 
 
 I set di dati devono essere abilitati anche per Profilo e il processo è ancora più semplice:
 
-1. Nell’interfaccia utente di Platform, apri la sezione `Luma Loyalty Dataset`
-1. Attiva/disattiva **[!UICONTROL Profilo]** switch
-1. Nella finestra modale di conferma, premi **[!UICONTROL Abilita]** pulsante per confermare
+1. Nell&#39;interfaccia utente di Platform, aprire `Luma Loyalty Dataset`
+1. Attiva/disattiva l&#39;opzione **[!UICONTROL Profilo]**
+1. Nella finestra modale di conferma, premi il pulsante **[!UICONTROL Abilita]** per confermare
 
-   ![ Attiva/disattiva profilo](assets/profile-loyalty-enableDataset.png)
+   Attivazione/disattivazione profilo ![](assets/profile-loyalty-enableDataset.png)
 
 Ripeti i passaggi precedenti per questi altri set di dati:
 
@@ -143,23 +143,23 @@ Ora abiliterai un set di dati per il profilo utilizzando l’API. Anche in quest
 
 ### Ottieni l’ID del set di dati
 
-Prima di tutto dobbiamo ottenere `id` del `Luma CRM Dataset`:
+Innanzitutto, è necessario ottenere `id` di `Luma CRM Dataset`:
 
 1. Apri [!DNL Postman]
-1. Se non hai un token di accesso, apri la richiesta **[!DNL OAuth: Request Access Token]** e seleziona **Invia** per richiedere un nuovo token di accesso, proprio come hai fatto in [!DNL Postman] lezione.
+1. Se non disponi di un token di accesso, apri la richiesta **[!DNL OAuth: Request Access Token]** e seleziona **Invia** per richiedere un nuovo token di accesso, proprio come hai fatto nella lezione [!DNL Postman].
 1. Apri la richiesta **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]**
-1. Seleziona la **Invia** pulsante
+1. Seleziona il pulsante **Invia**
 1. Dovresti ricevere una risposta 200
-1. Cerca nella risposta per `Luma CRM Dataset` elemento e copia l&#39;id:
-   ![Copia l’ID](assets/profile-crm-copyDatasetId.png)
+1. Cerca nella risposta per l&#39;elemento `Luma CRM Dataset` e copia l&#39;ID:
+   ![Copia ID](assets/profile-crm-copyDatasetId.png)
 
 ### Abilitare il set di dati
 
 Ora che abbiamo l’ID del set di dati, possiamo abilitarlo per il profilo:
 
 1. Apri la richiesta **[!DNL Catalog Service API > Datasets > Update one or more attributes of a dataset specified by ID.]**
-1. In **Parametri** aggiorna il `DATASET_ID` valore personalizzato
-1. In **Corpo** , incolla il seguente codice. I primi due valori sono tag preesistenti visibili nella risposta precedente. Devono essere inclusi nel corpo, oltre ai due nuovi tag che stiamo aggiungendo:
+1. In **Params** aggiorna il valore `DATASET_ID`
+1. Nella scheda **Corpo**, incolla il seguente codice. I primi due valori sono tag preesistenti visibili nella risposta precedente. Devono essere inclusi nel corpo, oltre ai due nuovi tag che stiamo aggiungendo:
 
    ```json
    {
@@ -172,10 +172,10 @@ Ora che abbiamo l’ID del set di dati, possiamo abilitarlo per il profilo:
    }
    ```
 
-1. Seleziona la **Invia** pulsante
+1. Seleziona il pulsante **Invia**
 1. Dovresti ricevere una risposta 200
 
-   ![Abilita il set di dati CRM per il profilo, assicurandoti di utilizzare l’ID del set di dati personalizzato come parametro DATASET_ID](assets/profile-crm-enableDataset.png)
+   ![Abilita il set di dati CRM per il profilo, assicurandoti di utilizzare l&#39;ID del set di dati personalizzato come parametro DATASET_ID](assets/profile-crm-enableDataset.png)
 
 Puoi anche verificare che l’interfaccia utente mostri che il set di dati è abilitato:
 ![Conferma](assets/profile-crm-confirmEnabled.png)
@@ -187,8 +187,8 @@ Puoi anche verificare che l’interfaccia utente mostri che il set di dati è ab
 ## Risorse aggiuntive
 
 * [Documentazione del profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=it)
-* [Riferimento API del profilo cliente in tempo reale](https://www.adobe.io/experience-platform-apis/references/profile/)
+* [Riferimento API Profilo cliente in tempo reale](https://www.adobe.io/experience-platform-apis/references/profile/)
 
 
-**Ingegneri dati** deve continuare a [Iscriviti agli eventi di acquisizione dati](subscribe-to-data-ingestion-events.md) lezione.
-**Architetti di dati** _può andare avanti_ e vai al [lezione di acquisizione batch](ingest-batch-data.md).
+**I Data Engineer** devono continuare la lezione [Abbonarsi agli eventi di acquisizione dati](subscribe-to-data-ingestion-events.md).
+**Gli architetti di dati** _possono saltare avanti_ e passare alla [lezione di acquisizione batch](ingest-batch-data.md).

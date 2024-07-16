@@ -8,8 +8,8 @@ jira: KT-4348
 exl-id: 73abe4bd-57cb-4acf-98f6-253b01fd79ff
 source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 5%
+source-wordcount: '413'
+ht-degree: 1%
 
 ---
 
@@ -19,23 +19,23 @@ ht-degree: 5%
 
 Congratulazioni, hai completato l&#39;esercitazione.
 
-Ora hai un’esperienza pratica con le funzionalità di Platform comunemente utilizzate sia dagli architetti di dati che dai data engineer. Capisco che il tuo ruolo sia solo uno dei due e che tu abbia fatto un _lotto_ lavoro che viene spesso svolto da un collega. Spero che così facendo possiate apprezzare come tutti i pezzi si adattano e apprezzare il lavoro di squadra necessario per implementare Experience Platform con successo.
+Ora hai un’esperienza pratica con le funzionalità di Platform comunemente utilizzate sia dagli architetti di dati che dai data engineer. Capisco che il tuo ruolo sia solo uno dei due e che tu abbia svolto _molti_ lavori che spesso vengono svolti da un collega. Spero che così facendo possiate apprezzare come tutti i pezzi si adattano e apprezzare il lavoro di squadra necessario per implementare Experience Platform con successo.
 
 Hai imparato a:
 
-* Amministrare utenti e autorizzazioni nell’Admin Console, con cui **Architetti di dati** sono spesso incaricati
-* Creare una sandbox, che **Architetti di dati** e **Ingegneri dati** può utilizzare per sperimentare nuovi schemi e dati
-* Configura l’accesso all’API di Platform nella Console per sviluppatori e utilizza le raccolte Postman di Experience Platform, che **Architetti di dati** e **Ingegneri dati** troverà utili
+* Amministra utenti e autorizzazioni nell&#39;Admin Console, con cui **Gli architetti di dati** hanno spesso il compito
+* Crea una sandbox che sia **architetti di dati** che **ingegneri di dati** possono utilizzare per sperimentare nuovi schemi e nuovi dati
+* Configura l&#39;accesso all&#39;API di Platform in Developer Console e utilizza le raccolte Postman Experience Platform, che saranno utili sia per **architetti di dati** che per **ingegneri dati**
 * Modellare i dati in schemi XDM, che è un componente fondamentale importante per tutti gli utenti di Platform
-* Mappa le identità in spazi dei nomi e aggiungili agli schemi, che è un’attività critica di **Architetti di dati** per unire i profili
-* Creare set di dati, che **Architetti di dati** in genere configurato per la ricezione di dati in arrivo
-* Abilitare schemi e set di dati per profili cliente in tempo reale, un’altra attività per **Architetti di dati**
-* Iscriviti agli eventi di acquisizione dati, che **Ingegneri dati** può utilizzare per il monitoraggio dell’acquisizione
-* Acquisire dati batch tramite più metodi, che è una delle attività principali di **Ingegneri dati**
-* Trasmetti i dati utilizzando Adobe Experience Platform Web SDK, che **Ingegneri dati** in genere devono coordinarsi con i loro sviluppatori web
-* Creare criteri di unione per assegnare la priorità ai set di dati, un altro strumento per **Architetto dati**
-* Eseguire query per convalidare i dati, una funzionalità utile per entrambi **Architetti di dati** e **Ingegneri dati**
-* Creare segmenti, che **Architetti di dati** dovrà comprendere per supportare gli utenti aziendali di Platform
+* Mappa le identità in spazi dei nomi e aggiungile agli schemi, attività critica di **architetti di dati** per unire i profili
+* Crea set di dati, generalmente impostati da **architetti di dati** per la ricezione di dati in arrivo
+* Abilita schemi e set di dati per profili cliente in tempo reale, un&#39;altra attività per **architetti di dati**
+* Iscriviti agli eventi di acquisizione dati che **Data Engineer** può utilizzare per il monitoraggio dell&#39;acquisizione
+* Acquisire dati batch tramite più metodi, che è una delle attività principali di **Data Engineer**
+* Trasmetti i dati utilizzando Adobe Experience Platform Web SDK, che **I Data Engineer** in genere devono coordinare con i loro sviluppatori Web
+* Crea criteri di unione per assegnare priorità ai set di dati, un altro strumento per l&#39;**Architetto dati**
+* Esegui query per convalidare i dati, funzionalità utile sia per **architetti di dati** che per **data engineer**
+* Genera segmenti che **Gli architetti di dati** dovranno comprendere per supportare gli utenti aziendali di Platform
 
 
 
@@ -47,8 +47,8 @@ Ti suggerisco di tenerlo e utilizzarlo per ulteriori sperimentazioni con Platfor
 
 Le risorse chiave:
 
-* [Tutorial su Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html?lang=it)
+* [Tutorial su Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html)
 * [Documentazione di Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=it)
-* [Experience League di corsi](https://experienceleague.adobe.com/?lang=it#dashboard/learning)
+* [Corsi di Experience League](https://experienceleague.adobe.com/#dashboard/learning)
 
 Grazie per i vostri sforzi e buona fortuna per il vostro percorso con Adobe Experience Platform!

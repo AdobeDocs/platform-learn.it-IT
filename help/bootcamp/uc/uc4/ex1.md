@@ -68,7 +68,7 @@ Prima di iniziare gli esercizi successivi, è fondamentale comprendere quali pas
 
 Prima di iniziare i passaggi precedenti, non dimenticare il passaggio 0, che consiste nel comprendere i dati disponibili in Adobe Experience Platform.
 
-**Spazzatura dentro, spazzatura fuori.** Ricordi? Devi avere un’idea chiara di quali dati sono disponibili e come sono configurati gli schemi in Adobe Experience Platform. Comprendere i dati presenti in Adobe Experience Platform semplificherà le cose, non solo sulla parte di connessione dati, ma anche durante la creazione di visualizzazioni e l’analisi.
+**Spazzatura in entrata, spazzatura in uscita.** Ricordi? Devi avere un’idea chiara di quali dati sono disponibili e come sono configurati gli schemi in Adobe Experience Platform. Comprendere i dati presenti in Adobe Experience Platform semplificherà le cose, non solo sulla parte di connessione dati, ma anche durante la creazione di visualizzazioni e l’analisi.
 
 ## 4.1.5 Passaggio 0: informazioni sugli schemi e i set di dati di Adobe Experience Platform
 
@@ -78,7 +78,7 @@ Dopo aver effettuato l’accesso, accedi alla home page di Adobe Experience Plat
 
 ![Acquisizione dei dati](../uc1/images/home.png)
 
-Prima di continuare, è necessario selezionare una **sandbox**. La sandbox da selezionare è denominata ``Bootcamp``. A tale scopo, fai clic sul testo **[!UICONTROL Prod]** nell’angolo in alto a destra dello schermo. Dopo aver selezionato la sandbox appropriata, la schermata cambia e ora sei nella sandbox dedicata.
+Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``Bootcamp``. A tale scopo, fai clic sul testo **[!UICONTROL Prod]** nell&#39;angolo in alto a destra dello schermo. Dopo aver selezionato la sandbox appropriata, la schermata cambia e ora sei nella sandbox dedicata.
 
 ![Acquisizione dei dati](../uc1/images/sb1.png)
 
@@ -93,19 +93,19 @@ Dai un&#39;occhiata a questi schemi e set di dati in Adobe Experience Platform.
 Assicurati di aver controllato almeno elementi come:
 
 - Identità: CRMID, phoneNumber, ECID, e-mail. Quali identità sono gli identificatori primari, quali sono gli identificatori secondari?
-Per trovare gli identificatori, apri uno schema e osserva l’oggetto. `_experienceplatform.identification.core`. Dai un’occhiata allo schema [Sistema di dimostrazione - Schema eventi per il sito web (Global v1.1)](https://experience.adobe.com/platform/schema).
+Per trovare gli identificatori, aprire uno schema e controllare l&#39;oggetto `_experienceplatform.identification.core`. Dai un&#39;occhiata allo schema [Demo System - Event Schema for Website (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![demo](./images/identity.png)
 
-- Esplora l’oggetto commerce nello schema [Sistema di dimostrazione - Schema eventi per il sito web (Global v1.1)](https://experience.adobe.com/platform/schema).
+- Esplora l&#39;oggetto commerce nello schema [Sistema demo - Schema evento per il sito Web (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![demo](./images/commerce.png)
 
-- Visualizza l&#39;anteprima di tutte le [set di dati](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) e dai un&#39;occhiata ai dati
+- Visualizza in anteprima tutti i [set di dati](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) e osserva i dati
 
 Ora puoi iniziare a utilizzare l’interfaccia utente del Customer Journey Analytics.
 
-Passaggio successivo: [4.2 Collegare i set di dati di Adobe Experience Platform nel Customer Journey Analytics](./ex2.md)
+Passaggio successivo: [4.2 Connetti set di dati di Adobe Experience Platform nel Customer Journey Analytics](./ex2.md)
 
 [Torna a Flusso utente 4](./uc4.md)
 

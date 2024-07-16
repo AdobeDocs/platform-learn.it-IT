@@ -16,6 +16,6 @@ ht-degree: 51%
 
 # Utilizzare punteggi e informazioni di Attribution AI
 
-Scopri come utilizzare la pagina Approfondimenti di Attribution AI per comprendere il ROI dei canali e delle campagne di marketing. Per ulteriori informazioni, visitare il [Documentazione di Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
+Scopri come utilizzare la pagina Approfondimenti di Attribution AI per comprendere il ROI dei canali e delle campagne di marketing. Per ulteriori informazioni, visitare la [documentazione sulle Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32669?learn=on)

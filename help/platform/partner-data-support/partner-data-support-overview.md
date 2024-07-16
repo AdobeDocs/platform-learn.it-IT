@@ -1,6 +1,6 @@
 ---
 title: Panoramica del supporto dati per i partner in Real-Time CDP
-description: Scopri come [!DNL Real-Time Customer Data Platform] supporta il marketing full funnel utilizzando i dati dei partner per casi di utilizzo di arricchimento dei dati di prime parti e ricerca di potenziali clienti, poiché i cookie di terze parti continuano a essere obsoleti. 
+description: Scopri come [!DNL Real-Time Customer Data Platform] supporta il marketing full funnel utilizzando i dati dei partner per i casi di utilizzo di arricchimento dei dati di prime parti e individuazione di potenziali clienti, poiché i cookie di terze parti continuano a essere obsoleti. 
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Panoramica del supporto dati per i partner in [!DNL Real-Time CDP]
 
-Scopri come [!DNL Real-Time Customer Data Platform] supporta il marketing full funnel utilizzando i dati dei partner per casi di utilizzo di arricchimento dei dati di prime parti e ricerca di potenziali clienti, poiché i cookie di terze parti continuano a essere obsoleti. 
+Scopri in che modo [!DNL Real-Time Customer Data Platform] supporta il marketing full funnel utilizzando i dati dei partner per casi di utilizzo di arricchimento dei dati di prime parti e individuazione di potenziali clienti, poiché i cookie di terze parti continuano a essere obsoleti. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422855/?learn=on)

@@ -23,12 +23,12 @@ Alla fine di questa lezione, sarai in grado di:
 * Inviare un evento con campi XDM utilizzando le azioni Aggiorna variabile e Invia evento
 * Sovrapponi più set di campi XDM in più regole
 * Mappare singoli o interi elementi di dati array all’oggetto XDM
-* Pubblicare una regola di tag in una libreria di sviluppo
+* Publish una regola di tag in una libreria di sviluppo
 
 
 ## Prerequisiti
 
-Conosci i tag di raccolta dati e la [Sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html) e hanno completato le lezioni precedenti nell’esercitazione:
+Conosci i tag di raccolta dati e il [sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html) e hai completato le lezioni precedenti nell’esercitazione:
 
 * [Configurare uno schema XDM](configure-schemas.md)
 * [Configurare uno spazio dei nomi delle identità](configure-identities.md)
@@ -46,27 +46,27 @@ Per gestire le regole nei tag, si consiglia di seguire una convenzione di denomi
 dove;
 
 1. **posizione** è la pagina o le pagine del sito in cui viene attivata la regola
-1. **evento** è il trigger della regola
-1. **scopo** è l’azione principale eseguita dalla regola
-1. **ordine** è l&#39;ordine in cui la regola deve essere attivata in relazione ad altre regole
+1. **event** è il trigger per la regola
+1. **scopo** è l&#39;azione principale eseguita dalla regola
+1. **order** è l&#39;ordine in cui attivare la regola in relazione ad altre regole
 <!-- minor update -->
 
 ## Creare regole di tag
 
 Nei tag, le regole vengono utilizzate per eseguire azioni (chiamate di attivazione) in varie condizioni. L’estensione dei tag di Platform Web SDK include due azioni utilizzate in questa lezione:
 
-* **[!UICONTROL Aggiorna variabile]** mappa gli elementi dati alle proprietà in un oggetto XDM
-* **[!UICONTROL Invia evento]** invia l&#39;oggetto XDM ad Experienci Platform Edge Network
+* **[!UICONTROL Aggiorna variabile]** associa gli elementi dati alle proprietà in un oggetto XDM
+* **[!UICONTROL Invia evento]** invia l&#39;oggetto XDM all&#39;Edge Network Experience Platform
 
 Nel resto di questa lezione:
 
-1. Creare una regola con **[!UICONTROL Aggiorna variabile]** azione per definire una &quot;configurazione globale&quot; di campi XDM.
+1. Crea una regola con l&#39;azione **[!UICONTROL Aggiorna variabile]** per definire una &quot;configurazione globale&quot; dei campi XDM.
 
-1. Creare regole aggiuntive con **[!UICONTROL Aggiorna variabile]** azione che sovrascrive la &quot;configurazione globale&quot; e contribuisce con campi XDM aggiuntivi in determinate condizioni (ad esempio, l’aggiunta di dettagli del prodotto nelle pagine dei prodotti).
+1. Crea regole aggiuntive con l&#39;azione **[!UICONTROL Aggiorna variabile]** che sostituiscono la &quot;configurazione globale&quot; e contribuiscono con campi XDM aggiuntivi in determinate condizioni (ad esempio, l&#39;aggiunta di dettagli prodotto nelle pagine dei prodotti).
 
-1. Crea un&#39;altra regola con **[!UICONTROL Invia evento]** , che invierà l&#39;oggetto XDM completo all&#39;Edge Network di Adobe Experience Platform.
+1. Crea un&#39;altra regola con l&#39;azione **[!UICONTROL Invia evento]**, che invierà l&#39;oggetto XDM completo all&#39;Edge Network di Adobe Experience Platform.
 
-Tutte queste regole saranno sequenziate correttamente utilizzando il comando &quot;[!UICONTROL ordine]&quot;.
+Tutte queste regole verranno sequenziate correttamente utilizzando l&#39;opzione &quot;[!UICONTROL order]&quot;.
 
 Questo video offre una panoramica del processo:
 
@@ -80,68 +80,68 @@ Per creare una regola di tag per i campi XDM globali:
 
 1. Vai a **[!UICONTROL Regole]** nel menu di navigazione a sinistra
 
-1. Seleziona la **[!UICONTROL Crea nuova regola]** pulsante
+1. Seleziona il pulsante **[!UICONTROL Crea nuova regola]**
 
-   ![Creare una regola](assets/rules-create.png)
+   ![Crea una regola](assets/rules-create.png)
 
 1. Denomina la regola `all pages - library loaded - set global variables - 1`
 
-1. In **[!UICONTROL Eventi]** sezione, seleziona **[!UICONTROL Aggiungi]**
+1. Nella sezione **[!UICONTROL Eventi]**, seleziona **[!UICONTROL Aggiungi]**
 
    ![Denomina la regola e aggiungi un evento](assets/rule-name-new.png)
 
-1. Utilizza il **[!UICONTROL Estensione core]** e seleziona **[!UICONTROL Library Loaded (Page Top)]** come **[!UICONTROL Tipo di evento]**
+1. Utilizza l&#39;**[!UICONTROL Estensione core]** e seleziona **[!UICONTROL Libreria caricata (parte superiore della pagina)]** come **[!UICONTROL Tipo evento]**
 
-1. Seleziona **[!UICONTROL Avanzate]** a discesa e immettere `1` come **[!UICONTROL Ordine]**
+1. Seleziona il menu a discesa **[!UICONTROL Avanzate]** e immetti `1` come **[!UICONTROL Ordine]**
 
    >[!NOTE]
    >
    > Minore è il numero d&#39;ordine, prima viene eseguito. Pertanto, alla nostra &quot;configurazione globale&quot; viene assegnato un numero d&#39;ordine basso.
 
-1. Seleziona **[!UICONTROL Mantieni modifiche]** per tornare alla schermata principale delle regole
-   ![Seleziona attivatore caricato dalla libreria](assets/create-tag-rule-trigger-loaded.png)
+1. Seleziona **[!UICONTROL Mantieni modifiche]** per tornare alla schermata della regola principale
+   ![Seleziona trigger caricato dalla libreria](assets/create-tag-rule-trigger-loaded.png)
 
-1. In **[!UICONTROL Azioni]** sezione, seleziona **[!UICONTROL Aggiungi]**
+1. Nella sezione **[!UICONTROL Azioni]**, seleziona **[!UICONTROL Aggiungi]**
 
 1. Come **[!UICONTROL Estensione]**, seleziona **[!UICONTROL Adobe Experience Platform Web SDK]**
 
-1. Come **[!UICONTROL Tipo di azione]**, seleziona **[!UICONTROL Aggiorna variabile]**
+1. Come **[!UICONTROL Tipo azione]**, seleziona **[!UICONTROL Aggiorna variabile]**
 
-1. Come **[!UICONTROL Elemento dati]**, seleziona la `xdm.variable.content` creato in [Creare elementi dati](create-data-elements.md) lezione
+1. Come **[!UICONTROL elemento dati]**, seleziona `xdm.variable.content` creato nella lezione [Creare elementi dati](create-data-elements.md)
 
    ![Aggiorna schema variabile](assets/create-rule-update-variable.png)
 
-Ora, mappa il tuo [!UICONTROL elementi dati] al [!UICONTROL schema] utilizzato dall’oggetto XDM. È possibile eseguire il mapping a singole proprietà o a interi oggetti. In questo esempio, esegui il mapping a singole proprietà:
+Ora, mappa i [!UICONTROL elementi dati] con lo [!UICONTROL schema] utilizzato dall&#39;oggetto XDM. È possibile eseguire il mapping a singole proprietà o a interi oggetti. In questo esempio, esegui il mapping a singole proprietà:
 
 1. Individuare il campo eventType e selezionarlo
 
-1. Inserisci il valore `web.webpagedetails.pageViews`
+1. Immettere il valore `web.webpagedetails.pageViews`
 
    >[!TIP]
    >
-   > Per capire quali valori compilare nel `eventType` , è necessario passare alla pagina schema e selezionare `eventType` per visualizzare i valori suggeriti nella barra a destra. Se necessario, puoi anche immettere un nuovo valore.
-   > ![valori suggeriti da eventType nella pagina schemi](assets/create-tag-rule-eventType.png)
+   > Per capire quali valori compilare nel campo `eventType`, è necessario passare alla pagina dello schema e selezionare il campo `eventType` per visualizzare i valori suggeriti nella barra a destra. Se necessario, puoi anche immettere un nuovo valore.
+   > ![valori suggeriti da eventType nella pagina degli schemi](assets/create-tag-rule-eventType.png)
 
-1. Quindi, trova il `identityMap` nello schema e selezionarlo
+1. Individuare quindi l&#39;oggetto `identityMap` nello schema e selezionarlo
 
-1. Mappa su `identityMap.loginID` elemento dati
+1. Mappa all&#39;elemento dati `identityMap.loginID`
 
    ![Aggiorna mappa identità variabile](assets/create-rule-variable-identityMap.png)
 
 
    >[!TIP]
    >
-   > I campi XDM non verranno inclusi nella richiesta di rete se l’elemento dati è nullo. Pertanto, quando l’utente non è autenticato e il `identityMap.loginID` l&#39;elemento dati è nullo, l&#39; `identityMap` l&#39;oggetto non verrà inviato. Per questo possiamo definirla nella nostra &quot;configurazione globale&quot;.
+   > I campi XDM non verranno inclusi nella richiesta di rete se l’elemento dati è nullo. Pertanto, quando l&#39;utente non è autenticato e l&#39;elemento dati `identityMap.loginID` è null, l&#39;oggetto `identityMap` non verrà inviato. Per questo possiamo definirla nella nostra &quot;configurazione globale&quot;.
 
-1. Scorri verso il basso fino a raggiungere il **`web`** oggetto
+1. Scorri verso il basso fino a raggiungere l&#39;oggetto **`web`**
 
 1. Seleziona per aprirlo
 
-1. Mappa i seguenti elementi dati al corrispondente `web` Variabili XDM
+1. Mappa i seguenti elementi dati alle corrispondenti `web` variabili XDM
 
-   * **`web.webPageDetials.name`** a `%page.pageInfo.pageName%`
-   * **`web.webPageDetials.server`** a `%page.pageInfo.server%`
-   * **`web.webPageDetials.siteSection`** a `%page.pageInfo.hierarchie1%`
+   * Da **`web.webPageDetials.name`** a `%page.pageInfo.pageName%`
+   * Da **`web.webPageDetials.server`** a `%page.pageInfo.server%`
+   * Da **`web.webPageDetials.siteSection`** a `%page.pageInfo.hierarchie1%`
 
 1. Imposta `web.webPageDetials.pageViews.value` su `1`.
 
@@ -149,15 +149,15 @@ Ora, mappa il tuo [!UICONTROL elementi dati] al [!UICONTROL schema] utilizzato d
 
    >[!TIP]
    >
-   > Mentre nessuno dei due `eventType` imposta su `web.webpagedetails.pageViews` né `web.webPageDetails.pageViews.value` sono necessari affinché Adobe Analytics possa elaborare un beacon come visualizzazione di pagina; è utile disporre di una modalità standard per indicare una visualizzazione di pagina per altre applicazioni a valle.
+   > Sebbene non sia necessario `eventType` impostato su `web.webpagedetails.pageViews` né `web.webPageDetails.pageViews.value` per consentire ad Adobe Analytics di elaborare un beacon come visualizzazione di pagina, è utile disporre di un modo standard per indicare una visualizzazione di pagina per altre applicazioni a valle.
 
 
-1. Seleziona **[!UICONTROL Mantieni modifiche]** e poi **[!UICONTROL Salva]** la regola nella schermata successiva per completare la creazione della regola
+1. Seleziona **[!UICONTROL Mantieni modifiche]**, quindi **[!UICONTROL Salva]** la regola nella schermata successiva per completare la creazione della regola
 
 
 ### Campi pagina prodotto
 
-Ora, inizia a utilizzare **[!UICONTROL Aggiorna variabile]** in regole aggiuntive in sequenza per arricchire l’oggetto XDM prima di inviarlo a [!UICONTROL Edge Network piattaforma].
+Ora inizia a utilizzare **[!UICONTROL Aggiorna variabile]** in regole aggiuntive in sequenza per arricchire l&#39;oggetto XDM prima di inviarlo all&#39;[!UICONTROL Edge Network della piattaforma].
 
 >[!TIP]
 >
@@ -167,58 +167,58 @@ Ora, inizia a utilizzare **[!UICONTROL Aggiorna variabile]** in regole aggiuntiv
 Per iniziare, monitora le visualizzazioni del prodotto nella pagina dei dettagli del prodotto di Luma:
 
 1. Seleziona **[!UICONTROL Aggiungi regola]**
-1. Assegna un nome  [!UICONTROL `ecommerce - library loaded - set product details variables - 20`]
-1. Seleziona la ![simbolo +](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) in Evento per aggiungere un nuovo trigger
-1. Sotto **[!UICONTROL Estensione]**, seleziona **[!UICONTROL Core]**
-1. Sotto **[!UICONTROL Tipo di evento]**, seleziona **[!UICONTROL Library Loaded (Page Top)]**
-1. Seleziona per aprire **[!UICONTROL Opzioni avanzate]**, digitare `20`. Questo valore dell’ordine garantisce l’esecuzione della regola _dopo_ il `all pages - library loaded - set global variables - 1` che imposta la configurazione globale.
+1. Denomina [!UICONTROL `ecommerce - library loaded - set product details variables - 20`]
+1. Seleziona il simbolo ![+](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) in Evento per aggiungere un nuovo trigger
+1. In **[!UICONTROL Estensione]**, seleziona **[!UICONTROL Core]**
+1. In **[!UICONTROL Tipo evento]**, seleziona **[!UICONTROL Libreria caricata (parte superiore della pagina)]**
+1. Seleziona per aprire **[!UICONTROL Opzioni avanzate]**, digita in `20`. Questo valore dell&#39;ordine assicura l&#39;esecuzione della regola _dopo_ di `all pages - library loaded - set global variables - 1` che imposta la configurazione globale.
 1. Seleziona **[!UICONTROL Mantieni modifiche]**
 
    ![Regole XDM per Analytics](assets/set-up-analytics-pdp.png)
 
-1. Sotto **[!UICONTROL Condizioni]**, seleziona per **[!UICONTROL Aggiungi]**
-1. Esci **[!UICONTROL Tipo di logica]** as **[!UICONTROL Normale]**
-1. Esci **[!UICONTROL Estensione]** as **[!UICONTROL Core]**
-1. Seleziona **[!UICONTROL Tipo di condizione]** as **[!UICONTROL Percorso senza stringa di query]**
-1. A destra, abilita **[!UICONTROL Regex]** attivare/disattivare
-1. Sotto **[!UICONTROL path è uguale a]** set `/products/`. Per il sito di dimostrazione Luma, assicura che la regola venga attivata solo sulle pagine dei prodotti
+1. In **[!UICONTROL Condizioni]**, seleziona **[!UICONTROL Aggiungi]**
+1. Lascia **[!UICONTROL Tipo di logica]** come **[!UICONTROL Normale]**
+1. Lascia **[!UICONTROL Estensione]** come **[!UICONTROL Core]**
+1. Seleziona **[!UICONTROL Tipo condizione]** come **[!UICONTROL Percorso senza stringa di query]**
+1. A destra, attiva **[!UICONTROL Regex]**
+1. In **[!UICONTROL path è uguale a]** set `/products/`. Per il sito di dimostrazione Luma, assicura che la regola venga attivata solo sulle pagine dei prodotti
 1. Seleziona **[!UICONTROL Mantieni modifiche]**
 
    ![Regole XDM per Analytics](assets/set-up-analytics-product-condition.png)
 
-1. Sotto **[!UICONTROL Azioni]** seleziona **[!UICONTROL Aggiungi]**
-1. Seleziona **[!UICONTROL Adobe Experience Platform Web SDK]** estensione
-1. Seleziona **[!UICONTROL Tipo di azione]** as **[!UICONTROL Aggiorna variabile]**
-1. Seleziona `xdm.variable.content` come **[!UICONTROL Elemento dati]**
-1. Scorri verso il basso fino a `commerce` oggetto
-1. Apri **[!UICONTROL productViews]** oggetto e set **[!UICONTROL valore]** a `1`
+1. In **[!UICONTROL Azioni]** selezionare **[!UICONTROL Aggiungi]**
+1. Seleziona estensione **[!UICONTROL Adobe Experience Platform Web SDK]**
+1. Seleziona **[!UICONTROL Tipo azione]** come **[!UICONTROL Aggiorna variabile]**
+1. Seleziona `xdm.variable.content` come **[!UICONTROL elemento dati]**
+1. Scorri verso il basso fino all&#39;oggetto `commerce`
+1. Apri l&#39;oggetto **[!UICONTROL productViews]** e imposta **[!UICONTROL value]** su `1`
 
-   ![configurare la visualizzazione prodotto](assets/set-up-analytics-prodView.png)
+   ![imposta visualizzazione prodotto](assets/set-up-analytics-prodView.png)
 
    >[!TIP]
    >
-   >L’impostazione di commerce.productViews.value=1 in XDM viene mappata automaticamente sul `prodView` evento in Analytics
+   >L&#39;impostazione di commerce.productViews.value=1 in XDM viene mappata automaticamente all&#39;evento `prodView` in Analytics
 
-1. Scorri verso il basso fino a `eventType` e impostarlo su `commerce.productViews`
+1. Scorri verso il basso fino a `eventType` e impostalo su `commerce.productViews`
 
    >[!NOTE]
    >
-   >Poiché questa regola ha un ordine più alto, sovrascriverà il `eventType` impostato nella regola &quot;configurazione globale&quot;. `eventType` può contenere un solo valore e si consiglia di impostarlo con l’evento più prezioso.
+   >Poiché questa regola ha un ordine più alto, sovrascriverà `eventType` impostato nella regola di &quot;configurazione globale&quot;. `eventType` può contenere un solo valore e si consiglia di impostarlo con l&#39;evento di maggior valore.
 
 1. Scorri verso il basso fino a e seleziona `productListItems` array
 1. Seleziona **[!UICONTROL Fornisci singoli elementi]**
 1. Seleziona **[!UICONTROL Aggiungi elemento]**
 
-   ![Impostazione dell’evento di visualizzazione prodotto](assets/set-up-analytics-xdm-individual.png)
+   ![Impostazione dell&#39;evento di visualizzazione prodotto](assets/set-up-analytics-xdm-individual.png)
 
    >[!CAUTION]
    >
-   >Il **`productListItems`** è un `array` tipo di dati in modo che preveda che i dati vengano inseriti come una raccolta di elementi. A causa della struttura del livello dati del sito di dimostrazione Luma e poiché è possibile visualizzare un solo prodotto alla volta sul sito Luma, puoi aggiungere elementi singolarmente. Quando implementi sul tuo sito web, a seconda della struttura del livello dati, potresti essere in grado di fornire un intero array.
+   >**`productListItems`** è un tipo di dati `array` e prevede che i dati vengano inseriti come raccolta di elementi. A causa della struttura del livello dati del sito di dimostrazione Luma e poiché è possibile visualizzare un solo prodotto alla volta sul sito Luma, puoi aggiungere elementi singolarmente. Quando implementi sul tuo sito web, a seconda della struttura del livello dati, potresti essere in grado di fornire un intero array.
 
 1. Seleziona per aprire **[!UICONTROL Elemento 1]**
 1. Mappa **`productListItems.item1.SKU`** a `%product.productInfo.sku%`
 
-   ![Variabile oggetto XDM SKU del prodotto](assets/set-up-analytics-sku.png)
+   ![Variabile oggetto XDM SKU prodotto](assets/set-up-analytics-sku.png)
 
 1. Seleziona **[!UICONTROL Mantieni modifiche]**
 
@@ -227,59 +227,59 @@ Per iniziare, monitora le visualizzazioni del prodotto nella pagina dei dettagli
 
 ### Campi carrello
 
-Puoi mappare l’intero array a un oggetto XDM, purché l’array corrisponda al formato dello schema XDM. Elemento dati del codice personalizzato `cart.productInfo` sono stati creati cicli precedenti in `digitalData.cart.cartEntries` oggetto livello dati su Luma e lo traduce nel formato richiesto del `productListItems` oggetto dello schema XDM.
+Puoi mappare l’intero array a un oggetto XDM, purché l’array corrisponda al formato dello schema XDM. L’elemento dati del codice personalizzato `cart.productInfo` creato in precedenza esegue un ciclo nell’oggetto livello dati `digitalData.cart.cartEntries` su Luma e lo traduce nel formato richiesto dell’oggetto `productListItems` dello schema XDM.
 
 Per illustrare, consulta il confronto seguente del livello dati del sito Luma (a sinistra) con l’elemento dati tradotto (a destra):
 
 ![Formato array di oggetti XDM](assets/data-element-xdm-array.png)
 
-Confronta l’elemento dati con `productListItems` struttura (suggerimento, deve corrispondere).
+Confrontare l&#39;elemento dati con la struttura `productListItems` (suggerimento, dovrebbe corrispondere).
 
 >[!IMPORTANT]
 >
->Nota come le variabili numeriche vengono tradotte, con valori stringa nel livello dati come `price` e `qty` viene riformattato in numeri nell’elemento dati. Questi requisiti di formato sono importanti per l’integrità dei dati in Platform e vengono determinati durante [configurare gli schemi](configure-schemas.md) passaggio. Nell’esempio, **[!UICONTROL quantità]** utilizza **[!UICONTROL Intero]** tipo di dati.
+>Si noti come le variabili numeriche vengono convertite, con valori stringa nel livello dati come `price` e `qty` riformattati in numeri nell&#39;elemento dati. Questi requisiti di formato sono importanti per l&#39;integrità dei dati in Platform e vengono determinati durante il passaggio [configura schemi](configure-schemas.md). Nell&#39;esempio, **[!UICONTROL quantity]** utilizza il tipo di dati **[!UICONTROL Integer]**.
 > ![Tipo di dati dello schema XDM](assets/set-up-analytics-quantity-integer.png)
 
 Ora associamo il nostro array all’oggetto XDM:
 
 
 1. Crea una nuova regola denominata `ecommerce - library loaded - set shopping cart variables - 20`
-1. Seleziona la ![simbolo +](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) in Evento per aggiungere un nuovo trigger
-1. Sotto **[!UICONTROL Estensione]**, seleziona **[!UICONTROL Core]**
-1. Sotto **[!UICONTROL Tipo di evento]**, seleziona **[!UICONTROL Library Loaded (Page Top)]**
-1. Seleziona per aprire **[!UICONTROL Opzioni avanzate]**, digitare `20`
+1. Seleziona il simbolo ![+](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) in Evento per aggiungere un nuovo trigger
+1. In **[!UICONTROL Estensione]**, seleziona **[!UICONTROL Core]**
+1. In **[!UICONTROL Tipo evento]**, seleziona **[!UICONTROL Libreria caricata (parte superiore della pagina)]**
+1. Seleziona per aprire **[!UICONTROL Opzioni avanzate]**, digita in `20`
 1. Seleziona **[!UICONTROL Mantieni modifiche]**
 
    ![Regole XDM per Analytics](assets/set-up-analytics-cart-sequence.png)
 
-1. Sotto **[!UICONTROL Condizioni]**, seleziona per **[!UICONTROL Aggiungi]**
-1. Esci **[!UICONTROL Tipo di logica]** as **[!UICONTROL Normale]**
-1. Esci **[!UICONTROL Estensioni]** as **[!UICONTROL Core]**
-1. Seleziona **[!UICONTROL Tipo di condizione]** as **[!UICONTROL Percorso senza stringa di query]**
-1. Sulla destra, **non** abilita **[!UICONTROL Regex]** attivare/disattivare
-1. Sotto **[!UICONTROL path è uguale a]** set `/content/luma/us/en/user/cart.html`. Per il sito di dimostrazione Luma, assicura che la regola venga attivata solo sulla pagina del carrello
+1. In **[!UICONTROL Condizioni]**, seleziona **[!UICONTROL Aggiungi]**
+1. Lascia **[!UICONTROL Tipo di logica]** come **[!UICONTROL Normale]**
+1. Lascia **[!UICONTROL Estensioni]** come **[!UICONTROL Core]**
+1. Seleziona **[!UICONTROL Tipo condizione]** come **[!UICONTROL Percorso senza stringa di query]**
+1. A destra, **do not** abilita l&#39;interruttore **[!UICONTROL Regex]**
+1. In **[!UICONTROL path è uguale a]** set `/content/luma/us/en/user/cart.html`. Per il sito di dimostrazione Luma, assicura che la regola venga attivata solo sulla pagina del carrello
 1. Seleziona **[!UICONTROL Mantieni modifiche]**
 
    ![Regole XDM per Analytics](assets/set-up-analytics-cart-condition.png)
 
-1. Sotto **[!UICONTROL Azioni]** seleziona **[!UICONTROL Aggiungi]**
-1. Seleziona **[!UICONTROL Adobe Experience Platform Web SDK]** estensione
-1. Seleziona **[!UICONTROL Tipo di azione]** as **[!UICONTROL Aggiorna variabile]**
-1. Seleziona `xdm.variable.content` come **[!UICONTROL Elemento dati]**
-1. Scorri verso il basso fino a `commerce` e selezionare per aprirlo.
-1. Apri **[!UICONTROL productListViews]** oggetto e set **[!UICONTROL valore]** a `1`
+1. In **[!UICONTROL Azioni]** selezionare **[!UICONTROL Aggiungi]**
+1. Seleziona estensione **[!UICONTROL Adobe Experience Platform Web SDK]**
+1. Seleziona **[!UICONTROL Tipo azione]** come **[!UICONTROL Aggiorna variabile]**
+1. Seleziona `xdm.variable.content` come **[!UICONTROL elemento dati]**
+1. Scorrere verso il basso fino all&#39;oggetto `commerce` e selezionare per aprirlo.
+1. Apri l&#39;oggetto **[!UICONTROL productListViews]** e imposta **[!UICONTROL value]** su `1`
 
-   ![configurare la visualizzazione prodotto](assets/set-up-analytics-cart-view.png)
+   ![imposta visualizzazione prodotto](assets/set-up-analytics-cart-view.png)
 
    >[!TIP]
    >
-   >L’impostazione di commerce.productListViews.value=1 in XDM viene mappata automaticamente sul `scView` evento in Analytics
+   >L&#39;impostazione di commerce.productListViews.value=1 in XDM viene mappata automaticamente all&#39;evento `scView` in Analytics
 
-1. Seleziona `eventType` e impostato su `commerce.productListViews`
+1. Seleziona `eventType` e imposta su `commerce.productListViews`
 
-1. Scorri verso il basso fino a e seleziona **[!UICONTROL productListItems]** array
+1. Scorri verso il basso fino a e seleziona l&#39;array **[!UICONTROL productListItems]**
 
-1. Seleziona **[!UICONTROL Fornire l&#39;intero array]**
+1. Seleziona **[!UICONTROL Fornisci intero array]**
 
 1. Mappa a **`cart.productInfo`** elemento dati
 
@@ -297,7 +297,7 @@ Crea altre due regole per il pagamento e l’acquisto seguendo lo stesso pattern
 
    >[!TIP]
    >
-   >Equivale all&#39;impostazione `scCheckout` evento in Analytics
+   >Equivale a impostare l&#39;evento `scCheckout` in Analytics
 
 
 **Nome regola**: `ecommerce - library loaded - set purchase variables -  20`
@@ -308,19 +308,19 @@ Crea altre due regole per il pagamento e l’acquisto seguendo lo stesso pattern
 
    >[!TIP]
    >
-   >Equivale all&#39;impostazione `purchase` evento in Analytics
+   >Equivale a impostare l&#39;evento `purchase` in Analytics
 
-1. Imposta `commerce.order.purchaseID` al `cart.orderId` elemento dati
-1. Imposta `commerce.order.currencyCode` al valore hardcoded `USD`
+1. Imposta `commerce.order.purchaseID` sull&#39;elemento dati `cart.orderId`
+1. Imposta `commerce.order.currencyCode` sul valore hardcoded `USD`
 
    ![Impostazione purchaseID per Analytics](assets/set-up-analytics-purchase.png)
 
    >[!TIP]
    >
-   >Equivale all&#39;impostazione `s.purchaseID` e `s.currencyCode` variabili in Analytics
+   >Equivale a impostare le variabili `s.purchaseID` e `s.currencyCode` in Analytics
 
-1. Scorri verso il basso fino a e seleziona **[!UICONTROL productListItems]** array
-1. Seleziona **[!UICONTROL Fornire l&#39;intero array]**
+1. Scorri verso il basso fino a e seleziona l&#39;array **[!UICONTROL productListItems]**
+1. Seleziona **[!UICONTROL Fornisci intero array]**
 1. Mappa a **`cart.productInfo.purchase`** elemento dati
 1. Seleziona **[!UICONTROL Mantieni modifiche]**
 1. Seleziona **[!UICONTROL Salva]**
@@ -332,37 +332,37 @@ Al termine dell’operazione, dovresti vedere che sono state create le seguenti 
 
 ### Invia regola evento
 
-Dopo aver impostato le variabili, puoi creare la regola per inviare l’oggetto XDM completo all’Edge Network di Platform con **[!UICONTROL Invia evento]** azione.
+Dopo aver impostato le variabili, puoi creare la regola per inviare l&#39;oggetto XDM completo all&#39;Edge Network di Platform con l&#39;azione **[!UICONTROL Invia evento]**.
 
 1. A destra, seleziona **[!UICONTROL Aggiungi regola]** per creare un&#39;altra regola
 
 1. Denomina la regola `all pages - library loaded - send event - 50`
 
-1. In **[!UICONTROL Eventi]** sezione, seleziona **[!UICONTROL Aggiungi]**
+1. Nella sezione **[!UICONTROL Eventi]**, seleziona **[!UICONTROL Aggiungi]**
 
-1. Utilizza il **[!UICONTROL Estensione core]** e seleziona `Library Loaded (Page Top)` come **[!UICONTROL Tipo di evento]**
+1. Utilizza l&#39;estensione **[!UICONTROL Core]** e seleziona `Library Loaded (Page Top)` come **[!UICONTROL Tipo evento]**
 
-1. Seleziona **[!UICONTROL Avanzate]** a discesa e immettere `50` in **[!UICONTROL Ordine]**. Questo assicurerà che questa regola venga attivata dopo tutte le altre regole configurate (che avevano `1` o `20` come loro [!UICONTROL Ordine]).
+1. Seleziona il menu a discesa **[!UICONTROL Avanzate]** e immetti `50` in **[!UICONTROL Ordine]**. Questa regola verrà attivata dopo tutte le altre regole configurate (che avevano `1` o `20` come [!UICONTROL Ordine]).
 
-1. Seleziona **[!UICONTROL Mantieni modifiche]** per tornare alla schermata principale delle regole
-   ![Seleziona attivatore caricato dalla libreria](assets/create-tag-rule-trigger-loaded-send.png)
+1. Seleziona **[!UICONTROL Mantieni modifiche]** per tornare alla schermata della regola principale
+   ![Seleziona trigger caricato dalla libreria](assets/create-tag-rule-trigger-loaded-send.png)
 
-1. In **[!UICONTROL Azioni]** sezione, seleziona **[!UICONTROL Aggiungi]**
+1. Nella sezione **[!UICONTROL Azioni]**, seleziona **[!UICONTROL Aggiungi]**
 
 1. Come **[!UICONTROL Estensione]**, seleziona **[!UICONTROL Adobe Experience Platform Web SDK]**
 
-1. Come  **[!UICONTROL Tipo di azione]**, seleziona **[!UICONTROL Invia evento]**
+1. Come **[!UICONTROL Tipo azione]**, seleziona **[!UICONTROL Invia evento]**
 
-1. Come **[!UICONTROL XDM]**, seleziona la `xdm.variable.content` elemento dati creato nella lezione precedente
+1. Come **[!UICONTROL XDM]**, seleziona l&#39;elemento dati `xdm.variable.content` creato nella lezione precedente
 
-1. Seleziona **[!UICONTROL Mantieni modifiche]** per tornare alla schermata principale delle regole
+1. Seleziona **[!UICONTROL Mantieni modifiche]** per tornare alla schermata della regola principale
 
-   ![Aggiungere l’azione Invia evento](assets/create-rule-send-event-action.png)
+   ![Aggiungi azione Invia evento](assets/create-rule-send-event-action.png)
 1. Seleziona **[!UICONTROL Salva]** per salvare la regola
 
    ![Salva la regola](assets/create-rule-save-rule.png)
 
-## Pubblicare le regole in una libreria
+## Publish le regole in una libreria
 
 Successivamente, pubblica la regola nell&#39;ambiente di sviluppo in modo da poterne verificare il funzionamento.
 
@@ -373,9 +373,9 @@ Per creare una libreria:
 1. Seleziona **[!UICONTROL Aggiungi libreria]**
 
    ![Seleziona Aggiungi libreria](assets/rule-publish-library.png)
-1. Per **[!UICONTROL Nome]**, immetti `Luma Web SDK Tutorial`
-1. Per **[!UICONTROL Ambiente]**, seleziona `Development`
-1. Seleziona  **[!UICONTROL Aggiungi tutte le risorse modificate]**
+1. Per **[!UICONTROL Name]**, immetti `Luma Web SDK Tutorial`
+1. Per l&#39;**[!UICONTROL ambiente]**, selezionare `Development`
+1. Seleziona **[!UICONTROL Aggiungi tutte le risorse modificate]**
 
    >[!NOTE]
    >
@@ -383,13 +383,13 @@ Per creare una libreria:
 
 1. Seleziona **[!UICONTROL Salva e genera per sviluppo]**
 
-   ![Creare e generare la libreria](assets/create-tag-rule-library-changes.png)
+   ![Crea e genera la libreria](assets/create-tag-rule-library-changes.png)
 
 La creazione della libreria potrebbe richiedere alcuni minuti e al termine viene visualizzato un punto verde a sinistra del nome della libreria:
 
-![Compilazione completata](assets/create-rule-development-success.png)
+![Build completata](assets/create-rule-development-success.png)
 
-Come è possibile vedere sul [!UICONTROL Flusso di pubblicazione] , il processo di pubblicazione offre molto di più, che va oltre l’ambito di questa esercitazione. Questo tutorial utilizza una sola libreria nell’ambiente di sviluppo.
+Come puoi vedere nella schermata [!UICONTROL Flusso di pubblicazione], il processo di pubblicazione richiede molto di più, il che va oltre l&#39;ambito di questa esercitazione. Questo tutorial utilizza una sola libreria nell’ambiente di sviluppo.
 
 Ora puoi convalidare i dati nella richiesta utilizzando l’Adobe Experience Platform Debugger.
 
@@ -397,4 +397,4 @@ Ora puoi convalidare i dati nella richiesta utilizzando l’Adobe Experience Pla
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [Experience League post di discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

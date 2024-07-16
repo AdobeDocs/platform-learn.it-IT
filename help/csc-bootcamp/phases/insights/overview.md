@@ -2,21 +2,22 @@
 title: CSC Bootcamp - Informazioni - Panoramica
 description: CSC Bootcamp - Informazioni - Panoramica
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: b2522d95-7fd9-41c3-9f49-757aaee410b7
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '111'
 ht-degree: 0%
 
 ---
 
 # Informazioni: Panoramica
 
-Diamo un’occhiata a una serie di rapporti che ti daranno buoni spunti sulle tue campagne.  Questi sono solo esempi.  Ce ne sono molti altri disponibili e la creazione o la modifica di un rapporto è una cosa piuttosto semplice per te.
+Esaminiamo una serie di rapporti che ti forniranno informazioni utili sulle campagne.  Questi sono solo esempi.  Ce ne sono molti altri pronti all’uso e la creazione o la modifica di un rapporto è piuttosto semplice per te.
 
-È importante ricordare che qualsiasi campo esistente sulla piattaforma (in modo nativo o creato da te, ovvero campi personalizzati) può far parte di un reporting.  Quindi le scelte sono virtualmente illimitate.
+Un aspetto da ricordare è che qualsiasi campo esistente sulla piattaforma (nativo o creato da te, ad esempio campi personalizzati) può far parte di un rapporto.  Quindi le scelte sono virtualmente illimitate.
 
 Passaggio successivo: [Fase 4 - Informazioni su un Project Manager](./project-manager.md)
 
-[Torna alla fase 3 - Consegna: Vai/No-Go](../delivery/go-nogo.md)
+[Torna alla fase 3 - Consegna: vai/non vai](../delivery/go-nogo.md)
 
 [Torna a tutti i moduli](../../overview.md)

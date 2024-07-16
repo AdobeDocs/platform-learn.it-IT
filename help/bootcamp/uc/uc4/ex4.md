@@ -11,8 +11,8 @@ feature: Workspace Basics, Calculated Metrics
 exl-id: 6a9fc1a4-9a6a-43f2-9393-815f9dc2cb4e
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 2%
+source-wordcount: '768'
+ht-degree: 1%
 
 ---
 
@@ -39,11 +39,11 @@ Se non hai utilizzato Analysis Workspace in precedenza, ti consigliamo di guarda
 ### Crea il progetto
 
 Ora è il momento di creare il tuo primo progetto CJA. Passa alla scheda Progetti all’interno di CJA.
-fai clic su **Crea nuova**.
+Fai clic su **Crea nuovo**.
 
 ![demo](./images/prmenu.png)
 
-Poi vedrai questo. Seleziona **Progetto vuoto** e quindi fare clic su **Crea**.
+Poi vedrai questo. Seleziona **Progetto vuoto** e fai clic su **Crea**.
 
 ![demo](./images/prmenu1.png)
 
@@ -70,7 +70,7 @@ Utilizza questa convenzione per i nomi:
 | ----------------- |-------------| 
 | `yourLastName - Omnichannel Analysis` | `yourLastName - Omnichannel Analysis` |
 
-Quindi, fai clic su **Salva**.
+Fare clic su **Salva**.
 
 ![demo](./images/prsave2.png)
 
@@ -78,27 +78,27 @@ Quindi, fai clic su **Salva**.
 
 Anche se abbiamo organizzato tutti i componenti nella visualizzazione dati, è ancora necessario adattarne alcuni, in modo che gli utenti aziendali siano pronti per iniziare l’analisi. Inoltre, durante qualsiasi analisi puoi creare metriche calcolate per approfondire i risultati delle informazioni.
 
-Ad esempio, verrà creato un valore calcolato **Tasso di conversione** utilizzando **Acquisti** metrica/evento definita nella Visualizzazione dati.
+Ad esempio, verrà creato un **Tasso di conversione** calcolato utilizzando la metrica/evento **Acquisti** definito nella visualizzazione dati.
 
 ### Tasso di conversione
 
-Iniziamo ad aprire il generatore di metriche calcolate. Fai clic sul pulsante **+** per creare la prima metrica calcolata in Analysis Workspace.
+Iniziamo ad aprire il generatore di metriche calcolate. Fai clic su **+** per creare la prima metrica calcolata in Analysis Workspace.
 
 ![demo](./images/pradd.png)
 
-Il **Generatore di metriche calcolate** verrà visualizzato:
+Verrà visualizzato il **Generatore di metriche calcolate**:
 
 ![demo](./images/prbuilder.png)
 
-Trova il **Acquisti** nell’elenco delle Metriche nel menu a sinistra. Sotto **Metriche** click **Mostra tutto**
+Trova **Acquisti** nell&#39;elenco delle metriche nel menu a sinistra. In **Metriche** fare clic su **Mostra tutto**
 
 ![demo](./images/calcbuildercr1.png)
 
-Ora trascina e rilascia la **Acquisti** metrica nella definizione della metrica calcolata.
+Trascina e rilascia la metrica **Acquisti** nella definizione della metrica calcolata.
 
 ![demo](./images/calcbuildercr2.png)
 
-In genere, il tasso di conversione indica **Conversioni/Sessioni**. Facciamo quindi lo stesso calcolo nell’area di lavoro della definizione della metrica calcolata. Trova il **Sessioni** e trascinarlo nel generatore di definizioni, nella sezione **Acquisti** evento.
+In genere, il tasso di conversione indica **Conversioni/Sessioni**. Facciamo quindi lo stesso calcolo nell’area di lavoro della definizione della metrica calcolata. Trova la metrica **Sessioni** e trascinala nel generatore di definizioni, nell&#39;evento **Acquisti**.
 
 ![demo](./images/calcbuildercr3.png)
 
@@ -120,7 +120,7 @@ Avrai qualcosa di simile a questo sullo schermo:
 
 ![demo](./images/calcbuildercr6.png)
 
-Non dimenticare di **Salva** la metrica calcolata.
+Non dimenticare di **salvare** la metrica calcolata.
 
 ![demo](./images/pr9.png)
 
@@ -128,7 +128,7 @@ Non dimenticare di **Salva** la metrica calcolata.
 
 ### Filtri: Dimension calcolati
 
-I calcoli non devono essere utilizzati solo per le metriche. Prima di iniziare un’analisi, è anche interessante crearne alcune **Dimension calcolati**. In sostanza questo significava **segmenti** in Adobe Analytics. In Customer Journey Analytics, questi segmenti sono denominati **Filtri**.
+I calcoli non devono essere utilizzati solo per le metriche. Prima di iniziare un&#39;analisi è inoltre interessante creare alcuni **Dimension calcolati**. In pratica questo significava **segmenti** di nuovo in Adobe Analytics. Nel Customer Journey Analytics, questi segmenti sono denominati **Filtri**.
 
 ![demo](./images/prfilters.png)
 

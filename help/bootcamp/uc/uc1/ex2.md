@@ -28,7 +28,7 @@ Vai a [Adobe Experience Platform](https://experience.adobe.com/platform). Dopo a
 
 ![Acquisizione dei dati](./images/home.png)
 
-Prima di continuare, è necessario selezionare una **sandbox**. La sandbox da selezionare è denominata ``Bootcamp``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella linea blu sopra lo schermo. Dopo aver selezionato la [!UICONTROL sandbox], verrà visualizzata la modifica dello schermo e ora si è nel [!UICONTROL sandbox].
+Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``Bootcamp``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella riga blu nella parte superiore dello schermo. Dopo aver selezionato la [!UICONTROL sandbox] appropriata, la schermata verrà modificata e ora sei nella [!UICONTROL sandbox] dedicata.
 
 
 
@@ -45,9 +45,9 @@ Nel pannello Visualizzatore profili del sito web, puoi trovare la panoramica del
 
 Con Adobe Experience Platform, tutti gli ID sono ugualmente importanti. In precedenza, l’ECID era l’ID più importante nel contesto dell’Adobe e tutti gli altri ID erano collegati all’ECID in una relazione gerarchica. Con Adobe Experience Platform questo non avviene più e ogni ID può essere considerato un identificatore primario.
 
-In genere, l’identificatore primario dipende dal contesto. Se si chiede al Call Center, **Qual è l’ID più importante?** probabilmente risponderanno, **il numero di telefono!** Ma se chiedi al tuo team di gestione delle relazioni con i clienti, ti risponderanno, **L&#39;indirizzo e-mail!**  Adobe Experience Platform è consapevole di questa complessità e la gestisce al meglio. Ogni applicazione, che sia un&#39;applicazione di Adobe o non di Adobe, parlerà con Adobe Experience Platform facendo riferimento all&#39;ID che considerano primario. E funziona semplicemente.
+In genere, l’identificatore primario dipende dal contesto. Se si chiede al call center, **Qual è l&#39;ID più importante?** probabilmente risponderanno, **il numero di telefono!** Ma se chiedi al tuo team di gestione delle relazioni con i clienti, ti risponderanno, **L&#39;indirizzo e-mail!** Adobe Experience Platform è consapevole di questa complessità e la gestisce al meglio. Ogni applicazione, che sia un&#39;applicazione di Adobe o non di Adobe, parlerà con Adobe Experience Platform facendo riferimento all&#39;ID che considerano primario. E funziona semplicemente.
 
-Per il campo **Spazio dei nomi dell’identità**, seleziona **ECID** e per il campo **Valore identità** immetti l’ECID che puoi trovare nel pannello Visualizzatore profili del sito web di bootcamp. Clic **Visualizza**. Visualizzerai quindi il tuo profilo nell’elenco. Fai clic su **ID profilo** per aprire il profilo.
+Per il campo **Spazio dei nomi identità**, seleziona **ECID** e per il campo **Valore identità** immetti l&#39;ECID che puoi trovare nel pannello Visualizzatore profili del sito Web di bootcamp. Fare clic su **Visualizza**. Visualizzerai quindi il tuo profilo nell’elenco. Fai clic sul **ID profilo** per aprire il tuo profilo.
 
 ![Profilo cliente](./images/popupecid.png)
 
@@ -59,7 +59,7 @@ Vai a **Eventi**, dove puoi visualizzare le voci per ogni evento esperienza coll
 
 ![Profilo cliente](./images/profileee.png)
 
-Infine, vai all’opzione del menu **Iscrizione al pubblico**. Ora vedrai tutti i tipi di pubblico idonei per questo profilo.
+Infine, passare all&#39;opzione di menu **Appartenenza al pubblico**. Ora vedrai tutti i tipi di pubblico idonei per questo profilo.
 
 ![Profilo cliente](./images/profileseg.png)
 

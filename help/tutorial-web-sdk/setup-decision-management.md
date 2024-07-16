@@ -20,7 +20,7 @@ Scopri come implementare la funzionalità di gestione delle decisioni di Adobe J
 Seguendo questa esercitazione, gli utenti di Journey Optimizer possono utilizzare le funzioni di gestione delle decisioni, migliorando la personalizzazione e la rilevanza delle interazioni con i clienti.
 
 
-![SDK per web e diagramma di Adobe Analytics](assets/dc-websdk-ajo.png)
+![Web SDK e diagramma di Adobe Analytics](assets/dc-websdk-ajo.png)
 
 ## Finalità di apprendimento
 
@@ -56,15 +56,15 @@ Le offerte basate su eventi non sono attualmente supportate in Adobe Journey Opt
 
 ## Concedere l’accesso alla gestione delle decisioni
 
-Per concedere l’accesso alla funzionalità di gestione delle decisioni, devi creare un’ **Profilo di prodotto** e assegna le autorizzazioni corrispondenti ai tuoi utenti. [Ulteriori informazioni sulla gestione di utenti e autorizzazioni di Journey Optimizer in questa sezione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
+Per concedere l&#39;accesso alla funzionalità di gestione delle decisioni, devi creare un **profilo di prodotto** e assegnare le autorizzazioni corrispondenti ai tuoi utenti. [Ulteriori informazioni sulla gestione di utenti e autorizzazioni di Journey Optimizer sono disponibili in questa sezione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## Configurare lo stream di dati
 
-L’Offer decisioning deve essere abilitato in **flusso di dati** prima che Platform Web SDK possa distribuire qualsiasi attività di Gestione delle decisioni.
+L&#39;Offer decisioning deve essere abilitato nella configurazione **datastream** prima che Platform Web SDK possa distribuire le attività di gestione delle decisioni.
 
 Per configurare Offer Decisioning nello stream di dati:
 
-1. Vai a [Raccolta dati](https://experience.adobe.com/#/data-collection) di rete.
+1. Passare all&#39;interfaccia [Raccolta dati](https://experience.adobe.com/#/data-collection).
 
 1. Nel menu di navigazione a sinistra, seleziona **Flussi di dati**.
 
@@ -76,20 +76,20 @@ Per configurare Offer Decisioning nello stream di dati:
 
    ![Modifica servizio](assets/decisioning-edit-datastream.png)
 
-1. Controlla la **Offer decisioning** casella.
+1. Selezionare la casella **Offer decisioning**.
 
    ![AGGIUNGI SCHERMATA](assets/decisioning-check-offer-box.png)
 
 1. Seleziona **Salva**.
 
-In questo modo gli eventi in entrata per Journey Optimizer vengono gestiti correttamente da **Adobe Experience Platform Edge**.
+In questo modo gli eventi in entrata per Journey Optimizer verranno gestiti correttamente da **Adobe Experience Platform Edge**.
 
 ## Configurare l’SDK per la gestione delle decisioni
 
 La gestione delle decisioni richiede passaggi SDK aggiuntivi, a seconda del tipo di implementazione dell’SDK web. Sono disponibili due opzioni per configurare l’SDK per la gestione delle decisioni.
 
 * Installazione autonoma SDK
-   1. Configurare `sendEvent` azione con `decisionScopes`.
+   1. Configurare l&#39;azione `sendEvent` con `decisionScopes`.
 
       ```javascript
       alloy("sendEvent", {
@@ -108,32 +108,32 @@ La gestione delle decisioni richiede passaggi SDK aggiuntivi, a seconda del tipo
 
       ![Seleziona tag](assets/decisioning-data-collection-tags.png)
 
-   1. Seleziona la **Tag, proprietà**.
+   1. Selezionare la **proprietà tag**.
 
-   1. Crea **Regole**.
-      * Aggiungere un Platform Web SDK **Azione Invia evento** e aggiungi le `decisionScopes` alla configurazione di tale azione.
+   1. Crea le **regole**.
+      * Aggiungi un Platform Web SDK **Invia azione evento** e aggiungi `decisionScopes` pertinente alla configurazione di tale azione.
 
-   1. Creare e pubblicare un **Libreria** contenente tutte le **Regole**, **Elementi dati**, e **Estensioni** hai configurato.
+   1. Crea e pubblica una **Libreria** contenente tutte le **Regole**, **Elementi dati** e **Estensioni** pertinenti che hai configurato.
 
 ## Terminologia
 
 Innanzitutto, devi comprendere la terminologia utilizzata nell’interfaccia di Gestione delle decisioni.
 
-* **Limitazione**: vincolo che determina la frequenza con cui viene visualizzata un’offerta. Due tipi:
+* **Limitazione**: vincolo che determina la frequenza con cui viene visualizzata un&#39;offerta. Due tipi:
    * Limiti totali: il numero massimo di volte in cui un’offerta può essere visualizzata nel pubblico di destinazione.
    * Limite profilo: orari in cui è possibile mostrare un’offerta a un particolare utente.
-* **Raccolte**: sottoinsiemi di offerte raggruppati per condizioni specifiche impostate da un addetto marketing, ad esempio categoria di offerta.
-* **Decisione**: logica che determina la scelta di un’offerta.
-* **Regola di decisione**: vincoli sulle offerte per determinare l’idoneità di un utente.
-* **Offerta idonea**: offerta che corrisponde ai vincoli predefiniti e che può essere mostrata a un utente.
+* **Raccolte**: sottoinsiemi di offerte raggruppati per condizioni specifiche impostate da un addetto marketing, ad esempio una categoria di offerte.
+* **Decisione**: logica che determina la scelta di un&#39;offerta.
+* **Regola di decisione**: vincoli sulle offerte per scoprire l&#39;idoneità di un utente.
+* **Offerta idonea**: un&#39;offerta che corrisponde ai vincoli predefiniti e che può essere mostrata a un utente.
 * **Gestione delle decisioni**: il sistema di creazione e distribuzione di offerte personalizzate utilizzando la logica di business e le regole decisionali.
-* **Offerte di fallback**: l’offerta predefinita visualizzata quando un utente non è idoneo per nessuna offerta in una raccolta.
-* **Offerta**: messaggio di marketing con potenziali regole di idoneità che ne determinano i visualizzatori.
+* **Offerte di fallback**: l&#39;offerta predefinita visualizzata quando un utente non è idoneo per nessuna offerta in una raccolta.
+* **Offerta**: un messaggio di marketing con potenziali regole di idoneità che ne determinano i visualizzatori.
 * **Libreria di offerte**: archivio centrale che gestisce offerte, decisioni e regole associate.
-* **Offerte personalizzate**: messaggi di marketing personalizzati personalizzati in base ai vincoli di idoneità.
-* **Posizionamenti**: impostazione o scenario in cui un’offerta viene visualizzata da un utente.
-* **Priorità**: metrica di classificazione per le offerte che considera vari vincoli come idoneità e limiti.
-* **Rappresentazioni**: informazioni specifiche per il canale, ad esempio posizione o lingua, che guidano la visualizzazione di un’offerta.
+* **Offerte personalizzate**: messaggi di marketing personalizzati in base ai vincoli di idoneità.
+* **Posizionamenti**: impostazione o scenario in cui un&#39;offerta viene visualizzata a un utente.
+* **Priorità**: metrica di classificazione per le offerte che considera vari vincoli come l&#39;idoneità e il limite.
+* **Rappresentazioni**: informazioni specifiche per il canale, ad esempio posizione o lingua, che guidano la visualizzazione di un&#39;offerta.
 
 ## Panoramica del caso d’uso: premi fedeltà
 
@@ -151,22 +151,22 @@ Prima di iniziare a creare le offerte, devi definire diversi componenti prerequi
 
 ### Creare un posizionamento per le offerte fedeltà
 
-**Posizionamenti** sono contenitori utilizzati per presentare le offerte. In questo esempio, crei un posizionamento nella parte superiore del sito Luma.
+**I posizionamenti** sono contenitori utilizzati per mostrare le offerte. In questo esempio, crei un posizionamento nella parte superiore del sito Luma.
 
-L’elenco dei posizionamenti è accessibile nella sezione **Componenti** menu. I filtri sono disponibili per aiutarti a recuperare i posizionamenti in base a un canale o a un contenuto specifico.
+L&#39;elenco dei posizionamenti è accessibile nel menu **Componenti**. I filtri sono disponibili per aiutarti a recuperare i posizionamenti in base a un canale o a un contenuto specifico.
 
-![Visualizzare i posizionamenti](assets/decisioning-placements-list.png)
+![Visualizza posizionamenti](assets/decisioning-placements-list.png)
 
 Per creare il posizionamento, effettuate le seguenti operazioni:
 
-1. Clic **Crea posizionamento**.
+1. Fai clic su **Crea posizionamento**.
 
    ![Crea posizionamento](assets/decisioning-create-placement.png)
 
 1. Definite le proprietà del posizionamento:
-   * **Nome**: nome del posizionamento. Chiamiamo il posizionamento dell’esempio *&#39;Banner homepage&#39;*.
-   * **Tipo di canale**: canale per il quale viene utilizzato il posizionamento. Utilizziamo *&#39;Web&#39;* poiché le offerte vengono visualizzate sul sito web Luma.
-   * **Tipo di contenuto**: tipo di contenuto che il posizionamento può visualizzare: Testo, HTML, Collegamento immagine o JSON. È possibile utilizzare *&#39;HTML&#39;* per l’offerta.
+   * **Nome**: nome del posizionamento. Chiamiamo il posizionamento di esempio *&#39;Banner homepage&#39;*.
+   * **Tipo di canale**: il canale per il quale viene utilizzato il posizionamento. Usiamo *&#39;Web&#39;* poiché le offerte sono visualizzate sul sito Web Luma.
+   * **Tipo di contenuto**: tipo di contenuto che il posizionamento può visualizzare: Testo, HTML, Collegamento immagine o JSON. È possibile utilizzare *&#39;HTML&#39;* per l&#39;offerta.
    * **Descrizione**: descrizione del posizionamento (facoltativo).
 
    ![Aggiungi dettagli](assets/decisioning-placement-details.png)
@@ -175,26 +175,26 @@ Per creare il posizionamento, effettuate le seguenti operazioni:
 1. Una volta creato, il posizionamento viene visualizzato nell’elenco dei posizionamenti.
 1. Seleziona la riga contenente il nuovo posizionamento e prendi nota dell’ID posizionamento, in quanto potrebbe essere necessario per la configurazione all’interno dell’ambito decisionale.
 
-   ![Consulta ID posizionamento ](assets/decisioning-placement-id.png)
+   ![Vedere ID posizionamento ](assets/decisioning-placement-id.png)
 
 ### Regole di decisione per lo stato di fedeltà
 
-**Regole di decisione** specificare le condizioni di presentazione delle offerte. In questo esempio, puoi creare regole di decisione per distribuire offerte diverse a seconda dello stato di Fedeltà di un utente.
+**Le regole di decisione** specificano le condizioni in cui vengono presentate le offerte. In questo esempio, puoi creare regole di decisione per distribuire offerte diverse a seconda dello stato di Fedeltà di un utente.
 
-L’elenco delle regole di decisione è accessibile nella sezione **Componenti** menu.
+L&#39;elenco delle regole di decisione è accessibile nel menu **Componenti**.
 
 Per creare le regole di decisione, segui questi passaggi:
 
-1. Accedi a **Regole** e fai clic su **Crea regola**.
+1. Passare alla scheda **Regole** e fare clic su **Crea regola**.
 
-   ![Creare la regola](assets/decisioning-create-rule.png)
+   ![Crea la regola](assets/decisioning-create-rule.png)
 
-1. Diamo un nome alla prima regola &#39;*Regola stato Gold Loyalty*&quot;. Puoi utilizzare i campi XDM per definire la regola. Adobe Experience Platform **Generatore di segmenti** è un’interfaccia intuitiva che puoi utilizzare per creare le condizioni della regola.
+1. Denominiamo la prima regola &#39;*Regola di stato di fedeltà Gold*&#39;. Puoi utilizzare i campi XDM per definire la regola. Il Generatore di segmenti **di Adobe Experience Platform** è un&#39;interfaccia intuitiva che è possibile utilizzare per creare le condizioni della regola.
 
-   ![Definire la regola](assets/decisioning-define-rule.png)
+   ![Definisci la regola](assets/decisioning-define-rule.png)
 
-1. Clic **Salva** per confermare la condizione della regola.
-1. Il nuovo salvato &#39;*Regola stato Gold Loyalty*&#39; verrà visualizzato nel **Elenco delle regole**. Selezionala per visualizzarne le proprietà.
+1. Fai clic su **Salva** per confermare la condizione della regola.
+1. La nuova regola &#39;*Gold Loyalty Status*&#39; salvata verrà visualizzata nell&#39;elenco delle **regole**. Selezionala per visualizzarne le proprietà.
 
    ![Visualizza regola creata](assets/decisioning-view-rules.png)
 
@@ -203,13 +203,13 @@ Per creare le regole di decisione, segui questi passaggi:
 
 ### Qualificatori raccolta
 
-**Qualificatori di raccolta** consente di organizzare e cercare facilmente le offerte all’interno della libreria di offerte. In questo esempio, aggiungi i qualificatori di raccolta alle offerte di premi fedeltà per migliorare l’organizzazione dell’offerta.
+**I qualificatori di raccolta** ti consentono di organizzare e cercare facilmente le offerte all&#39;interno della libreria di offerte. In questo esempio, aggiungi i qualificatori di raccolta alle offerte di premi fedeltà per migliorare l’organizzazione dell’offerta.
 
-L’elenco dei qualificatori di raccolta è accessibile nella sezione **Componenti** menu.
+L&#39;elenco dei qualificatori di raccolta è accessibile nel menu **Componenti**.
 
 Per creare il qualificatore per la raccolta Premi fedeltà, effettua le seguenti operazioni:
 
-1. Accedi a **Qualificatori di raccolta** e fai clic su **Crea qualificatore raccolta**.
+1. Passare alla scheda **Qualificatori raccolta** e fare clic su **Crea qualificatore raccolta**.
 
    ![Crea qualificatore raccolta](assets/decisioning-create-collection-qualifier.png)
 
@@ -217,68 +217,68 @@ Per creare il qualificatore per la raccolta Premi fedeltà, effettua le seguenti
 
    ![Denomina la raccolta](assets/decisioning-name-collection.png)
 
-1. Il nuovo qualificatore di raccolta deve ora essere visualizzato in **Qualificatore raccolta** scheda
+1. Il nuovo qualificatore di raccolta deve ora essere visualizzato nella scheda **Qualificatore raccolta**
 
 ## Offerte
 
 Ora è il momento di creare le offerte di Premi fedeltà.
 
-L’elenco delle offerte è accessibile nella sezione **Offerte** menu.
+L&#39;elenco delle offerte è accessibile nel menu **Offerte**.
 
-![Visualizza il menu delle offerte](assets/decisioning-offers-menu.png)
+![Visualizza menu offerte](assets/decisioning-offers-menu.png)
 
 
 ### Creazione di offerte per diversi livelli di fedeltà
 
 Inizia creando offerte personalizzate per i diversi livelli di fedeltà Luma.
 
-Per creare il primo **offerta**, effettua le seguenti operazioni:
+Per creare la prima **offerta**, eseguire la procedura seguente:
 
-1. Clic **Crea offerta**, quindi seleziona **Offerta personalizzata**.
+1. Fai clic su **Crea offerta**, quindi seleziona **Offerta personalizzata**.
 
-1. Diamo un nome alla prima offerta &#39;*Livello fedeltà Luma - Oro*&quot;. È necessario specificare una data e un’ora di inizio/fine per questa offerta. È inoltre necessario associare **qualificatore raccolta** &#39;*Premi fedeltà*&#39; all&#39;offerta, che consente di organizzare meglio all&#39;interno del **Libreria di offerte**. In seguito, fai clic su **Successivo**.
+1. Chiamiamo la prima offerta &#39;*Livello fedeltà Luma - Oro*&#39;. È necessario specificare una data e un’ora di inizio/fine per questa offerta. È inoltre necessario associare il qualificatore **raccolta** &#39;*Premi fedeltà*&#39; all&#39;offerta, per organizzarla meglio nella **Libreria offerte**. In seguito, fai clic su **Avanti**.
 
    ![Aggiungi dettagli offerta](assets/decisioning-add-offer-details.png)
 
-1. Ora è necessario aggiungere **rappresentazioni** per definire la posizione di visualizzazione dell’offerta. Scegli il **canale web**. Scegli anche il &#39;*Banner homepage*&#39; **posizionamento** configurato in precedenza. Il valore selezionato **posizionamento** è di tipo HTML, per cui puoi aggiungere contenuti HTML, JSON o TEXT direttamente all&#39;editor per creare l&#39;offerta utilizzando **Personalizzato** pulsante di opzione.
+1. Ora devi aggiungere **rappresentazioni** per definire dove viene visualizzata l&#39;offerta. Scegli il **canale Web**. Scegli anche il &#39;*Banner homepage*&#39; **posizionamento** configurato in precedenza. Il **posizionamento** selezionato è di tipo HTML, quindi puoi aggiungere contenuto HTML, JSON o TEXT direttamente all&#39;editor per creare l&#39;offerta utilizzando il pulsante di opzione **Personalizzato**.
 
    ![Aggiungi dettagli rappresentazione](assets/decisioning-add-representation-details.png)
 
-1. Modificare il contenuto dell’offerta direttamente con **Editor espressioni**. Ricorda che puoi aggiungere contenuti HTML, JSON o TEXT a questo posizionamento. Accertati di selezionare la **modalità** nella parte inferiore dell’editor, a seconda del tipo di contenuto. Puoi anche premere **convalida** per garantire che non vi siano errori.
+1. Modifica il contenuto dell&#39;offerta direttamente con **Expression Editor**. Ricorda che puoi aggiungere contenuti HTML, JSON o TEXT a questo posizionamento. Assicurati di selezionare la **modalità** corretta nella parte inferiore dell&#39;editor, a seconda del tipo di contenuto. Puoi anche premere **validate** per verificare che non vi siano errori.
 
    ![Aggiungi HTML offerta](assets/decisioning-add-offer-html.png)
 
 1. Inoltre, puoi utilizzare l’editor espressioni per recuperare gli attributi memorizzati in Adobe Experience Platform. Aggiungiamo il nome di un profilo al contenuto dell’offerta per personalizzarlo meglio per i membri fedeltà su un livello 1:1.
 
-   ![Aggiungere personalizzazione delle offerte](assets/decisioning-add-offer-personalization.png)
+   ![Aggiungi personalizzazione offerta](assets/decisioning-add-offer-personalization.png)
 
-1. Aggiungi vincoli per mostrare l’offerta solo ai profili idonei per il &quot;*Regola stato Gold Loyalty*&quot;.
+1. Aggiungi vincoli per mostrare l&#39;offerta solo ai profili idonei per la regola &#39;*Stato fedeltà oro*&#39;.
 
    ![Aggiungi vincolo regola](assets/decisioning-add-rule-constraint.png)
 
-1. Dopo aver esaminato l’offerta, fai clic su **Fine**. Seleziona **Salva e approva**.
+1. Dopo aver esaminato l&#39;offerta, fare clic su **Fine**. Seleziona **Salva e approva**.
 
 Ora crea il resto delle offerte per i vari livelli di fedeltà Luma
 
 ### Offerte di fallback
 
-Desideri comunque distribuire un’offerta ai visitatori del sito Luma non fedeltà. A questo scopo, puoi configurare una **offerta di fallback** per la campagna.
+Desideri comunque distribuire un’offerta ai visitatori del sito Luma non fedeltà. A questo scopo, puoi configurare un&#39;offerta di **fallback** per la campagna.
 
 Per creare l’offerta di fallback, effettua le seguenti operazioni:
 
-1. Clic **Crea offerta**, quindi seleziona **Offerta di fallback**.
+1. Fai clic su **Crea offerta**, quindi seleziona **Offerta di fallback**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Chiamiamo l’offerta di fallback &quot;*Fedeltà non Luma*&quot;. È inoltre possibile associare il **qualificatore raccolta**, &#39;*Premi fedeltà*&#39; all&#39;offerta di fallback per semplificare l&#39;organizzazione delle offerte.
+1. Chiamiamo l&#39;offerta di fallback &#39;*Fedeltà non Luma*&#39;. È inoltre possibile associare il qualificatore **raccolta**, &#39;*Premi fedeltà*&#39; creato in precedenza all&#39;offerta di fallback per semplificare l&#39;organizzazione delle offerte.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Aggiungi il contenuto dell’offerta di fallback a **Editor espressioni**. Ricorda che puoi aggiungere contenuto HTML, JSON o TEXT a questo posizionamento. Accertati di selezionare la **modalità** nella parte inferiore dell’editor, a seconda del tipo di contenuto. Puoi anche premere **convalida** per garantire che non vi siano errori.
+1. Aggiungi il contenuto dell&#39;offerta di fallback all&#39;**editor espressioni**. Ricorda che puoi aggiungere contenuto HTML, JSON o TEXT a questo posizionamento. Assicurati di selezionare la **modalità** corretta nella parte inferiore dell&#39;editor, a seconda del tipo di contenuto. Puoi anche premere **validate** per verificare che non vi siano errori.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Se tutto è configurato correttamente, premi **Fine** e poi **Salva e approva**.
+1. Se tutto è configurato correttamente, premi **Fine**, quindi **Salva e approva**.
 <!--
    ![ADD SCREENSHOT](#)
 -->
@@ -287,7 +287,7 @@ Per creare l’offerta di fallback, effettua le seguenti operazioni:
 
 **Decisioni** sono contenitori per le offerte che scelgono la migliore offerta disponibile per un cliente, a seconda della destinazione.
 
-L&#39;elenco delle decisioni è disponibile nella **Decisioni** scheda di **Offerte** menu.
+L&#39;elenco delle decisioni è disponibile nella scheda **Decisioni** del menu **Offerte**.
 <!--
    ![ADD SCREENSHOT](#)
 -->
@@ -298,35 +298,35 @@ Creiamo una decisione per il caso d’uso Luma Loyalty Rewards.
 
 Per creare la decisione, segui questi passaggi:
 
-1. Clic **Crea decisione**.
+1. Fai clic su **Crea decisione**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Chiamiamo la decisione &quot;.*Offerte fedeltà Luma dicembre*&quot;. Le offerte devono avere una durata di 1 mese, quindi specifichiamole qui.
+1. Chiamiamo la decisione &#39;*Offerte fedeltà Luma dicembre*&#39;. Le offerte devono avere una durata di 1 mese, quindi specifichiamole qui.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Ora è necessario definire **ambiti decisionali**. Selezionate un posizionamento. È possibile utilizzare la funzione &#39; creata in precedenza *Banner homepage*&quot;.
+1. Ora devi definire gli **ambiti decisionali**. Selezionate un posizionamento. È possibile utilizzare il banner &#39;*Homepage*&#39; creato in precedenza.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Ora devi aggiungere **criteri di valutazione** per l&#39;ambito della decisione. Clic **Aggiungi** e scegli il creato in precedenza &#39;*Premi fedeltà*&#39; **collection, che contiene tutte le offerte fedeltà da considerare.
+1. Successivamente è necessario aggiungere **criteri di valutazione** per l&#39;ambito della decisione. Fai clic su **Aggiungi** e scegli la raccolta &#39;*Premi fedeltà*&#39; creata in precedenza **contenente tutte le offerte fedeltà da considerare.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. All’interno di &quot;*Premi fedeltà*&quot;, puoi utilizzare il campo di idoneità per limitare la consegna dell’offerta a un sottoinsieme di visitatori Luma. Tuttavia, per questo caso d’uso desideri che ogni visitatore riceva una delle offerte. Ricorda che hai configurato un **offerta di fallback** per tutti i visitatori non fidelizzati. Imposta l’idoneità su &quot;Nessuno&quot;.
+1. All&#39;interno della raccolta &#39;*Premi fedeltà*&#39;, puoi utilizzare il campo di idoneità per limitare la consegna dell&#39;offerta a un sottoinsieme di visitatori Luma. Tuttavia, per questo caso d’uso desideri che ogni visitatore riceva una delle offerte. Ricorda che hai configurato una **offerta di fallback** per tutti i visitatori non fidelizzati. Imposta l’idoneità su &quot;Nessuno&quot;.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Inoltre, è possibile utilizzare **metodo di classificazione** per selezionare l’offerta migliore per ogni visitatore Luma, se più offerte sono idonee per la combinazione utente/posizionamento. Per questo caso d’uso, puoi utilizzare **Priorità offerta** , che utilizza i valori definiti nelle offerte per fornire l’offerta migliore.
+1. Inoltre, puoi utilizzare il campo **metodo di classificazione** per selezionare l&#39;offerta migliore per ogni visitatore Luma, se più offerte sono idonee per la combinazione utente/posizionamento. Per questo caso d&#39;uso, puoi utilizzare il metodo **Priorità offerta**, che utilizza i valori definiti nelle offerte per fornire l&#39;offerta migliore.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Ora aggiungi **offerta di fallback** alla decisione. Promemoria del fatto che l’offerta di fallback è l’offerta predefinita visualizzata ai visitatori Luma se non rientrano in nessuno dei tipi di pubblico Fedeltà Luma. Seleziona &#39;*Fedeltà non Luma*&quot; dall’elenco delle offerte di fallback disponibili per &quot;*Banner homepage* posizionamento di &#39;.
+1. Aggiungere ora l&#39;**offerta di fallback** alla decisione. Promemoria del fatto che l’offerta di fallback è l’offerta predefinita visualizzata ai visitatori Luma se non rientrano in nessuno dei tipi di pubblico Fedeltà Luma. Seleziona &#39;*Fedeltà non Luma*&#39; dall&#39;elenco delle offerte di fallback disponibili per il posizionamento &#39;*Banner homepage*&#39;.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Prima di attivare la decisione, esaminiamo l’ambito della decisione, le offerte di fallback, l’anteprima delle offerte disponibili e stimiamo i profili qualificati. Quando tutto si presenta correttamente, puoi fare clic su **Fine** e **Salva e attiva**.
+1. Prima di attivare la decisione, esaminiamo l’ambito della decisione, le offerte di fallback, l’anteprima delle offerte disponibili e stimiamo i profili qualificati. Quando tutto sarà pronto, puoi fare clic su **Fine** e **Salva e attiva**.
 <!--
    ![ADD SCREENSHOT](#)
 -->
@@ -335,11 +335,11 @@ Per creare la decisione, segui questi passaggi:
 
 Come best practice, è necessario convalidare la logica decisionale relativa alla fedeltà Luma per garantire che le offerte corrette siano consegnate al pubblico di fidelizzazione giusto. Puoi eseguire questa convalida utilizzando **profili di test**. È inoltre consigliabile testare le modifiche apportate alle offerte tramite i profili di test prima di inviare nuove versioni di offerta alla produzione.
 
-Per iniziare il test, seleziona la **Simulazioni** scheda da **Offerte** menu.
+Per iniziare il test, seleziona la scheda **Simulazioni** dal menu **Offerte**.
 
 ### Verifica delle offerte fedeltà
 
-1. Seleziona un profilo di test da utilizzare per la simulazione. Clic **Gestisci profilo**. [Per creare o designare un nuovo profilo di test per il test dell’offerta, segui questa guida](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
+1. Seleziona un profilo di test da utilizzare per la simulazione. Fare clic su **Gestisci profilo**. [Per creare o designare un nuovo profilo di test per il test delle offerte, seguire questa guida](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -347,27 +347,27 @@ Per iniziare il test, seleziona la **Simulazioni** scheda da **Offerte** menu.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Seleziona l’ambito della decisione da testare. Seleziona **Aggiungi ambito decisione**.
+1. Seleziona l’ambito della decisione da testare. Selezionare **Aggiungi ambito decisione**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Seleziona il creato in precedenza &#39;*Banner homepage* posizionamento di &#39;.
+1. Selezionare il posizionamento &#39;*Banner homepage*&#39; creato in precedenza.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Vengono visualizzate le decisioni disponibili, seleziona la creata in precedenza *Offerte fedeltà Luma dicembre*&#39; e fai clic su **Aggiungi**.
+1. Vengono visualizzate le decisioni disponibili, seleziona la decisione &#39;*Offerte fedeltà Luma di dicembre*&#39; creata in precedenza e fai clic su **Aggiungi**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Dopo aver selezionato un profilo di test, fai clic su **Visualizza risultati**. La migliore offerta disponibile viene visualizzata nel profilo di test selezionato per il &quot;*Offerte fedeltà Luma dicembre*&quot;.
+1. Dopo aver selezionato un profilo di test, fare clic su **Visualizza risultati**. La migliore offerta disponibile viene visualizzata nel profilo di test selezionato per la decisione &#39;*Offerte fedeltà Luma di dicembre*&#39;.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Seleziona un profilo di test diverso e fai clic su **Visualizza risultati**. Idealmente, dovresti vedere un’offerta simulata diversa, corrispondente al livello di fedeltà del profilo di test.
+1. Selezionare un profilo di test diverso e fare clic su **Visualizza risultati**. Idealmente, dovresti vedere un’offerta simulata diversa, corrispondente al livello di fedeltà del profilo di test.
 
-## Convalida della gestione delle decisioni tramite Adobi Experience Platform Debugger
+## Convalida della gestione delle decisioni tramite Adobe Experience Platform Debugger
 
-Il **Adobe Experience Platform Debugger** L’estensione, disponibile sia per Chrome che per Firefox, analizza le pagine web per identificare i problemi nell’implementazione delle soluzioni Adobe Experience Cloud.
+L&#39;estensione **Adobe Experience Platform Debugger**, disponibile sia per Chrome che per Firefox, analizza le pagine Web per identificare i problemi nell&#39;implementazione delle soluzioni Adobe Experience Cloud.
 
 Puoi utilizzare il debugger sul sito Luma per convalidare la logica decisionale in produzione. Questa convalida è una buona pratica una volta che il caso di utilizzo dei premi fedeltà è attivo e in esecuzione, per garantire che tutto sia configurato correttamente.
 
@@ -379,23 +379,23 @@ Per iniziare la convalida tramite il debugger:
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Nella pagina web, apri **Adobe Experience Platform Debugger**.
+1. Nella pagina Web, apri **Adobe Experience Platform debugger**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Accedi a **Riepilogo**. Verificare che **ID flusso di dati** corrisponde al **flusso di dati** in **Raccolta dati di Adobe** per il quale hai attivato Offer Decisioning.
+1. Passa a **Riepilogo**. Verificare che l&#39;**ID Datastream** corrisponda allo **stream di dati** nella **Raccolta dati di Adobe** per la quale è stato abilitato Offer Decisioning.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Sotto **Soluzioni** passa a **Experienci Platform Web SDK**.
+1. In **Soluzioni** passa a **Experience Platform Web SDK**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. All&#39;interno del **Configurazione** , Attiva **Abilita debug**. Questo abilita la registrazione per la sessione all’interno di un **Adobe Experience Platform Assurance** sessione.
+1. Nella scheda **Configurazione**, attiva **Abilita debug**. In questo modo viene abilitata la registrazione per la sessione in una sessione di **Adobe Experience Platform Assurance**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Puoi quindi accedere al sito con vari account fedeltà Luma e utilizzare il debugger per convalidare le richieste inviate al **Adobe Experience Platform Edge Network**. Tutte queste richieste devono essere acquisite in **Assurance** per il tracciamento dei registri.
+1. Puoi quindi accedere al sito con vari account fedeltà Luma e utilizzare il debugger per convalidare le richieste inviate alla **rete Adobe Experience Platform Edge**. Tutte queste richieste devono essere acquisite in **Assurance** per il tracciamento del registro.
 <!--
    ![ADD SCREENSHOT](#)
 -->
@@ -404,4 +404,4 @@ Per iniziare la convalida tramite il debugger:
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [Experience League post di discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

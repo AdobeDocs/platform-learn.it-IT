@@ -27,7 +27,7 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 ## Potenziali problemi di tracciamento
 
-Se invii dati dalla parte nativa dell’app e da un WebView all’interno dell’app, ciascuno di essi genera il proprio ID Experience Cloud (ECID), che si traduce in hit disconnessi e dati gonfiati relativi a visite/visitatori. Ulteriori informazioni sull’ECID sono disponibili nella sezione [Panoramica di ECID](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
+Se invii dati dalla parte nativa dell’app e da un WebView all’interno dell’app, ciascuno di essi genera il proprio ID Experience Cloud (ECID), che si traduce in hit disconnessi e dati gonfiati relativi a visite/visitatori. Ulteriori informazioni sull&#39;ECID sono disponibili nella [panoramica ECID](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
 
 Per risolvere questa situazione indesiderata, è importante passare l’ECID dell’utente dalla parte nativa dell’app a una WebView che potrebbe essere utile utilizzare nell’app.
 
@@ -35,7 +35,7 @@ L&#39;estensione AEP Edge Identity utilizzata all&#39;interno di WebView raccogl
 
 ## Implementazione
 
-Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Info]** > **[!DNL TermsOfServiceSheet]**, e individuare `func loadUrl()` funzione in `final class SwiftUIWebViewModel: ObservableObject` classe. Aggiungi la seguente chiamata per gestire la visualizzazione web:
+Passare a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Info]** > **[!DNL TermsOfServiceSheet]** e individuare la funzione `func loadUrl()` nella classe `final class SwiftUIWebViewModel: ObservableObject`. Aggiungi la seguente chiamata per gestire la visualizzazione web:
 
 ```swift
 // Handle web view
@@ -58,26 +58,26 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 }
 ```
 
-Il [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API imposta le variabili per l’URL in modo che contengano tutte le informazioni rilevanti, come ECID e altro ancora. Nell’esempio si utilizza un file locale, ma gli stessi concetti si applicano alle pagine remote.
+L&#39;API [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) imposta le variabili per l&#39;URL in modo che contengano tutte le informazioni rilevanti, come ECID e altro ancora. Nell’esempio si utilizza un file locale, ma gli stessi concetti si applicano alle pagine remote.
 
-Puoi saperne di più sulle `Identity.getUrlVariables` API in [Guida di riferimento API dell’estensione Identity for Edge Network](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
+Ulteriori informazioni sull&#39;API `Identity.getUrlVariables` sono disponibili nella [Guida di riferimento dell&#39;API dell&#39;estensione di Edge Network ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 
-## Convalida
+## Convalidare
 
 Per eseguire il codice:
 
-1. Rivedi [istruzioni di configurazione](assurance.md#connecting-to-a-session) per collegare il simulatore o il dispositivo ad Assurance.
-1. Vai a **[!UICONTROL Impostazioni]** nell’app
-1. Tocca il **[!DNL View...]** per visualizzare **[!DNL Terms of Use]**.
+1. Consulta la sezione [istruzioni di installazione](assurance.md#connecting-to-a-session) per collegare il simulatore o il dispositivo ad Assurance.
+1. Vai a **[!UICONTROL Impostazioni]** nell&#39;app
+1. Tocca il pulsante **[!DNL View...]** per visualizzare **[!DNL Terms of Use]**.
 
    <img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
 
-1. Nell’interfaccia utente Assurance, cerca **[!UICONTROL Variabili URL di risposta dell’identità Edge]** evento da **[!UICONTROL com.adobe.griffon.mobile]** fornitore.
-1. Seleziona l’evento e controlla **[!UICONTROL urlvariable]** campo in **[!UICONTROL ACPExtensionEventData]** , a conferma della presenza dei seguenti parametri nell&#39;URL: `adobe_mc`, `mcmid`, e `mcorgid`.
+1. Nell&#39;interfaccia utente Assurance, cerca l&#39;evento **[!UICONTROL Variabili URL di risposta identità di Edge]** dal fornitore **[!UICONTROL com.adobe.griffon.mobile]**.
+1. Selezionare l&#39;evento e rivedere il campo **[!UICONTROL urlvariable]** nell&#39;oggetto **[!UICONTROL ACPExtensionEventData]**, confermando la presenza dei seguenti parametri nell&#39;URL: `adobe_mc`, `mcmid` e `mcorgid`.
 
-   ![convalida webview](assets/webview-validation.png)
+   ![convalida visualizzazione Web](assets/webview-validation.png)
 
-   Un esempio `urvariables` di seguito:
+   Di seguito è riportato un esempio di campo `urvariables`:
 
    * Originale (con caratteri di escape)
 
@@ -95,13 +95,13 @@ Sfortunatamente, il debug della sessione web è limitato. Non è possibile, ad e
 
 >[!NOTE]
 >
->L’unione dei visitatori tramite questi parametri URL è supportata in Platform Web SDK (versioni 2.11.0 o successive) e quando si utilizza `VisitorAPI.js`.
+>L&#39;unione dei visitatori tramite questi parametri URL è supportata in Platform Web SDK (versioni 2.11.0 o successive) e quando si utilizza `VisitorAPI.js`.
 
 
 >[!SUCCESS]
 >
 >Ora hai configurato l’app per visualizzare il contenuto in base a un URL in una visualizzazione web utilizzando lo stesso ECID già emesso dall’SDK di Adobe Experience Platform Mobile.
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [Experience League post di discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Successivo: **[Identità](identity.md)**

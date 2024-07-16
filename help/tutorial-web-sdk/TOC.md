@@ -29,9 +29,9 @@ ht-degree: 24%
    + [Creare identità](create-identities.md)
    + [Creare regole di tag](create-tag-rule.md)
    + [Convalida con Debugger](validate-with-debugger.md)
-   + [Convalida con garanzia](validate-with-assurance.md)
+   + [Convalidare con Assurance](validate-with-assurance.md)
 
-+ Impostazione applicazioni {#applications-setup}
++ Installazione applicazioni {#applications-setup}
    + [Experience Platform configurazione](setup-experience-platform.md)
    + [Configurare Adobe Analytics](setup-analytics.md)
    + [Audience Manager configurazione](setup-audience-manager.md)

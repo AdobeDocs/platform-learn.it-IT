@@ -1,31 +1,32 @@
 ---
-title: Configurazione iniziale | Migrare Target da at.js 2.x all’SDK per web
-description: Scopri e configura gli importanti elementi fondamentali necessari per l’implementazione dell’SDK per web di Platform
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+title: Configurazione iniziale | Migrare Target da at.js 2.x a Web SDK
+description: Scopri e imposta gli importanti elementi fondamentali necessari per l’implementazione di Platform Web SDK
+exl-id: dbf9683b-1cfc-474a-9c38-432cad4d1533
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 2%
+source-wordcount: '234'
+ht-degree: 0%
 
 ---
 
-# Eseguire la configurazione iniziale della raccolta dati
+# Eseguire l’impostazione iniziale della raccolta dati
 
-La migrazione da at.js a Platform Web SDK richiede una configurazione iniziale per abilitare l’acquisizione dei dati, le funzioni e le funzioni corrette di Platform Web SDK. I seguenti passaggi dal [Esercitazione sull’implementazione di Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it) devono essere completate prima che vengano apportate modifiche all’implementazione del sito web:
+La migrazione da at.js a Platform Web SDK richiede una configurazione iniziale per abilitare l’acquisizione dati, le funzioni e le caratteristiche corrette di Platform Web SDK. Prima di apportare qualsiasi modifica all&#39;implementazione del sito Web, è necessario completare i passaggi seguenti dell&#39;esercitazione sull&#39;implementazione di [Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it):
 
 - [Configurare le autorizzazioni appropriate](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-permissions.html){target="_blank"} in Adobe Admin Console per la raccolta dati
-- [Configurare uno schema XDM](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html){target="_blank"} per la trasmissione di dati strutturati a Edge Network
-- [Configurare uno spazio dei nomi di identità](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-identities.html){target="_blank"} per la personalizzazione tra dispositivi e la funzionalità mbox3rdPartyId
-- [Creare un datastream](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html){target="_blank"} per abilitare l’inoltro di dati da Edge Network
-- [Configurare il datastream](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html#configure-the-datastream){target="_blank"} per abilitare l’inoltro di dati ad Adobe Target
+- [Configura uno schema XDM](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html){target="_blank"} per il passaggio di dati strutturati all&#39;Edge Network
+- [Configura uno spazio dei nomi delle identità](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-identities.html){target="_blank"} per la personalizzazione tra dispositivi e la funzionalità mbox3rdPartyId
+- [Crea un flusso di dati](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html){target="_blank"} per abilitare l&#39;inoltro di dati da Edge Network
+- [Configura lo stream di dati](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html#configure-the-datastream){target="_blank"} per abilitare l&#39;inoltro di dati ad Adobe Target
 
 >[!CAUTION]
 >
->Tieni presente che questi aspetti di progettazione devono essere coordinati tra Target, Analytics e le migrazioni di Audienci Manager.
+>Ricorda che questi aspetti di progettazione devono essere coordinati tra le migrazioni di Target, Analytics e Audience Manager.
 
-Una volta completata la configurazione iniziale, la funzionalità di Target deve essere abilitata tramite Adobe Experience Platform Edge Network.
+Una volta completata la configurazione iniziale, la funzionalità di Target deve essere abilitata utilizzando l’Edge Network di Adobe Experience Platform.
 
-Quindi, scopri come [sostituisci la libreria at.js e configura un’implementazione SDK web di base per Platform](replace-library.md).
+Successivamente, scopri come [sostituire la libreria at.js e configurare un&#39;implementazione di base di Platform Web SDK](replace-library.md).
 
 >[!NOTE]
 >
->Ci impegniamo ad aiutarti a eseguire con successo la migrazione di Target da at.js all’SDK per web. Se incontri ostacoli con la tua migrazione o se ti senti che mancano informazioni critiche in questa guida, compila l&#39;invio del tuo messaggio [discussione comunitaria](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Ci impegniamo ad aiutarti con la migrazione di Target da at.js a Web SDK. Se incontri ostacoli con la migrazione o pensi che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

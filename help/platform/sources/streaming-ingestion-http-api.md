@@ -9,12 +9,12 @@ thumbnail: 331028.jpg
 exl-id: 2f9c3f6f-169a-431f-b697-a5ed86c274f5
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 37%
+source-wordcount: '89'
+ht-degree: 42%
 
 ---
 
-# Trasferire in streaming i dati con l’API HTTP
+# Trasmettere i dati con API HTTP
 
 Questo video mostra come inviare dati ad Adobe Experience Platform in streaming e in tempo reale utilizzando l’endpoint API HTTP.
 
@@ -23,6 +23,6 @@ Questo video mostra come inviare dati ad Adobe Experience Platform in streaming 
 ## Informazioni aggiuntive
 
 * [Creare una connessione in streaming utilizzando la documentazione API](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html).
-* [Trasmettere i dati dei record utilizzando la documentazione delle API Streaming Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html)
-* [Trasmettere dati di serie temporali utilizzando la documentazione delle API Streaming Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html)
-* [Inviare più messaggi in un’unica richiesta HTTP](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html)
+* [Trasmetti i dati del record utilizzando la documentazione delle API Streaming Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html)
+* [Trasmetti dati di serie temporali utilizzando la documentazione delle API Streaming Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html)
+* [Inviare più messaggi in un&#39;unica richiesta HTTP](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html)

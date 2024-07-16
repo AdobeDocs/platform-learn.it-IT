@@ -16,6 +16,6 @@ ht-degree: 34%
 
 # Utilizzare ambienti di tag e codici di incorporamento
 
-Scopri come utilizzare gli ambienti di sviluppo, staging e produzione e i codici da incorporare per sviluppare e convalidare la proprietà tag. Per ulteriori informazioni, vedere [ambienti](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=it) documentazione.
+Scopri come utilizzare gli ambienti di sviluppo, staging e produzione e i codici da incorporare per sviluppare e convalidare la proprietà tag. Per ulteriori informazioni, consulta la documentazione di [ambienti](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28729/?learn=on)

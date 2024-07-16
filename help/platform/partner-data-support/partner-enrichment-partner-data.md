@@ -1,5 +1,5 @@
 ---
-title: Aggiungere attributi partner ai profili di prime parti in [!DNL Real-Time CDP]
+title: Aggiungi attributi partner ai profili di prime parti in [!DNL Real-Time CDP]
 description: Scopri come aggiungere attributi partner ai profili di prime parti per espandere la portata tramite canali aggiuntivi in [!DNL Real-Time CDP].
 feature: Integrations
 topic: Integrations
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Aggiungere attributi partner ai profili di prime parti in [!DNL Real-Time CDP]
 
-Scopri come aggiungere attributi partner ai profili di prime parti per espandere la portata tramite canali aggiuntivi in [!DNL Real-Time CDP]. Per ulteriori informazioni, visitare il [Integrare i profili di prime parti con gli attributi forniti dai partner](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html) documentazione.
+Scopri come aggiungere attributi partner ai profili di prime parti per espandere la portata tramite canali aggiuntivi in [!DNL Real-Time CDP]. Per ulteriori informazioni, visita la documentazione di [Supplemento dei profili di prime parti con attributi forniti dai partner](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423075/?learn=on)

@@ -10,7 +10,7 @@ exl-id: 31f46e37-f1c0-4730-8520-1ccd98df6501
 source-git-commit: 5876de5015e4c8c337c235c24cc28b0a32e274dd
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
@@ -20,15 +20,15 @@ Vai a [Adobe Experience Platform](https://experience.adobe.com/platform). Dopo a
 
 ![Acquisizione dei dati](./images/home.png)
 
-Prima di continuare, è necessario selezionare una **sandbox**. La sandbox da selezionare è denominata ``Bootcamp``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella linea blu sopra lo schermo. Dopo aver selezionato la [!UICONTROL sandbox], verrà visualizzata la modifica dello schermo e ora si è nel [!UICONTROL sandbox].
+Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``Bootcamp``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella riga blu nella parte superiore dello schermo. Dopo aver selezionato la [!UICONTROL sandbox] appropriata, la schermata verrà modificata e ora sei nella [!UICONTROL sandbox] dedicata.
 
 ![Acquisizione dei dati](./images/sb1.png)
 
-Nel menu a sinistra, vai a **Destinazioni**, quindi vai a **Catalogo**. Vedrai quindi il **Catalogo delle destinazioni**. In entrata **Destinazioni**, fai clic su **Attiva tipi di pubblico** il **Pubblico personalizzato facebook** Card.
+Nel menu a sinistra, vai a **Destinazioni**, quindi vai a **Catalogo**. Verrà quindi visualizzato il **Catalogo destinazioni**. In **Destinazioni**, fai clic su **Attiva tipi di pubblico** nella scheda **Pubblico personalizzato di Facebook**.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-Seleziona la destinazione **bootcamp-facebook** e fai clic su **Successivo**.
+Seleziona la destinazione **bootcamp-facebook** e fai clic su **Avanti**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
@@ -36,15 +36,15 @@ Nell’elenco dei tipi di pubblico disponibili, seleziona il pubblico creato nel
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-Il giorno **Mappatura** , assicurati che il **Applica trasformazione** la casella di controllo è attivata. Fai clic su **Avanti**.
+Nella pagina **Mapping**, verificare che la casella di controllo **Applica trasformazione** sia abilitata. Fai clic su **Avanti**.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-Il giorno **Pianificazione del pubblico** , seleziona la **Origine del pubblico** e impostarlo su **Direttamente dai clienti**. Fai clic su **Avanti**.
+Nella pagina **Pianificazione pubblico**, seleziona **Origine del pubblico** e impostala su **Direttamente dai clienti**. Fai clic su **Avanti**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-Infine, sulla **Revisione** pagina, fai clic su **Fine**.
+Infine, nella pagina **Revisione**, fare clic su **Fine**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 

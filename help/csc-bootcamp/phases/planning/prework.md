@@ -1,84 +1,85 @@
 ---
-title: CSC Bootcamp - Altri lavori preliminari
-description: CSC Bootcamp - Altri lavori preliminari
+title: CSC Bootcamp - Altre attività preliminari
+description: CSC Bootcamp - Altre attività preliminari
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: 76546141-68d5-4f09-b44a-e06cc08bbaa7
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
 
 # Altri lavori preliminari
 
-## Selezionare Brand Assets
+## Seleziona Brand Assets
 
-Come descritto nella sezione dedicata ai contenuti creativi, sono necessarie alcune risorse per lanciare in modo efficace la nostra campagna. Queste risorse del marchio verranno aggiunte alla campagna in Workfront in modo da potervi accedere centralmente.
+Come descritto nel documento creativo, ci sono alcune risorse che saranno necessarie per lanciare la nostra campagna in modo efficace. Queste risorse dei marchi verranno aggiunte alla campagna in Workfront, in modo che possiamo accedervi da una posizione centrale.
 
-- Espandi l’attività 1, &quot;ATTIVITÀ INIZIALI&quot;, quindi apri l’attività &quot;Seleziona 5 risorse del marchio (fronte, retro, ...)&quot; facendo clic su di essa.
+- Espandi l’attività 1, &quot;INITIAL TASKS&quot; (ATTIVITÀ INIZIALI), quindi apri l’attività &quot;Select 5 brand assets (front, back, ...)&quot; facendo clic su di essa.
 
 ![apri attività risorse](./images/wf-open-assets-task.png)
 
-- Fai clic su &quot;Documenti&quot; e poi su &quot;Aggiungi nuovo:
+- Fai clic su &quot;Documenti&quot; e quindi su &quot;Aggiungi nuovo:
 
 ![aggiungi documento](./images/wf-add-new-doc.png)
 
-- Seleziona &quot;Da experience-manager&quot;; questo ci consentirà di scegliere le risorse del brand già disponibili in AEM Assets:
+- Seleziona &quot;Da experience-manager&quot; per scegliere le risorse del brand già disponibili su AEM Assets:
 
 ![da experience-manager](./images/wf-from-aem.png)
 
-- Una volta visualizzata la gerarchia delle cartelle AEM, passa al seguente percorso: experience-manager > Risorse Adobe > Spari in bicicletta Seleziona 5 risorse e fai clic su &quot;Link&quot;.
+- Una volta visualizzata la gerarchia delle cartelle dell’AEM, passa al seguente percorso: experience-manager > Adobike Assets > Riprese da bici Seleziona 5 risorse, quindi fai clic su &quot;Collega&quot;.
 
 ![risorse selezionate](./images/selected-assets.png)
 
-- Ora disponiamo delle risorse del nostro Brand per il nostro compito. Questo significa che possiamo impostare l&#39;attività 2 come completa al 100%:
+- Ora il nostro compito è affidato a Brand Assets. Ciò significa che è possibile impostare l&#39;attività 2 come completata al 100%:
 
-![operazione completa](./images/wf-task-2-complete.png)
+![attività completata](./images/wf-task-2-complete.png)
 
 
 ## Demo di Adobe Commerce
 
-Adobe Commerce è uno dei molti prodotti in Adobe Experience Cloud che può aiutarti a fornire ai tuoi clienti le migliori esperienze digitali. Tuttavia, c&#39;era semplicemente troppo poco tempo per fare tutto insieme durante il bootcamp.
+Adobe Commerce è uno dei tanti prodotti di Adobe Experience Cloud che possono aiutarti a fornire ai tuoi clienti le migliori esperienze digitali. Tuttavia, c&#39;era semplicemente troppo poco tempo per fare tutto insieme durante il bootcamp.
 
-Questo video ti permette di conoscere meglio Adobe Commerce e mostra il prodotto che abbiamo creato per l’utilizzo durante il bootcamp. In uno scenario reale, puoi caricare le risorse del marchio selezionate in precedenza in Adobe Commerce nella configurazione del prodotto.
+Questo video ti fa conoscere Adobe Commerce e mostra il prodotto che abbiamo creato per utilizzare durante il bootcamp. In uno scenario reale, puoi caricare le risorse del brand selezionate in precedenza in Adobe Commerce nella configurazione del prodotto.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on)
 
-Una volta completata questa attività, puoi contrassegnare l’attività 3 come completa al 100% in Workfront.
+Una volta completata questa attività, in Workfront puoi contrassegnarla come completata al 100%.
 
 ## Le campagne flessibili sono un prerequisito
 
-Durante la revisione del nostro piano di lavoro, abbiamo notato un piccolo problema: il nostro Product Manager (il Richiedente) ha messo un aggiornamento che ha dimenticato di richiedere un &#39;Product Homepage Banner&#39;.  Lo aggiungeremo al nostro piano di progetto.
+Durante la revisione del nostro piano di lavoro, abbiamo notato un piccolo problema: il nostro Product Manager (il richiedente) ha inserito un aggiornamento che ha dimenticato di richiedere per un &quot;banner della homepage del prodotto&quot;.  Questo verrà aggiunto al piano del progetto.
 
-- Vai all&#39;elenco Attività e aggiungi l&#39;attività &quot;Crea banner per la homepage del prodotto&quot; appena sotto l&#39;attività 4 &quot;PRODUZIONE&quot;. A questo scopo, seleziona l’attività &quot;Prepara contenuto app mobile&quot; e fai clic sull’icona &quot;aggiungi attività sopra&quot;:
+- Vai all’elenco Attività e aggiungi l’attività &quot;Crea banner pagina iniziale prodotto&quot; appena sotto l’attività 4 &quot;PRODUZIONE&quot;. A questo scopo, seleziona l’attività &quot;Prepara contenuto app mobile&quot; e fai clic sull’icona &quot;Aggiungi attività in alto&quot;:
 
-![aggiungi attività sopra](./images/wf-add-task-above.png)
+![aggiungi attività in alto](./images/wf-add-task-above.png)
 
-- Assegna all’attività aggiunta un nome significativo, ad esempio &quot;Crea banner per la home page del prodotto&quot;.
+- Assegna un nome significativo all’attività aggiunta, ad esempio &quot;Crea banner della home page del prodotto&quot;.
 
 ![crea attività](./images/wf-create-banner.png)
 
-- Ora che abbiamo creato l&#39;attività, aggiungiamo un po&#39; di contenuto. Fai clic sui tre punti a destra del titolo del progetto e seleziona &quot;Allega modello&quot;:
+- Dopo aver creato l’attività, aggiungiamo del contenuto. Fai clic sui tre punti a destra del titolo del progetto e seleziona Allega modello:
 
 ![allega modello](./images/wf-attach-template.png)
 
-- Seleziona &#39;Crea banner home del prodotto&#39; e fai clic su &#39;Personalizza e allega&#39;:
+- Seleziona &quot;Crea banner home page prodotto&quot; e fai clic su &quot;Personalizza e allega&quot;:
 
-![crea banner home page del prodotto](./images/wf-homepage-banner.png)
+![crea banner home page prodotto](./images/wf-homepage-banner.png)
 
-- Nella schermata di personalizzazione, assicurati di fare riferimento all’attività &quot;Crea banner pagina iniziale del prodotto&quot; come elemento padre:
+- Nella schermata di personalizzazione, accertati di indicare l’attività &quot;Crea banner pagina iniziale prodotto&quot; come elemento principale:
 
-![aggiungi padre](./images/wf-create-banner-parent.png)
+![aggiungi elemento padre](./images/wf-create-banner-parent.png)
 
-- Infine, accertati di contrassegnare l’attività padre &quot;Crea home page prodotto&quot; con un predecessore dell’attività 3 in quanto non è possibile avviare alcuna produzione finché il prodotto non viene creato in Adobe Commerce:
+- Infine, assicurati di contrassegnare l’attività principale &quot;Crea home page del prodotto&quot; con un predecessore dell’attività 3, in quanto non è possibile avviare alcuna produzione fino a quando il prodotto non viene creato in Adobe Commerce:
 
 ![aggiungi il predecessore corretto](./images/wf-predecessor.png)
 
 Ora abbiamo una campagna completa e pianificata, il che significa che possiamo iniziare con la produzione e la consegna della nostra campagna!
 
 
-Passaggio successivo: [Fase 2 - Produzione: Creare il banner della homepage del prodotto](../production/banner.md)
+Passaggio successivo: [Fase 2 - Produzione: crea banner home page prodotto](../production/banner.md)
 
-[Torna alla fase 1 - Pianificazione: Pianificazione](./planning.md)
+[Torna alla Fase 1 - Pianificazione: Pianificazione](./planning.md)
 
 [Torna a tutti i moduli](../../overview.md)

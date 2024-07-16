@@ -6,7 +6,7 @@ jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
 source-git-commit: 576f85eda6e5888b9eafa15a705a99c3a70fed07
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1022'
 ht-degree: 5%
 
 ---
@@ -35,13 +35,13 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 ## Conferma accesso
 
-Assicurati che la tua organizzazione abbia accesso a Assurance. Come utente, devi essere aggiunto al profilo per Adobe Experience Platform. Consulta [Accesso utente](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) nella guida Assurance per ulteriori informazioni.
+Assicurati che la tua organizzazione abbia accesso a Assurance. Come utente, devi essere aggiunto al profilo per Adobe Experience Platform. Per ulteriori informazioni, consulta [Accesso utente](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) nella guida Assurance.
 
 ## Implementazione
 
-Oltre al generale [Installazione SDK](install-sdks.md), hai completato la lezione precedente, iOS richiede anche la seguente aggiunta per avviare la sessione Assurance per la tua app.
+Oltre all&#39;installazione generale di [SDK](install-sdks.md), completata nella lezione precedente, iOS richiede anche la seguente aggiunta per avviare la sessione Assurance per la tua app.
 
-1. Accedi a **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** nel Navigatore progetti di Xcode.
+1. Passa a **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** nel Navigatore progetti Xcode.
 
 1. Aggiungi il codice seguente a `func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>`:
 
@@ -64,35 +64,35 @@ Ulteriori informazioni sono disponibili [qui](https://developer.adobe.com/client
 Devi fornire un identificatore univoco del bundle per l’app.
 
 1. Apri il progetto in Xcode.
-1. Seleziona **[!DNL Luma]** nel Navigatore progetti.
-1. Seleziona la **[!DNL Luma]** target.
-1. Seleziona la **Firma e funzionalità** scheda.
-1. Definisci un **[!UICONTROL Identificatore bundle]**.
+1. Selezionare **[!DNL Luma]** nel Navigatore progetti.
+1. Selezionare la destinazione **[!DNL Luma]**.
+1. Selezionare la scheda **Firma e funzionalità**.
+1. Definisci un **[!UICONTROL identificatore bundle]**.
 
    >[!IMPORTANT]
    >
-   >Assicurati di utilizzare un’ _univoco_ identificatore del bundle e sostituisci il `com.adobe.luma.tutorial.swiftui` identificatore del bundle, in quanto ogni identificatore del bundle deve essere univoco. In genere si utilizza il formato DNS inverso per le stringhe ID bundle, come `com.organization.brand.uniqueidentifier`. La versione finale di questa esercitazione, ad esempio, utilizza `com.adobe.luma.tutorial.swiftui`.
+   >Assicurati di utilizzare un identificatore bundle _univoco_ e sostituisci l&#39;identificatore bundle `com.adobe.luma.tutorial.swiftui`, in quanto ogni identificatore bundle deve essere univoco. In genere si utilizza un formato DNS inverso per le stringhe ID bundle, come `com.organization.brand.uniqueidentifier`. La versione finale di questa esercitazione, ad esempio, utilizza `com.adobe.luma.tutorial.swiftui`.
 
 
-   ![Funzionalità di firma Xcode](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
+   ![Funzionalità di firma Xcode](assets/xcode-signing-capabilities.png){zoomable="yes"}
 
 
 ## Configurare un URL di base
 
 1. Vai al progetto in Xcode.
-1. Seleziona **[!DNL Luma]** nel Navigatore progetti.
-1. Seleziona la **[!DNL Luma]** target.
-1. Seleziona la **Info** scheda.
-1. Per aggiungere un URL di base, scorri verso il basso fino a **Tipi di URL** e seleziona la **+** pulsante.
-1. Imposta **Identificatore** all&#39;identificatore del bundle desiderato e imposta un **Schemi URL** di tua scelta.
+1. Selezionare **[!DNL Luma]** nel Navigatore progetti.
+1. Selezionare la destinazione **[!DNL Luma]**.
+1. Selezionare la scheda **Informazioni**.
+1. Per aggiungere un URL di base, scorri verso il basso fino a **Tipi di URL** e seleziona il pulsante **+**.
+1. Imposta **Identificatore** per l&#39;identificatore del bundle desiderato e **Schemi URL** a tua scelta.
 
    ![url di garanzia](assets/assurance-url-type.png)
 
    >[!IMPORTANT]
    >
-   >Assicurati di utilizzare un’ _univoco_ identificatore del bundle e sostituisci il `com.adobe.luma.tutorial.swiftui` identificatore del bundle, in quanto ogni identificatore del bundle deve essere univoco. In genere si utilizza il formato DNS inverso per le stringhe ID bundle, come `com.organization.brand.uniqueidentifier`. Puoi utilizzare lo stesso identificatore bundle utilizzato in [Definisci identificatore bundle](#define-bundle-identifier).<br/>Allo stesso modo, utilizza uno schema URL univoco e sostituisci quello già fornito `lumatutorialswiftui` con il tuo schema URL univoco.
+   >Assicurati di utilizzare un identificatore bundle _univoco_ e sostituisci l&#39;identificatore bundle `com.adobe.luma.tutorial.swiftui`, in quanto ogni identificatore bundle deve essere univoco. In genere si utilizza un formato DNS inverso per le stringhe ID bundle, come `com.organization.brand.uniqueidentifier`. È possibile utilizzare lo stesso identificatore del bundle utilizzato in [Definisci identificatore del bundle](#define-bundle-identifier).<br/>Analogamente, utilizzare uno schema URL univoco e sostituire `lumatutorialswiftui` già fornito con lo schema URL univoco.
 
-Per ulteriori informazioni sugli schemi URL in iOS, consulta [Documentazione di Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
+Per ulteriori informazioni sugli schemi URL in iOS, consulta la [documentazione di Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
 Assurance funziona aprendo un URL, tramite il browser o il codice QR. Tale URL inizia con l’URL di base che apre l’app e contiene parametri aggiuntivi. Questi parametri univoci vengono utilizzati per connettere la sessione.
 
@@ -101,18 +101,18 @@ Assurance funziona aprendo un URL, tramite il browser o il codice QR. Tale URL i
 
 In Xcode:
 
-1. Genera o rigenera ed esegui l’app nel simulatore o su un dispositivo fisico da Xcode, utilizzando ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+1. Genera o ricompila ed esegui l&#39;app nel simulatore o su un dispositivo fisico da Xcode, utilizzando ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
    >[!TIP]
    >
-   >Facoltativamente, potresti voler &quot;ripulire&quot; la build, soprattutto quando vengono visualizzati risultati imprevisti. A questo scopo, seleziona **[!UICONTROL Pulisci cartella di compilazione...]** da Xcode **[!UICONTROL Prodotto]** menu.
+   >Facoltativamente, potresti voler &quot;ripulire&quot; la build, soprattutto quando vengono visualizzati risultati imprevisti. A tale scopo, selezionare **[!UICONTROL Pulisci cartella di compilazione...]** dal menu Xcode **[!UICONTROL Product]**.
 
 
-1. In **[!UICONTROL Consenti a &quot;App Luma&quot; di utilizzare la tua posizione]** finestra di dialogo, seleziona **[!UICONTROL Consenti durante l&#39;utilizzo dell&#39;app]**.
+1. Nella finestra di dialogo **[!UICONTROL Consenti all&#39;app Luma di utilizzare la tua posizione]**, seleziona **[!UICONTROL Consenti durante l&#39;utilizzo dell&#39;app]**.
 
    <img src="assets/geolocation-permissions.png" width="300">
 
-1. In **[!UICONTROL &quot;App Luma&quot; desidera inviarti notifiche]** finestra di dialogo, seleziona **[!UICONTROL Consenti]**.
+1. Nella finestra di dialogo **[!UICONTROL &quot;App Luma&quot; desidera inviarti notifiche]**, seleziona **[!UICONTROL Consenti]**.
 
    <img src="assets/notification-permissions.png" width="300">
 
@@ -120,7 +120,7 @@ In Xcode:
 
    <img src="assets/tracking-continue.png" width="300">
 
-1. In **[!UICONTROL Consenti a &quot;App Luma&quot; di tracciare la tua attività tra app e siti web di altre aziende]** finestra di dialogo, seleziona **[!UICONTROL Consenti]**.
+1. Nella finestra di dialogo **[!UICONTROL Consenti a &quot;App Luma&quot; di tenere traccia dell&#39;attività tra app e siti Web di altre aziende]**, seleziona **[!UICONTROL Consenti]**.
 
    <img src="assets/tracking-allow.png" width="300">
 
@@ -131,28 +131,28 @@ Nel browser:
 1. Seleziona **[!UICONTROL Assurance]** dalla barra a sinistra.
 1. Seleziona **[!UICONTROL Crea sessione]**.
 1. Seleziona **[!UICONTROL Inizio]**.
-1. Fornisci un **[!UICONTROL Nome sessione]** come `Luma Mobile App Session` e **[!UICONTROL URL di base]**, che è lo schema URL immesso in Xcode, seguito da `://` Ad esempio: `lumatutorialswiftui://`
+1. Fornisci un **[!UICONTROL Nome sessione]** come `Luma Mobile App Session` e l&#39;**[!UICONTROL URL di base]**, ovvero gli schemi URL immessi in Xcode, seguiti da `://` Ad esempio: `lumatutorialswiftui://`
 1. Seleziona **[!UICONTROL Avanti]**.
-   ![sessione di creazione della garanzia di affidabilità](assets/assurance-create-session.png)
-1. In **[!UICONTROL Crea nuova sessione]** finestra di dialogo modale:
+   ![sessione di creazione garanzia](assets/assurance-create-session.png)
+1. Nella finestra di dialogo modale **[!UICONTROL Crea nuova sessione]**:
 
    Se si utilizza un dispositivo fisico:
 
-   * Seleziona **[!UICONTROL Scansiona codice QR]**. Per aprire l&#39;app, usa la fotocamera sul tuo dispositivo fisico per scansionare il codice QR e toccare il collegamento.
+   * Selezionare **[!UICONTROL Scansiona codice QR]**. Per aprire l&#39;app, usa la fotocamera sul tuo dispositivo fisico per scansionare il codice QR e toccare il collegamento.
 
-     ![codice di controllo qualità assicurazione](assets/assurance-qr-code.png)
+     ![codice di controllo qualità affidabilità](assets/assurance-qr-code.png)
 
    Se utilizzi un simulatore:
 
    1. Seleziona **[!UICONTROL Copia collegamento]**.
-   1. Copia il collegamento profondo tramite ![Copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)  e utilizza il collegamento profondo per aprire l’app con Safari nel simulatore.
-      ![Collegamento per la copia di Assurance](assets/assurance-copy-link.png)
+   1. Copia il collegamento profondo utilizzando ![Copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) e utilizza il collegamento profondo per aprire l&#39;app con Safari nel simulatore.
+      ![Collegamento alla copia di Assurance](assets/assurance-copy-link.png)
 
 1. Al caricamento dell’app, viene visualizzata una finestra di dialogo modale in cui viene richiesto di immettere il PIN illustrato al punto 7.
 
    <img src="assets/assurance-enter-pin.png" width="300">
 
-   Inserisci il PIN e seleziona **[!UICONTROL Connetti]**.
+   Immettere il PIN e selezionare **[!UICONTROL Connetti]**.
 
 
 1. Se la connessione ha avuto esito positivo, vengono visualizzati i seguenti elementi:
@@ -168,7 +168,7 @@ Nel browser:
 
          ![eventi di garanzia](assets/assurance-events.png)
 
-In caso di problemi, consulta [tecnico](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
+In caso di problemi, consulta la [documentazione tecnica](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} e la [documentazione generale](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 
 
 ## Verificare le estensioni
@@ -177,22 +177,22 @@ Per verificare se l’app utilizza le estensioni più aggiornate:
 
 1. Seleziona **[!UICONTROL Configura]**.
 
-1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) per ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Versioni dell&#39;estensione]**.
+1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) per ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Versioni estensione]**.
 
 1. Seleziona **[!UICONTROL Salva]**.
 
-   ![Configurare le versioni delle estensioni](assets/assurance-configure-extension-versions.png)
+   ![Configurare le versioni dell&#39;estensione](assets/assurance-configure-extension-versions.png)
 
-1. Seleziona ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Versioni dell&#39;estensione]** per visualizzare una panoramica delle ultime estensioni disponibili e delle estensioni utilizzate nella tua versione dell’app.
+1. Seleziona ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Versioni estensione]** per visualizzare una panoramica delle ultime estensioni disponibili e delle estensioni utilizzate nella tua versione dell&#39;app.
 
-   ![Versioni delle estensioni](assets/assurance-extension-versions.png)
+   ![Versioni estensione](assets/assurance-extension-versions.png)
 
-1. Per aggiornare le versioni dell’estensione (ad esempio, **[!UICONTROL Messaggistica]** e **[!UICONTROL Ottimizza]**) seleziona il pacchetto (estensione) da **[!UICONTROL Dipendenze pacchetto]** (ad esempio, **[!UICONTROL AEPMessaging]**) e dal menu di scelta rapida selezionare **[!UICONTROL Aggiorna pacchetto]**. Xcode aggiornerà le dipendenze del pacchetto.
+1. Per aggiornare le versioni dell&#39;estensione (ad esempio, **[!UICONTROL Messaggistica]** e **[!UICONTROL Ottimizza]**), selezionare il pacchetto (estensione) da **[!UICONTROL Dipendenze pacchetto]** (ad esempio, **[!UICONTROL AEPMessaging]**) e dal menu di scelta rapida selezionare **[!UICONTROL Aggiorna pacchetto]**. Xcode aggiornerà le dipendenze del pacchetto.
 
 
 >[!NOTE]
 >
->Dopo aver aggiornato le estensioni (pacchetti) in Xcode, chiudi ed elimina la sessione corrente e ripeti tutti i passaggi da [Connessione a una sessione](#connecting-to-a-session) e [Verificare le estensioni](#verify-extensions) affinché Assurance segnali correttamente le estensioni corrette in una nuova sessione Assurance.
+>Dopo aver aggiornato le estensioni (pacchetti) in Xcode, chiudi ed elimina la sessione corrente e ripeti tutti i passaggi da [Connessione a una sessione](#connecting-to-a-session) e [Verifica le estensioni](#verify-extensions) per garantire che Assurance segnali correttamente le estensioni corrette in una nuova sessione Assurance.
 
 
 
@@ -202,7 +202,7 @@ Per verificare se l’app utilizza le estensioni più aggiornate:
 >
 >Ora hai configurato l’app per utilizzare Assurance per il resto dell’esercitazione.
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere feedback generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [Experience League post di discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
 Successivo: **[Implementare il consenso](consent.md)**

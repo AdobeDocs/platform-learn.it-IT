@@ -9,7 +9,7 @@ feature: Mobile SDK
 exl-id: 14bfbebe-6df3-4a0e-875c-b4c0d016f8da
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -18,35 +18,35 @@ ht-degree: 0%
 
 ## Instale o aplicativo móvel
 
-Antes de instalar o aplicativo, é necessário habilitar o **Rastreamento** nessuna periferica iOS. Para isso, acesse **Configuração** > **Privacidade e segurança** > **Rastreamento** e verifique a opção **Permitir que os aplicativos solicitem o rastreamento**.
+Antes de instalar o aplicativo, é necessário habilitar o **Rastreamento** no seu dispositivo iOS. Para isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e verifica un opção **Permitir que os aplicativos solicitem o rastreamento**.
 
 ![DSN](./../uc3/images/app4.png)
 
-Acesse a App Store da Apple e pesquise `aepmobile-bootcamp`. Clique em **Installa** ou **Scarica**.
+Acesse a App Store da Apple e pesquise `aepmobile-bootcamp`. Clique em **Instalar** ou **Scarica**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Depois que o aplicativo estiver instalado, cricca em **Abrir**.
+Depois que o aplicativo estiver instalado, cricca em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
-Clique em **OK**.
+Coppia em **OK**.
 
 ![DSN](./../uc3/images/app9.png)
 
-Clique em **Autorizzazione**.
+Cricca em **Autore**.
 
 ![DSN](./../uc3/images/app3.png)
 
-Clic **Accetto**.
+Fai clic su **Accetto**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Clique em **Permitir enquanto usa o aplicativo**.
+Clique em **Permitir enquanto usa o aplicativo**.
 
 ![DSN](./../uc3/images/app8.png)
 
-Clique em **Autorizzazione**.
+Cricca em **Autore**.
 
 ![DSN](./../uc3/images/app5.png)
 
@@ -56,7 +56,7 @@ Agora você está no aplicativo, na página inicial, pronto(a) para verificar to
 
 ## Fluxo da jornada do cliente
 
-Primeiramente, é necessário fazer o login. Clique em **Login**.
+Primeiramente, é necessário fazer o login. Accesso **Accesso**.
 
 ![DSN](./images/app13.png)
 
@@ -76,11 +76,11 @@ Retorne para a página inicial do aplicativo e os recursos adicionais irão apar
 
 ![DSN](./images/app17.png)
 
-Primeiro, acesse **Prodotti**. Clique em qualquer produto, neste campione: **Caffè a disposizione**.
+Primeiro, **Prodotti**. Clique em qualquer produto, campione neste: **Caffè da fare**.
 
 ![DSN](./images/app19.png)
 
-Você verá a página do produto **Caffè a disposizione** non applicabile.
+Você verá a página do produto **Caffè da andare** no aplicativo.
 
 ![DSN](./images/app20.png)
 
@@ -104,7 +104,7 @@ Agorà conferma una tela da loja. Você verá o último produto visualizado apar
 
 ![DSN](./images/screen2.png)
 
-Em seguida, nuovo para **Prodotti**. Clique em qualquer produto, neste campione: **Coperta da spiaggia Tan**.
+Em seguida, nuovo para **Prodotti**. Clique em qualquer produto, campione neste: **Tan coperta spiaggia**.
 
 ![DSN](./images/app22.png)
 
@@ -112,7 +112,7 @@ Em seguida, retorne para a página inicial. Cricca no ícone do **beacon**.
 
 ![DSN](./images/app23.png)
 
-Em seguida, selecione **Beacon schermo bootcamp** e clique no botão de **Entrada** novamente. Isso permitirá que você simule uma entrada de sinalização (beacon)
+Em seguida, selecione **Bootcamp Screen Beacon** e clique no botão de **Entrada** novamente. Isso permitirá que você simule uma entrada de sinalização (beacon)
 
 ![DSN](./images/app21.png)
 
@@ -126,7 +126,7 @@ Agora, vamos verificar também o seu Visualizador de Perfil nessun sito. Você v
 
 Voce irá configurar e testar sua própria jornada de entrada do beacon.
 
-Próxima etapa [3.2 Crie seu evento](./ex2.md)
+Tapa Próxima: [3.2 Crie seu evento](./ex2.md)
 
 [Retornar para Fluxo de Usuário 3](./uc3.md)
 

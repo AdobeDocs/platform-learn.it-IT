@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Creare elementi dati
 
-Scopri come creare elementi dati nei tag per contenuti, eCommerce e dati di identità sulla [Sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Quindi popola i campi nello schema XDM con il tipo di elemento dati Variabile dell’estensione Adobe Experience Platform Web SDK.
+Scopri come creare elementi dati nei tag per i dati di contenuto, e-commerce e identità sul [sito demo Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Quindi popola i campi nello schema XDM con il tipo di elemento dati Variabile dell’estensione Adobe Experience Platform Web SDK.
 
 ## Obiettivi di apprendimento
 
@@ -36,7 +36,7 @@ Conosci cos’è un livello dati e hai completato le lezioni precedenti nell’e
 
 >[!IMPORTANT]
 >
->I dati per questa lezione provengono da `[!UICONTROL digitalData]` sul sito Luma. Per visualizzare il livello dati, apri la console per sviluppatori e digita `[!UICONTROL digitalData]` per visualizzare l’intero livello dati disponibile.![livello dati digitalData](assets/data-element-data-layer.png)
+>I dati per questa lezione provengono dal livello dati `[!UICONTROL digitalData]` sul sito Luma. Per visualizzare il livello dati, apri la console per sviluppatori e digita in `[!UICONTROL digitalData]` per visualizzare l&#39;intero livello dati disponibile.![livello dati digitalData](assets/data-element-data-layer.png)
 
 
 ## Approcci al livello dati
@@ -54,7 +54,7 @@ Esistono diversi modi per mappare i dati dal livello dati a XDM utilizzando la f
 
 ### Implementare XDM nel livello dati
 
-Questo approccio comporta l’utilizzo dell’oggetto XDM completamente definito come struttura per il livello dati. Quindi mappi l’intero livello dati a un elemento dati di oggetti XDM nei tag. Se l’implementazione non utilizza un gestore di tag, questo approccio può essere ideale perché puoi inviare dati a XDM direttamente dall’applicazione utilizzando [XDM sendEvent, comando](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Se utilizzi i tag, puoi creare un elemento dati con codice personalizzato che acquisisce l’intero livello dati come oggetto JSON pass-through per XDM. Quindi, mappi il JSON pass-through al campo dell’oggetto XDM nell’azione Invia evento.
+Questo approccio comporta l’utilizzo dell’oggetto XDM completamente definito come struttura per il livello dati. Quindi mappi l’intero livello dati a un elemento dati di oggetti XDM nei tag. Se l&#39;implementazione non utilizza un gestore di tag, questo approccio potrebbe essere ideale perché è possibile inviare dati a XDM direttamente dall&#39;applicazione utilizzando il comando [XDM sendEvent](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Se utilizzi i tag, puoi creare un elemento dati con codice personalizzato che acquisisce l’intero livello dati come oggetto JSON pass-through per XDM. Quindi, mappi il JSON pass-through al campo dell’oggetto XDM nell’azione Invia evento.
 
 Di seguito è riportato un esempio dell’aspetto del livello dati utilizzando il formato Livello dati client di Adobe:
 
@@ -107,7 +107,7 @@ Contro
 * Completa dipendenza dal team di sviluppo e dal ciclo di sviluppo per aggiornare i dati da inviare a XDM
 * Flessibilità limitata, poiché XDM riceve il payload esatto dal livello dati
 * Non è possibile utilizzare le funzioni dei tag incorporate, ad esempio raschiamento, persistenza e funzioni per distribuzioni rapide
-* È più difficile utilizzare il livello dati per i pixel di terze parti, ma potrebbe essere utile spostare questi pixel in [inoltro eventi](setup-event-forwarding.md)!
+* È più difficile utilizzare il livello dati per i pixel di terze parti, ma potrebbe essere utile spostare questi pixel in [inoltro eventi](setup-event-forwarding.md).
 * Impossibilità di trasformare i dati tra il livello dati e XDM
 
 ### Mappare il livello dati nei tag
@@ -129,17 +129,17 @@ Questo approccio comporta la mappatura di singole variabili del livello dati O d
 >
 > Google Data Layer
 > 
-> Se la tua organizzazione utilizza già Google Analytics e dispone del tradizionale oggetto Google dataLayer sul sito web, puoi utilizzare [Estensione Google Data Layer](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) nei tag. Questo consente di implementare la tecnologia Adobe più rapidamente senza dover richiedere supporto al team IT. La mappatura del livello dati di Google su XDM segue gli stessi passaggi indicati sopra.
+> Se la tua organizzazione utilizza già Google Analytics e dispone del tradizionale oggetto Google dataLayer sul tuo sito Web, puoi utilizzare l&#39;estensione [Google Data Layer](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) nei tag. Questo consente di implementare la tecnologia Adobe più rapidamente senza dover richiedere supporto al team IT. La mappatura del livello dati di Google su XDM segue gli stessi passaggi indicati sopra.
 
 ### Mappa su XDM nello stream di dati
 
-Questo approccio utilizza funzionalità integrate nella configurazione dello stream di dati denominate [Preparazione per la raccolta dati](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) e ignora la mappatura delle variabili del livello dati su XDM nei tag.
+Questo approccio utilizza funzionalità integrate nella configurazione dello stream di dati denominata [Preparazione dati per la raccolta dati](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) e ignora la mappatura delle variabili del livello dati su XDM nei tag.
 
 #### Pro
 
 * Flessibile in quanto è possibile mappare singole variabili su XDM
-* Possibilità di [calcola nuovi valori](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) o [trasformare tipi di dati](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) da un livello dati prima di passare a XDM
-* Utilizzo di un [Interfaccia utente di mappatura](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) per mappare i campi dei dati di origine su XDM con un’interfaccia utente semplice e intuitiva
+* Possibilità di [calcolare nuovi valori](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) o [trasformare tipi di dati](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) da un livello dati prima di passare a XDM
+* Sfrutta una [Interfaccia utente di mappatura](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) per mappare i campi nei dati di origine su XDM con un&#39;interfaccia semplice e intuitiva
 
 #### Contro
 
@@ -155,32 +155,32 @@ Questo approccio utilizza funzionalità integrate nella configurazione dello str
 
 ## Creare elementi dati per acquisire il livello dati
 
-Prima di creare l’oggetto XDM, crea il seguente set di elementi dati per [Sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} livello dati:
+Prima di creare l&#39;oggetto XDM, crea il seguente set di elementi dati per il [sito demo Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} livello dati:
 
-1. Vai a **[!UICONTROL Elementi dati]** e seleziona **[!UICONTROL Aggiungi elemento dati]** (o **[!UICONTROL Creare un nuovo elemento dati]** se nella proprietà tag non sono presenti elementi dati)
+1. Vai a **[!UICONTROL Elementi dati]** e seleziona **[!UICONTROL Aggiungi elemento dati]** (o **[!UICONTROL Crea nuovo elemento dati]** se nella proprietà tag non sono presenti elementi dati esistenti)
 
    ![Crea elemento dati](assets/data-element-create.png)
 
 1. Denomina l’elemento dati `page.pageInfo.pageName`
-1. Utilizza il **[!UICONTROL Variabile JavaScript]** **[!UICONTROL Tipo di elemento dati]** per puntare a un valore nel livello dati di Luma: `digitalData.page.pageInfo.pageName`
+1. Utilizza la **[!UICONTROL variabile JavaScript]** **[!UICONTROL tipo di elemento dati]** per puntare a un valore nel livello dati di Luma: `digitalData.page.pageInfo.pageName`
 
-1. Seleziona le caselle per **[!UICONTROL Forza valore minuscolo]** e **[!UICONTROL Pulisci testo]** per standardizzare l&#39;uso di maiuscole/minuscole e rimuovere spazi estranei
+1. Seleziona le caselle per **[!UICONTROL Forza valori minuscoli]** e **[!UICONTROL Pulisci testo]** per standardizzare il caso e rimuovere spazi estranei
 
-1. Esci `None` come **[!UICONTROL Durata archiviazione]** poiché questo valore è diverso su ogni pagina
+1. Lascia `None` come impostazione di **[!UICONTROL Durata memorizzazione]**, poiché questo valore è diverso in ogni pagina
 
 1. Seleziona **[!UICONTROL Salva]**
 
-   ![Elemento dati Nome pagina](assets/data-element-pageName.png)
+   ![Elemento dati nome pagina](assets/data-element-pageName.png)
 
 Crea questi elementi di dati aggiuntivi seguendo gli stessi passaggi:
 
-* **`page.pageInfo.server`**  mappato a
+* **`page.pageInfo.server`** mappato a
   `digitalData.page.pageInfo.server`
 
-* **`page.pageInfo.hierarchie1`**  mappato a
+* **`page.pageInfo.hierarchie1`** mappato a
   `digitalData.page.pageInfo.hierarchie1`
 
-* **`user.profile.attributes.username`**  mappato a
+* **`user.profile.attributes.username`** mappato a
   `digitalData.user.0.profile.0.attributes.username`
 
 * **`user.profile.attributes.loggedIn`** mappato a
@@ -209,7 +209,7 @@ Crea questi elementi di dati aggiuntivi seguendo gli stessi passaggi:
     return cartItem;
     ```
     -->
-* **`product.category`** utilizzando **[!UICONTROL Codice personalizzato]** **[!UICONTROL Tipo di elemento dati]** e il seguente codice personalizzato per analizzare l’URL del sito per la categoria di livello principale:
+* **`product.category`** utilizzando il **[!UICONTROL Codice personalizzato]** **[!UICONTROL Tipo di elemento dati]** e il codice personalizzato seguente per analizzare l&#39;URL del sito per la categoria di livello principale:
 
   ```javascript
   var cat = location.pathname.split(/[/.]+/);
@@ -254,21 +254,21 @@ Crea questi elementi di dati aggiuntivi seguendo gli stessi passaggi:
 
 >[!CAUTION]
 >
->Il [!UICONTROL Variabile JavaScript] il tipo di elemento dati tratta i riferimenti di array come punti invece che come parentesi, facendo riferimento all’elemento dati username come `digitalData.user[0].profile[0].attributes.username` **non funzionerà**.
+>Il tipo di elemento dati [!UICONTROL variabile JavaScript] tratta i riferimenti di matrice come punti invece che come parentesi quadre, pertanto il riferimento all&#39;elemento dati username come `digitalData.user[0].profile[0].attributes.username` **non funzionerà**.
 
 ## Creare elementi dati variabili per XDM e oggetti dati
 
-Gli elementi dati appena creati verranno utilizzati per creare un oggetto XDM (per le applicazioni Platform) e un oggetto dati (per Analytics, Target e Audienci Manager). Questi oggetti hanno i propri elementi dati speciali denominati **[!UICONTROL Variabile]** elementi dati molto facili da creare.
+Gli elementi dati appena creati verranno utilizzati per creare un oggetto XDM (per le applicazioni Platform) e un oggetto dati (per Analytics, Target e Audience Manager). Questi oggetti dispongono di elementi dati speciali denominati **[!UICONTROL Elementi dati variabili]** che sono molto facili da creare.
 
-Per creare l&#39;elemento dati Variable per XDM, è necessario collegarlo allo schema creato in [Configurare uno schema](configure-schemas.md) lezione:
+Per creare l&#39;elemento dati Variable per XDM, è necessario collegarlo allo schema creato nella lezione [Configurare uno schema](configure-schemas.md):
 
 1. Seleziona **[!UICONTROL Aggiungi elemento dati]**
-1. Denomina l’elemento dati `xdm.variable.content`. È consigliabile usare il prefisso &quot;xdm&quot; per gli elementi dati specifici di XDM per organizzare meglio la proprietà tag
-1. Seleziona la **[!UICONTROL Adobe Experience Platform Web SDK]** come **[!UICONTROL Estensione]**
+1. Denomina l&#39;elemento dati `xdm.variable.content`. È consigliabile usare il prefisso &quot;xdm&quot; per gli elementi dati specifici di XDM per organizzare meglio la proprietà tag
+1. Seleziona **[!UICONTROL Adobe Experience Platform Web SDK]** come **[!UICONTROL estensione]**
 1. Seleziona la **[!UICONTROL Variabile]** come **[!UICONTROL Tipo di elemento dati]**
 1. Seleziona **[!UICONTROL XDM]** come **[!UICONTROL proprietà]**
-1. Seleziona la **[!UICONTROL Sandbox]** in cui è stato creato lo schema
-1. Seleziona la scheda appropriata **[!UICONTROL Schema]**, in questo caso `Luma Web Event Data`
+1. Seleziona la **[!UICONTROL Sandbox]** in cui hai creato lo schema
+1. Seleziona lo **[!UICONTROL Schema]** appropriato, in questo caso `Luma Web Event Data`
 1. Seleziona **[!UICONTROL Salva]**
 
    ![Elemento dati variabile per XDM](assets/analytics-tags-data-element-xdm-variable.png)
@@ -276,8 +276,8 @@ Per creare l&#39;elemento dati Variable per XDM, è necessario collegarlo allo s
 Quindi, crea l’elemento dati Variable per l’oggetto dati:
 
 1. Seleziona **[!UICONTROL Aggiungi elemento dati]**
-1. Denomina l’elemento dati `data.variable`. Per organizzare meglio la proprietà tag, si consiglia di usare il prefisso &quot;data&quot; per gli elementi dati specifici dell’oggetto dati
-1. Seleziona la **[!UICONTROL Adobe Experience Platform Web SDK]** come **[!UICONTROL Estensione]**
+1. Denomina l&#39;elemento dati `data.variable`. Per organizzare meglio la proprietà tag, si consiglia di usare il prefisso &quot;data&quot; per gli elementi dati specifici dell’oggetto dati
+1. Seleziona **[!UICONTROL Adobe Experience Platform Web SDK]** come **[!UICONTROL estensione]**
 1. Seleziona la **[!UICONTROL Variabile]** come **[!UICONTROL Tipo di elemento dati]**
 1. Seleziona **[!UICONTROL dati]** come **[!UICONTROL proprietà]**
 1. Seleziona le soluzioni di Experience Cloud da implementare come parte di questa esercitazione
@@ -304,7 +304,7 @@ Al termine di questi passaggi, dovresti aver creato i seguenti elementi di dati:
 
 >[!TIP]
 >
->In un futuro [Creare regole di tag](create-tag-rule.md) lezione, si impara come **[!UICONTROL Variabile]** Gli elementi dati consentono di sovrapporre più regole nei tag utilizzando **[!UICONTROL Aggiorna tipo di azione variabile]**.
+>In una lezione [Creare regole tag](create-tag-rule.md), scopri come gli elementi dati **[!UICONTROL Variable]** ti consentono di sovrapporre più regole nei tag utilizzando il tipo di azione **[!UICONTROL Aggiorna variabile]**.
 
 Una volta impostati questi elementi dati, puoi iniziare a inviare dati all’Edge Network di Platform con una regola di tag. Ma prima, scopri come raccogliere le identità con Web SDK.
 
@@ -312,4 +312,4 @@ Una volta impostati questi elementi dati, puoi iniziare a inviare dati all’Edg
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili su questo [Experience League post di discussione community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [Experience League post di discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

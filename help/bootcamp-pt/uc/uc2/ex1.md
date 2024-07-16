@@ -11,7 +11,7 @@ feature: Events, Journeys, Profiles, Identities
 exl-id: c71f6789-25cd-4fac-b026-e981744dbe95
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '369'
 ht-degree: 2%
 
 ---
@@ -22,17 +22,17 @@ ht-degree: 2%
 
 A jornada do desconhecido ao conhecido é um dos tópicos mais importantes para as marcas atmans, assim como a jornada do cliente, da aquisição à retenção.
 
-Un Adobe Experience Platform desempenha um papel importante nessa jornada. A plataforma é o cérebro da comunicação, o **sistema di registrazione esperienza**.
+Un Adobe Experience Platform desempenha um papel importante nessa jornada. Una plataforma é o cérebro da comunicação, o **sistema di esperienza da record**.
 
 Plataforma é um ambiente em que a palavra cliente engloba mais do que clientes conhecidos. Um visitante desconhecido no site também é um cliente do ponto de vista da Plataforma e, como tal, todo o de um visitante desconhecido também é enviado à Plataforma. Graças a essa abordagem, quando esse visitante eventualmente se torna um cliente conhecido, uma marca também pode visualizar o que aconteceu antes daquele momento. Isso ajuda a partir de uma perspectiva de otimização de atribuição e experiência.
 
 ## Fluxo da jornada do cliente
 
-Acesse [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clique em **Consenti tutto**. Com base no seu de navegação no fluxo de usuário anteriore, você verá a personalização acontecer na página inicial do site.
+Acesse [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). **Consenti tutti**. Com base no seu de navegação no fluxo de usuário anteriore, você verá a personalização acontecer na página inicial do site.
 
 ![DSN](./images/web8.png)
 
-Clique no ícone do logotipo da Adobe no canto superior esquerdo da tela para abrir o Visualizador de perfil. Verifique o painel do Visualizador de perfil e no Perfil do cliente em tempo real com o **ID EXPERIENCE CLOUD** como o identador primário para este cliente que ainda é desconhecido.
+Clique no ícone do logotipo da Adobe no canto superior esquerdo da tela para abrir o Visualizador de perfil. Verifique o painel do Visualizador de perfil e no Perfil do cliente em tempo real com o **ID Experience Cloud** como o identador primário para este cliente que ainda é desconhecido.
 
 ![Demo](./images/pv1.png)
 
@@ -40,11 +40,11 @@ Você também pode ver todos os Eventos de experiência coletados com base no do
 
 ![Demo](./images/pv3.png)
 
-Clique no ícone **Profilo** nessun canto superiore direito da tela.
+Cricca no ícone **Profilo** no canto superior direito da tela.
 
 ![Demo](./images/pv4.png)
 
-Clique em **Creare un account**.
+**Crea un account**.
 
 ![Demo](./images/pv5.png)
 
@@ -52,7 +52,7 @@ Preencha todos os campos do formulário Utilizzare um valor real para endereço 
 
 ![Demo](./images/pv7.png)
 
-Ruolo para baixo e cricca em **Registrati**.
+Ruolo para baixo e clique em **Registro**.
 
 ![Demo](./images/pv8.png)
 

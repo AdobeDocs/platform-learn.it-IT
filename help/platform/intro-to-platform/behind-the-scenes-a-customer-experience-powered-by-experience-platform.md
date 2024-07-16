@@ -1,5 +1,5 @@
 ---
-title: 'Dietro le quinte: un''esperienza del cliente con tecnologia Adobe Experience Platform'
+title: Dietro le quinte&#58; un'esperienza del cliente con tecnologia Adobe Experience Platform
 description: Nel video precedente abbiamo visto come un marchio di esempio, Luma, è stato in grado di creare un’esperienza del cliente ricca, gratificante e rilevante. Questo video illustra come viene utilizzato Adobe Experience Platform per eseguire questo percorso.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner

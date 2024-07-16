@@ -1,6 +1,6 @@
 ---
 title: Creare tipi di pubblico da tipi di pubblico esistenti
-description: Il generatore di regole per il pubblico in Experienci Platform consente di utilizzare i tipi di pubblico esistenti come parte di una nuova definizione di regole per i tipi di pubblico. Guarda questo video per visualizzare suggerimenti su come farlo.
+description: Il generatore di regole per il pubblico in Experience Platform consente di utilizzare i tipi di pubblico esistenti come parte di una nuova definizione di regole per i tipi di pubblico. Guarda questo video per visualizzare suggerimenti su come farlo.
 feature: Segments
 role: User
 level: Intermediate
@@ -9,18 +9,18 @@ thumbnail: 333304.jpg
 exl-id: a98e43e1-4b5e-42fa-8806-aab702947da5
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 6%
+source-wordcount: '107'
+ht-degree: 0%
 
 ---
 
 # Creare tipi di pubblico da tipi di pubblico esistenti
 
-Il generatore di regole per il pubblico in Experienci Platform consente di utilizzare i tipi di pubblico esistenti come parte di una nuova definizione di regole per i tipi di pubblico. Guarda questo video per visualizzare suggerimenti su come farlo. Per ulteriori informazioni, vedere [Documentazione di Segment Builder](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=it).
+Il generatore di regole per il pubblico in Experience Platform consente di utilizzare i tipi di pubblico esistenti come parte di una nuova definizione di regole per i tipi di pubblico. Guarda questo video per visualizzare suggerimenti su come farlo. Per ulteriori informazioni, consulta la [documentazione di Segment Builder](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=it).
 
 >[!NOTE]
 >
-> &quot;[!UICONTROL Segmenti]&quot; sono stati rinominati &quot;[!UICONTROL Tipi di pubblico]&quot; nell’interfaccia di Platform. Seleziona **[!UICONTROL Creare un pubblico]** > **[!UICONTROL Genera regola]** per accedere al generatore di regole descritto in questo video.
+> &quot;[!UICONTROL I segmenti]&quot; sono stati rinominati &quot;[!UICONTROL Tipi di pubblico]&quot; nell&#39;interfaccia di Platform. Seleziona **[!UICONTROL Crea pubblico]** > **[!UICONTROL Genera regola]** per accedere al generatore di regole visualizzato in questo video.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333304/?learn=on)
 

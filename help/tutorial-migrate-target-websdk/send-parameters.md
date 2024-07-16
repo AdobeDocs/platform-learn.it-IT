@@ -1,20 +1,21 @@
 ---
-title: Parametri di invio | Migrare Target da at.js 2.x all’SDK per web
-description: Scopri come inviare parametri mbox, di profilo e di entità ad Adobe Target utilizzando Experience Platform Web SDK.
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+title: Parametri di invio | Migrare Target da at.js 2.x a Web SDK
+description: Scopri come inviare parametri mbox, di profilo ed entità ad Adobe Target utilizzando Experience Platform Web SDK.
+exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '1646'
-ht-degree: 1%
+source-wordcount: '1539'
+ht-degree: 0%
 
 ---
 
-# Inviare parametri a Target tramite SDK per web di Platform
+# Inviare parametri a Target tramite Platform Web SDK
 
-Le implementazioni di Target differiscono tra i siti web a causa dell’architettura del sito, dei requisiti aziendali e delle funzioni utilizzate. La maggior parte delle implementazioni di Target includono il passaggio di vari parametri per informazioni contestuali, tipi di pubblico e consigli sui contenuti.
+Le implementazioni di Target differiscono tra i siti web a causa dell’architettura del sito, dei requisiti di business e delle funzionalità utilizzate. La maggior parte delle implementazioni di Target include il passaggio di vari parametri per informazioni contestuali, tipi di pubblico e consigli sui contenuti.
 
-Usiamo una semplice pagina dei dettagli del prodotto e una pagina di conferma dell’ordine per dimostrare le differenze tra le librerie quando trasmetti i parametri a Target.
+Utilizziamo una semplice pagina dei dettagli del prodotto e una pagina di conferma dell’ordine per dimostrare le differenze tra le librerie durante la trasmissione dei parametri a Target.
 
-Supponiamo di avere due pagine di esempio utilizzando at.js:
+Prendi in considerazione le due pagine di esempio seguenti che utilizzano at.js:
 
 +++at.js in una pagina Dettagli prodotto:
 
@@ -58,7 +59,7 @@ Supponiamo di avere due pagine di esempio utilizzando at.js:
 +++
 
 
-+++at.js in una pagina di conferma dell’ordine:
++++at.js in una pagina di conferma d’ordine:
 
 ```HTML
 <!doctype html>
@@ -93,47 +94,47 @@ Supponiamo di avere due pagine di esempio utilizzando at.js:
 +++
 
 
-## Riepilogo della mappatura dei parametri
+## Riepilogo mappatura parametri
 
-I parametri di Target per queste pagine vengono inviati in modo diverso utilizzando l’SDK per web di Platform. Esistono diversi modi per trasmettere parametri a Target utilizzando at.js:
+I parametri di Target per queste pagine vengono inviati in modo diverso utilizzando Platform Web SDK. Esistono diversi modi per trasmettere parametri a Target utilizzando at.js:
 
-- Imposta con `targetPageParams()` funzione per l’evento di caricamento della pagina (utilizzata negli esempi in questa pagina)
-- Imposta con `targetPageParamsAll()` funzione per tutte le richieste Target nella pagina
-- Invia i parametri direttamente con il `getOffer()` funzione per una singola posizione
-- Invia i parametri direttamente con il `getOffers()` funzione per una o più posizioni
+- Impostato con la funzione `targetPageParams()` per l&#39;evento di caricamento pagina (utilizzato negli esempi in questa pagina)
+- Impostato con la funzione `targetPageParamsAll()` per tutte le richieste Target nella pagina
+- Invia parametri direttamente con la funzione `getOffer()` per una singola posizione
+- Invia parametri direttamente con la funzione `getOffers()` per una o più posizioni
 
 
-L’SDK per web di Platform fornisce un unico modo coerente per inviare i dati senza la necessità di ulteriori funzioni. Tutti i parametri devono essere passati nel payload con il `sendEvent` e rientrano in due categorie:
+Platform Web SDK offre un unico modo coerente per inviare dati senza la necessità di funzioni aggiuntive. Tutti i parametri devono essere passati nel payload con il comando `sendEvent` e rientrare in due categorie:
 
-- Mappata automaticamente dal `xdm` oggetto
-- Passati manualmente utilizzando `data.__adobe.target` oggetto
+- Mapping automatico dall&#39;oggetto `xdm`
+- Passato manualmente utilizzando l&#39;oggetto `data.__adobe.target`
 
-La tabella seguente illustra il modo in cui i parametri di esempio verranno rimappati utilizzando l’SDK per web di Platform:
+La tabella seguente illustra come rieseguire il mapping dei parametri di esempio tramite Platform Web SDK:
 
-| Esempio di parametro at.js | Opzione SDK per web di Platform | Note |
+| Esempio di parametro at.js | Opzione Platform Web SDK | Note |
 | --- | --- | --- |
-| `at_property` | N/D | I token di proprietà sono configurati nel [datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) e non può essere impostato nel `sendEvent` chiama. |
-| `pageName` | `xdm.web.webPageDetails.name` | Tutti i parametri mbox di Target devono essere trasmessi come parte del `xdm` e sono conformi a uno schema utilizzando la classe ExperienceEvent XDM. I parametri mbox non possono essere passati come parte del `data` oggetto. |
-| `profile.gender` | `data.__adobe.target.profile.gender` | Tutti i parametri di profilo di Target devono essere passati come parte del `data` oggetto con prefisso `profile.` da mappare in modo appropriato. |
-| `user.categoryId` | `data.__adobe.target.user.categoryId` | Parametro riservato utilizzato per la funzione di affinità tra categorie di Target che deve essere trasmesso come parte del `data` oggetto. |
-| `entity.id` | `data.__adobe.target.entity.id` <br>O<br> `xdm.productListItems[0].SKU` | Gli ID di entità vengono utilizzati per i contatori comportamentali Recommendations di Target. Questi ID entità possono essere passati come parte del `data` oggetto o mappato automaticamente dal primo elemento nel `xdm.productListItems` se l&#39;implementazione utilizza quel gruppo di campi. |
-| `entity.categoryId` | `data.__adobe.target.entity.categoryId` | Gli ID delle categorie di entità possono essere passati come parte del `data` oggetto. |
-| `entity.customEntity` | `data.__adobe.target.entity.customEntity` | I parametri di entità personalizzati vengono utilizzati per aggiornare il catalogo dei prodotti Recommendations. Questi parametri personalizzati devono essere passati come parte del `data` oggetto. |
-| `cartIds` | `data.__adobe.target.cartIds` | Utilizzato per gli algoritmi di consigli basati su cart di Target. |
-| `excludedIds` | `data.__adobe.target.excludedIds` | Utilizzato per impedire la restituzione di ID entità specifici in una progettazione di consigli. |
-| `mbox3rdPartyId` | Imposta in `xdm.identityMap` oggetto | Utilizzato per sincronizzare i profili Target tra dispositivi e attributi cliente. Lo spazio dei nomi da utilizzare per l’ID cliente deve essere specificato nella variabile [Configurazione di destinazione del datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `at_property` | N/D | I token di proprietà sono configurati nello stream di dati [1} e non possono essere impostati nella chiamata `sendEvent`.](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) |
+| `pageName` | `xdm.web.webPageDetails.name` | Tutti i parametri mbox di Target devono essere passati come parte dell&#39;oggetto `xdm` e devono essere conformi a uno schema utilizzando la classe ExperienceEvent XDM. I parametri mbox non possono essere passati come parte dell&#39;oggetto `data`. |
+| `profile.gender` | `data.__adobe.target.profile.gender` | Tutti i parametri di profilo di Target devono essere passati come parte dell&#39;oggetto `data` e con prefisso `profile.` per essere mappati in modo appropriato. |
+| `user.categoryId` | `data.__adobe.target.user.categoryId` | Parametro riservato utilizzato per la funzionalità Affinità tra categorie di Target che deve essere passata come parte dell&#39;oggetto `data`. |
+| `entity.id` | `data.__adobe.target.entity.id` <br>OR<br> `xdm.productListItems[0].SKU` | Gli ID entità vengono utilizzati per i contatori comportamentali di Target Recommendations. Questi ID entità possono essere passati come parte dell&#39;oggetto `data` o mappati automaticamente dal primo elemento nell&#39;array `xdm.productListItems` se l&#39;implementazione utilizza tale gruppo di campi. |
+| `entity.categoryId` | `data.__adobe.target.entity.categoryId` | Gli ID categoria entità possono essere passati come parte dell&#39;oggetto `data`. |
+| `entity.customEntity` | `data.__adobe.target.entity.customEntity` | I parametri di entità personalizzati vengono utilizzati per aggiornare il catalogo dei prodotti Recommendations. Questi parametri personalizzati devono essere passati come parte dell&#39;oggetto `data`. |
+| `cartIds` | `data.__adobe.target.cartIds` | Utilizzato per gli algoritmi di consigli basati sul carrello di Target. |
+| `excludedIds` | `data.__adobe.target.excludedIds` | Utilizzato per evitare che ID di entità specifici vengano restituiti in una progettazione di consigli. |
+| `mbox3rdPartyId` | Impostato nell&#39;oggetto `xdm.identityMap` | Utilizzato per sincronizzare i profili Target tra dispositivi e Attributi del cliente. Lo spazio dei nomi da utilizzare per l&#39;ID cliente deve essere specificato nella configurazione [Target dello stream di dati](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
 | `orderId` | `xdm.commerce.order.purchaseID` | Utilizzato per identificare un ordine univoco per il tracciamento delle conversioni di Target. |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Utilizzato per tenere traccia dei totali degli ordini per gli obiettivi di conversione e ottimizzazione di Target. |
-| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>O<br> `xdm.productListItems[0-n].SKU` | Utilizzato per il tracciamento delle conversioni di Target e gli algoritmi di consigli. Fai riferimento a [parametri di entità](#entity-parameters) per ulteriori informazioni. |
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Utilizzato per [punteggio personalizzato](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) obiettivo dell’attività. |
+| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>OR<br> `xdm.productListItems[0-n].SKU` | Utilizzato per il tracciamento delle conversioni di Target e gli algoritmi di consigli. Per ulteriori informazioni, consulta la sezione [parametri entità](#entity-parameters) di seguito. |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Utilizzato per l&#39;obiettivo dell&#39;attività [punteggio personalizzato](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html). |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Parametri personalizzati
 
-I parametri mbox personalizzati devono essere trasmessi come dati XDM con `sendEvent` comando. È importante assicurarsi che lo schema XDM includa tutti i campi necessari per l’implementazione di Target.
+I parametri mbox personalizzati devono essere passati come dati XDM con il comando `sendEvent`. È importante assicurarsi che lo schema XDM includa tutti i campi necessari per l’implementazione di Target.
 
-esempio at.js utilizzando `targetPageParams()`:
+Esempio di at.js con `targetPageParams()`:
 
 ```JavaScript
 targetPageParams = function() {
@@ -143,7 +144,7 @@ targetPageParams = function() {
 };
 ```
 
-Esempi JavaScript dell’SDK per web di Platform che utilizzano `sendEvent` comando:
+Esempi di JavaScript di Platform Web SDK con il comando `sendEvent`:
 
 >[!BEGINTABS]
 
@@ -164,29 +165,29 @@ alloy("sendEvent", {
 
 >[!TAB Tag]
 
-Nei tag, utilizza innanzitutto un [!UICONTROL Oggetto XDM] elemento dati da mappare al campo XDM:
+Nei tag, utilizza innanzitutto un elemento dati [!UICONTROL oggetto XDM] da mappare al campo XDM:
 
-![Mappatura a un campo XDM in un elemento dati oggetto XDM](assets/params-tags-pageName.png){zoomable=&quot;yes&quot;}
+![Mappatura a un campo XDM in un elemento dati di oggetti XDM](assets/params-tags-pageName.png){zoomable="yes"}
 
-E poi includi il tuo [!UICONTROL Oggetto XDM] nel tuo [!UICONTROL Invia evento] [!UICONTROL action] (multiplo) [!UICONTROL Oggetti XDM] può [unito](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+Quindi includi il tuo [!UICONTROL oggetto XDM] nel tuo [!UICONTROL evento di invio] [!UICONTROL azione] (più [!UICONTROL oggetti XDM] possono essere [uniti](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![Inclusione di un elemento dati oggetto XDM in un evento Send](assets/params-tags-sendEvent.png){zoomable=&quot;yes&quot;}
+![Inclusione di un elemento dati dell&#39;oggetto XDM in un evento Send](assets/params-tags-sendEvent.png){zoomable="yes"}
 
 >[!ENDTABS]
 
 
 >[!NOTE]
 >
->Poiché i parametri mbox personalizzati fanno parte di `xdm` oggetto è necessario aggiornare i tipi di pubblico, le attività o gli script di profilo che fanno riferimento a questi parametri mbox utilizzando i loro nuovi nomi. Consulta la sezione [Aggiornare i tipi di pubblico e gli script di profilo di Target per la compatibilità con l’SDK per web di Platform](update-audiences.md) per ulteriori informazioni.
+>Poiché i parametri mbox personalizzati fanno parte dell&#39;oggetto `xdm`, è necessario aggiornare eventuali tipi di pubblico, attività o script di profilo che fanno riferimento a tali parametri mbox utilizzando i nuovi nomi. Per ulteriori informazioni, consulta la pagina [Aggiorna tipi di pubblico e script di profilo di Target per la compatibilità con Platform Web SDK](update-audiences.md) di questo tutorial.
 
 
 ## Parametri del profilo
 
-I parametri di profilo di Target devono essere trasmessi sotto `data.__adobe.target` oggetto nell’SDK per web di Platform `sendEvent` payload del comando.
+I parametri del profilo di destinazione devono essere passati nell&#39;oggetto `data.__adobe.target` nel payload del comando `sendEvent` di Platform Web SDK.
 
-Analogamente a at.js, anche tutti i parametri di profilo devono essere preceduti da `profile.` affinché il valore sia correttamente memorizzato come attributo di profilo Target permanente. Riservato `user.categoryId` Il parametro per la funzionalità di affinità tra categorie di Target ha il prefisso `user.`.
+Analogamente a at.js, anche tutti i parametri di profilo devono avere il prefisso `profile.` affinché il valore possa essere memorizzato correttamente come attributo di profilo di Target persistente. Il parametro riservato `user.categoryId` per la funzionalità Affinità tra categorie di Target ha il prefisso `user.`.
 
-esempio at.js utilizzando `targetPageParams()`:
+Esempio di at.js con `targetPageParams()`:
 
 ```JavaScript
 targetPageParams = function() {
@@ -197,7 +198,7 @@ targetPageParams = function() {
 };
 ```
 
-Esempi SDK per web di Platform che utilizzano `sendEvent` comando:
+Esempi di Platform Web SDK con il comando `sendEvent`:
 
 >[!BEGINTABS]
 
@@ -218,23 +219,23 @@ alloy("sendEvent", {
 
 >[!TAB Tag]
 
-Nei tag, crea prima un elemento dati per definire il `data.__adobe.target` oggetto:
+Nei tag, creare innanzitutto un elemento dati per definire l&#39;oggetto `data.__adobe.target`:
 
-![Definizione dell’oggetto dati in un elemento dati](assets/params-tags-dataObject.png){zoomable=&quot;yes&quot;}
+![Definizione dell&#39;oggetto dati in un elemento dati](assets/params-tags-dataObject.png){zoomable="yes"}
 
-e quindi includere l&#39;oggetto dati nel [!UICONTROL Invia evento] [!UICONTROL action] (multiplo) [!UICONTROL oggetti] può [unito](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+Quindi includi l&#39;oggetto dati nel tuo [!UICONTROL evento di invio] [!UICONTROL azione] (più [!UICONTROL oggetti] possono essere [uniti](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![Inclusione di un oggetto dati in un evento Send](assets/params-tags-sendEvent-withData.png){zoomable=&quot;yes&quot;}
+![Inclusione di un oggetto dati in un evento di invio](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
 >[!ENDTABS]
 
-## Parametri entità
+## Parametri di entità
 
-I parametri di entità vengono utilizzati per trasmettere dati comportamentali e informazioni di catalogo supplementari per Target Recommendations. Tutto [parametri di entità](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) supportati da at.js sono anche supportati dall’SDK per web di Platform. Analogamente ai parametri di profilo, tutti i parametri di entità devono essere passati sotto `data.__adobe.target` oggetto nell’SDK per web di Platform `sendEvent` payload del comando.
+I parametri di entità vengono utilizzati per trasmettere dati comportamentali e informazioni di catalogo supplementari per Target Recommendations. Tutti i [parametri di entità](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) supportati da at.js sono supportati anche da Platform Web SDK. Analogamente ai parametri di profilo, tutti i parametri di entità devono essere passati sotto l&#39;oggetto `data.__adobe.target` nel payload del comando `sendEvent` di Platform Web SDK.
 
-I parametri di entità per un elemento specifico devono essere preceduti da `entity.` per una corretta acquisizione dei dati. Riservato `cartIds` e `excludedIds` i parametri per gli algoritmi di consigli non devono essere preceduti e il valore per ciascuno di essi deve contenere un elenco di ID di entità separati da virgole.
+I parametri di entità per un elemento specifico devono avere il prefisso `entity.` per l&#39;acquisizione dei dati corretta. I parametri riservati `cartIds` e `excludedIds` per gli algoritmi dei consigli non devono avere un prefisso e il valore di ciascuno deve contenere un elenco separato da virgole di ID entità.
 
-esempio at.js utilizzando `targetPageParams()`:
+Esempio di at.js con `targetPageParams()`:
 
 ```JavaScript
 targetPageParams = function() {
@@ -248,7 +249,7 @@ targetPageParams = function() {
 };
 ```
 
-Esempi SDK per web di Platform che utilizzano `sendEvent` comando:
+Esempi di Platform Web SDK con il comando `sendEvent`:
 
 >[!BEGINTABS]
 
@@ -272,26 +273,26 @@ alloy("sendEvent", {
 
 >[!TAB Tag]
 
-Nei tag, crea prima un elemento dati per definire il `data.__adobe.target` oggetto:
+Nei tag, creare innanzitutto un elemento dati per definire l&#39;oggetto `data.__adobe.target`:
 
-![Definizione dell’oggetto dati in un elemento dati](assets/params-tags-dataObject-entities.png){zoomable=&quot;yes&quot;}
+![Definizione dell&#39;oggetto dati in un elemento dati](assets/params-tags-dataObject-entities.png){zoomable="yes"}
 
-e quindi includere l&#39;oggetto dati nel [!UICONTROL Invia evento] [!UICONTROL action] (multiplo) [!UICONTROL oggetti] può [unito](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+Quindi includi l&#39;oggetto dati nel tuo [!UICONTROL evento di invio] [!UICONTROL azione] (più [!UICONTROL oggetti] possono essere [uniti](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![Inclusione di un oggetto dati in un evento Send](assets/params-tags-sendEvent-withData.png){zoomable=&quot;yes&quot;}
+![Inclusione di un oggetto dati in un evento di invio](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
 >[!ENDTABS]
 
 >[!NOTE]
 >
->Se la `commerce` viene utilizzato il gruppo di campi e `productListItems` array è incluso nel payload XDM, quindi il primo `SKU` valore in questo array mappato a `entity.id` per incrementare una visualizzazione del prodotto.
+>Se si utilizza il gruppo di campi `commerce` e l&#39;array `productListItems` è incluso nel payload XDM, il primo valore `SKU` in questo array viene mappato a `entity.id` allo scopo di incrementare una visualizzazione di prodotto.
 
 
 ## Parametri di acquisto
 
-I parametri di acquisto vengono passati in una pagina di conferma dell’ordine dopo un ordine eseguito correttamente e vengono utilizzati per gli obiettivi di conversione e ottimizzazione di Target. Con un’implementazione Platform Web SDK, questi parametri e vengono mappati automaticamente dai dati XDM trasmessi come parte del `commerce` gruppo di campi.
+I parametri di acquisto vengono trasmessi in una pagina di conferma dell’ordine dopo che quest’ultimo è stato completato correttamente e vengono utilizzati per gli obiettivi di conversione e ottimizzazione di Target. Con un&#39;implementazione di Platform Web SDK, questi parametri e vengono mappati automaticamente dai dati XDM passati come parte del gruppo di campi `commerce`.
 
-esempio at.js utilizzando `targetPageParams()`:
+Esempio di at.js con `targetPageParams()`:
 
 ```JavaScript
 targetPageParams = function() {
@@ -303,9 +304,9 @@ targetPageParams = function() {
 };
 ```
 
-Le informazioni di acquisto vengono trasmesse a Target quando `commerce` gruppo di campi `purchases.value` impostato su `1`. L&#39;ID ordine e il totale dell&#39;ordine vengono mappati automaticamente dal `order` oggetto. Se la `productListItems` l&#39;array è presente, quindi il `SKU` vengono utilizzati per `productPurchasedId`.
+Le informazioni di acquisto vengono passate a Target quando il gruppo di campi `commerce` ha `purchases.value` impostato su `1`. L&#39;ID ordine e il totale ordine vengono mappati automaticamente dall&#39;oggetto `order`. Se l&#39;array `productListItems` è presente, i valori `SKU` vengono utilizzati per `productPurchasedId`.
 
-Esempi SDK per web di Platform che utilizzano `sendEvent` comando:
+Esempi di Platform Web SDK con il comando `sendEvent`:
 
 >[!BEGINTABS]
 
@@ -334,34 +335,34 @@ alloy("sendEvent", {
 
 >[!TAB Tag]
 
-Nei tag, utilizza innanzitutto un [!UICONTROL Oggetto XDM] elemento dati da mappare ai campi XDM:
+Nei tag, utilizza innanzitutto un elemento dati [!UICONTROL oggetto XDM] da mappare ai campi XDM:
 
-![Mappatura a un campo XDM in un elemento dati oggetto XDM](assets/params-tags-purchase.png){zoomable=&quot;yes&quot;}
+![Mappatura a un campo XDM in un elemento dati di oggetti XDM](assets/params-tags-purchase.png){zoomable="yes"}
 
-E poi includi il tuo [!UICONTROL Oggetto XDM] nel tuo [!UICONTROL Invia evento] [!UICONTROL action] (multiplo) [!UICONTROL Oggetti XDM] può [unito](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+Quindi includi il tuo [!UICONTROL oggetto XDM] nel tuo [!UICONTROL evento di invio] [!UICONTROL azione] (più [!UICONTROL oggetti XDM] possono essere [uniti](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![Inclusione di un elemento dati oggetto XDM in un evento Send](assets/params-tags-sendEvent-purchase.png){zoomable=&quot;yes&quot;}
+![Inclusione di un elemento dati dell&#39;oggetto XDM in un evento Send](assets/params-tags-sendEvent-purchase.png){zoomable="yes"}
 
 >[!ENDTABS]
 
 
 >[!NOTE]
 >
->La `productPurchasedId` può anche essere passato come un elenco di ID di entità separati da virgole sotto `data` oggetto.
+>Il valore `productPurchasedId` può anche essere passato come elenco separato da virgole di ID entità sotto l&#39;oggetto `data`.
 
 
-## Id Cliente (mbox3rdPartyId)
+## ID cliente (mbox3rdPartyId)
 
-Target consente la sincronizzazione dei profili tra dispositivi e sistemi utilizzando un singolo ID cliente. Con at.js, può essere impostato come `mbox3rdPartyId` nella richiesta Target o come primo ID cliente inviato al servizio Experience Cloud Identity. A differenza di at.js, un’implementazione SDK per web di Platform consente di specificare quale ID cliente usare come `mbox3rdPartyId` se ce ne sono più. Ad esempio, se la tua azienda dispone di un ID cliente globale e di ID cliente separati per diverse linee di business, puoi configurare quale ID Target deve utilizzare.
+Target consente la sincronizzazione dei profili tra dispositivi e sistemi utilizzando un singolo ID cliente. Con at.js, potrebbe essere impostato come `mbox3rdPartyId` nella richiesta di Target o come primo ID cliente inviato al servizio Experience Cloud Identity. A differenza di at.js, un&#39;implementazione di Platform Web SDK consente di specificare l&#39;ID cliente da utilizzare come `mbox3rdPartyId` in presenza di più. Ad esempio, se la tua azienda ha un ID cliente globale e ID cliente separati per diverse linee di business, puoi configurare quale ID Target deve utilizzare.
 
-Sono disponibili alcuni passaggi per configurare la sincronizzazione ID per i casi di utilizzo tra dispositivi e attributi cliente di Target:
+Sono disponibili alcuni passaggi per configurare la sincronizzazione ID per i casi di utilizzo di Target tra dispositivi diversi e Attributi cliente:
 
-1. Crea un **[!UICONTROL spazio dei nomi identità]** per l&#39;ID cliente in **[!UICONTROL Identità]** schermata di raccolta dati o piattaforma
-1. Assicurati che il **[!UICONTROL alias]** in Attributi del cliente corrisponde a **[!UICONTROL simbolo di identità]** dello spazio dei nomi
-1. Specifica la **[!UICONTROL simbolo di identità]** come **[!UICONTROL Spazio dei nomi ID di terze parti di destinazione]** nella configurazione di Target del datastream
-1. Esegui un `sendEvent` utilizzando il comando `identityMap` gruppo di campi
+1. Crea uno spazio dei nomi di **[!UICONTROL identità]** per l&#39;ID cliente nella schermata **[!UICONTROL Identità]** di Data Collection o Platform
+1. Assicurati che **[!UICONTROL alias]** in Attributi del cliente corrisponda al **[!UICONTROL simbolo di identità]** del tuo spazio dei nomi
+1. Specifica il **[!UICONTROL simbolo di identità]** come **[!UICONTROL Spazio dei nomi ID terze parti di Target]** nella configurazione di Target dello stream di dati
+1. Esegui un comando `sendEvent` utilizzando il gruppo di campi `identityMap`
 
-esempio at.js utilizzando `targetPageParams()`:
+Esempio di at.js con `targetPageParams()`:
 
 ```JavaScript
 targetPageParams = function() {
@@ -371,7 +372,7 @@ targetPageParams = function() {
 };
 ```
 
-Esempi SDK per web di Platform che utilizzano `sendEvent` comando:
+Esempi di Platform Web SDK con il comando `sendEvent`:
 
 >[!BEGINTABS]
 
@@ -392,32 +393,32 @@ alloy("sendEvent", {
 
 >[!TAB Tag]
 
-La [!UICONTROL ID] valore, [!UICONTROL Stato autenticato] e [!UICONTROL Namespace] vengono catturati in un [!UICONTROL Mappa identità] elemento dati:
-![Elemento dati Identity Map che acquisisce l’ID cliente](assets/params-tags-customerIdDataElement.png){zoomable=&quot;yes&quot;}
+Il valore [!UICONTROL ID], [!UICONTROL Stato autenticato] e [!UICONTROL Spazio dei nomi] vengono acquisiti in un elemento dati [!UICONTROL Identity Map]:
+![Elemento dati Identity Map che acquisisce l&#39;ID cliente](assets/params-tags-customerIdDataElement.png){zoomable="yes"}
 
-La [!UICONTROL Mappa identità] viene quindi utilizzato per impostare [!UICONTROL identityMap] nel campo [!UICONTROL Oggetto XDM] elemento dati:
-![Elemento dati Identity Map utilizzato nell’elemento dati oggetto XDM](assets/params-tags-customerIdInXDMObject.png){zoomable=&quot;yes&quot;}
+L&#39;elemento dati [!UICONTROL Identity map] viene quindi utilizzato per impostare il campo [!UICONTROL identityMap] nell&#39;elemento dati [!UICONTROL XDM object]:
+![Elemento dati Identity Map utilizzato nell&#39;elemento dati dell&#39;oggetto XDM](assets/params-tags-customerIdInXDMObject.png){zoomable="yes"}
 
-La [!UICONTROL Oggetto XDM] viene quindi incluso nel [!UICONTROL Invia evento] azione di una regola:
+L&#39;oggetto [!UICONTROL XDM] è quindi incluso nell&#39;azione [!UICONTROL Invia evento] di una regola:
 
-![Inclusione di un elemento dati oggetto XDM in un evento Send](assets/params-tags-sendEvent-xdm.png){zoomable=&quot;yes&quot;}
+![Inclusione di un elemento dati dell&#39;oggetto XDM in un evento Send](assets/params-tags-sendEvent-xdm.png){zoomable="yes"}
 
-Nel servizio Adobe Target del datastream, assicurati di impostare il [!UICONTROL Spazio dei nomi ID di terze parti di destinazione] allo stesso namespace utilizzato nel [!UICONTROL Mappa identità] elemento dati:
-![Impostare lo spazio dei nomi ID di terze parti di Target nel datastream](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable=&quot;yes&quot;}
+Nel servizio Adobe Target dello stream di dati, assicurati di impostare lo spazio dei nomi [!UICONTROL ID terze parti di Target] sullo stesso spazio dei nomi utilizzato nell&#39;elemento dati [!UICONTROL Identity map]:
+![Imposta lo spazio dei nomi dell&#39;ID di terze parti di Target nello stream di dati](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable="yes"}
 
 >[!ENDTABS]
 
-## Esempio di SDK per web Platform
+## Esempio di Platform Web SDK
 
-Ora che sai in che modo i diversi parametri di Target vengono mappati utilizzando l’SDK per web di Platform, le nostre due pagine di esempio possono essere migrate da at.js all’SDK per web di Platform, come illustrato di seguito. Le pagine di esempio includono quanto segue:
+Ora che sai come vengono mappati i diversi parametri di Target utilizzando Platform Web SDK, le nostre due pagine di esempio possono essere migrate da at.js a Platform Web SDK come mostrato di seguito. Le pagine di esempio includono:
 
-- Frammento pre-hiding di Target per un&#39;implementazione asincrona della libreria
-- Codice di base dell’SDK per web di Platform
-- Libreria JavaScript SDK per web Platform
-- A `configure` comando per inizializzare la libreria
-- A `sendEvent` invio di dati e richiesta di rendering del contenuto Target
+- Frammento pre-hiding di Target per un’implementazione asincrona della libreria
+- Codice di base dell’SDK web per Platform
+- Libreria JavaScript di Platform Web SDK
+- Un comando `configure` per inizializzare la libreria
+- Un comando `sendEvent` per inviare dati e richiedere il rendering del contenuto di Target
 
-+++SDK web in una pagina Dettagli prodotto:
++++SDK per web nella pagina Dettagli prodotto:
 
 ```HTML
 <!doctype html>
@@ -492,7 +493,7 @@ Ora che sai in che modo i diversi parametri di Target vengono mappati utilizzand
 
 +++
 
-+++SDK web in una pagina di conferma dell’ordine:
++++SDK per web nella pagina di conferma di un ordine:
 
 ```HTML
 <!doctype html>
@@ -563,8 +564,8 @@ Ora che sai in che modo i diversi parametri di Target vengono mappati utilizzand
 
 +++
 
-Quindi, scopri come [tenere traccia degli eventi di conversione di Target](track-events.md) con Platform Web SDK.
+Successivamente, scopri come [tenere traccia degli eventi di conversione di Target](track-events.md) con Platform Web SDK.
 
 >[!NOTE]
 >
->Ci impegniamo ad aiutarti a eseguire con successo la migrazione di Target da at.js all’SDK per web. Se incontri ostacoli con la tua migrazione o se ti senti che mancano informazioni critiche in questa guida, compila l&#39;invio del tuo messaggio [discussione comunitaria](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Ci impegniamo ad aiutarti con la migrazione di Target da at.js a Web SDK. Se incontri ostacoli con la migrazione o pensi che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

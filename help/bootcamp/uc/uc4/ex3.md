@@ -11,7 +11,7 @@ feature: Data Views
 exl-id: e634876c-2b1c-4f7f-99e5-1940f6c87d80
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1627'
 ht-degree: 2%
 
 ---
@@ -37,11 +37,11 @@ Se desideri che la tua azienda diventi basata sui dati, devi adattare il modo in
 - Per i KPI e le metriche per la Google Analytics utilizza gli stessi nomi utilizzati per il Customer Journey Analytics, in modo che il team di analisi digitale possa parlare una sola lingua.
 - Visualizzazione dati filtrata per mostrare, ad esempio, i dati per un solo mercato, un marchio o solo per dispositivi mobili.
 
-Il giorno **Connessioni** , seleziona la casella di controllo davanti alla connessione appena creata. Clic **Crea visualizzazione dati**.
+Nella schermata **Connessioni**, seleziona la casella di controllo davanti alla connessione appena creata. Fare clic su **Crea visualizzazione dati**.
 
 ![demo](./images/exta.png)
 
-Verrai reindirizzato al **Crea visualizzazione dati** flusso di lavoro.
+Verrai reindirizzato al flusso di lavoro **Crea visualizzazione dati**.
 
 ![demo](./images/0-v2.png)
 
@@ -51,11 +51,11 @@ Ora puoi configurare le definizioni di base per la visualizzazione dati.
 
 ![demo](./images/0-v2.png)
 
-Il **Connessione** hai creato nell’esercizio precedente ed è già selezionato. La connessione è denominata `yourLastName – Omnichannel Data Connection`.
+La **connessione** creata nell&#39;esercizio precedente è già selezionata. La connessione si chiama `yourLastName – Omnichannel Data Connection`.
 
 ![demo](./images/ext5.png)
 
-Quindi, assegna alla visualizzazione dati un nome seguendo questa convenzione di denominazione: `yourLastName – Omnichannel Data View`.
+Assegnare quindi un nome alla visualizzazione dati seguendo questa convenzione di denominazione: `yourLastName – Omnichannel Data View`.
 
 Immettere lo stesso valore per la descrizione: `yourLastName – Omnichannel Data View`.
 
@@ -65,7 +65,7 @@ Immettere lo stesso valore per la descrizione: `yourLastName – Omnichannel Dat
 
 ![demo](./images/1-v2.png)
 
-Per **Fuso orario**, seleziona il fuso orario **Berlino, Stoccolma, Roma, Berna, Bruxelles, Vienna, Amsterdam GMT+01:00**. Si tratta di un contesto molto interessante in quanto alcune aziende operano in paesi e aree geografiche diversi. Assegnare il fuso orario giusto a ciascun paese eviterebbe di commettere errori tipici nei dati, come credere, ad esempio, che in Perù la maggior parte della gente compri magliette alle 4 del mattino.
+Per il **fuso orario**, selezionare il fuso orario **Berlino, Stoccolma, Roma, Berna, Bruxelles, Vienna, Amsterdam GMT+01:00**. Si tratta di un contesto molto interessante in quanto alcune aziende operano in paesi e aree geografiche diversi. Assegnare il fuso orario giusto a ciascun paese eviterebbe di commettere errori tipici nei dati, come credere, ad esempio, che in Perù la maggior parte della gente compri magliette alle 4 del mattino.
 
 ![demo](./images/ext7.png)
 
@@ -75,7 +75,7 @@ Ora dovresti aver configurato le seguenti impostazioni:
 
 ![demo](./images/1-v2.png)
 
-Clic **Salva e continua**.
+Fai clic su **Salva e continua**.
 
 ![demo](./images/12-v2.png)
 
@@ -91,49 +91,49 @@ In questo esercizio configurerai i componenti necessari per analizzare i dati e 
 
 >[!IMPORTANT]
 >
->Se non riesci a trovare una metrica o dimensione specifica, verifica se il campo `Contains data` viene rimosso dalla visualizzazione dati. In caso contrario, eliminare il campo.
+>Se non riesci a trovare una metrica o dimensione specifica, verifica se il campo `Contains data` è stato rimosso dalla visualizzazione dati. In caso contrario, eliminare il campo.
 >
 >![demo](./images/2-v2a.png)
 
-Ora devi trascinare e rilasciare i componenti necessari per l’analisi sul **Componenti aggiunti**. A questo scopo, devi selezionare i componenti nel menu a sinistra e trascinarli nell’area di lavoro al centro.
+Ora devi trascinare e rilasciare i componenti necessari per l&#39;analisi sui **Componenti aggiunti**. A questo scopo, devi selezionare i componenti nel menu a sinistra e trascinarli nell’area di lavoro al centro.
 
 Iniziamo con il primo componente: **Nome (web.webPageDetails.name)**. Cerca questo componente, quindi trascinalo sull’area di lavoro.
 
 ![demo](./images/3-v2.png)
 
-Questo componente è il nome della pagina, come puoi derivare dalla lettura del campo schema `(web.webPageDetails.name)`.
+Questo componente è il nome della pagina, come si può derivare dalla lettura del campo schema `(web.webPageDetails.name)`.
 
-Tuttavia, utilizzando **Nome** poiché il nome non è la migliore convenzione di denominazione per consentire a un utente aziendale di comprendere rapidamente questa dimensione.
+Tuttavia, l&#39;utilizzo di **Nome** come nome non è la migliore convenzione di denominazione per consentire a un utente aziendale di comprendere rapidamente questa dimensione.
 
-Cambiiamo il nome in **Nome pagina**. Fai clic sul componente e rinominalo nella **Impostazioni dei componenti** area.
+Cambiiamo il nome in **Nome pagina**. Fare clic sul componente e rinominarlo nell&#39;area **Impostazioni componente**.
 
 ![demo](./images/3-0-v2.png)
 
-Qualcosa di veramente importante è **Impostazioni persistenza**. Il concetto di evar e prop non esiste in CJA, ma le impostazioni di persistenza consentono un comportamento simile.
+Un elemento molto importante è **Impostazioni di persistenza**. Il concetto di evar e prop non esiste in CJA, ma le impostazioni di persistenza consentono un comportamento simile.
 
 ![demo](./images/3-0-v21.png)
 
-Se non modifichi queste impostazioni, CJA interpreterà la dimensione come una **Prop** (livello hit). Inoltre, possiamo cambiare la Persistenza per rendere la dimensione un **eVar** (mantiene il valore in tutto il percorso).
+Se non modifichi queste impostazioni, CJA interpreterà la dimensione come **Prop** (livello hit). Inoltre, possiamo cambiare la persistenza per rendere la dimensione un **eVar** (mantenere il valore in tutto il percorso).
 
-Se non conosci eVar e proprietà, puoi [per ulteriori informazioni, consulta la documentazione](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
+Se non conosci eVar e proprietà, puoi [ulteriori informazioni su di esse nella documentazione](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
 
-Lasciamo Nome pagina come proprietà. Pertanto, non è necessario apportare alcuna modifica **Impostazioni persistenza**.
+Lasciamo Nome pagina come proprietà. Non è quindi necessario modificare le **impostazioni di persistenza**.
 
 | Nome componente da cercare | Nuovo nome | Impostazioni persistenza |
 | ----------------- |-------------| --------------------| 
 | Nome (web.webPageDetails.name) | Nome pagina |          |
 
-Quindi, scegliete la quota **phoneNumber** e rilascialo sull&#39;area di lavoro. Il nuovo nome deve essere **Numero di telefono**.
+Quindi, scegli la dimensione **phoneNumber** e rilasciala nell&#39;area di lavoro. Il nuovo nome deve essere **Numero di telefono**.
 
 ![demo](./images/3-1-v2.png)
 
 Infine, cambiamo le impostazioni di Persistenza, in quanto il numero mobile deve persistere a livello di utente.
 
-Per modificare la persistenza, scorri verso il basso nel menu a destra e apri la **Persistenza** scheda:
+Per modificare la persistenza, scorri verso il basso nel menu a destra e apri la scheda **Persistenza**:
 
 ![demo](./images/5-v2.png)
 
-Seleziona la casella di controllo per modificare le impostazioni di persistenza. Seleziona **Più recente** e **Persona (intervallo di reporting)** ambito, in quanto ci importa solo dell’ultimo numero di cellulare di quella persona. Se il cliente non compila il dispositivo mobile nelle visite future, vedrai comunque questo valore popolato.
+Seleziona la casella di controllo per modificare le impostazioni di persistenza. Seleziona **Most Recent** (Più recente) e l&#39;ambito **Person (Finestra di reporting)** (Persona), in quanto ci interessa solo l&#39;ultimo numero di cellulare di quella persona. Se il cliente non compila il dispositivo mobile nelle visite future, vedrai comunque questo valore popolato.
 
 ![demo](./images/6-v2.png)
 
@@ -143,9 +143,9 @@ Seleziona la casella di controllo per modificare le impostazioni di persistenza.
 
 Il componente successivo è `web.webPageDetails.pageViews.value`.
 
-Nel menu a sinistra, cerca `web.webPageDetails.pageViews.value`. Trascina e rilascia questa metrica nell’area di lavoro.
+Nel menu a sinistra, cercare `web.webPageDetails.pageViews.value`. Trascina e rilascia questa metrica nell’area di lavoro.
 
-Modifica il nome in **Visualizzazioni pagina** sotto **Impostazioni dei componenti**.
+Cambia il nome in **Visualizzazioni pagina** nelle **Impostazioni componente**.
 
 | Nome componente da cercare | Nuovo nome | Impostazioni di attribuzione |
 | ----------------- |-------------| --------------------| 
@@ -171,10 +171,10 @@ Successivamente, dovrai configurare molti Dimension e metriche, come indicato ne
 | ecid | ECID | Più recente, persona (intervallo di reporting) |
 | e-mail | ID e-mail | Più recente, persona (intervallo di reporting) |
 | Tipo di pagamento | Tipo di pagamento |          |
-| Metodo di aggiunta prodotto | Metodo di aggiunta prodotto | Più recente, sessione |
+| Metodo di aggiunta del prodotto | Metodo di aggiunta del prodotto | Più recente, sessione |
 | Tipo evento | Tipo evento |         |
-| Nome (productListItems.name) | Nome prodotto |         |
-| SKU | SKU (sessione) | Più recente, sessione |
+| Nome (productListItems.name) | nome del prodotto |         |
+| SKU (Stock Keeping Unit) | SKU (sessione) | Più recente, sessione |
 | ID transazione | ID transazione |         |
 | URL (web.webPageDetails.URL) | URL |         |
 | Agente utente | Agente utente | Più recente, sessione |
@@ -192,7 +192,7 @@ La configurazione dovrebbe quindi essere simile alla seguente:
 
 ![demo](./images/11-v2.png)
 
-Non dimenticare di **Salva** la visualizzazione dati. Quindi fai clic su **Salva** ora.
+Non dimenticare di **salvare** la visualizzazione dati. Quindi fai clic su **Salva** adesso.
 
 ![demo](./images/12-v2s.png)
 
@@ -201,15 +201,15 @@ Non dimenticare di **Salva** la visualizzazione dati. Quindi fai clic su **Salva
 Anche se abbiamo organizzato tutti i componenti nella visualizzazione dati, è ancora necessario adattarne alcuni, in modo che gli utenti aziendali siano pronti per iniziare l’analisi.
 
 Se ricordi, non abbiamo introdotto specificamente nella visualizzazione dati metriche quali Aggiungi al carrello, Visualizzazione prodotto o Acquisti.
-Tuttavia, disponiamo di una dimensione denominata: **Tipo di evento**. Quindi, deriviamo questi tipi di interazione creando 3 metriche calcolate.
+Tuttavia, esiste una dimensione denominata: **Tipo evento**. Quindi, deriviamo questi tipi di interazione creando 3 metriche calcolate.
 
 Iniziamo con la prima metrica: **Visualizzazioni prodotto**.
 
-Sul lato sinistro, eseguire la ricerca **Tipo di evento** e selezionare la quota. Quindi trascinalo nella sezione **Componenti inclusi** quadro.
+Sul lato sinistro, cercare **Tipo evento** e selezionare la dimensione. Trascinalo nell&#39;area di lavoro **Componenti inclusi**.
 
 ![demo](./images/calcmetr1.png)
 
-Fai clic per selezionare la nuova metrica **Tipo di evento**.
+Fare clic per selezionare la nuova metrica **Tipo evento**.
 
 ![demo](./images/calcmetr2.png)
 
@@ -221,21 +221,21 @@ Ora modifica il nome e la descrizione del componente con i seguenti valori:
 
 ![demo](./images/calcmetr3.png)
 
-Ora conta solo **Visualizzazioni prodotto** eventi. Per farlo, scorri verso il basso sulla **Impostazioni dei componenti** fino a quando non vede **Includi valori di esclusione**. Assicurati di abilitare l’opzione **Impostare i valori di inclusione/esclusione**.
+Ora consente di contare solo **Visualizzazioni prodotto** eventi. A tale scopo, scorri verso il basso in **Impostazioni componente** fino a visualizzare **Includi valori di esclusione**. Assicurarsi di abilitare l&#39;opzione **Impostare i valori di inclusione/esclusione**.
 
 ![demo](./images/calcmetr4.png)
 
-Come vogliamo solo contare **Visualizzazioni prodotto**, specificare **commerce.productViews** in base ai criteri.
+Poiché vogliamo contare solo **Visualizzazioni prodotto**, specifica **commerce.productViews** in base ai criteri.
 
 ![demo](./images/calcmetr5.png)
 
 La metrica calcolata è ora pronta.
 
-Quindi, ripeti lo stesso processo per **Aggiungi al carrello** e **Acquisto** eventi.
+Ripeti quindi lo stesso processo per **Aggiungi al carrello** e **Acquista** eventi.
 
 ### Aggiungi al carrello
 
-Trascina e rilascia la stessa dimensione **Tipo di evento**.
+Trascinare la stessa dimensione **Tipo evento**.
 
 ![demo](./images/calcmetr1.png)
 
@@ -245,7 +245,7 @@ Verrà visualizzato un avviso popup di un campo duplicato poiché si sta utilizz
 
 Ora, segui lo stesso processo che abbiamo fatto per la metrica Visualizzazioni prodotto:
 - Modificare innanzitutto il nome e la descrizione.
-- Aggiungi infine **commerce.productListAdds** come criteri per contare solo Aggiungi al carrello
+- Infine, aggiungi **commerce.productListAdds** come criterio per contare solo Aggiungi al carrello
 
 | Nome | Descrizione | Criteri |
 | ----------------- |-------------| -------------|
@@ -255,7 +255,7 @@ Ora, segui lo stesso processo che abbiamo fatto per la metrica Visualizzazioni p
 
 ### Acquisti
 
-Trascina e rilascia la stessa dimensione **Tipo di evento** come abbiamo fatto per entrambe le metriche precedenti.
+Trascina e rilascia la stessa dimensione **Tipo evento** come per entrambe le metriche precedenti.
 
 ![demo](./images/calcmetr1.png)
 
@@ -265,7 +265,7 @@ Verrà visualizzato un avviso popup di un campo duplicato poiché si sta utilizz
 
 Ora, segui lo stesso processo che abbiamo fatto per le metriche Visualizzazioni prodotto e Aggiungi al carrello:
 - Modificare innanzitutto il nome e la descrizione.
-- Aggiungi infine **commerce.purchases** come criteri per conteggiare solo gli acquisti
+- Infine, aggiungi **commerce.purchases** come criterio per conteggiare solo gli acquisti
 
 | Nome | Descrizione | Criteri |
 | ----------------- |-------------| -------------|
@@ -273,7 +273,7 @@ Ora, segui lo stesso processo che abbiamo fatto per le metriche Visualizzazioni 
 
 ![demo](./images/calcmetr7a.png)
 
-La configurazione finale dovrebbe quindi essere simile a questa. Clic **Salva e continua**.
+La configurazione finale dovrebbe quindi essere simile a questa. Fai clic su **Salva e continua**.
 
 ![demo](./images/calcmetr8.png)
 
@@ -283,7 +283,7 @@ Dovresti essere reindirizzato a questa schermata:
 
 ![demo](./images/8-v2.png)
 
-In questa scheda puoi modificare alcune impostazioni importanti per modificare la modalità di elaborazione dei dati. Iniziamo impostando il **Timeout sessione** a 30 min. Grazie alla marca temporale di ogni evento esperienza è possibile estendere il concetto di sessione su tutti i canali. Ad esempio, cosa succede se un cliente chiama il call center dopo aver visitato il sito web? Utilizzando i timeout di sessione personalizzati si dispone di molta flessibilità nel decidere cosa sia una sessione e come unirà i dati.
+In questa scheda puoi modificare alcune impostazioni importanti per modificare la modalità di elaborazione dei dati. Iniziamo impostando il **timeout sessione** su 30 minuti. Grazie alla marca temporale di ogni evento esperienza è possibile estendere il concetto di sessione su tutti i canali. Ad esempio, cosa succede se un cliente chiama il call center dopo aver visitato il sito web? Utilizzando i timeout di sessione personalizzati si dispone di molta flessibilità nel decidere cosa sia una sessione e come unirà i dati.
 
 ![demo](./images/ext8.png)
 
