@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
+source-git-commit: 9cb56b739efde38d8e85358f45ee6a35a0394e27
 workflow-type: tm+mt
 source-wordcount: '2563'
 ht-degree: 0%
@@ -123,7 +123,7 @@ Per configurare l’opzione nel criterio di unione:
 
 Per utilizzare esperimenti sui contenuti nelle campagne per canali web, devi assicurarti che il set di dati web utilizzato sia incluso anche nella configurazione di reporting. Il sistema di reporting di Journey Optimizer utilizza il set di dati in modalità di sola lettura per popolare i rapporti di sperimentazione dei contenuti preconfigurati.
 
-[L&#39;aggiunta di set di dati per il reporting dell&#39;esperimento sui contenuti è descritta in questa sezione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration#add-datasets).
+[L&#39;aggiunta di set di dati per il reporting dell&#39;esperimento sui contenuti è descritta in questa sezione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration#add-datasets).
 
 ## Panoramica del caso d’uso: premi fedeltà
 
