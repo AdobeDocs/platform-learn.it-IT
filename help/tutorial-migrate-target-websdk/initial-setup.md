@@ -2,7 +2,7 @@
 title: Configurazione iniziale | Migrare Target da at.js 2.x a Web SDK
 description: Scopri e imposta gli importanti elementi fondamentali necessari per l’implementazione di Platform Web SDK
 exl-id: dbf9683b-1cfc-474a-9c38-432cad4d1533
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 La migrazione da at.js a Platform Web SDK richiede una configurazione iniziale per abilitare l’acquisizione dati, le funzioni e le caratteristiche corrette di Platform Web SDK. Prima di apportare qualsiasi modifica all&#39;implementazione del sito Web, è necessario completare i passaggi seguenti dell&#39;esercitazione sull&#39;implementazione di [Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it):
 
-- [Configurare le autorizzazioni appropriate](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-permissions.html){target="_blank"} in Adobe Admin Console per la raccolta dati
+- [Configurare le autorizzazioni appropriate](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview#prerequisites){target="_blank"} in Adobe Admin Console per la raccolta dati
 - [Configura uno schema XDM](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html){target="_blank"} per il passaggio di dati strutturati all&#39;Edge Network
 - [Configura uno spazio dei nomi delle identità](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-identities.html){target="_blank"} per la personalizzazione tra dispositivi e la funzionalità mbox3rdPartyId
 - [Crea un flusso di dati](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html){target="_blank"} per abilitare l&#39;inoltro di dati da Edge Network

@@ -2,10 +2,10 @@
 title: Implementare integrazioni Experience Cloud con i tag
 description: Scopri come convalidare le integrazioni Audiences, A4T e Attributi del cliente nell’implementazione di Adobe Experience Cloud. Questa lezione fa parte dell’esercitazione Implementare l’Experience Cloud su siti web.
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 86%
+source-wordcount: '1199'
+ht-degree: 85%
 
 ---
 
@@ -28,13 +28,12 @@ Prima di seguire le istruzioni fornite in questa lezione, è necessario completa
 >
 >Esistono molti requisiti di autorizzazioni utente, configurazioni account e passaggi di provisioning necessari per utilizzare completamente queste integrazioni e che vanno oltre l’ambito di questa esercitazione. Se non utilizzi già queste integrazioni nell’implementazione corrente di Experience Cloud, prendi in considerazione quanto segue:
 >
->* Verifica tutti i requisiti delle [integrazioni dei Servizi Core](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=it)
->* Verifica i requisiti completi dell&#39;[integrazione di Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html)
->* Chiedi a un amministratore della tua organizzazione Experience Cloud [di richiedere il provisioning di queste integrazioni](https://www.adobe.com/go/audiences)
+>* Verifica tutti i requisiti delle [integrazioni dei Servizi Core](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)
+>* Verifica i requisiti completi dell&#39;[integrazione di Analytics for Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)
 
 ## Audiences
 
-[Audiences](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html) fa parte del servizio core Persone e consente di condividere i tipi di pubblico tra le soluzioni. Ad esempio, puoi creare un tipo di pubblico in Audience Manager e utilizzarlo per distribuire contenuti personalizzati con Target.
+[Audiences](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview) fa parte del servizio core Persone e consente di condividere i tipi di pubblico tra le soluzioni. Ad esempio, puoi creare un tipo di pubblico in Audience Manager e utilizzarlo per distribuire contenuti personalizzati con Target.
 
 I requisiti principali per implementare A4T, operazione che hai già eseguito, sono i seguenti:
 
