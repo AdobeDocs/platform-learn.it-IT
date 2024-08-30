@@ -5,9 +5,9 @@ user-guide-description: Scopri i numerosi componenti di Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 1a3b89f7be838aeff389e7f404114ed3fef370d7
+source-git-commit: 8f7e2699e0158bc36459bbe61a5aa8e70e8e775b
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '931'
 ht-degree: 16%
 
 ---
@@ -50,6 +50,8 @@ ht-degree: 16%
    + [Introduzione a Audience Portal e Composizione](audiences/introduction-to-audience-portal-and-composition.md)
    + [Carica tipi di pubblico](audiences/upload-audiences.md)
    + [Panoramica di Federated Audience Composition](audiences/overview-of-federated-audience-composition.md)
+   + [Connettere e configurare Federated Audience Composition](audiences/connect-and-configure-federated-audience-composition.md)
+   + [Creare una composizione di pubblico federato](audiences/create-a-federated-audience-composition.md)
    + [Panoramica del generatore di regole per il pubblico](audiences/audience-rule-builder-overview.md)
    + [Creare tipi di pubblico](audiences/create-audiences.md)
    + [Utilizzare i vincoli di tempo](audiences/time-constraints.md)
