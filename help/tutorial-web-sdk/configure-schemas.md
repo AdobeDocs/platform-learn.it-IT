@@ -4,7 +4,7 @@ description: Scopri come creare uno schema XDM per i dati web nell’interfaccia
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
+source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
 workflow-type: tm+mt
 source-wordcount: '1542'
 ht-degree: 3%
@@ -58,7 +58,7 @@ Questo è l&#39;obiettivo del [Experience Data Model](https://business.adobe.com
 >
 > A scopo dimostrativo, gli esercizi di questa lezione generano uno schema di esempio per acquisire i contenuti visualizzati e i prodotti acquistati dai clienti nel [sito dimostrativo Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Anche se puoi utilizzare questi passaggi per creare uno schema diverso per le tue finalità, ti consigliamo di seguire prima la creazione dello schema di esempio per scoprire le funzionalità dell’editor schema.
 
-Per ulteriori informazioni sugli schemi XDM, segui il corso [Modellare i dati sull&#39;esperienza del cliente con XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=it) oppure consulta la [panoramica del sistema XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
+Per ulteriori informazioni sugli schemi XDM, consulta la playlist [Modellare i dati sull&#39;esperienza del cliente con XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) oppure la [panoramica del sistema XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
 
 ## Obiettivi di apprendimento
 
