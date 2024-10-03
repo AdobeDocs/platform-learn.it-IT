@@ -1,8 +1,8 @@
 ---
-title: Aggiornare tipi di pubblico e script di profilo | Migrare Target da at.js 2.x a Web SDK
+title: Aggiornare tipi di pubblico e script di profilo - Migrare Target da at.js 2.x a Web SDK
 description: Scopri come aggiornare i tipi di pubblico e gli script di profilo di Adobe Target per verificarne la compatibilità con Experience Platform Web SDK.
 exl-id: 2c0f85f7-6e8c-4d0b-8ed5-53897d06e563
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%

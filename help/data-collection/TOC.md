@@ -6,9 +6,9 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 0df82796a5885954102f7496fa043c0f3ef4b89e
+source-git-commit: 38696ad5f8e151d1b7a42055d844fb98e8dccb86
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '191'
 ht-degree: 25%
 
 ---
@@ -50,6 +50,7 @@ ht-degree: 25%
    + [Panoramica](server-api/overview.md)
    + [Nozioni di base delle API](server-api/introduction.md)
 + Inoltro eventi{#event-forwarding}
+   + [Webinar](event-forwarding/webinar.md)
    + [Panoramica](event-forwarding/overview.md)
    + [Creare una proprietà](event-forwarding/create-a-property.md)
    + [Configurare un flusso di dati](event-forwarding/set-up-a-datastream.md)

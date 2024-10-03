@@ -1,8 +1,8 @@
 ---
-title: Panoramica sulla migrazione | Migrare Target da at.js 2.x a Web SDK
+title: Panoramica sulla migrazione - Migrazione di Target da at.js 2.x a Web SDK
 description: Scopri le differenze principali tra at.js e Platform Web SDK e come pianificare le attività di migrazione.
 exl-id: a8ed78e4-c8c2-4505-b4b5-e5d508f5ed87
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 1%

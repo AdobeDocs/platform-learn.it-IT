@@ -1,8 +1,8 @@
 ---
-title: Abilita supporto tra più domini | Migrare Target da at.js 2.x a Web SDK
+title: 'Abilitare il supporto tra domini diversi: migrazione di Target da at.js 2.x a Web SDK'
 description: Scopri come configurare Adobe Target per app mobili e tra domini diversi in scenari di browser web utilizzando Experience Platform Web SDK.
 exl-id: 6ec24ddc-8f6d-4331-a3ae-bd0f3a7d6e78
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%

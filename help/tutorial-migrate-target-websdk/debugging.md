@@ -1,8 +1,8 @@
 ---
-title: Debug | Migrare Target da at.js 2.x a Web SDK
+title: 'Debug: migrare Target da at.js 2.x a Web SDK'
 description: Scopri come eseguire il debug di un’implementazione di Adobe Target utilizzando Adobe Experience Platform Web SDK. Gli argomenti includono opzioni di debug, estensioni del browser e differenze tra at.js e Platform Web SDK.
 exl-id: 20699551-a708-469a-8980-67586db82787
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 2%

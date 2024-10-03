@@ -1,8 +1,8 @@
 ---
-title: Convalidare le implementazioni di Target con Web SDK | Migrare Target da at.js 2.x a Web SDK
+title: Convalidare le implementazioni di Target con Web SDK - Migrare Target da at.js 2.x a Web SDK
 description: Scopri come convalidare le attività ed eseguire il debug di un’implementazione di Adobe Target utilizzando Adobe Experience Platform Web SDK.
 exl-id: 09b4ebeb-fae9-470d-8ea9-f6e3c7d7da5e
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 0%
