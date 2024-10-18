@@ -1,14 +1,14 @@
 ---
-title: Tracciare gli eventi - Migrazione di Target da at.js 2.x a Web SDK
-description: Scopri come tenere traccia degli eventi di conversione di Adobe Target utilizzando Experience Platform Web SDK.
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+title: Tracciare gli eventi - Migrare da Adobe Target a Adobe Journey Optimizer - Estensione Decisioning Mobile
+description: Scopri come tenere traccia degli eventi di conversione di Adobe Target utilizzando l’estensione Adobe Journey Optimizer - Decisioning Mobile
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '193'
 ht-degree: 1%
 
 ---
 
-# Tracciare gli eventi di conversione di Target tramite Platform Web SDK
+# Tracciare gli eventi di conversione di Target utilizzando l’estensione Adobe Journey Optimizer - Decisioning Mobile
 
 Gli eventi di conversione per Target possono essere tracciati con... Gli eventi di conversione in genere rientrano nelle seguenti categorie:
 
@@ -35,4 +35,4 @@ Successivamente, scopri come [abilitare la condivisione ID tra domini](cross-dom
 
 >[!NOTE]
 >
->Ci impegniamo ad aiutarti con la migrazione di Target mobile dall’estensione Target all’estensione Optimize. Se incontri ostacoli con la migrazione o pensi che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Ci impegniamo ad aiutarti ad effettuare con successo la migrazione di Target mobile dall’estensione Target all’estensione Decisioning. Se incontri ostacoli con la migrazione o pensi che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

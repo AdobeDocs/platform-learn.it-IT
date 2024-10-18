@@ -1,14 +1,14 @@
 ---
-title: Sostituire la libreria - Migrare Target da at.js 2.x a Web SDK
-description: Scopri come migrare un’implementazione di Adobe Target da at.js 2.x a Adobe Experience Platform Web SDK. Gli argomenti includono panoramica della libreria, differenze di implementazione e altri callout degni di nota.
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+title: Sostituire l’SDK - Migrare da Adobe Target a Adobe Journey Optimizer - Estensione Decisioning Mobile
+description: Scopri come sostituire l’SDK durante la migrazione da Adobe Target all’estensione Adobe Journey Optimizer - Decisioning Mobile.
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1558'
 ht-degree: 1%
 
 ---
 
-# Sostituire la libreria at.js con Platform Web SDK
+# Sostituire l’SDK di Target con l’SDK di ottimizzazione
 
 Scopri come sostituire l’implementazione on-page di Adobe Target per la migrazione da at.js a Platform Web SDK. Una sostituzione di base è costituita dai seguenti passaggi:
 
@@ -399,4 +399,4 @@ Successivamente, scopri come [richiedere e applicare alla pagina le attività ba
 
 >[!NOTE]
 >
->Ci impegniamo ad aiutarti con la migrazione di Target mobile dall’estensione Target all’estensione Optimize. Se incontri ostacoli con la migrazione o pensi che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Ci impegniamo ad aiutarti ad effettuare con successo la migrazione di Target mobile dall’estensione Target all’estensione Decisioning. Se incontri ostacoli con la migrazione o pensi che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
