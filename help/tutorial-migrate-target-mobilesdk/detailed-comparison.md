@@ -1,41 +1,41 @@
 ---
 title: Confronto dell’estensione Target con l’estensione Decisioning
-description: Scopri le differenze tra at.js 2.x e Platform Web SDK, incluse funzioni, impostazioni e flusso di dati.
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+description: Scopri le differenze tra l’estensione Target e l’estensione Decisioning, incluse funzioni, funzioni, impostazioni e flusso di dati.
+source-git-commit: e727fbfc82dea9ab6244b669b2f06c47987db1b1
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 1%
+source-wordcount: '468'
+ht-degree: 0%
 
 ---
 
 # Confronto dell’estensione Target con l’estensione Decisioning
 
-La libreria autonoma di Adobe Target at.js è molto diversa da Platform Web SDK. Le tabelle seguenti sono un riferimento per valutare le aree dell’implementazione su cui potrebbe essere necessario concentrarsi durante il processo di migrazione.
+L’estensione Adobe Journey Optimizer - Decisioning è diversa dall’estensione Adobe Target per le app mobili. Le tabelle seguenti sono un riferimento per valutare le aree dell’implementazione su cui potrebbe essere necessario concentrarsi durante il processo di migrazione.
 
-Dopo aver esaminato le informazioni riportate di seguito e valutato l’implementazione tecnica di at.js in corso, dovresti essere in grado di comprendere quanto segue:
+Dopo aver esaminato le informazioni riportate di seguito e valutato l’implementazione corrente dell’estensione tecnica di Target, dovresti essere in grado di comprendere quanto segue:
 
-- Quali funzioni di Target sono supportate da Platform Web SDK
-- Quali funzioni at.js hanno equivalenti all’SDK per web di Platform
-- Applicazione delle impostazioni di Target con Platform Web SDK
-- Differenze tra il flusso di dati di at.js e Platform Web SDK
+- Quali funzioni di Target sono supportate da Adobe Journey Optimizer - Decisioning
+- Quali funzioni di estensione di Adobe Target dispongono di equivalenti Adobe Journey Optimizer - Decisioning
+- Applicazione delle impostazioni di Target con Adobe Journey Optimizer - Decisioning
+- Differenze tra il flusso di dati dell’estensione Adobe Target e l’estensione Adobe Journey Optimizer - Decisioning
 
 Se hai poca esperienza con Platform Web SDK, non preoccuparti: gli elementi riportati di seguito vengono trattati più dettagliatamente in questa esercitazione.
 
 ## Confronto delle funzioni
 
-| | Estensione Target | Estensione Decisioning (Target tramite Edge) | Esperienze basate su codice di AJO (SDK per la messaggistica) |
+| | Estensione Target | Estensione Decisioning (Target tramite Edge) |
 |---|---|---|---|
-| Modalità di preacquisizione | Supportato | Supportato | Supportato |
-| Modalità di esecuzione | Supportato | Non supportato | Non supportato |
-| Parametri personalizzati | Supportato | I parametri per mbox non sono supportati | Non supportato |
-| Pubblico di ingresso | Supportato | Supportato | Supportato tramite l’impostazione di sospensione di tipi di pubblico di Campaign e di esperimento |
-| Segmentazione del pubblico utilizzando le metriche del ciclo di vita mobile | Supportato | Supportato tramite regole di raccolta dati | Il targeting delle esperienze non è al momento supportato |
-| thirdPartyId (mbox3rdPartyId) | Supportato tramite Identity Map e la configurazione dello spazio dei nomi nello stream di dati | Non supportato |
-| Notifiche (visualizzazione, clic) | Supportato | Supportato | Supportato |
-| Token di risposta | Supportato | Supportato | Nessun equivalente per la restituzione di metadati specifici di Campaign al di fuori del contenuto |
-| Offerte dinamiche | Supportato | Supportato | È supportato il rendering dei token correlati a profili e elementi decisionali nel contenuto |
-| Analytics for Target (A4T) | Solo lato client | Lato client e lato server | Non supportato |
-| Anteprime per dispositivi mobili (modalità QA) | Supportato | Supporto limitato | In corso |
+| Modalità di preacquisizione | Supportato | Supportato |
+| Modalità di esecuzione | Supportato | Non supportato |
+| Parametri personalizzati | Supportato | I parametri per mbox non sono supportati |
+| Pubblico di ingresso | Supportato | Supportato |
+| Segmentazione del pubblico utilizzando le metriche del ciclo di vita mobile | Supportato | Supportato tramite regole di raccolta dati |
+| thirdPartyId (mbox3rdPartyId) | Supportato tramite Identity Map e la configurazione dello spazio dei nomi nello stream di dati |
+| Notifiche (visualizzazione, clic) | Supportato | Supportato |
+| Token di risposta | Supportato | Supportato |
+| Offerte dinamiche | Supportato | Supportato |
+| Analytics for Target (A4T) | Solo lato client | Lato client e lato server |
+| Anteprime per dispositivi mobili (modalità QA) | Supportato | Supporto limitato |
 
 
 
@@ -66,7 +66,7 @@ L&#39;estensione Target può essere configurata e scaricata con varie impostazio
 
 ## Confronto dei diagrammi di sistema
 
-I seguenti diagrammi sono utili per comprendere le differenze di flusso di dati tra un’implementazione di Target con at.js e un’implementazione con Platform Web SDK.
+I seguenti diagrammi dovrebbero aiutarti a comprendere le differenze di flusso di dati tra un’implementazione di Target tramite l’estensione Adobe Journey Optimizer - Decisioning e un’implementazione tramite l’estensione Adobe Target.
 
 ### Diagramma del sistema di estensione di Target
 
