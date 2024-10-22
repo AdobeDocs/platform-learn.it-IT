@@ -1,10 +1,10 @@
 ---
 title: Confronto dell’estensione Target con l’estensione Decisioning
 description: Scopri le differenze tra l’estensione Target e l’estensione Decisioning, incluse funzioni, funzioni, impostazioni e flusso di dati.
-source-git-commit: e727fbfc82dea9ab6244b669b2f06c47987db1b1
+source-git-commit: 78d04d625aa55ce5eb76615c220b49aefd958431
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 0%
+source-wordcount: '469'
+ht-degree: 1%
 
 ---
 
@@ -23,8 +23,8 @@ Se hai poca esperienza con Platform Web SDK, non preoccuparti: gli elementi ripo
 
 ## Confronto delle funzioni
 
-| | Estensione Target | Estensione Decisioning (Target tramite Edge) |
-|---|---|---|---|
+| Funzione | Estensione Target | Estensione Decisioning (Target tramite Edge) |
+|---|---|---|
 | Modalità di preacquisizione | Supportato | Supportato |
 | Modalità di esecuzione | Supportato | Non supportato |
 | Parametri personalizzati | Supportato | I parametri per mbox non sono supportati |
