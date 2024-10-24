@@ -1,9 +1,9 @@
 ---
 title: Confronto dell’estensione Target con l’estensione Decisioning
 description: Scopri le differenze tra l’estensione Target e l’estensione Decisioning, incluse funzioni, funzioni, impostazioni e flusso di dati.
-source-git-commit: 78d04d625aa55ce5eb76615c220b49aefd958431
+source-git-commit: c907ccb9163ace8272f6881638a41362090bf3e5
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '470'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Se hai poca esperienza con Platform Web SDK, non preoccuparti: gli elementi ripo
 | Parametri personalizzati | Supportato | I parametri per mbox non sono supportati |
 | Pubblico di ingresso | Supportato | Supportato |
 | Segmentazione del pubblico utilizzando le metriche del ciclo di vita mobile | Supportato | Supportato tramite regole di raccolta dati |
-| thirdPartyId (mbox3rdPartyId) | Supportato tramite Identity Map e la configurazione dello spazio dei nomi nello stream di dati |
+| thirdPartyId (mbox3rdPartyId) | Supportato | Supportato tramite Identity Map e la configurazione dello spazio dei nomi nello stream di dati |
 | Notifiche (visualizzazione, clic) | Supportato | Supportato |
 | Token di risposta | Supportato | Supportato |
 | Offerte dinamiche | Supportato | Supportato |

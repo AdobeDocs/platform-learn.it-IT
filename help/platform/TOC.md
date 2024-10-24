@@ -5,10 +5,10 @@ user-guide-description: Scopri i numerosi componenti di Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 8f7e2699e0158bc36459bbe61a5aa8e70e8e775b
+source-git-commit: 988e0bfbcf43d8148aac86e2b85cdaec82f19650
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 16%
+source-wordcount: '934'
+ht-degree: 17%
 
 ---
 
@@ -31,13 +31,12 @@ ht-degree: 16%
    + [Panoramica](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
    + [Demo completa](/help/platform/rtcdp/demo.md)
    + [Flusso di lavoro](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-   + [Panoramica dell’edizione B2B](/help/platform/rtcdp/b2b-overview.md)
+   + [Panoramica di B2B edition](/help/platform/rtcdp/b2b-overview.md)
    + [Orchestrare campagne con il Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [Guida introduttiva: architetti di dati e data engineer](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=it){target="_blank"}
 + [Autenticazione per API Experience Platform](/help/platform/authentication/platform-api-authentication.md)
 + [Importa dati di esempio in Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Amministrazione {#admin}
-   + [Utilizza l’Assistente AI](/help/platform/admin/ai-assistant.md)
    + [Utilizzare gli avvisi](/help/platform/admin/use-alerts.md)
    + [Utilizzare le sandbox](/help/platform/admin/use-sandboxes.md)
    + [Copiare oggetti da una sandbox a un’altra](/help/platform/admin/copy-objects-between-sandboxes.md)
@@ -46,6 +45,9 @@ ht-degree: 16%
    + [Aggiungi sviluppatori](/help/platform/admin/add-developers.md)
    + [Aggiungi amministratori di prodotto](/help/platform/admin/add-product-administrators.md)
    + [Configurare il controllo degli accessi basato su attributi](/help/platform/admin/configure-attribute-based-access-control.md)
++ Assistente IA {#ai-assistant}
+   + [Panoramica](/help/platform/ai-assistant/overview.md)
+   + [Pulizia dei tipi di pubblico](/help/platform/ai-assistant/find-unused-audiences.md)
 + Tipi di pubblico e segmentazione {#audiences}
    + [Introduzione a Audience Portal e Composizione](audiences/introduction-to-audience-portal-and-composition.md)
    + [Carica tipi di pubblico](audiences/upload-audiences.md)
@@ -77,8 +79,8 @@ ht-degree: 16%
 + Governance dei dati {#data-governance}
    + [Panoramica](/help/platform/governance/understanding-data-governance.md)
    + [Demo completa](/help/platform/governance/introduction-to-data-governance.md)
-   + [Classificare i dati tramite etichette](/help/platform/governance/classify-data-using-labels.md)
-   + [Creare criteri di utilizzo dati](/help/platform/governance/create-data-usage-policies.md)
+   + [Classificare i dati usando le etichette](/help/platform/governance/classify-data-using-labels.md)
+   + [Creare criteri di utilizzo dei dati](/help/platform/governance/create-data-usage-policies.md)
    + [Imponi criteri di utilizzo dati](/help/platform/governance/enforce-data-usage-policies.md)
    + [Imponi consenso](/help/platform/governance/enforce-consent.md)
    + [Integrare con IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
