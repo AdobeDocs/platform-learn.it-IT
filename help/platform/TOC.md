@@ -5,10 +5,10 @@ user-guide-description: Scopri i numerosi componenti di Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 988e0bfbcf43d8148aac86e2b85cdaec82f19650
+source-git-commit: f650acd67fb1097eb17ed16ef3f991c474b6d479
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 17%
+source-wordcount: '939'
+ht-degree: 16%
 
 ---
 
@@ -39,7 +39,8 @@ ht-degree: 17%
 + Amministrazione {#admin}
    + [Utilizzare gli avvisi](/help/platform/admin/use-alerts.md)
    + [Utilizzare le sandbox](/help/platform/admin/use-sandboxes.md)
-   + [Copiare oggetti da una sandbox a un’altra](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [Copiare pacchetti tra sandbox](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [Condivisione di pacchetti tra organizzazioni IMS](/help/platform/admin/share-packages-across-orgs.md)
    + [Aggiungi utenti](/help/platform/admin/add-users.md)
    + [Aggiungere utenti alla raccolta dati](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
    + [Aggiungi sviluppatori](/help/platform/admin/add-developers.md)
@@ -144,7 +145,7 @@ ht-degree: 17%
       + [Attivare segmenti e attributi di profilo](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [Utilizzare i segmenti di Real-Time CDP in Target](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
       + [Utilizzare gli attributi del profilo di Real-Time CDP in Target](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
-   + [Attiva i dati nel webinar sulle applicazioni non Adobi](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
+   + [Attiva i dati nel webinar non sulle applicazioni Adobe](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + Identità {#identities}
    + [Panoramica dei grafici delle identità e delle identità](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [Etichettare, acquisire e verificare i dati di identità](/help/platform/identities/label-ingest-and-verify-identity-data.md)
@@ -198,7 +199,7 @@ ht-degree: 17%
    + [API servizio query](/help/platform/queries/query-service-api.md)
    + [Esplora dati](/help/platform/queries/explore-data.md)
    + [Prepara dati](/help/platform/queries/prepare-data.md)
-   + [Funzioni definite dall&#39;Adobe](/help/platform/queries/adobe-defined-functions.md)
+   + [Funzioni definite da Adobe](/help/platform/queries/adobe-defined-functions.md)
    + [Modelli di utilizzo dei dati](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
    + [Eseguire query](/help/platform/queries/run-queries.md)
    + [Genera set di dati dai risultati della query](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
