@@ -3,7 +3,7 @@ title: Attivazione segmento in Microsoft Azure Event Hub - Attiva segmento
 description: Attivazione segmento in Microsoft Azure Event Hub - Attiva segmento
 kt: 5342
 doc-type: tutorial
-source-git-commit: cd603fdcbac6cc77b00d50be888805329f014443
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ## 2.4.4.1 Aggiungere un segmento alla destinazione dell’hub eventi di Azure
 
-In questo esercizio aggiungerai il segmento `--demoProfileLdap-- - Interest in Equipment` alla destinazione dell&#39;hub eventi di Azure `--demoProfileLdap---aep-enablement`.
+In questo esercizio aggiungerai il segmento `--aepUserLdap-- - Interest in Equipment` alla destinazione dell&#39;hub eventi di Azure `--aepUserLdap---aep-enablement`.
 
 Accedi a Adobe Experience Platform da questo URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
@@ -22,7 +22,7 @@ Dopo aver effettuato l’accesso, accedi alla home page di Adobe Experience Plat
 
 ![Acquisizione dei dati](./../../../modules/datacollection/module1.2/images/home.png)
 
-Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``--aepSandboxId--``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella riga blu nella parte superiore dello schermo. Dopo aver selezionato la sandbox appropriata, la schermata cambia e ora sei nella sandbox dedicata.
+Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``--aepSandboxName--``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella riga blu nella parte superiore dello schermo. Dopo aver selezionato la sandbox appropriata, la schermata cambia e ora sei nella sandbox dedicata.
 
 ![Acquisizione dei dati](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -30,7 +30,7 @@ Vai a **Destinazioni**, quindi fai clic su **Sfoglia**. Vedrai quindi tutte le d
 
 ![5-01-select-destination.png](./images/5-01-select-destination.png)
 
-Poi vedrai questo. Cerca il tuo segmento utilizzando il tuo ldap e seleziona `--demoProfileLdap-- - Interest in Equipment` dall&#39;elenco dei segmenti.
+Poi vedrai questo. Cerca il tuo segmento utilizzando il tuo ldap e seleziona `--aepUserLdap-- - Interest in Equipment` dall&#39;elenco dei segmenti.
 
 Fai clic su **Avanti**.
 

@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - Eventi di business
 description: Questa sezione spiega come utilizzare la funzionalità Eventi di business per eseguire un caso d’uso "articolo di nuovo in magazzino"
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 1%
@@ -16,7 +16,7 @@ Accedi a Adobe Journey Optimizer da [Adobe Experience Cloud](https://experience.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxId--`. Per passare da una sandbox all&#39;altra, fare clic su **Production Prod (VA7)** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **AEP Enablement FY22**. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxId--`.
+Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxName--`. Per passare da una sandbox all&#39;altra, fare clic su **Production Prod (VA7)** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **AEP Enablement FY22**. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -34,7 +34,7 @@ Fare clic su **Crea evento**.
 
 Immetti i seguenti valori nel modulo Creazione evento:
 
-- **Nome**: `--demoProfileLdap--ItemBackInStock`. Esempio: **vangeluwItemBackInStock**
+- **Nome**: `--aepUserLdap--ItemBackInStock`. Esempio: **vangeluwItemBackInStock**
 - **Descrizione**: questo evento viene attivato quando un prodotto è di nuovo disponibile
 - **Tipo**: seleziona **Azienda** nel menu a discesa
 
@@ -66,7 +66,7 @@ Sul lato sinistro, espandere l&#39;oggetto `--aepTenantId--`, espandere l&#39;og
 
 ![Journey Optimizer](./images/23.8-7.png)
 
-Per il campo **eventName**, immettere il valore seguente: `--demoProfileLdap--ItemBackInStock`. Ad esempio: vangeluwItemBackInStock.
+Per il campo **eventName**, immettere il valore seguente: `--aepUserLdap--ItemBackInStock`. Ad esempio: vangeluwItemBackInStock.
 Fai clic su **OK**.
 
 ![Journey Optimizer](./images/23.8-8.png)
@@ -87,14 +87,14 @@ Ora puoi sfruttare questo evento di business e il messaggio all’interno di un 
 
 Sul lato destro viene visualizzato un modulo in cui è necessario specificare il nome e la descrizione del percorso. Immetti i seguenti valori:
 
-- **Nome**: `--demoProfileLdap-- - Item back in stock journey`. Ad esempio: vangeluw - Articolo di nuovo in magazzino percorso
+- **Nome**: `--aepUserLdap-- - Item back in stock journey`. Ad esempio: vangeluw - Articolo di nuovo in magazzino percorso
 - **Descrizione**: questo percorso invia un SMS quando un elemento è di nuovo disponibile al visitatore che ha mostrato interesse.
 
 Fai clic su **OK**.
 
 ![Journey Optimizer](./images/bej11.png)
 
-Nel menu a sinistra, in **Eventi**, cerca il tuo ldap. L&#39;evento di business `--demoProfileLdap--ItemBackInStock` creato in precedenza è disponibile. Trascina e rilascia l’evento nell’area di lavoro, poiché sarà il punto iniziale del percorso.
+Nel menu a sinistra, in **Eventi**, cerca il tuo ldap. L&#39;evento di business `--aepUserLdap--ItemBackInStock` creato in precedenza è disponibile. Trascina e rilascia l’evento nell’area di lavoro, poiché sarà il punto iniziale del percorso.
 
 ![Journey Optimizer](./images/bej12.png)
 
@@ -105,7 +105,7 @@ La configurazione di **Leggi segmento** prevede che tu selezioni il segmento a c
 
 ![Journey Optimizer](./images/bej13.png)
 
-Nel popup **Scegli un segmento**, cerca il tuo ldap e seleziona il segmento creato nel [Modulo 2.3 - Real-time CDP - Crea un segmento e intervieni](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) denominato `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. ad esempio: vangeluw - Interest in PROTEUS FITNESS JACKSHIRT. Fai clic su **Salva**.
+Nel popup **Scegli un segmento**, cerca il tuo ldap e seleziona il segmento creato nel [Modulo 2.3 - Real-time CDP - Crea un segmento e intervieni](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) denominato `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. ad esempio: vangeluw - Interest in PROTEUS FITNESS JACKSHIRT. Fai clic su **Salva**.
 
 ![Journey Optimizer](./images/bej14.png)
 
@@ -200,14 +200,14 @@ Diamo un&#39;occhiata più da vicino a questa richiesta,
 }
 ```
 
-...in questa riga, verificare il campo eventName come dovrebbe indicare `--demoProfileLdap--ItemBackInStock`, che rappresenta la condizione specificata nell&#39;evento business per attivare il percorso.
+...in questa riga, verificare il campo eventName come dovrebbe indicare `--aepUserLdap--ItemBackInStock`, che rappresenta la condizione specificata nell&#39;evento business per attivare il percorso.
 
 ```json
 "xdmEntity": {
   "_experienceplatform": {
     "joBusinessEvents": {
       "eventDescription": "Product Proteus Fitness Jackshirt is back in stock",
-      "eventName": "--demoProfileLdap--ItemBackInStock",
+      "eventName": "--aepUserLdap--ItemBackInStock",
       "stockEventId": "1"
     }
   },

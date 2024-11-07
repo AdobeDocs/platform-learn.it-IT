@@ -4,7 +4,7 @@ description: Offer decisioning - Offer decisioning 101
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 2%
@@ -40,7 +40,7 @@ Accedi a Adobe Journey Optimizer da [Adobe Experience Cloud](https://experience.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxId--`. Per passare da una sandbox all&#39;altra, fare clic su **Production Prod (VA7)** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **AEP Enablement FY22**. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxId--`.
+Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxName--`. Per passare da una sandbox all&#39;altra, fare clic su **Production Prod (VA7)** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **AEP Enablement FY22**. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -106,7 +106,7 @@ Viene quindi visualizzato l’ambiente Segmentazione di Adobe Experience Platfor
 
 Ora puoi accedere a tutti i campi che fanno parte dello schema di unione per Real-time Customer Profile e creare qualsiasi regola.
 
-È anche interessante sapere che puoi semplicemente riutilizzare i segmenti già definiti in Adobe Experience Platform, andando in **Tipi di pubblico** > ``--aepTenantIdSchema--``.
+È anche interessante sapere che puoi semplicemente riutilizzare i segmenti già definiti in Adobe Experience Platform, andando in **Tipi di pubblico** > ``--aepTenantId--``.
 
 ![Regola di decisione](./images/decisionruleaud.png)
 

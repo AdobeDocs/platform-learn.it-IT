@@ -3,7 +3,7 @@ title: 'Intelligent Services - IA per l’analisi dei clienti: crea una nuova is
 description: 'IA per l’analisi dei clienti: creare una nuova istanza (Configura)'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 1%
@@ -30,7 +30,7 @@ Poi vedrai questo.
 
 Immetti i dettagli richiesti per l’istanza di IA per l’analisi dei clienti:
 
-- Nome: utilizzare `--demoProfileLdap-- Product Purchase Propensity`
+- Nome: utilizzare `--aepUserLdap-- Product Purchase Propensity`
 - Descrizione: use: **Prevedere la probabilità che i clienti acquistino un prodotto**
 - Tipo di propensione: seleziona **Conversione**
 

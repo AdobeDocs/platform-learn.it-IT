@@ -3,7 +3,7 @@ title: 'Guida introduttiva: installare l’estensione Chrome per la documentazio
 description: 'Guida introduttiva: installare l’estensione Chrome per la documentazione di Experience League'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 8d595675c09a4347c04e900414d94b6c674e20f7
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 0%
@@ -23,8 +23,8 @@ Di seguito è riportato un esempio di tali valori. Attualmente, questi valori no
 |:-------------:| :---------------:|
 | ID organizzazione IMS AEP | `--aepImsOrgId--` |
 | ID tenant AEP | `--aepTenantId--` |
-| ID ingresso DCS | `--dcsInletId--` |
-| Profilo demo LDAP | `--demoProfileLdap--` |
+| Nome sandbox AEP | `--aepSandboxName--` |
+| Profilo Allievo LDAP | `--aepUserLdap--` |
 
 Ad esempio, nella schermata seguente è possibile visualizzare un riferimento a `--aepTenantId--`.
 

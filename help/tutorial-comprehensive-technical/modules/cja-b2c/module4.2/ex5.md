@@ -3,7 +3,7 @@ title: 'Acquisire e analizzare i dati Google Analytics in Adobe Experience Platf
 description: 'Acquisire e analizzare i dati Google Analytics in Adobe Experience Platform con il connettore BigQuery Source: analizzare i dati Google Analytics utilizzando il Customer Journey Analytics'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '3338'
 ht-degree: 2%
@@ -40,7 +40,7 @@ Verrà visualizzata l&#39;interfaccia utente **Crea connessione**.
 
 ![demo](./images/5.png)
 
-Innanzitutto, devi selezionare la sandbox corretta da utilizzare. Nel menu sandbox, seleziona la sandbox, che dovrebbe essere `--aepSandboxId--`. In questo esempio, la sandbox da utilizzare è **AEP Enablement FY21**.
+Innanzitutto, devi selezionare la sandbox corretta da utilizzare. Nel menu sandbox, seleziona la sandbox, che dovrebbe essere `--aepSandboxName--`. In questo esempio, la sandbox da utilizzare è **AEP Enablement FY21**.
 
 ![demo](./images/cjasb.png)
 

@@ -3,7 +3,7 @@ title: Foundation - Configurazione di Adobe Experience Platform Data Collection 
 description: Foundation - Configurazione di Adobe Experience Platform Data Collection e dell’estensione Web SDK - Introduzione a Adobe Experience Platform Data Collection
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1334'
 ht-degree: 9%
@@ -26,7 +26,7 @@ Questa è la pagina Proprietà raccolta dati di Adobe Experience Platform che ha
 
 ![Pagina delle proprietà](./images/launch1.png)
 
-Nel modulo 0, Demo System ha creato due proprietà client per te: una per il sito web e una per l’app mobile. Trovarli cercando `--demoProfileLdap--` nella casella **[!UICONTROL Cerca]**.
+Nel modulo 0, Demo System ha creato due proprietà client per te: una per il sito web e una per l’app mobile. Trovarli cercando `--aepUserLdap--` nella casella **[!UICONTROL Cerca]**.
 
 ![Casella di ricerca](./images/property6.png)
 
@@ -44,7 +44,7 @@ Se il dominio Edge della tua istanza è diverso da quello predefinito, aggiorna 
 
 ![Pagina principale estensioni](./images/property9edgedomain.png)
 
-Verificare che il pulsante di scelta **[!UICONTROL Scegli dall&#39;elenco]** sia selezionato nell&#39;intestazione **[!UICONTROL Flussi di dati]** e selezionare lo stream di dati denominato `--demoProfileLdap-- - Demo System Datastream` dall&#39;elenco nella casella **[!UICONTROL Flussi di dati]**.
+Verificare che il pulsante di scelta **[!UICONTROL Scegli dall&#39;elenco]** sia selezionato nell&#39;intestazione **[!UICONTROL Flussi di dati]** e selezionare lo stream di dati denominato `--aepUserLdap-- - Demo System Datastream` dall&#39;elenco nella casella **[!UICONTROL Flussi di dati]**.
 
 ![Pagina principale estensioni](./images/property9edge.png)
 

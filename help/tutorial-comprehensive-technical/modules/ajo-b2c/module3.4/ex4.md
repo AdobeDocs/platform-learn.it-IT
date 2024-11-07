@@ -3,7 +3,7 @@ title: 'Adobe Journey Optimizer: configurare e utilizzare le notifiche push per 
 description: Configurare e utilizzare le notifiche push per iOS
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1831'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Accedi a Adobe Journey Optimizer da [Adobe Experience Cloud](https://experience.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxId--`. Per passare da una sandbox all&#39;altra, fare clic su **Production Prod (VA7)** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **AEP Enablement FY22**. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxId--`.
+Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxName--`. Per passare da una sandbox all&#39;altra, fare clic su **Production Prod (VA7)** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **AEP Enablement FY22**. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -48,7 +48,7 @@ Abilita l&#39;opzione **Mostra set di dati di sistema** e cerca **AJO**. Vedrai 
 
 Vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/).
 
-Nel menu a sinistra, vai a **[!UICONTROL Datastream]** e cerca lo stream di dati creato in [Esercizio 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md), denominato `--demoProfileLdap-- - Demo System Datastream (Mobile)`. Fai clic su per aprirlo.
+Nel menu a sinistra, vai a **[!UICONTROL Datastream]** e cerca lo stream di dati creato in [Esercizio 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md), denominato `--aepUserLdap-- - Demo System Datastream (Mobile)`. Fai clic su per aprirlo.
 
 ![Fai clic sull&#39;icona dello stream di dati nell&#39;area di navigazione a sinistra](./images/edgeconfig1a.png)
 
@@ -169,7 +169,7 @@ Fare clic su **Inizio**.
 
 Compila i valori:
 
-- Nome sessione: usa `--demoProfileLdap-- - push debugging` e sostituisci ldap con il tuo ldap
+- Nome sessione: usa `--aepUserLdap-- - push debugging` e sostituisci ldap con il tuo ldap
 - URL di base: utilizza **dxdemo://default**
 
 Fai clic su **Avanti**.
@@ -232,7 +232,7 @@ Viene quindi visualizzata una configurazione dell’evento vuota.
 
 ![ACOP](./images/emptyevent.png)
 
-Prima di tutto, assegna all&#39;evento un nome come `--demoProfileLdap--StoreEntryEvent` e imposta la descrizione su `Store Entry Event`.
+Prima di tutto, assegna all&#39;evento un nome come `--aepUserLdap--StoreEntryEvent` e imposta la descrizione su `Store Entry Event`.
 
 ![ACOP](./images/eventname.png)
 
@@ -283,11 +283,11 @@ Nel menu, vai a **Percorsi** e fai clic su **Crea Percorso**.
 
 ![DSN](./images/sjourney1.png)
 
-Poi vedrai questo. Assegna un nome al percorso. Usa `--demoProfileLdap-- - Store Entry journey`. Fai clic su **OK**.
+Poi vedrai questo. Assegna un nome al percorso. Usa `--aepUserLdap-- - Store Entry journey`. Fai clic su **OK**.
 
 ![DSN](./images/sjourney3.png)
 
-Innanzitutto, devi aggiungere l’evento come punto di partenza del percorso. Cercare l&#39;evento `--demoProfileLdap--StoreEntryEvent` e trascinarlo sull&#39;area di lavoro. Fai clic su **OK**.
+Innanzitutto, devi aggiungere l’evento come punto di partenza del percorso. Cercare l&#39;evento `--aepUserLdap--StoreEntryEvent` e trascinarlo sull&#39;area di lavoro. Fai clic su **OK**.
 
 ![DSN](./images/sjourney4.png)
 

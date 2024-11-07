@@ -3,7 +3,7 @@ title: 'Customer Journey Analytics: connettere i set di dati di Adobe Experience
 description: 'Customer Journey Analytics: connettere i set di dati di Adobe Experience Platform nel Customer Journey Analytics'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Verrà visualizzata l&#39;interfaccia utente **Crea connessione**.
 
 Ora puoi assegnare un nome alla connessione.
 
-Utilizzare questa convenzione di denominazione: `--demoProfileLdap-- – Omnichannel Data Connection`.
+Utilizzare questa convenzione di denominazione: `--aepUserLdap-- – Omnichannel Data Connection`.
 
 Esempio: `vangeluw - Omnichannel Data Connection`
 

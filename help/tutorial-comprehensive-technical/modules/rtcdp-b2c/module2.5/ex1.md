@@ -3,7 +3,7 @@ title: 'Raccolta dati Adobe Experience Platform e inoltro lato evento in tempo r
 description: Creare una proprietà Inoltro eventi raccolta dati di Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe
 
 ![SSF raccolta dati Adobe Experience Platform](./images/launchhome.png)
 
-È ora necessario immettere un nome per la proprietà Inoltro eventi raccolta dati di Adobe Experience Platform. Come convenzione di denominazione, utilizzare `--demoProfileLdap-- - Demo System (DD/MM/YYYY) (Edge)`. In questo esempio, il nome è **vangeluw - Demo System (22/02/2022) (Edge)**. Fai clic su **Salva**.
+È ora necessario immettere un nome per la proprietà Inoltro eventi raccolta dati di Adobe Experience Platform. Come convenzione di denominazione, utilizzare `--aepUserLdap-- - Demo System (DD/MM/YYYY) (Edge)`. In questo esempio, il nome è **vangeluw - Demo System (22/02/2022) (Edge)**. Fai clic su **Salva**.
 
 ![SSF raccolta dati Adobe Experience Platform](./images/ssf1.png)
 

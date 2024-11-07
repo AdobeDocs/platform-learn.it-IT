@@ -3,7 +3,7 @@ title: Foundation - Real-time Customer Profile - Creare un segmento - API
 description: Foundation - Real-time Customer Profile - Creare un segmento - API
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 3%
@@ -77,11 +77,11 @@ Dopo aver aggiunto il tuo **ldap** specifico, il corpo dovrebbe essere simile al
 
 | Chiave | Valore |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->È necessario specificare il nome della sandbox di Adobe Experience Platform in uso. Il nome x-sandbox deve essere `--aepSandboxId--`.
+>È necessario specificare il nome della sandbox di Adobe Experience Platform in uso. Il nome x-sandbox deve essere `--aepSandboxName--`.
 
 Ora fai clic sul pulsante blu **Invia** per creare il segmento e visualizzarne i risultati.
 
@@ -111,11 +111,11 @@ Nella tua raccolta Postman, fai clic sulla richiesta denominata **Passaggio 2 - 
 
 | Chiave | Valore |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->È necessario specificare il nome della sandbox di Adobe Experience Platform in uso. Il nome x-sandbox deve essere `--aepSandboxId--`.
+>È necessario specificare il nome della sandbox di Adobe Experience Platform in uso. Il nome x-sandbox deve essere `--aepSandboxName--`.
 
 Fai clic sul pulsante blu **Invia**.
 
@@ -142,11 +142,11 @@ Nella tua raccolta Postman, fai clic sulla richiesta denominata **Passaggio 3 - 
 
 | Chiave | Valore |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->È necessario specificare il nome della sandbox di Adobe Experience Platform in uso. Il nome x-sandbox deve essere `--aepSandboxId--`.
+>È necessario specificare il nome della sandbox di Adobe Experience Platform in uso. Il nome x-sandbox deve essere `--aepSandboxName--`.
 
 Fai clic sul pulsante blu **Invia**.
 

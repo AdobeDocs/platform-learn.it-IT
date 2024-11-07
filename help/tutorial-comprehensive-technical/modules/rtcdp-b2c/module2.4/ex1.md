@@ -3,7 +3,7 @@ title: Attivazione dei segmenti in Microsoft Azure Event Hub - Configurare l’h
 description: Attivazione dei segmenti in Microsoft Azure Event Hub - Configurare l’hub eventi in Azure
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 1%
@@ -36,13 +36,13 @@ Fai clic su **Crea**:
 
 Se questa è la prima volta che crei una risorsa in Azure, dovrai creare un nuovo **gruppo di risorse**. Se disponi già di un gruppo di risorse, puoi selezionarlo (o crearne uno nuovo).
 
-Seleziona **Crea nuovo**, assegna un nome al gruppo `--demoProfileLdap---aep-enablement`.
+Seleziona **Crea nuovo**, assegna un nome al gruppo `--aepUserLdap---aep-enablement`.
 
 ![1-04-create-resource-group.png](./images/1-04-create-resource-group.png)
 
 Completare il test dei campi come indicato di seguito:
 
-- Spazio dei nomi : Definisci lo spazio dei nomi, deve essere univoco, utilizza il seguente pattern `--demoProfileLdap---aep-enablement`
+- Spazio dei nomi : Definisci lo spazio dei nomi, deve essere univoco, utilizza il seguente pattern `--aepUserLdap---aep-enablement`
 - Posizione: **Europa occidentale** fa riferimento al centro dati di Azure ad Amsterdam
 - Piano tariffario: **Base**
 - Unità di velocità effettiva: **1**
@@ -67,11 +67,11 @@ Vai a [https://portal.azure.com/#home](https://portal.azure.com/#home) e selezio
 
 ![1-09-all-resources.png](./images/1-09-all-resources.png)
 
-Dall&#39;elenco delle risorse, selezionare lo spazio dei nomi `--demoProfileLdap---aep-enablement`:
+Dall&#39;elenco delle risorse, selezionare lo spazio dei nomi `--aepUserLdap---aep-enablement`:
 
 ![1-10-list-resources.png](./images/1-10-list-resources.png)
 
-Nella schermata dei dettagli di `--demoProfileLdap---aep-enablement`, seleziona **Hub eventi**:
+Nella schermata dei dettagli di `--aepUserLdap---aep-enablement`, seleziona **Hub eventi**:
 
 ![1-11-eventub-namespace.png](./images/1-11-eventhub-namespace.png)
 
@@ -79,7 +79,7 @@ Fare clic su **+ Hub eventi**.
 
 ![1-12-add-event-hub.png](./images/1-12-add-event-hub.png)
 
-Utilizza `--demoProfileLdap---aep-enablement-event-hub` come nome e fai clic su **Crea**.
+Utilizza `--aepUserLdap---aep-enablement-event-hub` come nome e fai clic su **Crea**.
 
 ![1-13-create-event-hub.png](./images/1-13-create-event-hub.png)
 
@@ -103,7 +103,7 @@ Seleziona **Crea**.
 
 ![1-17-event-hub-create-storage.png](./images/1-17-event-hub-create-storage.png)
 
-Specifica il **gruppo di risorse** (creato all&#39;inizio di questo esercizio), utilizza `--demoProfileLdap--aepstorage` come nome dell&#39;account di archiviazione, seleziona **Archiviazione localmente ridondante (LRS)**, quindi fai clic su **Verifica + crea**.
+Specifica il **gruppo di risorse** (creato all&#39;inizio di questo esercizio), utilizza `--aepUserLdap--aepstorage` come nome dell&#39;account di archiviazione, seleziona **Archiviazione localmente ridondante (LRS)**, quindi fai clic su **Verifica + crea**.
 
 ![1-18-event-hub-create-review-storage.png](./images/1-18-event-hub-create-review-storage.png)
 

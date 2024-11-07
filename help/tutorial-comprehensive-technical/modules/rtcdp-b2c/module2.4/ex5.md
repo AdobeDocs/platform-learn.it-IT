@@ -3,7 +3,7 @@ title: 'Attivazione segmento in Microsoft Azure Event Hub: definizione di una fu
 description: 'Attivazione segmento in Microsoft Azure Event Hub: definizione di una funzione di Azure'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Seleziona **Trigger dell&#39;hub eventi di Azure** come primo modello di funzion
 
 ![3-08-vsc-function-template.png](./images/vsc5.png)
 
-Immettere un nome per la funzione, utilizzare il seguente formato `--demoProfileLdap---aep-event-hub-trigger` e premere Invio:
+Immettere un nome per la funzione, utilizzare il seguente formato `--aepUserLdap---aep-event-hub-trigger` e premere Invio:
 
 ![3-09-vsc-function-name.png](./images/vsc6.png)
 
@@ -180,7 +180,7 @@ La prima volta che esegui un progetto in modalità di debug, dovrai allegare un 
 
 ![3-17-vsc-run-project.png](./images/vsc15.png)
 
-Dall&#39;elenco degli account di archiviazione, selezionare quello creato come parte di [13.1.4 Configurare l&#39;account di archiviazione Azure](./ex1.md). L&#39;account di archiviazione è denominato `--demoProfileLdap--aepstorage`, ad esempio **mmeewisaepstorage**.
+Dall&#39;elenco degli account di archiviazione, selezionare quello creato come parte di [13.1.4 Configurare l&#39;account di archiviazione Azure](./ex1.md). L&#39;account di archiviazione è denominato `--aepUserLdap--aepstorage`, ad esempio **mmeewisaepstorage**.
 
 ![3-22-vsc-select-storage-account.png](./images/vsc16.png)
 

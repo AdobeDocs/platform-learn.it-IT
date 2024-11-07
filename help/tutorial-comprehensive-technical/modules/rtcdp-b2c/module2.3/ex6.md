@@ -3,7 +3,7 @@ title: Real-time CDP - Pubblico esterno
 description: Real-time CDP - Pubblico esterno
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1978'
 ht-degree: 0%
@@ -71,7 +71,7 @@ Poi vedrai questo. Seleziona il campo **_id**. Nel menu di destra, scorri verso 
 
 ![Schema metadati tipi di pubblico esterni 4](images/extAudMDXDM4.png)
 
-Selezionare quindi il nome dello schema **Schema senza titolo**. Cambia il nome in `--demoProfileLdap-- - External Audiences Metadata`.
+Selezionare quindi il nome dello schema **Schema senza titolo**. Cambia il nome in `--aepUserLdap-- - External Audiences Metadata`.
 
 ![Schema metadati tipi di pubblico esterni 5](images/extAudMDXDM5.png)
 
@@ -81,11 +81,11 @@ Attiva/disattiva **Profilo** e conferma. Infine, fare clic su **Salva**.
 
 ## 2.3.6.1.3 Creare il set di dati dei metadati dei tipi di pubblico esterni
 
-In **Schemi**, passa a **Sfoglia**. Cerca e fai clic sullo schema `--demoProfileLdap-- - External Audiences Metadata` creato nel passaggio precedente. Fare clic su **Crea set di dati dallo schema**.
+In **Schemi**, passa a **Sfoglia**. Cerca e fai clic sullo schema `--aepUserLdap-- - External Audiences Metadata` creato nel passaggio precedente. Fare clic su **Crea set di dati dallo schema**.
 
 ![Servizi di dominio pubblico esterno - Metadati DS 1](images/extAudMDDS1.png)
 
-Per il campo **Nome**, immettere `--demoProfileLdap-- - External Audience Metadata`. Fare clic su **Crea set di dati**.
+Per il campo **Nome**, immettere `--aepUserLdap-- - External Audience Metadata`. Fare clic su **Crea set di dati**.
 
 ![Servizi di dominio pubblico esterno - Metadati DS 2](images/extAudMDDS2.png)
 
@@ -104,7 +104,7 @@ Vai a **Origini**. Nel campo di ricerca immettere **HTTP**. Fare clic su **Aggiu
 Immettere le seguenti informazioni:
 
 - **Tipo di account**: seleziona **Nuovo account**
-- **Nome account**: immettere `--demoProfileLdap-- - External Audience Metadata`
+- **Nome account**: immettere `--aepUserLdap-- - External Audience Metadata`
 - Seleziona la casella di controllo **casella compatibile con XDM**
 
 Fare clic su **Connetti all&#39;origine**.
@@ -115,7 +115,7 @@ Poi vedrai questo. Fai clic su **Avanti**.
 
 ![Metadati tipi di pubblico esterni http 2](images/extAudMDhttp2a.png)
 
-Selezionare **Set di dati esistente** e nel menu a discesa cercare e selezionare il set di dati `--demoProfileLdap-- - External Audience Metadata`.
+Selezionare **Set di dati esistente** e nel menu a discesa cercare e selezionare il set di dati `--aepUserLdap-- - External Audience Metadata`.
 
 Verificare i **dettagli del flusso di dati**, quindi fare clic su **Avanti**.
 
@@ -149,15 +149,15 @@ L&#39;oggetto **xdmEntity** deve essere sostituito dal codice seguente. Copiare 
 
 ```
 "xdmEntity": {
-    "_id": "--demoProfileLdap---extaudience-01",
-    "description": "--demoProfileLdap---extaudience-01 description",
+    "_id": "--aepUserLdap---extaudience-01",
+    "description": "--aepUserLdap---extaudience-01 description",
     "segmentIdentity": {
-      "_id": "--demoProfileLdap---extaudience-01",
+      "_id": "--aepUserLdap---extaudience-01",
       "namespace": {
         "code": "externalaudiences"
       }
     },
-    "segmentName": "--demoProfileLdap---extaudience-01 name",
+    "segmentName": "--aepUserLdap---extaudience-01 name",
     "segmentStatus": "ACTIVE",
     "version": "1.0"
   }
@@ -185,7 +185,7 @@ Aggiorna la schermata del connettore Source API HTTP, in cui ora vedrai che i da
 
 Al termine dell’elaborazione, puoi verificare la disponibilità dei dati nel set di dati utilizzando Query Service.
 
-Nel menu a destra, vai a **Set di dati** e seleziona il set di dati `--demoProfileLdap-- - External Audience Metadata` creato in precedenza.
+Nel menu a destra, vai a **Set di dati** e seleziona il set di dati `--aepUserLdap-- - External Audience Metadata` creato in precedenza.
 
 ![Str metadati pubblico esterno 3](images/extAudMDstr3.png)
 
@@ -196,7 +196,7 @@ Nel menu di destra, vai a Query e fai clic su **Crea query**.
 Immetti il seguente codice, quindi premi **MAIUSC + INVIO**:
 
 ```
-select * from --demoProfileLdap--_external_audience_metadata
+select * from --aepUserLdap--_external_audience_metadata
 ```
 
 Nei risultati della query verranno visualizzati i metadati del pubblico esterno che hai acquisito.
@@ -229,7 +229,7 @@ Fare clic su **Applica**.
 
 ![Schema del profilo di tipi di pubblico esterni 4](images/extAudPrXDM4.png)
 
-Selezionare quindi il nome dello schema **Schema senza titolo**. Nel campo del nome visualizzato, immettere `--demoProfileLdap-- - External Audiences Membership`.
+Selezionare quindi il nome dello schema **Schema senza titolo**. Nel campo del nome visualizzato, immettere `--aepUserLdap-- - External Audiences Membership`.
 
 ![Schema profilo pubblico esterno 5](images/extAudPrXDM5a.png)
 
@@ -239,11 +239,11 @@ Quindi, abilita il **Profilo** e conferma. Fai clic su **Salva**.
 
 ## 2.3.6.2.2 Creare il set di dati Appartenenza a tipi di pubblico esterni
 
-In **Schemi**, passa a **Sfoglia**. Cerca e fai clic sullo schema `--demoProfileLdap-- - External Audiences Membership` creato nel passaggio precedente. Fare clic su **Crea set di dati dallo schema**.
+In **Schemi**, passa a **Sfoglia**. Cerca e fai clic sullo schema `--aepUserLdap-- - External Audiences Membership` creato nel passaggio precedente. Fare clic su **Crea set di dati dallo schema**.
 
 ![Servizi di dominio pubblico esterno - Metadati DS 1](images/extAudPrDS1.png)
 
-Per il campo **Nome**, immettere `--demoProfileLdap-- - External Audiences Membership`. Fare clic su **Crea set di dati**.
+Per il campo **Nome**, immettere `--aepUserLdap-- - External Audiences Membership`. Fare clic su **Crea set di dati**.
 
 ![Servizi di dominio pubblico esterno - Metadati DS 2](images/extAudPrDS2.png)
 
@@ -263,7 +263,7 @@ Vai a **Origini**. Nel campo di ricerca immettere **HTTP**. Fare clic su **Aggiu
 Immettere le seguenti informazioni:
 
 - **Tipo di account**: seleziona **Nuovo account**
-- **Nome account**: immettere `--demoProfileLdap-- - External Audience Membership`
+- **Nome account**: immettere `--aepUserLdap-- - External Audience Membership`
 - Seleziona la casella di controllo **casella compatibile con XDM**
 
 Fare clic su **Connetti all&#39;origine**.
@@ -274,7 +274,7 @@ Poi vedrai questo. Fai clic su **Avanti**.
 
 ![Metadati tipi di pubblico esterni http 2](images/extAudPrhttp2a.png)
 
-Selezionare **Set di dati esistente** e nel menu a discesa cercare e selezionare il set di dati `--demoProfileLdap-- - External Audiences Membership`.
+Selezionare **Set di dati esistente** e nel menu a discesa cercare e selezionare il set di dati `--aepUserLdap-- - External Audiences Membership`.
 
 Verificare i **dettagli del flusso di dati**, quindi fare clic su **Avanti**.
 
@@ -308,18 +308,18 @@ L&#39;oggetto **xdmEntity** deve essere sostituito dal codice seguente. Copiare 
 
 ```
   "xdmEntity": {
-    "_id": "--demoProfileLdap---profile-test-01",
+    "_id": "--aepUserLdap---profile-test-01",
     "_experienceplatform": {
       "identification": {
         "core": {
-          "crmId": "--demoProfileLdap---profile-test-01"
+          "crmId": "--aepUserLdap---profile-test-01"
         }
       }
     },
-    "personID": "--demoProfileLdap---profile-test-01",
+    "personID": "--aepUserLdap---profile-test-01",
     "segmentMembership": {
       "externalaudiences": {
-        "--demoProfileLdap---extaudience-01": {
+        "--aepUserLdap---extaudience-01": {
           "status": "realized",
           "lastQualificationTime": "2022-03-05T00:00:00Z"
         }
@@ -350,7 +350,7 @@ Aggiorna la schermata del connettore Source API HTTP, in cui dopo un paio di min
 
 Al termine dell’elaborazione, puoi verificare la disponibilità dei dati nel set di dati utilizzando Query Service.
 
-Nel menu a destra, vai a **Set di dati** e seleziona il set di dati `--demoProfileLdap-- - External Audiences Membership ` creato in precedenza.
+Nel menu a destra, vai a **Set di dati** e seleziona il set di dati `--aepUserLdap-- - External Audiences Membership ` creato in precedenza.
 
 ![Str metadati pubblico esterno 3](images/extAudPrstr3.png)
 
@@ -361,7 +361,7 @@ Nel menu di destra, vai a Query e fai clic su **Crea query**.
 Immetti il seguente codice, quindi premi **MAIUSC + INVIO**:
 
 ```
-select * from --demoProfileLdap--_external_audiences_membership
+select * from --aepUserLdap--_external_audiences_membership
 ```
 
 Nei risultati della query verranno visualizzati i metadati del pubblico esterno che hai acquisito.
@@ -382,11 +382,11 @@ Vai a **Tipi di pubblico**. Poi vedrai questo. Fai clic su **Tipi di pubblico es
 
 ![SegBuilder tipi di pubblico esterni 1](images/extAudSegUI2a.png)
 
-Selezionare il pubblico esterno creato in precedenza, denominato `--demoProfileLdap---extaudience-01`. Trascina e rilascia il pubblico nell’area di lavoro.
+Selezionare il pubblico esterno creato in precedenza, denominato `--aepUserLdap---extaudience-01`. Trascina e rilascia il pubblico nell’area di lavoro.
 
 ![SegBuilder tipi di pubblico esterni 1](images/extAudSegUI2b.png)
 
-Assegna un nome al segmento e utilizza `--demoProfileLdap-- - extaudience-01`. Fare clic su **Salva e chiudi**.
+Assegna un nome al segmento e utilizza `--aepUserLdap-- - extaudience-01`. Fare clic su **Salva e chiudi**.
 
 ![SegBuilder tipi di pubblico esterni 1](images/extAudSegUI1.png)
 
@@ -398,7 +398,7 @@ Il segmento è pronto ora e può essere inviato a una destinazione per l’attiv
 
 ## 2.3.6.4 Visualizzare il profilo del cliente
 
-Ora puoi anche visualizzare la qualifica del segmento sul tuo profilo cliente. Vai a **Profili**, utilizza lo spazio dei nomi delle identità **Sistema demo - CRMID** e fornisci l&#39;identità `--demoProfileLdap---profile-test-01`, che hai utilizzato come parte dell&#39;esercizio 6.6.2.4, quindi fai clic su **Visualizza**. Fare quindi clic su **ID profilo** per aprire il profilo.
+Ora puoi anche visualizzare la qualifica del segmento sul tuo profilo cliente. Vai a **Profili**, utilizza lo spazio dei nomi delle identità **Sistema demo - CRMID** e fornisci l&#39;identità `--aepUserLdap---profile-test-01`, che hai utilizzato come parte dell&#39;esercizio 6.6.2.4, quindi fai clic su **Visualizza**. Fare quindi clic su **ID profilo** per aprire il profilo.
 
 ![SegBuilder tipi di pubblico esterni 1](images/extAudProfileUI1.png)
 

@@ -3,7 +3,7 @@ title: 'Adobe Journey Optimizer: API meteo esterna, SMS e altro ancora - Definiz
 description: Adobe Journey Optimizer - API meteo esterna, SMS e altro
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 2%
@@ -16,7 +16,7 @@ Accedi a Adobe Journey Optimizer da [Adobe Experience Cloud](https://experience.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxId--`. Per passare da una sandbox all&#39;altra, fare clic su **Production Prod (VA7)** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **AEP Enablement FY22**. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxId--`.
+Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxName--`. Per passare da una sandbox all&#39;altra, fare clic su **Production Prod (VA7)** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **AEP Enablement FY22**. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
@@ -32,7 +32,7 @@ Viene visualizzata una nuova finestra di evento vuota.
 
 ![ACOP](./images/emptyevent1.png)
 
-Come nome per l&#39;evento, utilizzare `--demoProfileLdap--GeofenceEntry`. In questo esempio, il nome evento è `vangeluwGeofenceEntry`.
+Come nome per l&#39;evento, utilizzare `--aepUserLdap--GeofenceEntry`. In questo esempio, il nome evento è `vangeluwGeofenceEntry`.
 
 Imposta descrizione su: `Geofence Entry Event`.
 

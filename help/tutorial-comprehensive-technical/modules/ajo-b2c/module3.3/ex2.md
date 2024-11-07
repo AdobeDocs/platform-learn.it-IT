@@ -3,7 +3,7 @@ title: 'Offer decisioning: configurare le offerte e l’ID decisione'
 description: 'Offer decisioning: configurare le offerte e l’ID decisione'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 2%
@@ -18,10 +18,10 @@ In questo esercizio creerai quattro **offerte personalizzate**. Di seguito sono 
 
 | Nome | Date Range | Collegamento immagine per e-mail | Collegamento immagine per il Web | Testo | Priorità | Idoneità | Lingua |
 |-----|------------|----------------------|--------------------|------|:--------:|--------------|:-------:|
-| `--demoProfileLdap-- - Nadia Elements Shell` | oggi - 1 mese dopo | https://bit.ly/3nPiwdZ | https://bit.ly/2INwXjt | `{{ profile.person.name.firstName }}, 10% discount on Nadia Elements Shell` | 25 | all - Clienti femminili | Inglese (Stati Uniti) |
-| `--demoProfileLdap-- - Radiant Tee` | oggi - 1 mese dopo | https://bit.ly/2HfA17v | https://bit.ly/3pEIdzn | `{{ profile.person.name.firstName }}, 5% discount on Radiant Tee` | 15 | all - Clienti femminili | Inglese (Stati Uniti) |
-| `--demoProfileLdap-- - Zeppelin Yoga Pant` | oggi - 1 mese dopo | https://bit.ly/2IOaItW | https://bit.ly/2INZHZd | `{{ profile.person.name.firstName }}, 10% discount on Zeppelin Yoga Pant` | 25 | all - Clienti maschi | Inglese (Stati Uniti) |
-| `--demoProfileLdap-- - Proteus Fitness Jackshirt` | oggi - 1 mese dopo | https://bit.ly/330a43n | https://bit.ly/36USaQW | `{{ profile.person.name.firstName }}, 5% discount on Proteus Fitness Jackshirt` | 15 | all - Clienti maschi | Inglese (Stati Uniti) |
+| `--aepUserLdap-- - Nadia Elements Shell` | oggi - 1 mese dopo | https://bit.ly/3nPiwdZ | https://bit.ly/2INwXjt | `{{ profile.person.name.firstName }}, 10% discount on Nadia Elements Shell` | 25 | all - Clienti femminili | Inglese (Stati Uniti) |
+| `--aepUserLdap-- - Radiant Tee` | oggi - 1 mese dopo | https://bit.ly/2HfA17v | https://bit.ly/3pEIdzn | `{{ profile.person.name.firstName }}, 5% discount on Radiant Tee` | 15 | all - Clienti femminili | Inglese (Stati Uniti) |
+| `--aepUserLdap-- - Zeppelin Yoga Pant` | oggi - 1 mese dopo | https://bit.ly/2IOaItW | https://bit.ly/2INZHZd | `{{ profile.person.name.firstName }}, 10% discount on Zeppelin Yoga Pant` | 25 | all - Clienti maschi | Inglese (Stati Uniti) |
+| `--aepUserLdap-- - Proteus Fitness Jackshirt` | oggi - 1 mese dopo | https://bit.ly/330a43n | https://bit.ly/36USaQW | `{{ profile.person.name.firstName }}, 5% discount on Proteus Fitness Jackshirt` | 15 | all - Clienti maschi | Inglese (Stati Uniti) |
 
 {style="table-layout:auto"}
 
@@ -29,7 +29,7 @@ Accedi a Adobe Journey Optimizer da [Adobe Experience Cloud](https://experience.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxId--`. Per passare da una sandbox all&#39;altra, fare clic su **Production Prod (VA7)** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **AEP Enablement FY22**. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxId--`.
+Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxName--`. Per passare da una sandbox all&#39;altra, fare clic su **Production Prod (VA7)** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **AEP Enablement FY22**. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -45,7 +45,7 @@ Ora sei nella visualizzazione **Dettagli**.
 
 ![Regola di decisione](./images/offers3.png)
 
-In questo caso, è necessario configurare l&#39;offerta `--demoProfileLdap-- - Nadia Elements Shell`. Utilizzare le informazioni della tabella precedente per compilare i campi. In questo esempio, il nome dell&#39;offerta personalizzata è **vangeluw - Nadia Elements Shell**. Impostare inoltre **Data e ora inizio** su ieri e **Data e ora fine** su una data compresa tra un mese.
+In questo caso, è necessario configurare l&#39;offerta `--aepUserLdap-- - Nadia Elements Shell`. Utilizzare le informazioni della tabella precedente per compilare i campi. In questo esempio, il nome dell&#39;offerta personalizzata è **vangeluw - Nadia Elements Shell**. Impostare inoltre **Data e ora inizio** su ieri e **Data e ora fine** su una data compresa tra un mese.
 
 Una volta fatto, dovresti avere questo. Fai clic su **Avanti**.
 
@@ -182,7 +182,7 @@ A questo punto viene visualizzato quanto segue:
 
 ![Regola di decisione](./images/foffers3.png)
 
-Immetti questo nome per l&#39;offerta di fallback: `--demoProfileLdap-- - Luma Fallback Offer`. Fai clic su **Avanti**.
+Immetti questo nome per l&#39;offerta di fallback: `--aepUserLdap-- - Luma Fallback Offer`. Fai clic su **Avanti**.
 
 ![Regola di decisione](./images/foffers4.png)
 
@@ -281,7 +281,7 @@ Vai a **Raccolte**. Fare clic su **+ Crea raccolta**.
 
 Poi vedrai questo popup. Configura la tua raccolta in questo modo. Fai clic su **Avanti**.
 
-- Nome raccolta: utilizzare `--demoProfileLdap-- - Luma Collection`
+- Nome raccolta: utilizzare `--aepUserLdap-- - Luma Collection`
 - Selezionare **Crea raccolta statica**.
 
 ![Regola di decisione](./images/createcollectionpopup1.png)
@@ -308,7 +308,7 @@ A questo punto viene visualizzato quanto segue:
 
 Compila i campi in questo modo. Fai clic su **Avanti**.
 
-- Nome: `--demoProfileLdap-- - Luma Decision`
+- Nome: `--aepUserLdap-- - Luma Decision`
 - Data e ora di inizio: ieri
 - Data e ora di fine: oggi + 1 mese
 
@@ -322,7 +322,7 @@ Innanzitutto, crea l&#39;ambito di decisione per **Non digitale - Testo** selezi
 
 ![Regola di decisione](./images/activity3.png)
 
-Seleziona la tua raccolta `--demoProfileLdap-- - Luma Collection` e fai clic su **Aggiungi**.
+Seleziona la tua raccolta `--aepUserLdap-- - Luma Collection` e fai clic su **Aggiungi**.
 
 ![Regola di decisione](./images/activity4text.png)
 
@@ -330,15 +330,15 @@ Poi vedrai questo. Fare clic sul pulsante **-** per aggiungere un nuovo ambito d
 
 ![Regola di decisione](./images/activity5text.png)
 
-Selezionare il posizionamento **Web - Immagine** e aggiungere la raccolta `--demoProfileLdap-- - Luma Collection` in base ai criteri di valutazione. Quindi, fare nuovamente clic sul pulsante **+** per aggiungere un nuovo ambito di decisione.
+Selezionare il posizionamento **Web - Immagine** e aggiungere la raccolta `--aepUserLdap-- - Luma Collection` in base ai criteri di valutazione. Quindi, fare nuovamente clic sul pulsante **+** per aggiungere un nuovo ambito di decisione.
 
 ![Regola di decisione](./images/activity6text.png)
 
-Seleziona il posizionamento **E-mail - Immagine** e aggiungi la tua raccolta `--demoProfileLdap-- - Luma Collection` in base ai criteri di valutazione. Quindi fare clic su **Avanti**.
+Seleziona il posizionamento **E-mail - Immagine** e aggiungi la tua raccolta `--aepUserLdap-- - Luma Collection` in base ai criteri di valutazione. Quindi fare clic su **Avanti**.
 
 ![Regola di decisione](./images/activity4.png)
 
-È ora necessario selezionare **Offerta di fallback**, denominata `--demoProfileLdap-- - Luma Fallback Offer`. Fai clic su **Avanti**.
+È ora necessario selezionare **Offerta di fallback**, denominata `--aepUserLdap-- - Luma Fallback Offer`. Fai clic su **Avanti**.
 
 ![Regola di decisione](./images/activity10.png)
 

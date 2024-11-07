@@ -3,7 +3,7 @@ title: Offer decisioning - Verificare la decisione
 description: Offer decisioning - Verificare la decisione
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1263'
 ht-degree: 0%
@@ -14,17 +14,17 @@ ht-degree: 0%
 
 ## 3.3.3.1 Aggiornare lo stream di dati
 
-Nell&#39;esercizio [0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md) hai creato **[!UICONTROL Datastream]** personalizzato. È stato quindi utilizzato il nome `--demoProfileLdap-- - Demo System Datastream`.
+Nell&#39;esercizio [0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md) hai creato **[!UICONTROL Datastream]** personalizzato. È stato quindi utilizzato il nome `--aepUserLdap-- - Demo System Datastream`.
 
 In questo esercizio, devi configurare **[!UICONTROL Datastream]** affinché funzioni con **[!DNL Offer Decisioning]**.
 
 Per eseguire questa operazione, vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/). Poi vedrai questo. Fare clic su **[!UICONTROL Datastreams]** o **[!UICONTROL Datastreams (Beta)]**.
 
-Nell&#39;angolo in alto a destra dello schermo, seleziona il nome della sandbox, che dovrebbe essere `--aepSandboxId--`.
+Nell&#39;angolo in alto a destra dello schermo, seleziona il nome della sandbox, che dovrebbe essere `--aepSandboxName--`.
 
 ![Fai clic sull&#39;icona Configurazione di Edge nell&#39;area di navigazione a sinistra](./images/edgeconfig1b.png)
 
-Cerca il **[!UICONTROL flusso di dati]**, denominato `--demoProfileLdap-- - Demo System Datastream`. Fai clic sul **[!UICONTROL Datastream]** per aprirlo.
+Cerca il **[!UICONTROL flusso di dati]**, denominato `--aepUserLdap-- - Demo System Datastream`. Fai clic sul **[!UICONTROL Datastream]** per aprirlo.
 
 ![WebSDK](./images/websdk1.png)
 
@@ -42,7 +42,7 @@ Il **[!UICONTROL Datastream]** è ora pronto per funzionare con **[!DNL Offer De
 
 ## 3.3.3.2 Configura la proprietà Client di raccolta dati di Adobe Experience Platform per richiedere offerte personalizzate
 
-Vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/), a **[!UICONTROL Client]**. Cercare le proprietà della raccolta dati, denominate `--demoProfileLdap-- - Demo System (DD/MM/YYYY)`. Apri la proprietà del client Data Collection per il Web.
+Vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/), a **[!UICONTROL Client]**. Cercare le proprietà della raccolta dati, denominate `--aepUserLdap-- - Demo System (DD/MM/YYYY)`. Apri la proprietà del client Data Collection per il Web.
 
 ![WebSDK](./images/launch1.png)
 
@@ -79,7 +79,7 @@ Per trovare l&#39;[!UICONTROL ID posizionamento] per [!UICONTROL Web - Immagine]
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxId--`. Per passare da una sandbox all&#39;altra, fare clic su **Production Prod (VA7)** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **AEP Enablement FY22**. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxId--`.
+Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxName--`. Per passare da una sandbox all&#39;altra, fare clic su **Production Prod (VA7)** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **AEP Enablement FY22**. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -91,15 +91,15 @@ Come puoi vedere nell&#39;immagine precedente, in questo esempio l&#39;[!UICONTR
 
 ### 3.3.3.2.2 Recupera [!UICONTROL ID decisione]
 
-L&#39;[!UICONTROL ID decisione] identifica la combinazione di offerte personalizzate e offerte di fallback che si desidera utilizzare. Nell&#39;esercizio precedente, hai creato la tua [!UICONTROL decisione] e l&#39;hai denominata `--demoProfileLdap-- - Luma Decision`.
+L&#39;[!UICONTROL ID decisione] identifica la combinazione di offerte personalizzate e offerte di fallback che si desidera utilizzare. Nell&#39;esercizio precedente, hai creato la tua [!UICONTROL decisione] e l&#39;hai denominata `--aepUserLdap-- - Luma Decision`.
 
-Per trovare l&#39;[!UICONTROL ID decisione] per `--demoProfileLdap-- - Luma Decision`, vai a [https://platform.adobe.com](https://platform.adobe.com).
+Per trovare l&#39;[!UICONTROL ID decisione] per `--aepUserLdap-- - Luma Decision`, vai a [https://platform.adobe.com](https://platform.adobe.com).
 
-Quindi, passa a [!UICONTROL Offerte] e vai a [!UICONTROL Decisioni]. Fai clic per selezionare la [!UICONTROL decisione], denominata `--demoProfileLdap-- - Luma Decision`.
+Quindi, passa a [!UICONTROL Offerte] e vai a [!UICONTROL Decisioni]. Fai clic per selezionare la [!UICONTROL decisione], denominata `--aepUserLdap-- - Luma Decision`.
 
 ![WebSDK](./images/launch7.png)
 
-Come puoi vedere nell&#39;immagine precedente, in questo esempio [!UICONTROL ID decisione] è `xcore:offer-activity:14c052382e1b6505`. Scrivere l&#39;[!UICONTROL ID decisione] per la decisione `--demoProfileLdap-- - Luma Decision` in quanto sarà necessario nel prossimo esercizio.
+Come puoi vedere nell&#39;immagine precedente, in questo esempio [!UICONTROL ID decisione] è `xcore:offer-activity:14c052382e1b6505`. Scrivere l&#39;[!UICONTROL ID decisione] per la decisione `--aepUserLdap-- - Luma Decision` in quanto sarà necessario nel prossimo esercizio.
 
 Dopo aver recuperato i due elementi necessari per creare **[!UICONTROL ambiti decisionali]**, puoi continuare con il passaggio successivo, che comporta la codifica dell&#39;ambito decisionale.
 
@@ -120,11 +120,11 @@ L&#39;**[!UICONTROL Ambito decisione]** può essere generato in due modi:
 
   ![WebSDK](./images/launch8.png)
 
-- Recupera la stringa con codifica BASE64 da Adobe Experience Platform. Vai a [!UICONTROL Decisioni] e fai clic per aprire la [!UICONTROL Decisione], che si chiama `--demoProfileLdap-- - Luma Decision`.
+- Recupera la stringa con codifica BASE64 da Adobe Experience Platform. Vai a [!UICONTROL Decisioni] e fai clic per aprire la [!UICONTROL Decisione], che si chiama `--aepUserLdap-- - Luma Decision`.
 
   ![WebSDK](./images/launch9.png)
 
-  Dopo aver aperto `--demoProfileLdap-- - Luma Decision`, verrà visualizzato questo messaggio. Individua il posizionamento [!UICONTROL Web - Immagine] e fai clic sul pulsante **[!UICONTROL Copia]**. Fare clic su **[!UICONTROL Ambito di decisione codificato]**. L&#39;**[!UICONTROL Ambito decisione]** è ora copiato negli Appunti.
+  Dopo aver aperto `--aepUserLdap-- - Luma Decision`, verrà visualizzato questo messaggio. Individua il posizionamento [!UICONTROL Web - Immagine] e fai clic sul pulsante **[!UICONTROL Copia]**. Fare clic su **[!UICONTROL Ambito di decisione codificato]**. L&#39;**[!UICONTROL Ambito decisione]** è ora copiato negli Appunti.
 
   ![WebSDK](./images/launch10.png)
 
@@ -152,7 +152,7 @@ Ogni volta che carichi una **pagina generale**, come ad esempio la home page del
 
 ## 3.3.3.3 Configura la proprietà Client di raccolta dati di Adobe Experience Platform per ricevere e applicare offerte personalizzate
 
-Vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/), a **[!UICONTROL Proprietà]**. Cercare le proprietà della raccolta dati, denominate `--demoProfileLdap-- - Demo System (DD/MM/YYYY)`. Apri la proprietà Data Collection per il Web.
+Vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/), a **[!UICONTROL Proprietà]**. Cercare le proprietà della raccolta dati, denominate `--aepUserLdap-- - Demo System (DD/MM/YYYY)`. Apri la proprietà Data Collection per il Web.
 
 ![WebSDK](./images/launch1.png)
 

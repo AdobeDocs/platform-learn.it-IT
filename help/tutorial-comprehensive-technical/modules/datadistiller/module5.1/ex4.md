@@ -3,7 +3,7 @@ title: Servizio query - Power BI/Tableau
 description: Servizio query - Power BI/Tableau
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
@@ -62,7 +62,7 @@ Seleziona la query e fai clic su **Set di dati di output**.
 
 ![search-query-for-ctas.png](./images/search-query-for-ctasa.png)
 
-Immetti `--demoProfileLdap-- Callcenter Interaction Analysis` come nome e descrizione per il set di dati e premi il pulsante **Esegui query**
+Immetti `--aepUserLdap-- Callcenter Interaction Analysis` come nome e descrizione per il set di dati e premi il pulsante **Esegui query**
 
 ![create-ctas-dataset.png](./images/create-ctas-dataset.png)
 

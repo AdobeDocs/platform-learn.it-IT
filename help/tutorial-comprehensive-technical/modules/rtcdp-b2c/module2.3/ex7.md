@@ -3,7 +3,7 @@ title: Real-time CDP - SDK Destinazioni
 description: Real-time CDP - SDK Destinazioni
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2386'
 ht-degree: 2%
@@ -122,10 +122,10 @@ Fare clic su **Modifica progetto**.
 
 ![Adobe I/O di nuova integrazione](../module2.1/images/api14.png)
 
-Immetti un nome e una descrizione per l’integrazione. Come convenzione per i nomi, utilizzeremo `AEP API --demoProfileLdap--`. Sostituire ldap con ldap.
+Immetti un nome e una descrizione per l’integrazione. Come convenzione per i nomi, utilizzeremo `AEP API --aepUserLdap--`. Sostituire ldap con ldap.
 Ad esempio, se ldap è vangeluw, il nome e la descrizione dell&#39;integrazione diventano AEP API vangeluw.
 
-Immetti `AEP API --demoProfileLdap--` come **Titolo progetto**. Fai clic su **Salva**.
+Immetti `AEP API --aepUserLdap--` come **Titolo progetto**. Fai clic su **Salva**.
 
 ![Adobe I/O di nuova integrazione](../module2.1/images/api15.png)
 
@@ -285,11 +285,11 @@ Per quanto riguarda il formato, utilizzeremo un modello standard che trasmetter�
 
 Il primo passaggio per creare una tua destinazione in Adobe Experience Platform consiste nel creare una configurazione di server e modelli.
 
-A tale scopo, passare a **Destination Authoring API**, a **Server e modelli di destinazione** e fare clic per aprire la richiesta **POST - Crea una configurazione del server di destinazione**. Poi vedrai questo. In **Intestazioni**, devi aggiornare manualmente il valore per la chiave **x-sandbox-name** e impostarlo su `--aepSandboxId--`. Selezionare il valore **{{SANDBOX_NAME}}**.
+A tale scopo, passare a **Destination Authoring API**, a **Server e modelli di destinazione** e fare clic per aprire la richiesta **POST - Crea una configurazione del server di destinazione**. Poi vedrai questo. In **Intestazioni**, devi aggiornare manualmente il valore per la chiave **x-sandbox-name** e impostarlo su `--aepSandboxName--`. Selezionare il valore **{{SANDBOX_NAME}}**.
 
 ![Acquisizione dei dati](./images/sdkpm1.png)
 
-Sostituiscilo con `--aepSandboxId--`.
+Sostituiscilo con `--aepSandboxName--`.
 
 ![Acquisizione dei dati](./images/sdkpm2.png)
 
@@ -335,11 +335,11 @@ Dopo aver fatto clic su **Invia**, verrà creato il modello del server e come pa
 
 ## 2.3.7.5 Creare la configurazione di destinazione
 
-In Postman, in **Destination Authoring API**, vai a **Destination configurations** e fai clic per aprire la richiesta **POST - Create a destination configuration**. Poi vedrai questo. In **Intestazioni**, devi aggiornare manualmente il valore per la chiave **x-sandbox-name** e impostarlo su `--aepSandboxId--`. Selezionare il valore **{{SANDBOX_NAME}}**.
+In Postman, in **Destination Authoring API**, vai a **Destination configurations** e fai clic per aprire la richiesta **POST - Create a destination configuration**. Poi vedrai questo. In **Intestazioni**, devi aggiornare manualmente il valore per la chiave **x-sandbox-name** e impostarlo su `--aepSandboxName--`. Selezionare il valore **{{SANDBOX_NAME}}**.
 
 ![Acquisizione dei dati](./images/sdkpm7.png)
 
-Sostituiscilo con `--aepSandboxId--`.
+Sostituiscilo con `--aepSandboxName--`.
 
 ![Acquisizione dei dati](./images/sdkpm8.png)
 
@@ -351,7 +351,7 @@ Sostituire il segnaposto **{{body}}** con il codice seguente:
 
 ```json
 {
-    "name": "--demoProfileLdap-- - Webhook",
+    "name": "--aepUserLdap-- - Webhook",
     "description": "Exports segment qualifications and identities to a custom webhook via Destination SDK.",
     "status": "TEST",
     "customerAuthenticationConfigurations": [
@@ -428,7 +428,7 @@ Vai a [Adobe Experience Platform](https://experience.adobe.com/platform). Dopo a
 
 ![Acquisizione dei dati](./../../../modules/datacollection/module1.2/images/home.png)
 
-Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``--aepSandboxId--``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella riga blu nella parte superiore dello schermo. Dopo aver selezionato la [!UICONTROL sandbox] appropriata, la schermata verrà modificata e ora sei nella [!UICONTROL sandbox] dedicata.
+Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``--aepSandboxName--``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella riga blu nella parte superiore dello schermo. Dopo aver selezionato la [!UICONTROL sandbox] appropriata, la schermata verrà modificata e ora sei nella [!UICONTROL sandbox] dedicata.
 
 ![Acquisizione dei dati](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -446,7 +446,7 @@ Immettere un token portatore fittizio, ad esempio **1234**. Fai clic su **Connet
 
 ![Acquisizione dei dati](./images/destsdk3.png)
 
-Poi vedrai questo. Come nome per la destinazione, utilizzare `--demoProfileLdap-- - Webhook`. Seleziona un endpoint di scelta, in questo esempio **EU**. Fai clic su **Avanti**.
+Poi vedrai questo. Come nome per la destinazione, utilizzare `--aepUserLdap-- - Webhook`. Seleziona un endpoint di scelta, in questo esempio **EU**. Fai clic su **Avanti**.
 
 ![Acquisizione dei dati](./images/destsdk4.png)
 
@@ -454,7 +454,7 @@ Poi vedrai questo. Come nome per la destinazione, utilizzare `--demoProfileLdap-
 
 ![Acquisizione dei dati](./images/destsdk5.png)
 
-Selezionare il segmento creato in precedenza, denominato `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. Fai clic su **Avanti**.
+Selezionare il segmento creato in precedenza, denominato `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. Fai clic su **Avanti**.
 
 ![Acquisizione dei dati](./images/destsdk6.png)
 

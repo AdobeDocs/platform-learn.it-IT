@@ -3,7 +3,7 @@ title: 'Customer Journey Analytics: visualizzazione tramite Customer Journey Ana
 description: 'Customer Journey Analytics: visualizzazione tramite Customer Journey Analytics'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1497'
 ht-degree: 0%
@@ -28,9 +28,9 @@ Utilizziamo il progetto creato in [11.4 Data Preparation in Analysis Workspace](
 
 ![demo](./images/prohome.png)
 
-Apri il progetto `--demoProfileLdap-- - Omnichannel Analysis`.
+Apri il progetto `--aepUserLdap-- - Omnichannel Analysis`.
 
-Con il progetto aperto e la visualizzazione dati `--demoProfileLdap-- - Omnichannel Analysis` selezionata, puoi iniziare a creare le prime visualizzazioni.
+Con il progetto aperto e la visualizzazione dati `--aepUserLdap-- - Omnichannel Analysis` selezionata, puoi iniziare a creare le prime visualizzazioni.
 
 ![demo](./images/prodataView1.png)
 

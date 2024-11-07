@@ -3,7 +3,7 @@ title: Foundation - Real-time Customer Profile - Visualizzare il proprio profilo
 description: Foundation - Real-time Customer Profile - Visualizzare il proprio profilo cliente in tempo reale - API
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2637'
 ht-degree: 1%
@@ -141,10 +141,10 @@ Fare clic su **Modifica progetto**.
 
 ![Adobe I/O di nuova integrazione](./images/api14.png)
 
-Immetti un nome e una descrizione per l’integrazione. Come convenzione per i nomi, utilizzeremo `AEP API --demoProfileLdap--`. Sostituire ldap con ldap.
+Immetti un nome e una descrizione per l’integrazione. Come convenzione per i nomi, utilizzeremo `AEP API --aepUserLdap--`. Sostituire ldap con ldap.
 Ad esempio, se ldap è vangeluw, il nome e la descrizione dell&#39;integrazione diventano AEP API vangeluw.
 
-Immetti `AEP API --demoProfileLdap--` come **Titolo progetto**. Fai clic su **Salva**.
+Immetti `AEP API --aepUserLdap--` come **Titolo progetto**. Fai clic su **Salva**.
 
 ![Adobe I/O di nuova integrazione](./images/api15.png)
 
@@ -307,11 +307,11 @@ Pertanto, se desideri che le API di Adobe Experience Platform ti forniscano tutt
 
 | Chiave | Valore |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->È necessario specificare il nome della sandbox di Adobe Experience Platform in uso. Il nome x-sandbox deve essere `--aepSandboxId--`.
+>È necessario specificare il nome della sandbox di Adobe Experience Platform in uso. Il nome x-sandbox deve essere `--aepSandboxName--`.
 
 Fai clic su **Invia** per inviare la richiesta a Platform.
 
@@ -478,11 +478,11 @@ A questo punto si otterrà:
 
 | Chiave | Valore |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->È necessario specificare il nome della sandbox di Adobe Experience Platform in uso. Il nome x-sandbox deve essere `--aepSandboxId--`.
+>È necessario specificare il nome della sandbox di Adobe Experience Platform in uso. Il nome x-sandbox deve essere `--aepSandboxName--`.
 
 Fai clic sul pulsante blu **Invia** e verifica la risposta.
 
@@ -512,11 +512,11 @@ A questo punto si otterrà:
 
 | Chiave | Valore |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->È necessario specificare il nome della sandbox di Adobe Experience Platform in uso. Il nome x-sandbox deve essere `--aepSandboxId--`.
+>È necessario specificare il nome della sandbox di Adobe Experience Platform in uso. Il nome x-sandbox deve essere `--aepSandboxName--`.
 
 Fai clic sul pulsante blu **Invia** e verifica la risposta.
 
@@ -570,11 +570,11 @@ Pertanto, se desideri che le API di Platform ti forniscano tutte le informazioni
 
 | Chiave | Valore |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->È necessario specificare il nome della sandbox di Adobe Experience Platform in uso. Il nome x-sandbox deve essere `--aepSandboxId--`.
+>È necessario specificare il nome della sandbox di Adobe Experience Platform in uso. Il nome x-sandbox deve essere `--aepSandboxName--`.
 
 Fai clic su **Invia** per inviare la richiesta a Platform.
 

@@ -3,7 +3,7 @@ title: Configurare l’endpoint API HTTP in Adobe Experience Platform
 description: Configurare l’endpoint API HTTP in Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 6%
@@ -20,7 +20,7 @@ Dopo aver effettuato l’accesso, accedi alla home page di Adobe Experience Plat
 
 ![Acquisizione dei dati](./../../../modules/datacollection/module1.2/images/home.png)
 
-Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``--aepSandboxId--``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella riga blu nella parte superiore dello schermo. Dopo aver selezionato la sandbox appropriata, la schermata cambia e ora sei nella sandbox dedicata.
+Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``--aepSandboxName--``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella riga blu nella parte superiore dello schermo. Dopo aver selezionato la sandbox appropriata, la schermata cambia e ora sei nella sandbox dedicata.
 
 ![Acquisizione dei dati](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -28,7 +28,7 @@ Nel menu a sinistra, vai a **Origini** e scorri verso il basso nel **Catalogo or
 
 ![Acquisizione dei dati](./images/kaep1.png)
 
-Fai clic su **Nuovo account**. Utilizza `--demoProfileLdap-- - Kafka` come nome per la connessione API HTTP, in questo caso **vangeluw - Kafka**. Abilita la casella di controllo per **Compatibile con XDM**. Fare clic su **Connetti all&#39;origine**.
+Fai clic su **Nuovo account**. Utilizza `--aepUserLdap-- - Kafka` come nome per la connessione API HTTP, in questo caso **vangeluw - Kafka**. Abilita la casella di controllo per **Compatibile con XDM**. Fare clic su **Connetti all&#39;origine**.
 
 ![Acquisizione dei dati](./images/kaep2.png)
 

@@ -3,7 +3,7 @@ title: Foundation - Acquisizione dei dati - Configurare i set di dati
 description: Foundation - Acquisizione dei dati - Configurare i set di dati
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 7%
@@ -53,7 +53,7 @@ Dopo aver fatto clic sul pulsante **[!UICONTROL + Crea set di dati]**, viene vis
 
 ![Acquisizione dei dati](./images/datasetfromschema.png)
 
-Nella schermata successiva, è necessario selezionare lo schema creato in 1, `--demoProfileLdap-- - Demo System - Profile Schema for Website`.
+Nella schermata successiva, è necessario selezionare lo schema creato in 1, `--aepUserLdap-- - Demo System - Profile Schema for Website`.
 
 ![Acquisizione dei dati](./images/schemaselection.png)
 
@@ -65,7 +65,7 @@ Diamo un nome al set di dati.
 
 Come nome per il set di dati, utilizza questo:
 
-`--demoProfileLdap-- - Demo System - Profile Dataset for Website`
+`--aepUserLdap-- - Demo System - Profile Dataset for Website`
 
 Ad esempio, per ldap **[!UICONTROL vangeluw]**, deve essere il nome dello schema:
 
@@ -101,7 +101,7 @@ Dopo aver fatto clic sul pulsante **[!UICONTROL + Crea set di dati]**, viene vis
 
 ![Acquisizione dei dati](./images/datasetfromschema.png)
 
-Nella schermata successiva, è necessario selezionare lo schema creato in 2.2, `--demoProfileLdap-- - Demo System - Event Schema for Website`.
+Nella schermata successiva, è necessario selezionare lo schema creato in 2.2, `--aepUserLdap-- - Demo System - Event Schema for Website`.
 
 ![Acquisizione dei dati](./images/schemaselectionee.png)
 
@@ -113,7 +113,7 @@ Diamo un nome al set di dati.
 
 Come nome del set di dati, utilizzeremo questo:
 
-`--demoProfileLdap-- - Demo System - Event Dataset for Website`
+`--aepUserLdap-- - Demo System - Event Dataset for Website`
 
 Ad esempio, per ldap **[!UICONTROL vangeluw]**, deve essere il nome dello schema:
 
@@ -137,7 +137,7 @@ Torna alla schermata di panoramica dei [!UICONTROL Set di dati].
 
 Ora devi abilitare i set di dati per far parte di Real-time Customer Profile di Adobe Experience Platform.
 
-Apri il set di dati `--demoProfileLdap--` - Demo System - Profile Dataset for Website facendo clic su di esso.
+Apri il set di dati `--aepUserLdap--` - Demo System - Profile Dataset for Website facendo clic su di esso.
 
 Individua l&#39;icona di attivazione/disattivazione [!UICONTROL Profilo] sul lato destro dello schermo.
 
@@ -153,7 +153,7 @@ Fare clic su **[!UICONTROL Abilita]**.
 
 Il set di dati è ora abilitato per [!UICONTROL Profilo].
 
-Tornare alla panoramica dei set di dati e aprire il set di dati `--demoProfileLdap-- - Demo System - Event Dataset` per il sito Web facendo clic su di esso.
+Tornare alla panoramica dei set di dati e aprire il set di dati `--aepUserLdap-- - Demo System - Event Dataset` per il sito Web facendo clic su di esso.
 
 Individua l&#39;icona di attivazione/disattivazione [!UICONTROL Profilo] sul lato destro dello schermo.
 

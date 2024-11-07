@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - API meteo esterna, SMS e altro ancora - Definir
 description: Adobe Journey Optimizer - API meteo esterna, SMS e altro ancora - Definire un’origine dati esterna
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 3%
@@ -18,7 +18,7 @@ Accedi a Adobe Journey Optimizer da [Adobe Experience Cloud](https://experience.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxId--`. Per passare da una sandbox all&#39;altra, fare clic su **Production Prod (VA7)** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **AEP Enablement FY22**. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxId--`.
+Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxName--`. Per passare da una sandbox all&#39;altra, fare clic su **Production Prod (VA7)** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **AEP Enablement FY22**. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -73,7 +73,7 @@ Torna a **Adobe Journey Optimizer**, al popup **External Data Source** vuoto.
 
 ![Demo](./images/emptyds.png)
 
-Come nome per l&#39;origine dati, utilizzare `--demoProfileLdap--WeatherApi`. In questo esempio, il nome dell&#39;origine dati è `vangeluwWeatherApi `.
+Come nome per l&#39;origine dati, utilizzare `--aepUserLdap--WeatherApi`. In questo esempio, il nome dell&#39;origine dati è `vangeluwWeatherApi `.
 
 Imposta descrizione su: `Access to the Open Weather Map`.
 
@@ -106,7 +106,7 @@ Per corrispondere alla richiesta API prevista, configura il FieldGroup come segu
 
 >[!IMPORTANT]
 >
->Il nome del gruppo di campi deve essere univoco. Utilizzare questa convenzione di denominazione: `--demoProfileLdap--WeatherByCity`. In questo caso, il nome deve essere `vangeluwWeatherByCity`
+>Il nome del gruppo di campi deve essere univoco. Utilizzare questa convenzione di denominazione: `--aepUserLdap--WeatherByCity`. In questo caso, il nome deve essere `vangeluwWeatherByCity`
 
 ![Demo](./images/fg1.png)
 

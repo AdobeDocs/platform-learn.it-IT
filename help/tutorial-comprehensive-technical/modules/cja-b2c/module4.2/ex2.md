@@ -3,7 +3,7 @@ title: 'Acquisire e analizzare i dati Google Analytics in Adobe Experience Platf
 description: 'Acquisire e analizzare i dati Google Analytics in Adobe Experience Platform con il connettore Source BigQuery: creare la prima query in BigQuery'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Per l&#39;**ID set di dati**, utilizzare la convenzione di denominazione seguent
 
 | Denominazione | Esempio |
 | ----------------- | ------------- | 
-| `--demoProfileLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |
+| `--aepUserLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |
 
 ![demo](./images/ex3/6.png)
 
@@ -254,19 +254,19 @@ Verrà quindi visualizzata una nuova finestra a comparsa in cui i valori **Nome 
 
 | Denominazione | Esempio |
 | ----------------- | ------------- | 
-| `--demoProfileLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |
+| `--aepUserLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |
 
 È ora necessario immettere il nome di una tabella. Utilizza questa convenzione per i nomi:
 
 | Denominazione | Esempio |
 | ----------------- |------------- | 
-| `--demoProfileLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
+| `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
 
 ![demo](./images/ex3/16.png)
 
 Fai clic su **SALVA**.
 
-La preparazione dei dati nella tabella creata potrebbe richiedere del tempo. Dopo alcuni minuti, aggiorna il browser. Dovresti quindi visualizzare all&#39;interno del set di dati la tabella `--demoProfileLdap--_GAdataTableBigquery` in **Explorer** all&#39;interno del progetto BigQuery.
+La preparazione dei dati nella tabella creata potrebbe richiedere del tempo. Dopo alcuni minuti, aggiorna il browser. Dovresti quindi visualizzare all&#39;interno del set di dati la tabella `--aepUserLdap--_GAdataTableBigquery` in **Explorer** all&#39;interno del progetto BigQuery.
 
 ![demo](./images/ex3/19.png)
 

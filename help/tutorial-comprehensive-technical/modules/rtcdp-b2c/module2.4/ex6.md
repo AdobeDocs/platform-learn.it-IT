@@ -3,7 +3,7 @@ title: Attivazione segmento in Microsoft Azure Event Hub - Azione
 description: Attivazione segmento in Microsoft Azure Event Hub - Azione
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%
@@ -71,17 +71,17 @@ Vedrai quindi il tuo sito web caricato in una finestra del browser in incognito.
 
 ## 2.4.6.3 Partecipazione al segmento Apparecchiature
 
-Passare alla pagina **Apparecchiature** una volta e **non ricaricarla o aggiornarla**. Questa azione ti qualificherà per il tuo segmento `--demoProfileLdap-- - Interest in Equipment`.
+Passare alla pagina **Apparecchiature** una volta e **non ricaricarla o aggiornarla**. Questa azione ti qualificherà per il tuo segmento `--aepUserLdap-- - Interest in Equipment`.
 
 ![6-04-luma-telco-nav-sports.png](./images/luma1.png)
 
-Per verificare il funzionamento, apri il pannello Visualizzatore profili. Ora dovresti essere membro di `--demoProfileLdap-- - Interest in Equipment`. Se le appartenenze al segmento non sono ancora state aggiornate nel pannello Visualizzatore profili, fai clic sul pulsante Ricarica.
+Per verificare il funzionamento, apri il pannello Visualizzatore profili. Ora dovresti essere membro di `--aepUserLdap-- - Interest in Equipment`. Se le appartenenze al segmento non sono ancora state aggiornate nel pannello Visualizzatore profili, fai clic sul pulsante Ricarica.
 
 ![6-05-luma-telco-nav-broadband.png](./images/luma2.png)
 
-Torna a Visual Studio Code e controlla la scheda **TERMINAL**. Dovresti visualizzare un elenco di segmenti per il tuo **ECID** specifico. Questo payload di attivazione viene recapitato all&#39;hub eventi non appena si è qualificati per il segmento `--demoProfileLdap-- - Interest in Equipment`.
+Torna a Visual Studio Code e controlla la scheda **TERMINAL**. Dovresti visualizzare un elenco di segmenti per il tuo **ECID** specifico. Questo payload di attivazione viene recapitato all&#39;hub eventi non appena si è qualificati per il segmento `--aepUserLdap-- - Interest in Equipment`.
 
-Se osservi attentamente il payload del segmento, noterai che `--demoProfileLdap-- - Interest in Equipment` si trova nello stato **realized**.
+Se osservi attentamente il payload del segmento, noterai che `--aepUserLdap-- - Interest in Equipment` si trova nello stato **realized**.
 
 Uno stato di segmento **realized** indica che il nostro profilo è appena entrato nel segmento. Mentre lo stato **existing** indica che il nostro profilo continua a essere nel segmento.
 

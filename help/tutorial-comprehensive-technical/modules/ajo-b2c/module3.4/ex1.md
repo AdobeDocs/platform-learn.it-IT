@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - Configurare un percorso basato su trigger - Con
 description: In questa sezione viene configurato un percorso basato su trigger - Conferma ordine
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1998'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Accedi a Adobe Journey Optimizer da [Adobe Experience Cloud](https://experience.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxId--`. Per passare da una sandbox all&#39;altra, fare clic su **Production Prod (VA7)** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **AEP Enablement FY22**. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxId--`.
+Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxName--`. Per passare da una sandbox all&#39;altra, fare clic su **Production Prod (VA7)** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **AEP Enablement FY22**. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -34,7 +34,7 @@ Viene quindi visualizzata una configurazione dell’evento vuota.
 
 ![Journey Optimizer](./images/oc32.png)
 
-Prima di tutto, assegna all&#39;evento un nome come `--demoProfileLdap--PurchaseEvent` e aggiungi una descrizione come questa: `Purchase Event`.
+Prima di tutto, assegna all&#39;evento un nome come `--aepUserLdap--PurchaseEvent` e aggiungi una descrizione come questa: `Purchase Event`.
 
 ![Journey Optimizer](./images/oc34.png)
 
@@ -100,11 +100,11 @@ Nel menu, vai a **Percorsi** e fai clic su **Crea Percorso**.
 
 ![Journey Optimizer](./images/oc43.png)
 
-Poi vedrai questo. Assegna un nome al percorso. Usa `--demoProfileLdap-- - Order Confirmation journey`. Fai clic su **OK**.
+Poi vedrai questo. Assegna un nome al percorso. Usa `--aepUserLdap-- - Order Confirmation journey`. Fai clic su **OK**.
 
 ![Journey Optimizer](./images/oc45.png)
 
-Innanzitutto, devi aggiungere l’evento come punto di partenza del percorso. Cercare l&#39;evento `--demoProfileLdap--PurchaseEvent` e trascinarlo sull&#39;area di lavoro. Fai clic su **OK**.
+Innanzitutto, devi aggiungere l’evento come punto di partenza del percorso. Cercare l&#39;evento `--aepUserLdap--PurchaseEvent` e trascinarlo sull&#39;area di lavoro. Fai clic su **OK**.
 
 ![Journey Optimizer](./images/oc46.png)
 
@@ -266,7 +266,7 @@ Fai clic sulla freccia accanto a **Eventi** per approfondire.
 
 ![Journey Optimizer](./images/oc62.png)
 
-Fare clic sulla freccia accanto a `--demoProfileLdap--PurchaseEvent` per approfondire.
+Fare clic sulla freccia accanto a `--aepUserLdap--PurchaseEvent` per approfondire.
 
 ![Journey Optimizer](./images/oc63.png)
 
@@ -314,7 +314,7 @@ Fai clic sulla freccia accanto a **Eventi** per approfondire.
 
 ![Journey Optimizer](./images/oc722.png)
 
-Fare clic sulla freccia accanto a `--demoProfileLdap--PurchaseEvent` per approfondire.
+Fare clic sulla freccia accanto a `--aepUserLdap--PurchaseEvent` per approfondire.
 
 ![Journey Optimizer](./images/oc73.png)
 
@@ -379,7 +379,7 @@ Questa è la pagina Proprietà raccolta dati di Adobe Experience Platform che ha
 
 ![Pagina delle proprietà](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-Nel modulo 0, Demo System ha creato due proprietà client per te: una per il sito web e una per l’app mobile. Trovarli cercando `--demoProfileLdap--` nella casella **[!UICONTROL Cerca]**. Fare clic per aprire la proprietà **Web**.
+Nel modulo 0, Demo System ha creato due proprietà client per te: una per il sito web e una per l’app mobile. Trovarli cercando `--aepUserLdap--` nella casella **[!UICONTROL Cerca]**. Fare clic per aprire la proprietà **Web**.
 
 ![Casella di ricerca](./../../../modules/datacollection/module1.1/images/property6.png)
 

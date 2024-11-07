@@ -3,7 +3,7 @@ title: Foundation - Configurazione di Adobe Experience Platform Data Collection 
 description: Foundation - Configurazione di Adobe Experience Platform Data Collection e dell’estensione Web SDK - Requisiti dello schema XDM in Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Vai a [https://experience.adobe.com/platform](https://experience.adobe.com/platf
 
 ![Debugger AEP](./images/exp1.png)
 
-Dopo aver effettuato l&#39;accesso, seleziona la sandbox appropriata facendo clic sul testo **Production Prod** nella riga blu nella parte superiore dello schermo. Selezionare la sandbox `--aepSandboxId--`.
+Dopo aver effettuato l&#39;accesso, seleziona la sandbox appropriata facendo clic sul testo **Production Prod** nella riga blu nella parte superiore dello schermo. Selezionare la sandbox `--aepSandboxName--`.
 
 Dopo aver selezionato la sandbox, la schermata cambia e ora sei nella sandbox.
 

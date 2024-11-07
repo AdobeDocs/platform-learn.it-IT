@@ -3,7 +3,7 @@ title: 'Offer decisioning: verifica la decisione utilizzando il sito web demo'
 description: Verifica la tua decisione utilizzando il sito web demo
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 1%
@@ -66,11 +66,11 @@ Fare clic sull&#39;area contenente il testo **Categorie in primo piano**. Fai cl
 
 ![RTCDP](./images/vec3.png)
 
-Poi vedrai questo popup. Seleziona la sandbox `--aepSandboxId--` e quindi il posizionamento **Web - Immagine**.
+Poi vedrai questo popup. Seleziona la sandbox `--aepSandboxName--` e quindi il posizionamento **Web - Immagine**.
 
 ![RTCDP](./images/vec4.png)
 
-Quindi, selezionare la decisione `--demoProfileLdap-- - Luma Decision`. Fai clic su **Salva**.
+Quindi, selezionare la decisione `--aepUserLdap-- - Luma Decision`. Fai clic su **Salva**.
 
 ![RTCDP](./images/vec5.png)
 
@@ -82,7 +82,7 @@ Poi vedrai questo. Fai clic su **Avanti**.
 
 ![RTCDP](./images/vec7.png)
 
-Immettere un nome per l&#39;offerta, utilizzare questo nome: `--demoProfileLdap-- - XT with Offers (VEC)`. Fai clic su **Avanti**.
+Immettere un nome per l&#39;offerta, utilizzare questo nome: `--aepUserLdap-- - XT with Offers (VEC)`. Fai clic su **Avanti**.
 
 ![RTCDP](./images/vec8.png)
 

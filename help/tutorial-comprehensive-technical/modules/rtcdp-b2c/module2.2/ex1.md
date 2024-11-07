@@ -3,7 +3,7 @@ title: Intelligent Services - Preparazione dei dati di IA per l’analisi dei cl
 description: 'IA per l’analisi dei clienti: preparazione dei dati (acquisizione)'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 1%
@@ -75,7 +75,7 @@ Assegna un nome allo schema.
 
 Come nome del nostro schema, utilizzerai quanto segue:
 
-- `--demoProfileLdap-- - Demo System - Customer Experience Event`
+- `--aepUserLdap-- - Demo System - Customer Experience Event`
 
 Ad esempio, per ldap **vangeluw**, deve essere il nome dello schema:
 
@@ -111,7 +111,7 @@ Nella schermata successiva, seleziona il set di dati creato nell&#39;esercizio p
 
 ![Set di dati](./images/createds1.png)
 
-Come nome per il set di dati, utilizza `--demoProfileLdap-- - Demo System - Customer Experience Event Dataset`. Fai clic su **Fine**.
+Come nome per il set di dati, utilizza `--aepUserLdap-- - Demo System - Customer Experience Event Dataset`. Fai clic su **Fine**.
 
 ![Set di dati](./images/createds2.png)
 

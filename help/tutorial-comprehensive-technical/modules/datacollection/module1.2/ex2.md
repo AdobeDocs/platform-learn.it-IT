@@ -3,7 +3,7 @@ title: Foundation - Acquisizione dei dati - Configurare schemi e impostare ident
 description: Foundation - Acquisizione dei dati - Configurare schemi e impostare identificatori
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '3645'
 ht-degree: 5%
@@ -114,7 +114,7 @@ Invece di riutilizzare un [!UICONTROL Gruppo di campi] esistente, ora creerai il
 È ora necessario fornire **[!UICONTROL Nome visualizzato]** e **[!UICONTROL Descrizione]** per il nuovo [!UICONTROL Gruppo di campi].
 
 Come nome dello schema, utilizzeremo quanto segue:
-`--demoProfileLdap-- - Profile Identification Field Group`
+`--aepUserLdap-- - Profile Identification Field Group`
 
 Ad esempio, per ldap **[!UICONTROL vangeluw]**, deve essere il nome dello schema:
 
@@ -287,7 +287,7 @@ Assegna un nome allo schema. Selezionare il campo **Schema senza titolo**.
 
 Come nome del nostro schema, utilizzerai quanto segue:
 
-`--demoProfileLdap-- - Demo System - Profile Schema for Website`
+`--aepUserLdap-- - Demo System - Profile Schema for Website`
 
 Sostituisci **[!UICONTROL ldap]** con il tuo LDAP specifico. Ad esempio, per ldap **[!UICONTROL vangeluw]**, deve essere il nome dello schema:
 
@@ -419,7 +419,7 @@ Invece di riutilizzare un [!UICONTROL Gruppo di campi] esistente, ora creerai il
 
 Come nome del gruppo di campi, utilizza:
 
-`--demoProfileLdap-- - ExperienceEvent Identification Field Group`
+`--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
 Ad esempio, per ldap **[!UICONTROL vangeluw]**, deve essere il nome dello schema:
 
@@ -528,7 +528,7 @@ Assegna un nome allo schema. Selezionare il campo **Schema senza titolo**.
 ![Acquisizione dei dati](./images/schemaname1ee.png)
 
 Come nome dello schema, utilizzeremo quanto segue:
-`--demoProfileLdap-- - Demo System - Event Schema for Website`
+`--aepUserLdap-- - Demo System - Event Schema for Website`
 
 Ad esempio, per ldap **[!UICONTROL vangeluw]**, deve essere il nome dello schema:
 

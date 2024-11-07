@@ -3,7 +3,7 @@ title: Real-time CDP - Creare un segmento e intervenire - Inviare il segmento ad
 description: Real-time CDP - Creare un segmento e intervenire - Inviare il segmento ad Adobe Target
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 2%
@@ -16,23 +16,23 @@ Vai a [Adobe Experience Platform](https://experience.adobe.com/platform). Dopo a
 
 ![Acquisizione dei dati](./../../../modules/datacollection/module1.2/images/home.png)
 
-Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``--aepSandboxId--``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella riga blu nella parte superiore dello schermo. Dopo aver selezionato la [!UICONTROL sandbox] appropriata, la schermata verrà modificata e ora sei nella [!UICONTROL sandbox] dedicata.
+Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``--aepSandboxName--``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella riga blu nella parte superiore dello schermo. Dopo aver selezionato la [!UICONTROL sandbox] appropriata, la schermata verrà modificata e ora sei nella [!UICONTROL sandbox] dedicata.
 
 ![Acquisizione dei dati](./../../../modules/datacollection/module1.2/images/sb1.png)
 
 ## 2.3.5.1 Verificare lo stream di dati
 
-La destinazione Adobe Target in Real-Time CDP è connessa allo stream di dati utilizzato per acquisire i dati nella rete Edge di Adobe. Se desideri impostare la destinazione di Adobe Target, devi innanzitutto verificare se lo stream di dati è già abilitato per Adobe Target. Il flusso di dati è stato configurato in [Esercizio 0.2 Creare il flusso di dati](./../../../modules/gettingstarted/gettingstarted/ex2.md) ed è stato denominato `--demoProfileLdap-- - Demo System Datastream`.
+La destinazione Adobe Target in Real-Time CDP è connessa allo stream di dati utilizzato per acquisire i dati nella rete Edge di Adobe. Se desideri impostare la destinazione di Adobe Target, devi innanzitutto verificare se lo stream di dati è già abilitato per Adobe Target. Il flusso di dati è stato configurato in [Esercizio 0.2 Creare il flusso di dati](./../../../modules/gettingstarted/gettingstarted/ex2.md) ed è stato denominato `--aepUserLdap-- - Demo System Datastream`.
 
 Vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/), quindi fai clic su **Datastreams** o **Datastreams (Beta)**.
 
 ![Acquisizione dei dati](./images/atdestds1.png)
 
-Nell&#39;angolo in alto a destra dello schermo, seleziona il nome della sandbox, che dovrebbe essere `--aepSandboxId--`.
+Nell&#39;angolo in alto a destra dello schermo, seleziona il nome della sandbox, che dovrebbe essere `--aepSandboxName--`.
 
 ![Fai clic sull&#39;icona Configurazione di Edge nell&#39;area di navigazione a sinistra](./images/edgeconfig1b.png)
 
-In Datastreams, cercare lo stream di dati denominato `--demoProfileLdap-- - Demo System Datastream`. Fai clic sullo stream di dati per aprirlo.
+In Datastreams, cercare lo stream di dati denominato `--aepUserLdap-- - Demo System Datastream`. Fai clic sullo stream di dati per aprirlo.
 
 ![Acquisizione dei dati](./images/atdestds3.png)
 
@@ -76,8 +76,8 @@ Poi vedrai questo.
 
 Nella schermata **Configura nuova destinazione**, è necessario configurare due elementi:
 
-- Nome: utilizzare il nome `--demoProfileLdap-- - Adobe Target (Web)`, che deve essere simile al seguente: **vangeluw - Adobe Target (Web)**.
-- ID dello stream di dati: è necessario selezionare lo stream di dati configurato in [Esercizio 0.2 Creare lo stream di dati](./../../../modules/gettingstarted/gettingstarted/ex2.md). Il nome dello stream di dati deve essere: `--demoProfileLdap-- - Demo System Datastream`.
+- Nome: utilizzare il nome `--aepUserLdap-- - Adobe Target (Web)`, che deve essere simile al seguente: **vangeluw - Adobe Target (Web)**.
+- ID dello stream di dati: è necessario selezionare lo stream di dati configurato in [Esercizio 0.2 Creare lo stream di dati](./../../../modules/gettingstarted/gettingstarted/ex2.md). Il nome dello stream di dati deve essere: `--aepUserLdap-- - Demo System Datastream`.
 
 Fai clic su **Avanti**.
 
@@ -91,7 +91,7 @@ La destinazione viene ora creata e verrà visualizzata nell’elenco. Seleziona 
 
 ![ALLE](./images/atdest7.png)
 
-Nell&#39;elenco dei segmenti disponibili selezionare il segmento creato in [Esercizio 6.1 Creare un segmento](./ex1.md), denominato `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. Quindi fare clic su **Avanti**.
+Nell&#39;elenco dei segmenti disponibili selezionare il segmento creato in [Esercizio 6.1 Creare un segmento](./ex1.md), denominato `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. Quindi fare clic su **Avanti**.
 
 ![ALLE](./images/atdest8.png)
 
@@ -177,7 +177,7 @@ Fai clic sul titolo dell&#39;attività nell&#39;angolo superiore sinistro per ri
 
 Per il nome, utilizzare:
 
-- `--demoProfileLdap-- - RTCDP - XT (Form)`
+- `--aepUserLdap-- - RTCDP - XT (Form)`
 
 ![RTCDP](./images/atform8.png)
 

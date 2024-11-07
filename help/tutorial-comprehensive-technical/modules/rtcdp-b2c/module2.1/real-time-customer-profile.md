@@ -4,9 +4,9 @@ description: Foundation - Profilo cliente in tempo reale
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,6 @@ In questo modulo approfondiremo le funzionalità di Real-time Customer Profile e
 - Accesso a [https://public.aepdemo.net](https://public.aepdemo.net)
 - **Scarica queste risorse**:
    - [Raccolte Postman](./../../../assets/postman/postman_profile.zip)
-
->[!IMPORTANT]
->
->Questo tutorial è stato creato per facilitare un particolare formato di workshop. Utilizza sistemi e account specifici a cui potresti non avere accesso. Anche senza accesso, pensiamo che si può ancora imparare molto leggendo attraverso questo contenuto molto dettagliato. Se sei un partecipante a uno dei workshop e hai bisogno delle tue credenziali di accesso, contatta il tuo rappresentante di Adobe che ti fornirà le informazioni richieste.
 
 >[!NOTE]
 >

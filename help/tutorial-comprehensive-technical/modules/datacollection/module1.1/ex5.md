@@ -3,7 +3,7 @@ title: Foundation - Configurazione di Adobe Experience Platform Data Collection 
 description: Foundation - Configurazione di Adobe Experience Platform Data Collection e dell’estensione Web SDK - Implementazione di Adobe Analytics e Adobe Audience Manager
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Se desideri inviare i dati raccolti da Web SDK ad Adobe Analytics e Adobe Audien
 
 Vai a [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/) e vai a **Datastreams**.
 
-Nell&#39;angolo in alto a destra dello schermo, seleziona il nome della sandbox, che dovrebbe essere `--aepSandboxId--`. Apri lo stream di dati specifico, denominato `--demoProfileLdap-- - Demo System Datastream`.
+Nell&#39;angolo in alto a destra dello schermo, seleziona il nome della sandbox, che dovrebbe essere `--aepSandboxName--`. Apri lo stream di dati specifico, denominato `--aepUserLdap-- - Demo System Datastream`.
 
 ![Fai clic sull&#39;icona Configurazione di Edge nell&#39;area di navigazione a sinistra](./images/edgeconfig1b.png)
 

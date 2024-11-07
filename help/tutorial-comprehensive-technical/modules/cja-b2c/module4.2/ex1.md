@@ -3,7 +3,7 @@ title: Acquisire e analizzare i dati Google Analytics in Adobe Experience Platfo
 description: Acquisire e analizzare i dati Google Analytics in Adobe Experience Platform con il connettore Source BigQuery - Creare l’account della piattaforma Google Cloud
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Assegna un nome al progetto seguendo questa convenzione di denominazione:
 
 | Convenzione | Esempio |
 | ----------------- |-------------| 
-| `--demoProfileLdap---googlecloud` | delaigle-googlecloud |
+| `--aepUserLdap---googlecloud` | delaigle-googlecloud |
 
 ![demo](./images/ex1/3.png)
 
@@ -113,7 +113,7 @@ Prima di continuare con l&#39;esercizio successivo, annotare i seguenti elementi
 
 | Credenziali | Denominazione | Esempio |
 | ----------------- |-------------| -------------|
-| Nome progetto | `--demoProfileLdap---googlecloud` | vangeluw-googlecloud |
+| Nome progetto | `--aepUserLdap---googlecloud` | vangeluw-googlecloud |
 | ID Progetto | random | 306413-attività-composta |
 
 Per trovare il nome e l&#39;ID progetto, fai clic sul **nome progetto** nella barra dei menu superiore:

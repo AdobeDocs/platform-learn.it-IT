@@ -3,7 +3,7 @@ title: Attivazione segmento in Microsoft Azure Event Hub - Creazione di un segme
 description: Attivazione segmento in Microsoft Azure Event Hub - Creazione di un segmento in streaming
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 1%
@@ -44,7 +44,7 @@ Dopo aver effettuato l’accesso, accedi alla home page di Adobe Experience Plat
 
 ![Acquisizione dei dati](./../../../modules/datacollection/module1.2/images/home.png)
 
-Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``--aepSandboxId--``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella riga blu nella parte superiore dello schermo. Dopo aver selezionato la sandbox appropriata, la schermata cambia e ora sei nella sandbox dedicata.
+Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``--aepSandboxName--``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella riga blu nella parte superiore dello schermo. Dopo aver selezionato la sandbox appropriata, la schermata cambia e ora sei nella sandbox dedicata.
 
 ![Acquisizione dei dati](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -52,13 +52,13 @@ Vai a **Segmenti**. Fare clic sul pulsante **+ Crea segmento**.
 
 ![Acquisizione dei dati](./images/seg.png)
 
-Assegna un nome al segmento `--demoProfileLdap-- - Interest in Equipment` e aggiungi l&#39;evento esperienza nome pagina:
+Assegna un nome al segmento `--aepUserLdap-- - Interest in Equipment` e aggiungi l&#39;evento esperienza nome pagina:
 
 Fai clic su **Eventi** e trascina **XDM ExperienceEvent > Web > Dettagli pagina Web > Nome**. Immetti **apparecchiature** come valore:
 
 ![4-05-create-ee-2.png](./images/4-05-create-ee-2.png)
 
-Trascina e rilascia **XDM ExperienceEvent > `--aepTenantIdSchema--` > demoEnvironment > brandName**. Immetti `--demoProfileLdap--` come valore, imposta il parametro di confronto su **contains** e fai clic su **Salva**:
+Trascina e rilascia **XDM ExperienceEvent > `--aepTenantId--` > demoEnvironment > brandName**. Immetti `--aepUserLdap--` come valore, imposta il parametro di confronto su **contains** e fai clic su **Salva**:
 
 ![4-05-create-ee-2-brand.png](./images/4-05-create-ee-2-brand.png)
 
@@ -67,7 +67,7 @@ Trascina e rilascia **XDM ExperienceEvent > `--aepTenantIdSchema--` > demoEnviro
 Il PQL del segmento si presenta così:
 
 ```code
-CHAIN(xEvent, timestamp, [C0: WHAT(web.webPageDetails.name.equals("equipment", false) and _experienceplatform.demoEnvironment.brandName.contains("--demoProfileLdap--", false))])
+CHAIN(xEvent, timestamp, [C0: WHAT(web.webPageDetails.name.equals("equipment", false) and _experienceplatform.demoEnvironment.brandName.contains("--aepUserLdap--", false))])
 ```
 
 Passaggio successivo: [2.4.4 Attiva segmento](./ex4.md)

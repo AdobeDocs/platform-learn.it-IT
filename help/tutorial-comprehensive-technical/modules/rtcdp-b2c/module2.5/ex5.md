@@ -3,7 +3,7 @@ title: 'Raccolta dati e inoltro eventi: inoltro di eventi verso l’ecosistema A
 description: Inoltra gli eventi verso l’ecosistema AWS
 kt: 5342
 doc-type: tutorial
-source-git-commit: cd603fdcbac6cc77b00d50be888805329f014443
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2422'
 ht-degree: 2%
@@ -55,7 +55,7 @@ Verrà quindi visualizzata la home page di **Amazon S3**. Fai clic su **Crea buc
 
 Nella schermata **Crea bucket**, è necessario configurare due elementi:
 
-- Nome: utilizzare il nome `eventforwarding---demoProfileLdap--`. Ad esempio, in questo esercizio il nome del bucket è **aepmodulertcdpvangeluw**
+- Nome: utilizzare il nome `eventforwarding---aepUserLdap--`. Ad esempio, in questo esercizio il nome del bucket è **aepmodulertcdpvangeluw**
 - Regione: utilizzare la regione **UE (Francoforte) eu-central-1**
 
 ![ETL](./images/bucketname.png)
@@ -78,7 +78,7 @@ Selezionare **Flussi dati Kinesis**. Fare clic su **Crea flusso di dati**.
 
 ![ETL](./images/kinesis2.png)
 
-Per il **nome flusso dati**, utilizzare `--demoProfileLdap---datastream`.
+Per il **nome flusso dati**, utilizzare `--aepUserLdap---datastream`.
 
 ![ETL](./images/kinesis3.png)
 
@@ -246,7 +246,7 @@ Poi vedrai questo. Compila le impostazioni come segue:
 - Scegli il protocollo: seleziona **REST**
 - Crea nuova API: seleziona **Nuova API**
 - Impostazioni:
-   - Nome API: utilizzare `--demoProfileLdap---eventforwarding`
+   - Nome API: utilizzare `--aepUserLdap---eventforwarding`
    - Tipo di endpoint: seleziona **Area geografica**
 
 Fare clic su **Crea API**.
@@ -341,7 +341,7 @@ Scorri verso il basso e incolla questo codice in **Corpo richiesta**. Fare clic 
     "dynamicPartitioningKey": "v2"
   },
   "PartitionKey": "1",
-  "StreamName": "--demoProfileLdap---datastream"
+  "StreamName": "--aepUserLdap---datastream"
 }
 ```
 
@@ -370,14 +370,14 @@ curl --location --request POST 'https://vv1i5vwg2k.execute-api.us-west-2.amazona
 --header 'Content-Type: application/json' \
 --data-raw '{
     "Data": {
-        "userid": "--demoProfileLdap--@adobe.com",
-        "firstName":"--demoProfileLdap--",
+        "userid": "--aepUserLdap--@adobe.com",
+        "firstName":"--aepUserLdap--",
         "offerName":"10% off on outdoor gears",
         "offerCode": "10OFF-SPRING",
         "dynamicPartitioningKey": "campaign"
     },
     "PartitionKey": "1",
-    "StreamName": "--demoProfileLdap---datastream"
+    "StreamName": "--aepUserLdap---datastream"
 }'
 ```
 
@@ -470,7 +470,7 @@ Poi vedrai questo. Incolla il seguente codice nel campo **Body (Raw)**. Fai clic
 {
     "Data":{{awsDataObject}},
     "PartitionKey": "1",
-    "StreamName": "--demoProfileLdap---datastream"
+    "StreamName": "--aepUserLdap---datastream"
 }
 ```
 

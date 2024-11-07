@@ -3,7 +3,7 @@ title: Foundation - Configurazione di Adobe Experience Platform Data Collection 
 description: Foundation - Configurazione di Adobe Experience Platform Data Collection e dell’estensione Web SDK - Edge Network, flussi di dati e raccolta dati lato server
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Fare clic su **[!UICONTROL Datastreams]** o **[!UICONTROL Datastreams (Beta)]** 
 
 ![Fai clic sull&#39;icona dello stream di dati nell&#39;area di navigazione a sinistra](./images/edgeconfig1.png)
 
-Cercare lo stream di dati, denominato `--demoProfileLdap-- - Demo System Datastream`.
+Cercare lo stream di dati, denominato `--aepUserLdap-- - Demo System Datastream`.
 
 ![Denomina lo stream di dati e salva](./images/edgeconfig2.png)
 
@@ -54,7 +54,7 @@ Poi vedrai questo. Al momento, hai abilitato solo Adobe Experience Platform. La 
 
 Per questo flusso di dati...
 
-- Tutti i dati raccolti verranno memorizzati nella sandbox `--aepSandboxId--` in Adobe Experience Platform
+- Tutti i dati raccolti verranno memorizzati nella sandbox `--aepSandboxName--` in Adobe Experience Platform
 - Tutti i dati di Experience Event vengono raccolti per impostazione predefinita nel set di dati **Demo System - Set di dati evento per il sito Web (Global v1.1)**
 - Tutti i dati profilo verranno raccolti per impostazione predefinita nel set di dati **Demo System - Profile Dataset for Website (Global v1.1)** (l&#39;acquisizione nativa dei dati profilo con Web SDK non è ancora supportata da Web SDK e verrà resa disponibile in una fase successiva)
 - Se desideri utilizzare il servizio applicativo **Offer Decisioning** per questo flusso di dati, devi selezionare la casella ad Offer decisioning. (farà parte del [modulo 3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md))

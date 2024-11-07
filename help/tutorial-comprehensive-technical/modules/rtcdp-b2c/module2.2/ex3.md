@@ -3,7 +3,7 @@ title: Customer AI - Dashboard e segmentazione del punteggio (Predict & Take Act
 description: Customer AI - Dashboard e segmentazione del punteggio (Predict & Take Action)
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 1%
@@ -48,7 +48,7 @@ Vedrai che viene creata automaticamente una definizione di segmento.
 
 ![Regola segmento](./images/caicreatesegment.png)
 
-Assegna un nome al segmento seguendo questa convenzione di denominazione: `--demoProfileLdap-- - Customer AI High Propensity`. Fai clic su **Salva**.
+Assegna un nome al segmento seguendo questa convenzione di denominazione: `--aepUserLdap-- - Customer AI High Propensity`. Fai clic su **Salva**.
 
 ![Regola segmento](./images/caicreatesegment1.png)
 

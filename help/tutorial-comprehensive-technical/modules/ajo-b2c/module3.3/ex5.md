@@ -3,7 +3,7 @@ title: 'Offer decisioning: utilizzare la decisione in un messaggio e-mail'
 description: Utilizza la tua decisione in un messaggio e-mail
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 In questo esercizio, utilizzerai la tua decisione per personalizzare la consegna di un’e-mail e di un SMS.
 
-Vai a **Percorsi**. Trovare il percorso creato nell&#39;esercizio 7.2, denominato `--demoProfileLdap-- - Account Creation Journey`. Fare clic sul percorso per aprirlo.
+Vai a **Percorsi**. Trovare il percorso creato nell&#39;esercizio 7.2, denominato `--aepUserLdap-- - Account Creation Journey`. Fare clic sul percorso per aprirlo.
 
 ![Journey Optimizer](./images/emailoffer1.png)
 
@@ -46,7 +46,7 @@ Nel menu, vai a **Componenti contenuto**. Seleziona il componente **Decisione of
 
 ![Journey Optimizer](./images/emailoffer7.png)
 
-Seleziona il tipo di posizionamento da includere nell’e-mail. Nel menu a discesa **Posizionamenti**, seleziona **E-mail - Immagine**, quindi seleziona la decisione `--demoProfileLdap-- - Luma Decision`. Fai clic su **Aggiungi**.
+Seleziona il tipo di posizionamento da includere nell’e-mail. Nel menu a discesa **Posizionamenti**, seleziona **E-mail - Immagine**, quindi seleziona la decisione `--aepUserLdap-- - Luma Decision`. Fai clic su **Aggiungi**.
 
 ![Journey Optimizer](./images/emailoffer8.png)
 
