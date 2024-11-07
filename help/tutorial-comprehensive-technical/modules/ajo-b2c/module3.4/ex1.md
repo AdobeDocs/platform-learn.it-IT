@@ -1,0 +1,466 @@
+---
+title: Adobe Journey Optimizer - Configurare un percorso basato su trigger - Conferma dell’ordine
+description: In questa sezione viene configurato un percorso basato su trigger - Conferma ordine
+kt: 5342
+doc-type: tutorial
+source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+workflow-type: tm+mt
+source-wordcount: '1998'
+ht-degree: 0%
+
+---
+
+# 3.4.1 Configurare un percorso basato su trigger - Conferma dell’ordine
+
+Accedi a Adobe Journey Optimizer da [Adobe Experience Cloud](https://experience.adobe.com). Fare clic su **Journey Optimizer**.
+
+![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+
+Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxId--`. Per passare da una sandbox all&#39;altra, fare clic su **Production Prod (VA7)** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **AEP Enablement FY22**. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxId--`.
+
+![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+
+## 3.4.1.1 Creare l’evento
+
+Nel menu, vai a **Configurazioni** e fai clic su **Gestisci** in **Eventi**.
+
+![Journey Optimizer](./images/oc30.png)
+
+Nella schermata **Eventi** verrà visualizzata una visualizzazione simile a questa. Fare clic su **Crea evento**.
+
+![Journey Optimizer](./images/oc31.png)
+
+Viene quindi visualizzata una configurazione dell’evento vuota.
+
+![Journey Optimizer](./images/oc32.png)
+
+Prima di tutto, assegna all&#39;evento un nome come `--demoProfileLdap--PurchaseEvent` e aggiungi una descrizione come questa: `Purchase Event`.
+
+![Journey Optimizer](./images/oc34.png)
+
+La selezione **Tipo evento** è successiva. Seleziona **Unitario**.
+
+![Journey Optimizer](./images/eventidtype1.png)
+
+La selezione del **Tipo ID evento** è successiva. Seleziona **Sistema generato**
+
+![Journey Optimizer](./images/eventidtype.png)
+
+Di seguito è riportata la selezione dello schema. Per questo esercizio è stato preparato uno schema. Utilizzare lo schema `Demo System - Event Schema for Website (Global v1.1) v.1`.
+
+![Journey Optimizer](./images/oc35.png)
+
+Dopo aver selezionato lo schema, nella sezione **Payload** verranno selezionati diversi campi. Fai clic sull&#39;icona **Modifica/Matita** per aggiungere altri campi a questo evento.
+
+![Journey Optimizer](./images/oc36.png)
+
+Poi vedrai questo popup. È ora necessario selezionare caselle di controllo aggiuntive per accedere a dati aggiuntivi quando l’evento viene attivato.
+
+![Journey Optimizer](./images/oc37.png)
+
+Selezionare innanzitutto la casella di controllo alla riga `--aepTenantId--`.
+
+![Journey Optimizer](./images/oc38.png)
+
+Quindi scorrere verso il basso e selezionare la casella di controllo sulla riga `productListItems`.
+
+![Journey Optimizer](./images/oc39.png)
+
+Quindi scorrere verso il basso e selezionare la casella di controllo sulla riga `commerce`.
+
+![Journey Optimizer](./images/oc391.png)
+
+Fare clic su **Ok**.
+
+Vedrai quindi che sono stati aggiunti campi aggiuntivi all’evento. Fai clic su **Salva**.
+
+![Journey Optimizer](./images/oc40.png)
+
+Il nuovo evento viene quindi condiviso e l’evento verrà visualizzato nell’elenco degli eventi disponibili ora.
+
+Fai di nuovo clic sull&#39;evento per aprire di nuovo la schermata **Modifica evento**.
+Passa di nuovo il puntatore del mouse sul campo **Payload** per visualizzare nuovamente le 3 icone. Fai clic sull&#39;icona **Visualizza payload**.
+
+![Journey Optimizer](./images/oc41.png)
+
+Ora vedrai un esempio del payload previsto. L&#39;evento ha un ID evento di orchestrazione univoco, che puoi trovare scorrendo verso il basso in tale payload fino a visualizzare `_experience.campaign.orchestration.eventID`.
+
+![Journey Optimizer](./images/oc42.png)
+
+L’ID evento è ciò che deve essere inviato a Adobe Journey Optimizer per attivare il percorso che verrà generato nel passaggio successivo. Scrivere questo eventID, in quanto sarà necessario in uno dei passaggi successivi.
+`"eventID": "ef6dd943c94fe1b4763c098ccd1772344662f2a9f614513106cb5ada8be36857"`
+
+Fai clic su **Ok**, seguito da **Annulla**.
+
+L’evento è ora configurato e pronto per essere utilizzato.
+
+## 3.4.1.2 Creare il percorso
+
+Nel menu, vai a **Percorsi** e fai clic su **Crea Percorso**.
+
+![Journey Optimizer](./images/oc43.png)
+
+Poi vedrai questo. Assegna un nome al percorso. Usa `--demoProfileLdap-- - Order Confirmation journey`. Fai clic su **OK**.
+
+![Journey Optimizer](./images/oc45.png)
+
+Innanzitutto, devi aggiungere l’evento come punto di partenza del percorso. Cercare l&#39;evento `--demoProfileLdap--PurchaseEvent` e trascinarlo sull&#39;area di lavoro. Fai clic su **OK**.
+
+![Journey Optimizer](./images/oc46.png)
+
+Quindi, in **Azioni**, cerca l&#39;azione **E-mail** e aggiungilo all&#39;area di lavoro.
+
+![Journey Optimizer](./images/oc47.png)
+
+Imposta **Categoria** su **Marketing** e seleziona una superficie e-mail che ti consenta di inviare messaggi e-mail. In questo caso, la superficie e-mail da selezionare è **E-mail**. Assicurati che le caselle di controllo per **Clic su e-mail** e **aperture e-mail** siano entrambe abilitate.
+
+![ACOP](./images/journeyactions1.png)
+
+Il passaggio successivo consiste nel creare il messaggio. A tale scopo, fare clic su **Modifica contenuto**.
+
+![ACOP](./images/journeyactions2.png)
+
+Ora vedete questo. Fare clic sul campo di testo **Oggetto**.
+
+![ACOP](./images/journeyactions3.png)
+
+Nell&#39;area di testo inizia a scrivere **Grazie per l&#39;ordine,**
+
+![Journey Optimizer](./images/oc5.png)
+
+L’oggetto non è ancora stato completato. Successivamente devi inserire il token di personalizzazione per il campo **First name**, memorizzato in `profile.person.name.firstName`. Nel menu a sinistra, scorri verso il basso per trovare il campo **Persona** > **Nome completo** > **Nome** e fai clic sull&#39;icona **+** per aggiungere il token di personalizzazione nella riga dell&#39;oggetto. Fai clic su **Salva**.
+
+![Journey Optimizer](./images/oc6.png)
+
+Allora tornerai qui. Fai clic su **Invia e-mail a Designer** per creare il contenuto dell&#39;e-mail.
+
+![Journey Optimizer](./images/oc7.png)
+
+Nella schermata successiva, fai clic su **Progetta da zero**.
+
+![Journey Optimizer](./images/oc8.png)
+
+Nel menu a sinistra trovi i componenti struttura che puoi utilizzare per definire la struttura dell’e-mail (righe e colonne).
+
+Trascina e rilascia 8 volte una **colonna 1:1** nell&#39;area di lavoro, per ottenere quanto segue:
+
+![Journey Optimizer](./images/oc9.png)
+
+Vai a **Componenti contenuto**.
+
+![Journey Optimizer](./images/oc10.png)
+
+Trascina e rilascia un componente **Immagine** sulla prima riga. Fare clic su **Sfoglia**.
+
+![Journey Optimizer](./images/oc11.png)
+
+Vai alla cartella **enablement-assets**, seleziona il file **luma-logo.png** e fai clic su **Select**.
+
+![Journey Optimizer](./images/oc12.png)
+
+Ora sei tornato qui. Fai clic sull&#39;immagine per selezionarla, quindi utilizza il cursore **Dimensioni** per ridurre leggermente l&#39;immagine del logo.
+
+![Journey Optimizer](./images/oc13.png)
+
+Vai a **Componenti contenuto** e trascina un componente **Immagine** sulla seconda riga. Selezionare il **componente immagine** senza fare clic su Sfoglia.
+
+![Journey Optimizer](./images/oc15.png)
+
+Incolla questo URL immagine nel campo **Source**: `https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/29043bedcde632a9cbe8a02a164189c9_preparing.png`. Questa immagine è ospitata all&#39;esterno di Adobe.
+
+![Journey Optimizer](./images/oc14.png)
+
+Quando modifichi l’ambito in un altro campo, l’immagine viene riprodotta e viene visualizzato quanto segue:
+
+![Journey Optimizer](./images/oc16.png)
+
+Quindi, vai a **Componenti contenuto** e trascina un componente **Testo** sulla terza riga.
+
+![Journey Optimizer](./images/oc17.png)
+
+Selezionare il testo predefinito nel componente **Digitare qui il testo.** e sostituirlo con il testo seguente:
+
+```javascript
+You’re one step closer!
+
+Hi 
+
+We've received your order details!
+
+We will also send you a separate email containing your VAT Invoice.
+
+We'll be back in touch with you as soon as we've finished packing your package. Please read carefully the Order Information detailed below.
+```
+
+![Journey Optimizer](./images/oc18.png)
+
+Posizionare il cursore accanto al testo **Ciao** e fare clic su **Aggiungi Personalization**.
+
+![Journey Optimizer](./images/oc19.png)
+
+Passa al campo **Persona** > **Nome completo** > **Nome** e fai clic sull&#39;icona **+** per aggiungere il token di personalizzazione nella riga dell&#39;oggetto. Fai clic su **Salva**.
+
+![Journey Optimizer](./images/oc20.png)
+
+A questo punto viene visualizzato quanto segue:
+
+![Journey Optimizer](./images/oc21.png)
+
+Quindi, vai a **Componenti contenuto** e trascina un componente **Testo** sulla quarta riga.
+
+![Journey Optimizer](./images/oc22.png)
+
+Selezionare il testo predefinito nel componente **Digitare qui il testo.** e sostituirlo con il testo seguente:
+
+`Order Information`
+
+Cambia la dimensione del carattere in **26px** e centrare il testo in questa cella. A questo punto si otterrà:
+
+![Journey Optimizer](./images/oc23.png)
+
+Quindi, vai a **Componenti contenuto** e trascina un componente **HTML** sulla quinta riga. Fare clic sul componente HTML e quindi su **Mostra il codice sorgente**.
+
+![Journey Optimizer](./images/oc24.png)
+
+Nel popup **Modifica HTML**, incolla questo HTML:
+
+```<table><tbody><tr><td><b>Items purchased</b></td><td></td><td><b>Quantity</b></td><td><b>Subtotal</b></td></tr><tr><td colspan="4" width="500"><hr></td></tr></tbody></table>```
+
+Fai clic su **Salva**.
+
+![Journey Optimizer](./images/oc25.png)
+
+Allora avrai questo. Fai clic su **Salva** per salvare l&#39;avanzamento.
+
+![Journey Optimizer](./images/oc26.png)
+
+Vai a **Componenti contenuto** e trascina un componente **HTML** sulla sesta riga. Fare clic sul componente HTML e quindi su **Mostra il codice sorgente**.
+
+![Journey Optimizer](./images/oc57.png)
+
+Nel popup **Modifica HTML**, incolla questo HTML:
+
+```{{#each xxx as |item|}}<table width="500"><tbody><tr><td><img src="{{item.--aepTenantId--.core.imageURL}}" width="100"></td><td><table><tbody><tr><td><b>{{item.name}}</b><br>{{item.--aepTenantId--.core.subCategory}}<br><b>{{item.priceTotal}}</b><br>&nbsp;<br>Article no: {{item.SKU}}</td></tr></tbody></table></td><td>{{item.quantity}}</td><td><b>{{item.priceTotal}}</b></td></tr></tbody></table>{{/each}}```
+
+A questo punto si otterrà:
+
+![Journey Optimizer](./images/oc58.png)
+
+È ora necessario sostituire **xxx** con un riferimento all&#39;oggetto productListItems che fa parte dell&#39;evento che attiva il percorso.
+
+![Journey Optimizer](./images/oc59.png)
+
+Elimina prima **xxx** nel codice HTML.
+
+![Journey Optimizer](./images/oc60.png)
+
+Nel menu a sinistra, fai clic su **Attributi contestuali**. Questo contesto viene passato al messaggio dal percorso.
+
+![Journey Optimizer](./images/oc601.png)
+
+Poi vedrai questo. Fai clic sulla freccia accanto a **Journey Orchestration** per approfondire.
+
+![Journey Optimizer](./images/oc61.png)
+
+Fai clic sulla freccia accanto a **Eventi** per approfondire.
+
+![Journey Optimizer](./images/oc62.png)
+
+Fare clic sulla freccia accanto a `--demoProfileLdap--PurchaseEvent` per approfondire.
+
+![Journey Optimizer](./images/oc63.png)
+
+Fai clic sulla freccia accanto a **productListItems** per approfondire.
+
+![Journey Optimizer](./images/oc64.png)
+
+Fai clic sull&#39;icona **+** accanto a **Name** per aggiungerla all&#39;area di lavoro. Allora avrai questo. Selezionare **.name** come indicato nella schermata seguente, quindi rimuovere **.name**.
+
+![Journey Optimizer](./images/oc65.png)
+
+Allora avrai questo. Fai clic su **Salva**.
+
+![Journey Optimizer](./images/oc66.png)
+
+Ora tornerai al Designer delle e-mail. Fai clic su **Salva** per salvare l&#39;avanzamento.
+
+![Journey Optimizer](./images/oc67.png)
+
+Quindi, vai a **Componenti contenuto** e trascina un componente **HTML** sulla settima riga. Fare clic sul componente HTML e quindi su **Mostra il codice sorgente**.
+
+![Journey Optimizer](./images/oc68.png)
+
+Nel popup **Modifica HTML**, incolla questo HTML:
+
+```<table><tbody><tr><td><b>Subtotal</b><br>Delivery charge (included)</td><td align="right"><b>xxx</b><br><b>5</b></td></tr><tr><td colspan="2" width="500"><hr></td></tr><tr><td><b>Total including VAT</b></td><td align="right"><b>xxx</b></td></tr></tbody></table>```
+
+In questo codice HTML sono presenti 2 riferimenti di **xxx**. È ora necessario sostituire ogni **xxx** con un riferimento all&#39;oggetto productListItems che fa parte dell&#39;evento che attiva il percorso.
+
+![Journey Optimizer](./images/oc69.png)
+
+Elimina innanzitutto il primo **xxx** nel codice HTML.
+
+![Journey Optimizer](./images/oc71.png)
+
+Nel menu a sinistra, fai clic su **Attributi contestuali**.
+
+![Journey Optimizer](./images/oc711.png)
+
+Fai clic sulla freccia accanto a **Journey Orchestration** per approfondire.
+
+![Journey Optimizer](./images/oc72.png)
+
+Fai clic sulla freccia accanto a **Eventi** per approfondire.
+
+![Journey Optimizer](./images/oc722.png)
+
+Fare clic sulla freccia accanto a `--demoProfileLdap--PurchaseEvent` per approfondire.
+
+![Journey Optimizer](./images/oc73.png)
+
+Fai clic sulla freccia accanto a **Commerce** per approfondire.
+
+![Journey Optimizer](./images/oc733.png)
+
+Fai clic sulla freccia accanto a **Ordine** per approfondire.
+
+![Journey Optimizer](./images/oc74.png)
+
+Fai clic sull&#39;icona **+** accanto a **Prezzo totale** per aggiungerla all&#39;area di lavoro.
+
+![Journey Optimizer](./images/oc75.png)
+
+Allora avrai questo. Ora elimina il secondo **xxx** nel codice HTML.
+
+![Journey Optimizer](./images/oc76.png)
+
+Fai di nuovo clic sull&#39;icona **+** accanto a **Prezzo totale** per aggiungerla all&#39;area di lavoro.
+
+![Journey Optimizer](./images/oc77.png)
+
+È inoltre possibile aggiungere il campo **Valuta** dall&#39;interno dell&#39;oggetto **Ordine** all&#39;area di lavoro, come illustrato in questa sezione.
+Al termine, fai clic su **Salva** per salvare le modifiche.
+
+![Journey Optimizer](./images/oc771.png)
+
+Tornerai a utilizzare E-mail Designer. Fai di nuovo clic su **Salva**.
+
+![Journey Optimizer](./images/oc78.png)
+
+Torna alla dashboard dei messaggi facendo clic sulla **freccia** accanto al testo dell&#39;oggetto nell&#39;angolo in alto a sinistra.
+
+![Journey Optimizer](./images/oc79.png)
+
+Fai clic sulla freccia nell’angolo in alto a sinistra per tornare al percorso.
+
+![Journey Optimizer](./images/oc79a.png)
+
+Fai clic su **Ok** per chiudere l&#39;azione e-mail.
+
+![Journey Optimizer](./images/oc79b.png)
+
+Fai clic su **Publish** per pubblicare il percorso.
+
+![Journey Optimizer](./images/oc511.png)
+
+Fai di nuovo clic su **Publish**.
+
+![Journey Optimizer](./images/oc512.png)
+
+Il percorso è stato pubblicato.
+
+![Journey Optimizer](./images/oc513.png)
+
+## 3.4.1.5 Aggiornare la proprietà Client di raccolta dati di Adobe Experience Platform
+
+Vai a [Raccolta dati Adobe Experience Platform](https://experience.adobe.com/launch/) e seleziona **Tag**.
+
+Questa è la pagina Proprietà raccolta dati di Adobe Experience Platform che hai visto prima.
+
+![Pagina delle proprietà](./../../../modules/datacollection/module1.1/images/launch1.png)
+
+Nel modulo 0, Demo System ha creato due proprietà client per te: una per il sito web e una per l’app mobile. Trovarli cercando `--demoProfileLdap--` nella casella **[!UICONTROL Cerca]**. Fare clic per aprire la proprietà **Web**.
+
+![Casella di ricerca](./../../../modules/datacollection/module1.1/images/property6.png)
+
+Vai a **Elementi dati**. Cerca e apri l&#39;elemento dati **XDM - Purchase**.
+
+![Journey Optimizer](./images/oc91.png)
+
+Poi vedrai questo. Passa al campo **_experience.campaign.orchestration.eventID** e compila qui il tuo eventID. L’eventID da compilare qui è l’eventID creato come parte dell’esercizio 10.1.2. Fai clic su **Salva** o **Salva nella libreria**.
+
+![Journey Optimizer](./images/oc92.png)
+
+Salva le modifiche nella proprietà Client, quindi pubblica le modifiche aggiornando la libreria di sviluppo.
+
+![Journey Optimizer](./images/oc93.png)
+
+Le modifiche sono ora implementate e possono essere testate.
+
+## 3.4.1.6 Verifica l’e-mail di conferma dell’ordine utilizzando il sito web demo
+
+Testiamo il percorso aggiornato acquistando un prodotto sul sito web demo.
+
+Vai a [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sul progetto del tuo sito web per aprirlo.
+
+![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
+
+Nella pagina **Screens** fare clic su **Esegui**.
+
+![DSN](./../../../modules/datacollection/module1.1/images/web2.png)
+
+Poi vedrai il tuo sito web demo aperto. Seleziona l’URL e copialo negli Appunti.
+
+![DSN](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+
+Apri una nuova finestra del browser in incognito.
+
+![DSN](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+
+Incolla l’URL del sito web demo, che hai copiato nel passaggio precedente. Ti verrà quindi chiesto di effettuare l’accesso con il tuo Adobe ID.
+
+![DSN](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+
+Seleziona il tipo di account e completa la procedura di accesso.
+
+![DSN](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+
+Vedrai quindi il tuo sito web caricato in una finestra del browser in incognito. Per ogni dimostrazione, dovrai utilizzare una nuova finestra del browser in incognito per caricare l’URL del sito web demo.
+
+![DSN](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
+
+Fai clic sull’icona del logo di Adobe nell’angolo in alto a sinistra dello schermo per aprire il Visualizzatore profili.
+
+![Demo](./../../../modules/datacollection/module1.2/images/pv1.png)
+
+Dai un&#39;occhiata al pannello Visualizzatore profili e al Profilo cliente in tempo reale con **ID Experience Cloud** come identificatore primario per questo cliente attualmente sconosciuto.
+
+![Demo](./../../../modules/datacollection/module1.2/images/pv2.png)
+
+Vai alla pagina di registrazione/accesso. Fare clic su **CREA UN ACCOUNT**.
+
+![Demo](./../../../modules/datacollection/module1.2/images/pv9.png)
+
+Compila i tuoi dettagli e fai clic su **Registra** dopo di che sarai reindirizzato alla pagina precedente.
+
+![Demo](./../../../modules/datacollection/module1.2/images/pv10.png)
+
+Aggiungi qualsiasi prodotto al carrello e passa alla pagina **Carrello**. Fai clic su **Procedi con l&#39;estrazione**.
+
+![Journey Optimizer](./images/cart1.png)
+
+Verificare quindi i campi nella pagina di estrazione e fare clic su **Estrai**.
+
+![Journey Optimizer](./images/cart2.png)
+
+Riceverai quindi l’e-mail di conferma dell’ordine entro pochi secondi.
+
+![Journey Optimizer](./images/oc98.png)
+
+Hai finito questo esercizio.
+
+Passaggio successivo: [3.4.2 Configurare un percorso di newsletter basato su batch](./ex2.md)
+
+[Torna al modulo 3.4](./journeyoptimizer.md)
+
+[Torna a tutti i moduli](../../../overview.md)
