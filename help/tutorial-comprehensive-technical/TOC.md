@@ -5,7 +5,7 @@ user-guide-description: Un tutorial pratico che tratta molti aspetti di Adobe Ex
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 4df0fdc30d5027c85c9ceebafa9abf771fae1507
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 3%
@@ -20,11 +20,11 @@ ht-degree: 3%
 + 0 Guida introduttiva {#gettingstarted}
    + 0.1 Guida introduttiva {#gettingstarted}
       + [Panoramica](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/getting-started.md)
-      + [0.0.1 Installare l’estensione Chrome per la documentazione di Experience League](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
-      + [0.0.2 Utilizza Demo System Next per configurare la proprietà client di Adobe Experience Platform Data Collection](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
-      + [0.0.3 Creare lo stream di dati](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
-      + [0.0.4 Utilizzare il sito web](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
-      + [0.0.5 Utilizzare l’app mobile](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
+      + [0.1.1 Installare l’estensione Chrome per la documentazione di Experience League](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
+      + [0.1.2 Utilizza Demo System Next per configurare la proprietà client di Adobe Experience Platform Data Collection](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
+      + [0.1.3 Creare lo stream di dati](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
+      + [0.1.4 Utilizzare il sito web](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
+      + [0.1.5 Utilizzare l’app mobile](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
 
 + 1 Raccolta dati {#datacollection}
    + 1.1 Raccolta dati di Adobe Experience Platform ed estensione Web SDK {#module11}

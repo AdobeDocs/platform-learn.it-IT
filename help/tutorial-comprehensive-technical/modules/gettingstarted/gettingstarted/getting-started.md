@@ -3,18 +3,17 @@ title: Guida introduttiva - Riepilogo
 description: Guida introduttiva - Riepilogo
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 31616c51-01e0-4f99-91f1-4f21054b0999
+source-git-commit: 57d12036519ab066b713496669ffdc895d3b4825
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 2%
+source-wordcount: '257'
+ht-degree: 1%
 
 ---
 
-# 0. Guida introduttiva
+# 0.1 Guida introduttiva
 
-**Autore: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
-**In questo modulo**, configurerai tutto in modo da poter raccogliere dati e accedere all&#39;ambiente demo.
+In questo modulo configurerai tutto in modo da poter raccogliere dati, accedere all’ambiente demo e personalizzare le variabili dinamiche in questa esercitazione.
 
 ## Finalità di apprendimento
 
@@ -24,28 +23,28 @@ ht-degree: 2%
 ## Prerequisiti
 
 - Accesso a Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Accesso ad Adobe Experience Platform Launch: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/)
+- Accesso ai tag di Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/)
 - Accesso al sistema demo successivo: [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
 
 ## Esercizi
 
-[0.1 Installare l’estensione Chrome per la documentazione di Experience League](./ex1.md)
+[0.1.1 Installare l’estensione Chrome per la documentazione di Experience League](./ex1.md)
 
 In questo esercizio installerai e configurerai l’estensione Chrome in modo da poterla utilizzare per personalizzare il contenuto dell’esercitazione.
 
-[0.2 Utilizza Demo System Next per configurare la proprietà client di Adobe Experience Platform Data Collection](./ex2.md)
+[0.1.2 Utilizza Demo System Next per configurare la proprietà client di Adobe Experience Platform Data Collection](./ex2.md)
 
 In questo esercizio utilizzerai Demo System Next per configurare le proprietà di Launch per Web e Mobile.
 
-[0.3 Creare lo stream di dati](./ex3.md)
+[0.1.3 Creare lo stream di dati](./ex3.md)
 
 In questo esercizio utilizzerai Demo System Next per configurare le proprietà di Launch per Web e Mobile.
 
-[0.4 Utilizzare il sito web](./ex4.md)
+[0.1.4 Utilizzare il sito web](./ex4.md)
 
 In questo esercizio configurerete il sito web in modo da poterlo utilizzare per dimostrazioni e abilitazione.
 
-[0.5 Utilizzare l’app mobile](./ex5.md)
+[0.1.5 Utilizzare l’app mobile](./ex5.md)
 
 In questo esercizio configurerai l’app mobile in modo da poterla utilizzare per dimostrazioni e abilitazione.
 
