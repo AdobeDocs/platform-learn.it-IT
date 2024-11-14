@@ -3,16 +3,17 @@ title: 'Guida introduttiva: utilizzare l’app mobile'
 description: 'Guida introduttiva: utilizzare l’app mobile'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 2b94f08f-c932-4287-9956-cfe368c96c12
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
 
-# 0.5 Utilizzare l’app mobile
+# Utilizzare l’app mobile
 
-## 0.5.1 Scaricare l’app
+## Scaricare l’app
 
 Vai a [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app) sul tuo computer. Poi vedrai questo.
 
@@ -22,7 +23,7 @@ Utilizza l&#39;app **Fotocamera** sul tuo smartphone per installare l&#39;app mo
 
 >[!NOTE]
 >
->Dopo aver installato l&#39;app per la prima volta su un dispositivo iOS, è possibile che venga visualizzato un messaggio di errore quando si tenta di aprire l&#39;app con il seguente messaggio: **Sviluppatore Enterprise non attendibile**. Per risolvere il problema, vai a **Impostazioni > Generale > Gestione periferiche > Adobe Systems Inc.** e fai clic su **Considera attendibile Adobe Systems Inc.**.
+>Dopo aver installato l&#39;app per la prima volta su un dispositivo iOS, è possibile che venga visualizzato un messaggio di errore quando si tenta di aprire l&#39;app con il seguente messaggio: **Sviluppatore Enterprise non attendibile**. Per risolvere il problema, vai a **Impostazioni > Generale > Gestione VPN e dispositivi > Adobe Systems Inc.** e fai clic su **Considera attendibile Adobe Systems Inc.**.
 
 Una volta installata l’app, questa si trova nella schermata iniziale del dispositivo. Fai clic sull&#39;icona per aprire l&#39;app.
 
@@ -48,21 +49,25 @@ Ora puoi caricare un progetto personalizzato. Fai clic sul codice QR per caricar
 
 ![DSN](./images/mobileappn6.png)
 
-Dopo l&#39;esercizio 0.1, si è ottenuto questo risultato. Fai clic per aprire il **progetto Mobile Retail** creato per te.
+Questo risultato è stato ottenuto dopo l&#39;esercizio precedente. Fai clic per aprire il **progetto Edge Telco per dispositivi mobili** creato per te.
 
 ![DSN](./images/dsn5b.png)
 
-Nel caso in cui tu abbia chiuso accidentalmente la finestra del browser o per sessioni di attivazione o demo future, puoi anche accedere al progetto del tuo sito web da [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sul progetto dell’app mobile per aprirlo.
+Nel caso in cui tu abbia chiuso accidentalmente la finestra del browser o per sessioni di attivazione o demo future, puoi anche accedere al progetto del tuo sito web da [https://dsn.adobe.com](https://dsn.adobe.com). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sui tre punti **...** nel progetto per app mobile, quindi fai clic su **Modifica**.
 
 ![DSN](./images/web8a.png)
 
-Poi vedrai questo. Fai clic su **Integrazioni**.
+Nella pagina **Integrazioni** è necessario selezionare la proprietà Raccolta dati creata nell&#39;esercizio precedente. A tale scopo, fare clic su **Seleziona ambiente**.
 
 ![DSN](./images/web8aa.png)
 
-Devi selezionare la proprietà Raccolta dati per dispositivi mobili creata nell&#39;esercizio 0.1. Fare clic su **Esegui**.
+Fare clic su **Seleziona** nella proprietà Raccolta dati creata nel passaggio precedente, denominata `--aepUserLdap - Demo System (DD/MM/YYYY) (mobile)`. Quindi fare clic su **Salva**.
 
 ![DSN](./images/web8b.png)
+
+Poi vedrai questo. Fare clic su **Esegui**.
+
+![DSN](./images/web8bb.png)
 
 Viene quindi visualizzata questa finestra a comparsa contenente un codice QR. Esegui la scansione di questo codice QR dall’app mobile.
 
@@ -76,8 +81,8 @@ Ora torna alla **Home** nell&#39;app. L&#39;app è ora pronta per essere utilizz
 
 ![DSN](./images/mobileappn8.png)
 
-Hai completato il modulo 0.
+Hai completato il modulo Guida introduttiva e sei pronto per iniziare con i prossimi esercizi.
 
-[Torna al modulo 0](./getting-started.md)
+[Torna a Guida introduttiva](./getting-started.md)
 
 [Torna a tutti i moduli](./../../../overview.md)

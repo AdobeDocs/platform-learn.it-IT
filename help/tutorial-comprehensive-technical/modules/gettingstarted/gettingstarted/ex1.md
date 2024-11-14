@@ -4,14 +4,14 @@ description: 'Guida introduttiva: installare l’estensione Chrome per la docume
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 57d12036519ab066b713496669ffdc895d3b4825
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '903'
 ht-degree: 0%
 
 ---
 
-# 0.1.1 Installare l’estensione Chrome per la documentazione di Experience League
+# Installa l’estensione Chrome per la documentazione di Experience League
 
 ## Informazioni sull’estensione Chrome
 
@@ -35,7 +35,7 @@ Una volta installata l’estensione, lo stesso testo verrà modificato automatic
 
 ![DSN](./images/mod7.png)
 
-## 0.1.1.1 Installare l’estensione Chrome
+## Installare l’estensione Chrome
 
 Per installare l&#39;estensione Chrome, apri il browser Chrome e vai a: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi). Poi vedrai questo.
 
@@ -55,7 +55,7 @@ Nel menu **extensions**, fai clic sull&#39;icona **puzzle** e aggiungi l&#39;est
 
 ![DSN](./images/c6.png)
 
-## 0.1.1.2 Configurare l’estensione Chrome
+## Configurare l&#39;estensione Chrome
 
 Vai a [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview) e fai clic sull&#39;icona dell&#39;estensione per aprirla.
 
@@ -133,7 +133,7 @@ Dopo aver attivato la configurazione, accanto alle iniziali dell’ambiente comp
 
 ![DSN](./images/c10.png)
 
-## 0.1.1.3 Verifica del contenuto del tutorial
+## Verificare il contenuto del tutorial
 
 Come test, passa a [questa pagina](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3).
 
@@ -141,10 +141,10 @@ Come test, passa a [questa pagina](https://experienceleague.adobe.com/en/docs/pl
 
 È ora necessario disporre di una visualizzazione simile a quella riportata di seguito, in cui la variabile di ambiente `aepTenantId` è stata sostituita dall&#39;ID tenant AEP effettivo, che in questo caso è **_experienceplatform**.
 
-![DSN](./images/c12.png)
+![DSN](./images/mod7.png)
 
-Passaggio successivo: [0.2 Utilizzare Demo System Next per configurare la proprietà client di Adobe Experience Platform Data Collection](./ex2.md)
+Passaggio successivo: [Utilizzare Demo System Next per configurare la proprietà client di Adobe Experience Platform Data Collection](./ex2.md)
 
-[Torna al modulo 0](./getting-started.md)
+[Torna a Guida introduttiva](./getting-started.md)
 
 [Torna a tutti i moduli](./../../../overview.md)

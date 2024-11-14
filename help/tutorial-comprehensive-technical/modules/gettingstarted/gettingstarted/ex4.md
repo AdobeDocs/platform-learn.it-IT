@@ -3,22 +3,23 @@ title: 'Guida introduttiva: utilizzare il sito web'
 description: 'Guida introduttiva: utilizzare il sito web'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 6c63a63e-551f-4568-bba5-9d61d7e6a7d1
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
 
-# 0.4 Utilizzare il sito web
+# Utilizza il sito web
 
-## 0.4.1 Opzione 1: proseguire dall&#39;esercizio precedente
+## Opzione 1: continuare dall&#39;esercizio precedente
 
 >[!NOTE]
 >
->Se la schermata seguente non è più aperta, passa all’esercizio 0.4.2.
+>Se la schermata seguente non è più aperta, passa all’opzione 2.
 
-Dopo l&#39;esercizio 0.1, si è ottenuto questo risultato. Fai clic per aprire il **progetto Web Retail** creato per te.
+Dopo l&#39;esercizio 0.1, si è ottenuto questo risultato. Fare clic per aprire il **progetto Web Telco** creato per l&#39;utente.
 
 ![DSN](./images/dsn5a.png)
 
@@ -26,9 +27,17 @@ Poi vedrai questo. Fai clic su **Integrazioni**.
 
 ![DSN](./images/web1.png)
 
-Nella pagina **Integrazioni** è necessario selezionare la proprietà Raccolta dati creata nell&#39;esercizio 0.1.
+Nella pagina **Integrazioni** è necessario selezionare la proprietà Raccolta dati creata nell&#39;esercizio precedente. A tale scopo, fare clic su **Seleziona ambiente**.
 
 ![DSN](./images/web2.png)
+
+Fare clic su **Seleziona** nella proprietà Raccolta dati creata nel passaggio precedente, denominata `--aepUserLdap - Demo System (DD/MM/YYYY) (web)`.
+
+![DSN](./images/web2a.png)
+
+Poi vedrai questo. Fai clic su **Esegui** per aprire il sito Web della demo.
+
+![DSN](./images/web2b.png)
 
 Poi vedrai il tuo sito web demo aperto. Seleziona l’URL e copialo negli Appunti.
 
@@ -50,9 +59,9 @@ Vedrai quindi il tuo sito web caricato in una finestra del browser in incognito.
 
 ![DSN](./images/web7.png)
 
-## 0.4.2 Opzione 2: iniziare con una nuova finestra del browser in incognito
+## Opzione 2: iniziare con una nuova finestra del browser in incognito
 
-Nel caso in cui tu abbia chiuso accidentalmente la finestra del browser o per sessioni di attivazione o demo future, puoi anche accedere al progetto del tuo sito web da [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sul progetto del tuo sito web per aprirlo.
+Nel caso in cui la finestra del browser sia stata chiusa accidentalmente o per sessioni future, puoi accedere al progetto del tuo sito web anche da [https://dsn.adobe.com/](https://dsn.adobe.com/). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sui tre punti **...** nel progetto del tuo sito Web, quindi fai clic su **Modifica**.
 
 ![DSN](./images/web8.png)
 
@@ -60,9 +69,17 @@ Ora puoi seguire il flusso seguente per accedere al sito web. Fai clic su **Inte
 
 ![DSN](./images/web1.png)
 
-Nella pagina **Integrazioni** è necessario selezionare la proprietà Raccolta dati creata nell&#39;esercizio 0.1.
+Nella pagina **Integrazioni** è necessario selezionare la proprietà Raccolta dati creata nell&#39;esercizio precedente. A tale scopo, fare clic su **Seleziona ambiente**.
 
 ![DSN](./images/web2.png)
+
+Fare clic su **Seleziona** nella proprietà Raccolta dati creata nel passaggio precedente, denominata `--aepUserLdap - Demo System (DD/MM/YYYY) (web)`.
+
+![DSN](./images/web2a.png)
+
+Poi vedrai questo. Fai clic su **Esegui** per aprire il sito Web della demo.
+
+![DSN](./images/web2b.png)
 
 Poi vedrai il tuo sito web demo aperto. Seleziona l’URL e copialo negli Appunti.
 
@@ -84,8 +101,8 @@ Vedrai quindi il tuo sito web caricato in una finestra del browser in incognito.
 
 ![DSN](./images/web7.png)
 
-Passaggio successivo: [0.5 Utilizzare l&#39;app mobile](./ex5.md)
+Passaggio successivo: [Utilizzare l&#39;app mobile](./ex5.md)
 
-[Torna al modulo 0](./getting-started.md)
+[Torna a Guida introduttiva](./getting-started.md)
 
 [Torna a tutti i moduli](./../../../overview.md)
