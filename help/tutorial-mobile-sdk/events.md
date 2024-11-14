@@ -3,7 +3,7 @@ title: Tracciare i dati dell’evento nelle app mobili con Platform Mobile SDK
 description: Scopri come tenere traccia dei dati evento in un’app mobile.
 jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: afb15c561179386e7846e8cd8963f67820af09f1
 workflow-type: tm+mt
 source-wordcount: '1328'
 ht-degree: 0%
@@ -121,9 +121,9 @@ Ora stai per implementare effettivamente questo codice nel tuo progetto Xcode.
 Nell’app sono presenti diverse azioni relative al prodotto commerce e desideri inviare eventi, in base alle azioni eseguite dall’utente:
 
 * view: si verifica quando un utente visualizza un prodotto specifico,
-* aggiungi al carrello: quando un utente tocca <img src="assets/addtocart.png" width="20" /> in una schermata dei dettagli del prodotto,
-* salva per dopo: quando un utente tocca <img src="assets/saveforlater.png" width="15" /> in una schermata dei dettagli del prodotto,
-* acquisto: quando un utente tocca <img src="assets/purchase.png" width="20" /> in una schermata dei dettagli del prodotto.
+* aggiungi al carrello: quando un utente tocca <img src="assets/addtocart.png" width="20"/> in una schermata dei dettagli del prodotto,
+* salva per dopo: quando un utente tocca <img src="assets/saveforlater.png" width="15"/> in una schermata dei dettagli del prodotto,
+* acquisto: quando un utente tocca <img src="assets/purchase.png" width="20"/> in una schermata dei dettagli del prodotto.
 
 Per implementare l’invio di eventi di esperienza relativi al commercio in modo riutilizzabile, utilizza una funzione dedicata:
 
@@ -166,23 +166,23 @@ Per implementare l’invio di eventi di esperienza relativi al commercio in modo
       MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productViews", product: product)
       ```
 
-   1. Per ciascuno dei pulsanti (<img src="assets/saveforlater.png" width="15" />, <img src="assets/addtocart.png" width="20" /> e <img src="assets/purchase.png" width="20" />) nella barra degli strumenti, aggiungi la chiamata pertinente entro la chiusura di `ATTrackingManager.trackingAuthorizationStatus == .authorized`:
+   1. Per ciascuno dei pulsanti (<img src="assets/saveforlater.png" width="15"/>, <img src="assets/addtocart.png" width="20"/> e <img src="assets/purchase.png" width="20"/>) nella barra degli strumenti, aggiungi la chiamata pertinente entro la chiusura di `ATTrackingManager.trackingAuthorizationStatus == .authorized`:
 
-      1. Per <img src="assets/saveforlater.png" width="15" />
+      1. Per <img src="assets/saveforlater.png" width="15"/>
 
          ```swift
          // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
-      1. Per <img src="assets/addtocart.png" width="20" />
+      1. Per <img src="assets/addtocart.png" width="20"/>
 
          ```swift
          // Send productListAdds commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
          ```
 
-      1. Per <img src="assets/purchase.png" width="20" />
+      1. Per <img src="assets/purchase.png" width="20"/>
 
          ```swift
          // Send purchase commerce experience event
@@ -344,14 +344,14 @@ Di nuovo, possiamo implementare questo codice nel progetto Xcode.
    1. Seleziona **[!UICONTROL Home]** nella barra delle schede e verifica di visualizzare un **[!UICONTROL ECID]**, **[!UICONTROL E-mail]** e un **[!UICONTROL ID CRM]** nella schermata iniziale.
    1. Selezionare **[!DNL Products]** nella barra delle schede.
    1. Seleziona un prodotto.
-   1. Seleziona <img src="assets/saveforlater.png" width="15" />.
-   1. Seleziona <img src="assets/addtocart.png" width="20" />.
-   1. Seleziona <img src="assets/purchase.png" width="15" />.
+   1. Seleziona <img src="assets/saveforlater.png" width="15"/>.
+   1. Seleziona <img src="assets/addtocart.png" width="20"/>.
+   1. Seleziona <img src="assets/purchase.png" width="15"/>.
 
       <img src="./assets/mobile-app-events-3.png" width="300">
 
 
-1. Nell&#39;interfaccia utente Assurance, cerca gli eventi **[!UICONTROL hitReceived]** del fornitore **[!UICONTROL com.adobe.edge.konductor]**.
+1. Nell&#39;interfaccia utente di Assurance, cerca gli eventi **[!UICONTROL hitReceived]** del fornitore **[!UICONTROL com.adobe.edge.konductor]**.
 1. Seleziona l&#39;evento e controlla i dati XDM nell&#39;oggetto **[!UICONTROL messages]**. In alternativa, puoi utilizzare ![Copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copia evento non elaborato]** e utilizzare un editor di testo o di codice di tua preferenza per incollare e ispezionare l&#39;evento.
 
    ![convalida raccolta dati](assets/datacollection-validation.png)

@@ -4,9 +4,9 @@ description: Scopri come raccogliere e mappare dati per Adobe Analytics in un’
 solution: Data Collection,Experience Platform,Analytics
 jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 30dd0142f1f5220f30c45d58665b710a06c827a8
+source-git-commit: 7dfa14081e87489f908084e93722f67643fd5984
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '1023'
 ht-degree: 1%
 
 ---
@@ -306,6 +306,17 @@ Ulteriori informazioni sulle regole di elaborazione e sui dati contestuali sono 
 >[!TIP]
 >
 >A differenza delle precedenti implementazioni di app mobili, non esiste alcuna distinzione tra visualizzazioni di pagina/schermo e altri eventi. È invece possibile incrementare la metrica **[!UICONTROL Visualizzazione pagina]** impostando la dimensione **[!UICONTROL Nome pagina]** in una regola di elaborazione. Poiché stai raccogliendo il campo `screenName` personalizzato nell&#39;esercitazione, si consiglia vivamente di mappare il nome della schermata a **[!UICONTROL Nome pagina]** in una regola di elaborazione.
+
+## Migrare dall’estensione Analytics per dispositivi mobili
+
+Se hai sviluppato la tua app mobile utilizzando l&#39;[estensione per dispositivi mobili Adobe Analytics](https://developer.adobe.com/client-sdks/solution/adobe-analytics/#add-analytics-to-your-application), probabilmente hai utilizzato [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) e [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) chiamate API.
+
+Se decidi di eseguire la migrazione per utilizzare l’Edge Network consigliato, hai a disposizione le seguenti opzioni:
+
+* Implementa l&#39;[estensione Edge Network](configure-tags.md#extension-configuration) e utilizza le API [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent), come illustrato nella lezione su come [tenere traccia dei dati evento](events.md). Questa esercitazione si concentra su questa implementazione.
+* Implementa l&#39;estensione [Edge Bridge](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) e continua a utilizzare le tue chiamate API [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) e [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate). Consulta [Implementare l&#39;estensione Edge Bridge](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) per ulteriori dettagli e un&#39;esercitazione separata.
+
+
 
 
 >[!SUCCESS]
