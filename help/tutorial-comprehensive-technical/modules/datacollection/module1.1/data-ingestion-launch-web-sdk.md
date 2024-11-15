@@ -3,16 +3,15 @@ title: 1.1 Configurazione di Adobe Experience Platform Data Collection e dell’
 description: 'Foundation: configurazione di Raccolta dati di Adobe Experience Platform ed estensione Web SDK'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: b69ebe41-ff28-4dde-b639-198201120742
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
 
 # 1.1 Foundation - Configurazione di Adobe Experience Platform Data Collection e dell’estensione Web SDK
-
-**Autore: [Matthew Joseph Woolley](https://www.linkedin.com/in/matthewjwoolley/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 Questo modulo fondamentale illustra la visione di Adobe in materia di raccolta dati e spiega come ottenere i dati da un sito web e da un’app mobile in Adobe Experience Platform e altre applicazioni tramite Raccolta dati di Adobe Experience Platform, gli SDK di Adobe Experience Platform e l’Edge Network di Adobe Experience Platform. Questo modulo introduce alcuni concetti e tecnologie che hanno un impatto che va oltre l&#39;ambito di un tutorial tecnico di Adobe Experience Platform. Dovrebbe essere chiaro quali parti di questi esercizi sono fondamentali per il resto del tutorial completo, che ti insegna di più su Experience Edge e le sue funzionalità, e dove andare per ulteriori informazioni e tutorial.
 
@@ -35,7 +34,7 @@ Questo modulo fondamentale illustra la visione di Adobe in materia di raccolta d
 
 >[!NOTE]
 >
->Non dimenticare di installare, configurare e utilizzare l&#39;estensione Chrome come indicato in [0.1 - Installare l&#39;estensione Chrome per la documentazione di Experience League](../../gettingstarted/gettingstarted/ex1.md)
+>Non dimenticare di installare, configurare e utilizzare l&#39;estensione Chrome come indicato in [Installare l&#39;estensione Chrome per la documentazione di Experience League](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Esercizi
 

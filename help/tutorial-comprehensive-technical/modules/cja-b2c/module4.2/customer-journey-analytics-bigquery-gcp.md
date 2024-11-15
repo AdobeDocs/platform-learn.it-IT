@@ -3,9 +3,10 @@ title: Acquisire e analizzare i dati Google Analytics in Adobe Experience Platfo
 description: Acquisire e analizzare i dati Google Analytics in Adobe Experience Platform con il connettore Source BigQuery
 kt: 5342
 doc-type: tutorial
-source-git-commit: f19f6b4a44a34af3c9545eb7f8735ef6ccf5d6c7
+exl-id: b078d003-da25-44c5-b000-77e3b3188fb6
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -38,7 +39,7 @@ Inoltre, possiamo arricchire tale Google Analytics di dati unendola ad altre ori
 
 >[!NOTE]
 >
->Non dimenticare di installare, configurare e utilizzare l&#39;estensione Chrome come indicato in [0.1 - Installare l&#39;estensione Chrome per la documentazione di Experience League](../../gettingstarted/gettingstarted/ex1.md)
+>Non dimenticare di installare, configurare e utilizzare l&#39;estensione Chrome come indicato in [Installare l&#39;estensione Chrome per la documentazione di Experience League](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Esercizi
 

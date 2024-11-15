@@ -4,9 +4,10 @@ description: Foundation - Profilo cliente in tempo reale
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 79ae9722-bf38-47f7-acbc-aa5bd1289411
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ In questo modulo approfondiremo le funzionalità di Real-time Customer Profile e
 
 >[!NOTE]
 >
->Non dimenticare di installare, configurare e utilizzare l&#39;estensione Chrome come indicato in [0.1 - Installare l&#39;estensione Chrome per la documentazione di Experience League](../../gettingstarted/gettingstarted/ex1.md)
+>Non dimenticare di installare, configurare e utilizzare l&#39;estensione Chrome come indicato in [Installare l&#39;estensione Chrome per la documentazione di Experience League](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Esercizi
 

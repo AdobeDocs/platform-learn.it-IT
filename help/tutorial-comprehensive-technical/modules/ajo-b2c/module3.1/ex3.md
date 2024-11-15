@@ -3,9 +3,10 @@ title: Aggiorna l’ID configurazione e verifica il Percorso
 description: Aggiorna l’ID configurazione e verifica il Percorso
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 6807f93d-bd44-4f63-8005-6819c9f5f1ed
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -73,10 +74,6 @@ La libreria verrà quindi aggiornata e dopo 1-2 minuti puoi procedere e verifica
 Vai a [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sul progetto del tuo sito web per aprirlo.
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-Nella pagina **Screens** fare clic su **Esegui**.
-
-![DSN](./../../../modules/datacollection/module1.1/images/web2.png)
 
 Poi vedrai il tuo sito web demo aperto. Seleziona l’URL e copialo negli Appunti.
 

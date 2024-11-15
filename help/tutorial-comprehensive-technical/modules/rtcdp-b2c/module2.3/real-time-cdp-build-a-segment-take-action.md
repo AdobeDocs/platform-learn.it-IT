@@ -6,9 +6,9 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '357'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ In questo modulo, configurerai un segmento di streaming e attiverai il segmento 
 
 >[!NOTE]
 >
->Non dimenticare di installare, configurare e utilizzare l&#39;estensione Chrome come indicato in [0.1 - Installare l&#39;estensione Chrome per la documentazione di Experience League](../../gettingstarted/gettingstarted/ex1.md)
+>Non dimenticare di installare, configurare e utilizzare l&#39;estensione Chrome come indicato in [Installare l&#39;estensione Chrome per la documentazione di Experience League](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Esercizi
 

@@ -3,10 +3,11 @@ title: Foundation - Configurazione di Adobe Experience Platform Data Collection 
 description: Foundation - Configurazione di Adobe Experience Platform Data Collection e dell’estensione Web SDK - Implementare Adobe Target
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 0%
+source-wordcount: '169'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +27,7 @@ Poi vedrai questo. Per abilitare Adobe Target, fare clic su **+Aggiungi servizio
 
 ![Debugger AEP](./images/aa2.png)
 
-Poi vedrai questo. Seleziona il servizio **Adobe Target**, dopo il quale puoi facoltativamente fornire ulteriori informazioni. Al momento non è necessario salvarlo, quindi fai clic su **Annulla**.
+Poi vedrai questo. Seleziona il servizio **Adobe Target**, dopo il quale puoi facoltativamente fornire ulteriori informazioni. Fai clic su **Salva**.
 
 ![Debugger AEP](./images/at1.png)
 

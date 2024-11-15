@@ -3,9 +3,10 @@ title: Foundation - Configurazione di Adobe Experience Platform Data Collection 
 description: Foundation - Configurazione di Adobe Experience Platform Data Collection e dell’estensione Web SDK - Requisiti dello schema XDM in Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 3fc4a1d6-4130-464e-98c0-5b9cac8051a0
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Nel menu a sinistra, vai a **Schemi** e apri lo schema **Sistema demo - Schema e
 
 ![Debugger AEP](./images/exp3.png)
 
-In questo schema, vedrai che il gruppo di campi **Mixin ExperienceEvent di AEP Web SDK** è stato aggiunto. Questo gruppo di campi aggiunge allo schema tutti i campi obbligatori minimi. Ogni schema Experience Event in Adobe Experience Platform che verrà utilizzato da Web SDK richiederà sempre che quel gruppo di campi faccia parte dello schema.
+In tale schema, vedrai che il gruppo di campi **ExperienceEvent** di AEP Web SDK è stato aggiunto. Questo gruppo di campi aggiunge allo schema tutti i campi obbligatori minimi. Ogni schema Experience Event in Adobe Experience Platform che verrà utilizzato da Web SDK richiederà sempre che quel gruppo di campi faccia parte dello schema.
 
 ![Debugger AEP](./images/exp4.png)
 

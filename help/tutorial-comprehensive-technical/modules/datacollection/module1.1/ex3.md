@@ -3,9 +3,10 @@ title: Foundation - Configurazione di Adobe Experience Platform Data Collection 
 description: Foundation - Configurazione di Adobe Experience Platform Data Collection e dell’estensione Web SDK - Introduzione a Adobe Experience Platform Data Collection
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1273'
 ht-degree: 9%
 
 ---
@@ -26,31 +27,30 @@ Questa è la pagina Proprietà raccolta dati di Adobe Experience Platform che ha
 
 ![Pagina delle proprietà](./images/launch1.png)
 
-Nel modulo 0, Demo System ha creato due proprietà client per te: una per il sito web e una per l’app mobile. Trovarli cercando `--aepUserLdap--` nella casella **[!UICONTROL Cerca]**.
+In **Guida introduttiva**, Demo System ha creato due proprietà client: una per il sito Web e una per l&#39;app mobile. Trovarli cercando `--aepUserLdap--` nella casella **[!UICONTROL Cerca]**.
+Fare clic per aprire la proprietà **Web**.
 
 ![Casella di ricerca](./images/property6.png)
 
-Apri la proprietà **Web**.
 
-Viene visualizzata la pagina Panoramica proprietà. Fai clic su **[!UICONTROL Estensioni]** nella barra a sinistra. Fai clic sul pulsante **[!UICONTROL Configura]** sotto l&#39;estensione Adobe Experience Platform Web SDK.
+
+Viene visualizzata la pagina Panoramica proprietà. Fai clic su **[!UICONTROL Estensioni]** nella barra a sinistra, quindi fai clic su **Adobe Experience Platform Web SDK** e infine su **[!UICONTROL Configura]**.
 
 ![Pagina panoramica proprietà](./images/property7.png)
 
-Benvenuti in Adobe Experience Platform Web SDK. Qui puoi configurare l&#39;estensione con lo stream di dati creato in [Esercizio 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md) e alcune configurazioni più avanzate. Configurerai solo due impostazioni per questo esercizio.
+Benvenuti in Adobe Experience Platform Web SDK. Qui puoi configurare l&#39;estensione con lo stream di dati creato in [Guida introduttiva](./../../../modules/gettingstarted/gettingstarted/ex2.md) e alcune configurazioni più avanzate.
 
-Il dominio Edge predefinito è sempre **edge.adobedc.net**. Se hai implementato una configurazione CNAME nell&#39;ambiente Adobe Experience Cloud o Adobe Experience Platform, dovrai aggiornare il **[!UICONTROL dominio Edge]**. L&#39;istanza di Adobe Experience Platform utilizza questo dominio Edge: `--webSdkEdgeDomain--`.
+Il dominio Edge predefinito è sempre **edge.adobedc.net**. Se hai implementato una configurazione CNAME nell&#39;ambiente Adobe Experience Cloud o Adobe Experience Platform, dovrai aggiornare il **[!UICONTROL dominio Edge]**.
 
-Se il dominio Edge della tua istanza è diverso da quello predefinito, aggiorna il dominio Edge. Un dominio Edge consente di configurare un server di tracciamento di prima parte, che a sua volta utilizza una configurazione CNAME nel backend per garantire che i dati vengano raccolti in Adobe.
+Se il dominio edge dell’istanza è diverso da quello predefinito, aggiorna il dominio edge qui. In caso di dubbi, utilizza il dominio predefinito. Un dominio perimetrale consente di configurare un server di tracciamento di prima parte, che a sua volta utilizza una configurazione CNAME nel back-end per garantire che i dati vengano raccolti in Adobe.
 
 ![Pagina principale estensioni](./images/property9edgedomain.png)
 
-Verificare che il pulsante di scelta **[!UICONTROL Scegli dall&#39;elenco]** sia selezionato nell&#39;intestazione **[!UICONTROL Flussi di dati]** e selezionare lo stream di dati denominato `--aepUserLdap-- - Demo System Datastream` dall&#39;elenco nella casella **[!UICONTROL Flussi di dati]**.
-
-![Pagina principale estensioni](./images/property9edge.png)
+In **[!UICONTROL Datastreams]**, hai già selezionato lo stream di dati nella sezione **Guida introduttiva**. Hai selezionato questo flusso di dati: `--aepUserLdap-- - Demo System Datastream`, dall&#39;elenco nella casella **[!UICONTROL Flusso di dati]**, per ciascuno degli ambienti.
 
 Fai clic su **[!UICONTROL Salva]** per tornare alla vista Estensioni.
 
-![Home page di Adobe Experience Platform Web SDK](./images/save.png)
+![Pagina principale estensioni](./images/property9edge.png)
 
 ## 1.1.3.2 Elementi dati
 
@@ -104,11 +104,13 @@ Fai clic sulla regola restituita.
 
 ![File multimediali - Ricerca regola pagine articolo](./images/rule1.png)
 
-Diamo un&#39;occhiata ai singoli elementi che compongono questa regola. Per tutte le regole Se si verifica un **[!UICONTROL Evento]** specificato, vengono valutate le **[!UICONTROL Condizioni]**, quindi vengono eseguite le **[!UICONTROL Azioni]** specificate, se necessario.
+Diamo un&#39;occhiata ai singoli elementi che compongono questa regola.
+
+Per tutte le regole: se si verifica un **[!UICONTROL Evento]** specificato, vengono valutate le **[!UICONTROL Condizioni]**, quindi vengono eseguite le **[!UICONTROL Azioni]** specificate, se necessario.
 
 ![File multimediali - Regola pagine articolo](./images/rule2.png)
 
-Fai clic sull&#39;evento **Custom Event - Product View**. Questa è la vista che si carica.
+Fai clic sull&#39;evento **Core - Evento personalizzato**. Questa è la vista che si carica.
 
 Fai clic sul menu a discesa **Tipo evento**.
 
@@ -118,9 +120,11 @@ Elenca alcune delle interazioni standard che è possibile utilizzare per segnala
 
 Fai clic su **[!UICONTROL Annulla]** per tornare alla regola.
 
-Fai clic sull&#39;azione **Invia evento &quot;Visualizzazione prodotto&quot; ad AEP**.
+Fai clic sull&#39;azione **Invia evento esperienza &quot;Visualizzazione prodotto&quot;**.
 
-Qui puoi vedere i dati che vengono inviati ad Adobe Edge da Adobe Experience Platform Web SDK. In particolare, si sta utilizzando la **lega** **[!UICONTROL istanza]** dell&#39;SDK Web. La configurazione di un&#39;altra **[!UICONTROL istanza]** consente, tra l&#39;altro, l&#39;utilizzo di flussi di dati diversi. Hai specificato l&#39;evento **[!UICONTROL Type]** come **commerce.productViews** e i dati XDM che stai inviando sono l&#39;elemento dati **XDM - Product View** modificato in precedenza.
+![Invia azione evento](./images/rule5a.png)
+
+Qui puoi vedere i dati inviati al server Edge da Adobe Experience Platform Web SDK. In particolare, si sta utilizzando la **lega** **[!UICONTROL istanza]** dell&#39;SDK Web. L&#39;evento **[!UICONTROL Type]** è impostato su **Visualizzazioni prodotto Commerce (carrello)** e i dati XDM che stai inviando sono l&#39;elemento dati **XDM - Visualizzazione prodotto** modificato in precedenza.
 
 ![Invia azione evento](./images/rule5.png)
 
@@ -136,17 +140,14 @@ Fai clic sulla libreria esistente, denominata **Principale**.
 
 ![Accesso alla libreria](./images/publish1.png)
 
-Fare clic sul pulsante **Aggiungi tutte le risorse modificate**.
+Fare clic sul pulsante **Aggiungi tutte le risorse modificate**. Avanti,
+Fai clic sul pulsante **Salva e genera per sviluppo**.
 
 ![Accesso alla libreria](./images/publish1a.png)
 
-Scorri verso il basso per visualizzare la maggior parte delle risorse rimarrà come **Revisione 1 (più recente)**, ma i due elementi modificati - **Elemento dati: ruleArticlePages** e **Estensione: Adobe Experience Platform Web SDK** saranno contrassegnati con solo **Più recente**.
-
-Fai clic sul pulsante **Salva e genera per sviluppo**.
+La creazione della libreria potrebbe richiedere alcuni minuti; una volta completata, a sinistra del nome della libreria compare un punto verde.
 
 ![Libreria dei contenuti](./images/publish2.png)
-
-La creazione della libreria potrebbe richiedere alcuni minuti; una volta completata, a sinistra del nome della libreria compare un punto verde.
 
 Come puoi vedere nella schermata Flusso di pubblicazione, il processo di pubblicazione in Raccolta dati di Adobe Experience Platform richiede molto di più, e questo va oltre l&#39;ambito di questa esercitazione. Utilizzeremo un’unica libreria nel nostro ambiente di sviluppo.
 

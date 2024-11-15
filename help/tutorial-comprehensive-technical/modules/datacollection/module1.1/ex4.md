@@ -3,9 +3,10 @@ title: Foundation - Configurazione di Adobe Experience Platform Data Collection 
 description: Foundation - Configurazione di Adobe Experience Platform Data Collection e dell’estensione Web SDK - Raccolta dati web lato client
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 ### Installare l’Adobe Experience Platform Debugger
 
-Experience Platform Debugger è un’estensione disponibile per i browser Chrome e Firefox che consente di visualizzare la tecnologia Adobe implementata nelle pagine web. Scarica la versione per il browser preferito:
+Experience Platform Debugger è un’estensione disponibile per i browser Chrome e Firefox che consente di visualizzare la tecnologia Adobe implementata nelle pagine web. Installa la versione per il browser preferito:
 
 - [Estensione Firefox](https://addons.mozilla.org/it/firefox/addon/adobe-experience-platform-dbg/)
 
@@ -37,13 +38,9 @@ Verifica che le due impostazioni seguenti siano abilitate:
 
 ### Apri il sito web della demo
 
-Vai a [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sul progetto del tuo sito web per aprirlo.
+Vai a [https://dsn.adobe.com](https://dsn.adobe.com). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sui tre punti **...** del progetto del sito Web, quindi fai clic su **Esegui** per aprirlo.
 
-![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
-
-Nella pagina **Screens** fare clic su **Esegui**.
-
-![DSN](./images/web2.png)
+![DSN](.//images/web8.png)
 
 Poi vedrai il tuo sito web demo aperto. Seleziona l’URL e copialo negli Appunti.
 
@@ -77,15 +74,19 @@ Fai clic sul pulsante **[!UICONTROL Accedi]** in alto a destra per eseguire l&#3
 
 ![Debugger AEP](./images/validate2.png)
 
+In seguito, potrai accedere al Debugger.
+
+![Debugger AEP](./images/validate2ab.png)
+
 Premi il pulsante Ricarica sul sito web demo per collegare il debugger a quella scheda specifica.
 
 ![Debugger AEP](./images/validate2a.png)
 
-Conferma che il debugger è **[!UICONTROL connesso alla Home]** come illustrato in precedenza, quindi fai clic sull&#39;icona **[!UICONTROL blocca]** per bloccare il debugger sul sito Web demo. Se non esegui questa operazione, il debugger continuerà a passare per esporre i dettagli di implementazione di qualsiasi scheda del browser attiva, il che può creare confusione.
+Conferma che il debugger è **[!UICONTROL connesso alla Home]** come illustrato in precedenza, quindi fai clic sull&#39;icona **[!UICONTROL blocca]** per bloccare il debugger sul sito Web demo. Se non esegui questa operazione, il debugger continuerà a passare per esporre i dettagli di implementazione di qualsiasi scheda del browser attiva, il che può creare confusione. Una volta bloccato il debugger, l&#39;icona diventerà **Sblocca**.
 
 ![Debugger AEP](./images/validate3.png)
 
-Quindi, vai a qualsiasi pagina del sito web demo, ad esempio la pagina della categoria **Uomini**.
+Quindi, vai a qualsiasi pagina del sito web demo, ad esempio la pagina della categoria **Piani**.
 
 ![Estensione AEP Web SDK di AEP Debugger](./images/validate4.png)
 
@@ -95,11 +96,11 @@ Ogni richiesta contiene una riga **[!UICONTROL events]**.
 
 ![Estensione AEP Web SDK di AEP Debugger](./images/validate5.png)
 
-Fare clic per aprire la riga **[!UICONTROL events]**. Nota come visualizzare l&#39;evento **web.webpagedetails.pageViews** e altre variabili predefinite conformi al formato **Web SDK ExperienceEvent XDM**.
+Fare clic per aprire una riga di **[!UICONTROL eventi]**. Nota come visualizzare l&#39;evento **web.webpagedetails.pageViews** e altre variabili predefinite conformi al formato **Web SDK ExperienceEvent XDM**.
 
 ![Valore eventi](./images/validate8.png)
 
-Questi tipi di dettagli della richiesta sono visibili anche nella scheda Rete. Filtra le richieste con **interagire** per individuare le richieste inviate da Web SDK. Puoi trovare tutti i dettagli del payload XDM nelle Intestazioni del payload della richiesta:
+Questi tipi di dettagli della richiesta sono visibili anche nella scheda Rete. Filtra le richieste con **interagire** per individuare le richieste inviate da Web SDK. Puoi trovare tutti i dettagli del payload XDM nella sezione Payload:
 
 ![Scheda Rete](./images/validate9.png)
 

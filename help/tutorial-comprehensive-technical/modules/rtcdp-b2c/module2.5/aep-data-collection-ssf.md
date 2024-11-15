@@ -3,9 +3,10 @@ title: Raccolta dati di Adobe Experience Platform e inoltro lato server in tempo
 description: In questo modulo utilizzerai i set di dati, gli schemi e le proprietà del server di raccolta dati di Adobe Experience Platform configurati in precedenza per raccogliere i dati, quindi inoltrarli lato server a un endpoint scelto.
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -40,7 +41,7 @@ Guarda questo video per comprendere il valore, il percorso del cliente e la proc
 
 >[!NOTE]
 >
->Non dimenticare di installare, configurare e utilizzare l&#39;estensione Chrome come indicato in [0.1 - Installare l&#39;estensione Chrome per la documentazione di Experience League](../../gettingstarted/gettingstarted/ex1.md)
+>Non dimenticare di installare, configurare e utilizzare l&#39;estensione Chrome come indicato in [Installare l&#39;estensione Chrome per la documentazione di Experience League](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Esercizi
 

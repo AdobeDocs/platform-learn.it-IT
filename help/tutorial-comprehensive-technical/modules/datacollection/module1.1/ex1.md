@@ -3,9 +3,10 @@ title: Foundation - Configurazione di Adobe Experience Platform Data Collection 
 description: Foundation - Configurazione di Adobe Experience Platform Data Collection e dell’estensione Web SDK - Spiegazione di Adobe Experience Platform Data Collection
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+exl-id: 098031c6-4d8b-46a5-ae86-8fd7692268d3
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '504'
 ht-degree: 2%
 
 ---
@@ -42,7 +43,12 @@ Dai un&#39;occhiata alla barra a sinistra.
 - **[!UICONTROL Tag]** offre una panoramica di tutte le proprietà lato client
 - **[!UICONTROL Superfici app]** offre una panoramica di tutte le configurazioni di app per abilitare le notifiche push (utilizzate/abilitate in combinazione con Project Sierra)
 - **[!UICONTROL Gli stream di dati]** sono analizzati nell&#39;[esercizio successivo](./ex2.md)
-- **[!UICONTROL Inoltro eventi]** offre una panoramica di tutte le proprietà lato server esplorate in [Modulo 14 - Connessioni Real-Time CDP: inoltro eventi](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)
+- **[!UICONTROL Inoltro eventi]** offre una panoramica di tutte le proprietà lato server esplorate in [Modulo 2.5 - Connessioni Real-Time CDP: inoltro eventi](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)
+- **[!UICONTROL Il monitoraggio]** fornisce una panoramica del traffico degli eventi in entrata e in uscita tramite l&#39;inoltro degli eventi
+- **[!UICONTROL Assurance]** fornisce l&#39;accesso per il debug di un&#39;implementazione utilizzando l&#39;Adobe Debugger
+- **[!UICONTROL Places]** consente di gestire i POI che diventano accessibili per la personalizzazione basata sulla posizione nelle applicazioni mobili
+- **[!UICONTROL Schemi]** fornisce l&#39;accesso all&#39;editor schema di Adobe Experience Platform
+- **[!UICONTROL Identities]** fornisce l&#39;accesso alla configurazione di Adobe Experience Platform Identity Graph
 
 ## Ulteriori informazioni
 
