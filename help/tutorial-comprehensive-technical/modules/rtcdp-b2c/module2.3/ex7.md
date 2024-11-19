@@ -3,256 +3,25 @@ title: Real-time CDP - SDK Destinazioni
 description: Real-time CDP - SDK Destinazioni
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '2386'
-ht-degree: 2%
+source-wordcount: '1049'
+ht-degree: 5%
 
 ---
 
 # 2.3.7 SDK delle destinazioni
 
-## 2.3.7.1 Configurare il progetto Adobe I/O
+## Configurare il progetto Adobe I/O
 
->[!IMPORTANT]
->
->Se hai creato il progetto Adobe I/O dopo dicembre 2021, puoi riutilizzarlo, saltare questo esercizio e passare immediatamente all’esercizio 6.7.2.
->
->Se hai creato il progetto di Adobe I/O prima di dicembre 2021, crea un nuovo progetto per assicurarti che sia compatibile con l’API di authoring delle destinazioni.
+In questo esercizio utilizzerai nuovamente Adobe I/O per eseguire query sulle API di Adobe Experience Platform. Se non hai ancora configurato il progetto Adobe I/O, torna all&#39;[Esercizio 3 nel Modulo 2.1](../module2.1/ex3.md) e segui le istruzioni.
 
-In questo esercizio utilizzerai Adobe I/O in modo piuttosto intensivo per eseguire query sulle API di Platform. Per configurare l’Adobe I/O, segui i passaggi seguenti.
+## Autenticazione Postman da Adobe I/O
 
-Vai a [https://developer.adobe.com/console/home](https://developer.adobe.com/console/projects)
+In questo esercizio utilizzerai nuovamente Postman per eseguire query sulle API di Adobe Experience Platform. Se non hai ancora configurato l&#39;applicazione Postman, torna all&#39;[esercizio 3 nel modulo 2.1](../module2.1/ex3.md) e segui le istruzioni.
 
-![Adobe I/O di nuova integrazione](../module2.1/images/iohome.png)
-
-Assicurati di selezionare l’istanza Adobe Experience Platform corretta nell’angolo in alto a destra dello schermo. L&#39;istanza è `--envName--`.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/iocomp.png)
-
-Fare clic su **Crea nuovo progetto**.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/adobe_io_new_integration.png) o
-![Adobe I/O di nuova integrazione](../module2.1/images/adobe_io_new_integration1.png)
-
-Seleziona **+ Aggiungi al progetto** e seleziona **API**.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/adobe_io_access_api.png)
-
-A questo punto viene visualizzato quanto segue:
-
-![Adobe I/O di nuova integrazione](../module2.1/images/api1.png)
-
-Fai clic sull&#39;icona **Adobe Experience Platform**.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/api2.png)
-
-Fare clic su **Experience Platform API**.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/api3.png)
-
-Fai clic su **Avanti**.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/next.png)
-
-Ora puoi scegliere se far generare la coppia di chiavi di sicurezza da Adobe I/O o caricarne una esistente.
-
-Scegliere **Opzione 1 - Genera una coppia di chiavi**.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/api4.png)
-
-Fai clic su **Genera coppia di chiavi**.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/generate.png)
-
-Vedrete un giratore per circa 30 secondi.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/spin.png)
-
-Visualizzerai quindi questo messaggio e la coppia di chiavi generata verrà scaricata come file zip: **config.zip**.
-
-Decomprimi il file **config.zip** sul desktop e vedrai che contiene 2 file:
-
-![Adobe I/O di nuova integrazione](../module2.1/images/zip.png)
-
-- **certificate_pub.crt** è il tuo certificato a chiave pubblica. Dal punto di vista della sicurezza, si tratta del certificato utilizzato liberamente per configurare le integrazioni con le applicazioni online.
-- **private.key** è la tua chiave privata. Questo non dovrebbe mai e poi mai essere condiviso con nessuno. La chiave privata è ciò che utilizzi per l’autenticazione nell’implementazione API e che deve essere un segreto. Se condividi la chiave privata con chiunque, può accedere alla tua implementazione e sfruttare l’API per acquisire dati dannosi in Platform ed estrarre tutti i dati presenti in Platform.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/config.png)
-
-Assicurati di salvare il file **config.zip** in un percorso sicuro, in quanto sarà necessario per i passaggi successivi e per l&#39;accesso futuro alle API Adobe I/O e Adobe Experience Platform.
-
-Fai clic su **Avanti**.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/next.png)
-
-Ora devi selezionare i **profili di prodotto** per l&#39;integrazione.
-
-Seleziona i profili di prodotto richiesti.
-
-**FYI**: nell&#39;istanza di Adobe Experience Platform, i profili prodotto avranno un nome diverso. Devi selezionare almeno un profilo di prodotto con i diritti di accesso appropriati, che sono impostati in Adobe Admin Console.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/api9.png)
-
-Fare clic su **Salva API configurata**.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/saveconfig.png)
-
-Vedrete un giratore per un paio di secondi.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/api10.png)
-
-E poi vedrai la tua integrazione.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/api11.png)
-
-Fai clic sul pulsante **Scarica per Postman** e quindi su **Account di servizio (JWT)** per scaricare un ambiente Postman (attendi che l&#39;ambiente venga scaricato, l&#39;operazione potrebbe richiedere alcuni secondi).
-
-![Adobe I/O di nuova integrazione](../module2.1/images/iopm.png)
-
-Scorri verso il basso fino a visualizzare **Account di servizio (JWT)**, che è il luogo in cui puoi trovare tutti i dettagli di integrazione utilizzati per configurare l&#39;integrazione con Adobe Experience Platform.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/api12.png)
-
-Il progetto I/O ha un nome generico. È necessario assegnare un nome descrittivo alla tua integrazione. Fai clic su **Progetto 1** (o nome simile) come indicato
-
-![Adobe I/O di nuova integrazione](../module2.1/images/api13.png)
-
-Fare clic su **Modifica progetto**.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/api14.png)
-
-Immetti un nome e una descrizione per l’integrazione. Come convenzione per i nomi, utilizzeremo `AEP API --aepUserLdap--`. Sostituire ldap con ldap.
-Ad esempio, se ldap è vangeluw, il nome e la descrizione dell&#39;integrazione diventano AEP API vangeluw.
-
-Immetti `AEP API --aepUserLdap--` come **Titolo progetto**. Fai clic su **Salva**.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/api15.png)
-
-L’integrazione di Adobe I/O è terminata.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/api16.png)
-
-## 2.3.7.2 Autenticazione Postman per Adobe I/O
-
-Vai a [https://www.getpostman.com/](https://www.getpostman.com/).
-
-Fai clic su **Inizia**.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/getstarted.png)
-
-Quindi, scarica e installa Postman.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/downloadpostman.png)
-
-Dopo aver installato Postman, avviare l&#39;applicazione.
-
-In Postman sono disponibili 2 concetti: ambienti e raccolte.
-
-- L’ambiente contiene tutte le variabili ambientali che sono più o meno coerenti. Nell’ambiente, troverai elementi come l’IMSOrg del nostro ambiente Platform, insieme alle credenziali di sicurezza come la tua Chiave privata e altri. Il file dell&#39;ambiente è quello scaricato durante l&#39;Adobe I/O di configurazione dell&#39;esercizio precedente, con il nome seguente: **service.postman_environment.json**.
-
-- La raccolta contiene diverse richieste API che puoi utilizzare. Utilizzeremo 2 raccolte
-   - 1 raccolta per l&#39;autenticazione in Adobe I/0
-   - 1 Raccolta per gli esercizi in questo modulo
-   - 1 raccolta per gli esercizi nel modulo Real-Time CDP, per l’authoring delle destinazioni
-
-Scarica il file [postman.zip](./../../../assets/postman/postman_profile.zip) sul desktop locale.
-
-In questo file **postman.zip**, troverai i seguenti file:
-
-- `_Adobe I-O - Token.postman_collection.json`
-- `_Adobe Experience Platform Enablement.postman_collection.json`
-- `Destination_Authoring_API.json`
-
-Decomprimi il file **postman.zip** e archivia questi 3 file in una cartella sul desktop, insieme all&#39;ambiente Postman scaricato da Adobe I/O. Devi avere questi 4 file in quella cartella:
-
-![Adobe I/O di nuova integrazione](../module2.1/images/pmfolder.png)
-
-Torna a Postman. Fai clic su **Importa**.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/postmanui.png)
-
-Fare clic su **Carica file**.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/choosefiles.png)
-
-Passa alla cartella sul desktop in cui sono stati estratti i 4 file scaricati. Selezionare questi 4 file contemporaneamente e fare clic su **Apri**.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/selectfiles.png)
-
-Dopo aver fatto clic su **Apri**, Postman ti mostrerà una panoramica dell&#39;ambiente e delle raccolte che stai per importare. Fai clic su **Importa**.
-
-![Adobe I/O di nuova integrazione](../module2.1/images/impconfirm.png)
-
-Ora disponi di tutto il necessario in Postman per iniziare a interagire con Adobe Experience Platform tramite le API.
-
-La prima cosa da fare è accertarsi di essere autenticati correttamente. Per essere autenticato, devi richiedere un token di accesso.
-
-Accertati di aver selezionato l’ambiente corretto prima di eseguire qualsiasi richiesta. Per controllare l’ambiente attualmente selezionato, verifica l’elenco a discesa Ambiente nell’angolo in alto a destra.
-
-L’ambiente selezionato deve avere un nome simile a questo:
-
-![Postman](../module2.1/images/envselemea.png)
-
-Fai clic sull&#39;icona **occhio** e quindi su **Modifica** per aggiornare la chiave privata nel file di ambiente.
-
-![Postman](../module2.1/images/gear.png)
-
-Poi vedrai questo. Tutti i campi sono precompilati, ad eccezione del campo **PRIVATE_KEY**.
-
-![Postman](../module2.1/images/pk2.png)
-
-La chiave privata è stata generata al momento della creazione del progetto di Adobe I/O. È stato scaricato come file zip, denominato **config.zip**. Estrai il file zip sul desktop.
-
-![Postman](../module2.1/images/pk3.png)
-
-Apri la cartella **config** e apri il file **private.key** con l&#39;editor di testo desiderato.
-
-![Postman](../module2.1/images/pk4.png)
-
-Si vedrà quindi qualcosa di simile a questo, copiare tutto il testo negli Appunti.
-
-![Postman](../module2.1/images/pk5.png)
-
-Torna a Postman e incolla la chiave privata nei campi accanto alla variabile **PRIVATE_KEY**, per entrambe le colonne **INITIAL VALUE** e **CURRENT VALUE**. Fai clic su **Salva**.
-
-![Postman](../module2.1/images/pk6.png)
-
-L’ambiente e le raccolte Postman ora sono configurati e funzionanti. Ora puoi eseguire l’autenticazione da Postman a Adobe I/O.
-
-A questo scopo, devi caricare una libreria esterna che si occuperà della crittografia e decrittografia delle comunicazioni. Per caricare questa libreria, è necessario eseguire la richiesta con il nome **INIT: Load Crypto Library for RS256**. Seleziona questa richiesta in **_Adobe I/O - Raccolta token** e la visualizzerai al centro dello schermo.
-
-![Postman](../module2.1/images/iocoll.png)
-
-![Postman](../module2.1/images/cryptolib.png)
-
-Fai clic sul pulsante blu **Invia**. Dopo un paio di secondi, dovresti visualizzare una risposta nella sezione **Body** di Postman:
-
-![Postman](../module2.1/images/cryptoresponse.png)
-
-Con la libreria di crittografia ora caricata, possiamo eseguire l&#39;autenticazione in Adobe I/O.
-
-Nella **\_Adobe I/O - raccolta token**, seleziona la richiesta con il nome **IMS: JWT Generate + Auth**. Di nuovo, i dettagli della richiesta saranno visualizzati al centro della schermata.
-
-![Postman](../module2.1/images/ioauth.png)
-
-Fai clic sul pulsante blu **Invia**. Dopo un paio di secondi, dovresti visualizzare una risposta nella sezione **Body** di Postman:
-
-![Postman](../module2.1/images/ioauthresp.png)
-
-Se la configurazione è andata a buon fine, dovresti vedere una risposta simile che contiene le seguenti informazioni:
-
-| Chiave | Valore |
-|:-------------:| :---------------:| 
-| token_type | **portatore** |
-| access_token | **eyJ4NXUiOiJpbXNfbmEx...QT7mqZkumN1tdsPEioOEl4087Dg** |
-| expires_in | **86399973** |
-
-L&#39;Adobe I/O ti ha assegnato un token **bearer**, con un valore specifico (access_token molto lungo) e una finestra di scadenza.
-
-Il token ricevuto è ora valido per 24 ore. Ciò significa che dopo 24 ore, se desideri utilizzare Postman per l’autenticazione in Adobe I/O, dovrai generare un nuovo token eseguendo nuovamente questa richiesta.
-
-## 2.3.7.3 Definire il punto finale e il formato
+## Definire endpoint e formato
 
 Per questo esercizio, dovrai configurare un endpoint in modo che, quando un segmento si qualifica, l’evento di qualifica possa essere inviato in streaming a tale endpoint. In questo esercizio utilizzerai un endpoint di esempio utilizzando [https://webhook.site/](https://webhook.site/). Vai a [https://webhook.site/](https://webhook.site/), dove vedrai qualcosa di simile. Fai clic su **Copia negli Appunti** per copiare l&#39;URL. Nel prossimo esercizio dovrai specificare questo URL. L&#39;URL in questo esempio è `https://webhook.site/e0eb530c-15b4-4a29-8b50-e40877d5490a`.
 
@@ -281,7 +50,7 @@ Per quanto riguarda il formato, utilizzeremo un modello standard che trasmetter�
 }
 ```
 
-## 2.3.7.4 Creare una configurazione di server e modelli
+## Creare una configurazione di server e modelli
 
 Il primo passaggio per creare una tua destinazione in Adobe Experience Platform consiste nel creare una configurazione di server e modelli.
 
@@ -333,7 +102,7 @@ Dopo aver fatto clic su **Invia**, verrà creato il modello del server e come pa
 
 ![Acquisizione dei dati](./images/sdkpm6.png)
 
-## 2.3.7.5 Creare la configurazione di destinazione
+## Creare la configurazione di destinazione
 
 In Postman, in **Destination Authoring API**, vai a **Destination configurations** e fai clic per aprire la richiesta **POST - Create a destination configuration**. Poi vedrai questo. In **Intestazioni**, devi aggiornare manualmente il valore per la chiave **x-sandbox-name** e impostarlo su `--aepSandboxName--`. Selezionare il valore **{{SANDBOX_NAME}}**.
 
@@ -436,7 +205,7 @@ Nel menu a sinistra, vai a **Destinazioni**, fai clic su **Catalogo** e scorri v
 
 ![Acquisizione dei dati](./images/destsdk1.png)
 
-## 2.3.7.6 Collega il segmento alla destinazione
+## Collegare il segmento alla destinazione
 
 In **Destinazioni** > **Catalogo**, fai clic su **Configura** nella tua destinazione per iniziare ad aggiungere segmenti alla nuova destinazione.
 
@@ -470,7 +239,7 @@ La destinazione è ora live, le nuove qualifiche dei segmenti verranno inviate i
 
 ![Acquisizione dei dati](./images/destsdk9.png)
 
-## 2.3.7.7 Testare l’attivazione del segmento
+## Test dell’attivazione dei segmenti
 
 Vai a [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sul progetto del tuo sito web per aprirlo.
 

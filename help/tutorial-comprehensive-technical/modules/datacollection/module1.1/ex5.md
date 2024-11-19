@@ -4,20 +4,20 @@ description: Foundation - Configurazione di Adobe Experience Platform Data Colle
 kt: 5342
 doc-type: tutorial
 exl-id: a9022269-6db2-46c6-a82b-ec8d5b881a55
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
 
-# 1.1.5 - Implementare Adobe Analytics e Adobe Audience Manager
+# 1.1.5 Implementare Adobe Analytics e Adobe Audience Manager
 
 ## Contesto
 
 Ora sai che i dati XDM fluiscono in Platform. Ulteriori informazioni su XDM nel [Modulo 1.2](./../module1.2/data-ingestion.md) e su come creare uno schema personalizzato per tenere traccia delle variabili personalizzate. Per ora vedrai cosa accade quando imposti lo stream di dati per inoltrare i dati ad Analytics e Audience Manager.
 
-## 1.1.5.1 Mappatura delle variabili in Analytics
+## Mappatura delle variabili in Analytics
 
 Adobe Experience Platform [!DNL Web SDK] mappa automaticamente alcuni valori, rendendo più rapida possibile una nuova implementazione di Analytics tramite l&#39;SDK Web. Le variabili mappate automaticamente sono elencate [qui](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection).
 
@@ -56,11 +56,11 @@ Per l&#39;utilizzo da parte di Analytics, i dati XDM vengono appiattiti utilizza
 
 Tutti i dati raccolti dalla rete Edge sono accessibili tramite [regole di elaborazione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html). In Analytics puoi utilizzare le regole di elaborazione per incorporare i dati contestuali nelle variabili di Analytics.
 
-## 1.1.5.2 Audience Manager sull&#39;Edge Network di Experience Platform
+## Audience Manager sull’Edge Network dell’Experience Platform
 
 L’inoltro lato server, ad Audience Manager, non è un concetto nuovo e si applica la stessa procedura descritta in precedenza. Puoi anche sincronizzare le identità.
 
-## 1.1.5.3 Verifica lo stream di dati per inviare dati ad Adobe Analytics
+## Controlla lo stream di dati per inviare dati ad Adobe Analytics
 
 Se desideri inviare i dati raccolti da Web SDK ad Adobe Analytics e Adobe Audience Manager, segui la procedura riportata di seguito.
 
@@ -78,7 +78,7 @@ Poi vedrai questo. Seleziona il servizio **Adobe Analytics**, dopo il quale devi
 
 ![Debugger AEP](./images/aa3.png)
 
-## 1.1.5.4 Verifica lo stream di dati per inviare dati a Adobe Audience Manager
+## Controlla lo stream di dati per inviare dati a Adobe Audience Manager
 
 Poi vedrai questo. Per abilitare Adobe Audience Manager, fare clic su **+Aggiungi servizio**.
 

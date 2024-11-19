@@ -4,16 +4,16 @@ description: Foundation - Configurazione di Adobe Experience Platform Data Colle
 kt: 5342
 doc-type: tutorial
 exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
 
 # 1.1.4 Raccolta di dati web lato client
 
-## 1.1.4.1 Convalidare i dati nella richiesta
+## Convalidare i dati nella richiesta
 
 ### Installare l’Adobe Experience Platform Debugger
 
@@ -40,7 +40,7 @@ Verifica che le due impostazioni seguenti siano abilitate:
 
 Vai a [https://dsn.adobe.com](https://dsn.adobe.com). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sui tre punti **...** del progetto del sito Web, quindi fai clic su **Esegui** per aprirlo.
 
-![DSN](.//images/web8.png)
+![DSN](./images/web8.png)
 
 Poi vedrai il tuo sito web demo aperto. Seleziona l’URL e copialo negli Appunti.
 

@@ -4,9 +4,9 @@ description: Foundation - Acquisizione dei dati - Da sconosciuto a noto sul sito
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '749'
 ht-degree: 1%
 
 ---
@@ -27,9 +27,9 @@ Ora acquisirai i dati in Adobe Experience Platform e i dati verranno collegati a
 
 ### Flusso di Percorso cliente
 
-Vai a [https://dsn.adobe.com](https://dsn.adobe.com). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sui tre punti **...** nel progetto del tuo sito Web, quindi fai clic su **Modifica**.
+Vai a [https://dsn.adobe.com](https://dsn.adobe.com). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sui tre punti **...** del progetto del sito Web, quindi fai clic su **Esegui** per aprirlo.
 
-![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 Poi vedrai il tuo sito web demo aperto. Seleziona l’URL e copialo negli Appunti.
 
@@ -79,7 +79,7 @@ Fai clic su **Accedi** per passare alla pagina Registra/Accedi.
 
 ![Demo](./images/pv8.png)
 
-Fare clic su **CREA UN ACCOUNT**.
+Fai clic su **Crea un account**.
 
 ![Demo](./images/pv9.png)
 

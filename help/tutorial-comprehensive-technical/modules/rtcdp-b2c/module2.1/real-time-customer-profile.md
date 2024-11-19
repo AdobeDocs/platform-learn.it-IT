@@ -5,24 +5,21 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 79ae9722-bf38-47f7-acbc-aa5bd1289411
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 0%
+source-wordcount: '361'
+ht-degree: 1%
 
 ---
 
 # 2.1 Foundation - Profilo cliente in tempo reale
 
-**Autore: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
-In questo modulo approfondiremo le funzionalità di Real-time Customer Profile e Identity di Adobe Experience Platform. Scoprirai come definire i tipi di pubblico, il ruolo del servizio Identity e l’ID Experience Cloud, e come definire le query del generatore di segmenti per definire i tuoi segmenti.
+Questo modulo approfondisce le funzionalità di Real-time Customer Profile e Identity di Adobe Experience Platform. Scoprirai come definire i tipi di pubblico, il ruolo del servizio Identity e l’ID Experience Cloud, e come definire le query del generatore di segmenti per definire i tuoi segmenti.
 
 ## Finalità di apprendimento
 
 - Scopri come visualizzare Real-time Customer Profile di un cliente tramite l’interfaccia utente di Adobe Experience Platform
 - Scopri come creare un segmento utilizzando il Generatore di segmenti di Adobe Experience Platform
-- Scopri come creare un segmento e memorizzare i risultati del segmento in un set di dati utilizzando le API di Adobe Experience Platform
 - Scopri l’impatto dell’accesso a un profilo cliente completo, compreso il comportamento in tempo reale, negli ambienti offline
 
 ## Prerequisiti
@@ -54,11 +51,7 @@ In questo esercizio, utilizzerai Postman e Adobe I/O per visualizzare il tuo pro
 
 In questo esercizio creerai un segmento utilizzando il Generatore di segmenti di Adobe Experience Platform.
 
-[2.1.5 Creare un segmento - API](./ex5.md)
-
-In questo esercizio, utilizzerai Postman e Adobe I/O per creare un segmento e archiviare i risultati di tale segmento come set di dati, utilizzando le API di Adobe Experience Platform.
-
-[2.1.6 Visualizza il tuo Real-time Customer Profile in azione nel Call Center](./ex6.md)
+[2.1.5 Consultare Real-time Customer Profile in azione nel call center](./ex5.md)
 
 In questo esercizio impersonerai un dipendente del call center che riceve una chiamata da un cliente. Per avere un impatto reale sull&#39;esperienza del cliente, è necessario accedere a tutte le informazioni disponibili in tempo reale.
 

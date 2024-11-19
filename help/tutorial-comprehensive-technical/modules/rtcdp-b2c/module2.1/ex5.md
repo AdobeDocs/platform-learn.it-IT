@@ -1,170 +1,64 @@
 ---
-title: Foundation - Real-time Customer Profile - Creare un segmento - API
-description: Foundation - Real-time Customer Profile - Creare un segmento - API
+title: Visualizza Real-time Customer Profile in azione nel call center
+description: Visualizza Real-time Customer Profile in azione nel call center
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 47c96696-644a-43b9-8deb-846bd2587af0
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 3%
+source-wordcount: '352'
+ht-degree: 2%
 
 ---
 
-# 2.1.5 Creare un segmento - API
+# 2.1.5 Consultare Real-time Customer Profile in azione nel call center
 
-In questo esercizio, utilizzerai Postman e Adobe I/O per creare un segmento e archiviare i risultati di tale segmento come set di dati, utilizzando le API di Adobe Experience Platform.
+In questo esercizio, l’obiettivo è quello di guidarti attraverso il percorso dei clienti e comportarti come un vero cliente.
 
-## Storia
+Su questo sito web è stato implementato Adobe Experience Platform. Ogni azione è considerata un evento esperienza e viene inviata a Adobe Experience Platform in tempo reale, idratando il Profilo cliente in tempo reale.
 
-In Real-time Customer Profile, tutti i dati di profilo vengono visualizzati insieme ai dati di evento e alle iscrizioni ai segmenti esistenti. I dati visualizzati possono provenire da qualsiasi luogo, da applicazioni Adobe e soluzioni esterne. Questa è la visualizzazione più potente di Adobe Experience Platform, l’esperienza del sistema di registrazione.
+In un esercizio precedente, hai iniziato come cliente anonimo che stava navigando sul sito e, dopo un paio di passaggi, sei diventato un cliente noto.
 
-## 2.1.5.1 - Creare un segmento tramite l’API della piattaforma
+Quando lo stesso cliente risponde al telefono e chiama il call center, è fondamentale che le informazioni provenienti da altri canali siano immediatamente disponibili, in modo che l’esperienza del call center possa essere rilevante e personalizzata.
 
-Passa a Postman.
+## Utilizzare l’app CX
 
-Individuare la raccolta: **_abilitazione Adobe Experience Platform**. In questa raccolta verrà visualizzata la cartella **2. Segmentazione**. Queste richieste verranno utilizzate in questo esercizio.
+Vai a [https://dsn.adobe.com](https://dsn.adobe.com). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sui tre punti **...** del progetto dell&#39;app CX, quindi fai clic su **Modifica** per aprirlo.
 
-![Segmentazione](./images/pmdtl.png)
+![Demo](./images/cxapp3.png)
 
-Ora seguirò tutti i passaggi necessari per creare un segmento tramite l’API. Stiamo per creare un segmento semplice: &quot;**ldap** - All Female Customers&quot; (Tutti i clienti femmina).
+Nel progetto dell&#39;app CX, vai a **Integrazioni**. Fare clic su **Seleziona ambiente**.
 
-### Passaggio 1: creare una definizione di segmento
+![Demo](./images/cxapp3a.png)
 
-Fai clic sulla richiesta denominata **Passaggio 1 - Profilo: Creare Una Definizione Di Segmento**.
+Seleziona la proprietà Raccolta dati di Adobe Experience Platform creata in Guida introduttiva. Selezionare la proprietà il cui nome contiene **(cx-app)**.
 
-![Segmentazione](./images/s1_call.png)
+![Demo](./images/cxapp4.png)
 
-Vai alla sezione **Body** di questa richiesta.
+Poi vedrai questo. Fare clic su **Esegui**.
 
-![Segmentazione](./images/s1_body.png)
+![Demo](./images/cxapp4a.png)
 
-Nel **Corpo** di questa richiesta, visualizzerai quanto segue:
+Quindi, devi selezionare una delle tue identità e il namespace corrispondente e fare clic sull&#39;**icona di ricerca**.
 
-![Segmentazione](./images/s1_bodydtl.png)
+![Profilo cliente](./images/identities.png)
 
-La lingua utilizzata per questa richiesta è denominata Profile Query Language o **PQL**.
+| Identità | Namespace |
+|:-------------:| :---------------:|
+| ID Experience Cloud (ECID) | 79943948563923140522865572770524243489 |
+| ID Experience Cloud (ECID) | 70559351147248820114888181867542007989 |
+| ID e-mail | woutervangeluwe+18112024-01@gmail.com |
+| ID numero cellulare | +32473622044+18112024-01 |
 
-Ulteriori informazioni e documentazione su PQL [sono disponibili qui](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=en).
+Quando il cliente chiama il call center, il numero di telefono può essere utilizzato per identificare il cliente. In questo esercizio utilizzerai il numero di telefono per recuperare il profilo del cliente nell’app CX.
 
+![Demo](./images/19.png)
 
-Attenzione: aggiornare la variabile **name** nella richiesta seguente sostituendo **ldap** con il **ldap** specifico.
+Ora vedrai le informazioni che idealmente verrebbero visualizzate nel Call Center, in modo che i dipendenti del Call Center abbiano immediatamente a disposizione tutte le informazioni pertinenti quando parlano con un cliente.
 
-```json
-{
-    "name" : "ldap - API - All Female Customer",
-    "expression" : {"type":"PQL", "format":"pql/json", "value":"{\"nodeType\":\"fnApply\",\"fnName\":\"in\",\"params\":[{\"nodeType\":\"fieldLookup\",\"fieldName\":\"gender\",\"object\":{\"nodeType\":\"fieldLookup\",\"fieldName\":\"person\",\"object\":{\"nodeType\":\"literal\",\"literalType\":\"XDMObject\",\"value\":\"profile\"}}},{\"literalType\":\"List\",\"nodeType\":\"literal\",\"value\":[\"female\"]}]}"},
-    "createdBy": "ldap",
-    "schema" : { "name" : "_xdm.context.profile"},
-    "ttlInDays" : 90
-}
-```
+![Demo](./images/20.png)
 
-Dopo aver aggiunto il tuo **ldap** specifico, il corpo dovrebbe essere simile al seguente:
-
-```json
-{
-    "name" : "vangeluw - API - All Female Customer",
-    "expression" : {"type":"PQL", "format":"pql/json", "value":"{\"nodeType\":\"fnApply\",\"fnName\":\"in\",\"params\":[{\"nodeType\":\"fieldLookup\",\"fieldName\":\"gender\",\"object\":{\"nodeType\":\"fieldLookup\",\"fieldName\":\"person\",\"object\":{\"nodeType\":\"literal\",\"literalType\":\"XDMObject\",\"value\":\"profile\"}}},{\"literalType\":\"List\",\"nodeType\":\"literal\",\"value\":[\"female\"]}]}"},
-    "createdBy": "vangeluw",
-    "schema" : { "name" : "_xdm.context.profile"},
-    "ttlInDays" : 90
-}
-```
-
-È inoltre necessario verificare i campi **Intestazione** della richiesta. Vai a **Intestazioni**. A questo punto viene visualizzato quanto segue:
-
-![Postman](./images/s1_h.png)
-
-| Chiave | Valore |
-| -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxName--` |
-
->[!NOTE]
->
->È necessario specificare il nome della sandbox di Adobe Experience Platform in uso. Il nome x-sandbox deve essere `--aepSandboxName--`.
-
-Ora fai clic sul pulsante blu **Invia** per creare il segmento e visualizzarne i risultati.
-
-![Segmentazione](./images/s1_bodydtl_results.png)
-
-Dopo questo passaggio, puoi visualizzare la definizione del segmento nell’interfaccia utente di Platform. Per controllare, accedi a Adobe Experience Platform e passa a **Segmenti**.
-
-![Segmentazione](./images/s1_segmentdef.png)
-
-### Passaggio 2: creare un processo Segment POST
-
-Nell&#39;esercizio precedente hai creato un segmento _streaming_. Un segmento di streaming valuta continuamente le qualifiche in tempo reale. Stai creando un segmento _batch_. Il segmento batch offre un&#39;anteprima di come potrebbe essere il segmento in termini di qualifiche, ma _ciò non significa che il segmento sia stato effettivamente eseguito_. Attualmente, _nessuno è idoneo per questo segmento_. Per rendere le persone idonee, è necessario eseguire il segmento batch, che è esattamente ciò che faremo qui.
-
-Ora diamo POST a un processo per segmenti.
-
-Passa a Postman.
-
-![Segmentazione](./images/pmdtl.png)
-
-Nella tua raccolta Postman, fai clic sulla richiesta denominata **Passaggio 2 - Processo segmento POST** per aprirla.
-
-![Segmentazione](./images/s2_call.png)
-
-È inoltre necessario verificare i campi **Intestazione** della richiesta. Vai a **Intestazioni**. A questo punto viene visualizzato quanto segue:
-
-![Postman](./images/s2headers.png)
-
-| Chiave | Valore |
-| -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxName--` |
-
->[!NOTE]
->
->È necessario specificare il nome della sandbox di Adobe Experience Platform in uso. Il nome x-sandbox deve essere `--aepSandboxName--`.
-
-Fai clic sul pulsante blu **Invia**.
-
-Dovresti vedere un risultato simile:
-
-![Segmentazione](./images/s2_call_response.png)
-
-Questo processo di segmentazione è ora in esecuzione e potrebbe richiedere un po’ di tempo. Nel passaggio 3, potrai controllare lo stato di questo processo.
-
-
-### Passaggio 3: stato del processo di GET
-
-Passa a Postman.
-
-![Segmentazione](./images/pmdtl.png)
-
-Nella tua raccolta Postman, fai clic sulla richiesta denominata **Passaggio 3 - Stato del processo del segmento di GET**.
-
-![Segmentazione](./images/s3_call.png)
-
-È inoltre necessario verificare i campi **Intestazione** della richiesta. Vai a **Intestazioni**. A questo punto viene visualizzato quanto segue:
-
-![Postman](./images/s3headers.png)
-
-| Chiave | Valore |
-| -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxName--` |
-
->[!NOTE]
->
->È necessario specificare il nome della sandbox di Adobe Experience Platform in uso. Il nome x-sandbox deve essere `--aepSandboxName--`.
-
-Fai clic sul pulsante blu **Invia**.
-
-Dovresti vedere un risultato simile:
-
-![Segmentazione](./images/s3_status.png)
-
-In questo esempio, lo **stato** del processo è impostato su **QUEUED**.
-
-Ripeti questa richiesta facendo clic sul pulsante blu **Invia** ogni due minuti fino a quando lo **stato** non è impostato su **COMPLETATO**.
-
-![Segmentazione](./images/s3_status_succeeded.png)
-
-Quando lo stato è **COMPLETATO**, il processo di segmentazione è stato eseguito e i clienti si qualificano per il segmento.
-
-Congratulazioni, hai completato correttamente l’esercizio Segmentazione. Vediamo ora come è possibile attivare Real-time Customer Profile nell’azienda.
-
-Passaggio successivo: [2.1.6 Visualizza il profilo cliente in tempo reale in azione nel call center](./ex6.md)
+Passaggio successivo: [Riepilogo e vantaggi](./summary.md)
 
 [Torna al modulo 2.1](./real-time-customer-profile.md)
 

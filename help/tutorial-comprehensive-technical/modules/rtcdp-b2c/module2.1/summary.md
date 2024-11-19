@@ -3,9 +3,10 @@ title: Foundation - Real-time Customer Profile - Riepilogo
 description: Foundation - Real-time Customer Profile - Riepilogo
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 6d5519b0-494d-4cfd-aebe-078317d753ac
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,6 @@ Evidenziamo i vantaggi di Real-time Customer Profile:
 - Real-time Customer Profile è basato su un grafico di identità flessibile e in tempo reale che consente di unire dinamicamente frammenti di profilo in più set di dati in base agli identificatori.
 - Dopo aver unito i frammenti di profilo tramite il grafo identità, puoi utilizzare uno qualsiasi degli identificatori disponibili per recuperare il profilo di un cliente
 - La segmentazione viene ora eseguita utilizzando XDM come linguaggio dietro il segmento, il che rende il segmento facilmente riutilizzabile e comprensibile
-- Ora è possibile creare i segmenti anche tramite l’API, che consente di definire un segmento esternamente in modo programmatico e quindi di inserire la definizione del segmento tramite l’API.
 
 ## Guarda qui
 

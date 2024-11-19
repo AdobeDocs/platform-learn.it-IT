@@ -4,16 +4,16 @@ description: Foundation - Configurazione di Adobe Experience Platform Data Colle
 kt: 5342
 doc-type: tutorial
 exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '168'
 ht-degree: 1%
 
 ---
 
 # 1.1.6 Implementare Adobe Target
 
-## 1.1.6.1 Aggiornare lo stream di dati per utilizzare Adobe Target
+## Aggiornare lo stream di dati per utilizzare Adobe Target
 
 Se desideri inviare ad Adobe Target i dati raccolti da Web SDK e ottenere una risposta da Adobe Target con un’esperienza personalizzata per ogni cliente, segui la procedura riportata di seguito.
 

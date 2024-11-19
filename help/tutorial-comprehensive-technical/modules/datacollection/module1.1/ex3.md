@@ -4,20 +4,20 @@ description: Foundation - Configurazione di Adobe Experience Platform Data Colle
 kt: 5342
 doc-type: tutorial
 exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 9%
+source-wordcount: '1269'
+ht-degree: 10%
 
 ---
 
-# 1.1.3 - Introduzione alla raccolta dati di Adobe Experience Platform
+# 1.1.3 Introduzione alla raccolta dati di Adobe Experience Platform
 
 ## Contesto
 
 Ora diamo un’occhiata più approfondita agli elementi di base di Raccolta dati di Adobe Experience Platform, per capire cosa è installato sul tuo sito web demo. Esaminerai più da vicino l’estensione Adobe Experience Platform Web SDK, configurerai un elemento dati e una regola e imparerai a pubblicare una libreria.
 
-## 1.1.3.1 - Estensione Adobe Experience Platform Web SDK
+## Estensione di Adobe Experience Platform Web SDK
 
 Un’estensione è un set di codici che estende l’interfaccia di Adobe Experience Platform Data Collection e la funzionalità della libreria. Adobe Experience Platform Data Collection è la piattaforma; le estensioni sono simili alle app eseguite sulla piattaforma. Tutte le estensioni utilizzate nell’esercitazione vengono create e gestite da Adobe, ma terze parti possono creare estensioni proprie per limitare la quantità di codice personalizzato che gli utenti di Adobe Experience Platform Data Collection devono gestire.
 
@@ -52,7 +52,7 @@ Fai clic su **[!UICONTROL Salva]** per tornare alla vista Estensioni.
 
 ![Pagina principale estensioni](./images/property9edge.png)
 
-## 1.1.3.2 Elementi dati
+## Elementi dati
 
 Gli elementi dati sono i blocchi costitutivi per il dizionario dati (o mappa dati). Utilizza elementi dati per raccogliere, organizzare e distribuire dati in tutta la tecnologia marketing e pubblicitaria.
 
@@ -88,7 +88,7 @@ Scorrere verso l&#39;alto e immettere il testo `%Product Category%`. Fai clic su
 
 A questo punto, viene installata l’estensione Adobe Experience Platform Web SDK e hai aggiornato un elemento dati per raccogliere i dati in base a una struttura XDM. Quindi, controlliamo le regole che invieranno i dati all&#39;ora corretta.
 
-## 1.1.3.3 Norme
+## Regole
 
 Raccolta dati di Adobe Experience Platform è un sistema basato su regole. Cerca l&#39;interazione con l&#39;utente e i dati associati. Quando i criteri descritti nelle tue regole vengono soddisfatti, la regola attiva l&#39;estensione, lo script o il codice lato client identificato.
 
@@ -130,7 +130,7 @@ Qui puoi vedere i dati inviati al server Edge da Adobe Experience Platform Web S
 
 Dopo aver esaminato la regola, puoi pubblicare tutte le modifiche in Raccolta dati di Adobe Experience Platform.
 
-## 1.1.3.4 Publish in una libreria
+## Publish in una libreria
 
 Infine, per convalidare la regola e l’elemento dati appena aggiornati, devi pubblicare una libreria contenente gli elementi modificati nella nostra proprietà. È necessario eseguire alcuni passaggi rapidi nella sezione **[!UICONTROL Pubblicazione]** della raccolta dati di Adobe Experience Platform.
 
