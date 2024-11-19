@@ -3,22 +3,23 @@ title: Foundation - Acquisizione dei dati - Configurare i set di dati
 description: Foundation - Acquisizione dei dati - Configurare i set di dati
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 94ef3e17-af28-4549-8a08-91b129ff4c93
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '571'
 ht-degree: 7%
 
 ---
 
 # 1.2.3 Configurare i set di dati
 
-In questo esercizio configurerai i set di dati richiesti per acquisire e memorizzare informazioni di profilo e comportamento del cliente. Ogni set di dati creato in utilizzerà uno degli schemi generati nel passaggio precedente.
+In questo esercizio configurerai i set di dati per acquisire e memorizzare informazioni di profilo e comportamento del cliente. Ogni set di dati creato in utilizzerà uno degli schemi generati nel passaggio precedente.
 
-## Storia
+## Contesto
 
 Dopo aver definito la risposta alle domande **Chi è questo cliente?** e **Quali sono le operazioni del cliente?** dovrebbe essere simile a, è ora necessario creare un bucket che utilizzi tali informazioni, per ricevere e convalidare i dati inviati a Adobe Experience Platform.
 
-## 1.2.3.1 - Creare Set Di Dati
+## Creare set di dati
 
 Ora devi creare 2 set di dati:
 
@@ -45,39 +46,25 @@ Devi creare un nuovo set di dati. Per creare un nuovo set di dati, fare clic sul
 
 ![Acquisizione dei dati](./images/createdataset.png)
 
-Dopo aver fatto clic sul pulsante **[!UICONTROL + Crea set di dati]**, viene visualizzata la seguente schermata.
-
-![Acquisizione dei dati](./images/datasetsetup.png)
-
 È necessario definire un set di dati dallo schema definito nel passaggio precedente. Fare clic sull&#39;opzione **[!UICONTROL Crea set di dati dallo schema]**.
 
 ![Acquisizione dei dati](./images/datasetfromschema.png)
 
 Nella schermata successiva, è necessario selezionare lo schema creato in 1, `--aepUserLdap-- - Demo System - Profile Schema for Website`.
 
+Fai clic su **Avanti**.
+
 ![Acquisizione dei dati](./images/schemaselection.png)
-
-Dopo aver selezionato lo schema, fai clic su **[!UICONTROL Avanti]** per continuare.
-
-![Acquisizione dei dati](./images/next.png)
 
 Diamo un nome al set di dati.
 
-Come nome per il set di dati, utilizza questo:
+Come nome per il set di dati, utilizza quanto segue:
 
 `--aepUserLdap-- - Demo System - Profile Dataset for Website`
 
-Ad esempio, per ldap **[!UICONTROL vangeluw]**, deve essere il nome dello schema:
-
-**[!UICONTROL vangeluw - Sistema demo - Set di dati profilo per sito Web]**
-
-Questo dovrebbe darti qualcosa del genere:
+Fai clic su **Fine**.
 
 ![Acquisizione dei dati](./images/datasetname.png)
-
-Fai clic su **[!UICONTROL Fine]** per completare la configurazione del set di dati.
-
-![Acquisizione dei dati](./images/finish.png)
 
 Ora visualizzerai questo:
 
@@ -89,47 +76,34 @@ Torna alla panoramica dei [!UICONTROL Set di dati]. Ora nella panoramica viene v
 
 Ora configurerai un secondo set di dati per acquisire le interazioni con i siti web.
 
-Devi creare un nuovo set di dati. Per creare un nuovo set di dati, fare clic sul pulsante **[!UICONTROL + Crea set di dati]**.
+Fare clic su **[!UICONTROL + Crea set di dati]**.
 
 ![Acquisizione dei dati](./images/createdataset.png)
 
-Dopo aver fatto clic sul pulsante **[!UICONTROL + Crea set di dati]**, viene visualizzata la seguente schermata.
-
-![Acquisizione dei dati](./images/datasetsetup.png)
 
 È necessario definire un set di dati dallo schema definito nel passaggio precedente. Fare clic sull&#39;opzione **[!UICONTROL Crea set di dati dallo schema]**.
 
 ![Acquisizione dei dati](./images/datasetfromschema.png)
 
-Nella schermata successiva, è necessario selezionare lo schema creato in 2.2, `--aepUserLdap-- - Demo System - Event Schema for Website`.
+Nella schermata successiva, è necessario selezionare lo schema creato in precedenza, `--aepUserLdap-- - Demo System - Event Schema for Website`.
+
+Fai clic su **Avanti**.
 
 ![Acquisizione dei dati](./images/schemaselectionee.png)
 
-Dopo aver selezionato lo schema, fai clic su **[!UICONTROL Avanti]** per continuare.
-
-![Acquisizione dei dati](./images/next.png)
-
 Diamo un nome al set di dati.
 
-Come nome del set di dati, utilizzeremo questo:
+Come nome per il set di dati, utilizza questo:
 
 `--aepUserLdap-- - Demo System - Event Dataset for Website`
 
-Ad esempio, per ldap **[!UICONTROL vangeluw]**, deve essere il nome dello schema:
-
-**[!UICONTROL vangeluw - Sistema demo - Set di dati evento per il sito Web]**
-
-Questo dovrebbe darti qualcosa del genere:
+Fai clic su **Fine**.
 
 ![Acquisizione dei dati](./images/datasetnameee.png)
 
-Fai clic su **[!UICONTROL Fine]** per completare la configurazione del set di dati.
-
-![Acquisizione dei dati](./images/finish.png)
-
 A questo punto viene visualizzato quanto segue:
 
-![Acquisizione dei dati](./images/finish1.png)
+![Acquisizione dei dati](./images/finish1ee.png)
 
 Torna alla schermata di panoramica dei [!UICONTROL Set di dati].
 
@@ -137,15 +111,12 @@ Torna alla schermata di panoramica dei [!UICONTROL Set di dati].
 
 Ora devi abilitare i set di dati per far parte di Real-time Customer Profile di Adobe Experience Platform.
 
-Apri il set di dati `--aepUserLdap--` - Demo System - Profile Dataset for Website facendo clic su di esso.
+Aprire il set di dati `--aepUserLdap-- - Demo System - Profile Dataset for Website` facendo clic su di esso.
 
 Individua l&#39;icona di attivazione/disattivazione [!UICONTROL Profilo] sul lato destro dello schermo.
-
-![Acquisizione dei dati](./images/ds1.png)
-
 Fai clic sull&#39;interruttore [!UICONTROL Profilo] per abilitare questo set di dati per [!UICONTROL Profilo].
 
-![Acquisizione dei dati](./images/ds2.png)
+![Acquisizione dei dati](./images/ds1.png)
 
 Fare clic su **[!UICONTROL Abilita]**.
 
@@ -155,13 +126,9 @@ Il set di dati è ora abilitato per [!UICONTROL Profilo].
 
 Tornare alla panoramica dei set di dati e aprire il set di dati `--aepUserLdap-- - Demo System - Event Dataset` per il sito Web facendo clic su di esso.
 
-Individua l&#39;icona di attivazione/disattivazione [!UICONTROL Profilo] sul lato destro dello schermo.
+Individua l&#39;icona di attivazione/disattivazione [!UICONTROL Profilo] sul lato destro dello schermo. Fai clic sull&#39;interruttore [!UICONTROL Profilo] per abilitare [!UICONTROL Profilo].
 
 ![Acquisizione dei dati](./images/ds4.png)
-
-Fai clic sull&#39;interruttore [!UICONTROL Profilo] per abilitare [!UICONTROL Profilo].
-
-![Acquisizione dei dati](./images/ds2.png)
 
 Fare clic su **[!UICONTROL Abilita]**.
 

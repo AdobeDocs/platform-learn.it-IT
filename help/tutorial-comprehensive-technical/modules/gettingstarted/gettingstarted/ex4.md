@@ -4,9 +4,9 @@ description: 'Guida introduttiva: utilizzare il sito web'
 kt: 5342
 doc-type: tutorial
 exl-id: 6c63a63e-551f-4568-bba5-9d61d7e6a7d1
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Se la schermata seguente non è più aperta, passa all’opzione 2.
 
-Dopo l&#39;esercizio 0.1, si è ottenuto questo risultato. Fare clic per aprire il **progetto Web Telco** creato per l&#39;utente.
+Questo risultato è stato ottenuto dopo l&#39;esercizio precedente. Fare clic per aprire il **progetto Web Telco** creato per l&#39;utente.
 
 ![DSN](./images/dsn5a.png)
 
