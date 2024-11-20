@@ -3,9 +3,10 @@ title: Attivazione segmento in Microsoft Azure Event Hub - Attiva segmento
 description: Attivazione segmento in Microsoft Azure Event Hub - Attiva segmento
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 56f6a6dc-82aa-4b64-a3f6-b6f59c484ccb
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '328'
 ht-degree: 1%
 
 ---
@@ -22,7 +23,7 @@ Dopo aver effettuato l’accesso, accedi alla home page di Adobe Experience Plat
 
 ![Acquisizione dei dati](./../../../modules/datacollection/module1.2/images/home.png)
 
-Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``--aepSandboxName--``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella riga blu nella parte superiore dello schermo. Dopo aver selezionato la sandbox appropriata, la schermata cambia e ora sei nella sandbox dedicata.
+Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``--aepSandboxName--``. Dopo aver selezionato la sandbox appropriata, la schermata cambia e ora sei nella sandbox dedicata.
 
 ![Acquisizione dei dati](./../../../modules/datacollection/module1.2/images/sb1.png)
 

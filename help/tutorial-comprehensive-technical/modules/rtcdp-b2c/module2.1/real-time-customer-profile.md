@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 79ae9722-bf38-47f7-acbc-aa5bd1289411
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '357'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,6 @@ Questo modulo approfondisce le funzionalità di Real-time Customer Profile e Ide
 ## Prerequisiti
 
 - Accesso a [Adobe Experience Platform](https://experience.adobe.com/platform)
-- Accesso a [https://public.aepdemo.net](https://public.aepdemo.net)
 - **Scarica queste risorse**:
    - [Raccolte Postman](./../../../assets/postman/postman_profile.zip)
 

@@ -1,19 +1,19 @@
 ---
-title: Foundation - Real-time Customer Profile - Creare un segmento - Interfaccia utente
-description: Foundation - Real-time Customer Profile - Creare un segmento - Interfaccia utente
+title: Foundation - Real-time Customer Profile - Creazione di un pubblico - Interfaccia utente
+description: Foundation - Real-time Customer Profile - Creazione di un pubblico - Interfaccia utente
 kt: 5342
 doc-type: tutorial
 exl-id: db1d744d-c4ff-4131-b104-98bb70269140
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 3%
 
 ---
 
-# 2.1.4 Creare un segmento - Interfaccia utente
+# 2.1.4 Creare un pubblico - Interfaccia utente
 
-In questo esercizio creerai un segmento utilizzando il Generatore di segmenti di Adobe Experience Platform.
+In questo esercizio creerai un pubblico utilizzando Audience Builder di Adobe Experience Platform.
 
 Vai a [Adobe Experience Platform](https://experience.adobe.com/platform). Dopo aver effettuato l’accesso, accedi alla home page di Adobe Experience Platform.
 
@@ -23,7 +23,7 @@ Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare
 
 ![Acquisizione dei dati](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-Nel menu a sinistra, vai a **Tipi di pubblico**. In questa pagina è disponibile una panoramica di tutti i segmenti esistenti. Fai clic sul pulsante **+ Crea pubblico** per iniziare a creare un nuovo segmento.
+Nel menu a sinistra, vai a **Tipi di pubblico**. In questa pagina è disponibile una panoramica di tutti i tipi di pubblico esistenti. Fai clic sul pulsante **+ Crea pubblico** per iniziare a creare un nuovo pubblico.
 
 ![Segmentazione](./images/menuseg.png)
 
@@ -31,7 +31,7 @@ Seleziona **Genera regola** e fai clic su **Crea**.
 
 ![Segmentazione](./images/menusegbr.png)
 
-Nel nuovo Generatore di segmenti puoi notare immediatamente l&#39;opzione di menu **Attributi** e il riferimento a **Profilo individuale XDM**.
+Nel nuovo generatore di pubblico, puoi notare immediatamente l&#39;opzione di menu **Attributi** e il riferimento a **Profilo individuale XDM**.
 
 ![Segmentazione](./images/segmentationui.png)
 

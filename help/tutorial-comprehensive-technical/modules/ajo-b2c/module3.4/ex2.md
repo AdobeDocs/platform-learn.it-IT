@@ -3,9 +3,10 @@ title: 'Adobe Journey Optimizer: configurare un percorso basato su batch'
 description: In questa sezione configurerai un percorso e-mail batch per inviare una newsletter
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 52b2e019-e408-4160-87b7-2aabd0f3c68f
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '786'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzi
 
 ## 3.4.2.1 Creare un percorso di newsletter
 
-Verrà ora creato un percorso basato su batch. A differenza del percorso basato sugli eventi dell’esercizio precedente che si basa su eventi di esperienza in arrivo o su entrate o uscite di segmenti per attivare un percorso per 1 cliente specifico, i percorsi basati su batch eseguono il targeting di un intero segmento una volta con contenuti univoci come newsletter, promozioni una tantum o informazioni generiche o periodicamente con contenuti simili inviati regolarmente, ad esempio campagne e promemoria di compleanno.
+Verrà ora creato un percorso basato su batch. A differenza del percorso basato sugli eventi dell’esercizio precedente che si basa sugli eventi di esperienza in arrivo o sulle entrate o uscite del pubblico per attivare un percorso per 1 cliente specifico, i percorsi basati su batch sono destinati a un intero pubblico una sola volta con contenuti univoci come newsletter, promozioni una tantum o informazioni generiche o periodicamente con contenuti simili inviati regolarmente, come ad esempio campagne e promemoria di compleanno.
 
 Nel menu, vai a **Percorsi** e fai clic su **Crea Percorso**.
 
@@ -37,11 +38,11 @@ Fare clic su **Ok**.
 
 ![Journey Optimizer](./images/batchj2.png)
 
-In **Orchestrazione**, trascina **Leggi segmento** nell&#39;area di lavoro. Ciò significa che, una volta pubblicato, il percorso inizierà recuperando l’intero pubblico del segmento, che diventerà quindi il pubblico target del percorso e del messaggio. Fai clic su **Seleziona un segmento**.
+In **Orchestration**, trascina **Read Audience** nell&#39;area di lavoro. Ciò significa che, una volta pubblicato, il percorso inizierà recuperando l’intero pubblico, che diventerà quindi il pubblico target del percorso e del messaggio. Fai clic su **Seleziona un pubblico**.
 
 ![Journey Optimizer](./images/batchj3.png)
 
-Nel popup **Scegli un segmento**, cerca il tuo ldap e seleziona il segmento creato nel [Modulo 2.3 - Real-time CDP - Crea un segmento e intervieni](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) denominato `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. ad esempio: vangeluw - Interest in PROTEUS FITNESS JACKSHIRT. Fai clic su **Salva**.
+Nel popup **Scegli un pubblico**, cerca il tuo ldap e seleziona il pubblico creato nel [Modulo 2.3 - Real-time CDP - Crea un pubblico e intervieni](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) denominato `--aepUserLdap-- - Interest in Galaxy S24`. Fai clic su **Salva**.
 
 ![Journey Optimizer](./images/batchj5.png)
 

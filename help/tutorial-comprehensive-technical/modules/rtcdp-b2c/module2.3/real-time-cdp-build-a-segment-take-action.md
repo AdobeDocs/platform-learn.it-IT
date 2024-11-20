@@ -6,16 +6,14 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
+source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '336'
 ht-degree: 1%
 
 ---
 
 # 2.3 Real-time CDP - Creare un segmento e intervenire
-
-**Autore: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/), [Alberto De Caro](https://www.linkedin.com/in/albertodecaro/), [Benedikt Wedenik](https://www.linkedin.com/in/benedikt-wedenik/)**
 
 In questo modulo, configurerai un segmento di streaming e attiverai il segmento in più destinazioni.
 
@@ -38,25 +36,25 @@ In questo modulo, configurerai un segmento di streaming e attiverai il segmento 
 
 ## Esercizi
 
-[2.3.1 Creare un segmento](./ex1.md)
+[2.3.1 Creare un pubblico](./ex1.md)
 
-Scopri come creare un segmento.
+Scopri come creare un pubblico.
 
 [2.3.2 Come configurare DV360 Destination utilizzando Destinations](./ex2.md)
 
 Scopri come configurare una destinazione pubblicitaria utilizzando l’interfaccia utente di Real-Time CDP.
 
-[2.3.3 Intervenire: inviare il segmento a DV360](./ex3.md)
+[2.3.3 Intervenire: inviare il pubblico a DV360](./ex3.md)
 
-Collegare il segmento creato nell&#39;esercizio 6.1 al DV360 di destinazione.
+Connettere il pubblico creato al DV360 di destinazione.
 
-[2.3.4 Intervenire: inviare il segmento a una destinazione S3](./ex4.md)
+[2.3.4 Intervenire: inviare il pubblico a una destinazione S3](./ex4.md)
 
-Utilizza il segmento creato nell’esercizio 6.1 e invialo a una destinazione S3, in genere utilizzata per le destinazioni del marketing via e-mail.
+Utilizza il pubblico creato e invialo a una destinazione S3, in genere utilizzata per le destinazioni del marketing via e-mail.
 
-[2.3.5 Intervenire: inviare il segmento ad Adobe Target](./ex5.md)
+[2.3.5 Intervenire: inviare il pubblico ad Adobe Target](./ex5.md)
 
-Utilizza il segmento creato nell&#39;esercizio 6.1 per configurare un&#39;attività Targeting esperienze in Adobe Target.
+Utilizza il pubblico creato per configurare un’attività Targeting esperienze in Adobe Target.
 
 [2.3.6 Pubblico esterno](./ex6.md)
 

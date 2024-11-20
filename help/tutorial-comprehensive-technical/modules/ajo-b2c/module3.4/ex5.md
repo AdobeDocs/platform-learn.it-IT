@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - Eventi di business
 description: Questa sezione spiega come utilizzare la funzionalità Eventi di business per eseguire un caso d’uso "articolo di nuovo in magazzino"
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 8519e17f-e050-4a06-9651-29bf67f27276
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1187'
 ht-degree: 1%
 
 ---
@@ -98,14 +99,14 @@ Nel menu a sinistra, in **Eventi**, cerca il tuo ldap. L&#39;evento di business 
 
 ![Journey Optimizer](./images/bej12.png)
 
-Come puoi vedere, un&#39;attività **Leggi segmento** è stata aggiunta automaticamente all&#39;area di lavoro. Questo perché gli eventi di business inviano al percorso solo un trigger per la lettura di un segmento specifico, che recupererà quindi l’elenco dei profili per quel percorso.
+Come puoi vedere, un&#39;attività **Read Audience** è stata aggiunta automaticamente all&#39;area di lavoro. Questo perché gli eventi di business inviano al percorso solo un trigger per la lettura di un pubblico specifico, che recupererà quindi l’elenco dei profili di quel percorso.
 
-Fai clic sull&#39;attività **Leggi segmento**.
-La configurazione di **Leggi segmento** prevede che tu selezioni il segmento a cui vuoi inviare la notifica dell&#39;evento di business appena accaduto. Fai clic sul campo **Seleziona un segmento**.
+Fai clic sull&#39;attività **Read Audience**.
+Nella configurazione di **Read Audience** è previsto che tu selezioni il pubblico a cui vuoi inviare la notifica dell&#39;evento di business appena accaduto. Fai clic sul campo **Seleziona un pubblico**.
 
 ![Journey Optimizer](./images/bej13.png)
 
-Nel popup **Scegli un segmento**, cerca il tuo ldap e seleziona il segmento creato nel [Modulo 2.3 - Real-time CDP - Crea un segmento e intervieni](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) denominato `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. ad esempio: vangeluw - Interest in PROTEUS FITNESS JACKSHIRT. Fai clic su **Salva**.
+Nel popup **Scegli un pubblico**, cerca il tuo ldap e seleziona il pubblico creato nel [Modulo 2.3 - Real-time CDP - Crea un pubblico e intervieni](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) denominato `--aepUserLdap-- - Interest in Galaxy S24`. Fai clic su **Salva**.
 
 ![Journey Optimizer](./images/bej14.png)
 

@@ -4,7 +4,7 @@ description: Foundation - Configurazione di Adobe Experience Platform Data Colle
 kt: 5342
 doc-type: tutorial
 exl-id: e97d40b5-616d-439c-9d6b-eaa4ebf5acb0
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Per questo flusso di dati...
 - Tutti i dati di Experience Event vengono raccolti per impostazione predefinita nel set di dati **Demo System - Set di dati evento per il sito Web (Global v1.1)**
 - Tutti i dati profilo verranno raccolti per impostazione predefinita nel set di dati **Demo System - Set di dati profilo per il sito Web (Global v1.1)** (l&#39;acquisizione nativa dei dati profilo con Web SDK attualmente non è ancora supportata da Web SDK)
 - Se desideri utilizzare il servizio applicativo **Offer Decisioning** per questo flusso di dati, devi selezionare la casella ad Offer decisioning. (farà parte del [modulo 3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md))
-- **La segmentazione di Edge** è abilitata per impostazione predefinita, il che significa che i segmenti qualificati verranno valutati al limite al momento dell&#39;acquisizione del traffico in ingresso
+- **La segmentazione di Edge** è abilitata per impostazione predefinita, il che significa che i tipi di pubblico idonei verranno valutati al limite, al momento dell&#39;acquisizione del traffico in ingresso
 - Se desideri utilizzare le **Destinazioni Personalization**, seleziona la casella per Destinazioni Personalization.
 - 
    - Se desideri utilizzare le funzionalità di **Adobe Journey Optimizer** in questo flusso di dati, devi selezionare la casella per Adobe Journey Optimizer.

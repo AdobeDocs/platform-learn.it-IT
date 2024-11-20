@@ -4,7 +4,8 @@ description: Offer decisioning - Offer decisioning 101
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 8a627c29-7780-455f-abe1-a69f8fe145ea
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 2%
@@ -92,9 +93,9 @@ Ora vengono visualizzati tutti i campi del posizionamento:
 
 ## 3.3.1.4 Regole decisionali
 
-Una regola (detta anche regola di idoneità) equivale a un **segmento**. Una regola è infatti un segmento con l’unica differenza che una regola può essere utilizzata con un’offerta per fornire l’offerta migliore a un profilo in Adobe Experience Platform.
+Una regola (detta anche regola di idoneità) equivale a un pubblico **1}.** Una regola è in effetti un pubblico con l’unica differenza che una regola può essere utilizzata con un’offerta per fornire l’offerta migliore a un profilo in Adobe Experience Platform.
 
-Poiché sai già come definire i segmenti in base ai moduli di abilitazione precedenti, rivediamo rapidamente l’ambiente di segmentazione:
+Poiché sai già come definire i tipi di pubblico in base ai moduli di abilitazione precedenti, rivediamo rapidamente l’ambiente di segmentazione:
 
 Vai a **Regole**. Fare clic su **+ Crea regola**.
 
@@ -106,7 +107,7 @@ Viene quindi visualizzato l’ambiente Segmentazione di Adobe Experience Platfor
 
 Ora puoi accedere a tutti i campi che fanno parte dello schema di unione per Real-time Customer Profile e creare qualsiasi regola.
 
-È anche interessante sapere che puoi semplicemente riutilizzare i segmenti già definiti in Adobe Experience Platform, andando in **Tipi di pubblico** > ``--aepTenantId--``.
+È anche interessante sapere che puoi semplicemente riutilizzare i tipi di pubblico già definiti in Adobe Experience Platform, andando in **Tipi di pubblico** > ``--aepTenantId--``.
 
 ![Regola di decisione](./images/decisionruleaud.png)
 

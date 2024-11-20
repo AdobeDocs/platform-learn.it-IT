@@ -4,9 +4,9 @@ description: Real-time CDP - SDK Destinazioni
 kt: 5342
 doc-type: tutorial
 exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1098'
 ht-degree: 5%
 
 ---
@@ -23,11 +23,13 @@ In questo esercizio utilizzerai nuovamente Postman per eseguire query sulle API 
 
 ## Definire endpoint e formato
 
-Per questo esercizio, dovrai configurare un endpoint in modo che, quando un segmento si qualifica, l’evento di qualifica possa essere inviato in streaming a tale endpoint. In questo esercizio utilizzerai un endpoint di esempio utilizzando [https://webhook.site/](https://webhook.site/). Vai a [https://webhook.site/](https://webhook.site/), dove vedrai qualcosa di simile. Fai clic su **Copia negli Appunti** per copiare l&#39;URL. Nel prossimo esercizio dovrai specificare questo URL. L&#39;URL in questo esempio è `https://webhook.site/e0eb530c-15b4-4a29-8b50-e40877d5490a`.
+Per questo esercizio, dovrai configurare un endpoint in modo che, quando un pubblico si qualifica, l’evento di qualifica possa essere inviato in streaming a tale endpoint. In questo esercizio utilizzerai un endpoint di esempio utilizzando [https://pipedream.com/requestbin](https://pipedream.com/requestbin). Vai a [https://pipedream.com/requestbin](https://pipedream.com/requestbin), crea un account e quindi crea un&#39;area di lavoro. Una volta creata l’area di lavoro, verrà visualizzato qualcosa di simile a questo.
+
+Fai clic su **copia** per copiare l&#39;URL. Nel prossimo esercizio dovrai specificare questo URL. L&#39;URL in questo esempio è `https://eodts05snjmjz67.m.pipedream.net`.
 
 ![Acquisizione dei dati](./images/webhook1.png)
 
-Per quanto riguarda il formato, utilizzeremo un modello standard che trasmetterà in streaming le qualifiche o le non qualifiche dei segmenti insieme a metadati come gli identificatori dei clienti. I modelli possono essere personalizzati per soddisfare le aspettative di endpoint specifici, ma in questo esercizio riutilizzeremo un modello standard, che si tradurrà in un payload come questo che verrà inviato in streaming all’endpoint.
+Per quanto riguarda il formato, utilizzeremo un modello standard che trasmetterà in streaming i requisiti o le non qualifiche del pubblico insieme a metadati come gli identificatori dei clienti. I modelli possono essere personalizzati per soddisfare le aspettative di endpoint specifici, ma in questo esercizio riutilizzeremo un modello standard, che si tradurrà in un payload come questo che verrà inviato in streaming all’endpoint.
 
 ```json
 {
@@ -52,9 +54,15 @@ Per quanto riguarda il formato, utilizzeremo un modello standard che trasmetter�
 
 ## Creare una configurazione di server e modelli
 
-Il primo passaggio per creare una tua destinazione in Adobe Experience Platform consiste nel creare una configurazione di server e modelli.
+Il primo passaggio per creare una tua destinazione in Adobe Experience Platform consiste nel creare una configurazione di server e modelli utilizzando Postman.
 
-A tale scopo, passare a **Destination Authoring API**, a **Server e modelli di destinazione** e fare clic per aprire la richiesta **POST - Crea una configurazione del server di destinazione**. Poi vedrai questo. In **Intestazioni**, devi aggiornare manualmente il valore per la chiave **x-sandbox-name** e impostarlo su `--aepSandboxName--`. Selezionare il valore **{{SANDBOX_NAME}}**.
+Per farlo, apri l&#39;applicazione Postman e vai a **API di authoring delle destinazioni**, ai **server e modelli di destinazione** e fai clic per aprire la richiesta **POST - Crea una configurazione del server di destinazione**.
+
+>[!NOTE]
+>
+>Se non disponi della raccolta Postman, torna all&#39;esercizio 3 [del modulo 2.1](../module2.1/ex3.md) e segui le istruzioni per configurare Postman con le raccolte Postman fornite.
+
+Poi vedrai questo. In **Intestazioni**, devi aggiornare manualmente il valore per la chiave **x-sandbox-name** e impostarlo su `--aepSandboxName--`. Selezionare il valore **{{SANDBOX_NAME}}**.
 
 ![Acquisizione dei dati](./images/sdkpm1.png)
 
@@ -89,7 +97,7 @@ Sostituire il segnaposto **{{body}}** con il codice seguente:
 }
 ```
 
-Dopo aver incollato il codice precedente, è necessario aggiornare manualmente il campo **urlBasedDestination.url.value** e impostarlo sull&#39;URL del webhook creato nel passaggio precedente, che era `https://webhook.site/e0eb530c-15b4-4a29-8b50-e40877d5490a` in questo esempio.
+Dopo aver incollato il codice precedente, è necessario aggiornare manualmente il campo **urlBasedDestination.url.value** e impostarlo sull&#39;URL del webhook creato nel passaggio precedente, che era `https://eodts05snjmjz67.m.pipedream.net` in questo esempio.
 
 ![Acquisizione dei dati](./images/sdkpm4.png)
 
@@ -97,20 +105,20 @@ Dopo aver aggiornato il campo **urlBasedDestination.url.value**, dovrebbe essere
 
 ![Acquisizione dei dati](./images/sdkpm5.png)
 
+>[!NOTE]
+>
+>Non dimenticare che prima di inviare una richiesta ad Adobe I/O, devi disporre di un `access_token` valido. Per ottenere un `access_token` valido, esegui la richiesta **POST - Ottieni token di accesso** nella raccolta **Adobe IO - OAuth**.
+
 Dopo aver fatto clic su **Invia**, verrà creato il modello del server e come parte della risposta verrà visualizzato un campo denominato **instanceId**. Scrivilo, come ti servirà nel passaggio successivo. In questo esempio, **instanceId** è
-`eb0f436f-dcf5-4993-a82d-0fcc09a6b36c`.
+`52482c90-8a1e-42fc-b729-7f0252e5cebd`.
 
 ![Acquisizione dei dati](./images/sdkpm6.png)
 
 ## Creare la configurazione di destinazione
 
-In Postman, in **Destination Authoring API**, vai a **Destination configurations** e fai clic per aprire la richiesta **POST - Create a destination configuration**. Poi vedrai questo. In **Intestazioni**, devi aggiornare manualmente il valore per la chiave **x-sandbox-name** e impostarlo su `--aepSandboxName--`. Selezionare il valore **{{SANDBOX_NAME}}**.
+In Postman, in **Destination Authoring API**, vai a **Destination configurations** e fai clic per aprire la richiesta **POST - Create a destination configuration**. Poi vedrai questo. In **Intestazioni**, devi aggiornare manualmente il valore per la chiave **x-sandbox-name** e impostarlo su `--aepSandboxName--`. Selezionare il valore **{{SANDBOX_NAME}}** e sostituirlo con `--aepSandboxName--`.
 
 ![Acquisizione dei dati](./images/sdkpm7.png)
-
-Sostituiscilo con `--aepSandboxName--`.
-
-![Acquisizione dei dati](./images/sdkpm8.png)
 
 Quindi, vai a **Corpo**. selezionare il segnaposto **{{body}}**.
 
@@ -183,7 +191,7 @@ Sostituire il segnaposto **{{body}}** con il codice seguente:
 
 ![Acquisizione dei dati](./images/sdkpm11.png)
 
-Dopo aver incollato il codice precedente, devi aggiornare manualmente il campo **destinationDelivery. destinationServerId**, e devi impostarlo su **instanceId** del modello del server di destinazione creato nel passaggio precedente, che era `eb0f436f-dcf5-4993-a82d-0fcc09a6b36c` in questo esempio. Fare clic su **Invia**.
+Dopo aver incollato il codice precedente, devi aggiornare manualmente il campo **destinationDelivery. destinationServerId**, e devi impostarlo su **instanceId** del modello del server di destinazione creato nel passaggio precedente, che era `52482c90-8a1e-42fc-b729-7f0252e5cebd` in questo esempio. Fare clic su **Invia**.
 
 ![Acquisizione dei dati](./images/sdkpm10.png)
 
@@ -197,7 +205,7 @@ Vai a [Adobe Experience Platform](https://experience.adobe.com/platform). Dopo a
 
 ![Acquisizione dei dati](./../../../modules/datacollection/module1.2/images/home.png)
 
-Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``--aepSandboxName--``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella riga blu nella parte superiore dello schermo. Dopo aver selezionato la [!UICONTROL sandbox] appropriata, la schermata verrà modificata e ora sei nella [!UICONTROL sandbox] dedicata.
+Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``--aepSandboxName--``. Dopo aver selezionato la [!UICONTROL sandbox] appropriata, la schermata verrà modificata e ora sei nella [!UICONTROL sandbox] dedicata.
 
 ![Acquisizione dei dati](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -205,13 +213,13 @@ Nel menu a sinistra, vai a **Destinazioni**, fai clic su **Catalogo** e scorri v
 
 ![Acquisizione dei dati](./images/destsdk1.png)
 
-## Collegare il segmento alla destinazione
+## Collegare il pubblico alla destinazione
 
-In **Destinazioni** > **Catalogo**, fai clic su **Configura** nella tua destinazione per iniziare ad aggiungere segmenti alla nuova destinazione.
+In **Destinazioni** > **Catalogo**, fai clic su **Configura** nella tua destinazione per iniziare ad aggiungere tipi di pubblico alla nuova destinazione.
 
 ![Acquisizione dei dati](./images/destsdk2.png)
 
-Immettere un token portatore fittizio, ad esempio **1234**. Fai clic su **Connetti alla destinazione**.
+Immetti un valore casuale per il token **bearer**, ad esempio **1234**. Fai clic su **Connetti alla destinazione**.
 
 ![Acquisizione dei dati](./images/destsdk3.png)
 
@@ -223,7 +231,7 @@ Poi vedrai questo. Come nome per la destinazione, utilizzare `--aepUserLdap-- - 
 
 ![Acquisizione dei dati](./images/destsdk5.png)
 
-Selezionare il segmento creato in precedenza, denominato `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. Fai clic su **Avanti**.
+Selezionare il pubblico creato in precedenza, denominato `--aepUserLdap-- - Interest in Galaxy S24`. Fai clic su **Avanti**.
 
 ![Acquisizione dei dati](./images/destsdk6.png)
 
@@ -235,23 +243,15 @@ Fai clic su **Fine**.
 
 ![Acquisizione dei dati](./images/destsdk8.png)
 
-La destinazione è ora live, le nuove qualifiche dei segmenti verranno inviate in streaming al tuo webhook personalizzato ora.
+La destinazione è ora live, i nuovi requisiti di pubblico verranno inviati in streaming al tuo webhook personalizzato ora.
 
 ![Acquisizione dei dati](./images/destsdk9.png)
 
-## Test dell’attivazione dei segmenti
+## Verifica l’attivazione del pubblico
 
-Vai a [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sul progetto del tuo sito web per aprirlo.
+Vai a [https://dsn.adobe.com](https://dsn.adobe.com). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sui tre punti **...** del progetto del sito Web, quindi fai clic su **Esegui** per aprirlo.
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-Ora puoi seguire il flusso seguente per accedere al sito web. Fai clic su **Integrazioni**.
-
-![DSN](../../gettingstarted/gettingstarted/images/web1.png)
-
-Nella pagina **Integrazioni** è necessario selezionare la proprietà Raccolta dati creata nell&#39;esercizio 0.1.
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 Poi vedrai il tuo sito web demo aperto. Seleziona l’URL e copialo negli Appunti.
 
@@ -269,23 +269,24 @@ Seleziona il tipo di account e completa la procedura di accesso.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-Vedrai quindi il tuo sito web caricato in una finestra del browser in incognito. Per ogni dimostrazione, dovrai utilizzare una nuova finestra del browser in incognito per caricare l’URL del sito web demo.
+Vedrai quindi il tuo sito web caricato in una finestra del browser in incognito. Per ogni esercizio, dovrai utilizzare una nuova finestra del browser in incognito per caricare l’URL del sito web demo.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
-Dalla home page di **Luma**, vai a **Men** e fai clic sul prodotto **CAMICIA FITNESS PROTEUS**.
+In questo esempio, desideri rispondere a un cliente specifico che visualizza un prodotto specifico.
+Dalla home page di **Citi Signal**, vai a **Telefoni e dispositivi** e fai clic sul prodotto **Galaxy S24**.
 
-![Acquisizione dei dati](./images/homenadia.png)
+![Acquisizione dei dati](./images/homegalaxy.png)
 
-Hai visitato la pagina dei prodotti per **PROTEUS FITNESS JACKSHIRT**, il che significa che ora potrai qualificarti per il segmento creato in precedenza in questo esercizio.
+La pagina del prodotto di Galaxy S24 è stata ora visualizzata, quindi il tuo pubblico si qualificherà per il tuo profilo nei minuti successivi.
 
-![Acquisizione dei dati](./images/homenadiapp.png)
+![Acquisizione dei dati](./images/homegalaxy1.png)
 
-Quando apri il Visualizzatore profili e vai a **Segmenti**, vedrai il segmento idoneo.
+Quando apri il Visualizzatore profili e vai a **Tipi di pubblico**, il pubblico sarà idoneo.
 
-![Acquisizione dei dati](./images/homenadiapppb.png)
+![Acquisizione dei dati](./images/homegalaxydsdk.png)
 
-Torna al webhook aperto su [https://webhook.site/](https://webhook.site/), dove dovresti trovare una nuova richiesta in arrivo, proveniente da Adobe Experience Platform, che contiene l&#39;evento di qualificazione del segmento.
+Torna al webhook aperto su [https://eodts05snjmjz67.m.pipedream.net](https://eodts05snjmjz67.m.pipedream.net), dove dovresti trovare una nuova richiesta in arrivo, proveniente da Adobe Experience Platform, che contiene l&#39;evento di qualificazione del pubblico.
 
 ![Acquisizione dei dati](./images/destsdk10.png)
 

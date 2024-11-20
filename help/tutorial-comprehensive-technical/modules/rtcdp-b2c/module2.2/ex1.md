@@ -3,9 +3,10 @@ title: Intelligent Services - Preparazione dei dati di IA per l’analisi dei cl
 description: 'IA per l’analisi dei clienti: preparazione dei dati (acquisizione)'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '753'
 ht-degree: 1%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 1%
 Affinché Intelligent Services possa scoprire informazioni provenienti dai dati degli eventi di marketing, i dati devono essere arricchiti semanticamente e mantenuti in una struttura standard. Per ottenere questo risultato, Intelligent Services sfrutta gli schemi Experience Data Model (XDM) di Adobe.
 In particolare, tutti i set di dati utilizzati in Intelligent Services devono essere conformi allo schema XDM **Consumer Experience Event**.
 
-## 2.2.1.1 Creare uno schema
+## Crea schema
 
 In questo esercizio creerai uno schema contenente il mixin **Consumer Experience Event**, richiesto dal servizio intelligente **Customer AI**.
 
@@ -25,37 +26,40 @@ Dopo aver effettuato l’accesso, accedi alla home page di Adobe Experience Plat
 
 ![Acquisizione dei dati](../../datacollection/module1.2/images/home.png)
 
-Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``--module10sandbox--``. A tale scopo, fai clic sul testo **[!UICONTROL Prod produzione]** nella riga blu nella parte superiore dello schermo. Dopo aver selezionato la sandbox appropriata, la schermata cambia e ora sei nella sandbox dedicata.
+Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``--aepSandboxName--``. Dopo aver selezionato la sandbox appropriata, la schermata cambia e ora sei nella sandbox dedicata.
 
 ![Acquisizione dei dati](../../datacollection/module1.2/images/sb1.png)
 
 Dal menu a sinistra, fai clic su **Schemi** e passa a **Sfoglia**. Fare clic su **Crea schema**.
 
-![Crea nuovo schema](./images/create-schema-button.png)
+![Crea nuovo schema](./images/createschemabutton.png)
 
-Nel popup, seleziona **XDM ExperienceEvent**.
+Nel popup, selezionare **Manuale** e fare clic su **Seleziona**.
+
+![Crea nuovo schema](./images/schmanual.png)
+
+Quindi, seleziona **Evento esperienza** e fai clic su **Avanti**.
 
 ![Crea nuovo schema](./images/xdmee.png)
 
-Poi vedrai questo.
+È necessario specificare un nome per lo schema. Come nome dello schema, utilizzare `--aepUserLdap-- - Demo System - Customer Experience Event` e fare clic su **Fine**.
+
+![Crea nuovo schema](./images/schname.png)
+
+Poi vedrai questo. Fare clic su **+ Aggiungi** in Gruppi di campi.
 
 ![Crea nuovo schema](./images/xdmee1.png)
 
-Cerca e seleziona i **mixin** seguenti da aggiungere a questo schema:
+Cerca e seleziona i **Gruppi di campi** seguenti da aggiungere a questo schema:
 
 - Evento esperienza del consumatore
-
-  ![Nuovo schema CEE](./images/cee.png)
-
 - Dettagli dell’ID dell’utente finale
-
-  ![Nuovo schema CEE](./images/identitymap.png)
 
 Fare clic su **Aggiungi gruppi di campi**.
 
-![Definizione chiave identità](./images/addmixin.png)
+![Nuovo schema CEE](./images/cee.png)
 
-Poi vedrai questo. Selezionare il mixin **Dettagli ID utente finale**.
+Poi vedrai questo. Fare clic sul gruppo di campi **Dettagli ID utente finale**.
 
 ![Crea nuovo schema](./images/eui1.png)
 
@@ -63,7 +67,7 @@ Passa al campo **endUserIDs._experience.emailid.id**.
 
 ![Crea nuovo schema](./images/eui2.png)
 
-Nel menu a destra per il campo **endUserIDs._experience.emailid.id**, scorri verso il basso e seleziona la casella di controllo per **Identità**, seleziona la casella di controllo per **Identità primaria** e seleziona **Spazio dei nomi identità** di **E-mail**.
+Nel menu a destra per il campo **endUserIDs._experience.emailid.id**, scorri verso il basso e seleziona la casella di controllo per **Identità**, seleziona la casella di controllo per **Identità primaria** e seleziona **Spazio dei nomi identità** di **E-mail**. Fare clic su **Applica**.
 
 ![Crea nuovo schema](./images/eui3.png)
 
@@ -71,21 +75,7 @@ Passa al campo **endUserIDs._experience.mcid.id**. Selezionare la casella di con
 
 ![Crea nuovo schema](./images/eui4.png)
 
-Assegna un nome allo schema.
-
-Come nome del nostro schema, utilizzerai quanto segue:
-
-- `--aepUserLdap-- - Demo System - Customer Experience Event`
-
-Ad esempio, per ldap **vangeluw**, deve essere il nome dello schema:
-
-- **vangeluw - Sistema demo - Evento esperienza cliente**
-
-Dovrebbe darti qualcosa del genere. Fai clic sul pulsante **+ Aggiungi** per aggiungere nuovi **mixin**.
-
-![Crea nuovo schema](./images/xdmee2.png)
-
-Seleziona il nome dello schema. Abilitare ora lo schema per il **profilo** facendo clic sull&#39;interruttore **profilo**.
+Allora avrai questo. Quindi, seleziona il nome dello schema. Abilitare ora lo schema per il **profilo** facendo clic sull&#39;interruttore **profilo**.
 
 ![Crea nuovo schema](./images/xdmee3.png)
 
@@ -97,7 +87,7 @@ Ora dovresti avere questo. Fai clic su **Salva** per salvare lo schema.
 
 ![Crea nuovo schema](./images/xdmee5.png)
 
-## 2.2.1.2 Creare un set di dati
+## Crea set di dati
 
 Dal menu a sinistra, fai clic su **Set di dati** e passa a **Sfoglia**. Fare clic su **Crea set di dati**.
 
@@ -129,7 +119,7 @@ Ora dovresti disporre di:
 
 Ora puoi iniziare a acquisire i dati di Consumer Experience Event e iniziare a utilizzare il servizio Customer AI.
 
-## 2.2.1.3 Scaricare i dati di prova dell’evento esperienza
+## Scarica dati di prova di Experience Event
 
 Una volta configurati lo **Schema** e il **Set di dati**, puoi acquisire i dati di Experience Event. Poiché IA per l&#39;analisi dei clienti richiede dati per almeno **2 trimestri**, dovrai acquisire dati preparati esternamente.
 
@@ -145,7 +135,7 @@ In alternativa, se non è possibile accedere al collegamento precedente, è poss
 
 ![Set di dati](./images/ingest.png)
 
-## 2.2.1.4 Acquisire i dati di prova di Experience Event
+## Acquisire i dati di prova di Experience Event
 
 In Adobe Experience Platform, vai a **Set di dati** e apri il set di dati, denominato **[!UICONTROL ldap - Demo System - Set di dati evento esperienza cliente]**.
 

@@ -4,10 +4,10 @@ description: Visualizza Real-time Customer Profile in azione nel call center
 kt: 5342
 doc-type: tutorial
 exl-id: 47c96696-644a-43b9-8deb-846bd2587af0
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 2%
+source-wordcount: '317'
+ht-degree: 3%
 
 ---
 
@@ -50,11 +50,9 @@ Quindi, devi selezionare una delle tue identità e il namespace corrispondente e
 | ID e-mail | woutervangeluwe+18112024-01@gmail.com |
 | ID numero cellulare | +32473622044+18112024-01 |
 
-Quando il cliente chiama il call center, il numero di telefono può essere utilizzato per identificare il cliente. In questo esercizio utilizzerai il numero di telefono per recuperare il profilo del cliente nell’app CX.
-
 ![Demo](./images/19.png)
 
-Ora vedrai le informazioni che idealmente verrebbero visualizzate nel Call Center, in modo che i dipendenti del Call Center abbiano immediatamente a disposizione tutte le informazioni pertinenti quando parlano con un cliente.
+Ora vedrai le informazioni che idealmente verrebbero visualizzate nel Call Center, in modo che gli agenti del Call Center abbiano immediatamente a disposizione tutte le informazioni pertinenti quando parlano con un cliente.
 
 ![Demo](./images/20.png)
 
