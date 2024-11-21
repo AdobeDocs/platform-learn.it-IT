@@ -4,7 +4,7 @@ description: Creare e configurare un webhook personalizzato
 kt: 5342
 doc-type: tutorial
 exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 1%
@@ -149,7 +149,7 @@ Se selezioni il payload non elaborato, passa a [https://jsonformatter.org/json-p
 
 ![Configurazione raccolta dati di Adobe Experience Platform](./images/hook2.png)
 
-Passa al webhook personalizzato [https://webhook.site/](https://webhook.site/) utilizzato in uno dei passaggi precedenti. Ora dovresti avere una visualizzazione simile a questa, con le richieste di rete visualizzate nel menu a sinistra. Stai visualizzando il payload **xdm** filtrato dalla richiesta di rete mostrata sopra.
+Passa al webhook personalizzato [https://pipedream.com/requestbin](https://pipedream.com/requestbin) utilizzato in uno dei passaggi precedenti. Ora dovresti avere una visualizzazione simile a questa, con le richieste di rete visualizzate nel menu a sinistra. Stai visualizzando il payload **xdm** filtrato dalla richiesta di rete mostrata sopra.
 
 ![Configurazione raccolta dati di Adobe Experience Platform](./images/hook3.png)
 
@@ -161,9 +161,9 @@ Se ora esplori il sito web, vedrai ulteriori richieste di rete disponibili in te
 
 ![Configurazione raccolta dati di Adobe Experience Platform](./images/hook5.png)
 
-Ora hai configurato il server side Event Forwarding dei payload Web SDK/XDM su un webhook personalizzato esterno. Negli esercizi successivi, configurerai un approccio simile e invierai gli stessi dati agli ambienti Google e AWS.
+Ora hai configurato il server side Event Forwarding dei payload Web SDK/XDM su un webhook personalizzato esterno. Nei prossimi esercizi configurerai un approccio simile e invierai gli stessi dati a Google Cloud Platform e AWS.
 
-Passaggio successivo: [2.5.4 Creare e configurare una funzione cloud di Google](./ex4.md)
+Passaggio successivo: [2.5.4 Inoltra gli eventi a GCP Pub/Sub](./ex4.md)
 
 [Torna al modulo 2.5](./aep-data-collection-ssf.md)
 

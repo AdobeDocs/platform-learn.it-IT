@@ -3,14 +3,15 @@ title: 'Raccolta dati e inoltro eventi: inoltro di eventi verso l’ecosistema A
 description: Inoltra gli eventi verso l’ecosistema AWS
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 87c2c85d-f624-4972-a9c6-32ddf8a39570
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
-source-wordcount: '2422'
+source-wordcount: '1566'
 ht-degree: 2%
 
 ---
 
-# 2.5.5 Avanzare gli eventi verso l&#39;ecosistema AWS
+# 2.5.5 Inoltrare gli eventi ad AWS Kinesis e AWS S3
 
 >[!IMPORTANT]
 >
@@ -22,9 +23,9 @@ Adobe Experience Platform supporta vari servizi Amazon come destinazione.
 Kinesis e S3 sono entrambe [destinazioni di esportazione profilo](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=en) e possono essere utilizzate come parte di Adobe Experience Platform Real-Time CDP.
 Puoi inserire facilmente eventi di segmento di alto valore e gli attributi di profilo associati nei sistemi preferiti.
 
-In questa nota imparerai a configurare il tuo flusso Kinesis di Amazon per inviare in streaming i dati dell’evento provenienti dall’ecosistema Edge di Adobe Experience Platform a una destinazione di archiviazione cloud, come Amazon S3. Questa funzione è utile quando desideri raccogliere eventi di esperienza da proprietà web e mobili e inviarli nel data lake per l’analisi e il reporting operativo. I Datalake generalmente acquisiscono i dati in modalità batch con importazioni giornaliere di file di grandi dimensioni, non espongono un endpoint http pubblico che potrebbe essere utilizzato insieme all’inoltro di eventi.
+In questo esercizio imparerai a configurare il tuo flusso Kinesis di Amazon per inviare in streaming i dati dell’evento provenienti dall’ecosistema Edge di Adobe Experience Platform a una destinazione di archiviazione cloud, come Amazon S3. Questa funzione è utile quando desideri raccogliere eventi di esperienza da proprietà web e mobili e inviarli nel data lake per l’analisi e il reporting operativo. I Datalake generalmente acquisiscono i dati in modalità batch con importazioni giornaliere di file di grandi dimensioni, non espongono un endpoint http pubblico che potrebbe essere utilizzato insieme all’inoltro di eventi.
 
-Il supporto dei casi d’uso di cui sopra implica che i dati in streaming devono essere inseriti in un buffer o messi in coda prima di essere scritti in un file. Fare attenzione a non aprire il file per l&#39;accesso in scrittura in più processi. La delega di questa attività a un sistema dedicato è ideale per garantire una buona scalabilità e un livello di servizio elevato, ed è qui che Kinesis interviene in caso di emergenza.
+Il supporto dei casi d’uso di cui sopra implica che i dati in streaming devono essere inseriti nel buffer o in una coda prima di essere scritti in un file. Fare attenzione a non aprire il file per l&#39;accesso in scrittura in più processi. La delega di questa attività a un sistema dedicato è ideale per garantire una buona scalabilità e un livello di servizio elevato, ed è qui che Kinesis interviene in caso di emergenza.
 
 I flussi di dati di Amazon Kinesis si concentrano sull’acquisizione e l’archiviazione dei flussi di dati. Kinesis Data Firehose si concentra sulla distribuzione di flussi di dati a destinazioni selezionate, ad esempio bucket S3.
 
@@ -35,9 +36,9 @@ Come parte di questo esercizio...
 - Configurare il gateway API di Amazon come endpoint API rest per ricevere i dati dell’evento
 - Inoltrare i dati grezzi dell’evento da Edge di Adobe al flusso Kinesis
 
-## 2.5.5.1 Configurare il bucket AWS S3
+## Configurare il bucket AWS S3
 
-Vai a [https://console.aws.amazon.com](https://console.aws.amazon.com) e accedi con l&#39;account Amazon creato in precedenza.
+Vai a [https://console.aws.amazon.com](https://console.aws.amazon.com) e accedi con il tuo account Amazon.
 
 ![ETL](./../../../modules/rtcdp-b2c/module2.3/images/awshome.png)
 
@@ -55,8 +56,7 @@ Verrà quindi visualizzata la home page di **Amazon S3**. Fai clic su **Crea buc
 
 Nella schermata **Crea bucket**, è necessario configurare due elementi:
 
-- Nome: utilizzare il nome `eventforwarding---aepUserLdap--`. Ad esempio, in questo esercizio il nome del bucket è **aepmodulertcdpvangeluw**
-- Regione: utilizzare la regione **UE (Francoforte) eu-central-1**
+- Nome: utilizzare il nome `eventforwarding---aepUserLdap--`.
 
 ![ETL](./images/bucketname.png)
 
@@ -68,7 +68,7 @@ Vedrai quindi il tuo bucket in fase di creazione e verrà reindirizzato alla hom
 
 ![ETL](./images/S3homeb.png)
 
-## 2.5.5.2 Configurare il flusso di dati di AWS Kinesis
+## Configurare il flusso di dati di AWS Kinesis
 
 Nel menu **Trova servizi**, cerca **kinesis**. Fare clic sul primo risultato della ricerca: **Kinesis - Utilizzare dati in streaming in tempo reale**.
 
@@ -90,13 +90,13 @@ Poi vedrai questo. Una volta creato correttamente il flusso di dati, puoi passar
 
 ![ETL](./images/kinesis5.png)
 
-## 2.5.5.3 Configurare il flusso di consegna AWS Firehose
+## Configurare il flusso di consegna AWS Firehose
 
 Nel menu **Trova servizi**, cerca **kinesis**. Fare clic su **Kinesis Data Firehose**.
 
 ![ETL](./images/kinesis6.png)
 
-Fai clic su **Crea flusso di consegna**.
+Fare clic su **Crea flusso Firehose**.
 
 ![ETL](./images/kinesis7.png)
 
@@ -108,7 +108,7 @@ Seleziona il flusso di dati. Fai clic su **Scegli**.
 
 ![ETL](./images/kinesis9.png)
 
-Poi vedrai questo. Ricorda il **nome del flusso di consegna** come ti servirà in seguito.
+Poi vedrai questo. Ricorda il nome di flusso **Firehose**, che ti servirà in seguito.
 
 ![ETL](./images/kinesis10.png)
 
@@ -122,317 +122,123 @@ Seleziona il bucket S3 e fai clic su **Scegli**.
 
 Poi vedrai qualcosa del genere. Aggiorna le seguenti impostazioni:
 
-- Partizionamento dinamico: impostato su **Abilitato**
-- Deaggregazione di più record: impostata su **Disabilitata**
 - Nuovo delimitatore di riga: impostato su **Abilitato**
-- Analisi in linea per JSON: impostato su **Abilitato**
+- Partizionamento dinamico: impostato su **Non abilitato**
 
 ![ETL](./images/kinesis13.png)
 
-Scorri verso il basso un po&#39;, poi vedrai questo. Aggiorna le seguenti impostazioni:
-
-- Chiavi di partizione dinamiche
-   - Nome chiave: **dynamicPartitioningKey**
-   - Espressione JQ: **.dynamicPartitioningKey**
-- Prefisso bucket S3: aggiungi il seguente codice:
-
-```bash
-!{partitionKeyFromQuery:dynamicPartitioningKey}/!{timestamp:yyyy}/!{timestamp:MM}/!{timestamp:dd}/!{timestamp:HH}/}
-```
-
-- Prefisso di output errore bucket S3: impostato su **error**
-
-![ETL](./images/kinesis14.png)
-
-Infine, scorri verso il basso ancora un po&#39; e fai clic su **Crea flusso di consegna**
+Scorri verso il basso ancora e fai clic su **Crea flusso Firehose**
 
 ![ETL](./images/kinesis15.png)
 
-Dopo alcuni minuti, il flusso di consegna non verrà creato e **Attivo**.
+Dopo alcuni minuti verrà creato il flusso Firehose e **Attivo**.
 
 ![ETL](./images/kinesis16.png)
 
-## 2.5.5.4 Configurare il ruolo AWS IAM
+## Crea utente IAM
 
-Nel menu **Trova servizi**, cerca **iam**. Fare clic su **Gateway API**.
+Nel menu IAM di AWS a sinistra, fai clic su **Utenti**. Viene visualizzata la schermata **Utenti**. Fare clic su **Crea utente**.
 
-![ETL](./images/iam1.png)
+![ETL](./images/iammenu.png)
 
-Fai clic su **Ruoli**.
+Quindi, configura l’utente:
 
-![ETL](./images/iam2.png)
+- Nome utente: utilizzare `--aepUserLdap--_kinesis_forwarding`
 
-Cerca il tuo ruolo **KinesisFirehose**. Fai clic su di esso per aprirlo.
+Fai clic su **Avanti**.
 
-![ETL](./images/iam3.png)
+![ETL](./images/configuser.png)
 
-Fai clic sul nome del criterio di autorizzazione per aprirlo.
+Viene quindi visualizzata questa schermata delle autorizzazioni. Fai clic su **Allega criteri direttamente**.
 
-![ETL](./images/iam4.png)
+Immettere il termine di ricerca **kinesisfirehose** per visualizzare tutti i criteri correlati. Seleziona il criterio **AmazonKinesisFirehoseFullAccess**. Scorri verso il basso e fai clic su **Avanti**.
 
-Nella nuova schermata visualizzata, fai clic su **Modifica criterio**.
+![ETL](./images/perm2.png)
 
-![ETL](./images/iam5.png)
+Controlla la configurazione. Fare clic su **Crea utente**.
 
-In **Kinesis** - **Actions**, assicurati che le autorizzazioni **Write** per **PutRecord** siano abilitate. Fare clic su **Rivedi criterio**.
+![ETL](./images/review.png)
 
-![ETL](./images/iam6.png)
+Poi vedrai questo. Fare clic su **Visualizza utente**.
 
-Fai clic su **Salva modifiche**.
+![ETL](./images/review1.png)
 
-![ETL](./images/iam7.png)
+Fare clic su **Aggiungi autorizzazioni** e su **Crea criterio in linea**.
 
-Allora tornerai qui. Fai clic su **Ruoli**.
+![ETL](./images/pol1.png)
 
-![ETL](./images/iam8.png)
+Poi vedrai questo. Selezionare il servizio **Kinesis**.
 
-Cerca il tuo ruolo **KinesisFirehose**. Fai clic su di esso per aprirlo.
+![ETL](./images/pol2.png)
 
-![ETL](./images/iam3.png)
+Vai a **Scrivi** e seleziona la casella di controllo per **PutRecord**.
 
-Vai a **Relazioni di trust** e fai clic su **Modifica criterio di attendibilità**.
+![ETL](./images/pol3.png)
 
-![ETL](./images/iam9.png)
+Scorri verso il basso fino a **Risorse** e seleziona **Tutto**. Fai clic su **Avanti**.
 
-Sovrascrivi il criterio di attendibilità corrente incollando questo codice per sostituire il codice esistente:
+![ETL](./images/pol4.png)
 
-```json
-{
-	"Version": "2012-10-17",
-	"Statement": [
-		{
-			"Effect": "Allow",
-			"Principal": {
-				"Service": [
-                    "firehose.amazonaws.com",
-                    "kinesis.amazonaws.com",
-                    "apigateway.amazonaws.com"
-                ]
-			},
-			"Action": "sts:AssumeRole"
-		}
-	]
-}
-```
+Assegna un nome al criterio: **Kinesis_PutRecord** e fai clic su **Crea criterio**.
 
-Fai clic su **Aggiorna criterio**
+![ETL](./images/pol5.png)
 
-![ETL](./images/iam10.png)
+Poi vedrai questo. Fare clic su **Credenziali di protezione**.
 
-Poi vedrai questo. Nel passaggio successivo sarà necessario specificare il **ARN** per questa mansione.
+![ETL](./images/pol6.png)
 
-![ETL](./images/iam11.png)
+Fai clic su **Crea chiave di accesso**.
 
-## 2.5.5.5 Configurare il gateway API di AWS
+![ETL](./images/cred.png)
 
-Gateway API Amazon è un servizio AWS per la creazione, la pubblicazione, la manutenzione, il monitoraggio e la protezione delle API REST, HTTP e WebSocket su qualsiasi scala. Gli sviluppatori API possono creare API che accedono ad AWS o ad altri servizi web, nonché dati memorizzati in AWS Cloud.
+Selezionare **l&#39;applicazione in esecuzione all&#39;esterno di AWS**. Scorri verso il basso e fai clic su **Avanti**.
 
-Ora esporrai il flusso di dati Kinesis a Internet tramite un endpoint HTTPS che può quindi essere utilizzato direttamente dai servizi Adobe, come l’inoltro degli eventi.
+![ETL](./images/creda.png)
 
-Nel menu **Trova servizi**, cercare **gateway API**. Fare clic su **Gateway API**.
+Fai clic su **Crea chiave di accesso**
 
-![ETL](./images/kinesis17.png)
+![ETL](./images/credb.png)
 
-Poi vedrai qualcosa del genere. Fare clic su **Crea API**.
+Poi vedrai questo. Fai clic su **Mostra** per visualizzare la chiave di accesso segreta:
 
-![ETL](./images/kinesis18.png)
+![ETL](./images/cred1.png)
 
-Fai clic su **Build** nella scheda **REST API**.
+È ora visualizzata la **chiave di accesso segreta**.
 
-![ETL](./images/kinesis19.png)
+>[!IMPORTANT]
+>
+>Memorizzare le credenziali in un file di testo nel computer.
+>
+> - ID chiave di accesso: ...
+> - Chiave di accesso segreta: ...
+>
+> Dopo aver fatto clic su **Fine** non verranno più visualizzate le credenziali.
 
-Poi vedrai questo. Compila le impostazioni come segue:
+Fai clic su **Fine**.
 
-- Scegli il protocollo: seleziona **REST**
-- Crea nuova API: seleziona **Nuova API**
-- Impostazioni:
-   - Nome API: utilizzare `--aepUserLdap---eventforwarding`
-   - Tipo di endpoint: seleziona **Area geografica**
+![ETL](./images/cred2.png)
 
-Fare clic su **Crea API**.
+Ora hai creato correttamente un utente IAM con le autorizzazioni appropriate, che dovrai specificare durante la configurazione dell&#39;estensione AWS nella proprietà Inoltro eventi.
 
-![ETL](./images/kinesis20.png)
+## Aggiorna la proprietà di Inoltro eventi: Extension
 
-Poi vedrai questo. Fare clic su **Azioni** e quindi su **Crea risorsa**.
+Con il segreto e l’elemento dati configurati, ora puoi impostare l’estensione per Google Cloud Platform nella proprietà Inoltro eventi.
 
-![ETL](./images/kinesis21.png)
-
-Poi vedrai questo. Imposta **Nome risorsa** su **flusso**. Fai clic su **Crea risorsa**.
-
-![ETL](./images/kinesis22.png)
-
-Poi vedrai questo. Fare clic su **Azioni** e quindi su **Crea metodo**.
-
-![ETL](./images/kinesis23.png)
-
-Nel menu a discesa, seleziona **POST** e fai clic sul pulsante **v**.
-
-![ETL](./images/kinesis24.png)
-
-Poi vedrai questo. Compila le impostazioni come segue:
-
-- Tipo di integrazione: **Servizio AWS**
-- Area geografica AWS: selezionare l&#39;area utilizzata dal flusso di dati Kinesis, in questo caso: **us-west-2**
-- Servizio AWS: seleziona **Kinesis**
-- Sottodominio AWS: lascia vuoto
-- Metodo HTTP: selezionare **POST**
-- Tipo azione: selezionare **Usa nome azione**
-- Azione: immettere **PutRecord**
-- Ruolo di esecuzione: incolla il **ARN** del ruolo di esecuzione utilizzato dal tuo Data Firehose Kinesis, come indicato nell&#39;esercizio precedente
-- Gestione contenuto: selezionare **Passthrough**
-- Usa timeout predefinito: abilita la casella di controllo
-
-Fai clic su **Salva**.
-
-![ETL](./images/kinesis25.png)
-
-Poi vedrai questo. Fare clic su **Richiesta di integrazione**.
-
-![ETL](./images/kinesis27.png)
-
-Fare clic su **Intestazioni HTTP**.
-
-![ETL](./images/kinesis28.png)
-
-Scorrere verso il basso e fare clic su **Aggiungi intestazione**.
-
-![ETL](./images/kinesis29.png)
-
-Imposta **Nome** su **Tipo di contenuto**, imposta **Mappato da** a `'application/x-amz-json-1.1'`. Fai clic sull&#39;icona **v** per salvare le modifiche.
-
-![ETL](./images/kinesis30.png)
-
-Poi vedrai questo. Per **Passthrough corpo richiesta**, selezionare **Se non sono stati definiti modelli (scelta consigliata)**. Fare clic su **Aggiungi modello di mapping**.
-
-![ETL](./images/kinesis31.png)
-
-In **Content-Type** immettere **application/json**. Fai clic sull&#39;icona **v** per salvare le modifiche.
-
-![ETL](./images/kinesis32.png)
-
-Scorri verso il basso per trovare una finestra dell’editor di codice. Incolla lì il codice seguente:
-
-```json
-{
-  "StreamName": "$input.path('StreamName')",
-  "Data": "$util.base64Encode($input.json('$.Data'))",
-  "PartitionKey": "$input.path('$.PartitionKey')"
-}
-```
-
-Fai clic su **Salva**.
-
-![ETL](./images/kinesis33.png)
-
-Quindi scorrere verso l&#39;alto e fare clic su **&lt;- Esecuzione metodo** per tornare indietro.
-
-![ETL](./images/kinesis34.png)
-
-Fare clic su **TEST**.
-
-![ETL](./images/kinesis35.png)
-
-Scorri verso il basso e incolla questo codice in **Corpo richiesta**. Fare clic su **Test**.
-
-```json
-{
-  "Data": {
-    "message": "Hello World",
-    "dynamicPartitioningKey": "v2"
-  },
-  "PartitionKey": "1",
-  "StreamName": "--aepUserLdap---datastream"
-}
-```
-
-![ETL](./images/kinesis36.png)
-
-In questo modo verrà visualizzato un risultato simile:
-
-![ETL](./images/kinesis37.png)
-
-Poi vedrai questo. Fare clic su **Azioni** e quindi su **Distribuisci API**.
-
-![ETL](./images/kinesis38.png)
-
-Per **Fase distribuzione**, selezionare **Nuova fase**. Come **Nome fase**, immetti **prod**. Fare clic su **Distribuisci**.
-
-![ETL](./images/kinesis39.png)
-
-Poi vedrai questo. Fai clic su **Salva modifiche**. Nota: l’URL nell’immagine è l’URL da utilizzare per inviare dati a (in questo esempio: https://vv1i5vwg2k.execute-api.us-west-2.amazonaws.com/prod).
-
-![ETL](./images/kinesis40.png)
-
-Puoi testare la configurazione utilizzando la seguente richiesta cURL: tutto ciò che devi fare è sostituire l&#39;URL seguente con il tuo, `https://vv1i5vwg2k.execute-api.us-west-2.amazonaws.com/prod` in questo esempio, e aggiungere `/stream` alla fine dell&#39;URL.
-
-```json
-curl --location --request POST 'https://vv1i5vwg2k.execute-api.us-west-2.amazonaws.com/prod/stream' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "Data": {
-        "userid": "--aepUserLdap--@adobe.com",
-        "firstName":"--aepUserLdap--",
-        "offerName":"10% off on outdoor gears",
-        "offerCode": "10OFF-SPRING",
-        "dynamicPartitioningKey": "campaign"
-    },
-    "PartitionKey": "1",
-    "StreamName": "--aepUserLdap---datastream"
-}'
-```
-
-Incolla il codice aggiornato sopra riportato in una finestra di Terminal e fai clic su Invio. Vedrai quindi questa risposta, simile alla risposta che si poteva vedere durante il test qui sopra.
-
-![ETL](./images/kinesis41.png)
-
-## 2.5.5.6 Aggiornare la proprietà Inoltro eventi
-
-Ora puoi attivare il flusso di dati AWS Kinesis tramite AWS API Gateway, in modo da poter inviare gli eventi di esperienza non elaborati all’ecosistema AWS. Utilizzando Connessioni Real-Time CDP e Inoltro eventi, ora puoi abilitare facilmente l’inoltro degli eventi all’endpoint gateway API di AWS appena creato.
-
-### 2.5.5.6.1 Aggiornare la proprietà Inoltro eventi: creare un elemento dati
-
-Vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/) e vai a **Inoltro eventi**. Cerca nella proprietà Inoltro eventi e fai clic su di essa per aprirla.
+Vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/), vai a **Inoltro eventi** e apri la tua proprietà Inoltro eventi.
 
 ![SSF raccolta dati Adobe Experience Platform](./images/prop1.png)
 
-Nel menu a sinistra, vai a **Elementi dati**. Fare clic su **Aggiungi elemento dati**.
+Quindi, vai a **Estensioni**, a **Catalogo**. Fai clic sull&#39;estensione **AWS** e fai clic su **Installa**.
 
-![SSF raccolta dati Adobe Experience Platform](./images/deaws1.png)
+![SSF raccolta dati Adobe Experience Platform](./images/awsext1.png)
 
-Viene quindi visualizzato un nuovo elemento dati da configurare.
+Immettere le credenziali utente IAM generate nell&#39;esercizio precedente. Fai clic su **Salva**.
 
-![SSF raccolta dati Adobe Experience Platform](./images/de2.png)
+![SSF raccolta dati Adobe Experience Platform](./images/awsext2.png)
 
-Effettua la seguente selezione:
+Successivamente, devi configurare una regola che avvii l’inoltro dei dati dell’evento a Kinesis.
 
-- Come **Name**, immetti **awsDataObject**.
-- Come **Estensione**, seleziona **Core**.
-- Come **Tipo elemento dati**, selezionare **Codice personalizzato**.
-
-Ora avrai questo. Fare clic su **&lt;/> Apri editor**.
-
-![SSF raccolta dati Adobe Experience Platform](./images/deaws3.png)
-
-Nell’editor, incolla il seguente codice alla riga 3. Fai clic su **Salva**.
-
-```javascript
-const newObj = {...arc.event.xdm, dynamicPartitioningKey: "event_forwarding"}
-return JSON.stringify(newObj);
-```
-
-![SSF raccolta dati Adobe Experience Platform](./images/deaws4.png)
-
->[!NOTE]
->
->Nel percorso precedente viene fatto riferimento a **arc**. **arc** sta per Contesto risorsa Adobe e **arc** sta sempre per l&#39;oggetto disponibile più alto disponibile nel contesto lato server. È possibile aggiungere arricchimenti e trasformazioni all&#39;oggetto **arc** utilizzando le funzioni del server di raccolta dati di Adobe Experience Platform.
->
->Nel percorso precedente viene fatto riferimento a **event**. **event** rappresenta un evento univoco e Adobe Experience Platform Data Collection Server valuterà sempre ogni evento singolarmente. A volte è possibile che venga visualizzato un riferimento a **eventi** nel payload inviato dal lato client di Web SDK, ma in Inoltro eventi raccolta dati di Adobe Experience Platform ogni evento viene valutato singolarmente.
-
-Allora tornerai qui. Fai clic su **Salva** o **Salva nella libreria**.
-
-![SSF raccolta dati Adobe Experience Platform](./images/deaws5.png)
-
-### 2.5.5.6.2 Aggiorna la proprietà del server di raccolta dati Adobe Experience Platform: aggiorna la regola
+## Aggiorna la proprietà di inoltro eventi: regola
 
 Nel menu a sinistra, vai a **Regole**. Fare clic per aprire la regola **Tutte le pagine** creata in uno degli esercizi precedenti.
 
@@ -444,43 +250,41 @@ Poi vedrai questo. Fai clic sull&#39;icona **+** per aggiungere una nuova azione
 
 Poi vedrai questo. Effettua la seguente selezione:
 
-- Seleziona l&#39;**estensione**: **Connettore cloud Adobe**.
-- Seleziona il **Tipo azione**: **Effettua chiamata di recupero**.
+- Seleziona l&#39;**estensione**: **AWS**
+- Seleziona il **Tipo azione**: **Invia dati al flusso di dati di Kinesis**
+- Nome: **AWS - Invia dati al flusso di dati Kinesis**
 
-Questo dovrebbe darti **Nome**: **Connettore Adobe Cloud - Effettua una chiamata di recupero**. Ora dovresti vedere:
+Ora dovresti vedere:
 
-![SSF raccolta dati Adobe Experience Platform](./images/rl4.png)
+![SSF raccolta dati Adobe Experience Platform](./images/rlaws4.png)
 
 Quindi, configura quanto segue:
 
-- Cambia il metodo di richiesta da GET a **POST**
-- Immettere l&#39;URL dell&#39;endpoint del gateway API AWS creato in uno dei passaggi precedenti, che si presenta così: `https://vv1i5vwg2k.execute-api.us-west-2.amazonaws.com/prod/stream`
+- Nome flusso: `--aepUserLdap---datastream`
+- Area geografica di AWS: controlla la tua area geografica nella configurazione del flusso di dati di AWS
+- Chiave partizione: **0**
 
-Ora dovresti avere questo. Quindi, vai a **Intestazioni**.
+Puoi visualizzare la tua regione AWS qui:
+
+![SSF raccolta dati Adobe Experience Platform](./images/partkey.png)
+
+Ora dovresti avere questo. Fare clic sull&#39;icona dell&#39;elemento dati per il campo **Dati**.
 
 ![SSF raccolta dati Adobe Experience Platform](./images/rlaws5.png)
 
-Nelle intestazioni, aggiungi una nuova intestazione con chiave **Content-Type** e valore **application/json**. Quindi, vai a **Corpo**.
+Seleziona **Evento XDM** e fai clic su **Seleziona**.
 
 ![SSF raccolta dati Adobe Experience Platform](./images/rlaws5a.png)
 
-Poi vedrai questo. Incolla il seguente codice nel campo **Body (Raw)**. Fai clic su **Mantieni modifiche**.
+Allora avrai questo. Fai clic su **Mantieni modifiche**.
 
-```json
-{
-    "Data":{{awsDataObject}},
-    "PartitionKey": "1",
-    "StreamName": "--aepUserLdap---datastream"
-}
-```
+![SSF raccolta dati Adobe Experience Platform](./images/rlaws5b.png)
+
+Poi vedrai questo. Fai clic su **Salva**.
 
 ![SSF raccolta dati Adobe Experience Platform](./images/rlaws7.png)
 
-Allora vedrai di essere qui. Fai clic su **Salva** o **Salva nella libreria**.
-
-![SSF raccolta dati Adobe Experience Platform](./images/rlaws10.png)
-
-Hai configurato la prima regola in una proprietà di Inoltro eventi. Vai a **Flusso di pubblicazione** per pubblicare le modifiche.
+Vai a **Flusso di pubblicazione** per pubblicare le modifiche.
 Apri la libreria di sviluppo facendo clic su **Principale**.
 
 ![SSF raccolta dati Adobe Experience Platform](./images/rlaws11.png)
@@ -493,53 +297,37 @@ Dopo un paio di minuti, vedrai che l’implementazione è completata e pronta pe
 
 ![SSF raccolta dati Adobe Experience Platform](./images/rl14.png)
 
-## 2.5.5.7 Testare la configurazione
+## Verifica la configurazione
 
-Vai a [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sul progetto del tuo sito web per aprirlo.
+Vai a [https://dsn.adobe.com](https://dsn.adobe.com). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sui tre punti **...** del progetto del sito Web, quindi fai clic su **Esegui** per aprirlo.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-Ora puoi seguire il flusso seguente per accedere al sito web. Fai clic su **Integrazioni**.
-
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web1.png)
-
-Nella pagina **Integrazioni** è necessario selezionare la proprietà Raccolta dati creata nell&#39;esercizio 0.1.
-
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 Poi vedrai il tuo sito web demo aperto. Seleziona l’URL e copialo negli Appunti.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+![DSN](../../gettingstarted/gettingstarted/images/web3.png)
 
 Apri una nuova finestra del browser in incognito.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+![DSN](../../gettingstarted/gettingstarted/images/web4.png)
 
 Incolla l’URL del sito web demo, che hai copiato nel passaggio precedente. Ti verrà quindi chiesto di effettuare l’accesso con il tuo Adobe ID.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![DSN](../../gettingstarted/gettingstarted/images/web5.png)
 
 Seleziona il tipo di account e completa la procedura di accesso.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-Vedrai quindi il tuo sito web caricato in una finestra del browser in incognito. Per ogni dimostrazione, dovrai utilizzare una nuova finestra del browser in incognito per caricare l’URL del sito web demo.
+Vedrai quindi il tuo sito web caricato in una finestra del browser in incognito. Per ogni esercizio, dovrai utilizzare una nuova finestra del browser in incognito per caricare l’URL del sito web demo.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
-
-Quando apri la visualizzazione per sviluppatori del browser, puoi esaminare le richieste di rete come indicato di seguito. Quando utilizzi il filtro **interact**, vengono visualizzate le richieste di rete inviate dal client di raccolta dati di Adobe Experience Platform ad Adobe Edge.
-
-![Configurazione raccolta dati di Adobe Experience Platform](./images/hook1.png)
-
-Se selezioni il payload non elaborato, passa a [https://jsonformatter.org/json-pretty-print](https://jsonformatter.org/json-pretty-print) e incolla il payload. Fare clic su **Rendi carino**. Vedrai quindi il payload JSON, l&#39;oggetto **events** e l&#39;oggetto **xdm**. In uno dei passaggi precedenti, quando hai definito l&#39;elemento dati, hai utilizzato il riferimento **arc.event.xdm**, che ti porterà ad analizzare l&#39;oggetto **xdm** di questo payload.
-
-![Configurazione raccolta dati di Adobe Experience Platform](./images/hook2.png)
+![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
 Passa a **AWS**. Aprendo il flusso di dati e andando nella scheda **Monitoraggio**, ora vedrai il traffico in arrivo.
 
 ![Configurazione raccolta dati di Adobe Experience Platform](./images/hookaws3.png)
 
-Quando poi apri il flusso di consegna e vai alla scheda **Monitoraggio**, verrà visualizzato anche il traffico in entrata.
+Quando apri il flusso Data Firehose e vai alla scheda **Monitoraggio**, verrà visualizzato anche il traffico in arrivo.
 
 ![Configurazione raccolta dati di Adobe Experience Platform](./images/hookaws4.png)
 
@@ -550,6 +338,10 @@ Infine, quando analizzi il bucket S3, noterai che i file vengono creati lì in s
 Quando scarichi tale file e lo apri utilizzando un editor di testo, vedrai che contiene il payload XDM dagli eventi inoltrati.
 
 ![Configurazione raccolta dati di Adobe Experience Platform](./images/hookaws6.png)
+
+>[!IMPORTANT]
+>
+>Una volta che la configurazione funziona come previsto, non dimenticare di attivare AWS Kinesis Data Stream e Data Firehose per evitare di essere caricati!
 
 Passaggio successivo: [Riepilogo e vantaggi](./summary.md)
 

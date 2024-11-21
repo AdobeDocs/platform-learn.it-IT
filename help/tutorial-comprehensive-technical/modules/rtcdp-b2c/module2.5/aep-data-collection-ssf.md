@@ -4,9 +4,9 @@ description: In questo modulo utilizzerai i set di dati, gli schemi e le proprie
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -51,13 +51,13 @@ In questo esercizio aggiornerai lo stream di dati esistente per rendere disponib
 
 In questo esercizio creerai e configurerai un webhook personalizzato e inizierai a inoltrare i dati raccolti da Web SDK a tale webhook personalizzato.
 
-[2.5.4 Creazione e configurazione di una funzione cloud di Google](./ex4.md)
+[2.5.4 Inoltra gli eventi a GCP Pub/Sub](./ex4.md)
 
 In questo esercizio creerai e configurerai una funzione cloud di Google e inizierai a inoltrare a Google i dati raccolti dall’SDK per web.
 
-[2.5.5 Avanzare gli eventi verso l&#39;ecosistema AWS](./ex5.md)
+[2.5.5 Inoltrare gli eventi ad AWS Kinesis e AWS S3](./ex5.md)
 
-In questo esercizio configurerai l’ambiente AWS utilizzando AWS API Gateway, AWS Kinesis, AWS Firehose e AWS S3, dopodiché inizierai a inoltrare i dati evento raccolti da Web SDK.
+In questo esercizio configurerai l’ambiente AWS utilizzando AWS IAM, AWS Kinesis, AWS Firehose e AWS S3, dopodiché inizierai a inoltrare i dati evento raccolti da Web SDK.
 
 [Riepilogo e vantaggi](./summary.md)
 
