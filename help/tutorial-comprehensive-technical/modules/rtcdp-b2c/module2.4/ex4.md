@@ -1,21 +1,38 @@
 ---
-title: Attivazione segmento in Microsoft Azure Event Hub - Attiva segmento
-description: Attivazione segmento in Microsoft Azure Event Hub - Attiva segmento
+title: 'Audience Activation dell’hub eventi di Microsoft Azure: creazione di un pubblico'
+description: 'Audience Activation dell’hub eventi di Microsoft Azure: creazione di un pubblico'
 kt: 5342
 doc-type: tutorial
 exl-id: 56f6a6dc-82aa-4b64-a3f6-b6f59c484ccb
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 1%
+source-wordcount: '338'
+ht-degree: 2%
 
 ---
 
-# 2.4.4 Attiva segmento
+# 2.4.4 Creare un pubblico
 
-## 2.4.4.1 Aggiungere un segmento alla destinazione dell’hub eventi di Azure
+## Introduzione
 
-In questo esercizio aggiungerai il segmento `--aepUserLdap-- - Interest in Equipment` alla destinazione dell&#39;hub eventi di Azure `--aepUserLdap---aep-enablement`.
+Puoi creare un pubblico semplice:
+
+- **Interesse nei piani** per i quali i clienti si qualificheranno quando visitano la pagina **Piani** del sito Web di dimostrazione di CitiSignal.
+
+### Buono a sapersi
+
+Real-Time CDP attiva un&#39;attivazione su una destinazione quando ti qualifichi per un pubblico che fa parte dell&#39;elenco di attivazione di tale destinazione. In questo caso, il payload di qualificazione del pubblico che verrà inviato a tale destinazione conterrà **tutti i tipi di pubblico per i quali è qualificato il profilo cliente**.
+
+L’obiettivo di questo modulo è mostrare che la qualificazione del pubblico del tuo profilo cliente viene inviata alla destinazione dell’hub eventi in tempo reale.
+
+### Stato del pubblico
+
+Una qualifica di pubblico in Adobe Experience Platform ha sempre una proprietà **status** e può essere una delle seguenti:
+
+- **realized**: indica una nuova qualifica per il pubblico
+- **uscita**: indica che il profilo non è più idoneo per il pubblico
+
+## Creare il pubblico
 
 Accedi a Adobe Experience Platform da questo URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
@@ -27,39 +44,29 @@ Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare
 
 ![Acquisizione dei dati](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-Vai a **Destinazioni**, quindi fai clic su **Sfoglia**. Vedrai quindi tutte le destinazioni disponibili. Individua la destinazione e fai clic sull&#39;icona **+** come indicato di seguito.
+Vai a **Tipi di pubblico**. Fare clic sul pulsante **+ Crea pubblico**.
 
-![5-01-select-destination.png](./images/5-01-select-destination.png)
+![Acquisizione dei dati](./images/seg.png)
 
-Poi vedrai questo. Cerca il tuo segmento utilizzando il tuo ldap e seleziona `--aepUserLdap-- - Interest in Equipment` dall&#39;elenco dei segmenti.
+Seleziona **Genera regola** e fai clic su **Crea**.
 
-Fai clic su **Avanti**.
+![Acquisizione dei dati](./images/seg1.png)
 
-![5-04-select-segment.png](./images/5-04-select-segment.png)
+Assegna un nome al pubblico `--aepUserLdap-- - Interest in Plans`, imposta il metodo di valutazione su **Edge** e aggiungi il nome della pagina dall&#39;evento esperienza.
 
-Adobe Experience Platform Real-time CDP può fornire un payload a due tipi di destinazioni, segmenti e profili.
+Fai clic su **Eventi** e trascina **XDM ExperienceEvent > Web > Dettagli pagina Web > Nome**. Immetti **piani** come valore:
 
-Le destinazioni dei segmenti riceveranno un payload di qualificazione dei segmenti predefinito, che verrà discusso in seguito. Tale payload contiene **all** le qualifiche del segmento per un profilo specifico. Anche per i segmenti che non sono nell’elenco di attivazione della destinazione. Un esempio di tale destinazione di segmento è **Azure Event Hubs** e **AWS Kinesis**.
+![4-05-create-ee-2.png](./images/405createee2.png)
 
-Le destinazioni basate su profilo consentono di scegliere qualsiasi attributo (firstName, lastName, ...) dallo schema di unione profili XDM e di includerlo nel payload di attivazione. Un esempio di tale destinazione è l&#39;**Email Marketing**.
+Trascina e rilascia **XDM ExperienceEvent > `--aepTenantId--` > demoEnvironment > brandName**. Immetti `--aepUserLdap--` come valore, imposta il parametro di confronto su **contains** e fai clic su **Publish**:
 
-Poiché la destinazione dell&#39;hub eventi di Azure è una destinazione **segmento**, selezionare ad esempio il campo `--aepTenantId--.identification.core.ecid`.
+![4-05-create-ee-2-brand.png](./images/405createee2brand.png)
 
-Fai clic su **Aggiungi nuovo campo**, fai clic su Sfoglia schema e seleziona il campo `--aepTenantId--identification.core.ecid` (elimina qualsiasi altro campo che verrebbe visualizzato automaticamente).
+Il pubblico è ora pubblicato.
 
-Fai clic su **Avanti**.
+![4-05-create-ee-2-brand.png](./images/405createee2brand1.png)
 
-![5-05-select-attributes.png](./images/5-05-select-attributes.png)
-
-Fai clic su **Fine**.
-
-![5-06-destination-finish.png](./images/5-06-destination-finish.png)
-
-Il segmento è ora attivato verso la destinazione dell’hub eventi di Microsoft.
-
-![5-07-destination-segment-ADDED.png](./images/5-07-destination-segment-added.png)
-
-Passaggio successivo: [2.4.5 Creare il progetto Microsoft Azure](./ex5.md)
+Passaggio successivo: [2.4.5 Attiva il pubblico](./ex5.md)
 
 [Torna al modulo 2.4](./segment-activation-microsoft-azure-eventhub.md)
 
