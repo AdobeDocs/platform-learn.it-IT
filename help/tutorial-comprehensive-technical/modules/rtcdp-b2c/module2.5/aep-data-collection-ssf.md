@@ -4,16 +4,14 @@ description: In questo modulo utilizzerai i set di dati, gli schemi e le proprie
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # 2.5 Connessioni Real-Time CDP: Inoltro eventi
-
-**Autore: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/), [Clement Delalande](https://www.linkedin.com/in/clement-delalande/)**
 
 In questo modulo utilizzerai i set di dati, gli schemi e le proprietà client di raccolta dati di Adobe Experience Platform configurati in precedenza per raccogliere i dati, quindi inoltrarli lato server a un endpoint di scelta.
 
@@ -23,10 +21,6 @@ In questo modulo:
 - Installare e utilizzare l’estensione Adobe Cloud Connector in raccolta dati Adobe Experience Platform
 - Creare un endpoint di funzione Google e inviare ad esso i dati
 - Creare un endpoint AWS e trasmettervi dati
-
-Guarda questo video per comprendere il valore, il percorso del cliente e la procedura di configurazione:
-
->[!VIDEO](https://video.tv.adobe.com/v/331987?quality=12&learn=on)
 
 ## Finalità di apprendimento
 

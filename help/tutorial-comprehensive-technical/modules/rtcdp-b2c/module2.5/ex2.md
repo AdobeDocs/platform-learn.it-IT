@@ -3,9 +3,10 @@ title: 'Raccolta dati di Adobe Experience Platform e inoltro lato server in temp
 description: Aggiorna lo stream di dati per rendere i dati disponibili per la proprietà del server di raccolta dati di Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 7b5b598e-e54c-4f0f-b260-d643600ee6ca
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '232'
 ht-degree: 1%
 
 ---
@@ -14,9 +15,9 @@ ht-degree: 1%
 
 ## 2.5.2.1 Aggiornare lo stream di dati
 
-Nell&#39;esercizio [0.2](./../../gettingstarted/gettingstarted/ex2.md) hai creato **[!UICONTROL Datastream]** personalizzato. È stato quindi utilizzato il nome `--aepUserLdap-- - Demo System Datastream`.
+In [Guida introduttiva](./../../gettingstarted/gettingstarted/ex2.md), hai creato il tuo **[!UICONTROL Datastream]**. È stato quindi utilizzato il nome `--aepUserLdap-- - Demo System Datastream`.
 
-In questo esercizio, devi configurare **[!UICONTROL Datastream]** in modo che funzioni con **[!DNL Data Collection Server property]**.
+In questo esercizio, devi configurare **[!UICONTROL Datastream]** in modo che funzioni con la proprietà **Data Collection Server**.
 
 Per eseguire questa operazione, vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/). Poi vedrai questo. Nel menu a sinistra, fai clic su **[!UICONTROL Datastreams]**.
 

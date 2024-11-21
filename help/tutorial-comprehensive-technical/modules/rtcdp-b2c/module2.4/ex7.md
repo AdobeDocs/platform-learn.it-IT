@@ -3,7 +3,8 @@ title: Audience Activation a Microsoft Azure Event Hub - Azione
 description: Audience Activation a Microsoft Azure Event Hub - Azione
 kt: 5342
 doc-type: tutorial
-source-git-commit: cefebfe0336952f0e3099fd2dd9f4395d453f713
+exl-id: f5b224bf-60b9-46e0-abdb-9d96a7e8c59f
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -76,11 +77,36 @@ Per verificare il funzionamento, apri il pannello Visualizzatore profili. Ora do
 
 Torna a Visual Studio Code e controlla la scheda **TERMINAL**. Dovresti visualizzare un elenco di tipi di pubblico per il tuo **ECID** specifico. Questo payload di attivazione viene recapitato all&#39;hub eventi non appena si è qualificati per il pubblico `--aepUserLdap-- - Interest in Plans`.
 
+![6-06-vsc-activation-realized.png](./images/cs3.png)
+
 Se osservi attentamente il payload del pubblico, noterai che `--aepUserLdap-- - Interest in Plans` si trova nello stato **realized**.
 
-Uno stato di pubblico di **realized** indica che il tuo profilo fa parte del pubblico, mentre lo stato di **exited** indica che il nostro profilo è stato rimosso dal pubblico.
+```json
+{
+  "identityMap": {
+    "ecid": [
+      {
+        "id": "36281682065771928820739672071812090802"
+      }
+    ]
+  },
+  "segmentMembership": {
+    "ups": {
+      "94db5aed-b90e-478d-9637-9b0fad5bba11": {
+        "createdAt": 1732129904025,
+        "lastQualificationTime": "2024-11-21T07:33:52Z",
+        "mappingCreatedAt": 1732130611000,
+        "mappingUpdatedAt": 1732130611000,
+        "name": "vangeluw - Interest in Plans",
+        "status": "realized",
+        "updatedAt": 1732129904025
+      }
+    }
+  }
+}
+```
 
-![6-06-vsc-activation-realized.png](./images/cs3.png)
+Uno stato di pubblico di **realized** indica che il tuo profilo fa parte del pubblico, mentre lo stato di **exited** indica che il nostro profilo è stato rimosso dal pubblico.
 
 Passaggio successivo: [Riepilogo e vantaggi](./summary.md)
 

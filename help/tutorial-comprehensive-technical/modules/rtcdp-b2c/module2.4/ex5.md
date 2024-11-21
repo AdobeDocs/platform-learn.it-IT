@@ -4,7 +4,7 @@ description: 'Audience Activation dell’hub eventi di Microsoft Azure: attiva p
 kt: 5342
 doc-type: tutorial
 exl-id: 89cfda0e-6c5e-45ab-9506-f0f0f6211e7f
-source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 ## Aggiungi pubblico alla destinazione dell’hub eventi di Azure
 
-In questo esercizio aggiungerai il pubblico `--aepUserLdap-- - Interest in Equipment` alla destinazione dell&#39;hub eventi di Azure `--aepUserLdap---aep-enablement`.
+In questo esercizio aggiungerai il pubblico `--aepUserLdap-- - Interest in Plans` alla destinazione dell&#39;hub eventi di Azure `--aepUserLdap---aep-enablement`.
 
 Accedi a Adobe Experience Platform da questo URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
