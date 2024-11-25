@@ -4,16 +4,14 @@ description: In questo modulo imparerai a configurare il tuo cluster Apache Kafk
 kt: 5342
 doc-type: tutorial
 exl-id: 2b7010f3-ab31-4099-aecd-fd4e73b7e96e
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '366'
 ht-degree: 1%
 
 ---
 
 # 2.6 Trasmettere dati da Apache Kafka a Adobe Experience Platform
-
-**Autori: [Vivek Tiwari](https://www.linkedin.com/in/vivek-tiwari-25092656/), [Nipun Nair](https://www.linkedin.com/in/nipunnair/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 In questo modulo imparerai a configurare il tuo cluster Apache Kafka, definire argomenti, produttori e consumatori e inviare dati in Adobe Experience Platform utilizzando il connettore Adobe Experience Platform Sink tramite Kafka Connect.
 
@@ -27,7 +25,7 @@ In questo modulo imparerai a configurare il tuo cluster Apache Kafka, definire a
 
 ## Prerequisiti
 
-- Java JDK11 o versione successiva deve essere installato sul computer. È possibile scaricarlo qui: [https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+- Java JDK23 o versione successiva deve essere installato sul computer. È possibile scaricare il JDK qui: [https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - Accesso a Adobe Experience Platform
 
 >[!NOTE]

@@ -4,16 +4,16 @@ description: Aggiorna lo stream di dati per rendere i dati disponibili per la pr
 kt: 5342
 doc-type: tutorial
 exl-id: 7b5b598e-e54c-4f0f-b260-d643600ee6ca
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '231'
 ht-degree: 1%
 
 ---
 
 # 2.5.2 Aggiorna lo stream di dati per rendere i dati disponibili per la proprietà Adobe Experience Platform Data Collection Server
 
-## 2.5.2.1 Aggiornare lo stream di dati
+## Aggiornare lo stream di dati
 
 In [Guida introduttiva](./../../gettingstarted/gettingstarted/ex2.md), hai creato il tuo **[!UICONTROL Datastream]**. È stato quindi utilizzato il nome `--aepUserLdap-- - Demo System Datastream`.
 
