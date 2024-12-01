@@ -2,10 +2,10 @@
 title: Confronto dell’estensione Target con l’estensione Decisioning
 description: Scopri le differenze tra l’estensione Target e l’estensione Decisioning, incluse funzioni, funzioni, impostazioni e flusso di dati.
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 05b0146256c6f8644e42f851498a0f49ff44bf68
+source-git-commit: 8e4e23413c842f84159891287d09e8a6cfbbbc53
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 1%
+source-wordcount: '986'
+ht-degree: 3%
 
 ---
 
@@ -18,9 +18,8 @@ Dopo aver esaminato le informazioni riportate di seguito e valutato l’implemen
 - Quali funzioni di Target sono supportate da Adobe Journey Optimizer - Decisioning
 - Quali funzioni di estensione di Adobe Target dispongono di equivalenti Adobe Journey Optimizer - Decisioning
 - Applicazione delle impostazioni di Target con Adobe Journey Optimizer - Decisioning
-- Differenze tra il flusso di dati dell’estensione Adobe Target e l’estensione Adobe Journey Optimizer - Decisioning
+- Flusso dei dati tramite l’estensione Adobe Journey Optimizer - Decisioning
 
-Se hai poca esperienza con Platform Web SDK, non preoccuparti: gli elementi riportati di seguito vengono trattati più dettagliatamente in questa esercitazione.
 
 ## Confronto delle funzioni
 
@@ -32,10 +31,10 @@ Se hai poca esperienza con Platform Web SDK, non preoccuparti: gli elementi ripo
 | Parametri del profilo | Supportato | Supportato* |
 | Parametri di entità | Supportato | Supportato* |
 | Tipi di pubblico di destinazione | Supportato | Supportato |
-| Pubblico Real-Time CDP | ??? | Supportato |
-| Attributi Real-Time CDP | ??? | Supportato |
+| Pubblico Real-Time CDP | Non supportato | Supportato |
+| Attributi Real-Time CDP | Non supportato | Supportato |
 | Metriche del ciclo di vita | Supportato | Supportato tramite regole di raccolta dati |
-| thirdPartyId (mbox3rdPartyId) | Supportato | Supportato tramite Identity Map e la configurazione dello spazio dei nomi nello stream di dati |
+| thirdPartyId (mbox3rdPartyId) | Supportato | Supportato tramite Identity Map e Target Third Party ID Namespace nello stream di dati |
 | Notifiche (visualizzazione, clic) | Supportato | Supportato |
 | Token di risposta | Supportato | Supportato |
 | Analytics for Target (A4T) | Solo lato client | Lato client e lato server |
@@ -51,9 +50,9 @@ Se hai poca esperienza con Platform Web SDK, non preoccuparti: gli elementi ripo
 
 >[!NOTE]
 >
->La migrazione di Target a Platform Web SDK durante il mantenimento di un’implementazione AppMeasurement Adobe Analytics esistente per una determinata pagina non è supportata.
+>Mantieni la configurazione e le impostazioni dei tag dell’estensione Target anche dopo aver migrato il codice dell’app all’estensione Decisioning. Questo aiuterà a garantire che Target continui a funzionare per i clienti che non hanno ancora aggiornato l’app alla nuova versione.
 >
-> È possibile migrare l’implementazione at.js (e AppMeasurement.js) a Platform Web SDK una pagina alla volta. Se si utilizza questo approccio, è consigliabile impostare le opzioni [`idMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#id-migration-enabled) e [`targetMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#targetMigrationEnabled) su `true` con il comando `configure`.
+>Se utilizzi l’integrazione Analytics for Target (A4T), assicurati anche di migrare l’implementazione di Analytics con l’estensione Edge Bridge nello stesso momento in cui esegui la migrazione dell’implementazione di Target all’estensione Decisioning.
 
 ## Funzioni di estensione di Target ed equivalenti di estensione di Decisioning
 
@@ -66,38 +65,35 @@ Molte funzioni di estensione di Target hanno un approccio equivalente che utiliz
 | `displayedLocations` | Offerta -> `displayed()` | È inoltre possibile utilizzare il metodo di offerta `generateDisplayInteractionXdm` per generare XDM per la visualizzazione degli elementi. Successivamente, l’API sendEvent dell’SDK di rete Edge può essere utilizzata per allegare dati XDM aggiuntivi in formato libero e inviare un evento esperienza al remoto. |
 | `clickedLocation` | Offerta -> `tapped()` | Inoltre, è possibile utilizzare il metodo di offerta `generateTapInteractionXdm` per generare XDM per il tocco dell&#39;elemento. Successivamente, l’API sendEvent dell’SDK di rete Edge può essere utilizzata per allegare dati XDM aggiuntivi in formato libero e inviare un evento esperienza al remoto. |
 | `clearPrefetchCache` | `clearCachedPropositions` |  |
-| `resetExperience` |  | Utilizza l&#39;API `removeIdentity` da Identity, ad Edge Network l&#39;estensione per l&#39;SDK, per interrompere l&#39;invio dell&#39;identificatore del visitatore alla rete Edge. Per ulteriori dettagli, consulta [la documentazione dell&#39;API removeIdentity](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity). <br><br>Nota: l&#39;API `resetIdentities` del core mobile cancella tutte le identità memorizzate nell&#39;SDK, incluso l&#39;ID Experience Cloud (ECID), e dovrebbe essere utilizzata con moderazione. |
-| `getSessionId` |  | L&#39;handle di risposta `state:store` contiene informazioni relative alla sessione. L’estensione di rete Edge consente di gestirla allegando elementi dell’archivio di stato non scaduti alle richieste successive. |
-| `setSessionId` |  | L&#39;handle di risposta `state:store` contiene informazioni relative alla sessione. L’estensione di rete Edge consente di gestirla allegando elementi dell’archivio di stato non scaduti alle richieste successive. |
+| `resetExperience` | n/d | Utilizza l&#39;API `removeIdentity` da Identity, ad Edge Network l&#39;estensione per l&#39;SDK, per interrompere l&#39;invio dell&#39;identificatore del visitatore alla rete Edge. Per ulteriori dettagli, consulta [la documentazione dell&#39;API removeIdentity](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity). <br><br>Nota: l&#39;API `resetIdentities` del core mobile cancella tutte le identità memorizzate nell&#39;SDK, incluso l&#39;ID Experience Cloud (ECID), e dovrebbe essere utilizzata con moderazione. |
+| `getSessionId` | n/d | L&#39;handle di risposta `state:store` contiene informazioni relative alla sessione. L’estensione di rete Edge consente di gestirla allegando elementi dell’archivio di stato non scaduti alle richieste successive. |
+| `setSessionId` | n/d | L&#39;handle di risposta `state:store` contiene informazioni relative alla sessione. L’estensione di rete Edge consente di gestirla allegando elementi dell’archivio di stato non scaduti alle richieste successive. |
 | `getThirdPartyId` | n/d | Utilizza l’API updateIdentities da Identity, ad Edge Network l’estensione, per fornire il valore dell’ID di terze parti. Quindi, configura lo spazio dei nomi ID di terze parti nello stream di dati. Per ulteriori dettagli, consulta [la documentazione mobile sull&#39;ID di terze parti di Target](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id). |
 | `setThirdPartyId` | n/d | Utilizza l’API updateIdentities da Identity, ad Edge Network l’estensione, per fornire il valore dell’ID di terze parti. Quindi, configura lo spazio dei nomi ID di terze parti nello stream di dati. Per ulteriori dettagli, consulta [la documentazione mobile sull&#39;ID di terze parti di Target](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id). |
-| `getTntId` |  | L&#39;handle di risposta `locationHint:result` contiene le informazioni dell&#39;hint di posizione di destinazione. Si presume che Target Edge sarà posizionato in modo congiunto con Experience Edge. <br> <br>L&#39;estensione di rete Edge utilizza l&#39;hint di posizione EdgeNetwork per determinare il cluster di rete Edge a cui inviare le richieste. Per condividere l&#39;hint della posizione di rete di Edge tra gli SDK (app ibride), utilizza le API `getLocationHint` e `setLocationHint` dell&#39;estensione Edge Network. Per ulteriori dettagli, consulta [la documentazione dell&#39;API `getLocationHint`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint). |
-| `setTntId` |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| `getTntId` | n/d | L&#39;handle di risposta `locationHint:result` contiene le informazioni dell&#39;hint di posizione di destinazione. Si presume che Target Edge sarà posizionato in modo congiunto con Experience Edge. <br> <br>L&#39;estensione di rete Edge utilizza l&#39;hint di posizione EdgeNetwork per determinare il cluster di rete Edge a cui inviare le richieste. Per condividere l&#39;hint della posizione di rete di Edge tra gli SDK (app ibride), utilizza le API `getLocationHint` e `setLocationHint` dell&#39;estensione Edge Network. Per ulteriori dettagli, consulta [la documentazione dell&#39;API `getLocationHint`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint). |
+| `setTntId` | n/d | L&#39;handle di risposta `locationHint:result` contiene le informazioni dell&#39;hint di posizione di destinazione. Si presume che Target Edge sarà posizionato in modo congiunto con Experience Edge. <br> <br>L&#39;estensione di rete Edge utilizza l&#39;hint di posizione EdgeNetwork per determinare il cluster di rete Edge a cui inviare le richieste. Per condividere l&#39;hint della posizione di rete di Edge tra gli SDK (app ibride), utilizza le API `getLocationHint` e `setLocationHint` dell&#39;estensione Edge Network. Per ulteriori dettagli, consulta [la documentazione dell&#39;API `getLocationHint`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint). |
 
 ## Impostazioni dell’estensione Target ed equivalenti dell’estensione Decisioning
 
-L&#39;estensione Target può essere configurata e scaricata con varie impostazioni in ...
+L&#39;estensione Target dispone di [impostazioni configurabili](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) che sono [configurate nello stream di dati](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup) con l&#39;estensione Decisioning.
 
-| Estensione Target | Estensione Decisioning |
-| --- | --- | 
-| |  |
+| Estensione Target | Estensione Decisioning | Note |
+| --- | --- | --- | 
+| Codice client | n/d | Impostato automaticamente dal bordo utilizzando i dettagli dell’organizzazione IMS |
+| ID ambiente | ID ambiente di destinazione | Configurato nello stream di dati |
+| Target Workspace, proprietà | Token proprietà | Configurato nello stream di dati |
+| Timeout | Non configurabile | Il timeout con l’estensione Decisioning è di 10 secondi |
+| Dominio server | dominio Edge Network | Impostato nell’estensione di Edge Network Adobe Experience Platform |
 
+>[!IMPORTANT]
+>
+> Mantieni le impostazioni dell’estensione Target anche dopo aver eseguito la migrazione del codice dell’app all’estensione Decisioning. Questo aiuterà a garantire che Target continui a funzionare per gli utenti che non hanno ancora aggiornato la loro app.
 
-## Confronto dei diagrammi di sistema
+## Diagramma del sistema di estensione Decisioning
 
-I seguenti diagrammi dovrebbero aiutarti a comprendere le differenze di flusso di dati tra un’implementazione di Target tramite l’estensione Adobe Journey Optimizer - Decisioning e un’implementazione tramite l’estensione Adobe Target.
+Il diagramma seguente dovrebbe aiutarti a comprendere il flusso di dati utilizzando l’estensione Adobe Journey Optimizer - Decisioning.
 
-### Diagramma del sistema di estensione di Target
-
-
-
-### Diagramma del sistema di estensione Decisioning
-
-
+![Adobe Target Edge Decisioning con Mobile SDK lato client](assets/diagram.png)
 
 
 >[!NOTE]
