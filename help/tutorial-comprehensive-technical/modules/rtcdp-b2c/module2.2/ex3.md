@@ -3,10 +3,11 @@ title: Customer AI - Dashboard e segmentazione del punteggio (Predict & Take Act
 description: Customer AI - Dashboard e segmentazione del punteggio (Predict & Take Action)
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 4dd8489a-65e4-489a-9228-3c642b10e761
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 1%
+source-wordcount: '272'
+ht-degree: 0%
 
 ---
 
@@ -14,13 +15,13 @@ ht-degree: 1%
 
 Una volta completata l’esecuzione di un modello, l’istanza di IA per l’analisi dei clienti ti consente di visualizzare il punteggio di propensione valutato per prevedere un cliente che effettua un acquisto nei successivi 30 giorni.
 
-![IA](./images/caimodels.png)
+![IA](./images/caiinstancesummary1.png)
 
 >[!NOTE]
 >
 >Solo un&#39;istanza di IA per l&#39;analisi dei clienti con stato **Operazione riuscita** ti consentirà di visualizzare in anteprima le informazioni del servizio.
 
-## 2.2.3.1 Previsione della tendenza
+## Previsione tendenza
 
 Esaminiamo ora la tendenza prevista generata dal modello di istanza di IA per l’analisi dei clienti. Fai clic sul nome dell’istanza per visualizzare il dashboard.
 
@@ -30,15 +31,13 @@ La dashboard di IA per l’analisi dei clienti mostra il riepilogo relativo a pu
 
 ![Descrizione IA](./images/caidescription.png)
 
-![Riepilogo dashboard](./images/caidashboard.png)
-
 Passa il mouse sui fattori influenti per visualizzare l’ulteriore suddivisione della distribuzione dei dati.
 
 ![Fattori di influenza](./images/caiinfluencefactors.png)
 
-## 2.2.3.2 Azioni intraprese dalle imprese
+## Azioni aziendali
 
-### 2.2.3.2.1 Segmentazione dei clienti
+### Segmentazione dei clienti
 
 La dashboard di Customer AI consente di definire i segmenti con un solo clic. Fai clic sul pulsante **Crea segmento** nelle schede delle tendenze.
 
@@ -48,33 +47,17 @@ Vedrai che viene creata automaticamente una definizione di segmento.
 
 ![Regola segmento](./images/caicreatesegment.png)
 
-Assegna un nome al segmento seguendo questa convenzione di denominazione: `--aepUserLdap-- - Customer AI High Propensity`. Fai clic su **Salva**.
+Assegna un nome al segmento seguendo questa convenzione di denominazione: `--aepUserLdap-- - Customer AI High Propensity`. Fare clic su **Publish**.
 
 ![Regola segmento](./images/caicreatesegment1.png)
 
-Ora puoi utilizzare questo segmento per il targeting utilizzando ad esempio Real-time CDP, Journey Orchestration e Adobe Target.
+Ora puoi utilizzare questo segmento per il targeting utilizzando ad esempio Real-time CDP, Journey Optimizer e Adobe Target.
 
-### 2.2.3.2.2 Panoramica del profilo
+## Pulizia
 
-Poiché il punteggio tendenza di Customer AI diventa parte del profilo cliente in tempo reale, puoi visualizzare il punteggio del singolo cliente.
+Per assicurarsi che nell&#39;ambiente non vengano conservati dati demo non necessari, assicurarsi di eliminare il set di dati `--aepUserLdap-- - Demo System - Customer Experience Event Dataset` dopo aver completato correttamente questo esercizio. Se non elimini i dati demo, si avrà un impatto sui costi per l’istanza AEP.
 
-In Adobe Experience Platform, vai a **Profili** nel menu a sinistra e seleziona **Sfoglia**.
-
-Cerca un profilo utilizzando uno degli identificatori, ad esempio **EMAIL hbirkenshawa@businessweek.com**, disponibili nel file JSON che hai acquisito. Fare clic su **ID profilo** per aprire il profilo.
-
-![Profilo](./images/profile1.png)
-
-A questo punto viene visualizzato quanto segue:
-
-![Profilo](./images/profile2.png)
-
-Vai a **Attributi**, che contiene l&#39;output del modello di IA per l&#39;analisi dei clienti.
-
-![Profilo](./images/profile3.png)
-
-Scorri verso il basso per visualizzare il Punteggio tendenza calcolato dal modello di IA per l’analisi dei clienti.
-
-![Profilo](./images/profile4.png)
+![Profilo](./images/cleanup.png)
 
 Passaggio successivo: [Riepilogo e vantaggi](./summary.md)
 

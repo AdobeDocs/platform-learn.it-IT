@@ -1,76 +1,85 @@
 ---
-title: 'Query Service: esplora il set di dati con Power BI'
-description: 'Query Service: esplora il set di dati con Power BI'
+title: Servizio query - Power BI/Tableau
+description: Servizio query - Power BI/Tableau
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: c4e4f5f9-3962-4c8f-978d-059f764eee1c
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
-# 5.1.5 Servizio query e Power BI
+# 5.1.5 Generare un set di dati da una query
 
-Aprire Microsoft Power BI Desktop.
+## Finalità
 
-![start-power-bi.png](./images/start-power-bi.png)
+Scopri come generare set di dati dai risultati delle query
+Connettere Microsoft Power BI Desktop/Tableau direttamente a Query Service
+Creazione di un report in Microsoft Power BI Desktop/Tableau Desktop
 
-Fare clic su **Ottieni dati**.
+## Contesto lezione
 
-![power-bi-get-data.png](./images/power-bi-get-data.png)
+L&#39;interfaccia della riga di comando per l&#39;esecuzione di query sui dati è molto interessante, ma non è disponibile. In questa lezione, ti guideremo attraverso un flusso di lavoro consigliato su come utilizzare Microsoft Power BI Desktop/Tableau direttamente da Query Service per creare rapporti visivi per le parti interessate.
 
-Cerca **postgres** (1), seleziona **Postgres** (2) dall&#39;elenco e **Connect** (3).
+## Creare un set di dati da una query SQL
 
-![power-bi-connect-progress.png](./images/power-bi-connect-progress.png)
+La complessità della query influirà sul tempo necessario affinché il servizio query restituisca i risultati. E quando si esegue una query direttamente dalla riga di comando o da altre soluzioni come Microsoft Power BI/Tableau, Query Service è configurato con un timeout di 5 minuti (600 secondi). E in alcuni casi queste soluzioni saranno configurate con timeout più brevi. Per eseguire query più grandi e caricare in anteprima il tempo necessario per restituire i risultati, è disponibile una funzione che consente di generare un set di dati dai risultati della query. Questa funzione utilizza la funzione SQL standard nota come Create Table As Select (CTAS). È disponibile nell’interfaccia utente di Platform dall’elenco delle query e può essere eseguito direttamente dalla riga di comando con PSQL.
 
-Vai a Adobe Experience Platform, **Query** e **Credenziali**.
+In precedenza hai sostituito **immetti il tuo nome** con il tuo ldap prima di eseguirlo in PSQL.
 
-![query-service-credentials.png](./images/query-service-credentials.png)
+```sql
+select /* enter your name */
+       e.--aepTenantId--.identification.core.ecid as ecid,
+       e.placeContext.geo.city as city,
+       e.placeContext.geo._schema.latitude latitude,
+       e.placeContext.geo._schema.longitude longitude,
+       e.placeContext.geo.countryCode as countrycode,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callFeeling as callFeeling,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic as callTopic,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callContractCancelled as contractCancelled,
+       l.--aepTenantId--.loyaltyDetails.level as loyaltystatus,
+       l.--aepTenantId--.loyaltyDetails.points as loyaltypoints,
+       l.--aepTenantId--.identification.core.loyaltyId as crmid
+from   demo_system_event_dataset_for_website_global_v1_1 e
+      ,demo_system_event_dataset_for_call_center_global_v1_1 c
+      ,demo_system_profile_dataset_for_loyalty_global_v1_1 l
+where  e.--aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
+and    e.--aepTenantId--.identification.core.ecid = c.--aepTenantId--.identification.core.ecid
+and    l.--aepTenantId--.identification.core.ecid = e.--aepTenantId--.identification.core.ecid;
+```
 
-Dalla pagina **Credenziali** in Adobe Experience Platform, copiare l&#39;**Host** e incollarlo nel campo **Server**, copiare il **Database** e incollarlo nel campo **Database** in PowerBI, quindi fare clic su OK (2).
+Passa all&#39;interfaccia utente di Adobe Experience Platform - [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
->[!IMPORTANT]
->
->Assicurarsi di includere la porta **:80** alla fine del valore Server perché il servizio query non utilizza attualmente la porta PostgreSQL predefinita di 5432.
+Per cercare l’istruzione eseguita nell’interfaccia utente di Adobe Experience Platform Query, immetti il ldap nel campo di ricerca:
 
-![power-bi-connect-server.png](./images/power-bi-connect-server.png)
+Seleziona **Query**, passa a **Registro** e immetti il tuo ldap nel campo di ricerca.
 
-Nella finestra di dialogo successiva compila il nome utente e la password con il nome utente e la password trovati nelle **credenziali** delle query in Adobe Experience Platform.
+![search-query-for-ctas.png](./images/search-query-for-ctas.png)
 
-![query-service-credentials.png](./images/query-service-credentials.png)
+Seleziona la query e fai clic su **Set di dati di output**.
 
-Nella finestra di dialogo Navigator, inserisci **LDAP** nel campo di ricerca (1) per individuare i set di dati CTAS e seleziona la casella accanto a ciascuno (2). Quindi fare clic su Carica (3).
+![search-query-for-ctas.png](./images/search-query-for-ctasa.png)
 
-![power-bi-load-churn-data.png](./images/power-bi-load-churn-data.png)
+Immetti `--aepUserLdap-- Callcenter Interaction Analysis` come nome e descrizione per il set di dati e premi il pulsante **Esegui query**
 
-Assicurarsi che la scheda **Report** (1) sia selezionata.
+![create-ctas-dataset.png](./images/create-ctas-dataset.png)
 
-![power-bi-report-tab.png](./images/power-bi-report-tab.png)
+Verrà quindi visualizzata una nuova query con stato **Inviata**.
 
-Seleziona la mappa (1) e, dopo che è stata aggiunta all’area di lavoro per i rapporti, ingrandisci la mappa (2).
+![ctas-query-mitted.png](./images/ctas-query-submitted.png)
 
-![power-bi-select-map.png](./images/power-bi-select-map.png)
+Al termine, verrà visualizzata una nuova voce per **Set di dati creato** (potrebbe essere necessario aggiornare la pagina).
 
-Ora è necessario definire le misure e le dimensioni. A tale scopo, trascina i campi dalla sezione **fields** ai segnaposto corrispondenti (che si trovano in **visualizations**) come indicato di seguito:
+![ctas-dataset-created.png](./images/ctas-dataset-created.png)
 
-![power-bi-drag-lat-lon.png](./images/power-bi-drag-lat-lon.png)
+Non appena viene creato il set di dati (operazione che può richiedere 5-10 minuti), puoi continuare l’esercizio.
 
-Come misura utilizzeremo un conteggio di **customerId**. Trascina il campo **crmid** dalla sezione **fields** nel segnaposto **Size**:
+Passaggio successivo - Opzione A: [5.1.6 Query Service e Power BI](./ex6.md)
 
-![power-bi-drag-crmid.png](./images/power-bi-drag-crmid.png)
-
-Infine, per eseguire alcune analisi di **callTopic**, trascina il campo **callTopic** sul segnaposto **Filtri a livello di pagina** (potrebbe essere necessario scorrere la sezione **visualizzazioni**);
-
-![power-bi-drag-calltopic.png](./images/power-bi-drag-calltopic.png)
-
-Seleziona/deseleziona **argomentiChiamata** per analizzare:
-
-![power-bi-report-select-calltopic.png](./images/power-bi-report-select-calltopic.png)
-
-Hai terminato questo esercizio.
-
-Passaggio successivo: [5.1.7 API servizio query](./ex7.md)
+Passaggio successivo - Opzione B: [5.1.7 Query Service e Tableau](./ex7.md)
 
 [Torna al modulo 5.1](./query-service.md)
 

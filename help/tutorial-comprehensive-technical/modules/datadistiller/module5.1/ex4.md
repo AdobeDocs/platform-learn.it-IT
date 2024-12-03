@@ -1,32 +1,515 @@
 ---
-title: Servizio query - Power BI/Tableau
-description: Servizio query - Power BI/Tableau
+title: 'Query Service: query, query, query e analisi dell’abbandono'
+description: 'Query Service: query, query, query e analisi dell’abbandono'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 85a0c8ca-9727-4019-9058-8982453fa382
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
 
-# 5.1.4 Generare un set di dati da una query
+# 5.1.4 Query, query, query... e analisi dell’abbandono
 
 ## Finalità
 
-Scopri come generare set di dati dai risultati delle query
-Connettere Microsoft Power BI Desktop/Tableau direttamente a Query Service
-Creazione di un report in Microsoft Power BI Desktop/Tableau Desktop
+* Query di scrittura per l’analisi dei dati
+* Scrivere query SQL che combinano dati online, call center e fedeltà disponibili in Adobe Experience Platform
+* Scopri le funzioni definite da Adobe
 
-## Contesto lezione
+## Contesto
 
-L&#39;interfaccia della riga di comando per l&#39;esecuzione di query sui dati è molto interessante, ma non è disponibile. In questa lezione, ti guideremo attraverso un flusso di lavoro consigliato su come utilizzare Microsoft Power BI Desktop/Tableau direttamente da Query Service per creare rapporti visivi per le parti interessate.
+In questi esercizi scriverai query per analizzare visualizzazioni di prodotto, funnel di prodotto, abbandono ecc.
 
-## 5.1.4.1 Creare un set di dati da una query SQL
+Tutte le query elencate in questo capitolo verranno eseguite nell&#39;interfaccia della riga di comando **PSQL**. È necessario copiare (CTRL-c) i blocchi di istruzioni indicati con **SQL** e incollarli (CTRL-v)nell&#39;interfaccia della riga di comando **PSQL**. I blocchi **Risultato query** mostrano l&#39;istruzione SQL incollata e il risultato della query associato.
 
-La complessità della query influirà sul tempo necessario affinché il servizio query restituisca i risultati. E quando si esegue una query direttamente dalla riga di comando o da altre soluzioni come Microsoft Power BI/Tableau, Query Service è configurato con un timeout di 5 minuti (600 secondi). E in alcuni casi queste soluzioni saranno configurate con timeout più brevi. Per eseguire query più grandi e caricare in anteprima il tempo necessario per restituire i risultati, è disponibile una funzione che consente di generare un set di dati dai risultati della query. Questa funzione utilizza la funzione SQL standard nota come Create Table As Select (CTAS). È disponibile nell’interfaccia utente di Platform dall’elenco delle query e può essere eseguito direttamente dalla riga di comando con PSQL.
+## Scrivere query di base per l’analisi dei dati
 
-In precedenza hai sostituito **immetti il tuo nome** con il tuo ldap prima di eseguirlo in PSQL.
+### Timestamp
+
+I dati acquisiti in Adobe Experience Platform hanno la marca temporale. L&#39;attributo **timestamp** consente di analizzare i dati nel tempo.
+
+Quante visualizzazioni di prodotto abbiamo su base giornaliera?
+
+**SQL**
+
+```sql
+select date_format( timestamp , 'yyyy-MM-dd') AS Day,
+       count(*) AS productViews
+from   demo_system_event_dataset_for_website_global_v1_1
+where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+and eventType = 'commerce.productViews'
+group by Day
+limit 10;
+```
+
+Copia l&#39;istruzione precedente ed eseguila nell&#39;interfaccia della riga di comando **PSQL**.
+
+**Risultato query**
+
+```text
+aepenablementfy21:all=> select date_format( timestamp , 'yyyy-MM-dd') AS Day,
+aepenablementfy21:all->        count(*) AS productViews
+aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
+aepenablementfy21:all-> where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+aepenablementfy21:all-> and    eventType = 'commerce.productViews'
+aepenablementfy21:all-> group by Day
+aepenablementfy21:all-> limit 10;
+    Day     | productViews 
+------------+--------------
+ 2020-07-31 |         2297
+(1 row)
+```
+
+### Primi 5 prodotti visualizzati
+
+Quali sono i primi 5 prodotti visualizzati?
+
+#### SQL
+
+```sql
+select productListItems.name, count(*)
+from   demo_system_event_dataset_for_website_global_v1_1
+where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+and    eventType = 'commerce.productViews'
+group  by productListItems.name
+order  by 2 desc
+limit 5;
+```
+
+Copia l&#39;istruzione precedente ed eseguila nell&#39;interfaccia della riga di comando **PSQL**.
+
+**Risultato query**
+
+```text
+aepenablementfy21:all=> select productListItems.name, count(*)
+aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
+aepenablementfy21:all-> where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+aepenablementfy21:all-> and    eventType = 'commerce.productViews'
+aepenablementfy21:all-> group  by productListItems.name
+aepenablementfy21:all-> order  by 2 desc
+aepenablementfy21:all-> limit 5;
+                 name                  | count(1) 
+---------------------------------------+----------
+ Google Pixel XL 32GB Black Smartphone |      938
+ SIM Only                              |      482
+ Samsung Galaxy S8                     |      456
+ Samsung Galaxy S7 32GB Black          |      421
+(4 rows)
+```
+
+### Funnel di interazione del prodotto, dalla visualizzazione all’acquisto
+
+**SQL**
+
+```sql
+select eventType, count(*)
+from   demo_system_event_dataset_for_website_global_v1_1
+where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+and    eventType is not null
+and    eventType <> ''
+group  by eventType;
+```
+
+Copia l&#39;istruzione precedente ed eseguila nell&#39;interfaccia della riga di comando **PSQL**.
+
+**Risultato query**
+
+```text
+aepenablementfy21:all=> select eventType, count(*)
+aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
+aepenablementfy21:all-> where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+aepenablementfy21:all-> and    eventType is not null
+aepenablementfy21:all-> and    eventType <> ''
+aepenablementfy21:all-> group  by eventType;
+          eventType           | count(1) 
+------------------------------+----------
+ commerce.productViews        |     2297
+ commerce.productListAdds     |      494
+ commerce.purchases           |      246
+(3 rows)
+```
+
+### Identificare i visitatori che presentano un rischio di abbandono (pagina di visita => Annulla servizio)
+
+**SQL**
+
+```sql
+select distinct --aepTenantId--.identification.core.ecid
+from   demo_system_event_dataset_for_website_global_v1_1
+where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+and    web.webPageDetails.name = 'Cancel Service'
+group  by --aepTenantId--.identification.core.ecid
+limit 10;
+```
+
+Copia l&#39;istruzione precedente ed eseguila nell&#39;interfaccia della riga di comando **PSQL**.
+
+**Risultato query**
+
+```text
+aepenablementfy21:all=> select distinct --aepTenantId--.identification.core.ecid
+aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
+aepenablementfy21:all-> where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+aepenablementfy21:all-> and    web.webPageDetails.name = 'Cancel Service'
+aepenablementfy21:all-> group  by --aepTenantId--.identification.core.ecid
+aepenablementfy21:all-> limit 10;
+               ecid               
+----------------------------------
+ 67802232253493573025911610627278
+ 27147331741697745713411940873426
+ 19806347932758146991274525406147
+ 06339676267512351981624626408225
+ 23933440740775575701680766564499
+ 11860828134020790182705892056898
+ 04258863338643046907489131372300
+ 90257333076958492787834714105751
+ 66695181015407529430237951973742
+ 19103852558440070949457567094096
+(10 rows)
+```
+
+Nel prossimo set di query estenderemo la query di cui sopra per ottenere una visualizzazione completa dei clienti e del loro comportamento che hanno visitato la pagina &quot;Annulla servizio&quot;. Scoprirai come utilizzare la funzione definita da Adobe per sessionizzare le informazioni, identificare la sequenza e la tempistica degli eventi. Unirai inoltre i set di dati per arricchire ulteriormente e preparare i dati per l’analisi in Microsoft Power BI.
+
+## Query avanzate
+
+La maggior parte della logica di business richiede la raccolta dei punti di contatto per un cliente e l’ordine dei punti in base al tempo. Questo supporto viene fornito da Spark SQL sotto forma di funzioni finestra. Le funzioni di finestra fanno parte di SQL standard e sono supportate da molti altri motori SQL.
+
+### Funzioni definite da Adobe
+
+Adobe ha aggiunto un set di **funzioni definite dall&#39;Adobe** alla sintassi SQL standard che ti consente di comprendere meglio i dati sull&#39;esperienza. Nelle query successive verranno fornite informazioni su queste funzioni ADF. Puoi trovare ulteriori informazioni e l&#39;elenco completo [nella documentazione](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html).
+
+### Cosa fanno le persone sul sito prima di raggiungere la pagina &quot;Annulla servizio&quot; come terza pagina in una sessione?
+
+Con questa query scoprirai le prime due funzioni definite da Adobe **SESS_TIMEOUT** e **NEXT**
+
+> Il **SESS_TIMEOUT()** riproduce i raggruppamenti di visite trovati con Adobe Analytics. Esegue un raggruppamento basato sul tempo simile, ma con parametri personalizzabili.
+>
+> **NEXT()** e **PREVIOUS()** ti aiutano a capire come i clienti navigano nel tuo sito.
+
+**SQL**
+
+```sql
+SELECT
+  webPage,
+  webPage_2,
+  webPage_3,
+  webPage_4,
+  count(*) journeys
+FROM
+  (
+      SELECT
+        webPage,
+        NEXT(webPage, 1, true)
+          OVER(PARTITION BY ecid, session.num
+                ORDER BY timestamp
+                ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING).value
+          AS webPage_2,
+        NEXT(webPage, 2, true)
+          OVER(PARTITION BY ecid, session.num
+                ORDER BY timestamp
+                ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING).value
+          AS webPage_3,
+        NEXT(webPage, 3, true)
+           OVER(PARTITION BY ecid, session.num
+                ORDER BY timestamp
+                ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING).value
+          AS webPage_4,
+        session.depth AS SessionPageDepth
+      FROM (
+            select a.--aepTenantId--.identification.core.ecid as ecid,
+                   a.timestamp,
+                   web.webPageDetails.name as webPage,
+                    SESS_TIMEOUT(timestamp, 60 * 30) 
+                       OVER (PARTITION BY a.--aepTenantId--.identification.core.ecid 
+                             ORDER BY timestamp 
+                             ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) 
+                  AS session
+            from   demo_system_event_dataset_for_website_global_v1_1 a
+            where  a.--aepTenantId--.identification.core.ecid in ( 
+                select b.--aepTenantId--.identification.core.ecid
+                from   demo_system_event_dataset_for_website_global_v1_1 b
+                where  b.--aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+                and    b.web.webPageDetails.name = 'Cancel Service'
+            )
+        )
+)
+WHERE SessionPageDepth=1
+and   webpage_3 = 'Cancel Service'
+GROUP BY webPage, webPage_2, webPage_3, webPage_4
+ORDER BY journeys DESC
+LIMIT 10;
+```
+
+Copia l&#39;istruzione precedente ed eseguila nell&#39;interfaccia della riga di comando **PSQL**.
+
+**Risultato query**
+
+```text
+                webPage                |               webPage_2               |   webPage_3    | webPage_4  | journeys 
+---------------------------------------+---------------------------------------+----------------+------------+----------
+ Citi Signal Sport                     | Google Pixel XL 32GB Black Smartphone | Cancel Service | Call Start |        2
+ SIM Only                              | Citi Signal Shop                      | Cancel Service |            |        2
+ SIM Only                              | Telco Home                            | Cancel Service |            |        2
+ TV & Broadband Deals                  | Samsung Galaxy S7 32GB Black          | Cancel Service |            |        2
+ Telco Home                            | Citi Signal Sport                     | Cancel Service | Call Start |        2
+ Google Pixel XL 32GB Black Smartphone | Broadband Deals                       | Cancel Service |            |        2
+ Broadband Deals                       | Samsung Galaxy S7 32GB Black          | Cancel Service |            |        2
+ Broadband Deals                       | Samsung Galaxy S8                     | Cancel Service |            |        1
+ Samsung Galaxy S8                     | Google Pixel XL 32GB Black Smartphone | Cancel Service |            |        1
+ SIM Only                              | Google Pixel XL 32GB Black Smartphone | Cancel Service | Call Start |        1
+(10 rows)
+```
+
+### Quanto tempo abbiamo prima che un visitatore chiami il call center dopo aver visitato la pagina &quot;Annulla servizio&quot;?
+
+Per rispondere a questo tipo di query verrà utilizzata la funzione definita dall&#39;Adobe **TIME_BETWEEN_NEXT_MATCH()**.
+
+> Le funzioni di corrispondenza precedente o successiva forniscono una nuova dimensione che misura il tempo trascorso da un particolare incidente.
+
+**SQL**
+
+```sql
+select * from (
+       select --aepTenantId--.identification.core.ecid as ecid,
+              web.webPageDetails.name as webPage,
+              TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
+              OVER(PARTITION BY --aepTenantId--.identification.core.ecid
+                  ORDER BY timestamp
+                  ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
+              AS contact_callcenter_after_seconds
+       from   demo_system_event_dataset_for_website_global_v1_1
+       where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+       and    web.webPageDetails.name in ('Cancel Service', 'Call Start')
+) r
+where r.webPage = 'Cancel Service'
+limit 15;
+```
+
+Copia l&#39;istruzione precedente ed eseguila nell&#39;interfaccia della riga di comando **PSQL**.
+
+**Risultato query**
+
+```text
+               ecid               |    webPage     | contact_callcenter_after_seconds 
+----------------------------------+----------------+----------------------------------
+ 00331886620679939148047665693117 | Cancel Service |                                 
+ 00626561600197295782131349716866 | Cancel Service |                                 
+ 00630470663554417679969244202779 | Cancel Service |                             -797
+ 00720875344152796154458668700428 | Cancel Service |                             -519
+ 00746064605049656090779523644276 | Cancel Service |                              -62
+ 00762093837616944422322357210965 | Cancel Service |                                 
+ 00767875779073091876070699689209 | Cancel Service |                                 
+ 00798691264980137616449378075855 | Cancel Service |                                 
+ 00869613691740150556826953447162 | Cancel Service |                             -129
+ 00943638725078228957873279219207 | Cancel Service |                             -750
+ 01167540466536077846425644389346 | Cancel Service |                                 
+ 01412448537869549016063764484810 | Cancel Service |                                 
+ 01419076946514450291741574452702 | Cancel Service |                             -482
+ 01533124771963987423015507880755 | Cancel Service |                                 
+ 01710651086750904478559809475925 | Cancel Service |                                 
+(15 rows)
+```
+
+### E qual è il risultato di questo contatto?
+
+Spiega che stiamo unendo i set di dati, in questo caso uniamo `demo_system_event_dataset_for_website_global_v1_1` a `demo_system_event_dataset_for_call_center_global_v1_1`. Lo facciamo per conoscere il risultato dell’interazione con il call center.
+
+**SQL**
+
+```sql
+select distinct r.*,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callFeeling,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callContractCancelled
+from (
+       select --aepTenantId--.identification.core.ecid ecid,
+              web.webPageDetails.name as webPage,
+              TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
+              OVER(PARTITION BY --aepTenantId--.identification.core.ecid
+                  ORDER BY timestamp
+                  ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
+              AS contact_callcenter_after_seconds
+       from   demo_system_event_dataset_for_website_global_v1_1
+       where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+       and    web.webPageDetails.name in ('Cancel Service', 'Call Start')
+) r
+, demo_system_event_dataset_for_call_center_global_v1_1 c
+where r.ecid = c.--aepTenantId--.identification.core.ecid
+and r.webPage = 'Cancel Service'
+and c.--aepTenantId--.interactionDetails.core.callCenterAgent.callContractCancelled IN (true,false)
+and c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic IN ('contract', 'invoice','complaint','wifi')
+limit 15;
+```
+
+Copia l&#39;istruzione precedente ed eseguila nell&#39;interfaccia della riga di comando **PSQL**.
+
+**Risultato query**
+
+```text
+               ecid               |    webPage     | contact_callcenter_after_seconds | callfeeling | calltopic | callcontractcancelled 
+----------------------------------+----------------+----------------------------------+-------------+-----------+-----------------------
+ 65003638134805559755890758041032 | Cancel Service |                             -440 | negative    | contract  | true
+ 24197860921105808861772992106002 | Cancel Service |                             -109 | negative    | contract  | true
+ 96145097889556586310105454800766 | Cancel Service |                             -501 | neutral     | contract  | true
+ 18680613140217544548647790969994 | Cancel Service |                             -502 | negative    | contract  | true
+ 66121898576007921287545496624574 | Cancel Service |                             -546 | negative    | contract  | true
+ 35086866174626846547860375146326 | Cancel Service |                             -493 | negative    | contract  | false
+ 30502827193916828536733220567055 | Cancel Service |                             -924 | negative    | contract  | true
+ 85319114253582167371394801608573 | Cancel Service |                             -267 | positive    | contract  | true
+ 04258863338643046907489131372300 | Cancel Service |                             -588 | positive    | contract  | false
+ 23933440740775575701680766564499 | Cancel Service |                             -261 | neutral     | contract  | true
+ 17332005215125613039685855763735 | Cancel Service |                             -478 | neutral     | contract  | true
+ 02666934104296797891818818456669 | Cancel Service |                             -297 | positive    | contract  | true
+ 48158305927116134877913019413025 | Cancel Service |                              -47 | neutral     | contract  | false
+ 13294750130353985087337266864522 | Cancel Service |                              -71 | positive    | contract  | false
+ 69034679856689334967307492458080 | Cancel Service |                             -812 | negative    | contract  | true
+(15 rows)
+```
+
+### Qual è il profilo fedeltà di questi clienti?
+
+In questa query si uniscono i dati fedeltà a cui è stato effettuato l’onboarding in Adobe Experience Platform. Questo consente di arricchire l’analisi dell’abbandono con i dati sulla fedeltà.
+
+**SQL**
+
+```sql
+select r.*,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callFeeling,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic,
+       l.--aepTenantId--.loyaltyDetails.level,
+       l.--aepTenantId--.identification.core.loyaltyId
+from (
+       select --aepTenantId--.identification.core.ecid ecid,
+              web.webPageDetails.name as webPage,
+              TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
+              OVER(PARTITION BY --aepTenantId--.identification.core.ecid
+                  ORDER BY timestamp
+                  ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
+              AS contact_callcenter_after_seconds
+       from   demo_system_event_dataset_for_website_global_v1_1
+       where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+       and    web.webPageDetails.name in ('Cancel Service', 'Call Start')
+) r
+, demo_system_event_dataset_for_call_center_global_v1_1 c
+, demo_system_profile_dataset_for_loyalty_global_v1_1 l
+where r.ecid = c.--aepTenantId--.identification.core.ecid
+and r.webPage = 'Cancel Service'
+and l.--aepTenantId--.identification.core.ecid = r.ecid
+and c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic IN ('contract', 'invoice','complaint','wifi','promo')
+limit 15;
+```
+
+Copia l&#39;istruzione precedente ed eseguila nell&#39;interfaccia della riga di comando **PSQL**.
+
+**Risultato query**
+
+```text
+               ecid               |    webPage     | contact_callcenter_after_seconds | callfeeling | calltopic | level  | loyaltyid 
+----------------------------------+----------------+----------------------------------+-------------+-----------+--------+-----------
+ 65003638134805559755890758041032 | Cancel Service |                             -440 | negative    | contract  | Gold   | 924854108
+ 65003638134805559755890758041032 | Cancel Service |                             -440 | negative    | contract  | Gold   | 924854108
+ 24197860921105808861772992106002 | Cancel Service |                             -109 | negative    | contract  | Bronze | 094259678
+ 24197860921105808861772992106002 | Cancel Service |                             -109 | negative    | contract  | Bronze | 094259678
+ 96145097889556586310105454800766 | Cancel Service |                             -501 | neutral     | contract  | Gold   | 644887358
+ 96145097889556586310105454800766 | Cancel Service |                             -501 | neutral     | contract  | Gold   | 644887358
+ 18680613140217544548647790969994 | Cancel Service |                             -502 | negative    | contract  | Gold   | 205300004
+ 18680613140217544548647790969994 | Cancel Service |                             -502 | negative    | contract  | Gold   | 205300004
+ 66121898576007921287545496624574 | Cancel Service |                             -546 | negative    | contract  | Bronze | 095728673
+ 66121898576007921287545496624574 | Cancel Service |                             -546 | negative    | contract  | Bronze | 095728673
+ 35086866174626846547860375146326 | Cancel Service |                             -493 | negative    | contract  | Bronze | 453145930
+ 35086866174626846547860375146326 | Cancel Service |                             -493 | negative    | contract  | Bronze | 453145930
+ 30502827193916828536733220567055 | Cancel Service |                             -924 | negative    | contract  | Gold   | 269406417
+ 30502827193916828536733220567055 | Cancel Service |                             -924 | negative    | contract  | Gold   | 269406417
+ 85319114253582167371394801608573 | Cancel Service |                             -267 | positive    | contract  | Bronze | 899276035
+(15 rows)
+```
+
+### Da quale regione ci vengono a trovare?
+
+Includiamo le informazioni geografiche, come longitudine, atteggiamento, città, codice paese, acquisite da Adobe Experience Platform al fine di ottenere alcune informazioni geografiche sull’abbandono dei clienti.
+
+**SQL**
+
+```sql
+       select distinct r.ecid,
+              r.city,
+              r.countrycode,
+              r.lat as latitude,
+              r.lon as longitude,
+              r.contact_callcenter_after_seconds as seconds_to_contact_callcenter,
+              c.--aepTenantId--.interactionDetails.core.callCenterAgent.callFeeling,
+              c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic,
+              c.--aepTenantId--.interactionDetails.core.callCenterAgent.callContractCancelled,
+              l.--aepTenantId--.loyaltyDetails.level,
+              l.--aepTenantId--.identification.core.loyaltyId
+       from (
+              select --aepTenantId--.identification.core.ecid ecid,
+                     placeContext.geo._schema.latitude lat,
+                     placeContext.geo._schema.longitude lon,
+                     placeContext.geo.city,
+                     placeContext.geo.countryCode,
+                     web.webPageDetails.name as webPage,
+                     TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
+                     OVER(PARTITION BY --aepTenantId--.identification.core.ecid
+                         ORDER BY timestamp
+                         ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
+                     AS contact_callcenter_after_seconds
+              from   demo_system_event_dataset_for_website_global_v1_1
+              where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+              and    web.webPageDetails.name in ('Cancel Service', 'Call Start')
+       ) r
+       , demo_system_event_dataset_for_call_center_global_v1_1 c
+       , demo_system_profile_dataset_for_loyalty_global_v1_1 l
+       where r.ecid = c.--aepTenantId--.identification.core.ecid
+       and r.webPage = 'Cancel Service'
+       and l.--aepTenantId--.identification.core.ecid = r.ecid
+       and c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic IN ('contract', 'invoice','complaint','wifi','promo')
+       limit 15;
+```
+
+Copia l&#39;istruzione precedente ed eseguila nell&#39;interfaccia della riga di comando **PSQL**.
+
+**Risultato query**
+
+```text
+               ecid               |   city    | countrycode |  latitude  | longitude  | seconds_to_contact_callcenter | callfeeling | calltopic | callcontractcancelled | level  | loyaltyid 
+----------------------------------+-----------+-------------+------------+------------+-------------------------------+-------------+-----------+-----------------------+--------+-----------
+ 00630470663554417679969244202779 | Charlton  | GB          |   51.59119 |  -1.407848 |                          -797 | negative    | contract  | false                 | Bronze | 524483285
+ 00630470663554417679969244202779 | Charlton  | GB          |   51.59119 |  -1.407848 |                          -797 | negative    | contract  |                       | Bronze | 524483285
+ 00720875344152796154458668700428 | Ashley    | GB          | 51.4139633 | -2.2685462 |                          -519 | positive    | contract  | false                 | Silver | 860696333
+ 00720875344152796154458668700428 | Ashley    | GB          | 51.4139633 | -2.2685462 |                          -519 | positive    | contract  |                       | Silver | 860696333
+ 00746064605049656090779523644276 | Liverpool | GB          | 53.4913801 |  -2.867264 |                           -62 | positive    | contract  | true                  | Bronze | 072387270
+ 00746064605049656090779523644276 | Liverpool | GB          | 53.4913801 |  -2.867264 |                           -62 | positive    | contract  |                       | Bronze | 072387270
+ 00869613691740150556826953447162 | Langley   | GB          |  51.888151 |   -0.23924 |                          -129 | negative    | contract  | true                  | Bronze | 789347684
+ 00869613691740150556826953447162 | Langley   | GB          |  51.888151 |   -0.23924 |                          -129 | negative    | contract  |                       | Bronze | 789347684
+ 00943638725078228957873279219207 | Eaton     | GB          | 53.2945961 | -0.9335791 |                          -750 | positive    | contract  | false                 | Gold   | 033926162
+ 00943638725078228957873279219207 | Eaton     | GB          | 53.2945961 | -0.9335791 |                          -750 | positive    | contract  |                       | Gold   | 033926162
+ 01419076946514450291741574452702 | Tullich   | GB          | 57.4694803 | -3.1269422 |                          -482 | neutral     | contract  | false                 | Bronze | 105063634
+ 01419076946514450291741574452702 | Tullich   | GB          | 57.4694803 | -3.1269422 |                          -482 | neutral     | contract  |                       | Bronze | 105063634
+ 01738842540109643781526526573341 | Whitwell  | GB          | 54.3886617 |  -1.555363 |                          -562 | neutral     | contract  | false                 | Gold   | 791324509
+ 01738842540109643781526526573341 | Whitwell  | GB          | 54.3886617 |  -1.555363 |                          -562 | neutral     | contract  |                       | Gold   | 791324509
+ 02052460258994877317679083617975 | Edinburgh | GB          | 55.9309486 | -3.1859102 |                          -545 | neutral     | contract  | false                 | Gold   | 443477555
+(15 rows)
+```
+
+## Analisi dell’interazione del call center
+
+Nelle domande precedenti abbiamo esaminato solo i visitatori che alla fine hanno contattato il call center in caso di cancellazione del servizio. Vogliamo estendere questo concetto e tenere conto di tutte le interazioni con i call center, inclusi (wifi, promozioni, fatture, reclami e contratti).
+
+Sarà necessario modificare una query, quindi apriamo prima il blocco note o le parentesi quadre.
+
+In Windows, fare clic sull&#39;icona di ricerca (1) sulla barra degli strumenti di Windows, digitare **blocco note** nel campo di ricerca (2), fare clic (3) sul risultato &quot;blocco note&quot;:
+
+![windows-start-notepad.png](./images/windows-start-notepad.png)
+
+Su Mac
+
+![osx-start-brackets.png](./images/osx-start-brackets.png)
+
+Copiare l&#39;istruzione seguente nel blocco note/parentesi quadre:
 
 ```sql
 select /* enter your name */
@@ -50,35 +533,75 @@ and    e.--aepTenantId--.identification.core.ecid = c.--aepTenantId--.identifica
 and    l.--aepTenantId--.identification.core.ecid = e.--aepTenantId--.identification.core.ecid;
 ```
 
-Passa all&#39;interfaccia utente di Adobe Experience Platform - [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+E sostituisci
 
-Per cercare l’istruzione eseguita nell’interfaccia utente di Adobe Experience Platform Query, immetti il ldap nel campo di ricerca:
+```text
+enter your name
+```
 
-Seleziona **Query**, passa a **Registro** e immetti il tuo ldap nel campo di ricerca.
+Non rimuovere `/\*` e `\*/`. L&#39;istruzione modificata nel blocco note dovrebbe essere simile alla seguente:
 
-![search-query-for-ctas.png](./images/search-query-for-ctas.png)
+![edit-query-notepad.png](./images/edit-query-notepad.png)
 
-Seleziona la query e fai clic su **Set di dati di output**.
+Copia l&#39;istruzione modificata da **notepad** nella **finestra della riga di comando PSQL** e premi Invio. Nella finestra della riga di comando PSQL dovrebbe essere visualizzato il seguente risultato:
 
-![search-query-for-ctas.png](./images/search-query-for-ctasa.png)
+```text
+aepenablementfy21:all=> 
+aepenablementfy21:all=> select /* vangeluw */
+aepenablementfy21:all->        e._experienceplatform.identification.core.ecid as ecid,
+aepenablementfy21:all->        e.placeContext.geo.city as city,
+aepenablementfy21:all->        e.placeContext.geo._schema.latitude latitude,
+aepenablementfy21:all->        e.placeContext.geo._schema.longitude longitude,
+aepenablementfy21:all->        e.placeContext.geo.countryCode as countrycode,
+aepenablementfy21:all->        c._experienceplatform.interactionDetails.core.callCenterAgent.callFeeling as callFeeling,
+aepenablementfy21:all->        c._experienceplatform.interactionDetails.core.callCenterAgent.callTopic as callTopic,
+aepenablementfy21:all->        c._experienceplatform.interactionDetails.core.callCenterAgent.callContractCancelled as contractCancelled,
+aepenablementfy21:all->        l._experienceplatform.loyaltyDetails.level as loyaltystatus,
+aepenablementfy21:all->        l._experienceplatform.loyaltyDetails.points as loyaltypoints,
+aepenablementfy21:all->        l._experienceplatform.identification.core.loyaltyId as crmid
+aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1 e
+aepenablementfy21:all->       ,demo_system_event_dataset_for_call_center_global_v1_1 c
+aepenablementfy21:all->       ,demo_system_profile_dataset_for_loyalty_global_v1_1 l
+aepenablementfy21:all-> where  e._experienceplatform.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+aepenablementfy21:all-> and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
+aepenablementfy21:all-> and    e._experienceplatform.identification.core.ecid = c._experienceplatform.identification.core.ecid
+aepenablementfy21:all-> and    l._experienceplatform.identification.core.ecid = e._experienceplatform.identification.core.ecid;
+               ecid               |    city    |  latitude  | longitude  | countrycode | callFeeling | callTopic | contractCancelled | loyaltystatus | loyaltypoints |   crmid   
+----------------------------------+------------+------------+------------+-------------+-------------+-----------+-------------------+---------------+---------------+-----------
+ 33977405947573095768416894125891 | Tullich    | 57.4694803 | -3.1269422 | GB          | positive    | wifi      | false             | Bronze        |          73.0 | 904552921
+ 33977405947573095768416894125891 | Tullich    | 57.4694803 | -3.1269422 | GB          | positive    | wifi      | false             | Bronze        |          73.0 | 904552921
+ 33977405947573095768416894125891 | Tullich    | 57.4694803 | -3.1269422 | GB          | positive    | wifi      |                   | Bronze        |          73.0 | 904552921
+ 33977405947573095768416894125891 | Tullich    | 57.4694803 | -3.1269422 | GB          | positive    | wifi      |                   | Bronze        |          73.0 | 904552921
+ 67802232253493573025911610627278 | Linton     | 54.0542238 | -2.0215836 | GB          | none        | none      | false             | Silver        |         522.0 | 417981877
+ 67802232253493573025911610627278 | Linton     | 54.0542238 | -2.0215836 | GB          | none        | none      | false             | Silver        |         522.0 | 417981877
+ 67802232253493573025911610627278 | Linton     | 54.0542238 | -2.0215836 | GB          | none        | none      |                   | Silver        |         522.0 | 417981877
+ 67802232253493573025911610627278 | Linton     | 54.0542238 | -2.0215836 | GB          | none        | none      |                   | Silver        |         522.0 | 417981877
+ 27147331741697745713411940873426 | Langley    |  51.888151 |   -0.23924 | GB          | none        | none      | false             | Bronze        |         790.0 | 826545716
+ 27147331741697745713411940873426 | Langley    |  51.888151 |   -0.23924 | GB          | none        | none      | false             | Bronze        |         790.0 | 826545716
+ 27147331741697745713411940873426 | Langley    |  51.888151 |   -0.23924 | GB          | none        | none      |                   | Bronze        |         790.0 | 826545716
+ 27147331741697745713411940873426 | Langley    |  51.888151 |   -0.23924 | GB          | none        | none      |                   | Bronze        |         790.0 | 826545716
+ 19806347932758146991274525406147 | Edinburgh  | 55.9309486 | -3.1859102 | GB          | none        | none      | false             | Gold          |         981.0 | 412492571
+ 19806347932758146991274525406147 | Edinburgh  | 55.9309486 | -3.1859102 | GB          | none        | none      | false             | Gold          |         981.0 | 412492571
+ 19806347932758146991274525406147 | Edinburgh  | 55.9309486 | -3.1859102 | GB          | none        | none      |                   | Gold          |         981.0 | 412492571
+ 19806347932758146991274525406147 | Edinburgh  | 55.9309486 | -3.1859102 | GB          | none        | none      |                   | Gold          |         981.0 | 412492571
+ 06339676267512351981624626408225 | Edinburgh  | 55.9309486 | -3.1859102 | GB          | none        | none      | false             | Bronze        |         632.0 | 024761880
+ 06339676267512351981624626408225 | Edinburgh  | 55.9309486 | -3.1859102 | GB          | none        | none      | false             | Bronze        |         632.0 | 024761880
+ 06339676267512351981624626408225 | Edinburgh  | 55.9309486 | -3.1859102 | GB          | none        | none      |                   | Bronze        |         632.0 | 024761880
+ 06339676267512351981624626408225 | Edinburgh  | 55.9309486 | -3.1859102 | GB          | none        | none      |                   | Bronze        |         632.0 | 024761880
+ 23933440740775575701680766564499 | Whitwell   | 54.3886617 |  -1.555363 | GB          | neutral     | contract  | true              | Gold          |         853.0 | 696923821
+ 23933440740775575701680766564499 | Whitwell   | 54.3886617 |  -1.555363 | GB          | neutral     | contract  | true              | Gold          |         853.0 | 696923821
+ 23933440740775575701680766564499 | Whitwell   | 54.3886617 |  -1.555363 | GB          | neutral     | contract  |                   | Gold          |         853.0 | 696923821
+ 23933440740775575701680766564499 | Whitwell   | 54.3886617 |  -1.555363 | GB          | neutral     | contract  |                   | Gold          |         853.0 | 696923821
+ 11860828134020790182705892056898 | Norton     | 52.2679288 | -1.1202549 | GB          | none        | none      | false             | Gold          |         139.0 | 271933383
+ 11860828134020790182705892056898 | Norton     | 52.2679288 | -1.1202549 | GB          | none        | none      | false             | Gold          |         139.0 | 271933383
+ 11860828134020790182705892056898 | Norton     | 52.2679288 | -1.1202549 | GB          | none        | none      |                   | Gold          |         139.0 | 271933383
+ 11860828134020790182705892056898 | Norton     | 52.2679288 | -1.1202549 | GB          | none        | none      |                   | Gold          |         139.0 | 271933383
+:
+```
 
-Immetti `--aepUserLdap-- Callcenter Interaction Analysis` come nome e descrizione per il set di dati e premi il pulsante **Esegui query**
+In seguito, la query (nota anche come **create table as select** or **CTAS**) verrà mantenuta come nuovo set di dati da utilizzare in Microsoft Power BI.
 
-![create-ctas-dataset.png](./images/create-ctas-dataset.png)
-
-Verrà quindi visualizzata una nuova query con stato **Inviata**.
-
-![ctas-query-mitted.png](./images/ctas-query-submitted.png)
-
-Al termine, verrà visualizzata una nuova voce per **Set di dati creato** (potrebbe essere necessario aggiornare la pagina).
-
-![ctas-dataset-created.png](./images/ctas-dataset-created.png)
-
-Non appena viene creato il set di dati (operazione che può richiedere 5-10 minuti), puoi continuare l’esercizio.
-
-Passaggio successivo - Opzione A: [5.1.5 Query Service e Power BI](./ex5.md)
-
-Passaggio successivo - Opzione B: [5.1.6 Query Service e Tableau](./ex6.md)
+Passaggio successivo: [5.1.5 Generare un set di dati da una query](./ex5.md)
 
 [Torna al modulo 5.1](./query-service.md)
 

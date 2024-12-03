@@ -4,9 +4,9 @@ description: 'IA per l’analisi dei clienti: preparazione dei dati (acquisizion
 kt: 5342
 doc-type: tutorial
 exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '698'
 ht-degree: 1%
 
 ---
@@ -53,33 +53,20 @@ Poi vedrai questo. Fare clic su **+ Aggiungi** in Gruppi di campi.
 Cerca e seleziona i **Gruppi di campi** seguenti da aggiungere a questo schema:
 
 - Evento esperienza del consumatore
-- Dettagli dell’ID dell’utente finale
+
+![Nuovo schema CEE](./images/cee1.png)
+
+- IdentityMap
 
 Fare clic su **Aggiungi gruppi di campi**.
 
-![Nuovo schema CEE](./images/cee.png)
+![Nuovo schema CEE](./images/cee2.png)
 
-Poi vedrai questo. Fare clic sul gruppo di campi **Dettagli ID utente finale**.
-
-![Crea nuovo schema](./images/eui1.png)
-
-Passa al campo **endUserIDs._experience.emailid.id**.
-
-![Crea nuovo schema](./images/eui2.png)
-
-Nel menu a destra per il campo **endUserIDs._experience.emailid.id**, scorri verso il basso e seleziona la casella di controllo per **Identità**, seleziona la casella di controllo per **Identità primaria** e seleziona **Spazio dei nomi identità** di **E-mail**. Fare clic su **Applica**.
-
-![Crea nuovo schema](./images/eui3.png)
-
-Passa al campo **endUserIDs._experience.mcid.id**. Selezionare la casella di controllo per **Identity** e selezionare **Identity namespace** di **ECID**. Fare clic su **Applica**.
-
-![Crea nuovo schema](./images/eui4.png)
-
-Allora avrai questo. Quindi, seleziona il nome dello schema. Abilitare ora lo schema per il **profilo** facendo clic sull&#39;interruttore **profilo**.
+Poi vedrai questo. Quindi, seleziona il nome dello schema. Abilitare ora lo schema per il **profilo** facendo clic sull&#39;interruttore **profilo**.
 
 ![Crea nuovo schema](./images/xdmee3.png)
 
-Poi vedrai questo. Fare clic su **Abilita**.
+Poi vedrai questo. Selezionare la casella di controllo per **I dati per questo schema conterranno un&#39;identità primaria nel campo identityMap.**. Fare clic su **Abilita**.
 
 ![Crea nuovo schema](./images/xdmee4.png)
 
@@ -121,19 +108,19 @@ Ora puoi iniziare a acquisire i dati di Consumer Experience Event e iniziare a u
 
 ## Scarica dati di prova di Experience Event
 
-Una volta configurati lo **Schema** e il **Set di dati**, puoi acquisire i dati di Experience Event. Poiché IA per l&#39;analisi dei clienti richiede dati per almeno **2 trimestri**, dovrai acquisire dati preparati esternamente.
+Una volta configurati lo **Schema** e il **Set di dati**, puoi acquisire i dati di Experience Event. Poiché IA per l’analisi dei clienti richiede requisiti di dati specifici, dovrai acquisire dati preparati esternamente.
 
-I dati preparati per gli eventi esperienza devono essere conformi ai requisiti e allo schema del [mixin XDM per evento esperienza del consumatore](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md).
+I dati preparati per gli eventi esperienza in questo esercizio devono essere conformi ai requisiti e allo schema del [gruppo di campi XDM per eventi esperienza del consumatore](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md).
 
-Scarica il file contenente i dati di esempio da questa posizione: [https://dashboard.adobedemo.com/data](https://dashboard.adobedemo.com/data). Fai clic sul pulsante **Scarica**.
+Scarica il file zip con i dati demo da questa posizione: [https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip).
 
-![Set di dati](./images/dsn1.png)
-
-In alternativa, se non è possibile accedere al collegamento precedente, è possibile scaricare il file anche da questa posizione: [https://aepmodule10.s3-us-west-2.amazonaws.com/retail-v1-dec2020-xl.json.zip](https://aepmodule10.s3-us-west-2.amazonaws.com/retail-v1-dec2020-xl.json.zip).
-
-È stato scaricato il file **retail-v1-dec2020-xl.json.zip**. Posiziona il file sul desktop del computer e decomprimi, dopodiché visualizzerai il file denominato **retail-v1.json**. Questo file sarà necessario nell&#39;esercizio successivo.
+È stato scaricato il file **CUSTOM-CAI-EVENTS-WEB.zip**. Posiziona il file sul desktop del computer e decomprimi, dopodiché visualizzerai la cartella **CUSTOM-CAI-EVENTS-WEB**.
 
 ![Set di dati](./images/ingest.png)
+
+In tale cartella troverai più file json in sequenza, che devono essere tutti acquisiti nell’esercizio successivo.
+
+![Set di dati](./images/ingest1a.png)
 
 ## Acquisire i dati di prova di Experience Event
 
@@ -145,9 +132,11 @@ Nel set di dati, fai clic su **Scegli i file** per aggiungere i dati.
 
 ![Set di dati](./images/ingest2.png)
 
-Nel popup, selezionare il file **retail-v1.json** e fare clic su **Apri**.
+Nel popup, seleziona i file **WEBSITE-EE-1.json** fino a **WEBSITE-EE-5.json** e fai clic su **Apri**.
 
 ![Set di dati](./images/ingest3.png)
+
+Ripeti questo processo di acquisizione per i file **WEBSITE-EE-6.json** e **WEBSITE-EE-7.json**.
 
 Vedrai quindi i dati in fase di importazione e verrà creato un nuovo batch nello stato **Caricamento**. Non allontanarti da questa pagina finché il file non viene caricato.
 
@@ -159,11 +148,9 @@ Una volta caricato il file, lo stato del batch passerà da **Caricamento** a **E
 
 L’acquisizione e l’elaborazione dei dati potrebbero richiedere 10-20 minuti.
 
-Una volta completata l&#39;acquisizione dei dati, lo stato del batch passerà a **Operazione completata**.
+Una volta completata l&#39;acquisizione dei dati, lo stato batch dei vari caricamenti passerà a **Operazione completata**.
 
 ![Set di dati](./images/ingest7.png)
-
-![Set di dati](./images/ingest8.png)
 
 Passaggio successivo: [2.2.2 Customer AI - Crea una nuova istanza (Configura)](./ex2.md)
 

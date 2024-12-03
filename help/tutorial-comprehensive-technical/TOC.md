@@ -5,9 +5,9 @@ user-guide-description: Un tutorial pratico che tratta molti aspetti di Adobe Ex
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: f40ed48cdf9f6f05d5a5cc28d152a67448ed8a16
+source-git-commit: ca6370660b676cef48890d23652258015aa2b9ed
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '913'
 ht-degree: 4%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 4%
 # Tutorial tecnico completo per Adobe Experience Platform {#tutorial-comprehensive-technical}
 
 + [Panoramica del tutorial](/help/tutorial-comprehensive-technical/overview.md)
++ [Completamento](/help/tutorial-comprehensive-technical/completion.md)
 
 + Introduzione {#gettingstarted}
    + Introduzione {#gettingstarted}
@@ -27,7 +28,7 @@ ht-degree: 4%
       + [Utilizzare l’app mobile](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
 
 + 1 Raccolta dati {#datacollection}
-   + 1.1 Raccolta dati di Adobe Experience Platform ed estensione Web SDK {#module11}
+   + 1.1 Raccolta dati di Adobe Experience Platform e Web SDK {#module11}
       + [Panoramica](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)
       + [1.1.1 Informazioni sulla raccolta dei dati in Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex1.md)
       + [1.1.2 Edge Network, flussi di dati e raccolta dati lato server](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex2.md)
@@ -37,7 +38,7 @@ ht-degree: 4%
       + [1.1.6 Implementare Adobe Target](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex6.md)
       + [Requisiti dello schema XDM 1.1.7 in Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex7.md)
       + [Riepilogo e vantaggi](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/summary.md)
-   + 1.2 - Acquisizione dei dati {#module12}
+   + 1.2 Acquisizione dei dati {#module12}
       + [Panoramica](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/data-ingestion.md)
       + [1.2.1 Esplorare il sito web](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex1.md)
       + [1.2.2 Configurare gli schemi e impostare gli identificatori](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex2.md)
@@ -45,7 +46,7 @@ ht-degree: 4%
       + [1.2.4 Acquisizione di dati da origini offline](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex4.md)
       + [1.2.5 Data Landing Zone](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex5.md)
       + [Riepilogo e vantaggi](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/summary.md)
-   + 1.3 - Composizione del pubblico federato {#module13}
+   + Composizione Federata Del Pubblico 1.3 {#module13}
       + [Panoramica](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/fac.md)
       + [1.3.1 Configurare l’account di Snowflake](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
       + [1.3.2 Creare schemi, modelli di dati e collegamenti](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex2.md)
@@ -137,7 +138,7 @@ ht-degree: 4%
       + [Riepilogo e vantaggi](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/summary.md)
 
 + 4 Customer Journey Analytics B2C {#cjab2c}
-   + 4.1 Customer Journey Analytics: creare un dashboard utilizzando Analysis Workspace su Adobe Experience Platform {#module41}
+   + 4.1 Customer Journey Analytics: creare un dashboard utilizzando Analysis Workspace {#module41}
       + [Panoramica](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md)
       + [4.1.1 Customer Journey Analytics 101](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex1.md)
       + [4.1.2 Collegare i set di dati di Adobe Experience Platform nel Customer Journey Analytics](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex2.md)
@@ -157,16 +158,16 @@ ht-degree: 4%
 + 5 Data Distiller {#datadistiller}
    + Servizio query 5.1 {#module51}
       + [Panoramica](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/query-service.md)
-      + [5.1.0 Prerequisiti](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex0.md)
-      + [5.1.1 Guida introduttiva](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex1.md)
-      + [5.1.2 Utilizzo di Query Service](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex2.md)
-      + [5.1.3 Query, query, query... e analisi dell’abbandono](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex3.md)
-      + [5.1.4 Generare un set di dati da una query](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex4.md)
-      + [5.1.5 Servizio query e Power BI](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex5.md)
-      + [5.1.6 Query Service e Tableau](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex6.md)
-      + [5.1.7 API Query Service](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex7.md)
+      + [5.1.1 Prerequisiti](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex1.md)
+      + [5.1.2 Guida introduttiva](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex2.md)
+      + [5.1.3 Utilizzo di Query Service](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex3.md)
+      + [5.1.4 Query, query, query... e analisi dell’abbandono](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex4.md)
+      + [5.1.5 Generare un set di dati da una query](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex5.md)
+      + [5.1.6 Servizio query e Power BI](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex6.md)
+      + [5.1.7 Query Service e Tableau](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex7.md)
+      + [5.1.8 API Query Service](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex8.md)
       + [Riepilogo e vantaggi](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/summary.md)
 
-
++ [Configurazione](/help/tutorial-comprehensive-technical/setup.md)
 
 
