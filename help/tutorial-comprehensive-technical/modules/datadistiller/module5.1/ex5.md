@@ -4,9 +4,9 @@ description: Servizio query - Power BI/Tableau
 kt: 5342
 doc-type: tutorial
 exl-id: c4e4f5f9-3962-4c8f-978d-059f764eee1c
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: d9d9a38c1e160950ae755e352a54667c8a7b30f7
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Scopri come generare set di dati dai risultati delle query
 Connettere Microsoft Power BI Desktop/Tableau direttamente a Query Service
 Creazione di un report in Microsoft Power BI Desktop/Tableau Desktop
 
-## Contesto lezione
+## Contesto
 
 L&#39;interfaccia della riga di comando per l&#39;esecuzione di query sui dati è molto interessante, ma non è disponibile. In questa lezione, ti guideremo attraverso un flusso di lavoro consigliato su come utilizzare Microsoft Power BI Desktop/Tableau direttamente da Query Service per creare rapporti visivi per le parti interessate.
 
@@ -41,11 +41,11 @@ select /* enter your name */
        c.--aepTenantId--.interactionDetails.core.callCenterAgent.callContractCancelled as contractCancelled,
        l.--aepTenantId--.loyaltyDetails.level as loyaltystatus,
        l.--aepTenantId--.loyaltyDetails.points as loyaltypoints,
-       l.--aepTenantId--.identification.core.loyaltyId as crmid
+       l.--aepTenantId--.identification.core.crmId as crmid
 from   demo_system_event_dataset_for_website_global_v1_1 e
       ,demo_system_event_dataset_for_call_center_global_v1_1 c
-      ,demo_system_profile_dataset_for_loyalty_global_v1_1 l
-where  e.--aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+      ,demo_system_profile_dataset_for_crm_global_v1_1 l
+where  e.--aepTenantId--.demoEnvironment.brandName IN ('Citi Signal')
 and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
 and    e.--aepTenantId--.identification.core.ecid = c.--aepTenantId--.identification.core.ecid
 and    l.--aepTenantId--.identification.core.ecid = e.--aepTenantId--.identification.core.ecid;
@@ -57,23 +57,23 @@ Per cercare l’istruzione eseguita nell’interfaccia utente di Adobe Experienc
 
 Seleziona **Query**, passa a **Registro** e immetti il tuo ldap nel campo di ricerca.
 
-![search-query-for-ctas.png](./images/search-query-for-ctas.png)
+![search-query-for-ctas.png](./images/searchqueryforctas.png)
 
-Seleziona la query e fai clic su **Set di dati di output**.
+Seleziona la query e fai clic su **Esegui come CTAS**.
 
-![search-query-for-ctas.png](./images/search-query-for-ctasa.png)
+![search-query-for-ctas.png](./images/searchqueryforctasa.png)
 
-Immetti `--aepUserLdap-- Callcenter Interaction Analysis` come nome e descrizione per il set di dati e premi il pulsante **Esegui query**
+Immetti `--aepUserLdap-- Callcenter Interaction Analysis` come nome e descrizione per il set di dati e fai clic su **Esegui come CTAS**.
 
-![create-ctas-dataset.png](./images/create-ctas-dataset.png)
+![create-ctas-dataset.png](./images/createctasdataset.png)
 
 Verrà quindi visualizzata una nuova query con stato **Inviata**.
 
-![ctas-query-mitted.png](./images/ctas-query-submitted.png)
+![ctas-query-mitted.png](./images/ctasquerysubmitted.png)
 
 Al termine, verrà visualizzata una nuova voce per **Set di dati creato** (potrebbe essere necessario aggiornare la pagina).
 
-![ctas-dataset-created.png](./images/ctas-dataset-created.png)
+![ctas-dataset-created.png](./images/ctasdatasetcreated.png)
 
 Non appena viene creato il set di dati (operazione che può richiedere 5-10 minuti), puoi continuare l’esercizio.
 
