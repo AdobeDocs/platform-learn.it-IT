@@ -1,125 +1,228 @@
 ---
-title: Aggiorna l’ID configurazione e verifica il Percorso
-description: Aggiorna l’ID configurazione e verifica il Percorso
+title: Journey Optimizer Crea il tuo percorso e messaggio e-mail
+description: Journey Optimizer Crea il tuo messaggio e-mail
 kt: 5342
 doc-type: tutorial
 exl-id: 6807f93d-bd44-4f63-8005-6819c9f5f1ed
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '1301'
 ht-degree: 0%
 
 ---
 
-# 3.1.3 Aggiorna la proprietà Data Collection e verifica il percorso
+# 3.1.3 Creare Percorso, frammenti e messaggio
 
-## 3.1.3.1 Aggiornare la proprietà Data Collection
+In questo esercizio configurerai il percorso e il messaggio da attivare quando qualcuno crea un account sul sito web demo.
 
-Vai a [Raccolta dati Adobe Experience Platform](https://experience.adobe.com/launch/) e seleziona **Tag**.
+Accedi a Adobe Journey Optimizer da [Adobe Experience Cloud](https://experience.adobe.com). Fare clic su **Journey Optimizer**.
 
-Questa è la pagina Proprietà raccolta dati di Adobe Experience Platform che hai visto prima.
+![ACOP](./images/acophome.png)
 
-![Pagina delle proprietà](./../../../modules/datacollection/module1.1/images/launch1.png)
+Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxName--`.
 
-Nel modulo 0, Demo System ha creato due proprietà client per te: una per il sito web e una per l’app mobile. Trovarli cercando `--aepUserLdap--` nella casella **[!UICONTROL Cerca]**. Fare clic per aprire la proprietà **Web**.
+![ACOP](./images/acoptriglp.png)
 
-![Casella di ricerca](./../../../modules/datacollection/module1.1/images/property6.png)
+## 3.1.3.1 Creare il Percorso
 
-Poi vedrai questo.
+Nel menu a sinistra, fai clic su **Percorsi**. Fare clic su **Crea Percorso** per creare un nuovo percorso.
 
-![Configurazione lancio](./images/rule1.png)
+![ACOP](./images/createjourney.png)
 
-Nel menu a sinistra, vai a **Regole** e cerca la regola **Registra profilo**. Fare clic sulla regola **Registra profilo** per aprirla.
+Viene quindi visualizzata una schermata di percorso vuota.
 
-![Configurazione lancio](./images/rule2.png)
+![ACOP](./images/journeyempty.png)
 
-Vedrai quindi i dettagli di questa regola. Fare clic per aprire l&#39;azione **Invia &quot;Evento registrazione&quot; ad AEP - Attiva JO**.
+Nell&#39;esercizio precedente è stato creato un nuovo **evento**. L&#39;utente ha assegnato un nome simile a `--aepUserLdap--AccountCreationEvent` e ha sostituito `ldap` con il proprio ldap. Questo è stato il risultato della creazione dell’evento:
 
-![Configurazione lancio](./images/rule3.png)
+![ACOP](./images/eventdone.png)
 
-Quando questa azione viene attivata, vedrai che viene utilizzato un elemento dati specifico per definire la struttura dati XDM. È necessario aggiornare l&#39;elemento dati e definire l&#39;**ID evento** dell&#39;evento configurato in [Esercizio 7.1](./ex1.md).
+Ora devi prendere questo evento come inizio di questo Percorso. Per farlo, vai sul lato sinistro della schermata e cerca l’evento nell’elenco degli eventi.
 
-![Configurazione lancio](./images/rule4.png)
+![ACOP](./images/eventlist.png)
 
-Ora devi andare ad aggiornare l&#39;elemento dati **XDM - Evento registrazione**. A tale scopo, passare a **Elementi dati**. Cerca **XDM - Registration Event** e fai clic per aprire l&#39;elemento dati.
+Seleziona l’evento, trascinalo sull’area di lavoro del Percorso. Il Percorso si presenta ora come segue:
 
-![Configurazione lancio](./images/rule5.png)
+![ACOP](./images/journeyevent.png)
 
-A questo punto viene visualizzato quanto segue:
+Come secondo passaggio del percorso, devi aggiungere un breve passaggio **Attendi**. Vai sul lato sinistro della schermata alla sezione **Orchestration** per trovarlo. Utilizzerai gli attributi del profilo e dovrai accertarti che siano popolati in Real-time Customer Profile.
 
-![Configurazione lancio](./images/rule6.png)
+![ACOP](./images/journeywait.png)
 
-Passare al campo `_experience.campaign.orchestration.eventID`. Rimuovi il valore corrente e incolla il tuo eventID lì.
+Il tuo percorso ora si presenta così. Sul lato destro dello schermo è necessario configurare il tempo di attesa. Imposta su 1 minuto. In questo modo gli attributi del profilo saranno disponibili dopo l’attivazione dell’evento. Fai clic su **Salva** per salvare le modifiche.
 
-Come promemoria, l&#39;ID evento si trova in Adobe Journey Optimizer in **Configurazioni > Eventi** e troverai l&#39;ID evento nel payload di esempio del tuo evento, che si presenta così: `"eventID": "227402c540eb8f8855c6b2333adf6d54d7153d9d7d56fa475a6866081c574736"`.
+![ACOP](./images/journeywait1.png)
 
-![ACOP](./images/payloadeventID.png)
+Come terzo passaggio del percorso, devi aggiungere un&#39;azione **E-mail**. Vai sul lato sinistro della schermata a **Azioni**, seleziona l&#39;azione **E-mail**, quindi trascinala sul secondo nodo del percorso. Ora vedete questo.
 
-Dopo aver incollato l’ID evento, lo schermo dovrebbe essere simile al seguente. Fare clic su **Salva** o **Salva nella libreria**.
+![ACOP](./images/journeyactions.png)
 
-![Configurazione lancio](./images/rule7.png)
+Imposta **Categoria** su **Marketing** e seleziona una configurazione e-mail che ti consenta di inviare messaggi e-mail. In questo caso, la configurazione e-mail da selezionare è **E-mail**. Assicurati che le caselle di controllo per **Clic su e-mail** e **aperture e-mail** siano entrambe abilitate.
 
-Infine, devi pubblicare le modifiche. Vai a **Flusso di pubblicazione** nel menu a sinistra.
+![ACOP](./images/journeyactions1.png)
 
-![Configurazione lancio](./images/rule8.png)
+## 3.1.3.2 Creare il messaggio
 
-Fai clic su **Aggiungi tutte le risorse modificate**, quindi fai clic su **Salva e genera in sviluppo**.
+Per creare il messaggio, fai clic su **Modifica contenuto**.
 
-![Configurazione lancio](./images/rule9.png)
+![ACOP](./images/journeyactions2.png)
 
-La libreria verrà quindi aggiornata e dopo 1-2 minuti puoi procedere e verificare la configurazione.
+Ora vedete questo.
 
-## 3.1.3.2 Test del Percorso
+![ACOP](./images/journeyactions3.png)
 
-Vai a [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sul progetto del tuo sito web per aprirlo.
+Fai clic sull&#39;icona **Apri finestra di personalizzazione**.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
+![Journey Optimizer](./images/msg5.png)
 
-Poi vedrai il tuo sito web demo aperto. Seleziona l’URL e copialo negli Appunti.
+Scrivere il testo `Hi `. Successivamente devi inserire il token di personalizzazione per il campo **First name**, memorizzato in `profile.person.name.firstName`. Nel menu a sinistra, individua il campo **Persona > Nome completo > Nome** e fai clic sull&#39;icona **+**. Il token di personalizzazione verrà quindi visualizzato nel campo di testo.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+![Journey Optimizer](./images/msg9.png)
 
-Apri una nuova finestra del browser in incognito.
+Quindi, aggiungere il testo **. Grazie per la registrazione.**. Fai clic su **Salva**.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+![Journey Optimizer](./images/msg10.png)
 
-Incolla l’URL del sito web demo, che hai copiato nel passaggio precedente. Ti verrà quindi chiesto di effettuare l’accesso con il tuo Adobe ID.
+Ora puoi iniziare a configurare il corpo dell’e-mail. Fai clic su **Modifica corpo dell&#39;e-mail**.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![Journey Optimizer](./images/msg11.png)
 
-Seleziona il tipo di account e completa la procedura di accesso.
+Prima di iniziare a creare il contenuto del messaggio effettivo, è consigliabile considerare il contenuto del messaggio. Alcuni contenuti del messaggio sono specifici per il messaggio stesso, ma altre parti sono componenti standard che probabilmente saranno gli stessi per ogni e-mail che invierai ai clienti.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+Nell’esercizio precedente, hai già creato questi componenti standard come Frammenti in Journey Optimizer, a cui ora puoi fare riferimento in questo messaggio e in tutti gli altri messaggi futuri che creerai.
 
-Vedrai quindi il tuo sito web caricato in una finestra del browser in incognito. Per ogni dimostrazione, dovrai utilizzare una nuova finestra del browser in incognito per caricare l’URL del sito web demo.
+Nella schermata successiva ti verranno richiesti 3 metodi diversi per fornire il contenuto dell’e-mail:
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
+- **Progettazione da zero**: inizia con un&#39;area di lavoro vuota e utilizza l&#39;editor di WYSIWYG per trascinare i componenti struttura e contenuto per creare visivamente il contenuto dell&#39;e-mail.
+- **Crea un codice personale**: crea un modello di e-mail personalizzato codificandolo con HTML
+- **Importa HTML**: importa un modello di HTML esistente che potrai modificare.
 
-Fai clic sull’icona del logo di Adobe nell’angolo in alto a sinistra dello schermo per aprire il Visualizzatore profili.
+Fare clic su **Progetta da zero**.
 
-![Demo](./../../../modules/datacollection/module1.2/images/pv1.png)
+![Journey Optimizer](./images/msg12.png)
 
-Dai un&#39;occhiata al pannello Visualizzatore profili e al Profilo cliente in tempo reale con **ID Experience Cloud** come identificatore primario per questo cliente attualmente sconosciuto.
+Nel menu a sinistra trovi i componenti struttura che puoi utilizzare per definire la struttura dell’e-mail (righe e colonne).
 
-![Demo](./../../../modules/datacollection/module1.2/images/pv2.png)
+![Journey Optimizer](./images/msg13.png)
 
-Vai alla pagina di registrazione/accesso. Fare clic su **CREA UN ACCOUNT**.
+Troverai anche **Frammenti** nel menu a sinistra, dove vedrai i frammenti creati in precedenza.
 
-![Demo](./../../../modules/datacollection/module1.2/images/pv9.png)
+![Journey Optimizer](./images/msg14.png)
 
-Compila i tuoi dettagli e fai clic su **Registra** dopo di che sarai reindirizzato alla pagina precedente.
+Prima di poter aggiungere l’intestazione e il piè di pagina all’area di lavoro, è necessario aggiungere 2 strutture all’e-mail. Fai clic sull&#39;icona **+** nel menu a sinistra e trascina 2 componenti **1:1 column** nell&#39;area di lavoro.
 
-![Demo](./../../../modules/datacollection/module1.2/images/pv10.png)
+![Journey Optimizer](./images/msg14a.png)
 
-Apri il pannello Visualizzatore profilo e passa a Profilo cliente in tempo reale. Nel pannello Visualizzatore profili dovresti visualizzare tutti i dati personali, come gli identificatori e-mail e telefonici appena aggiunti.
+Nel menu a sinistra, torna a **Frammenti**. Trascina il frammento di intestazione nel primo componente e il frammento di piè di pagina nel secondo componente. Poi vedrai questo.
 
-![Demo](./../../../modules/datacollection/module1.2/images/pv11.png)
+![Journey Optimizer](./images/msg15.png)
 
-1 minuto dopo aver creato l’account, riceverai l’e-mail di creazione dell’account da Adobe Journey Optimizer.
+Fai clic sull&#39;icona **+** nel menu a sinistra e trascina altri 2 componenti **1:1 column** nell&#39;area di lavoro, tra l&#39;intestazione e il piè di pagina.
 
-![Configurazione lancio](./images/email.png)
+![Journey Optimizer](./images/msg16.png)
 
-Passaggio successivo: [Riepilogo e vantaggi](./summary.md)
+Trascina e rilascia un componente **Immagine** nel primo componente **1:1 colonna**. Fare clic su **Sfoglia**.
+
+![Journey Optimizer](./images/msg17.png)
+
+Nella cartella **citi-signal-images**. Selezionare l&#39;immagine **`welcome_email_image.png`** e fare clic su **Seleziona**.
+
+![Journey Optimizer](./images/msg28.png)
+
+A questo punto si otterrà:
+
+![Journey Optimizer](./images/msg30.png)
+
+Quindi, vai a **Sommario** e trascina un componente **Testo** nel componente struttura nella quarta riga.
+
+![Journey Optimizer](./images/msg33.png)
+
+Selezionare il testo predefinito **Digitare qui il testo.** come si farebbe con qualsiasi editor di testo. Scrivi invece **Benvenuto nella famiglia**. Nella barra degli strumenti, fai clic sull&#39;icona **Aggiungi personalizzazione**.
+
+![Journey Optimizer](./images/msg34.png)
+
+Successivamente, devi portare il token di personalizzazione **First name** memorizzato in `profile.person.name.firstName`. Nel menu, trovare l&#39;elemento **Person**, espandere l&#39;elemento **Full Name** e quindi fare clic sull&#39;icona **+** per aggiungere il campo First Name all&#39;editor di espressioni.
+
+Fai clic su **Salva**.
+
+![Journey Optimizer](./images/msg36.png)
+
+Ora noterai come il campo di personalizzazione è stato aggiunto al testo.
+
+![Journey Optimizer](./images/msg37.png)
+
+Nello stesso campo di testo, premere **Invio** due volte per aggiungere due righe e copiare e incollare il testo seguente:
+
+```
+Welcome aboard! We're thrilled to have you join the CitiSignal family. 
+As a valued member of our community, you're now poised to experience top-notch telecommunications services that cater to your every need.
+
+At CitiSignal, we understand that staying connected is more than just a convenience - it's a necessity. Whether you're browsing the web, streaming your favourite content, or keeping in touch with loved ones, we're here to ensure you have the best tools and resources at your fingertips.
+```
+
+![Journey Optimizer](./images/msg38.png)
+
+Imposta l&#39;allineamento del testo **Allineamento testo** da centrare e puoi modificare l&#39;aspetto del messaggio in base alle tue esigenze. Al termine, fai clic su **Salva**.
+
+![Journey Optimizer](./images/msg39.png)
+
+Il controllo finale da eseguire per verificare che l&#39;e-mail sia pronta è l&#39;anteprima, fare clic sul pulsante **Simula contenuto**.
+
+![Journey Optimizer](./images/msg50.png)
+
+Prima di poter simulare il messaggio e-mail, devi aggiungere un profilo di test. Fare clic su **Gestisci profili di test**.
+
+![Journey Optimizer](./images/test1.png)
+
+Seleziona lo spazio dei nomi **email** facendo clic sull&#39;icona accanto al campo **Enter identity namespace** (Inserisci spazio dei nomi delle identità).
+
+Nell&#39;elenco degli spazi dei nomi di identità, seleziona lo spazio dei nomi **E-mail**. Nel campo **Valore identità** immettere l&#39;indirizzo di posta elettronica di un profilo precedente utilizzato in un esercizio precedente e già archiviato in Adobe Experience Platform. Fare clic su **Aggiungi profilo**. Torna alla schermata precedente.
+
+![Journey Optimizer](./images/msg53.png)
+
+Visualizzerai quindi il tuo messaggio e-mail, ora simulato per questo profilo cliente. Ora puoi convalidare la personalizzazione nell’oggetto e nel corpo e inviare un’e-mail di bozza, se necessario.
+
+Fai clic su **Chiudi** per chiudere l&#39;anteprima.
+
+![Journey Optimizer](./images/msg54.png)
+
+Fai clic su **Salva** per salvare il messaggio e tornare alla dashboard dei messaggi facendo clic sulla **freccia** accanto al testo dell&#39;oggetto nell&#39;angolo in alto a sinistra.
+
+![Journey Optimizer](./images/msg55.png)
+
+Fai clic sulla **freccia** per tornare al percorso.
+
+![Journey Optimizer](./images/msg57a.png)
+
+## 3.1.3.3 Publish il tuo percorso
+
+Fai clic su **Salva**.
+
+![Journey Optimizer](./images/msg58.png)
+
+È comunque necessario assegnare un nome al percorso. Per farlo, fai clic sull&#39;icona **Proprietà** in alto a destra nella schermata.
+
+![ACOP](./images/journeyname.png)
+
+È quindi possibile immettere qui il nome del percorso. Utilizzare `--aepUserLdap-- - Registration Journey`. Fai clic su **Salva**.
+
+![ACOP](./images/journeyname1.png)
+
+È ora possibile pubblicare il percorso facendo clic su **Publish**.
+
+![ACOP](./images/publishjourney.png)
+
+Fai di nuovo clic su **Publish**.
+
+![ACOP](./images/publish1.png)
+
+Dopo un paio di minuti, lo stato del percorso passerà a **Live** e visualizzerai un dashboard in tempo reale delle prestazioni del percorso.
+
+![ACOP](./images/published.png)
+
+Hai terminato questo esercizio.
+
+Passaggio successivo: [3.1.4 Aggiorna la proprietà di raccolta dati e verifica il percorso](./ex4.md)
 
 [Torna al modulo 3.1](./journey-orchestration-create-account.md)
 

@@ -5,9 +5,9 @@ user-guide-description: Un tutorial pratico che tratta molti aspetti di Adobe Ex
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: ca6370660b676cef48890d23652258015aa2b9ed
+source-git-commit: cf8b97f06bbe6741fc6dfa70c207c6a748f5fe85
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '923'
 ht-degree: 4%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 4%
       + [2.3.4 Intervenire: inviare il pubblico a una destinazione S3](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex4.md)
       + [2.3.5 Intervenire: inviare il pubblico ad Adobe Target](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex5.md)
       + [2.3.6 Pubblico esterno](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex6.md)
-      + [2.3.7 SDK delle destinazioni](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex7.md)
+      + [2.3.7 Destinazioni SDK](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex7.md)
       + [Riepilogo e vantaggi](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/summary.md)
    + 2.4 Real-Time CDP: Audience Activation a Microsoft Azure Event Hub {#module24}
       + [Panoramica](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
@@ -108,8 +108,9 @@ ht-degree: 4%
    + 3.1 Adobe Journey Optimizer: orchestrazione {#module31}
       + [Panoramica](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/journey-orchestration-create-account.md)
       + [3.1.1 Creare l’evento](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex1.md)
-      + [3.1.2 Creare il percorso e il messaggio e-mail](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex2.md)
-      + [3.1.3 Aggiorna la proprietà Data Collection e verifica il Percorso](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex3.md)
+      + [3.1.2 Creare frammenti da utilizzare nel messaggio](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex2.md)
+      + [3.1.3 Creare il percorso e il messaggio e-mail](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex3.md)
+      + [3.1.4 Aggiorna la proprietà Data Collection e verifica il Percorso](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex4.md)
       + [Riepilogo e vantaggi](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/summary.md)
    + 3.2 Adobe Journey Optimizer: origini dati esterne e azioni personalizzate {#module32}
       + [Panoramica](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md)
@@ -123,7 +124,7 @@ ht-degree: 4%
       + [Panoramica](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/offer-decisioning.md)
       + [3.3.1 Offer decisioning 101](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex1.md)
       + [3.3.2 Configurare le offerte e la decisione](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex2.md)
-      + [3.3.3 Prepara la proprietà client di Adobe Experience Platform Data Collection e la configurazione dell’SDK per web, ad Offer decisioning](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex3.md)
+      + [3.3.3 Prepara la proprietà del client di raccolta dati di Adobe Experience Platform e la configurazione del SDK web, ad Offer decisioning](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex3.md)
       + [3.3.4 Combinare Adobe Target e Offer Decisioning](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex4.md)
       + [3.3.5 Utilizzare la propria decisione in un messaggio e-mail](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex5.md)
       + [3.3.6 Testare la decisione utilizzando l’API](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex6.md)

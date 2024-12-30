@@ -4,18 +4,16 @@ description: Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
 exl-id: 73812caa-29a1-4931-944d-9651c6de2c19
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '268'
 ht-degree: 3%
 
 ---
 
 # 3.1 Adobe Journey Optimizer: Orchestrazione
 
-**Autori: [Rob In der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
-In questo modulo, ti illustreremo i passaggi per utilizzare Adobe Journey Optimizer. Avrai accesso a Adobe Journey Optimizer e potrai configurare eventi e Percorsi che iniziano in base a un trigger da un evento esperienza inviato a Platform.
+In questo modulo, ti illustreremo i passaggi per utilizzare Adobe Journey Optimizer. Puoi configurare eventi e percorsi che iniziano in base a un trigger da un evento esperienza inviato ad AEP.
 
 ## Finalità di apprendimento
 
@@ -37,11 +35,15 @@ In questo modulo, ti illustreremo i passaggi per utilizzare Adobe Journey Optimi
 
 In questo esercizio imparerai a configurare un evento.
 
-[3.1.2 Creare il percorso e il messaggio e-mail](./ex2.md)
+[3.1.2 Creare frammenti da utilizzare nel messaggio](./ex2.md)
+
+In questo esercizio imparerai a configurare frammenti riutilizzabili da utilizzare per creare il messaggio e-mail.
+
+[3.1.3 Creare il percorso e il messaggio e-mail](./ex3.md)
 
 In questo esercizio imparerai a configurare un messaggio e-mail.
 
-[3.1.3 Aggiorna la proprietà Data Collection e verifica il percorso](./ex3.md)
+[3.1.3 Aggiorna la proprietà Data Collection e verifica il percorso](./ex4.md)
 
 Questo ti guiderà attraverso la configurazione di Launch per attivare l&#39;evento e fornire il payload corretto; infine, potrai inviare un’e-mail a te stesso.
 
