@@ -3,14 +3,15 @@ title: Offer decisioning - Verificare la decisione
 description: Offer decisioning - Verificare la decisione
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: a03ec0bd-d48f-45bc-8097-ab263331b7bb
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1234'
 ht-degree: 0%
 
 ---
 
-# 3.3.3 Prepara la proprietà client di Adobe Experience Platform Data Collection e la configurazione dell’SDK per web, ad Offer decisioning
+# 3.3.3 Prepara la proprietà del client di raccolta dati di Adobe Experience Platform e la configurazione del SDK web, ad Offer decisioning
 
 ## 3.3.3.1 Aggiornare lo stream di dati
 
@@ -50,7 +51,7 @@ Nella tua proprietà, vai a **[!UICONTROL Regole]** e apri la regola **[!UICONTR
 
 ![WebSDK](./images/launch2.png)
 
-Fai clic per aprire [!UICONTROL Azione] **[!UICONTROL AEP Web SDK - Invia evento]**.
+Fai clic per aprire l&#39;[!UICONTROL Azione] **[!UICONTROL SDK Web AEP - Invia evento]**.
 
 ![WebSDK](./images/launch3.png)
 
@@ -77,11 +78,11 @@ L&#39;[!UICONTROL ID posizionamento] identifica la posizione e il tipo di risors
 
 Per trovare l&#39;[!UICONTROL ID posizionamento] per [!UICONTROL Web - Immagine], vai a Adobe Journey Optimizer da [Adobe Experience Cloud](https://experience.adobe.com). Fare clic su **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxName--`. Per passare da una sandbox all&#39;altra, fare clic su **Production Prod (VA7)** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **AEP Enablement FY22**. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxName--`.
+Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxName--`. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxName--`.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 Quindi, vai a [!UICONTROL Componenti] e quindi a [!UICONTROL Posizionamenti]. Fai clic sul posizionamento [!UICONTROL Web - Immagine] per visualizzarne i dettagli.
 
@@ -225,7 +226,7 @@ In Raccolta dati Adobe Experience Platform, vai a **[!UICONTROL Flusso di pubbli
 
 ![WebSDK](./images/decrec9.png)
 
-Con questa modifica, questa regola nella raccolta dati di Adobe Experience Platform ascolterà la risposta di Offer Decisioning che fa parte della risposta dell’SDK web e, quando la risposta viene ricevuta, l’immagine dell’offerta verrà visualizzata sulla pagina home.
+Con questa modifica, questa regola nella raccolta dati di Adobe Experience Platform ascolterà la risposta di Offer Decisioning che fa parte della risposta di Web SDK e, quando la risposta viene ricevuta, l’immagine dell’offerta verrà visualizzata nella home page.
 
 Osservando il sito web demo, vedrai che questa immagine verrà sostituita ora:
 

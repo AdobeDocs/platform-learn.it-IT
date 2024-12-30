@@ -4,7 +4,7 @@ description: Questo esercizio spiega come utilizzare la personalizzazione dei se
 kt: 5342
 doc-type: tutorial
 exl-id: bb5f8130-0237-4381-bc1e-f6b62950b1fc
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Accedi a Adobe Experience Cloud da [Adobe Experience Cloud](https://experience.adobe.com). Fare clic su **Adobe Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
 Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``--aepTenantId--``.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 ## 3.4.3.1 Personalizzazione basata su segmenti
 

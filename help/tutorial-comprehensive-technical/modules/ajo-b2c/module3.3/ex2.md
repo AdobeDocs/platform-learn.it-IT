@@ -3,7 +3,8 @@ title: 'Offer decisioning: configurare le offerte e l’ID decisione'
 description: 'Offer decisioning: configurare le offerte e l’ID decisione'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 1418398b-d192-4d0b-b372-4be73fc153ed
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 2%
@@ -27,11 +28,11 @@ In questo esercizio creerai quattro **offerte personalizzate**. Di seguito sono 
 
 Accedi a Adobe Journey Optimizer da [Adobe Experience Cloud](https://experience.adobe.com). Fare clic su **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
 Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxName--`. Per passare da una sandbox all&#39;altra, fare clic su **Production Prod (VA7)** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **AEP Enablement FY22**. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxName--`.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 Nel menu a sinistra, fai clic su **Offerte**, quindi passa a **Offerte**. Fare clic su **+ Crea offerta**.
 
@@ -356,7 +357,7 @@ E infine, vedrai la tua decisione nella panoramica:
 
 La decisione è stata configurata correttamente. La tua decisione è ora live e può essere utilizzata per fornire ai clienti offerte ottimizzate e personalizzate in tempo reale.
 
-Passaggio successivo: [3.3.3 Prepara la proprietà del client di raccolta dati e la configurazione dell&#39;SDK Web per l&#39;Offer decisioning](./ex3.md)
+Passaggio successivo: [3.3.3 Prepara la proprietà del client di raccolta dati e la configurazione di Web SDK per l&#39;Offer decisioning](./ex3.md)
 
 [Torna al modulo 3.3](./offer-decisioning.md)
 

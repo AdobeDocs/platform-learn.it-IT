@@ -3,10 +3,11 @@ title: Adobe Journey Optimizer - API meteo esterna, SMS e altro ancora - Definir
 description: Adobe Journey Optimizer - API meteo esterna, SMS e altro ancora - Definire un’origine dati esterna
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: aeafa053-16f1-4fd3-944e-91401daeeced
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 3%
+source-wordcount: '568'
+ht-degree: 4%
 
 ---
 
@@ -16,11 +17,11 @@ In questo esercizio creerai un’origine dati esterna personalizzata utilizzando
 
 Accedi a Adobe Journey Optimizer da [Adobe Experience Cloud](https://experience.adobe.com). Fare clic su **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxName--`. Per passare da una sandbox all&#39;altra, fare clic su **Production Prod (VA7)** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **AEP Enablement FY22**. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxName--`.
+Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxName--`. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxName--`.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 Nel menu a sinistra, scorri verso il basso e fai clic su **Configurazioni**. Fare clic sul pulsante **Gestisci** in **Origini dati**.
 
@@ -45,13 +46,9 @@ Fai clic su **Crea un account**.
 
 ![MappaMeteo](./images/owm1.png)
 
-Compila i dettagli.
+Compila i dettagli. Fare clic su **Crea account**.
 
 ![MappaMeteo](./images/owm2.png)
-
-Fare clic su **Crea account**.
-
-![MappaMeteo](./images/owm3.png)
 
 Verrai quindi reindirizzato alla pagina del tuo account.
 
@@ -65,7 +62,7 @@ Una chiave **API** si presenta così: `b2c4c36b6bb59c3458d6686b05311dc3`.
 
 Puoi trovare la **documentazione API** per il **meteo attuale** [qui](https://openweathermap.org/current).
 
-Nel nostro caso d’uso, implementeremo il collegamento con Open Weather Map in base alla città in cui si trova il cliente.
+Per questo caso d&#39;uso, implementerai la connessione con Open Weather Map in base alla città in cui si trova il cliente, utilizzando la **richiesta API integrata per nome città**.
 
 ![MappaMeteo](./images/owm6.png)
 
@@ -73,7 +70,7 @@ Torna a **Adobe Journey Optimizer**, al popup **External Data Source** vuoto.
 
 ![Demo](./images/emptyds.png)
 
-Come nome per l&#39;origine dati, utilizzare `--aepUserLdap--WeatherApi`. In questo esempio, il nome dell&#39;origine dati è `vangeluwWeatherApi `.
+Come nome per l&#39;origine dati, utilizzare `--aepUserLdap--WeatherApi`.
 
 Imposta descrizione su: `Access to the Open Weather Map`.
 
@@ -106,58 +103,68 @@ Per corrispondere alla richiesta API prevista, configura il FieldGroup come segu
 
 >[!IMPORTANT]
 >
->Il nome del gruppo di campi deve essere univoco. Utilizzare questa convenzione di denominazione: `--aepUserLdap--WeatherByCity`. In questo caso, il nome deve essere `vangeluwWeatherByCity`
+>Il nome del gruppo di campi deve essere univoco. Utilizzare questa convenzione di denominazione: `--aepUserLdap--WeatherByCity`
 
 ![Demo](./images/fg1.png)
 
 Per il payload di risposta, è necessario incollare un esempio della risposta che verrà inviata dall’API meteo.
 
-La risposta JSON API prevista è disponibile nella pagina della documentazione API [qui](https://openweathermap.org/current).
+La risposta JSON API prevista è disponibile nella pagina della documentazione API [qui](https://openweathermap.org/current), nell&#39;oggetto **JSON**.
 
 ![Demo](./images/owmapi1.png)
 
 Oppure puoi copiare la risposta JSON da qui:
 
 ```json
-{"coord": { "lon": 139,"lat": 35},
-  "weather": [
-    {
-      "id": 800,
-      "main": "Clear",
-      "description": "clear sky",
-      "icon": "01n"
-    }
-  ],
-  "base": "stations",
-  "main": {
-    "temp": 281.52,
-    "feels_like": 278.99,
-    "temp_min": 280.15,
-    "temp_max": 283.71,
-    "pressure": 1016,
-    "humidity": 93
-  },
-  "wind": {
-    "speed": 0.47,
-    "deg": 107.538
-  },
-  "clouds": {
-    "all": 2
-  },
-  "dt": 1560350192,
-  "sys": {
-    "type": 3,
-    "id": 2019346,
-    "message": 0.0065,
-    "country": "JP",
-    "sunrise": 1560281377,
-    "sunset": 1560333478
-  },
-  "timezone": 32400,
-  "id": 1851632,
-  "name": "Shuzenji",
-  "cod": 200
-}
+{
+   "coord": {
+      "lon": 7.367,
+      "lat": 45.133
+   },
+   "weather": [
+      {
+         "id": 501,
+         "main": "Rain",
+         "description": "moderate rain",
+         "icon": "10d"
+      }
+   ],
+   "base": "stations",
+   "main": {
+      "temp": 284.2,
+      "feels_like": 282.93,
+      "temp_min": 283.06,
+      "temp_max": 286.82,
+      "pressure": 1021,
+      "humidity": 60,
+      "sea_level": 1021,
+      "grnd_level": 910
+   },
+   "visibility": 10000,
+   "wind": {
+      "speed": 4.09,
+      "deg": 121,
+      "gust": 3.47
+   },
+   "rain": {
+      "1h": 2.73
+   },
+   "clouds": {
+      "all": 83
+   },
+   "dt": 1726660758,
+   "sys": {
+      "type": 1,
+      "id": 6736,
+      "country": "IT",
+      "sunrise": 1726636384,
+      "sunset": 1726680975
+   },
+   "timezone": 7200,
+   "id": 3165523,
+   "name": "Province of Turin",
+   "cod": 200
+}    
 ```
 
 Copia la risposta JSON di cui sopra negli Appunti, quindi vai alla schermata di configurazione dell’origine dati personalizzata.

@@ -3,9 +3,10 @@ title: 'Adobe Journey Optimizer: API meteo esterna, SMS e altro ancora - Definiz
 description: Adobe Journey Optimizer - API meteo esterna, SMS e altro
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: d4e37338-bde2-41b9-948c-11d9216b8cf3
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '756'
 ht-degree: 2%
 
 ---
@@ -16,7 +17,7 @@ Accedi a Adobe Journey Optimizer da [Adobe Experience Cloud](https://experience.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxName--`. Per passare da una sandbox all&#39;altra, fare clic su **Production Prod (VA7)** e selezionare la sandbox dall&#39;elenco. In questo esempio, la sandbox è denominata **AEP Enablement FY22**. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxName--`.
+Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxName--`. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
@@ -29,18 +30,13 @@ Viene quindi visualizzata una panoramica di tutti gli eventi disponibili. Fai cl
 ![ACOP](./images/emptyevent.png)
 
 Viene visualizzata una nuova finestra di evento vuota.
-
-![ACOP](./images/emptyevent1.png)
-
-Come nome per l&#39;evento, utilizzare `--aepUserLdap--GeofenceEntry`. In questo esempio, il nome evento è `vangeluwGeofenceEntry`.
+Come nome dell&#39;evento, utilizzare `--aepUserLdap--GeofenceEntry`.
 
 Imposta descrizione su: `Geofence Entry Event`.
 
+Assicurati che il **Tipo** sia impostato su **Unitario** e per la selezione del **Tipo ID evento**, seleziona **Generato dal sistema**
+
 ![Demo](./images/evname.png)
-
-Assicurarsi quindi che il tipo **Type** sia impostato su **Unitario** e per la selezione del tipo **ID evento** selezionare **Generato dal sistema**
-
-![ACOP](./images/eventidtype.png)
 
 Quindi, seleziona uno schema. Tutti gli schemi mostrati di seguito sono schemi Adobe Experience Platform.
 
@@ -83,7 +79,7 @@ Viene quindi visualizzata una finestra a comparsa con una gerarchia di schemi ch
 
 I campi come ECID e Orchestration eventID sono obbligatori e come tali sono preselezionati.
 
-Tuttavia, un addetto al marketing deve avere un accesso flessibile a tutti i punti dati che forniscono contesto a un Percorso. Accertiamoci quindi di selezionare almeno i campi seguenti (che si trovano all’interno del nodo di contesto Luogo ):
+Tuttavia, un addetto al marketing deve avere un accesso flessibile a tutti i punti dati che forniscono contesto a un percorso. Accertiamoci quindi di selezionare almeno i campi seguenti (che si trovano all’interno del nodo di contesto Luogo ):
 
 - Città
 
@@ -92,13 +88,9 @@ Al termine, fare clic su **OK**.
 ![Demo](./images/popupok.png)
 
 Adobe Journey Optimizer necessita anche di un identificatore per identificare il cliente. Poiché Adobe Journey Optimizer è collegato a Adobe Experience Platform, l’identificatore primario di uno schema viene automaticamente assunto come identificatore del Percorso.
-L’identificatore primario terrà automaticamente conto del grafo delle identità completo di Adobe Experience Platform e collegherà tutti i comportamenti di tutte le identità, i dispositivi e i canali disponibili allo stesso profilo, in modo che Adobe Journey Optimizer sia contestuale, pertinente e coerente.
+L’identificatore primario terrà automaticamente conto del grafo delle identità completo di Adobe Experience Platform e collegherà tutti i comportamenti di tutte le identità, i dispositivi e i canali disponibili allo stesso profilo, in modo che Adobe Journey Optimizer sia contestuale, pertinente e coerente. Fai clic su **Salva**.
 
 ![Demo](./images/eventidentifier.png)
-
-Fai clic su **Salva** per salvare l&#39;evento personalizzato.
-
-![Demo](./images/save.png)
 
 L’evento farà quindi parte dell’elenco degli eventi disponibili.
 
@@ -109,23 +101,19 @@ Infine, è necessario ripristinare `Orchestration eventID` per l&#39;evento pers
 Apri nuovamente l’evento facendo clic su di esso nell’elenco degli eventi.
 Nel tuo evento, fai clic sull&#39;icona **Visualizza payload** accanto a **Campi**.
 
-![Demo](./images/eventlist1.png)
-
-Facendo clic sull&#39;icona **Visualizza payload** viene aperto un payload XDM di esempio per questo evento.
-
 ![Demo](./images/fieldseyepayload.png)
 
-Scorri verso il basso nel **Payload** fino a visualizzare la riga `eventID`.
+Facendo clic sull&#39;icona **Visualizza payload** viene aperto un payload XDM di esempio per questo evento. Scorri verso il basso nel **Payload** fino a visualizzare la riga `eventID`.
 
 ![Demo](./images/fieldseyepayloadev.png)
 
 Annota `eventID` in quanto ti servirà nell&#39;ultimo per testare la configurazione.
 
-In questo esempio, `eventID` è `fa42ab7982ba55f039eacec24c1e32e5c51b310c67f0fa559ab49b89b63f4934`.
+In questo esempio, `eventID` è `4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e`.
 
 Ora hai definito l&#39;evento che attiverà il percorso che stiamo costruendo. Una volta attivato il percorso, i campi del recinto geografico come Città e tutti gli altri che potresti aver scelto (come Paese, Latitudine e Longitudine) saranno resi disponibili al percorso.
 
-Come descritto nella descrizione del caso d’uso, dobbiamo quindi fornire promozioni contestuali che dipendono dal tempo. Per ottenere informazioni meteo, dovremo definire una fonte di dati esterna che ci fornirà le informazioni meteo per quella località. Il servizio **OpenWeather** fornirà tutte le informazioni, come parte di 2.
+Come descritto nella descrizione del caso d’uso, dobbiamo quindi fornire promozioni contestuali che dipendono dal tempo. Per ottenere informazioni meteo, dovremo definire una fonte di dati esterna che ci fornirà le informazioni meteo per quella località. Per fornirci tali informazioni, userai il servizio **API OpenWeather**.
 
 Passaggio successivo: [3.2.2 Definire un&#39;origine dati esterna](./ex2.md)
 

@@ -6,16 +6,14 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 7f3d6dcb-845d-4ff1-97c3-8e93b8d2c624
-source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
+source-git-commit: 07153124eb3cd4c07bbabb6f7b137f525fa1a27f
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
 # 3.2 Adobe Journey Optimizer: origini dati esterne e azioni personalizzate
-
-**Autore: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 In questo modulo, utilizzerai Adobe Journey Optimizer per ascoltare il comportamento dei clienti, online e offline, e rispondervi in modo intelligente, contestuale e in tempo reale. Hai già avuto un&#39;esperienza pratica iniziale con Adobe Journey Optimizer nel modulo 6. In questo esercizio, approfondirai ulteriormente ed esplorerai un caso d’uso più avanzato in cui le origini dati esterne vengono utilizzate come parte di un percorso.
 
