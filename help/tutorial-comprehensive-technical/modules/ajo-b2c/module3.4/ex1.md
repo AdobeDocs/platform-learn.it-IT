@@ -4,9 +4,9 @@ description: In questa sezione viene configurato un percorso basato su trigger -
 kt: 5342
 doc-type: tutorial
 exl-id: b9d9b357-08d1-4f65-9e0b-46224d035602
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '1919'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,7 @@ Trascina e rilascia 8 volte una **colonna 1:1** nell&#39;area di lavoro, per ott
 
 ![Journey Optimizer](./images/oc9.png)
 
-Nel menu a sinistra, vai a **Frammenti**. Trascina l’intestazione creata in precedenza nell’esercizio 3.2.2 sul primo componente nell’area di lavoro. Trascinare il piè di pagina creato in precedenza nell&#39;esercizio 3.2.2 sull&#39;ultimo componente dell&#39;area di lavoro.
+Nel menu a sinistra, vai a **Frammenti**. Trascina l&#39;intestazione creata in precedenza nell&#39;esercizio [3.1.2.1](./../module3.1/ex2.md) sul primo componente dell&#39;area di lavoro. Trascinare il piè di pagina creato in precedenza nell&#39;[esercizio 3.1.2.2](./../module3.1/ex2.md) sull&#39;ultimo componente dell&#39;area di lavoro.
 
 ![Journey Optimizer](./images/fragm1.png)
 

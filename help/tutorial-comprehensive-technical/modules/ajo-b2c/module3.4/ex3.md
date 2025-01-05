@@ -4,14 +4,14 @@ description: Questo esercizio spiega come utilizzare la personalizzazione dei se
 kt: 5342
 doc-type: tutorial
 exl-id: bb5f8130-0237-4381-bc1e-f6b62950b1fc
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
-# 3.4.3 Applicare la personalizzazione in un messaggio e-mail
+# 3.4.3 Applicare la personalizzazione basata sui segmenti in un messaggio e-mail
 
 Accedi a Adobe Experience Cloud da [Adobe Experience Cloud](https://experience.adobe.com). Fare clic su **Adobe Journey Optimizer**.
 
@@ -23,25 +23,25 @@ Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Prima d
 
 ## 3.4.3.1 Personalizzazione basata su segmenti
 
-In questo esercizio migliorerai il messaggio e-mail per la newsletter con un testo personalizzato in base all’iscrizione al segmento.
+In questo esercizio migliorerai il messaggio e-mail per la newsletter creato nell’esercizio precedente con un testo personalizzato in base all’iscrizione al segmento.
 
-Vai a **Percorsi**. Trova il percorso di newsletter creato nell’esercizio precedente. Cerca `--aepUserLdap-- - Newsletter`. Fare clic sul percorso per aprirlo.
+Vai a **Campagne**. Trova il percorso di newsletter creato nell’esercizio precedente. Cerca `--aepUserLdap-- - CitiSignal Newsletter`. Fare clic con il pulsante destro del mouse sui tre punti **...** e scegliere **Duplica**.
 
 ![Journey Optimizer](./images/sbp1.png)
 
-Poi vedrai questo. Fai clic su **Duplica**.
+Poi vedrai questo. Utilizza questo per il **titolo**: `--aepUserLdap-- - CitiSignal Newsletter (SBP)`. Fai clic su **Duplica**.
 
 ![Journey Optimizer](./images/sbp2.png)
 
-Fai clic su **Duplica**.
+Fai clic sulla campagna duplicata per aprirla.
 
 ![Journey Optimizer](./images/sbp3.png)
 
-Seleziona l&#39;azione **Invia e-mail** e fai clic su **Modifica contenuto**.
+Fai clic su **Modifica** per modificare il contenuto.
 
 ![Journey Optimizer](./images/sbp3a.png)
 
-Fai clic su **Invia e-mail a Designer**.
+Fai clic su **Modifica corpo dell&#39;e-mail**.
 
 ![Journey Optimizer](./images/sbp4.png)
 
@@ -49,88 +49,58 @@ Poi vedrai questo.
 
 ![Journey Optimizer](./images/sbp5.png)
 
-Apri **Componenti contenuto** e trascina un componente **Testo** sotto il contenuto corrente della newsletter.
+Apri **Componenti contenuto** e trascina una **colonna 1:1** sopra l&#39;offerta AirPods.
 
 ![Journey Optimizer](./images/sbp6.png)
+
+Trascina e rilascia un componente **Testo** nella colonna 1:1.
+
+![Journey Optimizer](./images/sbp6a.png)
 
 Selezionare l&#39;intero testo predefinito ed eliminarlo. Quindi fare clic sul pulsante **Aggiungi personalizzazione** nella barra degli strumenti.
 
 ![Journey Optimizer](./images/sbp7.png)
 
-A questo punto viene visualizzato quanto segue:
+Poi vedrai questo. Nel menu a sinistra, fai clic su **Tipi di pubblico**.
 
 ![Journey Optimizer](./images/seg1.png)
 
-Nel menu a sinistra, fai clic su **Appartenenze a segmenti**.
-
-![Journey Optimizer](./images/seg2.png)
-
->[!NOTE]
->
->Se il segmento non è presente in questo elenco, scorri verso il basso per trovare le istruzioni su come recuperare manualmente l’ID segmento.
-
-Seleziona il segmento `Luma - Women's Category Interest` e fai clic sull&#39;icona **+**, che dovrebbe essere simile alla seguente:
+Selezionare il segmento `--aepUserLdap-- - Interest in Plans` e fare clic sull&#39;icona **+** per aggiungerlo all&#39;area di lavoro.
 
 ![Journey Optimizer](./images/seg3.png)
 
 Lasciare quindi invariata la prima riga e sostituire le righe 2 e 3 con questo codice:
 
 ``
-    Psssst... a private sale in the women category will launch soon, we will keep you posted
+    PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
-    Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: READER10
+    PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
 ``
 
-A questo punto si otterrà:
+Allora avrai questo. Fai clic su **Salva**.
 
 ![Journey Optimizer](./images/seg4.png)
 
-Fai clic su **Convalida** per verificare che il codice sia corretto. Fai clic su **Salva**.
-
-![Journey Optimizer](./images/sbp8.png)
-
-Per salvare il messaggio, fai clic sul pulsante **Salva** nell&#39;angolo in alto a destra. Quindi fare clic su **Simula contenuto**.
+Cambia l&#39;allineamento del testo in **Allineamento al centro**.
 
 ![Journey Optimizer](./images/sbp9.png)
 
-Seleziona uno dei profili creati come parte di questa esercitazione e fai clic su **Anteprima**. Viene quindi visualizzato il risultato della configurazione.
+Per salvare il messaggio, fai clic sul pulsante **Salva** nell&#39;angolo in alto a destra. Quindi, fai clic sulla **freccia** accanto al testo della riga dell&#39;oggetto nell&#39;angolo in alto a sinistra.
 
-![Journey Optimizer](./images/sbp10.png)
+![Journey Optimizer](./images/sbp9a.png)
 
-Poi vedrai questo. Quindi fare clic su **Chiudi**.
-
-![Journey Optimizer](./images/sbp10fff.png)
-
-Torna alla dashboard dei messaggi facendo clic sulla **freccia** accanto al testo dell&#39;oggetto nell&#39;angolo in alto a sinistra.
-
-![Journey Optimizer](./images/sbp11.png)
-
-Fai clic sulla freccia nell’angolo in alto a sinistra per tornare al percorso.
+Fai clic su **Rivedi per attivare**.
 
 ![Journey Optimizer](./images/oc79afff.png)
 
-Fai clic su **Ok** per chiudere l&#39;azione e-mail.
+Fare clic su **Attiva**.
 
 ![Journey Optimizer](./images/oc79bfff.png)
 
-Cambia la **pianificazione** in **una volta** e definisci una **data/ora**. Fare clic su **Ok**.
+È ora pubblicata la newsletter con personalizzazione basata sui segmenti. Il messaggio e-mail della newsletter verrà inviato in base alla pianificazione e il percorso verrà interrotto non appena l’ultima e-mail sarà stata inviata.
 
->[!NOTE]
->
->La data e l’ora di invio del messaggio devono essere entro più di un’ora.
-
-![Journey Optimizer](./images/sbp18.png)
-
-Fai clic sul pulsante **Publish** nel percorso.
-
-![Journey Optimizer](./images/sbp19.png)
-
-Nella finestra popup, fare di nuovo clic su **Publish**.
-
-![Journey Optimizer](./images/sbp20.png)
-
-Il percorso di newsletter di base è ora pubblicato. Il messaggio e-mail della newsletter verrà inviato in base alla pianificazione e il percorso verrà interrotto non appena l’ultima e-mail sarà stata inviata.
+Se ti qualifichi per il segmento utilizzato, lo vedrai nell’e-mail che riceverai:
 
 ![Journey Optimizer](./images/sbp20fff.png)
 

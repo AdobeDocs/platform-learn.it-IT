@@ -4,16 +4,14 @@ description: In questo modulo imparerai tutto quello che c’è da sapere su Jou
 kt: 5342
 doc-type: tutorial
 exl-id: f9f37817-f640-4b54-b977-13fd6cc29fcd
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '285'
 ht-degree: 2%
 
 ---
 
 # 3.4 Adobe Journey Optimizer
-
-**Autori: [Maxime Foutrel](https://www.linkedin.com/in/maximefoutrel/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 In questo modulo imparerai tutto quello che c’è da sapere su Adobe Journey Optimizer, che aiuta le aziende a progettare e fornire ai propri clienti esperienze connesse, contestuali e personalizzate.
 
@@ -28,7 +26,7 @@ In questo modulo imparerai tutto quello che c’è da sapere su Adobe Journey Op
 
 - Accesso a Adobe Journey Optimizer
 - **Scarica queste risorse**:
-   - [Risorse](./../../../assets/ajo/ajo_assets.zip)
+   - [Risorse](./../../../assets/ajo/CitiSignal-images.zip)
 
 >[!NOTE]
 >
@@ -40,21 +38,17 @@ In questo modulo imparerai tutto quello che c’è da sapere su Adobe Journey Op
 
 In questo esercizio configurerai un percorso basato su trigger per inviare il messaggio e-mail creato nell’esercizio precedente.
 
-[3.4.2 Configurare un percorso di newsletter basato su batch](./ex2.md)
+[3.4.2 Configurare una campagna](./ex2.md)
 
-In questo esercizio configurerai un percorso basato su batch per inviare il messaggio e-mail creato nell’esercizio precedente.
+In questo esercizio configurerai una campagna e-mail tradizionale.
 
-[3.4.3 Applicare la personalizzazione in un messaggio e-mail](./ex3.md)
+[3.4.3 Applicare la personalizzazione basata sui segmenti in un messaggio e-mail](./ex3.md)
 
 In questo esercizio, utilizzerai le appartenenze ai segmenti per definire quale contenuto verrà visualizzato all’interno di un’e-mail.
 
 [3.4.4 Configurazione e utilizzo delle notifiche push](./ex4.md)
 
 In questo esercizio installerai un’app mobile sul tuo dispositivo iOS e configurerai e invierai una notifica push al dispositivo.
-
-[3.4.5 Creazione di un percorso di eventi di business](./ex5.md)
-
-In questo esercizio, definirai un evento di business che invierà un messaggio back-in-stock tramite SMS ai clienti che hanno precedentemente mostrato interesse per quel prodotto, ma che non hanno potuto acquistarlo perché il prodotto era esaurito.
 
 [Riepilogo e vantaggi](./summary.md)
 
