@@ -6,26 +6,20 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: a7218d65-422b-48e5-89fa-864c5af8d1c6
-source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
+source-git-commit: 5d7b790830a46385ca019bcb23b0032478794591
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '344'
 ht-degree: 2%
 
 ---
 
 # 3.3 Offer decisioning
 
-**Autori: [Rob In der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
 In questo modulo trovi una descrizione pratica delle funzionalità Offer decisioning di Adobe Journey Optimizer.
 
 Adobe Journey Optimizer consente di creare offerte personalizzate e di distribuirle in modo orchestrato a tutte le destinazioni collegate a Adobe Journey Optimizer.
 
 Ad Offer decisioning, puoi determinare l’opzione migliore da una serie di scelte disponibili. Queste opzioni possono essere offerte, consigli di prodotto, componenti di contenuto per un’esperienza web, script di conversazione e azioni da intraprendere.
-
-Guarda questo video per comprendere il valore e il percorso dei clienti:
-
->[!VIDEO](https://video.tv.adobe.com/v/328829?quality=12&learn=on)
 
 ## Finalità di apprendimento
 
@@ -50,7 +44,7 @@ In questo esercizio comprenderai meglio tutti i diversi concetti di Offer Decisi
 
 In questo esercizio configurerai le tue offerte personalizzate e la tua decisione, che verrà quindi pubblicata.
 
-[3.3.3 Prepara la proprietà client di raccolta dati e la configurazione dell’SDK per web, ad Offer decisioning](./ex3.md)
+[3.3.3 Prepara la proprietà del client di raccolta dati e la configurazione del SDK web, ad Offer decisioning](./ex3.md)
 
 In questo esercizio utilizzerai il sito web demo per testare la tua decisione.
 

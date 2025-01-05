@@ -2,9 +2,10 @@
 title: Panoramica
 description: Punto di partenza per Data Engineer, Data Analyst, Data Architect, Data Scientist, Orchestration Engineer e Marketing per comprendere appieno il valore aziendale di Adobe Experience Platform e di tutti i suoi servizi applicativi.
 doc-type: multipage-overview
-source-git-commit: 8270f69dd04714e217ddbb4d125157799cba2940
+exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
+source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1221'
 ht-degree: 2%
 
 ---
@@ -36,7 +37,7 @@ Questo tutorial non si concentra solo sulle applicazioni Adobe, ma tiene conto d
 Dopo aver completato gli esercizi in questa esercitazione, sarai in grado di:
 
 - Configurare schemi, gruppi di campi, set di dati e identità
-- Configurare una proprietà di Raccolta dati Adobe Experience Platform e impostare la nuova estensione Web SDK in Raccolta dati Adobe Experience Platform
+- Configurare una proprietà di raccolta dati Adobe Experience Platform e impostare la nuova estensione Web SDK in Raccolta dati Adobe Experience Platform
 - Trasmetti dati in Adobe Experience Platform in tempo reale utilizzando Raccolta dati di Adobe Experience Platform
 - Acquisire in batch i dati in Adobe Experience Platform utilizzando un flusso di lavoro o un’applicazione ETL (Extract, Transform, Load)
 - Visualizzare e utilizzare Real-time Customer Profile in Adobe Experience Platform
@@ -66,6 +67,8 @@ Questa esercitazione fa parte di un corso di certificazione Adobe. Per iscrivert
 Per ogni modulo completato tramite l&#39;esercitazione seguente, devi inviare una prova di completamento come indicato [qui](./completion.md).
 
 ## Contenuto
+
+Per verificare lo stato del contenuto seguente, passare alla [pagina di stato](./status.md).
 
 [0. Guida introduttiva](./modules/gettingstarted/gettingstarted/getting-started.md)
 
