@@ -4,9 +4,9 @@ description: Offer decisioning - Verificare la decisione
 kt: 5342
 doc-type: tutorial
 exl-id: a03ec0bd-d48f-45bc-8097-ab263331b7bb
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1134'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 ## 3.3.3.1 Aggiornare lo stream di dati
 
-Nell&#39;esercizio [0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md) hai creato **[!UICONTROL Datastream]** personalizzato. È stato quindi utilizzato il nome `--aepUserLdap-- - Demo System Datastream`.
+In [Guida introduttiva](./../../../modules/gettingstarted/gettingstarted/ex2.md), hai creato il tuo **Datastream**. È stato quindi utilizzato il nome `--aepUserLdap-- - Demo System Datastream`.
 
-In questo esercizio, devi configurare **[!UICONTROL Datastream]** affinché funzioni con **[!DNL Offer Decisioning]**.
+In questo esercizio, devi configurare **Datastream** in modo che funzioni con **Offer Decisioning**.
 
-Per eseguire questa operazione, vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/). Poi vedrai questo. Fare clic su **[!UICONTROL Datastreams]** o **[!UICONTROL Datastreams (Beta)]**.
+Per eseguire questa operazione, vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/). Poi vedrai questo. Fare clic su **Datastream**.
 
 Nell&#39;angolo in alto a destra dello schermo, seleziona il nome della sandbox, che dovrebbe essere `--aepSandboxName--`.
 
 ![Fai clic sull&#39;icona Configurazione di Edge nell&#39;area di navigazione a sinistra](./images/edgeconfig1b.png)
 
-Cerca il **[!UICONTROL flusso di dati]**, denominato `--aepUserLdap-- - Demo System Datastream`. Fai clic sul **[!UICONTROL Datastream]** per aprirlo.
+Cerca il **flusso di dati**, denominato `--aepUserLdap-- - Demo System Datastream`. Fai clic sul **Datastream** per aprirlo.
 
 ![WebSDK](./images/websdk1.png)
 
@@ -33,50 +33,50 @@ Poi vedrai questo. Fare clic su **...** accanto a **Adobe Experience Platform** 
 
 ![WebSDK](./images/websdk3.png)
 
-Per abilitare **[!DNL Offer Decisioning]**, selezionare la casella per **[!DNL Offer Decisioning]**. Fai clic su **Salva**.
+Per abilitare **Offer Decisioning**, selezionare la casella per **Offer Decisioning**. Fai clic su **Salva**.
 
 ![WebSDK](./images/websdk5.png)
 
-Il **[!UICONTROL Datastream]** è ora pronto per funzionare con **[!DNL Offer Decisioning]**.
+Il **Datastream** è ora pronto per funzionare con **Offer Decisioning**.
 
 ![WebSDK](./images/websdk4.png)
 
 ## 3.3.3.2 Configura la proprietà Client di raccolta dati di Adobe Experience Platform per richiedere offerte personalizzate
 
-Vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/), a **[!UICONTROL Client]**. Cercare le proprietà della raccolta dati, denominate `--aepUserLdap-- - Demo System (DD/MM/YYYY)`. Apri la proprietà del client Data Collection per il Web.
+Vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/), a **Tag**. Cercare le proprietà della raccolta dati, denominate `--aepUserLdap-- - Demo System (DD/MM/YYYY)`. Apri la proprietà del client Data Collection per il Web.
 
 ![WebSDK](./images/launch1.png)
 
-Nella tua proprietà, vai a **[!UICONTROL Regole]** e apri la regola **[!UICONTROL Visualizzazione pagina]**.
+Nella tua proprietà, vai a **Regole** e apri la regola **Visualizzazione pagina**.
 
 ![WebSDK](./images/launch2.png)
 
-Fai clic per aprire l&#39;[!UICONTROL Azione] **[!UICONTROL SDK Web AEP - Invia evento]**.
+Fai clic per aprire l&#39;azione **Invia evento esperienza &quot;Visualizzazione pagina&quot;**.
 
 ![WebSDK](./images/launch3.png)
 
-Poi vedrai questo. Noterai l&#39;opzione di menu per **[!UICONTROL ambiti decisionali]**.
+Poi vedrai questo. In **Personalization**, noterai l&#39;opzione per **Ambiti**.
 
 ![WebSDK](./images/launch4.png)
 
-Per ogni richiesta inviata al server Edge e a Adobe Experience Platform, è possibile fornire uno o più **[!UICONTROL ambiti decisionali]**. Un ambito **[!UICONTROL Decisione]** è una combinazione di due elementi:
+Per ogni richiesta inviata al server Edge e a Adobe Experience Platform, è possibile fornire uno o più **ambiti decisionali**. Un ambito **Decisione** è una combinazione di due elementi:
 
-- [!UICONTROL ID decisione]
-- [!UICONTROL ID posizionamento]
+- ID decisione
+- ID posizionamento
 
 Diamo prima un&#39;occhiata dove puoi trovare questi due elementi.
 
-### 3.3.3.2.1 Recupera [!UICONTROL ID posizionamento]
+### 3.3.3.2.1 Recuperare l’ID posizionamento
 
-L&#39;[!UICONTROL ID posizionamento] identifica la posizione e il tipo di risorsa necessari. Ad esempio, l&#39;immagine protagonista nella home page del sito Web Luma corrisponde all&#39;[!UICONTROL ID posizionamento] per [!UICONTROL Web - Immagine].
+L’ID posizionamento identifica la posizione e il tipo di risorsa necessari. Ad esempio, l’immagine protagonista nella home page del sito web di CitiSignal corrisponde all’ID posizionamento per Web - Immagine.
 
 >[!NOTE]
 >
->Come parte del modulo 6, hai già configurato un’attività Adobe Target Experience Targeting che modificherà l’immagine della posizione principale sulla home page, come puoi vedere nella schermata. Ai fini dell’esercizio, ora farai apparire le offerte sull’immagine sotto l’immagine protagonista come indicato nella schermata.
+>Come parte dell’esercizio 2.3.5, hai già configurato un’attività Targeting esperienza in Adobe Target che modificherà l’immagine della posizione principale sulla home page, come puoi vedere nella schermata. Per questo esercizio, ora farai apparire le tue offerte sull&#39;immagine sotto l&#39;immagine protagonista come indicato nella schermata.
 
 ![WebSDK](./images/launch5.png)
 
-Per trovare l&#39;[!UICONTROL ID posizionamento] per [!UICONTROL Web - Immagine], vai a Adobe Journey Optimizer da [Adobe Experience Cloud](https://experience.adobe.com). Fare clic su **Journey Optimizer**.
+Per trovare l&#39;ID posizionamento per il Web - Immagine vai a Adobe Journey Optimizer da [Adobe Experience Cloud](https://experience.adobe.com). Fare clic su **Journey Optimizer**.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
@@ -84,64 +84,52 @@ Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzi
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
-Quindi, vai a [!UICONTROL Componenti] e quindi a [!UICONTROL Posizionamenti]. Fai clic sul posizionamento [!UICONTROL Web - Immagine] per visualizzarne i dettagli.
+Quindi, vai a Componenti e poi a Posizionamenti. Fai clic sul posizionamento **Web - Immagine** per visualizzarne i dettagli.
 
 ![WebSDK](./images/launch6.png)
 
-Come puoi vedere nell&#39;immagine precedente, in questo esempio l&#39;[!UICONTROL ID posizionamento] è `xcore:offer-placement:14bf09dc4190ebba`. Scrivere il [!UICONTROL ID posizionamento] per il posizionamento per [!UICONTROL Web - Immagine] in quanto sarà necessario nel prossimo esercizio.
+Come è possibile vedere nell&#39;immagine precedente, in questo esempio l&#39;ID posizionamento è `dps:offer-placement:1a08a14ccfe533b6`. Scrivi l’ID posizionamento per il posizionamento per Web - Immagine, in quanto sarà necessario nel prossimo esercizio.
 
-### 3.3.3.2.2 Recupera [!UICONTROL ID decisione]
+### 3.3.3.2.2 Recuperare l’ID decisione dell’offerta
 
-L&#39;[!UICONTROL ID decisione] identifica la combinazione di offerte personalizzate e offerte di fallback che si desidera utilizzare. Nell&#39;esercizio precedente, hai creato la tua [!UICONTROL decisione] e l&#39;hai denominata `--aepUserLdap-- - Luma Decision`.
+L&#39;**ID decisione offerta** identifica la combinazione di offerte personalizzate e offerte di fallback che si desidera utilizzare. Nell&#39;esercizio precedente, hai creato la tua decisione e l&#39;hai denominata `--aepUserLdap-- - CitiSignal Decision`.
 
-Per trovare l&#39;[!UICONTROL ID decisione] per `--aepUserLdap-- - Luma Decision`, vai a [https://platform.adobe.com](https://platform.adobe.com).
-
-Quindi, passa a [!UICONTROL Offerte] e vai a [!UICONTROL Decisioni]. Fai clic per selezionare la [!UICONTROL decisione], denominata `--aepUserLdap-- - Luma Decision`.
+Per trovare l&#39;ID decisione di offerta per `--aepUserLdap-- - CitiSignal Decision`, passa a Offerte e quindi a Decisioni. Fare clic per selezionare la decisione, denominata `--aepUserLdap-- - CitiSignal Decision`.
 
 ![WebSDK](./images/launch7.png)
 
-Come puoi vedere nell&#39;immagine precedente, in questo esempio [!UICONTROL ID decisione] è `xcore:offer-activity:14c052382e1b6505`. Scrivere l&#39;[!UICONTROL ID decisione] per la decisione `--aepUserLdap-- - Luma Decision` in quanto sarà necessario nel prossimo esercizio.
+Come illustrato nell&#39;immagine precedente, in questo esempio l&#39;ID decisione è `dps:offer-activity:1a08ba4b529b2fb2`. Annotare l&#39;ID decisione offerta per la decisione `--aepUserLdap-- - CitiSignal Decision` in quanto sarà necessario nel prossimo esercizio.
 
-Dopo aver recuperato i due elementi necessari per creare **[!UICONTROL ambiti decisionali]**, puoi continuare con il passaggio successivo, che comporta la codifica dell&#39;ambito decisionale.
+Dopo aver recuperato i due elementi necessari per creare **ambiti decisionali**, puoi continuare con il passaggio successivo, che comporta la codifica dell&#39;ambito decisionale.
 
 ### 3.3.3.2.3 Codifica BASE64
 
-**[!UICONTROL Ambito decisione]** da immettere è una stringa con codifica BASE64. Questa stringa con codifica BASE64 è una combinazione di [!UICONTROL ID posizionamento] e [!UICONTROL ID decisione], come illustrato di seguito.
+**Ambito decisione** da immettere è una stringa con codifica BASE64. Questa stringa con codifica BASE64 è una combinazione dell’ID posizionamento e dell’ID decisione, come illustrato di seguito:
 
 ```json
 {
-  "activityId":"xcore:offer-activity:14c052382e1b6505",
-  "placementId":"xcore:offer-placement:14bf09dc4190ebba"
+  "xdm:activityId": "dps:offer-activity:1a08ba4b529b2fb2",
+  "xdm:placementId": "dps:offer-placement:1a08a14ccfe533b6"
 }
 ```
 
-L&#39;**[!UICONTROL Ambito decisione]** può essere generato in due modi:
+È possibile recuperare la stringa con codifica BASE64 da Adobe Experience Platform. Passare a Decisioni e fare clic per aprire la decisione, denominata `--aepUserLdap-- - CitiSignal Decision`.
 
-- Utilizza un servizio pubblico come [https://www.base64encode.org/](https://www.base64encode.org/). Immetti il codice JSON come indicato in precedenza, fai clic su **[!UICONTROL Codifica]** per ottenere la stringa con codifica BASE64 di seguito.
+![WebSDK](./images/launch9.png)
 
-  ![WebSDK](./images/launch8.png)
+Dopo aver aperto `--aepUserLdap-- - CitiSignal Decision`, verrà visualizzato questo messaggio. Individua il posizionamento Web - Immagine e fai clic sul pulsante **Copia**. Fare clic su **Ambito di decisione codificato**. L&#39;**Ambito decisione** è ora copiato negli Appunti.
 
-- Recupera la stringa con codifica BASE64 da Adobe Experience Platform. Vai a [!UICONTROL Decisioni] e fai clic per aprire la [!UICONTROL Decisione], che si chiama `--aepUserLdap-- - Luma Decision`.
+![WebSDK](./images/launch10.png)
 
-  ![WebSDK](./images/launch9.png)
-
-  Dopo aver aperto `--aepUserLdap-- - Luma Decision`, verrà visualizzato questo messaggio. Individua il posizionamento [!UICONTROL Web - Immagine] e fai clic sul pulsante **[!UICONTROL Copia]**. Fare clic su **[!UICONTROL Ambito di decisione codificato]**. L&#39;**[!UICONTROL Ambito decisione]** è ora copiato negli Appunti.
-
-  ![WebSDK](./images/launch10.png)
-
-Quindi, torna a Launch, alla tua azione **[!UICONTROL AEP Web SDK - Invia evento]**.
+Quindi, torna a Launch, alla tua azione **AEP Web SDK - Invia evento**.
 
 ![WebSDK](./images/launch4.png)
 
-Incolla l’ambito di decisione codificato nel campo di input.
+Incolla l’ambito di decisione codificato nel campo di input. Salva le modifiche nell&#39;azione **AEP Web SDK - Invia evento** facendo clic su **[!UICONTROL Mantieni modifiche]**.
 
 ![WebSDK](./images/launch11.png)
 
-Salva le modifiche nell&#39;azione **[!UICONTROL AEP Web SDK - Invia evento]** facendo clic su **[!UICONTROL Mantieni modifiche]**.
-
-![WebSDK](./images/keepchanges.png)
-
-Fare clic su **[!UICONTROL Salva]** o **[!UICONTROL Salva nella libreria]**
+Fare clic su **[!UICONTROL Salva]**.
 
 ![WebSDK](./images/launch12.png)
 
@@ -157,15 +145,11 @@ Vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe
 
 ![WebSDK](./images/launch1.png)
 
-Nella tua proprietà, passa a **[!UICONTROL Regole]**.
-
-![WebSDK](./images/decrec1.png)
-
-Cerca e apri la regola **Decisione ricevuta**.
+Nella tua proprietà, passa a **Regole**. Cerca e apri la regola **Visualizza offerta (Offer decisioning)**.
 
 ![WebSDK](./images/decrec2.png)
 
-Poi vedrai questo. Apri l&#39;azione **Inserisci l&#39;offerta nella pagina**.
+Poi vedrai questo. Apri l&#39;azione **Visualizza l&#39;offerta nella pagina**.
 
 ![WebSDK](./images/decrec6a.png)
 
@@ -176,41 +160,31 @@ Fai clic su **[!UICONTROL Apri editor]**
 Sovrascrivi il codice incollando il codice seguente nell’editor.
 
 ```javascript
-if(!Array.isArray(event.decisions)) {
-  console.log('No decisions returned')
+if (!Array.isArray(event.decisions)) {
+  console.log("No personalization decisions");
   return;
 }
-console.log("decision",event.decisions)
 
-event.decisions.forEach(function(payload) {
-  payload.items.forEach(function(item){
-    console.log("Response from Offer Decisioning ", item.data.content);
-   
-    var element = document.querySelector("#root > div > div > div.app-content > div > section.feature_part.padding_top > div > div.row.align-items-center.justify-content-between > div.col-lg-7.col-sm-6.\\30  > div");
-    if(!element){
-      console.log("Offer Placement Area Selector not found")
+console.log("Received response from Offer Decisioning", event.decisions);
+
+event.decisions.forEach(function (payload) {
+  payload.items.forEach(function (item) {
+    console.log("Offer", item.data.deliveryURL);
+
+    if (!item.data || item.data?.deliveryURL==null) {
       return;
     }
-    if(!item.data){
-      return
-    }
-    //check if offer already exists
-    var offer = document.querySelector("#root > div > div > div.app-content > div > section.feature_part.padding_top > div > div.row.align-items-center.justify-content-between > div.col-lg-7.col-sm-6.\\30  > div");
-    if(!offer){ 
-      element.insertAdjacentHTML('afterbegin', item.data.content) 
-    }
-    else { 
-      console.log("item.data.deliveryURL: " + item.data.deliveryURL)
-      document.querySelector("#root > div > div > div.app-content > div > section.feature_part.padding_top > div > div.row.align-items-center.justify-content-between > div.col-lg-7.col-sm-6.\\30  > div").style.background="url('"+item.data.deliveryURL+"')";
-      document.querySelector("#root > div > div > div.app-content > div > section.feature_part.padding_top > div > div.row.align-items-center.justify-content-between > div.col-lg-7.col-sm-6.\\30  > div").style.backgroundRepeat="no-repeat";
-      document.querySelector("#root > div > div > div.app-content > div > section.feature_part.padding_top > div > div.row.align-items-center.justify-content-between > div.col-lg-7.col-sm-6.\\30  > div").style.backgroundPosition="center center";
-      document.querySelector("#root > div > div > div.app-content > div > section.feature_part.padding_top > div > div.row.align-items-center.justify-content-between > div.col-lg-7.col-sm-6.\\30  > div").style.backgroundSize = "contain";
-    }  
-  })
+    console.log("item.data.deliveryURL", item.data.deliveryURL)
+    //document.querySelector(".TopRibbon").innerHTML = item.data.content;
+    document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div:nth-child(2)").innerHTML = "<img style='max-width:100%;' src='"+item.data.deliveryURL+"'/>";
+    document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div:nth-child(2) > img").style.backgroundRepeat="no-repeat";
+    document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div:nth-child(2) > img").style.backgroundPosition="center center";
+    document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div:nth-child(2) > img").style.backgroundSize = "contain";
+  });
 });
 ```
 
-Le righe 26-27-28-29 applicano al sito web l&#39;immagine restituita dall&#39;Offer decisioning. Fai clic su **[!UICONTROL Salva]**.
+La riga 17 applica l&#39;immagine restituita dall&#39;Offer decisioning al sito Web. Fai clic su **[!UICONTROL Salva]**.
 
 ![WebSDK](./images/decrec7.png)
 
@@ -218,7 +192,7 @@ Fai clic su **[!UICONTROL Mantieni modifiche]**.
 
 ![WebSDK](./images/keepchanges1dd.png)
 
-Fare clic su **[!UICONTROL Salva]** o **[!UICONTROL Salva nella libreria]**
+Fare clic su **[!UICONTROL Salva]**.
 
 ![WebSDK](./images/decrec8.png)
 
@@ -228,21 +202,13 @@ In Raccolta dati Adobe Experience Platform, vai a **[!UICONTROL Flusso di pubbli
 
 Con questa modifica, questa regola nella raccolta dati di Adobe Experience Platform ascolterà la risposta di Offer Decisioning che fa parte della risposta di Web SDK e, quando la risposta viene ricevuta, l’immagine dell’offerta verrà visualizzata nella home page.
 
-Osservando il sito web demo, vedrai che questa immagine verrà sostituita ora:
-
->[!NOTE]
->
->Come parte del modulo 6, hai già configurato un’attività Adobe Target Experience Targeting che modificherà l’immagine della posizione principale sulla home page, come puoi vedere nella schermata. Ai fini dell’esercizio, ora farai apparire le offerte sull’immagine sotto l’immagine protagonista come indicato nella schermata.
-
-![WebSDK](./images/launch5.png)
-
-E invece delle immagini predefinite del sito web Luma, ora vedrai un’offerta come questa. In questo caso, viene visualizzata l’offerta di fallback.
+Osservando il sito web della demo, vedrai che questa immagine verrà sostituita ora. Invece delle immagini predefinite del sito web di CitSignal, ora vedrai un’offerta come questa. In questo caso, viene visualizzata l’offerta di fallback.
 
 ![WebSDK](./images/decrec10.png)
 
 Hai configurato 2 tipi di personalizzazione:
 
-- 1 attività Targeting esperienza con Adobe Target nel modulo 6
+- 1 Attività Targeting esperienza con Adobe Target nell’esercizio 2.3.5
 - 1 Offer decisioning di implementazione tramite la proprietà Data Collection
 
 Nel prossimo esercizio vedrai come combinare le offerte e le decisioni che sono state create in Adobe Journey Optimizer con un’attività Targeting esperienza di Adobe Target.
