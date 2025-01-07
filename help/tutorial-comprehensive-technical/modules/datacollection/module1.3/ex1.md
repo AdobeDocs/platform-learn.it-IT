@@ -4,14 +4,216 @@ description: Foundation - FAC - Configurare l’account di Snowflake
 kt: 5342
 doc-type: tutorial
 exl-id: fb8a70d9-9789-4fca-90e4-771be2cfc3dc
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '39'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
 
-# 1.3.1 Configurare l’account di Snowflake
+# 1.3.1 Configurare l’ambiente del Snowflake
+
+## 1.3.1.1 Crea il tuo account
+
+Vai a [https://snowflake.com](https://snowflake.com). Fai clic su **INIZIA GRATUITAMENTE**.
+
+![FAC](./images/sf1.png)
+
+Immetti i tuoi dettagli e fai clic su **Continua**.
+
+![FAC](./images/sf2.png)
+
+Immetti i tuoi dettagli, scegli il provider di cloud e fai clic su **Inizia**.
+
+![FAC](./images/sf3.png)
+
+Inserisci i tuoi dettagli o fai clic su **Ignora** (x2).
+
+![FAC](./images/sf4.png)
+
+Poi vedrai questo. Controlla l’e-mail e fai clic sull’e-mail di conferma che ti è stata inviata.
+
+![FAC](./images/sf5.png)
+
+Fai clic sul collegamento nell’e-mail di conferma per attivare l’account, definire il nome utente e la password. Fai clic su **Inizia**. Nel prossimo esercizio dovrai usare questo nome utente e questa password.
+
+![FAC](./images/sf6.png)
+
+In seguito potrai accedere al Snowflake. Fai clic su **Ignora per il momento**.
+
+![FAC](./images/sf7.png)
+
+## 1.3.1.2 Creare il database
+
+Vai a **Dati > Database**. Fare clic su **+ Database**.
+
+![FAC](./images/db1.png)
+
+Utilizza il nome **CITISIGNAL** per il database. Fare clic su **CREA**.
+
+![FAC](./images/db2.png)
+
+## 1.3.1.3 Creare le tabelle
+
+È ora possibile iniziare a creare le tabelle in Snowflake. Di seguito sono riportati gli script da eseguire per creare le tabelle.
+
+### Tabella CK_PERSONS
+
+Fare clic su **+ Crea**, quindi su **Tabella** e infine su **Standard**.
+
+![FAC](./images/tb1.png)
+
+Poi vedrai questo. Copia la query seguente e incollala nel Snowflake. Prima di creare la tabella, assicurati di selezionare il database **CITISIGNAL** nell&#39;angolo in alto a sinistra dello schermo.
+
+```sql
+create or replace TABLE CITISIGNAL.PUBLIC.CK_PERSONS (
+	PERSON_ID NUMBER(38,0) NOT NULL,
+	NAME VARCHAR(255),
+	AGE NUMBER(38,0),
+	EMAIL VARCHAR(255),
+	PHONE_NUMBER VARCHAR(20),
+	GENDER VARCHAR(10),
+	OCCUPATION VARCHAR(100),
+	ISATTMOBILESUB BOOLEAN,
+	primary key (PERSON_ID)
+);
+```
+
+Fare clic su **Crea tabella**.
+
+![FAC](./images/tb2.png)
+
+Una volta eseguito lo script, è possibile trovare la tabella in **Database > CITISIGNAL > PUBLIC**.
+
+![FAC](./images/tb3.png)
+
+### Tabella CK_HOUSEHOLDS
+
+Fare clic su **+ Crea**, quindi su **Tabella** e infine su **Standard**.
+
+![FAC](./images/tb1.png)
+
+Poi vedrai questo. Copia la query seguente e incollala nel Snowflake. Prima di creare la tabella, assicurati di selezionare il database **CITISIGNAL** nell&#39;angolo in alto a sinistra dello schermo.
+
+```sql
+create or replace TABLE CITISIGNAL.PUBLIC.CK_HOUSEHOLDS (
+	HOUSEHOLD_ID NUMBER(38,0) NOT NULL,
+	ADDRESS VARCHAR(255),
+	CITY VARCHAR(100),
+	STATE VARCHAR(50),
+	POSTAL_CODE VARCHAR(20),
+	COUNTRY VARCHAR(100),
+	ISELIGIBLEFORFIBER BOOLEAN,
+	PRIMARY_PERSON_ID NUMBER(38,0),
+	ISFIBREENABLED BOOLEAN,
+	primary key (HOUSEHOLD_ID)
+);
+```
+
+Fare clic su **Crea tabella**.
+
+![FAC](./images/tb4.png)
+
+Una volta eseguito lo script, è possibile trovare la tabella in **Database > CITISIGNAL > PUBLIC**.
+
+![FAC](./images/tb5.png)
+
+### Tabella CK_USERS
+
+Fare clic su **+ Crea**, quindi su **Tabella** e infine su **Standard**.
+
+![FAC](./images/tb1.png)
+
+Poi vedrai questo. Copia la query seguente e incollala nel Snowflake. Prima di creare la tabella, assicurati di selezionare il database **CITISIGNAL** nell&#39;angolo in alto a sinistra dello schermo.
+
+```sql
+create or replace TABLE CITISIGNAL.PUBLIC.CK_USERS (
+	USER_ID NUMBER(38,0) NOT NULL,
+	PERSON_ID NUMBER(38,0),
+	HOUSEHOLD_ID NUMBER(38,0),
+	primary key (USER_ID),
+	foreign key (PERSON_ID) references CITISIGNAL.PUBLIC.CK_PERSONS(PERSON_ID),
+	foreign key (HOUSEHOLD_ID) references CITISIGNAL.PUBLIC.CK_HOUSEHOLDS(HOUSEHOLD_ID)
+);
+```
+
+Fare clic su **Crea tabella**.
+
+![FAC](./images/tb6.png)
+
+Una volta eseguito lo script, è possibile trovare la tabella in **Database > CITISIGNAL > PUBLIC**.
+
+![FAC](./images/tb7.png)
+
+### Tabella CK_MONTHLY_DATA_USAGE
+
+Fare clic su **+ Crea**, quindi su **Tabella** e infine su **Standard**.
+
+![FAC](./images/tb1.png)
+
+Poi vedrai questo. Copia la query seguente e incollala nel Snowflake. Prima di creare la tabella, assicurati di selezionare il database **CITISIGNAL** nell&#39;angolo in alto a sinistra dello schermo.
+
+```sql
+create or replace TABLE CITISIGNAL.PUBLIC.CK_MONTHLY_DATA_USAGE (
+	USAGE_ID NUMBER(38,0) NOT NULL autoincrement start 1 increment 1 noorder,
+	USER_ID NUMBER(38,0),
+	MONTH DATE,
+	DATA_USAGE_GB NUMBER(10,2),
+	primary key (USAGE_ID)
+);
+```
+
+Fare clic su **Crea tabella**.
+
+![FAC](./images/tb8.png)
+
+Una volta eseguito lo script, è possibile trovare la tabella in **Database > CITISIGNAL > PUBLIC**.
+
+![FAC](./images/tb9.png)
+
+### Tabella CK_MOBILE_DATA_USAGE
+
+Fare clic su **+ Crea**, quindi su **Tabella** e infine su **Standard**.
+
+![FAC](./images/tb1.png)
+
+Poi vedrai questo. Copia la query seguente e incollala nel Snowflake. Prima di creare la tabella, assicurati di selezionare il database **CITISIGNAL** nell&#39;angolo in alto a sinistra dello schermo.
+
+
+```sql
+create or replace TABLE CITISIGNAL.PUBLIC.CK_MOBILE_DATA_USAGE (
+	USAGE_ID NUMBER(38,0) NOT NULL autoincrement start 1 increment 1 noorder,
+	USER_ID NUMBER(38,0),
+	DATE DATE,
+	TIME TIME(9),
+	APP_NAME VARCHAR(255),
+	DATA_USAGE_MB NUMBER(10,2),
+	NETWORK_TYPE VARCHAR(50),
+	DEVICE_TYPE VARCHAR(50),
+	COUNTRY_CODE VARCHAR(10),
+	primary key (USAGE_ID)
+);
+```
+
+Fare clic su **Crea tabella**.
+
+![FAC](./images/tb10.png)
+
+Una volta eseguito lo script, è possibile trovare la tabella in **Database > CITISIGNAL > PUBLIC**.
+
+![FAC](./images/tb11.png)
+
+Tutte le tabelle sono state create.
+
+
+## 1.3.1.4 Inserire i dati del campione
+
+Ora puoi iniziare a caricare dati di esempio nel database.
+
+...
+
+La configurazione è stata completata in Snowflake.
+
 
 Passaggio successivo: [1.3.2 Creare schemi, modelli dati e collegamenti](./ex2.md)
 

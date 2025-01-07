@@ -4,9 +4,9 @@ description: 'Customer Journey Analytics: visualizzazione tramite Customer Journ
 kt: 5342
 doc-type: tutorial
 exl-id: 3c928a73-b4ec-4b68-943c-c177b1e29f7b
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1502'
 ht-degree: 0%
 
 ---
@@ -49,15 +49,15 @@ Automaticamente la dimensione **Day** verrà aggiunta per creare la prima tabell
 
 ![demo](./images/pro3.png)
 
-Quindi, fai clic con il pulsante destro del mouse sul riepilogo delle metriche.
+Quindi, fai clic con il pulsante destro del mouse sul riepilogo delle metriche. Fare clic su **Visualizza**.
 
 ![demo](./images/pro4.png)
 
-Fai clic su **Visualizza**, quindi seleziona **Riga** come visualizzazione.
+Fai clic su **Riga**.
 
 ![demo](./images/pro5.png)
 
-Visualizzerai le visualizzazioni dei prodotti per giorno.
+Visualizzerai le visualizzazioni dei prodotti in base alle ore.
 
 ![demo](./images/pro6.png)
 
@@ -90,7 +90,7 @@ Iniziamo a trovare i primi 5 prodotti visualizzati. Nel menu a sinistra, individ
 
 Trascina e rilascia **Nome prodotto** per sostituire la dimensione **Giorno**:
 
-Questo sarà il risultato
+Questo sarà il risultato. Seleziona i 4 nomi dei prodotti per visualizzare l’aggiornamento della visualizzazione.
 
 ![demo](./images/pro10a.png)
 
@@ -110,13 +110,9 @@ Infine, puoi aggiungere altre visualizzazioni. Sul lato sinistro, in Visualizzaz
 
 ![demo](./images/pro18.png)
 
-Quindi, nella tabella, seleziona le prime 5 **righe Agente utente** dal raggruppamento eseguito in **Smartphone nero Google Pixel XL da 32 GB** > **Segnale Citi**. Durante la selezione delle 3 righe, tenere premuto il pulsante **CTRL** (in Windows) o il pulsante **Comando** (in Mac).
+Quindi, nella tabella, seleziona le prime 5 **righe Agente utente** dal raggruppamento eseguito in **Smartphone nero Google Pixel XL da 32 GB** > **Segnale Citi**. Durante la selezione delle 3 righe, tenere premuto il pulsante **CTRL** (in Windows) o il pulsante **Comando** (in Mac). Il grafico ad anello verrà aggiornato.
 
 ![demo](./images/pro20.png)
-
-Il grafico ad anello verrà modificato:
-
-![demo](./images/pro21.png)
 
 Puoi anche adattare la progettazione in modo da renderla più leggibile, riducendo leggermente sia il grafico **Line** che il grafico **Donut** in modo che possano adattarsi l&#39;uno accanto all&#39;altro:
 
@@ -156,13 +152,9 @@ Poi vedrai questo.
 
 ![demo](./images/prodatefa.png)
 
-Trova la dimensione **Tipo evento** sotto i componenti sul lato sinistro:
+Trovare la dimensione **Tipo evento** sotto i componenti sul lato sinistro. Fate clic sulla freccia per aprire la quota.
 
 ![demo](./images/pro26.png)
-
-Fare clic sulla freccia per aprire la dimensione:
-
-![demo](./images/pro27.png)
 
 Verranno visualizzati tutti i tipi di evento disponibili.
 
@@ -176,7 +168,7 @@ Fai lo stesso con **commerce.productListAdds** e **commerce.purchases** e rilasc
 
 ![demo](./images/props1.png)
 
-Puoi fare molte cose qui. Alcuni esempi: confronta nel tempo, confronta ogni passaggio per dispositivo o confronta per fedeltà. Tuttavia, se vogliamo analizzare aspetti interessanti come il motivo per cui i clienti non acquistano dopo aver aggiunto un articolo al carrello, possiamo utilizzare il migliore strumento in CJA: fai clic con il pulsante destro del mouse.
+Puoi fare molte cose qui. Alcuni esempi: confronta nel tempo, confronta ogni passaggio per dispositivo o confronta per fedeltà. Tuttavia, se desideri analizzare aspetti interessanti, come il motivo per cui i clienti non acquistano dopo aver aggiunto un articolo al carrello, possiamo utilizzare il migliore strumento in CJA: fai clic con il pulsante destro del mouse.
 
 Fai clic con il pulsante destro del mouse sul punto di contatto **commerce.productListAdds**. Quindi fai clic su **Abbandono raggruppamento in questo punto di contatto**.
 
@@ -194,36 +186,24 @@ Modificare **Tipo evento** in **Nome pagina** nella nuova tabella a forma libera
 
 Anche in questo caso, esistono diversi modi per eseguire questa analisi. Utilizziamo l&#39;analisi di flusso per avviare la parte di individuazione.
 
-Per chiudere il pannello corrente, fai clic qui:
+Chiudere il pannello corrente facendo clic qui, quindi aggiungere un nuovo pannello vuoto facendo clic su **+ Aggiungi pannello vuoto**.
 
 ![demo](./images/pro0.png)
-
-Aggiungere ora un nuovo pannello vuoto facendo clic su **+ Aggiungi pannello vuoto**.
-
-![demo](./images/pro0a.png)
 
 Fai clic sulla visualizzazione **Flusso**.
 
 ![demo](./images/pro35.png)
 
-A questo punto viene visualizzato quanto segue:
-
-![demo](./images/pro351.png)
-
-Selezionare lo stesso intervallo di date dell&#39;esercizio precedente.
+Poi vedrai questo. Selezionare lo stesso intervallo di date dell&#39;esercizio precedente. Fare clic su **Applica**.
 
 ![demo](./images/pro0b.png)
 
-Trova la dimensione **Nome pagina** sotto i componenti sul lato sinistro:
+Trovare la dimensione **Nome pagina** sotto i componenti sul lato sinistro e fare clic sulla freccia per aprire la dimensione.
 
 ![demo](./images/pro36.png)
 
-Fare clic sulla freccia per aprire la dimensione:
-
-![demo](./images/pro37.png)
-
 Troverai tutte le pagine visualizzate. Trovare il nome della pagina: **Annulla servizio**.
-Trascina e rilascia **Annulla servizio** nella visualizzazione Flusso nel campo centrale:
+Trascina e rilascia **Annulla servizio** nella visualizzazione Flusso nel campo centrale. Fare clic su **Build**.
 
 ![demo](./images/pro38.png)
 
@@ -274,27 +254,19 @@ Ora seleziona **positivo** come valore per il filtro.
 
 ![demo](./images/pro49.png)
 
-Modifica l&#39;ambito impostandolo al livello **Persona**.
+Modifica l&#39;ambito impostandolo al livello **Persona**. Fai clic su **Salva**.
 
 ![demo](./images/pro50.png)
 
-Per terminare, fai clic su **Salva**.
-
-![demo](./images/pro51.png)
-
-Allora tornerai qui. Se non l’hai ancora fatto, chiudi il pannello precedente.
+Allora tornerai qui. Se non è ancora stato completato, chiudere il pannello precedente e aggiungere un nuovo pannello vuoto facendo clic su **+ Aggiungi pannello vuoto**.
 
 ![demo](./images/pro0c.png)
 
-Aggiungere ora un nuovo pannello vuoto facendo clic su **+ Aggiungi pannello vuoto**.
-
-![demo](./images/pro24c.png)
-
-Selezionare lo stesso intervallo di date dell&#39;esercizio precedente.
+Selezionare lo stesso intervallo di date dell&#39;esercizio precedente. Fare clic su **Applica**.
 
 ![demo](./images/pro24d.png)
 
-Fai clic su **Tabella a forma libera**.
+Fare clic su **Tabella a forma libera**.
 
 ![demo](./images/pro52.png)
 
