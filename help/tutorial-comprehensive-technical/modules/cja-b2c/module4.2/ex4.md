@@ -3,9 +3,10 @@ title: 'Acquisire e analizzare i dati Google Analytics in Adobe Experience Platf
 description: 'Acquisire e analizzare i dati Google Analytics in Adobe Experience Platform con il connettore Source BigQuery: caricare i dati da BigQuery in Adobe Experience Platform'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 793b35c6-761f-4b0a-b0bc-3eab93c82162
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '710'
 ht-degree: 1%
 
 ---
@@ -20,45 +21,33 @@ ht-degree: 1%
 
 ## Prima di iniziare
 
-Dopo l’esercizio 12.3, dovresti aprire questa pagina in Adobe Experience Platform:
+Dopo l’esercizio precedente, dovresti aprire questa pagina in Adobe Experience Platform:
 
 ![demo](./images/datasets.png)
 
-**Se è aperto, continuare con l&#39;esercizio 12.4.1.**
+**Se è aperto, continuare con l&#39;esercizio successivo.**
 
 **Se non è aperto, passare a [Adobe Experience Platform](https://experience.adobe.com/platform/home).**
 
-Nel menu a sinistra, vai a Sorgenti. Verrà quindi visualizzata la home page **Sources**. Nel menu **Origini**, fare clic su **Database**.
+Nel menu a sinistra, vai a Sorgenti. Verrà quindi visualizzata la home page **Sources**. Nel menu **Origini**, vai al connettore di origine **Google BigQuery** e fai clic su **Configura**.
 
 ![demo](./images/sourceshome.png)
 
-Seleziona il connettore Source **Google BigQuery** e fai clic su **+ Configura**.
+Viene visualizzata la schermata di selezione dell’account BigQuery Google. Seleziona il tuo account e fai clic su **Avanti**.
 
-![demo](./images/bq.png)
+![demo](./images/0c.png)
 
-Viene visualizzata la schermata di selezione dell’account BigQuery Google.
-
-![demo](./images/0-c.png)
-
-Seleziona il tuo account e fai clic su **Avanti**.
-
-![demo](./images/ex4/0-d.png)
-
-Verrà quindi visualizzata la visualizzazione **Aggiungi dati**.
+Viene visualizzata la schermata **Seleziona dati**.
 
 ![demo](./images/datasets.png)
 
 ## 4.2.4.1 Selezione della tabella BigQuery
 
-Nella visualizzazione **Aggiungi dati**, seleziona il set di dati BigQuery.
-
-![demo](./images/datasets.png)
-
-Ora puoi visualizzare un’anteprima dei dati di Google Analytics di esempio in BigQuery.
+Nella schermata **Seleziona dati**, seleziona il set di dati BigQuery. Ora puoi visualizzare un’anteprima dei dati di Google Analytics di esempio in BigQuery.
 
 Fai clic su **Avanti**.
 
-![demo](./images/ex4/3.png)
+![demo](./images/datasets1.png)
 
 ## 4.2.4.2 Mappatura XDM
 
@@ -72,7 +61,7 @@ Seleziona **Set di dati esistente**. Apri il menu a discesa per selezionare un s
 
 ![demo](./images/xdm6.png)
 
-Scorri verso il basso. Ora devi mappare ogni **Campo Source** da Google Analytics/BigQuery a un **Campo di destinazione** XDM, campo per campo.
+Scorri verso il basso. Ora devi mappare ogni **Campo Source** da Google Analytics/BigQuery a un **Campo di destinazione** XDM, campo per campo. Potresti visualizzare una serie di errori che verranno corretti dal seguente esercizio di mappatura.
 
 ![demo](./images/xdm8.png)
 
@@ -80,43 +69,51 @@ Utilizzare la tabella di mapping riportata di seguito per questo esercizio.
 
 | Campo origine | Campo di destinazione |
 | ----------------- |-------------| 
-| **_id** | _id |
-| **_id** | canale._id |
-| timestamp | timestamp |
-| GA_ID | ``--aepTenantId--``.identifier.core.gaid |
-| customerID | ``--aepTenantId--``.identifier.core.loyaltyId |
-| Pagina | web.webPageDetails.name |
-| Dispositivo | device.type |
-| Browser | environment.browserDetails.vendor |
-| MarketingChannel | marketing.trackingCode |
-| TrafficSource | channel.typeAtSource |
-| TrafficMedium | channel.mediaType |
-| TransactionID | commerce.order.payments.transactionID |
-| Tipo_Azione_Ecommerce | eventType |
-| Visualizzazioni pagina | web.webPageDetails.pageViews.value |
-| Acquisti_univoci | commerce.purchases.value |
-| Visualizzazioni dettagli prodotto | commerce.productViews.value |
-| Adds_To_Cart | commerce.productListAdds.value |
-| Product_Removes_From_Cart | commerce.productListRemovals.value |
-| Product_Checkouts | commerce.checkouts.value |
+| `_id` | `_id` |
+| `_id` | canale._id |
+| `timeStamp` | timestamp |
+| `GA_ID` | ``--aepTenantId--``.identifier.core.gaid |
+| `customerID` | ``--aepTenantId--``. identification.core.crmId |
+| `Page` | web.webPageDetails.name |
+| `Device` | device.type |
+| `Browser` | environment.browserDetails.vendor |
+| `MarketingChannel` | marketing.trackingCode |
+| `TrafficSource` | channel.typeAtSource |
+| `TrafficMedium` | channel.mediaType |
+| `TransactionID` | commerce.order.payments.transactionID |
+| `Ecommerce_Action_Type` | eventType |
+| `Pageviews` | web.webPageDetails.pageViews.value |
 
-Dopo aver copiato e incollato la mappatura di cui sopra nell’interfaccia utente di Adobe Experience Platform, verifica di non visualizzare errori dovuti a errori di battitura o a spazi iniziali/finali.
 
-Hai ora una **Mappatura** come questa:
+Per alcuni campi, è necessario rimuovere la mappatura originale e crearne una nuova, per un **Campo calcolato**.
 
-![demo](./images/xdm34.png)
+| Campo calcolato | Campo di destinazione |
+| ----------------- |-------------| 
+| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Refunds"), 1, 0)` | commerce.purchases.value |
+| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Detail_Views"), 1, 0)` | commerce.productViews.value |
+| `iif("Adds_To_Cart".equalsIgnoreCase("Adds_To_Cart"), 1, 0)` | commerce.productListAdds.value |
+| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Removes_From_Cart"), 1, 0)` | commerce.productListRemovals.value |
+| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Checkouts"), 1, 0)` | commerce.checkouts.value |
+
+Per creare un **Campo calcolato**, fare clic su **+ Nuovo tipo di campo** e quindi su **Campo calcolato**.
+
+![demo](./images/xdm8a.png)
+
+Incolla la regola precedente e fai clic su **Salva** per ciascuno dei campi della tabella precedente.
+
+![demo](./images/xdm8b.png)
+
+Ora hai una **Mappatura** come questa.
 
 I campi di origine **GA_ID** e **customerID** sono mappati a un identificatore in questo schema XDM. Questo ti consentirà di arricchire i dati Google Analytics (dati sul comportamento web/app) con altri set di dati come Dati fedeltà o Dati del call center.
 
 Fai clic su **Avanti**.
 
-![demo](./images/ex4/38.png)
+![demo](./images/xdm34.png)
 
 ## 4.2.4.3 Connessione e programmazione dell’acquisizione dei dati
 
 Verrà visualizzata la scheda **Pianificazione**:
-
-![demo](./images/xdm38a.png)
 
 Nella scheda **Pianificazione**, è possibile definire una frequenza per il processo di acquisizione dei dati per **Mappatura** e dati.
 
@@ -124,59 +121,26 @@ Poiché in Google BigQuery utilizzi dati demo che non verranno aggiornati, non �
 
 - Frequenza: **Settimana**
 - Intervallo: **200**
-
-![demo](./images/ex4/39.png)
+- Ora di inizio: **qualsiasi ora nell&#39;ora successiva**
 
 **Importante**: assicurarsi di attivare l&#39;opzione **Backfill**.
 
-![demo](./images/ex4/39a.png)
-
 Ultimo ma non meno importante, è necessario definire un campo **delta**.
-
-![demo](./images/ex4/36.png)
 
 Il campo **delta** viene utilizzato per pianificare la connessione e caricare solo le nuove righe incluse nel set di dati BigQuery. Un campo delta è in genere sempre una colonna timestamp. Pertanto, per le future acquisizioni pianificate di dati, verranno acquisite solo le righe con una nuova marca temporale più recente.
 
 Selezionare **timestamp** come campo delta.
-
-![demo](./images/ex4/37.png)
-
-Ora hai questo.
-
-![demo](./images/xdm37a.png)
-
 Fai clic su **Avanti**.
 
-![demo](./images/ex4/42.png)
+![demo](./images/ex437.png)
 
 ## 4.2.4.4 Revisione e avvio della connessione
 
-Nella visualizzazione **Dettagli flusso set di dati**. devi assegnare un nome alla connessione, per facilitarne la ricerca in seguito.
-
-Utilizza questa convenzione per i nomi:
-
-| Campo | Denominazione | Esempio |
-| ----------------- |-------------| -------------|
-| Nome flusso set di dati | Flusso di dati - ldap - Interazione con il sito Web BigQuery | DataFlow - vangeluw - Interazione con il sito Web BigQuery |
-| Descrizione | Flusso di dati - ldap - Interazione con il sito Web BigQuery | DataFlow - vangeluw - Interazione con il sito Web BigQuery |
-
-![demo](./images/xdm44.png)
-
-Fai clic su **Avanti**.
-
-![demo](./images/ex4/45.png)
-
 Ora viene visualizzata una panoramica dettagliata della connessione. Assicurati che tutto sia corretto prima di continuare, poiché alcune impostazioni non possono più essere modificate in seguito, come ad esempio la mappatura XDM.
-
-![demo](./images/xdm46.png)
 
 Fai clic su **Fine**.
 
-![demo](./images/ex4/finish.png)
-
-L&#39;impostazione della connessione potrebbe richiedere del tempo, quindi non preoccuparti se noti che:
-
-![demo](./images/ex4/47.png)
+![demo](./images/xdm46.png)
 
 Una volta creata la connessione, visualizzerai quanto segue:
 

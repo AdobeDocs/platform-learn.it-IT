@@ -3,9 +3,10 @@ title: 'Customer Journey Analytics: visualizzazione tramite Customer Journey Ana
 description: 'Customer Journey Analytics: visualizzazione tramite Customer Journey Analytics'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 3c928a73-b4ec-4b68-943c-c177b1e29f7b
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
@@ -24,11 +25,11 @@ In questi esercizi utilizzerai Analysis Workspace all’interno di CJA per anali
 
 Copriremo alcune delle query eseguite nel Modulo 7 - Query Service in modo da vedere quanto è facile eseguire le stesse query e altro ancora, ma senza utilizzare SQL e affidandosi solo alla filosofia di trascinamento della selezione di Analysis Workspace.
 
-Utilizziamo il progetto creato in [11.4 Data Preparation in Analysis Workspace](./ex4.md), quindi passa a [https://analytics.adobe.com](https://analytics.adobe.com).
+Utilizzare il progetto creato in [4.1.4 Preparazione dati in Analysis Workspace](./ex4.md), quindi passare a [https://analytics.adobe.com](https://analytics.adobe.com).
+
+Fare clic per aprire il progetto `--aepUserLdap-- - Omnichannel Analysis`.
 
 ![demo](./images/prohome.png)
-
-Apri il progetto `--aepUserLdap-- - Omnichannel Analysis`.
 
 Con il progetto aperto e la visualizzazione dati `--aepUserLdap-- - Omnichannel Analysis` selezionata, puoi iniziare a creare le prime visualizzazioni.
 
@@ -36,7 +37,7 @@ Con il progetto aperto e la visualizzazione dati `--aepUserLdap-- - Omnichannel 
 
 ## Quante visualizzazioni di prodotto abbiamo su base giornaliera
 
-Prima di tutto, dobbiamo selezionare le date giuste per analizzare i dati. Vai al menu a discesa del calendario sul lato destro dell’area di lavoro. Fai clic su di esso e seleziona l’intervallo di date applicabile.
+Prima di tutto, devi selezionare le date giuste per analizzare i dati. Vai al menu a discesa del calendario sul lato destro dell’area di lavoro. Fai clic su di esso e seleziona l’intervallo di date applicabile.
 
 ![demo](./images/pro1.png)
 

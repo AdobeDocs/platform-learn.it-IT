@@ -3,9 +3,10 @@ title: 'Acquisire e analizzare i dati Google Analytics in Adobe Experience Platf
 description: 'Acquisire e analizzare i dati Google Analytics in Adobe Experience Platform con il connettore Source BigQuery: creare la prima query in BigQuery'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: c3c06447-3096-4f55-993b-4d41bc15c4d2
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -28,42 +29,40 @@ La soluzione a questo problema consiste nel trasformare i dati Google Analytics 
 
 Passa alla [console BigQuery](https://console.cloud.google.com/bigquery).
 
-![demo](./images/ex3/1.png)
+![demo](./images/ex31.png)
 
 In **Explorer** verrà visualizzato l&#39;ID progetto. Fai clic sull&#39;ID progetto (non fare clic sul set di dati **bigquery-public-data**).
 
-![demo](./images/ex3/2.png)
+![demo](./images/ex32.png)
 
 Puoi notare che non esiste ancora un set di dati, quindi creane uno ora.
-Fare clic su **CREA SET DI DATI**.
+Fare clic su 3 **...** e quindi su **CREA SET DI DATI**.
 
-![demo](./images/ex3/4.png)
+![demo](./images/ex34.png)
 
 Sul lato destro dello schermo viene visualizzato il menu **Crea set di dati**.
 
-![demo](./images/ex3/5.png)
+![demo](./images/ex35.png)
 
 Per l&#39;**ID set di dati**, utilizzare la convenzione di denominazione seguente. Per gli altri campi, lascia le impostazioni predefinite.
 
 | Denominazione | Esempio |
 | ----------------- | ------------- | 
-| `--aepUserLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |
+| `--aepUserLdap--_BigQueryDataSet` | vangeluw_BigQueryDataSet |
 
-![demo](./images/ex3/6.png)
+Fare clic su **CREA SET DI DATI**.
 
-Fare clic su **Crea set di dati**.
-
-![demo](./images/ex3/7.png)
+![demo](./images/ex36.png)
 
 Tornerai quindi alla console BigQuery con il set di dati creato.
 
-![demo](./images/ex3/8.png)
+![demo](./images/ex38.png)
 
 ## 4.2.2.2 Creare il primo BigQuery SQL
 
-Successivamente, creerai la tua prima query in BigQuery. L’obiettivo di questa query è quello di prendere i dati di esempio delle Google Analytics e trasformarli in modo che possano essere acquisiti in Adobe Experience Platform. Passa alla scheda **EDITOR**.
+Successivamente, creerai la tua prima query in BigQuery. L’obiettivo di questa query è quello di prendere i dati di esempio delle Google Analytics e trasformarli in modo che possano essere acquisiti in Adobe Experience Platform. Passa alla scheda **Query senza titolo**.
 
-![demo](./images/ex3/9.png)
+![demo](./images/ex39.png)
 
 Copiare la seguente query SQL e incollarla nell&#39;editor di query. Leggi la query e comprendi la sintassi Google Analytics di BigQuery.
 
@@ -232,29 +231,29 @@ GROUP BY
 
 Quando sei pronto, fai clic su **Esegui** per eseguire la query:
 
-![demo](./images/ex3/10.png)
+![demo](./images/ex310.png)
 
 L&#39;esecuzione della query può richiedere alcuni minuti.
 
 Al termine dell&#39;esecuzione della query, verrà visualizzato l&#39;output seguente in **Risultati query**.
 
-![demo](./images/ex3/12.png)
+![demo](./images/ex312.png)
 
 ## 4.2.2.3 Salvare i risultati della query SQL BigQuery
 
 Il passaggio successivo consiste nel salvare l&#39;output della query facendo clic sul pulsante **SALVA RISULTATI**.
 
-![demo](./images/ex3/13.png)
+![demo](./images/ex313.png)
 
 Come percorso per l&#39;output, selezionare **Tabella BigQuery**.
 
-![demo](./images/ex3/14.png)
+![demo](./images/ex314.png)
 
 Verrà quindi visualizzata una nuova finestra a comparsa in cui i valori **Nome progetto** e **Nome set di dati** sono precompilati. Il nome del set di dati deve essere il set di dati creato all’inizio di questo esercizio, con questa convenzione di denominazione:
 
 | Denominazione | Esempio |
 | ----------------- | ------------- | 
-| `--aepUserLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |
+| `--aepUserLdap--_BigQueryDataSet` | `vangeluw_BigQueryDataSet` |
 
 È ora necessario immettere il nome di una tabella. Utilizza questa convenzione per i nomi:
 
@@ -262,13 +261,13 @@ Verrà quindi visualizzata una nuova finestra a comparsa in cui i valori **Nome 
 | ----------------- |------------- | 
 | `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
 
-![demo](./images/ex3/16.png)
-
 Fai clic su **SALVA**.
+
+![demo](./images/ex316.png)
 
 La preparazione dei dati nella tabella creata potrebbe richiedere del tempo. Dopo alcuni minuti, aggiorna il browser. Dovresti quindi visualizzare all&#39;interno del set di dati la tabella `--aepUserLdap--_GAdataTableBigquery` in **Explorer** all&#39;interno del progetto BigQuery.
 
-![demo](./images/ex3/19.png)
+![demo](./images/ex319.png)
 
 Ora puoi continuare con l’esercizio successivo, in cui connetterai questa tabella a Adobe Experience Platform.
 

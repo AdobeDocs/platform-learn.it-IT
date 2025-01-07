@@ -4,16 +4,14 @@ description: Acquisire e analizzare i dati Google Analytics in Adobe Experience 
 kt: 5342
 doc-type: tutorial
 exl-id: b078d003-da25-44c5-b000-77e3b3188fb6
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
 
 # 4.2 Acquisire e analizzare i dati Google Analytics in Adobe Experience Platform con il connettore BigQuery Source
-
-**Autori: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 In questo modulo, configurerai la tua istanza di Google Cloud Platform, carica i dati di esempio in Google Cloud Platform e quindi utilizzerai il connettore BigQuery Source per acquisire tali dati da Google Cloud Platform in Adobe Experience Platform. Infine, utilizzerai il Customer Journey Analytics per visualizzare tali dati.
 
@@ -43,9 +41,9 @@ Inoltre, possiamo arricchire tale Google Analytics di dati unendola ad altre ori
 
 ## Esercizi
 
-[4.2.1 Creare l’account della piattaforma Google Cloud](./ex1.md)
+[4.2.1 Iniziare a utilizzare la piattaforma Google Cloud](./ex1.md)
 
-Crea il tuo account Google Cloud Platform.
+Inizia a utilizzare l’ambiente della piattaforma Google Cloud.
 
 [4.2.2 Creare la prima query in BigQuery](./ex2.md)
 

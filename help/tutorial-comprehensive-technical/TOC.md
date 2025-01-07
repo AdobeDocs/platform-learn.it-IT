@@ -5,9 +5,9 @@ user-guide-description: Un tutorial pratico che tratta molti aspetti di Adobe Ex
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b753a930bd2d81a14a97ef59c9ffc42991f0f3f6
+source-git-commit: ac55aa9e588655c5d68abf62bff62e748c13aaa1
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '916'
 ht-degree: 4%
 
 ---
@@ -149,7 +149,7 @@ ht-degree: 4%
       + [Riepilogo e vantaggi](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/summary.md)
    + 4.2 Customer Journey Analytics: inserire e analizzare i dati Google Analytics in Adobe Experience Platform con il connettore BigQuery Source {#module42}
       + [Panoramica](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md)
-      + [4.2.1 Creare l’account della piattaforma Google Cloud](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex1.md)
+      + [4.2.1 Iniziare a utilizzare la piattaforma Google Cloud](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex1.md)
       + [4.2.2 Creare la prima query in BigQuery](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex2.md)
       + [4.2.3 Collegare GCP e BigQuery a Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex3.md)
       + [4.2.4 Caricare dati da BigQuery in Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex4.md)

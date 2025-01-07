@@ -3,9 +3,10 @@ title: 'Acquisire e analizzare i dati Google Analytics in Adobe Experience Platf
 description: 'Acquisire e analizzare i dati Google Analytics in Adobe Experience Platform con il connettore BigQuery Source: analizzare i dati Google Analytics utilizzando il Customer Journey Analytics'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: bd42d049-e2f6-45a3-82fe-e2ee530a76d7
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '3338'
+source-wordcount: '3184'
 ht-degree: 2%
 
 ---
@@ -26,11 +27,7 @@ Vai a [analytics.adobe.com](https://analytics.adobe.com) per accedere al Custome
 
 Nella home page del Customer Journey Analytics, vai a **Connessioni**.
 
-![demo](./images/conn1.png)
-
 Qui puoi vedere tutte le diverse connessioni effettuate tra CJA e Platform. Queste connessioni hanno lo stesso obiettivo delle suite di rapporti in Adobe Analytics. Tuttavia, la raccolta dei dati è totalmente diversa. Tutti i dati provengono dai set di dati di Adobe Experience Platform.
-
-![demo](./images/2.png)
 
 Fare clic su **Crea nuova connessione**.
 
@@ -40,71 +37,45 @@ Verrà visualizzata l&#39;interfaccia utente **Crea connessione**.
 
 ![demo](./images/5.png)
 
-Innanzitutto, devi selezionare la sandbox corretta da utilizzare. Nel menu sandbox, seleziona la sandbox, che dovrebbe essere `--aepSandboxName--`. In questo esempio, la sandbox da utilizzare è **AEP Enablement FY21**.
+Per il nome, utilizzare: `--aepUserLdap-- - GA + Loyalty Data Connection`.
 
-![demo](./images/cjasb.png)
+Devi selezionare la sandbox corretta da utilizzare. Nel menu sandbox, seleziona la sandbox, che dovrebbe essere `--aepSandboxName--`. In questo esempio, la sandbox da utilizzare è **Tech Insiders**.
 
-Dopo aver selezionato la sandbox, i set di dati disponibili verranno aggiornati.
+Impostare il **numero medio di eventi giornalieri** su **meno di 1 milione**.
 
-![demo](./images/cjasb1.png)
-
-Nel menu a sinistra puoi visualizzare tutti i set di dati di Adobe Experience Platform disponibili. Cercare il set di dati `Demo System - Event Dataset for BigQuery (Global v1.1)`. Fai clic su **+** per aggiungere il set di dati a questa connessione.
+Nel menu del set di dati, ora puoi iniziare ad aggiungere set di dati. Fare clic su **Aggiungi set di dati**.
 
 ![demo](./images/6.png)
 
-Dopo averlo aggiunto, il set di dati verrà visualizzato all’interno della connessione.
+I set di dati da aggiungere sono:
+- `Demo System - Profile Dataset for CRM (Global v1.1)`
+- `Demo System - Event Dataset for BigQuery (Global v1.1)`
 
-Ora devi selezionare l&#39;**ID persona**. Verifica che **loyaltyId** sia selezionato come ID persona.
+Cerca entrambi i set di dati, seleziona la relativa casella di controllo e fai clic su **Avanti**.
+
+![demo](./images/d1.png)
+
+A questo punto viene visualizzato quanto segue:
 
 ![demo](./images/8.png)
 
-Ora arricchirai i dati di interazione del sito web Google Analytics con un altro set di dati Adobe Experience Platform.
+Per il set di dati `Demo System - Event Dataset for BigQuery (Global v1.1)`, modificare **ID persona** in **ID fedeltà** e impostare il **tipo origine dati** in **Dati Web**. Abilita entrambe le opzioni per **Importa tutti i nuovi dati** e **Recupera tutti i dati esistenti**.
 
-Cercare il set di dati `Demo System - Profile Dataset for Loyalty (Global v1.1)` e aggiungerlo a questa connessione.
+![demo](./images/d2.png)
 
-![demo](./images/10.png)
+Per il set di dati `Demo System - Event Dataset for BigQuery (Global v1.1)`, verificare che l&#39;**ID persona** sia impostato su **crmId** e impostare il **tipo di origine dati** su **Dati Web**. Abilita entrambe le opzioni per **Importa tutti i nuovi dati** e **Recupera tutti i dati esistenti**. Fare clic su **Aggiungi set di dati**.
 
-A questo punto viene visualizzato quanto segue:
+![demo](./images/d3.png)
 
-![demo](./images/10a.png)
+Allora sarai qui. Fai clic su **Salva**.
 
-Per unire entrambi i set di dati, devi selezionare un **ID persona** che contiene lo stesso tipo di ID. Il set di dati `Demo System - Profile Dataset for Loyalty (Global v1.1)` utilizza **loyaltyId** come ID persona, che contiene lo stesso tipo di ID di `Demo System - Event Dataset for BigQuery (Global v1.1)`, che utilizza anche **loyaltyId** come ID persona.
-
-![demo](./images/12.png)
-
-Fai clic su **Avanti**.
-
-![demo](./images/14.png)
-
-A questo punto viene visualizzato quanto segue:
-
-![demo](./images/15.png)
-
-In questo caso è necessario assegnare un nome alla connessione.
-
-Utilizzare questa convenzione di denominazione: `ldap - GA + Loyalty Data Connection`.
-
-Esempio: `vangeluw - GA + Loyalty Data Connection`
-
-Prima di terminare, attivare anche **Importa automaticamente tutti i nuovi dati per tutti i set di dati in questa connessione, a partire da oggi.** come nell&#39;immagine seguente.
-
-![demo](./images/16.png)
-
-Inizierà un flusso di dati da Adobe Experience Platform a CJA ogni 60 minuti, tuttavia con volumi elevati di dati può richiedere fino a 24 ore.
-
-È inoltre necessario eseguire la retrocompilazione dei dati storici, quindi selezionare la casella di controllo **Importa tutti i dati esistenti** e selezionare **meno di 1 milione** in **Numero medio di eventi giornalieri**.
-
-![demo](./images/17.png)
+![demo](./images/d4.png)
 
 Dopo aver creato la **connessione**, potrebbero essere necessarie alcune ore prima che i dati siano disponibili in CJA.
 
-Fai clic su **Salva** e passa all&#39;esercizio successivo.
-
-![demo](./images/cjasave.png)
-
 La connessione verrà quindi visualizzata nell&#39;elenco delle connessioni disponibili.
 
-![demo](./images/18.png)
+![demo](./images/d5.png)
 
 ## 4.2.5.2 Creare una visualizzazione dati
 
@@ -120,13 +91,9 @@ Se desideri che la tua azienda diventi basata sui dati, devi adattare il modo in
 - Per i KPI e le metriche per la Google Analytics utilizza gli stessi nomi utilizzati per il Customer Journey Analytics, in modo che il team di analisi digitale possa parlare una sola lingua.
 - visualizzazione dati filtrata per mostrare, ad esempio, i dati per 1 solo mercato, 1 marchio o solo per dispositivi mobili.
 
-Nella schermata **Connessioni**, seleziona la casella di controllo davanti alla connessione appena creata.
+Nella schermata **Connessioni**, seleziona la casella di controllo davanti alla connessione appena creata. Fare clic su **Crea visualizzazione dati**.
 
 ![demo](./images/exta.png)
-
-Fare clic su **Crea visualizzazione dati**.
-
-![demo](./images/extb.png)
 
 Verrai reindirizzato al flusso di lavoro **Crea visualizzazione dati**.
 
@@ -134,26 +101,23 @@ Verrai reindirizzato al flusso di lavoro **Crea visualizzazione dati**.
 
 Ora puoi configurare le definizioni di base per la visualizzazione dati. Cose come Fuso orario, Timeout sessione o il filtro della visualizzazione dati (la parte di segmentazione simile alle suite di rapporti virtuali in Adobe Analytics).
 
-La **connessione** creata nell&#39;esercizio precedente è già selezionata. La connessione si chiama `ldap - GA + Loyalty Data Connection`.
+La **connessione** creata nell&#39;esercizio precedente è già selezionata. La connessione si chiama `--aepUserLdap-- - GA + Loyalty Data Connection`.
 
-![demo](./images/ext5.png)
+Assegnare quindi un nome alla visualizzazione dati seguendo questa convenzione di denominazione: `--aepUserLdap-- - GA + Loyalty Data View`.
 
-Assegnare quindi un nome alla visualizzazione dati seguendo questa convenzione di denominazione: `ldap - GA + Loyalty Data View`.
-
-Immettere lo stesso valore per la descrizione: `ldap - GA + Loyalty Data View`.
+Immettere lo stesso valore per la descrizione: `--aepUserLdap-- - GA + Loyalty Data View`.
 
 Prima di eseguire un’analisi o una visualizzazione è necessario creare una visualizzazione dati con tutti i campi, le dimensioni e le metriche e le relative impostazioni di attribuzione.
 
-| Campo | Convenzione di denominazione | Esempio |
-| ----------------- |-------------|-------------|  
-| Nome connessione | ldap - GA + Visualizzazione dati fedeltà | vangeluw - GA + Visualizzazione dati fedeltà |
-| Descrizione | ldap - GA + Visualizzazione dati fedeltà | vangeluw - GA + Visualizzazione dati fedeltà |
-
-![demo](./images/22.png)
+| Campo | Convenzione di denominazione |
+| ----------------- |-------------|  
+| Nome connessione | `--aepUserLdap-- - GA + Loyalty Data View` | vangeluw - GA + Visualizzazione dati fedeltà |
+| Descrizione | `--aepUserLdap-- - GA + Loyalty Data View` |
+| ID esterno | `--aepUserLdap--GA` |
 
 Fai clic su **Salva e continua**.
 
-![demo](./images/23.png)
+![demo](./images/22.png)
 
 Ora puoi aggiungere componenti alla visualizzazione dati. Come puoi vedere, alcune metriche e dimensioni vengono aggiunte automaticamente.
 
