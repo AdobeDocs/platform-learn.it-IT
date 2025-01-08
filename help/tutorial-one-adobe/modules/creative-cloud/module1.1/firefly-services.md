@@ -3,10 +3,11 @@ title: 1.1 Servizi di Adobe Firefly
 description: Servizi Adobe Firefly
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1077ada5423cde76d1dd337e8a4f8f83324a8853
+exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
+source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 3%
+source-wordcount: '139'
+ht-degree: 2%
 
 ---
 
@@ -23,6 +24,10 @@ ht-degree: 3%
 ## Esercizi
 
 [1.1.1 Introduzione ai servizi di Firefly](./ex1.md)
+
+In questo esercizio, esplora i servizi di Firefly e scopri le funzionalità.
+
+[1.1.2 Ottimizzare il processo di Firefly utilizzando Microsoft Azure e gli URL prefirmati](./ex2.md)
 
 In questo esercizio, esplora i servizi di Firefly e scopri le funzionalità.
 
