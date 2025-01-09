@@ -4,9 +4,9 @@ description: Guida introduttiva ai servizi di Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
+source-git-commit: 6c344db00b8296c8ea6d31c83cefd8edcddb51b1
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1114'
 ht-degree: 1%
 
 ---
@@ -119,13 +119,13 @@ Apri **Contenitori BLOB** e fai clic sul contenitore creato nell&#39;esercizio p
 
 ![Archiviazione Azure](./images/az18.png)
 
-## 1.1.2.4 Caricamento manuale dei file e utilizzo di un file con sfumatura come riferimento di stile
+## 1.1.2.4 Caricamento manuale dei file e utilizzo di un file di immagine come riferimento di stile
 
-Ora devi caricare un file sfumato nel contenitore. È possibile utilizzare qualsiasi file sfumato oppure [questo file](./images/gradient.jpg) scaricandolo nel computer.
+Ora devi caricare un file di immagine di tua scelta nel contenitore. Puoi utilizzare qualsiasi file di immagine, oppure puoi utilizzare [questo file](./images/gradient.jpg) scaricandolo dal computer.
 
 ![Archiviazione Azure](./images/gradient.jpg)
 
-Rilascia il file sfumato nel contenitore in Azure Storage Explorer.
+Rilascia il file di immagine nel contenitore in Azure Storage Explorer.
 
 Una volta caricato, lo visualizzerai nel tuo contenitore:
 
@@ -147,7 +147,7 @@ Torna a Postman. Apri la richiesta **POST - Firefly - T2I (styleref) V3**. Visua
 
 ![Archiviazione Azure](./images/az23.png)
 
-Sostituire l&#39;URL segnaposto con l&#39;URL preceduto del file sfumato copiato da Azure Storage Explorer. Allora avrai questo. Fai clic su **Invia**.
+Sostituire l&#39;URL segnaposto con l&#39;URL preceduto del file immagine copiato da Azure Storage Explorer. Allora avrai questo. Fai clic su **Invia**.
 
 ![Archiviazione Azure](./images/az24.png)
 
@@ -155,7 +155,7 @@ Riceverai quindi di nuovo una risposta da Servizi di Firefly, con una nuova imma
 
 ![Archiviazione Azure](./images/az25.png)
 
-Verrà quindi visualizzata un&#39;altra immagine con `horses in a field`, ma questa volta lo stile sarà simile al file di sfumatura fornito come riferimento di stile.
+Verrà quindi visualizzata un&#39;altra immagine con `horses in a field`, ma questa volta lo stile sarà simile al file di immagine fornito come riferimento di stile.
 
 ![Archiviazione Azure](./images/az26.png)
 
@@ -195,7 +195,7 @@ Quindi, fai clic su **Corpo**.
 
 ![Archiviazione Azure](./images/az31.png)
 
-Ora dovrai selezionare un file dal computer locale. Puoi utilizzare un nuovo file di immagine oppure un altro file di sfumatura che puoi trovare [qui](./images/gradient2-p.jpg).
+Ora dovrai selezionare un file dal computer locale. Puoi utilizzare un nuovo file di immagine oppure un altro file di immagine che puoi trovare [qui](./images/gradient2-p.jpg).
 
 ![File sfumatura](./images/gradient2-p.jpg)
 
@@ -223,7 +223,10 @@ Il nome di file da utilizzare è `gradient2-p.jpg`, il che significa che l&#39;U
 
 Quindi, vai a **Intestazioni** dove devi aggiungere manualmente una nuova intestazione. Utilizza questo:
 
-BlockBlob di tipo x-ms-blob
+| Chiave | Valore |
+|:-------------:| :---------------:| 
+| `x-ms-blob-type` | `BlockBlob` |
+
 
 ![Archiviazione Azure](./images/az35.png)
 
@@ -238,6 +241,27 @@ Vedrai quindi questa risposta vuota in Postman, il che significa che il caricame
 Se poi torni ad Azure Storage Explorer e aggiorni il contenuto della cartella, ora troverai il file appena caricato lì.
 
 ![Archiviazione Azure](./images/az38.png)
+
+## 1.1.2.5 Utilizzo di file programmatici
+
+Per utilizzare i file letti a livello di programmazione dagli account di archiviazione di Azure, è necessario creare un nuovo token di **firma di accesso condiviso (SAS)**, con autorizzazioni che consentono di leggere un file. Tecnicamente puoi utilizzare il token SAS creato nell&#39;esercizio precedente, ma è consigliabile disporre di un token separato con sole autorizzazioni **Lettura**.
+
+Per farlo, torna ad Azure Storage Explorer. Fare clic con il pulsante destro del mouse sul contenitore e quindi scegliere **Ottieni firma di accesso condiviso**.
+
+![Archiviazione Azure](./images/az27.png)
+
+In **Autorizzazioni** sono necessarie le seguenti autorizzazioni:
+
+- **Letto**
+- **Aggiungi**
+- **Crea**
+- **Scrittura**
+- **Elenco**
+
+Fai clic su **Crea**.
+
+![Archiviazione Azure](./images/az28.png)
+
 
 Passaggio successivo: [1.1.3 ...](./ex3.md)
 
