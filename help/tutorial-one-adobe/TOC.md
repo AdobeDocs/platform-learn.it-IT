@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial tecnico completo per applicazioni Adobe, da Creative 
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 89611537cad42082af1b9aa753752d5450f103a5
+source-git-commit: cd7601002c7d18232fdd2e8e68cbc4315e118948
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '135'
 ht-degree: 7%
 
 ---
@@ -31,6 +31,7 @@ ht-degree: 7%
       + [Panoramica](/help/tutorial-one-adobe/modules/csc/module2.1/aemcs.md)
       + [2.1.1 Creare un programma Cloud Manager](/help/tutorial-one-adobe/modules/csc/module2.1/ex1.md)
       + [2.1.2 Configurare l’ambiente AEM CS](/help/tutorial-one-adobe/modules/csc/module2.1/ex2.md)
+      + [2.1.3 Sviluppare un blocco personalizzato](/help/tutorial-one-adobe/modules/csc/module2.1/ex3.md)
       + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/csc/module2.1/summary.md)
    + 2.2 Workfront {#module22}
       + [Panoramica](/help/tutorial-one-adobe/modules/csc/module2.2/workfront.md)
