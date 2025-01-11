@@ -5,9 +5,9 @@ user-guide-description: Scopri i numerosi componenti di Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: c49c3d4cdfd4fcfc930332a25b9fd5d5356e1004
+source-git-commit: f64623255c045396799d0d627f199ce59c794d70
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '958'
 ht-degree: 17%
 
 ---
@@ -49,8 +49,13 @@ ht-degree: 17%
 + Assistente IA {#ai-assistant}
    + [Panoramica](/help/platform/ai-assistant/overview.md)
    + [Configurare l’accesso](/help/platform/ai-assistant/access.md)
-   + [Pulizia dei tipi di pubblico](/help/platform/ai-assistant/find-unused-audiences.md)
    + [Integrazione con un nuovo prodotto](/help/platform/ai-assistant/onboard.md)
+   + [Scopri i prodotti](/help/platform/ai-assistant/product-knowledge.md)
+   + [Convalida risposte](/help/platform/ai-assistant/validate-responses.md)
+   + [Pannello Reperibilità](/help/platform/ai-assistant/discoverability-panel.md)
+   + [Trovare tipi di pubblico non utilizzati](/help/platform/ai-assistant/find-unused-audiences.md)
+   + [Analisi dell&#39;impatto](/help/platform/ai-assistant/impact-analysis.md)
+   + [Panoramica sulla sicurezza](/help/platform/ai-assistant/security-overview.md)
 + Tipi di pubblico e segmentazione {#audiences}
    + [Introduzione a Audience Portal e Composizione](audiences/introduction-to-audience-portal-and-composition.md)
    + [Carica tipi di pubblico](audiences/upload-audiences.md)
@@ -110,7 +115,7 @@ ht-degree: 17%
    + [Trasferire in streaming i dati con l’API HTTP](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=it)
    + [Trasmettere i dati utilizzando i connettori di origini](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=it)
    + [Esercitazioni Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
-   + [Esercitazioni SDK per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
+   + [Esercitazioni di Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
 + Ciclo di vita dati {#data-lifecycle}
    + [Set di dati in scadenza](/help/platform/data-lifecycle/expire-datasets.md)
 + Data Science Workspace {#data-science-workspace}
