@@ -2,9 +2,10 @@
 title: Panoramica - Tutorial tecnico completo - Un Adobe
 description: Tutorial tecnico completo, un Adobe
 doc-type: multipage-overview
-source-git-commit: b1bb17bfe451c67903424bd8da6716d0ad1c2cd3
+exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
+source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '302'
 ht-degree: 4%
 
 ---
@@ -62,8 +63,12 @@ In questo modulo di base, utilizzerai Adobe Firefly per ...
 
 In questo modulo di base, configurerai il programma di Cloud Service Adobe Experience Manager, il sito e l’archivio Assets.
 
+[2.2 Adobe Workfront](./modules/csc/module2.2/workfront.md)
+
+In questo modulo di base, configurerai il programma di Cloud Service Adobe Experience Manager, il sito e l’archivio Assets.
+
 ### 3. Esperienza cliente unificata
 
-[3.1 Adobe Real-Time CDP](./modules/uce/module3.1/rtcdp.md)
+[3.1 Federated Audience Composition](./modules/uce/module3.1/fac.md)
 
 In questo modulo fondamentale scoprirai le funzionalità di raccolta dati di Adobe Experience Platform e la nuova estensione Web SDK.
