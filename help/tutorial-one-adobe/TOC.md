@@ -4,10 +4,10 @@ breadcrumb-title: Tutorial tecnico completo per applicazioni Adobe, da Creative 
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 1229a57730076c49adcbc168b5d73f92ad7581c9
+source-git-commit: 4e8e8cbd58b88de43bb7e662f81572a3a1a2e1e2
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 6%
+source-wordcount: '186'
+ht-degree: 5%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 6%
       + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
    + 1.2 Automazione dei servizi Adobe Firefly {#module21}
       + [Panoramica](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/automation.md)
-      + [1.2.1 Introduzione ai servizi di Firefly](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex1.md)
-      + [1.2.2 ...](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex2.md)
+      + [1.2.1 Guida introduttiva di Workfront Fusion](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex1.md)
+      + [1.2.2 Utilizzare le API di Adobe in Workfront Fusion](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex2.md)
       + [1.2.3 ...](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex3.md)
       + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/summary.md)
 
