@@ -4,9 +4,9 @@ description: Guida introduttiva ai servizi di Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: 23ebf8b4-3f16-474c-afe1-520d88331417
-source-git-commit: a0c16a47372d322a7931578adca30a246b537183
+source-git-commit: c5d015fee3650d9c5a154f0b1374d27b20d2ea42
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '1759'
 ht-degree: 2%
 
 ---
@@ -218,7 +218,227 @@ Dovresti avere questo.
 
 ![WF Fusion](./images/wffusion74.png)
 
-Passaggio successivo: [1.2.3 ...](./ex3.md)
+Fare clic su **Esegui una volta**.
+
+![WF Fusion](./images/wffusion75.png)
+
+Fai clic sull&#39;icona **ricerca** nel nodo **Testo di modifica di Photoshop** per visualizzare la risposta. Dovresti avere una risposta simile a questa, con un collegamento a un file di stato.
+
+![WF Fusion](./images/wffusion76.png)
+
+Prima di continuare con le interazioni API di Photoshop, disabilitiamo la route al nodo **Firefly T2I** per non inviare chiamate API non necessarie a tale endpoint API. Fare clic sull&#39;icona **chiave inglese**, quindi selezionare **Disattiva route**.
+
+![WF Fusion](./images/wffusion77.png)
+
+Dovresti avere questo.
+
+![WF Fusion](./images/wffusion78.png)
+
+Quindi, aggiungere un altro nodo **Imposta più variabili**.
+
+![WF Fusion](./images/wffusion79.png)
+
+Inseriscilo dopo il nodo **Testo modifica Photoshop**.
+
+![WF Fusion](./images/wffusion80.png)
+
+Fai clic sul nodo **Imposta più variabili**, quindi seleziona **Aggiungi elemento**. Seleziona il valore della variabile dalla risposta della richiesta precedente.
+
+| Nome variabile | Valore variabile |
+|:-------------:| :---------------:| 
+| `psdStatusUrl` | `data > _links > self > href` |
+
+Fai clic su **Aggiungi**.
+
+![WF Fusion](./images/wffusion81.png)
+
+Fai clic su **OK**.
+
+![WF Fusion](./images/wffusion82.png)
+
+Fare clic con il pulsante destro del mouse sul nodo **Testo modifica Photoshop** e selezionare **Clona**.
+
+![WF Fusion](./images/wffusion83.png)
+
+Trascina la richiesta HTTP clonata dopo il nodo **Imposta più variabili** appena creato.
+
+![WF Fusion](./images/wffusion83.png)
+
+Fai clic con il pulsante destro del mouse sulla richiesta HTTP clonata, seleziona **Rinomina** e cambia il nome in **Stato controllo Photoshop**.
+
+![WF Fusion](./images/wffusion84.png)
+
+Fai clic su per aprire la richiesta HTTP. Modificare l&#39;URL in modo che faccia riferimento alla variabile creata nel passaggio precedente e impostare il **Metodo** su **GET**.
+
+![WF Fusion](./images/wffusion85.png)
+
+Rimuovi **Corpo** selezionando l&#39;opzione vuota.
+
+![WF Fusion](./images/wffusion86.png)
+
+Fai clic su **OK**.
+
+![WF Fusion](./images/wffusion87.png)
+
+Fare clic su **Esegui una volta**.
+
+![WF Fusion](./images/wffusion88.png)
+
+Dovresti quindi ricevere una risposta che contiene il campo **status**, con lo stato impostato su **running**. Photoshop impiega un paio di secondi per completare il processo.
+
+![WF Fusion](./images/wffusion89.png)
+
+Ora che sai che la risposta richiede un po’ più di tempo per essere completata, potrebbe essere una buona idea aggiungere un timer prima di questa richiesta HTTP in modo che non venga eseguita immediatamente.
+
+Fai clic sul nodo **Strumenti**, quindi seleziona **Sospendi**.
+
+![WF Fusion](./images/wffusion90.png)
+
+Posizionare il nodo **Sospendi** tra **Impostare più variabili** e **Stato controllo Photoshop**. Imposta **Delay** su **5** secondi. Fai clic su **OK**.
+
+![WF Fusion](./images/wffusion91.png)
+
+Allora avrai questo. La sfida con la configurazione seguente è che 5 secondi di attesa possono essere sufficienti, ma forse non lo sono. In realtà, sarebbe meglio avere una soluzione più intelligente come un ciclo do...while che controlla lo stato ogni 5 secondi fino a quando lo stato non è uguale a **success**. Ora implementerai questa tattica nei passaggi successivi.
+
+![WF Fusion](./images/wffusion92.png)
+
+Fai clic sull&#39;icona **chiave inglese** tra **Imposta più variabili** e **Sospendi**. Seleziona **Aggiungi modulo**.
+
+![WF Fusion](./images/wffusion93.png)
+
+Cercare `flow`, quindi selezionare **Controllo flusso**.
+
+![WF Fusion](./images/wffusion94.png)
+
+Seleziona **Ripetitore**.
+
+![WF Fusion](./images/wffusion95.png)
+
+Imposta **Repeats** su **20**. Fai clic su **OK**.
+
+![WF Fusion](./images/wffusion96.png)
+
+Fare clic su **+** in **Stato controllo Photoshop** per aggiungere un altro modulo.
+
+![WF Fusion](./images/wffusion97.png)
+
+Cerca **flusso** e seleziona **Controllo flusso**.
+
+![WF Fusion](./images/wffusion98.png)
+
+Selezionare **Aggregatore Array**.
+
+![WF Fusion](./images/wffusion99.png)
+
+Imposta **Modulo Source** su **Ripetitore**. Selezionare **OK**.
+
+![WF Fusion](./images/wffusion100.png)
+
+A questo punto dovresti avere:
+
+![WF Fusion](./images/wffusion101.png)
+
+Fai clic sull&#39;icona **chiave inglese** e seleziona **Aggiungi modulo**.
+
+![WF Fusion](./images/wffusion102.png)
+
+Cerca **strumenti** e seleziona **Strumenti**.
+
+![WF Fusion](./images/wffusion103.png)
+
+Selezionare **Ottieni più variabili**.
+
+![WF Fusion](./images/wffusion104.png)
+
+Fare clic su **+ Aggiungi elemento** e impostare **Nome variabile** su `done`.
+
+![WF Fusion](./images/wffusion105.png)
+
+Fai clic su **OK**.
+
+![WF Fusion](./images/wffusion106.png)
+
+Fare clic sul nodo **Imposta più variabili** configurato in precedenza. Per inizializzare la variabile **done**, è necessario impostarla qui su `false`. Fare clic su **+ Aggiungi elemento**.
+
+![WF Fusion](./images/wffusion107.png)
+
+Per **Nome variabile**, utilizzare `done`. Per impostare lo stato, è necessario un valore booleano. Per trovare il valore booleano, fai clic sull&#39;icona **ingranaggio**, quindi seleziona `false`. Fai clic su **Aggiungi**.
+
+![WF Fusion](./images/wffusion108.png)
+
+Fai clic su **OK**.
+
+![WF Fusion](./images/wffusion109.png)
+
+Quindi, fai clic sull&#39;icona **chiave inglese** dopo il nodo **Get multiple variables** configurato.
+
+![WF Fusion](./images/wffusion110.png)
+
+Selezionare **Configura filtro**. È ora necessario controllare il valore della variabile **done**. Se tale valore è impostato su **false**, è necessario eseguire la parte successiva del ciclo. Se il valore è impostato su **true**, significa che il processo è già stato completato correttamente, quindi non è necessario continuare con la parte successiva del ciclo.
+
+![WF Fusion](./images/wffusion111.png)
+
+Per l&#39;etichetta, utilizzare **L&#39;operazione è completata?**. Imposta **Condition** utilizzando la variabile già esistente **done**. L&#39;operatore deve essere impostato su **Equal to** e il valore deve essere la variabile booleana `false`. Fai clic su **OK**.
+
+![WF Fusion](./images/wffusion112.png)
+
+Fare quindi spazio tra i nodi **Stato controllo Photoshop** e **Aggregatore array**. Quindi fare clic sull&#39;icona **chiave inglese** e selezionare **Aggiungi router**. Stai effettuando questa operazione perché dopo aver controllato lo stato del file Photoshop, dovrebbero essere presenti 2 percorsi. Se lo stato è `succeeded`, la variabile di **done** deve essere impostata su `true`. Se lo stato non è uguale a `succeeded`, il ciclo deve continuare. Il router consentirà di controllare e impostare questo valore.
+
+![WF Fusion](./images/wffusion113.png)
+
+Dopo aver aggiunto il router, fare clic sull&#39;icona **chiave inglese** e selezionare **Configura filtro**.
+
+![WF Fusion](./images/wffusion114.png)
+
+Per l&#39;etichetta, utilizzare **Operazione completata**. Imposta la **condizione** utilizzando la risposta del nodo **Stato controllo Photoshop** scegliendo il campo di risposta **dati.output[].stato**. L&#39;operatore deve essere impostato su **Uguale a** e il valore deve essere `succeeded`. Fai clic su **OK**.
+
+![WF Fusion](./images/wffusion115.png)
+
+Quindi, fai clic sul nodo vuoto con il punto interrogativo e cerca **strumenti**. Quindi, seleziona **Strumenti**.
+
+![WF Fusion](./images/wffusion116.png)
+
+Selezionare **Imposta più variabili**.
+
+![WF Fusion](./images/wffusion117.png)
+
+Quando si utilizza questo ramo del router, lo stato della creazione del file Photoshop è stato completato correttamente. Ciò significa che il ciclo do...while non deve più continuare a controllare lo stato in Photoshop, pertanto è necessario impostare la variabile `done` su `true`.
+
+Per **Nome variabile**, utilizzare `done`. Per il **valore di variabile**, è necessario utilizzare il valore booleano `true`. Fai clic sull&#39;icona **ingranaggio**, quindi seleziona `true`. Fai clic su **Aggiungi**.
+
+![WF Fusion](./images/wffusion118.png)
+
+Fai clic su **OK**.
+
+![WF Fusion](./images/wffusion119.png)
+
+Fare clic con il pulsante destro del mouse sul nodo **Imposta più variabili** appena creato e selezionare **Clona**.
+
+![WF Fusion](./images/wffusion120.png)
+
+Trascinare il nodo clonato in modo che si connetta con l&#39;**aggregatore di matrici**. Quindi fare clic con il pulsante destro del mouse sul nodo e selezionare **Rinomina**, quindi modificare il nome in `Placeholder End`.
+
+![WF Fusion](./images/wffusion122.png)
+
+Rimuovere la variabile esistente e fare clic su **+ Aggiungi elemento**. Per **Nome variabile**, utilizzare `placeholder`, per **Valore variabile**, utilizzare `end`. Fare clic su **Aggiungi** e quindi su **OK**.
+
+![WF Fusion](./images/wffusion123.png)
+
+Fai clic su **Salva** per salvare lo scenario. Fare clic su **Esegui una volta**.
+
+![WF Fusion](./images/wffusion124.png)
+
+Lo scenario verrà quindi eseguito e dovrebbe essere completato correttamente. Noterai che il ciclo do...while configurato ha funzionato correttamente. Nell&#39;esecuzione seguente, è possibile vedere che il **Repeater** è stato eseguito 20 volte in base alla bolla nel nodo **Tools > Get multiple variables**. Dopo tale nodo, hai configurato un filtro che controllava lo stato e solo se lo stato non era uguale a **completato**, sono stati eseguiti i nodi successivi. In questa esecuzione, la parte dopo il filtro è stata eseguita una sola volta, perché lo stato era già **riuscito** nella prima esecuzione.
+
+![WF Fusion](./images/wffusion125.png)
+
+Puoi verificare lo stato della creazione del nuovo file Photoshop facendo clic sul fumetto nella richiesta HTTP **Photoshop Check Status** ed eseguendo l&#39;espansione al campo **status**.
+
+![WF Fusion](./images/wffusion126.png)
+
+Ora hai configurato la versione di base di uno scenario ripetibile che automatizza una serie di passaggi. Nell&#39;esercizio successivo, verrà eseguita un&#39;iterazione aggiungendo complessità.
+
+Passaggio successivo: [1.2.3 Automazione dei processi con Workfront Fusion](./ex3.md)
 
 [Torna al modulo 1.2](./automation.md)
 

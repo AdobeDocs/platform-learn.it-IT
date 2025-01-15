@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial tecnico completo per applicazioni Adobe, da Creative 
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 4e8e8cbd58b88de43bb7e662f81572a3a1a2e1e2
+source-git-commit: 7b88a325bcf827f951f400f310dec4fcb394fb42
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '191'
 ht-degree: 5%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 5%
       + [Panoramica](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/automation.md)
       + [1.2.1 Guida introduttiva di Workfront Fusion](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex1.md)
       + [1.2.2 Utilizzare le API di Adobe in Workfront Fusion](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex2.md)
-      + [1.2.3 ...](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex3.md)
+      + [1.2.3 Automazione dei processi con Workfront Fusion](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex3.md)
       + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/summary.md)
 
 + 2 catena di fornitura dei contenuti {#csc}
