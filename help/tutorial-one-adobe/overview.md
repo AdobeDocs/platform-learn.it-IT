@@ -3,9 +3,9 @@ title: Panoramica - Tutorial tecnico completo - Un Adobe
 description: Tutorial tecnico completo, un Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
+source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '342'
 ht-degree: 4%
 
 ---
@@ -32,6 +32,7 @@ Questo tutorial non si concentra solo sulle applicazioni Adobe, ma tiene conto d
 - Piattaforma Google Cloud
 - Microsoft Azure
 - Postman
+- Snowflake
 - ...
 
 Dopo aver completato gli esercizi in questa esercitazione, sarai in grado di:
@@ -55,7 +56,11 @@ Se desideri seguire questo tutorial utilizzando la tua istanza di Adobe Experien
 
 [1.1 Servizi di Adobe Firefly](./modules/creative-cloud/module1.1/firefly-services.md)
 
-In questo modulo di base, utilizzerai Adobe Firefly per ...
+In questo modulo verranno utilizzate le API di Adobe Firefly Services, le API di Photoshop e i servizi di archiviazione di Microsoft Azure per generare immagini e memorizzarle a livello di programmazione.
+
+[1.2 Automazione dei flussi di lavoro creativi con Workfront Fusion](./modules/creative-cloud/module1.2/automation.md)
+
+In questo modulo fondamentale utilizzerai Adobe Workfront Fusion per automatizzare e scalare i flussi di lavoro di creazione dei contenuti.
 
 ### 2. Catena di fornitura dei contenuti
 
