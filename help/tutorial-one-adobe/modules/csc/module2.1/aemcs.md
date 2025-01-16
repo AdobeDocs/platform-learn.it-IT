@@ -1,17 +1,17 @@
 ---
-title: 2.1 Cloud Service Adobe Experience Manager
-description: Cloud Service Adobe Experience Manager
+title: CLOUD SERVICE e EDGE DELIVERY SERVICES ADOBE EXPERIENCE MANAGER
+description: CLOUD SERVICE e EDGE DELIVERY SERVICES ADOBE EXPERIENCE MANAGER
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 2%
+source-wordcount: '201'
+ht-degree: 1%
 
 ---
 
-# 2.1 Cloud Service Adobe Experience Manager
+# 2.1 Cloud Service e Edge Delivery Services Adobe Experience Manager
 
 ## Finalità di apprendimento
 

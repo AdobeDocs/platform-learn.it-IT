@@ -3,7 +3,8 @@ title: Firefly Services Automation - Riepilogo
 description: Firefly Services Automation - Riepilogo
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1229a57730076c49adcbc168b5d73f92ad7581c9
+exl-id: 96c76fac-9acb-44ac-9534-546dc635ff73
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 2%
@@ -16,11 +17,9 @@ Congratulazioni e grazie per aver dedicato il tuo tempo all&#39;apprendimento de
 
 ## Vantaggi
 
-Evidenziamo i vantaggi dell&#39;utilizzo dei servizi di Firefly...
-
+Evidenziamo i vantaggi dell’utilizzo di Workfront Fusion.
 
 ## Guarda qui
-
 
 [Torna al modulo 1.2](./automation.md)
 

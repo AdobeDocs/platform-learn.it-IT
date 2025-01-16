@@ -4,10 +4,10 @@ breadcrumb-title: Tutorial tecnico completo per applicazioni Adobe, da Creative 
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 0c89770961c1f0c46685233b5446223c9ff2bc13
+source-git-commit: ad36efe6c3a590ddc79c39f6d7511e31b51f9dcb
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 5%
+source-wordcount: '305'
+ht-degree: 4%
 
 ---
 
@@ -15,9 +15,17 @@ ht-degree: 5%
 # Tutorial tecnico completo, un Adobe {#tutorial-one-adobe}
 
 + [Panoramica del tutorial](/help/tutorial-one-adobe/overview.md)
++ [Stato contenuto](/help/tutorial-one-adobe/status.md)
 
 + Introduzione {#gettingstarted}
-   + [Introduzione](/help/tutorial-one-adobe/modules/getting-started/getting-started.md)
+   + Introduzione {#gettingstarted}
+      + [Panoramica](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/getting-started.md)
+      + [Installa l’estensione Chrome per la documentazione di Experience League](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex1.md)
+      + [Utilizza Demo System Next per configurare la proprietà client di Adobe Experience Platform Data Collection](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
+      + [Creare lo stream di dati](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
+      + [Utilizza il sito web](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
+      + [Utilizzare l’app mobile](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
+
 + 1 Adobe Creative Cloud {#creativecloud}
    + 1.1 Servizi Adobe Firefly {#module11}
       + [Panoramica](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
@@ -53,4 +61,17 @@ ht-degree: 5%
       + [3.1.2 Creare schemi, modelli di dati e collegamenti](/help/tutorial-one-adobe/modules/uce/module3.1/ex2.md)
       + [3.1.3 Creare una composizione federata](/help/tutorial-one-adobe/modules/uce/module3.1/ex3.md)
       + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/uce/module3.1/summary.md)
+   + 3.2 Adobe Journey Optimizer: Servizi di traduzione {#module32}
+      + [Panoramica](/help/tutorial-one-adobe/modules/uce/module3.2/ajotranslationsvcs.md)
+      + [3.2.1 ...](/help/tutorial-one-adobe/modules/uce/module3.2/ex1.md)
+      + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/uce/module3.2/summary.md)
+   + 3.3 Adobe Journey Optimizer: Offer decisioning {#module33}
+      + [Panoramica](/help/tutorial-one-adobe/modules/uce/module3.3/offer-decisioning.md)
+      + [3.3.1 Offer decisioning 101](/help/tutorial-one-adobe/modules/uce/module3.3/ex1.md)
+      + [3.3.2 Configurare le offerte e la decisione](/help/tutorial-one-adobe/modules/uce/module3.3/ex2.md)
+      + [3.3.3 Prepara la proprietà del client di raccolta dati di Adobe Experience Platform e la configurazione del SDK web, ad Offer decisioning](/help/tutorial-one-adobe/modules/uce/module3.3/ex3.md)
+      + [3.3.4 Combinare Adobe Target e Offer Decisioning](/help/tutorial-one-adobe/modules/uce/module3.3/ex4.md)
+      + [3.3.5 Utilizzare la propria decisione in un messaggio e-mail](/help/tutorial-one-adobe/modules/uce/module3.3/ex5.md)
+      + [3.3.6 Testare la decisione utilizzando l’API](/help/tutorial-one-adobe/modules/uce/module3.3/ex6.md)
+      + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/uce/module3.3/summary.md)
 

@@ -1,37 +1,29 @@
 ---
-title: 3.1 Adobe Real-Time CDP
-description: Adobe Real-Time CDP
+title: Foundation - FAC - Riepilogo
+description: Foundation - FAC - Riepilogo
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1077ada5423cde76d1dd337e8a4f8f83324a8853
+exl-id: cab61d74-9e16-4eda-b704-e103ab5350e2
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 4%
+source-wordcount: '53'
+ht-degree: 1%
 
 ---
 
-# 3.1 Adobe Real-Time CDP
+# Riepilogo e vantaggi
 
-## Finalità di apprendimento
+Congratulazioni e grazie per aver dedicato del tempo alla conoscenza di Adobe Experience Platform.
 
-- Scopri come utilizzare Adobe Real-Time CDP in vari modi.
+## Vantaggi
 
-## Prerequisiti
+Mettiamo in evidenza i vantaggi delle funzionalità di acquisizione dati di Federated Audience Composition in Adobe Experience Platform:
 
-- Accesso ad Adobe Real-Time CDP
 
-## Esercizi
 
-[3.1.1 Real-Time CDP](./ex1.md)
+## Guarda qui
 
-In questo esercizio, ...
 
-[Riepilogo e vantaggi](./summary.md)
-
-Riepilogo di questo modulo e panoramica dei vantaggi.
-
->[!NOTE]
->
->Grazie per aver dedicato il tuo tempo all&#39;apprendimento di tutto ciò che c&#39;è da sapere su Adobe Experience Platform e sulle sue applicazioni. Se hai domande, vuoi condividere feedback generali su suggerimenti in merito a contenuti futuri, contatta direttamente Tech Insiders, inviando un&#39;e-mail a **techinsiders@adobe.com**.
+[Torna al modulo 3.1](./fac.md)
 
 [Torna a tutti i moduli](../../../overview.md)
