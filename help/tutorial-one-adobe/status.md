@@ -2,10 +2,11 @@
 title: Stato contenuto
 description: Stato contenuto
 doc-type: multipage-overview
-source-git-commit: 24153b07074c053e0623a4167507d4a6aa37f212
+exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 12%
+source-wordcount: '142'
+ht-degree: 9%
 
 ---
 
@@ -25,5 +26,11 @@ Di seguito è riportata una panoramica dello stato del contenuto in questa eserc
 | [3.3 Adobe Journey Optimizer: Offer decisioning](./modules/uce/module3.3/offer-decisioning.md) | 14/11/2024 | Sì | - |
 
 {style="table-layout:auto"}
+
+>[!NOTE]
+>
+>![Informazioni tecniche](./assets/images/techinsiders.png){width="50px" align="left"}
+>
+>Se hai domande, vuoi condividere feedback generali su suggerimenti in merito a contenuti futuri, contatta direttamente Tech Insiders, inviando un&#39;e-mail a **techinsiders@adobe.com**.
 
 [Torna a tutti i moduli](./overview.md)

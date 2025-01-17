@@ -3,7 +3,7 @@ title: Panoramica - Tutorial tecnico completo - Un Adobe
 description: Tutorial tecnico completo, un Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 6fabd01d69e01255bc45c811fa37701728e032fa
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 4%
@@ -12,7 +12,7 @@ ht-degree: 4%
 
 # Tutorial tecnico completo, un Adobe
 
-![Informazioni tecniche](./assets/images/techinsiders.png){width="50px" align="center"}
+![Informazioni tecniche](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Panoramica
 
@@ -96,5 +96,6 @@ In questo modulo, utilizzerai Adobe Journey Optimizer con i servizi offer decisi
 
 >[!NOTE]
 >
->![Informazioni tecniche](./assets/images/techinsiders.png){width="50px" align="center"}
+>![Informazioni tecniche](./assets/images/techinsiders.png){width="50px" align="left"}
+>
 >Se hai domande, vuoi condividere feedback generali su suggerimenti in merito a contenuti futuri, contatta direttamente Tech Insiders, inviando un&#39;e-mail a **techinsiders@adobe.com**.
