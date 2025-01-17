@@ -4,9 +4,9 @@ description: Guida introduttiva ai servizi di Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -130,13 +130,15 @@ La prima cosa da fare è accertarsi di essere autenticati correttamente. Per ess
 
 Assicurati di aver selezionato l’ambiente corretto prima di eseguire qualsiasi richiesta. Per controllare l’ambiente attualmente selezionato, verifica l’elenco a discesa Ambiente nell’angolo in alto a destra.
 
+![Postman](./images/envselemea1.png)
+
 L&#39;ambiente selezionato deve avere un nome simile a questo, `--aepUserLdap-- Firefly Services OAuth Credential`.
 
 ![Postman](./images/envselemea.png)
 
 L’ambiente e le raccolte Postman ora sono configurati e funzionanti. Ora puoi eseguire l’autenticazione da Postman a Adobe I/O.
 
-Nella raccolta **Adobe IO - OAuth**, selezionare la richiesta con il nome **POST - Ottieni token di accesso**. In **Params**, si fa riferimento a 2 variabili, `API_KEY` e `CLIENT_SECRET`. Queste variabili vengono prese dall&#39;ambiente selezionato, `--aepUserLdap-- Firefly Services OAuth Credential`.
+Nella raccolta **Adobe IO - OAuth**, selezionare la richiesta con il nome **POST - Ottieni token di accesso**. In **Params** è possibile visualizzare 2 variabili con riferimento, `API_KEY` e `CLIENT_SECRET`. Queste variabili vengono prese dall&#39;ambiente selezionato, `--aepUserLdap-- Firefly Services OAuth Credential`.
 
 Fai clic su **Invia**.
 

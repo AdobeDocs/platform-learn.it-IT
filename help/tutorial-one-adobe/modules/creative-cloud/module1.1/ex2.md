@@ -4,9 +4,9 @@ description: Ottimizzare il processo di Firefly utilizzando Microsoft Azure e gl
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1527'
 ht-degree: 1%
 
 ---
@@ -107,7 +107,11 @@ Una volta autenticato, verrà visualizzato un messaggio di questo tipo.
 
 ![Archiviazione Azure](./images/az15.png)
 
-Tornare all&#39;app Microsoft Azure Storage Explorer. Selezionare l&#39;abbonamento e fare clic su **Apri Explorer**.
+Tornare all&#39;app Microsoft Azure Storage Explorer. Seleziona la sottoscrizione e fai clic su **Apri Explorer**.
+
+>[!NOTE]
+>
+>Se il tuo account non viene visualizzato, fai clic sull&#39;icona **ingranaggio** accanto al tuo indirizzo e-mail e seleziona **Rimuovi filtro**.
 
 ![Archiviazione Azure](./images/az16.png)
 
