@@ -4,7 +4,7 @@ description: Ottimizzare il processo di Firefly utilizzando Microsoft Azure e gl
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >Se disponi già di una sottoscrizione Azure, puoi saltare questo passaggio. Procedere con l&#39;esercizio successivo in questo caso.
 
-Vai a [https://portal.azure.com](https://portal.azure.com) e accedi con il tuo account di Azure. Se non ne hai uno, utilizza il tuo indirizzo e-mail personale per creare il tuo account di Azure.
+Vai a [https://portal.azure.com](https://portal.azure.com){target="_blank"} e accedi con il tuo account di Azure. Se non ne hai uno, utilizza il tuo indirizzo e-mail personale per creare il tuo account di Azure.
 
 ![Archiviazione Azure](./images/02azureportalemail.png)
 
@@ -83,7 +83,7 @@ Il contenitore è ora pronto per essere utilizzato.
 
 ## 1.1.2.3 Installare Azure Storage Explorer
 
-Per gestire i file, si utilizzerà Esplora archivi di Microsoft Azure. Puoi scaricarlo tramite [questo collegamento](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4). Selezionare la versione corretta per il sistema operativo specifico, scaricarla e installarla.
+Per gestire i file, si utilizzerà Esplora archivi di Microsoft Azure. Puoi scaricarlo tramite [questo collegamento](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}. Selezionare la versione corretta per il sistema operativo specifico, scaricarla e installarla.
 
 ![Archiviazione Azure](./images/az10.png)
 
@@ -125,7 +125,7 @@ Apri **Contenitori BLOB** e fai clic sul contenitore creato nell&#39;esercizio p
 
 ## 1.1.2.4 Caricamento manuale dei file e utilizzo di un file di immagine come riferimento di stile
 
-Ora devi caricare un file di immagine di tua scelta nel contenitore. Puoi utilizzare qualsiasi file di immagine, oppure puoi utilizzare [questo file](./images/gradient.jpg) scaricandolo dal computer.
+Ora devi caricare un file di immagine di tua scelta nel contenitore. Puoi utilizzare qualsiasi file di immagine, oppure puoi utilizzare [questo file](./images/gradient.jpg){target="_blank"} scaricandolo dal computer.
 
 ![Archiviazione Azure](./images/gradient.jpg)
 
@@ -199,7 +199,7 @@ Quindi, fai clic su **Corpo**.
 
 ![Archiviazione Azure](./images/az31.png)
 
-Ora dovrai selezionare un file dal computer locale. Puoi utilizzare un nuovo file di immagine oppure un altro file di immagine che puoi trovare [qui](./images/gradient2-p.jpg).
+Ora dovrai selezionare un file dal computer locale. Puoi utilizzare un nuovo file di immagine oppure un altro file di immagine che puoi trovare [qui](./images/gradient2-p.jpg){target="_blank"}.
 
 ![File sfumatura](./images/gradient2-p.jpg)
 
@@ -365,8 +365,8 @@ Apri l’URL dell’immagine per verificarla.
 
 ![Archiviazione Azure](./images/az108.jpg)
 
-Passaggio successivo: [1.1.3 Adobe Firefly e Adobe Photoshop](./ex3.md)
+Passaggio successivo: [1.1.3 Adobe Firefly e Adobe Photoshop](./ex3.md){target="_blank"}
 
-[Torna al modulo 1.1](./firefly-services.md)
+[Torna al modulo 1.1](./firefly-services.md){target="_blank"}
 
-[Torna a tutti i moduli](./../../../overview.md)
+[Torna a tutti i moduli](./../../../overview.md){target="_blank"}

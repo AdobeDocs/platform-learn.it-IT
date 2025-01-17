@@ -4,9 +4,9 @@ description: Automazione dei flussi di lavoro creativi con Workfront Fusion
 kt: 5342
 doc-type: tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
+source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '164'
 ht-degree: 2%
 
 ---
@@ -42,6 +42,7 @@ Riepilogo di questo modulo e panoramica dei vantaggi.
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all&#39;apprendimento di tutto ciò che c&#39;è da sapere su Adobe Experience Platform e sulle sue applicazioni. Se hai domande, vuoi condividere feedback generali su suggerimenti in merito a contenuti futuri, contatta direttamente Tech Insiders, inviando un&#39;e-mail a **techinsiders@adobe.com**.
+>![Informazioni tecniche](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>Se hai domande, vuoi condividere feedback generali su suggerimenti in merito a contenuti futuri, contatta direttamente Tech Insiders, inviando un&#39;e-mail a **techinsiders@adobe.com**.
 
 [Torna a tutti i moduli](../../../overview.md)

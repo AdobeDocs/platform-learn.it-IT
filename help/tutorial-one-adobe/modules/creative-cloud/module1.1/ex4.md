@@ -3,7 +3,7 @@ title: Utilizzo delle API di Photoshop
 description: Utilizzo delle API di Photoshop
 kt: 5342
 doc-type: tutorial
-source-git-commit: b7ee794e9611afc7bee35a0f471ec50caad10f85
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 3%
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # Modelli personalizzati Firefly 1.1.4
 
-Vai a [https://firefly.adobe.com](https://firefly.adobe.com). Vai a **Modelli personalizzati**.
+Vai a [https://firefly.adobe.com](https://firefly.adobe.com){target="_blank"}. Vai a **Modelli personalizzati**.
 
 ![Firefly](./images/ffcm1.png)
 
@@ -54,8 +54,8 @@ Le immagini verranno caricate. Questo potrebbe richiedere un po&#39; di tempo.
 
 Hai completato l&#39;esercizio.
 
-Passaggio successivo: [Riepilogo e vantaggi](./summary.md)
+Passaggio successivo: [Riepilogo e vantaggi](./summary.md){target="_blank"}
 
-[Torna al modulo 1.1](./firefly-services.md)
+[Torna al modulo 1.1](./firefly-services.md){target="_blank"}
 
-[Torna a tutti i moduli](./../../../overview.md)
+[Torna a tutti i moduli](./../../../overview.md){target="_blank"}

@@ -4,7 +4,7 @@ description: Creazione del programma Cloud Manager
 kt: 5342
 doc-type: tutorial
 exl-id: db366111-3873-4504-95f1-b240836c833f
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 1%
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # 2.1.2 Creare un sito web basato su documenti
 
-Nell&#39;attesa della creazione del programma Cloud Manager, si dispone di tempo sufficiente per impostare il primo sito Web di authoring basato su documenti. L&#39;esercizio seguente è basato sull&#39;[esercitazione per sviluppatori aem.live](https://www.aem.live/developer/tutorial). Per iniziare, segui la procedura riportata di seguito.
+Nell&#39;attesa della creazione del programma Cloud Manager, si dispone di tempo sufficiente per impostare il primo sito Web di authoring basato su documenti. L&#39;esercizio seguente è basato sull&#39;[esercitazione per sviluppatori aem.live](https://www.aem.live/developer/tutorial){target="_blank"}. Per iniziare, segui la procedura riportata di seguito.
 
 ## 2.1.2.1 Configurare l&#39;unità Google
 
-Vai a [https://drive.google.com](https://drive.google.com). Fare clic su **+ Nuovo** e quindi su **Nuova cartella**.
+Vai a [https://drive.google.com](https://drive.google.com){target="_blank"}. Fare clic su **+ Nuovo** e quindi su **Nuova cartella**.
 
 ![AEMCS](./images/googledrive1.png)
 
@@ -25,7 +25,7 @@ Denomina la cartella `aemdocb-test`. Fai clic su **Crea**.
 
 ![AEMCS](./images/googledrive2.png)
 
-Scarica il file [aemboilerplate.zip](./../../../assets/aem/aemboilerplate.zip) ed estrailo dal computer.
+Scarica il file [aemboilerplate.zip](./../../../assets/aem/aemboilerplate.zip){target="_blank"} ed estrailo dal computer.
 
 ![AEMCS](./images/googledrive3.png)
 
@@ -65,7 +65,7 @@ Rimuovere il parametro della stringa di query `?usp=drive_link` in modo che l&#3
 
 ## 2.1.2.2 Configurare l’archivio GitHub
 
-Vai a [https://github.com](https://github.com). Fai clic su **Accedi**.
+Vai a [https://github.com](https://github.com){target="_blank"}. Fai clic su **Accedi**.
 
 ![AEMCS](./images/aemcssetup1.png)
 
@@ -77,7 +77,7 @@ Una volta effettuato l’accesso, verrà visualizzata la dashboard di GitHub.
 
 ![AEMCS](./images/aemcssetup3.png)
 
-Vai a [https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate). Poi vedrai questo. Fare clic su **Usa questo modello** e quindi su **Crea nuovo repository**.
+Vai a [https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate){target="_blank"}. Poi vedrai questo. Fare clic su **Usa questo modello** e quindi su **Crea nuovo repository**.
 
 ![AEMCS](./images/aemdocbcssetup4.png)
 
@@ -89,7 +89,7 @@ Dopo un paio di secondi, potrai creare l’archivio.
 
 ![AEMCS](./images/aemdocbcssetup6.png)
 
-Quindi, vai a [https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync). Fare clic su **Configura**.
+Quindi, vai a [https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync){target="_blank"}. Fare clic su **Configura**.
 
 ![AEMCS](./images/aemcssetup7.png)
 
@@ -133,7 +133,7 @@ Fai clic su **Commit changes**.
 
 ## 2.1.2.4 Installare l’estensione AEM Sidekick
 
-Vai a [https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo). Fai clic su **Aggiungi a Chrome**.
+Vai a [https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo){target="_blank"}. Fai clic su **Aggiungi a Chrome**.
 
 ![AEMCS](./images/aemdocbcssetup16.png)
 
@@ -205,8 +205,8 @@ Viene quindi visualizzata la versione live del sito Web.
 
 L’esercizio precedente era un buon modo per iniziare e sperimentare autonomamente l’authoring basato su documenti. Ora puoi continuare con il prossimo esercizio, in cui configurerai il tuo sito web demo utilizzando CitiSignal come brand demo.
 
-Passaggio successivo: [2.1.3 Configurare l&#39;ambiente AEM CS](./ex3.md)
+Passaggio successivo: [2.1.3 Configurare l&#39;ambiente AEM CS](./ex3.md){target="_blank"}
 
-[Torna al modulo 2.1](./aemcs.md)
+[Torna al modulo 2.1](./aemcs.md){target="_blank"}
 
-[Torna a tutti i moduli](./../../../overview.md)
+[Torna a tutti i moduli](./../../../overview.md){target="_blank"}

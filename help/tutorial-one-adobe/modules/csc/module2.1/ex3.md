@@ -4,7 +4,7 @@ description: Creazione del programma Cloud Manager
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 2.1.3.1 Configurare l’archivio GitHub
 
-Vai a [https://github.com](https://github.com). Fai clic su **Accedi**.
+Vai a [https://github.com](https://github.com){target="_blank"}. Fai clic su **Accedi**.
 
 ![AEMCS](./images/aemcssetup1.png)
 
@@ -27,7 +27,7 @@ Una volta effettuato l’accesso, verrà visualizzata la dashboard di GitHub.
 
 ![AEMCS](./images/aemcssetup3.png)
 
-Vai a [https://github.com/AdobeDevXSC/citisignal-one](https://github.com/AdobeDevXSC/citisignal-one). Poi vedrai questo. Fare clic su **Usa questo modello** e quindi su **Crea nuovo repository**.
+Vai a [https://github.com/AdobeDevXSC/citisignal-one](https://github.com/AdobeDevXSC/citisignal-one){target="_blank"}. Poi vedrai questo. Fare clic su **Usa questo modello** e quindi su **Crea nuovo repository**.
 
 ![AEMCS](./images/aemcssetup4.png)
 
@@ -39,7 +39,7 @@ Dopo un paio di secondi, potrai creare l’archivio.
 
 ![AEMCS](./images/aemcssetup6.png)
 
-Quindi, vai a [https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync). Fare clic su **Configura**.
+Quindi, vai a [https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync){target="_blank"}. Fare clic su **Configura**.
 
 ![AEMCS](./images/aemcssetup7.png)
 
@@ -83,7 +83,7 @@ YYY deve essere sostituito dall’account utente GitHub.
 
 ZZZ deve essere sostituito dal nome dell’archivio GitHub utilizzato nell’esercizio precedente.
 
-Per trovare l&#39;URL dell&#39;ambiente di authoring di AEM CS, vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). Fai clic sul **Programma** per aprirlo.
+Per trovare l&#39;URL dell&#39;ambiente di authoring di AEM CS, vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Fai clic sul **Programma** per aprirlo.
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -125,7 +125,7 @@ Il file `fstab.yaml` è stato aggiornato.
 
 ## 2.1.3.3 Caricare risorse CitiSignal
 
-Vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). Fai clic sul **Programma** per aprirlo.
+Vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Fai clic sul **Programma** per aprirlo.
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -155,7 +155,7 @@ Fare clic su **Carica pacchetto**.
 
 Fai clic su **Sfoglia** per individuare il pacchetto da caricare.
 
-Il pacchetto da caricare si chiama **citisignal-assets.zip** e può essere scaricato qui: [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip).
+Il pacchetto da caricare si chiama **citisignal-assets.zip** e può essere scaricato qui: [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip){target="_blank"}.
 
 ![AEMCS](./images/aemcssetup23.png)
 
@@ -188,7 +188,7 @@ Dopo un paio di minuti, il pacchetto verrà installato.
 
 ## 2.1.3.4 Risorse Publish CitiSignal
 
-Vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). Fai clic sul **Programma** per aprirlo.
+Vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Fai clic sul **Programma** per aprirlo.
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -224,7 +224,7 @@ Le risorse sono state pubblicate.
 
 ## 2.1.3.5 Creare il sito web CitiSignal
 
-Vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). Fai clic sul **Programma** per aprirlo.
+Vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Fai clic sul **Programma** per aprirlo.
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -248,7 +248,7 @@ Fai clic su **Importa**.
 
 ![AEMCS](./images/aemcssetup32.png)
 
-Ora devi importare un modello preconfigurato per il sito. Puoi scaricare il modello [qui](./../../../assets/aem/citisignal-edge-delivery-services-template-0.0.4.zip). Salva il file sul desktop.
+Ora devi importare un modello preconfigurato per il sito. Puoi scaricare il modello [qui](./../../../assets/aem/citisignal-edge-delivery-services-template-0.0.4.zip){target="_blank"}. Salva il file sul desktop.
 
 Selezionare il file `citisignal-edge-delivery-services-template-0.0.4.zip` e fare clic su **Apri**.
 
@@ -325,7 +325,7 @@ Dopo un paio di minuti, tutte le risorse verranno caricate correttamente.
 
 ## 2.1.3.7 Prestazioni della pagina di prova
 
-Vai a [https://pagespeed.web.dev/](https://pagespeed.web.dev/). Immetti l&#39;URL e fai clic su **Analizza**.
+Vai a [https://pagespeed.web.dev/](https://pagespeed.web.dev/){target="_blank"}. Immetti l&#39;URL e fai clic su **Analizza**.
 
 ![AEMCS](./images/aemcssetup48.png)
 
@@ -339,8 +339,8 @@ Vedrai quindi che il tuo sito web, sia nella visualizzazione per dispositivi mob
 
 ![AEMCS](./images/aemcssetup50.png)
 
-Passaggio successivo: [2.1.4 Configurare un blocco personalizzato](./ex4.md)
+Passaggio successivo: [2.1.4 Configurare un blocco personalizzato](./ex4.md){target="_blank"}
 
-[Torna al modulo 2.1](./aemcs.md)
+[Torna al modulo 2.1](./aemcs.md){target="_blank"}
 
-[Torna a tutti i moduli](./../../../overview.md)
+[Torna a tutti i moduli](./../../../overview.md){target="_blank"}

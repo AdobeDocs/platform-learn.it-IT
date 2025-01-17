@@ -3,9 +3,10 @@ title: Raccolta dati - Composizione federata del pubblico
 description: Raccolta dati - Composizione federata del pubblico
 kt: 5342
 doc-type: tutorial
-source-git-commit: dc86e52b659d7b428aca03fdb041e7410901e1fd
+exl-id: cc2ac85e-e902-4bb7-ab54-aa39980f97aa
+source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -53,6 +54,7 @@ Riepilogo di questo modulo e panoramica dei vantaggi.
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all&#39;apprendimento di tutto ciò che c&#39;è da sapere su Adobe Experience Platform e sulle sue applicazioni. Se hai domande, vuoi condividere feedback generali su suggerimenti in merito a contenuti futuri, contatta direttamente Tech Insiders, inviando un&#39;e-mail a **techinsiders@adobe.com**.
+>![Informazioni tecniche](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>Se hai domande, vuoi condividere feedback generali su suggerimenti in merito a contenuti futuri, contatta direttamente Tech Insiders, inviando un&#39;e-mail a **techinsiders@adobe.com**.
 
 [Torna a tutti i moduli](../../../overview.md)

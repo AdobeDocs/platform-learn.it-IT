@@ -4,7 +4,7 @@ description: Utilizzo delle API di Photoshop
 kt: 5342
 doc-type: tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 1.1.3.1 Aggiornare l’integrazione dell’Adobe I/O
 
-Vai a [https://developer.adobe.com/console/home](https://developer.adobe.com/console/projects).
+Vai a [https://developer.adobe.com/console/home](https://developer.adobe.com/console/projects){target="_blank"}.
 
 ![Adobe I/O di nuova integrazione](./images/iohome.png)
 
@@ -49,7 +49,7 @@ Il progetto di Adobe I/O è stato aggiornato per funzionare con le API di Photos
 
 ## 1.1.3.2 Interagire a livello di programmazione con un file PSD
 
-Scarica il file Vai a [citisignal-fibre.psd](./../../../assets/ff/citisignal-fiber.psd) sul desktop.
+Scarica il file Vai a [citisignal-fibre.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} sul desktop.
 
 Apri il file **citisignal-fiber.psd** in Photoshop. Dovresti avere questo.
 
@@ -229,8 +229,8 @@ Infine, il file viene visualizzato anche nel contenitore utilizzando Azure Stora
 
 Hai completato l&#39;esercizio.
 
-Passaggio successivo: [1.1.4 Modelli personalizzati di Firefly](./ex4.md)
+Passaggio successivo: [1.1.4 Modelli personalizzati di Firefly](./ex4.md){target="_blank"}
 
-[Torna al modulo 1.1](./firefly-services.md)
+[Torna al modulo 1.1](./firefly-services.md){target="_blank"}
 
-[Torna a tutti i moduli](./../../../overview.md)
+[Torna a tutti i moduli](./../../../overview.md){target="_blank"}

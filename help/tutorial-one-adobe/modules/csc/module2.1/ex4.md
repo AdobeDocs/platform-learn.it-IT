@@ -3,7 +3,8 @@ title: Sviluppare un blocco personalizzato
 description: Sviluppare un blocco personalizzato
 kt: 5342
 doc-type: tutorial
-source-git-commit: 5242f77e2756e1bcd9ed25a7b95b06a01114fcd5
+exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 ## 2.1.4.1 Configurare l’ambiente di sviluppo locale
 
-Vai a [https://desktop.github.com/download/](https://desktop.github.com/download/), scarica e installa **Github Desktop**.
+Vai a [https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}, scarica e installa **Github Desktop**.
 
 ![Blocca](./images/block1.png)
 
@@ -29,6 +30,6 @@ L’archivio GitHub verrà quindi aperto in GitHub Desktop. Puoi cambiare il **p
 Un fo locale
 
 
-[Torna al modulo 2.1](./aemcs.md)
+[Torna al modulo 2.1](./aemcs.md){target="_blank"}
 
-[Torna a tutti i moduli](./../../../overview.md)
+[Torna a tutti i moduli](./../../../overview.md){target="_blank"}
