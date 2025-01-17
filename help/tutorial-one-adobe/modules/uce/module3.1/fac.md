@@ -4,7 +4,7 @@ description: Raccolta dati - Composizione federata del pubblico
 kt: 5342
 doc-type: tutorial
 exl-id: cc2ac85e-e902-4bb7-ab54-aa39980f97aa
-source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
+source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 0%
@@ -52,9 +52,9 @@ In questo esercizio configurerai il modello dati in AEP per i dati federati.
 
 Riepilogo di questo modulo e panoramica dei vantaggi.
 
+![Informazioni tecniche](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
->
->![Informazioni tecniche](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 >
 >Se hai domande, vuoi condividere feedback generali su suggerimenti in merito a contenuti futuri, contatta direttamente Tech Insiders, inviando un&#39;e-mail a **techinsiders@adobe.com**.
 

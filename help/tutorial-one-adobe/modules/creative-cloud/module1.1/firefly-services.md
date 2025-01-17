@@ -4,7 +4,7 @@ description: Servizi Adobe Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: 18fee60ed4c92af84b6866e1b2cce6eb496b912e
+source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 2%
@@ -43,9 +43,9 @@ In questo esercizio utilizzerai i Servizi di Firefly insieme ad Adobe Photoshop.
 
 Riepilogo di questo modulo e panoramica dei vantaggi.
 
+![Informazioni tecniche](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
->
->![Informazioni tecniche](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 >
 >Se hai domande, vuoi condividere feedback generali su suggerimenti in merito a contenuti futuri, contatta direttamente Tech Insiders, inviando un&#39;e-mail a **techinsiders@adobe.com**.
 
