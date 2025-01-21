@@ -1,17 +1,18 @@
 ---
-title: Migrare dall’estensione Adobe Analytics Tags all’estensione Web SDK Tags
+title: Migrazione da Adobe Analytics a Web SDK tramite tag
 description: Scopri i passaggi da eseguire durante la migrazione a Web SDK e le decisioni da prendere lungo il percorso.
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16755
-source-git-commit: d360ed9f8c0378625c6b885d71d892362d3a6d69
+exl-id: e578b669-42b4-46ae-b6e6-6688e5c5c772
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1061'
 ht-degree: 0%
 
 ---
 
-# Migrare dall’estensione Adobe Analytics Tags all’estensione Web SDK Tags
+# Migrazione da Adobe Analytics a Web SDK tramite tag
 
 Scopri i passaggi per migrare un’implementazione di Adobe Analytics utilizzando l’estensione Analytics in Experience Platform Tags (precedentemente nota come Launch) a Web SDK, utilizzando l’estensione Web SDK anche in Tags. Quando si utilizza l’estensione Adobe Analytics nei Tag, viene utilizzato il codice &quot;AppMeasurement.js&quot; in background. Di conseguenza, puoi considerare questo come un’esercitazione per la migrazione di AppMeasurement a Web SDK, ma questa esercitazione si trova completamente all’interno di Tag e NON riguarda lo spostamento da o verso un’implementazione di JavaScript (ad eccezione del codice JavaScript utilizzato all’interno dell’interfaccia utente di Tags). Per la migrazione delle implementazioni di JavaScript, consulta la [documentazione](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk).
 
@@ -69,4 +70,3 @@ Il processo di migrazione prevede i seguenti passaggi chiave:
 
 
 ### NOTA PER DOUG: dopo il test dell’esercitazione, inserisci qui un collegamento a un post della community in cui i clienti possono porre domande sull’esercitazione e migrare a Web SDK.
-

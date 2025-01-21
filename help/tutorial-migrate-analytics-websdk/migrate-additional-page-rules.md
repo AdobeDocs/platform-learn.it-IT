@@ -4,13 +4,13 @@ description: Scopri come migrare ulteriori regole basate su pagina all’estensi
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16764
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: d1345da7-018d-4c0c-ba9b-d4ff7b35df03
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
-
 
 # Migrare regole di pagina aggiuntive
 
@@ -20,7 +20,7 @@ In questo esercizio imparerai a migrare ulteriori regole basate su pagine all’
 
 Effettuiamo un piccolo backup e parliamo delle implementazioni di Analytics così come sono con l’estensione tag di Adobe Analytics (nota anche come implementazione &quot;AppMeasurement&quot;, in quanto è il nome del file JavaScript).
 
-Non suppongo di sapere esattamente come viene implementato, ma in molte implementazioni che utilizzano tag Experience Platform (precedentemente noti come &quot;Launch&quot;), esistono diverse regole che si attivano solo in modo condizionale, in base a qualcosa sulla pagina o nell’URL. Alcuni esempi:
+Non suppongo di sapere esattamente come viene implementato, ma in molte implementazioni che utilizzano tag di Experience Platform, esistono diverse regole che si attivano solo in modo condizionale, in base a qualcosa sulla pagina o nell’URL. Alcuni esempi:
 
 * Regola dei risultati di ricerca, che viene attivata solo quando viene eseguita una ricerca interna e viene visualizzata la pagina dei risultati di ricerca
 * Regola della pagina di destinazione della campagna, che viene attivata solo quando nell’URL è presente un codice di tracciamento
@@ -68,6 +68,3 @@ Di seguito è riportato un esempio di migrazione di una regola che viene attivat
 >[!IMPORTANT]
 >
 >Come la regola di caricamento pagina predefinita, abbiamo lasciato l&#39;azione **Imposta variabile** dell&#39;estensione Analytics nella regola in modo da poter confrontare i dati durante la convalida della migrazione. Non dimenticare di tornare in seguito e rimuovere l’azione dell’estensione Analytics durante la pulizia finale.
-
-
-

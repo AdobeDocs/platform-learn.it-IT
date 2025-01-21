@@ -4,13 +4,13 @@ description: In questo esercizio scoprirai come migrare una regola predefinita p
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16760
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: 783b464e-2974-41a1-9949-ac3ac0c786fc
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1260'
 ht-degree: 0%
 
 ---
-
 
 # Migrare la regola di caricamento pagina predefinita
 
@@ -18,7 +18,7 @@ In questo esercizio scoprirai come migrare una regola predefinita per il caricam
 
 ## Panoramica
 
-Torniamo un po&#39; indietro. È probabile che in Tag (precedentemente noto come &quot;Launch&quot;) sia presente una regola attivata su ogni pagina, ovvero una regola che imposta una o più variabili predefinite e quindi attiva un beacon o un hit in Adobe Analytics. Questa regola sta attualmente utilizzando le &quot;azioni&quot; nell’estensione Adobe Analytics per eseguire queste operazioni. Durante la migrazione della nostra implementazione a Web SDK, dobbiamo essere in grado di rimuovere eventuali riferimenti (come le azioni) all’estensione Analytics e sostituirli con azioni che appartengono a Web SDK. Nei passaggi seguenti, supponiamo quanto sopra; ovvero che disponi di una regola di caricamento pagina predefinita che imposta le variabili e invia un beacon di tracciamento ad Analytics.
+Torniamo un po&#39; indietro. È probabile che nei Tag sia presente una regola attivata su ogni pagina, una regola che imposta una o più variabili predefinite e quindi attiva un beacon o un hit in Adobe Analytics. Questa regola sta attualmente utilizzando le &quot;azioni&quot; nell’estensione Adobe Analytics per eseguire queste operazioni. Durante la migrazione della nostra implementazione a Web SDK, dobbiamo essere in grado di rimuovere eventuali riferimenti (come le azioni) all’estensione Analytics e sostituirli con azioni che appartengono a Web SDK. Nei passaggi seguenti, supponiamo quanto sopra; ovvero che disponi di una regola di caricamento pagina predefinita che imposta le variabili e invia un beacon di tracciamento ad Analytics.
 
 ## Migrare l’azione Imposta variabili
 

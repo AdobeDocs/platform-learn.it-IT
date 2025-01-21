@@ -4,13 +4,13 @@ description: Scopri come eseguire il debug e convalidare i dati durante la migra
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16763
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: 68f87266-4b87-4953-8de4-6a9a62bac9e6
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 0%
 
 ---
-
 
 # Debug e convalida della migrazione di Web SDK
 
@@ -70,7 +70,7 @@ Ci sono possibilmente diversi modi per impostare questi confronti, ma vi darò d
 1. Crea un nuovo progetto in Analysis Workspace e aggiungi due pannelli
 1. Imposta la suite di rapporti nel pannello 1 sulla suite di rapporti di produzione di Adobe Analytics corrente.
 1. Imposta la suite di rapporti nel pannello 2 sulla nuova suite di rapporti per lo sviluppo di Web SDK
-1. Inserisci lo stesso rapporto in entrambi i pannelli, utilizzando un periodo di tempo nel calendario in cui i dati fluivano in Analytics utilizzando entrambe le estensioni
+1. Inserisci lo stesso rapporto in entrambi i pannelli, utilizzando un periodo di tempo che include giorni interi solo se i dati sono stati inviati a entrambe le suite di rapporti
 1. Confrontare i dati
 
 Questo potrebbe essere simile al seguente (supponendo che non vi siano dati in queste suite di rapporti demo vuote):
