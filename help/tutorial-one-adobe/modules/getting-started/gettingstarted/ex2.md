@@ -3,7 +3,8 @@ title: 'Guida introduttiva: utilizza Demo System Next per configurare la proprie
 description: 'Guida introduttiva: utilizza Demo System Next per configurare la proprietà Launch'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -32,7 +33,7 @@ Fare clic su **Inizio**.
 
 ![DSN](./images/dsn2.png)
 
-Nella finestra a comparsa, immetti un nome per le proprietà di raccolta dati e i progetti Experience Builder. Utilizza questa convenzione per i nomi: **Sistema demo (GG/MM/AAAA)**. Nota: il tuo LDAP verrà aggiunto automaticamente, non è necessario aggiungerlo autonomamente.
+Nella finestra a comparsa, immetti un nome per le proprietà di raccolta dati e i progetti Experience Builder. Utilizza questa convenzione per i nomi: **Un Adobe (GG/MM/AAAA)**. Nota: il tuo LDAP verrà aggiunto automaticamente, non è necessario aggiungerlo autonomamente.
 
 Fare clic su **Inizio**.
 

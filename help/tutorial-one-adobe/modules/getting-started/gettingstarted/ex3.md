@@ -3,9 +3,10 @@ title: 'Guida introduttiva: creare lo stream di dati'
 description: 'Guida introduttiva: creare lo stream di dati'
 kt: 5342
 doc-type: tutorial
-source-git-commit: a1cba79313a651c929d76008943c1c5f8a64a9f7
+exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
@@ -16,7 +17,7 @@ Vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe
 
 ![DSN](./images/launchprop.png)
 
-Nel menu a sinistra, fai clic su **[!UICONTROL Tag]**. Dopo l’esercizio precedente, ora disponi di due proprietà di Raccolta dati: una per il web e una per i dispositivi mobili.
+Nel menu a sinistra, fai clic su **[!UICONTROL Tag]**. Dopo l’esercizio precedente, ora disponi di 3 proprietà di raccolta dati: una per il web, una per i dispositivi mobili e una per l’app CX.
 
 ![DSN](./images/launchprop1.png)
 
@@ -38,7 +39,7 @@ Fare clic su **[!UICONTROL Nuovo flusso di dati]**.
 
 ![Fai clic sull&#39;icona Configurazione di Edge nell&#39;area di navigazione a sinistra](./images/edgeconfig1.png)
 
-Per **[!UICONTROL Name]** e per la descrizione facoltativa, immettere `--aepUserLdap-- - Demo System Datastream`. Per **Schema mappatura**, selezionare **Sistema demo - Schema evento per sito Web (Global v1.1)**. Fai clic su **Salva**.
+Per **[!UICONTROL Name]** e per la descrizione facoltativa, immettere `--aepUserLdap-- - One Adobe Datastream`. Per **Schema mappatura**, selezionare **Sistema demo - Schema evento per sito Web (Global v1.1)**. Fai clic su **Salva**.
 
 ![Denomina la configurazione di Edge e salva](./images/edgeconfig2.png)
 
@@ -58,7 +59,7 @@ Ora vedrai questo.
 
 Nel menu a sinistra, fai clic su **[!UICONTROL Tag]**.
 
-Filtra i risultati della ricerca per visualizzare le due proprietà di raccolta dati. Aprire la proprietà per **Web** facendo clic su di essa.
+Filtra i risultati della ricerca per visualizzare le proprietà di raccolta dati. Aprire la proprietà per **Web** facendo clic su di essa.
 
 ![Denomina la configurazione di Edge e salva](./images/edgeconfig10a.png)
 
@@ -70,7 +71,7 @@ Fare clic sull&#39;estensione Adobe Experience Platform Web SDK e quindi su **Co
 
 ![Denomina la configurazione di Edge e salva](./images/edgeconfig12.png)
 
-Poi vedrai questo. Osserva il menu **Flussi di dati** e accertati che sia selezionata la sandbox corretta, che in questo caso dovrebbe essere `--aepSandboxName--`.
+Poi vedrai questo. Dai un&#39;occhiata al menu **Flussi di dati** e assicurati che sia selezionata la sandbox corretta, che in questo caso dovrebbe essere `--aepSandboxName--`.
 
 ![Denomina la configurazione di Edge e salva](./images/edgeconfig12a.png)
 
@@ -114,7 +115,7 @@ Fare clic su **[!UICONTROL Nuovo flusso di dati]**.
 
 ![Fai clic sull&#39;icona dello stream di dati nell&#39;area di navigazione a sinistra](./images/edgeconfig1.png)
 
-Per **[!UICONTROL Nome descrittivo]** e per la descrizione facoltativa, immettere `--aepUserLdap-- - Demo System Datastream (Mobile)`. Per **Schema mappatura**, selezionare **Sistema demo - Schema evento per app mobile (Global v1.1)**. Fai clic su **Salva**.
+Per **[!UICONTROL Nome descrittivo]** e per la descrizione facoltativa, immettere `--aepUserLdap-- - One Adobe Datastream (Mobile)`. Per **Schema mappatura**, selezionare **Sistema demo - Schema evento per app mobile (Global v1.1)**. Fai clic su **Salva**.
 
 Fai clic su **[!UICONTROL Salva]**.
 

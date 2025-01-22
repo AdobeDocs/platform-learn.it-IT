@@ -4,9 +4,9 @@ description: Foundation - FAC - Creare schemi, modelli dati e collegamenti
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
+source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '636'
 ht-degree: 2%
 
 ---
@@ -152,7 +152,7 @@ Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro colle
 
 ![FAC](./images/fdb20.png)
 
-Definiamo quindi il collegamento tra la tabella `CK_MONTHLY_DATA_USAGE` e `CK_USERS`.
+Definiamo quindi il collegamento tra la tabella `CK_USERS` e `CK_MONTHLY_DATA_USAGE`.
 
 ![FAC](./images/fdb21.png)
 
@@ -164,8 +164,17 @@ Definiamo quindi il collegamento tra la tabella `CK_USERS` e `CK_HOUSEHOLDS`.
 
 ![FAC](./images/fdb23.png)
 
-Allora tornerai qui. Fai clic su **Salva**.
+Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro collegamento.
+
 ![FAC](./images/fdb24.png)
+
+Definiamo quindi il collegamento tra la tabella `CK_USERS` e `CK_MOBILE_DATA_USAGE`.
+
+![FAC](./images/fdb25.png)
+
+Dovresti vedere questo. Fai clic su **Salva**.
+
+![FAC](./images/fdb26.png)
 
 La configurazione in AEP è terminata. Ora puoi iniziare a utilizzare i dati federati in una composizione di pubblico federato.
 

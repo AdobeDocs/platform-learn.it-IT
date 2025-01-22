@@ -4,9 +4,9 @@ description: 'Guida introduttiva: installare l’estensione Chrome per la docume
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -20,12 +20,13 @@ Per rendere riutilizzabile la documentazione, nella documentazione sono state in
 
 Di seguito è riportato un esempio di tali valori. Attualmente, questi valori non possono ancora essere utilizzati, ma non appena installi e attivi l’estensione Chrome, vedrai che queste variabili cambiano in testo normale che puoi copiare e riutilizzare.
 
-| Nome | Chiave |
-|:-------------:| :---------------:|
-| ID organizzazione IMS AEP | `--aepImsOrgId--` |
-| ID tenant AEP | `--aepTenantId--` |
-| Nome sandbox AEP | `--aepSandboxName--` |
-| Profilo Allievo LDAP | `--aepUserLdap--` |
+| Nome | Chiave | Esempio |
+|:-------------:| :---------------:| :---------------:|
+| ID organizzazione IMS AEP | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| Nome organizzazione IMS AEP | `--aepImsOrgName--` | `Experience Platform International` |
+| ID tenant AEP | `--aepTenantId--` | `_experienceplatform` |
+| Nome sandbox AEP | `--aepSandboxName--` | `tech-insiders` |
+| Profilo Allievo LDAP | `--aepUserLdap--` | `vangeluw` |
 
 Ad esempio, nella schermata seguente è possibile visualizzare un riferimento a `aepTenantId`.
 

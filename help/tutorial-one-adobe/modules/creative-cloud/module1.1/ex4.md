@@ -4,64 +4,16 @@ description: Utilizzo delle API di Photoshop
 kt: 5342
 doc-type: tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: 153b070ffeb21c7111f4b954c4ba2d7c9042db0d
+source-git-commit: 56320edcdf2fe588fe644072fe442547b1836f86
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 3%
+source-wordcount: '37'
+ht-degree: 0%
 
 ---
 
-# Modelli personalizzati Firefly 1.1.4
+# API per modelli personalizzati di Firefly 1.1.4
 
-Vai a [https://firefly.adobe.com](https://firefly.adobe.com){target="_blank"}. Vai a **Modelli personalizzati**.
-
-![Firefly](./images/ffcm1.png)
-
-**Accetto** le condizioni di utilizzo dei modelli personalizzati di Firefly.
-
-![Firefly](./images/ffcm2.png)
-
-Fai clic su **Addestra un modello**.
-
-![Firefly](./images/ffcm3.png)
-
-Utilizza il nome `--aepUserLdap-- - CitiSignal Router Model`. Seleziona **Stile** e fai clic su **+ Crea nuovo progetto**.
-
-![Firefly](./images/ffcm4.png)
-
-Utilizza il nome `--aepUserLdap-- - CitiSignal Custom Model`. Fai clic su **Crea**.
-
-![Firefly](./images/ffcm5.png)
-
-Fai clic su **Continua**.
-
-![Firefly](./images/ffcm6.png)
-
-Fai clic su **Seleziona immagini dal computer**.
-
-![Firefly](./images/ffcm7.png)
-
-Puoi utilizzare queste risorse. Scaricali sul computer ed estrai il file zip in una cartella sul desktop.
-
-![Firefly](./images/ffcm8.png)
-
-Seleziona tutte le immagini e fai clic su **Apri**.
-
-![Firefly](./images/ffcm9.png)
-
-Le immagini verranno caricate. Questo potrebbe richiedere un po&#39; di tempo.
-
-![Firefly](./images/ffcm10.png)
-
-![Firefly](./images/ffcm11.png)
-
-![Firefly](./images/ffcm12.png)
-
-![Firefly](./images/ffcm13.png)
-
-![Firefly](./images/ffcm14.png)
-
-Hai completato l&#39;esercizio.
+Questo contenuto verrà rilasciato in una fase successiva.
 
 Passaggio successivo: [Riepilogo e vantaggi](./summary.md){target="_blank"}
 

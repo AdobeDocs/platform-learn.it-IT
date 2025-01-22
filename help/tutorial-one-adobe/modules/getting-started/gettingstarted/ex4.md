@@ -3,9 +3,10 @@ title: 'Guida introduttiva: utilizzare il sito web'
 description: 'Guida introduttiva: utilizzare il sito web'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 4d2152c9-7f9a-48e3-a8e6-4a6add034b4e
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -30,7 +31,7 @@ Nella pagina **Integrazioni** è necessario selezionare la proprietà Raccolta d
 
 ![DSN](./images/web2.png)
 
-Fare clic su **Seleziona** nella proprietà Raccolta dati creata nel passaggio precedente, denominata `--aepUserLdap-- - Demo System (DD/MM/YYYY) (web)`.
+Fare clic su **Seleziona** nella proprietà Raccolta dati creata nel passaggio precedente, denominata `--aepUserLdap-- - Demo System (DD/MM/YYYY) (web)`. Fai clic su **Salva**.
 
 ![DSN](./images/web2a.png)
 
