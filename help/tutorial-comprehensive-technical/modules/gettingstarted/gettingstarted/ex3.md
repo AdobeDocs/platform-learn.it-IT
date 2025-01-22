@@ -4,9 +4,9 @@ description: 'Guida introduttiva: creare lo stream di dati'
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '844'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe
 
 ![DSN](./images/launchprop.png)
 
-Nel menu a sinistra, fai clic su **[!UICONTROL Tag]**. Dopo l’esercizio precedente, ora disponi di due proprietà di Raccolta dati: una per il web e una per i dispositivi mobili.
+Nel menu a sinistra, fai clic su **[!UICONTROL Tag]**. Dopo l’esercizio precedente, ora disponi di 3 proprietà di raccolta dati: una per il web, una per i dispositivi mobili e una per l’app CX.
 
 ![DSN](./images/launchprop1.png)
 
@@ -61,7 +61,7 @@ Ora vedrai questo.
 
 Nel menu a sinistra, fai clic su **[!UICONTROL Tag]**.
 
-Filtra i risultati della ricerca per visualizzare le due proprietà di raccolta dati. Aprire la proprietà per **Web** facendo clic su di essa.
+Filtra i risultati della ricerca per visualizzare le proprietà di raccolta dati. Aprire la proprietà per **Web** facendo clic su di essa.
 
 ![Denomina la configurazione di Edge e salva](./images/edgeconfig10a.png)
 
@@ -139,7 +139,7 @@ Poi vedrai questo.
 
 Lo stream di dati è ora pronto per essere utilizzato nella proprietà Client di raccolta dati di Adobe Experience Platform per dispositivi mobili.
 
-Vai a **Tag** e filtra i risultati della ricerca per visualizzare le due proprietà di raccolta dati. Apri la proprietà per **Mobile** facendo clic su di essa.
+Vai a **Tag** e filtra i risultati della ricerca per visualizzare le proprietà della raccolta dati. Apri la proprietà per **Mobile** facendo clic su di essa.
 
 ![Denomina la configurazione di Edge e salva](./images/edgeconfig10am.png)
 

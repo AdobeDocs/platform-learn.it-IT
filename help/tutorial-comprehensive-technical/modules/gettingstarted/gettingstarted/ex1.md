@@ -4,9 +4,9 @@ description: 'Guida introduttiva: installare l’estensione Chrome per la docume
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: f80f9aa6d736bf07235ef52e96b027b5e5ae742e
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ L’ID organizzazione IMS è l’identificatore univoco dell’istanza di Adobe 
 
 È possibile trovare l’ID organizzazione IMS in diversi modi. Se non sei sicuro, rivolgiti a uno degli amministratori di sistema della tua istanza per trovare l’ID.
 
-Puoi trovarlo andando in [Admin Console](https://https://adminconsole.adobe.com/), dove è possibile trovarlo come parte dell&#39;URL.
+Puoi trovarlo andando in [Admin Console](https://adminconsole.adobe.com/), dove è possibile trovarlo come parte dell&#39;URL.
 
 ![DSN](./images/aepid1.png)
 
@@ -100,7 +100,7 @@ L’ID tenant è l’identificatore univoco dell’istanza AEP della tua organiz
 
 ![DSN](./images/aeptenantid.png)
 
-Quando lo inserisci nell&#39;estensione Chrome, accertati che un trattino basso sia aggiunto come prefisso, quindi in questo esempio **experienceplatform** diventa **_experienceplatform**.
+Quando lo inserisci nell&#39;estensione Chrome, accertati che un trattino basso sia aggiunto come prefisso, quindi in questo esempio **experienceplatform** diventa **_experienceplatform**. Assicurarsi inoltre di rimuovere il simbolo **@** durante la copia dall&#39;URL.
 
 **Nome Sandbox AEP**
 

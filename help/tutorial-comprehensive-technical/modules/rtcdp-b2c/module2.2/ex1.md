@@ -4,9 +4,9 @@ description: 'IA per l’analisi dei clienti: preparazione dei dati (acquisizion
 kt: 5342
 doc-type: tutorial
 exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ Fai clic su **Crea set di dati dallo schema**.
 
 ![Set di dati](./images/createdatasetfromschema.png)
 
-Nella schermata successiva, seleziona il set di dati creato nell&#39;esercizio precedente, denominato **[!UICONTROL ldap - Demo System - Customer Experience Event]**. Fai clic su **Avanti**.
+Nella schermata successiva, selezionare il set di dati creato nell&#39;esercizio precedente, denominato `--aepUserLdap-- - Demo System - Customer Experience Event`. Fai clic su **Avanti**.
 
 ![Set di dati](./images/createds1.png)
 
