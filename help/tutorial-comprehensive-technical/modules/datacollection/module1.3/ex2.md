@@ -4,7 +4,7 @@ description: Foundation - FAC - Creare schemi, modelli dati e collegamenti
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
+source-git-commit: bec1f7253cd2d3491f875179eff2cf511104662f
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 2%
@@ -130,6 +130,8 @@ Seleziona gli schemi e fai clic su **Aggiungi**.
 
 Poi vedrai questo. Fai clic su **Salva**.
 
+### `CK_USERS` - `CK_PERSONS`
+
 Ora puoi iniziare a definire i collegamenti tra schemi. Per iniziare a definire un collegamento, fai clic su **Crea collegamenti**.
 
 ![FAC](./images/fdb16.png)
@@ -140,6 +142,9 @@ Fai clic su **Aggiungi**.
 
 ![FAC](./images/fdb18.png)
 
+
+### `CK_HOUSEHOLDS` - `CK_PERSONS`
+
 Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro collegamento.
 
 ![FAC](./images/fdb17.png)
@@ -147,6 +152,8 @@ Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro colle
 Definiamo quindi il collegamento tra la tabella `CK_HOUSEHOLDS` e `CK_PERSONS`.
 
 ![FAC](./images/fdb19.png)
+
+### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
 
 Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro collegamento.
 
@@ -156,6 +163,9 @@ Definiamo quindi il collegamento tra la tabella `CK_USERS` e `CK_MONTHLY_DATA_US
 
 ![FAC](./images/fdb21.png)
 
+
+### `CK_USERS` - `CK_HOUSEHOLDS`
+
 Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro collegamento.
 
 ![FAC](./images/fdb22.png)
@@ -163,6 +173,8 @@ Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro colle
 Definiamo quindi il collegamento tra la tabella `CK_USERS` e `CK_HOUSEHOLDS`.
 
 ![FAC](./images/fdb23.png)
+
+### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
 
 Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro collegamento.
 
