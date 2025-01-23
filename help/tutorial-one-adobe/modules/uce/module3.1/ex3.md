@@ -3,9 +3,10 @@ title: Raccolta dati - FAC - Creare una composizione federata
 description: Foundation - FAC - Creare una composizione federata
 kt: 5342
 doc-type: tutorial
-source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
+exl-id: dc044a26-f16a-491e-a795-4cd16f211256
+source-git-commit: f6881cc2c993941f60e440ce0c367a139ae80b00
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '493'
 ht-degree: 3%
 
 ---
@@ -139,6 +140,8 @@ La tua composizione ora è finita. Fare clic su **Inizio** per eseguirlo.
 La query verrà ora inviata al Snowflake, che eseguirà la query sui dati di origine. I risultati verranno inviati nuovamente ad AEP, ma i dati di origine rimangono nel Snowflake.
 
 Il pubblico ora è popolato e può essere indirizzato dall’interno dell’ecosistema AEP.
+
+![FAC](./images/fedcomp22.png)
 
 Passaggio successivo: [Riepilogo e vantaggi](./summary.md)
 

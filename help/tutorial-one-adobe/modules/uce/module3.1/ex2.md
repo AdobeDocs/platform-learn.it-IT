@@ -3,16 +3,17 @@ title: Raccolta dati - FAC - Creare schemi, modelli dati e collegamenti
 description: Foundation - FAC - Creare schemi, modelli dati e collegamenti
 kt: 5342
 doc-type: tutorial
-source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
+exl-id: 42004cb9-60b3-4ca8-97d9-3d169735c98f
+source-git-commit: 246bb91496104818f357848f41b79523b7771638
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '638'
 ht-degree: 2%
 
 ---
 
 # 3.1.2 Creare schemi, modelli di dati e collegamenti
 
-È ora possibile configurare il database federato in AEP.
+È ora possibile configurare il database federato in Adobe Experience Platform.
 
 Accedi a Adobe Experience Platform da questo URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
@@ -129,6 +130,8 @@ Seleziona gli schemi e fai clic su **Aggiungi**.
 
 Poi vedrai questo. Fai clic su **Salva**.
 
+### `CK_USERS` - `CK_PERSONS`
+
 Ora puoi iniziare a definire i collegamenti tra schemi. Per iniziare a definire un collegamento, fai clic su **Crea collegamenti**.
 
 ![FAC](./images/fdb16.png)
@@ -139,6 +142,9 @@ Fai clic su **Aggiungi**.
 
 ![FAC](./images/fdb18.png)
 
+
+### `CK_HOUSEHOLDS` - `CK_PERSONS`
+
 Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro collegamento.
 
 ![FAC](./images/fdb17.png)
@@ -147,13 +153,18 @@ Definiamo quindi il collegamento tra la tabella `CK_HOUSEHOLDS` e `CK_PERSONS`.
 
 ![FAC](./images/fdb19.png)
 
+### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
+
 Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro collegamento.
 
 ![FAC](./images/fdb20.png)
 
-Definiamo quindi il collegamento tra la tabella `CK_MONTHLY_DATA_USAGE` e `CK_USERS`.
+Definiamo quindi il collegamento tra la tabella `CK_USERS` e `CK_MONTHLY_DATA_USAGE`.
 
 ![FAC](./images/fdb21.png)
+
+
+### `CK_USERS` - `CK_HOUSEHOLDS`
 
 Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro collegamento.
 
@@ -163,8 +174,19 @@ Definiamo quindi il collegamento tra la tabella `CK_USERS` e `CK_HOUSEHOLDS`.
 
 ![FAC](./images/fdb23.png)
 
-Allora tornerai qui. Fai clic su **Salva**.
+### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
+
+Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro collegamento.
+
 ![FAC](./images/fdb24.png)
+
+Definiamo quindi il collegamento tra la tabella `CK_USERS` e `CK_MOBILE_DATA_USAGE`.
+
+![FAC](./images/fdb25.png)
+
+Dovresti vedere questo. Fai clic su **Salva**.
+
+![FAC](./images/fdb26.png)
 
 La configurazione in AEP è terminata. Ora puoi iniziare a utilizzare i dati federati in una composizione di pubblico federato.
 
