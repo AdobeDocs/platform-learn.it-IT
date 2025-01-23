@@ -4,9 +4,9 @@ description: 'Guida introduttiva: utilizzare l’app mobile'
 kt: 5342
 doc-type: tutorial
 exl-id: 2b94f08f-c932-4287-9956-cfe368c96c12
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,12 @@ Vai a [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app) sul tuo computer.
 
 ![DSN](./images/mobileapp.png)
 
-Utilizza l&#39;app **Fotocamera** sul tuo smartphone per installare l&#39;app mobile per il sistema operativo del tuo dispositivo. Per questa abilitazione, devi installare la **versione 2.x** che utilizza l&#39;SDK di Adobe Experience Platform Mobile.
+Utilizza l&#39;app **Fotocamera** sul tuo smartphone per installare l&#39;app mobile per il sistema operativo del tuo dispositivo. Per questa abilitazione, è necessario installare la **versione 2.x** che utilizza il SDK di Adobe Experience Platform Mobile.
 
 >[!NOTE]
 >
 >Dopo aver installato l&#39;app per la prima volta su un dispositivo iOS, è possibile che venga visualizzato un messaggio di errore quando si tenta di aprire l&#39;app con il seguente messaggio: **Sviluppatore Enterprise non attendibile**. Per risolvere il problema, vai a **Impostazioni > Generale > Gestione VPN e dispositivi > Adobe Systems Inc.** e fai clic su **Considera attendibile Adobe Systems Inc.**.
+>È probabile che il dispositivo iOS debba essere riavviato per completare il processo di affidabilità di uno sviluppatore.
 
 Una volta installata l’app, questa si trova nella schermata iniziale del dispositivo. Fai clic sull&#39;icona per aprire l&#39;app.
 

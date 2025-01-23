@@ -4,7 +4,7 @@ description: 'Guida introduttiva: creare lo stream di dati'
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
+source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 1%
@@ -73,7 +73,7 @@ Fare clic sull&#39;estensione Adobe Experience Platform Web SDK e quindi su **Co
 
 ![Denomina la configurazione di Edge e salva](./images/edgeconfig12.png)
 
-Poi vedrai questo. Osserva il menu **Flussi di dati** e accertati che sia selezionata la sandbox corretta, che in questo caso dovrebbe essere `--aepSandboxName--`.
+Poi vedrai questo. Dai un&#39;occhiata al menu **Flussi di dati** e assicurati che sia selezionata la sandbox corretta, che in questo caso dovrebbe essere `--aepSandboxName--`.
 
 ![Denomina la configurazione di Edge e salva](./images/edgeconfig12a.png)
 

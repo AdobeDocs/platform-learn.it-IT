@@ -4,9 +4,9 @@ description: Intelligent Services
 kt: 5342
 doc-type: tutorial
 exl-id: 3668f06b-df76-43db-be6a-36c339256a22
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '251'
 ht-degree: 3%
 
 ---
@@ -43,6 +43,8 @@ L’analista marketing configura le previsioni desiderate specificando le regole
 [2.2.3 IA per l’analisi dei clienti - Dashboard di punteggio e segmentazione (Predict &amp; Take Action)](./ex3.md)
 
 Una volta terminati l’addestramento e il punteggio, i punteggi vengono riscritti in Platform. Puoi decidere quali azioni intraprendere con le previsioni, ad esempio definire i segmenti, creare dashboard personalizzate e così via.
+
+![Informazioni tecniche](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

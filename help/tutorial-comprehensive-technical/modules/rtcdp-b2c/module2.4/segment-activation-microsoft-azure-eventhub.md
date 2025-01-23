@@ -4,9 +4,9 @@ description: Audience Activation dell’hub eventi di Microsoft Azure
 kt: 5342
 doc-type: tutorial
 exl-id: 23713cb4-2055-43e8-9380-0ca8845a75e8
-source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,8 @@ A questo punto, tutto è pronto. Ora puoi esplorare il sito web demo e ottenere 
 [Riepilogo e vantaggi](./summary.md)
 
 Riepilogo di questo modulo e panoramica dei vantaggi.
+
+![Informazioni tecniche](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

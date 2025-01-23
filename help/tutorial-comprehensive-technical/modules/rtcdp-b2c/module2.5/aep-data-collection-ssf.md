@@ -4,9 +4,9 @@ description: In questo modulo utilizzerai i set di dati, gli schemi e le proprie
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ In questo modulo:
 ## Finalità di apprendimento
 
 - Acquisisci familiarità con le proprietà del server di raccolta dati di Adobe Experience Platform e la nuova estensione del connettore Adobe Cloud
-- Come riutilizzare i dati Adobe Experience Platform Web SDK in soluzioni di terze parti come Google e AWS
+- Come riutilizzare i dati di Adobe Experience Platform Web SDK in soluzioni di terze parti come Google e AWS
 - Scopri l’architettura alla base della raccolta dati di Adobe Experience Platform e dell’inoltro lato server.
 
 ## Prerequisiti
@@ -49,11 +49,11 @@ In questo esercizio aggiornerai lo stream di dati esistente per rendere disponib
 
 [2.5.3 Creare e configurare un webhook personalizzato](./ex3.md)
 
-In questo esercizio creerai e configurerai un webhook personalizzato e inizierai a inoltrare i dati raccolti da Web SDK a tale webhook personalizzato.
+In questo esercizio verrà creato e configurato un webhook personalizzato e inizierai a inoltrare i dati raccolti da Web SDK a tale webhook personalizzato.
 
 [2.5.4 Inoltra gli eventi a GCP Pub/Sub](./ex4.md)
 
-In questo esercizio creerai e configurerai una funzione cloud di Google e inizierai a inoltrare a Google i dati raccolti dall’SDK per web.
+In questo esercizio creerai e configurerai una funzione cloud di Google e inizierai a inoltrare a Google i dati raccolti da Web SDK.
 
 [2.5.5 Inoltrare gli eventi ad AWS Kinesis e AWS S3](./ex5.md)
 
@@ -62,6 +62,8 @@ In questo esercizio configurerai l’ambiente AWS utilizzando AWS IAM, AWS Kines
 [Riepilogo e vantaggi](./summary.md)
 
 Riepilogo di questo modulo e panoramica dei vantaggi.
+
+![Informazioni tecniche](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

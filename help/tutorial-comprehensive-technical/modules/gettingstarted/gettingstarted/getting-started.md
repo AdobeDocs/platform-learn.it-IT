@@ -4,9 +4,9 @@ description: Guida introduttiva - Riepilogo
 kt: 5342
 doc-type: tutorial
 exl-id: 31616c51-01e0-4f99-91f1-4f21054b0999
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '248'
 ht-degree: 2%
 
 ---
@@ -47,6 +47,8 @@ In questo esercizio configurerete il sito web in modo da poterlo utilizzare per 
 [Utilizzare l’app mobile](./ex5.md)
 
 In questo esercizio configurerai l’app mobile in modo da poterla utilizzare per dimostrazioni e abilitazione.
+
+![Informazioni tecniche](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

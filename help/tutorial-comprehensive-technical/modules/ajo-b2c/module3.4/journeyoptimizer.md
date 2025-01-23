@@ -4,9 +4,9 @@ description: In questo modulo imparerai tutto quello che c’è da sapere su Jou
 kt: 5342
 doc-type: tutorial
 exl-id: f9f37817-f640-4b54-b977-13fd6cc29fcd
-source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '288'
 ht-degree: 2%
 
 ---
@@ -53,6 +53,8 @@ In questo esercizio installerai un’app mobile sul tuo dispositivo iOS e config
 [Riepilogo e vantaggi](./summary.md)
 
 Riepilogo di questo modulo e panoramica dei vantaggi.
+
+![Informazioni tecniche](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

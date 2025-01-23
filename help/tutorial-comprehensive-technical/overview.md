@@ -3,14 +3,16 @@ title: Panoramica
 description: Punto di partenza per Data Engineer, Data Analyst, Data Architect, Data Scientist, Orchestration Engineer e Marketing per comprendere appieno il valore aziendale di Adobe Experience Platform e di tutti i suoi servizi applicativi.
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1251'
 ht-degree: 2%
 
 ---
 
 # Tutorial tecnico completo per Adobe Experience Platform
+
+![Informazioni tecniche](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Panoramica
 
@@ -182,3 +184,9 @@ In questo modulo, configurerai la tua istanza di Google Cloud Platform, caricher
 In questo modulo imparerai a utilizzare Adobe Experience Platform Query Service.
 
 **Investimento nel tempo:** 90 minuti
+
+![Informazioni tecniche](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>Se hai domande, vuoi condividere feedback generali su suggerimenti in merito a contenuti futuri, contatta direttamente Tech Insiders, inviando un&#39;e-mail a **techinsiders@adobe.com**.
