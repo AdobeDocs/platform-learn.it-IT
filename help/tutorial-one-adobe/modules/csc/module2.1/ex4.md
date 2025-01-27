@@ -4,9 +4,9 @@ description: Sviluppare un blocco personalizzato
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
+source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '106'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,21 @@ L’archivio GitHub verrà quindi aperto in GitHub Desktop. Puoi cambiare il **p
 
 ![Blocca](./images/block3.png)
 
-Un fo locale
+Verrà ora creata una cartella locale.
+
+![Blocca](./images/block4.png)
+
+Aprire Visual Studio Code. Vai a **File** > **Apri cartella**.
+
+![Blocca](./images/block5.png)
+
+
+
+![Blocca](./images/block6.png)
+
+
+
+![Blocca](./images/block7.png)
 
 
 [Torna al modulo 2.1](./aemcs.md){target="_blank"}

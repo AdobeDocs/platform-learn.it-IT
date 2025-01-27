@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial tecnico completo per applicazioni Adobe, da Creative 
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 55a7e6fccb0c2a91f12a3a65226097ca701e655f
+source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '318'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 4%
 
 + [Panoramica del tutorial](/help/tutorial-one-adobe/overview.md)
 + [Stato contenuto](/help/tutorial-one-adobe/status.md)
-+ [Preparazione](/help/tutorial-one-adobe/prework.md)
 
 + Introduzione {#gettingstarted}
    + Introduzione {#gettingstarted}
@@ -26,6 +25,8 @@ ht-degree: 4%
       + [Creare lo stream di dati](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
       + [Utilizza il sito web](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
       + [Utilizzare l’app mobile](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
+   + [Preparazione](/help/tutorial-one-adobe/prework.md)
+   + [PostBuster](/help/tutorial-one-adobe/postbuster.md)
 
 + 1 Adobe Creative Cloud {#creativecloud}
    + 1.1 Servizi Adobe Firefly {#module11}
