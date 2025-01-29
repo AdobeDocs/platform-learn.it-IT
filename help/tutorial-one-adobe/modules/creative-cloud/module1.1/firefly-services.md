@@ -1,47 +1,47 @@
 ---
 title: Servizi Adobe Firefly
 description: Servizi Adobe Firefly
-kt: 5342
-doc-type: tutorial
+role: Developer
+level: Beginner
+jira: KT-5342
+doc-type: Tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
+source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '150'
 ht-degree: 2%
 
 ---
 
-# 1.1 Servizi di Adobe Firefly
+# Panoramica dei servizi Adobe Firefly
 
-## Finalità di apprendimento
-
-- Scopri come utilizzare i servizi Adobe Firefly in vari modi.
+Scopri i diversi modi in cui puoi utilizzare Adobe Firefly Services.
 
 ## Prerequisiti
 
-- Accesso all&#39;Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
+Accesso all&#39;Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/)
 
 ## Esercizi
 
-[1.1.1 Guida introduttiva ai servizi di Firefly](./ex1.md){target="_blank"}
+[Guida introduttiva ai servizi di Firefly](./ex1.md){target="_blank"}
 
 In questo esercizio, esplora i servizi di Firefly e scopri le funzionalità.
 
-[1.1.2 Ottimizzare i processi di Firefly con Microsoft Azure e gli URL prefirmati](./ex2.md){target="_blank"}
+[Ottimizzare il processo di Firefly utilizzando Microsoft Azure e gli URL prefirmati](./ex2.md){target="_blank"}
 
 In questo esercizio, esplora i servizi di Firefly e scopri le funzionalità.
 
-[1.1.3 Adobe Firefly e Adobe Photoshop](./ex3.md){target="_blank"}
+[API Adobe Firefly e Adobe Photoshop](./ex3.md){target="_blank"}
 
-In questo esercizio utilizzerai i Servizi di Firefly insieme ad Adobe Photoshop.
+In questo esercizio, scopri come utilizzare i servizi di Firefly insieme ad Adobe Photoshop.
 
-[1.1.4 Modelli personalizzati di Firefly](./ex4.md){target="_blank"}
+[Modelli personalizzati per Firefly API](./ex4.md){target="_blank"}
 
-In questo esercizio utilizzerai i Servizi di Firefly insieme ad Adobe Photoshop.
+In questo esercizio, scopri come utilizzare l’API Firefly Customer Models.
 
 [Riepilogo e vantaggi](./summary.md){target="_blank"}
 
-Riepilogo di questo modulo e panoramica dei vantaggi.
+Scopri un riepilogo e i vantaggi dei servizi di Firefly.
 
 ![Informazioni tecniche](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
@@ -49,4 +49,6 @@ Riepilogo di questo modulo e panoramica dei vantaggi.
 >
 >Se hai domande, vuoi condividere feedback generali su suggerimenti in merito a contenuti futuri, contatta direttamente Tech Insiders, inviando un&#39;e-mail a **techinsiders@adobe.com**.
 
-[Torna a tutti i moduli](../../../overview.md){target="_blank"}
+## Passaggi successivi
+
+Torna a [Tutti i moduli](../../../overview.md){target="_blank"}

@@ -1,45 +1,49 @@
 ---
 title: Utilizzo delle API di Photoshop
-description: Utilizzo delle API di Photoshop
-kt: 5342
-doc-type: tutorial
+description: Scopri come utilizzare le API di Photoshop e i servizi di Firefly
+role: Developer
+level: Beginner
+jira: KT-5342
+doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
+source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 1%
+source-wordcount: '935'
+ht-degree: 0%
 
 ---
 
-# 1.1.3 Utilizzo delle API di Photoshop
+# Utilizzo delle API di Photoshop
 
-## 1.1.3.1 Aggiornare l’integrazione dell’Adobe I/O
+Scopri come utilizzare le API di Photoshop e i servizi di Firefly.
 
-Vai a [https://developer.adobe.com/console/home](https://developer.adobe.com/console/projects){target="_blank"}.
+## Aggiornare l’integrazione di Adobe I/O
+
+1. Vai a [https://developer.adobe.com/console/home](https://developer.adobe.com/console/projects){target="_blank"}.
 
 ![Adobe I/O di nuova integrazione](./images/iohome.png)
 
-Vai a **Progetti** e fai clic per aprire il progetto creato nell&#39;esercizio precedente, che si chiama `--aepUserLdap-- Firefly`.
+1. Vai a **Progetti** e seleziona il progetto creato nell&#39;esercizio precedente, che si chiama `--aepUserLdap-- Firefly`.
 
 ![Archiviazione Azure](./images/ps1.png)
 
-Fare clic su **+ Aggiungi al progetto** e quindi su **API**.
+1. Selezionare **+ Aggiungi al progetto**, quindi selezionare **API**.
 
 ![Archiviazione Azure](./images/ps2.png)
 
-Selezionare **Creative Cloud** e fare clic su **Photoshop - Servizi di Firefly**. Fai clic su **Avanti**.
+1. Selezionare **Creative Cloud** e scegliere **Photoshop - Servizi di Firefly**. Seleziona **Avanti**.
 
 ![Archiviazione Azure](./images/ps3.png)
 
-Fai clic su **Avanti**.
+1. Seleziona **Avanti**.
 
 ![Archiviazione Azure](./images/ps4.png)
 
-Successivamente, devi selezionare un profilo di prodotto che definirà quali autorizzazioni sono disponibili per questa integrazione.
+Successivamente, devi selezionare un profilo di prodotto che definisca quali autorizzazioni sono disponibili per questa integrazione.
 
-Selezionare il profilo **Configurazione predefinita servizi di Firefly** e **Configurazione predefinita servizi di automazione Creative Cloud**.
+1. Selezionare **Configurazione predefinita servizi di Firefly** e **Configurazione predefinita servizi di automazione Creative Cloud**.
 
-Fare clic su **Salva API configurata**.
+1. Seleziona **Salva API configurata**.
 
 ![Archiviazione Azure](./images/ps5.png)
 
@@ -47,47 +51,49 @@ Il progetto di Adobe I/O è stato aggiornato per funzionare con le API di Photos
 
 ![Archiviazione Azure](./images/ps6.png)
 
-## 1.1.3.2 Interagire a livello di programmazione con un file PSD
+## Interagire a livello di programmazione con un file PSD
 
-Scarica il file Vai a [citisignal-fibre.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} sul desktop.
+1. Scarica [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} sul desktop.
 
-Apri il file **citisignal-fiber.psd** in Photoshop. Dovresti avere questo.
+1. Apri **citisignal-fiber.psd** in Photoshop.
 
 ![Archiviazione Azure](./images/ps7.png)
 
-Nel riquadro **Livelli** verrà visualizzato che l&#39;autore del file ha assegnato un nome univoco a ogni livello. Potete visualizzare le informazioni sui livelli aprendo il file PSD in Photoshop, ma potete anche farlo a livello di programmazione.
+Nel riquadro **Livelli**, l&#39;autore del file ha assegnato un nome univoco a ogni livello. Potete visualizzare le informazioni sui livelli aprendo il file PSD in Photoshop, ma potete anche farlo a livello di programmazione.
 
 Inviiamo la tua prima richiesta API alle API di Photoshop.
 
-Passa a Postman. Prima di inviare le richieste API a Photoshop, devi eseguire l’autenticazione in Adobe I/O. Esegui la richiesta utilizzata in precedenza con il nome **POST - Ottieni token di accesso**.
+1. In Postman, prima di inviare le richieste API a Photoshop, devi eseguire l’autenticazione in Adobe I/O. Apri la richiesta precedente denominata **POST - Ottieni token di accesso**.
 
-Vai a **Parametri** e verifica che il parametro **Ambito** sia impostato correttamente. Il valore **Value** per l&#39;ambito **Scope** deve essere simile al seguente:
+1. Vai a **Parametri** e verifica che il parametro **Ambito** sia impostato correttamente. Il valore **Value** per l&#39;ambito **Scope** deve essere simile al seguente:
 
 `openid,session,AdobeID,read_organizations,additional_info.projectedProductContext, ff_apis, firefly_api`
 
-Quindi fare clic su **Invia**.
+1. Seleziona **Invia**.
 
 ![Archiviazione Azure](./images/ps8.png)
 
-Quindi disponi di un token di accesso valido per interagire con le API di Photoshop.
+Ora disponi di un token di accesso valido per interagire con le API di Photoshop.
 
 ![Archiviazione Azure](./images/ps9.png)
 
-### 1.1.3.2.1 API di Photoshop - Hello World
+### API Photoshop - Hello World
 
-Ora, supponiamo di salutare le API di Photoshop per verificare se tutte le autorizzazioni e l’accesso sono impostati correttamente. Nella raccolta **Photoshop**, apri la richiesta con il nome **Photoshop Hello (Test Auth).**. Fai clic su **Invia**.
+Ora, supponiamo di salutare le API di Photoshop per verificare se tutte le autorizzazioni e l’accesso sono impostati correttamente.
+
+1. Nella raccolta **Photoshop**, apri la richiesta **Photoshop Hello (autenticazione test).**. Seleziona **Invia**.
 
 ![Archiviazione Azure](./images/ps10.png)
 
-Dovresti quindi ricevere questa risposta: **Benvenuto nell&#39;API Photoshop!**.
+Dovresti ricevere la risposta **Benvenuto nell&#39;API Photoshop!**.
 
 ![Archiviazione Azure](./images/ps11.png)
 
-Quindi, per interagire a livello di programmazione con il file PSD **citisignal-fiber.psd**, devi caricarlo nel tuo account di archiviazione. Puoi farlo manualmente trascinandolo nel contenitore utilizzando Azure Storage Explorer, ma questa volta devi farlo tramite l’API.
+Quindi, per interagire a livello di programmazione con il file PSD **citisignal-fiber.psd**, devi caricarlo nel tuo account di archiviazione. Puoi farlo manualmente trascinandolo nel contenitore utilizzando Azure Storage Explorer, ma questa volta dovresti farlo tramite l’API.
 
-### 1.1.3.2.2 Caricare PSD in Azure
+### Carica PSD in Azure
 
-In Postman, apri la richiesta **Carica PSD nell&#39;account di archiviazione Azure**. Nell’esercizio precedente, hai configurato queste variabili di ambiente in Postman, che ora utilizzerai:
+1. In Postman, apri la richiesta **Carica PSD nell&#39;account di archiviazione Azure**. Nell’esercizio precedente, hai configurato queste variabili di ambiente in Postman, che utilizzerai ora:
 
 - `AZURE_STORAGE_URL`
 - `AZURE_STORAGE_CONTAINER`
@@ -98,25 +104,27 @@ Come è possibile vedere nella richiesta **Carica PSD nell&#39;account di archiv
 
 ![Archiviazione Azure](./images/ps12.png)
 
-In **Body**, aggiungere il file **citisignal-fiber.psd**.
+1. In **Body**, selezionare il file **citisignal-fiber.psd**.
 
 ![Archiviazione Azure](./images/ps13.png)
 
-Dovresti avere questo. Fai clic su **Invia**.
+1. Lo schermo dovrebbe essere simile al seguente. Seleziona **Invia**.
 
 ![Archiviazione Azure](./images/ps14.png)
 
-Dovresti quindi ottenere questa risposta vuota da Azure, il che significa che il file è archiviato nel contenitore nell’account di archiviazione Azure.
+È necessario ottenere questa risposta vuota da Azure, il che significa che il file è archiviato nel contenitore nell’account di archiviazione di Azure.
 
 ![Archiviazione Azure](./images/ps15.png)
 
-Se si utilizza Esplora archivi di Azure per avere un&#39;occhiata, il file verrà visualizzato dopo l&#39;aggiornamento della cartella.
+Se utilizzi Azure Storage Explorer per esaminare il file, assicurati di aggiornare la cartella.
 
 ![Archiviazione Azure](./images/ps16.png)
 
-### 1.1.3.2.3 API di Photoshop - Ottieni manifesto
+### API Photoshop - Ottieni manifesto
 
-Successivamente, devi ottenere il file manifesto del file PSD. In Postman, apri la richiesta **Photoshop - Get PSD Manifest**. Vai a **Corpo**.
+Successivamente, devi ottenere il file manifesto del file PSD.
+
+1. In Postman, apri la richiesta **Photoshop - Get PSD Manifest**. Vai a **Corpo**.
 
 Il corpo deve essere simile al seguente:
 
@@ -136,37 +144,37 @@ Il corpo deve essere simile al seguente:
 }
 ```
 
-Fai clic su **Invia**.
+1. Seleziona **Invia**.
 
-Nella risposta viene visualizzato un collegamento. Poiché il completamento delle operazioni in Photoshop a volte può richiedere un po’ di tempo, Photoshop fornirà un file di stato come risposta alla maggior parte delle richieste in arrivo. Per capire cosa sta succedendo con la tua richiesta, devi leggere il file di stato.
+Nella risposta viene visualizzato un collegamento. Poiché il completamento delle operazioni in Photoshop a volte può richiedere un po’ di tempo, Photoshop fornisce un file di stato come risposta alla maggior parte delle richieste in arrivo. Per capire cosa sta succedendo con la tua richiesta, devi leggere il file di stato.
 
 ![Archiviazione Azure](./images/ps17.png)
 
-Per leggere il file di stato, aprire la richiesta **Photoshop - Ottieni stato PS**. Viene quindi visualizzato che questa richiesta utilizza una variabile come URL, che è una variabile impostata dalla richiesta precedente inviata, **Photoshop - Ottieni manifesto PSD**. Le variabili sono impostate negli **Script** di ogni richiesta.
-
-Fai clic su **Invia**.
+1. Per leggere il file di stato, aprire la richiesta **Photoshop - Ottieni stato PS**. È possibile vedere che questa richiesta utilizza una variabile come URL, che è una variabile impostata dalla richiesta precedente inviata, **Photoshop - Ottieni manifesto PSD**. Le variabili sono impostate negli **Script** di ogni richiesta. Seleziona **Invia**.
 
 ![Archiviazione Azure](./images/ps18.png)
 
-Dovresti vedere questo. Attualmente, lo stato è impostato su **in sospeso**, il che significa che il processo non è ancora completato.
+Lo schermo dovrebbe essere simile al seguente. Attualmente, lo stato è impostato su **in sospeso**, il che significa che il processo non è ancora completato.
 
 ![Archiviazione Azure](./images/ps19.png)
 
-Puoi fare clic su Invia altre volte nella richiesta **Photoshop - Ottieni stato PS**, fino a quando lo stato non cambia in **completato**. L&#39;operazione potrebbe richiedere alcuni minuti.
+1. Selezionare invia altre volte in **Photoshop - Ottieni stato PS**, fino a quando lo stato non cambia in **completato**. L&#39;operazione potrebbe richiedere alcuni minuti.
 
-Quando la risposta è disponibile, viene visualizzato un file json contenente informazioni su tutti i livelli del file PSD. Si tratta di informazioni utili, in quanto qui è possibile visualizzare elementi come il nome o l’ID del livello.
+Quando la risposta è disponibile, puoi vedere che il file json contiene informazioni su tutti i livelli del file PSD. Si tratta di informazioni utili, in quanto è possibile identificare elementi come il nome o l’ID del livello.
 
 ![Archiviazione Azure](./images/ps20.png)
 
-Ad esempio, cercare il testo `2048x2048-cta`. Dovresti vedere questo.
+Ad esempio, cercare il testo `2048x2048-cta`. Lo schermo dovrebbe essere simile al seguente:
 
 ![Archiviazione Azure](./images/ps21.png)
 
-### 1.1.3.2.4 API Photoshop - Modifica testo
+### API Photoshop - Modifica testo
 
-Ora devi modificare il testo per l’invito all’azione utilizzando le API. In Postman, apri la richiesta **Photoshop - Cambia testo** e passa a **Corpo**.
+Successivamente, devi modificare il testo per l’invito all’azione utilizzando le API.
 
-Dovresti vedere questo. È possibile vedere che:
+1. In Postman, apri la richiesta **Photoshop - Cambia testo** e passa a **Corpo**.
+
+Lo schermo dovrebbe essere simile al seguente:
 
 - viene innanzitutto specificato un file di input: `citisignal-fiber.psd`
 - in secondo luogo, viene specificato il livello da modificare, con il testo da modificare in
@@ -201,9 +209,9 @@ Dovresti vedere questo. È possibile vedere che:
 }
 ```
 
-Il file di output ha un nome diverso, in quanto non si desidera sovrascrivere il file di input originale.
+Il nome del file di output è diverso, in quanto non si desidera ignorare il file di input originale.
 
-Fai clic su **Invia**.
+1. Seleziona **Invia**.
 
 ![Archiviazione Azure](./images/ps23.png)
 
@@ -211,26 +219,24 @@ Proprio come prima, la risposta contiene un collegamento che punta al file di st
 
 ![Archiviazione Azure](./images/ps22.png)
 
-Per leggere il file di stato, apri di nuovo la richiesta **Photoshop - Ottieni stato PS** e fai clic su **Invia**. Se lo stato non è impostato su **completato** immediatamente, attendere qualche secondo e quindi fare di nuovo clic su **Invia**.
+1. Per leggere il file di stato, apri la richiesta **Photoshop - Ottieni stato PS** e seleziona **Invia**. Se lo stato non è impostato su **completato** immediatamente, attendere alcuni secondi e selezionare di nuovo **Invia**.
 
-Una volta impostato lo stato su **riuscito**, dovresti vedere questo. Nel percorso `outputs[0]._links.renditions[0].href` dovrebbe essere visualizzato l&#39;URL del file di output creato da Photoshop e contenente il testo modificato.
-
-Fai clic sull’URL per scaricare il file di output.
+1. Seleziona l’URL per scaricare il file di output.
 
 ![Archiviazione Azure](./images/ps24.png)
 
-Il file **citisignal-fiber-changed-text.psd** verrà quindi scaricato nel computer, dopodiché potrai aprirlo. Dovresti quindi vedere che il segnaposto per l&#39;invito all&#39;azione è stato sostituito dal testo **Get Fiber now!**.
+1. Apri **citisignal-fiber-changed-text.psd** dopo aver scaricato il file sul computer. Dovresti vedere che il segnaposto per l&#39;invito all&#39;azione è stato sostituito dal testo **Get Fiber now!**.
 
 ![Archiviazione Azure](./images/ps25.png)
 
-Infine, il file viene visualizzato anche nel contenitore utilizzando Azure Storage Explorer.
+Puoi anche visualizzare questo file nel contenitore utilizzando Azure Storage Explorer.
 
 ![Archiviazione Azure](./images/ps26.png)
 
-Hai completato l&#39;esercizio.
+## Passaggi successivi
 
-Passaggio successivo: [1.1.4 Modelli personalizzati di Firefly](./ex4.md){target="_blank"}
+Vai a [API modelli personalizzati di Firefly](./ex4.md){target="_blank"}
 
-[Torna al modulo 1.1](./firefly-services.md){target="_blank"}
+Torna a [Panoramica dei servizi Adobe Firefly](./firefly-services.md){target="_blank"}
 
-[Torna a tutti i moduli](./../../../overview.md){target="_blank"}
+Torna a [Tutti i moduli](./../../../overview.md){target="_blank"}

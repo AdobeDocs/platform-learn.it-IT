@@ -1,26 +1,22 @@
 ---
-title: Firefly Services Automation - Riepilogo
+title: Riepilogo e vantaggi dell'automazione dei servizi di Firefly
 description: Firefly Services Automation - Riepilogo
 kt: 5342
 doc-type: tutorial
 exl-id: 96c76fac-9acb-44ac-9534-546dc635ff73
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: e419f07dbef519d9cf2f0100878e4cc880ad5f94
 workflow-type: tm+mt
-source-wordcount: '45'
-ht-degree: 2%
+source-wordcount: '38'
+ht-degree: 5%
 
 ---
 
 # Riepilogo e vantaggi
 
-Congratulazioni e grazie per aver dedicato il tuo tempo all&#39;apprendimento delle applicazioni Adobe.
+Grazie per aver dedicato il tuo tempo all’apprendimento delle applicazioni Adobe.
 
-## Vantaggi
+## Passaggi successivi
 
-Evidenziamo i vantaggi dell’utilizzo di Workfront Fusion.
+Torna a [Automazione dei servizi Adobe Firefly](./automation.md){target="_blank"}
 
-## Guarda qui
-
-[Torna al modulo 1.2](./automation.md)
-
-[Torna a tutti i moduli](../../../overview.md)
+Torna a [Tutti i moduli](./../../../overview.md){target="_blank"}
