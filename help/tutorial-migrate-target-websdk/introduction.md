@@ -1,20 +1,34 @@
 ---
-title: Migrare Target da at.js 2.x a Web SDK
+title: Migrazione di Target da at.js 2.x a Web SDK
 description: Scopri come migrare un’implementazione di Adobe Target da at.js 2.x a Adobe Experience Platform Web SDK. Gli argomenti includono il caricamento della libreria JavaScript, l’invio di parametri, le attività di rendering e altri callout rilevanti.
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: c8920fde-ad6b-4f2d-a35f-ce865b35bba0
-source-git-commit: 485e79e3569052184475fbc49ab5f43cebcac9a6
+source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '611'
 ht-degree: 4%
 
 ---
 
-# Migrare Target da at.js 2.x a Platform Web SDK
+# Migrazione di Target da at.js 2.x a Platform Web SDK
 
 Questa guida è rivolta agli implementatori esperti di Adobe Target per scoprire come migrare un’implementazione at.js a Adobe Experience Platform Web SDK.
 
-Adobe Experience Platform Web SDK è una libreria JavaScript lato client che consente ai clienti Adobe Experience Cloud di interagire con i servizi Experience Cloud tramite l’Edge Network Adobe Experience Platform. Questa nuova libreria combina le funzionalità delle librerie di applicazioni Adobe separate in un unico pacchetto leggero in grado di sfruttare appieno le nuove funzioni di Adobe Experience Platform.
+Adobe Experience Platform Web SDK è una libreria JavaScript lato client che consente ai clienti di Adobe Experience Cloud di interagire con i servizi Experience Cloud tramite l’Edge Network Adobe Experience Platform. Questa nuova libreria combina le funzionalità delle librerie di applicazioni Adobe separate in un unico pacchetto leggero in grado di sfruttare appieno le nuove funzioni di Adobe Experience Platform.
+
+
+>[!NOTE]
+>
+>Esercitazioni simili sulla migrazione sono disponibili per:
+>
+> * [Adobe Analytics](../tutorial-migrate-analytics-websdk/migration-to-websdk-overview.md)
+> * [Adobe Audience Manager](https://experienceleague.adobe.com/it/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+
+>[!CAUTION]
+>
+> Poiché Platform Web SDK supporta più applicazioni Adobe, è necessario eseguire la migrazione di tutte le librerie Adobe di una determinata pagina contemporaneamente. Non è supportata, ad esempio, un&#39;implementazione mista di Web SDK for Target e AppMeasurement for Analytics su una singola pagina __. Tuttavia, è supportata un’implementazione mista in pagine diverse, ad esempio Web SDK alla pagina A e at.js con AppMeasurement alla pagina B.
+
+
 
 ## Vantaggi chiave
 
@@ -26,7 +40,7 @@ Alcuni dei vantaggi di Platform Web SDK rispetto alla libreria at.js indipendent
 * Ingombro ridotto per metriche di velocità di pagina migliorate
 * Maggiore flessibilità di implementazione per gli sviluppatori
 
-Probabilmente, il vantaggio più grande per i clienti di Target della migrazione è l&#39;integrazione con Real-time Customer Data Platform. Real-Time CDP offre straordinarie funzionalità per la creazione di tipi di pubblico, basate sulla gamma completa di dati acquisiti in Experience Platform e sulla sua funzionalità Profilo cliente in tempo reale. Un framework integrato di governance dei dati automatizza l’utilizzo responsabile di tali dati. IA per l’analisi dei clienti consente di utilizzare facilmente i modelli di apprendimento automatico per creare modelli di propensione e abbandono il cui output può essere condiviso su Adobe Target. Infine, i clienti dei componenti aggiuntivi opzionali Healthcare e Privacy &amp; Security Shield possono utilizzare la funzione di applicazione del consenso per applicare facilmente le preferenze di consenso dei singoli clienti. Platform Web SDK è un requisito necessario per utilizzare queste funzioni di Real-Time CDP nel canale web.
+Probabilmente, il vantaggio più grande per i clienti di Target della migrazione è l&#39;integrazione con Real-time Customer Data Platform. Real-Time CDP offre straordinarie funzionalità per la creazione di tipi di pubblico, basate sulla gamma completa di dati acquisiti in Experience Platform e sulla sua funzionalità Profilo cliente in tempo reale. Un framework integrato di governance dei dati automatizza l’utilizzo responsabile di tali dati. IA per l’analisi dei clienti consente di utilizzare facilmente i modelli di apprendimento automatico per creare modelli di propensione e abbandono il cui output può essere condiviso su Adobe Target. Infine, i clienti dei componenti aggiuntivi opzionali Healthcare e Privacy &amp; Security Shield possono utilizzare la funzione di applicazione del consenso per applicare facilmente le preferenze di consenso dei singoli clienti. Platform Web SDK è un requisito necessario per utilizzare queste funzioni di Real-Time CDP nel tuo canale web.
 
 ## Obiettivi di apprendimento
 

@@ -5,9 +5,9 @@ solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16755
 exl-id: e578b669-42b4-46ae-b6e6-6688e5c5c772
-source-git-commit: 47b970e3659fe7ebfdf491d9c0e9356128013fb9
+source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,17 @@ ht-degree: 0%
 # Migrazione da Adobe Analytics a Web SDK tramite tag
 
 Scopri i passaggi per migrare un’implementazione di Adobe Analytics utilizzando l’estensione Analytics in Experience Platform Tags (precedentemente nota come Launch) a Web SDK, utilizzando l’estensione Web SDK anche in Tags. Quando si utilizza l’estensione Adobe Analytics nei Tag, viene utilizzato il codice &quot;AppMeasurement.js&quot; in background. Di conseguenza, puoi considerare questo come un’esercitazione per la migrazione di AppMeasurement a Web SDK, ma questa esercitazione si trova completamente all’interno di Tag e NON riguarda lo spostamento da o verso un’implementazione di JavaScript (ad eccezione del codice JavaScript utilizzato all’interno dell’interfaccia utente di Tags). Per la migrazione delle implementazioni di JavaScript, consulta la [documentazione](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk).
+
+>[!NOTE]
+>
+>Esercitazioni simili sulla migrazione sono disponibili per:
+>
+> * [Adobe Target](../tutorial-migrate-target-websdk/introduction.md)
+> * [Adobe Audience Manager](https://experienceleague.adobe.com/it/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+
+>[!CAUTION]
+>
+> Poiché Platform Web SDK supporta più applicazioni Adobe, è necessario eseguire la migrazione di tutte le librerie Adobe di una determinata pagina contemporaneamente. Non è supportata, ad esempio, un&#39;implementazione mista di Web SDK for Target e AppMeasurement for Analytics su una singola pagina __. Tuttavia, è supportata un’implementazione mista in pagine diverse, ad esempio Web SDK alla pagina A e at.js con AppMeasurement alla pagina B.
 
 ## Cosa otterrai da questa esercitazione
 
