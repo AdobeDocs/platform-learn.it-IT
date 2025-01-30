@@ -1,16 +1,17 @@
 ---
 title: Configurazione
-description: Configurare l’istanza di AEP
+description: Configurare l’istanza di Adobe Experience Platform
 doc-type: multipage-overview
 hide: false
-source-git-commit: c0649aeacdce00e09c993f2130de3423efc352fa
+exl-id: 1150c5ec-3fba-4506-8f17-c34872f9b3ea
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1048'
 ht-degree: 3%
 
 ---
 
-# Configurazione
+# Configurare l’istanza Adobe Experience Platform
 
 >[!IMPORTANT]
 >
@@ -29,9 +30,9 @@ Per poter utilizzare direttamente tutte queste esercitazioni, è necessario eseg
 
 Se non è stato eseguito il provisioning di un servizio applicativo specifico per l’organizzazione IMS, non sarà possibile svolgere tale esercizio in modo pratico.
 
-## Crea sandbox
+## Creare una sandbox
 
-Per eseguire l’esercitazione nella tua istanza di AEP, è consigliabile innanzitutto impostare una nuova sandbox di sviluppo. Per creare una nuova sandbox, vai a [https://experience.adobe.com/platform](https://experience.adobe.com/platform), vai a Sandbox e quindi vai a **Sfoglia**. Fai clic su **Crea sandbox**.
+Per eseguire l’esercitazione nella tua istanza di Adobe Experience Platform, è consigliabile innanzitutto impostare una nuova sandbox di sviluppo. Per creare una nuova sandbox, vai a [https://experience.adobe.com/platform](https://experience.adobe.com/platform), vai a Sandbox e quindi vai a **Sfoglia**. Fai clic su **Crea sandbox**.
 
 ![Crea sandbox](./assets/images/sandbox1.png)
 
@@ -39,7 +40,7 @@ Crea la sandbox in questo modo:
 
 - Tipo: **Sviluppo**
 - Nome: **aep-tutorial**
-- Titolo: **Esercitazione AEP**
+- Titolo: **Esercitazione Adobe Experience Platform**
 
 Fai clic su **Crea**.
 
@@ -57,7 +58,7 @@ Fai clic per aprire il **Ruolo** specifico che verrà utilizzato dagli Allievi c
 
 ![Crea sandbox](./assets/images/perm1.png)
 
-Assegna al tuo ruolo un nome come **Tutorial AEP** e fai clic su **Conferma**.
+Assegna al tuo ruolo un nome simile a **Esercitazione Adobe Experience Platform** e fai clic su **Conferma**.
 
 ![Crea sandbox](./assets/images/perm2.png)
 
@@ -77,14 +78,14 @@ Aggiungi altre risorse come indicato e imposta le autorizzazioni. Fai clic su **
 
 ![Crea sandbox](./assets/images/perm6.png)
 
-## Adobe I/O di configurazione
+## Adobe I/O configurazione
 
 Vai a
 [https://developer.adobe.com/console/integrations](https://developer.adobe.com/console/integrations). Assicurati di trovarti nell’istanza corretta. Fare clic su **Crea nuovo progetto**.
 
 ![Crea sandbox](./assets/images/io1.png)
 
-Fare clic su **+ Aggiungi al progetto** e quindi su **API**.
+Fare clic su **Aggiungi al progetto** e quindi su **API**.
 
 ![Crea sandbox](./assets/images/io2.png)
 
@@ -100,7 +101,7 @@ Seleziona uno dei profili di prodotto disponibili. Questo profilo di prodotto no
 
 ![Crea sandbox](./assets/images/io5.png)
 
-Fare clic su **+ Aggiungi al progetto** e quindi di nuovo su **API**.
+Fare clic su **Aggiungi al progetto** e quindi di nuovo su **API**.
 
 ![Crea sandbox](./assets/images/io6.png)
 
@@ -124,7 +125,7 @@ Fare clic su **Modifica progetto**.
 
 ![Crea sandbox](./assets/images/io11.png)
 
-Immetti un nuovo **Titolo progetto**, ad esempio **Esercitazione AEP DSN**. Fai clic su **Salva**.
+Immetti un nuovo **Titolo progetto**, ad esempio **Esercitazione Adobe Experience Platform DSN**. Fai clic su **Salva**.
 
 ![Crea sandbox](./assets/images/io12.png)
 
@@ -237,7 +238,7 @@ Si vedrà quindi lo stato di avanzamento dell&#39;installazione, che richiederà
 
 ![Crea sandbox](./assets/images/dsnorg15.png)
 
-Una volta completato tutto, l’istanza di AEP è configurata correttamente e pronta per l’esercitazione per gli Allievi.
+Una volta completato tutto, l’istanza di Adobe Experience Platform è configurata correttamente e pronta per l’esercitazione per gli Allievi.
 
 >[!NOTE]
 >

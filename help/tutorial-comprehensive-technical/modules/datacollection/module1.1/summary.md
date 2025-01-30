@@ -3,7 +3,8 @@ title: Configurazione di Adobe Experience Platform Data Collection e dell’este
 description: Configurazione di Adobe Experience Platform Data Collection e dell’estensione Web SDK - Riepilogo
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 210b1dff-37cc-4eb1-a55a-1f49160549e9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -19,13 +20,13 @@ In questo modulo, hai imparato a configurare Web SDK per raccogliere i dati dal 
 
 Evidenziamo i vantaggi dell’utilizzo di Web SDK per acquisire dati in Adobe Experience Platform:
 
-- L’SDK per web sostituisce tutti i precedenti JavaScript specifici dell’applicazione e, come tale, semplifica notevolmente la tua implementazione.
+- Web SDK sostituisce tutti i JavaScript legacy specifici dell’applicazione e, come tale, semplifica notevolmente l’implementazione.
 - La raccolta dei dati ora avviene immediatamente in formato XDM, semplificando di nuovo l’implementazione.
 
 ## Guarda qui
 
 - Blog tecnico: [Semplificazione dei flussi di lavoro dei clienti con Adobe Experience Platform Web SDK](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
-- Blog tecnico: [Semplificazione delle integrazioni client-server con Adobe Experience Platform Experience Edge](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
+- Blog tecnico: [Semplificazione delle integrazioni client-server con l&#39;Edge Network di Adobe Experience Platform](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
 - Blog tecnico: [Unificare i servizi Adobe Experience Platform con Adobe Experience Platform Web SDK](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)
 
 [Torna al modulo 1](./data-ingestion-launch-web-sdk.md)

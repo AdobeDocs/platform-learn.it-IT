@@ -4,7 +4,7 @@ description: Foundation - Configurazione di Adobe Experience Platform Data Colle
 kt: 5342
 doc-type: tutorial
 exl-id: 098031c6-4d8b-46a5-ae86-8fd7692268d3
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 2%
@@ -26,10 +26,10 @@ La Raccolta dati di Adobe Experience Platform viene utilizzata dai brand per div
 
 Vai a [Raccolta dati Adobe Experience Platform](https://experience.adobe.com/it#/data-collection/).
 
-Vai a **Tag**. Visualizzazione **[!UICONTROL Proprietà]** in corso. Le proprietà elencate qui sono per la gestione dei tutorial. Queste proprietà rappresentano...
+Vai a **Tag**. Visualizzazione **[!UICONTROL Proprietà]** in corso. Le proprietà elencate qui sono per la gestione dei tutorial. Queste proprietà rappresentano:
 
 - Proprietà app e web
-- Siti web diversi che servono i clienti in modi diversi. Ad esempio, Luma Retail avrebbe una proprietà, Luma Travel un’altra
+- Siti web diversi che servono i clienti in modi diversi. Ad esempio, Luma Retail avrebbe una proprietà, Luma Travel un’altra.
 - Siti Web legacy e correnti
 - Una progettazione Adobe Analytics specifica comune a più siti Web diversi
 - Pagine intranet interne e siti esterni

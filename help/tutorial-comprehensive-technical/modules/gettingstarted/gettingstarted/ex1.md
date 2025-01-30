@@ -4,9 +4,9 @@ description: 'Guida introduttiva: installare l’estensione Chrome per la docume
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -72,13 +72,13 @@ Immetti i valori come indicato di seguito, che sono tutti relativi all’istanza
 
 Se non si è sicuri dei valori da immettere per questi campi, seguire le istruzioni riportate di seguito.
 
-**Nome organizzazione IMS AEP**
+**Nome organizzazione IMS Adobe Experience Platform**
 
 Quando accedi all&#39;istanza di Adobe Experience Platform in [https://platform.adobe.com/](https://platform.adobe.com/), il nome dell&#39;istanza si trova nell&#39;angolo in alto a destra dello schermo.
 
 ![DSN](./images/aepname.png)
 
-**ID organizzazione IMS AEP**
+**ID organizzazione Adobe Experience Platform IMS**
 
 L’ID organizzazione IMS è l’identificatore univoco dell’istanza di Adobe Experience Cloud e in questa esercitazione viene fatto riferimento a tale ID in più posizioni.
 
@@ -88,29 +88,29 @@ Puoi trovarlo andando in [Admin Console](https://adminconsole.adobe.com/), dove 
 
 ![DSN](./images/aepid1.png)
 
-Puoi anche trovarlo andando in **Gestione dati > Query** nel menu AEP, dove puoi trovarlo in **Nome utente**.
+Puoi anche trovarlo andando in **Gestione dati > Query** nel menu Adobe Experience Platform, dove puoi trovarlo in **Nome utente**.
 
 ![DSN](./images/aepid2.png)
 
 Assicurarsi di copiare e incollare la parte **@AdobeOrg** insieme all&#39;ID.
 
-**ID tenant AEP**
+**ID tenant Adobe Experience Platform**
 
-L’ID tenant è l’identificatore univoco dell’istanza AEP della tua organizzazione. Quando accedi all&#39;istanza di Adobe Experience Platform in [https://platform.adobe.com/](https://platform.adobe.com/), troverai l&#39;ID tenant nell&#39;URL.
+L’ID tenant è l’identificatore univoco dell’istanza Adobe Experience Platform della tua organizzazione. Quando accedi all&#39;istanza di Adobe Experience Platform in [https://platform.adobe.com/](https://platform.adobe.com/), troverai l&#39;ID tenant nell&#39;URL.
 
 ![DSN](./images/aeptenantid.png)
 
 Quando lo inserisci nell&#39;estensione Chrome, accertati che un trattino basso sia aggiunto come prefisso, quindi in questo esempio **experienceplatform** diventa **_experienceplatform**. Assicurarsi inoltre di rimuovere il simbolo **@** durante la copia dall&#39;URL.
 
-**Nome Sandbox AEP**
+**Nome Sandbox Adobe Experience Platform**
 
-Il nome della sandbox è il nome dell’ambiente che utilizzerai nell’istanza di AEP. Quando accedi all&#39;istanza di Adobe Experience Platform in [https://platform.adobe.com/](https://platform.adobe.com/), troverai l&#39;ID tenant nell&#39;URL.
+Il nome della sandbox è il nome dell’ambiente che utilizzerai nell’istanza di Adobe Experience Platform. Quando accedi all&#39;istanza di Adobe Experience Platform in [https://platform.adobe.com/](https://platform.adobe.com/), troverai l&#39;ID tenant nell&#39;URL.
 
 Prima di estrarre il nome della sandbox dall’URL, accertati di trovarti nella sandbox da utilizzare per questa esercitazione. Per passare alla sandbox di destra, fai clic sul menu del commutatore sandbox nell’angolo in alto a destra dello schermo.
 
 ![DSN](./images/aepsandboxsw.png)
 
-In questo esempio, il nome della sandbox AEP è **tech-insiders**.
+In questo esempio, il nome della sandbox di Adobe Experience Platform è **tech-insiders**.
 
 ![DSN](./images/aepsname.png)
 
@@ -140,7 +140,7 @@ Come test, passa a [questa pagina](https://experienceleague.adobe.com/en/docs/pl
 
 È ora possibile vedere che tutte le **Variabili di ambiente** sono state sostituite dai loro valori effettivi, in base all&#39;ambiente attivato nell&#39;estensione chrome.
 
-È ora necessario disporre di una visualizzazione simile a quella riportata di seguito, in cui la variabile di ambiente `aepTenantId` è stata sostituita dall&#39;ID tenant AEP effettivo, che in questo caso è **_experienceplatform**.
+È ora necessario disporre di una visualizzazione simile a quella riportata di seguito, in cui la variabile di ambiente `aepTenantId` è stata sostituita dall&#39;ID tenant Adobe Experience Platform effettivo, che in questo caso è **_experienceplatform**.
 
 ![DSN](./images/mod7.png)
 

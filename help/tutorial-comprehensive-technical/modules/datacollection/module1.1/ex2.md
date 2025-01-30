@@ -4,9 +4,9 @@ description: Foundation - Configurazione di Adobe Experience Platform Data Colle
 kt: 5342
 doc-type: tutorial
 exl-id: e97d40b5-616d-439c-9d6b-eaa4ebf5acb0
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,19 @@ ht-degree: 0%
 
 ## Contesto
 
-In questo esercizio creerai un **flusso di dati**. Un **datastream** indica ai server Adobe Edge dove inviare i dati dopo che sono stati raccolti dall&#39;SDK Web. Inviare ad esempio i dati a Adobe Experience Platform? Adobe Analytics? Adobe Audience Manager? Adobe Target?
+In questo esercizio creerai un **flusso di dati**. Un **datastream** indica ai server di rete Adobe Edge dove inviare i dati dopo che sono stati raccolti da Web SDK. Inviare ad esempio i dati a Adobe Experience Platform? Adobe Analytics? Adobe Audience Manager? Adobe Target?
 
-Gli stream di dati vengono sempre gestiti nell’interfaccia utente di Adobe Experience Platform Data Collection e sono fondamentali per la raccolta dati di Adobe Experience Platform con Web SDK. Anche quando implementi Web SDK con una soluzione di gestione dei tag non Adobe, dovrai comunque creare lo stream di dati nell’interfaccia utente di Adobe Experience Platform Data Collection.
+Gli stream di dati vengono sempre gestiti nell&#39;interfaccia utente di Experience Platform Data Collection e sono fondamentali per l&#39;Experience Platform della raccolta dati con [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home). Anche quando si implementa Web SDK con una soluzione di gestione dei tag non Adobe, è comunque necessario creare un flusso di dati.
 
-Il prossimo esercizio illustra l’implementazione dell’SDK per web nel browser. Sarà quindi più chiaro come si presenteranno i dati raccolti. Per il momento, stiamo solo dicendo al Datastream dove inoltrare i dati.
+Nel prossimo esercizio, implementerai il Web SDK nel browser. Sarà quindi più chiaro come si presenteranno i dati raccolti. Per il momento, stiamo solo indicando al flusso di dati dove inoltrare i dati.
 
-## Creare uno stream di dati
+## Creare un flusso di dati
 
-In [Guida introduttiva](./../../../modules/gettingstarted/gettingstarted/ex2.md) hai già creato uno stream di dati, ma non sono stati discussi lo sfondo e il motivo per cui lo stream di dati appartiene.
+In [Guida introduttiva](./../../../modules/gettingstarted/gettingstarted/ex2.md) hai già creato uno stream di dati, ma non sono stati discussi lo sfondo e il motivo per cui lo hai creato.
 
-Un flusso di dati indica ai server di Adobe Edge dove inviare i dati dopo che sono stati raccolti dall’SDK per web. Inviare ad esempio i dati a Adobe Experience Platform? Adobe Analytics? Adobe Audience Manager? Adobe Target? Gli stream di dati vengono gestiti nell’interfaccia utente di Adobe Experience Platform Data Collection e sono fondamentali per la raccolta di dati con Web SDK, indipendentemente dal fatto che si stia implementando Web SDK tramite Adobe Experience Platform Data Collection.
+Un [datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) indica ai server Edge Network dove inviare i dati dopo che sono stati raccolti dal Web SDK. Per informazioni dettagliate su dove puoi inviare i dati tramite lo stream di dati, consulta la documentazione di [aggiunta di servizi a uno stream di dati](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#add-services).
+
+Gli stream di dati vengono gestiti nell’interfaccia utente di Experience Platform Data Collection e sono fondamentali per la raccolta dei dati con Web SDK, indipendentemente dal fatto che si stia implementando Web SDK tramite Adobe Experience Platform Data Collection.
 
 Esaminiamo il **[!UICONTROL flusso di dati]**:
 
@@ -57,12 +59,11 @@ Per questo flusso di dati...
 
 - Tutti i dati raccolti verranno memorizzati nella sandbox `--aepSandboxName--` in Adobe Experience Platform
 - Tutti i dati di Experience Event vengono raccolti per impostazione predefinita nel set di dati **Demo System - Set di dati evento per il sito Web (Global v1.1)**
-- Tutti i dati profilo verranno raccolti per impostazione predefinita nel set di dati **Demo System - Set di dati profilo per il sito Web (Global v1.1)** (l&#39;acquisizione nativa dei dati profilo con Web SDK attualmente non è ancora supportata da Web SDK)
+- Tutti i dati profilo verranno raccolti per impostazione predefinita nel set di dati **Demo System - Set di dati profilo per il sito Web (Global v1.1)** (l&#39;acquisizione nativa dei dati profilo con Web SDK non è ancora supportata da Web SDK)
 - Se desideri utilizzare il servizio applicativo **Offer Decisioning** per questo flusso di dati, devi selezionare la casella ad Offer decisioning. (farà parte del [modulo 3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md))
 - **La segmentazione di Edge** è abilitata per impostazione predefinita, il che significa che i tipi di pubblico idonei verranno valutati al limite, al momento dell&#39;acquisizione del traffico in ingresso
-- Se desideri utilizzare le **Destinazioni Personalization**, seleziona la casella per Destinazioni Personalization.
-- 
-   - Se desideri utilizzare le funzionalità di **Adobe Journey Optimizer** in questo flusso di dati, devi selezionare la casella per Adobe Journey Optimizer.
+- Se desideri utilizzare [destinazioni di personalizzazione](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/overview), seleziona la casella per **Destinazioni Personalization**.
+- Se desideri utilizzare le funzionalità di **Adobe Journey Optimizer** in questo flusso di dati, devi selezionare la casella per **Adobe Journey Optimizer**.
 
 
 Per il momento, non è necessaria alcuna altra configurazione per lo stream di dati.

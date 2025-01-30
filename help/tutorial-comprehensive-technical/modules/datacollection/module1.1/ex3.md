@@ -4,9 +4,9 @@ description: Foundation - Configurazione di Adobe Experience Platform Data Colle
 kt: 5342
 doc-type: tutorial
 exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1272'
 ht-degree: 10%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 10%
 
 ## Contesto
 
-Ora diamo un’occhiata più approfondita agli elementi di base di Raccolta dati di Adobe Experience Platform, per capire cosa è installato sul tuo sito web demo. Esaminerai più da vicino l’estensione Adobe Experience Platform Web SDK, configurerai un elemento dati e una regola e imparerai a pubblicare una libreria.
+Ora diamo un’occhiata più approfondita agli elementi di base di Raccolta dati di Adobe Experience Platform, per capire cosa è installato sul tuo sito web demo. Esaminando più da vicino l’estensione Adobe Experience Platform Web SDK, configurerai un elemento dati e una regola e imparerai a pubblicare una libreria.
 
-## Estensione di Adobe Experience Platform Web SDK
+## Estensione tag Adobe Experience Platform Web SDK
 
-Un’estensione è un set di codici che estende l’interfaccia di Adobe Experience Platform Data Collection e la funzionalità della libreria. Adobe Experience Platform Data Collection è la piattaforma; le estensioni sono simili alle app eseguite sulla piattaforma. Tutte le estensioni utilizzate nell’esercitazione vengono create e gestite da Adobe, ma terze parti possono creare estensioni proprie per limitare la quantità di codice personalizzato che gli utenti di Adobe Experience Platform Data Collection devono gestire.
+Un’estensione tag è un set di codici che estende l’interfaccia di Adobe Experience Platform Data Collection e la funzionalità della libreria. Adobe Experience Platform Data Collection è la piattaforma; le estensioni tag sono simili alle app eseguite sulla piattaforma. Tutte le estensioni utilizzate nell’esercitazione vengono create e gestite da Adobe, ma terze parti possono creare estensioni proprie per limitare la quantità di codice personalizzato che gli utenti di Adobe Experience Platform Data Collection devono gestire.
 
 Vai a [Raccolta dati Adobe Experience Platform](https://experience.adobe.com/launch/) e seleziona **Tag**.
 
@@ -38,7 +38,7 @@ Viene visualizzata la pagina Panoramica proprietà. Fai clic su **[!UICONTROL Es
 
 ![Pagina panoramica proprietà](./images/property7.png)
 
-Benvenuti in Adobe Experience Platform Web SDK. Qui puoi configurare l&#39;estensione con lo stream di dati creato in [Guida introduttiva](./../../../modules/gettingstarted/gettingstarted/ex2.md) e alcune configurazioni più avanzate.
+Benvenuti nel Web SDK di Adobe Experience Platform. Qui puoi configurare l&#39;estensione con lo stream di dati creato in [Guida introduttiva](./../../../modules/gettingstarted/gettingstarted/ex2.md) e alcune configurazioni più avanzate.
 
 Il dominio Edge predefinito è sempre **edge.adobedc.net**. Se hai implementato una configurazione CNAME nell&#39;ambiente Adobe Experience Cloud o Adobe Experience Platform, dovrai aggiornare il **[!UICONTROL dominio Edge]**.
 
@@ -58,7 +58,7 @@ Gli elementi dati sono i blocchi costitutivi per il dizionario dati (o mappa dat
 
 Un singolo elemento dati è una variabile il cui valore può essere mappato alle stringhe di query, agli URL, ai valori dei cookie, alle variabili JavaScript e così via. Puoi fare riferimento a questo valore per mezzo del suo nome variabile in Raccolta dati di Adobe Experience Platform. Questa raccolta di elementi dati diventa il dizionario dati definiti che è possibile utilizzare per creare le regole (eventi, condizioni e azioni). Questo dizionario dati viene condiviso in tutta Adobe Experience Platform Data Collection e può essere utilizzato con qualsiasi estensione aggiunta alla proprietà.
 
-Ora stai per modificare un elemento dati già esistente in un formato compatibile con SDK per web.
+Ora stai per modificare un elemento dati già esistente in un formato compatibile con Web SDK.
 
 Fai clic su Elementi dati nella barra a sinistra per passare alla pagina Elementi dati.
 
@@ -124,7 +124,7 @@ Fai clic sull&#39;azione **Invia evento esperienza &quot;Visualizzazione prodott
 
 ![Invia azione evento](./images/rule5a.png)
 
-Qui puoi vedere i dati inviati al server Edge da Adobe Experience Platform Web SDK. In particolare, si sta utilizzando la **lega** **[!UICONTROL istanza]** dell&#39;SDK Web. L&#39;evento **[!UICONTROL Type]** è impostato su **Visualizzazioni prodotto Commerce (carrello)** e i dati XDM che stai inviando sono l&#39;elemento dati **XDM - Visualizzazione prodotto** modificato in precedenza.
+Qui puoi vedere i dati inviati al server Edge da Adobe Experience Platform Web SDK. In particolare, si sta utilizzando la **lega** **[!UICONTROL istanza]** del Web SDK. L&#39;evento **[!UICONTROL Type]** è impostato su **Visualizzazioni prodotto Commerce (carrello)** e i dati XDM che stai inviando sono l&#39;elemento dati **XDM - Visualizzazione prodotto** modificato in precedenza.
 
 ![Invia azione evento](./images/rule5.png)
 

@@ -4,9 +4,9 @@ description: 'Guida introduttiva: creare lo stream di dati'
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '848'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Queste proprietà sono quasi pronte per essere utilizzate, ma prima di poter ini
 
 Per il momento, segui questi passaggi.
 
-## Creare lo stream di dati per il web
+## Creare lo stream di dati per la raccolta di dati web
 
 Fare clic su **[!UICONTROL Datastreams]**.
 
@@ -101,7 +101,7 @@ Le modifiche sono in fase di pubblicazione e saranno pronte tra qualche minuto, 
 
 ![Denomina la configurazione di Edge e salva](./images/edgeconfig17a.png)
 
-## Creare lo stream di dati per dispositivi mobili
+## Creare lo stream di dati per la raccolta dati per dispositivi mobili
 
 Vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/).
 

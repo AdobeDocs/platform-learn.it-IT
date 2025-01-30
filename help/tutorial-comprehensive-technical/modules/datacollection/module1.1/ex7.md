@@ -4,16 +4,16 @@ description: Foundation - Configurazione di Adobe Experience Platform Data Colle
 kt: 5342
 doc-type: tutorial
 exl-id: 3fc4a1d6-4130-464e-98c0-5b9cac8051a0
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
 
 # Requisiti dello schema XDM 1.1.7 in Adobe Experience Platform
 
-Affinché Web SDK e alloy.js possano acquisire i dati in Adobe Experience Platform, è necessario che un mixin XDM specifico faccia parte dello schema XDM in Adobe Experience Platform.
+Affinché il Web SDK possa acquisire i dati in Adobe Experience Platform, è necessario che un mixin XDM specifico faccia parte dello schema XDM in Adobe Experience Platform.
 
 Vai a [https://experience.adobe.com/platform](https://experience.adobe.com/platform) e accedi.
 
@@ -29,7 +29,7 @@ Nel menu a sinistra, vai a **Schemi** e apri lo schema **Sistema demo - Schema e
 
 ![Debugger AEP](./images/exp3.png)
 
-In tale schema, vedrai che il gruppo di campi **ExperienceEvent** di AEP Web SDK è stato aggiunto. Questo gruppo di campi aggiunge allo schema tutti i campi obbligatori minimi. Ogni schema Experience Event in Adobe Experience Platform che verrà utilizzato da Web SDK richiederà sempre che quel gruppo di campi faccia parte dello schema.
+In tale schema, vedrai che il gruppo di campi **AEP Web SDK ExperienceEvent** è stato aggiunto. Questo gruppo di campi aggiunge allo schema tutti i campi obbligatori minimi. Ogni schema Experience Event in Adobe Experience Platform che verrà utilizzato da Web SDK richiederà sempre che quel gruppo di campi faccia parte dello schema.
 
 ![Debugger AEP](./images/exp4.png)
 
