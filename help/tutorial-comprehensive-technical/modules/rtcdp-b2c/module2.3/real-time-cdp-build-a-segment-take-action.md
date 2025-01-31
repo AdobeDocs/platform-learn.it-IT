@@ -6,9 +6,9 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: 5c4fc7fb2635aec959b31664e354f66efac075fe
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '323'
 ht-degree: 1%
 
 ---
@@ -56,11 +56,7 @@ Utilizza il pubblico creato e invialo a una destinazione S3, in genere utilizzat
 
 Utilizza il pubblico creato per configurare un’attività Targeting esperienze in Adobe Target.
 
-[2.3.6 Pubblico esterno](./ex6.md)
-
-Importare tipi di pubblico da un sistema di origine esterno in Adobe Experience Platform.
-
-[2.3.7 Destinazioni SDK](./ex7.md)
+[2.3.6 Destinazioni SDK](./ex6.md)
 
 Configura la tua destinazione utilizzando Destinations SDK (Destinazioni).
 

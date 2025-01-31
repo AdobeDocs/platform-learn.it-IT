@@ -4,7 +4,7 @@ description: Creare e configurare un webhook personalizzato
 kt: 5342
 doc-type: tutorial
 exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
-source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
+source-git-commit: ca4c53ba88bc6a256fc540091413f5efb05945ee
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## Creare un webhook personalizzato
 
-Vai a [https://pipedream.com/requestbin](https://pipedream.com/requestbin). Hai già utilizzato questa applicazione nell&#39;SDK [Esercizio 2.3.7 Destinazioni](./../../../modules/rtcdp-b2c/module2.3/ex7.md)
+Vai a [https://pipedream.com/requestbin](https://pipedream.com/requestbin). Hai già utilizzato questa applicazione in [Esercizio 2.3.6 Destinazioni SDK](./../../../modules/rtcdp-b2c/module2.3/ex6.md)
 
 Se non hai ancora utilizzato tale servizio, crea un account e quindi un’area di lavoro. Una volta creata l’area di lavoro, verrà visualizzato qualcosa di simile a questo.
 
@@ -56,7 +56,7 @@ Ora avrai questo. Fai clic su **Salva**.
 >
 >Nel percorso precedente viene fatto riferimento a **arc**. **arc** sta per Contesto risorsa Adobe e **arc** sta sempre per l&#39;oggetto disponibile più alto disponibile nel contesto lato server. È possibile aggiungere arricchimenti e trasformazioni all&#39;oggetto **arc** utilizzando le funzioni del server di raccolta dati di Adobe Experience Platform.
 >
->Nel percorso precedente viene fatto riferimento a **event**. **event** rappresenta un evento univoco e Adobe Experience Platform Data Collection Server valuterà sempre ogni evento singolarmente. A volte è possibile che venga visualizzato un riferimento a **eventi** nel payload inviato dal lato client di Web SDK, ma nel server di raccolta dati di Adobe Experience Platform ogni evento viene valutato singolarmente.
+>Nel percorso precedente viene fatto riferimento a **event**. **event** rappresenta un evento univoco e Adobe Experience Platform Data Collection Server valuterà sempre ogni evento singolarmente. A volte è possibile che venga visualizzato un riferimento a **eventi** nel payload inviato da Web SDK Client Side, ma in Adobe Experience Platform Data Collection Server ogni evento viene valutato singolarmente.
 
 ## Aggiorna la proprietà del server di raccolta dati di Adobe Experience Platform: creazione di una regola
 

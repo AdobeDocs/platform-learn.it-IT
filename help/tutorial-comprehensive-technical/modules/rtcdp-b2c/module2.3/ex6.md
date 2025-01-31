@@ -1,413 +1,296 @@
 ---
-title: Real-time CDP - Pubblico esterno
-description: Real-time CDP - Pubblico esterno
+title: Real-time CDP - Destinazioni SDK
+description: Real-time CDP - Destinazioni SDK
 kt: 5342
 doc-type: tutorial
-exl-id: c7e4960f-4007-4c27-b5ba-7b21cd52c2f7
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
+source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 0%
+source-wordcount: '1098'
+ht-degree: 5%
 
 ---
 
-# 2.3.6 Pubblico esterno
+# 2.3.6 Destinazioni SDK
 
-In molti casi, la tua azienda potrebbe voler utilizzare i tipi di pubblico esistenti di altre applicazioni per arricchire il profilo cliente in Adobe Experience Platform.
-Tali tipi di pubblico esterni possono essere stati definiti in base a un modello di scienza dei dati o utilizzando piattaforme di dati esterne.
+## Configurare il progetto Adobe I/O
 
-La funzione dei tipi di pubblico esterni di Adobe Experience Platform consente di concentrarsi sull’acquisizione dei tipi di pubblico esterni e sulla loro attivazione senza dover ridefinire in dettaglio la definizione del pubblico corrispondente in Adobe Experience Platform.
+In questo esercizio utilizzerai nuovamente Adobe I/O per eseguire query sulle API di Adobe Experience Platform. Se non hai ancora configurato il progetto Adobe I/O, torna all&#39;[Esercizio 3 nel Modulo 2.1](../module2.1/ex3.md) e segui le istruzioni.
 
-Il processo complessivo si articola in tre fasi principali:
+## Autenticazione Postman da Adobe I/O
 
-- Importare i metadati del pubblico esterno: questo passaggio ha lo scopo di acquisire in Adobe Experience Platform i metadati del pubblico esterno, come il nome del pubblico.
-- Assegnare la appartenenza al pubblico esterno al profilo cliente: questo passaggio ha lo scopo di arricchire il profilo cliente con l’attributo di appartenenza al pubblico esterno.
-- Creare i tipi di pubblico in Adobe Experience Platform: questo passaggio ha lo scopo di creare tipi di pubblico utilizzabili in base all’iscrizione a tipi di pubblico esterni.
+In questo esercizio utilizzerai nuovamente Postman per eseguire query sulle API di Adobe Experience Platform. Se non hai ancora configurato l&#39;applicazione Postman, torna all&#39;[esercizio 3 nel modulo 2.1](../module2.1/ex3.md) e segui le istruzioni.
 
-## Metadati
+## Definire endpoint e formato
+
+Per questo esercizio, dovrai configurare un endpoint in modo che, quando un pubblico si qualifica, l’evento di qualifica possa essere inviato in streaming a tale endpoint. In questo esercizio utilizzerai un endpoint di esempio utilizzando [https://pipedream.com/requestbin](https://pipedream.com/requestbin). Vai a [https://pipedream.com/requestbin](https://pipedream.com/requestbin), crea un account e quindi crea un&#39;area di lavoro. Una volta creata l’area di lavoro, verrà visualizzato qualcosa di simile a questo.
+
+Fai clic su **copia** per copiare l&#39;URL. Nel prossimo esercizio dovrai specificare questo URL. L&#39;URL in questo esempio è `https://eodts05snjmjz67.m.pipedream.net`.
+
+![Acquisizione dei dati](./images/webhook1.png)
+
+Per quanto riguarda il formato, utilizzeremo un modello standard che trasmetterà in streaming i requisiti o le non qualifiche del pubblico insieme a metadati come gli identificatori dei clienti. I modelli possono essere personalizzati per soddisfare le aspettative di endpoint specifici, ma in questo esercizio riutilizzeremo un modello standard, che si tradurrà in un payload come questo che verrà inviato in streaming all’endpoint.
+
+```json
+{
+  "profiles": [
+    {
+      "identities": [
+        {
+          "type": "ecid",
+          "id": "64626768309422151580190219823409897678"
+        }
+      ],
+      "AdobeExperiencePlatformSegments": {
+        "add": [
+          "f58c723c-f1e5-40dd-8c79-7bb4ab47f041"
+        ],
+        "remove": []
+      }
+    }
+  ]
+}
+```
+
+## Creare una configurazione di server e modelli
+
+Il primo passaggio per creare una tua destinazione in Adobe Experience Platform consiste nel creare una configurazione di server e modelli utilizzando Postman.
+
+Per farlo, apri l&#39;applicazione Postman e vai a **API di authoring delle destinazioni**, ai **server e modelli di destinazione** e fai clic per aprire la richiesta **POST - Crea una configurazione del server di destinazione**.
+
+>[!NOTE]
+>
+>Se non disponi della raccolta Postman, torna all&#39;esercizio 3 [del modulo 2.1](../module2.1/ex3.md) e segui le istruzioni per configurare Postman con le raccolte Postman fornite.
+
+Poi vedrai questo. In **Intestazioni**, devi aggiornare manualmente il valore per la chiave **x-sandbox-name** e impostarlo su `--aepSandboxName--`. Selezionare il valore **{{SANDBOX_NAME}}**.
+
+![Acquisizione dei dati](./images/sdkpm1.png)
+
+Sostituiscilo con `--aepSandboxName--`.
+
+![Acquisizione dei dati](./images/sdkpm2.png)
+
+Quindi, vai a **Corpo**. selezionare il segnaposto **{{body}}**.
+
+![Acquisizione dei dati](./images/sdkpm3.png)
+
+Sostituire il segnaposto **{{body}}** con il codice seguente:
+
+```json
+{
+    "name": "Custom HTTP Destination",
+    "destinationServerType": "URL_BASED",
+    "urlBasedDestination": {
+        "url": {
+            "templatingStrategy": "PEBBLE_V1",
+            "value": "yourURL"
+        }
+    },
+    "httpTemplate": {
+        "httpMethod": "POST",
+        "requestBody": {
+            "templatingStrategy": "PEBBLE_V1",
+            "value": "{\n    \"profiles\": [\n    {%- for profile in input.profiles %}\n        {\n            \"identities\": [\n            {%- for idMapEntry in profile.identityMap -%}\n            {%- set namespace = idMapEntry.key -%}\n                {%- for identity in idMapEntry.value %}\n                {\n                    \"type\": \"{{ namespace }}\",\n                    \"id\": \"{{ identity.id }}\"\n                }{%- if not loop.last -%},{%- endif -%}\n                {%- endfor -%}{%- if not loop.last -%},{%- endif -%}\n            {% endfor %}\n            ],\n            \"AdobeExperiencePlatformSegments\": {\n                \"add\": [\n                {%- for segment in profile.segmentMembership.ups | added %}\n                    \"{{ segment.key }}\"{%- if not loop.last -%},{%- endif -%}\n                {% endfor %}\n                ],\n                \"remove\": [\n                {#- Alternative syntax for filtering segments by status: -#}\n                {% for segment in removedSegments(profile.segmentMembership.ups) %}\n                    \"{{ segment.key }}\"{%- if not loop.last -%},{%- endif -%}\n                {% endfor %}\n                ]\n            }\n        }{%- if not loop.last -%},{%- endif -%}\n    {% endfor %}\n    ]\n}"
+        },
+        "contentType": "application/json"
+    }
+}
+```
+
+Dopo aver incollato il codice precedente, è necessario aggiornare manualmente il campo **urlBasedDestination.url.value** e impostarlo sull&#39;URL del webhook creato nel passaggio precedente, che era `https://eodts05snjmjz67.m.pipedream.net` in questo esempio.
+
+![Acquisizione dei dati](./images/sdkpm4.png)
+
+Dopo aver aggiornato il campo **urlBasedDestination.url.value**, dovrebbe essere simile al seguente. Fai clic su **Invia**.
+
+![Acquisizione dei dati](./images/sdkpm5.png)
+
+>[!NOTE]
+>
+>Non dimenticare che prima di inviare una richiesta ad Adobe I/O, devi disporre di un `access_token` valido. Per ottenere un `access_token` valido, esegui la richiesta **POST - Ottieni token di accesso** nella raccolta **Adobe IO - OAuth**.
+
+Dopo aver fatto clic su **Invia**, verrà creato il modello del server e come parte della risposta verrà visualizzato un campo denominato **instanceId**. Scrivilo, come ti servirà nel passaggio successivo. In questo esempio, **instanceId** è
+`52482c90-8a1e-42fc-b729-7f0252e5cebd`.
+
+![Acquisizione dei dati](./images/sdkpm6.png)
+
+## Creare la configurazione di destinazione
+
+In Postman, in **Destination Authoring API**, vai a **Destination configurations** e fai clic per aprire la richiesta **POST - Create a destination configuration**. Poi vedrai questo. In **Intestazioni**, devi aggiornare manualmente il valore per la chiave **x-sandbox-name** e impostarlo su `--aepSandboxName--`. Selezionare il valore **{{SANDBOX_NAME}}** e sostituirlo con `--aepSandboxName--`.
+
+![Acquisizione dei dati](./images/sdkpm7.png)
+
+Quindi, vai a **Corpo**. selezionare il segnaposto **{{body}}**.
+
+![Acquisizione dei dati](./images/sdkpm9.png)
+
+Sostituire il segnaposto **{{body}}** con il codice seguente:
+
+```json
+{
+    "name": "--aepUserLdap-- - Webhook",
+    "description": "Exports segment qualifications and identities to a custom webhook via Destination SDK.",
+    "status": "TEST",
+    "customerAuthenticationConfigurations": [
+        {
+            "authType": "BEARER"
+        }
+    ],
+    "customerDataFields": [
+        {
+            "name": "endpointsInstance",
+            "type": "string",
+            "title": "Select Endpoint",
+            "description": "We could manage several instances across the globe for REST endpoints that our customers are provisioned for. Select your endpoint in the dropdown list.",
+            "isRequired": true,
+            "enum": [
+                "US",
+                "EU",
+                "APAC",
+                "NZ"
+            ]
+        }
+    ],
+    "uiAttributes": {
+        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en",
+        "category": "streaming",
+        "connectionType": "Server-to-server",
+        "frequency": "Streaming"
+    },
+    "identityNamespaces": {
+        "ecid": {
+            "acceptsAttributes": true,
+            "acceptsCustomNamespaces": false
+        }
+    },
+    "segmentMappingConfig": {
+        "mapExperiencePlatformSegmentName": true,
+        "mapExperiencePlatformSegmentId": true,
+        "mapUserInput": false
+    },
+    "aggregation": {
+        "aggregationType": "BEST_EFFORT",
+        "bestEffortAggregation": {
+            "maxUsersPerRequest": "1000",
+            "splitUserById": false
+        }
+    },
+    "schemaConfig": {
+        "profileRequired": false,
+        "segmentRequired": true,
+        "identityRequired": true
+    },
+    "destinationDelivery": [
+        {
+            "authenticationRule": "NONE",
+            "destinationServerId": "yourTemplateInstanceID"
+        }
+    ]
+}
+```
+
+![Acquisizione dei dati](./images/sdkpm11.png)
+
+Dopo aver incollato il codice precedente, devi aggiornare manualmente il campo **destinationDelivery. destinationServerId**, e devi impostarlo su **instanceId** del modello del server di destinazione creato nel passaggio precedente, che era `52482c90-8a1e-42fc-b729-7f0252e5cebd` in questo esempio. Fare clic su **Invia**.
+
+![Acquisizione dei dati](./images/sdkpm10.png)
+
+Vedrai questa risposta.
+
+![Acquisizione dei dati](./images/sdkpm12.png)
+
+La destinazione viene ora creata in Adobe Experience Platform. Andiamo lì e controlliamo.
 
 Vai a [Adobe Experience Platform](https://experience.adobe.com/platform). Dopo aver effettuato l’accesso, accedi alla home page di Adobe Experience Platform.
 
 ![Acquisizione dei dati](./../../../modules/datacollection/module1.2/images/home.png)
 
->[!IMPORTANT]
->
->La sandbox da utilizzare per questo esercizio è ``--aepSandboxName--``.
-
 Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``--aepSandboxName--``. Dopo aver selezionato la [!UICONTROL sandbox] appropriata, la schermata verrà modificata e ora sei nella [!UICONTROL sandbox] dedicata.
 
-![Acquisizione dei dati](./images/sb1.png)
+![Acquisizione dei dati](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-Mentre i dati sul pubblico definiscono la condizione affinché un profilo faccia parte di un pubblico, i metadati del pubblico sono informazioni sul pubblico, come il nome, la descrizione e lo stato del pubblico. Poiché i metadati dei tipi di pubblico esterni verranno memorizzati in Adobe Experience Platform, è necessario utilizzare uno spazio dei nomi delle identità per acquisire i metadati in Adobe Experience Platform.
+Nel menu a sinistra, vai a **Destinazioni**, fai clic su **Catalogo** e scorri verso il basso fino alla categoria **Streaming**. La destinazione sarà ora disponibile.
 
-## 2.3.6.1.1 Namespace Identity per tipi di pubblico esterni
+![Acquisizione dei dati](./images/destsdk1.png)
 
-È già stato creato uno spazio dei nomi delle identità per l&#39;utilizzo con **tipi di pubblico esterni**.
-Per visualizzare l&#39;identità già creata, passa a **Identità** e cerca **Esterna**. Fai clic sull’elemento &quot;Pubblico esterno&quot;.
+## Collegare il pubblico alla destinazione
 
-Nota:
+In **Destinazioni** > **Catalogo**, fai clic su **Configura** nella tua destinazione per iniziare ad aggiungere tipi di pubblico alla nuova destinazione.
 
-- Il simbolo di identità **externalaudiences** verrà utilizzato nei passaggi successivi per fare riferimento all&#39;identità dei tipi di pubblico esterni.
-- Per questo spazio dei nomi delle identità viene utilizzato il tipo **Identificatore non persone**, in quanto questo spazio dei nomi non è destinato a identificare i profili dei clienti ma i tipi di pubblico.
+![Acquisizione dei dati](./images/destsdk2.png)
 
-![Identità pubblico esterno](images/extAudIdNS.png)
+Immetti un valore casuale per il token **bearer**, ad esempio **1234**. Fai clic su **Connetti alla destinazione**.
 
-## 2.3.6.1.2 Creare lo schema metadati per tipi di pubblico esterni
+![Acquisizione dei dati](./images/destsdk3.png)
 
-I metadati dei tipi di pubblico esterni si basano sullo **schema di definizione del pubblico**. Ulteriori dettagli sono disponibili nell&#39;archivio Github [XDM](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md).
+Poi vedrai questo. Come nome per la destinazione, utilizzare `--aepUserLdap-- - Webhook`. Seleziona un endpoint di scelta, in questo esempio **EU**. Fai clic su **Avanti**.
 
-Nel menu a sinistra, vai a Schemi. Fare clic su **+ Crea schema** e quindi su **Sfoglia**.
+![Acquisizione dei dati](./images/destsdk4.png)
 
-![Schema metadati tipi di pubblico esterni 1](images/extAudMDXDM1.png)
+È possibile selezionare un criterio di governance dei dati. Fai clic su **Avanti**.
 
-Per assegnare una classe, cerca **definizione pubblico**. Seleziona la classe **Definizione pubblico** e fai clic su **Assegna classe**.
+![Acquisizione dei dati](./images/destsdk5.png)
 
-![Schema metadati tipi di pubblico esterni 2](images/extAudMDXDM2.png)
+Selezionare il pubblico creato in precedenza, denominato `--aepUserLdap-- - Interest in Galaxy S24`. Fai clic su **Avanti**.
 
-Poi vedrai questo. Fare clic su **Annulla**.
+![Acquisizione dei dati](./images/destsdk6.png)
 
-![Schema metadati tipi di pubblico esterni 3](images/extAudMDXDM3.png)
+Poi vedrai questo. Assicurarsi di mappare il **CAMPO SOURCE** `--aepTenantId--.identification.core.ecid` al campo `Identity: ecid`. Fai clic su **Avanti**.
 
-Poi vedrai questo. Seleziona il campo **_id**. Nel menu di destra, scorri verso il basso e abilita le caselle di controllo **Identità** e **Identità primaria**. Seleziona lo spazio dei nomi dell&#39;identità **Tipi di pubblico esterni**. Fare clic su **Applica**.
+![Acquisizione dei dati](./images/destsdk7.png)
 
-![Schema metadati tipi di pubblico esterni 4](images/extAudMDXDM4.png)
+Fai clic su **Fine**.
 
-Selezionare quindi il nome dello schema **Schema senza titolo**. Cambia il nome in `--aepUserLdap-- - External Audiences Metadata`.
+![Acquisizione dei dati](./images/destsdk8.png)
 
-![Schema metadati tipi di pubblico esterni 5](images/extAudMDXDM5.png)
+La destinazione è ora live, i nuovi requisiti di pubblico verranno inviati in streaming al tuo webhook personalizzato ora.
 
-Attiva/disattiva **Profilo** e conferma. Infine, fare clic su **Salva**.
+![Acquisizione dei dati](./images/destsdk9.png)
 
-![Schema metadati tipi di pubblico esterni 5](images/extAudMDXDM6.png)
+## Verifica l’attivazione del pubblico
 
-## 2.3.6.1.3 Creare il set di dati dei metadati dei tipi di pubblico esterni
+Vai a [https://dsn.adobe.com](https://dsn.adobe.com). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sui tre punti **...** del progetto del sito Web, quindi fai clic su **Esegui** per aprirlo.
 
-In **Schemi**, passa a **Sfoglia**. Cerca e fai clic sullo schema `--aepUserLdap-- - External Audiences Metadata` creato nel passaggio precedente. Fare clic su **Crea set di dati dallo schema**.
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
-![Servizi di dominio pubblico esterno - Metadati DS 1](images/extAudMDDS1.png)
+Poi vedrai il tuo sito web demo aperto. Seleziona l’URL e copialo negli Appunti.
 
-Per il campo **Nome**, immettere `--aepUserLdap-- - External Audience Metadata`. Fare clic su **Crea set di dati**.
+![DSN](../../gettingstarted/gettingstarted/images/web3.png)
 
-![Servizi di dominio pubblico esterno - Metadati DS 2](images/extAudMDDS2.png)
+Apri una nuova finestra del browser in incognito.
 
-Poi vedrai questo. Non dimenticare di abilitare l&#39;interruttore **Profilo**.
+![DSN](../../gettingstarted/gettingstarted/images/web4.png)
 
-![Servizi di dominio pubblico esterno - Metadati DS 3](images/extAudMDDS3.png)
+Incolla l’URL del sito web demo, che hai copiato nel passaggio precedente. Ti verrà quindi chiesto di effettuare l’accesso con il tuo Adobe ID.
 
-## 2.3.6.1.4 Creare una connessione HTTP API Source
+![DSN](../../gettingstarted/gettingstarted/images/web5.png)
 
-Successivamente, devi configurare il connettore Source API HTTP che utilizzerai per acquisire i metadati nel set di dati.
+Seleziona il tipo di account e completa la procedura di accesso.
 
-Vai a **Origini**. Nel campo di ricerca immettere **HTTP**. Fare clic su **Aggiungi dati**.
+![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-![Metadati tipi di pubblico esterni http 1](images/extAudMDhttp1.png)
+Vedrai quindi il tuo sito web caricato in una finestra del browser in incognito. Per ogni esercizio, dovrai utilizzare una nuova finestra del browser in incognito per caricare l’URL del sito web demo.
 
-Immettere le seguenti informazioni:
+![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
-- **Tipo di account**: seleziona **Nuovo account**
-- **Nome account**: immettere `--aepUserLdap-- - External Audience Metadata`
-- Seleziona la casella di controllo **casella compatibile con XDM**
+In questo esempio, desideri rispondere a un cliente specifico che visualizza un prodotto specifico.
+Dalla home page di **Citi Signal**, vai a **Telefoni e dispositivi** e fai clic sul prodotto **Galaxy S24**.
 
-Fare clic su **Connetti all&#39;origine**.
+![Acquisizione dei dati](./images/homegalaxy.png)
 
-![Metadati tipi di pubblico esterni http 2](images/extAudMDhttp2.png)
+La pagina del prodotto di Galaxy S24 è stata ora visualizzata, quindi il tuo pubblico si qualificherà per il tuo profilo nei minuti successivi.
 
-Poi vedrai questo. Fai clic su **Avanti**.
+![Acquisizione dei dati](./images/homegalaxy1.png)
 
-![Metadati tipi di pubblico esterni http 2](images/extAudMDhttp2a.png)
+Quando apri il Visualizzatore profili e vai a **Tipi di pubblico**, il pubblico sarà idoneo.
 
-Selezionare **Set di dati esistente** e nel menu a discesa cercare e selezionare il set di dati `--aepUserLdap-- - External Audience Metadata`.
+![Acquisizione dei dati](./images/homegalaxydsdk.png)
 
-Verificare i **dettagli del flusso di dati**, quindi fare clic su **Avanti**.
+Torna al webhook aperto su [https://eodts05snjmjz67.m.pipedream.net](https://eodts05snjmjz67.m.pipedream.net), dove dovresti trovare una nuova richiesta in arrivo, proveniente da Adobe Experience Platform, che contiene l&#39;evento di qualificazione del pubblico.
 
-![Metadati tipi di pubblico esterni http 3](images/extAudMDhttp3.png)
+![Acquisizione dei dati](./images/destsdk10.png)
 
-Poi vedrai questo.
-
-Il passaggio **Mappatura** della procedura guidata è vuoto perché verrà acquisito un payload conforme a XDM nel connettore Source API HTTP, quindi non è richiesta alcuna mappatura. Fai clic su **Avanti**.
-
-![Metadati tipi di pubblico esterni http 3](images/extAudMDhttp3a.png)
-
-Nel passaggio **Rivedi** puoi facoltativamente rivedere la connessione e i dettagli di mappatura. Fai clic su **Fine**.
-
-![Metadati tipi di pubblico esterni http 4](images/extAudMDhttp4.png)
-
-Poi vedrai questo.
-
-![Metadati tipi di pubblico esterni http 4](images/extAudMDhttp4a.png)
-
-## 2.3.6.1.5 Acquisizione dei metadati di tipi di pubblico esterni
-
-Nella scheda Panoramica di Source Connector, fare clic su **...** e quindi su **Copia payload schema**.
-
-![Str metadati tipi di pubblico esterni 1](images/extAudMDstr1a.png)
-
-Apri l’applicazione Editor di testo sul computer e incolla il payload appena copiato, che si presenta così. Successivamente, devi aggiornare l&#39;oggetto **xdmEntity** in questo payload.
-
-![Str metadati tipi di pubblico esterni 1](images/extAudMDstr1b.png)
-
-L&#39;oggetto **xdmEntity** deve essere sostituito dal codice seguente. Copiare il codice seguente e incollarlo nel file di testo sostituendo l&#39;oggetto **xdmEntity** nell&#39;editor di testo.
-
-```
-"xdmEntity": {
-    "_id": "--aepUserLdap---extaudience-01",
-    "description": "--aepUserLdap---extaudience-01 description",
-    "segmentIdentity": {
-      "_id": "--aepUserLdap---extaudience-01",
-      "namespace": {
-        "code": "externalaudiences"
-      }
-    },
-    "segmentName": "--aepUserLdap---extaudience-01 name",
-    "segmentStatus": "ACTIVE",
-    "version": "1.0"
-  }
-```
-
-Dovresti quindi vedere quanto segue:
-
-![Str metadati tipi di pubblico esterni 1](images/extAudMDstr1.png)
-
-Aprire quindi una nuova finestra **Terminal**. Copiate tutto il testo nell&#39;Editor di testo e incollatelo nella finestra del terminale.
-
-![Str metadati tipi di pubblico esterni 1](images/extAudMDstr1d.png)
-
-Quindi, premi **Invio**.
-
-Nella finestra Terminal viene quindi visualizzata una conferma dell’inserimento dei dati:
-
-![Str metadati tipi di pubblico esterni 1](images/extAudMDstr1e.png)
-
-Aggiorna la schermata del connettore Source API HTTP, in cui ora vedrai che i dati sono in fase di elaborazione:
-
-![Str metadati pubblico esterno 2](images/extAudMDstr2.png)
-
-## 2.3.6.1.6 Convalidare l’acquisizione dei metadati di tipi di pubblico esterni
-
-Al termine dell’elaborazione, puoi verificare la disponibilità dei dati nel set di dati utilizzando Query Service.
-
-Nel menu a destra, vai a **Set di dati** e seleziona il set di dati `--aepUserLdap-- - External Audience Metadata` creato in precedenza.
-
-![Str metadati pubblico esterno 3](images/extAudMDstr3.png)
-
-Nel menu di destra, vai a Query e fai clic su **Crea query**.
-
-![Str metadati tipi di pubblico esterni 4](images/extAudMDstr4.png)
-
-Immetti il seguente codice, quindi premi **MAIUSC + INVIO**:
-
-```
-select * from --aepUserLdap--_external_audience_metadata
-```
-
-Nei risultati della query verranno visualizzati i metadati del pubblico esterno che hai acquisito.
-
-![Str metadati pubblico esterno 5](images/extAudMDstr5.png)
-
-## Iscrizione al pubblico
-
-Con i metadati del pubblico esterno disponibili, ora puoi acquisire l’iscrizione del pubblico per un profilo cliente specifico.
-
-Ora devi preparare un set di dati di profilo arricchito in base allo schema di iscrizione al pubblico. Ulteriori dettagli sono disponibili nell&#39;archivio Github [XDM](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md).
-
-### Creare lo schema di appartenenza dei tipi di pubblico esterni
-
-Nel menu a destra, vai a **Schemi**. Fare clic su **Crea schema** e quindi su **Profilo individuale XDM**.
-
-![Schema del profilo di tipi di pubblico esterni 1](images/extAudPrXDM1.png)
-
-Nel popup **Aggiungi gruppi di campi**, cerca **Core profilo**. Seleziona il gruppo di campi **Core profilo v2**.
-
-![Schema profilo pubblico esterno 2](images/extAudPrXDM2.png)
-
-Quindi, nel popup **Aggiungi gruppi di campi**, cerca **Appartenenza al segmento**. Selezionare il gruppo di campi **Dettagli appartenenza al segmento**. Fare clic su **Aggiungi gruppi di campi**.
-
-![Schema profilo pubblico esterno 3](images/extAudPrXDM3.png)
-
-Poi vedrai questo. Passare al campo `--aepTenantId--.identification.core`. Fai clic sul campo **crmId**. Nel menu di destra, scorri verso il basso e seleziona le caselle di controllo **Identità** e **Identità primaria**. Per lo spazio dei nomi **Identity**, seleziona **Sistema demo - CRMID**.
-
-Fare clic su **Applica**.
-
-![Schema del profilo di tipi di pubblico esterni 4](images/extAudPrXDM4.png)
-
-Selezionare quindi il nome dello schema **Schema senza titolo**. Nel campo del nome visualizzato, immettere `--aepUserLdap-- - External Audiences Membership`.
-
-![Schema profilo pubblico esterno 5](images/extAudPrXDM5a.png)
-
-Quindi, abilita il **Profilo** e conferma. Fai clic su **Salva**.
-
-![Schema profilo pubblico esterno 5](images/extAudPrXDM5.png)
-
-### Creare il set di dati Appartenenza a tipi di pubblico esterni
-
-In **Schemi**, passa a **Sfoglia**. Cerca e fai clic sullo schema `--aepUserLdap-- - External Audiences Membership` creato nel passaggio precedente. Fare clic su **Crea set di dati dallo schema**.
-
-![Servizi di dominio pubblico esterno - Metadati DS 1](images/extAudPrDS1.png)
-
-Per il campo **Nome**, immettere `--aepUserLdap-- - External Audiences Membership`. Fare clic su **Crea set di dati**.
-
-![Servizi di dominio pubblico esterno - Metadati DS 2](images/extAudPrDS2.png)
-
-Poi vedrai questo. Non dimenticare di abilitare l&#39;interruttore **Profilo**.
-
-![Servizi di dominio pubblico esterno - Metadati DS 3](images/extAudPrDS3.png)
-
-### Creare una connessione Source API HTTP
-
-
-Successivamente, devi configurare il connettore Source API HTTP che utilizzerai per acquisire i metadati nel set di dati.
-
-Vai a **Origini**. Nel campo di ricerca immettere **HTTP**. Fare clic su **Aggiungi dati**.
-
-![Metadati tipi di pubblico esterni http 1](images/extAudMDhttp1.png)
-
-Immettere le seguenti informazioni:
-
-- **Tipo di account**: seleziona **Nuovo account**
-- **Nome account**: immettere `--aepUserLdap-- - External Audience Membership`
-- Seleziona la casella di controllo **casella compatibile con XDM**
-
-Fare clic su **Connetti all&#39;origine**.
-
-![Metadati tipi di pubblico esterni http 2](images/extAudPrhttp2.png)
-
-Poi vedrai questo. Fai clic su **Avanti**.
-
-![Metadati tipi di pubblico esterni http 2](images/extAudPrhttp2a.png)
-
-Selezionare **Set di dati esistente** e nel menu a discesa cercare e selezionare il set di dati `--aepUserLdap-- - External Audiences Membership`.
-
-Verificare i **dettagli del flusso di dati**, quindi fare clic su **Avanti**.
-
-![Metadati tipi di pubblico esterni http 3](images/extAudPrhttp3.png)
-
-Poi vedrai questo.
-
-Il passaggio **Mappatura** della procedura guidata è vuoto perché verrà acquisito un payload conforme a XDM nel connettore Source API HTTP, quindi non è richiesta alcuna mappatura. Fai clic su **Avanti**.
-
-![Metadati tipi di pubblico esterni http 3](images/extAudPrhttp3a.png)
-
-Nel passaggio **Rivedi** puoi facoltativamente rivedere la connessione e i dettagli di mappatura. Fai clic su **Fine**.
-
-![Metadati tipi di pubblico esterni http 4](images/extAudPrhttp4.png)
-
-Poi vedrai questo.
-
-![Metadati tipi di pubblico esterni http 4](images/extAudPrhttp4a.png)
-
-### Acquisizione dei dati di appartenenza a tipi di pubblico esterni
-
-Nella scheda Panoramica di Source Connector, fare clic su **...** e quindi su **Copia payload schema**.
-
-![Str metadati tipi di pubblico esterni 1](./images/extAudPrstr1a.png)
-
-Apri l’applicazione Editor di testo sul computer e incolla il payload appena copiato, che si presenta così. Successivamente, devi aggiornare l&#39;oggetto **xdmEntity** in questo payload.
-
-![Str metadati tipi di pubblico esterni 1](images/extAudPrstr1b.png)
-
-L&#39;oggetto **xdmEntity** deve essere sostituito dal codice seguente. Copiare il codice seguente e incollarlo nel file di testo sostituendo l&#39;oggetto **xdmEntity** nell&#39;editor di testo.
-
-```
-  "xdmEntity": {
-    "_id": "--aepUserLdap---profile-test-01",
-    "_experienceplatform": {
-      "identification": {
-        "core": {
-          "crmId": "--aepUserLdap---profile-test-01"
-        }
-      }
-    },
-    "personID": "--aepUserLdap---profile-test-01",
-    "segmentMembership": {
-      "externalaudiences": {
-        "--aepUserLdap---extaudience-01": {
-          "status": "realized",
-          "lastQualificationTime": "2022-03-05T00:00:00Z"
-        }
-      }
-    }
-  }
-```
-
-Dovresti quindi vedere quanto segue:
-
-![Str metadati tipi di pubblico esterni 1](images/extAudPrstr1.png)
-
-Aprire quindi una nuova finestra **Terminal**. Copiate tutto il testo nell&#39;Editor di testo e incollatelo nella finestra del terminale.
-
-![Str metadati tipi di pubblico esterni 1](images/extAudPrstr1d.png)
-
-Quindi, premi **Invio**.
-
-Nella finestra Terminal viene quindi visualizzata una conferma dell’inserimento dei dati:
-
-![Str metadati tipi di pubblico esterni 1](images/extAudPrstr1e.png)
-
-Aggiorna la schermata del connettore Source API HTTP, in cui dopo un paio di minuti vedrai che i dati vengono elaborati:
-
-![Str metadati pubblico esterno 2](images/extAudPrstr2.png)
-
-### Convalidare l’acquisizione dell’appartenenza a tipi di pubblico esterni
-
-Al termine dell’elaborazione, puoi verificare la disponibilità dei dati nel set di dati utilizzando Query Service.
-
-Nel menu a destra, vai a **Set di dati** e seleziona il set di dati `--aepUserLdap-- - External Audiences Membership ` creato in precedenza.
-
-![Str metadati pubblico esterno 3](images/extAudPrstr3.png)
-
-Nel menu di destra, vai a Query e fai clic su **Crea query**.
-
-![Str metadati tipi di pubblico esterni 4](images/extAudPrstr4.png)
-
-Immetti il seguente codice, quindi premi **MAIUSC + INVIO**:
-
-```
-select * from --aepUserLdap--_external_audiences_membership
-```
-
-Nei risultati della query verranno visualizzati i metadati del pubblico esterno che hai acquisito.
-
-![Str metadati pubblico esterno 5](images/extAudPrstr5.png)
-
-## Crea un segmento
-
-Ora sei pronto a intervenire sui tipi di pubblico esterni.
-In Adobe Experience Platform l’azione si ottiene creando segmenti, popolando i rispettivi tipi di pubblico e condividendoli con le destinazioni.
-Ora creerai un segmento utilizzando il pubblico esterno appena creato.
-
-Nel menu a sinistra, vai a **Segmenti** e fai clic su **Crea segmento**.
-
-![SegBuilder tipi di pubblico esterni 1](images/extAudSegUI2.png)
-
-Vai a **Tipi di pubblico**. Poi vedrai questo. Fai clic su **Tipi di pubblico esterni**.
-
-![SegBuilder tipi di pubblico esterni 1](images/extAudSegUI2a.png)
-
-Selezionare il pubblico esterno creato in precedenza, denominato `--aepUserLdap---extaudience-01`. Trascina e rilascia il pubblico nell’area di lavoro.
-
-![SegBuilder tipi di pubblico esterni 1](images/extAudSegUI2b.png)
-
-Assegna un nome al segmento e utilizza `--aepUserLdap-- - extaudience-01`. Fare clic su **Salva e chiudi**.
-
-![SegBuilder tipi di pubblico esterni 1](images/extAudSegUI1.png)
-
-Poi vedrai questo. Noterai inoltre che il profilo per il quale hai acquisito l&#39;appartenenza al segmento ora viene visualizzato nell&#39;elenco dei **Profili di esempio**.
-
-![SegBuilder tipi di pubblico esterni 1](images/extAudSegUI3.png)
-
-Il segmento è pronto ora e può essere inviato a una destinazione per l’attivazione.
-
-## Visualizzare il profilo cliente
-
-Ora puoi anche visualizzare la qualifica del segmento sul tuo profilo cliente. Vai a **Profili**, utilizza lo spazio dei nomi delle identità **Sistema demo - CRMID** e fornisci l&#39;identità `--aepUserLdap---profile-test-01`, che hai utilizzato come parte dell&#39;esercizio 6.6.2.4, quindi fai clic su **Visualizza**. Fare quindi clic su **ID profilo** per aprire il profilo.
-
-![SegBuilder tipi di pubblico esterni 1](images/extAudProfileUI1.png)
-
-Vai a **Iscrizione al segmento**, dove verrà visualizzato il pubblico esterno.
-
-![SegBuilder tipi di pubblico esterni 1](images/extAudProfileUI2.png)
-
-Passaggio successivo: [2.3.7 Destinazioni SDK](./ex7.md)
+Passaggio successivo: [Riepilogo e vantaggi](./summary.md)
 
 [Torna al modulo 2.3](./real-time-cdp-build-a-segment-take-action.md)
 

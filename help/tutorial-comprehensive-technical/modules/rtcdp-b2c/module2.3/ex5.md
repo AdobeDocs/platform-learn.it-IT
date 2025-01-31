@@ -4,7 +4,7 @@ description: Real-time CDP - Creare un pubblico e intervenire - Inviare il pubbl
 kt: 5342
 doc-type: tutorial
 exl-id: b041897b-4ee8-4ff8-a3bc-d953e2e42a1a
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 2%
@@ -199,7 +199,7 @@ Se ora torni al sito web di dimostrazione e visiti la pagina del prodotto di Gal
 
 ![RTCDP](./images/atform13.png)
 
-Passaggio Successivo: [2.3.6 Tipi Di Pubblico Esterni](./ex6.md)
+Passaggio successivo: [2.3.6 Destinazioni SDK](./ex6.md)
 
 [Torna al modulo 2.3](./real-time-cdp-build-a-segment-take-action.md)
 
