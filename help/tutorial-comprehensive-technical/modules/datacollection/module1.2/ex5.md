@@ -4,10 +4,10 @@ description: Foundation - Acquisizione dei dati - Acquisizione dei dati da origi
 kt: 5342
 doc-type: tutorial
 exl-id: 21b84a77-4115-4ba7-b847-b236aa14bbdd
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ Per copiare BLOB o file nell’area di destinazione dati di Adobe Experience Pla
 
 ![dlz-install-az-copy.png](./images/dlz1.png)
 
-- Scarica il file di dati di esempio global-context-websiteinteractions.csv, che contiene interazioni di esempio con siti Web, e salvalo nella cartella in cui hai decompresso **azcopy**.
+- Scarica il file di dati di esempio [global-context-websiteinteractions.csv](./../../../assets/csv/data-ingestion/global-context-websiteinteractions.csv), che contiene interazioni di esempio con siti Web e salvalo nella cartella in cui hai decompresso **azcopy**.
 
 ![dlz-install-az-copy.png](./images/dlz2.png)
 

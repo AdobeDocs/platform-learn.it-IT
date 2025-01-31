@@ -3,9 +3,10 @@ title: AEM CS - Blocco personalizzato avanzato
 description: AEM CS - Blocco personalizzato avanzato
 kt: 5342
 doc-type: tutorial
-source-git-commit: baa9b176213883559fafba9be19e0c5749623d56
+exl-id: fa299668-c902-4775-a540-7555ca461d3e
+source-git-commit: 4ab2a12a71c8a89963cbd47d5df2bda97bffd318
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -91,7 +92,7 @@ Salva le modifiche.
 
 Hai ora apportato diverse modifiche al progetto che devono essere salvate nell’archivio GitHub. Per farlo, apri **GitHub Desktop**.
 
-Dovresti quindi visualizzare i 3 file appena modificati in **Modifiche**. Rivedi le modifiche.
+Dovresti quindi visualizzare i 2 file appena modificati in **Modifiche**. Rivedi le modifiche.
 
 Immettere un nome per la PR, `js css`. Fare clic su **Commit to main**.
 
@@ -344,7 +345,7 @@ Dovresti vedere questo.
 
 ![Blocca](./images/blockadv20.png)
 
-Passaggio successivo: [Riepilogo e vantaggi](./summary.md){target="_blank"}
+Passaggio successivo: [2.1.6 Edge Delivery Services AEM plugin MarTech](./ex6.md){target="_blank"}
 
 [Torna al modulo 2.1](./aemcs.md){target="_blank"}
 

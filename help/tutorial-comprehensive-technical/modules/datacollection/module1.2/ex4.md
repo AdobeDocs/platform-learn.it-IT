@@ -4,10 +4,10 @@ description: Foundation - Acquisizione dei dati - Acquisizione dei dati da origi
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '1472'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -82,8 +82,11 @@ Utilizzerai un set di dati condiviso. Il set di dati condiviso è già stato cre
 
 ![Acquisizione dei dati](./images/emeacrmoverview.png)
 
-
 Nella schermata di panoramica puoi visualizzare 3 informazioni principali.
+
+>[!NOTE]
+>
+>È possibile che la visualizzazione del set di dati sia vuota, se non si è verificata alcuna attività negli ultimi 7 giorni.
 
 ![Acquisizione dei dati](./images/dashboard.png)
 
@@ -146,6 +149,10 @@ Fai clic su **Avanti**.
 Ora devi mappare le intestazioni di colonna dal file CSV con una proprietà XDM nel **[!UICONTROL sistema di dimostrazione - set di dati profilo per CRM]**.
 
 Adobe Experience Platform ha già fatto alcune proposte per te, tentando di collegare [!UICONTROL Attributi Source] con i [!UICONTROL Campi schema di destinazione].
+
+>[!NOTE]
+>
+>Se noti degli errori nella schermata di mappatura, non preoccuparti. Dopo aver seguito le istruzioni riportate di seguito, tali errori verranno risolti.
 
 ![Acquisizione dei dati](./images/mapschema.png)
 
@@ -251,7 +258,7 @@ Limitiamo i dati di identità per l’intero set di dati. Passa il puntatore sul
 
 ![Acquisizione dei dati](./images/pencil.png)
 
-Vai a **[!UICONTROL Dati identità]** e vedrai che l&#39;opzione **[!UICONTROL I2]** è selezionata. Ciò presuppone che tutte le informazioni in questo set di dati siano almeno indirettamente identificabili per la persona.
+Vai a **[!UICONTROL Etichette di identità]** e vedrai che l&#39;opzione **[!UICONTROL I2]** è selezionata. Ciò presuppone che tutte le informazioni in questo set di dati siano almeno indirettamente identificabili per la persona.
 
 Fai clic su **[!UICONTROL Salva modifiche]**.
 

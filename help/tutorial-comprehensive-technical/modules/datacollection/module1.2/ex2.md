@@ -4,10 +4,10 @@ description: Foundation - Acquisizione dei dati - Configurare schemi e impostare
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '3127'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ Esistono 2 tipi di dati che desideri acquisire:
 
 Tuttavia, la domanda **Chi è questo cliente?** è una domanda molto aperta che ha molte risposte. Quando la tua organizzazione desidera vedere la risposta a questa domanda, stai cercando informazioni demografiche come Nome, Cognome e Indirizzo. Ma anche per informazioni di contatto come un indirizzo e-mail o un numero di telefono cellulare. E anche per informazioni collegate a Lingua, OptIn/OptOut e forse anche Immagini del profilo. Infine, quello che bisogna sapere è come identificare il cliente nei vari sistemi utilizzati dalla propria organizzazione.
 
-Lo stesso vale per la domanda **Che cosa fa questo cliente?**. È una domanda molto aperta con molte risposte. Quando la tua organizzazione desidera ricevere una risposta a questa domanda, stai cercando qualsiasi interazione di un cliente con una qualsiasi delle tue proprietà online e offline. Quali pagine o prodotti sono stati visitati? Il cliente ha aggiunto un prodotto al carrello o acquistato un articolo? Quale dispositivo e browser è stato utilizzato per navigare nel sito web? Che tipo di informazioni sta cercando questo cliente e come possiamo utilizzarle per configurare e fornire al cliente un&#39;esperienza eccezionale? E infine, ciò che dobbiamo davvero sapere, è come identificheremo questo cliente nei vari sistemi che la vostra organizzazione utilizzerà.
+Lo stesso vale per la domanda **Che cosa fa questo cliente?**. È una domanda molto aperta con molte risposte. Quando la tua organizzazione desidera vedere la risposta a questa domanda, stai cercando qualsiasi interazione che un cliente ha avuto con una qualsiasi delle tue proprietà online e offline. Quali pagine o prodotti sono stati visitati? Il cliente ha aggiunto un prodotto al carrello o acquistato un articolo? Quale dispositivo e browser è stato utilizzato per navigare nel sito web? Che tipo di informazioni sta cercando questo cliente e come possiamo utilizzarle per configurare e fornire al cliente un&#39;esperienza eccezionale? E infine, ciò che dobbiamo davvero sapere, è come identificheremo questo cliente nei vari sistemi che la vostra organizzazione utilizzerà.
 
 ## Chi è questo cliente
 
@@ -140,7 +140,7 @@ Ora disponi di questa struttura di schema.
 ![Acquisizione dei dati](./images/schemastructurem.png)
 
 Il nuovo [!UICONTROL Gruppo di campi] è ancora vuoto, quindi ora dovrai aggiungere campi a tale [!UICONTROL Gruppo di campi].
-Nell&#39;elenco [!UICONTROL Gruppo di campi], fai clic sul tuo [!UICONTROL Gruppo di campi] personalizzato.
+Nell&#39;elenco [!UICONTROL Gruppo di campi], fai clic sul [!UICONTROL Gruppo di campi] personalizzato, quindi fai clic su **Sfoglia**.
 
 ![Acquisizione dei dati](./images/schemastructurem.png)
 
@@ -305,7 +305,7 @@ Prima di continuare, devi selezionare una **[!UICONTROL sandbox]**. La [!UICONTR
 
 ![Acquisizione dei dati](./images/sb1.png)
 
-In Adobe Experience Platform, fai clic su **[!UICONTROL Schemi]** nel menu sul lato sinistro dello schermo.
+In Adobe Experience Platform, fai clic su **[!UICONTROL Schemi]** nel menu sul lato sinistro dello schermo e passa a **Sfoglia**.
 
 ![Acquisizione dei dati](./images/menuschemas.png)
 
@@ -341,14 +341,14 @@ Nell’introduzione di questo laboratorio, abbiamo notato la necessità dei segu
 
 Per rendere queste informazioni parte dello schema, devi aggiungere il seguente [!UICONTROL Gruppo di campi] allo schema:
 
-- ExperienceEvent di AEP Web SDK
+- AEP Web SDK ExperienceEvent
 - Identificazione profilo personalizzata [!UICONTROL Gruppo di campi] della tua organizzazione
 
 Fare clic su **+ Aggiungi** in **Gruppi di campi**.
 
 ![Acquisizione dei dati](./images/eeedfg.png)
 
-Nella schermata **[!UICONTROL Aggiungi gruppo di campi]**, seleziona [!UICONTROL Gruppo di campi] **[!UICONTROL AEP Web SDK ExperienceEvent]**. Fare clic su **[!UICONTROL Aggiungi gruppi di campi]**.
+Nella schermata **[!UICONTROL Aggiungi gruppo di campi]**, seleziona il [!UICONTROL gruppo di campi] **[!UICONTROL AEP Web SDK ExperienceEvent]**. Fare clic su **[!UICONTROL Aggiungi gruppi di campi]**.
 
 ![Acquisizione dei dati](./images/eeed.png)
 
@@ -446,10 +446,10 @@ Fai clic su **[!UICONTROL Salva]** per salvare le modifiche.
 ![Acquisizione dei dati](./images/applyidenee.png)
 
 È importante notare che quando alla fine si acquisiscono dati in base a questo schema, alcuni campi sono obbligatori.
-Ad esempio, i campi **[!UICONTROL _id]** e **[!UICONTROL timestamp]** sono campi obbligatori.
+Ad esempio, i campi **[!UICONTROL _id]** e **[!UICONTROL timestamp]** sono campi obbligatori, un requisito imposto dalla classe ExperienceEvent.
 
 - _id deve contenere un id univoco per una specifica acquisizione di dati
-- il timestamp deve essere il timestamp dell&#39;hit nel formato **[!UICONTROL &quot;YYYY-MM-DDTHH:MM:SSSZ&quot;]**, ad esempio: **[!UICONTROL &quot;2024-11-18T07:20:000Z&quot;]**
+- la marca temporale deve essere la marca temporale di questo hit, nel formato **`"YYYY-MM-DDTHH:MM:SSSZ"`**, come ad esempio: **`"2024-11-18T07:20:000Z"`**
 
 Hai definito uno schema, collegato [!UICONTROL Gruppi di campi] esistenti e appena creati e disponi di identificatori definiti.
 

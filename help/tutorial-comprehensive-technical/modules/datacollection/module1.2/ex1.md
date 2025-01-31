@@ -4,10 +4,10 @@ description: Foundation - Acquisizione dei dati - Da sconosciuto a noto sul sito
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -65,7 +65,11 @@ Viene visualizzata la pagina dei dettagli del prodotto. Un evento esperienza di 
 
 ![Demo](./images/pv5.png)
 
-Apri il pannello Provider Viewer e osserva i tuoi **eventi esperienza**.
+Apri il pannello Visualizzatore profili e osserva i tuoi **Eventi esperienza**.
+
+>[!NOTE]
+>
+>Se l’evento non viene visualizzato immediatamente, aggiorna la pagina.
 
 ![Demo](./images/pv6.png)
 
