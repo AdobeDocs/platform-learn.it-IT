@@ -2,9 +2,10 @@
 title: Completamento
 description: Come viene misurato il completamento?
 doc-type: multipage-overview
-source-git-commit: 8270f69dd04714e217ddbb4d125157799cba2940
+exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
+source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
@@ -21,81 +22,77 @@ Di seguito sono riportate le prove di completamento previste per ogni modulo.
 
 La prova di completamento prevista per il modulo **Guida introduttiva** è l&#39;ID del progetto Demo System per il Web creato.
 
-L&#39;ID del progetto Demo System per il formato Web è simile al seguente: `--demoProfileLdap-- - OCUC`.
+L&#39;ID del progetto Demo System per il formato Web è simile al seguente: `--demoProfileLdap-- - QIMU`.
 
 ![3](./assets/images/module0dtl.png)
 
 ## 1.1 Raccolta dati di Adobe Experience Platform ed estensione Web SDK
 
-La prova di completamento prevista per il modulo **Raccolta dati e Web SDK** è il nome della proprietà Raccolta dati per il Web.
+La prova di completamento prevista per il modulo **Raccolta dati e Web SDK** è il **ID ambiente** della proprietà Raccolta dati per il Web.
 
-Il nome della proprietà Raccolta dati per il formato Web è simile al seguente: `--demoProfileLdap-- - Demo System (05/02/2022) (enablement) 1644046719474`.
+L&#39;ID ambiente della proprietà Data Collection per il formato Web è simile al seguente: `EN5211f7792b4442f8a45deb68f8902d3a`.
 
 ![3](./assets/images/module1dtl.png)
 
 ## 1.2 Acquisizione dei dati
 
-La prova di completamento prevista per il modulo **Acquisizione dati** è l&#39;ID del set di dati per i 2 set di dati creati.
+La prova di completamento prevista per il modulo **Acquisizione dati** è l&#39;ID del flusso di dati per la connessione Source Data Landing Zone.
 
-Il formato ID del set di dati è simile al seguente: **5f069724723ef41916a8b5d2**.
-
-`--demoProfileLdap-- - Demo System - Event Dataset for Website`
+L&#39;ID del flusso di dati è simile al seguente: **374c2c6d-f39a-4b0b-b568-40c41e6c4e8e**.
 
 ![3](./assets/images/completemodule2seg.png)
 
-`--demoProfileLdap-- - Demo System - Profile Dataset for Website`
-
-![3](./assets/images/completemodule2seg1.png)
-
 ## 1.3 Federated Audience Composition
 
-La prova di completamento prevista per il modulo **Composizione pubblico federato** è...
+La prova di completamento prevista per il modulo **Federated Audience Composition** è l&#39;ID del Federated Data Model creato.
+
+L&#39;ID del Federated Data Model è simile al seguente: **DMO5110** e può essere prelevato dall&#39;URL come indicato nell&#39;immagine seguente.
+
+![3](./assets/images/completemodule3fac.png)
 
 ## 2.1 Profilo cliente in tempo reale
 
-La prova di completamento prevista per il modulo **Profilo cliente in tempo reale** è il **ID segmento** del segmento creato tramite l&#39;interfaccia utente, `--demoProfileLdap-- - Male customers with interest in Montana Wind Jacket`.
+La prova di completamento prevista per il modulo **Profilo cliente in tempo reale** è il **ID pubblico** creato tramite l&#39;interfaccia utente, `--demoProfileLdap-- - Male customers with interest in iPhone 15 Pro`.
 
-Il formato ID segmento è simile al seguente: **8cb7034d-d4ae-4d26-a61f-a76559c12457**.
+L&#39;ID pubblico è simile al seguente: **81a9acbe-12e6-424b-b658-abba3a435c83**.
 
 ![3](./assets/images/completemodule3seg.png)
 
-
 ## 2.2 Servizi intelligenti
 
-La prova di completamento prevista per il modulo **Intelligent Services** è l&#39;ID del **servizio Customer AI propensione all&#39;acquisto del prodotto**.
+La prova di completamento prevista per il modulo **Intelligent Services** è il **ID pubblico** creato tramite l&#39;interfaccia utente, `--demoProfileLdap-- - Customer AI High Propensity`.
 
-Il formato è simile al seguente: **12729** ed è possibile recuperarlo dall&#39;URL dopo l&#39;apertura del servizio.
+L&#39;ID pubblico è simile al seguente: **cb6db21d-8fa3-484a-93ac-25aa1ab48412**.
 
 ![12](./assets/images/completemodule10.png)
 
 ## 2.3 Real-Time CDP: Creare un pubblico e agire!
 
-La prova di completamento prevista per il modulo **Real-Time CDP** è l&#39;ID della tua **attività Adobe Target**.
+La prova di completamento prevista per il modulo **Real-Time CDP: crea un pubblico e intervieni.** è l&#39;ID della **destinazione del webhook SDK delle destinazioni**.
 
-Il formato è simile al seguente: **111804**.
+L&#39;ID della destinazione del webhook è simile al seguente: **b5b4b959-3166-40e2-8279-8223d00c3987** e può essere ricavato dall&#39;URL come indicato nell&#39;immagine seguente.
 
 ![12](./assets/images/vec4.png)
 
-
 ## 2.4 Real-Time CDP: da Audience Activation a Microsoft Azure Event Hub
 
-La prova di completamento prevista per il modulo **RTCDP: EventHub** è l&#39;ID della destinazione **Microsoft Azure Event Hub** in Adobe Experience Platform.
+La prova di completamento prevista per il modulo **Real-Time CDP: Audience Activation all&#39;hub eventi di Microsoft Azure** è l&#39;ID della destinazione **dell&#39;hub eventi di Microsoft Azure** in Adobe Experience Platform.
 
-L&#39;**ID destinazione hub eventi di Microsoft Azure**, che si presenta come **fa3f7ce5-86fd-4096-bf7c-e586fdc096ba**, qui:
+È possibile trovare l&#39;**ID destinazione hub eventi di Microsoft Azure**, che ha l&#39;aspetto di questo **43cf85bc-3d01-49fd-80c9-a2913db45e3c**, nell&#39;URL come indicato di seguito:
 
 ![14](./assets/images/azuredestid.png)
 
 ## 2.5 Connessioni Real-Time CDP: Inoltro eventi
 
-La prova di completamento prevista per il modulo **Connessioni RTCDP** è il tuo **ID proprietà inoltro eventi**.
+La prova di completamento prevista per il modulo **Connessioni Real-Time CDP: Inoltro eventi** è l&#39;ID **proprietà di inoltro eventi**.
 
-L&#39;ID **Proprietà di inoltro eventi**, che si presenta come questo **PR40f44184c888472e9c19d8d602aab0de**, è disponibile qui:
+È possibile trovare l&#39;**ID proprietà inoltro eventi**, che ha l&#39;aspetto di questo **PRa18819171c1241dfb16d74a49993dd5b**, nell&#39;URL come indicato nell&#39;immagine seguente:
 
 ![14](./assets/images/launchssfid.png)
 
 ## 2.6 Trasmettere dati da Apache Kafka a Real-Time CDP
 
-La prova di completamento prevista per il modulo **Apache Kafka** è l&#39;ID del connettore di origine `--demoProfileLdap-- - Kafka`.
+La prova di completamento prevista per il modulo **Trasmetti i dati da Apache Kafka a Real-Time CDP** è l&#39;ID del connettore di origine `--demoProfileLdap-- - Kafka`.
 
 L&#39;ID è simile al seguente **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7** ed è disponibile qui:
 
@@ -103,49 +100,49 @@ L&#39;ID è simile al seguente **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7** ed è di
 
 ## 3.1 Adobe Journey Optimizer: Orchestrazione
 
-La prova di completamento prevista per il modulo **AJO: Orchestration** è l&#39;eventID per `--demoProfileLdap--AccountCreationEvent`.
+La prova di completamento prevista per il modulo **Adobe Journey Optimizer: Orchestration** è l&#39;ID del percorso creato.
 
-Formato: **227402c540eb8f8855c6b2333adf6d54d7153d9d7d56fa475a6866081c574736**.
+L&#39;ID del percorso si presenta così, **594fa01f-1a3b-450c-ba09-b7e3ff377c0f**, e può essere preso dall&#39;URL come indicato nell&#39;immagine seguente.
 
 ![12](./assets/images/ajoo.png)
 
 ## 3.2 Adobe Journey Optimizer: origini dati esterne e azioni personalizzate
 
-La prova di completamento prevista per il modulo **AJO: azioni personalizzate** è l&#39;eventID per l&#39;evento `--demoProfileLdap--GeofenceEntry`.
+La prova di completamento prevista per il modulo **Adobe Journey Optimizer: origini dati esterne e azioni personalizzate** è l&#39;ID del percorso creato.
 
-Il formato è simile al seguente: **fa42ab7982ba55f039eacec24c1e32e5c51b310c67f0fa559ab49b89b63f4934**.
+L&#39;ID del percorso è simile al seguente: **6962d3bc-4f44-4f9c-b326-83978f245f2a** e può essere ricavato dall&#39;URL come indicato nell&#39;immagine seguente.
 
 ![12](./assets/images/jofinal.png)
 
 ## 3.3 Adobe Journey Optimizer: Offer decisioning
 
-La prova di completamento prevista per il modulo **AJO: Offers** è l&#39;ID della **decisione di offerta** creata.
+La prova di completamento prevista per il modulo **Adobe Journey Optimizer: Offer Decisioning** è l&#39;ID della **decisione** creata.
 
-Puoi trovare l&#39;**ID decisione offerta**, che ha l&#39;aspetto di questo **xcore:offer-activity:1122fcc4603ea499**, qui:
+Puoi trovare l&#39;**ID decisione**, che si presenta così **dps:offer-activity:1a08ba4b529b2fb2**, qui:
 
 ![14](./assets/images/offers.png)
 
 ## 3.4 Adobe Journey Optimizer: Percorsi basati su eventi
 
-La prova di completamento prevista per il modulo **AJO: Events** è l&#39;eventID per `--demoProfileLdap--StoreEntryEvent`.
+La prova di completamento prevista per il modulo **Adobe Journey Optimizer: Percorsi basati su eventi** è l&#39;ID del percorso creato.
 
-Il formato è simile al seguente: **e3a8f0bdc0b609667cd96a72a6b1e5aafa0ddaf6ccf121c574e6a2030860a633**.
+L&#39;ID del percorso è simile al seguente: **5f5efc7e-49f7-44c1-85df-b23482b38d32** e può essere ricavato dall&#39;URL come indicato nell&#39;immagine seguente.
 
 ![14](./assets/images/jojourneyid.png)
 
 ## 4.1 Customer Journey Analytics: creare un dashboard con Analysis Workspace
 
-La prova di completamento prevista per il modulo **CJA** è l&#39;ID del progetto `--demoProfileLdap-- - Omnichannel Analysis`.
+La prova di completamento prevista per il modulo **Customer Journey Analytics: crea un dashboard con Analysis Workspace** è l&#39;ID del progetto `--demoProfileLdap-- - Omnichannel Analysis`.
 
-Il formato è simile al seguente: **6217344f6249ac70c726db60**, è possibile trovarlo nell&#39;URL dopo l&#39;apertura del progetto.
+Il formato è simile al seguente: **677bcb247064db3c7de2a0e4**, è possibile trovarlo nell&#39;URL dopo l&#39;apertura del progetto.
 
 ![12](./assets/images/cjacompletion.png)
 
 ## 4.2 Customer Journey Analytics: inserire e analizzare i dati Google Analytics in Adobe Experience Platform con il connettore Source BigQuery
 
-La prova di completamento prevista per il modulo **CJA: BigQuery** è l&#39;ID della connessione **BigQuery**.
+La prova di completamento prevista per il modulo **Customer Journey Analytics: inserire e analizzare dati di Google Analytics in Adobe Experience Platform con il connettore di Source BigQuery** è l&#39;ID della connessione di origine **BigQuery**.
 
-L&#39;**ID connessione BigQuery**, che ha l&#39;aspetto di **85a2394d-8b94-410c-a239-4d8b94b10c38**, è disponibile qui:
+L&#39;**ID connessione BigQuery**, che ha l&#39;aspetto di questo **b63a810c-a8cc-4c6b-a57e-dcb7e3368cf8**, è disponibile qui:
 
 ![14](./assets/images/bqid.png)
 
@@ -153,8 +150,14 @@ L&#39;**ID connessione BigQuery**, che ha l&#39;aspetto di **85a2394d-8b94-410c-
 
 La prova di completamento prevista per il modulo **Query Service** è l&#39;ID del set di dati per il set di dati `--demoProfileLdap--_callcenter_interaction_analysis` ottenuto dopo il completamento del modulo.
 
-Il formato è simile al seguente: **62076f68f14a9d194995d4e2**.
+L&#39;ID è simile al seguente: **675033c903fb3b2aefed8a0a**.
 
 ![12](./assets/images/completemodule7.png)
+
+![Informazioni tecniche](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>Se hai domande, vuoi condividere feedback generali su suggerimenti in merito a contenuti futuri, contatta direttamente Tech Insiders, inviando un&#39;e-mail a **techinsiders@adobe.com**.
 
 [Torna a tutti i moduli](./overview.md)

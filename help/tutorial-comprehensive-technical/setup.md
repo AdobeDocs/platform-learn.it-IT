@@ -4,9 +4,9 @@ description: Configurare l’istanza di Adobe Experience Platform
 doc-type: multipage-overview
 hide: false
 exl-id: 1150c5ec-3fba-4506-8f17-c34872f9b3ea
-source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
+source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1076'
 ht-degree: 3%
 
 ---
@@ -253,5 +253,11 @@ Vai a [https://experience.adobe.com/platform](https://experience.adobe.com/platf
 >[!NOTE]
 >
 >Grazie per aver dedicato il tuo tempo all&#39;apprendimento di tutto ciò che c&#39;è da sapere su Adobe Experience Platform e sulle sue applicazioni. Se hai domande, vuoi condividere feedback generali su suggerimenti in merito a contenuti futuri, contatta direttamente Tech Insiders, inviando un&#39;e-mail a **techinsiders@adobe.com**.
+
+![Informazioni tecniche](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>Se hai domande, vuoi condividere feedback generali su suggerimenti in merito a contenuti futuri, contatta direttamente Tech Insiders, inviando un&#39;e-mail a **techinsiders@adobe.com**.
 
 [Torna a tutti i moduli](./overview.md)

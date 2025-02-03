@@ -3,10 +3,10 @@ title: Stato contenuto
 description: Stato contenuto
 doc-type: multipage-overview
 exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
-source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
+source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 10%
+source-wordcount: '256'
+ht-degree: 8%
 
 ---
 
@@ -35,5 +35,11 @@ Di seguito è riportata una panoramica dello stato del contenuto in questa eserc
 | Servizio query [5.1](./modules/datadistiller/module5.1/query-service.md) | 04/12/2024 | Sì | - |
 
 {style="table-layout:auto"}
+
+![Informazioni tecniche](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>Se hai domande, vuoi condividere feedback generali su suggerimenti in merito a contenuti futuri, contatta direttamente Tech Insiders, inviando un&#39;e-mail a **techinsiders@adobe.com**.
 
 [Torna a tutti i moduli](./overview.md)
