@@ -6,23 +6,22 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: 5c4fc7fb2635aec959b31664e354f66efac075fe
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '294'
 ht-degree: 1%
 
 ---
 
-# 2.3 Real-time CDP - Creare un segmento e intervenire
+# 2.3 Real-time CDP - Creare un pubblico e intervenire
 
-In questo modulo, configurerai un segmento di streaming e attiverai il segmento in più destinazioni.
+In questo modulo, configurerai un segmento di streaming e attiverai il pubblico su più destinazioni.
 
 ## Finalità di apprendimento
 
-- Scopri come creare un segmento e abilitarlo per lo streaming.
+- Scopri come creare un pubblico e abilitarlo per lo streaming.
 - Scopri come configurare una destinazione pubblicitaria utilizzando l’interfaccia utente di Adobe Experience Platform.
-- Scopri come collegare un segmento a una destinazione e attivarlo.
-- Scopri come utilizzare i segmenti di Adobe Experience Platform in Adobe Audience Manager e come utilizzare i segmenti di Adobe Audience Manager in Adobe Experience Platform, grazie alla condivisione bidirezionale dei segmenti.
+- Scopri come connettere un pubblico a una destinazione e attivarla.
 
 ## Prerequisiti
 

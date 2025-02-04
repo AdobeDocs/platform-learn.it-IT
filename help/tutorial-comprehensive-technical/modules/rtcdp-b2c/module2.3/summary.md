@@ -1,9 +1,10 @@
 ---
-title: Real-time CDP - Creare un segmento e intervenire - Riepilogo
-description: Real-time CDP - Creare un segmento e intervenire - Riepilogo
+title: Real-time CDP - Creare un pubblico e intervenire - Riepilogo
+description: Real-time CDP - Creare un pubblico e intervenire - Riepilogo
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 81638db0-3356-482a-b011-98eed9ea4fe3
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -13,14 +14,14 @@ ht-degree: 0%
 # Riepilogo e vantaggi
 
 Congratulazioni e grazie per aver dedicato del tempo alla conoscenza di Real-time CDP e Adobe Experience Platform.
-In questo modulo hai imparato a configurare un segmento e ad attivarlo per la qualifica in streaming e come intervenire e inviare tale segmento a Google DV360, Google AdWords, Amazon S3 e Adobe Target.
+In questo modulo, hai imparato a configurare un pubblico e ad attivarlo per la qualifica in streaming e come intervenire e inviare tale pubblico a Google DV360, Google AdWords, Amazon S3 e Adobe Target.
 
 ## Vantaggi
 
 Mettiamo in evidenza i vantaggi di un intervento con Adobe Experience Platform:
 
-- Ogni segmento integrato in Adobe Experience Platform è automaticamente disponibile per applicazioni come Adobe Target tramite il servizio core People e la Libreria tipi di pubblico di Adobe Experience Cloud. Con questo, puoi creare il segmento una volta e riutilizzarlo in tutto l’ecosistema Adobe
-- I segmenti possono essere inviati a una serie di destinazioni pronte all’uso disponibili come parte del servizio applicativo Real-time CDP. Queste destinazioni includono DSP come Google DV360, The Trade Desk, ESP come Adobe Campaign, Salesforce Marketing Cloud, Oracle Eloqua e Oracle Responsys e altre destinazioni come Amazon S3 e altro ancora.
+- Ogni pubblico integrato in Adobe Experience Platform è automaticamente disponibile per applicazioni come Adobe Target tramite il servizio core People e la Libreria tipi di pubblico di Adobe Experience Cloud. Con questo, puoi creare il tuo pubblico una volta e riutilizzarlo in tutto l&#39;ecosistema Adobe
+- I tipi di pubblico possono essere inviati a diverse destinazioni predefinite disponibili come parte del servizio dell’applicazione Real-time CDP. Queste destinazioni includono DSP come Google DV360, The Trade Desk, ESP come Adobe Campaign, Salesforce Marketing Cloud, Oracle Eloqua e Oracle Responsys e altre destinazioni come Amazon S3 e altro ancora.
 
 ## Guarda qui
 

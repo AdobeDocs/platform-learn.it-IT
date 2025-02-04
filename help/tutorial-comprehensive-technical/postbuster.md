@@ -2,9 +2,10 @@
 title: PostBuster - Dipendenti Adobe
 description: PostBuster - Dipendenti Adobe
 doc-type: multipage-overview
-source-git-commit: 7b559bc183dbabdb0100681b675cd3c3b8123ba6
+exl-id: a798e9d7-bb99-4390-885f-5fbd2ef4cee9
+source-git-commit: 9c1b30dc0fcca6b4324ec7c8158699fa273cdc90
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
@@ -14,6 +15,15 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >Le istruzioni seguenti sono destinate esclusivamente ai dipendenti Adobe.
+
+>[!IMPORTANT]
+>
+>Seguendo le istruzioni di seguito, avrai già a disposizione tutte le raccolte API richieste che verranno utilizzate in questi esercizi:
+>
+>- [2.1.3 Visualizza il tuo profilo cliente in tempo reale - API](./modules/rtcdp-b2c/module2.1/ex3.md)
+>- [2.3.6 Destinazioni SDK](./modules/rtcdp-b2c/module2.3/ex6.md)
+>- [3.3.6 Verifica la tua decisione utilizzando l&#39;API](./modules/ajo-b2c/module3.3/ex6.md)
+>- [5.1.8 API servizio query](./modules/datadistiller/module5.1/ex8.md)
 
 ## Installare PostBuster
 
@@ -39,7 +49,7 @@ Fare clic su **Scegli un file**.
 
 ![PostBuster](./assets/images/pb4.png)
 
-Seleziona il file **postbuster.json**. Fai clic su **Apri**.
+Seleziona il file **aep_tutorial.json**. Fai clic su **Apri**.
 
 ![PostBuster](./assets/images/pb5.png)
 
@@ -77,6 +87,9 @@ Copiare il segnaposto dell&#39;ambiente seguente e incollarlo nell&#39;**ambient
 	"SCOPES": [
 		"openid",
 		"AdobeID",
+		"read_organizations",
+		"additional_info.projectedProductContext",
+		"session",
 		"ff_apis",
 		"firefly_api"
 	],
@@ -85,10 +98,8 @@ Copiare il segnaposto dell&#39;ambiente seguente e incollarlo nell&#39;**ambient
 	"IMS_ORG": "",
 	"access_token": "",
 	"IMS_TOKEN": "",
-	"AZURE_STORAGE_URL": "",
-	"AZURE_STORAGE_CONTAINER": "",
-	"AZURE_STORAGE_SAS_READ": "",
-	"AZURE_STORAGE_SAS_WRITE": ""
+	"QS_QUERY_ID": "",
+	"SANDBOX_NAME": ""
 }
 ```
 
@@ -96,7 +107,7 @@ Dovresti avere questo.
 
 ![PostBuster](./assets/images/pb12.png)
 
-Dopo aver completato il modulo **Servizi di Firefly**, l&#39;ambiente dovrebbe presentarsi così. Non è necessario eseguire questa operazione ora, verrà affrontata in una fase successiva.
+Dopo aver creato il progetto di I/O Adobe, l’ambiente dovrebbe presentarsi così. Non è necessario eseguire questa operazione ora, verrà affrontata in una fase successiva.
 
 ![PostBuster](./assets/images/pb13.png)
 
