@@ -5,9 +5,9 @@ user-guide-description: Scopri i numerosi componenti di Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 993cd46646c1f58af12c47cd5acc194d16bded76
+source-git-commit: bc8c62e5115a2c40c54ee200df49bc88e852d7c3
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '881'
 ht-degree: 18%
 
 ---
@@ -54,6 +54,7 @@ ht-degree: 18%
    + [Convalida risposte](/help/platform/ai-assistant/validate-responses.md)
    + [Pannello Reperibilità](/help/platform/ai-assistant/discoverability-panel.md)
    + [Trovare tipi di pubblico non utilizzati](/help/platform/ai-assistant/find-unused-audiences.md)
+   + [Insight operativi](/help/platform/ai-assistant/operational-insights.md)
    + [Analisi dell&#39;impatto](/help/platform/ai-assistant/impact-analysis.md)
    + [Panoramica sulla sicurezza](/help/platform/ai-assistant/security-overview.md)
 + Tipi di pubblico e segmentazione {#audiences}
@@ -141,6 +142,8 @@ ht-degree: 18%
    + [Panoramica dei grafici delle identità e delle identità](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [Etichettare, acquisire e verificare i dati di identità](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [Visualizzare i grafici delle identità](/help/platform/identities/view-identity-graphs.md)
+   + Regole di collegamento del grafico delle identità {#graph-linking-rules}
+      + [Simulazione dei grafici](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
 + Intelligent Services {#intelligent-services}
    + [Panoramica](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
    + [Panoramica di Attribution AI](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
