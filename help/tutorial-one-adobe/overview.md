@@ -3,10 +3,10 @@ title: Panoramica - Tutorial tecnico completo - Un Adobe
 description: Tutorial tecnico completo, un Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 4%
+source-wordcount: '528'
+ht-degree: 3%
 
 ---
 
@@ -53,6 +53,12 @@ Se desideri seguire questo tutorial utilizzando la tua istanza di Adobe Experien
 ## Preparazione
 
 Verificare le applicazioni richieste da installare nel computer [qui](./prework.md){target="_blank"}.
+
+## Completamento e certificazione
+
+Questa esercitazione fa parte di un corso di certificazione Adobe. Per iscriverti al corso e seguire questa esercitazione, vai a [https://certification.adobe.com](https://certification.adobe.com).
+
+Per ogni modulo completato tramite l&#39;esercitazione seguente, devi inviare una prova di completamento come indicato [qui](./completion.md).
 
 ## Contenuto
 

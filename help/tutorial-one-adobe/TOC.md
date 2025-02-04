@@ -4,10 +4,10 @@ breadcrumb-title: Tutorial tecnico completo per applicazioni Adobe, da Creative 
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '331'
+ht-degree: 4%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 0%
 
 + [Panoramica del tutorial](/help/tutorial-one-adobe/overview.md)
 + [Stato contenuto](/help/tutorial-one-adobe/status.md)
++ [Completamento](/help/tutorial-one-adobe/completion.md)
 
 + Introduzione {#gettingstarted}
    + Introduzione {#gettingstarted}

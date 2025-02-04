@@ -3,7 +3,7 @@ title: Completamento
 description: Come viene misurato il completamento?
 doc-type: multipage-overview
 exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
-source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Di seguito sono riportate le prove di completamento previste per ogni modulo.
 
 La prova di completamento prevista per il modulo **Guida introduttiva** è l&#39;ID del progetto Demo System per il Web creato.
 
-L&#39;ID del progetto Demo System per il formato Web è simile al seguente: `--demoProfileLdap-- - QIMU`.
+L&#39;ID del progetto Demo System per il formato Web è simile al seguente: `--aepUserLdap-- - QIMU`.
 
 ![3](./assets/images/module0dtl.png)
 
@@ -52,7 +52,7 @@ L&#39;ID del Federated Data Model è simile al seguente: **DMO5110** e può esse
 
 ## 2.1 Profilo cliente in tempo reale
 
-La prova di completamento prevista per il modulo **Profilo cliente in tempo reale** è il **ID pubblico** creato tramite l&#39;interfaccia utente, `--demoProfileLdap-- - Male customers with interest in iPhone 15 Pro`.
+La prova di completamento prevista per il modulo **Profilo cliente in tempo reale** è il **ID pubblico** creato tramite l&#39;interfaccia utente, `--aepUserLdap-- - Male customers with interest in iPhone 15 Pro`.
 
 L&#39;ID pubblico è simile al seguente: **81a9acbe-12e6-424b-b658-abba3a435c83**.
 
@@ -60,7 +60,7 @@ L&#39;ID pubblico è simile al seguente: **81a9acbe-12e6-424b-b658-abba3a435c83*
 
 ## 2.2 Servizi intelligenti
 
-La prova di completamento prevista per il modulo **Intelligent Services** è il **ID pubblico** creato tramite l&#39;interfaccia utente, `--demoProfileLdap-- - Customer AI High Propensity`.
+La prova di completamento prevista per il modulo **Intelligent Services** è il **ID pubblico** creato tramite l&#39;interfaccia utente, `--aepUserLdap-- - Customer AI High Propensity`.
 
 L&#39;ID pubblico è simile al seguente: **cb6db21d-8fa3-484a-93ac-25aa1ab48412**.
 
@@ -92,7 +92,7 @@ La prova di completamento prevista per il modulo **Connessioni Real-Time CDP: In
 
 ## 2.6 Trasmettere dati da Apache Kafka a Real-Time CDP
 
-La prova di completamento prevista per il modulo **Trasmetti i dati da Apache Kafka a Real-Time CDP** è l&#39;ID del connettore di origine `--demoProfileLdap-- - Kafka`.
+La prova di completamento prevista per il modulo **Trasmetti i dati da Apache Kafka a Real-Time CDP** è l&#39;ID del connettore di origine `--aepUserLdap-- - Kafka`.
 
 L&#39;ID è simile al seguente **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7** ed è disponibile qui:
 
@@ -132,7 +132,7 @@ L&#39;ID del percorso è simile al seguente: **5f5efc7e-49f7-44c1-85df-b23482b38
 
 ## 4.1 Customer Journey Analytics: creare un dashboard con Analysis Workspace
 
-La prova di completamento prevista per il modulo **Customer Journey Analytics: crea un dashboard con Analysis Workspace** è l&#39;ID del progetto `--demoProfileLdap-- - Omnichannel Analysis`.
+La prova di completamento prevista per il modulo **Customer Journey Analytics: crea un dashboard con Analysis Workspace** è l&#39;ID del progetto `--aepUserLdap-- - Omnichannel Analysis`.
 
 Il formato è simile al seguente: **677bcb247064db3c7de2a0e4**, è possibile trovarlo nell&#39;URL dopo l&#39;apertura del progetto.
 
@@ -148,7 +148,7 @@ L&#39;**ID connessione BigQuery**, che ha l&#39;aspetto di questo **b63a810c-a8c
 
 ## 5.1 Servizio query
 
-La prova di completamento prevista per il modulo **Query Service** è l&#39;ID del set di dati per il set di dati `--demoProfileLdap--_callcenter_interaction_analysis` ottenuto dopo il completamento del modulo.
+La prova di completamento prevista per il modulo **Query Service** è l&#39;ID del set di dati per il set di dati `--aepUserLdap--_callcenter_interaction_analysis` ottenuto dopo il completamento del modulo.
 
 L&#39;ID è simile al seguente: **675033c903fb3b2aefed8a0a**.
 
