@@ -2,10 +2,10 @@
 title: Confronto dell’estensione Target con l’estensione Decisioning
 description: Scopri le differenze tra l’estensione Target e l’estensione Decisioning, incluse funzioni, funzioni, impostazioni e flusso di dati.
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 8e4e23413c842f84159891287d09e8a6cfbbbc53
+source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 3%
+source-wordcount: '1329'
+ht-degree: 2%
 
 ---
 
@@ -19,6 +19,26 @@ Dopo aver esaminato le informazioni riportate di seguito e valutato l’implemen
 - Quali funzioni di estensione di Adobe Target dispongono di equivalenti Adobe Journey Optimizer - Decisioning
 - Applicazione delle impostazioni di Target con Adobe Journey Optimizer - Decisioning
 - Flusso dei dati tramite l’estensione Adobe Journey Optimizer - Decisioning
+
+## Differenze operative
+
+| | Estensione Target | Estensione Decisioning |
+|---|---|---|
+| Processo | Le modifiche all’implementazione di un Target possono seguire un processo con una cadenza o requisiti di controllo qualità diversi rispetto ad altre applicazioni come Analytics. | Le modifiche all’implementazione di un’estensione Decisioning devono tenere conto di tutte le applicazioni a valle e il processo di controllo qualità e pubblicazione deve essere modificato di conseguenza. |
+| Collaborazione | I dati specifici di Target possono essere trasmessi direttamente nelle chiamate di Target. Se l’origine per la generazione di rapporti di Target è Adobe Analytics (A4T), i dati specifici di Target possono anche essere passati ad Adobe Analytics quando vengono chiamati i metodi di tracciamento appropriati nell’estensione Target per la visualizzazione e l’interazione dei contenuti di Target. | I dati passati nelle chiamate di estensione di Decisioning possono essere inoltrati sia a Target che ad Analytics se l’origine per la generazione di rapporti di Target è Adobe Analytics (A4T), se Adobe Analytics è abilitato nel flusso di dati e se vengono chiamati i metodi di tracciamento appropriati nell’estensione di Decisioning quando il contenuto di Target viene visualizzato e interagito con. |
+
+## Differenze di base
+
+| | Estensione Target | Estensione Decisioning |
+|---|---|---|
+| Dipendenze | Dipende solo da Mobile Core SDK | Dipende da Mobile Core e Edge Network SDK |
+| Funzionalità libreria | Supporta il recupero di contenuti solo da Adobe Target | Supporto per il recupero di contenuti da Adobe Target e Offer decisioning |
+| Richieste | Le chiamate di Target sono ampiamente indipendenti da altre chiamate di rete | Le chiamate di rete di Target vengono messe in coda insieme alle chiamate di rete per altre soluzioni basate su Edge, come la messaggistica nel SDK di Edge, ed eseguite in serie. |
+| Edge Network | Utilizza il valore del server di Target o l&#39;Edge Network di Adobe Experience Cloud con il codice client (clientcode.tt.omtrdc.net), entrambi specificati nella [configurazione di Target](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) nell&#39;interfaccia utente di Data Collection | Utilizza il dominio di rete Edge specificato nella [configurazione Edge Network](https://developer.adobe.com/client-sdks/edge/edge-network/#configure-the-edge-network-extension-in-data-collection-ui) di Adobe Experience Platform nell&#39;interfaccia utente di Data Collection. |
+| Terminologia di base | mbox, TargetParameters | DecisionScope, Map (Android)/dictionary (iOS) for Target parameters |
+| Contenuto predefinito | Consente di trasmettere il contenuto predefinito lato client in TargetRequest restituito se la chiamata di rete non riesce o genera un errore. | Non consente il passaggio di contenuto predefinito lato client. Non restituisce alcun contenuto se la chiamata di rete non riesce o genera un errore. |
+| Parametri di destinazione | Consente il passaggio di TargetParameters globali per richiesta e di diversi TargetParameters per mbox | Consente il passaggio di parametri di Target globali solo per richiesta |
+
 
 
 ## Confronto delle funzioni
@@ -61,11 +81,11 @@ Molte funzioni di estensione di Target hanno un approccio equivalente che utiliz
 | Estensione Target | Estensione Decisioning | Note |
 | --- | --- | --- | 
 | `prefetchContent` | `updatePropositions` |  |
-| `retrieveLocationContent` | `getPropositions` | Quando si utilizza l&#39;API `getPropositions`, non viene effettuata alcuna chiamata remota per recuperare gli ambiti non memorizzati in cache nell&#39;SDK. |
-| `displayedLocations` | Offerta -> `displayed()` | È inoltre possibile utilizzare il metodo di offerta `generateDisplayInteractionXdm` per generare XDM per la visualizzazione degli elementi. Successivamente, l’API sendEvent dell’SDK di rete Edge può essere utilizzata per allegare dati XDM aggiuntivi in formato libero e inviare un evento esperienza al remoto. |
-| `clickedLocation` | Offerta -> `tapped()` | Inoltre, è possibile utilizzare il metodo di offerta `generateTapInteractionXdm` per generare XDM per il tocco dell&#39;elemento. Successivamente, l’API sendEvent dell’SDK di rete Edge può essere utilizzata per allegare dati XDM aggiuntivi in formato libero e inviare un evento esperienza al remoto. |
+| `retrieveLocationContent` | `getPropositions` | Quando si utilizza l&#39;API `getPropositions`, non viene effettuata alcuna chiamata remota per recuperare ambiti non memorizzati in cache in SDK. |
+| `displayedLocations` | Offerta -> `displayed()` | È inoltre possibile utilizzare il metodo di offerta `generateDisplayInteractionXdm` per generare XDM per la visualizzazione degli elementi. Successivamente, l’API sendEvent della rete Edge SDK può essere utilizzata per allegare dati XDM aggiuntivi in formato libero e inviare un evento esperienza al remoto. |
+| `clickedLocation` | Offerta -> `tapped()` | Inoltre, è possibile utilizzare il metodo di offerta `generateTapInteractionXdm` per generare XDM per il tocco dell&#39;elemento. Successivamente, l’API sendEvent della rete Edge SDK può essere utilizzata per allegare dati XDM aggiuntivi in formato libero e inviare un evento esperienza al remoto. |
 | `clearPrefetchCache` | `clearCachedPropositions` |  |
-| `resetExperience` | n/d | Utilizza l&#39;API `removeIdentity` da Identity, ad Edge Network l&#39;estensione per l&#39;SDK, per interrompere l&#39;invio dell&#39;identificatore del visitatore alla rete Edge. Per ulteriori dettagli, consulta [la documentazione dell&#39;API removeIdentity](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity). <br><br>Nota: l&#39;API `resetIdentities` del core mobile cancella tutte le identità memorizzate nell&#39;SDK, incluso l&#39;ID Experience Cloud (ECID), e dovrebbe essere utilizzata con moderazione. |
+| `resetExperience` | n/d | Utilizza l&#39;API `removeIdentity` da Identity, ad Edge Network l&#39;estensione per SDK, per interrompere l&#39;invio dell&#39;identificatore del visitatore alla rete Edge. Per ulteriori dettagli, consulta [la documentazione dell&#39;API removeIdentity](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity). <br><br>Nota: l&#39;API `resetIdentities` del core mobile cancella tutte le identità memorizzate in SDK, incluso l&#39;ID Experience Cloud (ECID), e dovrebbe essere utilizzata con moderazione. |
 | `getSessionId` | n/d | L&#39;handle di risposta `state:store` contiene informazioni relative alla sessione. L’estensione di rete Edge consente di gestirla allegando elementi dell’archivio di stato non scaduti alle richieste successive. |
 | `setSessionId` | n/d | L&#39;handle di risposta `state:store` contiene informazioni relative alla sessione. L’estensione di rete Edge consente di gestirla allegando elementi dell’archivio di stato non scaduti alle richieste successive. |
 | `getThirdPartyId` | n/d | Utilizza l’API updateIdentities da Identity, ad Edge Network l’estensione, per fornire il valore dell’ID di terze parti. Quindi, configura lo spazio dei nomi ID di terze parti nello stream di dati. Per ulteriori dettagli, consulta [la documentazione mobile sull&#39;ID di terze parti di Target](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id). |

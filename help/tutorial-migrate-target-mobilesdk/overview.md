@@ -3,9 +3,9 @@ title: Migrare da Adobe Target all’estensione Adobe Journey Optimizer - Decisi
 description: Scopri come migrare l’implementazione della tua app mobile da Adobe Target a Adobe Journey Optimizer - Estensione Decisioning
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
+source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,16 @@ Questa guida è rivolta agli utenti con esperienza che implementano Adobe Target
 
 Adobe Experience Platform Mobile SDK potenzia il coinvolgimento end-to-end nelle applicazioni mobili. L&#39;estensione Target si basa su Mobile SDK per aiutarti a personalizzare le esperienze dell&#39;app con Adobe Target. L’estensione Decisioning è un approccio più recente per implementare Adobe Target nelle app mobili che utilizza le funzionalità di Edge Network di Adobe Experience Platform che consentono di integrare Target con le app basate su piattaforma, come Real-Time CDP e Journey Optimizer.
 
+![Diagramma che mostra il SDK mobile che si connette a Target tramite l&#39;Edge Network con l&#39;estensione Decisioning](assets/datacollection.png)
+
+>[!INFO]
+>
+>Nell’ecosistema di Adobe Experience Platform Mobile SDK, le estensioni vengono implementate dagli SDK importati nelle applicazioni che possono avere nomi diversi:
+>
+> * **Target SDK** implementa l&#39;estensione **Adobe Target**
+> * **Ottimizza SDK** implementa l&#39;estensione **Adobe Journey Optimizer - Decisioning**
+
+
 ## Vantaggi chiave
 
 Alcuni dei vantaggi dell’estensione Adobe Journey Optimizer Decisioning rispetto all’estensione Target includono:
@@ -25,8 +35,31 @@ Alcuni dei vantaggi dell’estensione Adobe Journey Optimizer Decisioning rispet
 * Un’integrazione più stretta con Adobe Analytics che non si basa sull’unione delle informazioni da chiamate di rete separate
 * Maggiore flessibilità di implementazione per gli sviluppatori
 
-Probabilmente, il vantaggio più grande per i clienti di Target della migrazione è l&#39;integrazione con Real-time Customer Data Platform. Real-Time CDP offre straordinarie funzionalità per la creazione di tipi di pubblico, basate sulla gamma completa di dati acquisiti in Experience Platform e sulla sua funzionalità Profilo cliente in tempo reale. Un framework integrato di governance dei dati automatizza l’uso responsabile di tali dati. IA per l’analisi dei clienti consente di utilizzare facilmente i modelli di apprendimento automatico per creare modelli di propensione e abbandono il cui output può essere condiviso su Adobe Target. Infine, i clienti dei componenti aggiuntivi opzionali Healthcare e Privacy &amp; Security Shield possono utilizzare la funzione di applicazione del consenso per applicare facilmente le preferenze di consenso dei singoli clienti. Platform Mobile SDK e l’estensione Decisioning sono requisiti necessari per utilizzare queste funzioni Real-Time CDP nel canale mobile.
+Probabilmente, il vantaggio più grande per i clienti di Target della migrazione è l&#39;integrazione con Real-time Customer Data Platform. Real-Time CDP offre straordinarie funzionalità per la creazione di tipi di pubblico, basate sulla gamma completa di dati acquisiti in Experience Platform e sulla sua funzionalità Profilo cliente in tempo reale. Un framework integrato di governance dei dati automatizza l’uso responsabile di tali dati. IA per l’analisi dei clienti consente di utilizzare facilmente i modelli di apprendimento automatico per creare modelli di propensione e abbandono il cui output può essere condiviso su Adobe Target. Infine, i clienti dei componenti aggiuntivi opzionali di Healthcare and Privacy &amp; Security Shield possono utilizzare la funzione di applicazione del consenso per applicare le preferenze di consenso dei singoli clienti. Platform Mobile SDK e l’estensione Decisioning sono requisiti necessari per utilizzare queste funzioni Real-Time CDP nel canale mobile.
 
+## Passaggi di migrazione
+
+Il livello di impegno per la migrazione dall’estensione Target all’estensione Decisioning dipende dalla complessità dell’implementazione corrente e delle funzioni di Target utilizzate.
+
+Indipendentemente dalla semplicità o dalla complessità dell’implementazione, è importante comprendere appieno lo stato corrente prima di eseguire la migrazione. Questa guida ti aiuta a suddividere i componenti dell’implementazione corrente e a sviluppare un piano gestibile per migrare ogni elemento.
+
+Il processo di migrazione prevede i seguenti passaggi chiave:
+
+1. Valuta l’implementazione corrente e determina un approccio alla migrazione
+1. Impostare i componenti iniziali per la connessione all&#39;Edge Network di Adobe Experience Platform
+1. Aggiorna l’implementazione fondamentale per sostituire l’estensione Target con l’estensione Decisioning
+1. Migliora l’implementazione Ottimizza SDK per casi d’uso specifici. Questo può comportare il passaggio di parametri aggiuntivi, l’utilizzo di token di risposta e altro ancora.
+1. Aggiornare oggetti nell’interfaccia di Target, ad esempio script di profilo, attività e definizioni di pubblico
+1. Convalida l’implementazione finale prima di effettuare il passaggio nell’app di produzione
+
+>[!INFO]
+>
+>Nell’ecosistema di Adobe Experience Platform Mobile SDK, le estensioni vengono implementate dagli SDK importati nelle applicazioni che possono avere nomi diversi:
+>
+> * **Target SDK** implementa l&#39;estensione **Adobe Target**
+> * **Ottimizza SDK** implementa l&#39;estensione **Adobe Journey Optimizer - Decisioning**
+
+Rivedi quindi il confronto dettagliato [tra l&#39;estensione Target e l&#39;estensione Decisioning](detailed-comparison.md) per comprendere meglio le differenze tecniche e identificare le aree che richiedono un&#39;attenzione aggiuntiva.
 
 >[!NOTE]
 >
