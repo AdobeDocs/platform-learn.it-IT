@@ -1,11 +1,11 @@
 ---
-title: Panoramica
+title: Panoramica - Tutorial tecnico completo per AEP e le app
 description: Punto di partenza per Data Engineer, Data Analyst, Data Architect, Data Scientist, Orchestration Engineer e Marketing per comprendere appieno il valore aziendale di Adobe Experience Platform e di tutti i suoi servizi applicativi.
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1258'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ Puoi trovare molti video interessanti dai nostri webinar sulla Tech Academy, dai
 
 ## Completamento e certificazione
 
-Questa esercitazione fa parte di un corso di certificazione Adobe. Per iscriverti al corso e seguire questa esercitazione, vai a [https://certification.adobe.com](https://certification.adobe.com).
+Questa esercitazione fa parte di un corso di certificazione Adobe. Per iscriverti al corso e seguire questa esercitazione, vai a [https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258).
 
 Per ogni modulo completato tramite l&#39;esercitazione seguente, devi inviare una prova di completamento come indicato [qui](./completion.md).
 

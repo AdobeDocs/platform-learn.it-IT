@@ -6,14 +6,14 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 53ff5158eec2693703b20e7841fffbec72288210
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '159'
 ht-degree: 1%
 
 ---
 
-# Automazione dei flussi di lavoro creativi con Workfront Fusion
+# 1.2 Automazione dei flussi di lavoro creativi con Workfront Fusion
 
 Scopri come automatizzare i flussi di lavoro creativi con Workfront Fusion.
 
@@ -23,15 +23,15 @@ Scopri come automatizzare i flussi di lavoro creativi con Workfront Fusion.
 
 ## Esercizi
 
-[Guida introduttiva a Workfront Fusion](./ex1.md){target="_blank"}
+[1.2.1 Guida introduttiva a Workfront Fusion](./ex1.md){target="_blank"}
 
 In questo esercizio, esplorate Workfront Fusion in combinazione con i servizi di Firefly e capite le sue funzionalità.
 
-[Utilizzare le API Adobe in Workfront Fusion](./ex2.md){target="_blank"}
+[1.2.2 Utilizza le API Adobe in Workfront Fusion](./ex2.md){target="_blank"}
 
 In questo esercizio, scopri come configurare e utilizzare le API di Servizi di Firefly e le API di Photoshop in Workfront Fusion, esplorando le funzionalità di Workfront Fusion.
 
-[Automazione dei processi con Workfront Fusion](./ex3.md){target="_blank"}
+[1.2.3 Automazione dei processi con Workfront Fusion](./ex3.md){target="_blank"}
 
 In questo esercizio, continua a perfezionare il tuo percorso per automatizzare il processo di creazione delle immagini.
 

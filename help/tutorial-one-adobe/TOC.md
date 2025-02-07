@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial tecnico completo per applicazioni Adobe, da Creative 
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '340'
 ht-degree: 4%
 
 ---
@@ -29,12 +29,12 @@ ht-degree: 4%
    + [Preparazione](/help/tutorial-one-adobe/prework.md)
    + [PostBuster](/help/tutorial-one-adobe/postbuster.md)
 
-+ 1 Adobe Creative Cloud {#creativecloud}
-   + 1.1 Servizi Adobe Firefly {#module11}
++ 1 creazione e produzione {#production}
+   + 1.1 Panoramica dei servizi Adobe Firefly {#module11}
       + [Panoramica](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
       + [1.1.1 Introduzione ai servizi di Firefly](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
       + [1.1.2 Ottimizza i processi di Firefly con Microsoft Azure e gli URL prefirmati](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
-      + [1.1.3 Adobe Firefly e Adobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
+      + [1.1.3 Utilizzo delle API di Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
       + [API per modelli personalizzati di Firefly 1.1.4](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex4.md)
       + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
    + 1.2 Automazione dei flussi di lavoro creativi con Workfront Fusion {#module21}
@@ -61,7 +61,7 @@ ht-degree: 4%
       + [2.2.5 Integrazione Workfront + Photoshop](/help/tutorial-one-adobe/modules/csc/module2.2/ex5.md)
       + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/csc/module2.2/summary.md)
 
-+ 3 Esperienza cliente unificata {#uce}
++ 3 Consegna e attivazione {#activation}
    + 3.1 Composizione Federata Del Pubblico {#module31}
       + [Panoramica](/help/tutorial-one-adobe/modules/uce/module3.1/fac.md)
       + [3.1.1 Configurare l’ambiente del Snowflake](/help/tutorial-one-adobe/modules/uce/module3.1/ex1.md)
@@ -70,7 +70,9 @@ ht-degree: 4%
       + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/uce/module3.1/summary.md)
    + 3.2 Adobe Journey Optimizer: Servizi di traduzione {#module32}
       + [Panoramica](/help/tutorial-one-adobe/modules/uce/module3.2/ajotranslationsvcs.md)
-      + [3.2.1 ...](/help/tutorial-one-adobe/modules/uce/module3.2/ex1.md)
+      + [3.2.1 Fornitore di traduzioni](/help/tutorial-one-adobe/modules/uce/module3.2/ex1.md)
+      + [3.2.2 Creare la campagna](/help/tutorial-one-adobe/modules/uce/module3.2/ex2.md)
+      + [3.2.3 ...](/help/tutorial-one-adobe/modules/uce/module3.2/ex3.md)
       + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/uce/module3.2/summary.md)
    + 3.3 Adobe Journey Optimizer: Offer decisioning {#module33}
       + [Panoramica](/help/tutorial-one-adobe/modules/uce/module3.3/offer-decisioning.md)

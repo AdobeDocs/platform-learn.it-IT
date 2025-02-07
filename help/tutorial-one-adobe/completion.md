@@ -1,10 +1,11 @@
 ---
-title: Completamento
+title: Completamento - Tutorial su un Adobe
 description: Come viene misurato il completamento?
 doc-type: multipage-overview
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
+source-git-commit: 5c7ab69877cbfdf10088c261c0866790b0d89552
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ Di seguito sono riportate le prove di completamento previste per ogni modulo.
 
 La prova di completamento prevista per il modulo **Guida introduttiva** è l&#39;ID del progetto Demo System per il Web creato.
 
-L&#39;ID del progetto Demo System per il formato Web è simile al seguente: `--demoProfileLdap-- - 8ERG`.
+L&#39;ID del progetto Demo System per il formato Web è simile al seguente: `--aepUserLdap-- - 8ERG`.
 
 ![3](./assets/images/module0dtl.png)
 
@@ -79,7 +80,7 @@ La prova di completamento prevista per il modulo **Adobe Journey Optimizer: Serv
 
 La prova di completamento prevista per il modulo **Adobe Journey Optimizer: Offer Decisioning** è l&#39;ID della **decisione** creata.
 
-Puoi trovare l&#39;**ID decisione**, che si presenta così **dps:offer-activity:1a08ba4b529b2fb2**, qui:
+Puoi trovare l&#39;**ID decisione**, che ha un aspetto simile a questo **`dps:offer-activity:1a08ba4b529b2fb2`**, qui:
 
 ![14](./assets/images/offers.png)
 

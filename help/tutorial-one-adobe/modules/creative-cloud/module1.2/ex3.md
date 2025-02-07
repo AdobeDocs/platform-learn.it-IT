@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
 
-# Automazione dei processi con Workfront Fusion
+# 1.2.3 Automazione dei processi con Workfront Fusion
 
 Scopri come elaborare l’automazione con Workfront Fusion.
 
-## Iterazione su più valori
+## 1.2.3.1 Iterazione su più valori
 
 Lo scenario dovrebbe essere simile al seguente:
 
@@ -93,7 +93,7 @@ Finora hai modificato il testo in un file Photoshop di un valore statico. Per ri
 
    ![WF Fusion](./images/wffusion215.png)
 
-## Attiva lo scenario utilizzando un webhook
+## 1.2.3.2 Attiva lo scenario utilizzando un webhook
 
 Finora lo scenario è stato eseguito manualmente per essere testato. Aggiorniamo ora lo scenario con un webhook, in modo che possa essere attivato da un ambiente esterno.
 

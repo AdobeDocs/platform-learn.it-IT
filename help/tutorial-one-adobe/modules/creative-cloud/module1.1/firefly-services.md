@@ -6,14 +6,14 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '158'
 ht-degree: 2%
 
 ---
 
-# Panoramica dei servizi Adobe Firefly
+# 1.1 Panoramica dei servizi Adobe Firefly
 
 Scopri i diversi modi in cui puoi utilizzare Adobe Firefly Services.
 
@@ -23,19 +23,19 @@ Accesso all&#39;Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe
 
 ## Esercizi
 
-[Guida introduttiva ai servizi di Firefly](./ex1.md){target="_blank"}
+[1.1.1 Guida introduttiva ai servizi di Firefly](./ex1.md){target="_blank"}
 
 In questo esercizio, esplora i servizi di Firefly e scopri le funzionalità.
 
-[Ottimizzare il processo di Firefly utilizzando Microsoft Azure e gli URL prefirmati](./ex2.md){target="_blank"}
+[1.1.2 Ottimizzare il processo di Firefly utilizzando Microsoft Azure e gli URL prefirmati](./ex2.md){target="_blank"}
 
 In questo esercizio, esplora i servizi di Firefly e scopri le funzionalità.
 
-[API Adobe Firefly e Adobe Photoshop](./ex3.md){target="_blank"}
+[1.1.3 Utilizzo delle API di Photoshop](./ex3.md){target="_blank"}
 
 In questo esercizio, scopri come utilizzare i servizi di Firefly insieme ad Adobe Photoshop.
 
-[Modelli personalizzati per Firefly API](./ex4.md){target="_blank"}
+[1.1.4 Modelli personalizzati di Firefly API](./ex4.md){target="_blank"}
 
 In questo esercizio, scopri come utilizzare l’API Firefly Customer Models.
 
