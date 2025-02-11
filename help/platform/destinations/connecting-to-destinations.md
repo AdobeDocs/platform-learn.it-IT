@@ -1,22 +1,25 @@
 ---
-title: Connessione alle destinazioni
-description: Prima di poter inviare dati ai partner di destinazione da Real-Time CDP, è necessario innanzitutto stabilire le connessioni con tali partner. Questo video illustra il numero... (Le descrizioni devono essere comprese tra 60 e 160 caratteri)
+title: Connetti a destinazioni
+description: Prima di poter inviare dati ai partner di destinazione da Real-Time CDP, è necessario configurare le connessioni a tali partner. Scopri come in questo video.
 feature: Destinations
 topic: Administration
 role: Admin
 level: Beginner
 jira: KT-10291
 thumbnail: 342471.jpg
+last-substantial-update: 2025-02-10T00:00:00Z
 exl-id: b228a612-3ecd-40c1-85ef-81fd49d6bde0
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: ce28c48d554727ce42803400373826315f5b2153
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '71'
 ht-degree: 0%
 
 ---
 
-# Connessione alle destinazioni
+# Connetti a destinazioni
 
-Prima di poter inviare dati ai partner di destinazione da Real-Time CDP, è necessario innanzitutto stabilire le connessioni con tali partner. Questo video illustra tale processo, in genere eseguito dagli amministratori. Per ulteriori informazioni, visita la [documentazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/connect-destination.html?lang=en).
+Prima di poter inviare dati ai partner di destinazione da Real-Time CDP, è necessario innanzitutto stabilire le connessioni con tali partner. Questo video illustra tale processo, solitamente eseguito dagli amministratori.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342471/?learn=on)
+
+Per ulteriori informazioni, visita la [documentazione](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/connect-destination).
