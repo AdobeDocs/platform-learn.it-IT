@@ -2,10 +2,10 @@
 title: Configurazione iniziale - Migrazione da Adobe Target a Adobe Journey Optimizer - Estensione Decisioning Mobile
 description: Scopri e imposta gli importanti elementi fondamentali necessari per l’implementazione di Platform Web SDK
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 5%
+source-wordcount: '370'
+ht-degree: 6%
 
 ---
 
@@ -20,6 +20,8 @@ La migrazione da Target SDK a Optimize SDK richiede una configurazione iniziale 
 - [Crea uno stream di dati](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-datastream){target="_blank"} per abilitare l&#39;inoltro di dati da Edge Network
 - [Configura lo stream di dati](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-datastream-configuration){target="_blank"} per abilitare l&#39;inoltro di dati ad Adobe Target
 - [Configura la proprietà tag](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#install-adobe-journey-optimizer---decisioning-tags-extension){target="_blank"} per l&#39;estensione Decisioning
+
+## Configurazione dell&#39;estensione
 
 >[!BEGINTABS]
 
@@ -50,7 +52,19 @@ Estensioni di tag installate quando si utilizza l’estensione Target:
 
 >[!ENDTABS]
 
-Quindi, scopri come [sostituire SDK](replace-library.md) di Target.
+## Configurazione dello stream di dati
+
+L&#39;estensione Target dispone di [impostazioni configurabili](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) che con l&#39;estensione Decision sono [configurate nello stream di dati](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup).
+
+| Estensione Target | Estensione Decisioning | Note |
+| --- | --- | --- | 
+| Codice client | n/d | Impostato automaticamente dal bordo utilizzando i dettagli dell’organizzazione IMS |
+| ID ambiente | ID ambiente di destinazione | Configurato nello stream di dati |
+| Target Workspace, proprietà | Token proprietà | Configurato nello stream di dati |
+| Timeout | Non configurabile | Il timeout con l’estensione Decisioning è di 10 secondi |
+| Dominio server | Dominio Edge Network | Impostato nell’estensione Adobe Experience Platform Edge Network |
+
+Quindi, scopri come [sostituire SDK](replace-sdk.md) di Target.
 
 >[!NOTE]
 >
