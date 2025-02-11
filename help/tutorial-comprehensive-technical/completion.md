@@ -3,9 +3,9 @@ title: 'Completamento: tutorial tecnico completo per Adobe Experience Platform'
 description: Come viene misurato il completamento?
 doc-type: multipage-overview
 exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
-source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
+source-git-commit: a1060375d6d83a945f3d3b268e7f9fac7cffc845
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,15 @@ ht-degree: 0%
 
 Vai a [https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258).
 
-![3](./assets/images/certcourse.png)
+![3](./assets/images/certcourse.png){zoomable="yes"}
 
-Per completare un modulo, devi fornire una prova di completamento.
+Fai clic su **Inizio** accanto al modulo per il quale desideri inviare il completamento.
+
+![3](./assets/images/certcourse2.png){zoomable="yes"}
+
+Per completare un modulo, devi fornire una prova di completamento e inviarla per ciascun modulo.
+
+![3](./assets/images/certcourse3.png){zoomable="yes"}
 
 Di seguito sono riportate le prove di completamento previste per ogni modulo.
 
@@ -26,7 +32,7 @@ La prova di completamento prevista per il modulo **Guida introduttiva** è l&#39
 
 L&#39;ID del progetto Demo System per il formato Web è simile al seguente: `--aepUserLdap-- - QIMU`.
 
-![3](./assets/images/module0dtl.png)
+![3](./assets/images/module0dtl.png){zoomable="yes"}
 
 ## 1.1 Raccolta dati di Adobe Experience Platform ed estensione Web SDK
 
@@ -34,7 +40,7 @@ La prova di completamento prevista per il modulo **Raccolta dati e Web SDK** è 
 
 L&#39;ID ambiente della proprietà Data Collection per il formato Web è simile al seguente: `EN5211f7792b4442f8a45deb68f8902d3a`.
 
-![3](./assets/images/module1dtl.png)
+![3](./assets/images/module1dtl.png){zoomable="yes"}
 
 ## 1.2 Acquisizione dei dati
 
@@ -42,7 +48,7 @@ La prova di completamento prevista per il modulo **Acquisizione dati** è l&#39;
 
 L&#39;ID del flusso di dati è simile al seguente: **374c2c6d-f39a-4b0b-b568-40c41e6c4e8e**.
 
-![3](./assets/images/completemodule2seg.png)
+![3](./assets/images/completemodule2seg.png){zoomable="yes"}
 
 ## 1.3 Federated Audience Composition
 
@@ -50,7 +56,7 @@ La prova di completamento prevista per il modulo **Federated Audience Compositio
 
 L&#39;ID del Federated Data Model è simile al seguente: **DMO5110** e può essere prelevato dall&#39;URL come indicato nell&#39;immagine seguente.
 
-![3](./assets/images/completemodule3fac.png)
+![3](./assets/images/completemodule3fac.png){zoomable="yes"}
 
 ## 2.1 Profilo cliente in tempo reale
 
@@ -58,7 +64,7 @@ La prova di completamento prevista per il modulo **Profilo cliente in tempo real
 
 L&#39;ID pubblico è simile al seguente: **81a9acbe-12e6-424b-b658-abba3a435c83**.
 
-![3](./assets/images/completemodule3seg.png)
+![3](./assets/images/completemodule3seg.png){zoomable="yes"}
 
 ## 2.2 Servizi intelligenti
 
@@ -66,7 +72,7 @@ La prova di completamento prevista per il modulo **Intelligent Services** è il 
 
 L&#39;ID pubblico è simile al seguente: **cb6db21d-8fa3-484a-93ac-25aa1ab48412**.
 
-![12](./assets/images/completemodule10.png)
+![12](./assets/images/completemodule10.png){zoomable="yes"}
 
 ## 2.3 Real-Time CDP: Creare un pubblico e agire!
 
@@ -74,7 +80,7 @@ La prova di completamento prevista per il modulo **Real-Time CDP: crea un pubbli
 
 L&#39;ID della destinazione del webhook è simile al seguente: **b5b4b959-3166-40e2-8279-8223d00c3987** e può essere ricavato dall&#39;URL come indicato nell&#39;immagine seguente.
 
-![12](./assets/images/vec4.png)
+![12](./assets/images/vec4.png){zoomable="yes"}
 
 ## 2.4 Real-Time CDP: da Audience Activation a Microsoft Azure Event Hub
 
@@ -82,7 +88,7 @@ La prova di completamento prevista per il modulo **Real-Time CDP: Audience Activ
 
 È possibile trovare l&#39;**ID destinazione hub eventi di Microsoft Azure**, che ha l&#39;aspetto di questo **43cf85bc-3d01-49fd-80c9-a2913db45e3c**, nell&#39;URL come indicato di seguito:
 
-![14](./assets/images/azuredestid.png)
+![14](./assets/images/azuredestid.png){zoomable="yes"}
 
 ## 2.5 Connessioni Real-Time CDP: Inoltro eventi
 
@@ -90,7 +96,7 @@ La prova di completamento prevista per il modulo **Connessioni Real-Time CDP: In
 
 È possibile trovare l&#39;**ID proprietà inoltro eventi**, che ha l&#39;aspetto di questo **PRa18819171c1241dfb16d74a49993dd5b**, nell&#39;URL come indicato nell&#39;immagine seguente:
 
-![14](./assets/images/launchssfid.png)
+![14](./assets/images/launchssfid.png){zoomable="yes"}
 
 ## 2.6 Trasmettere dati da Apache Kafka a Real-Time CDP
 
@@ -98,7 +104,7 @@ La prova di completamento prevista per il modulo **Trasmetti i dati da Apache Ka
 
 L&#39;ID è simile al seguente **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7** ed è disponibile qui:
 
-![14](./assets/images/kafkaflowid.png)
+![14](./assets/images/kafkaflowid.png){zoomable="yes"}
 
 ## 3.1 Adobe Journey Optimizer: Orchestrazione
 
@@ -106,7 +112,7 @@ La prova di completamento prevista per il modulo **Adobe Journey Optimizer: Orch
 
 L&#39;ID del percorso si presenta così, **594fa01f-1a3b-450c-ba09-b7e3ff377c0f**, e può essere preso dall&#39;URL come indicato nell&#39;immagine seguente.
 
-![12](./assets/images/ajoo.png)
+![12](./assets/images/ajoo.png){zoomable="yes"}
 
 ## 3.2 Adobe Journey Optimizer: origini dati esterne e azioni personalizzate
 
@@ -114,7 +120,7 @@ La prova di completamento prevista per il modulo **Adobe Journey Optimizer: orig
 
 L&#39;ID del percorso è simile al seguente: **6962d3bc-4f44-4f9c-b326-83978f245f2a** e può essere ricavato dall&#39;URL come indicato nell&#39;immagine seguente.
 
-![12](./assets/images/jofinal.png)
+![12](./assets/images/jofinal.png){zoomable="yes"}
 
 ## 3.3 Adobe Journey Optimizer: Offer decisioning
 
@@ -122,7 +128,7 @@ La prova di completamento prevista per il modulo **Adobe Journey Optimizer: Offe
 
 Puoi trovare l&#39;**ID decisione**, che si presenta così **dps:offer-activity:1a08ba4b529b2fb2**, qui:
 
-![14](./assets/images/offers.png)
+![14](./assets/images/offers.png){zoomable="yes"}
 
 ## 3.4 Adobe Journey Optimizer: Percorsi basati su eventi
 
@@ -130,7 +136,15 @@ La prova di completamento prevista per il modulo **Adobe Journey Optimizer: Perc
 
 L&#39;ID del percorso è simile al seguente: **5f5efc7e-49f7-44c1-85df-b23482b38d32** e può essere ricavato dall&#39;URL come indicato nell&#39;immagine seguente.
 
-![14](./assets/images/jojourneyid.png)
+![14](./assets/images/jojourneyid.png){zoomable="yes"}
+
+## 3.5 Adobe Journey Optimizer: Servizi di traduzione
+
+La prova di completamento prevista per il modulo **Adobe Journey Optimizer: Servizi di traduzione** è l&#39;**ID versione campagna** della tua campagna in fibra CitiSignal.
+
+L&#39;ID versione Campaign di Federated Data Model è simile al seguente: **b11c998b-a345-4f8e-afb1-6285547eb693** e può essere copiato dalla schermata Panoramica campagna, come indicato nell&#39;immagine seguente.
+
+![3](./assets/images/completemodule32ajotransl.png){zoomable="yes"}
 
 ## 4.1 Customer Journey Analytics: creare un dashboard con Analysis Workspace
 
@@ -138,7 +152,7 @@ La prova di completamento prevista per il modulo **Customer Journey Analytics: c
 
 Il formato è simile al seguente: **677bcb247064db3c7de2a0e4**, è possibile trovarlo nell&#39;URL dopo l&#39;apertura del progetto.
 
-![12](./assets/images/cjacompletion.png)
+![12](./assets/images/cjacompletion.png){zoomable="yes"}
 
 ## 4.2 Customer Journey Analytics: inserire e analizzare i dati Google Analytics in Adobe Experience Platform con il connettore Source BigQuery
 
@@ -146,7 +160,7 @@ La prova di completamento prevista per il modulo **Customer Journey Analytics: i
 
 L&#39;**ID connessione BigQuery**, che ha l&#39;aspetto di questo **b63a810c-a8cc-4c6b-a57e-dcb7e3368cf8**, è disponibile qui:
 
-![14](./assets/images/bqid.png)
+![14](./assets/images/bqid.png){zoomable="yes"}
 
 ## 5.1 Servizio query
 
@@ -156,7 +170,7 @@ L&#39;ID è simile al seguente: **675033c903fb3b2aefed8a0a**.
 
 ![12](./assets/images/completemodule7.png)
 
-![Informazioni tecniche](./assets/images/techinsiders.png){width="50px" align="left"}
+![Informazioni tecniche](./assets/images/techinsiders.png){zoomable="yes"}{width="50px" align="left"}
 
 >[!NOTE]
 >

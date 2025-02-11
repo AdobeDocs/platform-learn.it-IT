@@ -4,7 +4,7 @@ description: 'Guida introduttiva: utilizzare l’app mobile'
 kt: 5342
 doc-type: tutorial
 exl-id: 2b94f08f-c932-4287-9956-cfe368c96c12
-source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
+source-git-commit: a1060375d6d83a945f3d3b268e7f9fac7cffc845
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -62,7 +62,7 @@ Nella pagina **Integrazioni** è necessario selezionare la proprietà Raccolta d
 
 ![DSN](./images/web8aa.png)
 
-Fare clic su **Seleziona** nella proprietà Raccolta dati creata nel passaggio precedente, denominata `--aepUserLdap - Demo System (DD/MM/YYYY) (mobile)`. Quindi fare clic su **Salva**.
+Fare clic su **Seleziona** nella proprietà Raccolta dati creata nel passaggio precedente, denominata `--aepUserLdap-- - Demo System (DD/MM/YYYY) (mobile)`. Quindi fare clic su **Salva**.
 
 ![DSN](./images/web8b.png)
 

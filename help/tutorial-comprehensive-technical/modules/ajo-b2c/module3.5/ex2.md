@@ -3,15 +3,15 @@ title: Creare una campagna con i servizi di traduzione AJO
 description: Creare una campagna con i servizi di traduzione AJO
 kt: 5342
 doc-type: tutorial
-exl-id: a9d674f4-6f49-4d4d-a24d-84751f3a438e
-source-git-commit: cec5abe4586f5aa73065254c5de1434c52a288be
+exl-id: 441b3b6a-74e5-4294-9a30-9c44ea4bbf84
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1596'
 ht-degree: 0%
 
 ---
 
-# 3.2.2 Creare la campagna
+# 3.5.2 Creare la campagna
 
 Vai a [https://experience.adobe.com/](https://experience.adobe.com/). Fare clic su **Journey Optimizer**.
 
@@ -21,7 +21,11 @@ Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzi
 
 ![ACOP](./images/ajolp2.png)
 
-## 3.2.2.1 Creare il frammento di intestazione
+>[!NOTE]
+>
+>Se hai già creato i frammenti di intestazione e piè di pagina come parte dell&#39;esercizio [esercizio 3.1.2.1](./../module3.1/ex2.md) e dell&#39;esercizio [esercizio 3.1.2.2](./../module3.1/ex2.md), passa all&#39;esercizio 3.5.2.3 Crea campagna in fibra. Non creare più frammenti di intestazione e piè di pagina.
+
+## 3.5.2.1 Creare il frammento di intestazione
 
 Nel menu a sinistra, fai clic su **Frammenti**. Un frammento è un componente riutilizzabile all’interno di Journey Optimizer che evita la duplicazione e facilita le modifiche future che dovrebbero interessare tutti i messaggi, come le modifiche a un’intestazione o a un piè di pagina in un messaggio e-mail.
 
@@ -76,7 +80,7 @@ Successivamente, devi creare un nuovo frammento per il piè di pagina dei messag
 
 ![Journey Optimizer](./images/fragm11.png)
 
-## 3.2.2.2 Creare il frammento di piè di pagina
+## 3.5.2.2 Creare il frammento di piè di pagina
 
 Fare clic su **Crea frammento**.
 
@@ -230,7 +234,7 @@ Dopo alcuni minuti lo stato del piè di pagina verrà modificato in **Live**.
 
 ![Journey Optimizer](./images/fragm38.png)
 
-## 3.2.2.3 Creare una campagna in fibra ottica
+## 3.5.2.3 Creare una campagna in fibra ottica
 
 Ora creerai una campagna. A differenza del percorso basato sugli eventi dell’esercizio precedente, che si basa su eventi di esperienza o entrate o uscite di pubblico in arrivo per attivare un percorso per 1 cliente specifico, le campagne sono indirizzate a un intero pubblico una volta con contenuti univoci come newsletter, promozioni una tantum o informazioni generiche, oppure periodicamente con contenuti simili inviati regolarmente, come ad esempio campagne e promemoria di compleanno.
 
@@ -262,7 +266,7 @@ Scorri fino a **Pubblico**. Fai clic su **Seleziona pubblico**.
 
 ![Journey Optimizer](./images/campaign2b.png)
 
-Per il **pubblico**, seleziona il pubblico creato nel passaggio precedente, `--aepUserLdap-- - CitiSignal Eligible for Fiber`. Fai clic su **Salva**.
+Per il **pubblico**, selezionare il pubblico creato in [1.3.3 Creare una composizione federata](./../../datacollection/module1.3/ex3.md), denominata `--aepUserLdap-- - CitiSignal Eligible for Fiber`. Fai clic su **Salva**.
 
 ![Journey Optimizer](./images/campaign2a.png)
 
@@ -358,8 +362,8 @@ Hai finito questo esercizio.
 
 ## Passaggi successivi
 
-Vai a [3.2.3 Aggiungi lingue al tuo indirizzo e-mail](./ex3.md)
+Vai a [3.5.3 Aggiungi lingue al tuo indirizzo e-mail](./ex3.md)
 
-Torna a [Modulo 3.2](./ajotranslationsvcs.md){target="_blank"}
+Torna a [Modulo 3.5](./ajotranslationsvcs.md){target="_blank"}
 
 Torna a [Tutti i moduli](./../../../overview.md){target="_blank"}

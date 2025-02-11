@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: e6a549441d425801f2a554da9af803dca646009e
+source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 0%
@@ -21,23 +21,23 @@ Scopri come utilizzare le API di Photoshop e i servizi di Firefly.
 
 1. Vai a [https://developer.adobe.com/console/home](https://developer.adobe.com/console/projects){target="_blank"}.
 
-![Adobe I/O di nuova integrazione](./images/iohome.png)
+![Adobe I/O di nuova integrazione](./images/iohome.png){zoomable="yes"}
 
 1. Vai a **Progetti** e seleziona il progetto creato nell&#39;esercizio precedente, che si chiama `--aepUserLdap-- Firefly`.
 
-![Archiviazione Azure](./images/ps1.png)
+![Archiviazione Azure](./images/ps1.png){zoomable="yes"}
 
 1. Selezionare **+ Aggiungi al progetto**, quindi selezionare **API**.
 
-![Archiviazione Azure](./images/ps2.png)
+![Archiviazione Azure](./images/ps2.png){zoomable="yes"}
 
 1. Selezionare **Creative Cloud** e scegliere **Photoshop - Servizi di Firefly**. Seleziona **Avanti**.
 
-![Archiviazione Azure](./images/ps3.png)
+![Archiviazione Azure](./images/ps3.png){zoomable="yes"}
 
 1. Seleziona **Avanti**.
 
-![Archiviazione Azure](./images/ps4.png)
+![Archiviazione Azure](./images/ps4.png){zoomable="yes"}
 
 Successivamente, devi selezionare un profilo di prodotto che definisca quali autorizzazioni sono disponibili per questa integrazione.
 
@@ -45,11 +45,11 @@ Successivamente, devi selezionare un profilo di prodotto che definisca quali aut
 
 1. Seleziona **Salva API configurata**.
 
-![Archiviazione Azure](./images/ps5.png)
+![Archiviazione Azure](./images/ps5.png){zoomable="yes"}
 
 Il progetto di Adobe I/O è stato aggiornato per funzionare con le API di Photoshop e Firefly Services.
 
-![Archiviazione Azure](./images/ps6.png)
+![Archiviazione Azure](./images/ps6.png){zoomable="yes"}
 
 ## 1.1.3.2 Interagire a livello di programmazione con un file PSD
 
@@ -61,7 +61,7 @@ Il progetto di Adobe I/O è stato aggiornato per funzionare con le API di Photos
 
 1. Apri **citisignal-fiber.psd** in Photoshop.
 
-![Archiviazione Azure](./images/ps7.png)
+![Archiviazione Azure](./images/ps7.png){zoomable="yes"}
 
 Nel riquadro **Livelli**, l&#39;autore del file ha assegnato un nome univoco a ogni livello. Potete visualizzare le informazioni sui livelli aprendo il file PSD in Photoshop, ma potete anche farlo a livello di programmazione.
 
@@ -75,11 +75,11 @@ Inviiamo la tua prima richiesta API alle API di Photoshop.
 
 1. Seleziona **Invia**.
 
-![Archiviazione Azure](./images/ps8.png)
+![Archiviazione Azure](./images/ps8.png){zoomable="yes"}
 
 Ora disponi di un token di accesso valido per interagire con le API di Photoshop.
 
-![Archiviazione Azure](./images/ps9.png)
+![Archiviazione Azure](./images/ps9.png){zoomable="yes"}
 
 ### API Photoshop - Hello World
 
@@ -87,11 +87,11 @@ Ora, supponiamo di salutare le API di Photoshop per verificare se tutte le autor
 
 1. Nella raccolta **Photoshop**, apri la richiesta **Photoshop Hello (autenticazione test).**. Seleziona **Invia**.
 
-![Archiviazione Azure](./images/ps10.png)
+![Archiviazione Azure](./images/ps10.png){zoomable="yes"}
 
 Dovresti ricevere la risposta **Benvenuto nell&#39;API Photoshop!**.
 
-![Archiviazione Azure](./images/ps11.png)
+![Archiviazione Azure](./images/ps11.png){zoomable="yes"}
 
 Quindi, per interagire a livello di programmazione con il file PSD **citisignal-fiber.psd**, devi caricarlo nel tuo account di archiviazione. Puoi farlo manualmente trascinandolo nel contenitore utilizzando Azure Storage Explorer, ma questa volta dovresti farlo tramite l’API.
 
@@ -106,23 +106,23 @@ Quindi, per interagire a livello di programmazione con il file PSD **citisignal-
 
 Come è possibile vedere nella richiesta **Carica PSD nell&#39;account di archiviazione Azure**, l&#39;URL è configurato per utilizzare queste variabili.
 
-![Archiviazione Azure](./images/ps12.png)
+![Archiviazione Azure](./images/ps12.png){zoomable="yes"}
 
 1. In **Body**, selezionare il file **citisignal-fiber.psd**.
 
-![Archiviazione Azure](./images/ps13.png)
+![Archiviazione Azure](./images/ps13.png){zoomable="yes"}
 
 1. Lo schermo dovrebbe essere simile al seguente. Seleziona **Invia**.
 
-![Archiviazione Azure](./images/ps14.png)
+![Archiviazione Azure](./images/ps14.png){zoomable="yes"}
 
 È necessario ottenere questa risposta vuota da Azure, il che significa che il file è archiviato nel contenitore nell’account di archiviazione di Azure.
 
-![Archiviazione Azure](./images/ps15.png)
+![Archiviazione Azure](./images/ps15.png){zoomable="yes"}
 
 Se utilizzi Azure Storage Explorer per esaminare il file, assicurati di aggiornare la cartella.
 
-![Archiviazione Azure](./images/ps16.png)
+![Archiviazione Azure](./images/ps16.png){zoomable="yes"}
 
 ### API Photoshop - Ottieni manifesto
 
@@ -152,25 +152,25 @@ Il corpo deve essere simile al seguente:
 
 Nella risposta viene visualizzato un collegamento. Poiché il completamento delle operazioni in Photoshop a volte può richiedere un po’ di tempo, Photoshop fornisce un file di stato come risposta alla maggior parte delle richieste in arrivo. Per capire cosa sta succedendo con la tua richiesta, devi leggere il file di stato.
 
-![Archiviazione Azure](./images/ps17.png)
+![Archiviazione Azure](./images/ps17.png){zoomable="yes"}
 
 1. Per leggere il file di stato, aprire la richiesta **Photoshop - Ottieni stato PS**. È possibile vedere che questa richiesta utilizza una variabile come URL, che è una variabile impostata dalla richiesta precedente inviata, **Photoshop - Ottieni manifesto PSD**. Le variabili sono impostate negli **Script** di ogni richiesta. Seleziona **Invia**.
 
-![Archiviazione Azure](./images/ps18.png)
+![Archiviazione Azure](./images/ps18.png){zoomable="yes"}
 
 Lo schermo dovrebbe essere simile al seguente. Attualmente, lo stato è impostato su **in sospeso**, il che significa che il processo non è ancora completato.
 
-![Archiviazione Azure](./images/ps19.png)
+![Archiviazione Azure](./images/ps19.png){zoomable="yes"}
 
 1. Selezionare invia altre volte in **Photoshop - Ottieni stato PS**, fino a quando lo stato non cambia in **completato**. L&#39;operazione potrebbe richiedere alcuni minuti.
 
 Quando la risposta è disponibile, puoi vedere che il file json contiene informazioni su tutti i livelli del file PSD. Si tratta di informazioni utili, in quanto è possibile identificare elementi come il nome o l’ID del livello.
 
-![Archiviazione Azure](./images/ps20.png)
+![Archiviazione Azure](./images/ps20.png){zoomable="yes"}
 
 Ad esempio, cercare il testo `2048x2048-cta`. Lo schermo dovrebbe essere simile al seguente:
 
-![Archiviazione Azure](./images/ps21.png)
+![Archiviazione Azure](./images/ps21.png){zoomable="yes"}
 
 ### API Photoshop - Modifica testo
 
@@ -217,25 +217,25 @@ Il nome del file di output è diverso, in quanto non si desidera ignorare il fil
 
 1. Seleziona **Invia**.
 
-![Archiviazione Azure](./images/ps23.png)
+![Archiviazione Azure](./images/ps23.png){zoomable="yes"}
 
 Proprio come prima, la risposta contiene un collegamento che punta al file di stato che tiene traccia dell’avanzamento.
 
-![Archiviazione Azure](./images/ps22.png)
+![Archiviazione Azure](./images/ps22.png){zoomable="yes"}
 
 1. Per leggere il file di stato, apri la richiesta **Photoshop - Ottieni stato PS** e seleziona **Invia**. Se lo stato non è impostato su **completato** immediatamente, attendere alcuni secondi e selezionare di nuovo **Invia**.
 
 1. Seleziona l’URL per scaricare il file di output.
 
-![Archiviazione Azure](./images/ps24.png)
+![Archiviazione Azure](./images/ps24.png){zoomable="yes"}
 
 1. Apri **citisignal-fiber-changed-text.psd** dopo aver scaricato il file sul computer. Dovresti vedere che il segnaposto per l&#39;invito all&#39;azione è stato sostituito dal testo **Get Fiber now!**.
 
-![Archiviazione Azure](./images/ps25.png)
+![Archiviazione Azure](./images/ps25.png){zoomable="yes"}
 
 Puoi anche visualizzare questo file nel contenitore utilizzando Azure Storage Explorer.
 
-![Archiviazione Azure](./images/ps26.png)
+![Archiviazione Azure](./images/ps26.png){zoomable="yes"}
 
 ## Passaggi successivi
 
