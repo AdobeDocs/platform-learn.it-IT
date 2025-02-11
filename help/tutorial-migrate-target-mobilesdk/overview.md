@@ -3,9 +3,9 @@ title: Migrare da Adobe Target all’estensione Adobe Journey Optimizer - Decisi
 description: Scopri come migrare l’implementazione della tua app mobile da Adobe Target a Adobe Journey Optimizer - Estensione Decisioning
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
+source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 Questa guida è rivolta agli utenti con esperienza che implementano Adobe Target, per scoprire come migrare le implementazioni esistenti di Adobe Experience Platform dalle implementazioni di Mobile SDK dall’estensione Adobe Target all’estensione Adobe Journey Optimizer - Decisioning.
 
-Adobe Experience Platform Mobile SDK potenzia il coinvolgimento end-to-end nelle applicazioni mobili. L&#39;estensione Target si basa su Mobile SDK per aiutarti a personalizzare le esperienze dell&#39;app con Adobe Target. L’estensione Decisioning è un approccio più recente per implementare Adobe Target nelle app mobili che utilizza le funzionalità di Edge Network di Adobe Experience Platform che consentono di integrare Target con le app basate su piattaforma, come Real-Time CDP e Journey Optimizer.
+Adobe Experience Platform Mobile SDK potenzia il coinvolgimento end-to-end nelle applicazioni mobili. L&#39;estensione Target si basa su Mobile SDK per aiutarti a personalizzare le esperienze dell&#39;app con Adobe Target. L’estensione Decisioning è un approccio più recente per implementare Adobe Target nelle app per dispositivi mobili che utilizza le funzionalità di Adobe Experience Platform Edge Network che consentono di integrare Target con app basate su piattaforma, come Real-Time CDP e Journey Optimizer.
 
-![Diagramma che mostra il SDK mobile che si connette a Target tramite l&#39;Edge Network con l&#39;estensione Decisioning](assets/datacollection.png)
+![Diagramma che mostra la connessione di Mobile SDK a Target tramite Edge Network con l&#39;estensione Decisioning](assets/datacollection.png)
 
 >[!INFO]
 >
@@ -30,12 +30,12 @@ Adobe Experience Platform Mobile SDK potenzia il coinvolgimento end-to-end nelle
 
 Alcuni dei vantaggi dell’estensione Adobe Journey Optimizer Decisioning rispetto all’estensione Target includono:
 
-* Condivisione più rapida dei tipi di pubblico da [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=it)
-* Integrazione di Target con Journey Optimizer per supportare [la consegna di Offer decisioning](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
+* Condivisione più rapida dei tipi di pubblico da [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=it)
+* Integrazione di Target con Journey Optimizer per supportare la [consegna Offer Decisioning](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
 * Un’integrazione più stretta con Adobe Analytics che non si basa sull’unione delle informazioni da chiamate di rete separate
 * Maggiore flessibilità di implementazione per gli sviluppatori
 
-Probabilmente, il vantaggio più grande per i clienti di Target della migrazione è l&#39;integrazione con Real-time Customer Data Platform. Real-Time CDP offre straordinarie funzionalità per la creazione di tipi di pubblico, basate sulla gamma completa di dati acquisiti in Experience Platform e sulla sua funzionalità Profilo cliente in tempo reale. Un framework integrato di governance dei dati automatizza l’uso responsabile di tali dati. IA per l’analisi dei clienti consente di utilizzare facilmente i modelli di apprendimento automatico per creare modelli di propensione e abbandono il cui output può essere condiviso su Adobe Target. Infine, i clienti dei componenti aggiuntivi opzionali di Healthcare and Privacy &amp; Security Shield possono utilizzare la funzione di applicazione del consenso per applicare le preferenze di consenso dei singoli clienti. Platform Mobile SDK e l’estensione Decisioning sono requisiti necessari per utilizzare queste funzioni Real-Time CDP nel canale mobile.
+Probabilmente, il vantaggio più grande per i clienti di Target della migrazione è l&#39;integrazione con Real-Time Customer Data Platform. Real-Time CDP offre straordinarie funzionalità per la creazione di tipi di pubblico in base alla gamma completa di dati acquisiti in Experience Platform e alla sua funzionalità Profilo cliente in tempo reale. Un framework integrato di governance dei dati automatizza l’uso responsabile di tali dati. IA per l’analisi dei clienti consente di utilizzare facilmente i modelli di apprendimento automatico per creare modelli di propensione e abbandono il cui output può essere condiviso su Adobe Target. Infine, i clienti dei componenti aggiuntivi opzionali di Healthcare and Privacy &amp; Security Shield possono utilizzare la funzione di applicazione del consenso per applicare le preferenze di consenso dei singoli clienti. Platform Mobile SDK e l’estensione Decisioning sono requisiti necessari per utilizzare queste funzioni Real-Time CDP nel canale mobile.
 
 ## Passaggi di migrazione
 
@@ -45,8 +45,8 @@ Indipendentemente dalla semplicità o dalla complessità dell’implementazione,
 
 Il processo di migrazione prevede i seguenti passaggi chiave:
 
-1. Valuta l’implementazione corrente e determina un approccio alla migrazione
-1. Impostare i componenti iniziali per la connessione all&#39;Edge Network di Adobe Experience Platform
+1. Valuta l’implementazione corrente
+1. Configurare i componenti iniziali per la connessione a Adobe Experience Platform Edge Network
 1. Aggiorna l’implementazione fondamentale per sostituire l’estensione Target con l’estensione Decisioning
 1. Migliora l’implementazione Ottimizza SDK per casi d’uso specifici. Questo può comportare il passaggio di parametri aggiuntivi, l’utilizzo di token di risposta e altro ancora.
 1. Aggiornare oggetti nell’interfaccia di Target, ad esempio script di profilo, attività e definizioni di pubblico

@@ -2,26 +2,36 @@
 title: Sostituire SDK - Migrare da Adobe Target a Adobe Journey Optimizer - Estensione Decisioning Mobile
 description: Scopri come sostituire SDK durante la migrazione da Adobe Target all’estensione Adobe Journey Optimizer - Decisioning Mobile.
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
-source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
+source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
 
-# Sostituire l’estensione Target con l’estensione Decisioning
+# Sostituire il SDK di Target con il SDK di ottimizzazione
 
-Scopri come sostituire l’implementazione su pagina di Adobe Target per la migrazione da at.js a Platform Web SDK. Una sostituzione di base è costituita dai seguenti passaggi:
+Scopri come sostituire gli SDK di Adobe Target con gli SDK di ottimizzazione nell’implementazione mobile. Una sostituzione di base è costituita dai seguenti passaggi:
 
+* Aggiornare le dipendenze nel Podfile o nel file `build.gradle`
+* Aggiorna importazioni
+* Aggiorna codice applicazione
 
-## Integrare l’estensione Decisioning (Optimize SDK) nella tua app mobile
+>[!INFO]
+>
+>Nell’ecosistema di Adobe Experience Platform Mobile SDK, le estensioni vengono implementate dagli SDK importati nelle applicazioni che possono avere nomi diversi:
+>
+> * **Target SDK** implementa l&#39;estensione **Adobe Target**
+> * **Ottimizza SDK** implementa l&#39;estensione **Adobe Journey Optimizer - Decisioning**
+
+## Aggiorna dipendenze
 
 
 >[!BEGINTABS]
 
->[!TAB Dipendenze app per l&#39;estensione Decisioning-Android]
+>[!TAB Dipendenze app per ottimizzare SDK-Android]
 
-`build.gradle` dipendenze
+`build.gradle` dipendenze dopo la migrazione
 
 ```Java
 implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
@@ -36,9 +46,9 @@ implementation 'com.adobe.marketing.mobile:signal'
 implementation 'com.adobe.marketing.mobile:userprofile'
 ```
 
->[!TAB Dipendenze app per l&#39;estensione Decisioning-iOS]
+>[!TAB Dipendenze app per ottimizzare SDK-iOS]
 
-`Podfile` dipendenze
+`Podfile` dipendenze dopo la migrazione
 
 ```Swift
 use_frameworks!
@@ -51,9 +61,9 @@ pod 'AEPLifecycle', '~>5.0'
 pod 'AEPUserProfile', '~> 5.0'
 ```
 
->[!TAB Dipendenze app per estensione Target-Android]
+>[!TAB Dipendenze app per SDK-Android di destinazione]
 
-`build.gradle` dipendenze
+`build.gradle` dipendenze prima della migrazione
 
 ```Java
 implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
@@ -66,9 +76,9 @@ implementation 'com.adobe.marketing.mobile:signal'
 implementation 'com.adobe.marketing.mobile:userprofile'
 ```
 
->[!TAB Dipendenze app per estensione Target-iOS]
+>[!TAB Dipendenze app per SDK-iOS di destinazione]
 
-`Podfile` dipendenze
+`Podfile` dipendenze prima della migrazione
 
 ```Swift
 use_frameworks!
@@ -84,13 +94,13 @@ pod 'AEPUserProfile', '~> 5.0'
 >[!ENDTABS]
 
 
-## Aggiornamento dell’approccio per pre-hiding dei contenuti
+## Aggiorna importazioni e codice
 
 >[!BEGINTABS]
 
->[!TAB Estensione Decisioning-Android]
+>[!TAB Ottimizza SDK-Android]
 
-Codice di inizializzazione Java
+Codice di inizializzazione Java dopo la migrazione
 
 ```Java
 import com.adobe.marketing.mobile.AdobeCallback;
@@ -140,9 +150,9 @@ public class MainApp extends Application {
 }
 ```
 
->[!TAB Estensione Decisioning-iOS]
+>[!TAB Ottimizza SDK-iOS]
 
-Codice di inizializzazione Swift
+Codice di inizializzazione Swift dopo la migrazione
 
 ```Swift
 import AEPCore
@@ -182,9 +192,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
->[!TAB Estensione Target-Android]
+>[!TAB SDK-Android di destinazione]
 
-Codice di inizializzazione Java
+Codice di inizializzazione Java prima della migrazione
 
 ```Java
 import com.adobe.marketing.mobile.AdobeCallback;
@@ -230,9 +240,9 @@ public class MainApp extends Application {
 }
 ```
 
->[!TAB Estensione Target-iOS]
+>[!TAB SDK-iOS di destinazione]
 
-Codice di inizializzazione Swift
+Codice di inizializzazione Swift prima della migrazione
 
 ```Swift
 import AEPCore

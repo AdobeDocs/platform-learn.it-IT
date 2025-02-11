@@ -10,9 +10,9 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: null
 hide: true
-source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
+source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '77'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 + [Eseguire la configurazione iniziale](initial-setup.md)
 
-+ [Sostituisci libreria e approccio di pre-hiding](replace-library.md)
++ [Sostituire gli SDK](replace-library.md)
 
 + [Attività di rendering](render-activities.md)
 
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 + [Tracciare gli eventi di conversione](track-events.md)
 
-+ [Abilita supporto tra più domini](cross-domain.md)
++ [Abilita supporto WebView](cross-domain.md)
 
 + [Aggiornare tipi di pubblico e script di profilo](update-audiences.md)
 
