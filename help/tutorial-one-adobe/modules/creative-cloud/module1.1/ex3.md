@@ -1,12 +1,12 @@
 ---
 title: Utilizzo delle API di Photoshop
-description: Scopri come utilizzare le API di Photoshop e i servizi di Firefly
+description: Scopri come utilizzare le API di Photoshop e i servizi Firefly
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: d33df99e9c75e7d5feef503b68174b93860ac245
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 0%
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 # 1.1.3 Utilizzo delle API di Photoshop
 
-Scopri come utilizzare le API di Photoshop e i servizi di Firefly.
+Scopri come utilizzare le API di Photoshop e i servizi Firefly.
 
-## 1.1.3.1 Aggiornare l’integrazione dell’Adobe I/O
+## 1.1.3.1 Aggiornare l’integrazione con Adobe I/O
 
 1. Vai a [https://developer.adobe.com/console/home](https://developer.adobe.com/console/projects){target="_blank"}.
 
-![Adobe I/O di nuova integrazione](./images/iohome.png){zoomable="yes"}
+![Nuova integrazione Adobe I/O](./images/iohome.png){zoomable="yes"}
 
 1. Vai a **Progetti** e seleziona il progetto creato nell&#39;esercizio precedente, che si chiama `--aepUserLdap-- Firefly`.
 
@@ -31,7 +31,7 @@ Scopri come utilizzare le API di Photoshop e i servizi di Firefly.
 
 ![Archiviazione Azure](./images/ps2.png){zoomable="yes"}
 
-1. Selezionare **Creative Cloud** e scegliere **Photoshop - Servizi di Firefly**. Seleziona **Avanti**.
+1. Selezionare **Creative Cloud** e scegliere **Photoshop - Servizi Firefly**. Seleziona **Avanti**.
 
 ![Archiviazione Azure](./images/ps3.png){zoomable="yes"}
 
@@ -41,13 +41,13 @@ Scopri come utilizzare le API di Photoshop e i servizi di Firefly.
 
 Successivamente, devi selezionare un profilo di prodotto che definisca quali autorizzazioni sono disponibili per questa integrazione.
 
-1. Selezionare **Configurazione predefinita servizi di Firefly** e **Configurazione predefinita servizi di automazione Creative Cloud**.
+1. Selezionare **Configurazione predefinita servizi Firefly** e **Configurazione predefinita servizi di automazione Creative Cloud**.
 
 1. Seleziona **Salva API configurata**.
 
 ![Archiviazione Azure](./images/ps5.png){zoomable="yes"}
 
-Il progetto di Adobe I/O è stato aggiornato per funzionare con le API di Photoshop e Firefly Services.
+Il progetto Adobe I/O è ora aggiornato per funzionare con le API dei servizi Photoshop e Firefly.
 
 ![Archiviazione Azure](./images/ps6.png){zoomable="yes"}
 
@@ -67,7 +67,7 @@ Nel riquadro **Livelli**, l&#39;autore del file ha assegnato un nome univoco a o
 
 Inviiamo la tua prima richiesta API alle API di Photoshop.
 
-1. In Postman, prima di inviare le richieste API a Photoshop, devi eseguire l’autenticazione in Adobe I/O. Apri la richiesta precedente denominata **POST - Ottieni token di accesso**.
+1. In Postman, prima di inviare le richieste API a Photoshop, devi eseguire l’autenticazione ad Adobe I/O. Apri la richiesta precedente denominata **POST - Ottieni token di accesso**.
 
 1. Vai a **Parametri** e verifica che il parametro **Ambito** sia impostato correttamente. Il valore **Value** per l&#39;ambito **Scope** deve essere simile al seguente:
 
@@ -126,9 +126,9 @@ Se utilizzi Azure Storage Explorer per esaminare il file, assicurati di aggiorna
 
 ### API Photoshop - Ottieni manifesto
 
-Successivamente, devi ottenere il file manifesto del file PSD.
+Successivamente, devi ottenere il file manifesto del tuo file PSD.
 
-1. In Postman, apri la richiesta **Photoshop - Get PSD Manifest**. Vai a **Corpo**.
+1. In Postman aprire la richiesta **Photoshop - Ottieni manifesto PSD**. Vai a **Corpo**.
 
 Il corpo deve essere simile al seguente:
 
@@ -239,7 +239,7 @@ Puoi anche visualizzare questo file nel contenitore utilizzando Azure Storage Ex
 
 ## Passaggi successivi
 
-Vai a [API modelli personalizzati di Firefly](./ex4.md){target="_blank"}
+Vai a [API modelli personalizzati Firefly](./ex4.md){target="_blank"}
 
 Torna a [Panoramica dei servizi Adobe Firefly](./firefly-services.md){target="_blank"}
 
