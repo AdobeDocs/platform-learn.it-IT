@@ -6,14 +6,14 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: bb4b760335fa41b70a1693546047b5bcdfb9f5f2
+source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 1%
 
 ---
 
-# 1.1.2 Ottimizzare il processo di Firefly utilizzando Microsoft Azure e gli URL prefirmati
+# 1.1.2 Ottimizzare il processo Firefly utilizzando Microsoft Azure e gli URL prefirmati
 
 Scopri come ottimizzare il processo di Firefly utilizzando Microsoft Azure e gli URL prefirmati.
 
@@ -77,7 +77,7 @@ Scopri come ottimizzare il processo di Firefly utilizzando Microsoft Azure e gli
 
    ![Archiviazione Azure](./images/azs7.png){zoomable="yes"}
 
-1. Utilizza `--aepUserLdap--`per il nome e seleziona **Crea**.
+1. Utilizza `--aepUserLdap--` per il nome e seleziona **Crea**.
 
    ![Archiviazione Azure](./images/azs8.png){zoomable="yes"}
 
@@ -145,7 +145,7 @@ Scopri come ottimizzare il processo di Firefly utilizzando Microsoft Azure e gli
 
    ![Archiviazione Azure](./images/az21.png){zoomable="yes"}
 
-1. Copia l’URL prefirmato del file di immagine per la successiva richiesta API al Firefly.
+1. Copia l’URL prefirmato del file di immagine per la successiva richiesta API in Firefly.
 
    ![Archiviazione Azure](./images/az22.png){zoomable="yes"}
 
@@ -158,7 +158,7 @@ Viene visualizzato nel **Corpo**.
 
    ![Archiviazione Azure](./images/az24.png){zoomable="yes"}
 
-1. Apri la nuova immagine dei servizi del Firefly di risposta nel browser.
+1. Apri la nuova immagine dei servizi Firefly di risposta nel browser.
 
    ![Archiviazione Azure](./images/az25.png){zoomable="yes"}
 

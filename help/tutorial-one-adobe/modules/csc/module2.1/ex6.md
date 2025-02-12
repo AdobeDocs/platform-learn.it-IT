@@ -4,16 +4,16 @@ description: AEM CS - Plug-in MarTech
 kt: 5342
 doc-type: tutorial
 exl-id: 8a2c6327-8d3d-4048-bf89-9d4371e18e1b
-source-git-commit: bbbe13842ac6825c6a6a933dc018fd9cdde52249
+source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
 
 ---
 
-# 2.1.6 Plug-in MarTech per Edge Delivery Services AEM
+# 2.1.6 Plug-in AEM Edge Delivery Services MarTech
 
-Il plug-in AEM MarTech consente di impostare rapidamente uno stack MarTech completo per il progetto AEM.
+Il plug-in MarTech AEM consente di impostare rapidamente uno stack MarTech completo per il progetto AEM.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Passa alla cartella in uso per l&#39;archivio GitHub **citisignal**. Fare clic c
 Poi vedrai questo. Incolla il seguente comando e premi **invio**.
 
 ```
-git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-experimentation.git main
+git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-martech main
 ```
 
 Dovresti vedere questo.
@@ -317,7 +317,7 @@ Fai clic su **Push origin** per inviare le modifiche all&#39;archivio GitHub.
 
 ## 2.1.6.4 Estensione ACDL nella proprietà Tags
 
-Per il corretto funzionamento del plug-in MarTech dei Edge Delivery Services AEM, è necessario aggiungere l’estensione per
+Per il corretto funzionamento del plug-in AEM Edge Delivery Services MarTech, è necessario aggiungere l’estensione per
 
 Vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/). Cercare e aprire la proprietà Tags per Web, denominata `--aepUserLdap-- - One Adobe (DD/MM/YYYY)`.
 
@@ -341,7 +341,7 @@ Vai a **Flusso di pubblicazione** e apri la libreria **Principale**. Fai clic su
 
 Le modifiche sono ora implementate.
 
-## 2.1.6.5 Inviare dati all’Edge Network di Adobe Experience Platform
+## 2.1.6.5 Inviare dati a Adobe Experience Platform Edge Network
 
 Potrai visualizzare le modifiche apportate al tuo sito web andando su `main--citisignal--XXX.aem.page/us/en` e/o `main--citisignal--XXX.aem.live/us/en`, dopo aver sostituito XXX con il tuo account utente GitHub, che in questo esempio è `woutervangeluwe`.
 
