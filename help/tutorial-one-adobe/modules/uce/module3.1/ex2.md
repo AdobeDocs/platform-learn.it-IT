@@ -4,7 +4,7 @@ description: Foundation - FAC - Creare schemi, modelli dati e collegamenti
 kt: 5342
 doc-type: tutorial
 exl-id: 42004cb9-60b3-4ca8-97d9-3d169735c98f
-source-git-commit: 246bb91496104818f357848f41b79523b7771638
+source-git-commit: 50622dc6698a7e1384c4803ea40682a060a08617
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 2%
@@ -71,13 +71,13 @@ Selezionare il database federato e fare clic su **+ Aggiungi tabelle**.
 
 ![FAC](./images/fdb6.png)
 
-Poi vedrai questo. Selezionare le 5 tabelle create nel Snowflake prima:
+Poi vedrai questo. Seleziona le 5 tabelle create in Snowflake prima:
 
-- `CK_HOUSEHOLDS`
-- `CK_MOBILE_DATA_USAGE`
-- `CK_MONTHLY_DATA_USAGE`
-- `CK_PERSONS`
-- `CK_USERS`
+- `--aepUserLdap--_HOUSEHOLDS`
+- `--aepUserLdap--_MOBILE_DATA_USAGE`
+- `--aepUserLdap--_MONTHLY_DATA_USAGE`
+- `--aepUserLdap--_PERSONS`
+- `--aepUserLdap--_USERS`
 
 Fai clic su **Aggiungi**.
 
@@ -98,7 +98,7 @@ Fai clic su **Crea**.
 
 ![FAC](./images/fdb8.png)
 
-Poi vedrai questo. Puoi fare clic su qualsiasi schema e rivedere le informazioni. Ad esempio, fai clic su **CK_PERSONS**.
+Poi vedrai questo. Puoi fare clic su qualsiasi schema e rivedere le informazioni. Ad esempio, fare clic su **—aepUserLdap—_PERSONS**.
 
 ![FAC](./images/fdb9.png)
 
@@ -130,57 +130,57 @@ Seleziona gli schemi e fai clic su **Aggiungi**.
 
 Poi vedrai questo. Fai clic su **Salva**.
 
-### `CK_USERS` - `CK_PERSONS`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_PERSONS`
 
 Ora puoi iniziare a definire i collegamenti tra schemi. Per iniziare a definire un collegamento, fai clic su **Crea collegamenti**.
 
 ![FAC](./images/fdb16.png)
 
-Definiamo innanzitutto il collegamento tra la tabella `CK_USERS` e `CK_PERSONS`.
+Definiamo innanzitutto il collegamento tra la tabella `--aepUserLdap--_USERS` e `--aepUserLdap--_PERSONS`.
 
 Fai clic su **Aggiungi**.
 
 ![FAC](./images/fdb18.png)
 
 
-### `CK_HOUSEHOLDS` - `CK_PERSONS`
+### `--aepUserLdap--_HOUSEHOLDS` - `--aepUserLdap--_PERSONS`
 
 Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro collegamento.
 
 ![FAC](./images/fdb17.png)
 
-Definiamo quindi il collegamento tra la tabella `CK_HOUSEHOLDS` e `CK_PERSONS`.
+Definiamo quindi il collegamento tra la tabella `--aepUserLdap--_HOUSEHOLDS` e `--aepUserLdap--_PERSONS`.
 
 ![FAC](./images/fdb19.png)
 
-### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_MONTHLY_DATA_USAGE`
 
 Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro collegamento.
 
 ![FAC](./images/fdb20.png)
 
-Definiamo quindi il collegamento tra la tabella `CK_USERS` e `CK_MONTHLY_DATA_USAGE`.
+Definiamo quindi il collegamento tra la tabella `--aepUserLdap--_USERS` e `--aepUserLdap--_MONTHLY_DATA_USAGE`.
 
 ![FAC](./images/fdb21.png)
 
 
-### `CK_USERS` - `CK_HOUSEHOLDS`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_HOUSEHOLDS`
 
 Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro collegamento.
 
 ![FAC](./images/fdb22.png)
 
-Definiamo quindi il collegamento tra la tabella `CK_USERS` e `CK_HOUSEHOLDS`.
+Definiamo quindi il collegamento tra la tabella `--aepUserLdap--_USERS` e `--aepUserLdap--_HOUSEHOLDS`.
 
 ![FAC](./images/fdb23.png)
 
-### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_MOBILE_DATA_USAGE`
 
 Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro collegamento.
 
 ![FAC](./images/fdb24.png)
 
-Definiamo quindi il collegamento tra la tabella `CK_USERS` e `CK_MOBILE_DATA_USAGE`.
+Definiamo quindi il collegamento tra la tabella `--aepUserLdap--_USERS` e `--aepUserLdap--_MOBILE_DATA_USAGE`.
 
 ![FAC](./images/fdb25.png)
 

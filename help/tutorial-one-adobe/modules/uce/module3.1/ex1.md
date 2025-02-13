@@ -1,17 +1,17 @@
 ---
-title: Raccolta dati - FAC - Configurare l’account di Snowflake
-description: Foundation - FAC - Configurare l’account di Snowflake
+title: Raccolta dati - FAC - Configurare l’account Snowflake
+description: Foundation - FAC - Configurare l’account Snowflake
 kt: 5342
 doc-type: tutorial
 exl-id: e72cdbfc-5b42-411f-9c63-e886776deabe
-source-git-commit: f6881cc2c993941f60e440ce0c367a139ae80b00
+source-git-commit: 50622dc6698a7e1384c4803ea40682a060a08617
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 0%
 
 ---
 
-# 3.1.1 Configurare l’ambiente del Snowflake
+# 3.1.1 Configurare l’ambiente Snowflake
 
 ## 3.1.1.1 Creare l’account
 
@@ -39,7 +39,7 @@ Fai clic sul collegamento nell’e-mail di conferma per attivare l’account, de
 
 ![FAC](./images/sf6.png)
 
-In seguito potrai accedere al Snowflake. Fai clic su **Ignora per il momento**.
+Dopo avrai effettuato l’accesso a Snowflake. Fai clic su **Ignora per il momento**.
 
 ![FAC](./images/sf7.png)
 
@@ -55,18 +55,18 @@ Utilizza il nome **CITISIGNAL** per il database. Fare clic su **CREA**.
 
 ## 3.1.1.3 Creare le tabelle
 
-È ora possibile iniziare a creare le tabelle in Snowflake. Di seguito sono riportati gli script da eseguire per creare le tabelle.
+Ora puoi iniziare a creare le tabelle in Snowflake. Di seguito sono riportati gli script da eseguire per creare le tabelle.
 
-### Tabella `CK_PERSONS`
+### Tabella `--aepUserLdap--_PERSONS`
 
 Fare clic su **+ Crea**, quindi su **Tabella** e infine su **Standard**.
 
 ![FAC](./images/tb1.png)
 
-Poi vedrai questo. Copia la query seguente e incollala nel Snowflake. Prima di creare la tabella, assicurati di selezionare il database **CITISIGNAL** nell&#39;angolo in alto a sinistra dello schermo.
+Poi vedrai questo. Copia la query seguente e incollala in Snowflake. Prima di creare la tabella, assicurati di selezionare il database **CITISIGNAL** nell&#39;angolo in alto a sinistra dello schermo.
 
 ```sql
-create or replace TABLE CITISIGNAL.PUBLIC.CK_PERSONS (
+create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_PERSONS (
 	PERSON_ID NUMBER(38,0) NOT NULL,
 	NAME VARCHAR(255),
 	AGE NUMBER(38,0),
@@ -87,16 +87,16 @@ Una volta eseguito lo script, è possibile trovare la tabella in **Database > CI
 
 ![FAC](./images/tb3.png)
 
-### Tabella `CK_HOUSEHOLDS`
+### Tabella `--aepUserLdap--_HOUSEHOLDS`
 
 Fare clic su **+ Crea**, quindi su **Tabella** e infine su **Standard**.
 
 ![FAC](./images/tb1.png)
 
-Poi vedrai questo. Copia la query seguente e incollala nel Snowflake. Prima di creare la tabella, assicurati di selezionare il database **CITISIGNAL** nell&#39;angolo in alto a sinistra dello schermo.
+Poi vedrai questo. Copia la query seguente e incollala in Snowflake. Prima di creare la tabella, assicurati di selezionare il database **CITISIGNAL** nell&#39;angolo in alto a sinistra dello schermo.
 
 ```sql
-create or replace TABLE CITISIGNAL.PUBLIC.CK_HOUSEHOLDS (
+create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_HOUSEHOLDS (
 	HOUSEHOLD_ID NUMBER(38,0) NOT NULL,
 	ADDRESS VARCHAR(255),
 	CITY VARCHAR(100),
@@ -118,22 +118,22 @@ Una volta eseguito lo script, è possibile trovare la tabella in **Database > CI
 
 ![FAC](./images/tb5.png)
 
-### Tabella `CK_USERS`
+### Tabella `--aepUserLdap--_USERS`
 
 Fare clic su **+ Crea**, quindi su **Tabella** e infine su **Standard**.
 
 ![FAC](./images/tb1.png)
 
-Poi vedrai questo. Copia la query seguente e incollala nel Snowflake. Prima di creare la tabella, assicurati di selezionare il database **CITISIGNAL** nell&#39;angolo in alto a sinistra dello schermo.
+Poi vedrai questo. Copia la query seguente e incollala in Snowflake. Prima di creare la tabella, assicurati di selezionare il database **CITISIGNAL** nell&#39;angolo in alto a sinistra dello schermo.
 
 ```sql
-create or replace TABLE CITISIGNAL.PUBLIC.CK_USERS (
+create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_USERS (
 	USER_ID NUMBER(38,0) NOT NULL,
 	PERSON_ID NUMBER(38,0),
 	HOUSEHOLD_ID NUMBER(38,0),
 	primary key (USER_ID),
-	foreign key (PERSON_ID) references CITISIGNAL.PUBLIC.CK_PERSONS(PERSON_ID),
-	foreign key (HOUSEHOLD_ID) references CITISIGNAL.PUBLIC.CK_HOUSEHOLDS(HOUSEHOLD_ID)
+	foreign key (PERSON_ID) references CITISIGNAL.PUBLIC.--aepUserLdap--_PERSONS(PERSON_ID),
+	foreign key (HOUSEHOLD_ID) references CITISIGNAL.PUBLIC.--aepUserLdap--_HOUSEHOLDS(HOUSEHOLD_ID)
 );
 ```
 
@@ -145,16 +145,16 @@ Una volta eseguito lo script, è possibile trovare la tabella in **Database > CI
 
 ![FAC](./images/tb7.png)
 
-### Tabella `CK_MONTHLY_DATA_USAGE`
+### Tabella `--aepUserLdap--_MONTHLY_DATA_USAGE`
 
 Fare clic su **+ Crea**, quindi su **Tabella** e infine su **Standard**.
 
 ![FAC](./images/tb1.png)
 
-Poi vedrai questo. Copia la query seguente e incollala nel Snowflake. Prima di creare la tabella, assicurati di selezionare il database **CITISIGNAL** nell&#39;angolo in alto a sinistra dello schermo.
+Poi vedrai questo. Copia la query seguente e incollala in Snowflake. Prima di creare la tabella, assicurati di selezionare il database **CITISIGNAL** nell&#39;angolo in alto a sinistra dello schermo.
 
 ```sql
-create or replace TABLE CITISIGNAL.PUBLIC.CK_MONTHLY_DATA_USAGE (
+create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_MONTHLY_DATA_USAGE (
 	USAGE_ID NUMBER(38,0) NOT NULL autoincrement start 1 increment 1 noorder,
 	USER_ID NUMBER(38,0),
 	MONTH DATE,
@@ -171,16 +171,17 @@ Una volta eseguito lo script, è possibile trovare la tabella in **Database > CI
 
 ![FAC](./images/tb9.png)
 
-### Tabella `CK_MOBILE_DATA_USAGE`
+### Tabella `--aepUserLdap--_MOBILE_DATA_USAGE`
 
 Fare clic su **+ Crea**, quindi su **Tabella** e infine su **Standard**.
 
 ![FAC](./images/tb1.png)
 
-Poi vedrai questo. Copia la query seguente e incollala nel Snowflake. Prima di creare la tabella, assicurati di selezionare il database **CITISIGNAL** nell&#39;angolo in alto a sinistra dello schermo.
+Poi vedrai questo. Copia la query seguente e incollala in Snowflake. Prima di creare la tabella, assicurati di selezionare il database **CITISIGNAL** nell&#39;angolo in alto a sinistra dello schermo.
+
 
 ```sql
-create or replace TABLE CITISIGNAL.PUBLIC.CK_MOBILE_DATA_USAGE (
+create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_MOBILE_DATA_USAGE (
 	USAGE_ID NUMBER(38,0) NOT NULL autoincrement start 1 increment 1 noorder,
 	USER_ID NUMBER(38,0),
 	DATE DATE,
@@ -204,7 +205,6 @@ Una volta eseguito lo script, è possibile trovare la tabella in **Database > CI
 
 Tutte le tabelle sono state create.
 
-
 ## 3.1.1.4 Inserire i dati del campione
 
 Ora puoi iniziare a caricare dati di esempio nel database.
@@ -217,7 +217,7 @@ A questo punto dovresti avere:
 
 ![FAC](./images/dataload2.png)
 
-Copiare la query seguente e incollarla nel foglio di lavoro del Snowflake.
+Copiare la query seguente e incollarla nel foglio di lavoro di Snowflake.
 
 ```sql
 USE SCHEMA CITISIGNAL.PUBLIC;
@@ -226,7 +226,7 @@ USE SCHEMA CITISIGNAL.PUBLIC;
  - HELPER FUNCTIONS
    Simplifies SQL queries to fetch random/calculated data.
 */
-CREATE OR REPLACE FUNCTION CK_RANDOM_NAME(NAME_TYPE STRING)
+CREATE OR REPLACE FUNCTION --aepUserLdap--_RANDOM_NAME(NAME_TYPE STRING)
 RETURNS STRING
 LANGUAGE JAVASCRIPT
 AS $$
@@ -245,7 +245,7 @@ AS $$
 $$;
 
 
-CREATE OR REPLACE FUNCTION CK_RANDOM_ADDRESS(LOC_TYPE STRING, CITY STRING)
+CREATE OR REPLACE FUNCTION --aepUserLdap--_RANDOM_ADDRESS(LOC_TYPE STRING, CITY STRING)
 RETURNS STRING
 LANGUAGE JAVASCRIPT
 AS $$
@@ -390,7 +390,7 @@ $$;
    Use the following queries to insert data into tables.
 */
 
-INSERT INTO CK_PERSONS (
+INSERT INTO --aepUserLdap--_PERSONS (
   person_id,
   name,
   age,
@@ -410,8 +410,8 @@ SELECT person_id,
        ismobilesub
   FROM (
     SELECT CAST(CONCAT(UNIFORM(1000, 9999, RANDOM()),UNIFORM(1000, 9999, RANDOM()),UNIFORM(1000, 9999, RANDOM()),UNIFORM(1000, 9999, RANDOM())) AS NUMBER) AS person_id,
-           CK_RANDOM_NAME('first') AS first_name,
-           CK_RANDOM_NAME('last') AS last_name,
+           --aepUserLdap--_RANDOM_NAME('first') AS first_name,
+           --aepUserLdap--_RANDOM_NAME('last') AS last_name,
            UNIFORM(20, 80, RANDOM()) AS age,
            CONCAT(LOWER(first_name),'.',LOWER(last_name),'+',LEFT(MD5(RANDOM()), 5),'@emailsim.io') AS email,
            CONCAT('+',UNIFORM(1, 999, RANDOM()),UNIFORM(100, 999, RANDOM()),UNIFORM(100, 999, RANDOM()),UNIFORM(1000, 9999, RANDOM())) AS phone_number,
@@ -422,10 +422,10 @@ SELECT person_id,
   ) vw;
 
 
--- Relationship with CK_PERSONS as 1:1
+-- Relationship with --aepUserLdap--_PERSONS as 1:1
 -- Assuming data is available for 95% of Profiles.
 -- You may choose to adjust the percentage OR remove `SAMPLE` clause, if you wish to include all Profiles.
-INSERT INTO CK_HOUSEHOLDS (
+INSERT INTO --aepUserLdap--_HOUSEHOLDS (
   household_id,
   address,
   city,
@@ -438,10 +438,10 @@ INSERT INTO CK_HOUSEHOLDS (
 )
 SELECT CAST(CONCAT(UNIFORM(1000, 9999, RANDOM()),UNIFORM(1000, 9999, RANDOM()),UNIFORM(1000, 9999, RANDOM()),UNIFORM(1000, 9999, RANDOM())) AS NUMBER) AS household_id,
        NULL AS address,
-       CK_RANDOM_ADDRESS('city', null) AS city,
-       CK_RANDOM_ADDRESS('state', city) AS state,
-       CK_RANDOM_ADDRESS('postalCode', city) AS postal_code,
-       CK_RANDOM_ADDRESS('country', city) AS country,
+       --aepUserLdap--_RANDOM_ADDRESS('city', null) AS city,
+       --aepUserLdap--_RANDOM_ADDRESS('state', city) AS state,
+       --aepUserLdap--_RANDOM_ADDRESS('postalCode', city) AS postal_code,
+       --aepUserLdap--_RANDOM_ADDRESS('country', city) AS country,
        ARRAY_CONSTRUCT(true, true, false, true, true, true, true, true, true, true)[UNIFORM(0, 9, RANDOM())] AS iseligibleforfiber,
        person_id,
        CASE
@@ -449,15 +449,15 @@ SELECT CAST(CONCAT(UNIFORM(1000, 9999, RANDOM()),UNIFORM(1000, 9999, RANDOM()),U
            THEN ARRAY_CONSTRUCT(true, true, false, true, true, true, true, true, true, true)[UNIFORM(0, 9, RANDOM())]
          ELSE false
        END AS isfibreenabled
-  FROM ck_persons
+  FROM --aepUserLdap--_persons
 SAMPLE (95);
 
 
--- Relationship with CK_PERSONS as 1:N
+-- Relationship with --aepUserLdap--_PERSONS as 1:N
 -- Upto 4 users
 -- Assuming data is available for 90% of Profiles.
 -- You may choose to adjust the percentage OR remove `SAMPLE` clause, if you wish to include all Profiles.
-INSERT INTO CK_USERS (
+INSERT INTO --aepUserLdap--_USERS (
   user_id,
   person_id,
   household_id
@@ -468,7 +468,7 @@ SELECT CAST(CONCAT(UNIFORM(1000, 9999, RANDOM()),UNIFORM(1000, 9999, RANDOM()),U
   FROM (
     SELECT a.primary_person_id, a.household_id,
            UNIFORM(1, 4, RANDOM()) AS repeater
-      FROM (SELECT primary_person_id, household_id FROM ck_households SAMPLE (90)) a
+      FROM (SELECT primary_person_id, household_id FROM --aepUserLdap--_households SAMPLE (90)) a
     ) p,
        (SELECT ROW_NUMBER() OVER(PARTITION BY NULL ORDER BY NULL) AS loops
           FROM TABLE(GENERATOR(ROWCOUNT => 4))
@@ -476,10 +476,10 @@ SELECT CAST(CONCAT(UNIFORM(1000, 9999, RANDOM()),UNIFORM(1000, 9999, RANDOM()),U
  WHERE p.repeater >= i.loops;
 
 
--- Assuming relationship with CK_USERS as 1:N
+-- Assuming relationship with --aepUserLdap--_USERS as 1:N
 -- Assuming data is available for 95% of Profiles.
 -- You may choose to adjust the percentage OR remove `SAMPLE` clause, if you wish to include all Profiles.
-INSERT INTO CK_MONTHLY_DATA_USAGE (
+INSERT INTO --aepUserLdap--_MONTHLY_DATA_USAGE (
   user_id,
   month,
   data_usage_gb
@@ -490,14 +490,14 @@ SELECT user_id,
   FROM (
     SELECT a.user_id, a.person_id, a.household_id,
            UNIFORM(1, 50, RANDOM()) AS repeater
-      FROM (SELECT user_id, person_id, household_id FROM ck_users SAMPLE (95)) a
+      FROM (SELECT user_id, person_id, household_id FROM --aepUserLdap--_users SAMPLE (95)) a
     ) p,
        (SELECT ROW_NUMBER() OVER(PARTITION BY NULL ORDER BY NULL) AS loops
           FROM TABLE(GENERATOR(ROWCOUNT => 50))
        ) i
  WHERE p.repeater >= i.loops;
 
-INSERT INTO CK_MOBILE_DATA_USAGE (
+INSERT INTO --aepUserLdap--_MOBILE_DATA_USAGE (
   user_id,
   date,
   time,
@@ -514,16 +514,16 @@ SELECT user_id,
        UNIFORM(1, 5120::NUMBER(10,2), RANDOM()) AS data_usage_mb,
        ARRAY_CONSTRUCT('2G', '3G', '4G', '5G', 'LTE', 'WiFi', '3G', '3G', '4G', '5G', '5G', '5G', '5G')[UNIFORM(0, 12, RANDOM())] AS network_type,
        ARRAY_CONSTRUCT('Mobile', 'Tablet', 'TV', 'Watch', 'Mobile', 'Mobile', 'Mobile')[UNIFORM(0, 6, RANDOM())] AS device_type,
-       CK_RANDOM_ADDRESS('countryCode', h.city) AS country_code
+       --aepUserLdap--_RANDOM_ADDRESS('countryCode', h.city) AS country_code
   FROM (
     SELECT a.user_id, a.person_id, a.household_id,
            UNIFORM(1, 50, RANDOM()) AS repeater
-      FROM (SELECT user_id, person_id, household_id FROM ck_users SAMPLE (95)) a
+      FROM (SELECT user_id, person_id, household_id FROM --aepUserLdap--_users SAMPLE (95)) a
     ) p,
        (SELECT ROW_NUMBER() OVER(PARTITION BY NULL ORDER BY NULL) AS loops
           FROM TABLE(GENERATOR(ROWCOUNT => 50))
        ) i,
-       ck_households h
+       --aepUserLdap--_households h
  WHERE p.repeater >= i.loops
    AND p.household_id = h.household_id;
 ```
@@ -536,9 +536,9 @@ Ci vorrà un paio di minuti, dopo di che vedrete questo.
 
 ![FAC](./images/dataload4.png)
 
-Ora hai caricato i dati demo nel database del Snowflake. Puoi esplorare i dati presenti aprendo qualsiasi tabella
+Ora hai caricato i dati demo nel tuo database Snowflake. Puoi esplorare i dati presenti aprendo qualsiasi tabella
 
-La configurazione è stata completata in Snowflake.
+La configurazione in Snowflake è stata completata.
 
 ![FAC](./images/dataload5.png)
 
