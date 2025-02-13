@@ -4,10 +4,10 @@ description: Foundation - Acquisizione dei dati - Acquisizione dei dati da origi
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
+source-git-commit: fc5750ca614be30c3bd25b4f80ab45c5725a7649
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1562'
+ht-degree: 5%
 
 ---
 
@@ -53,6 +53,10 @@ Nel modello, noterai i seguenti campi:
 - country_code
 - città
 - paese
+- crmId
+- consent.email
+- consent.commercialEmail
+- consent.any
 
 Tutti questi campi sono stati definiti per produrre dati compatibili con Platform.
 
@@ -68,7 +72,9 @@ Quando il file CSV è pronto, puoi procedere con l’acquisizione in AEP.
 
 ### Verificare il set di dati
 
-Apri [Adobe Experience Platform](https://experience.adobe.com/platform) e passa a **[!UICONTROL Set di dati]**.
+Vai a [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+
+![Acquisizione dei dati](./images/home.png)
 
 Prima di continuare, devi selezionare una **[!UICONTROL sandbox]**. La sandbox da selezionare è denominata ``--aepSandboxName--``.
 
@@ -115,8 +121,6 @@ Ogni schema deve avere un descrittore primario personalizzato definito. Nel caso
 Puoi anche vedere che la nostra identità primaria si trova in `--aepTenantId--.identification.core.crmId`, collegata allo [!UICONTROL spazio dei nomi] di **[!UICONTROL sistema demo - CRMID]**.
 
 ![Acquisizione dei dati](./images/schema_descriptor.png)
-
-
 
 Ogni schema e, di conseguenza, ogni set di dati da utilizzare nel [!UICONTROL Profilo cliente in tempo reale] deve avere un [!UICONTROL Identificatore primario]. Questo [!UICONTROL identificatore primario] è l&#39;identificatore utente per marchio di un cliente in quel set di dati. Nel caso di un set di dati CRM potrebbe essere l’indirizzo e-mail o l’ID del sistema di gestione delle relazioni con i clienti; nel caso di un set di dati Call Center potrebbe essere il numero di cellulare di un cliente.
 
@@ -229,6 +233,24 @@ Il campo schema Source **id** deve essere collegato al campo di destinazione **_
 Il campo schema Source **last_name** deve essere collegato al campo di destinazione **person.name.lastName**.
 
 ![Acquisizione dei dati](./images/tflname.png)
+
+#### consents.marketing.email.val
+
+Il campo schema Source **last_name** deve essere collegato al campo di destinazione **consents.marketing.email.val**.
+
+![Acquisizione dei dati](./images/cons1.png)
+
+#### consents.marketing.commercialEmail.val
+
+Il campo schema Source **last_name** deve essere collegato al campo di destinazione **consents.marketing.commercialEmail.val**.
+
+![Acquisizione dei dati](./images/cons2.png)
+
+#### consents.marketing.any.val
+
+Il campo schema Source **last_name** deve essere collegato al campo di destinazione **consents.marketing.any.val**.
+
+![Acquisizione dei dati](./images/cons3.png)
 
 Ora dovresti avere questo. Fai clic su **Fine**.
 
