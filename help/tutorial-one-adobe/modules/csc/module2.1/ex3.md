@@ -4,7 +4,7 @@ description: Configurare l’ambiente AEM CS
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: 0a0909b639e34d92266a326c3338d7f17db7ecc6
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 1%
@@ -69,7 +69,7 @@ Fai clic sull&#39;icona **modifica**.
 
 ![AEMCS](./images/aemcssetup13.png){zoomable="yes"}
 
-Devi sostituire il valore corrente con l’URL del tuo ambiente AEM CS specifico, in combinazione con le impostazioni del tuo archivio GitHub.
+È necessario sostituire il valore corrente con l’URL dell’ambiente AEM CS specifico in combinazione con le impostazioni dell’archivio GitHub.
 
 Valore corrente dell&#39;URL: `https://author-p131639-e1282833.adobeaemcloud.com/bin/franklin.delivery/adobedevxsc/citisignal-one/main`.
 
@@ -77,13 +77,13 @@ Valore corrente dell&#39;URL: `https://author-p131639-e1282833.adobeaemcloud.com
 
 `https://XXX/bin/franklin.delivery/YYY/ZZZ/main`
 
-XXX deve essere sostituito dall’URL dell’ambiente di authoring di AEM CS.
+XXX deve essere sostituito dall’URL dell’ambiente AEM CS Author.
 
 YYY deve essere sostituito dall’account utente GitHub.
 
 ZZZ deve essere sostituito dal nome dell’archivio GitHub utilizzato nell’esercizio precedente.
 
-Per trovare l&#39;URL dell&#39;ambiente di authoring di AEM CS, vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Fai clic sul **Programma** per aprirlo.
+Per trovare l&#39;URL dell&#39;ambiente AEM CS Author, vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Fai clic sul **Programma** per aprirlo.
 
 ![AEMCS](./images/aemcs6.png){zoomable="yes"}
 
@@ -143,7 +143,7 @@ Viene quindi visualizzato l’ambiente di authoring.
 
 L&#39;URL sarà simile al seguente: `https://author-p148073-e1511503.adobeaemcloud.com/ui#/aem/aem/start.html?appId=aemshell`
 
-È ora necessario accedere all&#39;ambiente **Gestione pacchetti CRX** dell&#39;AEM. Per eseguire questa operazione, rimuovere `ui#/aem/aem/start.html?appId=aemshell` dall&#39;URL e sostituirlo con `crx/packmgr`, il che significa che l&#39;URL dovrebbe avere un aspetto simile al seguente:
+È ora necessario accedere all&#39;ambiente **Gestione pacchetti CRX** di AEM. Per eseguire questa operazione, rimuovere `ui#/aem/aem/start.html?appId=aemshell` dall&#39;URL e sostituirlo con `crx/packmgr`, il che significa che l&#39;URL dovrebbe avere un aspetto simile al seguente:
 `https://author-p148073-e1511503.adobeaemcloud.com/crx/packmgr`.
 Premi **Invio** per caricare l&#39;ambiente di gestione dei pacchetti
 
@@ -186,7 +186,7 @@ Dopo un paio di minuti, il pacchetto verrà installato.
 È ora possibile chiudere questa finestra.
 
 
-## 2.1.3.4 Risorse Publish CitiSignal
+## 2.1.3.4 Pubblicare risorse CitiSignal
 
 Vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Fai clic sul **Programma** per aprirlo.
 
@@ -200,7 +200,7 @@ Fai clic su **Accedi con Adobe**.
 
 ![AEMCS](./images/aemcssetup19.png){zoomable="yes"}
 
-Viene quindi visualizzato l’ambiente di authoring. Fare clic su **Sites**.
+Viene quindi visualizzato l’ambiente di authoring. Fare clic su **Assets**.
 
 ![AEMCS](./images/aemcsassets1.png){zoomable="yes"}
 
@@ -216,7 +216,7 @@ Fai clic su **Avanti**.
 
 ![AEMCS](./images/aemcsassets4.png){zoomable="yes"}
 
-Fare clic su **Publish**.
+Fai clic su **Pubblica**.
 
 ![AEMCS](./images/aemcsassets5.png){zoomable="yes"}
 
@@ -278,7 +278,7 @@ Dopo alcuni minuti, aggiorna lo schermo e vedrai il tuo nuovo sito Web CitiSigna
 
 ![AEMCS](./images/aemcssetup38.png){zoomable="yes"}
 
-## 2.1.3.6 Sito web Publish CitiSignal
+## 2.1.3.6 Pubblicare il sito web CitiSignal
 
 Fare clic sulla casella di controllo davanti a **CitiSignal**. Quindi fare clic su **Gestisci pubblicazione**.
 
@@ -296,7 +296,7 @@ Fare clic per selezionare la casella di controllo **Includi elementi figlio** e 
 
 ![AEMCS](./images/aemcssetup42.png){zoomable="yes"}
 
-Fare clic su **Publish**.
+Fai clic su **Pubblica**.
 
 ![AEMCS](./images/aemcssetup43.png){zoomable="yes"}
 
