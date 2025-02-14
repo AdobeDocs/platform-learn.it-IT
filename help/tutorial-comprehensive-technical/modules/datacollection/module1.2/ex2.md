@@ -4,9 +4,9 @@ description: Foundation - Acquisizione dei dati - Configurare schemi e impostare
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
+source-git-commit: b78460ab562c2b435988942b219787ed07af24d4
 workflow-type: tm+mt
-source-wordcount: '3117'
+source-wordcount: '3102'
 ht-degree: 4%
 
 ---
@@ -61,13 +61,9 @@ Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare
 
 ![Acquisizione dei dati](./images/sb1.png)
 
-In Adobe Experience Platform, fai clic su **[!UICONTROL Schemi]** nel menu sul lato sinistro dello schermo. Verrà visualizzato l&#39;elenco degli [!UICONTROL schemi] disponibili.
+In Adobe Experience Platform, fai clic su **[!UICONTROL Schemi]** nel menu sul lato sinistro dello schermo. Verrà visualizzato l&#39;elenco degli [!UICONTROL schemi] disponibili. Devi creare un nuovo schema. Per creare un nuovo schema, fare clic su **[!UICONTROL + Crea schema]**.
 
 ![Acquisizione dei dati](./images/menuschemas.png)
-
-Devi creare un nuovo schema. Per creare un nuovo schema, fare clic su **[!UICONTROL + Crea schema]**.
-
-![Acquisizione dei dati](./images/createschema.png)
 
 Seleziona **Manuale** e fai clic su **Seleziona**.
 
@@ -156,8 +152,8 @@ Dopo aver fatto clic sul pulsante **[!UICONTROL + Aggiungi campo]**, viene visua
 
 A questo punto è necessario immettere le informazioni di questo nuovo campo, utilizzando le seguenti definizioni di oggetto:
 
-- Nome campo: **[!UICONTROL identificazione]**
-- Nome visualizzato: **[!UICONTROL identificazione]**
+- Nome campo: **`--aepUserLdap--_identification`**
+- Nome visualizzato: **`--aepUserLdap--_identification`**
 - Tipo: **[!UICONTROL oggetto]**
 - Gruppo di campi: **`--aepUserLdap-- - Profile Identification Field Group`**
 
@@ -279,7 +275,7 @@ Lo schema è ora configurato per far parte di [!UICONTROL Real-time Customer Pro
 
 ![Acquisizione dei dati](./images/sureyps.png)
 
-### Cosa fa un cliente?
+## Cosa fa questo cliente?
 
 Acquisizione della risposta alla domanda **Quali operazioni svolge il cliente?** per la tua organizzazione viene eseguito tramite, ad esempio una visualizzazione prodotto in una pagina di prodotto.
 
@@ -291,7 +287,7 @@ Quando crei uno [!UICONTROL schema XDM] per acquisire la risposta a **Quali oper
 
 Per specificare il tipo di risposte da fornire a tale domanda, è necessario definire [!UICONTROL Gruppo di campi]. [!UICONTROL I gruppi di campi] sono estensioni della classe [!UICONTROL ExperienceEvent] e dispongono di configurazioni molto specifiche. Ad esempio, informazioni sul tipo di prodotti visualizzati o aggiunti al carrello da un cliente fanno parte del [!UICONTROL Gruppo di campi] **Dettagli Commerce**.
 
-In secondo luogo, la tua organizzazione deve decidere come identificare il comportamento di questo cliente. Dal momento che stiamo parlando di interazioni su un sito web, è possibile che la tua organizzazione conosca il cliente, ma è ugualmente possibile che un visitatore anonimo sconosciuto sia attivo sul sito web. Quindi non possiamo usare un identificatore come l&#39;indirizzo e-mail. In questo caso, è probabile che l&#39;organizzazione decida di utilizzare l&#39;[!UICONTROL ID Experience Cloud (ECID)] come identificatore primario.
+In secondo luogo, la tua organizzazione deve decidere come identificare il comportamento di questo cliente. Dal momento che stiamo parlando di interazioni su un sito web, è possibile che la tua organizzazione conosca il cliente, ma è ugualmente possibile che un visitatore anonimo sconosciuto sia attivo sul sito web. Quindi non possiamo usare un identificatore come l&#39;indirizzo e-mail. In questo caso, è probabile che l&#39;organizzazione decida di utilizzare [!UICONTROL Experience Cloud ID (ECID)] come identificatore primario.
 
 Infine, è importante distinguere il canale su cui sono stati acquisiti i dati. In questo caso, parleremo delle interazioni con il sito Web e lo schema da definire deve riflettere **dove** sono stati acquisiti i dati di interazione. Il canale avrà anche un ruolo importante nell’influenzare i dati acquisiti. Di conseguenza, è consigliabile definire gli schemi per ogni combinazione di canale, identificatore principale e tipo di dati raccolti.
 
@@ -305,13 +301,9 @@ Prima di continuare, devi selezionare una **[!UICONTROL sandbox]**. La [!UICONTR
 
 ![Acquisizione dei dati](./images/sb1.png)
 
-In Adobe Experience Platform, fai clic su **[!UICONTROL Schemi]** nel menu sul lato sinistro dello schermo e passa a **Sfoglia**.
+In Adobe Experience Platform, fai clic su **[!UICONTROL Schemi]** nel menu sul lato sinistro dello schermo e passa a **Sfoglia**. Devi creare un nuovo schema. Per creare un nuovo schema, fare clic sul pulsante **[!UICONTROL + Crea schema]**.
 
 ![Acquisizione dei dati](./images/menuschemas.png)
-
-In [!UICONTROL Schemi] verranno visualizzati tutti gli schemi esistenti. Devi creare un nuovo schema. Per creare un nuovo schema, fare clic sul pulsante **[!UICONTROL + Crea schema]**.
-
-![Acquisizione dei dati](./images/schemasee.png)
 
 Seleziona **Manuale** e fai clic su **Seleziona**.
 
@@ -390,8 +382,8 @@ Dopo aver fatto clic sul pulsante **+**, verrà visualizzato un nuovo campo senz
 
 Utilizza questa opzione per definire il nuovo campo:
 
-- Nome campo: **[!UICONTROL identificazione]**
-- Nome visualizzato: **[!UICONTROL identificazione]**
+- Nome campo: **`--aepUserLdap--_identification`**
+- Nome visualizzato: **`--aepUserLdap--_identification`**
 - Tipo: **[!UICONTROL oggetto]**
 - Gruppo di campi: `--aepUserLdap-- - ExperienceEvent Identification Field Group`
 

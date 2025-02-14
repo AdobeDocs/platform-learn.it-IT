@@ -4,9 +4,9 @@ description: Foundation - FAC - Creare schemi, modelli dati e collegamenti
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: e32d415d2997b43834e9fc2495c4394b13f4d49f
+source-git-commit: b78460ab562c2b435988942b219787ed07af24d4
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '649'
 ht-degree: 2%
 
 ---
@@ -132,7 +132,7 @@ Poi vedrai questo. Fai clic su **Salva**.
 
 ![FAC](./images/fdb16.png)
 
-### `--aepUserLdap--_PERSONS` - `--aepUserLdap--_USERS`
+### PERSONE - UTENTI
 
 Ora puoi iniziare a definire i collegamenti tra schemi. Per iniziare a definire un collegamento, fai clic su **Crea collegamenti**.
 
@@ -144,7 +144,7 @@ Fai clic su **Aggiungi**.
 
 ![FAC](./images/fdb18.png)
 
-### `--aepUserLdap--_HOUSEHOLDS` - `--aepUserLdap--_PERSONS`
+### FAMIGLIE - PERSONE
 
 Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro collegamento.
 
@@ -154,7 +154,7 @@ Definiamo quindi il collegamento tra la tabella `--aepUserLdap--_HOUSEHOLDS` e `
 
 ![FAC](./images/fdb19.png)
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_MONTHLY_DATA_USAGE`
+### UTENTI - MONTHLY_DATA_USAGE
 
 Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro collegamento.
 
@@ -165,7 +165,7 @@ Definiamo quindi il collegamento tra la tabella `--aepUserLdap--_USERS` e `--aep
 ![FAC](./images/fdb21.png)
 
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_HOUSEHOLDS`
+### UTENTI - FAMIGLIE
 
 Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro collegamento.
 
@@ -175,7 +175,7 @@ Definiamo quindi il collegamento tra la tabella `--aepUserLdap--_USERS` e `--aep
 
 ![FAC](./images/fdb23.png)
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_MOBILE_DATA_USAGE`
+### UTENTI - MOBILE_DATA_USAGE
 
 Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro collegamento.
 
