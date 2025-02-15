@@ -4,10 +4,10 @@ description: 'Guida introduttiva: un Adobe'
 kt: 5342
 doc-type: tutorial
 exl-id: 4b85938e-b7ee-4e05-b73d-112917beea08
-source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 3%
+source-wordcount: '318'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ In questo modulo configurerai tutto in modo da poter raccogliere dati, accedere 
 
 ## Esercizi
 
-[Installa l’estensione Chrome per la documentazione di Experience League](./ex1.md)
+[Installare l’estensione Chrome per la documentazione di Experience League](./ex1.md)
 
 In questo esercizio installerai e configurerai l’estensione Chrome in modo da poterla utilizzare per personalizzare il contenuto dell’esercitazione.
 
@@ -47,6 +47,26 @@ In questo esercizio configurerete il sito web in modo da poterlo utilizzare per 
 [Utilizzare l’app mobile](./ex5.md)
 
 In questo esercizio configurerai l’app mobile in modo da poterla utilizzare per dimostrazioni e abilitazione.
+
+[Configurare il progetto Adobe I/O](./ex6.md)
+
+In questo esercizio configurerai il progetto Adobe I/O che verrà utilizzato per interagire con vari endpoint API di Adobe.
+
+[Opzione 1: configurazione del Postman](./ex7.md)
+
+>[!NOTE]
+>
+>Se non sei un dipendente Adobe, segui le istruzioni per installare Postman.
+
+In questo esercizio preparerai l’ambiente Postman per interagire con vari endpoint API di Adobe
+
+[Opzione 2: configurazione di PostBuster](./ex8.md)
+
+>[!NOTE]
+>
+>Se sei un dipendente Adobe, segui le istruzioni per installare PostBuster.
+
+In questo esercizio preparerai l’ambiente PostBuster per interagire con vari endpoint API di Adobe
 
 ![Informazioni tecniche](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

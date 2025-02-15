@@ -4,14 +4,14 @@ description: 'Guida introduttiva: installare l’estensione Chrome per la docume
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
 
-# Installa l’estensione Chrome per la documentazione di Experience League
+# Installare l’estensione Chrome per la documentazione di Experience League
 
 ## Informazioni sull’estensione Chrome
 
@@ -84,7 +84,7 @@ L’ID organizzazione IMS è l’identificatore univoco dell’istanza di Adobe 
 
 È possibile trovare l’ID organizzazione IMS in diversi modi. Se non sei sicuro, rivolgiti a uno degli amministratori di sistema della tua istanza per trovare l’ID.
 
-Puoi trovarlo andando in [Admin Console](https://https://adminconsole.adobe.com/), dove è possibile trovarlo come parte dell&#39;URL.
+Potresti trovarlo andando su [Admin Console](https://https://adminconsole.adobe.com/), dove puoi trovarlo come parte dell&#39;URL.
 
 ![DSN](./images/aepid1.png)
 
@@ -143,8 +143,10 @@ Ora tutte le **Variabili di ambiente** in questa pagina sono state sostituite da
 
 ![DSN](./images/mod7.png)
 
-Passaggio successivo: [Utilizzare Demo System Next per configurare la proprietà client di Adobe Experience Platform Data Collection](./ex2.md)
+## Passaggi successivi
 
-[Torna a Guida introduttiva](./getting-started.md)
+Vai a [Utilizza Demo System Next per configurare la proprietà client di Adobe Experience Platform Data Collection](./ex2.md)
 
-[Torna a tutti i moduli](./../../../overview.md)
+Torna a [Guida introduttiva](./getting-started.md){target="_blank"}
+
+Torna a [Tutti i moduli](./../../../overview.md){target="_blank"}

@@ -4,9 +4,9 @@ description: 'Guida introduttiva: utilizza Demo System Next per configurare la p
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -55,8 +55,10 @@ Una volta completato il processo di configurazione rapida, avrai:
 
 Tieni aperta questa schermata come ti servirà nei passaggi successivi.
 
-Passaggio successivo: [Crea lo stream di dati](./ex3.md)
+## Passaggi successivi
 
-[Torna a Guida introduttiva](./getting-started.md)
+Vai a [Crea lo stream di dati](./ex3.md)
 
-[Torna a tutti i moduli](./../../../overview.md)
+Torna a [Guida introduttiva](./getting-started.md){target="_blank"}
+
+Torna a [Tutti i moduli](./../../../overview.md){target="_blank"}

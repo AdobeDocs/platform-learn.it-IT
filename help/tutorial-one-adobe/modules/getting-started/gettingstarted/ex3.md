@@ -4,9 +4,9 @@ description: 'Guida introduttiva: creare lo stream di dati'
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '827'
 ht-degree: 1%
 
 ---
@@ -145,7 +145,7 @@ Poi vedrai questo. Fare clic su **Estensioni**.
 
 ![Denomina la configurazione di Edge e salva](./images/edgeconfig11m.png)
 
-Fai clic sull&#39;estensione **Adobe Experience Platform Edge Network** e quindi su **Configura**.
+Fare clic sull&#39;estensione **Adobe Experience Platform Edge Network** e quindi su **Configura**.
 
 ![Denomina la configurazione di Edge e salva](./images/edgeconfig12m.png)
 
@@ -173,8 +173,10 @@ Le modifiche sono in fase di pubblicazione e saranno pronte tra qualche minuto, 
 
 ![Denomina la configurazione di Edge e salva](./images/edgeconfig17ma.png)
 
-Passaggio successivo: [Utilizzare il sito Web](./ex4.md)
+## Passaggi successivi
 
-[Torna a Guida introduttiva](./getting-started.md)
+Vai a [Utilizza il sito Web](./ex4.md)
 
-[Torna a tutti i moduli](./../../../overview.md)
+Torna a [Guida introduttiva](./getting-started.md){target="_blank"}
+
+Torna a [Tutti i moduli](./../../../overview.md){target="_blank"}

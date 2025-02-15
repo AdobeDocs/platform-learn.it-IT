@@ -4,9 +4,9 @@ description: 'Guida introduttiva: utilizzare il sito web'
 kt: 5342
 doc-type: tutorial
 exl-id: 4d2152c9-7f9a-48e3-a8e6-4a6add034b4e
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -101,8 +101,10 @@ Vedrai quindi il tuo sito web caricato in una finestra del browser in incognito.
 
 ![DSN](./images/web7.png)
 
-Passaggio successivo: [Utilizzare l&#39;app mobile](./ex5.md)
+## Passaggi successivi
 
-[Torna a Guida introduttiva](./getting-started.md)
+Vai a [Utilizza l&#39;app mobile](./ex5.md)
 
-[Torna a tutti i moduli](./../../../overview.md)
+Torna a [Guida introduttiva](./getting-started.md){target="_blank"}
+
+Torna a [Tutti i moduli](./../../../overview.md){target="_blank"}
