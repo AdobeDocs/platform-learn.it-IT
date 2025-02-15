@@ -4,7 +4,7 @@ description: Foundation - Configurazione di Adobe Experience Platform Data Colle
 kt: 5342
 doc-type: tutorial
 exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Convalidare i dati nella richiesta
 
-### Installare l’Adobe Experience Platform Debugger
+### Installare Adobe Experience Platform Debugger
 
 Experience Platform Debugger è un’estensione disponibile per i browser Chrome e Firefox che consente di visualizzare la tecnologia Adobe implementata nelle pagine web. Installa la versione per il browser preferito:
 
@@ -25,9 +25,9 @@ Experience Platform Debugger è un’estensione disponibile per i browser Chrome
 
 Se non hai mai utilizzato il debugger in precedenza (e questo è diverso dal precedente Adobe Experience Cloud Debugger), guarda questo video introduttivo di cinque minuti:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on&enablevpops)
 
-Dato che stai caricando il sito web demo in modalità in incognito, devi assicurarti che Debugger Experience Platform sia disponibile anche in modalità in incognito. Per farlo, vai a **chrome://extensions** nel browser e apri l&#39;estensione Debugger di Experience Platform.
+Poiché il sito web demo verrà caricato in modalità di navigazione in incognito, è necessario assicurarsi che Experience Platform Debugger sia disponibile anche in modalità di navigazione in incognito. Per farlo, vai a **chrome://extensions** nel browser e apri l&#39;estensione Experience Platform Debugger.
 
 Verifica che le due impostazioni seguenti siano abilitate:
 
@@ -64,7 +64,7 @@ Vedrai quindi il tuo sito web caricato in una finestra del browser in incognito.
 
 ### Utilizza Experience Platform Debugger per visualizzare le chiamate indirizzate all’Edge
 
-Accertati di avere aperto il sito web demo e fai clic sull’icona dell’estensione Experience Platform Debugger.
+Assicurati di avere aperto il sito web demo e fai clic sull’icona dell’estensione Experience Platform Debugger.
 
 ![Home page notizie EXP](./images/ext2.png)
 
@@ -88,13 +88,13 @@ Conferma che il debugger è **[!UICONTROL connesso alla Home]** come illustrato 
 
 Quindi, vai a qualsiasi pagina del sito web demo, ad esempio la pagina della categoria **Piani**.
 
-![Estensione AEP Web SDK di AEP Debugger](./images/validate4.png)
+![Estensione AEP Web SDK per AEP Debugger](./images/validate4.png)
 
-Ora fai clic su **[!UICONTROL Experience Platform Web SDK]** nell&#39;area di navigazione a sinistra per visualizzare le **[!UICONTROL richieste di rete]**.
+Fare clic su **[!UICONTROL Experience Platform Web SDK]** nell&#39;area di navigazione a sinistra per visualizzare le **[!UICONTROL richieste di rete]**.
 
 Ogni richiesta contiene una riga **[!UICONTROL events]**.
 
-![Estensione AEP Web SDK di AEP Debugger](./images/validate5.png)
+![Estensione AEP Web SDK per AEP Debugger](./images/validate5.png)
 
 Fare clic per aprire una riga di **[!UICONTROL eventi]**. Nota come visualizzare l&#39;evento **web.webpagedetails.pageViews** e altre variabili predefinite conformi al formato **Web SDK ExperienceEvent XDM**.
 

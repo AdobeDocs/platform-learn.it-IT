@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '2619'
 ht-degree: 1%
@@ -24,7 +24,7 @@ La standardizzazione e l&#39;interoperabilità sono concetti chiave alla base di
 
 XDM è una specifica documentata pubblicamente progettata per migliorare la potenza delle esperienze digitali. Fornisce strutture e definizioni comuni per qualsiasi applicazione da utilizzare per comunicare con i servizi di Platform. Aderendo agli standard XDM, tutti i dati sulla customer experience possono essere incorporati in una rappresentazione comune che può fornire informazioni in modo più veloce e integrato. Puoi ottenere informazioni preziose dalle azioni dei clienti, definire i tipi di pubblico dei clienti attraverso i segmenti ed esprimere gli attributi dei clienti a scopo di personalizzazione.
 
-XDM è il framework fondamentale che consente a Adobe Experience Cloud, basato su Experience Platform, di inviare il messaggio giusto alla persona giusta, sul canale giusto, nel momento esatto giusto. La metodologia su cui viene generato l&#39;Experience Platform, **XDM System**, rende operativi gli schemi Experience Data Model per l&#39;utilizzo da parte dei servizi Platform.
+XDM è il framework fondamentale che consente a Adobe Experience Cloud, con tecnologia Experience Platform, di inviare il messaggio giusto alla persona giusta, sul canale giusto, nel momento esatto giusto. La metodologia su cui viene generato Experience Platform, **XDM System**, rende operativi gli schemi Experience Data Model per l&#39;utilizzo da parte dei servizi Platform.
 
 <!--
 This seems too lengthy. The video should suffice
@@ -43,11 +43,11 @@ Key terms:
 **Gli architetti di dati** dovranno creare schemi al di fuori di questa esercitazione, ma **i Data Engineer** lavoreranno a stretto contatto con gli schemi creati dall&#39;architetto di dati.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sugli schemi e sull’Experience Data Model (XDM):
->[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
 
 >[!TIP]
 >
-> Per un approfondimento sulla modellazione dei dati in Experience Platform, consigliamo di guardare la playlist [Modellare i dati sull&#39;esperienza del cliente con XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm), disponibile gratuitamente su Experience League.
+> Per informazioni più approfondite sulla modellazione dei dati in Experience Platform, ti consigliamo di guardare la playlist [Modellare i dati sull&#39;esperienza del cliente con XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm), disponibile gratuitamente su Experience League.
 
 ## Autorizzazioni richieste
 
@@ -84,7 +84,7 @@ In questo esercizio, creeremo uno schema per i dati fedeltà di Luma.
 
 ### Aggiungi gruppi di campi standard
 
-Una volta creato lo schema, verrai reindirizzato all’editor schema, dove potrai aggiungere campi allo schema. Puoi aggiungere campi singoli direttamente allo schema o utilizzare gruppi di campi. È importante notare che tutti i singoli campi sono ancora associati a una classe o a un gruppo di campi. Puoi scegliere tra un ampio set di gruppi di campi standard del settore forniti da Adobe o crearne di personalizzati. Quando inizi a modellare i tuoi dati in Experience Platform, è bene acquisire familiarità con i gruppi di campi standard di settore forniti da Adobe. Quando possibile, è consigliabile utilizzarli in quanto a volte forniscono servizi a valle, come IA per l’analisi dei clienti, Attribution AI e Adobe Analytics.
+Una volta creato lo schema, verrai reindirizzato all’editor schema, dove potrai aggiungere campi allo schema. Puoi aggiungere campi singoli direttamente allo schema o utilizzare gruppi di campi. È importante notare che tutti i singoli campi sono ancora associati a una classe o a un gruppo di campi. Puoi scegliere tra un ampio set di gruppi di campi standard del settore forniti da Adobe o crearne di personalizzati. Quando inizi a modellare i tuoi dati in Experience Platform, è bene acquisire familiarità con i gruppi di campi standard di settore forniti da Adobe. Quando possibile, è consigliabile utilizzarli in quanto a volte alimentano servizi a valle, come IA per l’analisi dei clienti, IA per l’attribuzione e Adobe Analytics.
 
 Quando lavori con i tuoi dati, un passaggio importante consisterà nel determinare quali dei tuoi dati devono essere acquisiti in Platform e come devono essere modellati. Questo argomento di grandi dimensioni viene discusso più approfonditamente nella playlist [Modellare i dati sull&#39;esperienza del cliente con XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm). In questa esercitazione, ti guiderò attraverso l&#39;implementazione di alcuni schemi predeterminati.
 
@@ -231,7 +231,7 @@ Innanzitutto creiamo lo schema vuoto:
 >
 > * Nessun token di autenticazione: esegui la richiesta **OAuth: Request Access Token** per generare un nuovo token
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: aggiorna la variabile di ambiente **CONTAINER_ID** da `global` a `tenant`
-> * `403: PALM Access Denied. POST access is denied for this resource from access control`: verificare le autorizzazioni utente nell&#39;Admin Console
+> * `403: PALM Access Denied. POST access is denied for this resource from access control`: verificare le autorizzazioni utente in Admin Console
 
 ### Aggiungi gruppi di campi standard
 
@@ -325,12 +325,12 @@ Ora creeremo un altro schema per i dati del sito web di Luma. A questo punto dov
 |---------------|-----------------|
 | Classe | Evento esperienza |
 | Nome schema | Schema eventi web Luma |
-| Gruppo di campi | ExperienceEvent di AEP Web SDK |
+| Gruppo di campi | AEP Web SDK ExperienceEvent |
 | Gruppo di campi | Evento esperienza del consumatore |
 
 Seleziona il gruppo di campi **[!UICONTROL Evento esperienza del consumatore]**. Questo gruppo di campi contiene gli oggetti commerce e productListItems presenti anche in [!UICONTROL Dettagli Commerce]. In effetti [!UICONTROL Consumer Experience Event] è una combinazione di diversi altri gruppi di campi standard disponibili separatamente. Il gruppo di campi [!UICONTROL ExperienceEvent] di AEP Web SDK contiene anche altri gruppi di campi, inclusi alcuni degli stessi in [!UICONTROL Evento esperienza del consumatore]. Fortunatamente, si fondono perfettamente.
 
-Non è stato aggiunto `Luma Identity ExperienceEvent field group` a questo schema. Questo perché l’SDK per web ha un modo diverso di raccogliere le identità. Se si seleziona la classe **[!UICONTROL XDM ExperienceEvent]** nella sezione **[!UICONTROL Composition]** dell&#39;editor schema, si noterà che uno dei campi aggiunti per impostazione predefinita è denominato **[!UICONTROL IdentityMap]**. [!DNL IdentityMap] viene utilizzato da varie applicazioni Adobe per il collegamento a Platform. Nella lezione di acquisizione in streaming, vedrai come le identità vengono inviate a Platform tramite identityMap.
+Non è stato aggiunto `Luma Identity ExperienceEvent field group` a questo schema. Questo perché il Web SDK ha un modo diverso di raccogliere le identità. Se si seleziona la classe **[!UICONTROL XDM ExperienceEvent]** nella sezione **[!UICONTROL Composition]** dell&#39;editor schema, si noterà che uno dei campi aggiunti per impostazione predefinita è denominato **[!UICONTROL IdentityMap]**. [!DNL IdentityMap] viene utilizzato da varie applicazioni Adobe per il collegamento a Platform. Nella lezione di acquisizione in streaming, vedrai come le identità vengono inviate a Platform tramite identityMap.
 
 
 ## Crea schema catalogo prodotti
@@ -339,7 +339,7 @@ Utilizzando i gruppi di campi [!UICONTROL Dettagli Commerce] e [!UICONTROL Event
 
 >[!NOTE]
 >
->Se sei un cliente Analytics o Target esistente, la classificazione delle entità con relazioni di schema è analoga alla classificazione SAINT o al caricamento del catalogo prodotti per Recommendations
+>Se sei un cliente Analytics o Target esistente, la classificazione delle entità con relazioni di schema è analoga alla classificazione di SAINT o al caricamento del catalogo prodotti per la funzione Consigli
 
 Innanzitutto, devi creare uno schema per il catalogo prodotti di Luma utilizzando una classe personalizzata:
 

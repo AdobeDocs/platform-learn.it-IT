@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 feature-set: Customer Journey Analytics
 feature: Connections, Data Views, Workspace Basics, Calculated Metrics, Visualizations, Audiences
 exl-id: cd4b423c-cd0b-44cf-8ac7-23c25876457c
-source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 1%
@@ -18,21 +18,21 @@ ht-degree: 1%
 
 # 4. Analisi del Percorso di clienti
 
-In questo flusso di utenti, avrai un’esperienza pratica con l’applicazione di Customer Journey Analytics.
+In questo flusso di utenti, avrai un’esperienza pratica con l’applicazione Customer Journey Analytics.
 
-Customer Journey Analytics fornisce un toolkit ai team di business intelligence e di data science per l’unione e l’analisi dei dati cross-channel (online e offline). Le funzionalità all&#39;interno del Customer Journey Analytics forniscono contesto e chiarezza ai complessi percorsi di clienti multicanale. Il contesto fornito genera informazioni utili su come rimuovere i punti critici dal processo di conversione del cliente e fornire esperienze positive nei momenti più importanti.
+Customer Journey Analytics fornisce un toolkit ai team di business intelligence e di data science per l’unione e l’analisi dei dati cross-channel (online e offline). Le funzionalità di Customer Journey Analytics forniscono contesto e chiarezza ai complessi percorsi di clienti multicanale. Il contesto fornito genera informazioni utili su come rimuovere i punti critici dal processo di conversione del cliente e fornire esperienze positive nei momenti più importanti.
 
 Dai un&#39;occhiata a questo video per comprendere il valore, il percorso del cliente e la procedura di configurazione:
 
->[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on&enablevpops)
 
-Ulteriori informazioni sul Customer Journey Analytics sono disponibili [qui](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
+Ulteriori informazioni su Customer Journey Analytics sono disponibili [qui](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
 
 ## Finalità di apprendimento
 
-- Acquisisci familiarità con l’interfaccia utente del Customer Journey Analytics
-- Porta i set di dati di Adobe Experience Platform nel Customer Journey Analytics
-- Comprendere l’ID persona e l’unione dei dati nel Customer Journey Analytics
+- Acquisisci familiarità con l’interfaccia utente di Customer Journey Analytics
+- Inserire set di dati Adobe Experience Platform in Customer Journey Analytics
+- Comprendere l’ID persona e l’unione dei dati in Customer Journey Analytics
 - Comprendere i concetti di connessione dati e visualizzazione dati
 - Utilizzare Analysis Workspace con i set di dati di Adobe Experience Platform
 
@@ -40,11 +40,11 @@ Ulteriori informazioni sul Customer Journey Analytics sono disponibili [qui](htt
 
 - È preferibile acquisire familiarità con Analysis Workspace, ma non è necessario
 - Accesso a Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Accesso all&#39;applicazione di Customer Journey Analytics
+- Accesso all’applicazione Customer Journey Analytics
 
 >[!IMPORTANT]
 >
->Questo tutorial è stato creato per facilitare un particolare formato di bootcamp. Utilizza sistemi e account specifici a cui potresti non avere accesso. Anche senza accesso, pensiamo che si può ancora imparare molto leggendo attraverso questo contenuto molto dettagliato. Se sei un partecipante a uno dei campi di avvio e hai bisogno delle tue credenziali di accesso, contatta il tuo rappresentante di Adobe che ti fornirà le informazioni richieste.
+>Questo tutorial è stato creato per facilitare un particolare formato di bootcamp. Utilizza sistemi e account specifici a cui potresti non avere accesso. Anche senza accesso, pensiamo che si può ancora imparare molto leggendo attraverso questo contenuto molto dettagliato. Se sei un partecipante a uno dei campi di avvio e hai bisogno delle tue credenziali di accesso, contatta il tuo rappresentante Adobe che ti fornirà le informazioni richieste.
 
 ## Esercizi
 
@@ -52,21 +52,21 @@ Ulteriori informazioni sul Customer Journey Analytics sono disponibili [qui](htt
 
 Scopri tutto sui concetti di Customer Journey Analytics.
 
-[4.2 Collegare i set di dati Adobe Experience Platform nel Customer Journey Analytics](./ex2.md)
+[4.2 Collegare i set di dati di Adobe Experience Platform in Customer Journey Analytics](./ex2.md)
 
-Scopri come utilizzare più set di dati da Adobe Experience Platform al Customer Journey Analytics.
+Scopri come utilizzare più set di dati da Adobe Experience Platform a Customer Journey Analytics.
 
 [4.3 Creare una visualizzazione dati](./ex3.md)
 
-Scopri come configurare una visualizzazione dati nel Customer Journey Analytics.
+Scopri come configurare una visualizzazione dati in Customer Journey Analytics.
 
-[4.4 Preparazione dei dati nel Customer Journey Analytics](./ex4.md)
+[4.4 Preparazione dei dati in Customer Journey Analytics](./ex4.md)
 
 Scopri come eseguire una preparazione dei dati prima di continuare con l’analisi.
 
-[4.5 Visualizzazione tramite Customer Journey Analytics](./ex5.md)
+[4.5 Visualizzazione con Customer Journey Analytics](./ex5.md)
 
-Scopri come visualizzare i dati di Adobe Experience Platform utilizzando il Customer Journey Analytics.
+Scopri come visualizzare i dati di Adobe Experience Platform utilizzando Customer Journey Analytics.
 
 [4.6 Da informazioni approfondite ad azioni](./ex6.md)
 

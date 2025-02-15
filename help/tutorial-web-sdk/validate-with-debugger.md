@@ -1,17 +1,17 @@
 ---
-title: Convalidare le implementazioni Web SDK con Experience Platform Debugger
-description: Scopri come convalidare l’implementazione di Platform Web SDK con l’Adobe Experience Platform Debugger. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
+title: Convalidare le implementazioni di Web SDK con Experience Platform Debugger
+description: Scopri come convalidare l’implementazione di Platform Web SDK con Adobe Experience Platform Debugger. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '1172'
 ht-degree: 3%
 
 ---
 
-# Convalidare le implementazioni Web SDK con Experience Platform Debugger
+# Convalidare le implementazioni di Web SDK con Experience Platform Debugger
 
 Scopri come convalidare l’implementazione di Adobe Experience Platform Web SDK con Adobe Experience Platform Debugger.
 
@@ -22,9 +22,9 @@ Experience Platform Debugger è un’estensione disponibile per i browser Chrome
 
 Se non hai mai utilizzato il debugger in precedenza, guarda questo video introduttivo di cinque minuti:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
-In questa lezione, utilizzi l&#39;[estensione Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) per sostituire la proprietà di tag di codifica fissa nel [sito demo Luma](https://luma.enablementadobe.com/content/luma/us/en.html) con la tua proprietà.
+In questa lezione, utilizzi l&#39;estensione [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) per sostituire la proprietà di tag di codifica fissa nel [sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html) con la tua proprietà.
 
 Questa tecnica è denominata cambio di ambiente e sarà utile in un secondo momento, quando lavorerai con i tag sul tuo sito web. Ti consente di caricare il tuo sito Web di produzione nel browser, ma con la libreria di tag *sviluppo*. Questa funzionalità ti consente di creare e convalidare le modifiche ai tag in modo indipendente dalle regolari versioni del codice. Dopo tutto, questa separazione tra versioni di tag di marketing e versioni di codice è uno dei motivi principali per cui i clienti utilizzano i tag.
 
@@ -33,8 +33,8 @@ Questa tecnica è denominata cambio di ambiente e sarà utile in un secondo mome
 Alla fine di questa lezione, potrai utilizzare il debugger per:
 
 * Caricare una libreria di tag alternativa
-* Verifica che l’evento XDM lato client acquisisca e invii i dati come previsto all’Edge Network di Platform
-* Abilita Edge Trace per visualizzare le richieste lato server inviate dall’Edge Network di Platform
+* Verificare che l’evento XDM lato client acquisisca e invii i dati come previsto a Platform Edge Network
+* Abilita Edge Trace per visualizzare le richieste lato server inviate da Platform Edge Network
 
 ## Prerequisiti
 
@@ -55,8 +55,8 @@ Experience Platform Debugger dispone di una funzione interessante che consente d
 1. Assicurati che il [sito Web di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} sia aperto e seleziona l&#39;icona dell&#39;estensione Experience Platform Debugger
 1. Verrà aperto Debugger e verranno visualizzati alcuni dettagli dell’implementazione hardcoded (potrebbe essere necessario ricaricare il sito Luma dopo aver aperto Debugger)
 1. Verifica che il debugger sia &quot;**[!UICONTROL connesso a Luma]**&quot; come illustrato di seguito, quindi seleziona l&#39;icona &quot;**[!UICONTROL blocca]**&quot; per bloccare il debugger sul sito Luma.
-1. Seleziona il pulsante **[!UICONTROL Accedi]** e accedi a Adobe Experience Cloud utilizzando il tuo ID Adobe.
-1. Ora vai a **[!UICONTROL Tag di Experience Platform]** nel menu di navigazione a sinistra
+1. Seleziona il pulsante **[!UICONTROL Accedi]** e accedi a Adobe Experience Cloud con il tuo Adobe ID.
+1. Vai a **[!UICONTROL Tag Experience Platform]** nella barra di navigazione a sinistra
 
    ![Schermata tag debugger](assets/validate-launch-screen.png)
 
@@ -75,17 +75,17 @@ Experience Platform Debugger dispone di una funzione interessante che consente d
 
    ![proprietà tag sostituita](assets/validate-switch-success.png)
 
-Continuando l’esercitazione, utilizzi questa tecnica per mappare il sito Luma sulla tua proprietà tag per convalidare l’implementazione dell’SDK web per Platform. Quando utilizzi i tag sul tuo sito web, puoi usare questa stessa tecnica per convalidare le librerie di tag di sviluppo sul sito web di produzione.
+Continuando l’esercitazione, utilizzi questa tecnica per mappare il sito Luma sulla tua proprietà tag per convalidare l’implementazione di Platform Web SDK. Quando utilizzi i tag sul tuo sito web, puoi usare questa stessa tecnica per convalidare le librerie di tag di sviluppo sul sito web di produzione.
 
 ## Convalidare richieste di rete lato client con Experience Platform Debugger
 
-Puoi utilizzare il debugger per convalidare i beacon lato client attivati dall’implementazione di Platform Web SDK per visualizzare i dati inviati a Platform, ad Edge Network:
+Puoi utilizzare il debugger per convalidare i beacon lato client attivati dall’implementazione di Platform Web SDK per visualizzare i dati inviati a Platform Edge Network:
 
 1. Vai a **[!UICONTROL Riepilogo]** nel menu di navigazione a sinistra per visualizzare i dettagli della proprietà tag
 
    ![Scheda Riepilogo](assets/validate-summary.png)
 
-1. Ora vai a **[!UICONTROL Experience Platform Web SDK]** nella barra di navigazione a sinistra per visualizzare le **[!UICONTROL richieste di rete]**
+1. Vai a **[!UICONTROL Experience Platform Web SDK]** nella barra di navigazione a sinistra per visualizzare le **[!UICONTROL richieste di rete]**
 1. Apri la riga **[!UICONTROL events]**
 
    ![Richiesta Adobe Experience Platform Web SDK](assets/validate-aep-screen.png)
@@ -114,14 +114,14 @@ Puoi anche convalidare i dettagli di Identity Map:
 
 1. Apri la sezione **[!UICONTROL Experience Platform Web SDK]** nel menu di navigazione a sinistra
 
-   ![SDK Web nel debugger](assets/identity-debugger-websdk-dark.png)
+   ![Web SDK nel debugger](assets/identity-debugger-websdk-dark.png)
 
 1. Seleziona la riga **[!UICONTROL events]** per aprire i dettagli in un popup
 
-   ![SDK Web nel debugger](assets/identity-deugger-websdk-event-dark.png)
+   ![Web SDK nel debugger](assets/identity-deugger-websdk-event-dark.png)
 
 1. Cerca **identityMap** all&#39;interno del pop-up. Qui dovresti vedere `lumaCrmId` con tre chiavi di authenticatedState, id e primary:
-   ![SDK Web nel debugger](assets/identity-deugger-websdk-event-lumaCrmId-dark.png)
+   ![Web SDK nel debugger](assets/identity-deugger-websdk-event-lumaCrmId-dark.png)
 
 ### Convalidare le richieste lato client con gli strumenti di sviluppo del browser
 
@@ -141,7 +141,7 @@ Questi tipi di dettagli della richiesta sono visibili anche nella scheda Strumen
 
 ## Convalidare le richieste di rete lato server con Experience Platform Debugger
 
-Come hai appreso nella lezione [Configurare uno stream di dati](configure-datastream.md), Platform Web SDK invia prima i dati dalla proprietà digitale all&#39;Edge Network di Platform. Quindi, l’Edge Network di Platform effettua richieste aggiuntive lato server ai servizi corrispondenti abilitati nello stream di dati. Puoi convalidare le richieste lato server effettuate dall’Edge Network di Platform utilizzando Edge Trace nel debugger.
+Come hai appreso nella lezione [Configurare uno stream di dati](configure-datastream.md), Platform Web SDK invia prima i dati dalla proprietà digitale a Platform Edge Network. Quindi, Platform Edge Network effettua richieste aggiuntive lato server ai servizi corrispondenti abilitati nello stream di dati. Puoi convalidare le richieste lato server effettuate da Platform Edge Network utilizzando Edge Trace nel debugger.
 
 <!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
@@ -163,10 +163,10 @@ Per abilitare Edge Trace:
 
    ![Beacon di Analytics Edge Trace](assets/validate-edge-trace.png)
 
-A questo punto, non è possibile visualizzare le richieste di Edge Network di Platform indirizzate alle applicazioni di Adobe, perché non ne hai abilitate alcuna nello stream di dati. Nelle lezioni future, utilizzi Edge Trace per visualizzare le richieste lato server in uscita per le applicazioni Adobe e l’inoltro di eventi. Ma prima di tutto, scopri un altro strumento per convalidare le richieste lato server effettuate da Edge Network di Platform: Adobe Experience Platform Assurance.
+A questo punto, non è possibile visualizzare le richieste di Platform Edge Network indirizzate alle applicazioni Adobe, perché non ne hai abilitato alcuna nello stream di dati. Nelle lezioni future, utilizzi Edge Trace per visualizzare le richieste lato server in uscita alle applicazioni Adobe e l’inoltro di eventi. Ma prima, scopri un altro strumento per convalidare le richieste lato server effettuate da Platform Edge Network: Adobe Experience Platform Assurance.
 
 [Successivo: ](validate-with-assurance.md)
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [Experience League post di discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 6%
@@ -26,7 +26,7 @@ Il servizio Adobe Experience Platform Identity consente di ottenere una visione 
 **Gli architetti di dati** dovranno mappare le identità all&#39;esterno di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sull’identità in Adobe Experience Platform:
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Ripeti il processo per alcuni degli altri schemi:
 
 >[!NOTE]
 >
->I dati raccolti con l’SDK per web costituiscono un’eccezione alla tipica pratica di etichettare i campi di identità nello schema. Web SDK utilizza Identity Map per etichettare le identità *sul lato dell’implementazione*. Pertanto, determineremo le identità per `Luma Web Events Schema` quando implementeremo Web SDK sul sito Web Luma. In questa lezione successiva, raccoglieremo l’ID visitatore Experience Cloud (ECID) come ID primario e crmId come ID secondario.
+>I dati raccolti con il Web SDK sono un’eccezione alla pratica tipica di etichettare i campi di identità nello schema. Web SDK utilizza Identity Map per etichettare le identità *sul lato dell&#39;implementazione*. Pertanto, determineremo le identità per `Luma Web Events Schema` quando implementeremo Web SDK sul sito Web Luma. In questa lezione successiva, raccoglieremo l’ID visitatore di Experience Cloud (ECID) come ID primario e il crmId come ID secondario.
 
 Con la selezione delle identità primarie da parte nostra, è chiaro come `Luma CRM Schema` può connettersi a `Luma Offline Purchase Events Schema` poiché entrambi utilizzano `loyaltyId` come identificatore. Ma come possiamo collegare i nostri acquisti offline al comportamento online? Come possiamo classificare i prodotti acquistati con il nostro catalogo di prodotti? Utilizzeremo campi di identità e relazioni di schema aggiuntivi.
 

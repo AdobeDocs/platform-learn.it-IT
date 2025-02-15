@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 feature-set: Customer Journey Analytics
 feature: Workspace Basics, Calculated Metrics
 exl-id: d56128af-dd1e-47ea-922f-85418e9da687
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 0%
@@ -30,11 +30,11 @@ O Analysis Workspace rimuovere todas come limitações típicas de um único rel
 
 O Customer Journey Analytics traz essa solução além dos dados da plataforma. É comendável assistir a este vídeo de visão geral de quatro minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on&enablevpops)
 
 Se você nunca usou o Analysis Workspace antes, consiglio:
 
->[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on&enablevpops)
 
 ### Crie Seu Projeto
 
@@ -129,7 +129,7 @@ Não se esqueça de **Salvar** a Métrica calculada.
 
 ### Filtros: Calcoli di Dimensões
 
-Cálculos não devem ser apenas para métricas. Antes de iniciar qualquer análise, também é interessante algume criar **Dimension calcolati**. Isso, essencialmente, **segmenti** su Adobe Analytics. Nessun Customer Journey Analytics, ses segmentos são chamados de **Filters**.
+Cálculos não devem ser apenas para métricas. Antes de iniciar qualquer análise, também é interessante algume criar **Dimensioni calcolate**. Isso, essencialmente, **segmenti** su Adobe Analytics. Nessun Customer Journey Analytics, ses segmentos são chamados de **Filtri**.
 
 ![demo](./images/prfilters.png)
 
@@ -155,7 +155,7 @@ Essas Dimensões de tempo calculado ajudarão analistas e usuários de negócios
 
 Agora você conclusiu o exercício de preparação de dados o Analysis Workspace do CJA.
 
-Próxima etapa: [4,5 Visualização Customer Journey Analytics di](./ex5.md)
+Próxima etapa: [4,5 Visualização Customer Journey Analytics](./ex5.md)
 
 [Retornar para Fluxo de Usuário 4](./uc4.md)
 

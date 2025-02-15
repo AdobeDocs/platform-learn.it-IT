@@ -8,7 +8,7 @@ level: Intermediate
 jira: KT-6624
 thumbnail: 328175.jpg
 exl-id: fda985ad-5d56-4e61-871f-2f29a2e79b17
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # Configurazione delle destinazioni [!UICONTROL cloud storage] o [!UICONTROL email marketing] basate su file
 
-Ottieni suggerimenti durante la procedura dettagliata sulla configurazione di una destinazione basata su file nel Real-time Customer Data Platform (CDP) di Adobe. Questo vale per [!UICONTROL destinazioni archiviazione cloud] (ad esempio S3 o SFTP) e anche per [!UICONTROL destinazioni e-mail marketing]. Per la documentazione più dettagliata del prodotto, consulta:
+Ottieni suggerimenti durante la procedura dettagliata sulla configurazione di una destinazione basata su file nel Real-Time Customer Data Platform (CDP) di Adobe. Questo vale per [!UICONTROL destinazioni archiviazione cloud] (ad esempio S3 o SFTP) e anche per [!UICONTROL destinazioni e-mail marketing]. Per la documentazione più dettagliata del prodotto, consulta:
 
 * [Attiva i dati del pubblico nelle destinazioni di esportazione del profilo batch](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html) per istruzioni su come attivare i dati nelle destinazioni di marketing batch o e-mail tramite l&#39;interfaccia utente di Experience Platform
 * [Connettiti a destinazioni batch e attiva i dati utilizzando l&#39;API del servizio Flusso](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html) per istruzioni su come attivare i dati a destinazioni di marketing batch o e-mail utilizzando l&#39;API del servizio Flusso
 
->[!VIDEO](https://video.tv.adobe.com/v/328175/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328175/?learn=on&enablevpops)

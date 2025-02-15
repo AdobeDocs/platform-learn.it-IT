@@ -8,7 +8,7 @@ duration: 807
 last-substantial-update: 2024-03-06T00:00:00Z
 jira: KT-14949
 exl-id: 7a6de70c-adb5-442c-9270-ee0fee38721c
-source-git-commit: eae0910e2475ce20f7afd289005b6a8869eaa210
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 36%
@@ -19,4 +19,4 @@ ht-degree: 36%
 
 Scopri come impilare le regole di una proprietà tag. Lo stacking delle regole utilizza la funzione `order` negli eventi delle regole di tag per sequenziare le regole in modo da poter gestire implementazioni di tag scalabili. Imposta alcune variabili in una regola globale, aggiungi e sovrascrivi le variabili in una regola specifica per la pagina, quindi invia i dati all’applicazione di marketing desiderata. Per ulteriori informazioni sull&#39;ordinamento delle regole, consulta la documentazione [rules](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html#rule-ordering).
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)

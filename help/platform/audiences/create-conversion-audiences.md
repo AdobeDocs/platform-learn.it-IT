@@ -7,7 +7,7 @@ level: Intermediate
 jira: KT-7890
 thumbnail: 333303.jpg
 exl-id: 5a4e4cce-5371-4731-978e-2ace22fb4551
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 0%
@@ -22,5 +22,5 @@ In questo video, scopri come utilizzare il generatore di regole per il pubblico 
 >
 > &quot;[!UICONTROL I segmenti]&quot; sono stati rinominati &quot;[!UICONTROL Tipi di pubblico]&quot; nell&#39;interfaccia di Platform. Seleziona **[!UICONTROL Crea pubblico]** > **[!UICONTROL Genera regola]** per accedere al generatore di regole visualizzato in questo video.
 
->[!VIDEO](https://video.tv.adobe.com/v/333303/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333303/?learn=on&enablevpops)
 

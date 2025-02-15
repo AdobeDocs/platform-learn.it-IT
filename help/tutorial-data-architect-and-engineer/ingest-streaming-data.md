@@ -2,13 +2,13 @@
 title: Acquisire dati in streaming
 seo-title: Ingest streaming data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Acquisire dati in streaming
-description: In questa lezione, trasmetterai i dati in Experience Platform utilizzando l’SDK per web.
+description: In questa lezione, invierai dati in streaming ad Experience Platform utilizzando il Web SDK.
 role: Data Engineer
 feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '3309'
 ht-degree: 0%
@@ -19,25 +19,25 @@ ht-degree: 0%
 
 <!--1hr-->
 
-In questa lezione, i dati verranno trasmessi in streaming utilizzando Adobe Experience Platform Web SDK.
+In questa lezione verrà illustrato lo streaming dei dati tramite Adobe Experience Platform Web SDK.
 
 Nell’interfaccia di Data Collection è necessario completare due attività principali:
 
-* Dobbiamo implementare Web SDK sul sito web Luma per inviare i dati sull’attività del visitatore dal sito web alla rete Adobe Edge. Verrà eseguita una semplice implementazione utilizzando i tag (precedentemente Launch)
+* Dobbiamo implementare Web SDK sul sito web Luma per inviare i dati sull’attività del visitatore dal sito web alla rete Edge di Adobe. Verrà eseguita una semplice implementazione utilizzando i tag (precedentemente Launch)
 
 * Dobbiamo configurare un flusso di dati che indichi alla rete Edge dove inoltrare i dati. Verrà configurato per inviare i dati al set di dati `Luma Web Events` nella sandbox di Platform.
 
 **I Data Engineer** dovranno acquisire i dati in streaming all&#39;esterno di questa esercitazione. Quando si implementano gli SDK per web o dispositivi mobili di Adobe Experience Platform, in genere uno sviluppatore web o mobile è coinvolto nella creazione del livello dati e nella configurazione delle proprietà dei tag.
 
-Prima di iniziare gli esercizi, guarda questi due brevi video per ulteriori informazioni sull’acquisizione di dati in streaming e Web SDK:
+Prima di iniziare gli esercizi, guarda questi due brevi video per ulteriori informazioni sull’acquisizione di dati in streaming e sul Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
->Questo tutorial è incentrato sull&#39;acquisizione in streaming da siti web con Web SDK, ma puoi anche eseguire lo streaming dei dati utilizzando [Adobe Mobile SDK](https://developer.adobe.com/client-sdks/documentation/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect) e altri meccanismi.
+>Questo tutorial è incentrato sull&#39;acquisizione in streaming da siti Web con Web SDK, ma puoi anche eseguire lo streaming dei dati utilizzando [Adobe Mobile SDK](https://developer.adobe.com/client-sdks/documentation/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect) e altri meccanismi.
 
 ## Autorizzazioni richieste
 
@@ -78,7 +78,7 @@ Nella lezione [Configurare le autorizzazioni](configure-permissions.md) è possi
 
 ## Configurare lo stream di dati
 
-Innanzitutto configureremo lo stream di dati. Un flusso di dati indica alla rete Adobe Edge dove inviare i dati dopo averli ricevuti dalla chiamata SDK web. Inviare i dati ad Experience Platform, Adobe Analytics o Adobe Target? Gli stream di dati vengono gestiti nell’interfaccia utente di Data Collection (precedentemente Launch) e sono fondamentali per la raccolta dei dati con Web SDK.
+Innanzitutto configureremo lo stream di dati. Un flusso di dati indica alla rete Edge di Adobe dove inviare i dati dopo averli ricevuti dalla chiamata al Web SDK. Ad esempio, desideri inviare i dati ad Experience Platform, Adobe Analytics o Adobe Target? Gli stream di dati vengono gestiti nell’interfaccia utente di Data Collection (precedentemente Launch) e sono fondamentali per la raccolta dei dati con Web SDK.
 
 Per creare il [!UICONTROL flusso di dati]:
 
@@ -101,7 +101,7 @@ Nella schermata successiva, specifica dove desideri inviare i dati. Per inviare 
 1. Attiva **[!UICONTROL Adobe Experience Platform]** per esporre campi aggiuntivi
 1. Per **[!UICONTROL Sandbox]**, seleziona `Luma Tutorial`
 1. Per **[!UICONTROL Set di dati evento]**, selezionare `Luma Web Events Dataset`
-1. Se utilizzi altre applicazioni Adobe, puoi esplorare le altre sezioni per vedere quali informazioni sono necessarie nella configurazione Edge di queste altre soluzioni. L’SDK per web è stato sviluppato non solo per inviare dati in streaming a Experience Platform, ma anche per sostituire tutte le librerie JavaScript precedenti utilizzate da altre applicazioni Adobe. La configurazione di Edge viene utilizzata per specificare i dettagli dell’account di ogni applicazione a cui si desidera inviare i dati.
+1. Se utilizzi altre applicazioni Adobe, puoi esplorare le altre sezioni per vedere quali informazioni sono necessarie nella configurazione Edge di queste altre soluzioni. Il Web SDK è stato sviluppato non solo per inviare dati in streaming ad Experience Platform, ma anche per sostituire tutte le precedenti librerie JavaScript utilizzate da altre applicazioni Adobe. La configurazione di Edge viene utilizzata per specificare i dettagli dell’account di ogni applicazione a cui si desidera inviare i dati.
 1. Seleziona **[!UICONTROL Salva]**
    ![Configura lo stream di dati e salva](assets/websdk-edgeConfig-addEnvironment.png)
 
@@ -147,9 +147,9 @@ Now switch back to your browser tab with the Data Collection interface still ope
 ![Luma Platform Tutorial should appear](assets/websdk-property-showsInList.png)
 -->
 
-## Aggiungere l’estensione Web SDK
+## Aggiungere l&#39;estensione Web SDK
 
-Ora che disponi di una proprietà puoi aggiungere l’SDK web utilizzando un’estensione. Un’estensione è un pacchetto di codice che estende l’interfaccia e la funzionalità di Data Collection. Per aggiungere l&#39;estensione:
+Ora che disponi di una proprietà puoi aggiungere il Web SDK utilizzando un’estensione. Un’estensione è un pacchetto di codice che estende l’interfaccia e la funzionalità di Data Collection. Per aggiungere l&#39;estensione:
 
 1. Apri la proprietà tag
 1. Vai a **[!UICONTROL Estensioni]** nel menu di navigazione a sinistra
@@ -157,9 +157,9 @@ Ora che disponi di una proprietà puoi aggiungere l’SDK web utilizzando un’e
 1. Sono disponibili molte estensioni per i tag. Filtra il catalogo con il termine `Web SDK`
 1. Nell&#39;estensione **[!UICONTROL Adobe Experience Platform Web SDK]**, selezionare il pulsante **[!UICONTROL Installa]**
    ![Installare l&#39;estensione Adobe Experience Platform Web SDK](assets/websdk-property-addExtension.png)
-1. Sono disponibili diverse configurazioni per l’estensione Web SDK, ma ne verranno configurate solo due per questa esercitazione. Aggiorna il dominio **[!UICONTROL Edge]** in `data.enablementadobe.com`. Questa impostazione ti consente di impostare i cookie di prime parti con l’implementazione dell’SDK web, il che è consigliato. Più avanti in questa lezione verrà mappato un sito Web del dominio `enablementadobe.com` alla proprietà tag. Il CNAME per il dominio `enablementadobe.com` è già stato configurato in modo che `data.enablementadobe.com` venga inoltrato ai server Adobe. Quando implementi Web SDK sul tuo sito Web, dovrai creare un CNAME per le tue finalità di raccolta dati, ad esempio `data.YOUR_DOMAIN.com`
+1. Sono disponibili diverse configurazioni per l’estensione Web SDK, ma ne verranno configurate solo due per questa esercitazione. Aggiorna il dominio **[!UICONTROL Edge]** in `data.enablementadobe.com`. Questa impostazione ti consente di impostare cookie di prime parti con l’implementazione di Web SDK, il che è consigliato. Più avanti in questa lezione verrà mappato un sito Web del dominio `enablementadobe.com` alla proprietà tag. Il CNAME per il dominio `enablementadobe.com` è già stato configurato in modo che `data.enablementadobe.com` venga inoltrato ai server Adobe. Quando si implementa Web SDK sul proprio sito Web, sarà necessario creare un CNAME per le proprie finalità di raccolta dati, ad esempio `data.YOUR_DOMAIN.com`
 1. Dal menu a discesa **[!UICONTROL Datastream]**, seleziona il tuo `Luma Platform Tutorial` datastream.
-1. Puoi esaminare le altre opzioni di configurazione (ma non modificarle!) e quindi seleziona **[!UICONTROL Salva]**
+1. Puoi esaminare le altre opzioni di configurazione (ma non modificarle!), quindi seleziona **[!UICONTROL Salva]**
    <!--is edge domain required for first party? when will it break?-->
    <!--any other fields that should be highlighted-->
    ![](assets/websdk-property-configureExtension.png)
@@ -188,7 +188,7 @@ Ora creeremo una regola per inviare dati a Platform. Una regola è una combinazi
 1. Seleziona **[!UICONTROL Salva]** per salvare la regola\
    ![Salva la regola](assets/websdk-property-saveRule.png)
 
-## Publish la regola in una libreria
+## Pubblicare la regola in una libreria
 
 Ora pubblicheremo la regola nel nostro ambiente di sviluppo in modo da poter verificare che funzioni.
 
@@ -246,7 +246,7 @@ Come puoi vedere nella schermata [!UICONTROL Flusso di pubblicazione], il proces
 
 ## Convalidare i dati nella richiesta
 
-### Aggiungi l’Adobe Experience Platform Debugger
+### Aggiungere Adobe Experience Platform Debugger
 
 Experience Platform Debugger è un’estensione disponibile per i browser Chrome e Firefox che consente di visualizzare la tecnologia Adobe implementata nelle pagine web. Scarica la versione per il browser preferito:
 
@@ -255,7 +255,7 @@ Experience Platform Debugger è un’estensione disponibile per i browser Chrome
 
 Se non hai mai utilizzato il debugger prima, e questo è diverso dal precedente Adobe Experience Cloud Debugger, potresti voler guardare questo video di panoramica di cinque minuti:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Apri il sito web Luma.
 
@@ -264,7 +264,7 @@ Per questo tutorial, utilizziamo una versione del sito web demo Luma in hosting 
 1. In una nuova scheda del browser, apri il [sito Web Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 1. Aggiungi ai segnalibri la pagina da utilizzare nel resto dell’esercitazione
 
-Per questo sito in hosting abbiamo utilizzato `enablementadobe.com` nel campo [!UICONTROL Domains] della configurazione iniziale della proprietà tag e `data.enablementadobe.com` come dominio di prime parti nell&#39;estensione [!UICONTROL Adobe Experience Platform Web SDK]. Vedi, avevo un piano!
+Per questo sito in hosting abbiamo utilizzato `enablementadobe.com` nel campo [!UICONTROL Domini] della configurazione iniziale della proprietà tag e `data.enablementadobe.com` come dominio di prime parti nell&#39;estensione [!UICONTROL Adobe Experience Platform Web SDK]. Vedi, avevo un piano!
 
 ![Home page Luma](assets/websdk-luma-homepage.png)
 
@@ -343,7 +343,7 @@ Puoi anche verificare che il nuovo profilo sia visualizzato:
 
 ### Mappare il nome della pagina all’elemento dati Oggetto XDM
 
-Ora mapperemo il nome della nostra pagina all’SDK per web.
+Ora mapperemo il nome della nostra pagina al Web SDK.
 
 >[!IMPORTANT]
 >
@@ -389,9 +389,9 @@ Puoi anche verificare che i dati del nome della pagina siano stati ricevuti in P
 
 ## Invia identità aggiuntive
 
-L’implementazione dell’SDK per web sta ora inviando eventi con l’ID Experience Cloud (ECID) come identificatore primario. L’ECID viene generato automaticamente dall’SDK per web ed è univoco per dispositivo e browser. Un singolo cliente può avere più ECID a seconda del dispositivo e del browser in uso. Come possiamo ottenere una visione unificata di questo cliente e collegare la sua attività online ai nostri dati di gestione delle relazioni con i clienti, fedeltà e acquisto offline? Lo facciamo raccogliendo identità aggiuntive durante la loro sessione e collegando in modo deterministico il loro profilo tramite l’unione di identità.
+L’implementazione del Web SDK sta ora inviando eventi con Experience Cloud ID (ECID) come identificatore primario. L’ECID viene generato automaticamente dal Web SDK ed è univoco per dispositivo e browser. Un singolo cliente può avere più ECID a seconda del dispositivo e del browser in uso. Come possiamo ottenere una visione unificata di questo cliente e collegare la sua attività online ai nostri dati di gestione delle relazioni con i clienti, fedeltà e acquisto offline? Lo facciamo raccogliendo identità aggiuntive durante la loro sessione e collegando in modo deterministico il loro profilo tramite l’unione di identità.
 
-Se ricordi, ho detto che avremmo utilizzato l&#39;ECID e l&#39;ID del sistema di gestione delle relazioni con i clienti come identità per i nostri dati web nella lezione [Mappa identità](map-identities.md). Quindi raccogliamo l’ID del sistema di gestione delle relazioni con i clienti con l’SDK per web!
+Se ricordi, ho detto che avremmo utilizzato l&#39;ECID e l&#39;ID del sistema di gestione delle relazioni con i clienti come identità per i nostri dati web nella lezione [Mappa identità](map-identities.md). Quindi raccogliamo l’ID del sistema di gestione delle relazioni con i clienti con il Web SDK!
 
 ### Aggiungi elemento dati per l’ID CRM
 
@@ -414,7 +414,7 @@ Dopo aver acquisito il valore ID CRM, è necessario associarlo a un tipo di elem
 
    >[!WARNING]
    >
-   >La versione 2.2 dell’estensione Adobe Experience Platform Web SDK consente di selezionare Spazio dei nomi da un elenco a discesa precompilato utilizzando i valori effettivi nell’account Platform. Sfortunatamente, questa funzione non è ancora in grado di riconoscere la sandbox e pertanto il valore `Luma CRM Id` potrebbe non essere visualizzato nel menu a discesa. Questo potrebbe impedirti di completare questo esercizio. Una volta confermata, verrà pubblicata una soluzione alternativa.
+   >La versione 2.2 dell’estensione Adobe Experience Platform Web SDK consente di selezionare Namespace da un elenco a discesa precompilato utilizzando i valori effettivi nell’account Platform. Sfortunatamente, questa funzione non è ancora in grado di riconoscere la sandbox e pertanto il valore `Luma CRM Id` potrebbe non essere visualizzato nel menu a discesa. Questo potrebbe impedirti di completare questo esercizio. Una volta confermata, verrà pubblicata una soluzione alternativa.
 
 1. Come **[!UICONTROL ID]**, seleziona l&#39;icona per aprire la selezione modale dell&#39;elemento dati e scegli l&#39;elemento dati `CRM Id`
 1. Come **[!UICONTROL Stato autenticato]**, selezionare **[!UICONTROL Stato autenticato]**
@@ -439,13 +439,13 @@ Dopo aver acquisito il valore ID CRM, è necessario associarlo a un tipo di elem
 
 ### Convalidare l’identità
 
-Per verificare che l’ID del sistema di gestione delle relazioni con i clienti sia ora inviato dall’SDK Web:
+Per verificare che l’ID del sistema di gestione delle relazioni con i clienti sia ora inviato dal Web SDK:
 
 1. Apri il [sito Web Luma](https://luma.enablementadobe.com/content/luma/us/en.html)
 1. Mappare il file alla proprietà tag utilizzando Debugger, come indicato nelle istruzioni precedenti
 1. Seleziona il collegamento **Accesso** in alto a destra nel sito Web Luma
 1. Accedi utilizzando le credenziali `test@adobe.com`/`test`
-1. Una volta autenticata, esamina la chiamata Experience Platform Web SDK nel debugger (**[!UICONTROL Adobe Experience Platform Web SDK]** > **[!UICONTROL Richieste di rete]** > **[!UICONTROL eventi]** della richiesta più recente) e dovresti visualizzare `lumaCrmId`:
+1. Dopo l&#39;autenticazione, esaminare la chiamata di Experience Platform Web SDK nel debugger (**[!UICONTROL Adobe Experience Platform Web SDK]** > **[!UICONTROL Richieste di rete]** > **[!UICONTROL eventi]** della richiesta più recente) e visualizzare `lumaCrmId`:
    ![Convalidare l&#39;identità nel debugger](assets/websdk-debugger-confirmIdentity.png)
 1. Cerca di nuovo il profilo utente utilizzando lo spazio dei nomi e il valore ECID. Nel profilo troverai l’ID del sistema di gestione delle relazioni con i clienti, l’ID fedeltà e i dettagli del profilo, come il nome e il numero di telefono. Tutte le identità e i dati sono stati uniti in un unico profilo cliente in tempo reale.
    ![Convalida identità in Platform](assets/websdk-platform-lumaCrmIdProfile.png)

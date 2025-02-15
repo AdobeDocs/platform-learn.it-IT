@@ -8,7 +8,7 @@ feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 1%
@@ -24,9 +24,9 @@ In questa lezione, applicherai il framework di governance dei dati ai dati acqui
 La governance dei dati di Adobe Experience Platform consente di gestire i dati dei clienti e di garantire la conformità alle normative, alle restrizioni e alle politiche applicabili all’utilizzo dei dati. Svolge un ruolo chiave all’interno di Experience Platform a vari livelli, incluso il controllo dell’utilizzo dei dati.
 
 Prima di iniziare gli esercizi, guarda questi brevi video sulla governance dei dati:
->[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
 
 <!--
 ## Permissions required
@@ -84,9 +84,9 @@ Puoi creare criteri personalizzati selezionando il pulsante **[!UICONTROL Crea c
 
 ## Applicazione dei criteri di governance
 
-L&#39;applicazione delle politiche di governance è ovviamente una componente chiave del quadro. L’applicazione avviene a valle quando i dati vengono attivati e inviati fuori da Platform, in particolare con Real-time Customer Data Platform, che è possibile concedere in licenza o meno. In entrambi i casi, non rientra nell’ambito di questa esercitazione. In questo video, che ho messo in coda per vedere la parte rilevante del video, puoi imparare di più su come vengono applicate le policy. Ti mostrerà anche cosa accade quando una policy viene violata.
+L&#39;applicazione delle politiche di governance è ovviamente una componente chiave del quadro. L’applicazione avviene a valle quando i dati vengono attivati e inviati fuori da Platform, in particolare con Real-Time Customer Data Platform, che è possibile concedere in licenza o meno. In entrambi i casi, non rientra nell’ambito di questa esercitazione. In questo video, che ho messo in coda per vedere la parte rilevante del video, puoi imparare di più su come vengono applicate le policy. Ti mostrerà anche cosa accade quando una policy viene violata.
 
->[!VIDEO](https://video.tv.adobe.com/v/33631/?t=151&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33631/?t=151&quality=12&learn=on&enablevpops)
 
 
 ## Risorse aggiuntive

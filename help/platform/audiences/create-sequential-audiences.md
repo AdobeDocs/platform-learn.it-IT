@@ -7,7 +7,7 @@ level: Intermediate
 jira: KT-7892
 thumbnail: 333305.jpg
 exl-id: b7b5111c-4e30-4a69-bde1-d75df03fbf86
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 0%
@@ -22,5 +22,5 @@ In questo video, scopri come aggiungere eventi di esperienza a una timeline del 
 >
 > &quot;[!UICONTROL I segmenti]&quot; sono stati rinominati &quot;[!UICONTROL Tipi di pubblico]&quot; nell&#39;interfaccia di Platform. Seleziona **[!UICONTROL Crea pubblico]** > **[!UICONTROL Genera regola]** per accedere al generatore di regole visualizzato in questo video.
 
->[!VIDEO](https://video.tv.adobe.com/v/333305/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333305/?learn=on&enablevpops)
 

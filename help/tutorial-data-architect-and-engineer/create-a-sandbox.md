@@ -8,7 +8,7 @@ feature: Sandboxes
 jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 2%
@@ -26,7 +26,7 @@ Le sandbox forniscono ambienti isolati in cui è possibile provare le funzionali
 **Gli architetti di dati** e **i data engineer** dovranno creare delle sandbox al di fuori di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sulle sandbox:
->[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)
 
 ## Autorizzazioni richieste
 

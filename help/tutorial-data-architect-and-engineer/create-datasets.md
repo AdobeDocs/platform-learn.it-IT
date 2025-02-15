@@ -8,7 +8,7 @@ feature: Data Management
 jira: KT-4348
 thumbnail: 4348-create-datasets.jpg
 exl-id: 80227af7-4976-4fd2-b1d4-b26bc4626fa0
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 6%
@@ -26,7 +26,7 @@ Tutti i dati acquisiti correttamente in Adobe Experience Platform vengono manten
 **Gli architetti di dati** dovranno creare set di dati all&#39;esterno di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sui set di dati:
->[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
 
 ## Autorizzazioni richieste
 
@@ -119,7 +119,7 @@ Ora puoi creare il set di dati:
 > * `400: There was a problem retrieving xdm schema`. Assicurati di aver sostituito l&#39;ID nell&#39;esempio precedente con l&#39;ID del tuo `Luma CRM Schema`
 > * Nessun token di autenticazione: esegui la richiesta **OAuth: Request Access Token** per generare un nuovo token
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: aggiorna la variabile di ambiente **CONTAINER_ID** da `global` a `tenant`
-> * `403: PALM Access Denied. POST access is denied for this resource from access control`: verificare le autorizzazioni utente nell&#39;Admin Console
+> * `403: PALM Access Denied. POST access is denied for this resource from access control`: verificare le autorizzazioni utente in Admin Console
 
 
 Puoi tornare alla schermata **[!UICONTROL Set di dati]** nell&#39;interfaccia utente di Platform e verificare che tutti e cinque i set di dati siano stati creati correttamente.

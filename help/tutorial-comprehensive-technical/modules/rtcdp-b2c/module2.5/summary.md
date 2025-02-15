@@ -3,7 +3,8 @@ title: 'Raccolta dati di Adobe Experience Platform e inoltro lato server in temp
 description: Riepilogo e vantaggi
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 7086f844-f21c-45d4-a7d9-3e695233b4b7
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -28,10 +29,10 @@ Grazie a Raccolta dati di Adobe Experience Platform, ora come marchio sei finalm
 
 ## Guarda qui
 
-- Blog tecnologico: [Risoluzione dei problemi di implementazione con Adobe Experience Platform Web SDK e Edge Network](https://medium.com/adobetech/solving-implementation-pain-points-with-adobe-experience-platform-web-sdk-and-edge-network-880b635e6819)
+- Blog tecnico: [Risoluzione dei problemi di implementazione con Adobe Experience Platform Web SDK e Edge Network](https://medium.com/adobetech/solving-implementation-pain-points-with-adobe-experience-platform-web-sdk-and-edge-network-880b635e6819)
 - Blog tecnico: [Miglioramento delle prestazioni del sito Web con Adobe Experience Platform Web SDK e Edge Network](https://medium.com/adobetech/boosting-website-performance-with-adobe-experience-platform-web-sdk-and-edge-network-329fcf70fdf9)
 - Documentazione: [Panoramica sul lato server di Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#server-side-info)
-- Video: [Implementare Edge e Adobe Experience Platform Data Collection Server utilizzando una soluzione non Adobe Tag Management](https://video.tv.adobe.com/v/331986?quality=12&learn=on)
+- Video: [Implementare Edge e Adobe Experience Platform Data Collection Server utilizzando una soluzione Tag Management non Adobe](https://video.tv.adobe.com/v/331986?quality=12&learn=on&enablevpops)
 
 [Torna al modulo 2.5](./aep-data-collection-ssf.md)
 

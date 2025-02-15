@@ -3,7 +3,7 @@ title: CSC Bootcamp - Altre attività preliminari
 description: CSC Bootcamp - Altre attività preliminari
 doc-type: multipage-overview
 exl-id: 76546141-68d5-4f09-b44a-e06cc08bbaa7
-source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Come descritto nel documento creativo, ci sono alcune risorse che saranno necess
 
 ![da experience-manager](./images/wf-from-aem.png)
 
-- Una volta visualizzata la gerarchia delle cartelle dell’AEM, passa al seguente percorso: experience-manager > Adobike Assets > Riprese da bici Seleziona 5 risorse, quindi fai clic su &quot;Collega&quot;.
+- Una volta visualizzata la gerarchia delle cartelle di AEM, passa al seguente percorso: experience-manager > Adobike Assets > Riprese bici Seleziona 5 risorse e quindi fai clic su &quot;Collega&quot;.
 
 ![risorse selezionate](./images/selected-assets.png)
 
@@ -43,7 +43,7 @@ Adobe Commerce è uno dei tanti prodotti di Adobe Experience Cloud che possono a
 
 Questo video ti fa conoscere Adobe Commerce e mostra il prodotto che abbiamo creato per utilizzare durante il bootcamp. In uno scenario reale, puoi caricare le risorse del brand selezionate in precedenza in Adobe Commerce nella configurazione del prodotto.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on&enablevpops)
 
 Una volta completata questa attività, in Workfront puoi contrassegnarla come completata al 100%.
 
