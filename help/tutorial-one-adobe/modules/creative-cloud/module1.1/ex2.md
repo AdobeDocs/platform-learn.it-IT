@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: f20a4fc49cc3f3ac411e4017179d0ae2f83df9c3
+source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1442'
 ht-degree: 1%
 
 ---
@@ -290,6 +290,8 @@ Per leggere a livello di programmazione i file dagli account di archiviazione di
 
 1. In **Autorizzazioni**, seleziona le seguenti autorizzazioni richieste:
 
+   - **Letto**
+   - **Elenco**
    - **Aggiungi**
    - **Crea**
    - **Scrittura**
@@ -343,11 +345,36 @@ Per le interazioni API future, la cosa principale che cambia è il nome della ri
 
    ![Archiviazione Azure](./images/az105.png){zoomable="yes"}
 
-   In uno degli esercizi precedenti, il **Corpo** della richiesta **Firefly - T2I (styleref) V3** era simile al seguente:
+### Variabili in PostBuster
 
-   `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+Come puoi vedere nella sezione precedente, esistono alcune variabili comuni sia nel token di lettura che in quello di scrittura.
 
-   ![Archiviazione Azure](./images/az24.png){zoomable="yes"}
+Successivamente è necessario creare variabili in PostBuster che memorizzino i vari elementi dei token SAS di cui sopra. Alcuni valori sono identici in entrambi gli URL:
+
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+Aprire PostBuster. Seleziona **Ambiente base**, quindi fai clic sull&#39;icona **modifica** per aprire l&#39;Ambiente base.
+
+![Archiviazione Azure](./images/pbbe1.png)
+
+Vedrai quindi 4 variabili vuote. Immetti qui i dettagli dell’account di archiviazione Azure.
+
+![Archiviazione Azure](./images/pbbe2.png)
+
+Il file dell’ambiente di base dovrebbe ora avere questo aspetto. Fai clic su **Chiudi**.
+
+![Archiviazione Azure](./images/pbbe3.png)
+
+### Verifica la configurazione
+
+In uno degli esercizi precedenti, il **Corpo** della richiesta **Firefly - T2I (styleref) V3** era simile al seguente:
+
+    `&quot;url&quot;: &quot;https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&amp;st=2025-01-13T07%3A16%3A52Z&amp;se=2026-01-14T07%3A16%3A00Z&amp;sr=b&amp;sp=r&amp;sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D&quot;`
+    
+    ![Archiviazione Azure](./images/az24.png){zoomable="yes"}
 
 1. Modifica l’URL in:
 
