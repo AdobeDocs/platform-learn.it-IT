@@ -1,18 +1,18 @@
 ---
-title: 'Publish: migrazione a staging e produzione'
+title: Pubblicare la migrazione in staging e produzione
 description: Una volta completato tutto lo sviluppo per la migrazione e la convalida, crea nell’ambiente di staging e quindi pubblica nell’ambiente di produzione quando è pronto.
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16767
-source-git-commit: 15f2122c53a3b2f3dc1942502e908403e55519ab
+exl-id: 47c86999-6a9c-4451-8a59-475e8c65ab6a
+source-git-commit: 3084590685bee9cd139c27b9a27026f08abf897f
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
-
-# Publish: migrazione a staging e produzione
+# Pubblicare la migrazione in staging e produzione
 
 Una volta completato tutto lo sviluppo per la migrazione e la convalida, crea nell’ambiente di staging e quindi pubblica nell’ambiente di produzione quando è pronto.
 
@@ -51,6 +51,6 @@ Aggiungerò una nota importante che avevamo all&#39;inizio di questo tutorial:
 
 >[!IMPORTANT]
 >
->È importante notare che uno dei motivi principali per cui stai eseguendo questa migrazione dell’implementazione è quello di prepararti all’utilizzo di applicazioni Adobe Experience Platform, come Customer Journey Analytics, Real-Time CDP o Journey Optimizer (come indicato in #3 sopra). L’utilizzo dei dati del sito web a questo scopo includerà passaggi aggiuntivi non inclusi in questa esercitazione, ma questa esercitazione sarà sicuramente un prerequisito per quell’ulteriore avanzamento dell’implementazione. Pertanto, completa questa esercitazione e poi puoi eseguire i passaggi necessari per inviare gli stessi dati del sito web all’Experience Platform.
+>È importante notare che uno dei motivi principali per cui stai eseguendo questa migrazione dell’implementazione è quello di prepararti all’utilizzo di applicazioni Adobe Experience Platform, come Customer Journey Analytics, Real-Time CDP o Journey Optimizer. L’utilizzo dei dati del sito web a questo scopo includerà passaggi aggiuntivi non inclusi in questa esercitazione, ma questa esercitazione sarà sicuramente un prerequisito per quell’ulteriore avanzamento dell’implementazione. Ora che hai completato questa esercitazione, sei pronto per eseguire i passaggi necessari per inviare gli stessi dati del sito web anche ad Experience Platform.
 
 Buona fortuna per il tuo percorso con analisi e altri contenuti e attività di marketing!
