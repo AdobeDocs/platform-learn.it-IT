@@ -3,9 +3,9 @@ title: Panoramica - Tutorial tecnico completo - Un Adobe
 description: Tutorial tecnico completo - Un Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: f25c1705ae6813dc744945e8a4ee9858513f7374
+source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '936'
 ht-degree: 2%
 
 ---
@@ -15,8 +15,6 @@ ht-degree: 2%
 ![Informazioni tecniche](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Panoramica
-
-Questo tutorial è il punto di partenza ideale per
 
 Questo tutorial è molto vario e offre informazioni chiare nelle seguenti applicazioni:
 
@@ -50,25 +48,21 @@ Se desideri seguire questo tutorial utilizzando la tua istanza di Adobe Experien
 - Raccolta dati Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/){target="_blank"}
 - Accesso al sistema demo: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
 
-## Preparazione
-
-Verificare le applicazioni richieste da installare nel computer [qui](./prework.md){target="_blank"}.
-
 ## Completamento e certificazione
 
 Questo tutorial fa parte del corso Certificazione Adobe. Per iscriverti al corso e seguire questa esercitazione, vai a [https://certification.adobe.com](https://certification.adobe.com).
 
 Per ogni modulo completato tramite l&#39;esercitazione seguente, devi inviare una prova di completamento come indicato [qui](./completion.md).
 
-## Contenuto
+## Stato contenuto
 
 Per verificare lo stato del contenuto seguente, passare alla [pagina di stato](./status.md){target="_blank"}.
 
-### Introduzione
+### Guida introduttuva
 
 [Introduzione](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
 
-In questo modulo fondamentale, configurerai tutto in modo da poter accedere e utilizzare l’ambiente demo.
+In questo modulo fondamentale, preparerai tutto in modo da poter accedere e utilizzare l’ambiente demo.
 
 ### 1. Flusso di lavoro e pianificazione
 
