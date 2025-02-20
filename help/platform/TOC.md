@@ -5,7 +5,7 @@ user-guide-description: Scopri i numerosi componenti di Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 4d403a6694f856a9020fe9dfd541693603c57c69
+source-git-commit: 90a0ac0200ebe7b87d95c829773e74f8382b8443
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 18%
@@ -166,7 +166,7 @@ Campaigns
    + [Panoramica sulle destinazioni](/help/platform/destinations/understanding-destinations.md)
    + [Connetti a destinazioni](/help/platform/destinations/connecting-to-destinations.md)
    + [Creare destinazioni e attivare dati](/help/platform/destinations/create-destinations-and-activate-data.md)
-   + [Attivare profili e segmenti in una destinazione](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
+   + [Attivare profili e pubblico in una destinazione](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
    + [Configurare la destinazione di esportazione per un set di dati](/help/platform/destinations/configure-dataset-export-destination.md)
    + [Integrare con Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
    + [Configurare la destinazione BLOB di Azure](/help/platform/destinations/configure-the-azure-blob-destination.md)
