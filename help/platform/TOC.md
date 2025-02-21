@@ -5,7 +5,7 @@ user-guide-description: Scopri i numerosi componenti di Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 90a0ac0200ebe7b87d95c829773e74f8382b8443
+source-git-commit: 7317df472ec7c72dd6ecf4c6a298ccca818d28e9
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 18%
@@ -103,19 +103,19 @@ Campaigns
 + Tipi di pubblico e segmentazione {#audiences}
    + [Introduzione a Audience Portal e Composizione](audiences/introduction-to-audience-portal-and-composition.md)
    + [Carica tipi di pubblico](audiences/upload-audiences.md)
-   + [Panoramica di Federated Audience Composition](audiences/overview-of-federated-audience-composition.md)
-   + [Connettere e configurare Federated Audience Composition](audiences/connect-and-configure-federated-audience-composition.md)
-   + [Creare una composizione di pubblico federato](audiences/create-a-federated-audience-composition.md)
-   + [Panoramica del generatore di regole per il pubblico](audiences/audience-rule-builder-overview.md)
-   + [Creare tipi di pubblico](audiences/create-audiences.md)
-   + [Utilizzare i vincoli di tempo](audiences/time-constraints.md)
-   + [Creare un pubblico basato sui contenuti](audiences/create-content-based-audiences.md)
-   + [Creare tipi di pubblico di conversione](audiences/create-conversion-audiences.md)
-   + [Creare tipi di pubblico da tipi di pubblico esistenti](audiences/create-audiences-from-existing-audiences.md)
-   + [Creare tipi di pubblico sequenziali](audiences/create-sequential-audiences.md)
-   + [Crea tipi di pubblico dinamici](audiences/create-dynamic-audiences.md)
-   + [Creare tipi di pubblico con più entità](audiences/create-multi-entity-audiences.md)
-   + [Creare e attivare il pubblico dell’account (B2B)](audiences/create-audiences-with-b2b-data.md)
+   + [Panoramica di Federated Audience Composition](audiences/fac/overview-of-federated-audience-composition.md)
+   + [Connettere e configurare Federated Audience Composition](audiences/fac/connect-and-configure-federated-audience-composition.md)
+   + [Creare una composizione di pubblico federato](audiences/fac/create-a-federated-audience-composition.md)
+   + [Panoramica del generatore di regole per il pubblico](audiences/audience-builder/audience-rule-builder-overview.md)
+   + [Creare tipi di pubblico](audiences/audience-builder/create-audiences.md)
+   + [Utilizzare i vincoli di tempo](audiences/audience-builder/time-constraints.md)
+   + [Creare un pubblico basato sui contenuti](audiences/audience-builder/create-content-based-audiences.md)
+   + [Creare tipi di pubblico di conversione](audiences/audience-builder/create-conversion-audiences.md)
+   + [Creare tipi di pubblico da tipi di pubblico esistenti](audiences/audience-builder/create-audiences-from-existing-audiences.md)
+   + [Creare tipi di pubblico sequenziali](audiences/audience-builder/create-sequential-audiences.md)
+   + [Crea tipi di pubblico dinamici](audiences/audience-builder/create-dynamic-audiences.md)
+   + [Creare tipi di pubblico con più entità](audiences/audience-builder/create-multi-entity-audiences.md)
+   + [Creare e attivare il pubblico dell’account (B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
    + [Demo della segmentazione in streaming](/help/platform/audiences/streaming-segmentation-demo.md)
    + [Valuta una regola di pubblico](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
    + [Crea un set di dati per esportare i dati](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
