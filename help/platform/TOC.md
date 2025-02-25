@@ -5,9 +5,9 @@ user-guide-description: Scopri i numerosi componenti di Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 19d1ea02c33685f250e4fdf2a94c90fa66c5ee7b
+source-git-commit: eb05c2116c8890d631db4da8a174007a37470ab7
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '881'
 ht-degree: 18%
 
 ---
@@ -290,4 +290,3 @@ Campaigns
    + [Un racconto di due percezioni: marchi e consumatori](/help/platform/industry/brands-vs-consumers.md)
    + [Evoluzione del centro di eccellenza del pubblico](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
    + [Creare esperienze migliori con i profili dei clienti](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
-   + [Data Collaboration nel contesto dei dati di prime parti](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
