@@ -3,9 +3,9 @@ title: Migrare le variabili globali
 description: Scopri come migrare le variabili globali dalla configurazione dell’estensione Analytics a Web SDK
 solution: Data Collection, Analytics
 feature: Web SDK
-jira: KT-16764
+jira: KT-17277
 exl-id: 0917e951-c7e0-4723-8354-d308890bdaac
-source-git-commit: d01889ca317e29ed0c37b20e17291c4cb5a3abd1
+source-git-commit: 744b26da58307f0d6f6e8715a534ca814e02371c
 workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 3%
@@ -66,7 +66,7 @@ Se non è necessario definire i passaggi, procedere in questo modo e completare 
    1. Per **Tipo azione**, scegliere Aggiorna variabile
    1. A destra, scegli la variabile **Data Element** (per questa esercitazione era denominata &quot;Page View Data Element&quot;, ma il nome potrebbe variare)
    1. Seleziona **Analytics** nell&#39;oggetto dati
-   1. Popola le variabili salvate dalla sezione Variabili globali nella configurazione dell&#39;estensione di Analytics (nell&#39;esempio di questo tutorial, impostando eVar10 sull&#39;elemento dati page type).
+   1. Popola le variabili salvate dalla sezione Variabili globali nella configurazione dell&#39;estensione di Analytics (nell&#39;esempio di questo tutorial, impostando eVar10 sull&#39;elemento dati Page Type)
 
    ![websdk-global-variables-action](assets/websdk-global-variables-action.jpg)
 
