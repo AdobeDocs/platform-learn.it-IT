@@ -6,16 +6,16 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 35e1f0d4fb5a22a366b3fb8bc71d4ea2d26764bb
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
 
 # API per modelli personalizzati Firefly 1.1.4
 
-## 1.1.4.1 Configurare il modello personalizzato
+## 1.1.4.1 Configura il modello personalizzato
 
 Vai a [https://firefly.adobe.com/](https://firefly.adobe.com/). Fare clic su **Modelli personalizzati**.
 
@@ -86,7 +86,7 @@ Chiudere la finestra a comparsa **Condividi modello personalizzato**.
 
 ![Modelli personalizzati Firefly](./images/ffcm16.png){zoomable="yes"}
 
-## 1.1.4.2 Utilizzare il modello personalizzato nell’interfaccia utente
+## 1.1.4.2 Utilizza il tuo modello personalizzato nell&#39;interfaccia utente
 
 Vai a [https://firefly.adobe.com/cme/train](https://firefly.adobe.com/cme/train). Fai clic sul modello personalizzato per aprirlo.
 
@@ -100,7 +100,7 @@ Viene quindi visualizzato il prompt di esempio immesso prima dell&#39;esecuzione
 
 ![Modelli personalizzati Firefly](./images/ffcm18.png){zoomable="yes"}
 
-## 1.1.4.3 Abilitare il modello personalizzato per l’API dei modelli personalizzati dei servizi Firefly
+## 1.1.4.3 Abilita il modello personalizzato per l&#39;API dei modelli personalizzati dei servizi Firefly
 
 Una volta che il modello personalizzato è stato addestrato, può essere utilizzato anche tramite l’API. Nell’esercizio 1.1.1 hai già configurato il progetto Adobe I/O per l’interazione con i servizi Firefly tramite l’API.
 
@@ -112,9 +112,9 @@ Fare clic sui tre punti **...** e quindi su **Condividi**.
 
 ![Modelli personalizzati Firefly](./images/ffcm20.png){zoomable="yes"}
 
-Per accedere a un modello personalizzato di Firefly, il modello personalizzato deve essere condiviso con l&#39;**ID account tecnico** del nostro progetto Adobe I/O.
+Per accedere a un modello personalizzato di Firefly, il modello personalizzato deve essere condiviso nella **e-mail account tecnico** del progetto Adobe I/O.
 
-Per recuperare il tuo **ID account tecnico**, passa a [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects). Fare clic per aprire il progetto, denominato `--aepUserLdap-- Firefly`.
+Per recuperare l&#39;**e-mail account tecnico**, vai a [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects). Fare clic per aprire il progetto, denominato `--aepUserLdap-- One Adobe tutorial`.
 
 ![Modelli personalizzati Firefly](./images/ffcm24.png){zoomable="yes"}
 
@@ -122,19 +122,19 @@ Fare clic su **Server-to-Server OAuth**.
 
 ![Modelli personalizzati Firefly](./images/ffcm25.png){zoomable="yes"}
 
-Fai clic per copiare il tuo **ID account tecnico**.
+Fai clic per copiare l&#39;**e-mail account tecnico**.
 
 ![Modelli personalizzati Firefly](./images/ffcm23.png){zoomable="yes"}
 
-Incolla il tuo **ID account tecnico** e fai clic su **Invita a modificare**.
+Incolla la **e-mail account tecnico** e fai clic su **Invita a modificare**.
 
 ![Modelli personalizzati Firefly](./images/ffcm21.png){zoomable="yes"}
 
-L&#39;**ID account tecnico** deve ora essere in grado di accedere al modello personalizzato.
+L&#39;**e-mail account tecnico** dovrebbe ora essere in grado di accedere al modello personalizzato.
 
 ![Modelli personalizzati Firefly](./images/ffcm22.png){zoomable="yes"}
 
-## 1.1.4.4 Interagire con l’API di modelli personalizzati dei servizi Firefly
+## 1.1.4.4 interagire con l&#39;API dei modelli personalizzati dei servizi Firefly
 
 Nell&#39;esercizio 1.1.1 Guida introduttiva a Firefly Services, hai scaricato il file [postman-ff.zip](./../../../assets/postman/postman-ff.zip) sul desktop locale e hai quindi importato la raccolta in Postman.
 
