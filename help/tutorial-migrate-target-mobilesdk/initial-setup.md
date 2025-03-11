@@ -1,10 +1,10 @@
 ---
-title: Configurazione iniziale - Migrazione da Adobe Target a Adobe Journey Optimizer - Estensione Decisioning Mobile
+title: Configurazione iniziale - Migrare l’implementazione di Adobe Target nell’app mobile a Adobe Journey Optimizer - Estensione Decisioning
 description: Scopri e imposta gli importanti elementi fondamentali necessari per l’implementazione di Platform Web SDK
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '373'
 ht-degree: 6%
 
 ---

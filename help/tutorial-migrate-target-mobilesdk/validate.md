@@ -1,62 +1,39 @@
 ---
-title: Convalidare le implementazioni di Target nell’estensione Adobe Journey Optimizer - Decisioning Mobile
-description: Scopri come convalidare le attività ed eseguire il debug di un’implementazione di Adobe Target utilizzando l’estensione Adobe Journey Optimizer - Decisioning Mobile.
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+title: Convalidare e risolvere i problemi relativi all’implementazione dell’estensione Decisioning
+description: Scopri come convalidare e risolvere i problemi di un’implementazione Adobe Target per dispositivi mobili utilizzando l’estensione Decisioning.
+exl-id: edc6e25a-58d7-4145-97c3-bf48e980914f
+source-git-commit: a4fe85580776e5d84f6deaf3c0224f0513ba8415
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 1%
+source-wordcount: '311'
+ht-degree: 0%
 
 ---
 
-# Convalidare l’implementazione dell’estensione Adobe Journey Optimizer - Decisioning Mobile
+# Convalidare e risolvere i problemi relativi all’implementazione dell’estensione Decisioning
 
-Dopo aver migrato l’implementazione di Target dall’estensione Target all’estensione Decisioning, è importante verificare che tutto funzioni correttamente prima di pubblicare eventuali modifiche nell’app di produzione. L’Adobe consiglia quanto segue, descritto in dettaglio in questa pagina:
+Dopo aver migrato l’implementazione di Target dall’estensione Target all’estensione Decisioning, è importante verificare che tutto funzioni correttamente prima di pubblicare eventuali modifiche nell’app di produzione. Adobe consiglia quanto segue, descritto in dettaglio in questa pagina:
 
-* Esegui una convalida tecnica per verificare che l’implementazione di base e le richieste e risposte dell’SDK di Platform Mobile siano corrette
+* Esegui una convalida tecnica per verificare che l’implementazione di base e le richieste e risposte di Platform Mobile SDK siano corrette
 * Assicurati che le attività Target siano consegnate e renderizzate correttamente
 * Verifica che la generazione rapporti funzioni correttamente
-* Rivedi i tipi di pubblico e gli script di profilo per assicurarti che siano compatibili con l’SDK di Platform Mobile e l’estensione Optimie
-* Garantire il corretto funzionamento delle integrazioni con applicazioni Adobe o di terze parti
+* Rivedi tipi di pubblico e script di profilo per assicurarti che siano compatibili con Platform Mobile SDK e l’estensione Optimie
+* Garantire il corretto funzionamento delle integrazioni con le applicazioni Adobe o di terze parti
 
-Ogni implementazione di Target è diversa a seconda dell’architettura del sito e delle funzioni utilizzate. Puoi utilizzare le tabelle seguenti come punto di partenza e aggiungere qualsiasi elemento univoco alla tua implementazione. La [pagina Debug](debugging.md) di questo tutorial mostra gli strumenti che puoi utilizzare per facilitare la convalida.
+Ogni implementazione di Target è diversa a seconda dell’architettura del sito e delle funzioni utilizzate. Puoi utilizzare le tabelle seguenti come punto di partenza e aggiungere qualsiasi elemento univoco alla tua implementazione.
 
-## Convalida tecnica
+## Convalida tecnica e risoluzione dei problemi
 
-| Elemento di convalida | Note |
-|---|---|
-| | |
+La convalida tecnica e la risoluzione dei problemi con Platform Mobile SDK e l’estensione Decisioning vengono notevolmente migliorate con Assurance. Per informazioni su questo strumento essenziale, consulta le pagine seguenti della documentazione:
 
+* [Configurazione dei plug-in Decisioning in Assurance](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/assurance-setup/){target=_blank}
 
-## Consegna e rendering delle attività
+* [Convalida dell&#39;installazione di SDK](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/optimize-configuration-view/){target=_blank} in corso
 
-| Elemento di convalida | Note |
-| | |
+* [Rivedi le richieste e simula diverse esperienze](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/review-simulate/){target=_blank}
 
-## Generazione rapporti
+Dopo aver eseguito i passaggi di convalida indicati sopra, puoi essere certo che l’implementazione di Platform Mobile SDK con l’estensione Decisioning sia pronta per il passaggio alla produzione.
 
-| Elemento di convalida | Note |
-| | |
-
-## Tipi di pubblico e script di profilo
-
-| Elemento di convalida | Note |
-|---|---|
-| | |
-
-## Integrazioni con applicazioni Adobe
-
-| Elemento di convalida | Note |
-| | |
-
-## Integrazioni con applicazioni di terze parti
-
-| Elemento di convalida | Note |
-|---|---|
-| | |
-
-Dopo aver eseguito i passaggi di convalida descritti qui sopra, puoi essere certo che l’implementazione dell’SDK di Platform Mobile con l’estensione Decisioning sia pronta per il passaggio alla produzione.
-
-Successivamente, scopri come [risolvere i problemi relativi a un&#39;implementazione di Target utilizzando Platform Web SDK](debugging.md).
+Congratulazioni, hai raggiunto la fine dell&#39;esercitazione. Buona fortuna a eseguire la migrazione dell’implementazione di Adobe Target all’estensione Decisioning.
 
 >[!NOTE]
 >
