@@ -8,7 +8,7 @@ duration: 92
 last-substantial-update: 2025-03-18T00:00:00Z
 jira: KT-17403
 exl-id: 047839f3-ebf1-4c1d-a5bd-15ee55daf02e
-source-git-commit: ff70af08af560ef69ed269a9425039851477cf43
+source-git-commit: cccb57946ca67afba7988aa2097aa322b4dd2107
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Per ulteriori informazioni, consulta la [documentazione](https://experienceleagu
 
 Ottieni un’introduzione ad Adobe Real-Time Collaboration, un’applicazione per la collaborazione sui dati appositamente creata che consente di scoprire e attivare tipi di pubblico di alto valore e utilizzare le funzionalità di misurazione per ottenere risultati tangibili.
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446801?learn=on&enablevpops)
 
 
 ## Configurazione
