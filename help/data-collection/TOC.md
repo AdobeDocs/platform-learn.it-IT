@@ -6,9 +6,9 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 3ebcb866cd16b036d09def8cf629fd0ccb348dc7
+source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '199'
 ht-degree: 25%
 
 ---
@@ -27,26 +27,28 @@ ht-degree: 25%
    + [Creare regole](tags/build-rules.md)
    + [Regole dello stack](tags/stack-rules.md)
    + [Creare e pubblicare una libreria](tags/build-and-publish-a-library.md)
-   + [Implementazione in siti Web con Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it){target="_blank"}
+   + [Implementazione in siti Web con Web SDK](https://experienceleague.adobe.com/it/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
    + [Implementare nei siti Web con gli SDK della soluzione](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
-   + [Implementazione nelle app per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=it){target="_blank"}
+   + [Implementazione nelle app per dispositivi mobili](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
 + SDK Web{#web-sdk}
    + [Panoramica](web-sdk/overview.md)
    + [Demo](web-sdk/demo.md)
-   + [Esercitazione sull&#39;implementazione (con tag)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it){target="_blank"}
-   + [Esercitazione sulla migrazione di Target](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target="_blank"}
-   + [Esercitazione sulla migrazione ad Analytics](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
+   + [Esercitazione sull&#39;implementazione (con tag)](https://experienceleague.adobe.com/it/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
+   + [Esercitazione sulla migrazione di Target](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
+   + [Esercitazione sulla migrazione ad Analytics](https://experienceleague.adobe.com/it/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
    + Consenso{#consent}
       + [Panoramica](web-sdk/consent/overview.md)
-      + [Imposta i valori del consenso utilizzando lo standard Adobe](web-sdk/consent/set-consent-adobe.md)
+      + [Impostare i valori del consenso utilizzando lo standard Adobe](web-sdk/consent/set-consent-adobe.md)
       + [Imposta i valori del consenso utilizzando lo standard IAB TCF 2.0](web-sdk/consent/set-consent-iab.md)
-      + [Inspect e convalida i dati del consenso](web-sdk/consent/inspect.md)
+      + [Ispezionare e convalidare i dati del consenso](web-sdk/consent/inspect.md)
       + [Tutorial sull’elaborazione del consenso end-to-end](web-sdk/consent/tutorial.md)
 + SDK per dispositivi mobili{#mobile-sdk}
    + [Panoramica](mobile-sdk/overview.md)
    + [Creare proprietà mobili](mobile-sdk/create-mobile-properties.md)
    + [Utilizzare i manager delle dipendenze](mobile-sdk/use-dependency-managers.md)
-   + [Implementazione nelle app per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=it){target="_blank"}
+   + [Implementazione nelle app per dispositivi mobili](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+
+   + [Esercitazione sulla migrazione di Target](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview){target="_blank"}
 + API server{#server-api}
    + [Panoramica](server-api/overview.md)
    + [Nozioni di base delle API](server-api/introduction.md)
@@ -66,6 +68,6 @@ ht-degree: 25%
    + [Configurare i flussi di dati](edge/configure-datastreams.md)
    + [Preparazione dei dati](edge/data-prep.md)
    + [Gestire i dati sensibili](edge/manage-sensitive-data-in-datastreams.md)
-   + [ID dispositivo di prime parti](edge/generate-first-party-device-ids.md)
+   + [ID di dispositivi di prime parti](edge/generate-first-party-device-ids.md)
 + Debugger{#debugger}
    + [Panoramica](debugger/overview.md)
