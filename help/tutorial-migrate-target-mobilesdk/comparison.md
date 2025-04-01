@@ -2,9 +2,9 @@
 title: Confronto dell’estensione Target con l’estensione Decisioning
 description: Scopri le differenze tra l’estensione Target e l’estensione Decisioning, incluse funzioni, funzioni, impostazioni e flusso di dati.
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: 24effdb0905c6fd146a80031e0a39eed9672306d
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '791'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,6 @@ Dopo aver esaminato le informazioni riportate di seguito e valutato l’implemen
 | thirdPartyId (mbox3rdPartyId) | Supportato | Supportato tramite Identity Map e Target Third Party ID Namespace nello stream di dati |
 | Notifiche (visualizzazione, clic) | Supportato | Supportato |
 | Token di risposta | Supportato | Supportato |
-| Analytics for Target (A4T) | Solo lato client | Lato client e lato server |
 | Anteprime per dispositivi mobili (modalità QA) | Supportato | Supporto limitato con Assurance |
 
 >[!IMPORTANT]

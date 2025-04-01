@@ -1,5 +1,5 @@
 ---
-user-guide-title: Migrare da Adobe Target all’estensione Adobe Journey Optimizer - Decisioning Mobile
+user-guide-title: Migrare la tua app mobile da Adobe Target a Adobe Journey Optimizer - Estensione Decisioning
 user-guide-description: Un tutorial pratico per i clienti di Target che illustra come migrare correttamente le implementazioni di Mobile SDK dall’estensione Target all’estensione Optimie
 solution: Target,Data Collection,Experience Platform
 feature-set: Target,Experience Platform
@@ -10,15 +10,15 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-17468
 hide: true
-source-git-commit: d2da62ed2d36f73af1c8053be5af27feea32cb14
+source-git-commit: 24effdb0905c6fd146a80031e0a39eed9672306d
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 4%
+source-wordcount: '76'
+ht-degree: 3%
 
 ---
 
 
-# Migrare da Adobe Target all’estensione Adobe Journey Optimizer - Decisioning Mobile{#migrate-target-to-mobile-sdk-decisioning}
+# Migrare la tua app mobile da Adobe Target a Adobe Journey Optimizer - Estensione Decisioning{#migrate-target-to-mobile-sdk-decisioning}
 
 + [Introduzione al tutorial](overview.md)
 
