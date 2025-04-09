@@ -2,7 +2,7 @@
 title: 'Pianificare la migrazione: migrazione dell’implementazione Adobe Target nell’app mobile a Adobe Journey Optimizer - Estensione Decisioning'
 description: Scopri le differenze principali tra at.js e Platform Web SDK e come pianificare le attività di migrazione.
 exl-id: 86849319-d2ad-4338-aa1a-d307d8807d4a
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -36,4 +36,4 @@ Rivedi quindi il confronto dettagliato [tra l&#39;estensione Target e l&#39;este
 
 >[!NOTE]
 >
->Ci impegniamo ad aiutarti ad effettuare con successo la migrazione di Target mobile dall’estensione Target all’estensione Decisioning. Se incontri ostacoli con la migrazione o pensi che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Ci impegniamo ad aiutarti ad effettuare con successo la migrazione di Target mobile dall’estensione Target all’estensione Decisioning. Se incontri ostacoli con la migrazione o pensi che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625).
