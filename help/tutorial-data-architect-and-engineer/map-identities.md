@@ -8,9 +8,9 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 73645b8b088cfdfe6f256c187b3c510dcc2386fc
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '937'
 ht-degree: 6%
 
 ---
@@ -148,7 +148,7 @@ Ripeti il processo per alcuni degli altri schemi:
 >
 >I dati raccolti con il Web SDK sono un’eccezione alla pratica tipica di etichettare i campi di identità nello schema. Web SDK utilizza Identity Map per etichettare le identità *sul lato dell&#39;implementazione*. Pertanto, determineremo le identità per `Luma Web Events Schema` quando implementeremo Web SDK sul sito Web Luma. In questa lezione successiva, raccoglieremo l’ID visitatore di Experience Cloud (ECID) come ID primario e il crmId come ID secondario.
 
-Con la selezione delle identità primarie da parte nostra, è chiaro come `Luma CRM Schema` può connettersi a `Luma Offline Purchase Events Schema` poiché entrambi utilizzano `loyaltyId` come identificatore. Ma come possiamo collegare i nostri acquisti offline al comportamento online? Come possiamo classificare i prodotti acquistati con il nostro catalogo di prodotti? Utilizzeremo campi di identità e relazioni di schema aggiuntivi.
+Con la selezione delle identità primarie da parte nostra, è chiaro come `Luma Loyalty Schema` può connettersi a `Luma Offline Purchase Events Schema` poiché entrambi utilizzano loyaltyId come identificatore. Ma come può il CRM connettersi agli eventi di acquisto offline? Come possiamo collegare i nostri acquisti offline al comportamento online? E come possiamo classificare i prodotti acquistati con il nostro catalogo di prodotti? Utilizzeremo campi di identità e relazioni di schema aggiuntivi.
 
 <!--use a visual-->
 
