@@ -1,23 +1,25 @@
 ---
-title: Configurare una destinazione di esportazione del set di dati in [!DNL Experience Platform]
-description: Scopri la configurazione, il flusso di lavoro e i casi d’uso per l’esportazione dei set di dati da [!DNL Adobe Experience Platform] a una posizione di archiviazione cloud utilizzando una connessione di destinazione.
+title: Esportare i set di dati utilizzando una destinazione di archiviazione cloud
+description: Scopri come impostare una connessione e utilizzare il flusso di lavoro per le esportazioni di set di dati utilizzando una destinazione di servizio cloud.
 solution: Real-Time Customer Data Platform, Experience Platform
 feature: Destinations
 role: User, Admin
 level: Beginner
 jira: KT-13945
 thumbnail: 3424392.jpg
-last-substantial-update: 2023-09-27T00:00:00Z
+last-substantial-update: 2025-04-09T00:00:00Z
 exl-id: 139fc1e5-8866-4be4-b921-85443036e506
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 13a78ab0c8886a1711678b1c7c676a18c2a07c95
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 33%
+source-wordcount: '72'
+ht-degree: 0%
 
 ---
 
-# Configurare una destinazione di esportazione del set di dati in [!DNL Experience Platform]
+# Esportare i set di dati utilizzando una destinazione di archiviazione cloud
 
-Scopri la configurazione, il flusso di lavoro e i casi d&#39;uso per esportare i set di dati da [!DNL Adobe Experience Platform] in un percorso di archiviazione cloud utilizzando una connessione di destinazione. Per ulteriori informazioni, visita la [documentazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html).
+Scopri come impostare una connessione e utilizzare il flusso di lavoro per le esportazioni di set di dati utilizzando una destinazione di servizio cloud. Sono stati descritti anche i vantaggi e i casi di utilizzo di questa funzione.
+
+Per ulteriori informazioni, visita la [documentazione](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)
