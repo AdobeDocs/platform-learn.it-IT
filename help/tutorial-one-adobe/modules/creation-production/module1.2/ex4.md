@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 7d4970479ff1a7dcb3ebb1f46660f418ba768da3
+source-git-commit: 003c0ff26183acbafbe745276bde6f90d5adef34
 workflow-type: tm+mt
-source-wordcount: '1724'
+source-wordcount: '1722'
 ht-degree: 1%
 
 ---
@@ -17,13 +17,13 @@ ht-degree: 1%
 
 Ora inizierai a utilizzare i connettori predefiniti di Workfront Fusion per Photoshop e connetterai la richiesta Firefly Text-2-Image e le richieste Photoshop in un unico scenario.
 
-## 1.2.4.1 Duplicare e preparare lo scenario
+## 1.2.4.1 Duplica e prepara lo scenario
 
-Nel menu a sinistra, vai a **Scenari** e seleziona la tua cartella `--aepUserLdap--`. Dovresti quindi visualizzare lo scenario creato in precedenza, denominato `--aepUSerLdap-- - Adobe I/O Authentication`.
+Nel menu a sinistra, vai a **Scenari** e seleziona la cartella `--aepUserLdap--`. Dovresti quindi visualizzare lo scenario creato in precedenza, denominato `--aepUSerLdap-- - Adobe I/O Authentication`.
 
 ![WF Fusion](./images/wffc1.png)
 
-Fai clic sulla freccia per aprire il menu a discesa e selezionare **Clona**.
+Fare clic sulla freccia per aprire il menu a discesa e selezionare **Clone**.
 
 ![WF Fusion](./images/wffc2.png)
 
@@ -79,7 +79,7 @@ Il webhook di Workfront Fusion è ancora in attesa di input.
 
 ![WF Fusion](./images/wffc11.png)
 
-Dopo aver fatto clic su **Invia**, il messaggio dovrebbe cambiare tp **Determinato** correttamente. Fai clic su **OK**.
+Dopo aver fatto clic su **Invia**, il messaggio dovrebbe cambiare **Determinato correttamente**. Fai clic su **OK**.
 
 ![WF Fusion](./images/wffc12.png)
 
@@ -124,15 +124,15 @@ Dovresti vedere questo. Fai clic su **Aggiungi** per aggiungere una nuova connes
 Configura la connessione come segue:
 
 - Tipo di connessione: selezionare **Adobe Photoshop (server-to-server)**
-- Nome connessione: immettere `--aepUserLdap-- - Adobe IO`
-- ID client: incolla il tuo ID client
-- Segreto client: incolla il tuo segreto client
+- Nome connessione: immetti `--aepUserLdap-- - Adobe IO`
+- ID client: incolla l’ID client
+- Segreto client: incolla il segreto client
 
 Fai clic su **Continua**.
 
 ![WF Fusion](./images/wffc19.png)
 
-Per trovare l&#39;ID **client e** il **segreto** client, passare a [https://developer.adobe.com/console/home](https://developer.adobe.com/console/projects){target="_blank"} e aprire il progetto di I/O Adobe Systems, denominato `--aepUserLdap-- One Adobe tutorial`. Vai a **OAuth Server-to-Server** per trovare l&#39;ID client e il segreto client. Copiare tali valori e incollarli nella configurazione della connessione in Workfront Fusion.
+Per trovare il **ID client** e il **Segreto client**, vai a [https://developer.adobe.com/console/home](https://developer.adobe.com/console/projects){target="_blank"} e apri il progetto Adobe I/O, denominato `--aepUserLdap-- One Adobe tutorial`. Vai a **OAuth Server-to-Server** per trovare l&#39;ID client e il segreto client. Copiare tali valori e incollarli nella configurazione della connessione in Workfront Fusion.
 
 ![WF Fusion](./images/wffc20.png)
 
@@ -170,7 +170,7 @@ Per **Archiviazione**, selezionare **Esterna**. Per **Percorso file**, cercare e
 
 ![WF Fusion](./images/wffc28.png)
 
-Quindi scorri verso il basso fino a visualizzare **Modifica**. Impostate **Modifica** su **Sì** e Tipo **** su **Livello**. Fai clic su **Aggiungi**.
+Quindi scorri verso il basso fino a visualizzare **Modifica**. Imposta **Modifica** su **Sì** e **Tipo** su **Livello**. Fai clic su **Aggiungi**.
 
 ![WF Fusion](./images/wffc29.png)
 
@@ -225,11 +225,11 @@ Immetti il nome **2048x2048-cta** in **Nome** nella finestra di dialogo.
 
 ![WF Fusion](./images/wffc39.png)
 
-Scorri verso il basso fino a visualizzare **Testo** > **contenuto**. Seleziona la variabile **cta** dal payload Webhook.
+Scorri verso il basso fino a visualizzare **Testo** > **Contenuto**. Selezionare la variabile **cta** dal payload del webhook.
 
 ![WF Fusion](./images/wffc40.png)
 
-Scorri verso il basso fino a visualizzare **Output**. Per **Archiviazione**, selezionare **Azure**. Per **File posizione**, immetti la posizione qui sotto. Si noti l&#39;aggiunta della variabile `{{timestamp}}` al nome file utilizzata per garantire che ogni file generato abbia un nome univoco. Impostare inoltre **Type** su **vnd.adobe.photoshop**. Fai clic su **OK**.
+Scorri verso il basso fino a visualizzare **Output**. Per **Archiviazione**, selezionare **Azure**. Per **Percorso file**, immettere il percorso seguente. Si noti l&#39;aggiunta della variabile `{{timestamp}}` al nome file utilizzata per garantire che ogni file generato abbia un nome univoco. Impostare inoltre **Type** su **vnd.adobe.photoshop**. Fai clic su **OK**.
 
 `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
 
@@ -333,11 +333,11 @@ Utilizzando Azure Storage Explorer, è quindi possibile trovare e aprire il file
 
 ![WF Fusion](./images/wffc60.png)
 
-Il tuo file dovrebbe quindi apparire like questo, con lo sfondo che viene sostituito da uno sfondo con **prati nebbiosi**.
+Il file dovrebbe quindi essere simile al seguente, con lo sfondo sostituito da uno sfondo con **prati nebbiosi**.
 
 ![WF Fusion](./images/wffc61.png)
 
-Se esegui nuovamente il tuo scenario e quindi invii un nuovo richiesta da Postman utilizzando un prompt diverso, vedrai quanto è diventato facile e riutilizzabile il tuo scenario. In questo esempio, il nuovo prompt utilizzato è **deserto soleggiato**.
+Se esegui nuovamente lo scenario e invii una nuova richiesta da Postman utilizzando un prompt diverso, vedrai quanto lo scenario è diventato semplice e riutilizzabile. In questo esempio, il nuovo prompt utilizzato è **deserto soleggiato**.
 
 ![WF Fusion](./images/wffc62.png)
 
@@ -347,7 +347,7 @@ E un paio di minuti dopo, è stato generato un nuovo file PSD con un nuovo sfond
 
 ## Passaggi successivi
 
-Vai a [1.2.5 Frame I/O e Workfront Fusion](./ex5.md){target="_blank"}
+Vai a [1.2.5 Frame.io e Workfront Fusion](./ex5.md){target="_blank"}
 
 Torna a [Automazione dei flussi di lavoro Creative con Workfront Fusion](./automation.md){target="_blank"}
 
