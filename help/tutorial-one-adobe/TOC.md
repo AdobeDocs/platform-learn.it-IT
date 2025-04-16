@@ -4,10 +4,10 @@ breadcrumb-title: Tutorial tecnico completo per le applicazioni Adobe, da Creati
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b0d81ccd3c3bf1ef2a836a3565069dd024bd90a6
+source-git-commit: 74590708e5b5e7ca156f2c7dcabc969b8ee66e2d
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 2%
+source-wordcount: '1150'
+ht-degree: 3%
 
 ---
 
@@ -35,21 +35,27 @@ ht-degree: 2%
 + Flusso di lavoro e pianificazione {#planning}
 
 + Creazione e produzione {#production}
-   + 1.1 Panoramica dei servizi Adobe Firefly {#crpr1}
+   + 1.1 Panoramica di Adobe Firefly Services {#crpr1}
       + [Panoramica](/help/tutorial-one-adobe/modules/creation-production/module1.1/firefly-services.md)
-      + [1.1.1 Guida introduttiva ai servizi Firefly](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex1.md)
+      + [1.1.1 Guida introduttiva a Firefly Services](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex1.md)
       + [1.1.2 Ottimizza i processi Firefly con Microsoft Azure e gli URL prefirmati](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex2.md)
       + [1.1.3 Utilizzo delle API di Photoshop](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex3.md)
       + [API per modelli personalizzati Firefly 1.1.4](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex4.md)
       + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/creation-production/module1.1/summary.md)
-   + 1.2 Automazione dei flussi di lavoro creativi con Workfront Fusion {#crpr2}
+   + 1.2 Automazione dei flussi di lavoro Creative con Workfront Fusion {#crpr2}
       + [Panoramica](/help/tutorial-one-adobe/modules/creation-production/module1.2/automation.md)
       + [1.2.1 Guida introduttiva di Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex1.md)
       + [1.2.2 Utilizzare le API di Adobe in Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex2.md)
       + [1.2.3 Automazione dei processi con Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex3.md)
       + [1.2.4 Automazione tramite connettori](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
       + [I/O a 1,2,5 frame e Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
+      + [I/O da 1.2.6 Frame a Workfront Fusion a AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
       + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
+   + 1.3 Adobe Express e Adobe Experience Cloud {#crpr3}
+      + [Panoramica](/help/tutorial-one-adobe/modules/creation-production/module1.3/express.md)
+      + [1.3.1 Guida introduttiva ad Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
+      + [1.3.2 Animazione e video in Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
+      + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
 
 + Gestione risorse {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
@@ -88,7 +94,7 @@ ht-degree: 2%
          + [1.2.4 Acquisizione di dati da origini offline](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 Data Landing Zone](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
-      + Composizione Federata Del Pubblico 1.3 {#dc13}
+      + 1.3 Federated Audience Composition {#dc13}
          + [Panoramica](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
          + [1.3.1 Configurare l’ambiente Snowflake](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/ex1.md)
          + [1.3.2 Creare schemi, modelli di dati e collegamenti](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/ex2.md)
@@ -144,7 +150,7 @@ ht-degree: 2%
          + [2.6.4 Installare e configurare Kafka Connect e il connettore Adobe Experience Platform Sink](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex4.md)
          + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/summary.md)
    + Adobe Journey Optimizer B2C {#ajob2c}
-      + 3.1 Adobe Journey Optimizer: orchestrazione {#ajo31}
+      + 3.1 Adobe Journey Optimizer: Orchestrazione {#ajo31}
          + [Panoramica](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md)
          + [3.1.1 Creare l’evento](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex1.md)
          + [3.1.2 Creare frammenti da utilizzare nel messaggio](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex2.md)
@@ -183,8 +189,8 @@ ht-degree: 2%
          + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/summary.md)
 
 + Reporting e approfondimenti {#reporting}
-   + Customer Journey Analytics {#cjab2c}
-      + 1.1 Customer Journey Analytics: creare un dashboard utilizzando Analysis Workspace {#cja1}
+   + Customer Journey Analytics  {#cjab2c}
+      + 1.1 Customer Journey Analytics: creare una dashboard con Analysis Workspace {#cja1}
          + [Panoramica](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md)
          + [1.1.1 Customer Journey Analytics 101](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex1.md)
          + [1.1.2 Collegare i set di dati di Adobe Experience Platform in Customer Journey Analytics](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex2.md)
@@ -201,7 +207,7 @@ ht-degree: 2%
          + [1.2.5 Analizzare i dati Google Analytics tramite Customer Journey Analytics](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex5.md)
          + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/summary.md)
    + Data Distiller {#datadistiller}
-      + Servizio query 2.1 {#dd1}
+      + 2.1 Query Service {#dd1}
          + [Panoramica](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/query-service.md)
          + [2.1.1 Prerequisiti](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex1.md)
          + [2.1.2 Guida introduttiva](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex2.md)

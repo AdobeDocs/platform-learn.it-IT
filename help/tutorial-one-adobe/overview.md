@@ -3,10 +3,10 @@ title: Panoramica - Tutorial tecnico completo - Un Adobe
 description: Tutorial tecnico completo - Un Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
+source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 2%
+source-wordcount: '978'
+ht-degree: 3%
 
 ---
 
@@ -18,14 +18,12 @@ ht-degree: 2%
 
 Questo tutorial è molto vario e offre informazioni chiare nelle seguenti applicazioni:
 
-- Servizi Adobe Firefly
-- Adobe Photoshop
+- Adobe Firefly Services, Adobe Photoshop, Adobe Frame I/O, Adobe Substance 3D Staging
 - Adobe Workfront e Adobe Workfront Fusion
 - Adobe Experience Manager Cloud Service, Sites, Assets e Edge Delivery Services
 - Adobe Experience Platform
 - Adobe Real-Time CDP
 - Adobe Journey Optimizer
-
 
 Questo tutorial non si concentra solo sulle applicazioni Adobe, ma tiene conto dell’ecosistema più ampio in cui operano i brand. Per farlo, in alcune lezioni è importante considerare il modo in cui le applicazioni non Adobe si integrano con le applicazioni Adobe. In questo modo sarà possibile comprendere a fondo come funzioneranno le seguenti applicazioni insieme a Adobe Experience Platform:
 
@@ -40,13 +38,12 @@ Questo tutorial non si concentra solo sulle applicazioni Adobe, ma tiene conto d
 
 Se desideri seguire questo tutorial utilizzando la tua istanza di Adobe Experience Cloud, è necessario eseguire il provisioning delle seguenti applicazioni nella tua istanza e devi essere in grado di accedere a:
 
-- Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
-- Adobe Photoshop
+- Adobe Firefly
+- Adobe Photoshop, Adobe Frame I/O, Adobe Substance 3D Staging
 - Adobe Workfront
-- Adobe Workfront Fusion [https://fusion.adobe.com/](https://fusion.adobe.com/){target="_blank"}
-- Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform){target="_blank"}
-- Raccolta dati Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/){target="_blank"}
-- Accesso al sistema demo: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
+- Adobe Workfront Fusion
+- Adobe Experience Platform, raccolta dati Adobe Experience Platform
+- Accesso al sistema demo successivo: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
 
 ## Completamento e certificazione
 
@@ -68,13 +65,17 @@ In questo modulo fondamentale, preparerai tutto in modo da poter accedere e util
 
 ### 2. Creazione e produzione
 
-[1.1 Servizi Adobe Firefly](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
+[1.1 Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
 
 In questo modulo verranno utilizzate le API di Adobe Firefly Services, le API di Photoshop e i servizi di archiviazione di Microsoft Azure per generare immagini e memorizzarle a livello di programmazione.
 
-[1.2 Automazione dei flussi di lavoro creativi con Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}
+[1.2 Automazione del flusso di lavoro di Creative con Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
 In questo modulo fondamentale utilizzerai Adobe Workfront Fusion per automatizzare e scalare i flussi di lavoro di creazione dei contenuti.
+
+[1.3 Adobe Express e Adobe Experience Cloud](./modules/creation-production/module1.3/express.md){target="_blank"}
+
+In questo modulo fondamentale utilizzerai Adobe Express per creare immagini e video e condividerai tali risorse con l’ecosistema Adobe Experience Cloud più ampio.
 
 ### 3. Gestione degli attivi
 
