@@ -4,7 +4,7 @@ description: 'Guida introduttiva: installare l’estensione Chrome per la docume
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 30f8ceface0b8c696da45699e2e32412413a2c96
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Di seguito è riportato un esempio di tali valori. Attualmente, questi valori no
 
 | Nome | Chiave | Esempio |
 |:-------------:| :---------------:| :---------------:|
-| ID organizzazione IMS AEP | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| ID organizzazione AEP IMS | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
 | Nome organizzazione IMS AEP | `--aepImsOrgName--` | `Experience Platform International` |
 | ID tenant AEP | `--aepTenantId--` | `_experienceplatform` |
 | Nome sandbox AEP | `--aepSandboxName--` | `one-adobe` |
@@ -72,13 +72,13 @@ Immetti i valori come indicato di seguito, che sono tutti relativi all’istanza
 
 Se non si è sicuri dei valori da immettere per questi campi, seguire le istruzioni riportate di seguito.
 
-**Nome organizzazione IMS AEP**
+**Nome organizzazione AEP IMS**
 
 Quando accedi all&#39;istanza di Adobe Experience Platform in [https://platform.adobe.com/](https://platform.adobe.com/), il nome dell&#39;istanza si trova nell&#39;angolo in alto a destra dello schermo.
 
 ![DSN](./images/aepname.png)
 
-**ID organizzazione IMS AEP**
+**ID organizzazione AEP IMS**
 
 L’ID organizzazione IMS è l’identificatore univoco dell’istanza di Adobe Experience Cloud e in questa esercitazione viene fatto riferimento a tale ID in più posizioni.
 
@@ -110,7 +110,7 @@ Prima di estrarre il nome della sandbox dall’URL, accertati di trovarti nella 
 
 ![DSN](./images/aepsandboxsw.png)
 
-In questo esempio, il nome della sandbox AEP è **one-adobe**.
+In questo esempio, il nome della sandbox di AEP è **one-adobe**.
 
 ![DSN](./images/aepsname.png)
 
@@ -135,11 +135,11 @@ Dopo aver attivato la configurazione, accanto alle iniziali dell’ambiente comp
 
 ## Verificare il contenuto del tutorial
 
-Come test, passa a [questa pagina](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/uce/module31/ex2).
+Come test, passa a [questa pagina](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2).
 
 Ora tutte le **Variabili di ambiente** in questa pagina sono state sostituite dai loro valori effettivi, in base all&#39;ambiente attivato nell&#39;estensione chrome.
 
-È ora necessario disporre di una visualizzazione simile a quella riportata di seguito, in cui la variabile di ambiente `aepSandboxName` è stata sostituita dal nome effettivo della sandbox AEP, che in questo caso è **one-adobe**.
+È ora necessario disporre di una visualizzazione simile a quella riportata di seguito, in cui la variabile di ambiente `aepSandboxName` è stata sostituita dal nome effettivo della sandbox di AEP, che in questo caso è **one-adobe**.
 
 ![DSN](./images/mod7.png)
 
