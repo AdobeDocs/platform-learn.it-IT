@@ -4,7 +4,7 @@ description: 'Guida introduttiva: utilizzare il sito web'
 kt: 5342
 doc-type: tutorial
 exl-id: 4d2152c9-7f9a-48e3-a8e6-4a6add034b4e
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Nella pagina **Integrazioni** è necessario selezionare la proprietà Raccolta d
 
 ![DSN](./images/web2.png)
 
-Fare clic su **Seleziona** nella proprietà Raccolta dati creata nel passaggio precedente, denominata `--aepUserLdap-- - Demo System (DD/MM/YYYY) (web)`. Fai clic su **Salva**.
+Fare clic su **Seleziona** nella proprietà Raccolta dati creata nel passaggio precedente, denominata `--aepUserLdap-- - One Adobe (DD/MM/YYYY) (web)`. Fai clic su **Salva**.
 
 ![DSN](./images/web2a.png)
 
@@ -73,7 +73,7 @@ Nella pagina **Integrazioni** è necessario selezionare la proprietà Raccolta d
 
 ![DSN](./images/web2.png)
 
-Fare clic su **Seleziona** nella proprietà Raccolta dati creata nel passaggio precedente, denominata `--aepUserLdap - Demo System (DD/MM/YYYY) (web)`.
+Fare clic su **Seleziona** nella proprietà Raccolta dati creata nel passaggio precedente, denominata `--aepUserLdap - One Adobe (DD/MM/YYYY) (web)`.
 
 ![DSN](./images/web2a.png)
 

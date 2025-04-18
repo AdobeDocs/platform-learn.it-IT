@@ -4,7 +4,7 @@ description: 'Guida introduttiva: creare lo stream di dati'
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 1%
@@ -149,7 +149,7 @@ Fare clic sull&#39;estensione **Adobe Experience Platform Edge Network** e quind
 
 ![Denomina la configurazione di Edge e salva](./images/edgeconfig12m.png)
 
-Poi vedrai questo. Ora devi selezionare la sandbox e il flusso di dati corretti che hai appena configurato. La sandbox da utilizzare è `--aepSandboxName--` e lo stream di dati è denominato `--aepUserLdap-- - Demo System Datastream (Mobile)`.
+Poi vedrai questo. Ora devi selezionare la sandbox e il flusso di dati corretti che hai appena configurato. La sandbox da utilizzare è `--aepSandboxName--` e lo stream di dati è denominato `--aepUserLdap-- - One Adobe Datastream (Mobile)`.
 
 Per il **dominio Edge Network**, utilizzare il dominio predefinito.
 
