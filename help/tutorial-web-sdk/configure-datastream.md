@@ -1,10 +1,10 @@
 ---
 title: Configurare uno stream di dati per Platform Web SDK
-description: Scopri come abilitare un flusso di dati e configurare le soluzioni Experience Cloud. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
+description: Scopri come abilitare uno stream di dati e configurare le soluzioni Experience Cloud. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 8%
@@ -15,9 +15,9 @@ ht-degree: 8%
 
 Scopri come configurare uno stream di dati per Adobe Experience Platform Web SDK.
 
-[Datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) indica all&#39;Edge Network di Adobe Experience Platform dove inviare i dati raccolti da Platform Web SDK. Nella configurazione dei flussi di dati, abilita le applicazioni di Experience Cloud, l’account di Experience Platform e l’inoltro di eventi.
+[Datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) indica ad Adobe Experience Platform Edge Network dove inviare i dati raccolti da Platform Web SDK. Nella configurazione dei flussi di dati, abilita le applicazioni Experience Cloud, l’account Experience Platform e l’inoltro di eventi.
 
-![SDK Web, flussi di dati e diagramma Edge Network](assets/dc-websdk-datastreams.png)
+![SDK Web, flussi di dati e diagramma di Edge Network](assets/dc-websdk-datastreams.png)
 
 ## Obiettivi di apprendimento
 
@@ -35,11 +35,11 @@ Prima di configurare lo stream di dati, è necessario aver già completato le le
 
 ## Creare un flusso di dati
 
-Ora puoi creare un flusso di dati per indicare all’Edge Network di Platform dove inviare i dati raccolti dall’SDK per web.
+Ora è possibile creare un flusso di dati per indicare a Platform Edge Network dove inviare i dati raccolti da Web SDK.
 
 **Per creare uno stream di dati:**
 
-1. Apri l&#39;interfaccia [Data Collection](https://launch.adobe.com/){target="_blank"}
+1. Apri l&#39;interfaccia di [Data Collection](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Assicurati di trovarti nella sandbox corretta
 
    >[!NOTE]
@@ -57,11 +57,11 @@ Ora puoi creare un flusso di dati per indicare all’Edge Network di Platform do
    >
    >Non è necessario selezionare uno schema. La selezione dello schema è necessaria solo se si utilizza la funzionalità [Preparazione dati per raccolta dati](/help/data-collection/edge/data-prep.md).
 
-Nella schermata successiva, è possibile aggiungere al flusso di dati servizi quali applicazioni Adobe, tuttavia a questo punto non si aggiungeranno servizi. Lo farai in seguito nelle lezioni [Configura Experience Platform](setup-experience-platform.md), [Configura analisi](setup-analytics.md), [Configura Audience Manager](setup-audience-manager.md), [Configura destinazione](setup-target.md) o [Inoltro eventi](setup-event-forwarding.md).
+Nella schermata successiva, è possibile aggiungere al flusso di dati servizi come applicazioni Adobe, ma al momento non è possibile aggiungere alcun servizio. Lo farai in seguito nelle lezioni [Configurazione di Experience Platform](setup-experience-platform.md), [Configurazione di Analytics](setup-analytics.md), [Configurazione di Audience Manager](setup-audience-manager.md), [Configurazione di Target](setup-target.md) o [Inoltro eventi](setup-event-forwarding.md).
 
 >[!NOTE]
 >
->Quando implementi Platform Web SDK sul tuo sito web, devi creare tre flussi di dati da mappare ai tre ambienti di tag (sviluppo, stage e produzione). Se utilizzi Platform Web SDK con applicazioni basate su Platform, ad esempio Adobe Real-time Customer Data Platform o Adobe Journey Optimizer, assicurati di creare tali flussi di dati nelle sandbox di Platform appropriate.
+>Quando implementi Platform Web SDK sul tuo sito web, devi creare tre flussi di dati da mappare ai tre ambienti di tag (sviluppo, stage e produzione). Se utilizzi Platform Web SDK con applicazioni basate su Platform, ad esempio Adobe Real-Time Customer Data Platform o Adobe Journey Optimizer, assicurati di creare tali flussi di dati nelle sandbox di Platform appropriate.
 
 ## Sostituire uno stream di dati
 
@@ -70,14 +70,14 @@ Le [sostituzioni dello stream di dati](https://experienceleague.adobe.com/en/doc
 La sostituzione della configurazione dello stream di dati è un processo in due fasi:
 
 1. Innanzitutto, puoi definire le sostituzioni dello stream di dati nella configurazione del servizio dello stream di dati. Ad esempio, puoi definire suite di rapporti di Analytics alternative, aree di lavoro di Target o set di dati di Platform da utilizzare come sostituzioni.
-1. Quindi, invii le sostituzioni all’Edge Network tramite un’azione Invia evento SDK per web o tramite una configurazione nell’estensione tag SDK per web.
+1. Quindi, invii le sostituzioni ad Edge Network tramite un’azione Invia evento di Web SDK oppure tramite una configurazione nell’estensione tag Web SDK.
 
 Nella lezione [Configurare Adobe Analytics](setup-analytics.md) è possibile ignorare la suite di rapporti per una pagina utilizzando l&#39;azione Invia evento di Platform Web SDK.
 
-Ora puoi installare l’estensione Platform Web SDK nella tua proprietà tag.
+Ora puoi installare l’estensione Platform Web SDK nella proprietà tag.
 
 [Successivo: ](install-web-sdk.md)
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [Experience League post di discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

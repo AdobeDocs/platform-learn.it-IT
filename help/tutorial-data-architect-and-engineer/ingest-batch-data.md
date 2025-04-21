@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
-source-wordcount: '2465'
+source-wordcount: '2446'
 ht-degree: 0%
 
 ---
@@ -335,8 +335,6 @@ Cercare di nuovo il profilo con valore `5625458` nello spazio dei nomi `loyaltyI
 Adobe collabora con più fornitori ETL per supportare l’acquisizione dei dati in Experience Platform. A causa della varietà di fornitori di terze parti, ETL non è trattato in questa esercitazione, anche se è opportuno rivedere alcune di queste risorse:
 
 * [Sviluppo di integrazioni ETL per Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
-* [Pagina Connettore Adobe Experience Platform Informatica su Adobe Exchange](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
-* [Documentazione Informatica del connettore Adobe Experience Platform](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
 * [[!DNL Snaplogic] Adobe Experience Platform Snap Pack](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## Risorse aggiuntive

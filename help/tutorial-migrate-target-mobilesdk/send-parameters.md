@@ -2,7 +2,7 @@
 title: 'Parametri di invio: migrazione dell’implementazione di Adobe Target nell’app mobile a Adobe Journey Optimizer - Estensione Decisioning'
 description: Scopri come inviare parametri mbox, di profilo ed entità ad Adobe Target utilizzando Experience Platform Web SDK.
 exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Target consente la sincronizzazione dei profili tra dispositivi e sistemi utiliz
 
 | Esempio di parametro at.js | Opzione Platform Web SDK | Note |
 | --- | --- | --- |
-| `at_property` | N/D | I token di proprietà sono configurati nello stream di dati [1} e non possono essere impostati nella chiamata `sendEvent`.](https://experienceleague.adobe.com/en/docs/experience-platform/edge/datastreams/configure#target) |
+| `at_property` | N/D | I token di proprietà sono configurati nello stream di dati [1} e non possono essere impostati nella chiamata `sendEvent`.](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#target) |
 | `pageName` | `xdm.web.webPageDetails.name` o <br> `data.__adobe.target.pageName` | I parametri mbox di destinazione possono essere passati come parte dell&#39;oggetto `xdm` o come parte dell&#39;oggetto `data.__adobe.target`. |
 | `profile.gender` | `data.__adobe.target.profile.gender` | Tutti i parametri di profilo di Target devono essere passati come parte dell&#39;oggetto `data` e con prefisso `profile.` per essere mappati in modo appropriato. |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | Parametro riservato utilizzato per la funzionalità Affinità tra categorie di Target che deve essere passata come parte dell&#39;oggetto `data`. |

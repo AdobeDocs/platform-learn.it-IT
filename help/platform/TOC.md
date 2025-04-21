@@ -5,10 +5,10 @@ user-guide-description: Scopri i numerosi componenti di Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 13a78ab0c8886a1711678b1c7c676a18c2a07c95
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
@@ -58,7 +58,7 @@ Campaigns
 
 
 + [Tutorial su Platform](/help/platform/overview.md)
-+ Introduzione alla piattaforma {#intro-to-platform}
++ Introduzione a Platform {#intro-to-platform}
    + [Una customer experience offerta da Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [Dietro le quinte: un’esperienza del cliente basata su Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Panoramica di Experience Platform](/help/platform/intro-to-platform/overview.md)
@@ -118,7 +118,7 @@ Campaigns
    + [Creare e attivare il pubblico dell’account (B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
    + [Demo della segmentazione in streaming](/help/platform/audiences/streaming-segmentation-demo.md)
    + [Valutare i tipi di pubblico in batch su richiesta](/help/platform/audiences/evaluate-audiences-on-demand.md)
-   + [Valuta una regola di pubblico](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
+   + [Valutare una regola di pubblico](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
    + [Crea un set di dati per esportare i dati](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
    + [Impostazione della connessione Segment Match](/help/platform/segments/segment-match-connection-setup.md)
    + [Governance dei dati per Segment Match](/help/platform/segments/segment-match-data-governance.md)
@@ -127,7 +127,7 @@ Campaigns
    + [Ricezione dei dati con Segment Match](/help/platform/segments/segment-match-receiving-data.md)
 + [Registri di audit](/help/platform/governance/audit-logs.md)
 + [Raccolta dati](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
-+ Collaboration {#collaboration}
++ Collaborazione {#collaboration}
    + [Panoramica di Real-Time CDP Collaboration](collaboration/real-time-cdp-collaboration-overview.md)
    + [Impostare le autorizzazioni](collaboration/set-permissions-for-collaboration.md)
    + [Configurare un account inserzionista](collaboration/set-up-an-advertiser-account.md)
@@ -151,12 +151,12 @@ Campaigns
    + [Profilo pseudonimo e scadenza evento (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [Elimina profili](https://experienceleague.adobe.com/it/docs/platform-learn/tutorials/profiles/delete-profiles)
    + [Aggiornare un attributo di profilo](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
-+ Acquisizione dati {#data-ingestion}
++ Acquisizione dei dati {#data-ingestion}
    + [Panoramica](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Panoramica dell’acquisizione in batch](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Creare e popolare un set di dati](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [Eliminare set di dati e batch](https://experienceleague.adobe.com/it/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
-   + [Mappa un file CSV su XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
+   + [Mappare un file CSV su XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [Panoramica origini](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Acquisire dati da Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=it)
    + [Acquisire dati da Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
@@ -167,8 +167,8 @@ Campaigns
    + [Trasferire in streaming i dati con l’API HTTP](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=it)
    + [Trasmettere i dati utilizzando i connettori di origini](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=it)
    + [Esercitazioni Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
-   + [Esercitazioni di Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
-+ Ciclo di vita dati {#data-lifecycle}
+   + [Tutorial su Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
++ Ciclo di vita dei dati {#data-lifecycle}
    + [Set di dati in scadenza](/help/platform/data-lifecycle/expire-datasets.md)
 + Destinazioni {#destinations}
    + [Panoramica sulle destinazioni](/help/platform/destinations/understanding-destinations.md)
@@ -193,7 +193,7 @@ Campaigns
    + [Panoramica dei grafici delle identità e delle identità](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [Etichettare, acquisire e verificare i dati di identità](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [Visualizzare i grafici delle identità](/help/platform/identities/view-identity-graphs.md)
-   + Regole di collegamento del grafico delle identità {#graph-linking-rules}
+   + Regole di collegamento del grafo delle identità {#graph-linking-rules}
       + [Panoramica](/help/platform/identities/identity-graph-linking-rules/overview.md)
       + [Simulazione dei grafici](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
 + Intelligent Services {#intelligent-services}
@@ -281,17 +281,17 @@ Campaigns
    + [Trasmettere i dati con API HTTP](/help/platform/sources/streaming-ingestion-http-api.md)
    + [Trasmettere i dati utilizzando i connettori Source](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [Risoluzione dei problemi: connettore SFTP](/help/platform/sources/troubleshoot-sftp-connector.md)
-+ Usa i playbook sui casi d’uso {#use-case-playbooks}
++ Playbook di casi d’uso {#use-case-playbooks}
    + [Panoramica](/help/platform/use-case-playbooks/overview.md)
    + [Configurare una sandbox del playbook](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
    + [Creare e pubblicare un’istanza del playbook](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
-+ Integrazioni Experience Cloud {#experience-cloud}
++ Integrazioni di Experience Cloud {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=it)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
    + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
-   + [Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
-+ Tendenze di settore {#industry}
+   + [Target](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
++ Tendenze del settore {#industry}
    + [Il futuro della gestione dei dati e l’ambiente in evoluzione](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [Un racconto di due percezioni: marchi e consumatori](/help/platform/industry/brands-vs-consumers.md)
    + [Evoluzione del centro di eccellenza del pubblico](/help/platform/industry/evolving-your-audience-center-of-excellence.md)

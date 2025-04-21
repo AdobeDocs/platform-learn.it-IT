@@ -4,7 +4,7 @@ description: Scopri come creare uno schema XDM per i dati web nell’interfaccia
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '1542'
 ht-degree: 3%
@@ -17,11 +17,11 @@ Scopri come creare uno schema XDM per i dati web nell’interfaccia di raccolta 
 
 Gli schemi Experience Data Model (XDM) sono gli elementi costitutivi, i principi e le best practice per la raccolta di dati in Adobe Experience Platform.
 
-Platform Web SDK utilizza lo schema per standardizzare i dati dell’evento web, inviarli all’Edge Network di Platform e infine inoltrarli a qualsiasi applicazione Experience Cloud configurata nello stream di dati. Questo passaggio è fondamentale in quanto definisce un modello dati standard necessario per acquisire i dati sulla customer experience in Experience Platform e abilita servizi e applicazioni a valle basati su questi standard.
+Platform Web SDK utilizza lo schema per standardizzare i dati dell’evento web, inviarli a Platform Edge Network e infine inoltrarli a qualsiasi applicazione Experience Cloud configurata nello stream di dati. Questo passaggio è fondamentale in quanto definisce un modello dati standard necessario per acquisire i dati sulla customer experience in Experience Platform e abilita servizi e applicazioni a valle basati su questi standard.
 
 >[!NOTE]
 >
->Uno schema XDM è _non richiesto_ per implementare Adobe Analytics, Adobe Target o Adobe Audience Manager con Web SDK (i dati possono essere trasmessi nell&#39;oggetto `data` invece che nell&#39;oggetto `xdm` come verrà visualizzato in seguito). È necessario uno schema XDM per le implementazioni più performanti di applicazioni native per la piattaforma come Journey Optimizer, Real-time Customer Data Platform, Customer Journey Analytics. Anche se puoi decidere di non utilizzare uno schema XDM nella tua implementazione, è previsto che tu lo faccia come parte di questa esercitazione.
+>Per implementare Adobe Analytics, Adobe Target o Adobe Audience Manager con Web SDK è necessario uno schema XDM _non_ (i dati possono essere passati nell&#39;oggetto `data` anziché nell&#39;oggetto `xdm` come verrà visualizzato in seguito). È necessario uno schema XDM per le implementazioni più performanti di applicazioni native per la piattaforma come Journey Optimizer, Real-Time Customer Data Platform, Customer Journey Analytics. Anche se puoi decidere di non utilizzare uno schema XDM nella tua implementazione, è previsto che tu lo faccia come parte di questa esercitazione.
 
 ## Perché modellare i dati?
 
@@ -74,11 +74,11 @@ Tutte le autorizzazioni utente e di provisioning necessarie per Data Collection 
 
 ## Creare uno schema XDM
 
-Gli schemi XDM sono il modo standard per descrivere i dati in Experience Platform, consentendo a tutti i dati conformi agli schemi di essere riutilizzati in un’organizzazione senza conflitti, o anche condivisi tra più organizzazioni. Per ulteriori informazioni, consulta le [nozioni di base sulla composizione dello schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition).
+Gli schemi XDM sono il modo standard per descrivere i dati in Experience Platform, consentendo di riutilizzare tutti i dati conformi agli schemi in un’organizzazione senza conflitti, o anche di condividerli tra più organizzazioni. Per ulteriori informazioni, consulta le [nozioni di base sulla composizione dello schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition).
 
 In questo esercizio creerai uno schema XDM utilizzando i gruppi di campi della linea di base consigliati per l’acquisizione dei dati dell’evento web nel [sito dimostrativo Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
 
-1. Apri l&#39;interfaccia [Data Collection](https://launch.adobe.com/){target="_blank"}
+1. Apri l&#39;interfaccia di [Data Collection](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Assicurati di trovarti nella sandbox corretta. Individua la sandbox nell’angolo superiore destro
 
    >[!NOTE]
@@ -142,7 +142,7 @@ Questa lezione è solo un punto di partenza. Quando crei uno schema di eventi we
 
 ![Dati evento web Luma](assets/schema-identityMap.png)
 
-Si tratta di un oggetto obbligatorio per qualsiasi raccolta di dati relativi al web, in quanto ospita l’ID Experience Cloud richiesto per identificare gli utenti sul web. È anche la chiave per impostare gli ID cliente interni per gli utenti autenticati. `[!UICONTROL identityMap]` è discusso ulteriormente nella lezione [Configurare le identità](configure-identities.md). Viene incluso automaticamente in tutti gli schemi che utilizzano la classe **[!UICONTROL XDM ExperienceEvent]**.
+Si tratta di un oggetto obbligatorio per qualsiasi raccolta di dati relativi al web, in quanto ospita l’Experience Cloud ID richiesto per identificare gli utenti sul web. È anche la chiave per impostare gli ID cliente interni per gli utenti autenticati. `[!UICONTROL identityMap]` è discusso ulteriormente nella lezione [Configurare le identità](configure-identities.md). Viene incluso automaticamente in tutti gli schemi che utilizzano la classe **[!UICONTROL XDM ExperienceEvent]**.
 
 
 >[!IMPORTANT]
@@ -150,7 +150,7 @@ Si tratta di un oggetto obbligatorio per qualsiasi raccolta di dati relativi al 
 > È possibile abilitare **[!UICONTROL Profilo]** per uno schema prima di salvarlo. **Non** attivarlo a questo punto. Una volta abilitato lo schema per il profilo, non è possibile disattivarlo o eliminarlo senza ripristinare l’intera sandbox. A questo punto non è possibile rimuovere i campi dagli schemi, anche se è possibile [rendere obsoleti i campi nell&#39;interfaccia utente](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Queste implicazioni sono importanti da tenere presenti in un secondo momento quando si lavora con i propri dati nell’ambiente di produzione.
 >
 >
->Questa impostazione viene discussa ulteriormente durante la lezione dell&#39;[Experience Platform del programma di installazione](setup-experience-platform.md).
+>Questa impostazione viene discussa ulteriormente durante la lezione [Configurazione di Experience Platform](setup-experience-platform.md).
 >![Schema profilo](assets/schema-profile.png)
 
 Per completare questa lezione, seleziona **[!UICONTROL Salva]** in alto a destra.
@@ -165,4 +165,4 @@ Ora è possibile fare riferimento a questo schema quando si aggiunge l’estensi
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [Experience League post di discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -1,19 +1,19 @@
 ---
-title: Installare e configurare l’estensione tag di Adobe Experience Platform Web SDK
+title: Installare e configurare l’estensione tag Adobe Experience Platform Web SDK
 description: Scopri come installare e configurare l’estensione tag Platform Web SDK nell’interfaccia di Data Collection. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 11%
 
 ---
 
-# Installare l’estensione tag Adobe Experience Platform Web SDK
+# Installare l&#39;estensione tag Adobe Experience Platform Web SDK
 
-Scopri come installare e configurare l’estensione tag Adobe Experience Platform Web SDK. Il modo più semplice per implementare Web SDK è utilizzare i tag di Adobe Tag Manager (precedentemente noti come Launch). L&#39;estensione tag di Platform Web SDK è l&#39;_unica estensione tag_ necessaria per inviare dati a _tutte le applicazioni Adobe Experience Cloud_, incluse [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform e [Journey Optimizer](setup-web-channel.md).
+Scopri come installare e configurare l’estensione tag Adobe Experience Platform Web SDK. Il modo più semplice per implementare Web SDK consiste nell’utilizzare i tag di Adobe Manager (precedentemente noti come Launch). L&#39;estensione tag di Platform Web SDK è l&#39;_unica estensione tag_ necessaria per inviare dati a _tutte le applicazioni Adobe Experience Cloud_, incluse [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-Time Customer Data Platform e [Journey Optimizer](setup-web-channel.md).
 
 ## Obiettivi di apprendimento
 
@@ -35,7 +35,7 @@ Innanzitutto devi avere una proprietà tag. Una proprietà è un contenitore per
 
 Crea una nuova proprietà tag per l’esercitazione:
 
-1. Apri l&#39;interfaccia [Data Collection](https://launch.adobe.com/){target="_blank"}
+1. Apri l&#39;interfaccia di [Data Collection](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Seleziona **[!UICONTROL Tag]** nel menu di navigazione a sinistra
 1. Seleziona il pulsante **[!UICONTROL Nuova proprietà]**
    ![Aggiungi una nuova proprietà](assets/websdk-property-addNewProperty.png)
@@ -44,9 +44,9 @@ Crea una nuova proprietà tag per l’esercitazione:
 1. Seleziona **[!UICONTROL Salva]**
    ![Dettagli proprietà](assets/websdk-property-propertyDetails.png)
 
-## Aggiungere l’estensione Web SDK
+## Aggiungere l&#39;estensione Web SDK
 
-Una volta create le proprietà dello schema XDM, dello stream di dati e dei tag, puoi installare l’estensione Platform Web SDK:
+Con la creazione dello schema XDM, dello stream di dati e della proprietà tag, puoi installare l’estensione Platform Web SDK:
 
 1. Apri la nuova proprietà tag
 1. Vai a **[!UICONTROL Estensioni]** > **[!UICONTROL Catalogo]**
@@ -75,16 +75,16 @@ Per ulteriori informazioni su ciascuna sezione dell&#39;estensione, vedere [Conf
 
 >[!NOTE]
 >
->Anche se non hai configurato un CNAME nell&#39;impostazione [!UICONTROL Dominio Edge] in questa lezione, l&#39;Adobe consiglia di utilizzare un CNAME quando implementi Platform Web SDK sul tuo sito Web. Nonostante un’implementazione CNAME non offra vantaggi in termini di durata dei cookie, potrebbero esserci altri vantaggi. Questi vantaggi includono ad blocker e browser meno comuni che impediscono l’invio dei dati a domini classificati come tracciatori. In questi casi, l’utilizzo di un CNAME potrebbe agevolare la raccolta di dati relativi agli utenti che utilizzano tali strumenti.
+>Sebbene in questa lezione non sia stato configurato un CNAME nell&#39;impostazione del [!UICONTROL dominio Edge], Adobe consiglia di utilizzare un CNAME quando si implementa Platform Web SDK sul proprio sito Web. Nonostante un’implementazione CNAME non offra vantaggi in termini di durata dei cookie, potrebbero esserci altri vantaggi. Questi vantaggi includono ad blocker e browser meno comuni che impediscono l’invio dei dati a domini classificati come tracciatori. In questi casi, l’utilizzo di un CNAME potrebbe agevolare la raccolta di dati relativi agli utenti che utilizzano tali strumenti.
 
 >[!NOTE]
 >
 >Durante questa esercitazione, puoi configurare un solo stream di dati e associarlo a tutti gli ambienti di tag (sviluppo, stage e produzione). Quando implementi Platform Web SDK sul tuo sito web, devi configurare un flusso di dati separato per ogni ambiente e mapparlo di conseguenza nella configurazione dell’estensione.
 
-Ora che hai installato Platform Web SDK e lo hai associato allo stream di dati, puoi iniziare a raccogliere dati.
+Dopo aver installato Platform Web SDK e averlo associato allo stream di dati, è possibile iniziare a raccogliere i dati.
 
 [Successivo: ](create-data-elements.md)
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [Experience League post di discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

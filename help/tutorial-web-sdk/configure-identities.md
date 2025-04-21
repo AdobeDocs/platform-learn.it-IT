@@ -4,7 +4,7 @@ description: Scopri come configurare gli spazi dei nomi delle identità da utili
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 12%
@@ -57,7 +57,7 @@ Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informaz
 
 Ora crea uno spazio dei nomi per l’ID CRM Luma:
 
-1. Apri l&#39;interfaccia [Data Collection](https://launch.adobe.com/){target="_blank"}
+1. Apri l&#39;interfaccia di [Data Collection](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Seleziona la sandbox in uso per l’esercitazione
 
    >[!NOTE]
