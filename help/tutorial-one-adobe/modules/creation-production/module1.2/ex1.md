@@ -1,25 +1,25 @@
 ---
 title: Guida introduttiva a Workfront Fusion
-description: Scopri come utilizzare Workfront Fusion e Adobe Systems I/O per interrogare Adobe Systems API dei servizi Firefly
+description: Scopri come utilizzare Workfront Fusion e Adobe I/O per eseguire query sulle API di Adobe Firefly Services
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
+source-git-commit: 3542de25dab9ca0d94928f526060d2fead2e2f34
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 1%
 
 ---
 
-# 1.2.1 Guida introduttiva a Workfront Fusion
+# 1.2.1 Guida introduttiva di Workfront Fusion
 
-Scopri come utilizzare Workfront Fusion e Adobe Systems I/O per interrogare Adobe Systems API dei servizi Firefly.
+Scopri come utilizzare Workfront Fusion e Adobe I/O per eseguire query sulle API di Adobe Firefly Services.
 
 ## 1.2.1.1 Crea nuovo scenario
 
-Vai a [https://experience.adobe.com/](https://experience.adobe.com/). Aprire **Workfront Fusion**.
+Vai a [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Aprire **Workfront Fusion**.
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -27,7 +27,7 @@ Vai a **Scenari**.
 
 ![WF Fusion](./images/wffusion2.png)
 
-Fai clic sull&#39;icona **** + per creare una nuova cartella per il tuo lavoro.
+Fai clic sull&#39;icona **+** per creare una nuova cartella per il tuo lavoro.
 
 ![WF Fusion](./images/wffusion2a.png)
 
@@ -35,15 +35,15 @@ Assegna un nome alla cartella `--aepUserLdap--` e seleziona **Salva**.
 
 ![WF Fusion](./images/wffusion2b.png)
 
-Seleziona la cartella e quindi seleziona **Crea nuovo scenario**.
+Selezionare la cartella, quindi selezionare **Crea nuovo scenario**.
 
 ![WF Fusion](./images/wffusion3.png)
 
-Viene visualizzato uno scenario vuoto, seleziona **strumenti e seleziona** Imposta più variabili ****.
+Viene visualizzato uno scenario vuoto. Selezionare **strumenti** e **Imposta più variabili**.
 
 ![WF Fusion](./images/wffusion4.png)
 
-Sposta l&#39;icona dell&#39;orologio **** sul set di più variabili **appena aggiunto**.
+Sposta l&#39;icona **orologio** nelle **variabili multiple** appena aggiunte.
 
 ![WF Fusion](./images/wffusion5.png)
 
@@ -71,7 +71,7 @@ Ora devi configurare le variabili necessarie per l’autenticazione in Adobe I/O
 | `CONST_client_secret` | Segreto client del progetto Adobe I/O |
 | `CONST_scope` | ambito del progetto Adobe I/O |
 
-Trova queste variabili da [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects) e apri il tuo progetto Adobe I/O, che si chiama `--aepUserLdap-- One Adobe tutorial`.
+Trova queste variabili da [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects){target="_blank"} e apri il tuo progetto Adobe I/O, che si chiama `--aepUserLdap-- One Adobe tutorial`.
 
 ![WF Fusion](./images/wffusion9.png)
 
@@ -87,15 +87,15 @@ Immetti il **Nome variabile**: **CONST_client_id** e il relativo **Valore variab
 
 ![WF Fusion](./images/wffusion12.png)
 
-Selezionare **Aggiungi elemento**.
+Seleziona **Aggiungi elemento**.
 
 ![WF Fusion](./images/wffusion13.png)
 
-Immettete **Variabile nome**: **CONST_client_secret** e il relativo **valore** Variabile, selezionate **Aggiungi**.
+Immetti **Nome variabile**: **CONST_client_secret** e il relativo **Valore variabile**. Seleziona **Aggiungi**.
 
 ![WF Fusion](./images/wffusion14.png)
 
-Selezionare **Aggiungi elemento**.
+Seleziona **Aggiungi elemento**.
 
 ![WF Fusion](./images/wffusion15.png)
 
@@ -129,7 +129,7 @@ Seleziona **Crea una richiesta**.
 | `Method` | `POST` |
 | `Body Type` | `x-www-form-urlencoded` |
 
-Selezionare **Aggiungi elemento**.
+Seleziona **Aggiungi elemento**.
 
 ![WF Fusion](./images/wffusion22.png)
 
@@ -137,9 +137,9 @@ Aggiungi elementi per ciascuno dei seguenti valori:
 
 | Chiave | Valore |
 |:-------------:| :---------------:| 
-| `client_id` | Variabile predefinita per `CONST_client_id` |
-| `client_secret` | Variabile predefinita per `CONST_client_secret` |
-| `scope` | Variabile predefinita per `CONST_scope` |
+| `client_id` | la variabile predefinita per `CONST_client_id` |
+| `client_secret` | la variabile predefinita per `CONST_client_secret` |
+| `scope` | la variabile predefinita per `CONST_scope` |
 | `grant_type` | `client_credentials` |
 
 Configurazione per `client_id`:
@@ -158,7 +158,7 @@ Configurazione per `grant_type`.
 
 ![WF Fusion](./images/wffusion28.png)
 
-Scorri verso il basso e seleziona la casella per **la risposta** di analisi. Selezionare **OK**.
+Scorri verso il basso e seleziona la casella per **Analizzare la risposta**. Selezionare **OK**.
 
 ![WF Fusion](./images/wffusion27.png)
 
@@ -226,11 +226,11 @@ Rinomina il terzo oggetto in **Imposta token Bearer**. Selezionare **OK**.
 
 ![WF Fusion](./images/wffusion44.png)
 
-Lo schermo dovrebbe apparire like questo:
+Lo schermo dovrebbe essere simile al seguente:
 
 ![WF Fusion](./images/wffusion45.png)
 
-Successivo, modificare il nome dello scenario in `--aepUSerLdap-- - Adobe I/O Authentication`.
+Quindi, cambia il nome dello scenario in `--aepUSerLdap-- - Adobe I/O Authentication`.
 
 ![WF Fusion](./images/wffusion46.png)
 
@@ -240,8 +240,8 @@ Seleziona **Salva**.
 
 ## Passaggi successivi
 
-Vai a [Utilizzare le API Adobe Systems in Workfront Fusion](./ex2.md){target="_blank"}
+Vai a [Utilizza le API di Adobe in Workfront Fusion](./ex2.md){target="_blank"}
 
-Torna a [Creative Automazione del flusso di lavoro con Workfront Fusion](./automation.md){target="_blank"}
+Torna a [Automazione dei flussi di lavoro Creative con Workfront Fusion](./automation.md){target="_blank"}
 
 Torna a [Tutti i moduli](./../../../overview.md){target="_blank"}

@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 297fba1810934e6ce4d9b8dfaea0e1250e761ab5
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 1%
@@ -29,7 +29,7 @@ I team aziendali, tuttavia, non hanno bisogno di un file PSD, ma di un file PNG 
 
 ## 1.2.6.1 Crea un nuovo scenario
 
-Vai a [https://experience.adobe.com/](https://experience.adobe.com/). Aprire **Workfront Fusion**.
+Vai a [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Aprire **Workfront Fusion**.
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -59,7 +59,7 @@ Dovresti vedere questo. Fare clic su **Copia indirizzo negli Appunti**.
 
 ## 1.2.6.2 Configurare il webhook in Frame.io
 
-Vai a [https://developer.frame.io/](https://developer.frame.io/). Fai clic su **STRUMENTI PER SVILUPPATORI**, quindi scegli **Azioni personalizzate**.
+Vai a [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Fai clic su **STRUMENTI PER SVILUPPATORI**, quindi scegli **Azioni personalizzate**.
 
 ![I/O fotogrammi](./images/aemf7.png)
 
@@ -83,7 +83,7 @@ Dovresti vedere questo.
 
 ![I/O fotogrammi](./images/aemf11.png)
 
-Vai a [https://app.frame.io/projects](https://app.frame.io/projects) e vai alla cartella creata in precedenza, che deve essere denominata `--aepUserLdap--`. Fai doppio clic per aprire la risorsa creata nell’esercizio precedente.
+Vai a [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"} e vai alla cartella creata in precedenza, che deve essere denominata `--aepUserLdap--`. Fai doppio clic per aprire la risorsa creata nell’esercizio precedente.
 
 ![I/O fotogrammi](./images/aemf11a.png)
 
@@ -271,7 +271,7 @@ La connessione verrà quindi convalidata e, in caso di esito positivo, verrà se
 
 ![I/O fotogrammi](./images/aemf51.png)
 
-Per creare una nuova cartella dedicata, vai a [https://experience.adobe.com](https://experience.adobe.com/). Verificare che sia selezionata l&#39;istanza Experience Cloud corretta, che deve essere `--aepImsOrgName--`. Quindi fare clic su **Experience Manager Assets**.
+Per creare una nuova cartella dedicata, vai a [https://experience.adobe.com](https://experience.adobe.com/){target="_blank"}. Verificare che sia selezionata l&#39;istanza Experience Cloud corretta, che deve essere `--aepImsOrgName--`. Quindi fare clic su **Experience Manager Assets**.
 
 ![I/O fotogrammi](./images/aemf52.png)
 

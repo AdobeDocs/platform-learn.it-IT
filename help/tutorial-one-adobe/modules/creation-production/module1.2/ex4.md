@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 156725fe0f89d97f109de1518f7fa79ffd7cea41
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '2050'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Ora inizierai a utilizzare i connettori predefiniti di Workfront Fusion per Phot
 
 ## 1.2.4.1 Duplica e prepara lo scenario
 
-Nel menu a sinistra, vai a **Scenari** e seleziona la cartella `--aepUserLdap--`. Dovresti quindi visualizzare lo scenario creato in precedenza, denominato `--aepUSerLdap-- - Adobe I/O Authentication`.
+Nel menu a sinistra, vai a **Scenari** e seleziona la cartella `--aepUserLdap--`. Dovresti quindi visualizzare lo scenario creato in precedenza, denominato `--aepUserLdap-- - Adobe I/O Authentication`.
 
 ![WF Fusion](./images/wffc1.png)
 
@@ -113,7 +113,7 @@ Compila i campi seguenti:
 - **ID client**: copia **ID client** dal progetto Adobe I/O denominato `--aepUserLdap-- - One Adobe tutorial`.
 - **Segreto client**: copia **Segreto client** dal progetto Adobe I/O denominato `--aepUserLdap-- - One Adobe tutorial`.
 
-Puoi trovare **ID client** e **Segreto client** del progetto Adobe I/O [qui](https://developer.adobe.com/console/projects.).
+Puoi trovare **ID client** e **Segreto client** del progetto Adobe I/O [qui](https://developer.adobe.com/console/projects.){target="_blank"}.
 
 ![WF Fusion](./images/wffc20.png)
 
