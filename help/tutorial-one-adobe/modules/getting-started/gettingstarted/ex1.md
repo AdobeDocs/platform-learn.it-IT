@@ -4,7 +4,7 @@ description: 'Guida introduttiva: installare l’estensione Chrome per la docume
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: 30f8ceface0b8c696da45699e2e32412413a2c96
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Una volta installata l’estensione, lo stesso testo verrà modificato automatic
 
 ## Installare l’estensione Chrome
 
-Per installare l&#39;estensione Chrome, apri il browser Chrome e vai a: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi). Poi vedrai questo.
+Per installare l&#39;estensione Chrome, apri il browser Chrome e vai a: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi){target="_blank"}. Poi vedrai questo.
 
 Fai clic su **Aggiungi a Chrome**.
 
@@ -58,7 +58,7 @@ Nel menu **extensions**, fai clic sull&#39;icona **puzzle** e aggiungi l&#39;est
 
 ## Configurare l&#39;estensione Chrome
 
-Vai a [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview) e fai clic sull&#39;icona dell&#39;estensione per aprirla.
+Vai a [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} e fai clic sull&#39;icona dell&#39;estensione per aprirla.
 
 ![DSN](./images/tuthome.png)
 
@@ -74,7 +74,7 @@ Se non si è sicuri dei valori da immettere per questi campi, seguire le istruzi
 
 **Nome organizzazione AEP IMS**
 
-Quando accedi all&#39;istanza di Adobe Experience Platform in [https://platform.adobe.com/](https://platform.adobe.com/), il nome dell&#39;istanza si trova nell&#39;angolo in alto a destra dello schermo.
+Quando accedi all&#39;istanza di Adobe Experience Platform in [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}, il nome dell&#39;istanza si trova nell&#39;angolo in alto a destra dello schermo.
 
 ![DSN](./images/aepname.png)
 
@@ -84,7 +84,7 @@ L’ID organizzazione IMS è l’identificatore univoco dell’istanza di Adobe 
 
 È possibile trovare l’ID organizzazione IMS in diversi modi. Se non sei sicuro, rivolgiti a uno degli amministratori di sistema della tua istanza per trovare l’ID.
 
-Potresti trovarlo andando su [Admin Console](https://https://adminconsole.adobe.com/), dove puoi trovarlo come parte dell&#39;URL.
+Potresti trovarlo andando su [Admin Console](https://adminconsole.adobe.com/){target="_blank"}, dove puoi trovarlo come parte dell&#39;URL.
 
 ![DSN](./images/aepid1.png)
 
@@ -96,7 +96,7 @@ Assicurarsi di copiare e incollare la parte **@AdobeOrg** insieme all&#39;ID.
 
 **ID tenant AEP**
 
-L’ID tenant è l’identificatore univoco dell’istanza AEP della tua organizzazione. Quando accedi all&#39;istanza di Adobe Experience Platform in [https://platform.adobe.com/](https://platform.adobe.com/), troverai l&#39;ID tenant nell&#39;URL.
+L’ID tenant è l’identificatore univoco dell’istanza AEP della tua organizzazione. Quando accedi all&#39;istanza di Adobe Experience Platform in [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}, troverai l&#39;ID tenant nell&#39;URL.
 
 ![DSN](./images/aeptenantid.png)
 
@@ -104,7 +104,7 @@ Quando lo inserisci nell&#39;estensione Chrome, accertati che un trattino basso 
 
 **Nome Sandbox AEP**
 
-Il nome della sandbox è il nome dell’ambiente che utilizzerai nell’istanza di AEP. Quando accedi all&#39;istanza di Adobe Experience Platform in [https://platform.adobe.com/](https://platform.adobe.com/), troverai l&#39;ID tenant nell&#39;URL.
+Il nome della sandbox è il nome dell’ambiente che utilizzerai nell’istanza di AEP. Quando accedi all&#39;istanza di Adobe Experience Platform in [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}, troverai l&#39;ID tenant nell&#39;URL.
 
 Prima di estrarre il nome della sandbox dall’URL, accertati di trovarti nella sandbox da utilizzare per questa esercitazione. Per passare alla sandbox di destra, fai clic sul menu del commutatore sandbox nell’angolo in alto a destra dello schermo.
 
@@ -135,7 +135,7 @@ Dopo aver attivato la configurazione, accanto alle iniziali dell’ambiente comp
 
 ## Verificare il contenuto del tutorial
 
-Come test, passa a [questa pagina](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2).
+Come test, passa a [questa pagina](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
 
 Ora tutte le **Variabili di ambiente** in questa pagina sono state sostituite dai loro valori effettivi, in base all&#39;ambiente attivato nell&#39;estensione chrome.
 
@@ -145,7 +145,7 @@ Ora tutte le **Variabili di ambiente** in questa pagina sono state sostituite da
 
 ## Passaggi successivi
 
-Vai a [Utilizza Demo System Next per configurare la proprietà client di Adobe Experience Platform Data Collection](./ex2.md)
+Vai a [Utilizza Demo System Next per configurare la proprietà client di Adobe Experience Platform Data Collection](./ex2.md){target="_blank"}
 
 Torna a [Guida introduttiva](./getting-started.md){target="_blank"}
 

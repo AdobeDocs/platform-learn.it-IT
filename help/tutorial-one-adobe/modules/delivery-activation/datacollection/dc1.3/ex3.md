@@ -4,9 +4,9 @@ description: Foundation - FAC - Creare una composizione federata
 kt: 5342
 doc-type: tutorial
 exl-id: 6c1773d1-ca2e-43e5-bfa7-6e5e0fbcf859
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '499'
 ht-degree: 3%
 
 ---
@@ -21,11 +21,11 @@ Dopo aver effettuato l’accesso, accedi alla home page di Adobe Experience Plat
 
 ![Acquisizione dei dati](./../dc1.2/images/home.png)
 
-Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``--aepSandboxName--``. Dopo aver selezionato la sandbox appropriata, la schermata cambia e ora sei nella sandbox dedicata.
+Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata `--aepSandboxName--`. Dopo aver selezionato la sandbox appropriata, la schermata cambia e ora sei nella sandbox dedicata.
 
 ![Acquisizione dei dati](./../dc1.2/images/sb1.png)
 
-## 1.3.3.1 Creare il pubblico
+## 1.3.3.1 Crea il tuo pubblico
 
 Nel menu a sinistra, vai a **Tipi di pubblico** e quindi vai a **Composizioni federate**. Fare clic su **Crea composizione**.
 
@@ -47,7 +47,7 @@ Poi vedrai questo. Seleziona **Crea pubblico**. Fai clic sull&#39;icona **cerca*
 
 ![FAC](./images/fedcomp5.png)
 
-Selezionare lo schema **—aepUserLdap—_HOUSEHOLDS**. Fai clic su **Conferma**.
+Selezionare lo schema **`--aepUserLdap--_HOUSEHOLDS`**. Fai clic su **Conferma**.
 
 ![FAC](./images/fedcomp6.png)
 
@@ -71,7 +71,7 @@ Quindi fare di nuovo clic sull&#39;icona **+** e fare di nuovo clic su **Condizi
 
 ![FAC](./images/fedcomp11.png)
 
-La seconda condizione da aggiungere è: `Is the user an existing CitiSignal Mobile subscriber?`. Per rispondere a questa domanda, utilizzare la relazione tra la famiglia e il cliente principale della famiglia, definita in un&#39;altra tabella, **—aepUserLdap—_PERSONS**. Puoi eseguire il drill-down nel menu degli attributi utilizzando il collegamento **family2person**.
+La seconda condizione da aggiungere è: `Is the user an existing CitiSignal Mobile subscriber?`. Per rispondere a questa domanda, utilizzare la relazione tra la famiglia e il cliente principale della famiglia, definita in un&#39;altra tabella, **`--aepUserLdap--_PERSONS`**. Puoi eseguire il drill-down nel menu degli attributi utilizzando il collegamento **family2person**.
 
 ![FAC](./images/fedcomp12.png)
 

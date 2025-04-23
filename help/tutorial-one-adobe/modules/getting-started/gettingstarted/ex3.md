@@ -4,7 +4,7 @@ description: 'Guida introduttiva: creare lo stream di dati'
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Creare lo stream di dati
 
-Vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/).
+Vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/){target="_blank"}.
 
 ![DSN](./images/launchprop.png)
 
@@ -101,7 +101,7 @@ Le modifiche sono in fase di pubblicazione e saranno pronte tra qualche minuto, 
 
 ## Creare lo stream di dati per dispositivi mobili
 
-Vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/).
+Vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/){target="_blank"}.
 
 Fare clic su **[!UICONTROL Datastreams]**.
 
@@ -175,7 +175,7 @@ Le modifiche sono in fase di pubblicazione e saranno pronte tra qualche minuto, 
 
 ## Passaggi successivi
 
-Vai a [Utilizza il sito Web](./ex4.md)
+Vai a [Utilizza il sito Web](./ex4.md){target="_blank"}
 
 Torna a [Guida introduttiva](./getting-started.md){target="_blank"}
 

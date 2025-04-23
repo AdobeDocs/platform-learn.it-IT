@@ -2,7 +2,8 @@
 title: Guida introduttiva - Applicazioni da installare
 description: Guida introduttiva - Applicazioni da installare
 doc-type: multipage-overview
-source-git-commit: e02737a6bf5cb30d4a71df417a7824b6c96bc796
+exl-id: 25f80da8-88c3-4273-962a-476675cf6047
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 1%
@@ -15,7 +16,7 @@ Di seguito è riportata una panoramica della preparazione necessaria prima di pa
 
 ## Adobe Creative Cloud
 
-Vai a [https://creativecloud.adobe.com/apps/download/creative-cloud](https://creativecloud.adobe.com/apps/download/creative-cloud).
+Vai a [https://creativecloud.adobe.com/apps/download/creative-cloud](https://creativecloud.adobe.com/apps/download/creative-cloud){target="_blank"}.
 
 ![Nuova integrazione Adobe I/O](./images/cc.png)
 

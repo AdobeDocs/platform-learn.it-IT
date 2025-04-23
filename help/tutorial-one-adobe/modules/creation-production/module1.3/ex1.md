@@ -6,16 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: c1b1d78d-9374-4ccd-82cf-e71c682fc907
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
 
 # 1.3.1 Guida introduttiva ad Adobe Express
 
-Apri una nuova finestra del browser in incognito e passa a [https://www.adobe.com/home](https://www.adobe.com/home){target="_blank"}. Accedi con l&#39;account **aziendale o dell&#39;istituto di istruzione** e seleziona l&#39;account **—aepImsOrgName—**.
+## 1.3.1.1 Accesso ad Adobe Express
+
+Apri una nuova finestra del browser in incognito e passa a [https://www.adobe.com/home](https://www.adobe.com/home){target="_blank"}. Accedi con il tuo account **aziendale o dell&#39;istituto di istruzione** e quindi seleziona l&#39;account **`--aepImsOrgName--`**.
 
 ![Adobe Express](./images/express1.png)
 
@@ -37,7 +39,7 @@ Sei connesso a **Adobe Express**.
 
 ![Adobe Express](./images/express5.png)
 
-## 1.3.1.1 Introduzione a un modello marchio
+## 1.3.1.2 Introduzione a un modello marchio
 
 In Adobe Express, vai a **Marchi**. Al momento, la libreria dei modelli del brand è probabilmente vuota. CitiSignal ha già definito un modello di marchio e ora devi riutilizzare quello esistente.
 

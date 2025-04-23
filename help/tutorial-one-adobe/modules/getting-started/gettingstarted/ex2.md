@@ -4,7 +4,7 @@ description: 'Guida introduttiva: utilizza Demo System Next per configurare la p
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Utilizza Demo System Next per configurare la proprietà client di Adobe Experience Platform Data Collection
 
-Per visualizzare i risultati di questo tutorial e consentirti di testare la configurazione in un ambiente sicuro, questo tutorial utilizza gli strumenti Successivo di Adobe Demo System. Per ottenere il massimo da questa esercitazione, l’istanza AEP deve essere configurata per essere integrata con Demo System Next.
+Per visualizzare i risultati di questo tutorial e consentirti di testare la configurazione in un ambiente sicuro, questo tutorial utilizza gli strumenti Successivo di Adobe Demo System. Per ottenere il massimo da questo tutorial, la tua istanza di AEP deve essere configurata per essere integrata con Demo System Next.
 
 Dopo aver effettuato l&#39;accesso a Sistema demo, procedere come segue.
 
-Vai a [https://dsn.adobe.com/](https://dsn.adobe.com/) e passa a **Configurazione**.
+Vai a [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"} e passa a **Configurazione**.
 
 ![DSN](./images/dsnsetup.png)
 
@@ -25,7 +25,7 @@ Nel menu a discesa **Ambiente**, seleziona l&#39;istanza AEP e la sandbox.
 
 ![DSN](./images/dsnh1.png)
 
-Selezionare quindi il predefinito **Utente tutorial AEP**.
+Selezionare quindi il predefinito **Utente AEP Tutorial**.
 
 ![DSN](./images/dsnhome.png)
 
@@ -57,7 +57,7 @@ Tieni aperta questa schermata come ti servirà nei passaggi successivi.
 
 ## Passaggi successivi
 
-Vai a [Crea lo stream di dati](./ex3.md)
+Vai a [Crea lo stream di dati](./ex3.md){target="_blank"}
 
 Torna a [Guida introduttiva](./getting-started.md){target="_blank"}
 

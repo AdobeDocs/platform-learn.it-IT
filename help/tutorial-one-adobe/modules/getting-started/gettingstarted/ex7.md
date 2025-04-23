@@ -3,7 +3,8 @@ title: Guida introduttiva - Configurazione di Postman
 description: Guida introduttiva - Configurazione di Postman
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Se sei un dipendente Adobe, segui le istruzioni per [installare PostBuster](./ex8.md).
+>Se sei un dipendente Adobe, segui le istruzioni per [installare PostBuster](./ex8.md){target="_blank"}.
 
 ## Download dell’ambiente Postman
 
@@ -43,7 +44,7 @@ La raccolta contiene diverse richieste API che puoi utilizzare. Utilizzeremo 2 r
 - 1 raccolta per l’autenticazione in Adobe I/O
 - 1 Raccolta per gli esercizi in questo modulo
 
-Scarica [postman-ff.zip](./../../../assets/postman/postman-ff.zip) sul desktop locale.
+Scarica [postman-ff.zip](./../../../assets/postman/postman-ff.zip){target="_blank"} sul desktop locale.
 
 ![Nuova integrazione Adobe I/O](./images/pmfolder.png){zoomable="yes"}
 
@@ -74,7 +75,7 @@ Scegli i tre file dalla cartella, quindi seleziona **Apri** e **Importa**.
 
 ![Nuova integrazione Adobe I/O](./images/impconfirm.png){zoomable="yes"}
 
-Ora disponi di tutto il necessario in Postman per iniziare a interagire con i servizi Firefly tramite le API.
+Ora disponi di tutto il necessario in Postman per iniziare a interagire con Firefly Services tramite le API.
 
 ## Richiedi un token di accesso
 

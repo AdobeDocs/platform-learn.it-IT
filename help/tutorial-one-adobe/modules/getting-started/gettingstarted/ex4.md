@@ -4,7 +4,7 @@ description: 'Guida introduttiva: utilizzare il sito web'
 kt: 5342
 doc-type: tutorial
 exl-id: 4d2152c9-7f9a-48e3-a8e6-4a6add034b4e
-source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Vedrai quindi il tuo sito web caricato in una finestra del browser in incognito.
 
 ## Opzione 2: iniziare con una nuova finestra del browser in incognito
 
-Nel caso in cui la finestra del browser sia stata chiusa accidentalmente o per sessioni future, puoi accedere al progetto del tuo sito web anche da [https://dsn.adobe.com/](https://dsn.adobe.com/). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sui tre punti **...** nel progetto del tuo sito Web, quindi fai clic su **Modifica**.
+Nel caso in cui la finestra del browser sia stata chiusa accidentalmente o per sessioni future, puoi accedere al progetto del tuo sito web anche da [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}. Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sui tre punti **...** nel progetto del tuo sito Web, quindi fai clic su **Modifica**.
 
 ![DSN](./images/web8.png)
 
@@ -103,7 +103,7 @@ Vedrai quindi il tuo sito web caricato in una finestra del browser in incognito.
 
 ## Passaggi successivi
 
-Vai a [Utilizza l&#39;app mobile](./ex5.md)
+Vai a [Utilizza l&#39;app mobile](./ex5.md){target="_blank"}
 
 Torna a [Guida introduttiva](./getting-started.md){target="_blank"}
 

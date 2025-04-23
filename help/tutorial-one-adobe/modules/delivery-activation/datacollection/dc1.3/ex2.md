@@ -4,9 +4,9 @@ description: Foundation - FAC - Creare schemi, modelli dati e collegamenti
 kt: 5342
 doc-type: tutorial
 exl-id: 3b999c1a-cf9e-44a3-8fc1-6a070c3aeb24
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '646'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ Dopo aver effettuato l’accesso, accedi alla home page di Adobe Experience Plat
 
 ![Acquisizione dei dati](./../dc1.2/images/home.png)
 
-Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata ``--aepSandboxName--``. Dopo aver selezionato la sandbox appropriata, la schermata cambia e ora sei nella sandbox dedicata.
+Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare è denominata `--aepSandboxName--`. Dopo aver selezionato la sandbox appropriata, la schermata cambia e ora sei nella sandbox dedicata.
 
 ![Acquisizione dei dati](./../dc1.2/images/sb1.png)
 
@@ -47,8 +47,8 @@ Poi vedrai questo. Copia l&#39;**URL corrente** e incollalo nel campo **Server**
 
 ![FAC](./images/fdburl2.png)
 
-**Utente**: il nome utente creato in precedenza nell&#39;esercizio 1.3.1.1
-**Password**: password creata in precedenza nell&#39;esercizio 1.3.1.1
+**Utente**: il nome utente creato in precedenza, nell&#39;esercizio 1.3.1.1
+**Password**: la password creata in precedenza, nell&#39;esercizio 1.3.1.1
 **Database**: utilizzare **CITISIGNAL**
 
 Quindi, alla fine, dovresti avere questo. Fare clic su **Verifica connessione**. Se il test ha esito positivo, fare clic su **Distribuisci funzioni**, per creare sul lato Snowflake le funzioni necessarie per il motore del flusso di lavoro.
@@ -61,7 +61,7 @@ Tornando al menu **Database federati**, la connessione verrà visualizzata.
 
 ![FAC](./images/fdb4.png)
 
-## 1.3.2.2 Creare schemi in AEP
+## 1.3.2.2 Creazione di schemi in AEP
 
 Nel menu a sinistra, fai clic su **Modelli**, quindi vai a **Schemi**. Fare clic su **Crea schema**.
 
@@ -98,7 +98,7 @@ Fai clic su **Crea**.
 
 ![FAC](./images/fdb8.png)
 
-Poi vedrai questo. Puoi fare clic su qualsiasi schema e rivedere le informazioni. Ad esempio, fare clic su **—aepUserLdap—_PERSONS**.
+Poi vedrai questo. Puoi fare clic su qualsiasi schema e rivedere le informazioni. Ad esempio, fare clic su **`--aepUserLdap--_PERSONS`**.
 
 ![FAC](./images/fdb9.png)
 
@@ -110,7 +110,7 @@ Viene quindi visualizzato un esempio dei dati.
 
 ![FAC](./images/fdb11.png)
 
-## 1.3.2.3 Creare un modello in AEP
+## 1.3.2.3 Crea un modello in AEP
 
 Nel menu a sinistra, vai a **Modelli** e quindi vai a **Modello dati**. Fare clic su **Crea modello dati**.
 
