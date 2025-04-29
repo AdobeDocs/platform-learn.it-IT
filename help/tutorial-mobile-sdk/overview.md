@@ -4,10 +4,10 @@ description: Scopri come implementare le app mobili Adobe Experience Cloud. Ques
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: c08671ae28955ff090baa7aa5a47246b2196ba20
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 3%
+source-wordcount: '815'
+ht-degree: 4%
 
 ---
 
@@ -59,7 +59,7 @@ In queste lezioni, si presume che tu sia in possesso di un Adobe Id e delle auto
 * In Raccolta dati, è necessario disporre di:
    * **[!UICONTROL Piattaforme]**—elemento di autorizzazione **[!UICONTROL Dispositivi mobili]**
    * **[!UICONTROL Diritti proprietà]**—elementi di autorizzazione per **[!UICONTROL Sviluppa]**, **[!UICONTROL Approva]**, **[!UICONTROL Pubblica]**, **[!UICONTROL Gestisci estensioni]** e **[!UICONTROL Gestisci ambienti]**.
-   * **[!UICONTROL Diritti azienda]**—autorizzazioni per **[!UICONTROL Gestione proprietà]** e, se si completa la lezione di messaggistica push facoltativa, **[!UICONTROL Gestione configurazioni app]**
+   * **[!UICONTROL Diritti azienda]**—autorizzazioni per **[!UICONTROL Gestione proprietà]**
 
      Per ulteriori informazioni sulle autorizzazioni dei tag, vedere [Autorizzazioni utente per i tag](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=it){target="_blank"} nella documentazione del prodotto.
 * In Experience Platform, devi disporre di:

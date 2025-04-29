@@ -1,15 +1,15 @@
 ---
 title: Creare e inviare notifiche push con Platform Mobile SDK
-description: Scopri come creare notifiche push per un’app mobile con Platform Mobile SDK e Adobe Journey Optimizer.
+description: Scopri come creare notifiche push in un’app mobile con Platform Mobile SDK e Adobe Journey Optimizer.
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
+source-git-commit: f73f0fc345fc605e60b19be1abe2e328795898aa
 workflow-type: tm+mt
-source-wordcount: '2582'
-ht-degree: 0%
+source-wordcount: '2871'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,8 @@ Journey Optimizer consente di creare percorsi e inviare messaggi a tipi di pubbl
 * L&#39;app con gli SDK installati e configurati è stata creata ed eseguita correttamente.
 * Configura l’app per Adobe Experience Platform.
 * Accedi a Journey Optimizer e alle autorizzazioni sufficienti come descritto [qui](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en). È inoltre necessaria un&#39;autorizzazione sufficiente per le seguenti funzioni di Journey Optimizer.
-   * Crea una superficie app.
+   * Crea una credenziale push.
+   * Crea una configurazione di canale push.
    * Creazione di un percorso.
    * Crea un messaggio.
    * Creare predefiniti per messaggi.
@@ -43,12 +44,12 @@ Journey Optimizer consente di creare percorsi e inviare messaggi a tipi di pubbl
 In questa lezione, potrai
 
 * Registra l’ID app con il servizio di notifica push di Apple (APN).
-* Crea una superficie app in Journey Optimizer.
+* Crea una configurazione di canale in Journey Optimizer.
 * Aggiorna lo schema per includere i campi di messaggistica push.
 * Installa e configura l’estensione tag Journey Optimizer.
 * Aggiorna l’app per registrare l’estensione tag Journey Optimizer.
-* Convalidare l&#39;impostazione in Assurance.
-* Invia un messaggio di prova da Assurance
+* Convalida la configurazione in Assurance.
+* Inviare un messaggio di prova da Assurance
 * Definisci in Journey Optimizer l’evento, il percorso e l’esperienza della notifica push.
 * Invia una notifica push personalizzata dall’app.
 
@@ -74,32 +75,79 @@ I passaggi seguenti non sono specifici per Adobe Experience Cloud e sono progett
 1. Seleziona **[!UICONTROL Continua]**.
    ![configura nuova chiave](assets/mobile-push-apple-dev-config-key.png)
 1. Rivedi la configurazione e seleziona **[!UICONTROL Registra]**.
-1. Scarica la chiave privata `.p8`. Viene utilizzato nella configurazione della superficie dell’app più avanti in questa lezione.
-1. Prendere nota dell&#39;**[!UICONTROL ID chiave]**. Viene utilizzato nella configurazione della superficie dell’app.
-1. Prendi nota dell&#39;**[!UICONTROL ID team]**. Viene utilizzato nella configurazione della superficie dell’app.
+1. Scarica la chiave privata `.p8`. Viene utilizzato nella configurazione del canale Journey Optimizer nell’esercizio successivo.
+1. Prendere nota dell&#39;**[!UICONTROL ID chiave]**. Viene utilizzato nella configurazione del canale Journey Optimizer.
+1. Prendi nota dell&#39;**[!UICONTROL ID team]**. Viene utilizzato nella configurazione del canale Journey Optimizer.
    ![Dettagli chiave](assets/push-apple-dev-key-details.png)
 
 Ulteriori informazioni sono disponibili [qui](https://help.apple.com/developer-account/#/devcdfbb56a3).
 
-#### Aggiungere una superficie app in Raccolta dati
 
-1. Dall&#39;interfaccia [Data Collection](https://experience.adobe.com/data-collection/), seleziona **[!UICONTROL App Surfaces]** nel pannello a sinistra.
-1. Per creare una configurazione, seleziona **[!UICONTROL Crea superficie app]**.
-   ![app surface home](assets/push-app-surface.png)
-1. Immetti un **[!UICONTROL Nome]** per la configurazione, ad esempio `Luma App Tutorial`.
-1. Da **[!UICONTROL Configurazione applicazione mobile]**, selezionare **[!UICONTROL Apple iOS]**.
-1. Immetti l&#39;ID del bundle per app mobile nel campo **[!UICONTROL ID app (ID bundle iOS)]**. Ad esempio, `com.adobe.luma.tutorial.swiftui`.
-1. Attiva l&#39;interruttore **[!UICONTROL Push Credentials]** per aggiungere le tue credenziali.
-1. Trascina e rilascia il file `.p8` **Chiave di autenticazione notifica push Apple**.
-1. Specificare l&#39;**[!UICONTROL ID chiave]**, una stringa di 10 caratteri assegnata durante la creazione della chiave di autenticazione `p8`. È disponibile nella scheda **[!UICONTROL Chiavi]** nella pagina **Certificati, identificatori e profili** delle pagine del portale Apple Developer. Vedi anche [Creare una chiave privata](#create-a-private-key).
-1. Fornisci **[!UICONTROL ID team]**. L&#39;ID team è un valore che si trova nella scheda **Appartenenza** o nella parte superiore della pagina del portale Apple Developer. Vedi anche [Creare una chiave privata](#create-a-private-key).
-1. Seleziona **[!UICONTROL Salva]**.
+#### Aggiungere le credenziali app push in Journey Optimizer
 
-   ![configurazione superficie app](assets/push-app-surface-config.png)
+Successivamente, devi aggiungere le credenziali push dell’app mobile in Journey Optimizer. (Nelle versioni precedenti del prodotto, questi sono stati aggiunti come parte della configurazione &quot;Superficie app&quot; in Raccolta dati).
+
+La registrazione delle credenziali push dell’app mobile è necessaria per autorizzare Adobe a inviare notifiche push per tuo conto. Consulta i passaggi descritti di seguito:
+
+1. Nell&#39;interfaccia di Journey Optimizer aprire il menu **[!UICONTROL Canali]** > **[!UICONTROL Impostazioni push]** > **[!UICONTROL Credenziali push]**.
+
+1. Selezionare **[!UICONTROL Crea credenziali push]**.
+
+
+   ![Crea una nuova configurazione delle credenziali push in Journey Optimizer](assets/add-push-credential-ios.png)
+
+1. Dall&#39;elenco a discesa **[!UICONTROL Platform]**, selezionare il sistema operativo **iOS**:
+
+
+   1. Immetti l&#39;ID bundle dell&#39;app mobile nel campo **[!UICONTROL ID app]** (ID bundle iOS). Ad esempio, com.adobe.luma.tutorial.swiftui
+
+   1. Abilita l&#39;opzione **[!UICONTROL Applica a tutte le sandbox]** per rendere queste credenziali push disponibili in tutte le sandbox. Se una sandbox specifica ha le proprie credenziali per la stessa coppia Platform e App ID, queste avranno la precedenza.
+
+
+   1. Trascina e rilascia il file .p8 **Apple Push Notification Authentication Key** ottenuto dall&#39;esercizio precedente.
+
+   1. Specificare l&#39;**[!UICONTROL ID chiave]**, una stringa di 10 caratteri assegnata durante la creazione della chiave di autenticazione `p8`. È disponibile nella scheda **[!UICONTROL Chiavi]** nella pagina **Certificati, identificatori e profili** delle pagine del portale Apple Developer. (Avresti dovuto segnalarlo durante l’esercizio precedente).
+
+   1. Fornisci **[!UICONTROL ID team]**. L&#39;ID team è un valore che si trova nella scheda **Appartenenza** o nella parte superiore della pagina del portale Apple Developer. (Avresti dovuto segnalarlo durante l’esercizio precedente).
+
+   ![Configurazione delle credenziali push in Journey Optimizer](assets/add-app-config-ios.png)
+
+1. Fai clic su **[!UICONTROL Invia]** per creare la configurazione delle credenziali push.
+
+#### Creare una configurazione di canale per il push in Journey Optimizer
+
+Dopo aver creato una configurazione delle credenziali push, devi crearne una per poter inviare notifiche push da Journey Optimizer.
+
+1. Nell&#39;interfaccia di Journey Optimizer aprire il menu **[!UICONTROL Canali]** > **[!UICONTROL Impostazioni generali]** > **[!UICONTROL Configurazioni canale]**, quindi selezionare **[!UICONTROL Crea configurazione canale]**.
+
+   ![Crea una nuova configurazione canale](assets/push-config-9.png)
+
+1. Immetti un nome e una descrizione (facoltativa) per la configurazione.
+
+   >[!NOTE]
+   >
+   > I nomi devono iniziare con una lettera (A-Z). Può contenere solo caratteri alfanumerici. È inoltre possibile utilizzare i caratteri trattino basso `_`, punto `.` e trattino `-`.
+
+
+1. Per assegnare etichette di utilizzo dei dati personalizzate o di base alla configurazione, è possibile selezionare **[!UICONTROL Gestisci accesso]**. [Ulteriori informazioni sul controllo degli accessi a livello di oggetto](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access).
+
+1. Seleziona il canale **Push**.
+
+
+1. Seleziona **[!UICONTROL Azione di marketing]** per associare i criteri di consenso ai messaggi utilizzando questa configurazione. Tutti i criteri di consenso associati all’azione di marketing vengono utilizzati per rispettare le preferenze dei clienti. [Ulteriori informazioni sulle azioni di marketing](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions).
+
+1. Scegli la tua **[!UICONTROL piattaforma]**.
+
+1. Seleziona lo stesso **[!UICONTROL ID app]** come per le credenziali push configurate in precedenza.
+
+1. Seleziona **[!UICONTROL Invia]** per salvare le modifiche.
+
+   ![Configurazione canale push](assets/push-config-10.png)
+
 
 ### Aggiorna configurazione dello stream di dati
 
-Per fare in modo che i dati inviati dalla tua app mobile all’Edge Network vengano inoltrati a Journey Optimizer, aggiorna la configurazione di Experience Edge.
+Per fare in modo che i dati inviati dalla tua app mobile ad Edge Network vengano inoltrati a Journey Optimizer, aggiorna la configurazione di Experience Edge.
 
 1. Nell&#39;interfaccia utente di Data Collection, seleziona **[!UICONTROL Datastreams]** e quindi il tuo datastream, ad esempio **[!DNL Luma Mobile App]**.
 1. Seleziona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) per **[!UICONTROL Experience Platform]** e seleziona ![Modifica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Modifica]** dal menu di scelta rapida.
@@ -111,7 +159,7 @@ Per fare in modo che i dati inviati dalla tua app mobile all’Edge Network veng
 
    1. Per salvare la configurazione dello stream di dati, seleziona **[!UICONTROL Salva]**.
 
-   ![Configurazione dello stream di dati AEP](assets/datastream-aep-configuration.png)
+   ![Configurazione dello stream di dati di AEP](assets/datastream-aep-configuration.png)
 
 
 
@@ -135,10 +183,10 @@ Affinché l&#39;app funzioni con Journey Optimizer, devi aggiornare la propriet�
 >Se non vedi **[!UICONTROL Set di dati evento di tracciamento push di AJO]** come opzione, contatta l&#39;assistenza clienti.
 >
 
-## Convalida impostazione con Assurance
+## Convalidare la configurazione con Assurance
 
 1. Consulta la sezione [istruzioni di installazione](assurance.md#connecting-to-a-session) per collegare il simulatore o il dispositivo ad Assurance.
-1. Nell&#39;interfaccia utente Assurance, selezionare **[!UICONTROL Configura]**.
+1. Nell&#39;interfaccia utente di Assurance, seleziona **[!UICONTROL Configura]**.
    ![configura clic](assets/push-validate-config.png)
 1. Seleziona ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) accanto a **[!UICONTROL Debug push]**.
 1. Seleziona **[!UICONTROL Salva]**.
@@ -198,11 +246,11 @@ Ora dovresti avere aggiunto all’app un’estensione per le notifiche push, sim
 
 ## Implementare Journey Optimizer nell’app
 
-Come descritto nelle lezioni precedenti, l’installazione di un’estensione tag per dispositivi mobili fornisce solo la configurazione. Ora devi installare e registrare l’SDK di messaggistica. Se questi passaggi non sono chiari, controlla la sezione [Installare gli SDK](install-sdks.md).
+Come descritto nelle lezioni precedenti, l’installazione di un’estensione tag per dispositivi mobili fornisce solo la configurazione. A questo punto è necessario installare e registrare il SDK di messaggistica. Se questi passaggi non sono chiari, controlla la sezione [Installare gli SDK](install-sdks.md).
 
 >[!NOTE]
 >
->Se hai completato la sezione [Installare gli SDK](install-sdks.md), l&#39;SDK è già installato e puoi saltare questo passaggio.
+>Se hai completato la sezione [Installare gli SDK](install-sdks.md), SDK è già installato e puoi saltare questo passaggio.
 >
 
 1. In Xcode, accertati che [Messaggistica AEP](https://github.com/adobe/aepsdk-messaging-ios) sia aggiunto all&#39;elenco dei pacchetti nelle dipendenze dei pacchetti. Consulta [Gestione pacchetti Swift](install-sdks.md#swift-package-manager).
@@ -304,7 +352,7 @@ Gli eventi in Journey Optimizer ti consentono di attivare i percorsi in modo uni
    1. Seleziona **[!UICONTROL Salva]**.
       ![Modifica passaggio evento 2](assets/ajo-edit-event2.png)
 
-Hai appena creato una configurazione dell’evento basata sullo schema degli eventi di esperienza per app mobile creato in precedenza come parte di questa esercitazione. Questa configurazione di evento filtrerà gli eventi di esperienza in arrivo utilizzando il tipo di evento specifico (`application.test`), pertanto solo gli eventi con quel tipo specifico, avviati dall&#39;app mobile, attiveranno il percorso generato nel passaggio successivo. In uno scenario reale, potrebbe essere utile inviare notifiche push da un servizio esterno, tuttavia si applicano gli stessi concetti: dall’applicazione esterna invia un evento esperienza in Experience Platform che ha campi specifici che puoi utilizzare per applicare condizioni su prima che questi eventi attivino un percorso.
+Hai appena creato una configurazione dell’evento basata sullo schema degli eventi di esperienza per app mobile creato in precedenza come parte di questa esercitazione. Questa configurazione di evento filtrerà gli eventi di esperienza in arrivo utilizzando il tipo di evento specifico (`application.test`), pertanto solo gli eventi con quel tipo specifico, avviati dall&#39;app mobile, attiveranno il percorso generato nel passaggio successivo. In uno scenario reale, potrebbe essere utile inviare notifiche push da un servizio esterno, tuttavia si applicano gli stessi concetti: dall’applicazione esterna invia un evento esperienza in Experience Platform che dispone di campi specifici che puoi utilizzare per applicare condizioni su prima che questi eventi attivino un percorso.
 
 ### Creazione del percorso
 
@@ -339,7 +387,7 @@ Il passaggio successivo consiste nel creare il percorso che attiva l’invio del
 
    1. Per salvare e completare la definizione della notifica push, selezionare **[!UICONTROL Ok]**.
 
-1. Il percorso deve essere simile al seguente. Seleziona **[!UICONTROL Publish]** per pubblicare e attivare il percorso.
+1. Il percorso deve essere simile al seguente. Seleziona **[!UICONTROL Pubblica]** per pubblicare e attivare il percorso.
    ![percorso completato](assets/ajo-journey-finished.png)
 
 
@@ -395,7 +443,7 @@ Questa volta l’evento esperienza che stai per inviare non è costruito per cre
    }
    ```
 
-   Questo codice crea un&#39;istanza `testPushPayload` utilizzando i parametri forniti alla funzione (`applicationId` e `eventType`), quindi chiama `sendExperienceEvent` durante la conversione del payload in un dizionario. Questo codice, questa volta, prende in considerazione anche gli aspetti asincroni della chiamata all&#39;SDK di Adobe Experience Platform utilizzando il modello di concorrenza di Swift basato su `await` e `async`.
+   Questo codice crea un&#39;istanza `testPushPayload` utilizzando i parametri forniti alla funzione (`applicationId` e `eventType`), quindi chiama `sendExperienceEvent` durante la conversione del payload in un dizionario. Questo codice, questa volta, prende in considerazione anche gli aspetti asincroni della chiamata al SDK di Adobe Experience Platform utilizzando il modello di concorrenza di Swift basato su `await` e `async`.
 
 1. Passa a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL ConfigView]** nel navigatore progetti Xcode. Nella definizione del pulsante di notifica push, aggiungi il seguente codice per inviare il payload dell’evento di esperienza di notifica push di prova in modo da attivare il percorso ogni volta che il pulsante viene toccato.
 
@@ -426,8 +474,8 @@ Ora dovresti disporre di tutti gli strumenti per gestire le notifiche push nell�
 
 >[!SUCCESS]
 >
->Ora hai abilitato l’app per le notifiche push tramite Journey Optimizer e l’estensione Journey Optimizer per l’SDK di Experience Platform Mobile.
+>Ora hai abilitato l’app per le notifiche push tramite Journey Optimizer e l’estensione Journey Optimizer per Experience Platform Mobile SDK.
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [Experience League post di discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Mobile SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Successivo: **[Creare e inviare messaggi in-app](journey-optimizer-inapp.md)**
