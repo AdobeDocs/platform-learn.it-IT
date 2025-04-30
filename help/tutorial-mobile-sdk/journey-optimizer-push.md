@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: f73f0fc345fc605e60b19be1abe2e328795898aa
+source-git-commit: 83046a6c56353ba8750c4e500f70ef2ca887fbe8
 workflow-type: tm+mt
-source-wordcount: '2871'
+source-wordcount: '2885'
 ht-degree: 1%
 
 ---
@@ -75,9 +75,9 @@ I passaggi seguenti non sono specifici per Adobe Experience Cloud e sono progett
 1. Seleziona **[!UICONTROL Continua]**.
    ![configura nuova chiave](assets/mobile-push-apple-dev-config-key.png)
 1. Rivedi la configurazione e seleziona **[!UICONTROL Registra]**.
-1. Scarica la chiave privata `.p8`. Viene utilizzato nella configurazione del canale Journey Optimizer nell’esercizio successivo.
-1. Prendere nota dell&#39;**[!UICONTROL ID chiave]**. Viene utilizzato nella configurazione del canale Journey Optimizer.
-1. Prendi nota dell&#39;**[!UICONTROL ID team]**. Viene utilizzato nella configurazione del canale Journey Optimizer.
+1. Scarica la chiave privata `.p8`. Viene utilizzato nell’esercizio successivo quando configuri le credenziali push di Journey Optimizer.
+1. Prendere nota dell&#39;**[!UICONTROL ID chiave]**. Viene utilizzato nell’esercizio successivo quando configuri le credenziali push di Journey Optimizer.
+1. Prendi nota dell&#39;**[!UICONTROL ID team]**. Viene utilizzato nell’esercizio successivo quando configuri le credenziali push di Journey Optimizer.
    ![Dettagli chiave](assets/push-apple-dev-key-details.png)
 
 Ulteriori informazioni sono disponibili [qui](https://help.apple.com/developer-account/#/devcdfbb56a3).
@@ -96,19 +96,17 @@ La registrazione delle credenziali push dell’app mobile è necessaria per auto
 
    ![Crea una nuova configurazione delle credenziali push in Journey Optimizer](assets/add-push-credential-ios.png)
 
-1. Dall&#39;elenco a discesa **[!UICONTROL Platform]**, selezionare il sistema operativo **iOS**:
+1. Dall&#39;elenco a discesa **[!UICONTROL Platform]**, selezionare il sistema operativo **iOS**.
 
+1. Immetti l&#39;ID bundle dell&#39;app mobile nel campo **[!UICONTROL ID app]** (ID bundle iOS). Ad esempio, com.adobe.luma.tutorial.swiftui
 
-   1. Immetti l&#39;ID bundle dell&#39;app mobile nel campo **[!UICONTROL ID app]** (ID bundle iOS). Ad esempio, com.adobe.luma.tutorial.swiftui
+1. Abilita l&#39;opzione **[!UICONTROL Applica a tutte le sandbox]** per rendere queste credenziali push disponibili in tutte le sandbox. Se una sandbox specifica ha le proprie credenziali per la stessa coppia Platform e App ID, queste avranno la precedenza.
 
-   1. Abilita l&#39;opzione **[!UICONTROL Applica a tutte le sandbox]** per rendere queste credenziali push disponibili in tutte le sandbox. Se una sandbox specifica ha le proprie credenziali per la stessa coppia Platform e App ID, queste avranno la precedenza.
+1. Trascina e rilascia il file .p8 **Apple Push Notification Authentication Key** ottenuto dall&#39;esercizio precedente.
 
+1. Specificare l&#39;**[!UICONTROL ID chiave]**, una stringa di 10 caratteri assegnata durante la creazione della chiave di autenticazione `p8`. È disponibile nella scheda **[!UICONTROL Chiavi]** nella pagina **Certificati, identificatori e profili** delle pagine del portale Apple Developer. (Avresti dovuto segnalarlo durante l’esercizio precedente).
 
-   1. Trascina e rilascia il file .p8 **Apple Push Notification Authentication Key** ottenuto dall&#39;esercizio precedente.
-
-   1. Specificare l&#39;**[!UICONTROL ID chiave]**, una stringa di 10 caratteri assegnata durante la creazione della chiave di autenticazione `p8`. È disponibile nella scheda **[!UICONTROL Chiavi]** nella pagina **Certificati, identificatori e profili** delle pagine del portale Apple Developer. (Avresti dovuto segnalarlo durante l’esercizio precedente).
-
-   1. Fornisci **[!UICONTROL ID team]**. L&#39;ID team è un valore che si trova nella scheda **Appartenenza** o nella parte superiore della pagina del portale Apple Developer. (Avresti dovuto segnalarlo durante l’esercizio precedente).
+1. Fornisci **[!UICONTROL ID team]**. L&#39;ID team è un valore che si trova nella scheda **Appartenenza** o nella parte superiore della pagina del portale Apple Developer. (Avresti dovuto segnalarlo durante l’esercizio precedente).
 
    ![Configurazione delle credenziali push in Journey Optimizer](assets/add-app-config-ios.png)
 
