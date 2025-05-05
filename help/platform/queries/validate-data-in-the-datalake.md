@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Scopri come verificare se i dati sono stati correttamente acquisiti nel datalake utilizzando Adobe Experience Platform Query Service. Per la documentazione dettagliata del prodotto, consulta la [Guida dell&#39;interfaccia utente di Query Editor](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/3416130?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3445685?learn=on&enablevpops&captions=ita)

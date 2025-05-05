@@ -20,4 +20,4 @@ Scopri come creare una proprietà di tag mobile in Raccolta dati. Aggiungi Mobil
 >
 > Il lancio è ora **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/26264/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/327939/?learn=on&enablevpops&captions=ita)

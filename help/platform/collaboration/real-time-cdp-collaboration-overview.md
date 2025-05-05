@@ -29,7 +29,7 @@ Per ulteriori informazioni, consulta la [documentazione](https://experienceleagu
 
 Ottieni un’introduzione ad Adobe Real-Time Collaboration, un’applicazione per la collaborazione sui dati appositamente creata che consente di scoprire e attivare tipi di pubblico di alto valore e utilizzare le funzionalità di misurazione per ottenere risultati tangibili.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446801?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446809?learn=on&enablevpops&captions=ita)
 
 
 ## Configurazione
@@ -47,7 +47,7 @@ Ottieni un’introduzione ad Adobe Real-Time Collaboration, un’applicazione pe
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="Impostare le autorizzazioni per Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1742338375674" alt="Impostare le autorizzazioni per Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452238/?format=jpeg&nocache=1742338375674&captions=ita" alt="Impostare le autorizzazioni per Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

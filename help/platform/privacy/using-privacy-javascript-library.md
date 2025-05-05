@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Scopri come utilizzare la libreria Privacy JavaScript per raccogliere le identità dei clienti nell’applicazione prima di inviarle a Privacy Service. Ad esempio, scopri come impostare l’estensione tag in Data Collection (precedentemente Launch). Per ulteriori informazioni, visitare la [documentazione di Privacy Services](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/336078?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452087?learn=on&enablevpops&captions=ita)

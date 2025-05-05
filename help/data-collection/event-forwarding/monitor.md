@@ -17,4 +17,4 @@ ht-degree: 28%
 
 Scopri come monitorare l’inoltro degli eventi nell’interfaccia di Data Collection. Per ulteriori informazioni, visita la [documentazione sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/343999?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3411268?learn=on&enablevpops&captions=ita)

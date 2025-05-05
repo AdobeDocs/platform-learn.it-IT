@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Questo video mostra come creare gruppi di campi di schema in Adobe Experience Platform. I gruppi di campi dello schema sono componenti riutilizzabili che definiscono la maggior parte dei campi negli schemi Experience Data Model (XDM). Per ulteriori informazioni, visita la [documentazione sugli schemi](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/27013?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413602?learn=on&enablevpops&captions=ita)

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Scopri come utilizzare l’Assistente AI per scoprire informazioni operative su oggetti aziendali come pubblico, set di dati, schemi, destinazioni e percorsi in Adobe Experience Platform
 
->[!VIDEO](https://video.tv.adobe.com/v/3444031/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3444040/?learn=on&enablevpops&captions=ita)

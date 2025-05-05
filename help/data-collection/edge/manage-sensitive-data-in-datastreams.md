@@ -19,4 +19,4 @@ ht-degree: 26%
 
 Scopri come gestire i dati sensibili negli stream di dati.  Per ulteriori informazioni, consulta [la documentazione sugli stream di dati](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/3409588/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413103/?learn=on&enablevpops&captions=ita)

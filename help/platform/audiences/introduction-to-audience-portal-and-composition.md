@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Scopri come Adobe sta reimmaginando i tipi di pubblico in Adobe Experience Platform, e come importare, creare e gestire i tipi di pubblico. Per ulteriori informazioni, consulta la [documentazione di Segment Builder](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/3421713/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3423367/?learn=on&enablevpops&captions=ita)

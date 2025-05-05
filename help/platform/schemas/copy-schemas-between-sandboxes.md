@@ -22,4 +22,4 @@ Questo video mostra come copiare uno schema da una sandbox a un’altra in Adobe
 >
 >Verso la fine del 2023 è stato introdotto un processo molto più semplice e incentrato sull’interfaccia per spostare schemi e altri oggetti tra sandbox, che consigliamo invece di utilizzare. Vedi [Copia oggetti tra sandbox](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/333592?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413596?learn=on&enablevpops&captions=ita)

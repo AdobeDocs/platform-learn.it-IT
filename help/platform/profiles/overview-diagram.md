@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Questo video illustra un diagramma di panoramica della funzionalità Profilo cliente in tempo reale di Adobe Experience Platform. Per ulteriori informazioni, visitare la [documentazione del profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/33600?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36891?learn=on&enablevpops&captions=ita)

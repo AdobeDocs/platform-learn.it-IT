@@ -18,5 +18,5 @@ ht-degree: 90%
 
 Con Segment Match, i tuoi partner strategici possono condividere i dati con te. In questo video, scopri come approvare e ricevere i dati e dove puoi visualizzarli e aggiungerli ai tuoi segmenti.
 
->[!VIDEO](https://video.tv.adobe.com/v/344419/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3411141/?learn=on&enablevpops&captions=ita)
 

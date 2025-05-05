@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Real-Time Customer Profile consente la personalizzazione tra canali scalabile in ogni fase del percorso del cliente. È possibile abilitare i dati in batch o in streaming per Real-Time Customer Profile abilitando sia lo schema che il set di dati corrispondente. Per la documentazione dettagliata del prodotto, consulta [aggiungere dati a Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/add-profile-data.html?lang=it) e [configurare un set di dati per il profilo con API](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/27301?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/328609?learn=on&enablevpops&captions=ita)

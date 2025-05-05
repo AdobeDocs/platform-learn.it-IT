@@ -18,4 +18,4 @@ ht-degree: 46%
 
 Scopri come convalidare i dati acquisiti, visualizzarli in anteprima ed esplorarne le proprietà statistiche e analitiche utilizzando le funzioni SQL. Per ulteriori informazioni, visitare la [documentazione di Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414056?learn=on&enablevpops&captions=ita)

@@ -26,7 +26,7 @@ Le sandbox forniscono ambienti isolati in cui è possibile provare le funzionali
 **Gli architetti di dati** e **i data engineer** dovranno creare delle sandbox al di fuori di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sulle sandbox:
->[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430300/?learn=on&enablevpops&captions=ita)
 
 ## Autorizzazioni richieste
 

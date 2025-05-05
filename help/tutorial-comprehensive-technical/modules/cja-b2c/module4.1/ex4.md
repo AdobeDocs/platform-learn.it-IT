@@ -29,7 +29,7 @@ Customer Journey Analytics aggiunge questa soluzione ai dati di Platform. Consig
 
 Se non hai utilizzato Analysis Workspace in precedenza, ti consigliamo di guardare questo video:
 
->[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/328627?quality=12&learn=on&enablevpops&captions=ita)
 
 ### Crea il progetto
 

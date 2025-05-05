@@ -18,7 +18,7 @@ ht-degree: 2%
 
 Scopri come creare criteri per applicare le preferenze di consenso del cliente. Per ulteriori informazioni, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/345677?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3412100?learn=on&enablevpops&captions=ita)
 
 >[!IMPORTANT]
 >

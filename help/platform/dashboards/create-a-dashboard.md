@@ -23,4 +23,4 @@ Scopri come creare una dashboard in Adobe Experience Platform. Per ulteriori inf
 >
 >La funzione delle dashboard definite dall’utente è in versione beta. Le sue funzioni e la sua documentazione sono soggette a modifiche.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409637/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413782/?learn=on&enablevpops&captions=ita)

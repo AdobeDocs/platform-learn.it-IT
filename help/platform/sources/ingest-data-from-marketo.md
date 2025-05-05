@@ -26,13 +26,13 @@ Scopri come acquisire facilmente i dati da Marketo Engage in Real-time Customer 
 
 Scopri come configurare il connettore di origine per Marketo utilizzando il flusso di lavoro dei modelli. Questo flusso di lavoro genera automaticamente le risorse necessarie per acquisire i dati Marketo in base ai modelli. Consente di risparmiare tempo iniziale e le risorse possono essere personalizzate in base alle tue esigenze.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419550?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451868?learn=on&enablevpops&captions=ita)
 
 ## Flusso di lavoro standard
 
 Scopri come configurare il connettore di origine per Marketo utilizzando il flusso di lavoro standard. Il flusso di lavoro standard richiede la creazione anticipata di schemi e spazi dei nomi di identità.
 
->[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452915?learn=on&enablevpops&captions=ita)
 
 Per ulteriori informazioni, consulta la seguente documentazione:
 * [Documentazione del connettore di origine Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=it).

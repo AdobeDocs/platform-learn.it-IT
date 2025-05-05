@@ -17,5 +17,5 @@ ht-degree: 0%
 
 Nel video precedente abbiamo visto come un marchio di esempio, Luma, è stato in grado di creare un’esperienza del cliente ricca, gratificante e rilevante. Questo video illustra come viene utilizzato Adobe Experience Platform per eseguire questo percorso.
 
->[!VIDEO](https://video.tv.adobe.com/v/28144?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/39280?learn=on&enablevpops&captions=ita)
 

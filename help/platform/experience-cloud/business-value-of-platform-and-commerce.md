@@ -25,5 +25,5 @@ Questo video mostra come utilizzare Adobe Experience Platform con Adobe Commerce
 >
 > Magento è ora noto come Adobe Commerce
 
->[!VIDEO](https://video.tv.adobe.com/v/40376?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/328573?learn=on&enablevpops&captions=ita)
 

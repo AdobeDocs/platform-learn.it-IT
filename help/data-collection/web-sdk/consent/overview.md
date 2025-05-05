@@ -20,5 +20,5 @@ Scopri in che modo la gestione del consenso in Adobe Experience Platform Web SDK
 >
 > Il lancio è ora **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/332693/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3437796/?learn=on&enablevpops&captions=ita)
 

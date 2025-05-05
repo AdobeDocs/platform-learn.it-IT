@@ -20,5 +20,5 @@ ht-degree: 3%
 
 Le destinazioni sono integrazioni predefinite con piattaforme di destinazione che attivano ed esportano i dati in modo semplice per tali partner. Scopri i tipi di destinazione che puoi utilizzare per ottenere dati da [!DNL Real-Time CDP], [!DNL Experience Platform] e [!DNL Tags] per supportare un&#39;ampia varietà di casi d&#39;uso. Per ulteriori informazioni, visita la [documentazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/29707?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35693?learn=on&enablevpops&captions=ita)
 

@@ -26,7 +26,7 @@ Tutti i dati acquisiti correttamente in Adobe Experience Platform vengono manten
 **Gli architetti di dati** dovranno creare set di dati all&#39;esterno di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sui set di dati:
->[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/328610?learn=on&enablevpops&captions=ita)
 
 ## Autorizzazioni richieste
 

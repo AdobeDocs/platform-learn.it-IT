@@ -18,4 +18,4 @@ ht-degree: 6%
 
 Scopri come pulire, preparare e combinare dati da più set di dati per creare un nuovo set di dati utilizzando le funzioni CTAS (Create Table AS) e Spark SQL per il reporting e il dashboard. Per ulteriori informazioni, visitare la [documentazione di Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414068?learn=on&enablevpops&captions=ita)

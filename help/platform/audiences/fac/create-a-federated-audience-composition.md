@@ -20,4 +20,4 @@ ht-degree: 1%
 
 Scopri come creare una composizione di pubblico federato e come creare nell’interfaccia utente la query che raggiungerà il data warehouse e selezionerà i dati corretti. Per ulteriori informazioni, visita la [documentazione Federated Audience Composition](https://experienceleague.adobe.com/it/docs/federated-audience-composition/using/home){target="_blank"}.
 
->[!VIDEO](https://video.tv.adobe.com/v/3433247/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448586/?learn=on&enablevpops&captions=ita)

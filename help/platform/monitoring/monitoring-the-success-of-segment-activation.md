@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Quando invii profili di segmenti ai partner di attivazione, è fondamentale visualizzare informazioni sul completamento di questo trasferimento di dati, in particolare per poter risolvere eventuali problemi. Questo video mostra due modi principali per monitorare il flusso dei segmenti verso le destinazioni. Per ulteriori informazioni, visita la [documentazione](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/343248/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3409723/?learn=on&enablevpops&captions=ita)
 

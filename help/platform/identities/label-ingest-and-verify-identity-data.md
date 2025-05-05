@@ -18,4 +18,4 @@ ht-degree: 35%
 
 Scopri come etichettare i campi dati come identità, acquisire dati di identità e verificarli nel grafico privato del servizio Adobe Experience Platform Identity. Per ulteriori informazioni, visitare la [documentazione del servizio Identity](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=it)
 
->[!VIDEO](https://video.tv.adobe.com/v/28167?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36264?learn=on&enablevpops&captions=ita)

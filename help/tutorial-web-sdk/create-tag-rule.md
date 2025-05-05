@@ -70,7 +70,7 @@ Tutte queste regole verranno sequenziate correttamente utilizzando l&#39;opzione
 
 Questo video offre una panoramica del processo:
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3454035/?learn=on&enablevpops&captions=ita)
 
 ### Campi di configurazione globali
 

@@ -18,7 +18,7 @@ ht-degree: 16%
 
 Le funzionalità di acquisizione dei dati di Adobe Experience Platform consentono di raccogliere i dati in un’unica piattaforma aperta e scalabile allo scopo di gestire i profili cliente in tempo reale. Per ulteriori informazioni, visita la [documentazione sull&#39;acquisizione dei dati](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346832?learn=on&enablevpops&captions=ita)
 
 ## Metodi di acquisizione dei dati
 
@@ -35,7 +35,7 @@ Le funzionalità di acquisizione dei dati di Adobe Experience Platform consenton
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/overview.md" title="Panoramica sulle origini" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29694?format=jpeg&nocache=1740414616559" alt="Panoramica sulle origini"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/35691?format=jpeg&nocache=1740414616559&captions=ita" alt="Panoramica sulle origini"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -58,7 +58,7 @@ Le funzionalità di acquisizione dei dati di Adobe Experience Platform consenton
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../../data-collection/web-sdk/overview.md" title="Panoramica di Adobe Experience Platform Web SDK e Edge Network" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34141?format=jpeg&nocache=1740414616573" alt="Panoramica di Adobe Experience Platform Web SDK e Edge Network"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37267?format=jpeg&nocache=1740414616573&captions=ita" alt="Panoramica di Adobe Experience Platform Web SDK e Edge Network"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -95,7 +95,7 @@ Le funzionalità di acquisizione dei dati di Adobe Experience Platform consenton
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="batch-ingestion-overview.md" title="Panoramica dell’acquisizione di dati in batch" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/330995?format=jpeg&nocache=1740414616813" alt="Panoramica dell’acquisizione di dati in batch"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345662?format=jpeg&nocache=1740414616813&captions=ita" alt="Panoramica dell’acquisizione di dati in batch"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -118,7 +118,7 @@ Le funzionalità di acquisizione dei dati di Adobe Experience Platform consenton
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="understanding-streaming-ingestion.md" title="Panoramica sull’acquisizione di dati in streaming" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28425?format=jpeg&nocache=1740414616825" alt="Panoramica sull’acquisizione di dati in streaming"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36263?format=jpeg&nocache=1740414616825&captions=ita" alt="Panoramica sull’acquisizione di dati in streaming"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -141,7 +141,7 @@ Le funzionalità di acquisizione dei dati di Adobe Experience Platform consenton
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../../data-collection/web-sdk/overview.md" title="Panoramica di Adobe Experience Platform Web SDK e Edge Network" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34141?format=jpeg&nocache=1740414616799" alt="Panoramica di Adobe Experience Platform Web SDK e Edge Network"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37267?format=jpeg&nocache=1740414616799&captions=ita" alt="Panoramica di Adobe Experience Platform Web SDK e Edge Network"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -178,7 +178,7 @@ Le funzionalità di acquisizione dei dati di Adobe Experience Platform consenton
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-crm.md" title="Acquisire dati utilizzando i connettori Source CRM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29711?format=jpeg&nocache=1740414616941" alt="Acquisire dati utilizzando i connettori Source CRM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/35478?format=jpeg&nocache=1740414616941&captions=ita" alt="Acquisire dati utilizzando i connettori Source CRM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -201,7 +201,7 @@ Le funzionalità di acquisizione dei dati di Adobe Experience Platform consenton
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-cloud-storage.md" title="Acquisire dati utilizzando i connettori Source per archiviazione cloud" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29695?format=jpeg&nocache=1740414616962" alt="Acquisire dati utilizzando i connettori Source per archiviazione cloud"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/35477?format=jpeg&nocache=1740414616962&captions=ita" alt="Acquisire dati utilizzando i connettori Source per archiviazione cloud"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -224,7 +224,7 @@ Le funzionalità di acquisizione dei dati di Adobe Experience Platform consenton
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/streaming-ingestion-source-connector.md" title="Trasmettere i dati utilizzando i connettori Source" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331943?format=jpeg&nocache=1740414616930" alt="Trasmettere i dati utilizzando i connettori Source"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410104?format=jpeg&nocache=1740414616930&captions=ita" alt="Trasmettere i dati utilizzando i connettori Source"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -247,7 +247,7 @@ Le funzionalità di acquisizione dei dati di Adobe Experience Platform consenton
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/streaming-ingestion-http-api.md" title="Acquisire dati utilizzando l’endpoint API di Streaming Connection HTTP" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331028?format=jpeg&nocache=1740414616952" alt="Acquisire dati utilizzando l’endpoint API di Streaming Connection HTTP"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410929?format=jpeg&nocache=1740414616952&captions=ita" alt="Acquisire dati utilizzando l’endpoint API di Streaming Connection HTTP"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -284,7 +284,7 @@ Le funzionalità di acquisizione dei dati di Adobe Experience Platform consenton
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-adobe-analytics.md" title="Acquisire dati utilizzando il connettore di origine Adobe Analytics" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740414617197" alt="Acquisire dati utilizzando il connettore di origine Adobe Analytics"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430258?format=jpeg&nocache=1740414617197&captions=ita" alt="Acquisire dati utilizzando il connettore di origine Adobe Analytics"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -307,7 +307,7 @@ Le funzionalità di acquisizione dei dati di Adobe Experience Platform consenton
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-marketo.md" title="Acquisire dati da Marketo Engage" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740414617186" alt="Acquisire dati da Marketo Engage"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451868?format=jpeg&nocache=1740414617186&captions=ita" alt="Acquisire dati da Marketo Engage"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -330,7 +330,7 @@ Le funzionalità di acquisizione dei dati di Adobe Experience Platform consenton
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-aam.md" title="Acquisire dati utilizzando il connettore dati Adobe Audience Manager" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331214/?format=jpeg&nocache=1740414617207" alt="Acquisire dati utilizzando il connettore dati Adobe Audience Manager"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346985/?format=jpeg&nocache=1740414617207&captions=ita" alt="Acquisire dati utilizzando il connettore dati Adobe Audience Manager"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

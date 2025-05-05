@@ -20,4 +20,4 @@ ht-degree: 85%
 
 Scopri come supportare i principi di minimizzazione dei dati con la funzione di preparazione dei dati di Experience Platform. Scopri come acquisire solo i campi necessari e aggiungere hash ai dati durante l’acquisizione.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429485/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449283/?learn=on&enablevpops&captions=ita)

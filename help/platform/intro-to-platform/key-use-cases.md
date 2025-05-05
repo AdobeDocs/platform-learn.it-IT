@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Ottieni una panoramica dei cinque casi d’uso principali di Experience Platform: ricoinvolgimento intelligente, campagne &quot;Non perdere&quot;, ottimizzazione della conversione dei clienti, riconoscimento contestuale e valore una tantum per il ciclo di vita.
 
->[!VIDEO](https://video.tv.adobe.com/v/32806?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430467?learn=on&enablevpops&captions=ita)
 

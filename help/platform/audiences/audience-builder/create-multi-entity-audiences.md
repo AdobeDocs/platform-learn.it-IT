@@ -24,4 +24,4 @@ Questo video mostra come creare tipi di pubblico con più entità nel generatore
 >
 > &quot;[!UICONTROL I segmenti]&quot; sono stati rinominati &quot;[!UICONTROL Tipi di pubblico]&quot; nell&#39;interfaccia di Platform. Seleziona **[!UICONTROL Crea pubblico]** > **[!UICONTROL Genera regola]** per accedere al generatore di regole visualizzato in questo video.
 
->[!VIDEO](https://video.tv.adobe.com/v/32179?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345108?learn=on&enablevpops&captions=ita)

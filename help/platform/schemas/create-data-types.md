@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Questo video mostra come creare in Adobe Experience Platform tipi di dati personalizzati da utilizzare negli schemi Experience Data Model (XDM). Per ulteriori informazioni, visita la [documentazione sugli schemi](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/333537?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413617?learn=on&enablevpops&captions=ita)

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 In questo video sull’integrazione, scopri come utilizzare il connettore dati di Audience Manager per inserire in Platform caratteristiche e segmenti da AAM e combinarli con altri dati avanzati. Per ulteriori informazioni, consulta la [documentazione del connettore di origine Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346985/?learn=on&enablevpops&captions=ita)
 
 Quando riconfiguri i processi e il personale per passare da Adobe Audience Manager a Real-Time Customer Data Platform (Real-Time CDP), puoi utilizzare il connettore dati di Audience Manager per inserire caratteristiche e segmenti da AAM nella piattaforma, combinarli con altri dati avanzati (inclusi i dati PII) e inviarli ai partner di destinazione. Questo video illustra la configurazione del connettore dati di AAM per Real-Time CDP.
 

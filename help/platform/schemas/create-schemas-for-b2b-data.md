@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Scopri come creare schemi per i dati aziendali con Real-Time Customer Data Platform, B2B edition. Scopri le classi aziendali, i gruppi di campi e gli spazi dei nomi delle identità e come crearli automaticamente nel tuo account con l’utility Postman. Per ulteriori informazioni, visita la [documentazione sugli schemi](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/338241?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3453402?learn=on&enablevpops&captions=ita)

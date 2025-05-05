@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Questo video analizza gli elementi chiave degli schemi Experience Data Model (XDM), tra cui campi, tipi di dati, gruppi di campi di schema, classi e comportamenti. Per ulteriori informazioni, visita la [documentazione sugli schemi](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/333469?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413659?learn=on&enablevpops&captions=ita)

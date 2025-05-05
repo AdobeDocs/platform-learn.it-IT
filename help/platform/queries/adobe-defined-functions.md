@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Scopri come utilizzare le funzioni definite da Adobe in Adobe Experience Platform Query Service per eseguire attività di business comuni sui dati degli eventi delle esperienze. Per ulteriori informazioni, visitare la [documentazione di Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/333701?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414050?learn=on&enablevpops&captions=ita)

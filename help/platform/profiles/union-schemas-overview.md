@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Questo video offre una panoramica degli schemi di unione utilizzati dal profilo cliente in tempo reale di Adobe Experience Platform. Gli schemi di unione consentono di visualizzare una combinazione di tutti i campi contenuti negli schemi che condividono la stessa classe. Real-Time Customer Profile utilizza gli schemi di unione per creare una visualizzazione olistica di ogni singolo cliente. Per ulteriori informazioni, visita la [documentazione sullo schema di unione](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/329940?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/342823?learn=on&enablevpops&captions=ita)

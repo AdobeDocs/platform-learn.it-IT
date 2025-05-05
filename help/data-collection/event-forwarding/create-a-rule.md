@@ -25,4 +25,4 @@ Scopri come creare una regola per l’inoltro degli eventi in Raccolta dati. Per
 > * Platform Launch Server Side è ora **[!DNL event forwarding]**
 > * Le configurazioni di Edge sono ora **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331942?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410373?learn=on&enablevpops&captions=ita)

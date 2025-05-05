@@ -19,4 +19,4 @@ ht-degree: 50%
 
 Questo video mostra come Adobe Real-Time Customer Data Platform aiuti i brand a rispettare il consenso dei consumatori che interagiscono con proprietà digitali. Grazie al supporto del Transparency &amp; Consent Framework 2.0 (IAB TCF), i brand ottengono una maggiore flessibilità sulle modalità di interazione con i consumatori, fornendo al contempo ai consumatori un maggiore controllo sul loro consenso.
 
->[!VIDEO](https://video.tv.adobe.com/v/38346?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/326478?learn=on&enablevpops&captions=ita)

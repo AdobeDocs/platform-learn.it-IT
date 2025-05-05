@@ -33,7 +33,7 @@ Esistono [guardrail importanti per i dati del Profilo cliente in tempo reale](ht
 **Gli architetti di dati** dovranno abilitare Real-Time Customer Profile all&#39;esterno di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sul profilo cliente in tempo reale:
->[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36266?learn=on&enablevpops&captions=ita)
 
 ## Autorizzazioni richieste
 

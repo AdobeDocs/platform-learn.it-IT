@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Scopri come utilizzare il pannello di individuabilità in AI Assistant. Per ulteriori informazioni, vedere la [Guida dell&#39;interfaccia utente dell&#39;Assistente IA](https://experienceleague.adobe.com/it/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).
 
->[!VIDEO](https://video.tv.adobe.com/v/3440962/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440970/?learn=on&enablevpops&captions=ita)

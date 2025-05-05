@@ -18,4 +18,4 @@ ht-degree: 1%
 
 In questo video, scopri come impostare la connessione tra te e un partner in modo da poter condividere i tipi di pubblico. Dopo aver configurato la funzione Segment Match, potrai condividere i dati con il tuo partner dati in modalità bidirezionale. Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/342211/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346352/?learn=on&enablevpops&captions=ita)

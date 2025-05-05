@@ -18,5 +18,5 @@ ht-degree: 15%
 
 Questo video mostra come configurare una relazione tra due schemi in Adobe Experience Platform. Le relazioni consentono di utilizzare un set di dati come tabella di ricerca per un altro. Per la documentazione dettagliata del prodotto, vedere [Definire una relazione tra due schemi utilizzando l&#39;Editor schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html?lang=it) e [Definire una relazione tra due schemi utilizzando l&#39;API Schema Registry](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-api.html?lang=it)
 
->[!VIDEO](https://video.tv.adobe.com/v/333536?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413652?learn=on&enablevpops&captions=ita)
 

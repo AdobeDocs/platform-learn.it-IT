@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Questo video mostra come gli architetti di dati possono prendere il loro modello di dati transazionali esistente e convertirlo in un Experience Data Model. Mostra le differenze negli approcci di modellazione utilizzando diagrammi entità-relazione. Per ulteriori informazioni, visita la [documentazione sulle best practice per la modellazione dei dati](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/333483?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413645?learn=on&enablevpops&captions=ita)

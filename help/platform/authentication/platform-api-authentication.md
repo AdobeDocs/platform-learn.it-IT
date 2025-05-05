@@ -31,20 +31,20 @@ La funzionalità [Esporta dettagli per Postman **di Adobe Developer Console](htt
 >
 > Dopo aver creato le credenziali API, un amministratore di sistema deve associarle a un ruolo in Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36258/?learn=on&enablevpops&captions=ita)
 
 ## Generare un token di accesso con Postman{#generate-an-access-token-with-postman}
 
 Utilizza le [API del servizio Adobe Identity Management](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) per ottenere un token di accesso per accedere alle API di Adobe Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/29698/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/39133/?learn=on&enablevpops&captions=ita)
 
 
 ## Interagire con le API di Experience Platform tramite Postman
 
 Esplora l&#39;interazione con le API di Adobe Experience Platform utilizzando le [raccolte Postman API di Experience Platform fornite da Adobe](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), sulla base delle [variabili di ambiente Adobe Developer Console](#export-integration-details-to-postman) e del [token di accesso generato](#generate-an-access-token-with-postman).
 
->[!VIDEO](https://video.tv.adobe.com/v/29704/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/39132/?learn=on&enablevpops&captions=ita)
 
 
 ## Risorse a cui si fa riferimento in questi video

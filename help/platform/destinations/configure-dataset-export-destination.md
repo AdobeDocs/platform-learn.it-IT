@@ -22,4 +22,4 @@ Scopri come impostare una connessione e utilizzare il flusso di lavoro per le es
 
 Per ulteriori informazioni, visita la [documentazione](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/export-datasets).
 
->[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448826/?learn=on&enablevpops&captions=ita)

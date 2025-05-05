@@ -18,4 +18,4 @@ ht-degree: 2%
 
 Questo video illustra alcuni aspetti di base di cui tenere conto durante l’aggiornamento degli schemi esistenti in Adobe Experience Platform. Per ulteriori informazioni, visita la [documentazione sugli schemi](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/333612?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413638?learn=on&enablevpops&captions=ita)

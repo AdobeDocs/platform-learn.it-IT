@@ -23,5 +23,5 @@ Ottieni un’introduzione al generatore di regole per il pubblico in Experience 
 > &quot;[!UICONTROL I segmenti]&quot; sono stati rinominati &quot;[!UICONTROL Tipi di pubblico]&quot; nell&#39;interfaccia di Platform. Seleziona **[!UICONTROL Crea pubblico]** > **[!UICONTROL Genera regola]** per accedere al generatore di regole visualizzato in questo video.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/333301/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413202/?learn=on&enablevpops&captions=ita)
 

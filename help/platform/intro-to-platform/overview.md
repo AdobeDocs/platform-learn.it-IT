@@ -18,6 +18,6 @@ ht-degree: 0%
 
 Ottieni una panoramica di Experience Platform e delle problematiche aziendali che risolve.
 
->[!VIDEO](https://video.tv.adobe.com/v/32797?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428495?learn=on&enablevpops&captions=ita)
 
 

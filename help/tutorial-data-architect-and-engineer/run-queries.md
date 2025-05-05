@@ -25,7 +25,7 @@ Adobe Experience Platform Query Service consente di interpretare i dati in modo 
 **Gli architetti di dati** e **i data engineer** dovranno utilizzare il servizio query all&#39;esterno di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni su Query Service:
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/39649?learn=on&enablevpops&captions=ita)
 
 ## Autorizzazioni richieste
 

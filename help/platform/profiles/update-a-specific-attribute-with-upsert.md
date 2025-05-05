@@ -19,4 +19,4 @@ ht-degree: 0%
 
 Scopri come aggiornare un attributo specifico di un profilo utilizzando la funzione `upsert` di Adobe Experience Platform. In genere, quando si acquisisce un record in Platform con solo l’attributo specifico, il valore viene aggiornato ma anche gli altri attributi con i valori `null`. `Upsert` consente di aggiornare solo l&#39;attributo desiderato, consentendo al contempo ai campi rimanenti di mantenere i valori correnti.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416133/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443449/?learn=on&enablevpops&captions=ita)

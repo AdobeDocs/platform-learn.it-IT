@@ -26,4 +26,4 @@ Scopri come configurare una sandbox per i playbook basati su casi d’uso. Per i
 
 Per ulteriori informazioni, vedere [Introduzione ai playbook per casi d&#39;uso](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449834/?learn=on&enablevpops&captions=ita)

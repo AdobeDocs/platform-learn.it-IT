@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Questo video mostra come creare criteri di unione in Adobe Experience Platform. I criteri di unione sono le regole che Platform utilizza per determinare quali dati verranno utilizzati e assegnati priorità quando si combinano set di dati da origini diverse, al fine di creare profili cliente. Per ulteriori informazioni, visita la [documentazione sui criteri di unione](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345077?learn=on&enablevpops&captions=ita)

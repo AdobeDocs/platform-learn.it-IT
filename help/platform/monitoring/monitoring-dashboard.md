@@ -18,4 +18,4 @@ ht-degree: 55%
 
 Scopri come monitorare e tenere traccia dei dati acquisiti in Adobe Experience Platform utilizzando la dashboard di monitoraggio. Questo dashboard di monitoraggio fornisce una vista dall’alto verso il basso dell’elaborazione dei dati sorgente attraverso il data lake ai servizi Profilo e Identità, con informazioni fruibili. Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-sources.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/331776?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/347009?learn=on&enablevpops&captions=ita)

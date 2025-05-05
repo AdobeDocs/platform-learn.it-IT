@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Ottieni una panoramica del modo in cui le regole di collegamento del grafico delle identità aiutano gli architetti di dati a mantenere profili cliente precisi e a evitare la compressione del grafico. Per ulteriori informazioni, consulta la [documentazione sulle regole di collegamento del grafico delle identità](https://experienceleague.adobe.com/it/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
 
->[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448280/?learn=on&enablevpops&captions=ita)

@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Panoramica di alto livello su come esperti di marketing e analisti possono utilizzare IA per l’attribuzione per comprendere l’impatto dei loro canali e campagne di marketing. Per ulteriori informazioni, visita la [documentazione di IA per l&#39;attribuzione](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/32667?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36617?learn=on&enablevpops&captions=ita)

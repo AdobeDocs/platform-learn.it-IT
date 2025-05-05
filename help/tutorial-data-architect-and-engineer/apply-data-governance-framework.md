@@ -24,9 +24,9 @@ In questa lezione, applicherai il framework di governance dei dati ai dati acqui
 La governance dei dati di Adobe Experience Platform consente di gestire i dati dei clienti e di garantire la conformità alle normative, alle restrizioni e alle politiche applicabili all’utilizzo dei dati. Svolge un ruolo chiave all’interno di Experience Platform a vari livelli, incluso il controllo dell’utilizzo dei dati.
 
 Prima di iniziare gli esercizi, guarda questi brevi video sulla governance dei dati:
->[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/41161?learn=on&enablevpops&captions=ita)
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35476?learn=on&enablevpops&captions=ita)
 
 <!--
 ## Permissions required

@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Questo video illustra cosa fare prima di iniziare a creare gli schemi in Adobe Experience Platform. Documenta i casi d’uso aziendali, scopri la licenza Platform, conosce i guardrail dei prodotti e identifica i dati da acquisire prima di finalizzare il modello di dati. Per ulteriori informazioni, visita la [documentazione sugli schemi](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/333478?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413631?learn=on&enablevpops&captions=ita)

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Questo video illustra come l’Assistente AI di Adobe Experience Platform può aiutarti a essere più efficace con l’analisi dell’impatto. Le modifiche agli oggetti condivisi, come attributi e tipi di pubblico, possono interrompere i flussi di lavoro per altri team, complicando i processi e rischiando di compromettere le attività di marketing più importanti.
 
->[!VIDEO](https://video.tv.adobe.com/v/3441680/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441688/?learn=on&enablevpops&captions=ita)

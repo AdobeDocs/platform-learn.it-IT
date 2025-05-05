@@ -19,4 +19,4 @@ ht-degree: 33%
 
 Scopri come utilizzare i campi enumerati e i valori consigliati per creare semplici menu a discesa nell’interfaccia del generatore di segmenti. Per ulteriori informazioni, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/3409501/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413678/?learn=on&enablevpops&captions=ita)

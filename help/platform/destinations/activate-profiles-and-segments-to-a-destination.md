@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Scopri come attivare profili e tipi di pubblico nelle destinazioni in Real-Time CDP.  Avvia questo flusso di lavoro nell’interfaccia utente delle destinazioni o dei tipi di pubblico. Per ulteriori informazioni, visita la [documentazione](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activation-overview).
 
->[!VIDEO](https://video.tv.adobe.com/v/336046/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3418825/?learn=on&enablevpops&captions=ita)
 

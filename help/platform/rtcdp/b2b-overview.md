@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Scopri come gli esperti di marketing business-to-business (B2B) possono unificare persone e profili di account tra sistemi diversi e ottenere una piena comprensione dei loro clienti. Per ulteriori informazioni, visitare la [documentazione di Real-Time CDP B2B edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/338249?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451929?learn=on&enablevpops&captions=ita)

@@ -22,7 +22,7 @@ Scopri come pianificare le eliminazioni dei set di dati utilizzando la funzione 
 L’eliminazione del set di dati consente agli amministratori di dati e ai data engineer di impostare una data di scadenza per un set di dati. Per ulteriori informazioni, visita la [documentazione sull&#39;igiene dei dati](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=it).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430311?learn=on&enablevpops&captions=ita)
 
 >[!NOTE]
 >

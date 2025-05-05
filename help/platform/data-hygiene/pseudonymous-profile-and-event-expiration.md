@@ -22,4 +22,4 @@ Scopri come configurare le impostazioni di scadenza per profili ed eventi sotto 
 Queste impostazioni consentono agli amministratori dei dati di impostare le date di scadenza per i profili non autenticati e i relativi eventi associati. Questo ti aiuta a mantenere [!DNL Profile Service] rilevante per i tuoi casi di utilizzo di marketing e annunci pubblicitari. Per ulteriori informazioni, visita la documentazione [Scadenza evento esperienza](https://experienceleague.adobe.com/it/docs/experience-platform/profile/event-expirations) e [Scadenza dati profili pseudonimi](https://experienceleague.adobe.com/it/docs/experience-platform/profile/event-expirations).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3428361?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449864?learn=on&enablevpops&captions=ita)

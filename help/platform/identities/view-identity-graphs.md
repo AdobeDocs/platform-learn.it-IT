@@ -18,6 +18,6 @@ ht-degree: 1%
 
 Scopri come utilizzare la funzione di visualizzazione del grafico delle identità per cercare, esplorare e filtrare i grafici delle identità per la convalida e il debug. Per ulteriori informazioni, visita la [documentazione del visualizzatore del grafico delle identità](https://experienceleague.adobe.com/docs/experience-platform/identity/ui/identity-graph-viewer.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/331030?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345655?learn=on&enablevpops&captions=ita)
 
 

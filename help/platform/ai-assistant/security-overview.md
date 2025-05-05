@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Questa è una panoramica delle funzionalità di sicurezza per l&#39;Assistente AI basata sulla <a href="https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-ai-assistant-in-aep-security-fact-sheet.pdf">scheda informativa sulla sicurezza</a>.  Per ulteriori informazioni, vedere la [documentazione sulla privacy dell&#39;Assistente AI](https://experienceleague.adobe.com/it/docs/experience-platform/ai-assistant/privacy).
 
->[!VIDEO](https://video.tv.adobe.com/v/3441066/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441088/?learn=on&enablevpops&captions=ita)

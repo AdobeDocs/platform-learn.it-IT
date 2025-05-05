@@ -18,7 +18,7 @@ ht-degree: 16%
 
 Scopri come assumere il controllo completo sui dati dal momento in cui vengono raccolti presso le origini dati a quando vengono distribuiti su destinazioni al di fuori di Adobe Experience Platform. La governance dei dati è un framework facilmente estensibile profondamente incorporato nei flussi di lavoro di utilizzo dei dati. Il framework è basato su tre aspetti chiave: etichette, criteri e applicazione. Per ulteriori informazioni, visita la [documentazione sulla governance dei dati](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35476?learn=on&enablevpops&captions=ita)
 
 ## Demo
 
@@ -35,7 +35,7 @@ Guarda una demo end-to-end delle funzionalità di governance dei dati in Adobe E
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-data-governance.md" title="Demo end-to-end sulla governance dei dati" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36653?format=jpeg&nocache=1740179989077" alt="Demo end-to-end sulla governance dei dati"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/41161?format=jpeg&nocache=1740179989077&captions=ita" alt="Demo end-to-end sulla governance dei dati"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -73,7 +73,7 @@ Scopri come etichette, criteri e azioni di marketing si riuniscono per automatiz
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="classify-data-using-labels.md" title="Classificare i dati usando le etichette" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29709?format=jpeg&nocache=1740179989358" alt="Classificare i dati usando le etichette"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3422790?format=jpeg&nocache=1740179989358&captions=ita" alt="Classificare i dati usando le etichette"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -96,7 +96,7 @@ Scopri come etichette, criteri e azioni di marketing si riuniscono per automatiz
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-data-usage-policies.md" title="Creare criteri di utilizzo dei dati" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32977?format=jpeg&nocache=1740179989347" alt="Creare criteri di utilizzo dei dati"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37131?format=jpeg&nocache=1740179989347&captions=ita" alt="Creare criteri di utilizzo dei dati"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -156,7 +156,7 @@ Scopri in che modo Experience Platform rispetta il consenso dei clienti.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="integrate-with-iab-transparency-and-consent-framework-2.md" title="Integrare IAB Transparency and Consent Framework 2.0" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/38346?format=jpeg&nocache=1740179989597" alt="Integrare IAB Transparency and Consent Framework 2.0"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/326478?format=jpeg&nocache=1740179989597&captions=ita" alt="Integrare IAB Transparency and Consent Framework 2.0"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -179,7 +179,7 @@ Scopri in che modo Experience Platform rispetta il consenso dei clienti.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="enforce-consent.md" title="Imponi consenso" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345677?format=jpeg&nocache=1740179989584" alt="Imponi consenso"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3412100?format=jpeg&nocache=1740179989584&captions=ita" alt="Imponi consenso"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

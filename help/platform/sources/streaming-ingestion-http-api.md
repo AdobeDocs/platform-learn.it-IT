@@ -17,7 +17,7 @@ ht-degree: 42%
 
 Questo video mostra come inviare dati ad Adobe Experience Platform in streaming e in tempo reale utilizzando l’endpoint API HTTP.
 
->[!VIDEO](https://video.tv.adobe.com/v/331028?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410929?learn=on&enablevpops&captions=ita)
 
 ## Informazioni aggiuntive
 

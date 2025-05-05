@@ -22,4 +22,4 @@ Ottieni suggerimenti durante la procedura dettagliata sulla configurazione di un
 * [Attiva i dati del pubblico nelle destinazioni di esportazione del profilo batch](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html?lang=it) per istruzioni su come attivare i dati nelle destinazioni di marketing batch o e-mail tramite l&#39;interfaccia utente di Experience Platform
 * [Connettiti a destinazioni batch e attiva i dati utilizzando l&#39;API del servizio Flusso](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html?lang=it) per istruzioni su come attivare i dati a destinazioni di marketing batch o e-mail utilizzando l&#39;API del servizio Flusso
 
->[!VIDEO](https://video.tv.adobe.com/v/328175/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/340716/?learn=on&enablevpops&captions=ita)

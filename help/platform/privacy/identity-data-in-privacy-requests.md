@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Scopri i concetti e le decisioni chiave relativi alla verifica dei dati personali e alla preparazione in base alle esigenze di privacy dell’azienda. Per ulteriori informazioni, visitare la [documentazione di Privacy Services](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/336076?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3447656?learn=on&enablevpops&captions=ita)

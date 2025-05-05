@@ -26,7 +26,7 @@ Il servizio Adobe Experience Platform Identity consente di ottenere una visione 
 **Gli architetti di dati** dovranno mappare le identità all&#39;esterno di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sull’identità in Adobe Experience Platform:
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422773?learn=on&enablevpops&captions=ita)
 
 >[!NOTE]
 >

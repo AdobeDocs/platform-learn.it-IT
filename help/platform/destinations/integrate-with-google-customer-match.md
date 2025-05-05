@@ -19,4 +19,4 @@ ht-degree: 0%
 
 Scopri in che modo le funzionalità Real-Time Customer Data Platform di Adobe e Customer Match di Google consentono ai brand di interagire con i clienti sulle proprietà possedute e gestite da Google per scalare le campagne di outreach. Per ulteriori informazioni, visita la [documentazione](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/38180?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/326486?learn=on&enablevpops&captions=ita)

@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Scopri come copiare le configurazioni tra le sandbox di Experience Platform utilizzando i pacchetti. Replica semplice di schemi, set di dati, percorsi e altro ancora nelle sandbox per supportare i processi di rilascio e le implementazioni con più aree geografiche/marchi. Per informazioni più dettagliate, consulta la [documentazione sugli strumenti sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/3424763/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446095/?learn=on&enablevpops&captions=ita)

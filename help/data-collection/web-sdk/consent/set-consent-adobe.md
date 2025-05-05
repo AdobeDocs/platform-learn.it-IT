@@ -20,4 +20,4 @@ Scopri come utilizzare Adobe Experience Platform Web SDK per impostare i valori 
 >
 > Il lancio è ora **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/332694/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448804/?learn=on&enablevpops&captions=ita)

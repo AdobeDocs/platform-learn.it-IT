@@ -43,7 +43,7 @@ Key terms:
 **Gli architetti di dati** dovranno creare schemi al di fuori di questa esercitazione, ma **i Data Engineer** lavoreranno a stretto contatto con gli schemi creati dall&#39;architetto di dati.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sugli schemi e sull’Experience Data Model (XDM):
->[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/38516?learn=on&enablevpops&captions=ita)
 
 >[!TIP]
 >

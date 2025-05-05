@@ -19,4 +19,4 @@ ht-degree: 100%
 
 Scopri come applicare le etichette agli schemi e ai set di dati. Le etichette di utilizzo dei dati consentono di assegnare tag e classificare i dati in modo da riflettere le politiche aziendali, gli obblighi contrattuali, i requisiti di conformità e le normative regionali in Adobe Experience Platform. Questa funzionalità è fondamentale per differenziare i dati conosciuti e sconosciuti sulla clientela e applicare controlli appropriati sull’utilizzo dei dati in base alla loro natura. Per la documentazione dettagliata sul prodotto, consulta [Gestire le etichette di utilizzo dei dati nell’interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/user-guide.html?lang=it) e [Gestire le etichette di utilizzo dei dati con API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/dataset-api.html?lang=it)
 
->[!VIDEO](https://video.tv.adobe.com/v/29709?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422790?learn=on&enablevpops&captions=ita)

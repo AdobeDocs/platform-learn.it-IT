@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Scopri come scrivere ed eseguire query, creare query di pianificazione e creare un modello di query utilizzando l’API di Adobe Experience Platform Query Service. Per ulteriori informazioni, visitare la [documentazione di Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/333700?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414086?learn=on&enablevpops&captions=ita)

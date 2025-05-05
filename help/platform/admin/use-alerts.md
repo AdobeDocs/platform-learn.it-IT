@@ -19,4 +19,4 @@ ht-degree: 43%
 
 Scopri come abbonarti e gestire gli avvisi in Adobe Experience Platform. Gli avvisi aiutano a monitorare vari processi per garantire che l’implementazione di Platform funzioni senza problemi. Per ulteriori informazioni, visitare la [documentazione degli avvisi](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/336218?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3423920?learn=on&enablevpops&captions=ita)

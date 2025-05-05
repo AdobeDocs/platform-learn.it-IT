@@ -29,7 +29,7 @@ Scopri i tipi di pubblico in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-audience-portal-and-composition.md" title="Introduzione a Audience Portal e Composizione" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3421713/?format=jpeg&nocache=1740173577252" alt="Introduzione a Audience Portal e Composizione"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423367/?format=jpeg&nocache=1740173577252&captions=ita" alt="Introduzione a Audience Portal e Composizione"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -52,7 +52,7 @@ Scopri i tipi di pubblico in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="upload-audiences.md" title="Caricare tipi di pubblico in Adobe Experience Platform" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3421714/?format=jpeg&nocache=1740173577237" alt="Caricare tipi di pubblico in Adobe Experience Platform"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423358/?format=jpeg&nocache=1740173577237&captions=ita" alt="Caricare tipi di pubblico in Adobe Experience Platform"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -94,7 +94,7 @@ Scopri i tipi di pubblico in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-audiences.md" title="Creare tipi di pubblico" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27254?format=jpeg&nocache=1740173578323" alt="Creare tipi di pubblico"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36265?format=jpeg&nocache=1740173578323&captions=ita" alt="Creare tipi di pubblico"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -117,7 +117,7 @@ Scopri i tipi di pubblico in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/audience-rule-builder-overview.md" title="Panoramica del generatore di regole per il pubblico" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333301/?format=jpeg&nocache=1740173578357" alt="Panoramica del generatore di regole per il pubblico"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413202/?format=jpeg&nocache=1740173578357&captions=ita" alt="Panoramica del generatore di regole per il pubblico"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -140,7 +140,7 @@ Scopri i tipi di pubblico in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-content-based-audiences.md" title="Creare un pubblico basato sui contenuti" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333302/?format=jpeg&nocache=1740173578346" alt="Creare un pubblico basato sui contenuti"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413207/?format=jpeg&nocache=1740173578346&captions=ita" alt="Creare un pubblico basato sui contenuti"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -163,7 +163,7 @@ Scopri i tipi di pubblico in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-conversion-audiences.md" title="Creare tipi di pubblico di conversione" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333303/?format=jpeg&nocache=1740173578309" alt="Creare tipi di pubblico di conversione"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413192/?format=jpeg&nocache=1740173578309&captions=ita" alt="Creare tipi di pubblico di conversione"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +186,7 @@ Scopri i tipi di pubblico in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-dynamic-audiences.md" title="Crea tipi di pubblico dinamici" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27428?format=jpeg&nocache=1740173578383" alt="Crea tipi di pubblico dinamici"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/328608?format=jpeg&nocache=1740173578383&captions=ita" alt="Crea tipi di pubblico dinamici"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -209,7 +209,7 @@ Scopri i tipi di pubblico in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-multi-entity-audiences.md" title="Creare tipi di pubblico con più entità" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32179?format=jpeg&nocache=1740173578335" alt="Creare tipi di pubblico con più entità"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345108?format=jpeg&nocache=1740173578335&captions=ita" alt="Creare tipi di pubblico con più entità"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -232,7 +232,7 @@ Scopri i tipi di pubblico in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-sequential-audiences.md" title="Creare tipi di pubblico sequenziali" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333305/?format=jpeg&nocache=1740173578395" alt="Creare tipi di pubblico sequenziali"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413212/?format=jpeg&nocache=1740173578395&captions=ita" alt="Creare tipi di pubblico sequenziali"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -336,7 +336,7 @@ Scopri i tipi di pubblico in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/create-a-federated-audience-composition.md" title="Creare una composizione di pubblico federato" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433247/?format=jpeg&nocache=1740173579467" alt="Creare una composizione di pubblico federato"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3448586/?format=jpeg&nocache=1740173579467&captions=ita" alt="Creare una composizione di pubblico federato"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -369,7 +369,7 @@ Scopri i tipi di pubblico in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="streaming-segmentation-demo.md" title="Demo sulla segmentazione in streaming" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36184?format=jpeg&nocache=1740173579663" alt="Demo sulla segmentazione in streaming"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40069?format=jpeg&nocache=1740173579663&captions=ita" alt="Demo sulla segmentazione in streaming"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -406,7 +406,7 @@ Scopri i tipi di pubblico in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-configuration-flow.md" title="Flusso di configurazione Segment Match" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342336/?format=jpeg&nocache=1740173579850" alt="Flusso di configurazione Segment Match"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346706/?format=jpeg&nocache=1740173579850&captions=ita" alt="Flusso di configurazione Segment Match"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -429,7 +429,7 @@ Scopri i tipi di pubblico in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-connection-setup.md" title="Impostazione della connessione Segment Match" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342211/?format=jpeg&nocache=1740173579840" alt="Impostazione della connessione Segment Match"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346352/?format=jpeg&nocache=1740173579840&captions=ita" alt="Impostazione della connessione Segment Match"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -452,7 +452,7 @@ Scopri i tipi di pubblico in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-data-governance.md" title="Governance dei dati per Segment Match" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342212/?format=jpeg&nocache=1740173579862" alt="Governance dei dati per Segment Match"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346359/?format=jpeg&nocache=1740173579862&captions=ita" alt="Governance dei dati per Segment Match"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -475,7 +475,7 @@ Scopri i tipi di pubblico in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-pre-share-insights.md" title="Approfondimenti sulla pre-condivisione di Segment Match" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342378/?format=jpeg&nocache=1740173579872" alt="Approfondimenti sulla pre-condivisione di Segment Match"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346345/?format=jpeg&nocache=1740173579872&captions=ita" alt="Approfondimenti sulla pre-condivisione di Segment Match"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -498,7 +498,7 @@ Scopri i tipi di pubblico in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-receiving-data.md" title="Ricezione dei dati con Segment Match" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/344419/?format=jpeg&nocache=1740173579825" alt="Ricezione dei dati con Segment Match"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3411141/?format=jpeg&nocache=1740173579825&captions=ita" alt="Ricezione dei dati con Segment Match"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
