@@ -55,11 +55,11 @@ if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDeta
 }
 ```
 
-Per ulteriori informazioni e best practice, consulta la documentazione dedicata su [script di profilo](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/profile-parameters).
+Per ulteriori informazioni e best practice, consulta la documentazione dedicata su [script di profilo](https://experienceleague.adobe.com/it/docs/target/using/audiences/visitor-profiles/profile-parameters).
 
 ## Aggiornare i token dei parametri per il contenuto dinamico
 
-Se esegui la migrazione dei parametri mbox all&#39;oggetto `xdm` e disponi di offerte, progettazioni di consigli o attività che utilizzano [sostituzione dinamica dei contenuti](https://experienceleague.adobe.com/en/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer), potrebbe essere necessario aggiornarli di conseguenza per tenere conto dei nuovi nomi dei parametri XDM.
+Se esegui la migrazione dei parametri mbox all&#39;oggetto `xdm` e disponi di offerte, progettazioni di consigli o attività che utilizzano [sostituzione dinamica dei contenuti](https://experienceleague.adobe.com/it/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer), potrebbe essere necessario aggiornarli di conseguenza per tenere conto dei nuovi nomi dei parametri XDM.
 
 A seconda di come utilizzi la sostituzione del token per i parametri mbox, potresti essere in grado di migliorare la configurazione esistente per tenere conto dei nomi dei parametri vecchi e nuovi. Tuttavia, in situazioni in cui il codice JavaScript personalizzato non è possibile, ad esempio nelle offerte JSON, devi creare copie e apportare aggiornamenti dopo che la migrazione è stata completata e pubblicata sul sito di produzione.
 

@@ -100,7 +100,7 @@ Platform Web SDK offre un controllo maggiore per l&#39;applicazione di attività
 | `replaceHtml` | Rimuovere il contenitore e sostituirlo con l’offerta | No | Sì |
 | `appendHtml` | Aggiunge l&#39;offerta dopo il selettore specificato | No | Sì |
 
-Per ulteriori opzioni ed esempi di rendering, consulta la [documentazione dedicata](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) sul rendering del contenuto tramite Platform Web SDK.
+Per ulteriori opzioni ed esempi di rendering, consulta la [documentazione dedicata](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=it) sul rendering del contenuto tramite Platform Web SDK.
 
 ## Esempio di implementazione
 

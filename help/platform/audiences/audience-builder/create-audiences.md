@@ -16,7 +16,7 @@ ht-degree: 5%
 
 # Creare tipi di pubblico
 
-Scopri come creare tipi di pubblico in Adobe Experience Platform. Crea regole per il pubblico e applicale ai profili cliente in tempo reale per produrre tipi di pubblico che alimentino le esperienze dei clienti. Per la documentazione dettagliata del prodotto, consulta [creare un segmento nell&#39;interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=it) e [creare un segmento con API](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html).
+Scopri come creare tipi di pubblico in Adobe Experience Platform. Crea regole per il pubblico e applicale ai profili cliente in tempo reale per produrre tipi di pubblico che alimentino le esperienze dei clienti. Per la documentazione dettagliata del prodotto, consulta [creare un segmento nell&#39;interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=it) e [creare un segmento con API](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html?lang=it).
 
 >[!NOTE]
 >

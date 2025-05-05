@@ -179,7 +179,7 @@ La maggior parte della logica di business richiede la raccolta dei punti di cont
 
 ### Funzioni definite da Adobe
 
-Adobe ha aggiunto un set di **funzioni definite dall&#39;Adobe** alla sintassi SQL standard che ti consente di comprendere meglio i dati sull&#39;esperienza. Nelle query successive verranno fornite informazioni su queste funzioni ADF. Puoi trovare ulteriori informazioni e l&#39;elenco completo [nella documentazione](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html).
+Adobe ha aggiunto un set di **funzioni definite dall&#39;Adobe** alla sintassi SQL standard che ti consente di comprendere meglio i dati sull&#39;esperienza. Nelle query successive verranno fornite informazioni su queste funzioni ADF. Puoi trovare ulteriori informazioni e l&#39;elenco completo [nella documentazione](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=it).
 
 ### Cosa fanno le persone sul sito prima di raggiungere la pagina &quot;Annulla servizio&quot; come terza pagina in una sessione?
 

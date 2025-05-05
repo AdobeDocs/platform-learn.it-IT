@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Ispezionare e convalidare i segnali di consenso
 
-Scopri come verificare che le impostazioni di consenso siano applicate correttamente ai dati in Adobe Experience Platform. Consulta la documentazione sul consenso per ulteriori informazioni su [test dell&#39;implementazione](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=en#test-implementation).
+Scopri come verificare che le impostazioni di consenso siano applicate correttamente ai dati in Adobe Experience Platform. Consulta la documentazione sul consenso per ulteriori informazioni su [test dell&#39;implementazione](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=it#test-implementation).
 
 >[!NOTE]
 >

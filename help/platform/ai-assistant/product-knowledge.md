@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Scopri le applicazioni Experience Platform con l’Assistente AI
 
-Scopri le applicazioni Adobe Experience Platform da AI Assistant. Per ulteriori informazioni, vedere la [documentazione dell&#39;Assistente AI](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home).
+Scopri le applicazioni Adobe Experience Platform da AI Assistant. Per ulteriori informazioni, vedere la [documentazione dell&#39;Assistente AI](https://experienceleague.adobe.com/it/docs/experience-platform/ai-assistant/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441024/?learn=on&enablevpops)

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Valore aziendale di Customer AI
 
-Questo video mostra come IA per l’analisi dei clienti arricchisce i profili dei clienti con dati di propensione basati su intelligenza artificiale e potenzia la segmentazione dei clienti e le attività di targeting. Per ulteriori informazioni, visita la [documentazione di Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html).
+Questo video mostra come IA per l’analisi dei clienti arricchisce i profili dei clienti con dati di propensione basati su intelligenza artificiale e potenzia la segmentazione dei clienti e le attività di targeting. Per ulteriori informazioni, visita la [documentazione di Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/40374?learn=on&enablevpops)
 

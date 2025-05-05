@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Fare riferimento al pubblico come inserzionista in Real-Time CDP Collaboration
 
-In qualità di inserzionista, scopri come fare riferimento ai tipi di pubblico, inserendoli nella tua interfaccia in modo che possano essere utilizzati mentre collabori con i partner. Per la documentazione dettagliata, consulta [Importare e gestire i tipi di pubblico](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"}.
+In qualità di inserzionista, scopri come fare riferimento ai tipi di pubblico, inserendoli nella tua interfaccia in modo che possano essere utilizzati mentre collabori con i partner. Per la documentazione dettagliata, consulta [Importare e gestire i tipi di pubblico](https://experienceleague.adobe.com/it/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452217/?learn=on&enablevpops)

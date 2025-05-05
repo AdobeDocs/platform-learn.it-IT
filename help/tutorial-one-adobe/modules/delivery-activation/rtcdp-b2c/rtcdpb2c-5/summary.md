@@ -31,7 +31,7 @@ Grazie a Raccolta dati di Adobe Experience Platform, ora come marchio sei finalm
 
 - Blog tecnico: [Risoluzione dei problemi di implementazione con Adobe Experience Platform Web SDK e Edge Network](https://medium.com/adobetech/solving-implementation-pain-points-with-adobe-experience-platform-web-sdk-and-edge-network-880b635e6819)
 - Blog tecnico: [Miglioramento delle prestazioni del sito Web con Adobe Experience Platform Web SDK e Edge Network](https://medium.com/adobetech/boosting-website-performance-with-adobe-experience-platform-web-sdk-and-edge-network-329fcf70fdf9)
-- Documentazione: [Panoramica sul lato server di Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#server-side-info)
+- Documentazione: [Panoramica sul lato server di Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it#server-side-info)
 - Video: [Implementare Edge e Adobe Experience Platform Data Collection Server utilizzando una soluzione Tag Management non Adobe](https://video.tv.adobe.com/v/331986?quality=12&learn=on)
 
 ## Passaggi successivi

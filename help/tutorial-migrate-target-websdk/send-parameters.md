@@ -113,7 +113,7 @@ La tabella seguente illustra come rieseguire il mapping dei parametri di esempio
 
 | Esempio di parametro at.js | Opzione Platform Web SDK | Note |
 | --- | --- | --- |
-| `at_property` | N/D | I token di proprietà sono configurati nello stream di dati [1&rbrace; e non possono essere impostati nella chiamata `sendEvent`.](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) |
+| `at_property` | N/D | I token di proprietà sono configurati nello stream di dati [1&rbrace; e non possono essere impostati nella chiamata `sendEvent`.](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=it#target) |
 | `pageName` | `xdm.web.webPageDetails.name` | Tutti i parametri mbox di Target devono essere passati come parte dell&#39;oggetto `xdm` e devono essere conformi a uno schema utilizzando la classe ExperienceEvent XDM. I parametri mbox non possono essere passati come parte dell&#39;oggetto `data`. |
 | `profile.gender` | `data.__adobe.target.profile.gender` | Tutti i parametri di profilo di Target devono essere passati come parte dell&#39;oggetto `data` e con prefisso `profile.` per essere mappati in modo appropriato. |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | Parametro riservato utilizzato per la funzionalità Affinità tra categorie di Target che deve essere passata come parte dell&#39;oggetto `data`. |
@@ -122,11 +122,11 @@ La tabella seguente illustra come rieseguire il mapping dei parametri di esempio
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | I parametri di entità personalizzati vengono utilizzati per aggiornare il catalogo dei prodotti Recommendations. Questi parametri personalizzati devono essere passati come parte dell&#39;oggetto `data`. |
 | `cartIds` | `data.__adobe.target.cartIds` | Utilizzato per gli algoritmi di consigli basati sul carrello di Target. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Utilizzato per evitare che ID di entità specifici vengano restituiti in una progettazione di consigli. |
-| `mbox3rdPartyId` | Impostato nell&#39;oggetto `xdm.identityMap` | Utilizzato per sincronizzare i profili Target tra dispositivi e Attributi del cliente. Lo spazio dei nomi da utilizzare per l&#39;ID cliente deve essere specificato nella configurazione [Target dello stream di dati](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `mbox3rdPartyId` | Impostato nell&#39;oggetto `xdm.identityMap` | Utilizzato per sincronizzare i profili Target tra dispositivi e Attributi del cliente. Lo spazio dei nomi da utilizzare per l&#39;ID cliente deve essere specificato nella configurazione [Target dello stream di dati](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html?lang=it). |
 | `orderId` | `xdm.commerce.order.purchaseID` | Utilizzato per identificare un ordine univoco per il tracciamento delle conversioni di Target. |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Utilizzato per tenere traccia dei totali degli ordini per gli obiettivi di conversione e ottimizzazione di Target. |
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>OR<br> `xdm.productListItems[0-n].SKU` | Utilizzato per il tracciamento delle conversioni di Target e gli algoritmi di consigli. Per ulteriori informazioni, consulta la sezione [parametri entità](#entity-parameters) di seguito. |
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Utilizzato per l&#39;obiettivo dell&#39;attività [punteggio personalizzato](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html). |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Utilizzato per l&#39;obiettivo dell&#39;attività [punteggio personalizzato](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html?lang=it). |
 
 {style="table-layout:auto"}
 
@@ -169,7 +169,7 @@ Nei tag, utilizza innanzitutto un elemento dati [!UICONTROL oggetto XDM] da mapp
 
 ![Mappatura a un campo XDM in un elemento dati di oggetti XDM](assets/params-tags-pageName.png){zoomable="yes"}
 
-Quindi includi il tuo [!UICONTROL oggetto XDM] nel tuo [!UICONTROL evento di invio] [!UICONTROL azione] (più [!UICONTROL oggetti XDM] possono essere [uniti](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+Quindi includi il tuo [!UICONTROL oggetto XDM] nel tuo [!UICONTROL evento di invio] [!UICONTROL azione] (più [!UICONTROL oggetti XDM] possono essere [uniti](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=it#merged-objects)):
 
 ![Inclusione di un elemento dati dell&#39;oggetto XDM in un evento Send](assets/params-tags-sendEvent.png){zoomable="yes"}
 
@@ -223,7 +223,7 @@ Nei tag, creare innanzitutto un elemento dati per definire l&#39;oggetto `data._
 
 ![Definizione dell&#39;oggetto dati in un elemento dati](assets/params-tags-dataObject.png){zoomable="yes"}
 
-Quindi includi l&#39;oggetto dati nel tuo [!UICONTROL evento di invio] [!UICONTROL azione] (più [!UICONTROL oggetti] possono essere [uniti](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+Quindi includi l&#39;oggetto dati nel tuo [!UICONTROL evento di invio] [!UICONTROL azione] (più [!UICONTROL oggetti] possono essere [uniti](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=it#merged-objects)):
 
 ![Inclusione di un oggetto dati in un evento di invio](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
@@ -231,7 +231,7 @@ Quindi includi l&#39;oggetto dati nel tuo [!UICONTROL evento di invio] [!UICONTR
 
 ## Parametri di entità
 
-I parametri di entità vengono utilizzati per trasmettere dati comportamentali e informazioni di catalogo supplementari per Target Recommendations. Tutti i [parametri di entità](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) supportati da at.js sono supportati anche da Platform Web SDK. Analogamente ai parametri di profilo, tutti i parametri di entità devono essere passati sotto l&#39;oggetto `data.__adobe.target` nel payload del comando `sendEvent` di Platform Web SDK.
+I parametri di entità vengono utilizzati per trasmettere dati comportamentali e informazioni di catalogo supplementari per Target Recommendations. Tutti i [parametri di entità](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=it) supportati da at.js sono supportati anche da Platform Web SDK. Analogamente ai parametri di profilo, tutti i parametri di entità devono essere passati sotto l&#39;oggetto `data.__adobe.target` nel payload del comando `sendEvent` di Platform Web SDK.
 
 I parametri di entità per un elemento specifico devono avere il prefisso `entity.` per l&#39;acquisizione dei dati corretta. I parametri riservati `cartIds` e `excludedIds` per gli algoritmi dei consigli non devono avere un prefisso e il valore di ciascuno deve contenere un elenco separato da virgole di ID entità.
 
@@ -277,7 +277,7 @@ Nei tag, creare innanzitutto un elemento dati per definire l&#39;oggetto `data._
 
 ![Definizione dell&#39;oggetto dati in un elemento dati](assets/params-tags-dataObject-entities.png){zoomable="yes"}
 
-Quindi includi l&#39;oggetto dati nel tuo [!UICONTROL evento di invio] [!UICONTROL azione] (più [!UICONTROL oggetti] possono essere [uniti](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+Quindi includi l&#39;oggetto dati nel tuo [!UICONTROL evento di invio] [!UICONTROL azione] (più [!UICONTROL oggetti] possono essere [uniti](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=it#merged-objects)):
 
 ![Inclusione di un oggetto dati in un evento di invio](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
@@ -349,7 +349,7 @@ Nei tag, utilizza innanzitutto un elemento dati [!UICONTROL oggetto XDM] per ese
 
 ![Mappatura a un campo XDM in un elemento dati di oggetti XDM](assets/params-tags-purchase.png){zoomable="yes"}
 
-Quindi includi il tuo [!UICONTROL oggetto XDM] nel tuo [!UICONTROL evento di invio] [!UICONTROL azione] (più [!UICONTROL oggetti XDM] possono essere [uniti](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+Quindi includi il tuo [!UICONTROL oggetto XDM] nel tuo [!UICONTROL evento di invio] [!UICONTROL azione] (più [!UICONTROL oggetti XDM] possono essere [uniti](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=it#merged-objects)):
 
 ![Inclusione di un elemento dati dell&#39;oggetto XDM in un evento Send](assets/params-tags-sendEvent-purchase.png){zoomable="yes"}
 

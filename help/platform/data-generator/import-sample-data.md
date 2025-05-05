@@ -33,7 +33,7 @@ Questa esercitazione si concentra su un brand fittizio e al dettaglio chiamato L
 
 * Hai accesso alle API di Experience Platform e sai come eseguire l’autenticazione. In caso contrario, consulta questa [esercitazione](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=it).
 * Hai accesso a una sandbox di sviluppo di Experienci Platform.
-* Conosci il tuo ID tenant Experience Platform. Puoi ottenerla effettuando una [richiesta API](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id) autenticata
+* Conosci il tuo ID tenant Experience Platform. Puoi ottenerla effettuando una [richiesta API](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=it#know-your-tenant_id) autenticata
 o estraendolo dall’URL al momento dell’accesso all’account Platform. Nell&#39;URL seguente, ad esempio, il tenant è &quot;`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`.
 
 ## Utilizzo di [!DNL Postman] {#postman}
@@ -187,7 +187,7 @@ Sfogliando i dati nelle schede **[!UICONTROL Attributi]** e **[!UICONTROL Eventi
 
 Se desideri scoprire di più su Adobe Journey Optimizer, questa sandbox contiene tutto il necessario per affrontare le [sfide Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=it)
 
-Per informazioni sui criteri di unione, sulla governance dei dati, sul servizio query e sul generatore di segmenti, passa alla [lezione 11 nell&#39;esercitazione Guida introduttiva per architetti di dati e ingegneri di dati](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). Le lezioni precedenti di questo altro tutorial ti consentono di creare manualmente tutto ciò che è stato appena popolato da queste raccolte di Postman: buon inizio!
+Per informazioni sui criteri di unione, sulla governance dei dati, sul servizio query e sul generatore di segmenti, passa alla [lezione 11 nell&#39;esercitazione Guida introduttiva per architetti di dati e ingegneri di dati](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=it). Le lezioni precedenti di questo altro tutorial ti consentono di creare manualmente tutto ciò che è stato appena popolato da queste raccolte di Postman: buon inizio!
 
 Se desideri creare un esempio di implementazione Web SDK da collegare a questa sandbox, passa attraverso
 [Esercitazione sull&#39;implementazione di Adobe Experience Cloud con Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it). Dopo aver impostato le lezioni &quot;Configurazione iniziale&quot;, &quot;Configurazione tag&quot; e &quot;Configura Experience Platform&quot; dell’esercitazione Web SDK, accedi al sito web Luma utilizzando i primi dieci indirizzi e-mail nel file `luma-crm.json` e la password `test` per visualizzare l’unione dei frammenti di profilo con i dati caricati in questa esercitazione.
@@ -199,4 +199,4 @@ Se desideri creare un esempio di implementazione Mobile SDK da collegare a quest
 
 Se si ripristina una sandbox non di produzione, vengono eliminate anche tutte le risorse associate a essa (schemi, set di dati e così via), mantenendo il nome della sandbox e le autorizzazioni associate. Questa sandbox &quot;pulita&quot; continua a essere disponibile con lo stesso nome per gli utenti che vi hanno accesso.
 
-Segui i passaggi [qui](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox) per ripristinare un ambiente sandbox.
+Segui i passaggi [qui](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=it#reset-a-sandbox) per ripristinare un ambiente sandbox.

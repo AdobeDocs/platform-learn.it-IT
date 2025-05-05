@@ -47,8 +47,8 @@ Ti suggerisco di tenerlo e utilizzarlo per ulteriori sperimentazioni con Platfor
 
 Le risorse chiave:
 
-* [Tutorial su Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html)
+* [Tutorial su Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html?lang=it)
 * [Documentazione di Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=it)
-* [Corsi di Experience League](https://experienceleague.adobe.com/#dashboard/learning)
+* [Corsi di Experience League](https://experienceleague.adobe.com/it#dashboard/learning)
 
 Grazie per i vostri sforzi e buona fortuna per il vostro percorso con Adobe Experience Platform!

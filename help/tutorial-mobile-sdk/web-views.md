@@ -27,7 +27,7 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 ## Potenziali problemi di tracciamento
 
-Se invii dati dalla parte nativa dell’app e da un WebView all’interno dell’app, ciascuno di essi genera il proprio ID Experience Cloud (ECID), che si traduce in hit disconnessi e dati gonfiati relativi a visite/visitatori. Ulteriori informazioni sull&#39;ECID sono disponibili nella [panoramica ECID](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
+Se invii dati dalla parte nativa dell’app e da un WebView all’interno dell’app, ciascuno di essi genera il proprio ID Experience Cloud (ECID), che si traduce in hit disconnessi e dati gonfiati relativi a visite/visitatori. Ulteriori informazioni sull&#39;ECID sono disponibili nella [panoramica ECID](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=it).
 
 Per risolvere questa situazione indesiderata, è importante passare l’ECID dell’utente dalla parte nativa dell’app a una WebView che potrebbe essere utile utilizzare nell’app.
 

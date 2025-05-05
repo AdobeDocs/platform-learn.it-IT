@@ -16,7 +16,7 @@ ht-degree: 3%
 
 ## 3.3.1.1 Terminologia
 
-Per comprendere meglio Offer Decisioning, ti consigliamo di leggere la [panoramica](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=en) sul funzionamento del servizio applicativo Offer Decisioning con Adobe Experience Platform.
+Per comprendere meglio Offer Decisioning, ti consigliamo di leggere la [panoramica](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=it) sul funzionamento del servizio applicativo Offer Decisioning con Adobe Experience Platform.
 
 Quando si lavora con Offer Decisioning, è necessario comprendere i seguenti concetti:
 

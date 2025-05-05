@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Caricare tipi di pubblico in Adobe Experience Platform
 
-Scopri come caricare il pubblico in formato CSV in Adobe Experience Platform. Per ulteriori informazioni, consulta la [documentazione di Segment Builder](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#import-audience).
+Scopri come caricare il pubblico in formato CSV in Adobe Experience Platform. Per ulteriori informazioni, consulta la [documentazione di Segment Builder](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/audience-portal#import-audience).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421714/?learn=on&enablevpops)

@@ -35,7 +35,7 @@ In questa lezione imparerai a creare e configurare il sistema in modo che i tuoi
 
    >[!NOTE]
    >
-   >È sufficiente selezionare uno schema se si utilizza la funzionalità [Preparazione dati per raccolta dati](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/data-prep), operazione che non verrà eseguita in questa esercitazione. Per ulteriori informazioni, visita il collegamento.
+   >È sufficiente selezionare uno schema se si utilizza la funzionalità [Preparazione dati per raccolta dati](https://experienceleague.adobe.com/it/docs/platform-learn/data-collection/edge-network/data-prep), operazione che non verrà eseguita in questa esercitazione. Per ulteriori informazioni, visita il collegamento.
 
 1. Seleziona **[!UICONTROL Salva]**
 

@@ -17,7 +17,7 @@ ht-degree: 8%
 
 # Configurare le chiavi gestite dal cliente (CMK)
 
-Gestire la crittografia data-at-rest utilizzando le proprie chiavi di crittografia. Per ulteriori informazioni, visita la [documentazione sulle chiavi gestite dal cliente](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html).
+Gestire la crittografia data-at-rest utilizzando le proprie chiavi di crittografia. Per ulteriori informazioni, visita la [documentazione sulle chiavi gestite dal cliente](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on&enablevpops)
 

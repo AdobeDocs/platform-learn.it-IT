@@ -23,7 +23,7 @@ Scopri come eseguire lo streaming dei dati in tempo reale da un’origine di arc
 
 ## Risorse aggiuntive
 
-* [Creare una connessione di origine Amazon Kinesis nell&#39;interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/kinesis.html)
-* [Creare una connessione di origine Azure Event Hubs nell&#39;interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/eventhub.html)
+* [Creare una connessione di origine Amazon Kinesis nell&#39;interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/kinesis.html?lang=it)
+* [Creare una connessione di origine Azure Event Hubs nell&#39;interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/eventhub.html?lang=it)
 * [Documentazione di Azure Event Hubs](https://docs.microsoft.com/en-us/azure/event-hubs/)
 * [Documentazione di Amazon Kinesis Data Streams](https://docs.aws.amazon.com/kinesis/index.html)

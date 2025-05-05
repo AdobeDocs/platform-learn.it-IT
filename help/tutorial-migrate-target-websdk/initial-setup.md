@@ -13,11 +13,11 @@ ht-degree: 0%
 
 La migrazione da at.js a Platform Web SDK richiede una configurazione iniziale per abilitare l’acquisizione dati, le funzioni e le caratteristiche corrette di Platform Web SDK. Prima di apportare qualsiasi modifica all&#39;implementazione del sito Web, è necessario completare i passaggi seguenti dell&#39;esercitazione sull&#39;implementazione di [Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it):
 
-- [Configurare le autorizzazioni appropriate](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview#prerequisites){target="_blank"} in Adobe Admin Console per la raccolta dati
-- [Configura uno schema XDM](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html){target="_blank"} per il passaggio di dati strutturati all&#39;Edge Network
-- [Configura uno spazio dei nomi delle identità](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-identities.html){target="_blank"} per la personalizzazione tra dispositivi e la funzionalità mbox3rdPartyId
-- [Crea un flusso di dati](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html){target="_blank"} per abilitare l&#39;inoltro di dati da Edge Network
-- [Configura lo stream di dati](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html#configure-the-datastream){target="_blank"} per abilitare l&#39;inoltro di dati ad Adobe Target
+- [Configurare le autorizzazioni appropriate](https://experienceleague.adobe.com/it/docs/platform-learn/implement-web-sdk/overview#prerequisites){target="_blank"} in Adobe Admin Console per la raccolta dati
+- [Configura uno schema XDM](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html?lang=it){target="_blank"} per il passaggio di dati strutturati all&#39;Edge Network
+- [Configura uno spazio dei nomi delle identità](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-identities.html?lang=it){target="_blank"} per la personalizzazione tra dispositivi e la funzionalità mbox3rdPartyId
+- [Crea un flusso di dati](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html?lang=it){target="_blank"} per abilitare l&#39;inoltro di dati da Edge Network
+- [Configura lo stream di dati](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=it#configure-the-datastream){target="_blank"} per abilitare l&#39;inoltro di dati ad Adobe Target
 
 >[!CAUTION]
 >

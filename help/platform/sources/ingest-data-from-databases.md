@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Acquisire dati utilizzando il connettore di origine del database
 
-Questo video illustra come acquisire in batch i dati da un’origine database per inserirli nel profilo cliente in tempo reale e nel data lake di esperienze di Adobe Experience Platform, in modo semplice e scalabile. Per informazioni più dettagliate sul prodotto, consulta [database](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#database) nella pagina della panoramica dei connettori Source o la [documentazione del connettore di origine Google Big Query](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery.html).
+Questo video illustra come acquisire in batch i dati da un’origine database per inserirli nel profilo cliente in tempo reale e nel data lake di esperienze di Adobe Experience Platform, in modo semplice e scalabile. Per informazioni più dettagliate sul prodotto, consulta [database](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=it#database) nella pagina della panoramica dei connettori Source o la [documentazione del connettore di origine Google Big Query](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/329317?learn=on&enablevpops)

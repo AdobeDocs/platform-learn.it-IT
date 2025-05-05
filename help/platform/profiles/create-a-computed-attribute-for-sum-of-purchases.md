@@ -16,6 +16,6 @@ ht-degree: 16%
 
 # Crea un attributo calcolato per la somma degli acquisti
 
-Scopri come utilizzare gli attributi calcolati per sommare gli importi di acquisto effettuati da un utente su più canali di vendita. Un singolo cliente può acquistare sul tuo sito web, nell’app mobile e nel tuo negozio virtuale. Con la funzione Attributi calcolati, puoi sommare gli importi di acquisto effettuati da un cliente su questi canali e utilizzare questa somma per definire i tipi di pubblico e per altre personalizzazioni. Per ulteriori informazioni, visitare la [guida dell&#39;interfaccia utente degli attributi calcolati](https://experienceleague.adobe.com/docs/experience-platform/profile/computed-attributes/ui.html?).
+Scopri come utilizzare gli attributi calcolati per sommare gli importi di acquisto effettuati da un utente su più canali di vendita. Un singolo cliente può acquistare sul tuo sito web, nell’app mobile e nel tuo negozio virtuale. Con la funzione Attributi calcolati, puoi sommare gli importi di acquisto effettuati da un cliente su questi canali e utilizzare questa somma per definire i tipi di pubblico e per altre personalizzazioni. Per ulteriori informazioni, visitare la [guida dell&#39;interfaccia utente degli attributi calcolati](https://experienceleague.adobe.com/docs/experience-platform/profile/computed-attributes/ui.html?lang=it&).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425899?learn=on&enablevpops)

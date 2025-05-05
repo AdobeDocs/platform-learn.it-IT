@@ -15,7 +15,7 @@ ht-degree: 19%
 
 # Creare una proprietà di inoltro degli eventi
 
-Scopri come creare una proprietà di inoltro degli eventi in Raccolta dati. Per ulteriori informazioni, visitare la [documentazione relativa alla creazione di una proprietà di inoltro eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-an-event-forwarding-property).
+Scopri come creare una proprietà di inoltro degli eventi in Raccolta dati. Per ulteriori informazioni, visitare la [documentazione relativa alla creazione di una proprietà di inoltro eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=it#create-an-event-forwarding-property).
 
 >[!NOTE]
 >

@@ -19,11 +19,11 @@ Ora sai che i dati XDM fluiscono in Platform. Ulteriori informazioni su XDM nel 
 
 ## Mappatura delle variabili in Analytics
 
-Adobe Experience Platform [!DNL Web SDK] mappa automaticamente alcuni valori, rendendo più rapida possibile una nuova implementazione di Analytics tramite Web SDK. Le variabili mappate automaticamente sono elencate [qui](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection).
+Adobe Experience Platform [!DNL Web SDK] mappa automaticamente alcuni valori, rendendo più rapida possibile una nuova implementazione di Analytics tramite Web SDK. Le variabili mappate automaticamente sono elencate [qui](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=it#data-collection).
 
-Per i dati XDM che non sono mappati automaticamente ad Adobe Analytics, puoi utilizzare [dati contestuali](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=it) per far corrispondere il tuo [schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=it). Quindi può essere mappato in Analytics utilizzando [regole di elaborazione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) per popolare le variabili di Analytics. I dati contestuali e le regole di elaborazione saranno concetti familiari a quelli che hanno lavorato con Analytics in passato, ma per il momento non preoccuparti dei dettagli se si tratta di concetti nuovi.
+Per i dati XDM che non sono mappati automaticamente ad Adobe Analytics, puoi utilizzare [dati contestuali](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=it) per far corrispondere il tuo [schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=it). Quindi può essere mappato in Analytics utilizzando [regole di elaborazione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=it) per popolare le variabili di Analytics. I dati contestuali e le regole di elaborazione saranno concetti familiari a quelli che hanno lavorato con Analytics in passato, ma per il momento non preoccuparti dei dettagli se si tratta di concetti nuovi.
 
-Puoi inoltre utilizzare un set predefinito di azioni ed elenchi di prodotti per inviare o recuperare dati con AEP Web SDK. Per eseguire questa operazione, vedere [Prodotti](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection).
+Puoi inoltre utilizzare un set predefinito di azioni ed elenchi di prodotti per inviare o recuperare dati con AEP Web SDK. Per eseguire questa operazione, vedere [Prodotti](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=it#data-collection).
 
 ### Dati contestuali
 
@@ -54,7 +54,7 @@ Per l&#39;utilizzo da parte di Analytics, i dati XDM vengono appiattiti utilizza
 
 ### Regole di elaborazione
 
-Tutti i dati raccolti dalla rete Edge sono accessibili tramite [regole di elaborazione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html). In Analytics puoi utilizzare le regole di elaborazione per incorporare i dati contestuali nelle variabili di Analytics.
+Tutti i dati raccolti dalla rete Edge sono accessibili tramite [regole di elaborazione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=it). In Analytics puoi utilizzare le regole di elaborazione per incorporare i dati contestuali nelle variabili di Analytics.
 
 ## Audience Manager sull’Edge Network dell’Experience Platform
 

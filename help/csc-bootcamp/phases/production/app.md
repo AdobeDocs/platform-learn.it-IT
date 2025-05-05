@@ -41,7 +41,7 @@ AEM as a Cloud Service è uno strumento flessibile per il modello di implementaz
 1. API per la distribuzione dei contenuti
    - L’API GraphQL dell’AEM supporta la distribuzione di frammenti di contenuto.
    - L’API REST di AEM Assets supporta le operazioni CRUD relative ai frammenti di contenuto.
-   - La distribuzione diretta dei contenuti è possibile anche con l&#39;esportazione [JSON del componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en).
+   - La distribuzione diretta dei contenuti è possibile anche con l&#39;esportazione [JSON del componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it).
 
 ## Esercizio
 

@@ -62,11 +62,11 @@ document.addEventListener("click", event => {
 
 >[!TIP]
 >
->Quando si utilizza la funzione dei tag (precedentemente Launch) per implementare Web SDK, la condivisione degli ID tra domini diversi può essere eseguita senza codice personalizzato. Per ulteriori informazioni, consulta la [documentazione dedicata](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html#tags-extension).
+>Quando si utilizza la funzione dei tag (precedentemente Launch) per implementare Web SDK, la condivisione degli ID tra domini diversi può essere eseguita senza codice personalizzato. Per ulteriori informazioni, consulta la [documentazione dedicata](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html?lang=it#tags-extension).
 
 >[!NOTE]
 >
->Platform Web SDK supporta anche la condivisione di ID da dispositivo mobile a web per i casi d’uso nativi delle app mobili. Per ulteriori informazioni, consulta la documentazione dedicata su [condivisione ID da dispositivo mobile a Web e tra domini](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html).
+>Platform Web SDK supporta anche la condivisione di ID da dispositivo mobile a web per i casi d’uso nativi delle app mobili. Per ulteriori informazioni, consulta la documentazione dedicata su [condivisione ID da dispositivo mobile a Web e tra domini](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html?lang=it).
 
 Successivamente, scopri come [aggiornare tipi di pubblico e script di profilo](update-audiences.md) per garantire la compatibilità con Platform Web SDK.
 

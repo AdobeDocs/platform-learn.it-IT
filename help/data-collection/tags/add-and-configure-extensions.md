@@ -16,6 +16,6 @@ ht-degree: 14%
 
 # Aggiungere e configurare le estensioni tag
 
-Scopri come aggiungere e configurare estensioni nella proprietà tag. Le estensioni sono &quot;app&quot; preconfigurate installate sul sito per fornire le funzionalità di tracciamento, personalizzazione o di altro tipo necessarie. Il marketplace delle estensioni è sempre in crescita, poiché Adobe, partner e clienti creano estensioni per casi d’uso avanzati. Per ulteriori informazioni, consulta la documentazione delle [estensioni](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/overview.html).
+Scopri come aggiungere e configurare estensioni nella proprietà tag. Le estensioni sono &quot;app&quot; preconfigurate installate sul sito per fornire le funzionalità di tracciamento, personalizzazione o di altro tipo necessarie. Il marketplace delle estensioni è sempre in crescita, poiché Adobe, partner e clienti creano estensioni per casi d’uso avanzati. Per ulteriori informazioni, consulta la documentazione delle [estensioni](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/overview.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28732/?learn=on&enablevpops)

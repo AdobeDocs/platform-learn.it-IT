@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Trovare tipi di pubblico inutilizzati con l’Assistente AI
 
-Scopri come identificare i tipi di pubblico non utilizzati con l’Assistente AI per eliminarli e rendere più efficienti le operazioni di marketing. Per ulteriori informazioni sull&#39;esecuzione di query sull&#39;Assistente di IA, vedere la [Guida alle domande per l&#39;Assistente di IA](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/questions).
+Scopri come identificare i tipi di pubblico non utilizzati con l’Assistente AI per eliminarli e rendere più efficienti le operazioni di marketing. Per ulteriori informazioni sull&#39;esecuzione di query sull&#39;Assistente di IA, vedere la [Guida alle domande per l&#39;Assistente di IA](https://experienceleague.adobe.com/it/docs/experience-platform/ai-assistant/questions).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3435532/?learn=on&enablevpops)

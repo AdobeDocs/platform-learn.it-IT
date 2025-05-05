@@ -27,7 +27,7 @@ La funzionalità [Esporta dettagli per Postman **di Adobe Developer Console](htt
 
 >[!IMPORTANT]
 >
->Per accedere a [Adobe Developer Console](https://developer.adobe.com/console/projects), devi essere un [Amministratore di sistema](https://helpx.adobe.com/it/enterprise/using/admin-roles.html) o uno [Sviluppatore](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&amp;text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) in [Adobe Admin Console](https://adminconsole.adobe.com).
+>Per accedere a [Adobe Developer Console](https://developer.adobe.com/console/projects), devi essere un [Amministratore di sistema](https://helpx.adobe.com/it/enterprise/using/admin-roles.html) o uno [Sviluppatore](https://helpx.adobe.com/it/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&amp;text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) in [Adobe Admin Console](https://adminconsole.adobe.com).
 >
 > Dopo aver creato le credenziali API, un amministratore di sistema deve associarle a un ruolo in Experience Platform.
 

@@ -20,7 +20,7 @@ Scopri come sostituire l’implementazione on-page di Adobe Target per la migraz
 
 >[!NOTE]
 >
->Gli esempi forniti sono a scopo illustrativo e la tua effettiva implementazione di Target può variare. Se l&#39;implementazione di Target esistente utilizza il gestore di tag di Adobe Data Collection, puoi anche fare riferimento all&#39;esercitazione sull&#39;implementazione di [Platform Web SDK Target](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html) per ulteriori informazioni.
+>Gli esempi forniti sono a scopo illustrativo e la tua effettiva implementazione di Target può variare. Se l&#39;implementazione di Target esistente utilizza il gestore di tag di Adobe Data Collection, puoi anche fare riferimento all&#39;esercitazione sull&#39;implementazione di [Platform Web SDK Target](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=it) per ulteriori informazioni.
 
 
 ## Verifica impostazioni di amministrazione di Target
@@ -52,7 +52,7 @@ Platform Web SDK utilizza una configurazione dello stream di dati che ti consent
 >
 >Se nella configurazione dello stream di dati non è specificato un ID ambiente, Target utilizza la mappatura da dominio a ambiente specificata nella sezione **Host**.
 
-Per ulteriori informazioni, consulta la [guida alla configurazione dello stream di dati](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) e la documentazione di Target [Hosts](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=it).
+Per ulteriori informazioni, consulta la [guida alla configurazione dello stream di dati](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=it#target) e la documentazione di Target [Hosts](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=it).
 
 ## Distribuire l’SDK web per Platform
 
@@ -173,7 +173,7 @@ Nella proprietà tag, aggiungi l’estensione Adobe Experience Platform Web SDK:
 
 La versione standalone precompilata richiede un &quot;codice di base&quot; aggiunto direttamente alla pagina, che crea una funzione globale denominata alloy. Utilizza questa funzione per interagire con l’SDK. Se si desidera assegnare un altro nome alla funzione globale, modificare il nome `alloy`.
 
-Per ulteriori informazioni e opzioni di distribuzione, consultare la documentazione [Installazione di Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html).
+Per ulteriori informazioni e opzioni di distribuzione, consultare la documentazione [Installazione di Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=it).
 
 
 ## Aggiornamento dell’approccio per pre-hiding dei contenuti
@@ -213,9 +213,9 @@ Il comportamento di pre-hiding è controllato da due configurazioni alla fine de
 
 L’Adobe consiglia di implementare Platform Web SDK in modo asincrono, per ottenere le migliori prestazioni complessive della pagina. Tuttavia, se la libreria alloy.js o il codice di incorporamento dei tag viene caricato in modo sincrono, lo snippet per nascondere il contenuto non è necessario. Invece, lo stile di pre-hiding è specificato nella configurazione di Platform Web SDK.
 
-Lo stile di pre-hiding per le implementazioni sincrone può essere configurato utilizzando l&#39;opzione [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle). La configurazione di Platform Web SDK è descritta nella sezione successiva.
+Lo stile di pre-hiding per le implementazioni sincrone può essere configurato utilizzando l&#39;opzione [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=it#prehidingStyle). La configurazione di Platform Web SDK è descritta nella sezione successiva.
 
-Per ulteriori informazioni su come Platform Web SDK può gestire la visualizzazione momentanea di altri contenuti, consulta la sezione guida: [gestione della visualizzazione momentanea di altri contenuti per esperienze personalizzate](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html)
+Per ulteriori informazioni su come Platform Web SDK può gestire la visualizzazione momentanea di altri contenuti, consulta la sezione guida: [gestione della visualizzazione momentanea di altri contenuti per esperienze personalizzate](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html?lang=it)
 
 ## Configurare l’SDK web per Platform
 
@@ -274,7 +274,7 @@ Di seguito sono descritte le opzioni di configurazione rilevanti relative a Targ
 | `thirdPartyCookiesEnabled` | Abilita l’impostazione di cookie di terze parti Adobe. L&#39;SDK può rendere persistente l&#39;ID visitatore in un contesto di terze parti per consentire l&#39;utilizzo dello stesso ID visitatore in più siti. Utilizza questa opzione se hai più siti; tuttavia, a volte questa opzione non è desiderata per motivi di privacy. | `true` |
 | `prehidingStyle` | Utilizzato per creare una definizione di stile CSS che nasconde le aree di contenuto della pagina web mentre il contenuto personalizzato viene caricato dal server. Viene utilizzato solo con le distribuzioni sincrone dell’SDK. | `body { opacity: 0 !important }` |
 
-Per un elenco completo delle opzioni, consulta la guida [configurazione di Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html).
+Per un elenco completo delle opzioni, consulta la guida [configurazione di Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=it).
 
 ## Esempio di implementazione
 

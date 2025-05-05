@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Scegli un&#39;opzione di hosting
 
-Scopri come scegliere l’opzione di hosting migliore per la libreria di tag. Per ulteriori informazioni, consulta la documentazione di [hosts](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/hosts/hosts-overview.html).
+Scopri come scegliere l’opzione di hosting migliore per la libreria di tag. Per ulteriori informazioni, consulta la documentazione di [hosts](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/hosts/hosts-overview.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28728/?learn=on&enablevpops)

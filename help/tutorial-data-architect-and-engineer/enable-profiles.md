@@ -26,7 +26,7 @@ Con Real-Time Customer Profile puoi visualizzare una visualizzazione olistica di
 
 Per quanto sorprendente possa sembrare, non devi attivare *tutti i tuoi dati* per il profilo. In realtà, devi abilitare solo i dati necessari per i casi di utilizzo dell’attivazione. Abilita i dati che desideri utilizzare per casi di utilizzo di marketing, integrazioni di call center e così via, dove devi accedere rapidamente a un solido profilo cliente. Se carichi i dati solo per l’analisi, è probabile che non sia necessario abilitarli per il profilo.
 
-Esistono [guardrail importanti per i dati del Profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) che dovresti esaminare quando decidi quali dei tuoi dati abilitare per il profilo.
+Esistono [guardrail importanti per i dati del Profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it) che dovresti esaminare quando decidi quali dei tuoi dati abilitare per il profilo.
 
 <!--is this accurate. Are there other considerations to point out? -->
 

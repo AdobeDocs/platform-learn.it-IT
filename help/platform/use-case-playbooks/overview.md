@@ -18,7 +18,7 @@ ht-degree: 25%
 
 # Panoramica sui playbook di casi d’uso
 
-Scopri come i playbook sui casi d’uso possono aiutare la clientela di Real-Time Customer Data Platform e Journey Optimizer a ottenere un time-to-value più rapido. Use Case Playbook è un catalogo di decine di modelli che coprono più settori e obiettivi di marketing. I playbook generano risorse tecniche come tipi di pubblico, percorsi e schemi, che possono quindi essere personalizzati e pubblicati in altre sandbox. Per ulteriori informazioni, consulta la [documentazione sui playbook di casi d&#39;uso](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html).
+Scopri come i playbook sui casi d’uso possono aiutare la clientela di Real-Time Customer Data Platform e Journey Optimizer a ottenere un time-to-value più rapido. Use Case Playbook è un catalogo di decine di modelli che coprono più settori e obiettivi di marketing. I playbook generano risorse tecniche come tipi di pubblico, percorsi e schemi, che possono quindi essere personalizzati e pubblicati in altre sandbox. Per ulteriori informazioni, consulta la [documentazione sui playbook di casi d&#39;uso](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on&enablevpops)
 

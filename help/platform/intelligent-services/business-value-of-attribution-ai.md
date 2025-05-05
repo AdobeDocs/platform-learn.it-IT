@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Valore aziendale di Attribution AI
 
-Questo video mostra come gli esperti di marketing possono misurare e ottimizzare le spese di marketing e pubblicitarie comprendendo l’impatto di ogni singola interazione con i clienti in ogni fase dei percorsi dei clienti con IA per l’attribuzione. Per ulteriori informazioni, visita la [documentazione di IA per l&#39;attribuzione](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
+Questo video mostra come gli esperti di marketing possono misurare e ottimizzare le spese di marketing e pubblicitarie comprendendo l’impatto di ogni singola interazione con i clienti in ogni fase dei percorsi dei clienti con IA per l’attribuzione. Per ulteriori informazioni, visita la [documentazione di IA per l&#39;attribuzione](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/40375?learn=on&enablevpops)
 

@@ -14,6 +14,6 @@ ht-degree: 0%
 
 # Webinar: Sblocco dei dati di marketing con l’inoltro degli eventi
 
-Scopri i casi d’uso e le funzionalità di inoltro degli eventi in Adobe Experience Platform, ad esempio la gestione delle chiamate API di conversione a destinazioni di terze parti e l’invio dei dati degli eventi al tuo data warehouse. Per ulteriori informazioni, visita la [documentazione sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Scopri i casi d’uso e le funzionalità di inoltro degli eventi in Adobe Experience Platform, ad esempio la gestione delle chiamate API di conversione a destinazioni di terze parti e l’invio dei dati degli eventi al tuo data warehouse. Per ulteriori informazioni, visita la [documentazione sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3434936?learn=on&enablevpops)

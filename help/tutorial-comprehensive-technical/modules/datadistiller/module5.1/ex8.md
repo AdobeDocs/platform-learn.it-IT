@@ -23,7 +23,7 @@ In questo esercizio eseguirai chiamate API per gestire modelli di query e pianif
 
 ## Documentazione
 
-- [Guida di Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html)
+- [Guida di Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=it)
 - [API servizio query](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
 
 ## API servizio query

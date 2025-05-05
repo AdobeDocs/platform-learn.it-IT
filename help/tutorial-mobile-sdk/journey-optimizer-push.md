@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Scopri come creare notifiche push per le app mobili con Experience Platform Mobile SDK e Journey Optimizer.
 
-Journey Optimizer consente di creare percorsi e inviare messaggi a tipi di pubblico mirati. Prima di inviare le notifiche push con Journey Optimizer, devi verificare che siano presenti le configurazioni e le integrazioni corrette. Per informazioni sul flusso di dati delle notifiche push in Journey Optimizer, consulta la [documentazione](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-gs.html).
+Journey Optimizer consente di creare percorsi e inviare messaggi a tipi di pubblico mirati. Prima di inviare le notifiche push con Journey Optimizer, devi verificare che siano presenti le configurazioni e le integrazioni corrette. Per informazioni sul flusso di dati delle notifiche push in Journey Optimizer, consulta la [documentazione](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-gs.html?lang=it).
 
 ![Architettura](assets/architecture-ajo.png)
 
@@ -30,7 +30,7 @@ Journey Optimizer consente di creare percorsi e inviare messaggi a tipi di pubbl
 
 * L&#39;app con gli SDK installati e configurati è stata creata ed eseguita correttamente.
 * Configura l’app per Adobe Experience Platform.
-* Accedi a Journey Optimizer e alle autorizzazioni sufficienti come descritto [qui](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en). È inoltre necessaria un&#39;autorizzazione sufficiente per le seguenti funzioni di Journey Optimizer.
+* Accedi a Journey Optimizer e alle autorizzazioni sufficienti come descritto [qui](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=it). È inoltre necessaria un&#39;autorizzazione sufficiente per le seguenti funzioni di Journey Optimizer.
    * Crea una credenziale push.
    * Crea una configurazione di canale push.
    * Creazione di un percorso.
@@ -127,12 +127,12 @@ Dopo aver creato una configurazione delle credenziali push, devi crearne una per
    > I nomi devono iniziare con una lettera (A-Z). Può contenere solo caratteri alfanumerici. È inoltre possibile utilizzare i caratteri trattino basso `_`, punto `.` e trattino `-`.
 
 
-1. Per assegnare etichette di utilizzo dei dati personalizzate o di base alla configurazione, è possibile selezionare **[!UICONTROL Gestisci accesso]**. [Ulteriori informazioni sul controllo degli accessi a livello di oggetto](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access).
+1. Per assegnare etichette di utilizzo dei dati personalizzate o di base alla configurazione, è possibile selezionare **[!UICONTROL Gestisci accesso]**. [Ulteriori informazioni sul controllo degli accessi a livello di oggetto](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/access-control/object-based-access).
 
 1. Seleziona il canale **Push**.
 
 
-1. Seleziona **[!UICONTROL Azione di marketing]** per associare i criteri di consenso ai messaggi utilizzando questa configurazione. Tutti i criteri di consenso associati all’azione di marketing vengono utilizzati per rispettare le preferenze dei clienti. [Ulteriori informazioni sulle azioni di marketing](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions).
+1. Seleziona **[!UICONTROL Azione di marketing]** per associare i criteri di consenso ai messaggi utilizzando questa configurazione. Tutti i criteri di consenso associati all’azione di marketing vengono utilizzati per rispettare le preferenze dei clienti. [Ulteriori informazioni sulle azioni di marketing](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions).
 
 1. Scegli la tua **[!UICONTROL piattaforma]**.
 
@@ -153,7 +153,7 @@ Per fare in modo che i dati inviati dalla tua app mobile ad Edge Network vengano
 
    1. Se non è già selezionato, seleziona **[!UICONTROL Set di dati profilo push AJO]** da **[!UICONTROL Set di dati profilo]**. Questo set di dati di profilo è necessario quando si utilizza la chiamata API `MobileCore.setPushIdentifier` (vedi [Registrare il token del dispositivo per le notifiche push](#register-device-token-for-push-notifications)) che garantisce che l&#39;identificatore univoco per le notifiche push (ovvero l&#39;identificatore push) sia memorizzato come parte del profilo dell&#39;utente.
 
-   1. **[!UICONTROL Adobe Journey Optimizer]** è selezionato. Per ulteriori informazioni, vedere [Impostazioni di Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep).
+   1. **[!UICONTROL Adobe Journey Optimizer]** è selezionato. Per ulteriori informazioni, vedere [Impostazioni di Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=it#aep).
 
    1. Per salvare la configurazione dello stream di dati, seleziona **[!UICONTROL Salva]**.
 
@@ -313,7 +313,7 @@ Stai per definire un nuovo tipo di evento, non ancora disponibile, come parte de
 
 ### Definire un evento
 
-Gli eventi in Journey Optimizer ti consentono di attivare i percorsi in modo unitario per inviare messaggi, ad esempio notifiche push. Per ulteriori informazioni, vedere [Informazioni sugli eventi](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/events-journeys/about-events.html?lang=en).
+Gli eventi in Journey Optimizer ti consentono di attivare i percorsi in modo unitario per inviare messaggi, ad esempio notifiche push. Per ulteriori informazioni, vedere [Informazioni sugli eventi](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/events-journeys/about-events.html?lang=it).
 
 1. Nell&#39;interfaccia utente di Journey Optimizer, seleziona **[!UICONTROL Configurazioni]** dalla barra a sinistra.
 

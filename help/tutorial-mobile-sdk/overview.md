@@ -71,7 +71,7 @@ In queste lezioni, si presume che tu sia in possesso di un Adobe Id e delle auto
       * **[!UICONTROL Gestione dati]**: elementi di autorizzazione per gestire e visualizzare i set di dati.
       * Una **sandbox** di sviluppo che puoi utilizzare per questa esercitazione.
 
-   * Per le lezioni di Journey Optimizer, è necessario disporre delle autorizzazioni per configurare il **servizio di notifica push** e per creare una **superficie app**, un **percorso**, un **messaggio** e **predefiniti messaggio**. Per la gestione delle decisioni, è necessario disporre delle autorizzazioni appropriate per **gestire le offerte** e **le decisioni** come descritto [qui](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
+   * Per le lezioni di Journey Optimizer, è necessario disporre delle autorizzazioni per configurare il **servizio di notifica push** e per creare una **superficie app**, un **percorso**, un **messaggio** e **predefiniti messaggio**. Per la gestione delle decisioni, è necessario disporre delle autorizzazioni appropriate per **gestire le offerte** e **le decisioni** come descritto [qui](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=it#decisions-permissions).
 
 * Con Adobe Analytics, devi sapere quali **suite di rapporti** puoi utilizzare per completare questa esercitazione.
 

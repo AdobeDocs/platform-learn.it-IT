@@ -40,7 +40,7 @@ L’Adobe Experience Platform Debugger può essere installato nei browser Google
 
 Dopo aver installato l&#39;estensione Chrome o il componente aggiuntivo Firefox, viene aggiunta un&#39;icona (![](assets/start-icon.jpg)) alla barra delle estensioni. Fai clic su questa icona per aprire l&#39;estensione.
 
-Per ulteriori informazioni sull&#39;estensione [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) e su come eseguire il debug di tutte le applicazioni Web Adobe, fare riferimento alla guida dedicata.
+Per ulteriori informazioni sull&#39;estensione [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=it) e su come eseguire il debug di tutte le applicazioni Web Adobe, fare riferimento alla guida dedicata.
 
 ## Anteprima delle attività Target con URL di controllo qualità
 
@@ -52,7 +52,7 @@ Gli URL di controllo qualità di Target funzionano informando at.js o Platform W
 >
 >La funzionalità della modalità di controllo qualità di Target è supportata da Platform Web SDK versione 2.13.0 o successiva. La modalità di controllo qualità di Target è abilitata in base al valore `xdm.web.webPageDetails.URL` passato nella chiamata `sendEvent`. Eventuali modifiche a questo valore, come l’utilizzo di lettere minuscole per tutti i caratteri, potrebbero impedire il corretto funzionamento della modalità di controllo qualità di Target.
 
-Per ulteriori informazioni su [Controllo qualità attività di Target](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html), consulta la guida dedicata.
+Per ulteriori informazioni su [Controllo qualità attività di Target](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html?lang=it), consulta la guida dedicata.
 
 ## Implementazione di Debug Target
 
@@ -130,7 +130,7 @@ Dopo aver selezionato **[!UICONTROL Visualizza]**, verrà visualizzata una sovra
 - Dettagli richiesta
 - Snapshot del profilo
 
-Per ulteriori informazioni sulle tracce di Target, consulta la guida dedicata al [debug della consegna dei contenuti di Target](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html).
+Per ulteriori informazioni sulle tracce di Target, consulta la guida dedicata al [debug della consegna dei contenuti di Target](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html?lang=it).
 
 ### Risoluzione dei problemi con Assurance
 

@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Personalizzazione dell’hit successivo con Real-Time CDP e Adobe Target
 
-Scopri come personalizzare l’hit successivo con Real-Time Customer Data Platform e Adobe Target. La destinazione Adobe Target in Real-Time CDP consente di utilizzare i segmenti di Experience Platform in Adobe Target per la stessa personalizzazione della pagina e della pagina successiva con governance e supporto per la privacy. Per ulteriori informazioni, consulta [Configurare le destinazioni di personalizzazione per la documentazione di personalizzazione della stessa pagina e della pagina successiva](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)
+Scopri come personalizzare l’hit successivo con Real-Time Customer Data Platform e Adobe Target. La destinazione Adobe Target in Real-Time CDP consente di utilizzare i segmenti di Experience Platform in Adobe Target per la stessa personalizzazione della pagina e della pagina successiva con governance e supporto per la privacy. Per ulteriori informazioni, consulta [Configurare le destinazioni di personalizzazione per la documentazione di personalizzazione della stessa pagina e della pagina successiva](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=it)
 
 >[!VIDEO](https://video.tv.adobe.com/v/340091?learn=on&enablevpops)
 

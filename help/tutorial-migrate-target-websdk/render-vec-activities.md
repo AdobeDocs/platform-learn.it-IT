@@ -32,11 +32,11 @@ L’estensione del browser Helper per editing video funziona con siti web che ut
 
 L’Helper per editing video viene attivato automaticamente quando un sito web viene aperto nel Compositore esperienza visivo di Target per l’authoring potente. L&#39;estensione non dispone di impostazioni condizionali. L’estensione gestisce automaticamente tutte le impostazioni, incluse le impostazioni dei cookie SameSite.
 
-Consulta la documentazione dedicata per ulteriori informazioni sull&#39;estensione [Helper per editing video](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) e sulla [risoluzione dei problemi relativi al Compositore esperienza visivo](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
+Consulta la documentazione dedicata per ulteriori informazioni sull&#39;estensione [Helper per editing video](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html?lang=it) e sulla [risoluzione dei problemi relativi al Compositore esperienza visivo](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html?lang=it).
 
 >[!IMPORTANT]
 >
->La nuova estensione [Helper per editing video](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) sostituisce la precedente [estensione VEC Helper di Target](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). Se è installata l’estensione VEC Helper precedente, rimuoverla o disattivarla prima di utilizzare l’estensione Helper per editing video.
+>La nuova estensione [Helper per editing video](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) sostituisce la precedente [estensione VEC Helper di Target](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=it). Se è installata l’estensione VEC Helper precedente, rimuoverla o disattivarla prima di utilizzare l’estensione Helper per editing video.
 
 ## Richiedi e applica automaticamente il contenuto
 
@@ -128,9 +128,9 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->È possibile [eseguire manualmente il rendering delle modifiche apportate](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content) nel Compositore esperienza visivo. Il rendering manuale delle modifiche basate sul Compositore esperienza visivo non è comune. Verifica se l&#39;implementazione di at.js utilizza la funzione `getOffers()` per eseguire manualmente una richiesta di Target `pageLoad` senza utilizzare `applyOffers()` per applicare il contenuto alla pagina.
+>È possibile [eseguire manualmente il rendering delle modifiche apportate](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=it#manually-rendering-content) nel Compositore esperienza visivo. Il rendering manuale delle modifiche basate sul Compositore esperienza visivo non è comune. Verifica se l&#39;implementazione di at.js utilizza la funzione `getOffers()` per eseguire manualmente una richiesta di Target `pageLoad` senza utilizzare `applyOffers()` per applicare il contenuto alla pagina.
 
-Platform Web SDK offre agli sviluppatori una grande flessibilità nella richiesta e nel rendering dei contenuti. Per ulteriori opzioni e dettagli, consulta la [documentazione dedicata sul rendering dei contenuti personalizzati](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html).
+Platform Web SDK offre agli sviluppatori una grande flessibilità nella richiesta e nel rendering dei contenuti. Per ulteriori opzioni e dettagli, consulta la [documentazione dedicata sul rendering dei contenuti personalizzati](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=it).
 
 ## Esempio di implementazione
 

@@ -16,6 +16,6 @@ ht-degree: 38%
 
 # Creare elementi dati
 
-Scopri come creare elementi dati per memorizzare i valori estratti dal livello dati e renderli disponibili per le regole e le estensioni nella proprietà tag. Per ulteriori informazioni, consulta la documentazione di [data elements](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html).
+Scopri come creare elementi dati per memorizzare i valori estratti dal livello dati e renderli disponibili per le regole e le estensioni nella proprietà tag. Per ulteriori informazioni, consulta la documentazione di [data elements](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28733/?learn=on&enablevpops)

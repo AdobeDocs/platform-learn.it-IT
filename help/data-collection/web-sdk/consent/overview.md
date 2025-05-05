@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Panoramica sul consenso
 
-Scopri in che modo la gestione del consenso in Adobe Experience Platform Web SDK ti aiuta a rispettare i requisiti legali sulla privacy e a rispettare le preferenze dei tuoi clienti. Per ulteriori informazioni, consulta la panoramica su [governance, privacy e sicurezza in Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=en#consent).
+Scopri in che modo la gestione del consenso in Adobe Experience Platform Web SDK ti aiuta a rispettare i requisiti legali sulla privacy e a rispettare le preferenze dei tuoi clienti. Per ulteriori informazioni, consulta la panoramica su [governance, privacy e sicurezza in Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=it#consent).
 
 >[!NOTE]
 >

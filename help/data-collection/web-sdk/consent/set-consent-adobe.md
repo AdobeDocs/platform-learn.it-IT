@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Impostare il consenso utilizzando lo standard Adobe
 
-Scopri come utilizzare Adobe Experience Platform Web SDK per impostare i valori del consenso in base agli standard Adobe 1.0 e 2.0. Per ulteriori informazioni sull&#39;utilizzo dello standard Adobe, consulta la documentazione sull&#39;[elaborazione del consenso in Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html).
+Scopri come utilizzare Adobe Experience Platform Web SDK per impostare i valori del consenso in base agli standard Adobe 1.0 e 2.0. Per ulteriori informazioni sull&#39;utilizzo dello standard Adobe, consulta la documentazione sull&#39;[elaborazione del consenso in Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html?lang=it).
 
 >[!NOTE]
 >

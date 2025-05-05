@@ -15,7 +15,7 @@ ht-degree: 18%
 
 # Configurare un flusso di dati per l’inoltro di eventi
 
-Scopri come impostare un flusso di dati per l’inoltro di eventi. Per ulteriori informazioni, visita [la documentazione sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
+Scopri come impostare un flusso di dati per l’inoltro di eventi. Per ulteriori informazioni, visita [la documentazione sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=it#create-a-datastream)
 
 
 >[!NOTE]

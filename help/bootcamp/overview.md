@@ -83,7 +83,7 @@ Cena 19:30:
 
 Prima di iniziare con gli esercizi pratici, osserva l’architettura alla base di questa esercitazione. Questo bootcamp approfondirà una serie di funzioni e funzionalità relative a Adobe Experience Platform e discuterà inoltre di diverse integrazioni tra diverse origini e destinazioni. Per comprendere correttamente l’architettura alla base di questo tutorial e il posizionamento complessivo di Adobe Experience Platform nell’ecosistema aziendale, consulta il video e il diagramma dell’architettura.
 
-Vai a [Architettura](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en).
+Vai a [Architettura](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=it).
 
 ## Video
 
@@ -93,7 +93,7 @@ L’obiettivo principale del Bootcamp di Experience Makers è aiutare le organiz
 
 Sono stati creati diversi altri video che illustrano elementi del bootcamp e potenti integrazioni tra applicazioni Adobe Experience Platform e non Adobi. Fai clic sul collegamento seguente per visualizzare una panoramica di tali video.
 
-Vai a [Video](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en).
+Vai a [Video](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=it).
 
 ## YouTube
 

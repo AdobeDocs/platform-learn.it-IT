@@ -34,9 +34,9 @@ Adobe Experience Platform Web SDK è una libreria JavaScript lato client che con
 
 Alcuni dei vantaggi di Platform Web SDK rispetto alla libreria at.js indipendente includono:
 
-* Condivisione più rapida dei tipi di pubblico da [Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
-* Integrazione di Target con Journey Optimizer per supportare la [consegna Offer Decisioning](https://experienceleague.adobe.com/en/docs/target/using/integrate/ajo/offer-decision)
-* Possibilità di utilizzare [ID di prime parti](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids) per generare l&#39;ECID per l&#39;identificazione dei visitatori di durata maggiore
+* Condivisione più rapida dei tipi di pubblico da [Real-Time Customer Data Platform](https://experienceleague.adobe.com/it/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
+* Integrazione di Target con Journey Optimizer per supportare la [consegna Offer Decisioning](https://experienceleague.adobe.com/it/docs/target/using/integrate/ajo/offer-decision)
+* Possibilità di utilizzare [ID di prime parti](https://experienceleague.adobe.com/it/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids) per generare l&#39;ECID per l&#39;identificazione dei visitatori di durata maggiore
 * Ingombro ridotto per metriche di velocità di pagina migliorate
 * Maggiore flessibilità di implementazione per gli sviluppatori
 
@@ -63,11 +63,11 @@ Al termine dell&#39;esercitazione, saprai:
 Per completare questa esercitazione, devi prima:
 
 * Avere una conoscenza tecnica dell’attuale implementazione di Target at.js
-* Assicurati di avere un [ruolo Editor o Editore](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) per l&#39;istanza di Target in modo da poter provare gli esempi autonomamente
+* Assicurati di avere un [ruolo Editor o Editore](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=it#section_8C425E43E5DD4111BBFC734A2B7ABC80) per l&#39;istanza di Target in modo da poter provare gli esempi autonomamente
 * Scopri come impostare le attività in Adobe Target. Se hai bisogno di un aggiornamento, i seguenti tutorial e guide sono utili per questa lezione:
-   * [Utilizzare il Compositore esperienza visivo](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html)
-   * [Utilizzare il Compositore esperienza basato su moduli](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
-   * [Creare attività di targeting dell’esperienza](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
+   * [Utilizzare il Compositore esperienza visivo](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html?lang=it)
+   * [Utilizzare il Compositore esperienza basato su moduli](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html?lang=it)
+   * [Creare attività di targeting dell’esperienza](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html?lang=it)
 
 Quando sei pronto, il primo passaggio per una migrazione corretta è [scoprire il processo di migrazione](migration-overview.md) e le differenze tra at.js e Platform Web SDK.
 

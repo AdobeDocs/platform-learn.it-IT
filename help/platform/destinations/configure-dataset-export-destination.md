@@ -20,6 +20,6 @@ ht-degree: 0%
 
 Scopri come impostare una connessione e utilizzare il flusso di lavoro per le esportazioni di set di dati utilizzando una destinazione di servizio cloud. Sono stati descritti anche i vantaggi e i casi di utilizzo di questa funzione.
 
-Per ulteriori informazioni, visita la [documentazione](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets).
+Per ulteriori informazioni, visita la [documentazione](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/export-datasets).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)

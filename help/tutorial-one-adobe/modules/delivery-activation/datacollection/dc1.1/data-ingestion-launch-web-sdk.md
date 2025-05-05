@@ -23,9 +23,9 @@ Questo modulo introduce alcuni concetti e tecnologie che hanno un impatto che va
 - Scopri i flussi di dati utilizzati da un brand per acquisire i dati dai suoi prodotti Adobe.
 - Scopri come inviare dati a Adobe Experience Platform e ad altri prodotti tramite Adobe Experience Platform Edge Network.
 - Scopri come creare elementi dati e regole che raccolgono dati da web e dispositivi mobili.
-- Scopri gli eventi di tracciamento di [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) e come eseguirne il debug.
+- Scopri gli eventi di tracciamento di [Web SDK](https://experienceleague.adobe.com/it/docs/experience-platform/web-sdk/home) e come eseguirne il debug.
 - Scopri cos’è un livello dati e cosa consiglia Adobe quando ne implementa uno.
-- Scopri i passaggi necessari per implementare [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) da zero.
+- Scopri i passaggi necessari per implementare [Web SDK](https://experienceleague.adobe.com/it/docs/experience-platform/web-sdk/home) da zero.
 - Scopri la differenza tra un’implementazione web e mobile.
 
 ## Prerequisiti

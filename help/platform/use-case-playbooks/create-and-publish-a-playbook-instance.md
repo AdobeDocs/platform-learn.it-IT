@@ -18,6 +18,6 @@ ht-degree: 32%
 
 # Creare e pubblicare istanze del playbook
 
-Scopri come scoprire, creare, pubblicare e risolvere i problemi di un’istanza di un playbook di casi d’uso da questo video dimostrativo end-to-end. Per ulteriori informazioni, vedere [Creare, condividere e riutilizzare le istanze del playbook](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html).
+Scopri come scoprire, creare, pubblicare e risolvere i problemi di un’istanza di un playbook di casi d’uso da questo video dimostrativo end-to-end. Per ulteriori informazioni, vedere [Creare, condividere e riutilizzare le istanze del playbook](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427058/?learn=on&enablevpops)

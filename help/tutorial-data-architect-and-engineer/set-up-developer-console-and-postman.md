@@ -189,7 +189,7 @@ Ora effettuiamo la nostra prima chiamata API:
 1. Importa in [!DNL Postman]
 1. Apri **Schema Registry API > Schemi > Elenca schemi**
 1. Osserva le schede **Parametri** e **Intestazioni** e osserva come includono alcune delle variabili di ambiente immesse in precedenza.
-1. Il campo **Intestazioni > Accetta valore** è impostato su `application/vnd.adobe.xed-id+json`. Le API del registro dello schema richiedono uno di questi [valori di intestazione Accept specificati](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#accept) che forniscono formati diversi nella risposta.
+1. Il campo **Intestazioni > Accetta valore** è impostato su `application/vnd.adobe.xed-id+json`. Le API del registro dello schema richiedono uno di questi [valori di intestazione Accept specificati](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=it#accept) che forniscono formati diversi nella risposta.
 1. Seleziona **Invia** per effettuare la tua prima chiamata API Platform.
 
 Si spera di aver ricevuto una risposta `200 OK` corretta contenente un elenco degli schemi XDM forniti dall&#39;Adobe disponibili nella sandbox, come illustrato di seguito.

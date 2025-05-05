@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Scopri come impostare una connessione e inviare dati alla destinazione di archiviazione BLOB di Azure in Real-Time Customer Data Platform. Questa destinazione supporta l’esportazione di set di dati e tipi di pubblico e consente di personalizzare le intestazioni e gli attributi dei file.
 
-Per ulteriori informazioni, visita la [documentazione](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob).
+Per ulteriori informazioni, visita la [documentazione](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob).
 
 >[!VIDEO](https://video.tv.adobe.com/v/331082/?learn=on&enablevpops)
 

@@ -82,7 +82,7 @@ Come accennato, puoi impostare ID persona diversi per ogni set di dati. Questo c
 
 Il nome del campo ID persona non è importante, purché il valore nei campi ID persona corrisponda. Supponiamo di avere `email` in un set di dati e `emailAddress` in un altro set di dati definito come ID persona. Se `delaigle@adobe.com` è lo stesso valore per il campo ID persona in entrambi i set di dati, CJA sarà in grado di unire i dati.
 
-Consulta le domande frequenti su CJA qui per comprendere le sfumature con l’unione di identità: [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
+Consulta le domande frequenti su CJA qui per comprendere le sfumature con l’unione di identità: [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=it).
 
 ### Unione dei dati utilizzando l’ID persona
 

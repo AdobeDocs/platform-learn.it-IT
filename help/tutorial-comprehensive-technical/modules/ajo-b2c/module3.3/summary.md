@@ -22,8 +22,8 @@ I punti salienti saranno menzionati al momento della pubblicazione di questo ese
 
 ## Guarda qui
 
-- Documentazione del prodotto: [Glossario Offer decisioning](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html#glossary?lang=en)
-- Documentazione del prodotto: [Web SDK - Panoramica Offer decisioning](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html?lang=en)
+- Documentazione del prodotto: [Glossario Offer decisioning](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html#glossary?lang=it)
+- Documentazione del prodotto: [Web SDK - Panoramica Offer decisioning](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html?lang=it)
 
 [Torna al modulo 3.3](./offer-decisioning.md)
 

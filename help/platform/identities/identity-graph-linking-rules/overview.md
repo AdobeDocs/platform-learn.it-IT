@@ -22,6 +22,6 @@ ht-degree: 0%
 >
 >Le regole di collegamento del grafo identità sono attualmente a disponibilità limitata. Contatta il team del tuo account Adobe per informazioni su come accedere alla funzione nelle sandbox di sviluppo.
 
-Ottieni una panoramica del modo in cui le regole di collegamento del grafico delle identità aiutano gli architetti di dati a mantenere profili cliente precisi e a evitare la compressione del grafico. Per ulteriori informazioni, consulta la [documentazione sulle regole di collegamento del grafico delle identità](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
+Ottieni una panoramica del modo in cui le regole di collegamento del grafico delle identità aiutano gli architetti di dati a mantenere profili cliente precisi e a evitare la compressione del grafico. Per ulteriori informazioni, consulta la [documentazione sulle regole di collegamento del grafico delle identità](https://experienceleague.adobe.com/it/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)

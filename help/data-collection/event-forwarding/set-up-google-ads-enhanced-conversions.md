@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Configurare le conversioni avanzate di Google Ads
 
-Migliora i dati di conversione Google con dati con hash di prime parti tramite l’inoltro degli eventi e l’API di Google Ads. Per ulteriori informazioni, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-ads-enhanced-conversions/overview.html)
+Migliora i dati di conversione Google con dati con hash di prime parti tramite l’inoltro degli eventi e l’API di Google Ads. Per ulteriori informazioni, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-ads-enhanced-conversions/overview.html?lang=it)
 
 >[!VIDEO](https://video.tv.adobe.com/v/3411365/?learn=on&enablevpops)

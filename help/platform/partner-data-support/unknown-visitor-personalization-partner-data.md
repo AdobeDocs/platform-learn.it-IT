@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Personalizzare le esperienze nel sito per visitatori sconosciuti utilizzando il riconoscimento dei visitatori supportato dai partner
 
-Scopri come raccogliere attributi di terze parti da [!DNL Adobe Experience Platform Web SDK] e personalizzare la tua esperienza in loco per visitatori sconosciuti utilizzando il riconoscimento dei visitatori supportato dai partner. Per ulteriori informazioni, visita la documentazione di [Utilizzare il riconoscimento dei visitatori con l&#39;assistenza dei partner per personalizzare le esperienze nel sito](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html).
+Scopri come raccogliere attributi di terze parti da [!DNL Adobe Experience Platform Web SDK] e personalizzare la tua esperienza in loco per visitatori sconosciuti utilizzando il riconoscimento dei visitatori supportato dai partner. Per ulteriori informazioni, visita la documentazione di [Utilizzare il riconoscimento dei visitatori con l&#39;assistenza dei partner per personalizzare le esperienze nel sito](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423076/?learn=on&enablevpops)

@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Introduzione a Customer AI
 
-Panoramica di alto livello su come gli esperti di marketing possono utilizzare IA per l’analisi dei clienti per generare previsioni sui clienti. Per ulteriori informazioni, visita la [documentazione di Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html).
+Panoramica di alto livello su come gli esperti di marketing possono utilizzare IA per l’analisi dei clienti per generare previsioni sui clienti. Per ulteriori informazioni, visita la [documentazione di Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32664?learn=on&enablevpops)

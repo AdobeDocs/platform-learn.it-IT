@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Convalidare le risposte dall’Assistente AI
 
-Scopri come verificare e convalidare le risposte fornite dall’Assistente IA in Adobe Experience Platform. Per ulteriori informazioni, vedere la [Guida dell&#39;interfaccia utente dell&#39;Assistente IA](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#verify-responses).
+Scopri come verificare e convalidare le risposte fornite dall’Assistente IA in Adobe Experience Platform. Per ulteriori informazioni, vedere la [Guida dell&#39;interfaccia utente dell&#39;Assistente IA](https://experienceleague.adobe.com/it/docs/experience-platform/ai-assistant/ui-guide#verify-responses).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441738/?learn=on&enablevpops)

@@ -58,7 +58,7 @@ Nel menu **extensions**, fai clic sull&#39;icona **puzzle** e aggiungi l&#39;est
 
 ## Configurare l&#39;estensione Chrome
 
-Vai a [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} e fai clic sull&#39;icona dell&#39;estensione per aprirla.
+Vai a [https://experienceleague.adobe.com/it/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/it/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} e fai clic sull&#39;icona dell&#39;estensione per aprirla.
 
 ![DSN](./images/tuthome.png)
 
@@ -135,7 +135,7 @@ Dopo aver attivato la configurazione, accanto alle iniziali dell’ambiente comp
 
 ## Verificare il contenuto del tutorial
 
-Come test, passa a [questa pagina](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
+Come test, passa a [questa pagina](https://experienceleague.adobe.com/it/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
 
 Ora tutte le **Variabili di ambiente** in questa pagina sono state sostituite dai loro valori effettivi, in base all&#39;ambiente attivato nell&#39;estensione chrome.
 

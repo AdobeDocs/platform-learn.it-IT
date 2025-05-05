@@ -16,6 +16,6 @@ ht-degree: 25%
 
 # Creare e pubblicare una libreria di tag
 
-Scopri come creare una libreria nella proprietà tag e inviare le modifiche tramite gli ambienti di sviluppo, staging e produzione. Scopri come utilizzare più ambienti di sviluppo per consentire a più team di aggiornare la proprietà in flussi di lavoro paralleli. Per ulteriori informazioni, consulta la documentazione di [pubblicazione](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html).
+Scopri come creare una libreria nella proprietà tag e inviare le modifiche tramite gli ambienti di sviluppo, staging e produzione. Scopri come utilizzare più ambienti di sviluppo per consentire a più team di aggiornare la proprietà in flussi di lavoro paralleli. Per ulteriori informazioni, consulta la documentazione di [pubblicazione](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28731/?learn=on&enablevpops)

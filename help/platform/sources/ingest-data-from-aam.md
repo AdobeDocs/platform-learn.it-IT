@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Acquisire dati utilizzando il connettore dati Adobe Audience Manager
 
-In questo video sull’integrazione, scopri come utilizzare il connettore dati di Audience Manager per inserire in Platform caratteristiche e segmenti da AAM e combinarli con altri dati avanzati. Per ulteriori informazioni, consulta la [documentazione del connettore di origine Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html).
+In questo video sull’integrazione, scopri come utilizzare il connettore dati di Audience Manager per inserire in Platform caratteristiche e segmenti da AAM e combinarli con altri dati avanzati. Per ulteriori informazioni, consulta la [documentazione del connettore di origine Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on&enablevpops)
 
@@ -28,4 +28,4 @@ Quando riconfiguri i processi e il personale per passare da Adobe Audience Manag
 >
 >Nel video precedente, viene mostrata un’opzione per scegliere TUTTI i segmenti e/o le caratteristiche. È consigliabile non utilizzare questa opzione a meno che non si disponga di un numero limitato di segmenti con un numero noto di visitatori univoci in tali segmenti. Riportare un numero elevato di profili visitatore in &quot;tutti i segmenti&quot; o &quot;tutte le caratteristiche&quot; può far emergere il servizio profilo in Real-Time CDP, il che può avere un effetto enorme sul prezzo dell’applicazione (poiché il numero di profili influisce sul costo dell’applicazione). Si consiglia, quindi, di scegliere segmenti specifici da trasmettere a Real-Time CDP invece di scegliere &quot;tutti&quot;.
 >
->Guarda l&#39;episodio di [28 aprile 2022 di Experience League LIVE](https://experienceleague.adobe.com/docs/experience-league-live-events/events/episodes/exl-live-episode-04-28-22.html) in cui viene discusso in dettaglio.
+>Guarda l&#39;episodio di [28 aprile 2022 di Experience League LIVE](https://experienceleague.adobe.com/docs/experience-league-live-events/events/episodes/exl-live-episode-04-28-22.html?lang=it) in cui viene discusso in dettaglio.

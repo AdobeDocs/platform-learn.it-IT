@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Crea e attiva tipi di pubblico per gli account per [!DNL B2B] e [!DNL B2P]
 
-Scopri le funzionalità di Account-Based Marketing nelle edizioni [!DNL B2B] e [!DNL B2P] di [!DNL Real-Time Customer Data Platform], inclusa la creazione e l&#39;attivazione dei tipi di pubblico dell&#39;account. Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html).
+Scopri le funzionalità di Account-Based Marketing nelle edizioni [!DNL B2B] e [!DNL B2P] di [!DNL Real-Time Customer Data Platform], inclusa la creazione e l&#39;attivazione dei tipi di pubblico dell&#39;account. Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338252?learn=on&enablevpops)
 

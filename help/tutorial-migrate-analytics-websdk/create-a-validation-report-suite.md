@@ -35,5 +35,5 @@ A seconda delle dimensioni e della complessità dell’implementazione di Analyt
 
 >[!TIP]
 >
->Per un video sulla creazione di suite di rapporti, vedi [Informazioni e creazione di suite di rapporti](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"}.
+>Per un video sulla creazione di suite di rapporti, vedi [Informazioni e creazione di suite di rapporti](https://experienceleague.adobe.com/it/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"}.
 

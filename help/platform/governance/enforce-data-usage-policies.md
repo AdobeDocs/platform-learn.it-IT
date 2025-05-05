@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Imponi criteri di utilizzo dati
 
-Scopri come applicare i criteri di utilizzo dei dati quando attivi un pubblico in una destinazione. Scopri come aggiungere azioni di marketing alle destinazioni, come analizzare una violazione dei criteri durante l’attivazione e come utilizzare la derivazione dei dati per comprendere e correggere le violazioni dei criteri. Per informazioni sull&#39;approccio basato su API, vedere [Imporre i criteri di utilizzo dei dati utilizzando l&#39;API del servizio criteri](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/api-enforcement.html).
+Scopri come applicare i criteri di utilizzo dei dati quando attivi un pubblico in una destinazione. Scopri come aggiungere azioni di marketing alle destinazioni, come analizzare una violazione dei criteri durante l’attivazione e come utilizzare la derivazione dei dati per comprendere e correggere le violazioni dei criteri. Per informazioni sull&#39;approccio basato su API, vedere [Imporre i criteri di utilizzo dei dati utilizzando l&#39;API del servizio criteri](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/api-enforcement.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/33631?learn=on&enablevpops)

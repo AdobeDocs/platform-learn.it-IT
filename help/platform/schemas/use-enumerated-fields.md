@@ -17,6 +17,6 @@ ht-degree: 33%
 
 # Utilizzare campi enumerati e valori suggeriti
 
-Scopri come utilizzare i campi enumerati e i valori consigliati per creare semplici menu a discesa nell’interfaccia del generatore di segmenti. Per ulteriori informazioni, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html).
+Scopri come utilizzare i campi enumerati e i valori consigliati per creare semplici menu a discesa nell’interfaccia del generatore di segmenti. Per ulteriori informazioni, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409501/?learn=on&enablevpops)

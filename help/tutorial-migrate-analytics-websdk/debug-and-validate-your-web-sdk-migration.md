@@ -21,7 +21,7 @@ In questo esercizio verrà illustrato come eseguire il debug e convalidare i dat
 
 ## L’Adobe Experience Platform Debugger
 
-Questo debugger è un’estensione del browser ed è disponibile sul Chrome store. È disponibile un [tutorial video](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview) che spiega come scaricare e utilizzare il debugger. È consigliabile eseguire prima questa esercitazione per conoscere l&#39;utilizzo di base.
+Questo debugger è un’estensione del browser ed è disponibile sul Chrome store. È disponibile un [tutorial video](https://experienceleague.adobe.com/it/docs/platform-learn/data-collection/debugger/overview) che spiega come scaricare e utilizzare il debugger. È consigliabile eseguire prima questa esercitazione per conoscere l&#39;utilizzo di base.
 
 Una volta che il debugger è in esecuzione, puoi utilizzarlo per assicurarti che i dati scorrano correttamente dal sito e attraverso l’Edge Network. Questo tutorial continuerà a essere usato di base, ma utilizza il debugger a tutta la sua capacità per controllare i tuoi dati.
 

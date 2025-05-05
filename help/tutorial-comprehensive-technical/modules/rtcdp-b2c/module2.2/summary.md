@@ -38,7 +38,7 @@ Consenti agli esperti di marketing di iniziare subito a utilizzare AI/ML e inizi
 
 ## Guarda qui
 
-- Panoramica di Intelligent Services: [https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=en](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=en)
+- Panoramica di Intelligent Services: [https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=it](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=it)
 
 [Torna al modulo 2.2](./intelligent-services.md)
 

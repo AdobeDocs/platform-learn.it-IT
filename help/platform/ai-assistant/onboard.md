@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Utilizza l’Assistente AI per ridurre i tempi di onboarding
 
-Scopri come utilizzare l’Assistente AI per acquisire rapidamente nuove funzioni e ridurre i tempi di onboarding. Per ulteriori informazioni, consulta la [Guida alle domande per l&#39;Assistente AI](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/questions).
+Scopri come utilizzare l’Assistente AI per acquisire rapidamente nuove funzioni e ridurre i tempi di onboarding. Per ulteriori informazioni, consulta la [Guida alle domande per l&#39;Assistente AI](https://experienceleague.adobe.com/it/docs/experience-platform/ai-assistant/questions).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3438032/?learn=on&enablevpops)

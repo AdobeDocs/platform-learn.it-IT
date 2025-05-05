@@ -81,7 +81,7 @@ Per il momento, acquisirai ulteriori informazioni su queste notifiche nelle pros
 ## Risorse aggiuntive
 
 * [Sito Web](https://webhook.site/)
-* [Documentazione delle notifiche di acquisizione dati](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html)
+* [Documentazione delle notifiche di acquisizione dati](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=it)
 * [Guida introduttiva agli eventi Adobe I/O](https://www.adobe.io/apis/experienceplatform/events/docs.html)
 
 Ok, iniziamo finalmente [l&#39;acquisizione dei dati](ingest-batch-data.md)!
