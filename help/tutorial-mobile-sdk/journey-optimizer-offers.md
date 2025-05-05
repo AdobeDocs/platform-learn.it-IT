@@ -112,7 +112,7 @@ Prima di poter creare le offerte, è necessario definire come e dove posizionarl
 
 1. Seleziona **[!UICONTROL Posizionamenti]** dalla barra superiore.
 
-1. Se non è presente alcun posizionamento con nome **[!UICONTROL JSON]** per dispositivi mobili ]**come**[!UICONTROL  Tipo di canale ]**e**[!UICONTROL  JSON ]**come**[!UICONTROL  Tipo di contenuto ]**, è necessario creare un posizionamento.**[!UICONTROL  In caso contrario, continuare a [Creare le offerte](#create-offers).
+1. Se non è presente alcun posizionamento con nome **[!UICONTROL JSON]** per dispositivi mobili **come**&#x200B;[!UICONTROL &#x200B; Tipo di canale &#x200B;]&#x200B;**e**&#x200B;[!UICONTROL &#x200B; JSON &#x200B;]&#x200B;**come**&#x200B;[!UICONTROL &#x200B; Tipo di contenuto &#x200B;]&#x200B;**, è necessario creare un posizionamento.** In caso contrario, continuare a [Creare le offerte](#create-offers).
 
 Per creare il posizionamento JSON per dispositivi mobili:
 
@@ -134,6 +134,7 @@ Per creare il posizionamento JSON per dispositivi mobili:
 1. Nel passaggio **[!UICONTROL Dettagli]** di **[!UICONTROL Crea una nuova offerta personalizzata]**:
    1. Immetti un **[!UICONTROL Nome]** per l&#39;offerta, ad esempio `Luma - Juno Jacket`, e una **[!UICONTROL Data e ora di inizio]** e una **[!UICONTROL Data e ora di fine]**. Al di fuori di queste date, l’offerta non verrà selezionata dal motore delle decisioni.
    1. Seleziona **[!UICONTROL Avanti]**.
+
       ![Offerte - Dettagli](assets/ajo-offers-details.png)
 
 1. Nel passaggio **[!UICONTROL Aggiungi rappresentazioni]** di **[!UICONTROL Crea una nuova offerta personalizzata]**:
@@ -152,14 +153,17 @@ Per creare il posizionamento JSON per dispositivi mobili:
          ```
 
       1. Seleziona **[!UICONTROL Salva]**.
+
          ![Offerte - Contenuto personalizzato](assets/ajo-offers-customcontent.png)
    1. Seleziona **[!UICONTROL Avanti]**.
+
       ![Rappresentazioni offerte](assets/ajo-offers-representations.png)
 
 1. Nel passaggio **[!UICONTROL Aggiungi vincoli]** di **[!UICONTROL Crea una nuova offerta personalizzata]**:
    1. Imposta **[!UICONTROL Priorità]** su `10`.
    1. Disattiva **[!UICONTROL Includi limite]**.
    1. Seleziona **[!UICONTROL Avanti]**.
+
       ![Offerte - Vincoli](assets/ajo-offers-constraints.png)
 
 1. Nel passaggio **[!UICONTROL Rivedi]** di **[!UICONTROL Crea nuova offerta personalizzata]**:
@@ -253,9 +257,11 @@ Consulta [Passaggi chiave per creare e gestire le offerte](https://experiencelea
    1. Nel riquadro **[!UICONTROL Criteri di valutazione]**, selezionare ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Aggiungi]**.
       1. Nella finestra di dialogo **[!UICONTROL Aggiungi raccolta di offerte]**, seleziona la raccolta di offerte. Ad esempio, **[!DNL Luma - Mobile App Collection]**.
       1. Seleziona **[!UICONTROL Aggiungi]**.
+
          ![Decisione - Seleziona raccolta](assets/ajo-decision-selectcollection.png)
    1. Assicurati che **[!UICONTROL None]** sia selezionato per **[!UICONTROL Eligibility]** e che **[!UICONTROL Offer priority]** sia selezionato come **[!UICONTROL metodo di classificazione]**.
    1. Seleziona **[!UICONTROL Avanti]**.
+
       ![Ambiti decisionali](assets/ajo-decision-scopes.png).
 1. Nel passaggio **[!UICONTROL Aggiungi offerta di fallback]** di **[!UICONTROL Crea una nuova decisione di offerta]**:
    1. Selezionare l&#39;offerta di fallback, ad esempio **[!DNL Luma - Fallback offer]**.

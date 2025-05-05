@@ -80,6 +80,7 @@ Affinché il servizio Places funzioni all’interno dell’app e nell’SDK di M
    1. Selezionare **[!DNL Luma]** dall&#39;elenco **[!UICONTROL Seleziona una libreria]**.
    1. Verifica di aver scelto la tua libreria di lavoro, ad esempio **[!UICONTROL Build iniziale]**.
    1. Seleziona **[!UICONTROL Salva nella libreria e genera]** da **[!UICONTROL Salva nella libreria]**.
+
       ![Installa estensione Luoghi](assets/places-install-extension.png).
 
 1. La libreria viene ricreata.
@@ -139,6 +140,7 @@ Ora devi definire le regole da utilizzare con questi elementi dati.
 1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) sotto **[!UICONTROL EVENTI]**.
    1. Seleziona **[!UICONTROL Luoghi]** dall&#39;elenco **[!UICONTROL Estensione]** e seleziona **[!UICONTROL Inserisci POI]** dall&#39;elenco **[!UICONTROL Tipo evento]**.
    1. Seleziona **[!UICONTROL Mantieni modifiche]**.
+
       ![Tag evento](assets/tags-event-mobile-core.png).
 1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) sotto **[!UICONTROL AZIONI]**.
    1. Seleziona **[!UICONTROL Mobile Core]** dall&#39;elenco **[!UICONTROL Extension]**, seleziona **[!UICONTROL Allega dati]** da **[!UICONTROL Action Type]**. Questa azione allega i dati del payload.
@@ -169,6 +171,7 @@ Ora devi definire le regole da utilizzare con questi elementi dati.
       Puoi anche inserire `{%% ... %%}` valori segnaposto di elementi dati nel JSON selezionando ![Dati](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg). Una finestra di dialogo a comparsa consente di scegliere qualsiasi elemento dati creato.
 
    1. Seleziona **[!UICONTROL Mantieni modifiche]**.
+
       ![Azione tag](assets/tags-action-mobile-core.png)
 
 1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) accanto all&#39;azione **[!UICONTROL Core mobile - Allega dati]**.

@@ -93,6 +93,7 @@ L’esercizio precedente invia gli eventi in primo piano e in background all’S
    1. Seleziona **[!UICONTROL Mobile Core]** come **[!UICONTROL Estensione]**.
    1. Seleziona **[!UICONTROL Primo piano]** come **[!UICONTROL Tipo evento]**.
    1. Seleziona **[!UICONTROL Mantieni modifiche]**.
+
       ![Configurazione evento regola](assets/rule-event-configuration.png)
 1. Nella schermata **[!UICONTROL Crea regola]**, seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Aggiungi]** accanto a **[!UICONTROL Mobile Core - Foreground]**.
    ![Configurazione evento successivo](assets/rule-event-configuration-next.png)
@@ -100,6 +101,7 @@ L’esercizio precedente invia gli eventi in primo piano e in background all’S
    1. Seleziona **[!UICONTROL Mobile Core]** come **[!UICONTROL Estensione]**.
    1. Seleziona **[!UICONTROL Sfondo]** come **[!UICONTROL Tipo evento]**.
    1. Seleziona **[!UICONTROL Mantieni modifiche]**.
+
       ![Configurazione evento regola](assets/rule-event-configuration-background.png)
 1. Nella schermata **[!UICONTROL Crea regola]**, seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Aggiungi]** sotto **[!UICONTROL AZIONI]**.
    ![Azione aggiunta regola](assets/rule-action-button.png)
@@ -107,6 +109,7 @@ L’esercizio precedente invia gli eventi in primo piano e in background all’S
    1. Seleziona **[!UICONTROL Edge Network esperienza Adobe]** come **[!UICONTROL estensione]**.
    1. Seleziona **[!UICONTROL Inoltra evento a Edge Network]** come **[!UICONTROL Tipo azione]**.
    1. Seleziona **[!UICONTROL Mantieni modifiche]**.
+
       ![Configurazione azione regola](assets/rule-action-configuration.png)
 1. Seleziona **[!UICONTROL Salva nella libreria]**.
    ![Regola - Salva nella libreria](assets/rule-save-to-library.png)

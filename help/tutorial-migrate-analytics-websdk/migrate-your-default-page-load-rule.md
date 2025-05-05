@@ -33,6 +33,7 @@ In questa attività verrà creata un&#39;azione Web SDK equivalente all&#39;azio
 
    ![Adobe Analytics - Imposta variabili](assets/aa-set-variables.jpg)
    1. Osserva quali variabili vengono impostate in tale regola
+
       ![Variabili impostate](assets/aa-vars-set.jpg)
 
 1. Nella parte superiore della pagina, modifica il pulsante di opzione in **Fornisci JSON**. Verrà visualizzata una visualizzazione del codice delle variabili impostate. Questa vista codice e quella interfaccia utente sono intercambiabili e quando imposti un elemento in un’interfaccia utente, questo verrà aggiornato anche nell’altra.

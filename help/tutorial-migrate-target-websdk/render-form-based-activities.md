@@ -106,7 +106,7 @@ Per ulteriori opzioni ed esempi di rendering, consulta la [documentazione dedica
 
 La pagina di esempio seguente si basa sull&#39;implementazione descritta nella sezione precedente, ma aggiunge ambiti aggiuntivi al comando `sendEvent`.
 
-Esempio +++Platform Web SDK con più ambiti
++++Esempio Platform Web SDK con più ambiti
 
 ```HTML
 <!doctype html>

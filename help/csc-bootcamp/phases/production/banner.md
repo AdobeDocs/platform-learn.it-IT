@@ -29,10 +29,13 @@ L’automazione dei contenuti porta la potenza di Adobe Creative Cloud a Experie
 
 - Di seguito sono elencate le opzioni più interessanti:
    - Adobike Banner Dark: crea un banner Adobike con una sovrapposizione scura, basato sulla risorsa selezionata
+
      ![banner scuro](./images/prod-banner-dark.jpg)
    - Adobike Banner Light: crea un banner Adobike con una sovrapposizione leggera, in base alla risorsa selezionata
+
      ![banner chiaro](./images/prod-banner-light.jpg)
    - Adobike Banner Green: crea un banner Adobike con una sovrapposizione verde, in base alla risorsa selezionata
+
      ![banner verde](./images/prod-banner-green.jpg)
 
 - Dopo aver scelto il tipo di banner da creare, seleziona il profilo di elaborazione, quindi seleziona &quot;Applica profilo a cartelle&quot;.

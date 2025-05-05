@@ -19,8 +19,10 @@ Per aggiungere e configurare l&#39;estensione, segui la procedura riportata di s
 
 1. Passa a Raccolta dati di Experience Platform. Ciò può essere realizzato in uno dei due modi seguenti:
    1. Vai all&#39;[interfaccia Adobe Experience Platform](https://platform.adobe.com/), quindi seleziona **[!UICONTROL Tag]** nella parte inferiore della barra di navigazione a sinistra.
+
       ![Accedi ai tag 1](assets/access-tags-1.jpg)
    1. Se non hai accesso a Platform, puoi utilizzare il selettore dell’applicazione (9 punti) in alto a destra nella finestra e selezionare Raccolta dati (dopo aver effettuato l’accesso a Experience.Adobe.com).
+
       ![Accedi ai tag 2](assets/access-tags-2.jpg)
 1. Individuare e selezionare la proprietà tag di cui si sta eseguendo la migrazione al Web SDK.
 1. Nella barra di navigazione a sinistra della proprietà tag, seleziona **[!UICONTROL Estensioni]**.

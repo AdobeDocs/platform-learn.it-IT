@@ -54,6 +54,7 @@ Se non è necessario definire i passaggi, procedere in questo modo e completare 
    1. **Il tipo di evento** può essere DOM Ready, a seconda dell&#39;implementazione
    1. Espandi **Opzioni avanzate**
    1. Imposta **Ordine** su un numero inferiore rispetto alle altre regole, in modo che venga eseguito per primo.
+
       ![Configura evento variabile globale](assets/configure-global-variable-event.jpg)
       >[!NOTE]
       >

@@ -93,7 +93,7 @@ Ora vengono visualizzati tutti i campi del posizionamento:
 
 ## 3.3.1.4 Regole decisionali
 
-Una regola (detta anche regola di idoneità) equivale a un pubblico **1}.** Una regola è in effetti un pubblico con l’unica differenza che una regola può essere utilizzata con un’offerta per fornire l’offerta migliore a un profilo in Adobe Experience Platform.
+Una regola (detta anche regola di idoneità) equivale a un pubblico **1&rbrace;.** Una regola è in effetti un pubblico con l’unica differenza che una regola può essere utilizzata con un’offerta per fornire l’offerta migliore a un profilo in Adobe Experience Platform.
 
 Poiché sai già come definire i tipi di pubblico in base ai moduli di abilitazione precedenti, rivediamo rapidamente l’ambiente di segmentazione:
 

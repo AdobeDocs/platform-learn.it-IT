@@ -129,9 +129,9 @@ Trascina e rilascia l&#39;oggetto clonato vicino all&#39;oggetto **Router**, che
 
 ![WF Fusion](./images/wffusion65.png)
 
-Ora hai una copia identica basata sul **richiesta HTTP Firefly T2I** . Alcune delle impostazioni del richiesta HTTP Firefly T2I **sono simili a quelle necessarie per interagire con l&#39;API****Photoshop, il che consente di** risparmiare tempo. Ora devi solo modificare le variabili che non sono le stesse, like il richiesta URL e il payload.
+Ora hai una copia identica basata sul **richiesta HTTP Firefly T2I** . Alcune delle impostazioni del richiesta HTTP Firefly T2I **sono simili a quelle necessarie per interagire con l&#39;API**&#x200B;**Photoshop, il che consente di** risparmiare tempo. Ora devi solo modificare le variabili che non sono le stesse, like il richiesta URL e il payload.
 
-Modificare l&#39;URL **** in `https://image.adobe.io/pie/psdService/text`.
+Modificare l&#39;URL **&#x200B;**&#x200B;in `https://image.adobe.io/pie/psdService/text`.
 
 ![WF Fusion](./images/wffusion66.png)
 
@@ -428,7 +428,7 @@ Trascinare il nodo clonato in modo che si connetta con l&#39;**aggregatore di ma
 
 ![WF Fusion](./images/wffusion122.png)
 
-Rimuovi la variabile esistente e seleziona **+ Aggiungi elemento**. Per il **nome** Variabile, utilizzare `placeholder`, per il **valore** Variabile, utilizzare `end`. Selezionare **Aggiungi**, quindi OK ****.
+Rimuovi la variabile esistente e seleziona **+ Aggiungi elemento**. Per il **nome** Variabile, utilizzare `placeholder`, per il **valore** Variabile, utilizzare `end`. Selezionare **Aggiungi**, quindi OK **&#x200B;**.
 
 ![WF Fusion](./images/wffusion123.png)
 

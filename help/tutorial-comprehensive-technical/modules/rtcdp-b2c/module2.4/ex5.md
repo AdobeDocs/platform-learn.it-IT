@@ -27,7 +27,7 @@ Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare
 
 ![Acquisizione dei dati](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-Vai a **Destinazioni**, quindi fai clic su **Sfoglia**. Vedrai quindi tutte le destinazioni disponibili. Individua la destinazione e fai clic sui tre punti**...** come indicato di seguito, quindi fai clic su **Attiva pubblico**.
+Vai a **Destinazioni**, quindi fai clic su **Sfoglia**. Vedrai quindi tutte le destinazioni disponibili. Individua la destinazione e fai clic sui tre punti&#x200B;**...** come indicato di seguito, quindi fai clic su **Attiva pubblico**.
 
 ![5-01-select-destination.png](./images/501selectdestination.png)
 

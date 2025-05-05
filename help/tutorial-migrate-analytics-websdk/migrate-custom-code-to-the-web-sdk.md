@@ -128,12 +128,12 @@ In questa posizione verrà incollato tutto il codice che si desidera eseguire im
 
 Beh, sì e no. Sì, è necessario modificare alcune piccole modifiche, ma no, non sarà necessario modificare la maggior parte del codice, purché si modifichino queste piccole modifiche:
 
-_**Modifica codice 1:**_
+_&#x200B;**Modifica codice 1:**&#x200B;_
 Dopo (o prima di) aver incollato il codice &quot;plug-in&quot; nella finestra del codice nell&#39;estensione Web SDK, **rimuovere** le righe &quot;doPlugin&quot; dal codice. Non ne avrai bisogno e causeranno un errore poiché fanno parte di appMeasurement.js ma non del codice Web SDK.
 
 ![Rimuovi righe di codice doPlugins](assets/remove-doplugins.jpg)
 
-_**Modifica codice 2:**_
+_&#x200B;**Modifica codice 2:**&#x200B;_
 L’altra modifica che dovrai fare è aggiungere del codice in modo che l’oggetto &quot;s&quot; sia definito, in modo molto simile a quanto discusso in precedenza per quanto riguarda il codice nelle azioni della regola. In questo caso, dovremo definire il codice in modo leggermente diverso, aggiungendo un nodo &quot;dati&quot; già definito nell’azione della regola, ma non qui.
 Questa definizione deve essere posizionata nella parte superiore della finestra del codice. Il codice da copiare (quando si inserisce il codice nell&#39;estensione Web SDK) è il seguente:
 
@@ -143,7 +143,7 @@ content.data.__adobe.analytics = content.data.__adobe.analytics || {};
 const s = content.data.__adobe.analytics;
 ```
 
-_**Con entrambe le modifiche al codice:**_
+_&#x200B;**Con entrambe le modifiche al codice:**&#x200B;_
 Di seguito è riportato il codice elencato in precedenza, ma con entrambe le modifiche abbiamo appena discusso:
 
 ![Codice aggiornato](assets/update-code.jpg)

@@ -185,7 +185,7 @@ Apri gli [Experienci Platform [!DNL Postman] insiemi in GitHub](https://github.c
 
 Ora effettuiamo la nostra prima chiamata API:
 
-1. Scarica la raccolta API del Registro di sistema dello schema [](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Schema%20Registry%20API.postman_collection.json) nella cartella `Luma Tutorial Assets`
+1. Scarica la raccolta API del Registro di sistema dello schema [&#128279;](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Schema%20Registry%20API.postman_collection.json) nella cartella `Luma Tutorial Assets`
 1. Importa in [!DNL Postman]
 1. Apri **Schema Registry API > Schemi > Elenca schemi**
 1. Osserva le schede **Parametri** e **Intestazioni** e osserva come includono alcune delle variabili di ambiente immesse in precedenza.

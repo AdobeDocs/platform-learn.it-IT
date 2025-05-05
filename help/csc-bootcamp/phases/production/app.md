@@ -84,6 +84,7 @@ Ora che abbiamo un’idea di cosa dovrebbero esistere i nostri contenuti, possia
 - Nella finestra modale visualizzata, alcuni campi non sono ancora modificabili. Questo è logico: in base a dove creiamo il frammento, saranno disponibili diversi modelli.
   ![crea frammento di contenuto](./images/prod-app-create-cf-details.png)
    - Innanzitutto, seleziona il punto in cui creeremo il frammento facendo clic sull’icona della cartella accanto al campo &quot;Posizione&quot;. Espandi la struttura del contenuto facendo clic sulle cartelle &quot;adobike&quot; \> &quot;en&quot; \> &quot;mobile-app&quot;, quindi conferma la selezione facendo clic sul pulsante &quot;Scegli&quot;.
+
      ![selezionare la posizione corretta](./images/prod-app-folder.png)
    - Il campo &quot;Modello per frammento di contenuto&quot; è ora modificabile. Fai clic sulla freccia accanto al campo per aprire il menu a discesa e selezionare il modello di contenuto visualizzato in precedenza: &quot;Pagina iniziale app mobile&quot;.
    - Quindi, assegna al frammento di contenuto un titolo significativo (suggerimento: includi il numero del team per trovare facilmente il contenuto). Noterai che il campo &quot;Name&quot; (Nome) si popola automaticamente, per semplificare la tua vita: è il nome che il sistema utilizza per identificare il frammento e che non deve essere toccato.
@@ -94,6 +95,7 @@ Ora che abbiamo un’idea di cosa dovrebbero esistere i nostri contenuti, possia
    - Per selezionare le risorse immagine, fai clic sull’icona della cartella per cercare l’immagine corretta in AEM Assets.
    - Per il prodotto in primo piano, fai clic sull’icona di ricerca del prodotto in modo da poter selezionare facilmente il prodotto Commerce &quot;Adobike 1&quot;, in modo che i dettagli relativi al e-commerce vengano caricati nell’app.
    - Al termine, fai clic sul pulsante Salva per salvare tutti i contenuti creati e pubblicare le modifiche.
+
      ![modifiche pubblicazione](./images/prod-app-publish.png)
 
 Ora che abbiamo previsto l’app mobile con alcuni contenuti, siamo pronti a distribuire la nostra campagna.

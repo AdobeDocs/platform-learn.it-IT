@@ -35,7 +35,7 @@ ht-degree: 2%
    + [2.4 Verifica il percorso](/help/bootcamp/uc/uc2/ex4.md)
    + [2.5 Installa e utilizza l&#39;app mobile](/help/bootcamp/uc/uc2/ex5.md)
    + [2.6 Personalization nel call center](/help/bootcamp/uc/uc2/ex6.md)
-+ 3 - Fusione di {#uc3} fisici e digitali
++ 3 - Fusione di fisici e digitali {#uc3}
    + [Panoramica](/help/bootcamp/uc/uc3/uc3.md)
    + [3.1 Usare l&#39;app mobile e attivare una voce beacon](/help/bootcamp/uc/uc3/ex1.md)
    + [3.2 Creare l’evento](/help/bootcamp/uc/uc3/ex2.md)

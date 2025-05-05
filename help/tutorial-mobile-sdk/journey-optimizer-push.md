@@ -172,8 +172,9 @@ Affinché l&#39;app funzioni con Journey Optimizer, devi aggiornare la propriet�
 1. Installa l’estensione.
 1. Nella finestra di dialogo **[!UICONTROL Installa estensione]**
    1. Seleziona un ambiente, ad esempio **[!UICONTROL Sviluppo]**.
-   1. Seleziona il set di dati ]**dell&#39;evento di tracciamento push di AJO**[!UICONTROL  dall&#39;elenco **[!UICONTROL Set di dati evento]**.
+   1. Seleziona il set di dati **dell&#39;evento di tracciamento push di AJO** dall&#39;elenco **[!UICONTROL Set di dati evento]**.
    1. Selezionare **[!UICONTROL Salva nella libreria e genera]**.
+
       ![Impostazioni estensione AJO](assets/push-tags-ajo.png)
 
 >[!NOTE]
@@ -307,6 +308,7 @@ Stai per definire un nuovo tipo di evento, non ancora disponibile, come parte de
    1. Nel riquadro **[!UICONTROL Proprietà campo]**, scorri verso il basso per visualizzare l&#39;elenco dei valori possibili per il tipo di evento. Selezionare **[!UICONTROL Aggiungi riga]** e aggiungere `application.test` come **[!UICONTROL VALORE]** e `[!UICONTROL Test event for push notification]` come `DISPLAY NAME`.
    1. Seleziona **[!UICONTROL Applica]**.
    1. Seleziona **[!UICONTROL Salva]**.
+
       ![Aggiungi valore ai tipi di evento](assets/ajo-update-schema-eventtype-enum.png)
 
 ### Definire un evento
@@ -344,10 +346,12 @@ Gli eventi in Journey Optimizer ti consentono di attivare i percorsi in modo uni
       1. Nella finestra di dialogo **[!UICONTROL Aggiungi una condizione ID evento]**, trascina **[!UICONTROL Tipo evento (eventType)]** su **[!UICONTROL Trascina e rilascia qui un elemento]**.
       1. Nel popover, scorri verso il basso e seleziona **[!UICONTROL application.test]** (che è il tipo di evento aggiunto in precedenza all&#39;elenco dei tipi di evento come parte di [Aggiorna lo schema](#update-your-schema)). Quindi scorri verso l&#39;alto e seleziona **[!UICONTROL Ok]**.
       1. Selezionare **[!UICONTROL Ok]** per salvare la condizione.
+
          ![Modifica condizione evento](assets/ajo-edit-condition.png)
 
    1. Selezionare **[!UICONTROL ECID (ECID)]** dall&#39;elenco **[!UICONTROL Spazio dei nomi]**. Il campo **[!UICONTROL Identificatore profilo]** viene compilato automaticamente con **[!UICONTROL ID del primo elemento dell&#39;ECID chiave per la mappa identityMap]**.
    1. Seleziona **[!UICONTROL Salva]**.
+
       ![Modifica passaggio evento 2](assets/ajo-edit-event2.png)
 
 Hai appena creato una configurazione dell’evento basata sullo schema degli eventi di esperienza per app mobile creato in precedenza come parte di questa esercitazione. Questa configurazione di evento filtrerà gli eventi di esperienza in arrivo utilizzando il tipo di evento specifico (`application.test`), pertanto solo gli eventi con quel tipo specifico, avviati dall&#39;app mobile, attiveranno il percorso generato nel passaggio successivo. In uno scenario reale, potrebbe essere utile inviare notifiche push da un servizio esterno, tuttavia si applicano gli stessi concetti: dall’applicazione esterna invia un evento esperienza in Experience Platform che dispone di campi specifici che puoi utilizzare per applicare condizioni su prima che questi eventi attivino un percorso.
@@ -364,6 +368,7 @@ Il passaggio successivo consiste nel creare il percorso che attiva l’invio del
    1. Immetti una **[!UICONTROL Descrizione]** per il percorso, ad esempio `Journey for test push notifications in Luma mobile app`.
    1. Verificare che **[!UICONTROL Consenti rientro]** sia selezionato e impostare **[!UICONTROL Periodo di attesa rientro]** su **[!UICONTROL 30]** **[!UICONTROL Secondi]**.
    1. Selezionare **[!UICONTROL Ok]**.
+
       ![Proprietà del percorso](assets/ajo-journey-properties.png)
 
 1. Torna all&#39;area di lavoro del percorso, da **[!UICONTROL EVENTI]**, trascina e rilascia ![Evento](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg) **[!DNL LumaTestEvent]** nell&#39;area di lavoro in cui viene visualizzato **[!UICONTROL Seleziona un evento di ingresso o un&#39;attività di lettura pubblico]**.
@@ -374,6 +379,7 @@ Il passaggio successivo consiste nel creare il percorso che attiva l’invio del
 
    1. Fornisci un **[!UICONTROL Etichetta]**, ad esempio `Luma Test Push Notification`, fornisci una **[!UICONTROL Descrizione]**, ad esempio `Test push notification for Luma mobile app`, seleziona **[!UICONTROL Transazionale]** dall&#39;elenco **[!UICONTROL Categoria]** e seleziona **[!DNL Luma]** dalla **[!UICONTROL Superficie push]**.
    1. Seleziona ![Modifica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Modifica contenuto]** per iniziare a modificare la notifica push effettiva.
+
       ![Proprietà push](assets/ajo-push-properties.png)
 
       Nell&#39;editor **[!UICONTROL Notifica push]**:
@@ -381,6 +387,7 @@ Il passaggio successivo consiste nel creare il percorso che attiva l’invio del
       1. Immetti un **[!UICONTROL Titolo]**, ad esempio `Luma Test Push Notification`, e un **[!UICONTROL Corpo]**, ad esempio `Test push notification for Luma mobile app`.
       1. Se necessario, è possibile immettere un collegamento a un&#39;immagine (.png o .jpg) in **[!UICONTROL Aggiungi file multimediali]**. In tal caso, l’immagine farà parte della notifica push.
       1. Per salvare e lasciare l&#39;editor, selezionare ![Freccia sinistra](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronLeft_18_N.svg).
+
          ![Editor push](assets/ajo-push-editor.png)
 
    1. Per salvare e completare la definizione della notifica push, selezionare **[!UICONTROL Ok]**.

@@ -65,7 +65,7 @@ Supponiamo una semplice implementazione di Target con at.js:
 * Frammento pre-hiding per attenuare lo sfarfallio
 * La libreria at.js di Target viene caricata in modo asincrono con le impostazioni predefinite per richiedere ed eseguire il rendering automatico delle attività:
 
-Implementazione di esempio di +++at.js su una pagina HTML
++++Implementazione di esempio di at.js su una pagina HTML
 
 ```HTML
 <!doctype html>

@@ -130,7 +130,7 @@ In queste lezioni, implementerai Adobe Experience Cloud in un finto sito web per
    </html>
    ```
 
-+++
+   +++
 
 1. Procurati un editor di testo in cui puoi apportare modifiche alla pagina HTML di esempio. (Se non ne hai uno, consigliamo di provare [Brackets](https://brackets.io/))
 1. Segnalibro del sito [Luma](https://luma.enablementadobe.com/content/luma/us/en.html)

@@ -19,10 +19,12 @@ Le funzioni di Azure consentono di eseguire piccole parti di codice (denominate 
 Funzione **attivata** da un tipo specifico di evento. I trigger supportati includono la risposta alle modifiche nei dati, la risposta ai messaggi (ad esempio, Hub eventi), l’esecuzione su una pianificazione o come risultato di una richiesta HTTP.
 Azure Functions è un servizio di elaborazione senza server che consente di eseguire codice attivato da evento senza dover eseguire esplicitamente il provisioning o la gestione dell’infrastruttura.
 Azure Event Hubs si integra con le funzioni di Azure per un’architettura senza server.
+
 ## Apri codice Visual Studio e accedi ad Azure
 
 Visual Studio Code semplifica le operazioni di...
 - definire e associare le funzioni di Azure agli hub eventi- test locale- distribuire in Azure- esecuzione della funzione di registro remoto
+
 ### Apri codice Visual Studio
 
 ### Accesso ad Azure
@@ -36,6 +38,7 @@ Quando viene visualizzata la seguente schermata nel browser, si è connessi con 
 ![3-03-vsc-login-ok.png](./images/303vscloginok.png)
 Torna a Visual Code Studio (verrà visualizzato il nome della sottoscrizione di Azure, ad esempio **sottoscrizione di Azure 1**):
 ![3-04-vsc-logged-in.png](./images/304vscloggedin.png)
+
 ## Creare un progetto Azure
 
 Fare clic su **Crea progetto funzione...**:
@@ -65,6 +68,7 @@ Potresti ricevere un messaggio come questo. In tal caso, fare clic su **Sì, gli
 Dopo aver creato il progetto, aprire il file `--aepUserLdap---aep-event-hub-trigger.js` nell&#39;editor:
 ![3-16-vsc-open-index-js.png](./images/vsc13.png)
 Il payload inviato da Adobe Experience Platform all’hub eventi sarà simile al seguente:
+
 ```json
 {
   "identityMap": {
@@ -92,16 +96,19 @@ Il payload inviato da Adobe Experience Platform all’hub eventi sarà simile al
 
 Aggiornare il codice in `--aepUserLdap---aep-event-hub-trigger.js` del codice Visual Studio con il codice seguente. Questo codice verrà eseguito ogni volta che Real-time CDP invia i requisiti del pubblico alla destinazione dell’hub eventi. In questo esempio, il codice riguarda solo la visualizzazione del payload in ingresso, ma puoi immaginare qualsiasi tipo di funzione aggiuntiva per elaborare le qualifiche del pubblico in tempo reale e utilizzarle più in basso nell’ecosistema della pipeline dei dati.
 La riga 11 nel file `--aepUserLdap---aep-event-hub-trigger.js` mostra attualmente quanto segue:
+
 ```javascript
 context.log('Event hub message:', message);
 ```
 
 Modificare la riga 11 in `--aepUserLdap---aep-event-hub-trigger.js` in modo che sia simile alla seguente:
+
 ```javascript
 context.log('Event hub message:', JSON.stringify(message));
 ```
 
 Il payload totale deve quindi essere simile al seguente:
+
 ```javascript
 const { app } = require('@azure/functions');
 
@@ -125,6 +132,7 @@ app.eventHub('--aepUserLdap---aep-event-hub-trigger', {
 
 Il risultato dovrebbe essere simile al seguente:
 ![3-16b-vsc-edit-index-js.png](./images/vsc1.png)
+
 ## Esegui progetto Azure
 
 Ora è il momento di eseguire il progetto. In questa fase, il progetto non verrà distribuito ad Azure. Verrà eseguito localmente in modalità di debug. Seleziona l’icona Esegui e fai clic sulla freccia verde.
@@ -135,10 +143,12 @@ quindi selezionare l&#39;account di archiviazione creato in precedenza, denomina
 ![3-17-vsc-run-project.png](./images/vsc14b.png)
 Il progetto è ora operativo e l’elenco degli eventi nell’hub eventi è attivo. Nell&#39;esercizio successivo verrà illustrato il comportamento sul sito Web di dimostrazione di CitiSignal che risulterà idoneo per i tipi di pubblico. Di conseguenza, riceverai un payload di qualificazione del pubblico nel terminale della funzione di attivazione dell’hub eventi.
 ![3-24-vsc-application-stop.png](./images/vsc18.png)
+
 ## Arresta progetto Azure
 
 Per arrestare il progetto, vai al lenu **STACK CHIAMATE** in VSC, fai clic sulla freccia del progetto in esecuzione, quindi fai clic su **Interrompi**.
 ![3-24-vsc-application-stop.png](./images/vsc17.png)
+
 ## Passaggi successivi
 
 Vai a [2.4.7 Scenario end-to-end](./ex7.md){target="_blank"}

@@ -180,6 +180,7 @@ L’hub eventi di SDK pubblica e riceve i dati dell’evento da estensioni regis
 1. Nella schermata **[!UICONTROL Crea campagna]**:
    1. Seleziona **[!UICONTROL Messaggio in-app]** e seleziona una superficie app dall&#39;elenco **[!UICONTROL Superficie app]**, ad esempio **[!DNL Luma Mobile App]**.
    1. Seleziona **[!UICONTROL Crea]**
+
       ![Proprietà campagna](assets/ajo-campaign-properties.png)
 1. Nella schermata Definizione campagna, in **[!UICONTROL Proprietà]**, immetti un **[!UICONTROL Nome]** per la campagna, ad esempio `Luma - In-App Messaging Campaign`, e una **[!UICONTROL Descrizione]**, ad esempio `In-app messaging campaign for Luma app`.
    ![Nome campagna](assets/ajo-campaign-properties-name.png)
@@ -191,6 +192,7 @@ L’hub eventi di SDK pubblica e riceve i dati dell’evento da estensioni regis
    4. Immetti **[!UICONTROL Ignora]** come **[!UICONTROL pulsante #1 testo (primario)]**.
    5. Nota come viene aggiornata l’anteprima.
    6. Seleziona **[!UICONTROL Rivedi per attivare]**.
+
       ![Editor in-app](assets/ajo-in-app-editor.png)
 1. Nella schermata **[!UICONTROL Rivedi per attivare (Luma - Campagna di messaggistica in-app)]**, seleziona ![Modifica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) nella sezione **[!UICONTROL Pianifica]**.
    ![Rivedi pianificazione seleziona pianificazione](assets/ajo-review-select-schedule.png)
@@ -199,6 +201,7 @@ L’hub eventi di SDK pubblica e riceve i dati dell’evento da estensioni regis
    1. Per rimuovere **[!UICONTROL Evento di avvio applicazione]**, selezionare ![Chiudi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg).
    1. Utilizza ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Aggiungi condizione]** ripetutamente per generare la logica seguente per **[!UICONTROL Mostra messaggio se]**.
    1. Fai clic su **[!UICONTROL Fine]**.
+
       ![Logica di attivazione](assets/ajo-trigger-logic.png)
 
    Hai definito un&#39;azione di tracciamento, in cui **[!UICONTROL Azione]** è uguale a `in-app` e **[!UICONTROL Dati contestuali]** con l&#39;azione è una coppia chiave valore di `"showMessage" : "true"`.
