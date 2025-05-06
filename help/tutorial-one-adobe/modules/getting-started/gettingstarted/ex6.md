@@ -3,9 +3,10 @@ title: Guida introduttiva ad Adobe I/O
 description: Guida introduttiva ad Adobe I/O
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -21,11 +22,16 @@ Vai a [https://developer.adobe.com/console/home](https://developer.adobe.com/con
 ![Nuova integrazione Adobe I/O](./images/iohome.png){zoomable="yes"}
 
 Assicurati di selezionare l’istanza corretta nell’angolo in alto a destra dello schermo. L&#39;istanza è `--aepImsOrgName--`.
+
+>[!NOTE]
+>
+> La schermata seguente mostra un’organizzazione specifica selezionata. Durante l’esercitazione, è molto probabile che il nome dell’organizzazione sia diverso. Quando ti sei iscritto a questo tutorial, ti sono stati forniti i dettagli dell’ambiente da utilizzare, segui queste istruzioni.
+
 Selezionare **Crea nuovo progetto**.
 
 ![Nuova integrazione Adobe I/O](./images/iocomp.png){zoomable="yes"}
 
-### API dei servizi Firefly
+### API FIREFLY SERVICES
 
 Dovresti vedere questo. Selezionare **+ Aggiungi al progetto** e scegliere **API**.
 
@@ -43,7 +49,7 @@ Immetti un nome per le credenziali: `--aepUserLdap-- - One Adobe OAuth credentia
 
 ![Nuova integrazione Adobe I/O](./images/api4.png){zoomable="yes"}
 
-Selezionare il profilo predefinito **Configurazione predefinita servizi Firefly** e selezionare **Salva API configurata**.
+Selezionare il profilo predefinito **Configurazione Firefly Services predefinita** e selezionare **Salva API configurata**.
 
 ![Nuova integrazione Adobe I/O](./images/api9.png){zoomable="yes"}
 
@@ -57,7 +63,7 @@ Selezionare **+ Aggiungi al progetto**, quindi selezionare **API**.
 
 ![Archiviazione Azure](./images/ps2.png){zoomable="yes"}
 
-Selezionare **Creative Cloud** e scegliere **Photoshop - Servizi Firefly**. Seleziona **Avanti**.
+Seleziona **Creative Cloud** e scegli **Photoshop - Firefly Services**. Seleziona **Avanti**.
 
 ![Archiviazione Azure](./images/ps3.png){zoomable="yes"}
 
@@ -67,7 +73,7 @@ Seleziona **Avanti**.
 
 Successivamente, devi selezionare un profilo di prodotto che definisca quali autorizzazioni sono disponibili per questa integrazione.
 
-Selezionare **Configurazione predefinita servizi Firefly** e **Configurazione predefinita servizi di automazione Creative Cloud**.
+Selezionare **Configurazione predefinita Firefly Services** e **Configurazione predefinita Creative Cloud Automation Services**.
 
 Seleziona **Salva API configurata**.
 

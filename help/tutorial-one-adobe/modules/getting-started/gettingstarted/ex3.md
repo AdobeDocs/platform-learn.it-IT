@@ -4,9 +4,9 @@ description: 'Guida introduttiva: creare lo stream di dati'
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '1001'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,15 @@ ht-degree: 1%
 Vai a [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/it#/data-collection/){target="_blank"}.
 
 ![DSN](./images/launchprop.png)
+
+Prima di continuare, accertati di aver selezionato l’ambiente corretto utilizzando il selettore di ambiente nell’angolo in alto a destra dello schermo. L&#39;ambiente corretto da utilizzare è denominato `--aepImsOrgName--`.
+
+>[!NOTE]
+>
+> La schermata seguente mostra un’organizzazione specifica selezionata. Durante l’esercitazione, è molto probabile che il nome dell’organizzazione sia diverso. Quando ti sei iscritto a questo tutorial, ti sono stati forniti i dettagli dell’ambiente da utilizzare, segui queste istruzioni.
+
+
+![DSN](./images/org.png)
 
 Nel menu a sinistra, fai clic su **[!UICONTROL Tag]**. Dopo l’esercizio precedente, ora disponi di 3 proprietà di raccolta dati: una per il web, una per i dispositivi mobili e una per l’app CX.
 
@@ -33,13 +42,17 @@ Fare clic su **[!UICONTROL Datastreams]**.
 
 Nell&#39;angolo in alto a destra dello schermo, seleziona il nome della sandbox, che dovrebbe essere `--aepSandboxName--`.
 
+>[!NOTE]
+>
+> La schermata seguente mostra una sandbox specifica selezionata. Durante l’esercitazione, è molto probabile che il nome della sandbox sia diverso. Quando ti sei iscritto a questo tutorial, ti sono stati forniti i dettagli dell’ambiente da utilizzare, segui queste istruzioni.
+
 ![Fai clic sull&#39;icona Configurazione di Edge nell&#39;area di navigazione a sinistra](./images/edgeconfig1b.png)
 
 Fare clic su **[!UICONTROL Nuovo flusso di dati]**.
 
 ![Fai clic sull&#39;icona Configurazione di Edge nell&#39;area di navigazione a sinistra](./images/edgeconfig1.png)
 
-Per **[!UICONTROL Name]** e per la descrizione facoltativa, immettere `--aepUserLdap-- - One Adobe Datastream`. Per **Schema mappatura**, selezionare **Sistema demo - Schema evento per sito Web (Global v1.1)**. Fai clic su **Salva**.
+Per **Name** e per la descrizione facoltativa, immettere `--aepUserLdap-- - One Adobe Datastream`. Per **Schema mappatura**, selezionare **Sistema demo - Schema evento per sito Web (Global v1.1)**. Fai clic su **Salva**.
 
 ![Denomina la configurazione di Edge e salva](./images/edgeconfig2.png)
 
@@ -108,6 +121,10 @@ Fare clic su **[!UICONTROL Datastreams]**.
 ![Fai clic sull&#39;icona dello stream di dati nell&#39;area di navigazione a sinistra](./images/edgeconfig1a.png)
 
 Nell&#39;angolo in alto a destra dello schermo, seleziona il nome della sandbox, che dovrebbe essere `--aepSandboxName--`.
+
+>[!NOTE]
+>
+> La schermata seguente mostra una sandbox specifica selezionata. Durante l’esercitazione, è molto probabile che il nome della sandbox sia diverso. Quando ti sei iscritto a questo tutorial, ti sono stati forniti i dettagli dell’ambiente da utilizzare, segui queste istruzioni.
 
 ![Fai clic sull&#39;icona Configurazione di Edge nell&#39;area di navigazione a sinistra](./images/edgeconfig1b.png)
 

@@ -4,9 +4,9 @@ description: 'Guida introduttiva: installare l’estensione Chrome per la docume
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,16 @@ ht-degree: 0%
 
 ## Informazioni sull’estensione Chrome
 
-La documentazione è stata resa generica in modo da poter essere riutilizzata facilmente da chiunque, utilizzando qualsiasi istanza di Adobe Experience Platform.
-Per rendere riutilizzabile la documentazione, nella documentazione sono state introdotte **Variabili di ambiente**. Di conseguenza, nella documentazione troverai **segnaposto**. Ogni segnaposto è una variabile specifica per un ambiente specifico e l’estensione Chrome modificherà tale variabile per semplificare la copia di codice e testo dalle pagine dei tutorial e incollarla nelle varie interfacce utente che verranno utilizzate come parte dell’esercitazione.
+Questo tutorial è stato reso generico, in modo che possa essere riutilizzato facilmente da chiunque, utilizzando qualsiasi istanza Adobe Experience Cloud.
+
+Per rendere riutilizzabile la documentazione, nell&#39;esercitazione sono state introdotte **Variabili di ambiente**. Di conseguenza, nella documentazione troverai i **segnaposto** seguenti. Ogni segnaposto è una variabile specifica per un ambiente specifico e l’estensione Chrome modificherà tale variabile per semplificare la copia di codice e testo dalle pagine dei tutorial e incollarla nelle varie interfacce utente che verranno utilizzate come parte dell’esercitazione.
 
 Di seguito è riportato un esempio di tali valori. Attualmente, questi valori non possono ancora essere utilizzati, ma non appena installi e attivi l’estensione Chrome, vedrai che queste variabili cambiano in testo normale che puoi copiare e riutilizzare.
 
 | Nome | Chiave | Esempio |
 |:-------------:| :---------------:| :---------------:|
-| ID organizzazione AEP IMS | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
-| Nome organizzazione IMS AEP | `--aepImsOrgName--` | `Experience Platform International` |
+| ID organizzazione IMS | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| Nome organizzazione IMS | `--aepImsOrgName--` | `Experience Platform International` |
 | ID tenant AEP | `--aepTenantId--` | `_experienceplatform` |
 | Nome sandbox AEP | `--aepSandboxName--` | `one-adobe` |
 | Profilo Allievo LDAP | `--aepUserLdap--` | `vangeluw` |
@@ -58,7 +59,7 @@ Nel menu **extensions**, fai clic sull&#39;icona **puzzle** e aggiungi l&#39;est
 
 ## Configurare l&#39;estensione Chrome
 
-Vai a [https://experienceleague.adobe.com/it/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/it/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} e fai clic sull&#39;icona dell&#39;estensione per aprirla.
+Vai a [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} e fai clic sull&#39;icona dell&#39;estensione per aprirla.
 
 ![DSN](./images/tuthome.png)
 
@@ -135,7 +136,7 @@ Dopo aver attivato la configurazione, accanto alle iniziali dell’ambiente comp
 
 ## Verificare il contenuto del tutorial
 
-Come test, passa a [questa pagina](https://experienceleague.adobe.com/it/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
+Come test, passa a [questa pagina](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
 
 Ora tutte le **Variabili di ambiente** in questa pagina sono state sostituite dai loro valori effettivi, in base all&#39;ambiente attivato nell&#39;estensione chrome.
 
