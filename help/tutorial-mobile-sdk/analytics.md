@@ -171,7 +171,7 @@ Osserva quanto segue nella mappatura di Analytics:
 
 ## Mappatura con dati contestuali
 
-I dati XDM inoltrati ad Analytics vengono convertiti in [dati contestuali](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=en), inclusi i campi standard e personalizzati.
+I dati XDM inoltrati ad Analytics vengono convertiti in [dati contestuali](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=it), inclusi i campi standard e personalizzati.
 
 La chiave dei dati contestuali è costruita seguendo questa sintassi:
 
