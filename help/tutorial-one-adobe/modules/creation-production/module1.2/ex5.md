@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
 source-wordcount: '2674'
 ht-degree: 0%
@@ -250,7 +250,7 @@ Ora dovresti visualizzare un prompt all’interno di Frame.io. Non compilare anc
 
 ![I/O fotogrammi](./images/frame38.png)
 
-Torna a Workfront Fusion e fai clic sul fumetto nel modulo **Risposta webhook**. In **OUTPUT** verrà visualizzato il corpo contenente il payload JSON per il modulo. Fai di nuovo clic su **Esegui**.
+Torna a Workfront Fusion e fai clic sul fumetto nel modulo **Risposta webhook**. In **INPUT** verrà visualizzato il corpo contenente il payload JSON per il modulo. Fai di nuovo clic su **Esegui**.
 
 ![I/O fotogrammi](./images/frame40.png)
 

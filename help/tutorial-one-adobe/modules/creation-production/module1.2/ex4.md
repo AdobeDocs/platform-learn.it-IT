@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
-source-wordcount: '2050'
+source-wordcount: '2109'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,10 @@ Fare clic sulla freccia per aprire il menu a discesa e selezionare **Clone**.
 ![WF Fusion](./images/wffc2.png)
 
 Imposta **Name** dello scenario clonato su `--aepUserLdap-- - Firefly + Photoshop` e seleziona il **team di destinazione** appropriato. Fai clic su **Aggiungi** per aggiungere un nuovo webhook.
+
+>[!NOTE]
+>
+>L&#39;opzione per selezionare un **team di destinazione** potrebbe non essere visualizzata. Questa opzione viene visualizzata solo se sei un utente che fa parte di più di 1 team in Workfront Fusion. Se non trovi questa opzione, significa semplicemente che sei stato aggiunto solo a 1 team, quindi non è necessaria alcuna scelta.
 
 ![WF Fusion](./images/wffc3.png)
 
@@ -214,7 +218,7 @@ Incolla il nome **2048x2048-background** nella finestra di dialogo di Workfront 
 
 Scorri verso il basso fino a visualizzare **Input**. Ora è necessario definire cosa deve essere inserito nel livello di sfondo. In questo caso, è necessario selezionare l&#39;output del modulo **Adobe Firefly**, che contiene l&#39;immagine generata dinamicamente.
 
-Per **Archiviazione**, selezionare **Esterna**. Per **Percorso file**, copiare e incollare la variabile `{{XX.details[].url}}` dall&#39;output del modulo **Adobe Firefly**. Sostituisci **XX** nella variabile con il numero di sequenza del modulo **Adobe Firefly**, che in questo esempio è **22**.
+Per **Archiviazione**, selezionare **Esterna**. Per **Percorso file**, è necessario copiare e incollare la variabile `{{XX.details[].url}}` dall&#39;output del modulo **Adobe Firefly**, ma è necessario sostituire **XX** nella variabile con il numero di sequenza del modulo **Adobe Firefly**, che in questo esempio è **22**.
 
 ![WF Fusion](./images/wffc28.png)
 

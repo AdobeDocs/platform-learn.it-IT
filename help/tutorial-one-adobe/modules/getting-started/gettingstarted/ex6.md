@@ -4,9 +4,9 @@ description: Guida introduttiva ad Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
+source-git-commit: 3b6ae4bb4eb2d9f189438dddc461bb0f2a0a9aac
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Seleziona **Creative Cloud** e scegli **Firefly - Firefly Services**, quindi sel
 
 ![Nuova integrazione Adobe I/O](./images/api3.png){zoomable="yes"}
 
-Immetti un nome per le credenziali: `--aepUserLdap-- - One Adobe OAuth credential`e seleziona **Avanti**.
+Specifica un nome per le credenziali: `--aepUserLdap-- - One Adobe OAuth credential` e seleziona **Avanti**.
 
 ![Nuova integrazione Adobe I/O](./images/api4.png){zoomable="yes"}
 
@@ -101,6 +101,10 @@ Successivamente, devi selezionare un profilo di prodotto che definisca quali aut
 
 Selezionare **Adobe Experience Platform - Tutti gli utenti - PROD**.
 
+>[!NOTE]
+>
+>Il nome del profilo di prodotto per AEP dipende da come è stato configurato l’ambiente. Se il profilo di prodotto sopra indicato non viene visualizzato, è possibile che sia presente un profilo di prodotto denominato **Default Production All Access**. Se non sai quale scegliere, rivolgiti all’amministratore di sistema di AEP.
+
 Seleziona **Salva API configurata**.
 
 ![Archiviazione Azure](./images/aep4.png){zoomable="yes"}
@@ -119,7 +123,7 @@ Seleziona **Modifica progetto**.
 
 ![Nuova integrazione Adobe I/O](./images/api14.png){zoomable="yes"}
 
-Immetti un nome descrittivo per l&#39;integrazione: `--aepUserLdap-- One Adobe tutorial`e seleziona **Salva**.
+Immetti un nome descrittivo per l&#39;integrazione: `--aepUserLdap-- One Adobe tutorial` e seleziona **Salva**.
 
 ![Nuova integrazione Adobe I/O](./images/api15.png){zoomable="yes"}
 
