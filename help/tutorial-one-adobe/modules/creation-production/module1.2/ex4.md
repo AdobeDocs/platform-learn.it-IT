@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: 9ddabdf0b66ea4772352f5aa82c612fa07891db3
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2058'
 ht-degree: 1%
 
 ---
@@ -125,9 +125,13 @@ Dopo aver compilato tutti i campi, fai clic su **Continua**. La connessione verr
 
 ![WF Fusion](./images/wffcff6.png)
 
-Selezionare quindi la variabile **prompt** fornita allo scenario dal **webhook personalizzato** in ingresso. Fai clic su **OK**.
+Selezionare quindi la variabile **prompt** fornita allo scenario dal **webhook personalizzato** in ingresso.
 
 ![WF Fusion](./images/wffcff7.png)
+
+Quindi, impostare **Model version** **prompt** su **image4 standard**. Fai clic su **OK**.
+
+![WF Fusion](./images/wffcff7b.png)
 
 Prima di continuare, è necessario disabilitare la vecchia route nello scenario come per questo esercizio, utilizzerai solo la nuova route che stai configurando al momento. A tale scopo, fare clic sull&#39;icona **chiave inglese** tra il modulo **Router** e il modulo **Iterator** e selezionare **Disattiva route**.
 
@@ -261,8 +265,6 @@ Dovresti vedere questo. Fai clic sul fumetto nel modulo **Adobe Photoshop - Appl
 
 ## 1.2.4.3 Modificare i livelli di testo del file PSD
 
-### Testo invito all&#39;azione
-
 Passa il puntatore del mouse sul modulo **Adobe Photoshop - Applica modifiche PSD** e fai clic sull&#39;icona **+**.
 
 ![WF Fusion](./images/wffc34.png)
@@ -277,67 +279,59 @@ Selezionare **Modifica livelli di testo**.
 
 Dovresti vedere questo. Selezionare innanzitutto la connessione Adobe Photoshop già configurata in precedenza, che deve essere denominata `--aepUserLdap-- Adobe IO`.
 
-È ora necessario definire il percorso del **file di input**, che è l&#39;output del passaggio precedente e in **Livelli**, è necessario immettere il **Nome** del livello di testo che si desidera modificare.
+È ora necessario definire il percorso del **file di input**, che è l&#39;output del passaggio precedente e in **Livelli**, sarà necessario fare clic su **+ Aggiungi elemento** per ogni livello per il quale è necessario modificare il testo.
 
 ![WF Fusion](./images/wffc37.png)
 
-Per il **file di input**, selezionare **Azure** per **Archiviazione file di input** e assicurarsi di selezionare l&#39;output della richiesta precedente, **Adobe Photoshop - Applica modifiche PSD**, che è possibile utilizzare da qui: `data[]._links.renditions[].href`
+Per il **file di input**, selezionare **Azure** per **Archiviazione file di input** e assicurarsi di selezionare l&#39;output della richiesta precedente, **Adobe Photoshop - Applica modifiche PSD**, che è possibile definire come segue: ``{{XX.data[].`_links`.renditions[].href}}`` (sostituire XX con il numero di sequenza del modulo precedente Adobe Photoshop - Applica modifiche PSD).
+
+Fare clic su **+Aggiungi elemento** in **Livelli** per iniziare ad aggiungere i livelli di testo da aggiornare.
 
 ![WF Fusion](./images/wffc37a.png)
 
-Apri il file **citisignal-fiber.psd**. Nel file, noterai che il livello contenente l&#39;invito all&#39;azione è denominato **2048x2048-cta**.
+È necessario apportare due modifiche. È necessario aggiornare il testo di CTA e il testo del pulsante nel file **citisignal-fiber.psd**.
+
+Per trovare i nomi dei livelli, apri il file **citisignal-fiber.psd**. Nel file, noterai che il livello contenente l&#39;invito all&#39;azione è denominato **2048x2048-cta**.
 
 ![WF Fusion](./images/wffc38.png)
 
-Immetti il nome **2048x2048-cta** in **Nome** nella finestra di dialogo.
+Nel file **citisignal-fiber.psd**, noterai inoltre che il livello contenente il call to action è denominato **2048x2048-button-text**.
+
+![WF Fusion](./images/wffc44.png)
+
+Devi innanzitutto configurare le modifiche da apportare al livello **2048x2048-cta**. Immetti il nome **2048x2048-cta** in **Nome** nella finestra di dialogo.
 
 ![WF Fusion](./images/wffc39.png)
 
-Scorri verso il basso fino a visualizzare **Testo** > **Contenuto**. Selezionare la variabile **cta** dal payload del webhook.
+Scorri verso il basso fino a visualizzare **Testo** > **Contenuto**. Selezionare la variabile **cta** dal payload del webhook. Fai clic su **Aggiungi**.
 
 ![WF Fusion](./images/wffc40.png)
 
-Scorri verso il basso fino a visualizzare **Output**. Per **Archiviazione**, selezionare **Azure**. Per **Percorso file**, immettere il percorso seguente. Si noti l&#39;aggiunta della variabile `{{timestamp}}` al nome file utilizzata per garantire che ogni file generato abbia un nome univoco. Impostare inoltre **Type** su **vnd.adobe.photoshop**. Fai clic su **OK**.
+Dovresti vedere questo. Fai clic su **+Aggiungi elemento** in **Livelli** per iniziare ad aggiungere i livelli di testo da aggiornare.
+
+![WF Fusion](./images/wffc40a.png)
+
+Immetti il nome **2048x2048-button-text** in **Name** nella finestra di dialogo.
+
+![WF Fusion](./images/wffc40b.png)
+
+Scorri verso il basso fino a visualizzare **Testo** > **Contenuto**. Seleziona la variabile **button** dal payload del webhook. Fai clic su **Aggiungi**.
+
+![WF Fusion](./images/wffc40c.png)
+
+Dovresti vedere questo.
+
+![WF Fusion](./images/wffc40d.png)
+
+Scorri verso il basso fino a visualizzare **Output**. Per **Archiviazione**, selezionare **Azure**. Per **Percorso file**, immettere il percorso seguente. Si noti l&#39;aggiunta della variabile `{{timestamp}}` al nome file utilizzata per garantire che ogni file generato abbia un nome univoco. Impostare inoltre **Type** su **vnd.adobe.photoshop**.
 
 `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
 
 ![WF Fusion](./images/wffc41.png)
 
-### Testo pulsante
+Imposta **Type** su **vnd.adobe.photoshop**. Fai clic su **OK**.
 
-Fare clic con il pulsante destro del mouse sul modulo appena creato e selezionare **Clone**. Verrà creato un secondo modulo simile.
-
-![WF Fusion](./images/wffc42.png)
-
-Connetti il modulo clonato al precedente modulo **Adobe Photoshop - Modifica livelli di testo**.
-
-![WF Fusion](./images/wffc42a.png)
-
-Dovresti vedere questo. Selezionare innanzitutto la connessione Adobe Photoshop già configurata in precedenza, che deve essere denominata `--aepUserLdap-- Adobe IO`.
-
-È ora necessario definire il percorso del **file di input**, che è l&#39;output del passaggio precedente e in **Livelli**, è necessario immettere il **Nome** del livello di testo che si desidera modificare.
-
-![WF Fusion](./images/wffc43.png)
-
-Per il **file di input**, selezionare **Azure** per **Archiviazione file di input** e assicurarsi di selezionare l&#39;output della richiesta precedente, **Adobe Photoshop - Modifica livelli di testo**, che è possibile utilizzare da qui: `data[]._links.renditions[].href`
-
-Apri il file **citisignal-fiber.psd**. Nel file, noterai che il livello contenente l&#39;invito all&#39;azione è denominato **2048x2048-button-text**.
-
-![WF Fusion](./images/wffc44.png)
-
-Immetti il nome **2048x2048-button-text** in **Name** nella finestra di dialogo.
-
-![WF Fusion](./images/wffc43.png)
-
-Scorri verso il basso fino a visualizzare **Testo** > **Contenuto**. Seleziona la variabile **button** dal payload del webhook.
-
-![WF Fusion](./images/wffc45.png)
-
-Scorri verso il basso fino a visualizzare **Output**. Per **Archiviazione**, selezionare **Azure**. Per **Percorso file**, immettere il percorso seguente. Si noti l&#39;aggiunta della variabile `{{timestamp}}` al nome file utilizzata per garantire che ogni file generato abbia un nome univoco. Impostare inoltre **Type** su **vnd.adobe.photoshop**. Fai clic su **OK**.
-
-`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
-
-![WF Fusion](./images/wffc46.png)
+![WF Fusion](./images/wffc41a.png)
 
 Fai clic su **Salva** per salvare le modifiche.
 
@@ -369,9 +363,13 @@ Dovresti vedere questo. Incolla il payload seguente in **Body**.
 
 ![WF Fusion](./images/wffc51.png)
 
-Copiare e incollare la variabile `{{XX.data[]._links.renditions[].href}}` e sostituire **XX** con il numero di sequenza dell&#39;ultimo modulo **Adobe Photoshop - Modifica livelli di testo**, che in questo caso è **25**. Abilitare la casella di controllo per **Mostra impostazioni avanzate**, quindi fare clic su **Aggiungi elemento**.
+Copiare e incollare la variabile `{{XX.data[]._links.renditions[].href}}` e sostituire **XX** con il numero di sequenza dell&#39;ultimo modulo **Adobe Photoshop - Modifica livelli di testo**, che in questo caso è **30**.
 
 ![WF Fusion](./images/wffc52.png)
+
+Abilitare la casella di controllo per **Mostra impostazioni avanzate**, quindi fare clic su **Aggiungi elemento**.
+
+![WF Fusion](./images/wffc52b.png)
 
 Nel campo **Chiave** immettere `Content-Type`. Nel campo **Valore** immettere `application/json`. Fai clic su **Aggiungi**.
 
