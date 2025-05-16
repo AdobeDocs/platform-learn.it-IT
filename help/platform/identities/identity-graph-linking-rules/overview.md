@@ -24,7 +24,7 @@ ht-degree: 17%
 
 Ottieni una panoramica del modo in cui le regole di collegamento del grafico delle identità aiutano gli architetti di dati a mantenere profili cliente precisi e a evitare la compressione del grafico. Per ulteriori informazioni, consulta la [documentazione sulle regole di collegamento del grafico delle identità](https://experienceleague.adobe.com/it/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
 
->[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448280/?learn=on&enablevpops&captions=ita)
 
 ## Configurazione
 
@@ -41,7 +41,7 @@ Scopri come simulare e applicare le regole.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="graph-simulation.md" title="Regole di collegamento del grafico delle identità - Simulazione del grafico" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1747355376342" alt="Regole di collegamento del grafico delle identità - Simulazione del grafico"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444051/?format=jpeg&nocache=1747355376342&captions=ita" alt="Regole di collegamento del grafico delle identità - Simulazione del grafico"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
