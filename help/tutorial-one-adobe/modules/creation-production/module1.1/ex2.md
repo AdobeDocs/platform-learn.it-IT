@@ -6,10 +6,10 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
 workflow-type: tm+mt
-source-wordcount: '1438'
-ht-degree: 1%
+source-wordcount: '1918'
+ht-degree: 0%
 
 ---
 
@@ -17,11 +17,47 @@ ht-degree: 1%
 
 Scopri come ottimizzare il processo di Firefly utilizzando Microsoft Azure e gli URL prefirmati.
 
-## 1.1.2.1 Crea una sottoscrizione Azure
+## 1.1.2.1 Cosa sono gli URL prefirmati?
+
+Un URL preceduto è un URL che consente l&#39;accesso temporaneo a un oggetto specifico in un percorso di archiviazione. Utilizzando l’URL, un utente può ad esempio LEGGERE l’oggetto o SCRIVERE un oggetto (o aggiornare un oggetto esistente). L’URL contiene parametri specifici impostati dall’applicazione.
+
+Nel contesto della creazione dell&#39;automazione della supply chain dei contenuti, spesso è necessario eseguire più operazioni sui file per un caso d&#39;uso specifico. Ad esempio, potrebbe essere necessario modificare lo sfondo di un file, il testo di vari livelli, ecc. Non è sempre possibile eseguire tutte le operazioni sui file contemporaneamente, il che rende necessario un approccio in più passaggi. Dopo ogni passaggio intermedio, l’output è quindi un file temporaneo necessario per l’esecuzione del passaggio successivo. Una volta eseguito il passaggio successivo, il file temporaneo perde rapidamente valore e spesso non è più necessario, pertanto deve essere eliminato.
+
+Adobe Firefly Services attualmente supporta i seguenti domini:
+
+- Amazon AWS: *.amazonaws.com
+- Microsoft Azure: *.windows.net
+- Dropbox: *.dropboxusercontent.com
+
+Il motivo per cui spesso vengono utilizzate soluzioni di archiviazione cloud è che le risorse intermedie che vengono create perdono valore rapidamente. Il problema che viene risolto tramite URL prefirmati è spesso risolto al meglio con una soluzione di storage di base, che in genere è uno dei servizi cloud sopra indicati.
+
+All’interno dell’ecosistema Adobe sono inoltre disponibili soluzioni di storage come Frame.io, Workfront Fusion e Adobe Experience Manager assets. Queste soluzioni supportano anche URL prefirmati, che spesso diventano una scelta da effettuare durante l’implementazione. La scelta è spesso basata su una combinazione di applicazioni già disponibili e costi di storage.
+
+Di conseguenza, gli URL prefirmati vengono utilizzati in combinazione con le operazioni di Adobe Firefly Services per i seguenti motivi:
+
+- le organizzazioni spesso devono elaborare più modifiche alla stessa immagine in fasi intermedie, e lo storage intermedio è necessario per rendere possibile tale operazione.
+- l’accesso in lettura e scrittura da posizioni di archiviazione cloud deve essere sicuro e in un ambiente lato server non è possibile effettuare l’accesso manualmente, pertanto la sicurezza deve essere salvata direttamente nell’URL.
+
+Un URL prefirmato utilizza tre parametri per limitare l’accesso all’utente:
+
+- Percorso di archiviazione: potrebbe trattarsi di un percorso bucket AWS S3, un percorso account di archiviazione Microsoft Azure con contenitore
+- Nome file: il file specifico che deve essere letto, aggiornato ed eliminato.
+- Parametro stringa query: un parametro stringa query inizia sempre con un punto interrogativo ed è seguito da una serie complessa di parametri
+
+Esempio:
+
+- **Amazon AWS**: `https://bucket.s3.eu-west-2.amazonaws.com/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AXXXXXXXXXX%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250510T171315Z&X-Amz-Expires=1800&X-Amz-Signature=XXXXXXXXX&X-Amz-SignedHeaders=host`
+- **Microsoft Azure**: `https://storageaccount.blob.core.windows.net/container/image.png?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=XXXXXX%3D`
+
+## 1.1.2.2 Crea una sottoscrizione Azure
 
 >[!NOTE]
 >
 >Se disponi già di una sottoscrizione Azure, puoi saltare questo passaggio. Procedere con l&#39;esercizio successivo in questo caso.
+
+>[!NOTE]
+>
+>Se segui questa esercitazione come parte di un workshop guidato di persona o di un corso di formazione guidato su richiesta, probabilmente hai già accesso a un account di archiviazione di Microsoft Azure. In tal caso, non è necessario creare un account personale: utilizza l’account fornito come parte del corso di formazione.
 
 Vai a [https://portal.azure.com](https://portal.azure.com){target="_blank"} e accedi con il tuo account di Azure. Se non ne hai uno, utilizza il tuo indirizzo e-mail personale per creare il tuo account di Azure.
 
@@ -43,7 +79,7 @@ Al termine del processo di abbonamento, sei a posto.
 
 ![Archiviazione Azure](./images/06azuresubscriptionok.png){zoomable="yes"}
 
-## 1.1.2.2 Crea account di archiviazione Azure
+## 1.1.2.3 Crea account di archiviazione Azure
 
 Cercare `storage account` e selezionare **Account di archiviazione**.
 
@@ -85,7 +121,7 @@ Il contenitore è ora pronto per essere utilizzato.
 
 ![Archiviazione Azure](./images/azs9.png){zoomable="yes"}
 
-## 1.1.2.3 Installare Azure Storage Explorer
+## 1.1.2.4 Installare Azure Storage Explorer
 
 [Scarica Microsoft Azure Storage Explorer per gestire i file](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}. Selezionare la versione corretta per il sistema operativo specifico, scaricarla e installarla.
 
@@ -127,7 +163,7 @@ Apri **Contenitori BLOB** e seleziona il contenitore creato nell&#39;esercizio p
 
 ![Archiviazione Azure](./images/az18.png){zoomable="yes"}
 
-## 1.1.2.4 Caricamento manuale del file e utilizzo di un file immagine come riferimento di stile
+## 1.1.2.5 Caricamento manuale del file e utilizzo di un file immagine come riferimento di stile
 
 Carica un file di immagine di tua scelta o [questo file](./images/gradient.jpg){target="_blank"} nel contenitore.
 
@@ -166,7 +202,7 @@ Un&#39;altra immagine viene visualizzata con `horses in a field`, ma questa volt
 
 ![Archiviazione Azure](./images/az26.png){zoomable="yes"}
 
-## Caricamento file programmatico 1.1.2.5
+## Caricamento file programmatico 1.1.2.6
 
 Per utilizzare il caricamento di file a livello di programmazione con gli account di archiviazione di Azure, è necessario creare un nuovo token **firma di accesso condiviso (SAS)** con autorizzazioni che consentono di scrivere un file.
 
@@ -247,7 +283,7 @@ In Azure Storage Explorer aggiorna il contenuto della cartella e viene visualizz
 
 ![Archiviazione Azure](./images/az38.png){zoomable="yes"}
 
-## 1.1.2.6 utilizzo file programmatico
+## 1.1.2.7 utilizzo file programmatico
 
 Per leggere a livello di programmazione i file dagli account di archiviazione di Azure nel lungo termine, è necessario creare un nuovo token **firma di accesso condiviso (SAS)**, con autorizzazioni che consentono di leggere un file. Tecnicamente puoi utilizzare il token SAS creato nell&#39;esercizio precedente, ma è consigliabile disporre di un token separato con solo autorizzazioni **Lettura** e un token separato con solo autorizzazioni **Scrittura**.
 
