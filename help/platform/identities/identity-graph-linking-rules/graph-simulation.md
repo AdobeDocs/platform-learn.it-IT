@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Scopri come utilizzare il simulatore grafico per testare le regole di collegamento del grafico delle identità in Adobe Experience Platform. Sperimenta diversi scenari e gioca con &quot;univoco per grafico&quot; e impostazioni di priorità per verificare quali regole sono necessarie per la tua azienda per evitare il collasso del grafico. Per ulteriori informazioni, vedere la [Guida dell&#39;interfaccia utente di Graph Simulation](https://experienceleague.adobe.com/it/docs/experience-platform/identity/features/identity-graph-linking-rules/graph-simulation).
 
->[!VIDEO](https://video.tv.adobe.com/v/3444032/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3444051/?learn=on&enablevpops&captions=ita)
