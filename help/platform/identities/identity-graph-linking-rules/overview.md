@@ -9,22 +9,18 @@ duration: 262
 last-substantial-update: 2025-02-27T00:00:00Z
 jira: KT-16731
 exl-id: a61a83fe-76af-4b29-95ee-2fdb9b6bc096
-source-git-commit: 90671959b653e120f93bca216a4da116a8f1c3bb
+source-git-commit: 837c9b4386fbca106db313ee4e27fc7b69ea54ff
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 17%
+source-wordcount: '183'
+ht-degree: 20%
 
 ---
 
 # Panoramica delle regole di collegamento del grafo delle identità
 
->[!AVAILABILITY]
->
->Le regole di collegamento del grafo identità sono attualmente a disponibilità limitata. Contatta il team del tuo account Adobe per informazioni su come accedere alla funzione nelle sandbox di sviluppo.
+Ottieni una panoramica del modo in cui le regole di collegamento del grafico delle identità aiutano gli architetti di dati a mantenere profili cliente precisi e a evitare la compressione del grafico. Per ulteriori informazioni, consulta la [documentazione sulle regole di collegamento del grafico delle identità](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
 
-Ottieni una panoramica del modo in cui le regole di collegamento del grafico delle identità aiutano gli architetti di dati a mantenere profili cliente precisi e a evitare la compressione del grafico. Per ulteriori informazioni, consulta la [documentazione sulle regole di collegamento del grafico delle identità](https://experienceleague.adobe.com/it/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
-
->[!VIDEO](https://video.tv.adobe.com/v/3448280/?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
 
 ## Configurazione
 
@@ -41,7 +37,7 @@ Scopri come simulare e applicare le regole.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="graph-simulation.md" title="Regole di collegamento del grafico delle identità - Simulazione del grafico" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444051/?format=jpeg&nocache=1747355376342&captions=ita" alt="Regole di collegamento del grafico delle identità - Simulazione del grafico"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1747355376342" alt="Regole di collegamento del grafico delle identità - Simulazione del grafico"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
