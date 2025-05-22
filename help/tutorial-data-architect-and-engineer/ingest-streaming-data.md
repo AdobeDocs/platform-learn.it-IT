@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: e26f2add184031fd95561bd560b24ad73bb73d01
 workflow-type: tm+mt
-source-wordcount: '3309'
+source-wordcount: '3272'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ Nell’interfaccia di Data Collection è necessario completare due attività pri
 
 Prima di iniziare gli esercizi, guarda questi due brevi video per ulteriori informazioni sull’acquisizione di dati in streaming e sul Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/36263?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/37267?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ Experience Platform Debugger è un’estensione disponibile per i browser Chrome
 
 Se non hai mai utilizzato il debugger prima, e questo è diverso dal precedente Adobe Experience Cloud Debugger, potresti voler guardare questo video di panoramica di cinque minuti:
 
->[!VIDEO](https://video.tv.adobe.com/v/36164?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Apri il sito web Luma.
 
@@ -288,7 +288,7 @@ Experience Platform Debugger dispone di una funzione interessante che consente d
    ![proprietà tag sostituita](assets/websdk-debugger-propertyReplaced.png)
 1. Vai a **[!UICONTROL Riepilogo]** nella barra di navigazione a sinistra per visualizzare i dettagli della proprietà [!UICONTROL Launch]
    ![Scheda Riepilogo](assets/websdk-debugger-summary.png)
-1. Vai ora a **[!UICONTROL AEP Web SDK]** nell&#39;area di navigazione a sinistra per visualizzare le **[!UICONTROL richieste di rete]**
+1. Vai ora a **[!UICONTROL AEP Web SDK]** nella barra di navigazione a sinistra per visualizzare le **[!UICONTROL richieste di rete]**
 1. Apri la riga **[!UICONTROL events]**
 
    ![Richiesta Adobe Experience Platform Web SDK](assets/websdk-debugger-platformNetwork.png)
@@ -418,7 +418,14 @@ Dopo aver acquisito il valore ID CRM, è necessario associarlo a un tipo di elem
 
 1. Come **[!UICONTROL ID]**, seleziona l&#39;icona per aprire la selezione modale dell&#39;elemento dati e scegli l&#39;elemento dati `CRM Id`
 1. Come **[!UICONTROL Stato autenticato]**, selezionare **[!UICONTROL Stato autenticato]**
-1. Lascia **[!UICONTROL Primario]** _deselezionato_. Poiché l&#39;ID del sistema di gestione delle relazioni con i clienti non è presente per la maggior parte dei visitatori del sito Web Luma, _non desideri ignorare l&#39;ECID come identificatore primario_. Sarebbe un caso d’uso raro utilizzare qualcosa di diverso dall’ECID come identificatore primario. Di solito non menziono le impostazioni predefinite in queste istruzioni, ma sto chiamando questo per aiutarti a evitare problemi più avanti nella tua implementazione.
+1. Seleziona **[!UICONTROL primario]**
+
+   >[!TIP]
+   >
+   > Adobe consiglia di inviare identità che rappresentano una persona, ad esempio `Luma CRM Id`, come identità [!UICONTROL primaria].
+   >
+   > Se la mappa delle identità contiene l&#39;identificatore della persona, ad esempio `Luma CRM Id`, l&#39;identificatore della persona diventa l&#39;identità [!UICONTROL primaria]. In caso contrario, `ECID` diventa l&#39;identità [!UICONTROL primary].
+
 1. Seleziona il pulsante **[!UICONTROL Salva nella libreria]** (`Luma Platform Tutorial` deve essere ancora la libreria di lavoro)
    ![Aggiungere l&#39;ID CRM all&#39;elemento dati Identity Map](assets/websdk-property-dataElement-identityMap.png)
 
