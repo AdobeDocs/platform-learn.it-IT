@@ -20,4 +20,4 @@ ht-degree: 0%
 
 L’agente di supporto del prodotto è un agente di intelligenza artificiale sempre attivo che può aiutare a risolvere i problemi di assistenza clienti sfruttando una vasta gamma di risorse di conoscenza curate dai team di supporto esperti di Adobe e persino i tuoi dati per consentirti di risolvere i problemi all’interno dei flussi di lavoro. Se hai bisogno di ulteriore assistenza, l’agente di supporto del prodotto può creare un caso di supporto con informazioni contestuali dettagliate, riducendo notevolmente il tempo e il lavoro necessari per creare i ticket di supporto. Per ulteriori informazioni, vedere la [documentazione dell&#39;agente di supporto del prodotto](https://experienceleague.adobe.com/it/docs/experience-platform/ai-assistant/new-features/customer-support).
 
->[!VIDEO](https://video.tv.adobe.com/v/3443183/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443191/?learn=on&enablevpops&captions=ita)
