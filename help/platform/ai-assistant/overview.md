@@ -9,10 +9,10 @@ duration: 143
 last-substantial-update: 2024-06-14T00:00:00Z
 jira: KT-15749
 exl-id: 15b9a4e3-0971-4460-859b-45118d382f64
-source-git-commit: 36062e1442e20f6697f058db762f6ff2d50ead49
+source-git-commit: f003a65188c0201030b8ecca0c0838088c814e47
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 5%
+source-wordcount: '586'
+ht-degree: 6%
 
 ---
 
@@ -38,7 +38,7 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="access.md" title="Ottenere l’accesso all’Assistente AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1739896314415" alt="Ottenere l’accesso all’Assistente AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1748392732990" alt="Ottenere l’accesso all’Assistente AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -61,7 +61,7 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discoverability-panel.md" title="Utilizzare il pannello individuabilità in AI Assistant" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440970/?format=jpeg&nocache=1739896314393&captions=ita" alt="Utilizzare il pannello individuabilità in AI Assistant"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440962/?format=jpeg&nocache=1748392732984" alt="Utilizzare il pannello individuabilità in AI Assistant"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -84,7 +84,7 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-responses.md" title="Convalidare le risposte dall’Assistente AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441747/?format=jpeg&nocache=1739896314405&captions=ita" alt="Convalidare le risposte dall’Assistente AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441738/?format=jpeg&nocache=1748392733006" alt="Convalidare le risposte dall’Assistente AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -122,7 +122,7 @@ Ci sono molti altri casi d’uso in cui l’Assistente AI può aiutarti a gestir
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="operational-insights.md" title="Ottenere informazioni operative con l’Assistente AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444040/?format=jpeg&nocache=1739896314636&captions=ita" alt="Ottenere informazioni operative con l’Assistente AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444031/?format=jpeg&nocache=1748392734347" alt="Ottenere informazioni operative con l’Assistente AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -130,7 +130,7 @@ Ci sono molti altri casi d’uso in cui l’Assistente AI può aiutarti a gestir
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="operational-insights.md" target="_blank" rel="referrer" title="Ottenere informazioni operative con l’Assistente AI">Ottieni informazioni operative con l'Assistente AI</a>
+                        <a href="operational-insights.md" target="_blank" rel="referrer" title="Ottenere informazioni operative con l’Assistente AI">Ottieni insight operativi con l’Assistente IA</a>
                     </p>
                     <p class="is-size-6">Scopri come utilizzare l’Assistente AI per scoprire informazioni operative su oggetti aziendali come pubblico, set di dati, schemi, destinazioni e percorsi in Adobe Experience Platform</p>
                 </div>
@@ -145,7 +145,7 @@ Ci sono molti altri casi d’uso in cui l’Assistente AI può aiutarti a gestir
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="find-unused-audiences.md" title="Assistente AI: caso di utilizzo per la pulizia del pubblico" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441995/?format=jpeg&nocache=1739896314622&captions=ita" alt="Assistente AI: caso di utilizzo per la pulizia del pubblico"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435532/?format=jpeg&nocache=1748392734324" alt="Assistente AI: caso di utilizzo per la pulizia del pubblico"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -168,7 +168,7 @@ Ci sono molti altri casi d’uso in cui l’Assistente AI può aiutarti a gestir
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="impact-analysis.md" title="Analisi dell’impatto con l’Assistente AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441688/?format=jpeg&nocache=1739896314647&captions=ita" alt="Analisi dell’impatto con l’Assistente AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441680/?format=jpeg&nocache=1748392734336" alt="Analisi dell’impatto con l’Assistente AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -204,7 +204,7 @@ L’Assistente AI è uno strumento utile per imparare nuovi prodotti o per otten
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-knowledge.md" title="Scopri le applicazioni Experience Platform con l’Assistente AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441032/?format=jpeg&nocache=1739896314791&captions=ita" alt="Scopri le applicazioni Experience Platform con l’Assistente AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441024/?format=jpeg&nocache=1748392735046" alt="Scopri le applicazioni Experience Platform con l’Assistente AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -227,7 +227,7 @@ L’Assistente AI è uno strumento utile per imparare nuovi prodotti o per otten
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="onboard.md" title="Utilizza l’Assistente AI per ridurre i tempi di onboarding" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1739896314802" alt="Utilizza l’Assistente AI per ridurre i tempi di onboarding"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1748392735030" alt="Utilizza l’Assistente AI per ridurre i tempi di onboarding"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -240,6 +240,41 @@ L’Assistente AI è uno strumento utile per imparare nuovi prodotti o per otten
                     <p class="is-size-6">Scopri come utilizzare l’Assistente AI per acquisire rapidamente nuove funzioni e ridurre i tempi di onboarding.</p>
                 </div>
                 <a href="onboard.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Osserva</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+
+## Supporto prodotto
+
+Risolvere i problemi e aprire i ticket di assistenza clienti.
+
+<!-- CARDS
+* product-support-agent.md
+-->
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Product Support Agent">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="product-support-agent.md" title="Agente di supporto prodotto" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443183/?format=jpeg&nocache=1748392735554" alt="Agente di supporto prodotto"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="product-support-agent.md" target="_blank" rel="referrer" title="Agente di supporto prodotto">Agente di supporto del prodotto</a>
+                    </p>
+                    <p class="is-size-6">L’agente di supporto del prodotto può contribuire a risolvere i problemi sfruttando un’ampia gamma di risorse di conoscenza curate dai team di supporto esperti di Adobe e persino i tuoi dati. Se hai bisogno di ulteriore assistenza, l’agente di supporto del prodotto può ora creare un caso di supporto con informazioni contestuali dettagliate.</p>
+                </div>
+                <a href="product-support-agent.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Osserva</span>
                 </a>
             </div>
@@ -262,7 +297,7 @@ Scopri le funzioni di sicurezza di AI Assistant.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="security-overview.md" title="Panoramica sulla sicurezza di AI Assistant" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441088/?format=jpeg&nocache=1739896315547&captions=ita" alt="Panoramica sulla sicurezza di AI Assistant"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441066/?format=jpeg&nocache=1748392736016" alt="Panoramica sulla sicurezza di AI Assistant"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
