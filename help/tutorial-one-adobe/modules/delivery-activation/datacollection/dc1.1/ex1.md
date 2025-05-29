@@ -4,9 +4,9 @@ description: Foundation - Configurazione di Adobe Experience Platform Data Colle
 kt: 5342
 doc-type: tutorial
 exl-id: 1f5dd730-d84a-4d3a-b5ef-2be3e089c7fd
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '573'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,13 @@ La Raccolta dati di Adobe Experience Platform viene utilizzata dai brand per div
 
 ## Esplorare l’interfaccia utente
 
-Vai a [Raccolta dati Adobe Experience Platform](https://experience.adobe.com/it#/data-collection/).
+Vai a [Raccolta dati Adobe Experience Platform](https://experience.adobe.com/it#/data-collection/). Assicurarsi di utilizzare l&#39;ambiente corretto, che dovrebbe essere `--aepImsOrgName--`.
+
+>[!NOTE]
+>
+>Questo tutorial è documentato utilizzando l&#39;ambiente **Experience Platform International**. È probabile che il nome dell&#39;ambiente sia diverso, quindi ogni volta che visualizzi il nome **Experience Platform International** in una schermata, devi sostituirlo con il nome del tuo ambiente, che dovrebbe essere `--aepImsOrgName--`.
+
+![Visualizzazione proprietà lancio](./images/launch0.png)
 
 Vai a **Tag**. Visualizzazione **[!UICONTROL Proprietà]** in corso. Le proprietà elencate qui sono per la gestione dei tutorial. Queste proprietà rappresentano:
 
@@ -57,7 +63,7 @@ Di seguito sono riportate alcune ulteriori informazioni per coloro che sono inte
 
 - [Guida utente di Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)
 - [Tutorial sull’implementazione di Adobe Experience Cloud con Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it)
-- [Configurare le autorizzazioni utente](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=it)
+- [Configurare le autorizzazioni utente](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)
 - [Documentazione API](https://developer.adobelaunch.com/api/)
 
 ## Passaggi successivi

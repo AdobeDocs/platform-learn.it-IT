@@ -4,10 +4,10 @@ description: Foundation - FAC - Creare schemi, modelli dati e collegamenti
 kt: 5342
 doc-type: tutorial
 exl-id: 3b999c1a-cf9e-44a3-8fc1-6a070c3aeb24
-source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
+source-git-commit: 915054a0342a0e5bb003d2fbc73d1540725aa5f0
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 2%
+source-wordcount: '683'
+ht-degree: 3%
 
 ---
 
@@ -67,7 +67,7 @@ Nel menu a sinistra, fai clic su **Modelli**, quindi vai a **Schemi**. Fare clic
 
 ![FAC](./images/fdb5.png)
 
-Selezionare il database federato e fare clic su **+ Aggiungi tabelle**.
+Seleziona il database federato e fai clic su **Avanti**.
 
 ![FAC](./images/fdb6.png)
 
@@ -79,7 +79,7 @@ Poi vedrai questo. Seleziona le 5 tabelle create in Snowflake prima:
 - `--aepUserLdap--_PERSONS`
 - `--aepUserLdap--_USERS`
 
-Fai clic su **Aggiungi**.
+Fai clic su **Avanti**.
 
 ![FAC](./images/fdb7.png)
 
@@ -94,7 +94,7 @@ Per ogni tabella è possibile:
 
 Per questo esercizio non sono necessarie modifiche.
 
-Fai clic su **Crea**.
+Fai clic su **Fine**.
 
 ![FAC](./images/fdb8.png)
 
@@ -106,7 +106,7 @@ Vedrai questo, con la possibilità di modificare la configurazione. Fai clic su 
 
 ![FAC](./images/fdb10.png)
 
-Viene quindi visualizzato un esempio dei dati.
+Viene quindi visualizzato un esempio dei dati. Questi dati vengono caricati direttamente da Snowflake e non vengono mantenuti in AEP.
 
 ![FAC](./images/fdb11.png)
 
@@ -136,9 +136,9 @@ Poi vedrai questo. Fai clic su **Salva**.
 
 Ora puoi iniziare a definire i collegamenti tra schemi. Per iniziare a definire un collegamento, fai clic su **Crea collegamenti**.
 
-![FAC](./images/fdb16.png)
+![FAC](./images/fdb16a.png)
 
-Definiamo innanzitutto il collegamento tra la tabella `--aepUserLdap--_USERS` e `--aepUserLdap--_PERSONS`.
+È innanzitutto necessario definire il collegamento tra la tabella `--aepUserLdap--_USERS` e `--aepUserLdap--_PERSONS`.
 
 Fai clic su **Aggiungi**.
 
@@ -150,7 +150,9 @@ Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro colle
 
 ![FAC](./images/fdb17.png)
 
-Definiamo quindi il collegamento tra la tabella `--aepUserLdap--_HOUSEHOLDS` e `--aepUserLdap--_PERSONS`.
+Definire quindi il collegamento tra la tabella `--aepUserLdap--_HOUSEHOLDS` e `--aepUserLdap--_PERSONS`.
+
+Fai clic su **Aggiungi**.
 
 ![FAC](./images/fdb19.png)
 
@@ -160,10 +162,11 @@ Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro colle
 
 ![FAC](./images/fdb20.png)
 
-Definiamo quindi il collegamento tra la tabella `--aepUserLdap--_USERS` e `--aepUserLdap--_MONTHLY_DATA_USAGE`.
+Definire quindi il collegamento tra la tabella `--aepUserLdap--_USERS` e `--aepUserLdap--_MONTHLY_DATA_USAGE`.
+
+Fai clic su **Aggiungi**.
 
 ![FAC](./images/fdb21.png)
-
 
 ### UTENTI - FAMIGLIE
 
@@ -171,7 +174,9 @@ Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro colle
 
 ![FAC](./images/fdb22.png)
 
-Definiamo quindi il collegamento tra la tabella `--aepUserLdap--_USERS` e `--aepUserLdap--_HOUSEHOLDS`.
+Definire quindi il collegamento tra la tabella `--aepUserLdap--_USERS` e `--aepUserLdap--_HOUSEHOLDS`.
+
+Fai clic su **Aggiungi**.
 
 ![FAC](./images/fdb23.png)
 
@@ -181,7 +186,9 @@ Allora tornerai qui. Fai clic su **Crea collegamenti** per creare un altro colle
 
 ![FAC](./images/fdb24.png)
 
-Definiamo quindi il collegamento tra la tabella `--aepUserLdap--_USERS` e `--aepUserLdap--_MOBILE_DATA_USAGE`.
+Definire quindi il collegamento tra la tabella `--aepUserLdap--_USERS` e `--aepUserLdap--_MOBILE_DATA_USAGE`.
+
+Fai clic su **Aggiungi**.
 
 ![FAC](./images/fdb25.png)
 
@@ -189,7 +196,7 @@ Dovresti vedere questo. Fai clic su **Salva**.
 
 ![FAC](./images/fdb26.png)
 
-La configurazione in AEP è terminata. Ora puoi iniziare a utilizzare i dati federati in una composizione di pubblico federato.
+L’impostazione del Federated Database in Adobe Experience Platform è ora completata. Ora puoi iniziare a utilizzare i dati federati in una composizione di pubblico federato.
 
 ## Passaggi successivi
 

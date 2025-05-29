@@ -4,9 +4,9 @@ description: Foundation - Real-time Customer Profile - Creazione di un pubblico 
 kt: 5342
 doc-type: tutorial
 exl-id: 4870ea42-810b-400b-8285-ab1f89c6a018
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '709'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ Seleziona **Genera regola** e fai clic su **Crea**.
 
 ![Segmentazione](./images/menusegbr.png)
 
-Nel nuovo generatore di pubblico, puoi notare immediatamente l&#39;opzione di menu **Attributi** e il riferimento a **Profilo individuale XDM**.
+Quando ti trovi nel generatore di tipi di pubblico, noterai immediatamente l&#39;opzione di menu **Attributi** e il riferimento a **Profilo individuale XDM**.
 
 ![Segmentazione](./images/segmentationui.png)
 
@@ -83,6 +83,10 @@ Il parametro di confronto deve essere **uguale a** e nel campo di input immetter
 
 ![Segmentazione](./images/pv.png)
 
+Imposta la condizione dell&#39;ora sul segmento su **Nelle ultime 24 ore**.
+
+![Segmentazione](./images/pv1.png)
+
 Ogni volta che aggiungi un elemento al generatore di pubblico, puoi fare clic sul pulsante **Aggiorna stima** per ottenere una nuova stima della popolazione nel pubblico.
 
 Finora hai utilizzato solo l’interfaccia utente per creare il pubblico, ma esiste anche un’opzione di codice per creare un pubblico.
@@ -102,7 +106,7 @@ Puoi anche visualizzare in anteprima un esempio dei profili cliente che fanno pa
 ![Segmentazione](./images/previewprofilesdtl.png)
 
 Infine, diamo un nome al pubblico,
-impostare **Metodo di valutazione** su **Streaming** e fare clic su **Pubblica**.
+impostare il **metodo di valutazione** su **Edge** e fare clic su **Pubblica**.
 
 Come convenzione di denominazione, utilizza:
 
