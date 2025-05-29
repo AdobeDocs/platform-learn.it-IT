@@ -63,7 +63,7 @@ Di seguito sono riportate alcune ulteriori informazioni per coloro che sono inte
 
 - [Guida utente di Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)
 - [Tutorial sull’implementazione di Adobe Experience Cloud con Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=it)
-- [Configurare le autorizzazioni utente](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)
+- [Configurare le autorizzazioni utente](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=it)
 - [Documentazione API](https://developer.adobelaunch.com/api/)
 
 ## Passaggi successivi
