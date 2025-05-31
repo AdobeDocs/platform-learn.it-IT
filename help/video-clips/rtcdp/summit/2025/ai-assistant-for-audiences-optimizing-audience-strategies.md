@@ -20,4 +20,4 @@ ht-degree: 0%
 Scopri in che modo l’Assistente AI per i tipi di pubblico consente di identificare segmenti di alto valore, ottimizzare le strategie per i tipi di pubblico e risparmiare tempo.
 
 <!-- 62_S508_3442517_109_ai-assistant-for-audiences-optimizing-audience-strategies -->
->[!VIDEO](https://video.tv.adobe.com/v/3458285/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459668/?learn=on&enablevpops=true&captions=ita)

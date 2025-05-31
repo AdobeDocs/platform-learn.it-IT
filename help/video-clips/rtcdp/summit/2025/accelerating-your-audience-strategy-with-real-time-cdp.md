@@ -20,4 +20,4 @@ ht-degree: 0%
 Scopri come accelerare la strategia del pubblico sfruttando Real-Time CDP per unificare i dati, personalizzare le esperienze e stimolare il coinvolgimento.
 
 <!-- 62_S508_3442517_45_accelerating-your-audience-strategy-with-realtime-cdp -->
->[!VIDEO](https://video.tv.adobe.com/v/3458220/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459613/?learn=on&enablevpops=true&captions=ita)

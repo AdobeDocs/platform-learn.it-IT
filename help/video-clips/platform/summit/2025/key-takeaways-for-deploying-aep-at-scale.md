@@ -20,4 +20,4 @@ ht-degree: 0%
 Comprendi le considerazioni critiche per l’implementazione di Adobe Experience Platform, tra cui governance, pianificazione della crescita e architettura.
 
 <!-- 62_S601_3442532_72_key-takeaways-for-deploying-aep-at-scale -->
->[!VIDEO](https://video.tv.adobe.com/v/3458314/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460526/?learn=on&enablevpops=true&captions=ita)

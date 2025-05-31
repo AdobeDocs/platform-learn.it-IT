@@ -20,4 +20,4 @@ ht-degree: 0%
 Scopri in che modo l’Assistente AI aiuta gli esperti di marketing a creare modelli predittivi e tipi di pubblico altamente mirati per le campagne.
 
 <!-- 62_OS512_3442427_175_creating-targeted-audiences-with-ai-assistant -->
->[!VIDEO](https://video.tv.adobe.com/v/3458186/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460195/?learn=on&enablevpops=true&captions=ita)

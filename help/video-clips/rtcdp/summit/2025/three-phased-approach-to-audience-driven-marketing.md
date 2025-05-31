@@ -20,4 +20,4 @@ ht-degree: 0%
 Scopri un semplice framework in tre fasi per creare, ridimensionare e ottimizzare le strategie di pubblico utilizzando Real-Time CDP.
 
 <!-- 72_S508_3442517_213_threephased-approach-to-audiencedriven-marketing -->
->[!VIDEO](https://video.tv.adobe.com/v/3458299/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3462998/?learn=on&enablevpops=true&captions=ita)

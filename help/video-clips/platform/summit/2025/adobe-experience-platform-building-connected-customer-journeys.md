@@ -20,4 +20,4 @@ ht-degree: 0%
 Scopri come Adobe Experience Platform abilita i percorsi di clienti collegati tramite dati, contenuti e attivazione cross-channel.
 
 <!-- 62_S655_3442541_51_adobe-experience-platform-building-connected-customer-journeys -->
->[!VIDEO](https://video.tv.adobe.com/v/3458326/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459635/?learn=on&enablevpops=true&captions=ita)

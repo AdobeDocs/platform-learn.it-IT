@@ -20,4 +20,4 @@ ht-degree: 0%
 Scopri in che modo Audience Portal in Adobe Real-Time CDP unifica i dati dei clienti, abilitando la gestione avanzata dell’audience e l’attivazione in tempo reale.
 
 <!-- 72_S508_3442517_82_audience-portal-centralizing-data-for-better-marketing-decisions -->
->[!VIDEO](https://video.tv.adobe.com/v/3458185/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459690/?learn=on&enablevpops=true&captions=ita)

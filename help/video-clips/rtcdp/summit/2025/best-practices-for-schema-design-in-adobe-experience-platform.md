@@ -20,4 +20,4 @@ ht-degree: 0%
 Evita costosi errori nella progettazione dello schema con queste best practice per l’estensibilità, la convalida e l’allineamento con il modello dati di Adobe Experience Platform.
 
 <!-- 72_S655_3442541_260_best-practices-for-schema-design-in-adobe-experience-platform -->
->[!VIDEO](https://video.tv.adobe.com/v/3458268/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460128/?learn=on&enablevpops=true&captions=ita)

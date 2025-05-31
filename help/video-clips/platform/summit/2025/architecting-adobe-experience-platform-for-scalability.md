@@ -20,4 +20,4 @@ ht-degree: 0%
 Scopri come strutturare Adobe Experience Platform per un’implementazione efficiente, bilanciando approcci centralizzati e decentralizzati.
 
 <!-- 62_S601_3442532_176_architecting-adobe-experience-platform-for-scalability -->
->[!VIDEO](https://video.tv.adobe.com/v/3458321/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459712/?learn=on&enablevpops=true&captions=ita)

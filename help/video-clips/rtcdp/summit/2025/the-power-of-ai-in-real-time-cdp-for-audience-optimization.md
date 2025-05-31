@@ -20,4 +20,4 @@ ht-degree: 0%
 Scopri in che modo l’Assistente AI per il pubblico in Adobe Real-Time CDP aiuta gli addetti al marketing a ottimizzare le strategie per il pubblico con stime delle dimensioni, punteggio di propensione e informazioni in tempo reale.
 
 <!-- 62_S508_3442517_109_the-power-of-ai-in-realtime-cdp-for-audience-optimization -->
->[!VIDEO](https://video.tv.adobe.com/v/3458207/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3463023/?learn=on&enablevpops=true&captions=ita)

@@ -20,4 +20,4 @@ ht-degree: 0%
 Scopri come Adobe utilizza AEP internamente per unificare i profili dei clienti, favorire il coinvolgimento e ridimensionare le operazioni tra i team.
 
 <!-- 62_S655_3442541_255_adobes-internal-use-of-aep-driving-experienceled-growth -->
->[!VIDEO](https://video.tv.adobe.com/v/3458328/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459702/?learn=on&enablevpops=true&captions=ita)

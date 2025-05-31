@@ -20,4 +20,4 @@ ht-degree: 0%
 Scopri come l’Assistente AI di Adobe semplifica le attività di gestione dell’audience, fornisce informazioni approfondite e previsioni sulle tendenze per gli esperti di marketing.
 
 <!-- 82_OS512_3442427_158_ai-assistant-boosting-productivity-in-audience-management -->
->[!VIDEO](https://video.tv.adobe.com/v/3458182/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459602/?learn=on&enablevpops=true&captions=ita)
