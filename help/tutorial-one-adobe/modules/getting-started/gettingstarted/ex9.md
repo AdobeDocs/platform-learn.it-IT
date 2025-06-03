@@ -3,16 +3,16 @@ title: Guida introduttiva - Applicazioni da installare
 description: Guida introduttiva - Applicazioni da installare
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '190'
 ht-degree: 1%
 
 ---
 
 # Applicazioni da installare
 
-Di seguito è riportata una panoramica della preparazione necessaria prima di partecipare a un workshop live.
+Di seguito è riportata una panoramica delle applicazioni da installare sul computer prima di avviare l&#39;esercitazione.
 
 ## Adobe Creative Cloud
 

@@ -4,9 +4,9 @@ description: Guida introduttiva ad Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: 3b6ae4bb4eb2d9f189438dddc461bb0f2a0a9aac
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,10 @@ Selezionare **Crea nuovo progetto**.
 ![Nuova integrazione Adobe I/O](./images/iocomp.png){zoomable="yes"}
 
 ### API FIREFLY SERVICES
+
+>[!IMPORTANT]
+>
+>A seconda del percorso di apprendimento selezionato, potresti non avere accesso all’API di Firefly Services. Potrai accedere all&#39;API di Firefly Services solo se ti trovi nel percorso di apprendimento **Firefly**, **Workfront Fusion**, **ALL** o se stai partecipando a un **workshop live di persona**. Puoi saltare questo passaggio se non sei su uno di questi percorsi di apprendimento.
 
 Dovresti vedere questo. Selezionare **+ Aggiungi al progetto** e scegliere **API**.
 
@@ -59,6 +63,10 @@ Dovresti vedere questo.
 
 ### API PHOTOSHOP SERVICES
 
+>[!IMPORTANT]
+>
+>A seconda del percorso di apprendimento selezionato, potresti non avere accesso all’API di Photoshop Services. Potrai accedere all&#39;API di Photoshop Services solo se ti trovi nel percorso di apprendimento **Firefly**, **Workfront Fusion**, **ALL** o se stai partecipando a un **workshop live di persona**. Puoi saltare questo passaggio se non sei su uno di questi percorsi di apprendimento.
+
 Selezionare **+ Aggiungi al progetto**, quindi selezionare **API**.
 
 ![Archiviazione Azure](./images/ps2.png){zoomable="yes"}
@@ -84,6 +92,10 @@ Dovresti vedere questo.
 ![Nuova integrazione Adobe I/O](./images/ps7.png){zoomable="yes"}
 
 ### API ADOBE EXPERIENCE PLATFORM
+
+>[!IMPORTANT]
+>
+>A seconda del percorso di apprendimento selezionato, potresti non avere accesso all’API di Adobe Experience Platform. Potrai accedere all&#39;API di Adobe Experience Platform solo se ti trovi nel percorso di apprendimento **AEP + App**, **ALL** o se stai partecipando a un **workshop live di persona**. Puoi saltare questo passaggio se non sei su uno di questi percorsi di apprendimento.
 
 Selezionare **+ Aggiungi al progetto**, quindi selezionare **API**.
 
