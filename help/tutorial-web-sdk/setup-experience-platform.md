@@ -167,7 +167,7 @@ Per verificare che i dati siano stati inseriti nel data lake di Platform, un&#39
 
 Per i clienti di Real-Time Customer Data Platform e Journey Optimizer, il passaggio successivo consiste nell’abilitare il set di dati e lo schema per Real-Time Customer Profile. Lo streaming di dati da Web SDK sarà una delle molte origini dati che fluiranno in Platform e desideri unire i tuoi dati web con altre origini dati per creare profili cliente a 360 gradi. Per ulteriori informazioni su Real-Time Customer Profile, guarda questo breve video:
 
->[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
+>[!VIDEO](https://video.tv.adobe.com/v/36266?learn=on&captions=ita)
 
 >[!CAUTION]
 >

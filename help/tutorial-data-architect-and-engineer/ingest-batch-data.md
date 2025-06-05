@@ -26,7 +26,7 @@ L’inserimento di dati in batch consente di acquisire una grande quantità di d
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sull’acquisizione dei dati:
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346832?learn=on&enablevpops&captions=ita)
 
 
 ## Autorizzazioni richieste
