@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Configurare Adobe Analytics con Adobe Experience Platform Web SDK
 
-Scopri come configurare Adobe Analytics utilizzando [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview), creare regole di tag per inviare dati ad Adobe Analytics e verificare che Analytics stia acquisendo i dati come previsto.
+Scopri come configurare Adobe Analytics utilizzando [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/it/docs/platform-learn/data-collection/web-sdk/overview), creare regole di tag per inviare dati ad Adobe Analytics e verificare che Analytics stia acquisendo i dati come previsto.
 
 [Adobe Analytics](https://experienceleague.adobe.com/it/docs/analytics) è un&#39;applicazione leader di settore che ti consente di comprendere i tuoi clienti come persone e gestire la tua attività grazie alle informazioni sul cliente.
 
@@ -35,7 +35,7 @@ Per completare questa lezione, devi prima:
 
 * Acquisisci familiarità con Adobe Analytics e accedi ad esso.
 
-* Avere almeno un ID suite per report test/dev. Se non hai una suite per report test/dev che puoi usare per questa esercitazione, [creane una](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* Avere almeno un ID suite per report test/dev. Se non hai una suite per report test/dev che puoi usare per questa esercitazione, [creane una](https://experienceleague.adobe.com/it/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Completa le lezioni precedenti nelle sezioni Configurazione iniziale e Configurazione tag di questa esercitazione.
 
@@ -78,7 +78,7 @@ A partire da maggio 2024, non è più necessario creare uno schema XDM per imple
 
 ### Campi mappati automaticamente
 
-Molti campi XDM vengono mappati automaticamente alle variabili di Analytics. Per l&#39;elenco aggiornato dei mapping, vedere [Mappatura delle variabili di Analytics in Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
+Molti campi XDM vengono mappati automaticamente alle variabili di Analytics. Per l&#39;elenco aggiornato dei mapping, vedere [Mappatura delle variabili di Analytics in Adobe Experience Edge](https://experienceleague.adobe.com/it/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
 Ciò si verifica se _anche se non hai definito uno schema personalizzato_. Experience Platform Web SDK raccoglie automaticamente alcuni dati e li invia a Platform Edge Network come campi XDM. Web SDK, ad esempio, legge l&#39;URL della pagina corrente e lo invia come campo XDM `web.webPageDetails.URL`. Questo campo viene inoltrato ad Adobe Analytics e automaticamente popola i rapporti URL pagina in Adobe Analytics.
 
