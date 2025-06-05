@@ -90,6 +90,7 @@ L’estensione del servizio Identity è una delle poche estensioni tag che effet
    1. Espandi la voce `Cookies` a sinistra
    1. Fai clic sul dominio `https://luma.enablementadobe.com`
    1. Cerca il cookie AMCV_ sul lato destro. Potresti visualizzarne diversi poiché il sito Luma è stato caricato utilizzando sia la sua proprietà di tag di codifica fissa, sia quella mappata sulla tua.
+
       ![Verifica il cookie AMCV_](images/idservice-AMCVCookie.png)
 
 Tutto qui. Hai aggiunto la tua prima estensione! Per ulteriori informazioni sulle opzioni di configurazione di Identity Service, consulta [la documentazione](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html).

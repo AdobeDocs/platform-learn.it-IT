@@ -348,7 +348,7 @@ Ora mapperemo il nome della nostra pagina al Web SDK.
 >[!IMPORTANT]
 >
 >Per completare questa attività, è necessario assicurarsi che l’utente abbia prima accesso alla sandbox di Prod. Se non hai già accesso alla sandbox Prod da un profilo di prodotto diverso, apri rapidamente il profilo `Luma Tutorial Platform` e aggiungi l&#39;elemento di autorizzazione **[!UICONTROL Sandbox]** > **[!UICONTROL Prod]**. Dopo aver eseguito questa operazione, effettua un MAIUSC-Ricarica nella pagina Elementi dati per cancellare la cache
->>![Aggiungi la sandbox Prod](assets/websdk-property-permissionToLoadSchema.png)
+>&#x200B;>![Aggiungi la sandbox Prod](assets/websdk-property-permissionToLoadSchema.png)
 
 Nella pagina **[!UICONTROL Elementi dati]**:
 
