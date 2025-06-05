@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Per questa lezione verrà utilizzata l’interfaccia utente, ma sono disponibili
 **Gli architetti di dati** dovranno creare criteri di unione al di fuori di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sui criteri di unione:
->[!VIDEO](https://video.tv.adobe.com/v/345077?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## Autorizzazioni richieste
 
@@ -83,7 +83,7 @@ Vediamo se il criterio di unione sta facendo quello che ci aspetteremmo:
 1. Passa alla scheda **[!UICONTROL Sfoglia]**
 1. Modifica il **[!UICONTROL criterio di unione]** nel nuovo criterio `Loyalty Prioritized`
 1. Come **[!UICONTROL spazio dei nomi Identity]**, utilizza `Luma CRM Id`
-1. Poiché il **[!UICONTROL valore identità]** utilizza `112ca06ed53d3db37e4cea49cc45b71e`
+1. Poiché il **[!UICONTROL valore identità]** utilizza `b642b4217b34b1e8d3bd915fc65c4452`
 1. Seleziona il pulsante **[!UICONTROL Mostra profilo]**
 1. `Daniel` è tornato!
 
@@ -110,7 +110,7 @@ Vediamo ora quali sono le funzioni di questo criterio di unione:
 1. Passa alla scheda **[!UICONTROL Sfoglia]**
 1. Modifica il **[!UICONTROL criterio di unione]** nel nuovo criterio `Loyalty Only`
 1. Come **[!UICONTROL spazio dei nomi Identity]**, utilizza `Luma CRM Id`
-1. Poiché il **[!UICONTROL valore identità]** utilizza `112ca06ed53d3db37e4cea49cc45b71e`
+1. Poiché il **[!UICONTROL valore identità]** utilizza `b642b4217b34b1e8d3bd915fc65c4452`
 1. Seleziona il pulsante **[!UICONTROL Mostra profilo]**
 1. Conferma che non è stato trovato alcun profilo:
    ![Solo fedeltà senza ricerca ID CRM.](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)
@@ -140,7 +140,7 @@ Un caso d’uso chiave per i criteri di unione è la governance dei dati. Ad ese
 
 ## Risorse aggiuntive
 
-* [Documentazione sui criteri di unione](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=it)
+* [Documentazione sui criteri di unione](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
 * [Riferimento API per i criteri di unione (parte di Real-Time Customer Profile API)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Passiamo ora al [framework di governance dei dati](apply-data-governance-framework.md).

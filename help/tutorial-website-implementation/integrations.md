@@ -1,8 +1,8 @@
 ---
-title: Implementare integrazioni Experience Cloud con i tag
-description: Scopri come convalidare le integrazioni Audiences, A4T e Attributi del cliente nell’implementazione di Adobe Experience Cloud. Questa lezione fa parte dell’esercitazione Implementare l’Experience Cloud su siti web.
+title: Implementare le integrazioni Experience Cloud con i tag
+description: Scopri come convalidare le integrazioni Audiences, A4T e Attributi del cliente nell’implementazione di Adobe Experience Cloud. Questa lezione fa parte dell’esercitazione Implementare Experience Cloud nei siti web.
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
-source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 85%
@@ -28,12 +28,12 @@ Prima di seguire le istruzioni fornite in questa lezione, è necessario completa
 >
 >Esistono molti requisiti di autorizzazioni utente, configurazioni account e passaggi di provisioning necessari per utilizzare completamente queste integrazioni e che vanno oltre l’ambito di questa esercitazione. Se non utilizzi già queste integrazioni nell’implementazione corrente di Experience Cloud, prendi in considerazione quanto segue:
 >
->* Verifica tutti i requisiti delle [integrazioni dei Servizi Core](https://experienceleague.adobe.com/it/docs/core-services/interface/services/getting-started)
->* Verifica i requisiti completi dell&#39;[integrazione di Analytics for Target](https://experienceleague.adobe.com/it/docs/target/using/integrate/a4t/before-implement)
+>* Verifica tutti i requisiti delle [integrazioni dei Servizi Core](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)
+>* Verifica i requisiti completi dell&#39;[integrazione di Analytics for Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)
 
 ## Audiences
 
-[Audiences](https://experienceleague.adobe.com/it/docs/core-services/interface/services/audiences/overview) fa parte del servizio core Persone e consente di condividere i tipi di pubblico tra le soluzioni. Ad esempio, puoi creare un tipo di pubblico in Audience Manager e utilizzarlo per distribuire contenuti personalizzati con Target.
+[Audiences](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview) fa parte del servizio core Persone e consente di condividere i tipi di pubblico tra le soluzioni. Ad esempio, puoi creare un tipo di pubblico in Audience Manager e utilizzarlo per distribuire contenuti personalizzati con Target.
 
 I requisiti principali per implementare A4T, operazione che hai già eseguito, sono i seguenti:
 
@@ -71,7 +71,7 @@ Questi passaggi di convalida si concentreranno sulla parte critica visibile nell
 
 ## Analytics for Target (A4T)
 
-L’integrazione [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=it) ti consente di sfruttare i dati di Analytics come origine per le metriche di reporting in Target.
+L’integrazione [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) ti consente di sfruttare i dati di Analytics come origine per le metriche di reporting in Target.
 
 I requisiti principali per implementare A4T, operazione che hai già eseguito, sono i seguenti:
 
@@ -133,7 +133,7 @@ Al momento, l’ID cliente è uno dei pochi parametri che non vengono visualizza
 
    ![Fai clic su Accesso in alto a destra](images/idservice-loginNav.png)
 
-1. Immetti `test@adobe.com` come nome utente
+1. Immetti `test@test.com` come nome utente
 1. Immetti `test` come password
 1. Fai clic sul pulsante **[!UICONTROL ACCESSO]**
 
@@ -149,4 +149,4 @@ Al momento, l’ID cliente è uno dei pochi parametri che non vengono visualizza
 
    ![Convalida ID cliente Analytics](images/integrations-analyticsCustomerIDValidation.png)
 
-[Avanti &quot;Publish la tua proprietà&quot; >](publish.md)
+[Avanti &quot;Pubblicare la proprietà&quot; >](publish.md)

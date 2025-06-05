@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: e26f2add184031fd95561bd560b24ad73bb73d01
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '3272'
 ht-degree: 0%
@@ -31,9 +31,9 @@ Nell’interfaccia di Data Collection è necessario completare due attività pri
 
 Prima di iniziare gli esercizi, guarda questi due brevi video per ulteriori informazioni sull’acquisizione di dati in streaming e sul Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/36263?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/37267?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ Experience Platform Debugger è un’estensione disponibile per i browser Chrome
 
 Se non hai mai utilizzato il debugger prima, e questo è diverso dal precedente Adobe Experience Cloud Debugger, potresti voler guardare questo video di panoramica di cinque minuti:
 
->[!VIDEO](https://video.tv.adobe.com/v/36164?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Apri il sito web Luma.
 
@@ -348,7 +348,7 @@ Ora mapperemo il nome della nostra pagina al Web SDK.
 >[!IMPORTANT]
 >
 >Per completare questa attività, è necessario assicurarsi che l’utente abbia prima accesso alla sandbox di Prod. Se non hai già accesso alla sandbox Prod da un profilo di prodotto diverso, apri rapidamente il profilo `Luma Tutorial Platform` e aggiungi l&#39;elemento di autorizzazione **[!UICONTROL Sandbox]** > **[!UICONTROL Prod]**. Dopo aver eseguito questa operazione, effettua un MAIUSC-Ricarica nella pagina Elementi dati per cancellare la cache
->![Aggiungi la sandbox Prod](assets/websdk-property-permissionToLoadSchema.png)
+>>![Aggiungi la sandbox Prod](assets/websdk-property-permissionToLoadSchema.png)
 
 Nella pagina **[!UICONTROL Elementi dati]**:
 
@@ -451,7 +451,7 @@ Per verificare che l’ID del sistema di gestione delle relazioni con i clienti 
 1. Apri il [sito Web Luma](https://luma.enablementadobe.com/content/luma/us/en.html)
 1. Mappare il file alla proprietà tag utilizzando Debugger, come indicato nelle istruzioni precedenti
 1. Seleziona il collegamento **Accesso** in alto a destra nel sito Web Luma
-1. Accedi utilizzando le credenziali `test@adobe.com`/`test`
+1. Accedi utilizzando le credenziali `test@test.com`/`test`
 1. Dopo l&#39;autenticazione, esaminare la chiamata di Experience Platform Web SDK nel debugger (**[!UICONTROL Adobe Experience Platform Web SDK]** > **[!UICONTROL Richieste di rete]** > **[!UICONTROL eventi]** della richiesta più recente) e visualizzare `lumaCrmId`:
    ![Convalidare l&#39;identità nel debugger](assets/websdk-debugger-confirmIdentity.png)
 1. Cerca di nuovo il profilo utente utilizzando lo spazio dei nomi e il valore ECID. Nel profilo troverai l’ID del sistema di gestione delle relazioni con i clienti, l’ID fedeltà e i dettagli del profilo, come il nome e il numero di telefono. Tutte le identità e i dati sono stati uniti in un unico profilo cliente in tempo reale.

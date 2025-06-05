@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '2446'
 ht-degree: 0%
@@ -26,7 +26,7 @@ L’inserimento di dati in batch consente di acquisire una grande quantità di d
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sull’acquisizione dei dati:
 
->[!VIDEO](https://video.tv.adobe.com/v/346832?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 
 
 ## Autorizzazioni richieste
@@ -79,8 +79,8 @@ Innanzitutto, ottieni i dati di esempio e personalizzali per il tuo tenant:
 >
 >Ci sono alcune opzioni, **[!UICONTROL Diagnostica errori]** e **[!UICONTROL Acquisizione parziale]**, che vedrai in diverse schermate in questa lezione. Queste opzioni non sono trattate nell&#39;esercitazione. Informazioni rapide:
 >
->* L’abilitazione della diagnostica degli errori genera dati sull’acquisizione dei dati, che puoi esaminare utilizzando l’API di accesso ai dati. Ulteriori informazioni sono disponibili nella [documentazione](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html?lang=it).
->* L’acquisizione parziale ti consente di acquisire dati contenenti errori, fino a una determinata soglia che puoi specificare. Ulteriori informazioni sono disponibili nella [documentazione](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html?lang=it)
+>* L’abilitazione della diagnostica degli errori genera dati sull’acquisizione dei dati, che puoi esaminare utilizzando l’API di accesso ai dati. Ulteriori informazioni sono disponibili nella [documentazione](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html).
+>* L’acquisizione parziale ti consente di acquisire dati contenenti errori, fino a una determinata soglia che puoi specificare. Ulteriori informazioni sono disponibili nella [documentazione](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)
 
 ### Convalidare i dati
 
@@ -115,7 +115,7 @@ Se ti sei iscritto agli eventi di acquisizione dati della lezione precedente, co
 
 ![Webhook di acquisizione dati](assets/ingestion-loyalty-webhook.png)
 
-Per ulteriori dettagli sulle notifiche, consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=it#available-status-notification-events).
+Per ulteriori dettagli sulle notifiche, consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events).
 
 ## Acquisire dati in batch con API Platform
 
@@ -210,7 +210,7 @@ Quindi, conferma il batch utilizzando il set di dati di anteprima:
 
 ![Anteprima batch](assets/ingestion-crm-preview.png)
 
-Infine, confermare che uno dei profili è stato creato cercando uno dei profili in base allo spazio dei nomi `Luma CRM Id`, ad esempio `112ca06ed53d3db37e4cea49cc45b71e`
+Infine, confermare che uno dei profili è stato creato cercando uno dei profili in base allo spazio dei nomi `Luma CRM Id`, ad esempio `b642b4217b34b1e8d3bd915fc65c4452`
 
 ![Profilo acquisito](assets/ingestion-crm-profile.png)
 
@@ -226,7 +226,7 @@ Se ti sei iscritto agli eventi di acquisizione dati della lezione precedente, co
 
 ![Webhook di acquisizione dati](assets/ingestion-crm-webhook.png)
 
-Per ulteriori dettagli sulle notifiche, consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=it#available-status-notification-events).
+Per ulteriori dettagli sulle notifiche, consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events).
 
 ## Acquisire dati con flussi di lavoro
 
@@ -282,7 +282,7 @@ Molte delle origini hanno un flusso di lavoro di configurazione simile, in cui:
 
 >[!NOTE]
 >
->I dati di acquisto offline che utilizzeremo in questo esercizio contengono dati datetime. I dati di Datetime devono essere in [stringhe formattate ISO 8061](https://www.iso.org/iso-8601-date-and-time-format.html) (&quot;2018-07-10T15:05:59.000-08:00&quot;) o ora Unix formattate in millisecondi (1531263959000) e vengono convertiti al momento dell&#39;acquisizione nel tipo XDM di destinazione. Per ulteriori informazioni sulla conversione dei dati e su altri vincoli, consulta [la documentazione sull&#39;API di acquisizione in batch](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html?lang=it#types).
+>I dati di acquisto offline che utilizzeremo in questo esercizio contengono dati datetime. I dati di Datetime devono essere in [stringhe formattate ISO 8061](https://www.iso.org/iso-8601-date-and-time-format.html) (&quot;2018-07-10T15:05:59.000-08:00&quot;) o ora Unix formattate in millisecondi (1531263959000) e vengono convertiti al momento dell&#39;acquisizione nel tipo XDM di destinazione. Per ulteriori informazioni sulla conversione dei dati e su altri vincoli, consulta [la documentazione sull&#39;API di acquisizione in batch](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types).
 
 ### Scarica, prepara e carica i dati sul fornitore di archiviazione cloud preferito
 
@@ -334,12 +334,12 @@ Cercare di nuovo il profilo con valore `5625458` nello spazio dei nomi `loyaltyI
 
 Adobe collabora con più fornitori ETL per supportare l’acquisizione dei dati in Experience Platform. A causa della varietà di fornitori di terze parti, ETL non è trattato in questa esercitazione, anche se è opportuno rivedere alcune di queste risorse:
 
-* [Sviluppo di integrazioni ETL per Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html?lang=it)
+* [Sviluppo di integrazioni ETL per Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [[!DNL Snaplogic] Adobe Experience Platform Snap Pack](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## Risorse aggiuntive
 
-* [Documentazione sull&#39;acquisizione in batch](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=it)
+* [Documentazione sull&#39;acquisizione in batch](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
 * [Riferimento API per l&#39;acquisizione in batch](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 Ora [eseguiamo lo streaming dei dati tramite Web SDK](ingest-streaming-data.md)

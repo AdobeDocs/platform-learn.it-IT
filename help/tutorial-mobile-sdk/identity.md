@@ -4,7 +4,7 @@ description: Scopri come raccogliere i dati di identità in un’app mobile.
 feature: Mobile SDK,Identities
 jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Gli spazi dei nomi delle identità sono componenti di [Identity Service](https:/
 
 >[!NOTE]
 >
->Quando l’app viene installata, l’SDK di Mobile genera un’identità univoca nel proprio spazio dei nomi, denominata ID Experience Cloud (ECID). Questo ECID viene memorizzato nella memoria persistente del dispositivo mobile e inviato con ogni hit. L’ECID viene rimosso quando l’utente disinstalla l’app o quando imposta lo stato di privacy globale dell’SDK di Mobile in modo che la rinuncia venga negata. Nell’app Luma di esempio, devi rimuovere e reinstallare l’app per creare un nuovo profilo con il proprio ECID univoco.
+>Quando l’app viene installata, Mobile SDK genera un’identità univoca nel proprio spazio dei nomi, denominata Experience Cloud ID (ECID). Questo ECID viene memorizzato nella memoria persistente del dispositivo mobile e inviato con ogni hit. L’ECID viene rimosso quando l’utente disinstalla l’app o imposta lo stato di privacy globale del SDK mobile su opt-out. Nell’app Luma di esempio, devi rimuovere e reinstallare l’app per creare un nuovo profilo con il proprio ECID univoco.
 
 
 Per creare un nuovo spazio dei nomi dell’identità:
@@ -95,7 +95,7 @@ Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzat
       identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
       ```
 
-   1. Invia l&#39;oggetto `IdentityItem` come parte della chiamata API `Identity.updateIdentities` all&#39;Edge Network.
+   1. Invia l&#39;oggetto `IdentityItem` come parte della chiamata API `Identity.updateIdentities` ad Edge Network.
 
       ```swift
       Identity.updateIdentities(with: identityMap) 
@@ -116,7 +116,7 @@ Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzat
 
 ## Rimuovere un’identità
 
-È possibile utilizzare l&#39;API [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) per rimuovere l&#39;identità dalla mappa delle identità lato client archiviata. L’estensione Identity non invia più l’identificatore all’Edge Network. L’utilizzo di questa API non rimuove l’identificatore dal grafico delle identità lato server. Per ulteriori informazioni sui grafici delle identità, vedere [Visualizza grafici delle identità](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=it).
+È possibile utilizzare l&#39;API [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) per rimuovere l&#39;identità dalla mappa delle identità lato client archiviata. L’estensione Identity non invia più l’identificatore ad Edge Network. L’utilizzo di questa API non rimuove l’identificatore dal grafico delle identità lato server. Per ulteriori informazioni sui grafici delle identità, vedere [Visualizza grafici delle identità](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en).
 
 1. Passa a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** nel navigatore progetti Xcode e aggiungi il seguente codice alla funzione `func removeIdentities(emailAddress: String, crmId: String)`:
 
@@ -125,7 +125,7 @@ Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzat
    Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
    Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
    currentEmailId = "testUser@gmail.com"
-   currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
+   currentCRMId = "b642b4217b34b1e8d3bd915fc65c4452"
    ```
 
 1. Passa a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** nel Navigator dei progetti Xcode e trova il codice da eseguire quando selezioni il pulsante **[!UICONTROL Logout]**. Aggiungi il seguente codice:
@@ -140,7 +140,7 @@ Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzat
 
 1. Consulta la sezione [istruzioni di installazione](assurance.md#connecting-to-a-session) per collegare il simulatore o il dispositivo ad Assurance.
 1. Nell’app Luma
-   1. Selezionare la scheda **[!UICONTROL Home]** e spostare l&#39;icona Assurance a sinistra.
+   1. Seleziona la scheda **[!UICONTROL Home]** e sposta l&#39;icona Assurance a sinistra.
    1. Seleziona la Icona <img src="assets/login.png" width="15" /> in alto a destra.
 
       <img src="./assets/identity1.png" width="300">
@@ -152,7 +152,7 @@ Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzat
       <img src="./assets/identity2.png" width="300">
 
 
-1. Cerca nell&#39;interfaccia Web Assurance l&#39;evento **[!UICONTROL Identità aggiornamento identità di Edge]** dal fornitore **[!UICONTROL com.adobe.griffon.mobile]**.
+1. Cerca nell&#39;interfaccia Web di Assurance l&#39;evento **[!UICONTROL Identità aggiornamento identità di Edge]** dal fornitore **[!UICONTROL com.adobe.griffon.mobile]**.
 1. Selezionare l&#39;evento e rivedere i dati nell&#39;oggetto **[!UICONTROL ACPExtensionEventData]**. Dovresti visualizzare le identità aggiornate.
    ![convalida aggiornamento identità](assets/identity-validate-assurance.png)
 
@@ -174,8 +174,8 @@ Dopo aver completato i passaggi della [lezione di Experience Platform](platform.
 
 >[!SUCCESS]
 >
->Ora hai configurato l’app per aggiornare le identità nell’Edge Network e (se configurata) con Adobe Experience Platform.
+>Ora hai configurato l’app per aggiornare le identità in Edge Network e (se configurata) in Adobe Experience Platform.
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [Experience League post di discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Mobile SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Successivo: **[Raccolta dati profilo](profile.md)**
