@@ -529,9 +529,9 @@ Sostituisci XXX nell’URL precedente con l’ID della cartella
 >[!NOTE]
 >
 >Come indicato in precedenza, è possibile specificare manualmente le variabili in Workfront Fusion utilizzando la sintassi seguente: `{{1.account_id}}` e `{{4.body.data.parent_id}}`. Il numero nella variabile fa riferimento al modulo nello scenario.
->>In questo esempio, puoi vedere che il primo modulo nello scenario è denominato **Webhook** e ha un numero di sequenza di **1**. Ciò significa che la variabile `{{1.account_id}}` accederà a tale campo dal modulo con il numero di sequenza 1.
->>In questo esempio, puoi vedere che il quarto modulo nello scenario è denominato **Frame.io - Effettua una chiamata API personalizzata** e ha un numero di sequenza **4**. Ciò significa che la variabile `{{4.body.data.parent_id}}` accederà a tale campo dal modulo con il numero di sequenza 4.
->>Se i numeri di sequenza dei moduli sono diversi, dovrai aggiornare le variabili nell’URL precedente per collegarle al modulo corretto.
+>&#x200B;>In questo esempio, puoi vedere che il primo modulo nello scenario è denominato **Webhook** e ha un numero di sequenza di **1**. Ciò significa che la variabile `{{1.account_id}}` accederà a tale campo dal modulo con il numero di sequenza 1.
+>&#x200B;>In questo esempio, puoi vedere che il quarto modulo nello scenario è denominato **Frame.io - Effettua una chiamata API personalizzata** e ha un numero di sequenza **4**. Ciò significa che la variabile `{{4.body.data.parent_id}}` accederà a tale campo dal modulo con il numero di sequenza 4.
+>&#x200B;>Se i numeri di sequenza dei moduli sono diversi, dovrai aggiornare le variabili nell’URL precedente per collegarle al modulo corretto.
 
 ![I/O fotogrammi](./images/frame78.png)
 
@@ -551,7 +551,7 @@ Copia e incolla il frammento JSON seguente nel campo **Body**.
 >[!NOTE]
 >
 >È possibile specificare manualmente le variabili in Workfront Fusion utilizzando la seguente sintassi: `{{6.data.newPsdTemplate}}`. Il numero nella variabile fa riferimento al modulo nello scenario. In questo esempio, puoi vedere che il sesto modulo nello scenario si chiama **HTTP - Fai una richiesta** e ha un numero di sequenza di **6**. Ciò significa che la variabile `{{6.data.newPsdTemplate}}` accederà al campo **data.newPsdTemplate** dal modulo con numero di sequenza 6.
->>Se i numeri di sequenza del modulo sono diversi, dovrai aggiornare la variabile nell’URL precedente per collegarla al modulo corretto.
+>&#x200B;>Se i numeri di sequenza del modulo sono diversi, dovrai aggiornare la variabile nell’URL precedente per collegarla al modulo corretto.
 
 Fai clic su **OK**.
 
