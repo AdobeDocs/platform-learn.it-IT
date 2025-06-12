@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: 1d1ee3462bd890556037c8e24ba2fe94c3423187
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1981'
 ht-degree: 1%
 
 ---
@@ -59,35 +59,27 @@ Dovresti vedere questo. Fare clic su **Copia indirizzo negli Appunti**.
 
 ## 1.2.6.2 Configurare il webhook in Frame.io
 
-Vai a [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Fare clic su **STRUMENTI PER SVILUPPATORI** e quindi scegliere **Webhook**.
+Vai a Postman e apri la richiesta **POST - Ottieni token di accesso** nella raccolta **Adobe IO - OAuth**. Fai clic su **Invia** per richiedere un nuovo **access_token**.
 
-![I/O fotogrammi](./images/aemf7.png)
+![I/O fotogrammi](./images/frameV4api2.png)
 
-Fai clic su **Crea un webhook**.
+Nel menu a sinistra, torna a **Raccolte**. Apri la richiesta **POST - Crea webhook** nella raccolta **Frame.io V4 - Tech Insiders**, nella cartella **Webhook**.
 
-![I/O fotogrammi](./images/aemf8.png)
+Vai al **Corpo** della richiesta. Cambia il campo **name** in `--aepUserLdap--  - Fusion to AEM Assets`, quindi cambia il campo **url** con il valore dell&#39;URL del webhook copiato da Workfront Fusion.
 
-Immetti i seguenti valori:
+Fai clic su **Invia**.
 
-- **NOME**: utilizzare `--aepUserLdap-- - Asset Labels Updated`
-- **URL**: immetti l&#39;URL del webhook appena creato in Workfront Fusion
-- **TEAM**: seleziona il team Frame.io appropriato, in questo caso **One Adobe Tutorial**.
+![I/O fotogrammi](./images/framewh1.png)
 
-![I/O fotogrammi](./images/aemf9.png)
+L&#39;azione personalizzata Frame.io V4 è stata creata.
 
-Scorri verso il basso e abilita la casella di controllo accanto a **Etichette risorse - aggiornate**. Fai clic su **Invia**.
+![I/O fotogrammi](./images/framewh2.png)
 
-![I/O fotogrammi](./images/aemf10.png)
-
-Dovresti vedere questo.
-
-![I/O fotogrammi](./images/aemf11.png)
-
-Vai a [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"} e vai alla cartella creata in precedenza, che deve essere denominata `--aepUserLdap--`. Fai doppio clic per aprire la risorsa creata nell’esercizio precedente.
+Vai a [https://next.frame.io/project](https://next.frame.io/project){target="_blank"} e vai al progetto creato in precedenza, che deve essere denominato `--aepUserLdap--`, quindi apri la cartella **Campagna Fibre Channel CitiSignal**. Dovresti ora visualizzare le risorse create nell’esercizio precedente.
 
 ![I/O fotogrammi](./images/aemf11a.png)
 
-Dovresti vedere qualcosa del genere. Fare clic sul campo **Nessuno stato** e modificare lo stato in **In corso**.
+Fare clic sul campo **Stato** e modificare lo stato in **In corso**.
 
 ![I/O fotogrammi](./images/aemf12.png)
 
@@ -113,23 +105,45 @@ La vista dettagliata della bolla mostra i dati ricevuti da Frame.io. Dovresti vi
 
 Ora che la comunicazione tra Frame.io e Workfront Fusion è stata stabilita tramite un webhook personalizzato, è necessario ottenere ulteriori dettagli sulla risorsa per la quale è stata aggiornata l’etichetta di stato. A questo scopo, utilizzerai nuovamente il connettore Frame.io in Workfront Fusion, in modo simile all’esercizio precedente.
 
-Fare clic su **?Modulo** e immettere il termine di ricerca `frame`. Fare clic su **Frame.io**.
+Passa il puntatore sull&#39;oggetto **webhook personalizzato** e fai clic sull&#39;icona **+** per aggiungere un altro modulo.
+
+![I/O fotogrammi](./images/aemf18a.png)
+
+Immettere il termine di ricerca `frame`. Fare clic su **Frame.io**.
 
 ![I/O fotogrammi](./images/aemf18.png)
 
-Fare clic su **Frame.io (versione precedente)**.
+Fare clic su **Frame.io**.
 
 ![I/O fotogrammi](./images/aemf19.png)
 
-Fai clic su **Ottieni una risorsa**.
+Fai clic su **Effettua una chiamata API personalizzata**.
 
 ![I/O fotogrammi](./images/aemf20.png)
 
-Verificare che la connessione sia impostata sulla stessa connessione creata nell&#39;esercizio precedente, che deve essere denominata `--aepUserLdap-- - Frame.io Token`.
+Verificare che la connessione sia impostata sulla stessa connessione creata nell&#39;esercizio precedente, che deve essere denominata `--aepUserLdap-- - Adobe I/O - Frame.io S2S`.
 
 ![I/O fotogrammi](./images/aemf21.png)
 
-Quindi devi fornire **ID risorsa**. L&#39;**ID risorsa** è condiviso da Frame.io a Workfront Fusion come parte della comunicazione **webhook personalizzato** iniziale ed è disponibile nel campo **resource.id**. Seleziona **resource.id** e fai clic su **OK**.
+Per la configurazione del modulo **Frame.io - Effettuare una chiamata API personalizzata**, utilizzare l&#39;URL: `/v4/accounts/{{1.account.id}}/files/{{1.resource.id}}`.
+
+>[!NOTE]
+>
+>È possibile specificare manualmente le variabili in Workfront Fusion utilizzando la seguente sintassi: `{{1.account.id}}` e `{{1.resource.id}}`. Il numero nella variabile fa riferimento al modulo nello scenario. In questo esempio, puoi vedere che il primo modulo nello scenario è denominato **Webhook** e ha un numero di sequenza di **1**. Ciò significa che le variabili `{{1.account.id}}` e `{{1.resource.id}}` accederanno a quel campo dal modulo con il numero di sequenza 1. I numeri di sequenza a volte possono essere diversi, quindi fai attenzione quando copi/incolla tali variabili e verifica sempre che il numero di sequenza utilizzato sia quello corretto.
+
+Fare clic su **+ Aggiungi elemento** in **Stringa di query**.
+
+![I/O fotogrammi](./images/aemf21a.png)
+
+Immetti questi valori e fai clic su **Aggiungi**.
+
+| Chiave | Valore |
+|:-------------:| :---------------:| 
+| `include` | `media_links.original` |
+
+![I/O fotogrammi](./images/aemf21b.png)
+
+Ora dovresti avere questo. Fai clic su **OK**.
 
 ![I/O fotogrammi](./images/aemf22.png)
 
@@ -137,21 +151,36 @@ Fai clic su **Salva** per salvare le modifiche, quindi fai clic su **Esegui una 
 
 ![I/O fotogrammi](./images/aemf23.png)
 
-Torna a Frame.io e fai clic sul campo **Da rivedere** e cambia lo stato in **In corso**.
+Torna a Frame.io e cambia lo stato in **In corso**.
 
 ![I/O fotogrammi](./images/aemf24.png)
 
-Torna a Workfront Fusion e fai clic sul fumetto nel modulo **Frame.io - Ottieni una risorsa**. Dovresti quindi visualizzare una panoramica simile.
+Torna a Workfront Fusion e fai clic sul fumetto nel modulo **Frame.io - Effettua una chiamata API personalizzata**. Dovresti quindi visualizzare una panoramica simile.
 
 ![I/O fotogrammi](./images/aemf25.png)
 
-Nei dettagli della risorsa forniti da Frame.io è possibile trovare un campo denominato **Label** impostato su **in_progress**. Sarà necessario utilizzare tale campo in un secondo momento per configurare un filtro.
+Successivamente, devi impostare un filtro per garantire che venga eseguito il rendering di un file PNG solo per le risorse con stato **Approvato**. A tale scopo, fare clic sull&#39;icona **Chiave chiave** tra i moduli **WebHook personalizzato** e **Frame.io - Effettuare una chiamata API personalizzata** e quindi selezionare **Configura filtro**.
 
-![I/O fotogrammi](./images/aemf26.png)
+![I/O fotogrammi](./images/aemf25a.png)
+
+Configura i campi seguenti:
+
+- **Etichetta**: utilizzare `Status = Approved`.
+- **Condizione**: `{{1.metadata.value[]}}`.
+- **Operatori di base**: selezionare **Uguale a**.
+- **Valore**: `Approved`.
+
+Fai clic su **OK**.
+
+![I/O fotogrammi](./images/aemf35.png)
+
+Dovresti avere questo. Fai clic su **Salva** per salvare le modifiche.
+
+![I/O fotogrammi](./images/aemf35a.png)
 
 ## 1.2.6.4 Converti in PNG
 
-Passa il puntatore del mouse sul modulo **Frame.io - Ottieni una risorsa** e fai clic sull&#39;icona **+**.
+Passa il puntatore del mouse sul modulo **Frame.io - Esegui una chiamata API personalizzata** e fai clic sull&#39;icona **+**.
 
 ![I/O fotogrammi](./images/aemf27.png)
 
@@ -165,13 +194,13 @@ Fare clic su **Converti formato immagine**.
 
 Verificare che il campo **Connessione** utilizzi la connessione creata in precedenza, denominata `--aepUserLdap-- - Adobe IO`.
 
-In **Input**, imposta il campo **Archiviazione** su **Esterna** e imposta **Posizione file** per utilizzare la variabile **Originale** restituita dal modulo **Frame.io - Ottieni una risorsa**.
+In **Input**, impostare il campo **Archiviazione** su **Esterna** e impostare **Posizione file** per utilizzare la variabile **Originale** restituita dal modulo **Frame.io - Effettuare una chiamata API personalizzata**.
 
 Fare clic su **Aggiungi elemento** in **Output**.
 
 ![I/O fotogrammi](./images/aemf30.png)
 
-Per la configurazione di **Output**, impostare il campo **Archiviazione** su **Archiviazione interna di Fusion** e il **Tipo** su **immagine/png**. Fai clic su **Salva**.
+Per la configurazione di **Output**, impostare il campo **Archiviazione** su **Archiviazione interna di Fusion** e il **Tipo** su **immagine/png**. Fai clic su **Aggiungi**.
 
 ![I/O fotogrammi](./images/aemf31.png)
 
@@ -179,28 +208,9 @@ Fai clic su **OK**.
 
 ![I/O fotogrammi](./images/aemf33.png)
 
-Fai clic su **Salva** per salvare le modifiche.
-
-![I/O fotogrammi](./images/aemf32.png)
-
-Successivamente, devi impostare un filtro per garantire che venga eseguito il rendering di un file PNG solo per le risorse con stato **Approvato**. A tale scopo, fare clic sull&#39;icona **Chiave** tra i moduli **Frame.io - Ottieni una risorsa** e **Adobe Photoshop - Converti formato immagine**, quindi selezionare **Imposta filtro**.
-
-![I/O fotogrammi](./images/aemf34.png)
-
-Configura i campi seguenti:
-
-- **Etichetta**: utilizzare `Is Asset Approved`.
-- **Condizione**: seleziona il campo **Etichetta** dalla risposta di **Frame.io - Ottieni una risorsa** modulo.
-- **Operatori di base**: selezionare **Uguale a**.
-- **Valore**: `approved`.
-
-Fai clic su **OK**.
-
-![I/O fotogrammi](./images/aemf35.png)
-
 Fai clic su **Salva** per salvare le modifiche, quindi fai clic su **Esegui una volta** per verificare la configurazione.
 
-![I/O fotogrammi](./images/aemf36.png)
+![I/O fotogrammi](./images/aemf32.png)
 
 Torna a Frame.io, fai clic sul campo **In corso** e cambia lo stato in **Approvato**.
 
@@ -255,11 +265,19 @@ Fai clic su **Accedi con Adobe**.
 
 ![I/O fotogrammi](./images/aemf47.png)
 
-Si viene quindi indirizzati a **Developer Console**. Fai clic su **Crea nuovo account tecnico**.
+Vai a **Strumenti** > **Integrazioni**.
+
+![I/O fotogrammi](./images/aemf47a.png)
+
+Fai clic su **Crea nuovo account tecnico**.
 
 ![I/O fotogrammi](./images/aemf48.png)
 
-Dovresti vedere qualcosa del genere. Copia l’intero payload JSON negli Appunti.
+Dovresti vedere qualcosa del genere. Apri l’account tecnico appena creato. Fare clic sui tre punti **...**, quindi selezionare **Visualizza**.
+
+![I/O fotogrammi](./images/aemf48a.png)
+
+Dovresti quindi visualizzare un payload del token di account tecnico simile. Copia l’intero payload JSON negli Appunti.
 
 ![I/O fotogrammi](./images/aemf50.png)
 
@@ -283,7 +301,7 @@ Vai a **Risorse** e fai clic su **Crea cartella**.
 
 ![I/O fotogrammi](./images/aemf54.png)
 
-Immettere il nome `--aepUserLdap-- - Frame.io PNG` e fare clic su **Crea**.
+Immettere il nome `--aepUserLdap-- - CitiSignal Fiber Campaign` e fare clic su **Crea**.
 
 ![I/O fotogrammi](./images/aemf55.png)
 
@@ -291,19 +309,19 @@ La cartella viene quindi creata.
 
 ![I/O fotogrammi](./images/aemf56.png)
 
-Torna a Workfront Fusion, fai clic su **Fai clic qui per scegliere la cartella**, quindi scegli la cartella `--aepUserLdap-- - Frame.io PNG`.
+Torna a Workfront Fusion, seleziona **Fai clic qui per scegliere la cartella**, quindi scegli la cartella `--aepUserLdap-- - CitiSignal Fiber Campaign`.
 
 ![I/O fotogrammi](./images/aemf57.png)
 
-Verificare che la destinazione sia impostata su `--aepUserLdap-- - Frame.io PNG`. Quindi, in **File Source**, seleziona **Mappa**.
+Verificare che la destinazione sia impostata su `--aepUserLdap-- - CitiSignal Fiber Campaign`. Quindi, in **File Source**, seleziona **Mappa**.
 
-In **Nome file**, scegliere la variabile `{{3.filenames[]}}`.
+In **Nome file**, scegliere la variabile `{{3.filenames[1]}}`.
 
-In **Dati**, scegliere la variabile `{{3.files[]}}`.
+In **Dati**, scegliere la variabile `{{3.files[1]}}`.
 
 >[!NOTE]
 >
->È possibile specificare manualmente le variabili in Workfront Fusion utilizzando la seguente sintassi: `{{3.filenames[]}}`. Il numero nella variabile fa riferimento al modulo nello scenario. In questo esempio, puoi vedere che il terzo modulo nello scenario è denominato **Adobe Photoshop - Converti formato immagine** e ha un numero di sequenza di **3**. Ciò significa che la variabile `{{3.filenames[]}}` accederà al campo **nomefile[]** dal modulo con numero di sequenza 3. I numeri di sequenza a volte possono essere diversi, quindi fai attenzione quando copi/incolla tali variabili e verifica sempre che il numero di sequenza utilizzato sia quello corretto.
+>È possibile specificare manualmente le variabili in Workfront Fusion utilizzando la seguente sintassi: `{{3.filenames[1]}}`. Il numero nella variabile fa riferimento al modulo nello scenario. In questo esempio, puoi vedere che il terzo modulo nello scenario è denominato **Adobe Photoshop - Converti formato immagine** e ha un numero di sequenza di **3**. Ciò significa che la variabile `{{3.filenames[1]}}` accederà al campo **nomefile[]** dal modulo con numero di sequenza 3. I numeri di sequenza a volte possono essere diversi, quindi fai attenzione quando copi/incolla tali variabili e verifica sempre che il numero di sequenza utilizzato sia quello corretto.
 
 Fai clic su **OK**.
 

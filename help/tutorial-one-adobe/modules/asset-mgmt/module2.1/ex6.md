@@ -4,9 +4,9 @@ description: AEM CS - Plug-in MarTech
 kt: 5342
 doc-type: tutorial
 exl-id: 77dc780b-ce6c-403f-847d-8eb64cbe2a97
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1063'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Il plug-in MarTech AEM consente di impostare rapidamente uno stack MarTech compl
 >
 >Questo plug-in è attualmente disponibile per i clienti in collaborazione con AEM Engineering tramite progetti di co-innovazione. Ulteriori informazioni sono disponibili su [https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech).
 
-## 1.1.6.1 Aggiungi il plug-in all’archivio
+## 1.1.6.1 Aggiungi il plug-in al tuo archivio
 
 Passa alla cartella in uso per l&#39;archivio GitHub **citisignal**. Fare clic con il pulsante destro del mouse sul nome della cartella, quindi selezionare **Nuovo terminale nella cartella**.
 
@@ -88,25 +88,25 @@ In **const AUDIENCES = {...};** incolla il codice seguente:
   const isConsentGiven = true;
   const martechLoadedPromise = initMartech(
     // The WebSDK config
-    // Documentation: https://experienceleague.adobe.com/it/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
+    // Documentation: https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
     {
       datastreamId: "XXX",
       orgId: "XXX",
       defaultConsent: 'in',
       onBeforeEventSend: (payload) => {
         // set custom Target params 
-        // see doc at https://experienceleague.adobe.com/it/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
+        // see doc at https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
         payload.data.__adobe.target ||= {};
 
         // set custom Analytics params
-        // see doc at https://experienceleague.adobe.com/it/docs/analytics/implementation/aep-edge/data-var-mapping
+        // see doc at https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping
         payload.data.__adobe.analytics ||= {};
       },
 
       // set custom datastream overrides
       // see doc at:
-      // - https://experienceleague.adobe.com/it/docs/experience-platform/web-sdk/commands/datastream-overrides
-      // - https://experienceleague.adobe.com/it/docs/experience-platform/datastreams/overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/datastream-overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides
       edgeConfigOverrides: {
         // Override the datastream id
         // datastreamId: '...'
@@ -341,12 +341,12 @@ Vai a **Flusso di pubblicazione** e apri la libreria **Principale**. Fai clic su
 
 Le modifiche sono ora implementate.
 
-## 1.1.6.5 Inviare dati a Adobe Experience Platform Edge Network
+## 1.1.6.5 Invia dati a Adobe Experience Platform Edge Network
 
-Potrai visualizzare le modifiche apportate al tuo sito web andando su `main--citisignal--XXX.aem.page/us/en` e/o `main--citisignal--XXX.aem.live/us/en`, dopo aver sostituito XXX con il tuo account utente GitHub, che in questo esempio è `woutervangeluwe`.
+Potrai visualizzare le modifiche apportate al tuo sito web andando su `main--citisignal--XXX.aem.page/us/en/` e/o `main--citisignal--XXX.aem.live/us/en/`, dopo aver sostituito XXX con il tuo account utente GitHub, che in questo esempio è `woutervangeluwe`.
 
 In questo esempio, l’URL completo diventa:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` e/o `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` e/o `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
 >[!NOTE]
 >
@@ -366,7 +366,7 @@ Aprire il payload, espandere il campo `events[0].xdm._experienceplatform.identif
 
 ![AEMCS](./images/plweb3.png){zoomable="yes"}
 
-## 1.1.6.6 Visualizzare il profilo del cliente in Adobe Experience Platform
+## 1.1.6.6 Visualizza il profilo cliente in Adobe Experience Platform
 
 Accedi a Adobe Experience Platform da questo URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 

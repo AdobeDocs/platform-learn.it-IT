@@ -6,10 +6,10 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: badef353b0df7b678e05d2e89280393b56fd65b6
 workflow-type: tm+mt
-source-wordcount: '2674'
-ht-degree: 0%
+source-wordcount: '3367'
+ht-degree: 1%
 
 ---
 
@@ -19,26 +19,49 @@ Nell&#39;esercizio precedente è stato configurato lo scenario `--aepUserLdap-- 
 
 >[!NOTE]
 >
->Per completare correttamente questo esercizio, devi essere un utente amministratore nel tuo account Frame.io. L&#39;esercizio seguente è stato creato per Frame.io V3 e verrà aggiornato in una fase successiva per Frame.io V4.
+>Questo esercizio è stato creato per Frame.io V4. Alcune delle seguenti funzionalità utilizzate nell’esercizio sono attualmente in formato alfa e non sono ancora generalmente disponibili.
 
-## 1.2.5.1 Accesso a Frame.io
+## 1.2.5.1 Prerequisiti
 
-Vai a [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}.
+Prima di continuare con questo esercizio, devi aver completato la configurazione di [il tuo progetto Adobe I/O](./../../../modules/getting-started/gettingstarted/ex6.md), inclusa l&#39;aggiunta dell&#39;API **Frame.io** al progetto Adobe I/O, nonché aver configurato un&#39;applicazione per interagire con le API, ad esempio [Postman](./../../../modules/getting-started/gettingstarted/ex7.md) o [PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md).
 
-Fai clic sull&#39;icona **+** per creare un progetto personalizzato in Frame.io.
+## 1.2.5.2 Accesso a Frame.io
+
+Vai a [https://next.frame.io/](https://next.frame.io/){target="_blank"}.
 
 ![I/O fotogrammi](./images/frame1.png)
 
-Immettere il nome `--aepUserLdap--` e fare clic su **Crea progetto**.
+Per verificare a quale istanza hai effettuato l’accesso, fai clic sull’icona dell’istanza. Scegliere l&#39;istanza a cui è stato concesso l&#39;accesso, che deve essere `--aepImsOrgName--`.
+
+Fare clic su **+ Nuovo progetto** per creare un progetto personalizzato in Frame.io.
+
+![I/O fotogrammi](./images/frame1a.png)
+
+Seleziona il modello **Vuoto** e immetti il nome `--aepUserLdap--` per il progetto. Fare clic su **Crea nuovo progetto**.
 
 ![I/O fotogrammi](./images/frame2.png)
 
-Il progetto verrà quindi visualizzato nel menu a sinistra.
-In uno degli esercizi precedenti, hai scaricato [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} sul desktop. Seleziona il file, quindi trascinalo nella cartella del progetto appena creata.
+Il progetto verrà quindi visualizzato nel menu a sinistra. Fai clic sull&#39;icona **+**, quindi seleziona **Nuova cartella**.
 
-![I/O fotogrammi](./images/frame3.png)
+![I/O fotogrammi](./images/framev4_3.png)
 
-## 1.2.5.2 Workfront Fusion e Frame.io
+Immettere il nome `CitiSignal Fiber Campaign`, quindi fare doppio clic sulla cartella per aprirla.
+
+![I/O fotogrammi](./images/framev4_4.png)
+
+Fai clic su **Carica**.
+
+![I/O fotogrammi](./images/framev4_5.png)
+
+In uno degli esercizi precedenti, hai scaricato [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"}. Selezionare il file e fare clic su **Apri**.
+
+![I/O fotogrammi](./images/framev4_6.png)
+
+Il file **citisignal-fiber.psd** sarà quindi disponibile nella cartella appena creata.
+
+![I/O fotogrammi](./images/framev4_7.png)
+
+## 1.2.5.3 Workfront Fusion e Frame.io
 
 Nell&#39;esercizio precedente è stato creato lo scenario `--aepUserLdap-- - Firefly + Photoshop`, che è iniziato con un webhook personalizzato e si è concluso con una risposta del webhook. L’utilizzo dei webhook è stato quindi testato utilizzando Postman, ma ovviamente, il punto di tale scenario è essere chiamato da un’applicazione esterna. Come indicato in precedenza, Frame.io sarà quell&#39;esercizio, ma tra Frame.io e `--aepUserLdap-- - Firefly + Photoshop` è necessario un altro scenario Workfront Fusion. ora configurerai quello scenario.
 
@@ -50,7 +73,7 @@ Nel menu a sinistra, vai a **Scenari** e seleziona la cartella `--aepUserLdap--`
 
 ![I/O fotogrammi](./images/frame4.png)
 
-Utilizza il nome `--aepUserLdap-- - Frame IO Custom Action`.
+Utilizza il nome `--aepUserLdap-- - Frame IO Custom Action V4`.
 
 ![I/O fotogrammi](./images/frame5.png)
 
@@ -74,43 +97,65 @@ Dovresti vedere questo. Lascia aperta e inalterata questa schermata come ti serv
 
 ![I/O fotogrammi](./images/frame10.png)
 
-Vai a [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Fai clic su **STRUMENTI PER SVILUPPATORI**, quindi scegli **Azioni personalizzate**.
+## 1.2.5.4 API azioni personalizzate Frame.io V4
 
-![I/O fotogrammi](./images/frame11.png)
+Vai a Postman e apri la richiesta **POST - Ottieni token di accesso** nella raccolta **Adobe IO - OAuth**. Verifica il campo **ambito** in **Parametri**. Il campo **ambito** deve includere l&#39;ambito `frame.s2s.all`. Se manca, aggiungilo. Fai clic su **Invia** per richiedere un nuovo **access_token**.
 
-Fare clic su **Crea azione personalizzata**.
+![I/O fotogrammi](./images/frameV4api2.png)
 
-![I/O fotogrammi](./images/frame12.png)
+Apri la richiesta **GET - Elenca account** nella raccolta **Frame.io V4 - Tech Insiders**. Fai clic su **Invia**.
 
-Immetti i seguenti valori:
+![I/O fotogrammi](./images/frameV4api1.png)
 
-- **NOME**: utilizzare `--aepUserLdap-- - Frame IO Custom Action Fusion`
-- **DESCRIZIONE**: utilizzare `--aepUserLdap-- - Frame IO Custom Action Fusion`
-- **EVENTO**: utilizzare `fusion.tutorial`.
-- **URL**: immetti l&#39;URL del webhook appena creato in Workfront Fusion
-- **TEAM**: seleziona il team Frame.io appropriato, in questo caso **One Adobe Tutorial**.
+Dovresti quindi visualizzare una risposta simile che contiene uno o più account. Rivedi la risposta e individua il campo **id** per l&#39;account Frame.io V4 in uso. Puoi trovare il nome dell’account nell’interfaccia utente di Frame.io V4:
+
+![I/O fotogrammi](./images/frame1.png)
+
+Copia il valore del campo **id**.
+
+![I/O fotogrammi](./images/frameV4api3.png)
+
+Nel menu a sinistra, vai a **Ambienti** e seleziona l&#39;ambiente che stai utilizzando. Trova la variabile **`FRAME_IO_ACCOUNT_ID`** e incolla il **id** ottenuto dalla richiesta precedente sia nella colonna **Valore iniziale** che nella colonna **Valore corrente**. Fai clic su **Salva**.
+
+![I/O fotogrammi](./images/frameV4api4.png)
+
+Nel menu a sinistra, torna a **Raccolte**. Apri la richiesta **GET - Elenca aree di lavoro** nella raccolta **Frame.io V4 - Tech Insiders**. Fai clic su **Invia**.
+
+![I/O fotogrammi](./images/frameV4api5.png)
+
+Dovresti quindi visualizzare una risposta simile che contiene uno o più account. Rivedi la risposta e individua il campo **id** per il Workspace Frame.io V4 in uso. Copia il valore del campo **id**.
+
+![I/O fotogrammi](./images/frameV4api6.png)
+
+Nel menu a sinistra, vai a **Ambienti** e seleziona l&#39;ambiente che stai utilizzando. Trova la variabile **`FRAME_IO_WORKSPACE_ID`** e incolla il **id** ottenuto dalla richiesta precedente sia nella colonna **Valore iniziale** che nella colonna **Valore corrente**. Fai clic su **Salva**.
+
+![I/O fotogrammi](./images/frameV4api7.png)
+
+Nel menu a sinistra, torna a **Raccolte**. Apri la richiesta **POST - Crea azione personalizzata** nella raccolta **Frame.io V4 - Tech Insiders**, nella cartella **Azioni personalizzate**.
+
+Vai al **Corpo** della richiesta. Cambia il campo **name** in `--aepUserLdap--  - Frame.io Custom Action V4`, quindi cambia il campo **url** con il valore dell&#39;URL del webhook copiato da Workfront Fusion.
 
 Fai clic su **Invia**.
 
-![I/O fotogrammi](./images/frame15.png)
+![I/O fotogrammi](./images/frameV4api8.png)
 
-Dovresti vedere questo.
+L&#39;azione personalizzata Frame.io V4 è stata creata.
 
-![I/O fotogrammi](./images/frame14.png)
+![I/O fotogrammi](./images/frameV4api9.png)
 
-Torna a [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}. Aggiorna la pagina.
+Torna a [https://next.frame.io/](https://next.frame.io/){target="_blank"} e passa alla cartella **Campagna Fibre Signal** creata nel progetto `--aepUserLdap--`. Aggiorna la pagina.
 
 ![I/O fotogrammi](./images/frame16.png)
 
-Dopo aver aggiornato la pagina, fai clic sui tre punti **...** della risorsa **citisignal-fiber.psd**. Dovresti quindi visualizzare l’azione personalizzata creata in precedenza nel menu visualizzato. Fare clic sull&#39;azione personalizzata `--aepUserLdap-- - Frame IO Custom Action Fusion`.
+Dopo aver aggiornato la pagina, fai clic sui tre punti **...** della risorsa **citisignal-fiber.psd** e apri il menu **Azioni personalizzate**. Dovresti quindi visualizzare l’azione personalizzata creata in precedenza nel menu visualizzato. Fare clic sull&#39;azione personalizzata `--aepUserLdap-- - Frame IO Custom Action Fusion V4`.
 
 ![I/O fotogrammi](./images/frame17.png)
 
-Dovresti quindi vedere un **esito positivo simile.Popup**. Questa finestra a comparsa è il risultato della comunicazione tra Frame.io e Workfront Fusion.
+Dovresti quindi visualizzare un pop-up **Azione personalizzata** simile. Questa finestra a comparsa è il risultato della comunicazione tra Frame.io e Workfront Fusion.
 
 ![I/O fotogrammi](./images/frame18.png)
 
-Tornate a Workfront Fusion nella schermata. Dovresti vedere **Determinato correttamente** visualizzato nell&#39;oggetto Webhook personalizzato. Fai clic su **OK**.
+Tornate a Workfront Fusion nella schermata. **Determinato correttamente** viene visualizzato nell&#39;oggetto webhook personalizzato. Fai clic su **OK**.
 
 ![I/O fotogrammi](./images/frame19.png)
 
@@ -118,7 +163,7 @@ Fare clic su **Esegui una volta** per attivare la modalità di test e verificare
 
 ![I/O fotogrammi](./images/frame20.png)
 
-Tornare a Frame.io e fare di nuovo clic sull&#39;azione personalizzata `--aepUserLdap-- - Frame IO Custom Action Fusion`.
+Tornare a Frame.io e fare di nuovo clic sull&#39;azione personalizzata `--aepUserLdap-- - Frame IO Custom Action Fusion V4`.
 
 ![I/O fotogrammi](./images/frame21.png)
 
@@ -132,7 +177,7 @@ La vista dettagliata della bolla mostra i dati ricevuti da Frame.io. Dovresti vi
 
 Ora che è stata stabilita la comunicazione tra Frame.io e Workfront Fusion, è possibile continuare la configurazione.
 
-## 1.2.5.3 Fornitura di una risposta del modulo personalizzato a Frame.io
+## 1.2.5.5 Fornitura di una risposta del modulo personalizzato a Frame.io
 
 Quando l&#39;azione personalizzata viene richiamata in Frame.io, Frame.io prevede di ricevere una risposta da Workfront Fusion. Se si ripensa allo scenario creato nell&#39;esercizio precedente, sono necessarie diverse variabili per aggiornare il file Photoshop PSD standard. Tali variabili sono definite nel payload utilizzato:
 
@@ -258,11 +303,17 @@ Dovresti vederlo di nuovo.
 
 ![I/O fotogrammi](./images/frame41.png)
 
-Torna a Frame.io e compila i campi come indicato. Fai clic su **Invia**.
+Torna a Frame.io e compila i campi come indicato.
+
+- **Prompt**: raggi laser futuristici che scorrono nello spazio
+- **CTA**: Timetravel now!
+- **Testo pulsante**: Entra a bordo!
+
+Fai clic su **Invia**.
 
 ![I/O fotogrammi](./images/frame39.png)
 
-Dovresti quindi vedere un **Operazione completata.Popup**.
+Dovresti quindi visualizzare una finestra a comparsa in Frame.io che si presenta così.
 
 ![I/O fotogrammi](./images/frame42.png)
 
@@ -270,19 +321,19 @@ Torna a Workfront Fusion e fai clic sul fumetto nel modulo **Webhook personalizz
 
 ![I/O fotogrammi](./images/frame43.png)
 
-## 1.2.5.4 Recupera percorso file da Frame.io
+## 1.2.5.6 Recupera percorso file da Frame.io
 
 Come già accennato, per il corretto funzionamento di questo scenario sono necessari campi come **prompt**, **cta**, **button** e **psdTemplate**. I primi 3 campi sono già disponibili, ma manca ancora il **psdTemplate** da utilizzare. **psdTemplate** farà ora riferimento a una posizione Frame.io poiché il file **citisignal-fiber.psd** è ospitato in Frame.io. Per recuperare la posizione del file, è necessario configurare e utilizzare la connessione Frame.io in Workfront Fusion.
 
-Tornare a Workfront Fusion e aprire lo scenario `--aepUserLdap-- - Frame IO Custom Action`. Passare il cursore su **?Modulo**, fai clic sull&#39;icona **+** per aggiungere un altro modulo e cercare `frame`. Fare clic su **Frame.io**.
+Tornare a Workfront Fusion e aprire lo scenario `--aepUserLdap-- - Frame IO Custom Action V4`. Passare il cursore su **?Modulo**, fai clic sull&#39;icona **+** per aggiungere un altro modulo e cercare `frame`. Fare clic su **Frame.io**.
 
 ![I/O fotogrammi](./images/frame44.png)
 
-Fare clic su **Frame.io (legacy)**.
+Fare clic su **Frame.io**.
 
 ![I/O fotogrammi](./images/frame45.png)
 
-Fai clic su **Ottieni una risorsa**.
+Fai clic su **Effettua una chiamata API personalizzata**.
 
 ![I/O fotogrammi](./images/frame46.png)
 
@@ -290,51 +341,69 @@ Per utilizzare la connessione Frame.io, è necessario prima configurarla. Fai cl
 
 ![I/O fotogrammi](./images/frame47.png)
 
-Apri il menu a discesa **Tipo di connessione**.
+Selezionare il tipo di connessione **Tipo di connessione** **Server IMS al server** e immettere il nome `--aepUserLdap-- - Adobe I/O - Frame.io S2S`.
 
 ![I/O fotogrammi](./images/frame48.png)
 
-Selezionare **Chiave API Frame.io** e immettere il nome `--aepUserLdap-- - Frame.io Token`.
-
-![I/O fotogrammi](./images/frame49.png)
-
-Per ottenere un token API, vai a [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Fai clic su **STRUMENTI PER SVILUPPATORI**, quindi scegli **Token**.
+Quindi, devi immettere l&#39;**ID client** e il **Segreto client** del progetto Adobe I/O configurato come parte del modulo **Guida introduttiva**. Puoi trovare **ID client** e **Segreto client** del progetto Adobe I/O [qui](https://developer.adobe.com/console/projects.){target="_blank"}.
 
 ![I/O fotogrammi](./images/frame50.png)
 
-Fai clic su **Crea un token**.
-
-![I/O fotogrammi](./images/frame51.png)
-
-Utilizza **Descrizione** `--aepUserLdap-- - Frame.io Token` e fai clic su **Seleziona tutti gli ambiti**.
-
-![I/O fotogrammi](./images/frame52.png)
-
-Scorri verso il basso e fai clic su **Invia**.
-
-![I/O fotogrammi](./images/frame53.png)
-
-Il token è stato creato. Fai clic su **Copia** per copiarlo negli Appunti.
-
-![I/O fotogrammi](./images/frame54.png)
-
-Torna allo scenario in Workfront Fusion. Incolla il token nel campo **Chiave API Frame.io**. Fare clic su **OK**. La connessione verrà ora testata da Workfront Fusion.
+Torna allo scenario in Workfront Fusion. Incolla i valori di **ID client** e **Segreto client** nel rispettivo campo nella finestra di configurazione della connessione. Fai clic su **Continua**. La connessione verrà ora testata da Workfront Fusion.
 
 ![I/O fotogrammi](./images/frame55.png)
 
-Se la connessione è stata testata correttamente, verrà visualizzata automaticamente in **Connessione**. Ora disponi di una connessione riuscita e devi completare la configurazione per ottenere tutti i dettagli della risorsa da Frame.io, inclusa la posizione del file. A questo scopo, devi fornire **ID risorsa**.
+Se la connessione è stata testata correttamente, verrà visualizzata automaticamente in **Connessione**. Ora disponi di una connessione riuscita e devi completare la configurazione per ottenere tutti i dettagli della risorsa da Frame.io, inclusa la posizione del file. A tale scopo, è necessario utilizzare **ID risorsa**.
 
 ![I/O fotogrammi](./images/frame56.png)
 
-L&#39;**ID risorsa** è condiviso da Frame.io a Workfront Fusion come parte della comunicazione **webhook personalizzato** iniziale ed è disponibile nel campo **resource.id**. Seleziona **resource.id** e fai clic su **OK**.
+Il campo **ID risorsa** è condiviso da Frame.io a Workfront Fusion come parte della comunicazione **webhook personalizzato** iniziale ed è disponibile nel campo **resource.id**.
+
+Per la configurazione del modulo **Frame.io - Effettuare una chiamata API personalizzata**, utilizzare l&#39;URL: `/v4/accounts/{{1.account_id}}/files/{{1.resource.id}}`.
+
+>[!NOTE]
+>
+>È possibile specificare manualmente le variabili in Workfront Fusion utilizzando la seguente sintassi: `{{1.account_id}}` e `{{1.resource.id}}`. Il numero nella variabile fa riferimento al modulo nello scenario. In questo esempio, puoi vedere che il primo modulo nello scenario è denominato **Webhook** e ha un numero di sequenza di **1**. Ciò significa che le variabili `{{1.account_id}}` e `{{1.resource.id}}` accederanno a quel campo dal modulo con il numero di sequenza 1. I numeri di sequenza a volte possono essere diversi, quindi fai attenzione quando copi/incolla tali variabili e verifica sempre che il numero di sequenza utilizzato sia quello corretto.
+
+Fare clic su **+ Aggiungi elemento** in **Stringa di query**.
 
 ![I/O fotogrammi](./images/frame57.png)
 
-Ora dovresti vedere questo. Salva le modifiche e fai clic su **Esegui una volta** per verificare lo scenario.
+Immetti questi valori e fai clic su **Aggiungi**.
+
+| Chiave | Valore |
+|:-------------:| :---------------:| 
+| `include` | `media_links.original` |
 
 ![I/O fotogrammi](./images/frame58.png)
 
-Torna a Frame.io e fai di nuovo clic sull&#39;azione personalizzata `--aepUserLdap-- - Frame IO Custom Action Fusion` sulla risorsa **citisignal-fiber.psd**.
+Ora dovresti avere questo. Fai clic su **OK**.
+
+![I/O fotogrammi](./images/frame58a.png)
+
+Successivamente, devi impostare un filtro per garantire che questo percorso dello scenario venga eseguito solo quando non è disponibile alcun prompt. Fai clic sull&#39;icona **chiave inglese**, quindi seleziona **Configura filtro**.
+
+![I/O fotogrammi](./images/frame58c.png)
+
+Configura i campi seguenti:
+
+- **Etichetta**: utilizzare `Prompt is available`.
+- **Condizione**: utilizzare `{{1.data.Prompt}}`.
+- **Operatori di base**: selezionare **Esiste**.
+
+>[!NOTE]
+>
+>È possibile specificare manualmente le variabili in Workfront Fusion utilizzando la seguente sintassi: `{{1.data.Prompt}}`. Il numero nella variabile fa riferimento al modulo nello scenario. In questo esempio, puoi vedere che il primo modulo nello scenario è denominato **Webhook** e ha un numero di sequenza di **1**. Ciò significa che la variabile `{{1.data.Prompt}}` accederà al campo **data.Prompt** dal modulo con numero di sequenza 1. I numeri di sequenza a volte possono essere diversi, quindi fai attenzione quando copi/incolla tali variabili e verifica sempre che il numero di sequenza utilizzato sia quello corretto.
+
+Fai clic su **OK**.
+
+![I/O fotogrammi](./images/frame58d.png)
+
+Ora dovresti vedere questo. Salva le modifiche e fai clic su **Esegui una volta** per verificare lo scenario.
+
+![I/O fotogrammi](./images/frame58b.png)
+
+Torna a Frame.io e fai di nuovo clic sull&#39;azione personalizzata `--aepUserLdap-- - Frame IO Custom Action Fusion V4` sulla risorsa **citisignal-fiber.psd**.
 
 ![I/O fotogrammi](./images/frame37.png)
 
@@ -348,23 +417,27 @@ Tornare a Workfront Fusion. Fai di nuovo clic su **Esegui**.
 
 Torna a Frame.io e compila i campi come indicato. Fai clic su **Invia**.
 
+- **Prompt**: raggi laser futuristici che scorrono nello spazio
+- **CTA**: Timetravel now!
+- **Testo pulsante**: Entra a bordo!
+
 ![I/O fotogrammi](./images/frame39.png)
 
-Torna a Workfront Fusion e fai clic sul fumetto nel modulo **Frame.io - Ottieni una risorsa**.
+Torna a Workfront Fusion e fai clic sul fumetto nel modulo **Frame.io - Esegui una chiamata API personalizzata**.
 
 ![I/O fotogrammi](./images/frame60.png)
 
-Sono ora visibili molti metadati sulla risorsa specifica **citisignal-fiber.psd**.
+In **OUTPUT** > **Body** > **data** è ora possibile visualizzare molti metadati sulla risorsa specifica **citisignal-fiber.psd**.
 
 ![I/O fotogrammi](./images/frame61.png)
 
-Le informazioni specifiche necessarie per questo caso d&#39;uso sono l&#39;URL del percorso del file **citisignal-fiber.psd**, che puoi trovare scorrendo verso il basso fino al campo **Original**.
+Le informazioni specifiche necessarie per questo caso d&#39;uso sono l&#39;URL del percorso del file **citisignal-fiber.psd**, che puoi trovare scorrendo verso il basso fino al campo **media_links** > **Original** > **download_url**.
 
 ![I/O fotogrammi](./images/frame62.png)
 
-Sono ora disponibili tutti i campi (**prompt**, **cta**, **button** e **psdTemplate**) necessari per il funzionamento di questo scenario.
+Sono ora disponibili tutte le informazioni (**prompt**, **cta**, **button** e **psdTemplate**) necessarie per il funzionamento di questo caso d&#39;uso.
 
-## 1.2.5.5 richiama scenario Workfront
+## 1.2.5.7 richiama scenario Workfront
 
 Nell&#39;esercizio precedente è stato configurato lo scenario `--aepUserLdap-- - Firefly + Photoshop`. Ora è necessario apportare una modifica minore a tale scenario.
 
@@ -380,7 +453,7 @@ Fare clic sul modulo **Webhook personalizzato** e quindi su **Copia indirizzo ne
 
 ![I/O fotogrammi](./images/frame65.png)
 
-Torna allo scenario `--aepUserLdap-- - Frame IO Custom Action`. Passa il puntatore del mouse su **Frame.io - Ottieni una risorsa** e fai clic sull&#39;icona **+**.
+Torna allo scenario `--aepUserLdap-- - Frame IO Custom Action V4`. Passa il puntatore del mouse su **Frame.io - Effettua una chiamata API personalizzata** e fai clic sull&#39;icona **+**.
 
 ![I/O fotogrammi](./images/frame66.png)
 
@@ -392,7 +465,7 @@ Seleziona **Crea una richiesta**.
 
 ![I/O fotogrammi](./images/frame68.png)
 
-Incolla l&#39;URL del webhook personalizzato nel campo **URL**. Impostare **Method** su POST**.
+Incolla l&#39;URL del webhook personalizzato nel campo **URL**. Impostare **Method** su **POST**.
 
 ![I/O fotogrammi](./images/frame69.png)
 
@@ -413,11 +486,13 @@ Ora disponi di un payload statico configurato, ma deve diventare dinamico utiliz
 
 ![I/O fotogrammi](./images/frame70.png)
 
-Per il campo **psdTemplate**, sostituire la variabile statica **citisignal-fiber.psd** con la variabile **Original**.
+Per il campo **psdTemplate**, sostituire la variabile statica **citisignal-fiber.psd** con la variabile **`Body > data > media_links > original > download_url`**.
 
 ![I/O fotogrammi](./images/frame71.png)
 
 Per i campi **prompt**, **cta** e **button**, sostituire le variabili statiche con le variabili dinamiche inserite nello scenario dalla richiesta del webhook in ingresso da Frame.io, ovvero i campi **data.Prompt**, **data.CTA Text** e **data.Button Text**.
+
+Abilitare inoltre la casella di controllo per **Analisi risposta**.
 
 Fai clic su **OK**.
 
@@ -427,7 +502,7 @@ Fai clic su **Salva** per salvare le modifiche.
 
 ![I/O fotogrammi](./images/frame73.png)
 
-## 1.2.5.6 Salva nuova risorsa in Frame.io
+## 1.2.5.8 Salva nuova risorsa in Frame.io
 
 Una volta richiamato l’altro scenario Workfront Fusion, verrà generato un nuovo modello Photoshop PSD disponibile. Il file PSD deve essere memorizzato nuovamente in Frame.io, che è l&#39;ultimo passaggio di questo scenario.
 
@@ -435,11 +510,11 @@ Passa il puntatore del mouse sul modulo **HTTP - Esegui una richiesta** e fai cl
 
 ![I/O fotogrammi](./images/frame74.png)
 
-Seleziona **Frame.io (legacy)**.
+Seleziona **Frame.io**.
 
 ![I/O fotogrammi](./images/frame75.png)
 
-Seleziona **Crea una risorsa**.
+Selezionare **Effettuare una chiamata API personalizzata**.
 
 ![I/O fotogrammi](./images/frame76.png)
 
@@ -447,66 +522,52 @@ La connessione Frame.io verrà selezionata automaticamente.
 
 ![I/O fotogrammi](./images/frame77.png)
 
-Selezionare le opzioni seguenti:
+Per la configurazione del modulo **Frame.io - Effettuare una chiamata API personalizzata**, utilizzare l&#39;URL: `/v4/accounts/{{1.account_id}}/folders/{{4.body.data.parent_id}}/files/remote_upload`.
 
-- **ID team**: selezionare l&#39;ID team appropriato, in questo caso `One Adobe Tutorial`.
-- **ID progetto**: utilizzare `--aepUserLdap--`.
-- **ID cartella**: utilizzare `root`.
-- **Tipo**: utilizzare `File`.
+Sostituisci XXX nell’URL precedente con l’ID della cartella
+
+>[!NOTE]
+>
+>Come indicato in precedenza, è possibile specificare manualmente le variabili in Workfront Fusion utilizzando la sintassi seguente: `{{1.account_id}}` e `{{4.body.data.parent_id}}`. Il numero nella variabile fa riferimento al modulo nello scenario.
+>>In questo esempio, puoi vedere che il primo modulo nello scenario è denominato **Webhook** e ha un numero di sequenza di **1**. Ciò significa che la variabile `{{1.account_id}}` accederà a tale campo dal modulo con il numero di sequenza 1.
+>>In questo esempio, puoi vedere che il quarto modulo nello scenario è denominato **Frame.io - Effettua una chiamata API personalizzata** e ha un numero di sequenza **4**. Ciò significa che la variabile `{{4.body.data.parent_id}}` accederà a tale campo dal modulo con il numero di sequenza 4.
+>>Se i numeri di sequenza dei moduli sono diversi, dovrai aggiornare le variabili nell’URL precedente per collegarle al modulo corretto.
 
 ![I/O fotogrammi](./images/frame78.png)
 
-Per il campo **Name**, puoi utilizzare una variabile come **timestamp** (o modificarla in qualcosa che abbia più senso per te). Puoi trovare la variabile predefinita **timestamp** nella scheda **Data e ora**.
+Modificare il campo **Metodo** in **POST**.
 
-![I/O fotogrammi](./images/frame79.png)
-
-Per il campo **URL Source**, utilizza il codice JSON seguente.
+Copia e incolla il frammento JSON seguente nel campo **Body**.
 
 ```json
-{{6.data.newPsdTemplate}}
+{
+  "data": {
+    "name": "citisignal-fiber-{{timestamp}}.psd",
+    "source_url": "{{6.data.newPsdTemplate}}"
+  }
+}
 ```
 
 >[!NOTE]
 >
->È possibile specificare manualmente le variabili in Workfront Fusion utilizzando la seguente sintassi: `{{6.data.newPsdTemplate}}`. Il numero nella variabile fa riferimento al modulo nello scenario. In questo esempio, puoi vedere che il sesto modulo nello scenario si chiama **HTTP - Fai una richiesta** e ha un numero di sequenza di **6**. Ciò significa che la variabile `{{6.data.newPsdTemplate}}` accederà al campo **data.newPsdTemplate** dal modulo con numero di sequenza 6. I numeri di sequenza a volte possono essere diversi, quindi fai attenzione quando copi/incolla tali variabili e verifica sempre che il numero di sequenza utilizzato sia quello corretto.
+>È possibile specificare manualmente le variabili in Workfront Fusion utilizzando la seguente sintassi: `{{6.data.newPsdTemplate}}`. Il numero nella variabile fa riferimento al modulo nello scenario. In questo esempio, puoi vedere che il sesto modulo nello scenario si chiama **HTTP - Fai una richiesta** e ha un numero di sequenza di **6**. Ciò significa che la variabile `{{6.data.newPsdTemplate}}` accederà al campo **data.newPsdTemplate** dal modulo con numero di sequenza 6.
+>>Se i numeri di sequenza del modulo sono diversi, dovrai aggiornare la variabile nell’URL precedente per collegarla al modulo corretto.
 
 Fai clic su **OK**.
 
-![I/O fotogrammi](./images/frame80.png)
+![I/O fotogrammi](./images/frame79.png)
 
 Fai clic su **Salva** per salvare le modifiche.
 
 ![I/O fotogrammi](./images/frame81.png)
 
-Infine, devi impostare un filtro per garantire che questo percorso dello scenario venga eseguito solo quando è disponibile un prompt. Fai clic sull&#39;icona **chiave inglese**, quindi seleziona **Configura filtro**.
-
-![I/O fotogrammi](./images/frame82.png)
-
-Configura i campi seguenti:
-
-- **Etichetta**: utilizzare `Prompt is available`.
-- **Condizione**: utilizzare `{{1.data.Prompt}}`.
-- **Operatori di base**: selezionare **exists**.
-
->[!NOTE]
->
->È possibile specificare manualmente le variabili in Workfront Fusion utilizzando la seguente sintassi: `{{1.data.Prompt}}`. Il numero nella variabile fa riferimento al modulo nello scenario. In questo esempio, puoi vedere che il primo modulo nello scenario è denominato **Webhook** e ha un numero di sequenza di **1**. Ciò significa che la variabile `{{1.data.Prompt}}` accederà al campo **data.Prompt** dal modulo con numero di sequenza 1. I numeri di sequenza a volte possono essere diversi, quindi fai attenzione quando copi/incolla tali variabili e verifica sempre che il numero di sequenza utilizzato sia quello corretto.
-
-Fai clic su **OK**.
-
-![I/O fotogrammi](./images/frame83.png)
-
-Fai clic su **Salva** per salvare le modifiche.
-
-![I/O fotogrammi](./images/frame84.png)
-
-## 1.2.5.7 Verifica il tuo caso d&#39;uso end-to-end
+## 1.2.5.9 Verifica il tuo caso d&#39;uso end-to-end
 
 Fai clic su **Esegui una volta** nello scenario `--aepUserLdap-- - Frame IO Custom Action`.
 
 ![I/O fotogrammi](./images/frame85.png)
 
-Torna a Frame.io e fai di nuovo clic sull&#39;azione personalizzata `--aepUserLdap-- - Frame IO Custom Action Fusion` sulla risorsa **citisignal-fiber.psd**.
+Torna a Frame.io e fai di nuovo clic sull&#39;azione personalizzata `--aepUserLdap-- - Frame IO Custom Action Fusion V4` sulla risorsa **citisignal-fiber.psd**.
 
 ![I/O fotogrammi](./images/frame37.png)
 
@@ -514,7 +575,7 @@ Ora dovresti visualizzare un prompt all’interno di Frame.io. Non compilare anc
 
 ![I/O fotogrammi](./images/frame38.png)
 
-Tornare a Workfront Fusion. Fai clic su **Esegui una volta** nello scenario `--aepUserLdap-- - Frame IO Custom Action`.
+Tornare a Workfront Fusion. Fai clic su **Esegui una volta** nello scenario `--aepUserLdap-- - Frame IO Custom Action V4`.
 
 ![I/O fotogrammi](./images/frame86.png)
 
@@ -523,6 +584,10 @@ In Workfront Fusion, aprire lo scenario `--aepUserLdap-- - Firefly + Photoshop` 
 ![I/O fotogrammi](./images/frame87.png)
 
 Torna a Frame.io e compila i campi come indicato. Fai clic su **Invia**.
+
+- **Prompt**: raggi laser futuristici che scorrono nello spazio
+- **CTA**: Timetravel now!
+- **Testo pulsante**: Entra a bordo!
 
 ![I/O fotogrammi](./images/frame39.png)
 

@@ -4,9 +4,9 @@ description: AEM CS - Blocco personalizzato avanzato
 kt: 5342
 doc-type: tutorial
 exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1000'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Ora puoi continuare a lavorare su questo blocco.
 
 ![AEMCS](./images/nav7.png){zoomable="yes"}
 
-## 1.1.5.1 Personalizzare lo stile del blocco
+## 1.1.5.1 Personalizza lo stile del blocco
 
 Ora che hai un blocco **fiberoffer** funzionante puoi applicarvi uno stile.
 
@@ -106,10 +106,10 @@ Nel browser, vai all’account GitHub e all’archivio creato per CitiSignal. Do
 
 ![Blocca](./images/blockadv12.png){zoomable="yes"}
 
-Potrai visualizzare le modifiche apportate al tuo sito web andando su `main--citisignal--XXX.aem.page/us/en` e/o `main--citisignal--XXX.aem.live/us/en`, dopo aver sostituito XXX con il tuo account utente GitHub, che in questo esempio è `woutervangeluwe`.
+Potrai visualizzare le modifiche apportate al tuo sito web andando su `main--citisignal--XXX.aem.page/us/en/` e/o `main--citisignal--XXX.aem.live/us/en/`, dopo aver sostituito XXX con il tuo account utente GitHub, che in questo esempio è `woutervangeluwe`.
 
 In questo esempio, l’URL completo diventa:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` e/o `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` e/o `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
 Dovresti visualizzarlo con lo stile applicato alla pagina.
 
@@ -336,10 +336,10 @@ Fare clic su **Origine push**.
 
 ![Blocca](./images/blockadv19.png){zoomable="yes"}
 
-Potrai visualizzare le modifiche apportate al tuo sito web andando su `main--citisignal--XXX.aem.page/us/en` e/o `main--citisignal--XXX.aem.live/us/en`, dopo aver sostituito XXX con il tuo account utente GitHub, che in questo esempio è `woutervangeluwe`.
+Potrai visualizzare le modifiche apportate al tuo sito web andando su `main--citisignal--XXX.aem.page/us/en/` e/o `main--citisignal--XXX.aem.live/us/en/`, dopo aver sostituito XXX con il tuo account utente GitHub, che in questo esempio è `woutervangeluwe`.
 
 In questo esempio, l’URL completo diventa:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` e/o `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` e/o `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
 Dovresti vedere questo.
 

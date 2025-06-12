@@ -4,16 +4,16 @@ description: AEM CS - Blocco personalizzato di base
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '814'
 ht-degree: 1%
 
 ---
 
 # 1.1.4 Sviluppare un blocco personalizzato di base
 
-## 1.1.4.1 Configurare l’ambiente di sviluppo locale
+## 1.1.4.1 Imposta l&#39;ambiente di sviluppo locale
 
 Vai a [https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}, scarica e installa **Github Desktop**.
 
@@ -43,7 +43,7 @@ La cartella verrà aperta in Visual Studio Code e sarà possibile creare un nuov
 
 ![Blocca](./images/block7.png){zoomable="yes"}
 
-## 1.1.4.2 Creare un blocco personalizzato di base
+## 1.1.4.2 Crea un blocco personalizzato di base
 
 Adobe consiglia di sviluppare blocchi in un approccio in tre fasi:
 
@@ -169,7 +169,7 @@ Nel browser, vai all’account GitHub e all’archivio creato per CitiSignal. Do
 
 ![Blocca](./images/block20.png){zoomable="yes"}
 
-## 1.1.4.4 Aggiungere il blocco a una pagina
+## 1.1.4.4 Aggiungi il blocco a una pagina
 
 Ora che il blocco delle virgolette di base è definito e confermato nel progetto CitiSignal, puoi aggiungere un blocco **fiberoffer** a una pagina esistente.
 
@@ -259,7 +259,7 @@ Aggiungere un&#39;opzione di menu al menu di navigazione con il testo `Fiber`. S
 
 ![AEMCS](./images/nav1.png){zoomable="yes"}
 
-Immetti questo valore per **URL** `/us/en/citisignal-fiber` e fai clic sull&#39;icona **V** per confermare.
+Immetti questo valore per **URL** `/us/en//citisignal-fiber` e fai clic sull&#39;icona **V** per confermare.
 
 ![AEMCS](./images/nav3.png){zoomable="yes"}
 
@@ -271,10 +271,10 @@ Fai di nuovo clic su **Pubblica**.
 
 ![AEMCS](./images/nav5.png){zoomable="yes"}
 
-Potrai visualizzare le modifiche apportate al tuo sito web andando su `main--citisignal--XXX.aem.page/us/en` e/o `main--citisignal--XXX.aem.live/us/en`, dopo aver sostituito XXX con il tuo account utente GitHub, che in questo esempio è `woutervangeluwe`.
+Potrai visualizzare le modifiche apportate al tuo sito web andando su `main--citisignal--XXX.aem.page/us/en/` e/o `main--citisignal--XXX.aem.live/us/en/`, dopo aver sostituito XXX con il tuo account utente GitHub, che in questo esempio è `woutervangeluwe`.
 
 In questo esempio, l’URL completo diventa:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` e/o `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` e/o `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
 Dovresti vedere questo. Fare clic su **Fibra**.
 

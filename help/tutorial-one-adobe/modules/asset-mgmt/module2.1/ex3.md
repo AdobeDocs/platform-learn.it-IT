@@ -4,16 +4,16 @@ description: Configurare l’ambiente AEM CS
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
 
 # 1.1.3 Configurare l’ambiente AEM CS
 
-## 1.1.3.1 Configurare l’archivio GitHub
+## 1.1.3.1 Configurare l&#39;archivio GitHub
 
 Vai a [https://github.com](https://github.com){target="_blank"}. Fai clic su **Accedi**.
 
@@ -55,7 +55,7 @@ Riceverai questa conferma.
 
 ![AEMCS](./images/aemcssetup10.png){zoomable="yes"}
 
-## 1.1.3.2 Aggiornamento del file fstab.yaml
+## 1.1.3.2 Aggiorna file fstab.yaml
 
 Nel repository GitHub, fare clic per aprire il file `fstab.yaml`.
 
@@ -83,7 +83,7 @@ YYY deve essere sostituito dall’account utente GitHub.
 
 ZZZ deve essere sostituito dal nome dell’archivio GitHub utilizzato nell’esercizio precedente.
 
-Per trovare l&#39;URL dell&#39;ambiente AEM CS Author, vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Fai clic sul **Programma** per aprirlo.
+Per trovare l&#39;URL dell&#39;ambiente di authoring AEM CS, vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Fai clic sul **Programma** per aprirlo.
 
 ![AEMCS](./images/aemcs6.png){zoomable="yes"}
 
@@ -123,7 +123,7 @@ Fai clic su **Commit changes**.
 
 Il file `fstab.yaml` è stato aggiornato.
 
-## 1.1.3.3 Caricare risorse CitiSignal
+## 1.1.3.3 Carica risorse CitiSignal
 
 Vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Fai clic sul **Programma** per aprirlo.
 
@@ -186,7 +186,7 @@ Dopo un paio di minuti, il pacchetto verrà installato.
 È ora possibile chiudere questa finestra.
 
 
-## 1.1.3.4 Pubblicare risorse CitiSignal
+## 1.1.3.4 risorse CitiSignal di pubblicazione
 
 Vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Fai clic sul **Programma** per aprirlo.
 
@@ -222,7 +222,7 @@ Fai clic su **Pubblica**.
 
 Le risorse sono state pubblicate.
 
-## 1.1.3.5 Creare il sito web CitiSignal
+## 1.1.3.5 Crea sito Web CitiSignal
 
 Vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Fai clic sul **Programma** per aprirlo.
 
@@ -278,7 +278,7 @@ Dopo alcuni minuti, aggiorna lo schermo e vedrai il tuo nuovo sito Web CitiSigna
 
 ![AEMCS](./images/aemcssetup38.png){zoomable="yes"}
 
-## 1.1.3.6 Pubblicare il sito web CitiSignal
+## Sito Web CitiSignal di pubblicazione 1.1.3.6
 
 Fare clic sulla casella di controllo davanti a **CitiSignal**. Quindi fare clic su **Gestisci pubblicazione**.
 
@@ -308,10 +308,10 @@ Il sito Web verrà quindi aperto in **Universal Editor**.
 
 ![AEMCS](./images/aemcssetup45.png){zoomable="yes"}
 
-Ora potrai accedere al tuo sito web da `main--citisignal--XXX.aem.page/us/en` e/o `main--citisignal--XXX.aem.live/us/en`, dopo aver sostituito XXX con il tuo account utente GitHub, che in questo esempio è `woutervangeluwe`.
+Ora potrai accedere al tuo sito web da `main--citisignal--XXX.aem.page/us/en/` e/o `main--citisignal--XXX.aem.live/us/en/`, dopo aver sostituito XXX con il tuo account utente GitHub, che in questo esempio è `woutervangeluwe`.
 
 In questo esempio, l’URL completo diventa:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` e/o `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` e/o `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
 Potrebbero essere necessari alcuni minuti prima che tutte le risorse vengano visualizzate correttamente, in quanto devono essere pubblicate prima.
 
@@ -323,7 +323,7 @@ Dopo un paio di minuti, tutte le risorse verranno caricate correttamente.
 
 ![AEMCS](./images/aemcssetup47.png){zoomable="yes"}
 
-## 1.1.3.7 Prestazioni della pagina di prova
+## Prestazioni pagina di prova 1.1.3.7
 
 Vai a [https://pagespeed.web.dev/](https://pagespeed.web.dev/){target="_blank"}. Immetti l&#39;URL e fai clic su **Analizza**.
 

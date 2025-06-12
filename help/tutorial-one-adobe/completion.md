@@ -3,9 +3,9 @@ title: Completamento - Tutorial su un Adobe
 description: Come viene misurato il completamento?
 doc-type: multipage-overview
 exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
-source-git-commit: 872ef3910f7fe41b360f80ba13a3840efbfd2172
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ L&#39;ID del progetto Demo System per il formato Web è simile al seguente: `--a
 ![3](./assets/images/module0dtl.png){zoomable="yes"}
 
 
-## 1.1 Servizi di Adobe Firefly
+## 1.1 Adobe Firefly Services
 
 La prova di completamento prevista per il modulo **Adobe Firefly Services** è il **URL** del file PSD generato alla fine dell&#39;esercizio 1.1.3, dopo aver eseguito il passaggio **API Photoshop - Modifica testo**.
 
@@ -35,7 +35,7 @@ L&#39;URL è simile al seguente: `https://ldap.blob.core.windows.net/folder/citi
 
 ![3](./assets/images/ps24.png){zoomable="yes"}
 
-## 1.2 Automazione dei flussi di lavoro creativi con Workfront Fusion
+## 1.2 Automazione dei flussi di lavoro Creative con Workfront Fusion
 
 La prova di completamento prevista per il modulo **Creative Workflow Automation con Workfront Fusion** è il **URL** del webhook creato nell&#39;esercizio 1.2.3, dopo aver eseguito il passaggio **Attiva lo scenario utilizzando un webhook**.
 
@@ -43,17 +43,17 @@ L&#39;URL è simile al seguente: `https://hook.fusion.adobe.com/tuqxu1k4rbf7xdii
 
 ![3](./assets/images/wff.png){zoomable="yes"}
 
-## 2.1 Cloud Service e Edge Delivery Services Adobe Experience Manager
+## 2.1 Adobe Experience Manager Cloud Service e Edge Delivery Services
 
-La prova di completamento prevista per il modulo **Cloud Service e Edge Delivery Services di Adobe Experience Manager** è il **URL** del sito Web creato.
+La prova di completamento prevista per il modulo **Adobe Experience Manager Cloud Service &amp; Edge Delivery Services** è il **URL** del sito Web creato.
 
-L&#39;URL è simile al seguente: `https://main--citisignal--xxx.aem.page/us/en`.
+L&#39;URL è simile al seguente: `https://main--citisignal--xxx.aem.page/us/en/`.
 
 ![3](./assets/images/aemcsweb.png){zoomable="yes"}
 
 ## 2.2 Gestione dei flussi di lavoro con Adobe Workfront
 
-La prova di completamento prevista per il modulo **Gestione dei flussi di lavoro con Adobe Workfront** è il **URL** dell&#39;immagine caricata in AEM Assets nell&#39;ambito dell&#39;esercizio **2.2.2.5 Visualizza il file in AEM Assets**.
+La prova di completamento prevista per il modulo **Gestione dei flussi di lavoro con Adobe Workfront** è il **URL** dell&#39;immagine caricata in AEM Assets nell&#39;ambito dell&#39;esercizio **2.2.2.5Visualizza il file in AEM Assets**.
 
 Per ottenere l&#39;URL, fai clic su **Condividi collegamento** nell&#39;immagine caricata in AEM Assets.
 
@@ -81,7 +81,7 @@ L&#39;ID versione Campaign di Federated Data Model è simile al seguente: **b11c
 
 ![3](./assets/images/completemodule32ajotransl.png){zoomable="yes"}
 
-## 3.3 Adobe Journey Optimizer: Offer decisioning
+## 3.3 Adobe Journey Optimizer: Offer Decisioning
 
 La prova di completamento prevista per il modulo **Adobe Journey Optimizer: Offer Decisioning** è l&#39;ID della **decisione** creata.
 
