@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: e22ec4d64c60fdc720896bd8b339f49b05d7e48d
+source-git-commit: a9f2e42d001e260f79439850bc5a364a64d1fc0e
 workflow-type: tm+mt
-source-wordcount: '3182'
+source-wordcount: '3788'
 ht-degree: 0%
 
 ---
@@ -239,13 +239,13 @@ Nella raccolta **Adobe IO - OAuth**, selezionare la richiesta denominata **POST 
 
 Ora che disponi di un access_token valido e aggiornato, puoi inviare la tua prima richiesta alle API di Firefly Services.
 
-La richiesta che utilizzerai è una **richiesta sincrona**, che ti fornirà una risposta contenente l&#39;immagine richiesta in pochi secondi.
+La richiesta che utilizzerai è una richiesta **asincrona**, che ti fornisce una risposta contenente l&#39;URL del processo inviato, il che significa che dovrai utilizzare una seconda richiesta per controllare lo stato del processo e accedere all&#39;immagine generata.
 
 >[!NOTE]
 >
->Con il rilascio di Firefly Image 4 e Image 4 Ultra, le richieste sincrone diventeranno obsolete a favore delle richieste asincrone. Troverai esercizi sulle richieste asincrone più avanti in questa esercitazione.
+>Con il rilascio di Firefly Image 4 e Image 4 Ultra, le richieste sincrone diventeranno obsolete a favore delle richieste asincrone.
 
-Seleziona la richiesta denominata **POST - Firefly - T2I V3** dalla raccolta **FF - Firefly Services Tech Insiders**. Vai a **Intestazioni** e verifica le combinazioni chiave/valore.
+Selezionare la richiesta denominata **POST - Firefly - T2I V3 asincrona** dalla raccolta **FF - Firefly Services Tech Insiders**. Vai a **Intestazioni** e verifica le combinazioni chiave/valore.
 
 | Chiave | Valore |
 |:-------------:| :---------------:| 
@@ -254,7 +254,7 @@ Seleziona la richiesta denominata **POST - Firefly - T2I V3** dalla raccolta **F
 
 Entrambi i valori in questa richiesta fanno riferimento a variabili di ambiente definite in precedenza. `{{API_KEY}}` fa riferimento al campo **ID client** del progetto Adobe I/O. Come parte della sezione **Guida introduttiva** di questa esercitazione, l&#39;hai configurata in Postman.
 
-Il valore del campo **Autorizzazione** è un po&#39; speciale: `Bearer {{ACCESS_TOKEN}}`. Contiene un riferimento al **token di accesso** generato nel passaggio precedente. Quando hai ricevuto il **Token di accesso** utilizzando la richiesta **POST - Ottieni token di accesso** nella raccolta **Adobe IO - OAuth**, è stato eseguito uno script in Postman in cui il campo **access_token** è archiviato come variabile di ambiente a cui viene ora fatto riferimento nella richiesta **POST - Firefly - T2I V3**. Notare l&#39;aggiunta specifica della parola **Bearer** e uno spazio prima di `{{ACCESS_TOKEN}}`. La parola bearer fa distinzione tra maiuscole e minuscole ed è necessario specificare lo spazio. Se l&#39;operazione non viene eseguita correttamente, Adobe I/O restituirà un errore **401 Non autorizzato** poiché non sarà in grado di elaborare correttamente il **Token di accesso**.
+Il valore del campo **Autorizzazione** è un po&#39; speciale: `Bearer {{ACCESS_TOKEN}}`. Contiene un riferimento al **token di accesso** generato nel passaggio precedente. Quando hai ricevuto il **Token di accesso** utilizzando la richiesta **POST - Ottieni token di accesso** nella raccolta **Adobe IO - OAuth**, è stato eseguito uno script in Postman in cui il campo **access_token** è archiviato come variabile di ambiente a cui viene ora fatto riferimento nella richiesta **POST - Firefly - T2I V3 asincrono**. Notare l&#39;aggiunta specifica della parola **Bearer** e uno spazio prima di `{{ACCESS_TOKEN}}`. La parola bearer fa distinzione tra maiuscole e minuscole ed è necessario specificare lo spazio. Se l&#39;operazione non viene eseguita correttamente, Adobe I/O restituirà un errore **401 Non autorizzato** poiché non sarà in grado di elaborare correttamente il **Token di accesso**.
 
 ![Firefly](./images/ff0.png)
 
@@ -262,7 +262,23 @@ Quindi, vai al **Corpo** e verifica il prompt. Fai clic su **Invia**.
 
 ![Firefly](./images/ff1.png)
 
-Copia (o fai clic) sull’URL dell’immagine dalla risposta e aprilo nel browser web per visualizzarla.
+Riceverai quindi una risposta immediata. Questa risposta non contiene gli URL immagine dell’immagine generata, ma un URL del rapporto sullo stato del processo avviato e un altro URL che consente di annullare il processo in esecuzione.
+
+>[!NOTE]
+>
+>La raccolta Postman in uso è stata configurata per l&#39;utilizzo di variabili dinamiche. Ad esempio, il campo **statusUrl** è stato archiviato come variabile dinamica in Postman grazie agli **script** configurati in Postman.
+
+![Firefly](./images/ff1a.png)
+
+Per controllare la relazione sullo stato del processo in esecuzione, selezionare la richiesta denominata **GET - Firefly - Ottieni relazione sullo stato** dalla raccolta **FF - Firefly Services Tech Insiders**. Fare clic per aprirlo e quindi su **Invia**. Seleziona l’URL dell’immagine generata e aprilo nel browser.
+
+>[!NOTE]
+>
+>La raccolta Postman in uso è stata configurata per l&#39;utilizzo di variabili dinamiche. Ad esempio, il campo **statusUrl** della richiesta precedente è stato archiviato come variabile dinamica in Postman e ora viene utilizzato come URL per la richiesta **GET - Firefly - Get Status Report**.
+
+![Firefly](./images/ff1b.png)
+
+Avresti dovuto ricevere una risposta simile. Panoramica del processo eseguito. È possibile visualizzare il campo **url**, che contiene l&#39;immagine generata. Copia (o fai clic) sull’URL dell’immagine dalla risposta e aprilo nel browser web per visualizzarla.
 
 ![Firefly](./images/ff2.png)
 
@@ -270,7 +286,7 @@ Dovresti vedere una bella immagine che rappresenta `horses in a field`.
 
 ![Firefly](./images/ff3.png)
 
-Nel **Corpo** della richiesta **POST - Firefly - T2I V3**, aggiungere quanto segue nel campo `"promptBiasingLocaleCode": "en-US"` e sostituire la variabile `XXX` con uno dei numeri di seed utilizzati in modo casuale dall&#39;interfaccia utente di Firefly Services. In questo esempio, il numero **seed** è `142194`.
+Nel **Corpo** della richiesta **POST - Firefly - T2I V3 asincrono**, aggiungere quanto segue nel campo `"promptBiasingLocaleCode": "en-US"` e sostituire la variabile `XXX` con uno dei numeri di seed utilizzati in modo casuale dall&#39;interfaccia utente di Firefly Services. In questo esempio, il numero **seed** è `142194`.
 
 ```json
 ,
@@ -279,7 +295,11 @@ Nel **Corpo** della richiesta **POST - Firefly - T2I V3**, aggiungere quanto seg
   ]
 ```
 
-Fai clic su **Invia**. Riceverai quindi una risposta con una nuova immagine generata da Firefly Services. Apri l’immagine per visualizzarla.
+Fai clic su **Invia**. Riceverai quindi di nuovo una risposta con un collegamento alla relazione sullo stato del processo appena inviato.
+
+![Firefly](./images/ff3a.png)
+
+Per controllare la relazione sullo stato del processo in esecuzione, selezionare la richiesta denominata **GET - Firefly - Ottieni relazione sullo stato** dalla raccolta **FF - Firefly Services Tech Insiders**. Fare clic per aprirlo e quindi su **Invia**. Seleziona l’URL dell’immagine generata e aprilo nel browser.
 
 ![Firefly](./images/ff4.png)
 
@@ -287,7 +307,7 @@ Dovresti quindi visualizzare una nuova immagine con lievi differenze, in base al
 
 ![Firefly](./images/ff5.png)
 
-Quindi, in **Body** della richiesta **POST - Firefly - T2I V3**, incolla l&#39;oggetto **styles** sotto l&#39;oggetto **seed**. Lo stile dell&#39;immagine generata verrà modificato in **art_deco**.
+Quindi, in **Body** della richiesta **POST - Firefly - T2I V3 asincrono**, incolla l&#39;oggetto **styles** seguente sotto l&#39;oggetto **seed**. Lo stile dell&#39;immagine generata verrà modificato in **art_deco**.
 
 ```json
 ,
@@ -300,11 +320,11 @@ Quindi, in **Body** della richiesta **POST - Firefly - T2I V3**, incolla l&#39;o
   }
 ```
 
-Dovresti avere questo. Fai clic su **Invia**.
+Dovresti avere questo. Fai clic su **Invia**. Riceverai quindi di nuovo una risposta con un collegamento alla relazione sullo stato del processo appena inviato.
 
 ![Firefly](./images/ff6.png)
 
-Fai clic sull’URL dell’immagine per aprirlo.
+Per controllare la relazione sullo stato del processo in esecuzione, selezionare la richiesta denominata **GET - Firefly - Ottieni relazione sullo stato** dalla raccolta **FF - Firefly Services Tech Insiders**. Fare clic per aprirlo e quindi su **Invia**. Seleziona l’URL dell’immagine generata e aprilo nel browser.
 
 ![Firefly](./images/ff7.png)
 
@@ -312,7 +332,7 @@ L&#39;immagine è cambiata un po&#39;. Quando applicate i predefiniti di stile, 
 
 ![Firefly](./images/ff8.png)
 
-Rimuovi il codice per l&#39;oggetto **seed** dal **Body** della richiesta. Fai clic su **Invia**, quindi fai clic sull&#39;URL dell&#39;immagine che ottieni dalla risposta.
+Rimuovi il codice per l&#39;oggetto **seed** da **Body** della richiesta **POST - Firefly - T2I V3 asincrona**. Fai clic su **Invia**, quindi fai clic sull&#39;URL dell&#39;immagine che ottieni dalla risposta. Riceverai quindi di nuovo una risposta con un collegamento alla relazione sullo stato del processo appena inviato.
 
 ```json
 ,
@@ -323,13 +343,17 @@ Rimuovi il codice per l&#39;oggetto **seed** dal **Body** della richiesta. Fai c
 
 ![Firefly](./images/ff9.png)
 
+Per controllare la relazione sullo stato del processo in esecuzione, selezionare la richiesta denominata **GET - Firefly - Ottieni relazione sullo stato** dalla raccolta **FF - Firefly Services Tech Insiders**. Fare clic per aprirlo e quindi su **Invia**. Seleziona l’URL dell’immagine generata e aprilo nel browser.
+
+![Firefly](./images/ff9a.png)
+
 L&#39;immagine è cambiata di nuovo un po&#39;.
 
 ![Firefly](./images/ff10.png)
 
 ## API Firefly Services 1.1.1.7, Gen Expand
 
-Seleziona la richiesta denominata **POST - Firefly - Gen Expand** dalla raccolta **FF - Firefly Services Tech Insiders** e passa al **Body** della richiesta.
+Seleziona la richiesta denominata **POST - Firefly - Gen Expand async** dalla raccolta **FF - Firefly Services Tech Insiders** e passa a **Body** della richiesta.
 
 - **size**: immettere la risoluzione desiderata. Il valore inserito in questo campo deve essere maggiore delle dimensioni originali dell&#39;immagine e non può essere maggiore di 3999.
 - **image.source.url**: questo campo richiede un collegamento all&#39;immagine che deve essere espanso. In questo esempio, viene utilizzata una variabile per fare riferimento all&#39;immagine generata nell&#39;esercizio precedente.
@@ -339,7 +363,11 @@ Seleziona la richiesta denominata **POST - Firefly - Gen Expand** dalla raccolta
 
 ![Firefly](./images/ff11.png)
 
-Fai clic sull’URL dell’immagine che fa parte della risposta.
+Riceverai quindi di nuovo una risposta con un collegamento alla relazione sullo stato del processo appena inviato.
+
+![Firefly](./images/ff11a.png)
+
+Per controllare la relazione sullo stato del processo in esecuzione, selezionare la richiesta denominata **GET - Firefly - Ottieni relazione sullo stato** dalla raccolta **FF - Firefly Services Tech Insiders**. Fare clic per aprirlo e quindi su **Invia**. Seleziona l’URL dell’immagine generata e aprilo nel browser.
 
 ![Firefly](./images/ff12.png)
 
@@ -347,9 +375,27 @@ Ora l&#39;immagine generata nell&#39;esercizio precedente è stata espansa alla 
 
 ![Firefly](./images/ff13.png)
 
-Quando modificate l&#39;allineamento del posizionamento, anche l&#39;output sarà leggermente diverso. In questo esempio, il posizionamento viene modificato in **left, bottom**. Fai clic su **Invia** e quindi su per aprire l&#39;URL dell&#39;immagine generata.
+Genera una nuova immagine utilizzando la richiesta **Firefly - T2I V3 asincrona**.
+
+![Firefly](./images/ff13a.png)
+
+Per controllare la relazione sullo stato del processo in esecuzione, selezionare la richiesta denominata **GET - Firefly - Ottieni relazione sullo stato** dalla raccolta **FF - Firefly Services Tech Insiders**. Fare clic per aprirlo e quindi su **Invia**. Seleziona l’URL dell’immagine generata e aprilo nel browser.
+
+![Firefly](./images/ff13b.png)
+
+Dovresti vedere un’immagine simile.
+
+![Firefly](./images/ff13c.png)
+
+Seleziona la richiesta denominata **POST - Firefly - Gen Expand async** dalla raccolta **FF - Firefly Services Tech Insiders** e passa a **Body** della richiesta.
+
+Quando modificate l&#39;allineamento del posizionamento, anche l&#39;output sarà leggermente diverso. In questo esempio, il posizionamento viene modificato in **left, bottom**. Fai clic su **Invia**. Riceverai quindi di nuovo una risposta con un collegamento alla relazione sullo stato del processo appena inviato.
 
 ![Firefly](./images/ff14.png)
+
+Per controllare la relazione sullo stato del processo in esecuzione, selezionare la richiesta denominata **GET - Firefly - Ottieni relazione sullo stato** dalla raccolta **FF - Firefly Services Tech Insiders**. Fare clic per aprirlo e quindi su **Invia**. Seleziona l’URL dell’immagine generata e aprilo nel browser.
+
+![Firefly](./images/ff14a.png)
 
 Dovreste quindi vedere che l&#39;immagine originale viene utilizzata in un posizionamento diverso, che influenza l&#39;intera immagine.
 
@@ -381,7 +427,7 @@ Vai al **Corpo** della richiesta. Dovresti notare che nel corpo sono richieste 4
 
 ![Firefly](./images/ffim4_2.png)
 
-Riceverai quindi una risposta immediata. A differenza delle precedenti richieste sincrone utilizzate, questa risposta non contiene gli URL immagine delle immagini generate. Non contiene l&#39;URL del rapporto sullo stato del processo avviato e contiene un altro URL che consente di annullare il processo in esecuzione.
+Riceverai quindi una risposta immediata. Questa risposta non contiene gli URL immagine dell’immagine generata, ma un URL del rapporto sullo stato del processo avviato e un altro URL che consente di annullare il processo in esecuzione.
 
 ![Firefly](./images/ffim4_3.png)
 

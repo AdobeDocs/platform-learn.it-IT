@@ -3,9 +3,9 @@ title: Panoramica - Tutorial tecnico completo - Un Adobe
 description: Tutorial tecnico completo - Un Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '986'
 ht-degree: 2%
 
 ---
@@ -65,9 +65,13 @@ In questo modulo verranno utilizzate le API di Adobe Firefly Services, le API di
 
 [1.2 Automazione del flusso di lavoro di Creative con Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
-In questo modulo fondamentale utilizzerai Adobe Workfront Fusion per automatizzare e scalare i flussi di lavoro di creazione dei contenuti.
+In questo modulo utilizzerai Adobe Workfront Fusion per automatizzare e scalare i flussi di lavoro di creazione dei contenuti.
 
-[1.3 Adobe Express e Adobe Experience Cloud](./modules/creation-production/module1.3/express.md){target="_blank"}
+[1.3 GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"}
+
+In questo modulo utilizzerai Adobe GenStudio for Performance Marketing, un’applicazione flusso di lavoro Gen AI-first end to end per team di marketing e creativi che consente di creare, attivare e ottimizzare contenuti omni-channel con la governance aziendale per le campagne di marketing digitale.
+
+[1.4 Adobe Express e Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"}
 
 In questo modulo fondamentale utilizzerai Adobe Express per creare immagini e video e condividerai tali risorse con l’ecosistema Adobe Experience Cloud più ampio.
 

@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial tecnico completo per le applicazioni Adobe, da Creati
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1171'
 ht-degree: 3%
 
 ---
@@ -50,12 +50,16 @@ ht-degree: 3%
       + [1.2.5 Frame.io e Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
       + [Da 1.2.6 Frame.io a Workfront Fusion a AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
       + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
-   + 1.3 Adobe Express e Adobe Experience Cloud {#crpr3}
-      + [Panoramica](/help/tutorial-one-adobe/modules/creation-production/module1.3/express.md)
-      + [1.3.1 Guida introduttiva ad Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
-      + [1.3.2 Animazione e video in Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
-      + [1.3.3 Creazione in blocco di Assets in Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
+   + 1.3 GenStudio for Performance Marketing {#crpr3}
+      + [Panoramica](/help/tutorial-one-adobe/modules/creation-production/module1.3/genstudio.md)
+      + [1.3.1 Guida introduttiva a GenStudio for Performance Marketing](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
       + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
+   + 1.4 Adobe Express e Adobe Experience Cloud {#crpr4}
+      + [Panoramica](/help/tutorial-one-adobe/modules/creation-production/module1.4/express.md)
+      + [1.4.1 Guida introduttiva ad Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.4/ex1.md)
+      + [1.4.2 Animazione e video in Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.4/ex2.md)
+      + [1.4.3 Creazione in blocco di Assets in Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.4/ex3.md)
+      + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/creation-production/module1.4/summary.md)
 
 + Gestione risorse {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
