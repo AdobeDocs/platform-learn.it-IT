@@ -5,14 +5,21 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 51ad32eb3a017c973d0822b6d1e5a39d5c3947b7
+exl-id: b34c6bbf-4c47-4791-b15e-73b8ba059434
+source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 3%
+source-wordcount: '548'
+ht-degree: 2%
 
 ---
 
 # 1.3.1 Configurazione: marchio
+
+Un marchio distingue un’organizzazione, un prodotto, un servizio o un concetto dagli altri. Alcuni aspetti di un marchio sono oggettivi, come un logo, mentre altri sono soggettivi, come il tono di voce.
+
+GenStudio for Performance Marketing utilizza la vasta gamma di informazioni sul brand del cliente, le associa a informazioni sui prodotti e sulle persone fisiche e crea un’identità del brand completa. Questa identità del brand viene utilizzata per informare la creazione di contenuti on-brand utilizzando la tecnologia AI generativa di Adobe.
+
+Per iniziare a creare il tuo marchio, segui i passaggi seguenti.
 
 Vai a [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Apri **GenStudio**.
 

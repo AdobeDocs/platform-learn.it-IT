@@ -5,18 +5,27 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 32f7cfc1aafb7a58dca99be3be9149c90bcfd040
+exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
+source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
 
 # 1.3.2 Configurazione: utenti tipo, prodotti e modelli
 
+Vai a [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Apri **GenStudio**.
+
+![GSPeM](./images/gspem1.png)
+
 ## 1.3.2.1 prodotti
 
-Fai clic sui tre punti **...**, quindi seleziona **Prodotti**.
+I prodotti GenStudio for Performance Marketing sfruttano una conoscenza approfondita delle specifiche dei prodotti, dei vantaggi e dei fattori di differenziazione per generare contenuti di forte impatto.
+
+I prodotti comprendono tutti gli elementi di un prodotto specifico, come immagini, descrizioni e proposte di valore, per creare una rappresentazione coerente del marchio. Sfruttando la tecnologia di intelligenza artificiale avanzata di Adobe, le linee guida di GenStudio for Performance Marketing (marchi, prodotti e utenti tipo) collaborano per generare contenuti coinvolgenti che presentino i punti di forza dei prodotti e garantiscano la coerenza di tutti i messaggi.
+
+Per iniziare a creare i tuoi prodotti, fai clic sui tre punti **...**, quindi seleziona **Prodotti**.
 
 ![GSPeM](./images/gspem101.png)
 
@@ -102,7 +111,11 @@ Dovresti quindi visualizzare i 2 prodotti configurati.
 
 ## 1.3.2.2 utenti tipo
 
-Fai clic sui tre punti **...**, quindi seleziona **Persone**.
+Gli utenti tipo forniscono un’autentica rappresentazione dei segmenti di clienti, comprese informazioni, interessi, punti critici, preferenze e caratteristiche comportamentali.
+
+GenStudio for Performance Marketing sfrutta la potenza delle linee guida (marchi, prodotti e utenti tipo) e la tecnologia AI generativa di Adobe per curare contenuti di marketing personalizzati per i clienti target&#x200B;.
+
+Per iniziare a creare i tuoi utenti tipo, fai clic sui tre punti **...**, quindi seleziona **Utenti tipo**.
 
 ![GSPeM](./images/gspem111.png)
 
@@ -213,6 +226,10 @@ Dovresti quindi visualizzare i 3 utenti tipo configurati.
 ![GSPeM](./images/gspem124.png)
 
 ## 1.3.2.3 modelli
+
+GenStudio for Performance Marketing consente ai creatori di contenuti di produrre rapidamente contenuti di marketing coerenti sul marchio utilizzando i modelli. Un modello riduce in modo significativo il tempo e l’impegno necessari per generare nuovi contenuti, fornendo un punto di partenza che include layout preconfigurati ed elementi di progettazione.
+
+Anche se GenStudio for Performance Marketing non supporta la creazione diretta di modelli all’interno dell’applicazione, è possibile progettare e preparare facilmente i modelli utilizzando i più diffusi strumenti di progettazione, come Adobe InDesign, Illustrator o Express. Una volta completato il progetto, puoi adattarlo per l’utilizzo in GenStudio for Performance Marketing. In questo esercizio verrà importata una serie di modelli predefiniti in GenStudio for Performance Marketing.
 
 Nell&#39;esercizio precedente, hai scaricato il file [CitiSignal-GSPeM-assets.zip](../../../assets/gspem/CitiSignal-GSPeM-assets.zip) sul desktop e lo hai decompresso. Tale cartella contiene 4 modelli di esempio che ora è necessario importare in GenStudio.
 
