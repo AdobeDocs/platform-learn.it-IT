@@ -1,14 +1,14 @@
 ---
-title: Guida introduttiva ad Adobe Express
-description: Guida introduttiva ad Adobe Express
+title: Marchio configurazione GenStudio for Performance Marketing
+description: Marchio configurazione GenStudio for Performance Marketing
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: b34c6bbf-4c47-4791-b15e-73b8ba059434
-source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
+source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '550'
 ht-degree: 2%
 
 ---

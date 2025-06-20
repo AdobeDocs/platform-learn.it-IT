@@ -4,10 +4,10 @@ description: Creazione del programma Cloud Manager
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 1bcc5123f16dbde30877662159e06d61d75e7287
+source-git-commit: 7b9df90424c1d8c2fbe7672f00e9b2ce0ec66d19
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 4%
+source-wordcount: '360'
+ht-degree: 3%
 
 ---
 
@@ -76,7 +76,34 @@ Fare clic sui tre punti **...** nella scheda **Ambienti** e quindi su **Visualiz
 
 Potrai quindi visualizzare i dettagli dell&#39;ambiente, incluso l&#39;URL dell&#39;ambiente **Author**, che ti serviranno nel prossimo esercizio.
 
+Osserva la riga **Content Hub** e seleziona **Fai clic per attivare**.
+
 ![AEMCS](./images/aemcs10.png)
+
+Fare clic su **Attiva**.
+
+![AEMCS](./images/aemcsact1.png)
+
+Attivazione di **Content Hub** avviata. Questa operazione può richiedere 10 minuti o più.
+
+![AEMCS](./images/aemcsact2.png)
+
+Dopo circa 10 minuti, verrà completata l&#39;attivazione di **Content Hub**.
+Dai un&#39;occhiata alla riga **Dynamic Media** e seleziona **Fai clic per attivare**.
+
+![AEMCS](./images/aemcsact3.png)
+
+Fare clic su **Attiva**.
+
+![AEMCS](./images/aemcsact4.png)
+
+Attivazione di **Dynamic Media** avviata. Questa operazione può richiedere 10 minuti o più.
+
+![AEMCS](./images/aemcsact5.png)
+
+Dopo circa 10 minuti verrà eseguita l&#39;attivazione di **Dynamic Media**.
+
+![AEMCS](./images/aemcsact6.png)
 
 Al termine dell’esecuzione della pipeline, puoi continuare con l’esercizio successivo.
 

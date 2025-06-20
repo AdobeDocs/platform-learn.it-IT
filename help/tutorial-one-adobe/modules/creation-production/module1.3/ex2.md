@@ -1,23 +1,21 @@
 ---
-title: Guida introduttiva ad Adobe Express
-description: Guida introduttiva ad Adobe Express
+title: Modelli di prodotti GenStudio for Performance Marketing Configuration Personas
+description: Modelli di prodotti GenStudio for Performance Marketing Configuration Personas
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
-source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
+source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
 
 # 1.3.2 Configurazione: utenti tipo, prodotti e modelli
 
-Vai a [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Apri **GenStudio**.
-
-![GSPeM](./images/gspem1.png)
+In questo esercizio configurerai utenti tipo, prodotti e modelli in GenStudio for Performance Marketing.
 
 ## 1.3.2.1 prodotti
 
