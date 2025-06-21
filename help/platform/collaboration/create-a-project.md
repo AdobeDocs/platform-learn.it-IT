@@ -20,6 +20,6 @@ ht-degree: 0%
 
 Scopri le nozioni di base sulla creazione di progetti in Collaboration, inclusa una breve panoramica su individuazione, attivazione e misurazione.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464033/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464042/?learn=on&enablevpops&captions=ita)
 
 Per ulteriori informazioni, visita la [documentazione](https://experienceleague.adobe.com/it/docs/real-time-cdp-collaboration/using/collaborate/manage-projects){target="_blank"}.
