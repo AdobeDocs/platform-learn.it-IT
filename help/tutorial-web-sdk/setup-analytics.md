@@ -106,8 +106,8 @@ Le singole sezioni della stringa di prodotto Analytics sono impostate tramite di
 >[!NOTE]
 >
 >A partire dal 18 agosto 2022, `productListItems[].SKU` ha la priorità per il mapping al nome del prodotto nella variabile s.products.
->>Il valore impostato su `productListItems[].name` è mappato al nome del prodotto solo se `productListItems[].SKU` non esiste. In caso contrario, non è mappato ed è disponibile nei dati contestuali.
->>Non impostare una stringa vuota o null su `productListItems[].SKU`. Questo ha l’effetto indesiderato di mappare al nome del prodotto nella variabile s.products.
+>&#x200B;>Il valore impostato su `productListItems[].name` è mappato al nome del prodotto solo se `productListItems[].SKU` non esiste. In caso contrario, non è mappato ed è disponibile nei dati contestuali.
+>&#x200B;>Non impostare una stringa vuota o null su `productListItems[].SKU`. Questo ha l’effetto indesiderato di mappare al nome del prodotto nella variabile s.products.
 
 
 ### Impostare le variabili nell’oggetto dati
