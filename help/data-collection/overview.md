@@ -41,11 +41,11 @@ Data Collection è la soluzione Adobe di nuova generazione per la gestione di ta
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+    <a href="https://experienceleague.adobe.com/it/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
       <img alt="Implementazione nelle app per dispositivi mobili" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+      <a href="https://experienceleague.adobe.com/it/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
     <strong>Implementare Experience Cloud nelle app per dispositivi mobili</strong>
     </a>
     </div>
@@ -54,11 +54,11 @@ Data Collection è la soluzione Adobe di nuova generazione per la gestione di ta
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/it/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Migrazione da Target a Web SDK" src="assets/thumb_legacy.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/it/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Implementa librerie legacy con tag</strong>
     </a>
     </div>
@@ -74,11 +74,11 @@ Data Collection è la soluzione Adobe di nuova generazione per la gestione di ta
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/it/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Migrazione da Target a Web SDK" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/it/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Migrazione da Adobe Target a Web SDK</strong>
     </a>
     </div>
