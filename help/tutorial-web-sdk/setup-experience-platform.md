@@ -3,10 +3,10 @@ title: Trasmettere i dati a Adobe Experience Platform con Platform Web SDK
 description: Scopri come inviare dati web a Adobe Experience Platform tramite Web SDK. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 5%
+source-wordcount: '2307'
+ht-degree: 4%
 
 ---
 
@@ -44,7 +44,7 @@ Per completare questa lezione, devi prima:
 
 ## Creare un set di dati
 
-Tutti i dati acquisiti correttamente in Adobe Experience Platform vengono memorizzati nel data lake come set di dati. Un [set di dati](https://experienceleague.adobe.com/it/docs/experience-platform/catalog/datasets/overview) è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella che contiene uno schema (colonne) e campi (righe). I set di dati contengono anche metadati che descrivono vari aspetti dei dati memorizzati.
+Tutti i dati acquisiti correttamente in Adobe Experience Platform vengono memorizzati nel data lake come set di dati. Un [set di dati](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella che contiene uno schema (colonne) e campi (righe). I set di dati contengono anche metadati che descrivono vari aspetti dei dati memorizzati.
 
 Configuriamo un set di dati per i dati dell’evento web Luma:
 
@@ -160,14 +160,14 @@ Per verificare che i dati siano stati inseriti nel data lake di Platform, un&#39
 
 >[!INFO]
 >
->  Per ulteriori dettagli sul servizio query di Adobe Experience Platform, vedi [Esplora i dati](https://experienceleague.adobe.com/it/docs/platform-learn/tutorials/queries/explore-data) nella sezione Esercitazioni di Platform.
+>  Per ulteriori dettagli sul servizio query di Adobe Experience Platform, vedi [Esplora i dati](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) nella sezione Esercitazioni di Platform.
 
 
 ## Abilitare il set di dati e lo schema per Real-Time Customer Profile
 
 Per i clienti di Real-Time Customer Data Platform e Journey Optimizer, il passaggio successivo consiste nell’abilitare il set di dati e lo schema per Real-Time Customer Profile. Lo streaming di dati da Web SDK sarà una delle molte origini dati che fluiranno in Platform e desideri unire i tuoi dati web con altre origini dati per creare profili cliente a 360 gradi. Per ulteriori informazioni su Real-Time Customer Profile, guarda questo breve video:
 
->[!VIDEO](https://video.tv.adobe.com/v/36266?learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
 >[!CAUTION]
 >
@@ -252,11 +252,15 @@ Innanzitutto devi generare più dati campione. Ripeti i passaggi precedenti di q
 
 Ora hai abilitato Platform Web SDK per Experience Platform (e Real-Time CDP! E Journey Optimizer! E Customer Journey Analytics!).
 
+## Creare un pubblico valutato da Edge
+
+Si consiglia di completare questo esercizio per i clienti di Real-Time Customer Data Platform e Journey Optimizer.
+
+Quando i dati di Web SDK vengono acquisiti in Adobe Experience Platform, possono essere arricchiti da altre origini dati acquisite in Platform. Ad esempio, quando un utente accede al sito Luma, in Experience Platform viene creato un grafico delle identità e tutti gli altri set di dati abilitati per il profilo possono potenzialmente essere uniti per creare profili cliente in tempo reale. Per vedere questo in azione, creerai rapidamente un altro set di dati in Adobe Experience Platform con alcuni dati di fedeltà di esempio, in modo da poter utilizzare i profili cliente in tempo reale con Real-Time Customer Data Platform e Journey Optimizer. In seguito, potrai creare un pubblico in base a questi dati.
+
 ### Creare uno schema Fedeltà e acquisire dati di esempio
 
-Il completamento di questo esercizio è previsto per i clienti di Real-Time Customer Data Platform e Journey Optimizer.
-
-Quando i dati di Web SDK vengono acquisiti in Adobe Experience Platform, possono essere arricchiti da altre origini dati acquisite in Platform. Ad esempio, quando un utente accede al sito Luma, in Experience Platform viene creato un grafico delle identità e tutti gli altri set di dati abilitati per il profilo possono potenzialmente essere uniti per creare profili cliente in tempo reale. Per vedere questo in azione, crea rapidamente un altro set di dati in Adobe Experience Platform con alcuni dati di fedeltà di esempio, in modo da poter utilizzare i profili cliente in tempo reale con Real-Time Customer Data Platform e Journey Optimizer. Poiché hai già fatto esercizi simili, le istruzioni saranno brevi.
+Poiché hai già fatto esercizi simili, le istruzioni saranno brevi.
 
 Creare lo schema fedeltà:
 
@@ -282,9 +286,33 @@ Per creare il set di dati e acquisire i dati di esempio:
 
    ![Schema fedeltà](assets/web-channel-loyalty-dataset.png)
 
+
+### Impostare un criterio di unione Attivo su Edge
+
+Tutti i tipi di pubblico vengono creati con un criterio di unione. I criteri di unione creano diverse &quot;viste&quot; di un profilo, possono contenere un sottoinsieme di set di dati e prescrivere un ordine di priorità quando set di dati diversi contribuiscono agli stessi attributi di profilo. Per essere valutato al limite, un pubblico deve utilizzare un criterio di unione con l&#39;impostazione **[!UICONTROL Criterio di unione attivo su Edge]**.
+
+
+>[!IMPORTANT]
+>
+>Solo un criterio di unione per sandbox può avere l&#39;impostazione **[!UICONTROL Criterio di unione attivo su Edge]**
+
+
+1. Apri l’interfaccia di Experience Platform o Journey Optimizer e accertati di trovarti nell’ambiente di sviluppo utilizzato per l’esercitazione.
+1. Passa a **[!UICONTROL Cliente]** > **[!UICONTROL Profili]** > **[!UICONTROL Pagina Criteri di unione]**
+1. Apri il **[!UICONTROL criterio di unione predefinito]** (probabilmente denominato `Default Timebased`)
+   ![Creazione di un pubblico](assets/merge-policy-open-default.png)
+1. Abilita l&#39;impostazione **[!UICONTROL Criterio di unione attivo su Edge]**
+1. Seleziona **[!UICONTROL Avanti]**
+
+   ![Creazione di un pubblico](assets/merge-policy-set-active-on-edge.png)
+1. Continua a selezionare **[!UICONTROL Avanti]** per continuare con gli altri passaggi del flusso di lavoro e seleziona **[!UICONTROL Fine]** per salvare le impostazioni
+   ![Creazione di un pubblico](assets/merge-policy-finish.png)
+
+Ora puoi creare tipi di pubblico da valutare su Edge.
+
 ### Creazione di un pubblico
 
-I tipi di pubblico raggruppano i profili in base alle caratteristiche comuni. Crea un pubblico rapido da utilizzare nella campagna web:
+I tipi di pubblico raggruppano i profili in base alle caratteristiche comuni. Crea un pubblico semplice da utilizzare in Real-Time CDP o Journey Optimizer:
 
 1. Nell&#39;interfaccia di Experience Platform o Journey Optimizer, vai a **[!UICONTROL Cliente]** > **[!UICONTROL Tipi di pubblico]** nel menu di navigazione a sinistra
 1. Seleziona **[!UICONTROL Crea pubblico]**
@@ -301,6 +329,11 @@ I tipi di pubblico raggruppano i profili in base alle caratteristiche comuni. Cr
 1. Seleziona **[!UICONTROL Salva]**
 
    ![Definire il pubblico](assets/web-campaign-define-audience.png)
+
+>[!NOTE]
+>
+> Poiché il criterio di unione predefinito è stato impostato come **[!UICONTROL Criterio di unione attivo su Edge]**, il pubblico creato viene automaticamente associato a questo criterio di unione.
+
 
 Poiché si tratta di un pubblico molto semplice, possiamo utilizzare il metodo di valutazione Edge. I tipi di pubblico di Edge valutano al limite, quindi, nella stessa richiesta effettuata dal Web SDK a Platform Edge Network, possiamo valutare la definizione del pubblico e confermare immediatamente se l’utente è idoneo.
 

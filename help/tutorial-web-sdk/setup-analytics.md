@@ -4,16 +4,16 @@ description: Scopri come configurare Adobe Analytics utilizzando Experience Plat
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '2904'
 ht-degree: 1%
 
 ---
 
 # Configurare Adobe Analytics con Adobe Experience Platform Web SDK
 
-Scopri come configurare Adobe Analytics utilizzando [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/it/docs/platform-learn/data-collection/web-sdk/overview), creare regole di tag per inviare dati ad Adobe Analytics e verificare che Analytics stia acquisendo i dati come previsto.
+Scopri come configurare Adobe Analytics utilizzando [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview), creare regole di tag per inviare dati ad Adobe Analytics e verificare che Analytics stia acquisendo i dati come previsto.
 
 [Adobe Analytics](https://experienceleague.adobe.com/it/docs/analytics) è un&#39;applicazione leader di settore che ti consente di comprendere i tuoi clienti come persone e gestire la tua attività grazie alle informazioni sul cliente.
 
@@ -35,7 +35,7 @@ Per completare questa lezione, devi prima:
 
 * Acquisisci familiarità con Adobe Analytics e accedi ad esso.
 
-* Avere almeno un ID suite per report test/dev. Se non hai una suite per report test/dev che puoi usare per questa esercitazione, [creane una](https://experienceleague.adobe.com/it/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* Avere almeno un ID suite per report test/dev. Se non hai una suite per report test/dev che puoi usare per questa esercitazione, [creane una](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Completa le lezioni precedenti nelle sezioni Configurazione iniziale e Configurazione tag di questa esercitazione.
 
@@ -78,7 +78,7 @@ A partire da maggio 2024, non è più necessario creare uno schema XDM per imple
 
 ### Campi mappati automaticamente
 
-Molti campi XDM vengono mappati automaticamente alle variabili di Analytics. Per l&#39;elenco aggiornato dei mapping, vedere [Mappatura delle variabili di Analytics in Adobe Experience Edge](https://experienceleague.adobe.com/it/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
+Molti campi XDM vengono mappati automaticamente alle variabili di Analytics. Per l&#39;elenco aggiornato dei mapping, vedere [Mappatura delle variabili di Analytics in Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
 Ciò si verifica se _anche se non hai definito uno schema personalizzato_. Experience Platform Web SDK raccoglie automaticamente alcuni dati e li invia a Platform Edge Network come campi XDM. Web SDK, ad esempio, legge l&#39;URL della pagina corrente e lo invia come campo XDM `web.webPageDetails.URL`. Questo campo viene inoltrato ad Adobe Analytics e automaticamente popola i rapporti URL pagina in Adobe Analytics.
 
@@ -106,8 +106,8 @@ Le singole sezioni della stringa di prodotto Analytics sono impostate tramite di
 >[!NOTE]
 >
 >A partire dal 18 agosto 2022, `productListItems[].SKU` ha la priorità per il mapping al nome del prodotto nella variabile s.products.
->&#x200B;>Il valore impostato su `productListItems[].name` è mappato al nome del prodotto solo se `productListItems[].SKU` non esiste. In caso contrario, non è mappato ed è disponibile nei dati contestuali.
->&#x200B;>Non impostare una stringa vuota o null su `productListItems[].SKU`. Questo ha l’effetto indesiderato di mappare al nome del prodotto nella variabile s.products.
+>>Il valore impostato su `productListItems[].name` è mappato al nome del prodotto solo se `productListItems[].SKU` non esiste. In caso contrario, non è mappato ed è disponibile nei dati contestuali.
+>>Non impostare una stringa vuota o null su `productListItems[].SKU`. Questo ha l’effetto indesiderato di mappare al nome del prodotto nella variabile s.products.
 
 
 ### Impostare le variabili nell’oggetto dati
@@ -366,6 +366,10 @@ Vai a una pagina di prodotto come [Didi Sport Watch](https://luma.enablementadob
 1. Cerca `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`.
 1. Scorrere verso il basso per visualizzare la variabile `[!UICONTROL gn]`. Sintassi dinamica di Analytics per la variabile `[!UICONTROL s.pageName]`. Acquisisce il nome della pagina dal livello dati.
 
+   >[!NOTE]
+   >
+   > Il valore `gn` potrebbe essere `test` se l&#39;oggetto `xdm` è stato sovrascritto con l&#39;oggetto `data` nell&#39;esercizio precedente.
+
    ![Stringa prodotto Analytics](assets/analytics-debugger-edge-page-view.png)
 
 ### Convalida della stringa di prodotto e degli eventi di e-commerce
@@ -389,7 +393,7 @@ Poiché ti trovi già in una pagina di prodotto, questo esercizio continua a uti
 
    >[!TIP]
    >
-   > La regola `ecommerce - pdp library loaded - AA (order 20)` sovrascrive il valore di `eventType` impostato dalla regola `all pages global content variables - library loaded - AA (order 1)` in quanto è impostato per l&#39;attivazione in un secondo momento della sequenza
+   > La regola `ecommerce - library loaded - set product details variables - 20` sovrascrive il valore di `eventType` impostato dalla regola `all pages - library loaded - set global variables - 1` in quanto è impostato per l&#39;attivazione in un secondo momento della sequenza
 
 
    ![Visualizzazione prodotto Analytics](assets/analytics-debugger-prodView.png)
@@ -449,8 +453,14 @@ Quindi scorri verso il basso fino a **[!UICONTROL mcvisId]** per verificare che 
 ### Convalida delle visualizzazioni della pagina del contenuto
 
 Utilizzando lo stesso beacon, verifica che le visualizzazioni della pagina di contenuto siano mappate sulla variabile Adobe Analytics corretta.
-Scorri verso il basso fino a **[!UICONTROL pageName]** per verificare che `Page Name` sia acquisito correttamente
-![Convalida del nome della pagina con Assurance](assets/assurance-hitdebugger-content-pagename.png)
+Scorri verso il basso fino a **[!UICONTROL pageName]** per verificare che `Page Name` sia acquisito correttamente:
+
+
+    >[!NOTE]
+    >
+    > Il valore &quot;pageName&quot; potrebbe essere &quot;test&quot; se hai sovrascritto l’oggetto &quot;xdm&quot; con l’oggetto &quot;data&quot; nell’esercizio precedente.
+    
+    ![Convalida del nome della pagina con Assurance](assets/assurance-hitdebugger-content-pagename.png)
 
 ### Convalida della stringa di prodotto e degli eventi di e-commerce
 

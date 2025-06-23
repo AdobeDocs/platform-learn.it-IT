@@ -3,10 +3,10 @@ title: Tutorial su Raccolta dati
 description: Video ed esercitazioni per consentirti di utilizzare al meglio Data Collection
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: d818b07dbd7f58254083fd0696b81b0bab1ee9d3
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 22%
+ht-degree: 23%
 
 ---
 
@@ -23,16 +23,62 @@ Data Collection è la soluzione Adobe di nuova generazione per la gestione di ta
 
 <div id="staff-picks-section">
 
+## Guide all&#39;implementazione
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/it/docs/platform-learn/implement-web-sdk/overview" target="_blank">
+      <img alt="Implementare Adobe Experience Cloud con Web SDK" src="assets/thumb_websdk.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/it/docs/platform-learn/implement-web-sdk/overview" target="_blank">
+    <strong>Implementare Experience Cloud con Web SDK</strong>
+    </a>
+    </div>
+    <p>
+    <em>Utilizza i tag per implementare Platform Web SDK</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+      <img alt="Implementazione nelle app per dispositivi mobili" src="assets/thumb_swift.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+    <strong>Implementare Experience Cloud nelle app per dispositivi mobili</strong>
+    </a>
+    </div>
+    <p>
+    <em>Utilizza i tag per implementare Platform Mobile SDK</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <img alt="Migrazione da Target a Web SDK" src="assets/thumb_legacy.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <strong>Implementa librerie legacy con tag</strong>
+    </a>
+    </div>
+    <p>
+    <em>Utilizza i tag per implementare le librerie legacy di Analytics, Target e Audience Manager</em>
+    <p>
+  </td>
+</tr>
+</table>
+
 ## Guide alla migrazione
 
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/it/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Migrazione da Target a Web SDK" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/it/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Migrazione da Adobe Target a Web SDK</strong>
     </a>
     </div>
@@ -83,52 +129,6 @@ Data Collection è la soluzione Adobe di nuova generazione per la gestione di ta
   <td>
   </td>
   </tr>
-</table>
-
-## Guide all&#39;implementazione
-
-<table>
-<tr>
-  <td>
-    <a href="https://experienceleague.adobe.com/it/docs/platform-learn/implement-web-sdk/overview" target="_blank">
-      <img alt="Implementare Adobe Experience Cloud con Web SDK" src="assets/thumb_websdk.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/it/docs/platform-learn/implement-web-sdk/overview" target="_blank">
-    <strong>Implementare Experience Cloud con Web SDK</strong>
-    </a>
-    </div>
-    <p>
-    <em>Utilizza i tag per implementare Platform Web SDK</em>
-    <p>
-  </td>
-  <td>
-    <a href="https://experienceleague.adobe.com/it/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
-      <img alt="Implementazione nelle app per dispositivi mobili" src="assets/thumb_swift.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/it/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
-    <strong>Implementare Experience Cloud nelle app per dispositivi mobili</strong>
-    </a>
-    </div>
-    <p>
-    <em>Utilizza i tag per implementare Platform Mobile SDK</em>
-    <p>
-  </td>
-  <td>
-    <a href="https://experienceleague.adobe.com/it/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
-      <img alt="Migrazione da Target a Web SDK" src="assets/thumb_legacy.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/it/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
-    <strong>Implementa librerie legacy con tag</strong>
-    </a>
-    </div>
-    <p>
-    <em>Utilizza i tag per implementare le librerie legacy di Analytics, Target e Audience Manager</em>
-    <p>
-  </td>
-</tr>
 </table>
 
 </div>
