@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer - Configurare il percorso e il messaggio
 kt: 5342
 doc-type: tutorial
 exl-id: 687eb818-2d50-4293-88e6-7e5945b91db6
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1484'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ Per questo caso d’uso, l’obiettivo è quello di inviare messaggi diversi in 
 
 Per queste 3 condizioni, dovrai definire 3 messaggi in Adobe Journey Optimizer.
 
-## 3.2.4.1 Creare il percorso
+## 3.2.4.1 Crea il tuo percorso
 
 Accedi a Adobe Journey Optimizer da [Adobe Experience Cloud](https://experience.adobe.com). Fare clic su **Journey Optimizer**.
 
@@ -43,7 +43,7 @@ Come nome del percorso, utilizzare `--aepUserLdap-- - Geofence Entry Journey`. A
 
 ![Demo](./images/joname.png)
 
-Sul lato sinistro della schermata, osserva **Eventi**. Dovresti visualizzare nell’elenco l’evento creato in precedenza. Selezionala, quindi trascinala sull’area di lavoro del percorso. Il tuo percorso si presenta così. Fai clic su **Salva**.
+Sul lato sinistro della schermata, osserva **Eventi**. Dovresti visualizzare nell&#39;elenco l&#39;evento creato in precedenza, denominato `--aepUserLdap--GeofenceEntry`. Selezionala, quindi trascinala sull’area di lavoro del percorso. Il tuo percorso si presenta così.
 
 ![Demo](./images/joevents.png)
 
@@ -189,7 +189,7 @@ Ora sono disponibili tre percorsi configurati. Fai clic su **Salva**.
 
 Poiché si tratta di un percorso a scopo di apprendimento, ora configurerai un paio di azioni per mostrare la varietà di opzioni che gli esperti di marketing devono ora fornire per inviare i messaggi.
 
-## 3.2.4.2 Inviare messaggi per il percorso: più freddo di 10° Celsius
+## 3.2.4.2 Invia messaggi per il percorso: più freddo di 10° Celsius
 
 Per ogni contesto di temperatura, tenterai di inviare un messaggio di testo a un cliente. Per questo esercizio, invierai un messaggio reale a un canale Slack invece di un numero di telefono cellulare.
 
@@ -201,7 +201,7 @@ Nel menu a sinistra, torna a **Azioni**, seleziona l&#39;azione `--aepUserLdap--
 
 ![Demo](./images/joa18.png)
 
-Vai a **Parametri azione** e fai clic sull&#39;icona **Modifica** per il parametro `textToSlack`.
+Scorri fino a **Parametri richiesta** e fai clic sull&#39;icona **Modifica** per il parametro `textToSlack`.
 
 ![Demo](./images/joa19.png)
 
@@ -215,13 +215,13 @@ Selezionare il codice seguente, copiarlo e incollarlo nell&#39;**Editor modalit�
 
 ![Demo](./images/joa21.png)
 
-Verrà visualizzata l&#39;azione completata. Fai clic su **Salva**.
+Verrà visualizzata l&#39;azione completata. Scorri verso l&#39;alto e fai clic su **Salva**.
 
 ![Demo](./images/joa22.png)
 
 Questo percorso del percorso è ora pronto.
 
-## 3.2.4.3 Inviare messaggi per la traccia: tra 10° e 25° Celsius
+## 3.2.4.3 Inviare messaggi per il percorso: tra 10° e 25° Celsius
 
 Per ciascuno dei contesti di temperatura, tenterai di inviare un messaggio al cliente. Per questo esercizio, invierai un messaggio reale a un canale Slack invece di un numero di telefono cellulare.
 
@@ -233,7 +233,7 @@ Nel menu a sinistra, torna a **Azioni**, seleziona l&#39;azione `--aepUserLdap--
 
 ![Demo](./images/jop18.png)
 
-Vai a **Parametri azione** e fai clic sull&#39;icona **Modifica** per il parametro `textToSlack`.
+Scorri fino a **Parametri richiesta** e fai clic sull&#39;icona **Modifica** per il parametro `textToSlack`.
 
 ![Demo](./images/joa19z.png)
 
@@ -247,13 +247,13 @@ Selezionare il codice seguente, copiarlo e incollarlo nell&#39;**Editor modalit�
 
 ![Demo](./images/jop21.png)
 
-Verrà visualizzata l&#39;azione completata. Fare clic su **Ok**.
+Verrà visualizzata l&#39;azione completata. Scorri verso l&#39;alto e fai clic su **Salva**.
 
 ![Demo](./images/jop22.png)
 
 Questo percorso del percorso è ora pronto.
 
-## 3.2.4.4 Inviare messaggi per il percorso: più caldo di 25° Celsius
+## 3.2.4.4 Invia messaggi per il percorso: più caldo di 25° Celsius
 
 Per ciascuno dei contesti di temperatura, tenterai di inviare un messaggio al cliente. Per questo esercizio, invierai un messaggio reale a un canale Slack invece di un numero di telefono cellulare.
 
@@ -265,7 +265,7 @@ Nel menu a sinistra, torna a **Azioni**, seleziona l&#39;azione `--aepUserLdap--
 
 ![Demo](./images/jod18.png)
 
-Vai a **Parametri azione** e fai clic sull&#39;icona **Modifica** per il parametro `textToSlack`.
+Scorri fino a **Parametri richiesta** e fai clic sull&#39;icona **Modifica** per il parametro `textToSlack`.
 
 ![Demo](./images/joa19zzz.png)
 
@@ -285,7 +285,7 @@ Verrà visualizzata l&#39;azione completata. Fai clic su **Salva**.
 
 Questo percorso del percorso è ora pronto.
 
-## 3.2.4.5 Pubblicare il percorso
+## 3.2.4.5 Pubblica il tuo percorso
 
 Il percorso è ora completamente configurato. Fai clic su **Pubblica**.
 

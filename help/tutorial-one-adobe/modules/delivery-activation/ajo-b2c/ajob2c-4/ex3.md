@@ -4,9 +4,9 @@ description: Questo esercizio spiega come utilizzare la personalizzazione dei se
 kt: 5342
 doc-type: tutorial
 exl-id: a1ad649e-d0c4-4e87-b784-1e2d99f34a2e
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '395'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Prima d
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
-## 3.4.3.1 Personalizzazione basata su segmenti
+## Personalizzazione basata su 3.4.3.1 segmenti
 
 In questo esercizio migliorerai il messaggio e-mail per la newsletter creato nell’esercizio precedente con un testo personalizzato in base all’iscrizione al segmento.
 
@@ -71,12 +71,12 @@ Selezionare il segmento `--aepUserLdap-- - Interest in Plans` e fare clic sull&#
 
 Lasciare quindi invariata la prima riga e sostituire le righe 2 e 3 con questo codice:
 
-&grave;&grave;
+``
     PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
     PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
-&grave;&grave;
+``
 
 Allora avrai questo. Fai clic su **Salva**.
 
@@ -108,7 +108,7 @@ Hai finito questo esercizio.
 
 ## Passaggi successivi
 
-Vai a [3.4.4 Setup e utilizza le notifiche push per iOS](./ex4.md){target="_blank"}
+Vai a [Riepilogo e vantaggi](./summary.md){target="_blank"}
 
 Torna a [Adobe Journey Optimizer](journeyoptimizer.md){target="_blank"}
 

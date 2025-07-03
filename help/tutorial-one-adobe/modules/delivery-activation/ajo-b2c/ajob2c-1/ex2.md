@@ -4,9 +4,9 @@ description: Journey Optimizer - Creare i frammenti
 kt: 5342
 doc-type: tutorial
 exl-id: 4e71164d-9e25-46aa-a4b8-a2f6535c491e
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzi
 
 ![ACOP](./images/acoptriglp.png)
 
-## 3.1.2.1 Creare il frammento di intestazione
+## 3.1.2.1 Crea il frammento di intestazione
 
 Nel menu a sinistra, fai clic su **Frammenti**. Un frammento è un componente riutilizzabile all’interno di Journey Optimizer che evita la duplicazione e facilita le modifiche future che dovrebbero interessare tutti i messaggi, come le modifiche a un’intestazione o a un piè di pagina in un messaggio e-mail.
 
@@ -49,7 +49,7 @@ Viene visualizzata un’apertura a comparsa con la libreria multimediale di AEM 
 
 >[!NOTE]
 >
->Se non trovi le immagini Citi Signal nella tua libreria AEM Assets, puoi trovarle [qui](./../../../../assets/ajo/CitiSignal-images.zip). Scaricali sul desktop, crea la cartella **citi-signal-images** e carica tutte le immagini in quella cartella.
+>Se le immagini CitiSignal non sono visualizzate nella libreria AEM Assets, puoi trovarle [qui](./../../../../assets/ajo/CitiSignal-images.zip). Scaricali sul desktop, crea la cartella **citi-signal-images** e carica tutte le immagini in quella cartella.
 
 ![Journey Optimizer](./images/fragm5.png)
 
@@ -78,7 +78,7 @@ Successivamente, devi creare un nuovo frammento per il piè di pagina dei messag
 
 ![Journey Optimizer](./images/fragm11.png)
 
-## 3.1.2.2 Creare il frammento di piè di pagina
+## 3.1.2.2 Crea il frammento di piè di pagina
 
 Fare clic su **Crea frammento**.
 
@@ -231,8 +231,6 @@ Fai clic su **Pubblica** per pubblicare il piè di pagina in modo che possa esse
 Dopo alcuni minuti lo stato del piè di pagina verrà modificato in **Live**.
 
 ![Journey Optimizer](./images/fragm38.png)
-
-Hai terminato questo esercizio.
 
 ## Passaggi successivi
 

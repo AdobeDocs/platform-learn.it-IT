@@ -4,96 +4,18 @@ description: Verifica la tua decisione utilizzando il sito web demo
 kt: 5342
 doc-type: tutorial
 exl-id: ecfcdcc7-fc26-48f7-b3f8-6e97f8e1eee3
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 2%
+source-wordcount: '38'
+ht-degree: 5%
 
 ---
 
 # 3.3.4 Combinare Adobe Target e Offer Decisioning
 
-## 3.3.4.1 Raccogliere il collegamento condivisibile del progetto demo
-
-Per caricare il progetto demo del sito web in Adobe Target, devi innanzitutto raccogliere un collegamento speciale che consenta ad Adobe Target di caricare il progetto demo del sito web.
-
-Per eseguire questa operazione, vai a [https://dsn.adobe.com/projects](https://builder.adobedemo.com/projects). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sul progetto del tuo sito web per aprirlo.
-
-![RTCDP](./images/builder1.png)
-
-Ora vedrai questo. Vai a **Condividi**. Fare clic su **Genera collegamento** e quindi copiare il collegamento negli Appunti.
-
-![RTCDP](./images/builder2.png)
-
-Vai a [https://bitly.com](https://bitly.com), incolla il collegamento copiato e fai clic su **Crea collegamento**.
-
-![RTCDP](./images/builder4.png)
-
-Verrà visualizzato un collegamento abbreviato, simile al seguente: `https://adobe.ly/3PpGcFk`. Sarà necessario il collegamento nell&#39;esercizio successivo.
-
-![RTCDP](./images/builder5.png)
-
-## 3.3.4.2 Raccolta
-
-Passare alla home page di Adobe Experience Cloud da [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Fai clic su **Target**.
-
-![RTCDP](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/images/excl.png)
-
-Nella home page di **Adobe Target** verranno visualizzate tutte le attività esistenti. Fai clic su **Crea attività** e quindi su **Targeting esperienza**.
-
-![RTCDP](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/images/exclatov.png)
-
-Ora seleziona **Visivo** e incolla il collegamento abbreviato nel campo **Inserisci l&#39;URL attività**. Fai clic su **Crea**.
-
-![RTCDP](./images/exclatcrxt1.png)
-
-Vedrai quindi il tuo progetto demo del sito web caricato nel Compositore esperienza visivo.
-
->[!NOTE]
->
->Nel caso in cui il sito Web non venga caricato correttamente, installa e abilita questa estensione Chrome: **Adobe Target VEC Helper** dal Chrome Web Store, quindi riprova.
-
-![RTCDP](./images/vec1.png)
-
-Fare clic sull&#39;area contenente l&#39;offerta Disney+. Assicurarsi di selezionare il **contenitore** completo. Fai clic su **Inserisci prima**, quindi seleziona **Decisione offerta**.
-
-![RTCDP](./images/vec3.png)
-
-Poi vedrai questo popup. Seleziona la sandbox `--aepSandboxName--` e quindi il posizionamento **Web - Immagine**.
-
-![RTCDP](./images/vec4.png)
-
-Quindi, selezionare la decisione `--aepUserLdap-- - CitiSignal Decision`. Fai clic su **Salva**.
-
-![RTCDP](./images/vec5.png)
-
-Poi vedrai questo. Fai clic su **Rivedi regola**.
-
-![RTCDP](./images/vec5a.png)
-
-Assicurati che la regola di aggiunta del modello **URL** **contenga** **nome-progetto**. Fai clic su **Salva**.
-
-![RTCDP](./images/vec6.png)
-
-Poi vedrai questo. Fai clic su **Avanti**.
-
-![RTCDP](./images/vec7.png)
-
-Immettere un nome per l&#39;offerta, utilizzare questo nome: `--aepUserLdap-- - XT with Offers (VEC)`. Fai clic su **Avanti**.
-
-![RTCDP](./images/vec8.png)
-
-Poi vedrai questo. Definisci la **metrica obiettivo** come indicato. Fai clic su **Salva e chiudi**.
-
-![RTCDP](./images/vec9.png)
-
-L&#39;offerta è stata creata ed è in fase di pubblicazione. Una volta pubblicata l’offerta, puoi attivarla.
-
-![RTCDP](./images/vec11.png)
+Eliminazione in sospeso
 
 ## Passaggi successivi
-
-Vai a [3.3.5 Utilizza la tua decisione in un messaggio e-mail e sms](./ex5.md){target="_blank"}
 
 Torna a [Offer Decisioning](offer-decisioning.md){target="_blank"}
 

@@ -4,10 +4,10 @@ description: Adobe Journey Optimizer - Origini dati esterne e azioni personalizz
 kt: 5342
 doc-type: tutorial
 exl-id: 5c8cbec6-58c1-4992-a0c7-1a2b7c34e5b6
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 0%
+source-wordcount: '638'
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 In questo esercizio, verificherai e attiverai il percorso configurato in questo modulo.
 
-## 3.2.5.1 Aggiornare la configurazione dell’evento recinto geografico
+## 3.2.5.1 Aggiorna la configurazione dell&#39;evento del recinto geografico
 
 Vai a [Raccolta dati Adobe Experience Platform](https://experience.adobe.com/launch/) e seleziona **Tag**.
 
@@ -23,7 +23,7 @@ Questa è la pagina Proprietà raccolta dati di Adobe Experience Platform che ha
 
 ![Pagina delle proprietà](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-In **Guida introduttiva**, Demo System ha creato due proprietà client: una per il sito Web e una per l&#39;app mobile. Trovarli cercando `--aepUserLdap--` nella casella **[!UICONTROL Cerca]**. Fare clic per aprire la proprietà **Web**.
+In **Guida introduttiva**, il sistema di dimostrazione ha creato le proprietà dei tag per te: uno per il sito Web e uno per l&#39;app mobile. Trovarli cercando `--aepUserLdap--` nella casella **[!UICONTROL Cerca]**. Fare clic per aprire la proprietà **Web**.
 
 ![Casella di ricerca](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -53,7 +53,7 @@ A questo punto viene visualizzato quanto segue:
 
 Passare al campo `_experience.campaign.orchestration.eventID`. Rimuovi il valore corrente e incolla il tuo eventID lì.
 
-Come promemoria, l&#39;ID evento si trova in Adobe Journey Optimizer in **Configurazioni > Eventi** e troverai l&#39;ID evento nel payload di esempio del tuo evento, che si presenta così: `"eventID": "4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e"`.
+Come promemoria, l&#39;ID evento si trova in Adobe Journey Optimizer in **Configurazioni > Eventi** e troverai l&#39;ID evento nel payload di esempio del tuo evento, che si presenta così: `"eventID": "209a2eecb641e20a517909e186a559ced155384a26429a557eb259e5a470bca7"`.
 
 ![ACOP](./images/payloadeventID.png)
 
@@ -69,7 +69,7 @@ Fai clic su **Aggiungi tutte le risorse modificate**, quindi fai clic su **Salva
 
 ![Configurazione lancio](./images/rule9.png)
 
-## 3.2.5.2 Attivare il percorso
+## 3.2.5.2 Attiva il percorso
 
 Vai a [https://dsn.adobe.com](https://dsn.adobe.com). Dopo aver effettuato l’accesso con il tuo Adobe ID, visualizzerai questo. Fai clic sui tre punti **...** del progetto del sito Web, quindi fai clic su **Esegui** per aprirlo.
 
@@ -103,11 +103,17 @@ Apri il pannello Visualizzatore profilo e passa a Profilo cliente in tempo reale
 
 ![Demo](./images/pv2.png)
 
-Nel pannello Visualizzatore profili, fai clic su **UTILITÀ**. Immetti `geofenceevent` e fai clic su **Invia**.
+Nel pannello Visualizzatore profili, fai clic su **UTILITÀ** e seleziona **Chiamata diretta**.
 
 >[!NOTE]
 >
 >Se nel pannello Visualizzatore profili non è disponibile l&#39;opzione per inviare un evento di chiamata diretta, è possibile inviarne manualmente uno aprendo la visualizzazione per sviluppatori del browser e passando a **Console**, quindi incollando e inviando il comando: `_satellite.track('geofenceevent')`.
+
+![Demo](./images/pv3.png)
+
+Immetti `geofenceevent` e fai clic su **Invia**.
+
+![Demo](./images/pv4.png)
 
 Un paio di secondi dopo, vedrai il messaggio di Adobe Journey Optimizer apparire nel canale Slack.
 

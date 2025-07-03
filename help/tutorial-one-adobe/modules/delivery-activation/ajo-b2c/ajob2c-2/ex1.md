@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer - API meteo esterna, SMS e altro
 kt: 5342
 doc-type: tutorial
 exl-id: bde4290a-59d1-4471-83a7-1cad69f94ff1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '754'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ Assicurati che il **Tipo** sia impostato su **Unitario** e per la selezione del 
 
 ![Demo](./images/evname.png)
 
-Quindi, seleziona uno schema. Tutti gli schemi mostrati di seguito sono schemi Adobe Experience Platform.
+Quindi, seleziona uno schema.
 
 ![Demo](./images/evschema.png)
 
@@ -109,7 +109,7 @@ Facendo clic sull&#39;icona **Visualizza payload** viene aperto un payload XDM d
 
 Annota `eventID` in quanto ti servirà nell&#39;ultimo per testare la configurazione.
 
-In questo esempio, `eventID` è `4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e`.
+In questo esempio, `eventID` è `209a2eecb641e20a517909e186a559ced155384a26429a557eb259e5a470bca7`.
 
 Ora hai definito l&#39;evento che attiverà il percorso che stiamo costruendo. Una volta attivato il percorso, i campi del recinto geografico come Città e tutti gli altri che potresti aver scelto (come Paese, Latitudine e Longitudine) saranno resi disponibili al percorso.
 

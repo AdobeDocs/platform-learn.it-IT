@@ -4,14 +4,14 @@ description: In questo modulo imparerai tutto quello che c’è da sapere su Jou
 kt: 5342
 doc-type: tutorial
 exl-id: b1422971-ffce-4f4f-9bd8-986f5f1537c3
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '263'
 ht-degree: 2%
 
 ---
 
-# 3.4 Adobe Journey Optimizer
+# 3.4 Adobe Journey Optimizer: percorso di conferma dell’ordine e campagne
 
 In questo modulo imparerai tutto quello che c’è da sapere su Adobe Journey Optimizer, che aiuta le aziende a progettare e fornire ai propri clienti esperienze connesse, contestuali e personalizzate.
 
@@ -45,10 +45,6 @@ In questo esercizio configurerai una campagna e-mail tradizionale.
 [3.4.3 Applicare la personalizzazione basata sui segmenti in un messaggio e-mail](./ex3.md)
 
 In questo esercizio, utilizzerai le appartenenze ai segmenti per definire quale contenuto verrà visualizzato all’interno di un’e-mail.
-
-[3.4.4 Configurazione e utilizzo delle notifiche push](./ex4.md)
-
-In questo esercizio installerai un’app mobile sul tuo dispositivo iOS e configurerai e invierai una notifica push al dispositivo.
 
 [Riepilogo e vantaggi](./summary.md)
 

@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer - API meteo esterna, SMS e altro ancora - D
 kt: 5342
 doc-type: tutorial
 exl-id: 0ad27ffb-51fe-4bd1-b0be-feeb232039fa
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '576'
 ht-degree: 4%
 
 ---
@@ -74,7 +74,7 @@ Come nome per l&#39;origine dati, utilizzare `--aepUserLdap--WeatherApi`.
 
 Imposta descrizione su: `Access to the Open Weather Map`.
 
-L&#39;URL per l&#39;API Open Weather Map è: **http://api.openweathermap.org/data/2.5/weather?units=metric**
+L&#39;URL per l&#39;API Open Weather Map è: `http://api.openweathermap.org/data/2.5/weather?units=metric`.
 
 ![Demo](./images/dsname.png)
 

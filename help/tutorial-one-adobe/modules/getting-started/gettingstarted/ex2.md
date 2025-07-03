@@ -4,7 +4,7 @@ description: 'Guida introduttiva: utilizza Demo System Next per configurare la p
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Per visualizzare i risultati di questo tutorial e consentirti di testare la conf
 
 Dopo aver effettuato l&#39;accesso a Sistema demo, procedere come segue.
 
-Vai a [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"} e passa a **Configurazione**.
+Vai a [https://dsn.adobe.com/quick-setup](https://dsn.adobe.com/quick-setup){target="_blank"} e passa a **Configurazione**.
 
 ![DSN](./images/dsnsetup.png)
 
@@ -25,7 +25,7 @@ Nel menu a discesa **Ambiente**, seleziona l&#39;istanza e la sandbox.
 
 ![DSN](./images/dsnh1.png)
 
-Selezionare quindi il predefinito **Utente AEP Tutorial**.
+Selezionare quindi il predefinito **One Adobe Tutorial**.
 
 ![DSN](./images/dsnhome.png)
 

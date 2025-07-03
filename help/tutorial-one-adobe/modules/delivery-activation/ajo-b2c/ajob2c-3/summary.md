@@ -5,17 +5,16 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 exl-id: 7ae5afb2-689e-428a-9382-b72ac0cb5826
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 3%
+source-wordcount: '52'
+ht-degree: 5%
 
 ---
 
 # Riepilogo e vantaggi
 
-Congratulazioni e grazie per aver dedicato il tuo tempo all’apprendimento di Offer Decisioning e Adobe Journey Optimizer.
-In questo modulo hai imparato a utilizzare il servizio applicativo Offer Decisioning.
+Congratulazioni e grazie per aver dedicato del tempo alla conoscenza di Adobe Journey Optimizer.
 
 ## Vantaggi
 
@@ -23,11 +22,8 @@ I punti salienti saranno menzionati al momento della pubblicazione di questo ese
 
 ## Guarda qui
 
-- Documentazione del prodotto: [Glossario di Offer Decisioning](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html#glossary?lang=it)
-- Documentazione del prodotto: [Web SDK - Panoramica di Offer Decisioning](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html?lang=it)
-
 ## Passaggi successivi
 
-Torna a [Offer Decisioning](offer-decisioning.md){target="_blank"}
+Torna a [Adobe Journey Optimizer: messaggi push e in-app](ajopushinapp.md){target="_blank"}
 
 Torna a [Tutti i moduli](./../../../../overview.md){target="_blank"}
