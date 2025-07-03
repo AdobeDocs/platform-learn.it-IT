@@ -58,7 +58,7 @@ Nell&#39;oggetto `--aepTenantId--.identification.core`, assicurarsi di seleziona
 
 ![ACOP](./images/eventpayloadbrid.png)
 
-Dovresti vedere questo. Verificare che lo spazio dei nomi **** sia impostato su **ECID (ECID)**. Fai clic su **Salva**.
+Dovresti vedere questo. Verificare che lo spazio dei nomi **&#x200B;**&#x200B;sia impostato su **ECID (ECID)**. Fai clic su **Salva**.
 
 ![ACOP](./images/eventsave.png)
 
