@@ -4,9 +4,9 @@ description: In questa sezione configurerai un percorso e-mail batch per inviare
 kt: 5342
 doc-type: tutorial
 exl-id: 40ca710d-63c8-41bd-bd4e-f02186509345
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '877'
 ht-degree: 0%
 
 ---
@@ -21,8 +21,7 @@ Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzi
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
-
-## 3.4.2.1 Creare un pubblico
+## 3.4.2.1 Crea pubblico
 
 Prima di creare la campagna, devi definire il pubblico che deve riceverla. Per creare un pubblico, vai a **Tipi di pubblico** nel menu a sinistra. Qui troverai tutto il pubblico creato in precedenza.
 
@@ -44,7 +43,7 @@ Imposta il nome del pubblico su `--aepUserLdap-- - All customers with email` e f
 
 Il pubblico ora è pubblicato e può essere utilizzato in una campagna.
 
-## 3.4.2.2 Creare una campagna newsletter
+## 3.4.2.2 Crea campagna newsletter
 
 Ora creerai una campagna. A differenza del percorso basato sugli eventi dell’esercizio precedente, che si basa su eventi di esperienza o entrate o uscite di pubblico in arrivo per attivare un percorso per 1 cliente specifico, le campagne sono indirizzate a un intero pubblico una volta con contenuti univoci come newsletter, promozioni una tantum o informazioni generiche, oppure periodicamente con contenuti simili inviati regolarmente, come ad esempio campagne e promemoria di compleanno.
 
@@ -96,7 +95,7 @@ Trascina e rilascia 3 volte una **colonna 1:1** nell&#39;area di lavoro, 1 volta
 
 ![Journey Optimizer](./images/campaign8.png)
 
-Nel menu a sinistra, vai a **Frammenti**. Trascina l&#39;intestazione creata in precedenza nell&#39;esercizio [3.1.2.1](./../ajob2c-1/ex2.md) sul primo componente dell&#39;area di lavoro. Trascinare il piè di pagina creato in precedenza nell&#39;[esercizio 3.1.2.2](./../ajob2c-1/ex2.md) sull&#39;ultimo componente dell&#39;area di lavoro.
+Nel menu a sinistra, vai a **Frammenti**. Trascinare l&#39;intestazione creata in precedenza nell&#39;esercizio [ 3.1.2.1](./../ajob2c-1/ex2.md) sul primo componente dell&#39;area di lavoro. Trascinare il piè di pagina creato in precedenza nell&#39;esercizio [ sull&#39;ultimo componente dell&#39;area di lavoro.3.1.2.2](./../ajob2c-1/ex2.md)
 
 ![Journey Optimizer](./images/campaign9.png)
 

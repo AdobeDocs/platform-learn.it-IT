@@ -4,9 +4,9 @@ description: In questa sezione viene configurato un percorso basato su trigger -
 kt: 5342
 doc-type: tutorial
 exl-id: e8cf1274-2a18-4870-b1e3-378e1779fac1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1895'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzi
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
-## 3.4.1.1 Creare l’evento
+## 3.4.1.1 Crea il tuo evento
 
 Nel menu, vai a **Configurazioni** e fai clic su **Gestisci** in **Eventi**.
 
@@ -40,7 +40,7 @@ Per **Tipo ID evento**, selezionare **Generato dal sistema**.
 
 ![Journey Optimizer](./images/eventidtype.png)
 
-Di seguito è riportata la selezione dello schema. Per questo esercizio è stato preparato uno schema. Utilizzare lo schema `Demo System - Event Schema for Website (Global v1.1) v.1`.
+Segue la selezione dello schema. Per questo esercizio è stato preparato uno schema. Utilizzare lo schema `Demo System - Event Schema for Website (Global v1.1) v.1`.
 
 Dopo aver selezionato lo schema, nella sezione **Payload** verranno selezionati diversi campi. Fai clic sull&#39;icona **Modifica/Matita** per aggiungere altri campi a questo evento.
 
@@ -78,13 +78,13 @@ Ora vedrai un esempio del payload previsto. L&#39;evento ha un ID evento di orch
 ![Journey Optimizer](./images/oc42.png)
 
 L’ID evento è ciò che deve essere inviato a Adobe Journey Optimizer per attivare il percorso che verrà generato nel passaggio successivo. Scrivere questo eventID, in quanto sarà necessario in uno dei passaggi successivi.
-`"eventID": "1c8148a8ab1993537d0ba4e6ac293dd4f2a88d80b2ca7be6293c3b28d4ff5ae6"`
+`"eventID": "618da2a203c3392e43a538d40ff5deef0bd1e7c64f6b6bfe131d4a38a67193ae"`
 
 Fai clic su **Ok**, seguito da **Annulla**.
 
 L’evento è ora configurato e pronto per essere utilizzato.
 
-## 3.4.1.2 Creare il percorso
+## 3.4.1.2 Crea il tuo percorso
 
 Nel menu, vai a **Percorsi** e fai clic su **Crea Percorso**.
 
@@ -102,19 +102,15 @@ Quindi, in **Azioni**, cerca l&#39;azione **E-mail** e aggiungilo all&#39;area d
 
 ![Journey Optimizer](./images/oc47.png)
 
-Imposta **Categoria** su **Marketing** e seleziona una superficie e-mail che ti consenta di inviare messaggi e-mail. In questo caso, la superficie e-mail da selezionare è **E-mail**. Assicurati che le caselle di controllo per **Clic su e-mail** e **aperture e-mail** siano entrambe abilitate.
+Imposta **Categoria** su **Marketing** e seleziona una superficie e-mail che ti consenta di inviare messaggi e-mail. In questo caso, la superficie e-mail da selezionare è **E-mail**. Il passaggio successivo consiste nel creare il messaggio. A tale scopo, fare clic su **Modifica contenuto**.
 
 ![ACOP](./images/journeyactions1.png)
-
-Il passaggio successivo consiste nel creare il messaggio. A tale scopo, fare clic su **Modifica contenuto**.
-
-![ACOP](./images/journeyactions2.png)
 
 Ora vedete questo. Fare clic sul campo di testo **Oggetto**.
 
 ![ACOP](./images/journeyactions3.png)
 
-Nell&#39;area di testo inizia a scrivere **Grazie per l&#39;ordine,** e fai clic sull&#39;icona **Personalization**.
+Nell&#39;area di testo iniziare a scrivere `Thanks for your order, ` e fare clic sull&#39;icona **Personalization**.
 
 ![Journey Optimizer](./images/oc5.png)
 
@@ -136,7 +132,7 @@ Trascina e rilascia 8 volte una **colonna 1:1** nell&#39;area di lavoro, per ott
 
 ![Journey Optimizer](./images/oc9.png)
 
-Nel menu a sinistra, vai a **Frammenti**. Trascina l&#39;intestazione creata in precedenza nell&#39;esercizio [3.1.2.1](./../ajob2c-1/ex2.md) sul primo componente dell&#39;area di lavoro. Trascinare il piè di pagina creato in precedenza nell&#39;[esercizio 3.1.2.2](./../ajob2c-1/ex2.md) sull&#39;ultimo componente dell&#39;area di lavoro.
+Nel menu a sinistra, vai a **Frammenti**. Trascinare l&#39;intestazione creata in precedenza nell&#39;esercizio [ 3.1.2.1](./../ajob2c-1/ex2.md) sul primo componente dell&#39;area di lavoro. Trascinare il piè di pagina creato in precedenza nell&#39;esercizio [ sull&#39;ultimo componente dell&#39;area di lavoro.3.1.2.2](./../ajob2c-1/ex2.md)
 
 ![Journey Optimizer](./images/fragm1.png)
 
@@ -345,11 +341,11 @@ Il percorso è stato pubblicato.
 
 ![Journey Optimizer](./images/oc513.png)
 
-## 3.4.1.5 Aggiornare la proprietà Client di raccolta dati di Adobe Experience Platform
+## 3.4.1.5 Aggiorna la proprietà del client di raccolta dati di Adobe Experience Platform
 
 Vai a [Raccolta dati Adobe Experience Platform](https://experience.adobe.com/launch/) e seleziona **Tag**.
 
-Questa è la pagina Proprietà raccolta dati di Adobe Experience Platform che hai visto prima.
+Questa è la pagina delle proprietà di Adobe Experience Platform Data Collection che hai visto prima.
 
 ![Pagina delle proprietà](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
@@ -371,7 +367,7 @@ Salva le modifiche nella proprietà, quindi pubblica le modifiche aggiornando la
 
 Le modifiche sono ora implementate e possono essere testate.
 
-## 3.4.1.6 Verifica l’e-mail di conferma dell’ordine utilizzando il sito web demo
+## 3.4.1.6 Verifica l&#39;e-mail di conferma dell&#39;ordine utilizzando il sito Web demo
 
 Testiamo il percorso aggiornato acquistando un prodotto sul sito web demo.
 
@@ -403,15 +399,11 @@ Dai un&#39;occhiata al pannello Visualizzatore profili e al Profilo cliente in t
 
 ![Demo](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv2.png)
 
-Vai alla pagina di registrazione/accesso. Fare clic su **CREA UN ACCOUNT**.
+Vai alla pagina **Accedi**, fai clic su **CREA UN ACCOUNT** e compila questi campi. Fai clic su **Registra** dopo di che verrai reindirizzato alla pagina precedente.
 
 ![Demo](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv9.png)
 
-Compila i tuoi dettagli e fai clic su **Registra** dopo di che sarai reindirizzato alla pagina precedente.
-
-![Demo](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv10.png)
-
-Aggiungi qualsiasi prodotto al carrello
+Aggiungi qualsiasi prodotto al carrello.
 
 ![Journey Optimizer](./images/cart1a.png)
 
