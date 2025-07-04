@@ -3,19 +3,27 @@ title: Configurare un percorso con messaggi push
 description: Configurare un percorso con messaggi push
 kt: 5342
 doc-type: tutorial
-source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
+exl-id: 63d7ee24-b6b5-4503-b104-a345c2b26960
+source-git-commit: fb14ba45333bdd5834ff0c6c2dc48dda35cfe85f
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '770'
 ht-degree: 1%
 
 ---
 
 # 3.3.2 Configurare un percorso con messaggi push
 
+Accedi a Adobe Journey Optimizer da [Adobe Experience Cloud](https://experience.adobe.com). Fare clic su **Journey Optimizer**.
 
-## 3.4.4.6 Crea un nuovo evento
+![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-Vai a **Journey Optimizer**. Nel menu a sinistra, vai a **Configurazioni** e fai clic su **Gestisci** in **Eventi**.
+Verrai reindirizzato alla visualizzazione **Home** in Journey Optimizer. Innanzitutto, assicurati di utilizzare la sandbox corretta. La sandbox da utilizzare si chiama `--aepSandboxName--`. Ti troverai quindi nella **Home** della tua sandbox `--aepSandboxName--`.
+
+![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+
+## 3.3.2.1 Crea un nuovo evento
+
+Nel menu a sinistra, vai a **Configurazioni** e fai clic su **Gestisci** in **Eventi**.
 
 ![ACOP](./images/acopmenu.png)
 
@@ -32,7 +40,7 @@ La selezione del **Tipo ID evento** è successiva. Selezionare **Generato dal si
 
 Di seguito è riportata la selezione dello schema. Per questo esercizio è stato preparato uno schema. Utilizzare lo schema `Demo System - Event Schema for Mobile App (Global v1.1) v.1`.
 
-Dopo aver selezionato lo schema, nella sezione **Payload** verranno selezionati diversi campi. Il tuo evento è ora completamente configurato.
+Dopo aver selezionato lo schema, nella sezione **Payload** verranno selezionati diversi campi. Verificare che il campo **Spazio dei nomi** sia impostato su **ECID**. Il tuo evento è ora completamente configurato.
 
 Fai clic su **Salva**.
 
@@ -50,20 +58,24 @@ Ora vedrai un esempio del payload previsto.
 
 Il tuo evento ha un ID evento di orchestrazione univoco, che puoi trovare scorrendo verso il basso in tale payload fino a visualizzare `_experience.campaign.orchestration.eventID`.
 
+L’ID evento è ciò che deve essere inviato a Adobe Experience Platform per attivare il Percorso che verrà generato nel passaggio successivo. Annota questo eventID, come sarà necessario nel passaggio successivo.
+`"eventID": "aa895251f76831e6440f169f1bb9d2a4388f0696d8e2782cfab192a275817dfa"`
+
+Fare clic su **Ok**.
+
 ![ACOP](./images/payloadeventID.png)
 
-L’ID evento è ciò che deve essere inviato a Adobe Experience Platform per attivare il Percorso che verrà generato nel passaggio successivo. Annota questo eventID, come sarà necessario nel passaggio successivo.
-`"eventID": "89acd341ec2b7d1130c9a73535029debf2ac35f486bc99236b1a5091d6f4bc68"`
+Fare clic su **Annulla**.
 
-Fai clic su **Ok**, seguito da **Annulla**.
+![ACOP](./images/payloadeventIDa.png)
 
-## 3.4.4.7 Creazione di un percorso
+## 3.3.2.2 Creazione di un percorso
 
-Nel menu, vai a **Percorsi** e fai clic su **Crea Percorso**.
+Nel menu a sinistra, vai a **Percorsi** e fai clic su **Crea Percorso**.
 
 ![DSN](./images/sjourney1.png)
 
-Poi vedrai questo. Assegna un nome al percorso. Usa `--aepUserLdap-- - Store Entry journey`. Fai clic su **Salva**.
+Poi vedrai questo. Assegnare un nome al percorso: `--aepUserLdap-- - Store Entry journey`. Fai clic su **Salva**.
 
 ![DSN](./images/sjourney3.png)
 
@@ -129,23 +141,61 @@ Il percorso è stato pubblicato.
 
 ![DSN](./images/sjourney11.png)
 
-## 3.4.4.8 Test del percorso e messaggio push
+## 3.3.2.3 Aggiorna la proprietà di raccolta dati per dispositivi mobili
 
-Nell&#39;app mobile DX Demo 2.0, vai alla schermata **Impostazioni**. Fare clic sul pulsante **Voce archivio**.
+In **Guida introduttiva**, il sistema di dimostrazione ha creato le proprietà dei tag per te: uno per il sito Web e uno per l&#39;app mobile. Trovarli cercando `--aepUserLdap--` nella casella **Cerca**. Fare clic per aprire la proprietà **Mobile**.
 
->[!NOTE]
->
->Il pulsante **Voce archivio** è attualmente in fase di implementazione. Non lo troverai ancora nell’app.
+![DSN](./images/pushpoi1.png)
 
-![DSN](./images/demo1b.png)
+Dovresti vedere questo.
 
-Assicurati di chiudere l&#39;app immediatamente dopo aver fatto clic sull&#39;icona **Voce store**, altrimenti il messaggio push non verrà visualizzato.
+![DSN](./images/pushpoi2.png)
 
-Dopo un paio di secondi, verrà visualizzato il messaggio.
+Nel menu a sinistra, vai a **Regole** e fai clic per aprire la regola **Voce posizione**.
 
-![DSN](./images/demo2.png)
+![DSN](./images/pushpoi3.png)
 
-Hai finito questo esercizio.
+Dovresti vedere questo. Fai clic sull&#39;azione **Mobile Core - Allega dati**.
+
+![DSN](./images/pushpoi4.png)
+
+Dovresti vedere questo.
+
+![DSN](./images/pushpoi5.png)
+
+Incolla l&#39;eventID dell&#39;evento `--aepUserLdap--StoreEntryEvent` nella finestra **Payload JSON**. Fai clic su **Mantieni modifiche**.
+
+![DSN](./images/pushpoi6.png)
+
+Fai clic su **Salva** o **Salva nella libreria**.
+
+![DSN](./images/pushpoi7.png)
+
+Vai a **Flusso di pubblicazione** e fai clic per aprire la libreria **Principale**.
+
+![DSN](./images/pushpoi8.png)
+
+Fai clic su **Aggiungi tutte le risorse modificate**, quindi fai clic su **Salva e genera in sviluppo**.
+
+![DSN](./images/pushpoi9.png)
+
+## 3.3.2.4 Test del percorso e messaggio push
+
+Aprire l&#39;applicazione **DSN Mobile**.
+
+![DSN](./images/dxdemo1.png)
+
+Vai alla pagina **Store Locator**.
+
+![DSN](./images/dxdemo2.png)
+
+Fai clic su **Simula voce POI**.
+
+![DSN](./images/dxdemo3.png)
+
+Dopo un paio di secondi, verrà visualizzata la notifica push.
+
+![DSN](./images/dxdemo4.png)
 
 ## Passaggi successivi
 

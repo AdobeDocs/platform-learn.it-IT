@@ -4,9 +4,9 @@ description: Foundation - Real-time Customer Profile - Da sconosciuto a noto sul
 kt: 5342
 doc-type: tutorial
 exl-id: f33a7448-e1b9-47e7-97c7-509ad36cf991
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2264f26a0778c2570c36abe1bae4d6a1dc3a465c
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '1002'
 ht-degree: 2%
 
 ---
@@ -59,41 +59,39 @@ Puoi anche visualizzare tutti gli eventi esperienza che sono stati raccolti in b
 
 ![Demo](../../datacollection/dc1.2/images/pv3.png)
 
-Vai alla categoria di prodotto **Telefoni e dispositivi**. Fare clic sul prodotto **iPhone 15 Pro**.
+Vai alla categoria di prodotto **Telefoni e dispositivi**. Fare clic sul prodotto **iPhone 16 Pro**.
 
 ![Demo](../../datacollection/dc1.2/images/pv4.png)
 
-Viene visualizzata la pagina dei dettagli del prodotto. Un evento esperienza di tipo **Visualizzazione prodotto** è stato ora inviato a Adobe Experience Platform utilizzando l&#39;implementazione Web SDK esaminata nel modulo 1.
+Viene visualizzata la pagina dei dettagli del prodotto. Un evento di tipo **Visualizzazione prodotto** è stato ora inviato a Adobe Experience Platform utilizzando l&#39;implementazione Web SDK esaminata nel modulo 1.
 
 ![Demo](../../datacollection/dc1.2/images/pv5.png)
 
-Apri il pannello Provider Viewer e osserva i tuoi **eventi esperienza**.
+Apri il pannello Provile Viewer e osserva i tuoi **eventi**.
 
 ![Demo](../../datacollection/dc1.2/images/pv6.png)
 
-Torna alla pagina della categoria **Telefoni e dispositivi** e fai clic su un altro prodotto. Un altro evento esperienza è stato inviato a Adobe Experience Platform. Apri il pannello Visualizzatore profili. Verranno visualizzati 2 eventi esperienza di tipo **Visualizzazione prodotto**. Anche se il comportamento è anonimo, con il consenso adeguato sul posto, puoi tenere traccia di ogni clic e memorizzarlo in Adobe Experience Platform. Una volta che il cliente anonimo verrà a conoscenza, saremo in grado di unire automaticamente tutti i comportamenti anonimi al profilo know.
+Torna alla pagina della categoria **Telefoni e dispositivi** e fai clic su un altro prodotto. Un altro evento esperienza è stato inviato a Adobe Experience Platform. Apri il pannello Visualizzatore profili. Verranno visualizzati 2 eventi di tipo **Visualizzazione prodotto**. Anche se il comportamento è anonimo, con il consenso adeguato sul posto, puoi tenere traccia di ogni clic e memorizzarlo in Adobe Experience Platform. Una volta che il cliente anonimo verrà a conoscenza, saremo in grado di unire automaticamente tutti i comportamenti anonimi al profilo know.
+
+Fai clic su **Accedi**.
 
 ![Demo](../../datacollection/dc1.2/images/pv7.png)
 
-Vai alla pagina di registrazione/accesso. Fai clic su **Accedi**.
+Fai clic su **Crea un account**.
 
 ![Demo](../../datacollection/dc1.2/images/pv8.png)
 
-Fai clic su **Crea un account**.
+Compila i tuoi dettagli e fai clic su **Registra** dopo di che sarai reindirizzato alla pagina precedente.
 
 ![Demo](../../datacollection/dc1.2/images/pv9.png)
 
-Compila i tuoi dettagli e fai clic su **Registra** dopo di che sarai reindirizzato alla pagina precedente.
+Apri il pannello Visualizzatore profilo e passa a Profilo cliente in tempo reale. Nel pannello Visualizzatore profili dovresti visualizzare tutti i dati personali, come gli identificatori e-mail e telefonici appena aggiunti.
 
 ![Demo](../../datacollection/dc1.2/images/pv10.png)
 
-Apri il pannello Visualizzatore profilo e passa a Profilo cliente in tempo reale. Nel pannello Visualizzatore profili dovresti visualizzare tutti i dati personali, come gli identificatori e-mail e telefonici appena aggiunti.
-
-![Demo](../../datacollection/dc1.2/images/pv11.png)
-
 Nel pannello Visualizzatore profili, vai a Eventi esperienza. Nel pannello Visualizzatore profili vengono visualizzati i 2 prodotti precedenti. Entrambi gli eventi sono ora connessi anche al tuo profilo &quot;noto&quot;.
 
-![Demo](../../datacollection/dc1.2/images/pv12.png)
+![Demo](../../datacollection/dc1.2/images/pv11.png)
 
 Ora che hai acquisito i dati in Adobe Experience Platform, li hai collegati a identificatori come ECID e indirizzi e-mail. L&#39;obiettivo è quello di capire il contesto di business di ciò che si sta per fare. Nel prossimo esercizio, inizierai a configurare tutto il necessario per rendere possibile l’acquisizione dei dati.
 
@@ -105,21 +103,33 @@ Se l&#39;app non è più installata o se non ricordi come installarla, consulta 
 
 Dopo aver installato l’app secondo le istruzioni, viene visualizzata la pagina di destinazione dell’app con il brand Citignal caricato. Fai clic sull’icona dell’account nella parte in alto a sinistra della schermata.
 
-![Demo](./images/app_hp1.png)
+![Demo](./images/app_hpz.png)
 
 Nella schermata Login, accedi con l’indirizzo e-mail utilizzato sul sito web desktop. Fai clic su **Accesso**.
 
 ![Demo](./images/app_acc.png)
 
-Vai alla schermata iniziale dell’app e fai clic su per aprire qualsiasi prodotto.
+Verrà quindi visualizzata una conferma dell&#39;accesso.
 
-![Demo](./images/app_hp.png)
+![Demo](./images/app_acc1.png)
+
+Passa alla schermata iniziale dell&#39;app e vai alla pagina **Telefoni e dispositivi**.
+
+![Demo](./images/app_hp1.png)
+
+Fai clic su qualsiasi prodotto nella pagina.
+
+![Demo](./images/app_hp2.png)
 
 Viene visualizzata la pagina dei dettagli del prodotto.
 
 ![Demo](./images/app_galaxy.png)
 
-Vai alla schermata iniziale dell’app e scorri verso sinistra per visualizzare il pannello Visualizzatore profili. Vedrai quindi il prodotto appena visualizzato nella sezione **Eventi esperienza**, insieme a tutte le visualizzazioni prodotto della sessione del sito Web precedente.
+Vai alla schermata iniziale dell’app e fai clic sull’icona Adobe per visualizzare il pannello Visualizzatore profili. Verrà quindi visualizzata la visualizzazione **Attributi profilo**, che ora mostra una visualizzazione combinata dell&#39;attività Web e dell&#39;app mobile. Vai a **Eventi**
+
+![Demo](./images/app_hp3.png)
+
+Vedrai quindi il prodotto appena visualizzato nella sezione **Eventi esperienza**, insieme a tutte le visualizzazioni prodotto della sessione del sito Web precedente.
 
 >[!NOTE]
 >
