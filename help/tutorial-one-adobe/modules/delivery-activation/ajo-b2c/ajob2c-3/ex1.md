@@ -86,7 +86,7 @@ Vedrai quindi che il flusso di dati per dispositivi mobili è collegato qui. Far
 
 ![Raccolta dati di Adobe Experience Platform](./images/launchprop2.png)
 
-Allora tornerai qui. Verrà visualizzata l&#39;estensione per **AEP Assurance**. AEP Assurance consente di verificare, verificare, simulare e convalidare la modalità di raccolta dei dati o di gestione delle esperienze nell’app mobile. Ulteriori informazioni su AEP Assurance sono disponibili qui: [https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home](https://experienceleague.adobe.com/it/docs/experience-platform/assurance/home).
+Allora tornerai qui. Verrà visualizzata l&#39;estensione per **AEP Assurance**. AEP Assurance consente di verificare, verificare, simulare e convalidare la modalità di raccolta dei dati o di gestione delle esperienze nell’app mobile. Ulteriori informazioni su AEP Assurance sono disponibili qui: [https://experienceleague.adobe.com/it/docs/experience-platform/assurance/home](https://experienceleague.adobe.com/it/docs/experience-platform/assurance/home).
 
 ![Raccolta dati di Adobe Experience Platform](./images/launchprop8.png)
 
