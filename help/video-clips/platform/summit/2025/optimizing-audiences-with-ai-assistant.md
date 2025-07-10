@@ -19,4 +19,4 @@ ht-degree: 0%
 Scopri in che modo l’Assistente AI consente di creare tipi di pubblico con le prestazioni migliori riducendo al minimo le dimensioni della campagna e mantenendo al contempo tassi di conversione elevati.
 
 <!--  -->
->[!VIDEO](https://video.tv.adobe.com/v/3459309?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3462226?learn=on&enablevpops=true&captions=ita)
