@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Questo video offre informazioni utili agli utenti di Real-Time CDP Collaboration, sia agli utenti delle agenzie che ai team tecnici, su come questi team cross-functional dovrebbero collaborare tra diversi casi d’uso, origini dati, tipi di pubblico e obiettivi, per garantire il successo e l’efficienza operativa nell’adozione di Real-Time CDP Collaboration
 
->[!VIDEO](https://video.tv.adobe.com/v/3464658/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464677/?learn=on&enablevpops&captions=ita)
