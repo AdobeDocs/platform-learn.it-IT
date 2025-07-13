@@ -22,18 +22,18 @@ Scopri come iniziare a utilizzare le API di Adobe Experience Platform. Il primo 
 
 [[!DNL Postman]](https://www.postman.com/) è un&#39;applicazione di terze parti che consente agli sviluppatori di interagire in modo rapido e semplice con le API di Adobe Experience Platform.
 
-La funzionalità [Esporta dettagli per Postman](https://developer.adobe.com/console/projects) di Adobe Developer Console **&#x200B;**&#x200B;consente di esportare facilmente i dettagli dell&#39;account necessari per accedere e interagire con le API di Experience Platform in un unico file di ambiente Postman, eliminando la necessità di copiare e incollare i valori da Adobe Developer Console in Postman.
+La funzionalità [Esporta dettagli per Postman](https://developer.adobe.com/console/projects) di Adobe Developer Console **** consente di esportare facilmente i dettagli dell&#39;account necessari per accedere e interagire con le API di Experience Platform in un unico file di ambiente Postman, eliminando la necessità di copiare e incollare i valori da Adobe Developer Console in Postman.
 
 >[!IMPORTANT]
 >
->Per accedere a [Adobe Developer Console](https://developer.adobe.com/console/projects), devi essere un [Amministratore di sistema](https://helpx.adobe.com/it/enterprise/using/admin-roles.html) o uno [Sviluppatore](https://helpx.adobe.com/it/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) in [Adobe Admin Console](https://adminconsole.adobe.com).
+>Per accedere a [Adobe Developer Console](https://developer.adobe.com/console/projects), devi essere un [Amministratore di sistema](https://helpx.adobe.com/it/enterprise/using/admin-roles.html) o uno [Sviluppatore](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) in [Adobe Admin Console](https://adminconsole.adobe.com).
 >
 > Dopo aver creato le credenziali API, un amministratore di sistema deve associarle a un ruolo in Experience Platform.
 >
 >Per istruzioni dettagliate, consulta l&#39;esercitazione [Aggiungere sviluppatori e concedere autorizzazioni per le credenziali API](../admin/add-developers.md).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/36258/?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
 
 <!-- CARDS
 * generate-an-access-token.md
@@ -46,7 +46,7 @@ La funzionalità [Esporta dettagli per Postman](https://developer.adobe.com/cons
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="generate-an-access-token.md" title="Generare un token di accesso API di Experience Platform con Postman" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/39133/?format=jpeg&nocache=1752259602830&captions=ita" alt="Generare un token di accesso API di Experience Platform con Postman"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29698/?format=jpeg&nocache=1752259602830" alt="Generare un token di accesso API di Experience Platform con Postman"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -69,7 +69,7 @@ La funzionalità [Esporta dettagli per Postman](https://developer.adobe.com/cons
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-apis-with-postman.md" title="Utilizzare le API di Experience Platform con Postman" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/39132/?format=jpeg&nocache=1752259602844&captions=ita" alt="Utilizzare le API di Experience Platform con Postman"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29704/?format=jpeg&nocache=1752259602844" alt="Utilizzare le API di Experience Platform con Postman"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
