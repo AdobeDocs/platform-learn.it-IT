@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
-source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
+source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '499'
 ht-degree: 2%
 
 ---
@@ -47,6 +47,10 @@ In questo esercizio configurerai utenti tipo, prodotti e modelli in GenStudio fo
 [Attivazione campagna 1.3.3 in formato Meta](./ex3.md){target="_blank"}
 
 In questo esercizio creerai una campagna. Puoi anche configurare una connessione a Meta e seguire tutti i passaggi necessari per creare un annuncio, approvare un annuncio tramite Adobe Workfront e pubblicare un annuncio su Meta.
+
+[1.3.4 Crea esperienza e-mail per AJO](./ex4.md){target="_blank"}
+
+In questo esercizio creerai un’esperienza e-mail utilizzando un modello in GenStudio for Performance Marketing e condividerai tale esperienza con Adobe Journey Optimizer per inviare una campagna e-mail.
 
 [Riepilogo e vantaggi](./summary.md){target="_blank"}
 
