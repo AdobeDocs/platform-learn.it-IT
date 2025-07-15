@@ -21,7 +21,7 @@ Journey Optimizer Decision Management consente di offrire ai clienti l’offerta
 
 ![Architettura](assets/architecture-ajo.png)
 
-La gestione delle decisioni semplifica la personalizzazione con una libreria centrale di offerte di marketing e un motore decisionale che applica regole e vincoli ai profili avanzati e in tempo reale creati da Adobe Experience Platform. Di conseguenza, ti consente di inviare ai clienti l’offerta giusta al momento giusto. Per ulteriori informazioni, vedere [Informazioni sulla gestione delle decisioni](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en).
+La gestione delle decisioni semplifica la personalizzazione con una libreria centrale di offerte di marketing e un motore decisionale che applica regole e vincoli ai profili avanzati e in tempo reale creati da Adobe Experience Platform. Di conseguenza, ti consente di inviare ai clienti l’offerta giusta al momento giusto. Per ulteriori informazioni, vedere [Informazioni sulla gestione delle decisioni](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=it).
 
 
 
@@ -35,7 +35,7 @@ La gestione delle decisioni semplifica la personalizzazione con una libreria cen
 
 * L&#39;app con gli SDK installati e configurati è stata creata ed eseguita correttamente.
 * Configura l’app per Adobe Experience Platform.
-* Accedi a Journey Optimizer - Gestione delle decisioni con le autorizzazioni appropriate per gestire offerte e decisioni come descritto [qui](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
+* Accedi a Journey Optimizer - Gestione delle decisioni con le autorizzazioni appropriate per gestire offerte e decisioni come descritto [qui](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=it#decisions-permissions).
 
 
 ## Obiettivi di apprendimento
@@ -63,7 +63,7 @@ Per fare in modo che i dati inviati dalla tua app mobile a Platform Edge Network
 
 1. Nell&#39;interfaccia utente di Data Collection, seleziona **[!UICONTROL Datastreams]** e quindi il tuo datastream, ad esempio **[!DNL Luma Mobile App]**.
 1. Seleziona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) per **[!UICONTROL Experience Platform]** e seleziona ![Modifica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Modifica]** dal menu di scelta rapida.
-1. Nella schermata **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**, assicurati che siano selezionati **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]** e **[!UICONTROL Adobe Journey Optimizer]**. Se vuoi seguire la lezione di Target, seleziona anche **[!UICONTROL Destinazioni Personalization]**. Per ulteriori informazioni, vedere [Impostazioni di Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep).
+1. Nella schermata **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**, assicurati che siano selezionati **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]** e **[!UICONTROL Adobe Journey Optimizer]**. Se vuoi seguire la lezione di Target, seleziona anche **[!UICONTROL Destinazioni Personalization]**. Per ulteriori informazioni, vedere [Impostazioni di Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=it#aep).
 1. Per salvare la configurazione dello stream di dati, seleziona **[!UICONTROL Salva]**.
 
    ![Configurazione dello stream di dati di AEP](assets/datastream-aep-configuration-offers.png)
@@ -243,7 +243,7 @@ Un criterio di valutazione è la combinazione di
 * regole di idoneità: ad esempio, l’offerta è disponibile solo per un pubblico specifico,
 * un metodo di classificazione: quando sono disponibili più offerte tra cui scegliere, quale metodo utilizzare per classificarle (ad esempio in base alla priorità dell’offerta, utilizzando una formula o un modello di IA).
 
-Consulta [Passaggi chiave per creare e gestire le offerte](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) per comprendere meglio come posizionamenti, regole, classificazioni, offerte, rappresentazioni, raccolte, decisioni e così via interagiscono e si relazionano tra loro. Questa lezione si concentra esclusivamente sull&#39;utilizzo dei risultati di una decisione piuttosto che sulla flessibilità nella definizione delle decisioni all&#39;interno di Journey Optimizer - Gestione delle decisioni.
+Consulta [Passaggi chiave per creare e gestire le offerte](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=it) per comprendere meglio come posizionamenti, regole, classificazioni, offerte, rappresentazioni, raccolte, decisioni e così via interagiscono e si relazionano tra loro. Questa lezione si concentra esclusivamente sull&#39;utilizzo dei risultati di una decisione piuttosto che sulla flessibilità nella definizione delle decisioni all&#39;interno di Journey Optimizer - Gestione delle decisioni.
 
 1. Nell&#39;interfaccia utente di Journey Optimizer, seleziona **[!UICONTROL Offerte]** dalla barra a sinistra.
 1. Seleziona **[!UICONTROL Decisioni]** dalla barra superiore.

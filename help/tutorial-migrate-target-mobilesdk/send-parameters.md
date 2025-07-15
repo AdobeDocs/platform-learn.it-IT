@@ -35,7 +35,7 @@ I parametri di profilo memorizzano i dati per un periodo di tempo prolungato nel
 
 ## Parametri di entità
 
-[I parametri di entità](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes) vengono utilizzati per trasmettere dati comportamentali e informazioni di catalogo supplementari per i consigli di Target. Analogamente ai parametri di profilo, la maggior parte dei parametri di entità deve essere passata sotto l&#39;oggetto `data.__adobe.target`. L&#39;unica eccezione è rappresentata dall&#39;array `xdm.productListItems`, quindi il primo valore `SKU` viene utilizzato come `entity.id`.
+[I parametri di entità](https://experienceleague.adobe.com/it/docs/target/using/recommendations/entities/entity-attributes) vengono utilizzati per trasmettere dati comportamentali e informazioni di catalogo supplementari per i consigli di Target. Analogamente ai parametri di profilo, la maggior parte dei parametri di entità deve essere passata sotto l&#39;oggetto `data.__adobe.target`. L&#39;unica eccezione è rappresentata dall&#39;array `xdm.productListItems`, quindi il primo valore `SKU` viene utilizzato come `entity.id`.
 
 I parametri di entità per un elemento specifico devono avere il prefisso `entity.` per l&#39;acquisizione dei dati corretta. I parametri riservati `cartIds` e `excludedIds` per gli algoritmi dei consigli non devono avere un prefisso e il valore di ciascuno deve contenere un elenco separato da virgole di ID entità.
 
@@ -55,7 +55,7 @@ Target consente la sincronizzazione dei profili tra dispositivi e sistemi utiliz
 
 | Esempio di parametro at.js | Opzione Platform Web SDK | Note |
 | --- | --- | --- |
-| `at_property` | N/D | I token di proprietà sono configurati nello stream di dati [1&rbrace; e non possono essere impostati nella chiamata ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#target).`sendEvent` |
+| `at_property` | N/D | I token di proprietà sono configurati nello stream di dati [1&rbrace; e non possono essere impostati nella chiamata ](https://experienceleague.adobe.com/it/docs/experience-platform/datastreams/configure#target).`sendEvent` |
 | `pageName` | `xdm.web.webPageDetails.name` o <br> `data.__adobe.target.pageName` | I parametri mbox di destinazione possono essere passati come parte dell&#39;oggetto `xdm` o come parte dell&#39;oggetto `data.__adobe.target`. |
 | `profile.gender` | `data.__adobe.target.profile.gender` | Tutti i parametri di profilo di Target devono essere passati come parte dell&#39;oggetto `data` e con prefisso `profile.` per essere mappati in modo appropriato. |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | Parametro riservato utilizzato per la funzionalità Affinità tra categorie di Target che deve essere passata come parte dell&#39;oggetto `data`. |
@@ -64,11 +64,11 @@ Target consente la sincronizzazione dei profili tra dispositivi e sistemi utiliz
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | I parametri di entità personalizzati vengono utilizzati per aggiornare il catalogo dei prodotti Consigli. Questi parametri personalizzati devono essere passati come parte dell&#39;oggetto `data`. |
 | `cartIds` | `data.__adobe.target.cartIds` | Utilizzato per gli algoritmi di consigli basati sul carrello di Target. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Utilizzato per evitare che ID di entità specifici vengano restituiti in una progettazione di consigli. |
-| `mbox3rdPartyId` | Impostato nell&#39;oggetto `xdm.identityMap` | Utilizzato per sincronizzare i profili Target tra dispositivi e Attributi del cliente. Lo spazio dei nomi da utilizzare per l&#39;ID cliente deve essere specificato nella configurazione [Target dello stream di dati](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid). |
+| `mbox3rdPartyId` | Impostato nell&#39;oggetto `xdm.identityMap` | Utilizzato per sincronizzare i profili Target tra dispositivi e Attributi del cliente. Lo spazio dei nomi da utilizzare per l&#39;ID cliente deve essere specificato nella configurazione [Target dello stream di dati](https://experienceleague.adobe.com/it/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid). |
 | `orderId` | `xdm.commerce.order.purchaseID`<br> (quando `commerce.purchases.value` è impostato su `1`)<br> o<br> `data.__adobe.target.orderId` | Utilizzato per identificare un ordine univoco per il tracciamento delle conversioni di Target. |
 | `orderTotal` | `xdm.commerce.order.priceTotal`<br> (quando `commerce.purchases.value` è impostato su `1`)<br> o<br> `data.__adobe.target.orderTotal` | Utilizzato per tenere traccia dei totali degli ordini per gli obiettivi di conversione e ottimizzazione di Target. |
 | `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> (quando `commerce.purchases.value` è impostato su `1`) <br>OR<br> `data.__adobe.target.productPurchasedId` | Utilizzato per il tracciamento delle conversioni di Target e gli algoritmi di consigli. |
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Utilizzato per l&#39;obiettivo dell&#39;attività [punteggio personalizzato](https://experienceleague.adobe.com/en/docs/target/using/activities/success-metrics/capture-score). |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Utilizzato per l&#39;obiettivo dell&#39;attività [punteggio personalizzato](https://experienceleague.adobe.com/it/docs/target/using/activities/success-metrics/capture-score). |
 
 {style="table-layout:auto"}
 
