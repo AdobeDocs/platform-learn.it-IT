@@ -1,10 +1,10 @@
 ---
-title: 'Recuperare le attività di Target: migrazione dell’implementazione di Adobe Target nell’app mobile a Adobe Journey Optimizer - Estensione Decisioning'
-description: Scopri come recuperare le attività di Adobe Target durante la migrazione da Adobe Target a Adobe Journey Optimizer - Estensione Decisioning per dispositivi mobili.
+title: 'Recuperare le attività di Target: migrazione dell’implementazione di Adobe Target nell’app mobile all’estensione Offer Decisioning e Target'
+description: Scopri come recuperare le attività di Adobe Target durante la migrazione da Adobe Target all’estensione Offer Decisioning e Target Mobile.
 exl-id: 39569088-a254-4e64-9956-0c6e1a8ed2a5
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Il contenuto restituito da Target, noto anche come &quot;offerte&quot;, in gener
 * Abilitare i flag di funzione nell’applicazione
 * Distribuisci testo o immagini alternativi
 
-Se hai attività che devono essere eseguite sia nelle versioni di estensione Target che nelle versioni di estensione Decisioning dell’applicazione, assicurati di eseguire il test completo. Se devi utilizzare offerte diverse per versioni diverse dell’app, puoi utilizzare le opzioni di targeting nell’interfaccia per distribuire offerte diverse alle diverse versioni.
+Se hai attività che devono essere eseguite sia nella versione di estensione Target che in quella di estensione Offer Decisioning e Target dell&#39;applicazione, assicurati di eseguire il test completo. Se devi utilizzare offerte diverse per versioni diverse dell’app, puoi utilizzare le opzioni di targeting nell’interfaccia per distribuire offerte diverse alle diverse versioni.
 
 Assicurati sempre di includere la gestione degli errori per visualizzare le esperienze appropriate in condizioni di errore.
 
@@ -143,8 +143,8 @@ Optimize.updatePropositions(for: [decisionScope1, decisionScope2]
 
 
 
-Successivamente, scopri come [passare i parametri di Target utilizzando l&#39;estensione Decisioning](send-parameters.md).
+Successivamente, scopri come [passare i parametri di Target utilizzando l&#39;estensione di Offer Decisioning e Target](send-parameters.md).
 
 >[!NOTE]
 >
->Ci impegniamo ad aiutarti ad effettuare con successo la migrazione di Target mobile dall’estensione Target all’estensione Decisioning. Se incontri ostacoli con la migrazione o pensi che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625).
+>Ci impegniamo ad aiutarti con la migrazione di Target per dispositivi mobili dall’estensione Target all’estensione Offer Decisioning e Target. Se incontri ostacoli con la migrazione o pensi che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625).

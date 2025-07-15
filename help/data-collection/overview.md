@@ -3,9 +3,9 @@ title: Tutorial su Raccolta dati
 description: Video ed esercitazioni per consentirti di utilizzare al meglio Data Collection
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: d818b07dbd7f58254083fd0696b81b0bab1ee9d3
+source-git-commit: 4c2cc6da2a5590dbd4405555f6813a4b06dc2dff
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '264'
 ht-degree: 23%
 
 ---
@@ -41,11 +41,11 @@ Data Collection è la soluzione Adobe di nuova generazione per la gestione di ta
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/it/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
       <img alt="Implementazione nelle app per dispositivi mobili" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/it/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
     <strong>Implementare Experience Cloud nelle app per dispositivi mobili</strong>
     </a>
     </div>
@@ -54,11 +54,11 @@ Data Collection è la soluzione Adobe di nuova generazione per la gestione di ta
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/it/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Migrazione da Target a Web SDK" src="assets/thumb_legacy.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/it/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Implementa librerie legacy con tag</strong>
     </a>
     </div>
@@ -74,11 +74,11 @@ Data Collection è la soluzione Adobe di nuova generazione per la gestione di ta
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/it/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Migrazione da Target a Web SDK" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/it/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Migrazione da Adobe Target a Web SDK</strong>
     </a>
     </div>
@@ -121,7 +121,7 @@ Data Collection è la soluzione Adobe di nuova generazione per la gestione di ta
     </a>
     </div>
     <p>
-    <em>Sostituisci l'estensione Target con l'estensione Journey Optimizer - Decisioning</em>
+    <em>Sostituisci l'estensione Target con l'estensione Offer Decisioning e Target</em>
     <p>
   </td>
   <td>

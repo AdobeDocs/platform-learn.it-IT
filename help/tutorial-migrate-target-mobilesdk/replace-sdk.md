@@ -1,10 +1,10 @@
 ---
-title: Sostituire SDK - Migrare l’implementazione di Adobe Target nell’app mobile a Adobe Journey Optimizer - Estensione Decisioning
-description: Scopri come sostituire SDK durante la migrazione da Adobe Target all’estensione Adobe Journey Optimizer - Decisioning Mobile.
+title: 'Sostituire SDK: esegui la migrazione dell’implementazione di Adobe Target nell’app mobile all’estensione Offer Decisioning e Target'
+description: Scopri come sostituire SDK durante la migrazione da Adobe Target all’estensione per dispositivi mobili Offer Decisioning e Target.
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '726'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ Scopri come sostituire gli SDK di Adobe Target con gli SDK di ottimizzazione nel
 >Nell’ecosistema di Adobe Experience Platform Mobile SDK, le estensioni vengono implementate dagli SDK importati nelle applicazioni che possono avere nomi diversi:
 >
 > * **Target SDK** implementa l&#39;estensione **Adobe Target**
-> * **Ottimizza SDK** implementa l&#39;estensione **Adobe Journey Optimizer - Decisioning**
+> * **Ottimizza SDK** implementa l&#39;estensione **Offer Decisioning e Target**
 
 ## Aggiorna dipendenze
 
@@ -132,7 +132,7 @@ public class MainApp extends Application {
  
         MobileCore.registerExtensions(
             Arrays.asList(Edge.EXTENSION, Identity.EXTENSION, Optimize.EXTENSION),
-            o -> Log.d("MainApp", "Adobe Journey Optimizer - Decisioning Mobile SDK was initialized.")
+            o -> Log.d("MainApp", "Offer Decisioning and Target Mobile SDK was initialized.")
         );
     }
 }
@@ -266,9 +266,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ## Confronto delle API
 
-Molte API di estensione di Target hanno un approccio equivalente che utilizza l’estensione Decisioning descritta nella tabella seguente. Per ulteriori dettagli sulle [funzioni](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/), consulta il riferimento API.
+Molte API di estensione di Target hanno un approccio equivalente che utilizza l’estensione di Offer Decisioning e Target descritta nella tabella seguente. Per ulteriori dettagli sulle [funzioni](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/), consulta il riferimento API.
 
-| Estensione Target | Estensione Decisioning | Note |
+| Estensione Target | Estensione Offer Decisioning e Target | Note |
 | --- | --- | --- | 
 | [prefetchContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#prefetchcontent){target=_blank} | [aggiornaProposte](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandlerandtimeout){target=_blank} |  |
 | [retrieveLocationContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [getPropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#getpropositionswithtimeout){target=_blank} | Quando si utilizza l&#39;API `getPropositions`, non viene effettuata alcuna chiamata remota per recuperare ambiti non memorizzati in cache in SDK. |
@@ -288,4 +288,4 @@ Quindi, scopri come [richiedere ed eseguire il rendering delle attività](retrie
 
 >[!NOTE]
 >
->Ci impegniamo ad aiutarti ad effettuare con successo la migrazione di Target mobile dall’estensione Target all’estensione Decisioning. Se incontri ostacoli con la migrazione o pensi che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625).
+>Ci impegniamo ad aiutarti con la migrazione di Target per dispositivi mobili dall’estensione Target all’estensione Offer Decisioning e Target. Se incontri ostacoli con la migrazione o pensi che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625).

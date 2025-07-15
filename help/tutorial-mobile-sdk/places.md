@@ -3,9 +3,9 @@ title: Utilizzare Places con Platform Mobile SDK
 description: Scopri come utilizzare il servizio di geolocalizzazione Places nella tua app mobile.
 jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1591'
 ht-degree: 2%
 
 ---
@@ -31,14 +31,14 @@ In questa lezione, potrai
 * Scopri come definire i punti di interesse nel servizio Places.
 * Aggiorna la proprietà tag con l’estensione Places.
 * Aggiorna lo schema per acquisire eventi di geolocalizzazione.
-* Convalidare l&#39;impostazione in Assurance.
+* Convalida la configurazione in Assurance.
 * Aggiorna l’app per registrare l’estensione Luoghi.
 * Implementa il tracciamento della geolocalizzazione dal servizio Places nell’app.
 
 
 ## Configurazione
 
-Affinché il servizio Places funzioni all’interno dell’app e nell’SDK di Mobile, devi effettuare alcune impostazioni.
+Affinché il servizio Places funzioni all’interno dell’app e del SDK mobile, è necessario eseguire alcune impostazioni.
 
 ### Definisci luoghi
 
@@ -74,13 +74,12 @@ Affinché il servizio Places funzioni all’interno dell’app e nell’SDK di M
 1. Cerca l&#39;estensione **[!UICONTROL Places]**.
 1. Installa l’estensione.
 
-   ![Aggiungi estensione Decisioning](assets/tag-places-extension.png)
+   ![Aggiungi estensione Offer Decisioning e Target](assets/tag-places-extension.png)
 
 1. Nella finestra di dialogo **[!UICONTROL Installa estensione]**:
    1. Selezionare **[!DNL Luma]** dall&#39;elenco **[!UICONTROL Seleziona una libreria]**.
    1. Verifica di aver scelto la tua libreria di lavoro, ad esempio **[!UICONTROL Build iniziale]**.
    1. Seleziona **[!UICONTROL Salva nella libreria e genera]** da **[!UICONTROL Salva nella libreria]**.
-
       ![Installa estensione Luoghi](assets/places-install-extension.png).
 
 1. La libreria viene ricreata.
@@ -140,7 +139,6 @@ Ora devi definire le regole da utilizzare con questi elementi dati.
 1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) sotto **[!UICONTROL EVENTI]**.
    1. Seleziona **[!UICONTROL Luoghi]** dall&#39;elenco **[!UICONTROL Estensione]** e seleziona **[!UICONTROL Inserisci POI]** dall&#39;elenco **[!UICONTROL Tipo evento]**.
    1. Seleziona **[!UICONTROL Mantieni modifiche]**.
-
       ![Tag evento](assets/tags-event-mobile-core.png).
 1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) sotto **[!UICONTROL AZIONI]**.
    1. Seleziona **[!UICONTROL Mobile Core]** dall&#39;elenco **[!UICONTROL Extension]**, seleziona **[!UICONTROL Allega dati]** da **[!UICONTROL Action Type]**. Questa azione allega i dati del payload.
@@ -171,11 +169,10 @@ Ora devi definire le regole da utilizzare con questi elementi dati.
       Puoi anche inserire `{%% ... %%}` valori segnaposto di elementi dati nel JSON selezionando ![Dati](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg). Una finestra di dialogo a comparsa consente di scegliere qualsiasi elemento dati creato.
 
    1. Seleziona **[!UICONTROL Mantieni modifiche]**.
-
       ![Azione tag](assets/tags-action-mobile-core.png)
 
 1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) accanto all&#39;azione **[!UICONTROL Core mobile - Allega dati]**.
-   1. Seleziona **[!UICONTROL Edge Network Adobe Experience Platform]** dall&#39;elenco **[!UICONTROL Estensione]** e seleziona **[!UICONTROL Inoltra evento all&#39;Edge Network]**. Questa azione assicura che l’evento e i dati di payload aggiuntivi vengano inoltrati all’Edge Network di Platform.
+   1. Selezionare **[!UICONTROL Adobe Experience Platform Edge Network]** dall&#39;elenco **[!UICONTROL Estensione]** e selezionare **[!UICONTROL Inoltra evento ad Edge Network]**. Questa azione assicura che l’evento e i dati di payload aggiuntivi vengano inoltrati a Platform Edge Network.
    1. Seleziona **[!UICONTROL Mantieni modifiche]**.
 
 1. Per salvare la regola, selezionare **[!UICONTROL Salva nella libreria]**.
@@ -217,7 +214,7 @@ Creiamo un’altra regola
    1. Seleziona **[!UICONTROL Mantieni modifiche]**.
 
 1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) accanto all&#39;azione **[!UICONTROL Core mobile - Allega dati]**.
-   1. Seleziona **[!UICONTROL Edge Network Adobe Experience Platform]** dall&#39;elenco **[!UICONTROL Estensione]** e seleziona **[!UICONTROL Inoltra evento all&#39;Edge Network]**.
+   1. Selezionare **[!UICONTROL Adobe Experience Platform Edge Network]** dall&#39;elenco **[!UICONTROL Estensione]** e selezionare **[!UICONTROL Inoltra evento ad Edge Network]**.
    1. Seleziona **[!UICONTROL Mantieni modifiche]**.
 
 1. Per salvare la regola, selezionare **[!UICONTROL Salva nella libreria]**.
@@ -234,11 +231,11 @@ Per pubblicare tutte le modifiche apportate al tag
 
 
 
-## Convalida impostazione in Assurance
+## Convalidare la configurazione in Assurance
 
 Per convalidare la configurazione in Assurance:
 
-1. Passa all’interfaccia utente Assurance.
+1. Passa all’interfaccia utente di Assurance.
 1. Se non è già disponibile nella barra a sinistra, seleziona **[!UICONTROL Configura]** nella barra a sinistra e seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) accanto a **[!UICONTROL Eventi]** e **[!UICONTROL Mappa e simula]** sotto **[!UICONTROL PLACES SERVICE]**.
 1. Seleziona **[!UICONTROL Salva]**.
 1. Seleziona **[!UICONTROL Mappa e simula]** nella barra a sinistra.
@@ -253,11 +250,11 @@ Per convalidare la configurazione in Assurance:
 
 ## Implementare Places nell’app
 
-Come descritto nelle lezioni precedenti, l’installazione di un’estensione tag per dispositivi mobili fornisce solo la configurazione. Ora devi installare e registrare l’SDK Places. Se questi passaggi non sono chiari, controlla la sezione [Installare gli SDK](install-sdks.md).
+Come descritto nelle lezioni precedenti, l’installazione di un’estensione tag per dispositivi mobili fornisce solo la configurazione. Successivamente è necessario installare e registrare Places SDK. Se questi passaggi non sono chiari, controlla la sezione [Installare gli SDK](install-sdks.md).
 
 >[!NOTE]
 >
->Se hai completato la sezione [Installare gli SDK](install-sdks.md), l&#39;SDK Luoghi è già installato e puoi saltare questo passaggio.
+>Se hai completato la sezione [Installare gli SDK](install-sdks.md), Places SDK è già installato e puoi saltare questo passaggio.
 >
 
 1. In Xcode, accertati che [AEP Places](https://github.com/adobe/aepsdk-places-ios) sia aggiunto all&#39;elenco dei pacchetti nelle dipendenze dei pacchetti. Consulta [Gestione pacchetti Swift](install-sdks.md#swift-package-manager).
@@ -333,13 +330,13 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
 
    <img src="assets/appentryexit.png" width="300" />
 
-1. Dovresti visualizzare gli eventi nell’interfaccia utente Assurance.
+1. Dovresti visualizzare gli eventi nell’interfaccia utente di Assurance.
 
 
 
 ## Passaggi successivi
 
-Ora dovresti disporre di tutti gli strumenti necessari per iniziare ad aggiungere ulteriori funzionalità alla funzionalità di geolocalizzazione nell’app. Dopo aver inoltrato gli eventi all&#39;Edge Network, dopo aver configurato l&#39;app per l&#39;[Experience Platform](platform.md), dovresti vedere gli eventi esperienza visualizzati per il profilo utilizzato nell&#39;app.
+Ora dovresti disporre di tutti gli strumenti necessari per iniziare ad aggiungere ulteriori funzionalità alla funzionalità di geolocalizzazione nell’app. Dopo aver inoltrato gli eventi ad Edge Network, dopo aver configurato l&#39;app per [Experience Platform](platform.md), dovresti vedere gli eventi esperienza visualizzati per il profilo utilizzato nell&#39;app.
 
 Nella sezione Journey Optimizer di questo tutorial, vedrai che gli eventi di esperienza possono essere utilizzati per attivare i percorsi (vedi [notifica push](journey-optimizer-inapp.md) e [messaggistica in-app](journey-optimizer-push.md) con Journey Optimizer). Ad esempio, il solito esempio di invio all’utente dell’app di una notifica push con una promozione di prodotto quando l’utente entra nel recinto geografico di un negozio fisico.
 
@@ -347,8 +344,8 @@ Hai visto un’implementazione delle funzionalità dell’app, principalmente gu
 
 >[!SUCCESS]
 >
->Ora hai abilitato l’app per i servizi di geolocalizzazione utilizzando l’estensione Places nell’SDK di Experience Platform Mobile.
+>Ora hai abilitato l’app per i servizi di geolocalizzazione utilizzando l’estensione Places in Experience Platform Mobile SDK.
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [Experience League post di discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Mobile SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Successivo: **[Mappa i dati su Adobe Analytics](analytics.md)**
