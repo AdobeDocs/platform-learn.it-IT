@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Questo video offre indicazioni agli utenti di Real-Time CDP Collaboration, sia professionisti che team tecnici, su come questi team interfunzionali dovrebbero lavorare insieme in diversi casi d’uso, origini di dati, tipi di pubblico e obiettivi per garantire il successo e l’efficienza operativa durante l’adozione di Real-Time CDP Collaboration.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464658/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464677/?learn=on&enablevpops&captions=ita)
