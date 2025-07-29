@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Connettersi con gli editori in Real-Time CDP Collaboration
 
-In qualità di inserzionista, scopri come stabilire una connessione con un editore per collaborare con lui. Per la documentazione dettagliata, consulta [stabilire connessioni](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/connect/establishing-connections){target="_blank"}.
+In qualità di inserzionista, scopri come stabilire una connessione con un editore per collaborare con lui. Per la documentazione dettagliata, consulta [stabilire connessioni](https://experienceleague.adobe.com/it/docs/real-time-cdp-collaboration/using/connect/establishing-connections){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452218/?learn=on&enablevpops)

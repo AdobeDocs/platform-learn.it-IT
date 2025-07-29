@@ -18,6 +18,6 @@ ht-degree: 32%
 
 # Tipi di pubblico di Source come inserzionista in Real-Time CDP Collaboration
 
-In qualità di inserzionista, scopri come individuare i tipi di pubblico e inserirli nella tua interfaccia in modo che possano essere utilizzati mentre collabori con i partner. Per la documentazione dettagliata, consulta [sorgente e gestisci tipi di pubblico](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"}.
+In qualità di inserzionista, scopri come individuare i tipi di pubblico e inserirli nella tua interfaccia in modo che possano essere utilizzati mentre collabori con i partner. Per la documentazione dettagliata, consulta [sorgente e gestisci tipi di pubblico](https://experienceleague.adobe.com/it/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452217/?learn=on&enablevpops)
