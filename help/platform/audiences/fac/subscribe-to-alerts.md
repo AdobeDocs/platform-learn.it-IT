@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Scopri come abbonarti agli avvisi di Federated Audience Composition per ricevere notifiche in-app o e-mail sia per le esecuzioni riuscite che per quelle non riuscite. Per abilitare questa impostazione, configura le relative preferenze in Impostazioni notifica nel prodotto Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470054/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470062/?learn=on&enablevpops&captions=ita)
 
 
 ## Abilitare le notifiche
