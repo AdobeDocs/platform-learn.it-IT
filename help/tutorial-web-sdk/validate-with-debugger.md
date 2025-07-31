@@ -4,9 +4,9 @@ description: Scopri come convalidare l’implementazione di Platform Web SDK con
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1171'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ Experience Platform Debugger è un’estensione disponibile per i browser Chrome
 
 Se non hai mai utilizzato il debugger in precedenza, guarda questo video introduttivo di cinque minuti:
 
->[!VIDEO](https://video.tv.adobe.com/v/36164?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 In questa lezione, utilizzi l&#39;estensione [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) per sostituire la proprietà di tag di codifica fissa nel [sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html) con la tua proprietà.
 
@@ -143,7 +143,7 @@ Questi tipi di dettagli della richiesta sono visibili anche nella scheda Strumen
 
 Come hai appreso nella lezione [Configurare uno stream di dati](configure-datastream.md), Platform Web SDK invia prima i dati dalla proprietà digitale a Platform Edge Network. Quindi, Platform Edge Network effettua richieste aggiuntive lato server ai servizi corrispondenti abilitati nello stream di dati. Puoi convalidare le richieste lato server effettuate da Platform Edge Network utilizzando Edge Trace nel debugger.
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/it/docs/experience-platform/assurance/home). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
 
 ### Abilita traccia di Edge
@@ -164,8 +164,6 @@ Per abilitare Edge Trace:
    ![Beacon di Analytics Edge Trace](assets/validate-edge-trace.png)
 
 A questo punto, non è possibile visualizzare le richieste di Platform Edge Network indirizzate alle applicazioni Adobe, perché non ne hai abilitato alcuna nello stream di dati. Nelle lezioni future, utilizzi Edge Trace per visualizzare le richieste lato server in uscita alle applicazioni Adobe e l’inoltro di eventi. Ma prima, scopri un altro strumento per convalidare le richieste lato server effettuate da Platform Edge Network: Adobe Experience Platform Assurance.
-
-[Successivo: ](validate-with-assurance.md)
 
 >[!NOTE]
 >

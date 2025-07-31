@@ -4,9 +4,9 @@ description: Scopri come configurare le impostazioni di privacy dell’estension
 feature: Web SDK,Tags,Consent
 jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1603'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Alla fine di questa lezione, sarai in grado di:
 
 * Caricare una CMP utilizzando i tag
 * Configurare le impostazioni della privacy nell’estensione tag Experience Platform Web SDK
-* Imposta il consenso per l’SDK per web di Experience Platform in base all’azione del visitatore
+* Imposta il consenso per Experience Platform Web SDK in base all’azione del visitatore
 
 ## Prerequisiti
 
@@ -63,7 +63,7 @@ Prima di passare alle configurazioni di tag, scopri di più sulla piattaforma di
 
 >[!WARNING]
 >
->La best practice per implementare una piattaforma di gestione dei consensi consiste nel caricare la CMP _prima_ del caricamento del gestore di tag. Per facilitare questa esercitazione, caricherai CMP _con_ il gestore di tag. Questa lezione è progettata per mostrare come utilizzare le funzioni di consenso in Platform Web SDK e non deve essere utilizzata come guida per configurare correttamente Klaro o qualsiasi altra CMP.
+>La best practice per implementare una piattaforma di gestione dei consensi consiste nel caricare la CMP _prima_ del caricamento del gestore di tag. Per facilitare questa esercitazione, caricherai CMP _con_ il gestore di tag. Questa lezione è progettata per mostrarti come utilizzare le funzioni di consenso in Platform Web SDK e non deve essere utilizzata come guida per configurare correttamente Klaro o qualsiasi altra CMP.
 
 
 Ora, una volta completate le configurazioni di Klaro, crea regole tag con le seguenti configurazioni:
@@ -109,7 +109,7 @@ Ora configurerai e implementerai il consenso per questo scenario:
 1. Nella sezione **[!UICONTROL Privacy]** dell&#39;estensione tag Experience Platform Web SDK, assicurati che il **[!UICONTROL consenso predefinito]** sia impostato su **[!UICONTROL In]**:
 
 
-   ![Configurazione privacy estensione AEP ](assets/consent-web-sdk-privacy-in.png)
+   ![Configurazione privacy estensione AEP](assets/consent-web-sdk-privacy-in.png)
 
    >[!NOTE]
    > 
@@ -156,7 +156,7 @@ Se un visitatore decide di rinunciare (rifiutare i cookie di tracciamento), devi
 
    ![L&#39;utente della condizione della regola fa clic su &quot;Rifiuto&quot;](assets/consent-optOut-clickEvent.png)
 
-1. Ora, utilizza l&#39;SDK per web di Experience Platform [!UICONTROL Imposta il consenso] [!UICONTROL tipo azione] per impostare il consenso come &quot;out&quot;:
+1. Ora, utilizza Experience Platform Web SDK, [!UICONTROL Imposta consenso] [!UICONTROL tipo azione] per impostare il consenso come &quot;out&quot;:
 
    ![Azione di rinuncia regola di consenso](assets/consent-rule-optout-action.png)
 
@@ -164,14 +164,14 @@ Se un visitatore decide di rinunciare (rifiutare i cookie di tracciamento), devi
 
    ![Salva e genera la libreria](assets/consent-rule-optout-saveAndBuild.png)
 
-Ora, quando un visitatore rinuncia, la regola configurata nel modo precedente si attiva e imposta il consenso dell&#39;SDK Web come **[!UICONTROL Out]**.
+Ora, quando un visitatore rinuncia, la regola configurata nel modo precedente si attiva e imposta il consenso di Web SDK come **[!UICONTROL Out]**.
 
-Per eseguire la convalida, accedi al sito di dimostrazione Luma, rifiuta i cookie e verifica che non venga attivata alcuna richiesta Web SDK dopo la rinuncia.
+Per eseguire la convalida, accedi al sito di dimostrazione Luma, rifiuta i cookie e verifica che non venga attivata alcuna richiesta di Web SDK dopo la rinuncia.
 
 ### Scenario 2: rinuncia implicita
 
 
-La rinuncia implicita significa che i visitatori devono essere trattati come rinuncia per impostazione predefinita e i cookie non devono essere impostati. Le richieste SDK per web non devono essere attivate a meno che i visitatori non decidano di dare il consenso manualmente accettando i cookie tramite il banner di consenso. Potresti dover gestire un caso d’uso di questo tipo nell’area dell’Unione Europea in cui si applica il RGPD.
+La rinuncia implicita significa che i visitatori devono essere trattati come rinuncia per impostazione predefinita e i cookie non devono essere impostati. Le richieste di Web SDK non devono essere attivate a meno che i visitatori non decidano di acconsentire manualmente accettando i cookie tramite il banner di consenso. Potresti dover gestire un caso d’uso di questo tipo nell’area dell’Unione Europea in cui si applica il RGPD.
 
 Ecco come impostare la configurazione per uno scenario di rinuncia implicita:
 
@@ -179,7 +179,7 @@ Ecco come impostare la configurazione per uno scenario di rinuncia implicita:
 
 1. Nella sezione **[!UICONTROL Privacy]** dell&#39;estensione Experience Platform Web SDK, imposta il consenso predefinito su **[!UICONTROL Out]** o **[!UICONTROL Pending]** come richiesto.
 
-   ![Configurazione privacy estensione AEP ](assets/consent-implied-opt-out.png)
+   ![Configurazione privacy estensione AEP](assets/consent-implied-opt-out.png)
 
 1. **Salva** la configurazione aggiornata nella libreria di tag e ricreala.
 
@@ -200,7 +200,7 @@ Se un visitatore decide di dare il consenso (accettare i cookie di tracciamento)
 
    ![L&#39;utente della condizione della regola fa clic su &quot;Tutto a posto&quot;](assets/consent-optIn-clickEvent.png)
 
-1. Aggiungi un&#39;azione tramite Experience Platform Web SDK [!UICONTROL Extension], **[!UICONTROL Action Type]** di **[!UICONTROL Imposta il consenso]**, **[!UICONTROL General consent]** come **[!UICONTROL In]**.
+1. Aggiungi un&#39;azione tramite l&#39;estensione [!UICONTROL  di Experience Platform Web SDK, ]Tipo azione **[!UICONTROL di]** Imposta consenso **[!UICONTROL ,]** Consenso generale **[!UICONTROL come]** In **[!UICONTROL .]**
 
    ![Azione Di Consenso Alla Regola Di Consenso](assets/consent-rule-optin-action.png)
 
@@ -214,16 +214,14 @@ Se un visitatore decide di dare il consenso (accettare i cookie di tracciamento)
 
 Dopo aver impostato questa regola, la raccolta di eventi deve iniziare quando un visitatore acconsente.
 
-![Consenso Opzione visitatore Post](assets/consent-post-user-optin.png)
+![Consenso post visitatore Optin](assets/consent-post-user-optin.png)
 
 
-Per ulteriori informazioni sul consenso in Web SDK, consulta [Preferenze di supporto del consenso dei clienti](https://experienceleague.adobe.com/it/docs/experience-platform/edge/consent/supporting-consent).
+Per ulteriori informazioni sul consenso in Web SDK, consulta [Preferenze di supporto del consenso dei clienti](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-Per ulteriori informazioni sull&#39;azione [!UICONTROL Imposta consenso], vedere [Imposta consenso](https://experienceleague.adobe.com/it/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
-
-[Successivo: ](setup-event-forwarding.md)
+Per ulteriori informazioni sull&#39;azione [!UICONTROL Imposta consenso], vedere [Imposta consenso](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [Experience League post di discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

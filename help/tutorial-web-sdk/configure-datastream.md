@@ -4,9 +4,9 @@ description: Scopri come abilitare uno stream di dati e configurare le soluzioni
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '535'
 ht-degree: 8%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 Scopri come configurare uno stream di dati per Adobe Experience Platform Web SDK.
 
-[Datastream](https://experienceleague.adobe.com/it/docs/experience-platform/datastreams/overview) indica ad Adobe Experience Platform Edge Network dove inviare i dati raccolti da Platform Web SDK. Nella configurazione dei flussi di dati, abilita le applicazioni Experience Cloud, l’account Experience Platform e l’inoltro di eventi.
+[Datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) indica ad Adobe Experience Platform Edge Network dove inviare i dati raccolti da Platform Web SDK. Nella configurazione dei flussi di dati, abilita le applicazioni Experience Cloud, l’account Experience Platform e l’inoltro di eventi.
 
 ![SDK Web, flussi di dati e diagramma di Edge Network](assets/dc-websdk-datastreams.png)
 
@@ -65,7 +65,7 @@ Nella schermata successiva, è possibile aggiungere al flusso di dati servizi co
 
 ## Sostituire uno stream di dati
 
-Le [sostituzioni dello stream di dati](https://experienceleague.adobe.com/it/docs/experience-platform/datastreams/overrides) consentono di definire configurazioni aggiuntive per lo stream di dati e quindi di ignorare la configurazione predefinita in determinate condizioni.
+Le [sostituzioni dello stream di dati](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) consentono di definire configurazioni aggiuntive per lo stream di dati e quindi di ignorare la configurazione predefinita in determinate condizioni.
 
 La sostituzione della configurazione dello stream di dati è un processo in due fasi:
 
@@ -75,8 +75,6 @@ La sostituzione della configurazione dello stream di dati è un processo in due 
 Nella lezione [Configurare Adobe Analytics](setup-analytics.md) è possibile ignorare la suite di rapporti per una pagina utilizzando l&#39;azione Invia evento di Platform Web SDK.
 
 Ora puoi installare l’estensione Platform Web SDK nella proprietà tag.
-
-[Successivo: ](install-web-sdk.md)
 
 >[!NOTE]
 >

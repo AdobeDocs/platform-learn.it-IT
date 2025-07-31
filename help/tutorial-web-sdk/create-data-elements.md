@@ -1,12 +1,12 @@
 ---
-title: Creare elementi dati per Platform Web SDK
+title: Creazione di elementi dati per Platform Web SDK
 description: Scopri come creare un oggetto XDM e mappare ad esso gli elementi dati nei tag. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1336'
 ht-degree: 2%
 
 ---
@@ -54,11 +54,11 @@ Esistono diversi modi per mappare i dati dal livello dati a XDM utilizzando la f
 
 ### Implementare XDM nel livello dati
 
-Questo approccio comporta l’utilizzo dell’oggetto XDM completamente definito come struttura per il livello dati. Quindi mappi l’intero livello dati a un elemento dati di oggetti XDM nei tag. Se l&#39;implementazione non utilizza un gestore di tag, questo approccio potrebbe essere ideale perché è possibile inviare dati a XDM direttamente dall&#39;applicazione utilizzando il comando [XDM sendEvent](https://experienceleague.adobe.com/it/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Se utilizzi i tag, puoi creare un elemento dati con codice personalizzato che acquisisce l’intero livello dati come oggetto JSON pass-through per XDM. Quindi, mappi il JSON pass-through al campo dell’oggetto XDM nell’azione Invia evento.
+Questo approccio comporta l’utilizzo dell’oggetto XDM completamente definito come struttura per il livello dati. Quindi mappi l’intero livello dati a un elemento dati di oggetti XDM nei tag. Se l&#39;implementazione non utilizza un gestore di tag, questo approccio potrebbe essere ideale perché è possibile inviare dati a XDM direttamente dall&#39;applicazione utilizzando il comando [XDM sendEvent](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Se utilizzi i tag, puoi creare un elemento dati con codice personalizzato che acquisisce l’intero livello dati come oggetto JSON pass-through per XDM. Quindi, mappi il JSON pass-through al campo dell’oggetto XDM nell’azione Invia evento.
 
-Di seguito è riportato un esempio dell’aspetto del livello dati utilizzando il formato Livello dati client di Adobe:
+Di seguito è riportato un esempio dell’aspetto del livello dati utilizzando il formato Adobe Client Data Layer:
 
-+++Esempio di XDM in Data Layer
+Esempio di +++XDM in Data Layer
 
 ```JSON
 window.adobeDataLayer.push({
@@ -117,7 +117,7 @@ Questo approccio comporta la mappatura di singole variabili del livello dati O d
 #### Pro
 
 * L’approccio più flessibile, in quanto è possibile controllare singole variabili e trasformare i dati prima che arrivino a XDM
-* Può utilizzare i trigger di tag Adobe e la funzionalità di scraping per trasmettere dati a XDM
+* Può utilizzare i trigger dei tag di Adobe e la funzionalità di scraping per trasmettere dati a XDM
 * È in grado di mappare gli elementi dati su pixel di terze parti lato client
 
 #### Contro
@@ -129,17 +129,17 @@ Questo approccio comporta la mappatura di singole variabili del livello dati O d
 >
 > Google Data Layer
 > 
-> Se la tua organizzazione utilizza già Google Analytics e dispone del tradizionale oggetto Google dataLayer sul tuo sito Web, puoi utilizzare l&#39;estensione [Google Data Layer](https://experienceleague.adobe.com/it/docs/experience-platform/tags/extensions/client/google-data-layer/overview) nei tag. Questo consente di implementare la tecnologia Adobe più rapidamente senza dover richiedere supporto al team IT. La mappatura del livello dati di Google su XDM segue gli stessi passaggi indicati sopra.
+> Se la tua organizzazione utilizza già Google Analytics e dispone dell&#39;oggetto Google dataLayer tradizionale sul sito Web, puoi utilizzare l&#39;estensione [Google Data Layer](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) nei tag. Questo consente di implementare la tecnologia Adobe più rapidamente senza dover richiedere supporto al team IT. La mappatura del livello dati di Google su XDM segue gli stessi passaggi indicati sopra.
 
 ### Mappa su XDM nello stream di dati
 
-Questo approccio utilizza funzionalità integrate nella configurazione dello stream di dati denominata [Preparazione dati per la raccolta dati](https://experienceleague.adobe.com/it/docs/experience-platform/datastreams/data-prep) e ignora la mappatura delle variabili del livello dati su XDM nei tag.
+Questo approccio utilizza funzionalità integrate nella configurazione dello stream di dati denominata [Preparazione dati per la raccolta dati](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) e ignora la mappatura delle variabili del livello dati su XDM nei tag.
 
 #### Pro
 
 * Flessibile in quanto è possibile mappare singole variabili su XDM
-* Possibilità di [calcolare nuovi valori](https://experienceleague.adobe.com/it/docs/experience-platform/data-prep/functions) o [trasformare tipi di dati](https://experienceleague.adobe.com/it/docs/experience-platform/data-prep/data-handling) da un livello dati prima di passare a XDM
-* Sfrutta una [Interfaccia utente di mappatura](https://experienceleague.adobe.com/it/docs/experience-platform/datastreams/data-prep#create-mapping) per mappare i campi nei dati di origine su XDM con un&#39;interfaccia semplice e intuitiva
+* Possibilità di [calcolare nuovi valori](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) o [trasformare tipi di dati](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) da un livello dati prima di passare a XDM
+* Sfrutta una [Interfaccia utente di mappatura](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) per mappare i campi nei dati di origine su XDM con un&#39;interfaccia semplice e intuitiva
 
 #### Contro
 
@@ -155,7 +155,7 @@ Questo approccio utilizza funzionalità integrate nella configurazione dello str
 
 ## Creare elementi dati per acquisire il livello dati
 
-Prima di creare l&#39;oggetto XDM, crea il seguente set di elementi dati per il [sito demo Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} livello dati:
+Prima di creare l&#39;oggetto XDM, crea il seguente set di elementi dati per il livello dati [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
 
 1. Vai a **[!UICONTROL Elementi dati]** e seleziona **[!UICONTROL Aggiungi elemento dati]** (o **[!UICONTROL Crea nuovo elemento dati]** se nella proprietà tag non sono presenti elementi dati esistenti)
 
@@ -280,7 +280,7 @@ Quindi, crea l’elemento dati Variable per l’oggetto dati:
 1. Seleziona **[!UICONTROL Adobe Experience Platform Web SDK]** come **[!UICONTROL estensione]**
 1. Seleziona la **[!UICONTROL Variabile]** come **[!UICONTROL Tipo di elemento dati]**
 1. Seleziona **[!UICONTROL dati]** come **[!UICONTROL proprietà]**
-1. Seleziona le soluzioni di Experience Cloud da implementare come parte di questa esercitazione
+1. Seleziona le soluzioni Experience Cloud da implementare come parte di questa esercitazione
 1. Seleziona **[!UICONTROL Salva]**
 
    ![Elemento dati variabile per oggetto dati](assets/data-element-data-variable.png.png)
@@ -306,10 +306,8 @@ Al termine di questi passaggi, dovresti aver creato i seguenti elementi di dati:
 >
 >In una lezione [Creare regole tag](create-tag-rule.md), scopri come gli elementi dati **[!UICONTROL Variable]** ti consentono di sovrapporre più regole nei tag utilizzando il tipo di azione **[!UICONTROL Aggiorna variabile]**.
 
-Una volta impostati questi elementi dati, puoi iniziare a inviare dati all’Edge Network di Platform con una regola di tag. Ma prima, scopri come raccogliere le identità con Web SDK.
-
-[Successivo: ](create-identities.md)
+Una volta impostati questi elementi dati, puoi iniziare a inviare dati a Platform Edge Network con una regola di tag. Ma prima, scopri come raccogliere le identità con Web SDK.
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [Experience League post di discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

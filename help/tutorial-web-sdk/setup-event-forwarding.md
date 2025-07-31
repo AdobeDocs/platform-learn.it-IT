@@ -1,12 +1,12 @@
 ---
-title: Configurare l’inoltro di eventi con i dati dell’SDK web di Platform
-description: Scopri come utilizzare la proprietà di inoltro degli eventi utilizzando i dati Experience Platform Web SDK. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
+title: Configurare l’inoltro di eventi con i dati di Platform Web SDK
+description: Scopri come utilizzare la proprietà di inoltro degli eventi utilizzando i dati di Experience Platform Web SDK. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
 feature: Web SDK,Tags,Event Forwarding
 jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1872'
 ht-degree: 4%
 
 ---
@@ -15,29 +15,29 @@ ht-degree: 4%
 
 Scopri come utilizzare l’inoltro degli eventi con i dati di Adobe Experience Platform Web SDK.
 
-L’inoltro degli eventi è un nuovo tipo di proprietà disponibile in Raccolta dati. L’inoltro degli eventi consente di inviare dati a fornitori di terze parti non Adobi direttamente dall’Edge Network di Adobe Experience Platform anziché dal browser tradizionale lato client. Ulteriori informazioni sui vantaggi dell&#39;inoltro degli eventi nella [Panoramica sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/it/docs/experience-platform/tags/event-forwarding/overview).
+L’inoltro degli eventi è un nuovo tipo di proprietà disponibile in Raccolta dati. L’inoltro degli eventi consente di inviare dati a fornitori di terze parti non Adobe direttamente dall’Edge Network di Adobe Experience Platform invece del browser tradizionale lato client. Ulteriori informazioni sui vantaggi dell&#39;inoltro degli eventi nella [Panoramica sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
 
-![Diagramma di Web SDK e inoltro eventi](assets/dc-websdk-eventforwarding.png)
+![Diagramma Web SDK e inoltro eventi](assets/dc-websdk-eventforwarding.png)
 
-Per utilizzare l’inoltro degli eventi in Adobe Experience Platform, i dati devono essere inviati all’Edge Network di Adobe Experience Platform utilizzando una o più delle tre opzioni seguenti:
+Per utilizzare l’inoltro degli eventi in Adobe Experience Platform, i dati devono essere inviati prima a Adobe Experience Platform Edge Network utilizzando una o più delle tre opzioni seguenti:
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/it/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]
->Platform Web SDK e Platform Mobile SDK non richiedono la distribuzione tramite tag; tuttavia, si consiglia di utilizzare i tag per distribuire questi SDK.
+>Platform Web SDK e Platform Mobile SDK non richiedono la distribuzione tramite tag, tuttavia si consiglia di utilizzare i tag per distribuire questi SDK.
 
-Dopo aver completato le lezioni precedenti in questo tutorial, invia i dati all’Edge Network di Platform utilizzando Web SDK. Una volta che i dati sono nell’Edge Network di Platform, puoi abilitare l’inoltro degli eventi e utilizzare una proprietà di inoltro degli eventi per inviare dati a soluzioni non Adobi.
+Dopo aver completato le lezioni precedenti in questa esercitazione, dovresti inviare dati a Platform Edge Network utilizzando il Web SDK. Una volta che i dati sono in Platform Edge Network, puoi abilitare l’inoltro degli eventi e utilizzare una proprietà di inoltro degli eventi per inviare dati a soluzioni non Adobe.
 
 ## Obiettivi di apprendimento
 
 Alla fine di questa lezione, sarai in grado di:
 
 * Creare una proprietà di inoltro degli eventi
-* Collegare una proprietà di inoltro eventi a un flusso di dati dell’SDK web di Platform
+* Collegare una proprietà di inoltro eventi a uno stream di dati di Platform Web SDK
 * Comprendere le differenze tra elementi dati e regole della proprietà tag e elementi dati e regole della proprietà di inoltro eventi
 * Creare un elemento dati per l’inoltro degli eventi
 * Configurare una regola per l’inoltro degli eventi
@@ -51,7 +51,7 @@ Alla fine di questa lezione, sarai in grado di:
 * Autorizzazione utente per l’inoltro di eventi. (In [Admin Console](https://adminconsole.adobe.com/), nel prodotto Adobe Experience Platform Launch, elementi di autorizzazione per [!UICONTROL Piattaforme] > [!UICONTROL Edge] e tutti [!UICONTROL Diritti proprietà]). Una volta concesso, dovresti visualizzare [!UICONTROL Inoltro eventi] nell&#39;area di navigazione a sinistra dell&#39;interfaccia di Data Collection:
   ![Proprietà inoltro eventi](assets/event-forwarding-menu.png)
 
-* Adobe Experience Platform Web SDK o Mobile SDK è configurato per inviare dati ad Edge Network. Devi aver completato le seguenti lezioni di questa esercitazione:
+* Adobe Experience Platform Web o Mobile SDK è configurato per inviare dati ad Edge Network. Devi aver completato le seguenti lezioni di questa esercitazione:
 
    * Configurazione iniziale
 
@@ -84,7 +84,7 @@ Per prima cosa, crea una proprietà di inoltro degli eventi:
 
 ## Configurare lo stream di dati
 
-Affinché l’inoltro degli eventi possa utilizzare i dati inviati all’Edge Network di Platform, è necessario collegare la nuova proprietà di inoltro degli eventi creata allo stesso flusso di dati utilizzato per inviare dati alle soluzioni di Adobe.
+Affinché l’inoltro degli eventi possa utilizzare i dati inviati a Platform Edge Network, è necessario collegare la proprietà di inoltro degli eventi appena creata allo stesso flusso di dati utilizzato per inviare i dati alle soluzioni Adobe.
 
 Per configurare Target nello stream di dati:
 
@@ -92,7 +92,7 @@ Per configurare Target nello stream di dati:
 1. Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Flussi di dati]**
 1. Seleziona lo stream di dati `Luma Web SDK: Development Environment` creato in precedenza
 
-   ![Seleziona lo stream di dati di Luma Web SDK](assets/datastream-luma-web-sdk-development.png)
+   ![Seleziona lo stream di dati di SDK Web Luma](assets/datastream-luma-web-sdk-development.png)
 
 1. Seleziona **[!UICONTROL Aggiungi servizio]**
    ![Aggiungi un servizio allo stream di dati](assets/event-forwarding-datastream-addService.png)
@@ -112,7 +112,7 @@ Per configurare Target nello stream di dati:
 
 Ripeti questi passaggi per gli stream di dati di staging e produzione quando sei pronto per promuovere le modifiche tramite il flusso di pubblicazione.
 
-## Inoltrare dati dall’Edge Network di Platform a una soluzione non di Adobe
+## Inoltrare dati da Platform Edge Network a una soluzione non Adobe
 
 In questo esercizio imparerai a impostare un elemento dati per l&#39;inoltro degli eventi, configurare una regola per l&#39;inoltro degli eventi e convalidare utilizzando uno strumento di terze parti denominato [Webhook.site](https://webhook.site/).
 
@@ -122,7 +122,7 @@ In questo esercizio imparerai a impostare un elemento dati per l&#39;inoltro deg
 
 >[!IMPORTANT]
 >
->Per procedere ulteriormente, devi aver già creato e mappato elementi dati su un oggetto XDM, nonché configurato regole di tag e creato tali modifiche all’interno di una libreria in un ambiente di tag. In caso contrario, consulta i passaggi **Configurazione tag** nella sezione [prerequisiti](setup-event-forwarding.md#prerequisites). Questi passaggi assicurano che i dati vengano inviati all’Edge Network di Platform e da lì puoi configurare una proprietà di inoltro degli eventi per inoltrare i dati a una soluzione non Adobe.
+>Per procedere ulteriormente, devi aver già creato e mappato elementi dati su un oggetto XDM, nonché configurato regole di tag e creato tali modifiche all’interno di una libreria in un ambiente di tag. In caso contrario, consulta i passaggi **Configurazione tag** nella sezione [prerequisiti](setup-event-forwarding.md#prerequisites). Questi passaggi assicurano che i dati vengano inviati a Platform Edge Network e da lì puoi configurare una proprietà di inoltro degli eventi per inoltrare i dati a una soluzione non Adobe.
 
 
 ### Creare un elemento dati per l’inoltro degli eventi
@@ -138,12 +138,12 @@ L’oggetto XDM configurato in precedenza utilizzando l’estensione tag Platfor
 >
 >Se il percorso specificato non è corretto, i dati non vengono raccolti.
 
-In questo esercizio, inoltrerai l’altezza del riquadro di visualizzazione del browser e l’ID Experience Cloud dall’oggetto XDM a un webhook. Il percorso del campo XDM è determinato dallo schema XDM creato durante la lezione [Configurare uno schema XDM](configure-schemas.md).
+In questo esercizio, inoltrerai l’altezza del riquadro di visualizzazione del browser e l’Experience Cloud ID dall’oggetto XDM a un webhook. Il percorso del campo XDM è determinato dallo schema XDM creato durante la lezione [Configurare uno schema XDM](configure-schemas.md).
 
 >[!TIP]
 >
 >Puoi anche trovare il percorso dell&#39;oggetto XDM utilizzando gli strumenti di rete del browser Web, filtrando per `/ee` richieste, aprendo il beacon [!UICONTROL **Payload**] ed eseguendo il drilling verso il basso alla variabile cercata. Quindi fare clic con il pulsante destro del mouse e selezionare &quot;Copia percorso proprietà&quot;. Di seguito è riportato un esempio per l’altezza del riquadro di visualizzazione del browser:
-> ![Percorso XDM per inoltro eventi](assets/event-forwarding-xdm-path.png)
+>> ![Percorso XDM per inoltro eventi](assets/event-forwarding-xdm-path.png)
 
 1. Vai alla proprietà **[!UICONTROL Inoltro eventi]** creata di recente
 
@@ -198,11 +198,11 @@ Per inviare dati a percorsi di terze parti, installi prima l&#39;estensione [!UI
 
 1. Seleziona la scheda **[!UICONTROL Catalogo]**
 
-1. Cerca il **[!UICONTROL connettore cloud Adobe]**, seleziona **[!UICONTROL Installa]**
+1. Cerca il **[!UICONTROL connettore Adobe Cloud]**, seleziona **[!UICONTROL Installa]**
 
    ![Percorso ECID di inoltro eventi](assets/event-forwarding-adobe-cloud-connector.png)
 
-Non è necessaria alcuna configurazione di estensione. Con questa estensione, ora puoi inoltrare i dati a una soluzione non basata su Adobi.
+Non è necessaria alcuna configurazione di estensione. Con questa estensione, ora puoi inoltrare i dati a una soluzione non Adobe.
 
 ### Creare una regola per l’inoltro degli eventi
 
@@ -211,7 +211,7 @@ Esistono alcune differenze principali tra la configurazione delle regole in una 
 * **[!UICONTROL Eventi] e [!UICONTROL Condizioni]**:
 
    * **Tag**: tutte le regole vengono attivate da un evento che deve essere specificato nella regola, ad esempio `Library Loaded - Page Top`. Le condizioni sono facoltative.
-   * **Inoltro eventi**: si presume che ogni evento inviato all&#39;Edge Network di Platform sia un trigger per l&#39;inoltro di dati. Non ci sono quindi [!UICONTROL Eventi] da selezionare nelle regole di inoltro degli eventi. Per gestire gli eventi che attivano una regola di inoltro degli eventi, è necessario configurare le condizioni.
+   * **Inoltro eventi**: si presume che ogni evento inviato a Platform Edge Network sia un trigger per l&#39;inoltro di dati. Non ci sono quindi [!UICONTROL Eventi] da selezionare nelle regole di inoltro degli eventi. Per gestire gli eventi che attivano una regola di inoltro degli eventi, è necessario configurare le condizioni.
 
 * **Tokenizzazione elemento dati**:
 
@@ -290,17 +290,17 @@ Crea una libreria e crea tutte le modifiche nell’ambiente di sviluppo per l’
 
 Ora puoi convalidare la proprietà di inoltro degli eventi utilizzando Platform Debugger e Webhook.site:
 
-1. Segui i passaggi per [cambiare la libreria di tag](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) sul [sito dimostrativo Luma](https://luma.enablementadobe.com/content/luma/us/en/men.html) nella proprietà tag dell&#39;SDK Web a cui hai mappato la proprietà di inoltro eventi nello stream di dati.
+1. Segui i passaggi per [cambiare la libreria di tag](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) sul [sito dimostrativo Luma](https://luma.enablementadobe.com/content/luma/us/en/men.html) nella proprietà tag di Web SDK a cui hai mappato la proprietà di inoltro degli eventi nello stream di dati.
 
-1. Prima di ricaricare la pagina, nel Debugger di Experience Platform apri **[!UICONTROL Registri]** dalla navigazione a sinistra
+1. Prima di ricaricare la pagina, nel debugger di Experience Platform apri **[!UICONTROL Registri]** dal menu di navigazione a sinistra
 
-1. Seleziona la scheda **[!UICONTROL Edge]**, quindi seleziona **[!UICONTROL Connetti]** per visualizzare le richieste di Edge Network della piattaforma
+1. Seleziona la scheda **[!UICONTROL Edge]**, quindi seleziona **[!UICONTROL Connetti]** per visualizzare le richieste di Platform Edge Network
 
    ![Sessione rete Edge di inoltro eventi](assets/event-forwarding-edge-session.png)
 
 1. Ricarica la pagina
 
-1. Vedrai ulteriori richieste che ti danno visibilità sulle richieste lato server inviate dall’Edge Network di Platform al WebHook
+1. Vedrai ulteriori richieste che ti danno visibilità sulle richieste lato server inviate da Platform Edge Network a WebHook
 
 1. La richiesta su cui concentrarsi sulla convalida è quella che mostra l’URL completamente costruito inviato dalla rete Edge
 
@@ -321,8 +321,6 @@ Ora puoi convalidare la proprietà di inoltro degli eventi utilizzando Platform 
 
 Congratulazioni! Hai configurato l’inoltro degli eventi.
 
-[Successivo: ](conclusion.md)
-
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [Experience League post di discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

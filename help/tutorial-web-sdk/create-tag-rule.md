@@ -4,9 +4,9 @@ description: Scopri come inviare un evento a Platform Edge Network con l’ogget
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1983'
+source-wordcount: '1982'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ Tutte queste regole verranno sequenziate correttamente utilizzando l&#39;opzione
 
 Questo video offre una panoramica del processo:
 
->[!VIDEO](https://video.tv.adobe.com/v/3454035/?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### Campi di configurazione globali
 
@@ -238,7 +238,7 @@ Confrontare l&#39;elemento dati con la struttura `productListItems` (suggeriment
 >[!IMPORTANT]
 >
 >Si noti come le variabili numeriche vengono convertite, con valori stringa nel livello dati come `price` e `qty` riformattati in numeri nell&#39;elemento dati. Questi requisiti di formato sono importanti per l&#39;integrità dei dati in Platform e vengono determinati durante il passaggio [configura schemi](configure-schemas.md). Nell&#39;esempio, **[!UICONTROL quantity]** utilizza il tipo di dati **[!UICONTROL Integer]**.
-> ![Tipo di dati dello schema XDM](assets/set-up-analytics-quantity-integer.png)
+>> ![Tipo di dati dello schema XDM](assets/set-up-analytics-quantity-integer.png)
 
 Ora associamo il nostro array all’oggetto XDM:
 
@@ -392,8 +392,6 @@ La creazione della libreria potrebbe richiedere alcuni minuti e al termine viene
 Come puoi vedere nella schermata [!UICONTROL Flusso di pubblicazione], il processo di pubblicazione richiede molto di più, il che va oltre l&#39;ambito di questa esercitazione. Questo tutorial utilizza una sola libreria nell’ambiente di sviluppo.
 
 Ora puoi convalidare i dati nella richiesta utilizzando Adobe Experience Platform Debugger.
-
-[Next ](validate-with-debugger.md)
 
 >[!NOTE]
 >

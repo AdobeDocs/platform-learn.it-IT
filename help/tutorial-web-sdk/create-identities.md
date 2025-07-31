@@ -4,16 +4,16 @@ description: Scopri come creare identità in XDM e utilizzare l’elemento dati 
 feature: Web SDK, Tags, Identities
 jira: KT-15402
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '875'
 ht-degree: 3%
 
 ---
 
 # Creare identità
 
-Scopri come acquisire le identità con Adobe Experience Platform Web SDK. Acquisisci dati di identità autenticati e non autenticati sul [sito demo Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Scopri come utilizzare gli elementi dati creati in precedenza per la raccolta di dati autenticati con un tipo di elemento dati Platform Web SDK denominato Mappa identità.
+Scopri come acquisire le identità con Adobe Experience Platform Web SDK. Acquisisci dati di identità autenticati e non autenticati sul [sito demo Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Scopri come utilizzare gli elementi dati creati in precedenza per raccogliere dati autenticati con un tipo di elemento dati Platform Web SDK denominato Identity map.
 
 Questa lezione si concentra sull’elemento dati Identity map disponibile con l’estensione tag Adobe Experience Platform Web SDK. Mappa su XDM gli elementi dati contenenti un ID utente autenticato e lo stato di autenticazione.
 
@@ -21,13 +21,13 @@ Questa lezione si concentra sull’elemento dati Identity map disponibile con l�
 
 Alla fine di questa lezione, sarai in grado di:
 
-* Comprendere la relazione tra l’ID Experience Cloud (ECID) e l’ID dispositivo di prime parti (FPID)
+* Comprendere la relazione tra Experience Cloud ID (ECID) e First Party Device ID (FPID)
 * Differenza tra ID non autenticati e ID autenticati
 * Creare un elemento dati della mappa di identità
 
 ## Prerequisiti
 
-Hai una conoscenza di cos’è un livello dati, del sito demo [Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} e di come fare riferimento agli elementi dati nei tag. Devi aver completato le lezioni precedenti nell’esercitazione:
+Hai una conoscenza di cos’è un livello dati, del sito di dimostrazione [Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} e di come fare riferimento agli elementi dati nei tag. Devi aver completato le lezioni precedenti nell’esercitazione:
 
 * [Configurare uno schema XDM](configure-schemas.md)
 * [Configurare uno spazio dei nomi delle identità](configure-identities.md)
@@ -38,7 +38,7 @@ Hai una conoscenza di cos’è un livello dati, del sito demo [Luma](https://lum
 
 ## Experience Cloud ID
 
-L&#39;[ID Experience Cloud (ECID)](https://experienceleague.adobe.com/it/docs/experience-platform/identity/features/ecid) è uno spazio dei nomi di identità condiviso utilizzato nelle applicazioni Adobe Experience Platform e Adobe Experience Cloud. ECID fornisce la base per l’identità del cliente ed è l’identità predefinita per le proprietà digitali. ECID è l’identificatore ideale per il tracciamento del comportamento degli utenti non autenticati, in quanto è sempre presente.
+[Experience Cloud ID (ECID)](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid) è uno spazio dei nomi di identità condiviso e utilizzato nelle applicazioni Adobe Experience Platform e Adobe Experience Cloud. ECID fornisce la base per l’identità del cliente ed è l’identità predefinita per le proprietà digitali. ECID è l’identificatore ideale per il tracciamento del comportamento degli utenti non autenticati, in quanto è sempre presente.
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -47,21 +47,21 @@ L&#39;[ID Experience Cloud (ECID)](https://experienceleague.adobe.com/it/docs/ex
 >![View ECID](assets/validate-dev-console-ecid.png)
 -->
 
-Ulteriori informazioni sul tracciamento di [ECID tramite Platform Web SDK](https://experienceleague.adobe.com/it/docs/experience-platform/edge/identity/overview).
+Ulteriori informazioni sul tracciamento di [ECID tramite Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview).
 
-Gli ECID vengono impostati utilizzando una combinazione di cookie di prime parti e Edge Network di Platform. Per impostazione predefinita, i cookie di identità di prime parti sono impostati lato client dall’SDK web. Per tenere conto delle restrizioni del browser sulla durata dei cookie, puoi scegliere di impostare cookie di identità di prima parte lato server. Questi cookie di identità sono denominati ID dispositivo di prime parti (FPID).
+Gli ECID vengono impostati utilizzando una combinazione di cookie di prime parti e Platform Edge Network. Per impostazione predefinita, i cookie di identità di prime parti sono impostati sul lato client dal Web SDK. Per tenere conto delle restrizioni del browser sulla durata dei cookie, puoi scegliere di impostare cookie di identità di prima parte lato server. Questi cookie di identità sono denominati ID dispositivo di prime parti (FPID).
 
 >[!IMPORTANT]
 >
->L&#39;estensione del servizio ID [Experience Cloud](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) non è necessaria durante l&#39;implementazione di Adobe Experience Platform Web SDK, in quanto la funzionalità del servizio ID è incorporata in Platform Web SDK.
+>L&#39;estensione del servizio [Experience Cloud ID](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) non è necessaria per l&#39;implementazione di Adobe Experience Platform Web SDK, in quanto la funzionalità del servizio ID è incorporata in Platform Web SDK.
 
 ## ID dispositivo di prime parti (FPID)
 
-Gli FPID sono cookie di prime parti _impostati con i propri server Web_, che in seguito vengono utilizzati da Adobe per creare l&#39;ECID, invece di utilizzare il cookie di prime parti impostato dall&#39;SDK Web. Anche se il supporto del browser può variare, i cookie di prime parti tendono a essere più duraturi se impostati da un server che sfrutta un record DNS A (per IPv4) o AAAA (per IPv6), rispetto a quando impostati da un codice DNS CNAME o JavaScript.
+Gli FPID sono cookie di prime parti _impostati con i propri server Web_ che Adobe utilizza per creare l&#39;ECID, invece di utilizzare il cookie di prime parti impostato dal Web SDK. Anche se il supporto del browser può variare, i cookie di prime parti tendono a essere più duraturi se impostati da un server che sfrutta un record DNS A (per IPv4) o AAAA (per IPv6), rispetto a quando impostati da un codice DNS CNAME o JavaScript.
 
-Una volta impostato un cookie FPID, il relativo valore può essere recuperato e inviato all’Adobe durante la raccolta dei dati dell’evento. Gli FPID raccolti vengono utilizzati come seed per generare ECID sull’Edge Network di Platform, che continuano a essere gli identificatori predefiniti nelle applicazioni Adobe Experience Cloud.
+Una volta impostato un cookie FPID, il relativo valore può essere recuperato e inviato ad Adobe durante la raccolta dei dati dell’evento. Gli FPID raccolti vengono utilizzati come seed per generare ECID su Platform Edge Network, che continuano ad essere gli identificatori predefiniti nelle applicazioni Adobe Experience Cloud.
 
-Anche se gli FPID non vengono utilizzati in questa esercitazione, si consiglia di utilizzarli nella propria implementazione dell’SDK per web. Ulteriori informazioni su [ID dispositivo di prime parti in Platform Web SDK](https://experienceleague.adobe.com/it/docs/experience-platform/edge/identity/first-party-device-ids)
+Anche se gli FPID non vengono utilizzati in questa esercitazione, si consiglia di utilizzarli nella propria implementazione di Web SDK. Ulteriori informazioni su [ID dispositivo di prime parti in Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/first-party-device-ids)
 
 >[!CAUTION]
 >
@@ -69,9 +69,9 @@ Anche se gli FPID non vengono utilizzati in questa esercitazione, si consiglia d
 
 ## ID autenticato
 
-Come indicato in precedenza, a tutti i visitatori delle proprietà digitali viene assegnato un ECID a titolo di Adobe quando si utilizza Platform Web SDK. ECID è l’identità predefinita per il tracciamento del comportamento digitale non autenticato.
+Come indicato in precedenza, a tutti i visitatori delle proprietà digitali viene assegnato un ECID da Adobe quando si utilizza Platform Web SDK. ECID è l’identità predefinita per il tracciamento del comportamento digitale non autenticato.
 
-Puoi anche inviare un ID utente autenticato in modo che Platform possa creare [grafi di identità](https://experienceleague.adobe.com/it/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) e Target possa impostare il proprio [ID terze parti](https://experienceleague.adobe.com/it/docs/target/using/audiences/visitor-profiles/3rd-party-id). L&#39;impostazione dell&#39;ID autenticato viene eseguita utilizzando il tipo di elemento dati [!UICONTROL Identity Map].
+Puoi anche inviare un ID utente autenticato in modo che Platform possa creare [grafi di identità](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) e Target possa impostare il proprio [ID terze parti](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id). L&#39;impostazione dell&#39;ID autenticato viene eseguita utilizzando il tipo di elemento dati [!UICONTROL Identity Map].
 
 Per creare l&#39;elemento dati [!UICONTROL Identity Map]:
 
@@ -107,7 +107,7 @@ Per creare l&#39;elemento dati [!UICONTROL Identity Map]:
 
 >[!TIP]
 >
-> L&#39;Adobe consiglia di inviare identità che rappresentano una persona, ad esempio `Luma CRM Id`, come identità [!UICONTROL primaria].
+> Adobe consiglia di inviare identità che rappresentano una persona, ad esempio `Luma CRM Id`, come identità [!UICONTROL primaria].
 >
 > Se la mappa delle identità contiene l&#39;identificatore della persona, ad esempio `Luma CRM Id`, l&#39;identificatore della persona diventa l&#39;identità [!UICONTROL primaria]. In caso contrario, `ECID` diventa l&#39;identità [!UICONTROL primary].
 
@@ -145,10 +145,8 @@ Al termine di questi passaggi, dovresti aver creato i seguenti elementi di dati:
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 
-Una volta impostati questi elementi dati, puoi iniziare a inviare dati all’Edge Network di Platform creando una regola nei tag.
-
-[Successivo: ](create-tag-rule.md)
+Una volta impostati questi elementi dati, puoi iniziare a inviare dati a Platform Edge Network creando una regola nei tag.
 
 >[!NOTE]
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [Experience League post di discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

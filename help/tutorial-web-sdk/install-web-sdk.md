@@ -4,9 +4,9 @@ description: Scopri come installare e configurare l’estensione tag Platform We
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '606'
 ht-degree: 11%
 
 ---
@@ -71,7 +71,7 @@ Lascia la maggior parte delle impostazioni predefinite e aggiornale in un second
 
    ![Selezione dello stream di dati](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Per ulteriori informazioni su ciascuna sezione dell&#39;estensione, vedere [Configurare l&#39;estensione Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/it/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+Per ulteriori informazioni su ciascuna sezione dell&#39;estensione, vedere [Configurare l&#39;estensione Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
@@ -82,8 +82,6 @@ Per ulteriori informazioni su ciascuna sezione dell&#39;estensione, vedere [Conf
 >Durante questa esercitazione, puoi configurare un solo stream di dati e associarlo a tutti gli ambienti di tag (sviluppo, stage e produzione). Quando implementi Platform Web SDK sul tuo sito web, devi configurare un flusso di dati separato per ogni ambiente e mapparlo di conseguenza nella configurazione dell’estensione.
 
 Dopo aver installato Platform Web SDK e averlo associato allo stream di dati, è possibile iniziare a raccogliere i dati.
-
-[Successivo: ](create-data-elements.md)
 
 >[!NOTE]
 >
