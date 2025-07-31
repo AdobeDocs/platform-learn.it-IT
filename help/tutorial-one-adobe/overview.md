@@ -3,9 +3,9 @@ title: Panoramica - Tutorial tecnico completo - Un Adobe
 description: Tutorial tecnico completo - Un Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 31466040336580e9e4b2308801347dc387be4da5
+source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1120'
 ht-degree: 2%
 
 ---
@@ -19,11 +19,14 @@ ht-degree: 2%
 Questo tutorial è molto vario e offre informazioni chiare nelle seguenti applicazioni:
 
 - Adobe Firefly Services, Adobe Photoshop, Adobe Frame I/O, Adobe Substance 3D Staging
-- Adobe Workfront e Adobe Workfront Fusion
-- Adobe Experience Manager Cloud Service, Sites, Assets e Edge Delivery Services
+- Adobe Workfront, Adobe Workfront Planning e Adobe Workfront Fusion
+- Adobe Experience Manager Cloud Service, Sites, Assets, Forms e Edge Delivery Services
+- AEM Assets Dynamic Media, Content Hub
 - Adobe Experience Platform
 - Adobe Real-Time CDP
 - Adobe Journey Optimizer
+- Adobe Customer Journey Analytics
+- Adobe Content Analytics
 
 Questo tutorial non si concentra solo sulle applicazioni Adobe, ma tiene conto dell’ecosistema più ampio in cui operano i brand. Per farlo, in alcune lezioni è importante considerare il modo in cui le applicazioni non Adobe si integrano con le applicazioni Adobe. In questo modo sarà possibile comprendere a fondo come funzioneranno le seguenti applicazioni insieme a Adobe Experience Platform:
 
@@ -57,6 +60,14 @@ In questo modulo fondamentale, preparerai tutto in modo da poter accedere e util
 
 ### &#x200B;1. Flusso di lavoro e pianificazione
 
+[1.1 Adobe Workfront Planning](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"}
+
+In questo modulo, puoi configurare e utilizzare Adobe Workfront Planning per creare una nuova area di lavoro, definire i tipi di record, gestire i record, creare un nuovo modulo di richiesta e utilizzare l’assistente AI.
+
+[1.2 Gestione dei flussi di lavoro con Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+
+In questo modulo configurerai e utilizzerai Adobe Workfront per gestire i flussi di approvazione e utilizzerai le integrazioni con Adobe Experience Manager Assets, Universal Editor, Photoshop e altro ancora.
+
 ### &#x200B;2. Creazione e produzione
 
 [1.1 Panoramica di Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
@@ -80,10 +91,6 @@ In questo modulo fondamentale utilizzerai Adobe Express per creare immagini e vi
 [1.1 Adobe Experience Manager Cloud Service e Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
 In questo modulo di base, configurerai il programma Adobe Experience Manager Cloud Service, il sito e l’archivio Assets.
-
-[1.2 Gestione dei flussi di lavoro con Adobe Workfront](./modules/asset-mgmt/module2.2/workfront.md){target="_blank"}
-
-In questo modulo fondamentale configurerai e utilizzerai Adobe Workfront per gestire i flussi di approvazione e utilizzerai le integrazioni con Adobe Experience Manager Assets, Universal Editor, Photoshop e altro ancora.
 
 ### &#x200B;4. Consegna e attivazione
 
