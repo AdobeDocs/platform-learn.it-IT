@@ -238,7 +238,7 @@ Confrontare l&#39;elemento dati con la struttura `productListItems` (suggeriment
 >[!IMPORTANT]
 >
 >Si noti come le variabili numeriche vengono convertite, con valori stringa nel livello dati come `price` e `qty` riformattati in numeri nell&#39;elemento dati. Questi requisiti di formato sono importanti per l&#39;integrità dei dati in Platform e vengono determinati durante il passaggio [configura schemi](configure-schemas.md). Nell&#39;esempio, **[!UICONTROL quantity]** utilizza il tipo di dati **[!UICONTROL Integer]**.
->> ![Tipo di dati dello schema XDM](assets/set-up-analytics-quantity-integer.png)
+>&#x200B;> ![Tipo di dati dello schema XDM](assets/set-up-analytics-quantity-integer.png)
 
 Ora associamo il nostro array all’oggetto XDM:
 

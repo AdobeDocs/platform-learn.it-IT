@@ -58,7 +58,7 @@ Questo approccio comporta l’utilizzo dell’oggetto XDM completamente definito
 
 Di seguito è riportato un esempio dell’aspetto del livello dati utilizzando il formato Adobe Client Data Layer:
 
-Esempio di +++XDM in Data Layer
++++Esempio di XDM in Data Layer
 
 ```JSON
 window.adobeDataLayer.push({

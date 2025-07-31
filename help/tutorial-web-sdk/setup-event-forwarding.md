@@ -143,7 +143,7 @@ In questo esercizio, inoltrerai l’altezza del riquadro di visualizzazione del 
 >[!TIP]
 >
 >Puoi anche trovare il percorso dell&#39;oggetto XDM utilizzando gli strumenti di rete del browser Web, filtrando per `/ee` richieste, aprendo il beacon [!UICONTROL **Payload**] ed eseguendo il drilling verso il basso alla variabile cercata. Quindi fare clic con il pulsante destro del mouse e selezionare &quot;Copia percorso proprietà&quot;. Di seguito è riportato un esempio per l’altezza del riquadro di visualizzazione del browser:
->> ![Percorso XDM per inoltro eventi](assets/event-forwarding-xdm-path.png)
+>&#x200B;> ![Percorso XDM per inoltro eventi](assets/event-forwarding-xdm-path.png)
 
 1. Vai alla proprietà **[!UICONTROL Inoltro eventi]** creata di recente
 
