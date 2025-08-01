@@ -18,6 +18,6 @@ ht-degree: 19%
 
 # Valutare i tipi di pubblico in batch su richiesta
 
-Valuta i tipi di pubblico in batch on-demand con la funzione di valutazione flessibile del pubblico di Adobe Experience Platform. Per ulteriori informazioni e guardrail, consulta [la guida alla valutazione flessibile del pubblico](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/flexible-audience-evaluation).
+Valuta i tipi di pubblico in batch on-demand con la funzione di valutazione flessibile del pubblico di Adobe Experience Platform. Per ulteriori informazioni e guardrail, consulta [la guida alla valutazione flessibile del pubblico](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/methods/flexible-audience-evaluation).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3453640/?learn=on&enablevpops)
