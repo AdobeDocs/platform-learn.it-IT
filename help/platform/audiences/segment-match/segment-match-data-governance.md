@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Scopri come impostare e utilizzare i controlli di governance dei dati in Real-Time CDP in modo da poter limitare quali set di dati (e quindi quali segmenti che utilizzano tali set di dati) possono essere condivisi con i partner di dati. Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/342212/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346359/?learn=on&enablevpops&captions=ita)

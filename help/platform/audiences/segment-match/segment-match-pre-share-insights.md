@@ -18,4 +18,4 @@ ht-degree: 53%
 
 Quando individui un partner strategico con cui condividere i dati, è importante conoscere il livello di corrispondenza con i tuoi clienti, in modo da valutare l’utilità di tale condivisione. Segment Match consente di visualizzare la sovrapposizione con potenziali partner di dati prima di condividere qualsiasi dato. Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/342378/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346345/?learn=on&enablevpops&captions=ita)

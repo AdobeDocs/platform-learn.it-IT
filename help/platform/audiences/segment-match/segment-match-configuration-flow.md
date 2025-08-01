@@ -18,4 +18,4 @@ ht-degree: 46%
 
 Una volta connessa una condivisione di segmenti con un partner dati, è possibile esplorare e iniziare a condividere i dati con i partner. Questo video illustra come configurare un’istanza di Segment Match per una condivisione di dati. Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/342336/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346706/?learn=on&enablevpops&captions=ita)
