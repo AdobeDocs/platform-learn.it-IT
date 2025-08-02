@@ -3,9 +3,10 @@ title: Guida introduttiva a Workfront Planning
 description: Guida introduttiva a Workfront Planning
 kt: 5342
 doc-type: tutorial
-source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
+exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1084'
 ht-degree: 1%
 
 ---
@@ -196,7 +197,7 @@ Dovresti quindi visualizzare la campagna appena creata nella panoramica.
 
 ![Pianificazione Workfront](./images/wfpl35.png)
 
-## 1.1.1.7 Crea un&#39;automazione
+## 1.1.1.7 Crea Portfolio e modulo personalizzato
 
 Nel passaggio successivo verrà creata un&#39;automazione che utilizzerà le informazioni della campagna create in Workfront Planning e che utilizzerà tali informazioni in Workfront per creare un programma. Prima di poter creare l’automazione, in Workfront è necessario configurare due elementi: un portfolio e un modulo personalizzato.
 
@@ -224,7 +225,7 @@ Seleziona **Programma** e fai clic su **Continua**.
 
 ![Pianificazione Workfront](./images/wfplss6.png)
 
-Modificare il nome del modulo in `--aepUserLdap-- Program Information`.
+Modificare il nome del modulo in `--aepUserLdap-- - Program Information`.
 
 ![Pianificazione Workfront](./images/wfplss7.png)
 

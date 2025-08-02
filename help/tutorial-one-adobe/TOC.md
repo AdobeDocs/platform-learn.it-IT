@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial tecnico su Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+source-git-commit: 1fcb7b56cdf9ecf3520e3f293b120ddd0b67da74
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1239'
 ht-degree: 3%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 3%
 # Tutorial tecnico su Adobe {#tutorial-one-adobe}
 
 + [Panoramica del tutorial](/help/tutorial-one-adobe/overview.md)
++ [Abilitazione tecnica di GenStudio for Content Supply Chain](/help/tutorial-one-adobe/genstudiocsc.md)
 + [Stato contenuto](/help/tutorial-one-adobe/status.md)
 + [Completamento](/help/tutorial-one-adobe/completion.md)
 
@@ -36,11 +37,12 @@ ht-degree: 3%
       + [Panoramica](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/wfplanning.md)
       + [1.1.1 Guida introduttiva a Workfront Planning](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/ex1.md)
       + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/summary.md)
-   + 1.2 Workfront {#wfpl2}
+   + 1.2 Flusso di lavoro di Workfront {#wfpl2}
       + [Panoramica](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/workfront.md)
-      + [1.2.1 Guida introduttiva a Workfront](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex1.md)
+      + [1.2.1 Integrazione dei metadati Workfront + AEM Assets CS](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex1.md)
       + [1.2.2 Strumenti di correzione con Workfront](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex2.md)
-      + [Integrazione 1.2.5 Workfront + Photoshop](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex5.md)
+      + [1.2.4 Integrazione Workfront + AEM Sites CS](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex4.md)
+      + [Integrazione Workfront + Photoshop 1.2.5](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex5.md)
       + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/summary.md)
 
 + Creazione e produzione {#production}

@@ -3,38 +3,51 @@ title: Guida introduttiva a Workfront
 description: Guida introduttiva a Workfront
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 0867d7fd-4d12-46d8-a5ae-bb8db1575635
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 1%
+source-wordcount: '824'
+ht-degree: 0%
 
 ---
 
-# 1.2.1 Guida introduttiva a Workfront
+# 1.2.1 Integrazione dei metadati Workfront + AEM Assets CS
 
-Accedi ad Adobe Workfront da [https://experienceplatform.my.workfront.com/](https://experienceplatform.my.workfront.com/){target="_blank"}.
+>[!IMPORTANT]
+>
+>Per completare questo esercizio, è necessario avere accesso a un ambiente AEM Assets CS Author funzionante.
+>
+>Ci sono 2 opzioni da considerare:
+>
+>- Se stai partecipando al workshop di abilitazione tecnica di GenStudio for CSC, i tuoi istruttori hanno creato un ambiente AEM Assets CS Author per te. Verifica con loro il nome e come procedere.
+>
+>- Se stai seguendo il percorso completo dell&#39;esercitazione di One Adobe, vai all&#39;esercizio [Adobe Experience Manager Cloud Service &amp; Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}. Segui le istruzioni e potrai accedere a tale ambiente.
 
-Poi vedete questo.
+>[!IMPORTANT]
+>
+>Se in precedenza hai configurato un programma AEM CS con un ambiente AEM Assets CS, è possibile che la sandbox AEM CS sia stata sospesa. Dato che la disattivazione di una sandbox di questo tipo richiede 10-15 minuti, sarebbe opportuno avviare subito il processo di disattivazione in modo da non doverlo attendere in un secondo momento.
+
+Vai a [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Fare clic per aprire **Workfront**.
+
+![Pianificazione Workfront](./../module1.1/images/wfpl1.png)
+
+Poi vedrai questo.
 
 ![WF](./images/wfb1.png)
 
 ## 1.2.1.1 Configurare l&#39;integrazione AEM Assets
 
-Fai clic sull&#39;icona dei 9 punti **hamburger**, quindi seleziona **Configurazione**.
+Fai clic sull&#39;icona **menu**, quindi seleziona **Configurazione**.
 
 ![WF](./images/wfb2.png)
 
-Nel menu a sinistra, scorri verso il basso fino a **Documenti** e quindi fai clic su **Experience Manager Assets**.
+Nel menu a sinistra, scorri verso il basso fino a **Documenti** e quindi fai clic su **Experience Manager Assets**. Fare clic su **+ Aggiungi integrazione Experience Manager**.
 
 ![WF](./images/wfb3.png)
 
-Fare clic su **+ Aggiungi integrazione Experience Manager**.
+Per il nome dell&#39;integrazione, utilizzare `--aepUserLdap-- - CitiSignal AEM`.
 
-![WF](./images/wfb4.png)
-
-Per il nome dell&#39;integrazione, utilizzare `--aepUserLdap-- - Citi Signal AEM`.
-
-Apri il menu a discesa **Archivio Experience Manager** e seleziona la tua istanza di AEM CS, che deve essere denominata `--aepUserLdap-- - Citi Signal`.
+Apri il menu a discesa **Archivio Experience Manager** e seleziona la tua istanza di AEM CS, che deve essere denominata `--aepUserLdap-- - CitiSignal`.
 
 ![WF](./images/wfb5.png)
 
@@ -43,9 +56,12 @@ In **Metadati**, configura la seguente mappatura:
 | Campo Workfront | Campo Experience Manager Assets |
 | --------------- | ------------------------------ | 
 | **Documento** > **Nome** | **wm:documentName** |
+| **Progetto** > **Nome** | **wm:projectName** |
 | **Progetto** > **Descrizione** | **wm:projectDescription** |
+| **Richiesta documento** > **Stato** | **wm:wm:documentStatus** |
 | **Attività** > **Nome** | **wm:taskName** |
 | **Attività** > **Descrizione** | **wm:taskDescription** |
+| **Progetto** > **ID** | **wm:projectId** |
 
 Abilitare il parametro per **sincronizzare i metadati dell&#39;oggetto**.
 
@@ -59,21 +75,25 @@ L’integrazione da Workfront ad AEM Assets CS è ora configurata.
 
 ## 1.2.1.2 Configurare l&#39;integrazione dei metadati con AEM Assets
 
-Successivamente, devi configurare AEM Assets in modo che i campi di metadati della risorsa in Workfront vengano condivisi con AEM.
+Successivamente, devi configurare AEM Assets CS in modo che i campi di metadati della risorsa in Workfront vengano condivisi con AEM Assets CS.
 
 Per eseguire questa operazione, vai a [https://experience.adobe.com/](https://experience.adobe.com/). Fare clic su **Experience Manager Assets**.
 
 ![WF](./images/wfbaem1.png)
 
-Fai clic per selezionare l&#39;ambiente AEM Assets, che deve essere denominato `--aepUserLdap-- - Citi Signal dev`.
+Fai clic per selezionare l&#39;ambiente AEM Assets, che deve essere denominato `--aepUserLdap-- - CitiSignal dev`.
 
 ![WF](./images/wfbaem2.png)
 
-Dovresti vedere questo. Nel menu a sinistra, vai a **Assets** e fai clic su **Crea cartella**.
+Dovresti vedere questo. Nel menu a sinistra, vai a **Assets**.
 
 ![WF](./images/wfbaem3.png)
 
-Assegna un nome alla cartella `--aepUserLdap-- - Workfront Assets` e fai clic su **Crea**.
+Fare clic su **Crea cartella**.
+
+![WF](./images/wfbaem3a.png)
+
+Assegna un nome alla cartella `--aepUserLdap-- - CitiSignal Fiber Launch Assets` e fai clic su **Crea**.
 
 ![WF](./images/wfbaem4.png)
 
@@ -85,19 +105,31 @@ Utilizza il nome `--aepUserLdap-- - Metadata Form` e fai clic su **Crea**.
 
 ![WF](./images/wfbaem6.png)
 
-Aggiungi al modulo 3 nuovi campi **Testo a riga singola** e seleziona il primo campo. Quindi, fai clic sull&#39;icona **Schema** accanto al campo **Proprietà metadati**.
+Aggiungi al modulo 7 nuovi campi **Testo a riga singola** e seleziona il primo campo. Quindi, fai clic sull&#39;icona **Schema** accanto al campo **Proprietà metadati** per il primo campo.
 
 ![WF](./images/wfbaem7.png)
+
+Poi vedrai questo popup. Nel campo di ricerca, immettere `wm:project` e selezionare il campo **Nome progetto**. Fai clic su **Seleziona**.
+
+![WF](./images/wfbaem11.png)
+
+Cambia l&#39;etichetta del campo in `Project Name`. Fai clic su **Salva**.
+
+![WF](./images/wfbaem12.png)
+
+Vai al secondo campo e fai clic sull&#39;icona **Schema** accanto al campo **Proprietà metadati**.
+
+![WF](./images/wfbaem12a.png)
 
 Nel campo di ricerca, immettere `wm:project` e selezionare il campo **Descrizione progetto**. Fai clic su **Seleziona**.
 
 ![WF](./images/wfbaem8.png)
 
-Cambia l&#39;etichetta del campo in **Descrizione progetto**.
+Cambia l&#39;etichetta del campo in `Project Description`.
 
 ![WF](./images/wfbaem9.png)
 
-Quindi, seleziona il secondo campo **Testo a riga singola** e fai di nuovo clic sull&#39;icona **Schema** accanto al campo **Proprietà metadati**.
+Quindi, seleziona il terzo campo e fai di nuovo clic sull&#39;icona **Schema** accanto al campo **Proprietà metadati**.
 
 ![WF](./images/wfbaem10b.png)
 
@@ -105,25 +137,65 @@ Poi vedrai di nuovo questo popup. Nel campo di ricerca, immettere `wm:project` e
 
 ![WF](./images/wfbaem10.png)
 
-Cambia l&#39;etichetta del campo in **ID progetto**.
+Cambia l&#39;etichetta del campo in `Project ID`.
 
 ![WF](./images/wfbaem10a.png)
 
-Seleziona il terzo campo **Testo a riga singola** e fai di nuovo clic sull&#39;icona **Schema** accanto al campo **Proprietà metadati**.
+Quindi, seleziona il quarto campo e fai di nuovo clic sull&#39;icona **Schema** accanto al campo **Proprietà metadati**.
 
 ![WF](./images/wfbaem11a.png)
 
-Poi vedrai di nuovo questo popup. Nel campo di ricerca, immettere `wm:project` e selezionare il campo **Nome progetto**. Fai clic su **Seleziona**.
+Poi vedrai di nuovo questo popup. Nel campo di ricerca, immettere `wm:document` e selezionare il campo **ID progetto**. Fai clic su **Seleziona**.
 
-![WF](./images/wfbaem11.png)
+![WF](./images/wfbaem101.png)
 
-Cambia l&#39;etichetta del campo in **Nome progetto**. Fai clic su **Salva**.
+Cambia l&#39;etichetta del campo in `Document Status`.
 
-![WF](./images/wfbaem12.png)
+![WF](./images/wfbaem102.png)
 
-Cambia il **nome scheda** nel modulo in `--aepUserLdap-- - Workfront Metadata`. Fai clic su **Salva** e **Chiudi**.
+Quindi, seleziona il quinto campo e fai di nuovo clic sull&#39;icona **Schema** accanto al campo **Proprietà metadati**.
+
+![WF](./images/wfbaem103.png)
+
+Poi vedrai di nuovo questo popup. Nel campo di ricerca, immettere `wm:document` e selezionare il campo **ID progetto**. Fai clic su **Seleziona**.
+
+![WF](./images/wfbaem104.png)
+
+Cambia l&#39;etichetta del campo in `Document Name`.
+
+![WF](./images/wfbaem105.png)
+
+Quindi, seleziona il sesto campo e fai di nuovo clic sull&#39;icona **Schema** accanto al campo **Proprietà metadati**.
+
+![WF](./images/wfbaem106.png)
+
+Poi vedrai di nuovo questo popup. Nel campo di ricerca, immettere `wm:task` e selezionare il campo **Nome attività**. Fai clic su **Seleziona**.
+
+![WF](./images/wfbaem107.png)
+
+Cambia l&#39;etichetta del campo in `Task Name`.
+
+![WF](./images/wfbaem108.png)
+
+Quindi, seleziona il settimo campo e fai di nuovo clic sull&#39;icona **Schema** accanto al campo **Proprietà metadati**.
+
+![WF](./images/wfbaem109.png)
+
+Poi vedrai di nuovo questo popup. Nel campo di ricerca, immettere `wm:task` e selezionare il campo **Descrizione attività**. Fai clic su **Seleziona**.
+
+![WF](./images/wfbaem110.png)
+
+Cambia l&#39;etichetta del campo in `Task Description`.
+
+![WF](./images/wfbaem111.png)
+
+Cambia il **nome scheda** nel modulo in `--aepUserLdap-- - Workfront Metadata`.
 
 ![WF](./images/wfbaem13.png)
+
+Fai clic su **Salva** e **Chiudi**.
+
+![WF](./images/wfbaem13a.png)
 
 Il **modulo metadati** è ora configurato.
 
@@ -133,111 +205,13 @@ Successivamente, devi assegnare il modulo metadati alla cartella creata in prece
 
 ![WF](./images/wfbaem15.png)
 
-Selezionare la cartella, che deve essere denominata `--aepUserLdap-- - Workfront Assets`. Fai clic su **Assegna**.
+Selezionare la cartella, che deve essere denominata `--aepUserLdap-- - CitiSignal Fiber Launch Assets`. Fai clic su **Assegna**.
 
 ![WF](./images/wfbaem16.png)
 
 Il modulo metadati è ora assegnato alla cartella correttamente.
 
 ![WF](./images/wfbaem17.png)
-
-## 1.2.1.2 Configurare l&#39;integrazione AEM Sites
-
->[!NOTE]
->
->Questo plug-in è attualmente in modalità **Accesso anticipato** e non è ancora disponibile a livello generale.
->
->Questo plug-in potrebbe essere già installato nell’istanza di Workfront utilizzata. Se è già installato, puoi consultare le istruzioni riportate di seguito, ma non è necessario apportare alcuna modifica alla configurazione.
-
-Vai a [https://experience.adobe.com/#/@experienceplatform/aem/extension-manager/universal-editor](https://experience.adobe.com/#/@experienceplatform/aem/extension-manager/universal-editor){target="_blank"}.
-
-Verificare che l&#39;opzione **Attiva** per questo plug-in sia impostata su **Attiva**. Quindi, fai clic sull&#39;icona **ingranaggio**.
-
-![WF](./images/wfb8.png)
-
-Verrà visualizzata una finestra a comparsa **Configurazione estensione**. Configura i campi seguenti per utilizzare questo plug-in.
-
-| Chiave | Valore |
-| --------------- | ------------------------------ | 
-| **`IMS_ENV`** | **PROD** |
-| **`WORKFRONT_INSTANCE_URL`** | **https://experienceplatform.my.workfront.com** |
-| **`SHOW_CUSTOM_FORMS`** | **&#39;{&quot;previewUrl&quot;: true, &quot;publishUrl&quot;: true}&#39;** |
-
-Fai clic su **Salva**.
-
-![WF](./images/wfb8.png)
-
-Torna all&#39;interfaccia utente di Workfront e fai clic sull&#39;icona dei 9 puntini **hamburger**. Selezionare **Configurazione**.
-
-![WF](./images/wfb9.png)
-
-Nel menu a sinistra, vai a **Forms personalizzato** e seleziona **Modulo**. Fare clic su **+ Nuovo modulo personalizzato**.
-
-![WF](./images/wfb10.png)
-
-Seleziona **Attività** e fai clic su **Continua**.
-
-![WF](./images/wfb11.png)
-
-Verrà quindi visualizzato un modulo personalizzato vuoto. Immettere il nome del modulo `Content Fragment & Integration ID`.
-
-![WF](./images/wfb12.png)
-
-Trascina un nuovo campo **Testo su riga singola** nell&#39;area di lavoro.
-
-![WF](./images/wfb13.png)
-
-Configura il nuovo campo come segue:
-
-- **Etichetta**: **Frammento di contenuto**
-- **Nome**: **`aem_workfront_integration_content_fragment`**
-
-![WF](./images/wfb14.png)
-
-Aggiungi un nuovo campo **Testo a riga singola** nell&#39;area di lavoro e configura il nuovo campo come segue:
-
-- **Etichetta**: **ID integrazione**
-- **Nome**: **`aem_workfront_integration_id`**
-
-Fare clic su **Applica**.
-
-![WF](./images/wfb15.png)
-
-Ora devi configurare un secondo modulo personalizzato. Fare clic su **+ Nuovo modulo personalizzato**.
-
-![WF](./images/wfb10.png)
-
-Seleziona **Attività** e fai clic su **Continua**.
-
-![WF](./images/wfb11.png)
-
-Verrà quindi visualizzato un modulo personalizzato vuoto. Immettere il nome del modulo `Preview & Publish URL`.
-
-![WF](./images/wfb16.png)
-
-Trascina un nuovo campo **Testo su riga singola** nell&#39;area di lavoro.
-
-![WF](./images/wfb17.png)
-
-Configura il nuovo campo come segue:
-
-- **Etichetta**: **URL anteprima**
-- **Nome**: **`aem_workfront_integration_preview_url`**
-
-![WF](./images/wfb18.png)
-
-Aggiungi un nuovo campo **Testo a riga singola** nell&#39;area di lavoro e configura il nuovo campo come segue:
-
-- **Etichetta**: **URL pubblicazione**
-- **Nome**: **`aem_workfront_integration_publish_url`**
-
-Fare clic su **Applica**.
-
-![WF](./images/wfb19.png)
-
-Dovresti quindi avere a disposizione 2 moduli personalizzati.
-
-![WF](./images/wfb20.png)
 
 Passaggio successivo: [1.2.2 Verifica con Workfront](./ex2.md){target="_blank"}
 

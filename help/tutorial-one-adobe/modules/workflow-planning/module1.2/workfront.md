@@ -3,14 +3,15 @@ title: Gestione dei flussi di lavoro con Adobe Workfront
 description: Gestione dei flussi di lavoro con Adobe Workfront
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 8cffcb71-63bd-41cb-b7cd-ab34a0c74499
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '169'
 ht-degree: 2%
 
 ---
 
-# 1.2 Gestione dei flussi di lavoro con Adobe Workfront
+# 1.2 Gestione dei flussi di lavoro con Adobe Workfront Workflow
 
 ## Finalità di apprendimento
 
@@ -22,13 +23,17 @@ ht-degree: 2%
 
 ## Esercizi
 
-[1.2.1 Guida introduttiva a Workfront](./ex1.md){target="_blank"}
+[1.2.1 Integrazione metadati Workfront + AEM Assets CS](./ex1.md){target="_blank"}
 
-In questo esercizio configurerai alcune impostazioni di base in Workfront.
+In questo esercizio configurerai l’integrazione Workfront + AEM Assets CS.
 
 [1.2.2 Strumenti di correzione con Workfront](./ex2.md)
 
 In questo esercizio verrà configurato e utilizzato un flusso di lavoro di approvazione degli strumenti di correzione.
+
+[1.2.4 Integrazione Workfront + AEM Sites CS](./ex4.md){target="_blank"}
+
+In questo esercizio, configurerai e inizierai a utilizzare il plug-in per la connessione di Adobe Experience Manager Cloud Service Sites con Adobe Workfront.
 
 [1.2.5 Integrazione Workfront + Photoshop](./ex5.md){target="_blank"}
 
