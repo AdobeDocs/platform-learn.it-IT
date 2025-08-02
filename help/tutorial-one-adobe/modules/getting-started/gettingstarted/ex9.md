@@ -34,7 +34,7 @@ Apri l&#39;app **Adobe Creative Cloud**, vai a **App**. Installa Illustrator sul
 
 ## Adobe Premiere Pro
 
-Installa la versione di Adobe Premiere Pro Beta nel computer da [https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html)
+Installa la versione di Adobe Premiere Pro Beta nel computer da [https://helpx.adobe.com/it/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/it/premiere-pro/using/premiere-pro-beta.html)
 
 ![Nuova integrazione Adobe I/O](./images/prpro.png)
 
