@@ -4,9 +4,9 @@ description: Verifica con Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: 42f6d8a07baa03a9ab31cff0ef518ae2c5ad930e
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---
@@ -224,6 +224,14 @@ Fare clic su **Seleziona cartella**.
 Dopo 1-2 minuti, il documento verrà pubblicato in AEM Assets. Accanto al nome del documento verrà visualizzata l&#39;icona AEM.
 
 ![WF](./images/wfp37a.png)
+
+Fai clic su **Contrassegna come completato** per completare l&#39;attività.
+
+![WF](./images/wfp37b.png)
+
+Dovresti vedere questo.
+
+![WF](./images/wfp37c.png)
 
 ## 1.2.2.5 Visualizza il file in AEM Assets
 

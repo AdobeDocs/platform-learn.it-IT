@@ -3,9 +3,9 @@ title: Guida introduttiva - Applicazioni da installare
 description: Guida introduttiva - Applicazioni da installare
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: efb4ecf90a27d00d256c1648e78c6e295199733e
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '274'
 ht-degree: 1%
 
 ---
@@ -31,6 +31,26 @@ Apri l&#39;app **Adobe Creative Cloud**, vai a **App**. Installa Photoshop nel c
 Apri l&#39;app **Adobe Creative Cloud**, vai a **App**. Installa Illustrator sul computer.
 
 ![Nuova integrazione Adobe I/O](./images/psd.png)
+
+## Adobe Premiere Pro
+
+Installa la versione di Adobe Premiere Pro Beta nel computer da [https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html)
+
+![Nuova integrazione Adobe I/O](./images/prpro.png)
+
+Fare clic su **Apri app desktop Creative Cloud**.
+
+![Nuova integrazione Adobe I/O](./images/prpro1.png)
+
+Fai clic su **Installa** sulla scheda dell&#39;app **Premiere Pro (Beta)**.
+
+![Nuova integrazione Adobe I/O](./images/prpro2.png)
+
+## App di trasferimento Frame.io
+
+Vai a [https://frame.io/transfer](https://frame.io/transfer) e scarica la versione per il tuo computer.
+
+![Frame.io](./images/frameio11.png)
 
 ## Codice di Visual Studio
 
