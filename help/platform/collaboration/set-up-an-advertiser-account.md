@@ -18,6 +18,6 @@ ht-degree: 25%
 
 # Configurare un account inserzionista in Real-Time CDP Collaboration
 
-Scopri come impostare un account inserzionista in Real-Time CDP Collaboration. Per la documentazione dettagliata, consulta [onboarding e gestione dell&#39;organizzazione](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/setup/onboard-organization){target="_blank"}.
+Scopri come impostare un account inserzionista in Real-Time CDP Collaboration. Per la documentazione dettagliata, consulta [onboarding e gestione dell&#39;organizzazione](https://experienceleague.adobe.com/it/docs/real-time-cdp-collaboration/using/setup/onboard-organization){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452264/?learn=on&enablevpops)
