@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '300'
 ht-degree: 3%
 
 ---
@@ -26,19 +26,21 @@ Questo esercizio ti guida attraverso la creazione di un pubblico dal tuo Data Wa
 
    ![create-composition](assets/create-composition.png)
 
-3. Etichetta la composizione come `SecurFinancial Customers - No Loans, Good Credit + [your lab user ID]`. Fai clic su **Crea**.
+3. Etichetta la composizione come `SecurFinancial Customers - No Loans, Good Credit`. Fai clic su **Crea**.
 
 4. Fai clic sul pulsante **+** nell&#39;area di lavoro e seleziona **Genera pubblico**. Dovrebbe essere visualizzata la barra di destra.
 
 5. Fai clic su **Seleziona uno schema** e seleziona lo schema **FSI_CRM**, quindi fai clic su **Conferma**.
 
 6. Fai clic su **Continua**. Nella finestra del generatore di query fare clic sul pulsante **+** e quindi **Condizione personalizzata**. Crea le seguenti condizioni:
-   - `CURRENTPRODUCTS does not contain loan`
-   - `AND`
-   - `CREDITSCORE greater than or equal to 650`
-   - Utilizziamo i dati delle preferenze di marketing per segmentare i clienti che hanno scelto l’e-mail come canale di comunicazione preferito:
-   - `AND`
-   - `CONSENTSMARKETINGPREFERRED equal to email`
+
+   `CURRENTPRODUCTS does not contain loan`
+   `AND`
+   `CREDITSCORE greater than or equal to 650`
+   `AND`
+   `CONSENTSMARKETINGPREFERRED equal to email`
+
+   *L&#39;ultima condizione garantisce che i dati delle preferenze di marketing vengano utilizzati per segmentare i clienti che hanno scelto la posta elettronica come canale di comunicazione preferito*.
 
    **Nota:** nel campo del valore viene fatta distinzione tra maiuscole e minuscole.
 
@@ -46,16 +48,16 @@ Questo esercizio ti guida attraverso la creazione di un pubblico dal tuo Data Wa
 
    ![generatore di query](assets/query-builder.png)
 
-7. Fai clic sul pulsante **+** successivo, quindi fai clic su **Salva pubblico**.
-
-   Etichettare questo passaggio come `SecurFinancial Customers - No Loans, Good Credit + [your lab user ID]`. Utilizza lo stesso valore dell’etichetta del pubblico.
+7. Fai clic sul pulsante **+** successivo, quindi fai clic su **Salva pubblico**. Etichettare questo passaggio come `SecurFinancial Customers - No Loans, Good Credit`. Utilizza lo stesso valore dell’etichetta del pubblico.
 
 8. Aggiungi le seguenti mappature di pubblico:
+
    - **Campo pubblico Source:** E-MAIL
    - **Campo pubblico Source:** CURRENTPRODUCTS
    - **Campo pubblico Source:** FIRST NAME
 
 9. Seleziona l’identità principale e lo spazio dei nomi da utilizzare per i profili:
+
    - **Campo identità primaria:** e-mail
    - **Spazio dei nomi identità:** E-mail
 
@@ -63,6 +65,6 @@ Questo esercizio ti guida attraverso la creazione di un pubblico dal tuo Data Wa
 
 **Nota:** abbiamo utilizzato informazioni su prodotti e crediti per creare il nostro pubblico che non ha spostato dati sensibili, come il punteggio di credito, sulle piattaforme a valle per l&#39;attivazione.
 
-Per ulteriori informazioni sulla composizione del pubblico, visita [Experience League](https://experienceleague.adobe.com/it/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Per ulteriori informazioni sulla composizione del pubblico, visita [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Ora che il nostro pubblico federato è stato creato, [procederemo con la mappatura su un account S3](map-federated-audience-to-s3.md).

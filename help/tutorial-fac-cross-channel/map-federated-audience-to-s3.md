@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,7 @@ In questo esercizio imparerai a sfruttare gli attributi del pubblico nel data wa
 
 5. Nella sezione **Pianificazione**, lascia tutte le impostazioni predefinite e fai clic su **Avanti**.
 
-6. Nel passaggio **Mappatura**, accertati che quanto segue sia incluso e selezionato come **Chiave di deduplicazione**. Quindi fai clic su **Avanti**:
-   - `xdm: personalEmail.address`
+6. Nel passaggio **Mappatura**, assicurati che `xdm: personalEmail.address` sia incluso e selezionato come **Chiave di deduplicazione**. Quindi fai clic su **Avanti**:
 
    ![chiave di deduplicazione](assets/deduplication-key.png)
 

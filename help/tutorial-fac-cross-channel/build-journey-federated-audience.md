@@ -7,7 +7,7 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 hide: true
-source-git-commit: fcfadca95c12d0123cfb221e44909f7e0fa8abab
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
@@ -27,13 +27,13 @@ In questa lezione imparerai come un pubblico federato può essere utilizzato nei
 
    ![create-a-percorsi](assets/create-journey.png)
 
-2. Aggiornare le proprietà del Percorso con un nuovo nome: `SecurFinancial - Home Loan Offer - [your lab user ID]`.
+2. Aggiornare le proprietà del Percorso con un nuovo nome: **`SecurFinancial - Home Loan Offer`**.
 
 3. Fai clic su **Orchestrazione**, quindi trascina il riquadro **Read audience** nell&#39;area di lavoro.
 
 4. Fai clic sull&#39;**icona a forma di matita** accanto alla casella Pubblico sul lato destro dello schermo.
 
-5. Nella barra di ricerca, cerca `SecureFinancial Customers - No Loans, Good Credit`, quindi fai clic su **Salva**.
+5. Nella barra di ricerca, cerca **`SecureFinancial Customers - No Loans, Good Credit`**, quindi fai clic su **Salva**.
 
    ![create-a-percorsi](assets/select-audience.png)
 
@@ -47,7 +47,7 @@ In questa lezione imparerai come un pubblico federato può essere utilizzato nei
 
 2. Nel menu a destra, fai clic su **Configurazione e-mail** e seleziona **EmailMarketing**. Quindi fare clic su **Modifica contenuto**.
 
-3. Nella riga dell&#39;oggetto, aggiungi: `Learn more about SecurFinancial Home Loan`. Quindi fai clic su **Modifica corpo dell&#39;e-mail**.
+3. Nella riga dell&#39;oggetto, aggiungi: **`Learn more about SecurFinancial Home Loan`**. Quindi fai clic su **Modifica corpo dell&#39;e-mail**.
 
 4. Fai clic sul pulsante **Modello di contenuto** in alto a destra. Trova e seleziona `SecureFinancial Template`, quindi fai clic su **Conferma**.
 
@@ -59,7 +59,7 @@ In questa lezione imparerai come un pubblico federato può essere utilizzato nei
 
 6. Ora accederai a E-mail Designer. Passa il puntatore del mouse sulla macro `{profile.person.name.firstName}` e fai clic sull&#39;**avatar di personalizzazione**.
 
-7. Nella finestra di personalizzazione, espandere il percorso della cartella seguente: `[sandbox] > audienceEnrichment > CustomerAudienceUpload`
+7. Nella finestra di personalizzazione, espandere il percorso della cartella seguente: **`[sandbox] > audienceEnrichment > CustomerAudienceUpload`**
 
 8. Fai clic sulla cartella **Read audience**. Gli attributi di arricchimento del pubblico federato si trovano qui.
 
@@ -69,7 +69,7 @@ In questa lezione imparerai come un pubblico federato può essere utilizzato nei
 
 11. Ora che è stata aggiunta la personalizzazione del nome, aggiungi `Hi, ` davanti alla variabile di personalizzazione. Quindi fai clic su **Salva**.
 
-    ![percorso-e-mail-salva](assets/journey-email-save.png)
+   ![percorso-e-mail-salva](assets/journey-email-save.png)
 
 12. Fai clic due volte sul pulsante **Indietro** per tornare all&#39;area di lavoro del percorso. Quindi nel menu **Azione: e-mail** a destra, fai clic su **Salva**.
 

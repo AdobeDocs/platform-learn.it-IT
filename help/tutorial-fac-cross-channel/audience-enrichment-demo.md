@@ -7,15 +7,15 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-enrich-audience-with-federated-data.jpg
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 5%
+source-wordcount: '293'
+ht-degree: 4%
 
 ---
 
 
-# Composizione di pubblico federato
+# Arricchire il pubblico di Experience Platform con Federated Data
 
 La Composizione federata del pubblico consente di arricchire i tipi di pubblico esistenti in Adobe Experience Platform (AEP) utilizzando i dati del pubblico composto che sono stati federati dal data warehouse aziendale. Questi dati non verranno mantenuti nei profili cliente di Adobe Experience Platform.
 
