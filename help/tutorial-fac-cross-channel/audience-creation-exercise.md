@@ -63,6 +63,6 @@ Questo esercizio ti guida attraverso la creazione di un pubblico dal tuo Data Wa
 
 **Nota:** abbiamo utilizzato informazioni su prodotti e crediti per creare il nostro pubblico che non ha spostato dati sensibili, come il punteggio di credito, sulle piattaforme a valle per l&#39;attivazione.
 
-Per ulteriori informazioni sulla composizione del pubblico, visita [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Per ulteriori informazioni sulla composizione del pubblico, visita [Experience League](https://experienceleague.adobe.com/it/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Ora che il nostro pubblico federato è stato creato, [procederemo con la mappatura su un account S3](map-federated-audience-to-s3.md).
