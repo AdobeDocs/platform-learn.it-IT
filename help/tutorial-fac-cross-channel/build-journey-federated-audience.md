@@ -69,7 +69,7 @@ In questa lezione imparerai come un pubblico federato può essere utilizzato nei
 
 11. Ora che è stata aggiunta la personalizzazione del nome, aggiungi `Hi, ` davanti alla variabile di personalizzazione. Quindi fai clic su **Salva**.
 
-   ![percorso-e-mail-salva](assets/journey-email-save.png)
+    ![percorso-e-mail-salva](assets/journey-email-save.png)
 
 12. Fai clic due volte sul pulsante **Indietro** per tornare all&#39;area di lavoro del percorso. Quindi nel menu **Azione: e-mail** a destra, fai clic su **Salva**.
 
