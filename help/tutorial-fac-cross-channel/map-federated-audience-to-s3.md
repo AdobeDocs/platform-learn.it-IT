@@ -2,22 +2,22 @@
 title: Mappare un pubblico federato a S3
 seo-title: Map a federated audience to S3 | Unlock cross-channel insights with Federated Audience Composition
 breadcrumb-title: Mappare un pubblico federato a S3
-description: In questa lezione, mapperemo un pubblico federato a una destinazione Real-Time CDP a valle per supportare un’esperienza offline personalizzata.
+description: In questo esercizio visivo, mapperemo un pubblico federato a una destinazione Real-Time CDP a valle per supportare un’esperienza offline personalizzata.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
-source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
+exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
+source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
 
-
 # Mappare Federated Audience su S3 per sfruttare gli attributi di pubblico per l’arricchimento
 
-In questo esercizio imparerai a sfruttare gli attributi del pubblico nel data warehouse per arricchire l&#39;esperienza del pubblico nei flussi di lavoro di attivazione a valle che utilizzano le destinazioni RTCDP. Per SecurFinancial, questi attributi federati possono essere utilizzati per migliorare l’esperienza di personalizzazione offline del pubblico cliente. In questo esempio, il pubblico federato verrà mappato su una destinazione Amazon S3 preconfigurata.
+Puoi sfruttare gli attributi del pubblico nel data warehouse per arricchire l’esperienza del pubblico nei flussi di lavoro di attivazione a valle che utilizzano le destinazioni RTCDP. Per SecurFinancial, questi attributi federati possono essere utilizzati per migliorare l’esperienza di personalizzazione offline del pubblico cliente. Di seguito, il pubblico federato è mappato su una destinazione Amazon S3 preconfigurata.
 
 ## Passaggi
 
@@ -31,22 +31,26 @@ In questo esercizio imparerai a sfruttare gli attributi del pubblico nel data wa
 
    ![select-s3-destination](assets/select-s3-destination.png)
 
-4. Selezionare il pubblico **SecureFinancial Customers - No Loans, Good Credit**.
+4. Seleziona il pubblico appropriato. Nel nostro esempio: **Clienti SecureFinancial - Nessun prestito, Buon credito** pubblico.
 
    ![select-s3-audience](assets/select-s3-audience.png)
 
-5. Nella sezione **Pianificazione**, lascia tutte le impostazioni predefinite e fai clic su **Avanti**.
+5. Nella sezione **Pianificazione**, utilizza le impostazioni predefinite e fai clic su **Avanti**.
 
-6. Nel passaggio **Mappatura**, assicurati che `xdm: personalEmail.address` sia incluso e selezionato come **Chiave di deduplicazione**. Quindi fai clic su **Avanti**:
+6. Nel passaggio **Mappatura**, scegli la chiave di deduplicazione. Nel nostro esempio, `xdm: personalEmail.address` è incluso e selezionato come **Chiave di deduplicazione**. Quindi fai clic su **Avanti**:
 
    ![chiave di deduplicazione](assets/deduplication-key.png)
 
-7. Nel passaggio di mappatura seguente, puoi selezionare gli attributi di arricchimento in base alle mappature dei campi del pubblico nella composizione del pubblico federato. Fai clic sull&#39;icona **matita (modifica)** per visualizzare gli attributi preselezionati.
+7. Nel passaggio di mappatura, seleziona gli attributi di arricchimento in base alle mappature dei campi del pubblico nella composizione del pubblico federato. Fai clic sull&#39;icona **matita (modifica)** per visualizzare gli attributi preselezionati.
 
    ![modifica-attributi](assets/edit-attributes.png)
 
    ![final-attributes](assets/final-attribution.png)
 
 8. Rivedi la mappatura del pubblico e premi **Fine**.
+
+>[**RIEPILOGO**]
+>
+> Un pubblico è stato creato correttamente e attivato facilmente su una destinazione S3. L’interfaccia intuitiva della piattaforma consente ai team di marketing di creare e attivare rapidamente i tipi di pubblico, riducendo il time-to-value. I clienti che adottano questo approccio sono entrati in possesso del primo caso d’uso in meno di due mesi.
 
 Siamo pronti a passare alla [creazione di un percorso](build-journey-federated-audience.md).

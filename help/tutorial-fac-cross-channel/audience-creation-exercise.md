@@ -2,22 +2,22 @@
 title: Creazione di un pubblico
 seo-title: Create an audience | Unlock cross-channel insights with Federated Audience Composition
 breadcrumb-title: Creazione di un pubblico
-description: In questa lezione, configuriamo una connessione tra Adobe Experience Platform e il tuo Data Warehouse aziendale per abilitare Federated Audience Composition.
+description: In questo esercizio visivo configureremo una connessione tra Adobe Experience Platform e il tuo Data Warehouse aziendale per abilitare Federated Audience Composition.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
-source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
+exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
+source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 3%
+source-wordcount: '341'
+ht-degree: 2%
 
 ---
 
-
 # Esercizio di creazione del pubblico
 
-Questo esercizio ti guida attraverso la creazione di un pubblico dal tuo Data Warehouse utilizzando Federated Audience Composition. Creiamo un pubblico per qualificare i clienti SecurFinancial che hanno un punteggio di credito pari o superiore a 650 e non hanno attualmente un prestito nel loro portafoglio SecurFinancial.
+Successivamente, ti guideremo attraverso la creazione di un pubblico dal nostro Data Warehouse utilizzando Federated Audience Composition. Il pubblico è composto da clienti SecurFinancial con un punteggio di credito pari o superiore a 650 e che attualmente non hanno un prestito nel loro portafoglio SecurFinancial.
 
 ## Passaggi
 
@@ -26,13 +26,13 @@ Questo esercizio ti guida attraverso la creazione di un pubblico dal tuo Data Wa
 
    ![create-composition](assets/create-composition.png)
 
-3. Etichetta la composizione come `SecurFinancial Customers - No Loans, Good Credit`. Fai clic su **Crea**.
+3. Etichettate la composizione. Nel nostro esempio: `SecurFinancial Customers - No Loans, Good Credit`. Fai clic su **Crea**.
 
-4. Fai clic sul pulsante **+** nell&#39;area di lavoro e seleziona **Genera pubblico**. Dovrebbe essere visualizzata la barra di destra.
+4. Fai clic sul pulsante **+** nell&#39;area di lavoro e seleziona **Genera pubblico**. Viene visualizzata la barra di destra.
 
-5. Fai clic su **Seleziona uno schema** e seleziona lo schema **FSI_CRM**, quindi fai clic su **Conferma**.
+5. Fai clic su **Seleziona uno schema**, seleziona lo schema appropriato, quindi fai clic su **Conferma**.
 
-6. Fai clic su **Continua**. Nella finestra del generatore di query fare clic sul pulsante **+** e quindi **Condizione personalizzata**. Crea le seguenti condizioni:
+6. Fai clic su **Continua**. Nella finestra del generatore di query fare clic sul pulsante **+** e quindi **Condizione personalizzata**. Scrivi le condizioni. Il nostro esempio utilizza:
 
    `CURRENTPRODUCTS does not contain loan`
    `AND`
@@ -44,27 +44,27 @@ Questo esercizio ti guida attraverso la creazione di un pubblico dal tuo Data Wa
 
    **Nota:** nel campo del valore viene fatta distinzione tra maiuscole e minuscole.
 
-   A questo punto la query dovrebbe essere simile alla seguente:
-
    ![generatore di query](assets/query-builder.png)
 
-7. Fai clic sul pulsante **+** successivo, quindi fai clic su **Salva pubblico**. Etichettare questo passaggio come `SecurFinancial Customers - No Loans, Good Credit`. Utilizza lo stesso valore dell’etichetta del pubblico.
+7. Fai clic sul pulsante **+** successivo, quindi fai clic su **Salva pubblico**. Etichetta questo passaggio. Nel nostro esempio, lo etichetteremo come `SecurFinancial Customers - No Loans, Good Credit`.
 
-8. Aggiungi le seguenti mappature di pubblico:
+8. Aggiungi le mappature del pubblico pertinenti. In questo esempio:
 
    - **Campo pubblico Source:** E-MAIL
    - **Campo pubblico Source:** CURRENTPRODUCTS
    - **Campo pubblico Source:** FIRST NAME
 
-9. Seleziona l’identità principale e lo spazio dei nomi da utilizzare per i profili:
+9. Seleziona l’identità principale e lo spazio dei nomi da utilizzare per i profili. Queste sono le identità e i campi utilizzati per i nostri dati:
 
    - **Campo identità primaria:** e-mail
    - **Spazio dei nomi identità:** E-mail
 
-10. Fai clic su **Salva**, quindi su **Inizia** per eseguire la query della composizione appena creata.
+10. Fai clic su **Salva**, quindi su **Inizia** per eseguire la query della composizione.
 
-**Nota:** abbiamo utilizzato informazioni su prodotti e crediti per creare il nostro pubblico che non ha spostato dati sensibili, come il punteggio di credito, sulle piattaforme a valle per l&#39;attivazione.
+>[**RIEPILOGO**]
+>
+> In questo esempio, le informazioni su prodotti e crediti sono state utilizzate per creare il nostro pubblico attraverso l’accesso diretto ai dati aziendali da Snowflake, senza crearne una copia in Adobe Experience Platform. Una volta che il sistema esterno elabora la query, solo l’e-mail pertinente, i prodotti correnti e i valori di nome vengono riportati nella definizione del pubblico per l’attivazione a valle. Questo vale per tutte le destinazioni supportate da RTCDP.
 
-Per ulteriori informazioni sulla composizione del pubblico, visita [Experience League](https://experienceleague.adobe.com/it/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Per ulteriori informazioni sulla composizione del pubblico, visita [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
-Ora che il nostro pubblico federato è stato creato, [procederemo con la mappatura su un account S3](map-federated-audience-to-s3.md).
+Ora che il nostro pubblico federato è stato creato, [lo mapperemo a un account S3](map-federated-audience-to-s3.md).

@@ -2,29 +2,30 @@
 title: Conclusione
 seo-title: Conclusion | Unlock cross-channel insights with Federated Audience Composition
 breadcrumb-title: Conclusione
-description: In questa lezione verranno riepilogati gli insegnamenti e le principali soluzioni.
+description: In conclusione, riassumiamo gli insegnamenti e le principali soluzioni.
 role: Data Architect, Data Engineer
 jira: KT-18743
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+exl-id: 19f3065a-c439-44b6-9888-664c9a5cb33c
+source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '153'
 ht-degree: 1%
 
 ---
-
 
 # Conclusione
 
 La Federated Audience Composition di Experience Platform offre nuovi percorsi e accesso esteso per creare tipi di pubblico da data warehouse aziendali per sviluppare esperienze avviate dal marchio e in tempo reale.
 
-Questo tutorial ha fornito un’introduzione pratica alla Federated Audience Composition in Adobe Experience Platform. Hai imparato a:
+Questa guida visiva è un’introduzione a Federated Audience Composition in Adobe Experience Platform. Hai imparato a:
 
-- Connettere un data warehouse a Adobe Experience Platform.
-- Crea e arricchisci i tipi di pubblico utilizzando i dati di warehouse senza replica.
-- Esporta i tipi di pubblico in Amazon S3 per utilizzi a valle.
-- Creare percorsi di clienti personalizzati con tipi di pubblico federati.
-- Arricchisci i tipi di pubblico di Experience Platform con i dati federati.
+- Connettere Adobe Experience Platform a un data warehouse aziendale.
+- Crea e gestisci i tipi di pubblico utilizzando Federated Audience Composition.
+- Mappa i tipi di pubblico federati su destinazioni esterne come Amazon S3.
+- Arricchisci i tipi di pubblico esistenti con i dati federati.
+- Crea tipi di pubblico per promuovere la personalizzazione immediata.
+- Crea percorsi di clienti utilizzando i dati del pubblico federato.
 
 ## Conclusioni principali
 
