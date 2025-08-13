@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Panoramica
 
-Federated Audience Composition è una potente funzione disponibile per gli ambienti Adobe Real-Time Customer Data Platform (Real-Time CDP) e Adobe Journey Optimizer. Consente agli architetti di dati e ai data engineer di creare e arricchire tipi di pubblico direttamente da [data warehouse di terze parti supportati](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} senza replicare i dati in Adobe Experience Platform. Questa esercitazione fornisce indicazioni pratiche agli utenti tecnici per collegare data warehouse aziendali, creare e arricchire tipi di pubblico e attivarli per esperienze di marketing personalizzate.
+Federated Audience Composition è una potente funzione disponibile per gli ambienti Adobe Real-Time Customer Data Platform (Real-Time CDP) e Adobe Journey Optimizer. Consente agli architetti di dati e ai data engineer di creare e arricchire tipi di pubblico direttamente da [data warehouse di terze parti supportati](https://experienceleague.adobe.com/it/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} senza replicare i dati in Adobe Experience Platform. Questa esercitazione fornisce indicazioni pratiche agli utenti tecnici per collegare data warehouse aziendali, creare e arricchire tipi di pubblico e attivarli per esperienze di marketing personalizzate.
 
 ## Guida visiva
 
@@ -51,10 +51,10 @@ Per eseguire attività simili nell’ambiente, assicurati di disporre di:
 
 - Accesso a un account Adobe Experience Platform fornito con Real-Time CDP o Journey Optimizer.
 - Autorizzazioni di amministratore di sistema o la possibilità di configurare le autorizzazioni.
-- Familiarità con i concetti di Adobe Experience Platform, ad esempio schemi, set di dati e tipi di pubblico (consigliato: completare la [Introduzione alla playlist di Adobe Experience Platform](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction?lang=en){target="_blank"} su Experience League).
+- Familiarità con i concetti di Adobe Experience Platform, ad esempio schemi, set di dati e tipi di pubblico (consigliato: completare la [Introduzione alla playlist di Adobe Experience Platform](https://experienceleague.adobe.com/it/playlists/experience-platform-introduction?lang=en){target="_blank"} su Experience League).
 - Accesso a un data warehouse aziendale supportato (ad esempio, Amazon Redshift, Azure Synapse Analytics, Snowflake o Google BigQuery).
 - Conoscenza di base di SQL per l&#39;esecuzione di query nei data warehouse.
 - **Ambienti sandbox**: crea una sandbox nell&#39;istanza Real-Time CDP della tua organizzazione per fare delle prove in sicurezza senza influire sui dati di produzione.
-- **Connessione Data Warehouse**: questa esercitazione utilizza una connessione Snowflake, ma è possibile utilizzare qualsiasi [data warehouse cloud supportato](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites).
+- **Connessione Data Warehouse**: questa esercitazione utilizza una connessione Snowflake, ma è possibile utilizzare qualsiasi [data warehouse cloud supportato](https://experienceleague.adobe.com/it/docs/federated-audience-composition/using/start/access-prerequisites).
 
 Iniziamo con la [connessione Data Warehouse](data-warehouse-connection.md).

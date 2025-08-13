@@ -64,6 +64,6 @@ Successivamente, ti guideremo attraverso la creazione di un pubblico dal nostro 
 >
 > In questo esempio, le informazioni su prodotti e crediti sono state utilizzate per creare il nostro pubblico attraverso l’accesso diretto ai dati aziendali da Snowflake, senza crearne una copia in Adobe Experience Platform. Una volta che il sistema esterno elabora la query, solo l’e-mail pertinente, i prodotti correnti e i valori di nome vengono riportati nella definizione del pubblico per l’attivazione a valle. Questo vale per tutte le destinazioni supportate da RTCDP.
 
-Per ulteriori informazioni sulla composizione del pubblico, visita [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Per ulteriori informazioni sulla composizione del pubblico, visita [Experience League](https://experienceleague.adobe.com/it/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Ora che il nostro pubblico federato è stato creato, [lo mapperemo a un account S3](map-federated-audience-to-s3.md).
