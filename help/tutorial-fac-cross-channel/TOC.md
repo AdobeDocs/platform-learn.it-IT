@@ -7,9 +7,9 @@ level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
 hide: true
-source-git-commit: 0bbdc93969b4716407ecf51499d572cb50f5a0d3
+source-git-commit: 0b596d45409b5033cec132edcb75d90b679f9c7d
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '82'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 + [Tutorial sulla composizione del pubblico federato](overview.md)
 + [&#x200B;1. Connessione Data Warehouse](data-warehouse-connection.md)
-+ [&#x200B;2. Esercizio di creazione del pubblico](audience-creation-exercise.md)
++ [&#x200B;2. Creare un pubblico federato](audience-creation-exercise.md)
 + [&#x200B;3. Mappa Federated Audience su S3](map-federated-audience-to-s3.md)
 + [&#x200B;4. Creare un Percorso con Federated Audience Data](build-journey-federated-audience.md)
 + [&#x200B;5. Arricchire il pubblico con i dati federati](federated-audience-composition.md)
