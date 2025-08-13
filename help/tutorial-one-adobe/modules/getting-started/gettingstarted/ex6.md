@@ -67,7 +67,7 @@ Dovresti vedere questo.
 >
 >A seconda del percorso di apprendimento selezionato, potresti non avere accesso all’API di Photoshop Services. Potrai accedere all&#39;API di Photoshop Services solo se ti trovi nel percorso di apprendimento **Firefly**, **Workfront Fusion**, **ALL** o se stai partecipando a un **workshop live di persona**. Puoi saltare questo passaggio se non sei su uno di questi percorsi di apprendimento.
 >
-Selezionare **+ Aggiungi al progetto**, quindi selezionare **API**.
+>Selezionare **+ Aggiungi al progetto**, quindi selezionare **API**.
 
 ![Archiviazione Azure](./images/ps2.png)
 
