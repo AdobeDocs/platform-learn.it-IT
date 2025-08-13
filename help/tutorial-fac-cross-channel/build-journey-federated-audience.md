@@ -6,9 +6,8 @@ description: In questo esercizio visivo, in un percorso Journey Optimizer viene 
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
-hide: true
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
+source-git-commit: 15619a8419f608da6a77745fabf72c356a2ac4b4
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 1%
@@ -71,7 +70,7 @@ Per continuare con la storia di SecurFinancial, in particolare il caso di utiliz
 
 11. Ora che è stata aggiunta la personalizzazione del nome, aggiungi `Hi, ` davanti alla variabile di personalizzazione. Quindi fai clic su **Salva**.
 
-    ![percorso-e-mail-salva](assets/journey-email-save.png)
+   ![percorso-e-mail-salva](assets/journey-email-save.png)
 
 12. Fai clic due volte sul pulsante **Indietro** per tornare all&#39;area di lavoro del percorso. Quindi nel menu **Azione: e-mail** a destra, fai clic su **Salva**.
 
