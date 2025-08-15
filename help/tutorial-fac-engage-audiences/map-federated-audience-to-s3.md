@@ -1,20 +1,20 @@
 ---
-title: Mappare un pubblico federato a S3
-seo-title: Map a federated audience to S3 | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+title: Mappare un pubblico federato a una destinazione S3
+seo-title: Map a Federated Audience to an S3 Destination | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Mappare un pubblico federato a S3
 description: In questo esercizio, mapperemo un pubblico federato a una destinazione Real-Time CDP a valle per supportare un’esperienza offline personalizzata.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
 
-# Mappare Federated Audience su S3 per sfruttare gli attributi di pubblico per l’arricchimento
+# Mappare un pubblico federato a una destinazione S3 per sfruttare gli attributi di pubblico per l’arricchimento
 
 Puoi sfruttare gli attributi del pubblico nel data warehouse per arricchire l’esperienza del pubblico nei flussi di lavoro di attivazione a valle che utilizzano le destinazioni RTCDP. Per SecurFinancial, questi attributi federati possono essere utilizzati per migliorare l’esperienza di personalizzazione offline del pubblico cliente. Di seguito, il pubblico federato è mappato su una destinazione Amazon S3 preconfigurata.
 
@@ -50,6 +50,6 @@ Puoi sfruttare gli attributi del pubblico nel data warehouse per arricchire l’
 
 >[**!SUMMARY**]
 >
-> Un pubblico è stato creato correttamente e attivato facilmente su una destinazione S3. L’interfaccia intuitiva consente ai team di marketing di creare e attivare rapidamente i tipi di pubblico senza spostare i dati sottostanti.
+> Un pubblico è stato creato correttamente e attivato facilmente su una destinazione S3. Qualsiasi altra soluzione può raccogliere questo pubblico e utilizzarlo immediatamente. L’interfaccia intuitiva consente ai team di marketing di creare e attivare rapidamente i tipi di pubblico senza spostare i dati sottostanti. I clienti che adottano questo approccio sono usciti dal vivo dopo circa un mese dal primo utilizzo.
 
 Ora [creeremo un percorso](build-journey-federated-audience.md).

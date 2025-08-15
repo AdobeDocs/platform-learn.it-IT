@@ -1,22 +1,22 @@
 ---
 title: Creare un pubblico federato
-seo-title: Create a federated audience | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+seo-title: Create a federated audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Creare un pubblico federato
-description: In questo esercizio configureremo una connessione tra Adobe Experience Platform e il tuo Data Warehouse aziendale per abilitare Federated Audience Composition.
+description: In questo esercizio, creiamo un pubblico dal data warehouse di Snowflake utilizzando Federated Audience Composition.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
 
 # Creare un pubblico federato
 
-Successivamente, ti guideremo attraverso la creazione di un pubblico dal nostro Data Warehouse utilizzando Federated Audience Composition. Il pubblico è composto da clienti SecurFinancial con un punteggio di credito pari o superiore a 650 e che attualmente non hanno un prestito nel loro portafoglio SecurFinancial.
+Successivamente, ti guideremo attraverso la creazione di un pubblico dal data warehouse di Snowflake utilizzando Federated Audience Composition. Il pubblico è composto da clienti SecurFinancial con un punteggio di credito pari o superiore a 650 e che attualmente non hanno un prestito nel loro portafoglio SecurFinancial.
 
 ## Passaggi
 
@@ -64,6 +64,6 @@ Successivamente, ti guideremo attraverso la creazione di un pubblico dal nostro 
 >
 > In questo esempio, le informazioni su prodotti e crediti sono state utilizzate per creare il nostro pubblico attraverso l’accesso diretto ai dati aziendali da Snowflake, senza crearne una copia in Adobe Experience Platform. Una volta che il sistema esterno elabora la query, solo l’e-mail pertinente, i prodotti correnti e i valori di nome vengono riportati nella definizione del pubblico per l’attivazione a valle. Questo vale per tutte le destinazioni supportate da RTCDP.
 
-Per ulteriori informazioni sulla composizione del pubblico, visita [Experience League](https://experienceleague.adobe.com/it/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Per ulteriori informazioni sulla composizione del pubblico, visita [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Ora che il nostro pubblico federato è stato creato, [lo mapperemo a un account S3](map-federated-audience-to-s3.md).
