@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Interagisci con il pubblico direttamente dal tuo data warehouse utilizzando la panoramica sulla Composizione Federata del Pubblico
 
-Federated Audience Composition (FAC) è un modulo per Adobe Real-Time Customer Data Platform (Real-Time CDP) e Adobe Journey Optimizer. È inoltre disponibile con Adobe Real-Time CDP Composable Audiences (una soluzione personalizzata per i clienti come CDP componibile). Consente agli architetti e ai data engineer di curare e attivare tipi di pubblico di alto valore direttamente dai [data warehouse aziendali supportati](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}, senza copiare o spostare i dati dei clienti in Adobe Experience Platform (AEP). Questo approccio CDP componibile (una soluzione personalizzata per i clienti) è in linea con le tendenze del settore, consentendo alle aziende di sfruttare la propria infrastruttura di dati per esperienze digitali personalizzate mantenendo al contempo la governance dei dati.
+Federated Audience Composition (FAC) è un modulo per Adobe Real-Time Customer Data Platform (Real-Time CDP) e Adobe Journey Optimizer. È inoltre disponibile con Adobe Real-Time CDP Composable Audiences (una soluzione personalizzata per i clienti come CDP componibile). Consente agli architetti e ai data engineer di curare e attivare tipi di pubblico di alto valore direttamente dai [data warehouse aziendali supportati](https://experienceleague.adobe.com/it/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}, senza copiare o spostare i dati dei clienti in Adobe Experience Platform (AEP). Questo approccio CDP componibile (una soluzione personalizzata per i clienti) è in linea con le tendenze del settore, consentendo alle aziende di sfruttare la propria infrastruttura di dati per esperienze digitali personalizzate mantenendo al contempo la governance dei dati.
 
 ## Contesto aziendale
 
@@ -51,10 +51,10 @@ Per eseguire attività simili nell’ambiente, assicurati di disporre di:
 
 - Accesso a un account Adobe Experience Platform fornito con Real-Time CDP o Journey Optimizer.
 - Autorizzazioni di amministratore di sistema o la possibilità di configurare le autorizzazioni.
-- Familiarità con i concetti di Adobe Experience Platform, ad esempio schemi, set di dati e tipi di pubblico (consigliato: completare la [Introduzione alla playlist di Adobe Experience Platform](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction?lang=en){target="_blank"} su Experience League).
-- Accesso a un data warehouse aziendale [supportato](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
+- Familiarità con i concetti di Adobe Experience Platform, ad esempio schemi, set di dati e tipi di pubblico (consigliato: completare la [Introduzione alla playlist di Adobe Experience Platform](https://experienceleague.adobe.com/it/playlists/experience-platform-introduction?lang=en){target="_blank"} su Experience League).
+- Accesso a un data warehouse aziendale [supportato](https://experienceleague.adobe.com/it/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 - Conoscenza di base di SQL per l&#39;esecuzione di query nei data warehouse.
 - **Ambienti sandbox**: crea una sandbox nell&#39;istanza della tua organizzazione per fare esperimenti in sicurezza senza influire sui dati di produzione.
-- **Connessione Data Warehouse**: questa esercitazione utilizza una connessione Snowflake, ma è possibile utilizzare qualsiasi [data warehouse supportato](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites).
+- **Connessione Data Warehouse**: questa esercitazione utilizza una connessione Snowflake, ma è possibile utilizzare qualsiasi [data warehouse supportato](https://experienceleague.adobe.com/it/docs/federated-audience-composition/using/start/access-prerequisites).
 
 Analizziamo innanzitutto l&#39;[architettura di alto livello e flusso per la composizione federata del pubblico](fac-architecture-and-flow.md).

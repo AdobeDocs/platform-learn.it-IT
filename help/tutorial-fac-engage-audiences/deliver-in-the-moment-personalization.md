@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Distribuisci personalizzazione immediata tramite Edge Network
 
-La Composizione federata del pubblico consente di arricchire i tipi di pubblico esistenti in Adobe Experience Platform (AEP) utilizzando i dati del pubblico composto che sono stati federati dal data warehouse aziendale. Questi dati non verranno mantenuti in Adobe Experience Platform, ma puoi utilizzare le funzionalità di [inoltro eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} per inviare questi dati direttamente al data warehouse.
+La Composizione federata del pubblico consente di arricchire i tipi di pubblico esistenti in Adobe Experience Platform (AEP) utilizzando i dati del pubblico composto che sono stati federati dal data warehouse aziendale. Questi dati non verranno mantenuti in Adobe Experience Platform, ma puoi utilizzare le funzionalità di [inoltro eventi](https://experienceleague.adobe.com/it/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} per inviare questi dati direttamente al data warehouse.
 
 In questo esercizio utilizziamo un pubblico federato interrogato con il punteggio di credito e l’attività di prestito per arricchire il pubblico comportamentale dei visitatori della pagina web della richiesta di prestito.
 
