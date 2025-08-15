@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '419'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ Per continuare con la storia di SecurFinancial, in particolare il caso di utiliz
 
 11. Ora che è stata aggiunta la personalizzazione del nome, aggiungi `Hi, ` davanti alla variabile di personalizzazione. Quindi fai clic su **Salva**.
 
-    ![percorso-e-mail-salva](assets/journey-email-save.png)
+   ![percorso-e-mail-salva](assets/journey-email-save.png)
 
 12. Fai clic due volte sul pulsante **Indietro** per tornare all&#39;area di lavoro del percorso. Quindi nel menu **Azione: e-mail** a destra, fai clic su **Salva**.
 
@@ -78,4 +78,4 @@ Per continuare con la storia di SecurFinancial, in particolare il caso di utiliz
 
 Abbiamo creato un percorso in AJO utilizzando un pubblico federato e attributi di arricchimento federati.
 
-Ora vedremo come [arricchire i tipi di pubblico esistenti](federated-audience-composition.md) in Experience Platform con dati federati provenienti dal data warehouse.
+Ora vedremo come [arricchire un pubblico](federated-audience-composition.md) in Experience Platform con i dati provenienti dal data warehouse.

@@ -7,7 +7,7 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-enrich-audience-with-federated-data.jpg
 exl-id: 3f6aa121-0dbd-4ad9-b136-d1455eed03ca
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 7%
@@ -34,4 +34,4 @@ In questo esercizio utilizzeremo il pubblico **SecurFinancial Loan Application P
 
 ![metodo-federato-1-2](assets/federated-method-1-2.png)
 
-Esamineremo un altro esempio di utilizzo dei dati federati per [supportare la personalizzazione &quot;nel momento&quot;](deliver-in-the-moment-personalization.md).
+Esamineremo un altro esempio di utilizzo dei dati federati per [distribuire la personalizzazione &quot;nel momento&quot;](deliver-in-the-moment-personalization.md).
