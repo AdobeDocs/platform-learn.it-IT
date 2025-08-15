@@ -4,9 +4,9 @@ description: Guida introduttiva ad Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: 53b252df80801e521ad3df2fe4c158039adfa365
+source-git-commit: 947ce5880c88fcf0211c5d16270dfcf2d6416131
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -41,10 +41,6 @@ Dovresti vedere questo. Selezionare **+ Aggiungi al progetto** e scegliere **API
 
 ![Nuova integrazione Adobe I/O](./images/adobe_io_access_api.png)
 
-Lo schermo dovrebbe essere simile al seguente.
-
-![Nuova integrazione Adobe I/O](./images/api1.png)
-
 Seleziona **Adobe Firefly Services** e scegli **Firefly - Firefly Services**, quindi seleziona **Next**.
 
 ![Nuova integrazione Adobe I/O](./images/api3.png)
@@ -67,7 +63,7 @@ Dovresti vedere questo.
 >
 >A seconda del percorso di apprendimento selezionato, potresti non avere accesso all’API di Photoshop Services. Potrai accedere all&#39;API di Photoshop Services solo se ti trovi nel percorso di apprendimento **Firefly**, **Workfront Fusion**, **ALL** o se stai partecipando a un **workshop live di persona**. Puoi saltare questo passaggio se non sei su uno di questi percorsi di apprendimento.
 >
->Selezionare **+ Aggiungi al progetto**, quindi selezionare **API**.
+Selezionare **+ Aggiungi al progetto**, quindi selezionare **API**.
 
 ![Archiviazione Azure](./images/ps2.png)
 
