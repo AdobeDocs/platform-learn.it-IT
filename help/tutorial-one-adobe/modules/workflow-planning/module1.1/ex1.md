@@ -4,9 +4,9 @@ description: Guida introduttiva a Workfront Planning
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 645d078b55b7126a692dedded71208e1f3c04971
+source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1234'
 ht-degree: 1%
 
 ---
@@ -85,7 +85,7 @@ Fare clic per aprire il tipo di record **Business Unit** appena creato.
 
 ![Pianificazione Workfront](./images/wfpl10.png)
 
-Verrà visualizzata una visualizzazione tabella vuota, poiché il nuovo tipo di record creato non dispone ancora di un campo definito.
+Verrà visualizzata una visualizzazione tabella vuota, poiché nel nuovo tipo di record creato non è ancora stato definito alcun record di Business Unit.
 
 ![Pianificazione Workfront](./images/wfpl11.png)
 
@@ -115,7 +115,49 @@ Fai clic su **Salva**.
 
 ![Pianificazione Workfront](./images/wfpl17.png)
 
-È stato creato un nuovo tipo di record e sono stati eliminati e creati campi. Torna alla schermata di panoramica di Workspace facendo clic sulla freccia nell’angolo in alto a sinistra.
+Fai clic sui tre punti **...** del primo record e seleziona **Visualizza**.
+
+![Pianificazione Workfront](./images/wfpla1.png)
+
+Imposta **Name** su `Consumer Services`.
+
+Imposta **Descrizione** su `Handles residential offerings like mobile plans, internet packages, and customer support.`.
+
+Imposta il **Business Unit Lead** su se stesso.
+
+Al termine, fare clic sulla freccia per tornare alla schermata precedente.
+
+![Pianificazione Workfront](./images/wfpla2.png)
+
+Fare clic sui tre punti **...** del secondo record e selezionare **Visualizza**.
+
+![Pianificazione Workfront](./images/wfpla3.png)
+
+Imposta **Name** su `Enterprise & Business Solutions`
+
+Imposta **Descrizione** su `Provides connectivity, cloud, and managed services to corporate clients and government entities.`
+
+Imposta il **Business Unit Lead** su se stesso.
+
+Al termine, fare clic sulla freccia per tornare alla schermata precedente.
+
+![Pianificazione Workfront](./images/wfpla4.png)
+
+Fare clic sui tre punti **...** del terzo record e selezionare **Visualizza**.
+
+![Pianificazione Workfront](./images/wfpla5.png)
+
+Imposta **Name** su `Sales & Marketing`
+
+Imposta **Descrizione** su `Drives customer acquisition, brand strategy, advertising, and market segmentation.`
+
+Imposta il **Business Unit Lead** su se stesso.
+
+Al termine, fare clic sulla freccia per tornare alla schermata precedente.
+
+![Pianificazione Workfront](./images/wfpla6.png)
+
+Dopo aver creato un nuovo tipo di record, sono stati eliminati e creati campi e sono state create 3 Business Unit. Torna alla schermata di panoramica di Workspace facendo clic sulla freccia nell’angolo in alto a sinistra.
 
 ![Pianificazione Workfront](./images/wfpl18.png)
 
@@ -129,7 +171,7 @@ Fare clic per aprire **Campagne**.
 
 ![Pianificazione Workfront](./images/wfpl20.png)
 
-Fai clic sull&#39;icona **+** per creare un nuovo campo. Seleziona **Nuova connessione**, quindi seleziona **Persone**.
+Fai clic sull&#39;icona **+** per creare un nuovo campo. Selezionare **Nuova connessione**, quindi selezionare **Business Unit**.
 
 ![Pianificazione Workfront](./images/wfpl21.png)
 
@@ -151,7 +193,7 @@ Nella schermata di panoramica delle campagne, fai clic sui tre punti **...**, qu
 
 ![Pianificazione Workfront](./images/wfpl25.png)
 
-Cambia il nome in `Campaign Request Form`. Fai clic su **Salva**.
+Cambia il nome in `Campaign Request Form`. Fai clic su **Crea**.
 
 ![Pianificazione Workfront](./images/wfpl26.png)
 
@@ -186,6 +228,8 @@ Imposta **Riepilogo campagna** su:
 ```
 The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber internet service—CitiSignal Fiber Max—to key residential markets. This campaign is designed to build awareness, drive sign-ups, and establish CitiSignal as the go-to provider for ultra-fast, reliable, and future-ready internet. The campaign will highlight the product’s benefits for remote professionals, online gamers, and smart home families, using persona-driven messaging across digital and physical channels.
 ```
+
+Compila gli altri campi come preferisci.
 
 Fai clic su **Invia richiesta**.
 
@@ -297,19 +341,15 @@ Dopo un paio di secondi, dovresti vedere una conferma del corretto completamento
 
 ![Pianificazione Workfront](./images/wfpl47.png)
 
-Per controllare il programma in Workfront, apri il menu e fai clic su **Portfolio**.
+Per controllare il programma in Workfront, scorrere verso destra e fare clic sul programma nella colonna **Programma connesso**.
 
 ![Pianificazione Workfront](./images/wfpl48.png)
 
-Apri il tuo portfolio che dovrebbe essere denominato `--aepUserLdap-- - Marketing`.
-
-![Pianificazione Workfront](./images/wfpl49.png)
-
-Vai a **Programmi** per visualizzare il programma appena creato dall&#39;automazione configurata.
+Dovresti quindi visualizzare il programma appena creato dall’automazione configurata.
 
 ![Pianificazione Workfront](./images/wfpl50.png)
 
-Passaggio successivo: [1.2.2 TBD](./ex1.md){target="_blank"}
+Passaggio successivo: [Riepilogo e vantaggi](./summary.md){target="_blank"}
 
 Torna a [Introduzione a Workfront Planning](./wfplanning.md){target="_blank"}
 
