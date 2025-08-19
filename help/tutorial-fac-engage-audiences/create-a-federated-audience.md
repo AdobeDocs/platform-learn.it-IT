@@ -7,7 +7,7 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
+source-git-commit: 41298ea7c79a5b540c546be93dcb14201ce27ce3
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%
@@ -60,10 +60,10 @@ Successivamente, ti guideremo attraverso la creazione di un pubblico dal data wa
 
 10. Fai clic su **Salva**, quindi su **Inizia** per eseguire la query della composizione.
 
->[**RIEPILOGO**]
->
-> In questo esempio, le informazioni su prodotti e crediti sono state utilizzate per creare il nostro pubblico attraverso l’accesso diretto ai dati aziendali da Snowflake, senza crearne una copia in Adobe Experience Platform. Una volta che il sistema esterno elabora la query, solo l’e-mail pertinente, i prodotti correnti e i valori di nome vengono riportati nella definizione del pubblico per l’attivazione a valle. Questo vale per tutte le destinazioni supportate da RTCDP.
+### RIEPILOGO
 
-Per ulteriori informazioni sulla composizione del pubblico, visita [Experience League](https://experienceleague.adobe.com/it/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+In questo esempio, le informazioni su prodotti e crediti sono state utilizzate per creare il nostro pubblico attraverso l’accesso diretto ai dati aziendali da Snowflake, senza crearne una copia in Adobe Experience Platform. Una volta che il sistema esterno elabora la query, solo l’e-mail pertinente, i prodotti correnti e i valori di nome vengono riportati nella definizione del pubblico per l’attivazione a valle. Questo vale per tutte le destinazioni supportate da RTCDP.
+
+Per ulteriori informazioni sulla composizione del pubblico, visita [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Una volta creato il pubblico federato, [lo mapperemo su una destinazione S3 in Experience Platform](map-federated-audience-to-s3.md).

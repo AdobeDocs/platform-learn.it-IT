@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
-source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
+source-git-commit: 41298ea7c79a5b540c546be93dcb14201ce27ce3
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -48,9 +48,9 @@ Puoi sfruttare gli attributi del pubblico nel data warehouse per arricchire l’
 
 8. Rivedi la mappatura del pubblico e premi **Fine**.
 
->[**!SUMMARY**]
->
-> Un pubblico è stato creato correttamente e attivato facilmente su una destinazione S3. Qualsiasi altra soluzione può raccogliere questo pubblico e utilizzarlo immediatamente. L’interfaccia intuitiva consente ai team di marketing di creare e attivare rapidamente i tipi di pubblico senza spostare i dati sottostanti. I clienti che adottano questo approccio sono andati LIVE con il loro primo caso d’uso in circa un mese.
+### RIEPILOGO
+
+Un pubblico è stato creato correttamente e attivato facilmente su una destinazione S3. Qualsiasi altra soluzione può raccogliere questo pubblico e utilizzarlo immediatamente. L’interfaccia intuitiva consente ai team di marketing di creare e attivare rapidamente i tipi di pubblico senza spostare i dati sottostanti. I clienti che adottano questo approccio sono andati LIVE con il loro primo caso d’uso in circa un mese.
 
 
 Ora [creeremo un percorso](build-journey-federated-audience.md).
