@@ -4,10 +4,10 @@ description: Gestione dei flussi di lavoro con Adobe Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 8cffcb71-63bd-41cb-b7cd-ab34a0c74499
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 2%
+source-wordcount: '225'
+ht-degree: 1%
 
 ---
 
@@ -15,11 +15,17 @@ ht-degree: 2%
 
 ## Finalità di apprendimento
 
-- Scopri come utilizzare Adobe Workfront in vari modi.
+Dopo aver completato questa esercitazione, acquisirai familiarità con i seguenti elementi:
+
+- Informazioni sulla gerarchia degli oggetti di Workfront, inclusi portafogli, programmi, progetti e attività
+- Crea un nuovo progetto con un modello su misura per una campagna di marketing.
+- Assegna attività alle risorse per ruolo e disponibilità.
+- Caricare un documento e richiedere l’approvazione
+- Inviare il documento approvato ad AEM Assets CS con integrazione incorporata
 
 ## Prerequisiti
 
-- Accesso a Workfront e Workfront Fusion
+- Accedi ad Adobe Workfront con una licenza Workfront standard/planner.
 
 ## Esercizi
 
