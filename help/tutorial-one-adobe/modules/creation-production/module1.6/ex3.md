@@ -5,14 +5,15 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 1dd8b487cbd16e438e9c006c34e458ddb82cce64
+exl-id: 6823e8a0-dde7-460a-a48a-6787e65e4104
+source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 1%
+source-wordcount: '832'
+ht-degree: 0%
 
 ---
 
-# 1.6.3 Creare l’app DAM esterna
+# 1.6.3 Creare e distribuire l’app DAM esterna
 
 ## 1.6.3.1 Scarica i file di app di esempio
 
@@ -50,7 +51,7 @@ Dopo aver effettuato correttamente l’accesso, dovresti visualizzarlo nel brows
 
 ![Est DAM](./images/extdam7.png)
 
-Il browser reindirizzerà alla finestra del terminale. Dovresti visualizzare un messaggio che indica che l&#39;accesso è stato eseguito correttamente **1&rbrace; e un token lungo restituito dal browser.**
+Il browser reindirizzerà alla finestra del terminale. Dovresti visualizzare un messaggio che indica che l&#39;accesso è stato eseguito correttamente **1} e un token lungo restituito dal browser.**
 
 ![Est DAM](./images/extdam8.png)
 
@@ -131,15 +132,15 @@ AWS_REGION=
 AWS_BUCKET_NAME=
 ```
 
-I campi **AWS_ACCESS_KEY_ID** e **AWS_SECRET_ACCESS_KEY** erano disponibili dopo la creazione dell&#39;utente IAM nell&#39;esercizio precedente. Vi è stato chiesto di annotarli, ora potete copiare i valori.
+I campi **`AWS_ACCESS_KEY_ID`** e **`AWS_SECRET_ACCESS_KEY`** erano disponibili dopo la creazione dell&#39;utente IAM nell&#39;esercizio precedente. Vi è stato chiesto di annotarli, ora potete copiare i valori.
 
 ![ETL](./images/cred1.png)
 
-Il campo **AWS_REGION** può essere ricavato dalla vista Home di AWS S3, accanto al nome del bucket. In questo esempio, la regione è **us-west-2**.
+Il campo **`AWS_REGION`** può essere preso dalla vista Home di AWS S3, accanto al nome del bucket. In questo esempio, la regione è **us-west-2**.
 
 ![ETL](./images/bucket2.png)
 
-Il campo **AWS_BUCKET_NAME** deve essere `--aepUserLdap---gspem-dam`.
+Il campo **`AWS_BUCKET_NAME`** deve essere `--aepUserLdap---gspem-dam`.
 
 Queste informazioni ti consentono di aggiornare i valori di ciascuna di queste variabili.
 
@@ -169,9 +170,53 @@ Nella finestra del terminale, eseguire il comando `aio app run`. Dovrebbe vedere
 
 ![Est DAM](./images/extdam24.png)
 
+Ora hai confermato che l’app è in esecuzione. Il passaggio successivo è quello di distribuirlo.
+
+Innanzitutto, premi **CTRL+C** per interrompere l&#39;esecuzione dell&#39;app. Immettere quindi il comando `aio app deploy`. Questo comando distribuirà il codice in Adobe IO.
+
+Di conseguenza, riceverai un URL simile per accedere all’applicazione distribuita:
+
+`https://133309-201burgundyguan.adobeio-static.net/index.html`
+
+![Est DAM](./images/extdam27.png)
+
+A scopo di test, è ora possibile utilizzare tale URL come parametro della stringa di query aggiungendo `?ext=` come prefisso all&#39;URL precedente. Questo determina il parametro della stringa di query:
+
+`?ext=https://133309-201burgundyguan.adobeio-static.net/index.html`
+
+Vai a [https://experience.adobe.com/genstudio/create](https://experience.adobe.com/genstudio/create).
+
+![Est DAM](./images/extdam25.png)
+
+Quindi, aggiungi il parametro della stringa di query immediatamente prima del **#**. Il nuovo URL deve essere simile al seguente:
+
+`https://experience.adobe.com/?ext=https://133309-201burgundyguan.adobeio-static.net/index.html#/@experienceplatform/genstudio/create`
+
+La pagina verrà caricata come di consueto. Fai clic su **Banner** per iniziare a creare un nuovo banner.
+
+![Est DAM](./images/extdam26.png)
+
+Seleziona un modello e fai clic su **Usa**.
+
+![Est DAM](./images/extdam28.png)
+
+Fai clic su **Seleziona dal contenuto**.
+
+![Est DAM](./images/extdam29.png)
+
+Dovresti quindi essere in grado di selezionare il DAM esterno dall’elenco a discesa.
+
+![Est DAM](./images/extdam30.png)
+
+Quando apporti modifiche al codice nel computer locale, dovrai ridistribuire l’app. Quando ridistribuisci, utilizza questo comando del terminale:
+
+`aio app deploy --force-build --force-deploy`
+
+L&#39;app è ora pronta per essere pubblicata.
+
 ## Passaggi successivi
 
-Vai a [Distribuisci il codice e pubblica l&#39;app privatamente](./ex4.md){target="_blank"}
+Vai a [Pubblica la tua app privatamente](./ex4.md){target="_blank"}
 
 Torna a [GenStudio for Performance Marketing - Estensibilità](./genstudioext.md){target="_blank"}
 
