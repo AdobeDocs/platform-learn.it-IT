@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Scopri i casi d’uso supportati dalla collaborazione da marchio a marchio e le funzioni specifiche introdotte per supportare questi flussi di lavoro.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470936/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470944/?learn=on&enablevpops&captions=ita)
