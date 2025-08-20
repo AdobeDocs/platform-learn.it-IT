@@ -50,7 +50,7 @@ Dopo aver effettuato correttamente l’accesso, dovresti visualizzarlo nel brows
 
 ![Est DAM](./images/extdam7.png)
 
-Il browser reindirizzerà alla finestra del terminale. Dovresti visualizzare un messaggio che indica che l&#39;accesso è stato eseguito correttamente **1} e un token lungo restituito dal browser.**
+Il browser reindirizzerà alla finestra del terminale. Dovresti visualizzare un messaggio che indica che l&#39;accesso è stato eseguito correttamente **1&rbrace; e un token lungo restituito dal browser.**
 
 ![Est DAM](./images/extdam8.png)
 
