@@ -3,9 +3,9 @@ title: Panoramica - Tutorial tecnico completo - Un Adobe
 description: Tutorial tecnico completo - Un Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
+source-git-commit: 8e0356921360017fa00d59fb323839b6ac1cd2c1
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1207'
 ht-degree: 2%
 
 ---
@@ -90,11 +90,19 @@ In questo modulo utilizzerai Adobe Express per creare immagini e video e condivi
 
 In questo modulo utilizzerai Adobe Frame.io in combinazione con Adobe Premiere Pro per collaborare e rivedere immagini e video.
 
+[1.6 GenStudio for Performance Marketing - Estensibilità](./modules/creation-production/module1.6/genstudioext.md){target="_blank"}
+
+In questo modulo, verrà creata un’applicazione personalizzata per estendere le funzionalità in GenStudio for Performance Marketing, utilizzando Adobe IO e App Builder.
+
 ### &#x200B;3. Gestione degli attivi
 
 [1.1 Adobe Experience Manager Cloud Service e Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
-In questo modulo di base, configurerai il programma Adobe Experience Manager Cloud Service, il sito e l’archivio Assets.
+In questo modulo configurerai il programma Adobe Experience Manager Cloud Service, il sito e l’archivio Assets.
+
+[1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
+
+In questo modulo esplorerai AEM Assets.
 
 ### &#x200B;4. Consegna e attivazione
 

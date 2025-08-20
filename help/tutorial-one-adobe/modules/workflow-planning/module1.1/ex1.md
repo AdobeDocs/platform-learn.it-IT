@@ -4,16 +4,20 @@ description: Guida introduttiva a Workfront Planning
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
+source-git-commit: bdb5b2c2ae1cb1380c69bc1ef2d12e7d8b6ea05d
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1258'
 ht-degree: 1%
 
 ---
 
 # 1.1.1 Guida introduttiva a Workfront Planning
 
-## Terminologia di Workfront Planning 1.1.1.1
+## 1.1.1.1 resoconto della campagna CitiSignal
+
+Per comprendere il contesto di CitiSignal e i risultati che si sta cercando di ottenere, scarica e leggi il resoconto della campagna di CitiSignal qui: [CitiSignal-Fiber-Launch-Winter-2026.pdf](./../../../assets/brief/CitiSignal-Fiber-Launch-Winter-2026.pdf).
+
+## Terminologia di Workfront Planning 1.1.1.2
 
 Di seguito sono riportati gli oggetti e i concetti principali di Workfront Planning:
 
@@ -31,7 +35,7 @@ Di seguito sono riportati gli oggetti e i concetti principali di Workfront Plann
 
 Ora è possibile iniziare a creare personalmente alcuni di questi oggetti.
 
-## 1.1.1.2 Workspace, tipo di record, campi
+## 1.1.1.3 Workspace, tipo di record, campi
 
 Vai a [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Fare clic per aprire **Workfront**.
 
@@ -61,7 +65,7 @@ Dovresti avere questo.
 
 ![Pianificazione Workfront](./images/wfpl7a.png)
 
-## 1.1.1.3 tassonomie: tipo di record e campi
+## 1.1.1.4 tassonomie: tipo di record e campi
 
 In **Tassonomie**, fare clic su **+ Aggiungi tipo di record**, quindi selezionare **Aggiungi manualmente**.
 
@@ -165,7 +169,7 @@ Dovresti vedere questo.
 
 ![Pianificazione Workfront](./images/wfpl19.png)
 
-## 1.1.1.4 tipi di record operativi: Campi
+## 1.1.1.5 tipi di record operativi: Campi
 
 Fare clic per aprire **Campagne**.
 
@@ -187,7 +191,7 @@ Il nuovo campo viene quindi visualizzato nella vista a tabella.
 
 ![Pianificazione Workfront](./images/wfpl24.png)
 
-## 1.1.1.5 Crea un modulo di richiesta
+## 1.1.1.6 Crea un modulo di richiesta
 
 Nella schermata di panoramica delle campagne, fai clic sui tre punti **...**, quindi seleziona **Crea modulo di richiesta**.
 
@@ -209,7 +213,7 @@ Fai clic sulla freccia nell’angolo in alto a sinistra per tornare alla scherma
 
 ![Pianificazione Workfront](./images/wfpl29.png)
 
-## 1.1.1.6 Inviare un nuovo record utilizzando il modulo di richiesta
+## 1.1.1.7 Inviare un nuovo record utilizzando il modulo di richiesta
 
 Nella schermata di panoramica delle campagne, fare clic su **+ Nuovo record**.
 
@@ -243,7 +247,7 @@ Dovresti quindi visualizzare la campagna appena creata nella panoramica.
 
 ![Pianificazione Workfront](./images/wfpl35.png)
 
-## 1.1.1.7 Crea Portfolio e modulo personalizzato
+## 1.1.1.8 Crea Portfolio e modulo personalizzato
 
 Nel passaggio successivo verrà creata un&#39;automazione che utilizzerà le informazioni della campagna create in Workfront Planning e che utilizzerà tali informazioni in Workfront per creare un programma. Prima di poter creare l’automazione, in Workfront è necessario configurare due elementi: un portfolio e un modulo personalizzato.
 
