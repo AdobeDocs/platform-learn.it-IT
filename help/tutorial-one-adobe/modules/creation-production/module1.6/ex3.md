@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6823e8a0-dde7-460a-a48a-6787e65e4104
-source-git-commit: 1f9a868c5e4ef4aa0e09d7f5d73a951006ee6c5a
+source-git-commit: 8219f3bd33448f90b87bf9ccb15738f1294e5965
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '912'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Dopo aver effettuato correttamente l’accesso, dovresti visualizzarlo nel brows
 
 ![Est DAM](./images/extdam7.png)
 
-Il browser reindirizzerà alla finestra del terminale. Dovresti visualizzare un messaggio che indica che l&#39;accesso è stato eseguito correttamente **1&rbrace; e un token lungo restituito dal browser.**
+Il browser reindirizzerà alla finestra del terminale. Dovresti visualizzare un messaggio che indica che l&#39;accesso è stato eseguito correttamente **1} e un token lungo restituito dal browser.**
 
 ![Est DAM](./images/extdam8.png)
 
@@ -129,7 +129,7 @@ AWS_REGION=us-west-2
 AWS_BUCKET_NAME=--aepUserLdap---gspem-dam
 ```
 
-Incollare il testo in entrambi i file, `.env.dev` e `.env.prod`. Non dimenticare di salvare le modifiche.
+Incollare il testo nel file `.env`. Non dimenticare di salvare le modifiche.
 
 ![Est DAM](./images/extdam21.png)
 
@@ -152,6 +152,10 @@ Non dimenticare di salvare le modifiche.
 ## 1.6.3.5 Esegui l&#39;app DAM esterna
 
 Nella finestra del terminale, eseguire il comando `aio app run`. Dovrebbe vedere questo dopo 1-2 minuti.
+
+>[!NOTE]
+>
+>Quando esegui `aio app run` per la prima volta, potresti essere reindirizzato al browser per accettare un nuovo certificato. In questo caso, accetta il certificato e potrai continuare con i passaggi seguenti.
 
 ![Est DAM](./images/extdam24.png)
 

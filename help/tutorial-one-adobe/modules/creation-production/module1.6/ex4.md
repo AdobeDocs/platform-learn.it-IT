@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 5a77ccdd-4000-4fb7-b696-dec40d01b41b
-source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
+source-git-commit: 8219f3bd33448f90b87bf9ccb15738f1294e5965
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '351'
 ht-degree: 1%
 
 ---
@@ -58,6 +58,10 @@ Fai clic su **Invia**.
 ![Estendibilità GSPeM](./images/gspemextpub6.png)
 
 ## 1.6.4.2 Approva la tua app
+
+>[!IMPORTANT]
+>
+>Questo passaggio può essere eseguito solo dagli amministratori di sistema in Adobe Admin Console. Se non sei un amministratore di sistema, non potrai eseguirlo. Contatta l&#39;amministratore di sistema per richiedere l&#39;approvazione dell&#39;app.
 
 Quando uno sviluppatore invia una nuova app per la pubblicazione, gli amministratori di sistema dell’organizzazione ne vengono informati e viene richiesto di rivedere e approvare l’app.
 
