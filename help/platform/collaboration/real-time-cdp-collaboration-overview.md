@@ -21,9 +21,9 @@ Ad Adobe Real-Time CDP Collaboration, puoi scoprire, attivare e misurare i tipi 
 
 Di seguito sono riportati i video e altre risorse utili per imparare a configurare, utilizzare e ottenere valore da Real-Time CDP Collaboration. Verranno aggiunte ulteriori risorse a questa pagina e a questo sito, quindi controlla spesso. Buon apprendimento!
 
-Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/home){target="_blank"} di Real-Time CDP Collaboration.
+Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/it/docs/real-time-cdp-collaboration/using/home){target="_blank"} di Real-Time CDP Collaboration.
 
-[![ExL LIVE 10 aprile 2025](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
+[![ExL LIVE 10 aprile 2025](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
 
 ## Introduzione
 
