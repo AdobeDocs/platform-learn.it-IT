@@ -25,5 +25,5 @@ Scopri in che modo la destinazione [!DNL Marketo Engage] consente la sincronizza
 
 Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/adobe/marketo-engage-connection).
 
->[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440166?learn=on&enablevpops&captions=ita)
 
