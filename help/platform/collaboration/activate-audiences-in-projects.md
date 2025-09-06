@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Scopri come attivare tipi di pubblico per i partner di collaborazione nei progetti Real-Time CDP Collaboration. Per ulteriori informazioni, visita la [documentazione](https://experienceleague.adobe.com/it/docs/real-time-cdp-collaboration/using/collaborate/activate){target="_blank"}.
 
->[!VIDEO](https://video.tv.adobe.com/v/3471677/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3471686/?learn=on&enablevpops&captions=ita)

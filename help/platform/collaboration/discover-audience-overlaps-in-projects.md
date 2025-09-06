@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Scopri come confrontare le sovrapposizioni di pubblico all’interno dei progetti Real-Time CDP Collaboration. Per ulteriori informazioni, visita la [documentazione](https://experienceleague.adobe.com/it/docs/real-time-cdp-collaboration/using/collaborate/discover){target="_blank"}.
 
->[!VIDEO](https://video.tv.adobe.com/v/3471675/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3471697/?learn=on&enablevpops&captions=ita)
