@@ -3,7 +3,7 @@ title: Raccolta dei dati del ciclo di vita con Platform Mobile SDK
 description: Scopri come raccogliere i dati del ciclo di vita in un’app mobile.
 jira: KT-14630
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 7e7c7600457b361c2ba9616c067b9fe33fd70c5c
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 2%
@@ -86,7 +86,7 @@ Ora puoi aggiornare il progetto per registrare gli eventi del ciclo di vita.
 
 1. Quando l&#39;app entra in background, si desidera mettere in pausa la raccolta dati del ciclo di vita dalla funzione `override fun onActivityPaused` dell&#39;app. Aggiungi questo codice a `override fun onActivityPaused(activity: Activity)`:
 
-   ```swift
+   ```kotlin
    // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
    ```
