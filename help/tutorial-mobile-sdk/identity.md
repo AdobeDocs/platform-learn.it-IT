@@ -4,9 +4,9 @@ description: Scopri come raccogliere i dati di identità in un’app mobile.
 feature: Mobile SDK,Identities
 jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '960'
 ht-degree: 1%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 1%
 
 Scopri come raccogliere i dati di identità in un’app mobile.
 
-Il servizio Adobe Experience Platform Identity consente di ottenere una visione migliore dei clienti e dei loro comportamenti collegando le identità tra dispositivi e sistemi, consentendo di offrire esperienze digitali personali e di impatto in tempo reale. I campi di identità e gli spazi dei nomi sono l’associazione che unisce diverse origini di dati per creare il profilo cliente in tempo reale a 360 gradi.
+Il servizio Adobe Experience Platform Identity consente di avere una visione migliore dei clienti e dei loro comportamenti. I servizi uniscono le identità tra dispositivi e sistemi, consentendo di fornire esperienze digitali personali e di impatto in tempo reale. I campi di identità e gli spazi dei nomi sono l’associazione che unisce diverse origini di dati per creare il profilo cliente in tempo reale a 360 gradi.
 
-Ulteriori informazioni sull&#39;[estensione Identity](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) e sul [servizio Identity](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=it) sono disponibili nella documentazione.
+Ulteriori informazioni sull&#39;[estensione Identity](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) e sul [servizio Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) sono disponibili nella documentazione.
 
 ## Prerequisiti
 
@@ -35,11 +35,11 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 ## Impostare uno spazio dei nomi di identità personalizzato
 
-Gli spazi dei nomi delle identità sono componenti di [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=it) che fungono da indicatori del contesto a cui si riferisce un&#39;identità. Ad esempio, distinguono un valore di `name@email.com` come indirizzo e-mail o `443522` come ID CRM numerico.
+Gli spazi dei nomi delle identità sono componenti di [Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) che fungono da indicatori del contesto a cui si riferisce un&#39;identità. Ad esempio, distinguono un valore di `name@email.com` come indirizzo e-mail o `443522` come ID CRM numerico.
 
 >[!NOTE]
 >
->Quando l’app viene installata, Mobile SDK genera un’identità univoca nel proprio spazio dei nomi, denominata Experience Cloud ID (ECID). Questo ECID viene memorizzato nella memoria persistente del dispositivo mobile e inviato con ogni hit. L’ECID viene rimosso quando l’utente disinstalla l’app o imposta lo stato di privacy globale del SDK mobile su opt-out. Nell’app Luma di esempio, devi rimuovere e reinstallare l’app per creare un nuovo profilo con il proprio ECID univoco.
+>Quando l’app viene installata, Mobile SDK genera un’identità univoca nel proprio spazio dei nomi, denominata Experience Cloud ID (ECID). Questo ECID viene memorizzato nella memoria persistente del dispositivo mobile e inviato con ogni hit. L’ECID viene rimosso quando l’utente disinstalla l’app o imposta lo stato di privacy globale di Mobile SDK in modo che rinunci. Nell’app Luma di esempio, devi rimuovere e reinstallare l’app per creare un nuovo profilo con il proprio ECID univoco.
 
 
 Per creare un nuovo spazio dei nomi dell’identità:
@@ -50,7 +50,7 @@ Per creare un nuovo spazio dei nomi dell’identità:
 1. Seleziona **[!UICONTROL ID multi-dispositivo]**.
 1. Seleziona **[!UICONTROL Crea]**.
 
-   ![crea spazio dei nomi identità](assets/identity-create.png)
+   ![crea spazio dei nomi identità](assets/identity-create.png){zoomable="yes"}
 
 
 
@@ -58,6 +58,10 @@ Per creare un nuovo spazio dei nomi dell’identità:
 ## Aggiorna identità
 
 Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzata (ID CRM Luma) quando l’utente accede all’app.
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. Passa a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** nel navigatore progetti Xcode e trova l&#39;implementazione della funzione `func updateIdentities(emailAddress: String, crmId: String)`. Aggiungi il codice seguente alla funzione.
 
@@ -109,6 +113,65 @@ Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzat
    ```
 
 
+>[!TAB Android]
+
+1. Passa a **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** nel navigatore di Android Studio e trova l&#39;implementazione della funzione `fun updateIdentities(emailAddress: String, crmId: String) `. Aggiungi il codice seguente alla funzione.
+
+   ```kotlin
+   // Set up identity map, add identities to map and update identities
+   val identityMap = IdentityMap()
+   
+   val emailIdentity = IdentityItem(emailAddress, AuthenticatedState.AUTHENTICATED, true)
+   val crmIdentity = IdentityItem(crmId, AuthenticatedState.AUTHENTICATED, true)
+   identityMap.addItem(emailIdentity, "Email")
+   identityMap.addItem(crmIdentity, "lumaCRMId")
+   
+   Identity.updateIdentities(identityMap)
+   ```
+
+   Questo codice:
+
+   1. Crea un oggetto `IdentityMap` vuoto.
+
+      ```kotlin
+      val identityMap = IdentityMap()
+      ```
+
+   1. Imposta `IdentityItem` oggetti per l&#39;ID di posta elettronica e CRM.
+
+      ```kotlin
+      val emailIdentity = IdentityItem(emailAddress, AuthenticatedState.AUTHENTICATED, true)
+      val crmIdentity = IdentityItem(crmId, AuthenticatedState.AUTHENTICATED, true)
+      ```
+
+   1. Aggiunge questi oggetti `IdentityItem` all&#39;oggetto `IdentityMap`.
+
+      ```kotlin
+      identityMap.addItem(emailIdentity, "Email")
+      identityMap.addItem(crmIdentity, "lumaCRMId")
+      ```
+
+   1. Invia l&#39;oggetto `IdentityItem` come parte della chiamata API `Identity.updateIdentities` ad Edge Network.
+
+      ```kotlin
+      Identity.updateIdentities(identityMap)
+      ```
+
+1. Passa a **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL visualizzazioni]** > **[!UICONTROL LoginSheet.kt]** nel navigatore di Android Studio e trova il codice da eseguire quando selezioni il pulsante **[!UICONTROL Login]**. Aggiungi il seguente codice:
+
+   ```kotlin
+   // Update identities
+   MobileSDK.shared.updateIdentities(
+      MobileSDK.shared.currentEmailId.value,
+      MobileSDK.shared.currentCRMId.value
+   )                             
+   ```
+
+
+>[!ENDTABS]
+
+
+
 >[!NOTE]
 >
 >È possibile inviare più identità in una singola chiamata `updateIdentities`. Puoi anche modificare le identità inviate in precedenza.
@@ -116,7 +179,12 @@ Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzat
 
 ## Rimuovere un’identità
 
-È possibile utilizzare l&#39;API [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) per rimuovere l&#39;identità dalla mappa delle identità lato client archiviata. L’estensione Identity non invia più l’identificatore ad Edge Network. L’utilizzo di questa API non rimuove l’identificatore dal grafico delle identità lato server. Per ulteriori informazioni sui grafici delle identità, vedere [Visualizza grafici delle identità](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=it).
+È possibile utilizzare l&#39;API [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) per rimuovere l&#39;identità dalla mappa delle identità lato client archiviata. L’estensione Identity non invia più l’identificatore ad Edge Network. L’utilizzo di questa API non rimuove l’identificatore dal grafico delle identità lato server. Per ulteriori informazioni sui grafici delle identità, vedere [Visualizza grafici delle identità](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/view-identity-graphs).
+
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. Passa a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** nel navigatore progetti Xcode e aggiungi il seguente codice alla funzione `func removeIdentities(emailAddress: String, crmId: String)`:
 
@@ -135,6 +203,30 @@ Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzat
    MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                  
    ```
 
+>[!TAB Android]
+
+1. Passa a **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** nel navigatore di Android Studio e aggiungi il seguente codice alla funzione `fun removeIdentities(emailAddress: String, crmId: String)`:
+
+   ```kotlin
+   // Remove identities and reset email and CRM Id to their defaults
+   Identity.removeIdentity(IdentityItem(emailAddress), "Email")
+   Identity.removeIdentity(IdentityItem(crmId), "lumaCRMId")
+   currentEmailId.value = "testUser@gmail.com"
+   currentCRMId.value = "112ca06ed53d3db37e4cea49cc45b71e"
+   ```
+
+1.Passa a **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL visualizzazioni]** > **[!UICONTROL FoglioAccesso.kt]** nel navigatore di Android Studio e trova il codice da eseguire quando selezioni il pulsante **[!UICONTROL Disconnetti]**. Aggiungi il seguente codice:
+
+```kotlin
+// Remove identities
+MobileSDK.shared.removeIdentities(
+   MobileSDK.shared.currentEmailId.value,
+   MobileSDK.shared.currentCRMId.value
+)              
+```
+
+
+>[!ENDTABS]
 
 ## Convalidare con Assurance
 
@@ -143,33 +235,55 @@ Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzat
    1. Seleziona la scheda **[!UICONTROL Home]** e sposta l&#39;icona Assurance a sinistra.
    1. Seleziona la Icona <img src="assets/login.png" width="15" /> in alto a destra.
 
-      <img src="./assets/identity1.png" width="300">
+>[!BEGINTABS]
 
-   1. Specifica un indirizzo e-mail e un ID del sistema di gestione delle relazioni con i clienti, oppure
-   1. Seleziona <img src="assets/insert.png" width="15" /> per generare in modo casuale **[!UICONTROL E-mail]** e **[!UICONTROL ID CRM]**.
-   1. Seleziona **[!UICONTROL Accesso]**.
+>[!TAB iOS]
 
-      <img src="./assets/identity2.png" width="300">
+<img src="./assets/identity1.png" width="300">
+
+>[!TAB Android]
+
+<img src="./assets/identity1-android.png" width="300">
+
+>[!ENDTABS]
+
+1. Specifica un indirizzo e-mail e un ID del sistema di gestione delle relazioni con i clienti, oppure
+1. Seleziona <img src="assets/insert.png" width="15" /> (iOS) o **[!UICONTROL Genera e-mail casuale]** (Android) per generare in modo casuale **[!UICONTROL E-mail]** e **[!UICONTROL ID CRM]**.
+1. Seleziona **[!UICONTROL Accesso]**.
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
+<img src="./assets/identity2.png" width="300">
+
+>[!TAB Android]
+
+<img src="./assets/identity2-android.png" width="300">
 
 
-1. Cerca nell&#39;interfaccia Web di Assurance l&#39;evento **[!UICONTROL Identità aggiornamento identità di Edge]** dal fornitore **[!UICONTROL com.adobe.griffon.mobile]**.
+>[!ENDTABS]
+
+Torna a Assurance:
+
+1. Controlla l&#39;interfaccia Web di Assurance per l&#39;evento **[!UICONTROL Edge Identity Update Identities]** dal fornitore **[!UICONTROL com.adobe.griffon.mobile]**.
 1. Selezionare l&#39;evento e rivedere i dati nell&#39;oggetto **[!UICONTROL ACPExtensionEventData]**. Dovresti visualizzare le identità aggiornate.
-   ![convalida aggiornamento identità](assets/identity-validate-assurance.png)
+   ![convalida aggiornamento identità](assets/identity-validate-assurance.png){zoomable="yes"}
 
 ## Convalida con grafico delle identità
 
-Dopo aver completato i passaggi della [lezione di Experience Platform](platform.md), puoi confermare l&#39;acquisizione delle identità nel visualizzatore del grafico delle identità di Platform:
+Dopo aver completato i passaggi della lezione [Experience Platform](platform.md), puoi confermare l&#39;acquisizione delle identità nel visualizzatore del grafo delle identità di Experience Platform:
 
 1. Seleziona **[!UICONTROL Identità]** nell&#39;interfaccia utente di Data Collection.
 1. Seleziona **[!UICONTROL Grafico identità]** dalla barra superiore.
 1. Immetti `Luma CRM ID` come **[!UICONTROL Spazio dei nomi identità]** e l&#39;ID del sistema di gestione delle relazioni con i clienti (ad esempio `24e620e255734d8489820e74f357b5c8`) come **[!UICONTROL Valore identità]**.
 1. Sono elencate le **[!UICONTROL identità]**.
 
-   ![convalida grafo identità](assets/identity-validate-graph.png)
+   ![convalida grafo identità](assets/identity-validate-graph.png){zoomable="yes"}
 
 >[!INFO]
 >
->L’app non contiene codice per reimpostare l’ECID, il che significa che puoi reimpostare l’ECID (e creare effettivamente un nuovo profilo con un nuovo ECID) solo tramite una disinstallazione e una reinstallazione dell’applicazione. Per implementare il ripristino degli identificatori, vedere le chiamate API [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) e [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities). Tieni presente, tuttavia, che quando utilizzi un identificatore di notifica push (vedi [Invio di notifiche push](journey-optimizer-push.md)), tale identificatore diventa un altro identificatore di profilo &quot;permanente&quot; sul dispositivo.
+>L’app non contiene codice per reimpostare l’ECID. Puoi reimpostare l’ECID (e creare effettivamente un nuovo profilo con un nuovo ECID) solo tramite una disinstallazione e una reinstallazione dell’applicazione. Per implementare il ripristino degli identificatori, vedere le chiamate API [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) e [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities). Tieni presente che quando utilizzi un identificatore di notifica push (vedi [Invio di notifiche push](journey-optimizer-push.md)), tale identificatore diventa un altro identificatore di profilo &quot;permanente&quot; sul dispositivo.
 
 
 >[!SUCCESS]

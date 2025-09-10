@@ -1,12 +1,12 @@
 ---
-title: Configurare uno stream di dati per le implementazioni dell’SDK di Platform Mobile
+title: Configurare uno stream di dati per le implementazioni di Platform Mobile SDK
 description: Scopri come creare uno stream di dati in Experience Platform.
 feature: Mobile SDK,Datastreams
 jira: KT-14625
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '425'
 ht-degree: 6%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 6%
 
 Scopri come creare uno stream di dati in Experience Platform.
 
-Un flusso di dati è una configurazione lato server nell’Edge Network di Platform. Lo stream di dati assicura che i dati in arrivo nell’Edge Network della piattaforma vengano instradati in modo appropriato alle applicazioni e ai servizi Adobe Experience Cloud. Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=it) o questo [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=it).
+Un flusso di dati è una configurazione lato server in Platform Edge Network. Lo stream di dati assicura che i dati in arrivo in Platform Edge Network vengano instradati in modo appropriato alle applicazioni e ai servizi Adobe Experience Cloud. Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) o questo [video](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/configure-datastreams).
 
-![Architettura](assets/architecture.png)
+![Architettura](assets/architecture.png){zoomable="yes"}
 
 ## Prerequisiti
 
-Per creare un flusso di dati, è necessario eseguire il provisioning della tua organizzazione per questa funzionalità nell&#39;interfaccia di raccolta dati (precedentemente [!UICONTROL Launch]) e disporre delle autorizzazioni utente per gestire e visualizzare i flussi di dati.
+Per creare uno stream di dati, è necessario eseguire il provisioning della tua organizzazione per questa funzionalità nell&#39;interfaccia di raccolta dati (precedentemente [!UICONTROL Launch]) e disporre delle autorizzazioni utente per gestire e visualizzare gli stream di dati.
 
 ## Obiettivi di apprendimento
 
@@ -39,7 +39,7 @@ In questa lezione verranno fornite le seguenti informazioni:
 1. Seleziona **[!UICONTROL Datastreams]** nella barra a sinistra.
 1. Seleziona **[!UICONTROL Nuovo flusso di dati]**.
 
-   ![home datastreams](assets/datastream-new.png)
+   ![home datastreams](assets/datastream-new.png){zoomable="yes"}
 
 1. Fornisci un **[!UICONTROL Nome]**, ad esempio `Luma Mobile App` e una **[!UICONTROL Descrizione]**, ad esempio `Datastream for Luma Mobile App`.
 
@@ -50,12 +50,12 @@ In questa lezione verranno fornite le seguenti informazioni:
 1. Selezionare lo schema creato nella lezione precedente dall&#39;elenco **Schema evento**.
 1. Seleziona **[!UICONTROL Salva]**.
 
-   ![nuovi flussi di dati](assets/datastream-name.png)
+   ![nuovi flussi di dati](assets/datastream-name.png){zoomable="yes"}
 
 
 ## Aggiungi servizi
 
-Quando segui le lezioni (facoltative) [Analytics](analytics.md) e [Experience Platform](platform.md) in questa esercitazione, aggiungi servizi allo stream di dati in modo che i dati inviati all&#39;Edge Network Platform vengano inoltrati a queste applicazioni.
+Quando segui le lezioni (facoltative) [Analytics](analytics.md) e [Experience Platform](platform.md) in questa esercitazione, aggiungi servizi allo stream di dati in modo che i dati inviati a Platform Edge Network vengano inoltrati a queste applicazioni.
 
 <!--
 
@@ -71,7 +71,7 @@ Quando segui le lezioni (facoltative) [Analytics](analytics.md) e [Experience Pl
 
 1. Select **[!UICONTROL Save]**.
 
-   ![Add Adobe Analytics as datastream service](assets/datastream-service-aa.png)
+   ![Add Adobe Analytics as datastream service](assets/datastream-service-aa.png){zoomable="yes"}
 
 
 ### Adobe Experience Platform
@@ -92,24 +92,24 @@ You might also want to enable the Adobe Experience Platform service.
 
 1. Select **[!UICONTROL Save]**.
 
-   ![Add Adobe Experience Platform as a datastream service](assets/datastream-service-aep.png)
+   ![Add Adobe Experience Platform as a datastream service](assets/datastream-service-aep.png){zoomable="yes"}
 1. The final configuration should look something like this.
    
-   ![datastream settings](assets/datastream-settings.png)
+   ![datastream settings](assets/datastream-settings.png){zoomable="yes"}
 
 -->
 
 
 >[!NOTE]
 >
->L’abilitazione di ciascuno dei servizi utilizzati dalla tua organizzazione garantisce che i dati raccolti nell’app mobile possano essere utilizzati ovunque. Per ulteriori informazioni sulle impostazioni dello stream di dati, consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=it).
+>L’abilitazione di ciascuno dei servizi utilizzati dalla tua organizzazione garantisce che i dati raccolti nell’app mobile possano essere utilizzati ovunque. Per ulteriori informazioni, vedere [impostazioni dello stream di dati](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview).
 
-Quando implementi l’SDK di Platform Mobile nella tua app, devi creare tre flussi di dati da mappare ai tre ambienti di tag (sviluppo, stage e produzione). Se utilizzi Platform Mobile SDK con applicazioni basate su Platform, ad esempio Adobe Real-time Customer Data Platform o Adobe Journey Optimizer, assicurati di creare tali flussi di dati nelle sandbox appropriate.
+Quando implementi Platform Mobile SDK nella tua app, devi creare tre flussi di dati da mappare ai tre ambienti di tag (sviluppo, stage e produzione). Se utilizzi Platform Mobile SDK con applicazioni basate su Platform, ad esempio Adobe Real-Time Customer Data Platform o Adobe Journey Optimizer, assicurati di creare tali flussi di dati nelle sandbox appropriate.
 
 >[!SUCCESS]
 >
 >Ora disponi di un flusso di dati da utilizzare per il resto dell’esercitazione.
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [Experience League post di discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Mobile SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Successivo: **[Configurare una proprietà tag](configure-tags.md)**

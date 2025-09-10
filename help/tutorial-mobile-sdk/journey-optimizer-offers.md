@@ -6,10 +6,10 @@ feature-set: Journey Optimizer
 feature: Offers
 jira: KT-14640
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: 4c9ac30ecc0f41b7d6cd9a6653bca50e602cbc13
+source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
 workflow-type: tm+mt
-source-wordcount: '2475'
-ht-degree: 2%
+source-wordcount: '2882'
+ht-degree: 1%
 
 ---
 
@@ -19,9 +19,9 @@ Scopri come mostrare le offerte da Journey Optimizer Decision Management nelle a
 
 Journey Optimizer Decision Management consente di offrire ai clienti l’offerta e l’esperienza migliore al momento giusto, in tutti i punti di contatto. Una volta progettate, puoi indirizzarle al tuo pubblico con offerte personalizzate.
 
-![Architettura](assets/architecture-ajo.png)
+![Architettura](assets/architecture-ajo.png){zoomable="yes"}
 
-La gestione delle decisioni semplifica la personalizzazione con una libreria centrale di offerte di marketing e un motore decisionale che applica regole e vincoli ai profili avanzati e in tempo reale creati da Adobe Experience Platform. Di conseguenza, ti consente di inviare ai clienti l’offerta giusta al momento giusto. Per ulteriori informazioni, vedere [Informazioni sulla gestione delle decisioni](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=it).
+La gestione delle decisioni semplifica la personalizzazione con una libreria centrale di offerte di marketing e un motore decisionale che applica regole e vincoli ai profili avanzati e in tempo reale creati da Adobe Experience Platform. Di conseguenza, ti consente di inviare ai clienti l’offerta giusta al momento giusto. Per ulteriori informazioni, vedere [Informazioni sulla gestione delle decisioni](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning).
 
 
 
@@ -35,7 +35,7 @@ La gestione delle decisioni semplifica la personalizzazione con una libreria cen
 
 * L&#39;app con gli SDK installati e configurati è stata creata ed eseguita correttamente.
 * Configura l’app per Adobe Experience Platform.
-* Accedi a Journey Optimizer - Gestione delle decisioni con le autorizzazioni appropriate per gestire offerte e decisioni come descritto [qui](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=it#decisions-permissions).
+* Accesso a Journey Optimizer - Gestione delle decisioni con le [autorizzazioni appropriate per gestire offerte e decisioni](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions).
 
 
 ## Obiettivi di apprendimento
@@ -63,15 +63,13 @@ Per fare in modo che i dati inviati dalla tua app mobile a Platform Edge Network
 
 1. Nell&#39;interfaccia utente di Data Collection, seleziona **[!UICONTROL Datastreams]** e quindi il tuo datastream, ad esempio **[!DNL Luma Mobile App]**.
 1. Seleziona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) per **[!UICONTROL Experience Platform]** e seleziona ![Modifica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Modifica]** dal menu di scelta rapida.
-1. Nella schermata **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**, assicurati che siano selezionati **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]** e **[!UICONTROL Adobe Journey Optimizer]**. Se vuoi seguire la lezione di Target, seleziona anche **[!UICONTROL Destinazioni Personalization]**. Per ulteriori informazioni, vedere [Impostazioni di Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=it#aep).
+1. Nella schermata **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**, assicurati che siano selezionati **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]** e **[!UICONTROL Adobe Journey Optimizer]**. Se segui la lezione di Target, seleziona anche **[!UICONTROL Destinazioni Personalization]**. Per ulteriori informazioni, vedere [Impostazioni di Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure).
 1. Per salvare la configurazione dello stream di dati, seleziona **[!UICONTROL Salva]**.
 
-   ![Configurazione dello stream di dati di AEP](assets/datastream-aep-configuration-offers.png)
+   ![Configurazione dello stream di dati di AEP](assets/datastream-aep-configuration-offers.png){zoomable="yes"}
 
 
-
-
-### Installare Journey Optimizer - Estensione tag Decisioning
+### Installare l’estensione tag di Offer Decisioning e Target
 
 1. Passa a **[!UICONTROL Tag]**, individua la proprietà del tag mobile e apri la proprietà.
 1. Seleziona **[!UICONTROL Estensioni]**.
@@ -79,7 +77,7 @@ Per fare in modo che i dati inviati dalla tua app mobile a Platform Edge Network
 1. Cerca l&#39;estensione **[!UICONTROL Offer Decisioning e Target]**.
 1. Installa l’estensione. L&#39;estensione non richiede una configurazione aggiuntiva.
 
-   ![Aggiungi estensione Offer Decisioning e Target](assets/tag-add-decisioning-extension.png)
+   ![Aggiungi estensione Offer Decisioning e Target](assets/tag-add-decisioning-extension.png){zoomable="yes"}
 
 
 ### Aggiornare lo schema
@@ -88,8 +86,8 @@ Per fare in modo che i dati inviati dalla tua app mobile a Platform Edge Network
 1. Seleziona **[!UICONTROL Sfoglia]** dalla barra superiore.
 1. Seleziona lo schema per aprirlo.
 1. Nell&#39;editor schema, selezionare ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Aggiungi]** accanto a Gruppi di campi.
-1. Nella finestra di dialogo **[!UICONTROL Aggiungi gruppi di campi]**, ![Cerca](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) cerca `proposition`, seleziona **[!UICONTROL Evento esperienza - Interazioni proposte]** e seleziona **[!UICONTROL Aggiungi gruppi di campi]**. Questo gruppo di campi raccoglie i dati dell’evento esperienza rilevanti per le offerte: quale offerta viene presentata, come parte di quale raccolta, decisione e altri parametri (vedi più avanti in questa lezione). Ma anche cosa sta succedendo con l&#39;offerta? È visualizzato, interagisce con, ignorato e così via?
-   ![Proposta](assets/schema-fieldgroup-proposition.png)
+1. Nella finestra di dialogo **[!UICONTROL Aggiungi gruppi di campi]**, ![Cerca](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) cerca `proposition`, seleziona **[!UICONTROL Evento esperienza - Interazioni proposte]** e seleziona **[!UICONTROL Aggiungi gruppi di campi]**. Questo gruppo di campi raccoglie i dati dell’evento esperienza rilevanti per le offerte, ad esempio quale offerta viene presentata, come parte di quale raccolta, decisione e altri parametri (vedi più avanti in questa lezione)? Ma anche cosa sta succedendo con l&#39;offerta? Viene visualizzato, interagito con, chiuso e così via?
+   ![Proposta](assets/schema-fieldgroup-proposition.png){zoomable="yes"}
 1. Seleziona **[!UICONTROL Salva]** per salvare le modifiche apportate allo schema.
 
 
@@ -101,12 +99,12 @@ Per convalidare la configurazione in Assurance:
 1. Seleziona **[!UICONTROL Configura]** nella barra a sinistra e seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) accanto a **[!UICONTROL Convalida installazione]** sotto **[!UICONTROL OFFER DECISIONING AND TARGET]**.
 1. Seleziona **[!UICONTROL Salva]**.
 1. Seleziona **[!UICONTROL Convalida installazione]** nella barra a sinistra. Vengono convalidate sia la configurazione dello stream di dati che la configurazione di SDK nell’applicazione.
-   ![Convalida di AJO Decisioning](assets/ajo-decisioning-validation.png)
+   ![Convalida di AJO Decisioning](assets/ajo-decisioning-validation.png){zoomable="yes"}
 
 
 ## Crea posizionamento
 
-Prima di poter creare le offerte, è necessario definire come e dove posizionarle nell’app mobile. In Gestione delle decisioni, definisci i posizionamenti a questo scopo e definirai un posizionamento per il canale mobile che supporta un payload JSON:
+Prima di poter creare le offerte, è necessario definire come e dove posizionarle nell’app mobile. In Gestione delle decisioni, puoi definire i posizionamenti a questo scopo e il posizionamento del canale mobile che supporta un payload JSON:
 
 1. Nell&#39;interfaccia utente di Journey Optimizer, seleziona ![Componenti](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg) **[!UICONTROL Componenti]** da **[!UICONTROL GESTIONE DECISIONI]** nella barra a sinistra.
 
@@ -121,7 +119,7 @@ Per creare il posizionamento JSON per dispositivi mobili:
    1. nella sezione **[!UICONTROL Dettagli]**, immetti `Mobile JSON` come **[!UICONTROL Nome]**, seleziona **[!UICONTROL Mobile]** da **[!UICONTROL Tipo di canale]** e **[!UICONTROL JSON]** da **[!UICONTROL Tipo di contenuto]**.
    1. Seleziona **[!UICONTROL Salva]** per salvare il posizionamento.
 
-   ![Crea posizionamento](assets/ajo-create-placement.png)
+   ![Crea posizionamento](assets/ajo-create-placement.png){zoomable="yes"}
 
 
 
@@ -132,10 +130,9 @@ Per creare il posizionamento JSON per dispositivi mobili:
 1. Seleziona **[!UICONTROL Crea offerta]**.
 1. Nella finestra di dialogo **[!UICONTROL Nuova offerta]**, seleziona **[!UICONTROL Offerta personalizzata]** e fai clic su **[!UICONTROL Successiva]**.
 1. Nel passaggio **[!UICONTROL Dettagli]** di **[!UICONTROL Crea una nuova offerta personalizzata]**:
-   1. Immetti un **[!UICONTROL Nome]** per l&#39;offerta, ad esempio `Luma - Juno Jacket`, e una **[!UICONTROL Data e ora di inizio]** e una **[!UICONTROL Data e ora di fine]**. Al di fuori di questo intervallo di date, l’offerta non verrà selezionata dal motore della funzione Decisioni.
+   1. Immetti un **[!UICONTROL Nome]** per l&#39;offerta, ad esempio `Luma - Juno Jacket`, e una **[!UICONTROL Data e ora di inizio]** e una **[!UICONTROL Data e ora di fine]**. Solo le offerte entro queste date vengono selezionate dal motore Decisioning.
    1. Seleziona **[!UICONTROL Avanti]**.
-
-      ![Offerte - Dettagli](assets/ajo-offers-details.png)
+      ![Offerte - Dettagli](assets/ajo-offers-details.png){zoomable="yes"}
 
 1. Nel passaggio **[!UICONTROL Aggiungi rappresentazioni]** di **[!UICONTROL Crea una nuova offerta personalizzata]**:
    1. Seleziona ![Mobile](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL Mobile]** dall&#39;elenco **[!UICONTROL Channel]** e seleziona **[!UICONTROL Mobile JSON]** dall&#39;elenco **[!UICONTROL Placement]**.
@@ -153,18 +150,15 @@ Per creare il posizionamento JSON per dispositivi mobili:
          ```
 
       1. Seleziona **[!UICONTROL Salva]**.
-
-         ![Offerte - Contenuto personalizzato](assets/ajo-offers-customcontent.png)
+         ![Offerte - Contenuto personalizzato](assets/ajo-offers-customcontent.png){zoomable="yes"}
    1. Seleziona **[!UICONTROL Avanti]**.
-
-      ![Rappresentazioni offerte](assets/ajo-offers-representations.png)
+      ![Rappresentazioni offerte](assets/ajo-offers-representations.png){zoomable="yes"}
 
 1. Nel passaggio **[!UICONTROL Aggiungi vincoli]** di **[!UICONTROL Crea una nuova offerta personalizzata]**:
    1. Imposta **[!UICONTROL Priorità]** su `10`.
    1. Disattiva **[!UICONTROL Includi limite]**.
    1. Seleziona **[!UICONTROL Avanti]**.
-
-      ![Offerte - Vincoli](assets/ajo-offers-constraints.png)
+      ![Offerte - Vincoli](assets/ajo-offers-constraints.png){zoomable="yes"}
 
 1. Nel passaggio **[!UICONTROL Rivedi]** di **[!UICONTROL Crea nuova offerta personalizzata]**:
    1. Rivedi l&#39;offerta, quindi seleziona **[!UICONTROL Fine]**.
@@ -214,7 +208,7 @@ Per creare il posizionamento JSON per dispositivi mobili:
    1. Nella finestra di dialogo **[!UICONTROL Salva offerta]**, seleziona **[!UICONTROL Salva e approva]**.
 
 Ora dovresti disporre del seguente elenco di offerte:
-![Elenco offerte](assets/ajo-offers-list.png)
+![Elenco offerte](assets/ajo-offers-list.png){zoomable="yes"}
 
 
 ## Creare una raccolta
@@ -228,7 +222,7 @@ Per presentare un’offerta all’utente dell’app mobile, devi definire una ra
 1. In **[!DNL Luma - Mobile App Collection]**, selezionare le offerte da includere nella raccolta. Per questa esercitazione, scegli le cinque offerte create. È possibile filtrare facilmente l&#39;elenco utilizzando il campo di ricerca, ad esempio digitando **[!DNL Luma]**.
 1. Seleziona **[!UICONTROL Salva]**.
 
-   ![Offerte - Raccolta](assets/ajo-collection-offersselected.png)
+   ![Offerte - Raccolta](assets/ajo-collection-offersselected.png){zoomable="yes"}
 
 
 ## Creare una decisione
@@ -243,7 +237,7 @@ Un criterio di valutazione è la combinazione di
 * regole di idoneità: ad esempio, l’offerta è disponibile solo per un pubblico specifico,
 * un metodo di classificazione: quando sono disponibili più offerte tra cui scegliere, quale metodo utilizzare per classificarle (ad esempio in base alla priorità dell’offerta, utilizzando una formula o un modello di IA).
 
-Consulta [Passaggi chiave per creare e gestire le offerte](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=it) per comprendere meglio come posizionamenti, regole, classificazioni, offerte, rappresentazioni, raccolte, decisioni e così via interagiscono e si relazionano tra loro. Questa lezione si concentra esclusivamente sull&#39;utilizzo dei risultati di una decisione piuttosto che sulla flessibilità nella definizione delle decisioni all&#39;interno di Journey Optimizer - Gestione delle decisioni.
+Consulta [Passaggi chiave per creare e gestire le offerte](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/key-steps) se desideri comprendere in che modo posizionamenti, regole, classificazioni, offerte, rappresentazioni, raccolte, decisioni e così via, interagiscono e si relazionano tra loro. Questa lezione si concentra esclusivamente sull&#39;utilizzo dei risultati di una decisione piuttosto che sulla flessibilità nella definizione delle decisioni all&#39;interno di Journey Optimizer - Gestione delle decisioni.
 
 1. Nell&#39;interfaccia utente di Journey Optimizer, seleziona **[!UICONTROL Offerte]** dalla barra a sinistra.
 1. Seleziona **[!UICONTROL Decisioni]** dalla barra superiore.
@@ -258,11 +252,13 @@ Consulta [Passaggi chiave per creare e gestire le offerte](https://experiencelea
       1. Nella finestra di dialogo **[!UICONTROL Aggiungi raccolta di offerte]**, seleziona la raccolta di offerte. Ad esempio, **[!DNL Luma - Mobile App Collection]**.
       1. Seleziona **[!UICONTROL Aggiungi]**.
 
-         ![Decisione - Seleziona raccolta](assets/ajo-decision-selectcollection.png)
+         ![Decisione - Seleziona raccolta](assets/ajo-decision-selectcollection.png){zoomable="yes"}
+
    1. Assicurati che **[!UICONTROL None]** sia selezionato per **[!UICONTROL Eligibility]** e che **[!UICONTROL Offer priority]** sia selezionato come **[!UICONTROL metodo di classificazione]**.
    1. Seleziona **[!UICONTROL Avanti]**.
 
-      ![Ambiti decisionali](assets/ajo-decision-scopes.png).
+      ![Ambiti decisionali](assets/ajo-decision-scopes.png){zoomable="yes"}
+
 1. Nel passaggio **[!UICONTROL Aggiungi offerta di fallback]** di **[!UICONTROL Crea una nuova decisione di offerta]**:
    1. Selezionare l&#39;offerta di fallback, ad esempio **[!DNL Luma - Fallback offer]**.
    1. Seleziona **[!UICONTROL Avanti]**.
@@ -278,7 +274,9 @@ La decisione sull’offerta, composta da una serie di offerte, è ora pronta per
 1. Selezionare la decisione, ad esempio **[!DNL Luma - Mobile App Decision]**.
 1. Nel riquadro **[!UICONTROL Ambiti decisione]**, selezionare ![Copia](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copia]**.
 1. Dal menu contestuale, selezionare **[!UICONTROL Ambito decisione]**.
-   ![Copia ambito decisione](assets/ajo-copy-decisionscope.png)
+
+   ![Copia ambito decisione](assets/ajo-copy-decisionscope.png){zoomable="yes"}
+
 1. Utilizza un qualsiasi editor di testo per incollare l’ambito decisionale per un utilizzo successivo. L’ambito della decisione ha il seguente formato JSON.
 
    ```json
@@ -296,6 +294,10 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
 >
 >Se hai completato la sezione [Installare gli SDK](install-sdks.md), SDK è già installato e puoi saltare questo passaggio.
 >
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. In Xcode, accertati che [AEP Optimize](https://github.com/adobe/aepsdk-messaging-ios) sia aggiunto all&#39;elenco dei pacchetti nelle dipendenze dei pacchetti. Consulta [Gestione pacchetti Swift](install-sdks.md#swift-package-manager).
 1. Passa a **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** nel Navigatore progetti Xcode.
@@ -329,13 +331,17 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
 
    ```swift
    // set up the XDM dictionary, define decision scope and call update proposition API
-   Task {  
+   Task {
       let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
       let identityMap = ["identityMap" : ecid]
       let xdmData = ["xdm" : identityMap]
       let decisionScope = DecisionScope(activityId: activityId, placementId: placementId, itemCount: UInt(itemCount))
       Optimize.clearCachedPropositions()
-      Optimize.updatePropositions(for: [decisionScope], withXdm: xdmData)
+      Optimize.updatePropositions(for: [decisionScope], withXdm: xdmData) { data, error in
+            if let error = error {
+               Logger.aepMobileSDK.error("MobileSDK - updatePropositionsAT: Error updating propositions: \(error.localizedDescription)")
+            }
+      }
    }
    ```
 
@@ -344,7 +350,7 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
    * configura un dizionario XDM `xdmData` contenente l&#39;ECID per identificare il profilo per il quale si devono presentare le offerte.
    * definisce `decisionScope`, un oggetto basato sulla decisione definita nell&#39;interfaccia Journey Optimizer - Gestione decisioni e definito utilizzando l&#39;ambito di decisione copiato da [Crea una decisione](#create-a-decision).  L&#39;app Luma utilizza un file di configurazione (`decisions.json`) che recupera i parametri di ambito in base al seguente formato JSON:
 
-     ```swift
+     ```json
      "scopes": [
          {
              "name": "name of the scope",
@@ -355,9 +361,9 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
      ]
      ```
 
-     È tuttavia possibile utilizzare qualsiasi tipo di implementazione per assicurarsi che le API di ottimizzazione ottengano i parametri corretti (`activityId`, `placementId` e `itemCount`) per creare un oggetto [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) valido per l&#39;implementazione. <br/>Per informazioni: gli altri valori chiave nel file `decisions.json` sono per uso futuro e non rilevanti e sono attualmente utilizzati in questa lezione e come parte dell&#39;esercitazione.
+     È tuttavia possibile utilizzare qualsiasi tipo di implementazione per assicurarsi che le API di ottimizzazione ottengano i parametri corretti (`activityId`, `placementId` e `itemCount`) per creare un oggetto [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) valido per l&#39;implementazione. <br/>Per informazioni: gli altri valori chiave nel file `decisions.json` sono per uso futuro e non rilevanti e sono attualmente utilizzati in questa lezione e nell&#39;esercitazione.
 
-   * chiama due API: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac) e [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  Queste funzioni cancellano tutte le proposte memorizzate nella cache e aggiornano le proposte per questo profilo.
+   * chiama due API: [`Optimize.clearCachePropositions`](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#clearpropositions) e [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandler).  Queste funzioni cancellano tutte le proposte memorizzate nella cache e aggiornano le proposte per questo profilo.
 
 1. Passa a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!UICONTROL Personalization]** > **[!UICONTROL EdgeOffersView]** nel navigatore progetti Xcode. Trovare la funzione `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` ed esaminare il codice di questa funzione. La parte più importante di questa funzione è la chiamata API [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate), che
 
@@ -382,15 +388,114 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
    await self.updatePropositionsOD(ecid: currentEcid, activityId: decision.activityId, placementId: decision.placementId, itemCount: decision.itemCount)
    ```
 
+>[!TAB Android]
 
+
+1. In Android Studio, assicurati che [aepsdk-optimize-android](https://github.com/adobe/aepsdk-optimize-android) faccia parte delle dipendenze in **[!UICONTROL build.gradle.kts (Modulo :app)]** in **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!UICONTROL Script Gradle]**. Vedi [Gradle](install-sdks.md#gradle).
+1. Passa a **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL MainActivity]** nel navigatore di Android Studio.
+1. Assicurarsi che `Optimize` faccia parte dell&#39;elenco delle importazioni.
+
+   ```kotlin
+   import com.adobe.marketing.mobile.optimize.Optimize
+   ```
+
+1. Assicurarsi che `Optimize.EXTENSION` faccia parte dell&#39;array di estensioni che si sta registrando.
+
+   ```kotlin
+   val extensions = listOf(
+      Identity.EXTENSION,
+      Lifecycle.EXTENSION,
+      Signal.EXTENSION,
+      Edge.EXTENSION,
+      Consent.EXTENSION,
+      UserProfile.EXTENSION,
+      Places.EXTENSION,
+      Messaging.EXTENSION,
+      Optimize.EXTENSION,
+      Assurance.EXTENSION
+   )
+   ```
+
+1. Passa a **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL assets]** > **[!DNL data]** > **[!UICONTROL decision.json]** nel Navigator dei progetti Xcode. Aggiorna i valori `activityId` e `placementId` con i dettagli dell&#39;ambito di decisione copiati dall&#39;interfaccia di Journey Optimizer.
+
+1. Passa a **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** nel navigatore di Android Studio. Trovare la funzione `suspend fun updatePropositionsOD(ecid: String,        activityId: String, placementId: String, itemCount: Int) `. Aggiungi il seguente codice:
+
+   ```kotlin
+   // set up the XDM dictionary, define decision scope and call update proposition API
+   withContext(Dispatchers.IO) {
+      val ecidMap = mapOf("ECID" to mapOf("id" to ecid, "primary" to true))
+      val identityMap = mapOf("identityMap" to ecidMap)
+      val xdmData = mapOf("xdm" to identityMap)
+      val decisionScope = DecisionScope(activityId, placementId, itemCount)
+      Optimize.clearCachedPropositions()
+      Optimize.updatePropositions(listOf(decisionScope), xdmData, null, object :
+            AdobeCallbackWithOptimizeError<MutableMap<DecisionScope?, OptimizeProposition?>?> {
+            override fun fail(optimizeError: AEPOptimizeError?) {
+               val responseError = optimizeError
+               Log.i("MobileSDK", "updatePropositionsOD error: ${responseError}")
+            }
+            override fun call(propositionsMap: MutableMap<DecisionScope?, OptimizeProposition?>?) {
+               val responseMap = propositionsMap
+               Log.i("MobileSDK", "updatePropositionsOD call: ${responseMap}")
+            }
+      })
+   }
+   ```
+
+   Questa funzione:
+
+   * configura un dizionario XDM `xdmData` contenente l&#39;ECID per identificare il profilo per il quale si devono presentare le offerte.
+   * definisce `decisionScope`, un oggetto basato sulla decisione definita nell&#39;interfaccia Journey Optimizer - Gestione decisioni e definito utilizzando l&#39;ambito di decisione copiato da [Crea una decisione](#create-a-decision).  L&#39;app Luma utilizza un file di configurazione (`decisions.json`) che recupera i parametri di ambito in base al seguente formato JSON:
+
+     ```json
+     "scopes": [
+         {
+             "name": "name of the scope",
+             "activityId": "xcore:offer-activity:xxxxxxxxxxxxxxx",
+             "placementId": "xcore:offer-placement:xxxxxxxxxxxxxxx",
+             "itemCount": 2
+         }
+     ]
+     ```
+
+     È tuttavia possibile utilizzare qualsiasi tipo di implementazione per assicurarsi che le API di ottimizzazione ottengano i parametri corretti (`activityId`, `placementId` e `itemCount`) per creare un oggetto [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) valido per l&#39;implementazione. <br/>Per informazioni: gli altri valori chiave nel file `decisions.json` sono per uso futuro e non rilevanti e sono attualmente utilizzati in questa lezione e nell&#39;esercitazione.
+
+   * chiama due API: [`Optimize.clearCachePropositions`](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#clearpropositions) e [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandler).  Queste funzioni cancellano tutte le proposte memorizzate nella cache e aggiornano le proposte per questo profilo.
+
+1. Passa a **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL visualizzazioni]** > **[!UICONTROL EdgeOffers.kt]** nel navigatore progetti Xcode. Trovare la funzione `suspend fun onPropositionsUpdateOD(ecid: String, activityId: String, placementId: String, itemCount: Int)` ed esaminare il codice di questa funzione. La parte più importante di questa funzione è la chiamata API [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate), che
+
+   * recupera le proposte per il profilo corrente in base all’ambito della decisione (definito in Journey Optimizer - Gestione delle decisioni),
+   * recupera l’offerta dalla proposta,
+   * decomprime il contenuto dell’offerta in modo che possa essere visualizzato correttamente nell’app; e
+   * restituisce le offerte.
+
+1. Sempre in **[!DNL EdgeOffers.kt]**, aggiungere la funzione `LaunchedEffect` per garantire l&#39;aggiornamento delle offerte all&#39;avvio della scheda Personalization.
+
+   ```kotlin
+   // recompose the view when the number of received offers changes
+   LaunchedEffect(offersOD.count()) {
+       updatePropositionsOD(
+           currentEcid,
+           decision.activityId,
+           decision.placementId,
+           decision.itemCount
+       )
+       offersOD =
+           onPropositionsUpdateOD(decision.activityId, decision.placementId, decision.itemCount)
+   }
+   ```
+
+>[!ENDTABS]
 
 ## Convalida tramite l’app
 
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
 1. Rigenera ed esegui l&#39;app nel simulatore o su un dispositivo fisico da Xcode, utilizzando ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
-1. Passa alla scheda **[!DNL Personalisation]**.
-
-1. Seleziona **[!DNL Edge Personalisation]**.
+1. Passa alla scheda **[!DNL Personalization]**.
 
 1. Scorri verso l&#39;alto per visualizzare due offerte casuali dalla raccolta definita nella sezione **[!DNL DECISION LUMA - MOBILE APP DECISION]**.
 
@@ -398,6 +503,20 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
 
    Le offerte sono casuali, in quanto hai assegnato a tutte la stessa priorità e la classificazione per la decisione si basa sulla priorità.
 
+
+>[!TAB Android]
+
+1. Rigenera ed esegui l&#39;app nel simulatore o su un dispositivo fisico da Android Studio, utilizzando ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+
+1. Passa alla scheda **[!DNL Personalization]**.
+
+1. Scorri verso l&#39;alto per visualizzare due offerte casuali nella casella superiore della raccolta definita nella sezione **[!DNL DECISION LUMA - MOBILE APP DECISION]**.
+
+   <img src="assets/ajo-app-offers-android.png" width="300">
+
+   Le offerte sono casuali, in quanto hai assegnato a tutte la stessa priorità e la classificazione per la decisione si basa sulla priorità.
+
+>[!ENDTABS]
 
 ## Convalidare l’implementazione in Assurance
 
@@ -408,7 +527,7 @@ Per convalidare l’implementazione delle offerte in Assurance:
 1. Seleziona **[!UICONTROL Salva]**.
 1. Seleziona **[!UICONTROL Rivedi e simula]** nella barra a sinistra. La configurazione dello stream di dati viene convalidata e la configurazione di SDK nell’applicazione.
 1. Seleziona **[!UICONTROL Richieste]** nella barra superiore. Sono visualizzate le **[!UICONTROL Offerte]** richieste.
-   ![Convalida di AJO Decisioning](assets/assurance-decisioning-requests.png)
+   ![Convalida di AJO Decisioning](assets/assurance-decisioning-requests.png){zoomable="yes"}
 
 1. Puoi esplorare le schede **[!UICONTROL Simula]** e **[!UICONTROL Elenco eventi]** per ulteriori funzionalità, controllando la configurazione di Journey Optimizer Decision Management.
 

@@ -3,9 +3,9 @@ title: Utilizzare Places con Platform Mobile SDK
 description: Scopri come utilizzare il servizio di geolocalizzazione Places nella tua app mobile.
 jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
+source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1825'
 ht-degree: 2%
 
 ---
@@ -47,23 +47,23 @@ Affinché il servizio Places funzioni all’interno dell’app e del SDK mobile,
 1. Nell&#39;interfaccia utente di Data Collection, selezionare **[!UICONTROL Places]**.
 1. Seleziona ![Altro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg).
 1. Dal menu di scelta rapida, selezionare **[!UICONTROL Gestisci librerie]**.
-   ![Gestisci librerie](assets/places-manage-libraries.png)
+   ![Gestisci librerie](assets/places-manage-libraries.png){zoomable="yes"}
 1. Nella finestra di dialogo **[!UICONTROL Gestisci librerie]**, seleziona **[!UICONTROL Nuovo]**.
 1. Nella finestra di dialogo **[!UICONTROL Crea libreria]** immetti un **[!UICONTROL Nome]**, ad esempio `Luma`.
 1. Seleziona **[!UICONTROL Conferma]**.
-   ![Crea libreria](assets/places-create-library.png)
+   ![Crea libreria](assets/places-create-library.png){zoomable="yes"}
 1. Per chiudere la finestra di dialogo **[!UICONTROL Gestisci librerie]**, selezionare **[!UICONTROL Chiudi]**.
 1. Di nuovo in **[!UICONTROL Gestione POI]**, seleziona **[!UICONTROL Importa POI]**.
 1. Seleziona **[!UICONTROL Inizio]** nella finestra di dialogo **[!UICONTROL Importa luoghi]**.
 1. Seleziona **[!DNL Luma]** dall&#39;elenco delle librerie,
 1. Seleziona **[!UICONTROL Avanti]**.
-   ![Seleziona libreria](assets/places-import-select-library.png)
+   ![Seleziona libreria](assets/places-import-select-library.png){zoomable="yes"}
 1. Scarica il file ZIP [Luma POIs](assets/luma_pois.csv.zip) ed estrailo in una posizione sul computer.
 1. Nella finestra di dialogo **[!UICONTROL Importa luoghi]**, trascina il file `luma_pois.csv` estratto su **[!UICONTROL Scegli il file CSV - Trascina e rilascia il file]**. Dovresti trovare **[!UICONTROL Convalida completata]** - **[!UICONTROL Il file CSV è stato convalidato correttamente]**.
 1. Selezionare **[!UICONTROL Inizia importazione]**. Dovresti vedere **[!UICONTROL Operazione completata]** - **[!UICONTROL Sono stati aggiunti 6 nuovi POI]**.
 1. Seleziona **[!UICONTROL Fine]**.
 1. In **[!UICONTROL Gestione POI]**, dovresti notare che sei nuovi store Luma sono stati aggiunti all&#39;elenco. Puoi passare dalla visualizzazione ![Elenco](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) alla visualizzazione ![Mappa](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MapView_18_N.svg).
-   ![Elenco luoghi](assets/places-list.png).
+   ![Elenco luoghi](assets/places-list.png){zoomable="yes"}.
 
 
 ### Estensione Install Places
@@ -74,14 +74,13 @@ Affinché il servizio Places funzioni all’interno dell’app e del SDK mobile,
 1. Cerca l&#39;estensione **[!UICONTROL Places]**.
 1. Installa l’estensione.
 
-   ![Aggiungi estensione Offer Decisioning e Target](assets/tag-places-extension.png)
+   ![Aggiungi luoghi](assets/tag-places-extension.png)
 
 1. Nella finestra di dialogo **[!UICONTROL Installa estensione]**:
    1. Selezionare **[!DNL Luma]** dall&#39;elenco **[!UICONTROL Seleziona una libreria]**.
    1. Verifica di aver scelto la tua libreria di lavoro, ad esempio **[!UICONTROL Build iniziale]**.
    1. Seleziona **[!UICONTROL Salva nella libreria e genera]** da **[!UICONTROL Salva nella libreria]**.
-
-      ![Installa estensione Luoghi](assets/places-install-extension.png).
+      ![Installa estensione Luoghi](assets/places-install-extension.png){zoomable="yes"}.
 
 1. La libreria viene ricreata.
 
@@ -95,7 +94,7 @@ Verifica se lo schema, come definito in [Crea schema](create-schema.md), incorpo
 1. Seleziona lo schema per aprirlo.
 1. Nell&#39;editor schema, selezionare **[!UICONTROL Evento esperienza del consumatore]**.
 1. È presente un oggetto **[!UICONTROL placeContext]** con oggetto e campi per acquisire i dati di interazione e geolocalizzazione dei punti di interesse.
-   ![Posizioni schema](assets/schema-places-context.png).
+   ![Posizioni schema](assets/schema-places-context.png){zoomable="yes"}.
 
 
 ### Aggiornare la proprietà tag
@@ -114,7 +113,7 @@ Innanzitutto, puoi creare diversi elementi dati.
 1. Selezionare **[!UICONTROL Nome]** dall&#39;elenco **[!UICONTROL Tipo elemento dati]**.
 1. Seleziona **[!UICONTROL Current POI]** sotto **[!UICONTROL TARGET]**.
 1. Seleziona **[!UICONTROL Salva nella libreria]**.
-   ![Elemento dati](assets/tags-create-data-element.png)
+   ![Elemento dati](assets/tags-create-data-element.png){zoomable="yes"}
 
 1. Ripeti i passaggi da 4 a 8 utilizzando le informazioni della tabella seguente, per creare elementi di dati aggiuntivi.
 
@@ -128,7 +127,7 @@ Innanzitutto, puoi creare diversi elementi dati.
 
    Dovresti disporre del seguente elenco di elementi dati.
 
-   ![Elenco di elementi dati](assets/tags-data-elements-list.png)
+   ![Elenco di elementi dati](assets/tags-data-elements-list.png){zoomable="yes"}
 
 **Regole**
 
@@ -140,7 +139,6 @@ Ora devi definire le regole da utilizzare con questi elementi dati.
 1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) sotto **[!UICONTROL EVENTI]**.
    1. Seleziona **[!UICONTROL Luoghi]** dall&#39;elenco **[!UICONTROL Estensione]** e seleziona **[!UICONTROL Inserisci POI]** dall&#39;elenco **[!UICONTROL Tipo evento]**.
    1. Seleziona **[!UICONTROL Mantieni modifiche]**.
-
       ![Tag evento](assets/tags-event-mobile-core.png).
 1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) sotto **[!UICONTROL AZIONI]**.
    1. Seleziona **[!UICONTROL Mobile Core]** dall&#39;elenco **[!UICONTROL Extension]**, seleziona **[!UICONTROL Allega dati]** da **[!UICONTROL Action Type]**. Questa azione allega i dati del payload.
@@ -171,8 +169,7 @@ Ora devi definire le regole da utilizzare con questi elementi dati.
       Puoi anche inserire `{%% ... %%}` valori segnaposto di elementi dati nel JSON selezionando ![Dati](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg). Una finestra di dialogo a comparsa consente di scegliere qualsiasi elemento dati creato.
 
    1. Seleziona **[!UICONTROL Mantieni modifiche]**.
-
-      ![Azione tag](assets/tags-action-mobile-core.png)
+      ![Azione tag](assets/tags-action-mobile-core.png){zoomable="yes"}
 
 1. Seleziona ![Aggiungi](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) accanto all&#39;azione **[!UICONTROL Core mobile - Allega dati]**.
    1. Selezionare **[!UICONTROL Adobe Experience Platform Edge Network]** dall&#39;elenco **[!UICONTROL Estensione]** e selezionare **[!UICONTROL Inoltra evento ad Edge Network]**. Questa azione assicura che l’evento e i dati di payload aggiuntivi vengano inoltrati a Platform Edge Network.
@@ -180,7 +177,7 @@ Ora devi definire le regole da utilizzare con questi elementi dati.
 
 1. Per salvare la regola, selezionare **[!UICONTROL Salva nella libreria]**.
 
-   ![Regola](assets/tags-rule-poi-entry.png)
+   ![Regola](assets/tags-rule-poi-entry.png){zoomable="yes"}
 
 Creiamo un’altra regola
 
@@ -222,14 +219,14 @@ Creiamo un’altra regola
 
 1. Per salvare la regola, selezionare **[!UICONTROL Salva nella libreria]**.
 
-   ![Regola](assets/tags-rule-poi-exit.png)
+   ![Regola](assets/tags-rule-poi-exit.png){zoomable="yes"}
 
 
 Per pubblicare tutte le modifiche apportate al tag
 
 1. Selezionare **[!UICONTROL Build iniziale]** come libreria da compilare.
 1. Seleziona **[!UICONTROL Build]**.
-   ![Genera libreria](assets/tags-build-library.png)
+   ![Genera libreria](assets/tags-build-library.png){zoomable="yes"}
 
 
 
@@ -246,9 +243,12 @@ Per convalidare la configurazione in Assurance:
 1. Seleziona ![Ingranaggio](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Simula punti di interesse di caricamento. Il punto di interesse viene identificato mediante un cerchio e un pin.
 1. Seleziona il punto di interesse.
 1. Dal popup, selezionare ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simulate Entry Event]**.
-   ![Simula evento di ingresso](assets/places-simulate.png)
+
+   ![Simula evento di ingresso](assets/places-simulate.png){zoomable="yes"}
+
 1. Seleziona **[!UICONTROL Eventi]** dalla barra a sinistra per visualizzare gli eventi simulati.
-   ![Convalida di AJO Decisioning](assets/places-events.png)
+
+   ![Convalida di AJO Decisioning](assets/places-events.png){zoomable="yes"}
 
 
 ## Implementare Places nell’app
@@ -259,6 +259,14 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
 >
 >Se hai completato la sezione [Installare gli SDK](install-sdks.md), Places SDK è già installato e puoi saltare questo passaggio.
 >
+
+>[!IMPORTANT]
+>
+>La configurazione di Mappe SDK per Android nell’app richiede di impostare la fatturazione come costo sostenuto con l’utilizzo. Puoi limitare i costi utilizzando il tuo ID applicazione univoco e una chiave SHA-1. Per ulteriori dettagli, vedere [Mappare SDK per Android](https://developers.google.com/maps/documentation/android-sdk/overview). Se non desideri impostare la fatturazione o sostenere costi, salta questa lezione.
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. In Xcode, accertati che [AEP Places](https://github.com/adobe/aepsdk-places-ios) sia aggiunto all&#39;elenco dei pacchetti nelle dipendenze dei pacchetti. Consulta [Gestione pacchetti Swift](install-sdks.md#swift-package-manager).
 1. Passa a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** nel Navigator dei progetti Xcode.
@@ -297,25 +305,94 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
 
 1. Passa a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Location]** > **[!DNL GeofenceSheet]** nel Navigatore progetti di Xcode.
 
-   1. Per il pulsante Immissione, immettere il codice seguente
+   1. Per il pulsante Immissione, immettere il codice seguente:
 
-   ```swift
-   // Simulate geofence entry event
-   Task {
-       await MobileSDK.shared.processRegionEvent(regionEvent: .entry, forRegion: region)
-   }
+      ```swift
+      // Simulate geofence entry event
+      Task {
+          await MobileSDK.shared.processRegionEvent(regionEvent: .entry, forRegion: region)
+      }
+      ```
+
+   1. Per il pulsante Esci, immettere il codice seguente:
+
+      ```swift
+      // Simulate geofence exit event
+      Task {
+          await MobileSDK.shared.processRegionEvent(regionEvent: .exit, forRegion: region)
+      }
+      ```
+
+>[!TAB Android]
+
+1. In Android Studio, assicurati che [aepsdk-places-android](https://github.com/adobe/aepsdk-places-android) faccia parte delle dipendenze in **[!UICONTROL build.gradle.kts (Modulo :app)]** in **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Script Gradle]**. Vedi [Gradle](install-sdks.md#gradle).
+1. Passa a **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** nel Navigatore progetti di Android Studio.
+1. Assicurarsi che `com.adobe.marketing.mobile.Messaging` faccia parte dell&#39;elenco delle importazioni.
+
+   `import import com.adobe.marketing.mobile.Places`
+
+1. Assicurarsi che `Places.EXTENSION` faccia parte dell&#39;array di estensioni che si sta registrando.
+
+   ```kotlin
+   val extensions = listOf(
+       Identity.EXTENSION,
+       Lifecycle.EXTENSION,
+       Signal.EXTENSION,
+       Edge.EXTENSION,
+       Consent.EXTENSION,
+       UserProfile.EXTENSION,
+       Places.EXTENSION,
+       Messaging.EXTENSION,
+       Optimize.EXTENSION,
+       Assurance.EXTENSION
+   )
    ```
 
-   1. Per il pulsante Esci, immetti il codice seguente
+1. Passa a **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** nel Navigatore progetti di Android Studio. Trovare la funzione `suspend fun processGeofence(geofence: Geofence?, transitionType: Int)`. Aggiungi il seguente codice:
 
-   ```swift
-   // Simulate geofence exit event
-   Task {
-       await MobileSDK.shared.processRegionEvent(regionEvent: .exit, forRegion: region)
-   }
+   ```kotlin
+   // Process geolocation event
+   Places.processGeofence(geofence, transitionType)
    ```
+
+   Questa API [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) comunica le informazioni di geolocalizzazione al servizio Places.
+
+
+1. Passa a **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL visualizzazioni]** > **[!UICONTROL LocationView.k]** nel Navigatore progetti di Android Studio.
+
+   1. Per il pulsante Immissione, immettere il codice seguente:
+
+      ```kotlin
+      // Simulate geofence entry event
+      coroutineScope.launch {
+          MobileSDK.shared.processGeofence(
+             region,
+             Geofence.GEOFENCE_TRANSITION_ENTER
+          )
+      }
+      ```
+
+   1. Per il pulsante Esci, immettere il codice seguente:
+
+      ```kotlin
+      // Simulate geofence entry event
+      coroutineScope.launch {
+          MobileSDK.shared.processGeofence(
+              region,
+              Geofence.GEOFENCE_TRANSITION_EXIT
+          )
+      }
+      ```
+
+>[!ENDTABS]
 
 ## Convalida tramite l’app
+
+Per convalidare le funzioni di geolocalizzazione nell’app:
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. Apri l’app su un dispositivo o nel simulatore.
 
@@ -333,7 +410,27 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
 
    <img src="assets/appentryexit.png" width="300" />
 
+1. Dovresti visualizzare gli eventi nell’interfaccia utente di Assurance. Sia negli eventi che negli eventi del servizio Places.
+
+>[!TAB Android]
+
+1. Passa alla scheda **[!UICONTROL Posizione]**.
+
+1. Seleziona **[!UICONTROL Usa e/o simula recinti geografici]**.
+
+1. Toccare in un punto qualsiasi all&#39;interno del cerchio rosso visualizzato.
+
+   <img src="assets/appgeolocation-android.png" width="300" />
+
+
+1. Premi i pulsanti **[!UICONTROL Entrata]** o **[!UICONTROL Uscita]** per simulare eventi di entrata recinto geografico e uscita recinto geografico dall&#39;app.
+
+   <img src="assets/appentryexit-android.png" width="300" />
+
 1. Dovresti visualizzare gli eventi nell’interfaccia utente di Assurance.
+
+
+>[!ENDTABS]
 
 
 
@@ -341,9 +438,9 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
 
 Ora dovresti disporre di tutti gli strumenti necessari per iniziare ad aggiungere ulteriori funzionalità alla funzionalità di geolocalizzazione nell’app. Dopo aver inoltrato gli eventi ad Edge Network, dopo aver configurato l&#39;app per [Experience Platform](platform.md), dovresti vedere gli eventi esperienza visualizzati per il profilo utilizzato nell&#39;app.
 
-Nella sezione Journey Optimizer di questo tutorial, vedrai che gli eventi di esperienza possono essere utilizzati per attivare i percorsi (vedi [notifica push](journey-optimizer-inapp.md) e [messaggistica in-app](journey-optimizer-push.md) con Journey Optimizer). Ad esempio, il solito esempio di invio all’utente dell’app di una notifica push con una promozione di prodotto quando l’utente entra nel recinto geografico di un negozio fisico.
+Nella sezione Journey Optimizer di questo tutorial, puoi vedere che gli eventi di esperienza possono essere utilizzati per attivare i percorsi (consulta [notifica push](journey-optimizer-inapp.md) e [messaggistica in-app](journey-optimizer-push.md) con Journey Optimizer). Ad esempio, il solito esempio di invio all’utente dell’app di una notifica push con una promozione di prodotto quando l’utente entra nel recinto geografico di un negozio fisico.
 
-Hai visto un’implementazione delle funzionalità dell’app, principalmente guidata dal servizio Places e dagli elementi dati e regole definiti nella proprietà tag. Di conseguenza, la riduzione a icona del codice nell’app. In alternativa, puoi implementare la stessa funzionalità direttamente nell&#39;app utilizzando l&#39;API [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) (vedi [Eventi](events.md) per ulteriori informazioni) con un payload XDM contenente un oggetto `placeContext` popolato.
+Questa implementazione della funzionalità di geolocalizzazione per l’app sta riducendo al minimo il codice. Il servizio Places, gli elementi dati e le regole definiti nella proprietà tag forniscono la maggior parte delle funzionalità. In alternativa, puoi implementare la stessa funzionalità direttamente nell&#39;app utilizzando l&#39;API [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) (vedi [Eventi](events.md) per ulteriori informazioni) con un payload XDM contenente un oggetto `placeContext` popolato.
 
 >[!SUCCESS]
 >

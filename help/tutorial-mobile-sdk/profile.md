@@ -1,12 +1,12 @@
 ---
-title: Raccogliere dati di profilo con Platform Mobile SDK
+title: Raccogliere dati profilo con Platform Mobile SDK
 description: Scopri come raccogliere i dati del profilo in un’app mobile.
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 1%
+source-wordcount: '775'
+ht-degree: 2%
 
 ---
 
@@ -14,7 +14,9 @@ ht-degree: 1%
 
 Scopri come raccogliere i dati del profilo in un’app mobile.
 
-Puoi utilizzare l’estensione Profilo per memorizzare gli attributi dell’utente sul client. Queste informazioni possono essere utilizzate in un secondo momento per eseguire il targeting e personalizzare i messaggi durante scenari online o offline, senza dover connettersi a un server per ottenere prestazioni ottimali. L’estensione Profile gestisce il profilo operativo lato client (CSOP, Client-Side Operation Profile), fornisce un modo per reagire alle API, aggiorna gli attributi del profilo utente e condivide gli attributi del profilo utente con il resto del sistema come evento generato.
+Puoi utilizzare l’estensione Profilo per memorizzare gli attributi dell’utente sul client. Queste informazioni possono essere utilizzate in un secondo momento per eseguire il targeting e personalizzare i messaggi durante scenari online o offline, senza dover connettersi a un server per ottenere prestazioni ottimali.
+
+L’estensione Profile gestisce il profilo operativo lato client (CSOP, Client-Side Operation Profile), fornisce un modo per reagire alle API, aggiorna gli attributi del profilo utente e condivide gli attributi del profilo utente con il resto del sistema come evento generato.
 
 I dati di profilo vengono utilizzati da altre estensioni per eseguire azioni relative al profilo. Un esempio è l’estensione Rules Engine che utilizza i dati del profilo ed esegue le regole in base ai dati del profilo. Ulteriori informazioni sull&#39;[estensione profilo](https://developer.adobe.com/client-sdks/documentation/profile/) nella documentazione
 
@@ -37,7 +39,11 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 ## Impostare e aggiornare gli attributi utente
 
-Sarebbe utile per il targeting e/o la personalizzazione nell’app sapere rapidamente se un utente ha effettuato un acquisto in passato o di recente. Impostiamolo nell’app Luma.
+Sarebbe utile che il targeting e la personalizzazione dell’app sapessero rapidamente se un utente ha effettuato un acquisto in passato o di recente. Impostiamolo nell’app Luma.
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. Passa a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!DNL MobileSDK]** nel navigatore progetti Xcode e trova la funzione `func updateUserAttribute(attributeName: String, attributeValue: String)`. Aggiungi il seguente codice:
 
@@ -63,10 +69,40 @@ Sarebbe utile per il targeting e/o la personalizzazione nell’app sapere rapida
    MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
+>[!TAB Android]
+
+1. Passa a **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** nel navigatore di Android Studio e trova la funzione `func updateUserAttribute(attributeName: String, attributeValue: String)`. Aggiungi il seguente codice:
+
+   ```kotlin
+   // Create a profile map, add attributes to the map and update profile using the map
+   val profileMap = mapOf(attributeName to attributeValue)
+   UserProfile.updateUserAttributes(profileMap)
+   ```
+
+   Questo codice:
+
+   1. Imposta una mappa vuota denominata `profileMap`.
+
+   1. Aggiunge un elemento alla mappa utilizzando `attributeName` (ad esempio `isPaidUser`) e `attributeValue` (ad esempio `yes`).
+
+   1. Utilizza la mappa `profileMap` come valore per il parametro `attributeDict` della chiamata API [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes).
+
+1. Passa a **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL visualizzazioni]** > **[!UICONTROL ProductView.kt]** e trova la chiamata a `updateUserAttributes` (nel codice per gli acquisti <img src="assets/purchase.png" width="15" />). Aggiungi il seguente codice:
+
+   ```kotlin
+   // Update attributes
+   MobileSDK.shared.updateUserAttribute("isPaidUser", "yes")
+   ```
+
+>[!ENDTABS]
 
 ## Ottieni attributi utente
 
 Dopo aver aggiornato l’attributo di un utente, questo è disponibile per altri SDK di Adobe, ma puoi anche recuperare gli attributi in modo esplicito, per consentire all’app di comportarsi come desideri.
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. Passa a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!DNL HomeView]** nel navigatore progetti Xcode e trova il modificatore `.onAppear`. Aggiungi il seguente codice:
 
@@ -89,45 +125,95 @@ Dopo aver aggiornato l’attributo di un utente, questo è disponibile per altri
    1. Chiama l&#39;API [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) con il nome attributo `isPaidUser` come singolo elemento nell&#39;array `attributeNames`.
    1. Poi controlla il valore dell&#39;attributo `isPaidUser` e quando `yes`, inserisce un badge sul Icona <img src="assets/paiduser.png" width="20" /> nella barra degli strumenti in alto a destra.
 
-Ulteriori informazioni sono disponibili [qui](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
+>[!TAB Android]
+
+1. Passa a **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.androi]** > **[!DNL views]** > **[!DNL HomeView.kt]** nel Navigatore progetti di Android Studio e trova il modificatore `.onAppear`. Aggiungi il seguente codice:
+
+   ```kotlin
+   // Get attributes
+   UserProfile.getUserAttributes(listOf("isPaidUser")) { attributes ->
+       showBadgeForUser = attributes?.get("isPaidUser") == "yes"
+   }
+   ```
+
+   Questo codice:
+
+   1. Chiama l&#39;API [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) con il nome attributo `isPaidUser` come singolo elemento nell&#39;array `attributeNames`.
+   1. Verifica quindi il valore dell&#39;attributo `isPaidUser`. Quando `yes`, il codice sostituisce l&#39;icona della persona con un distintivo sul Icona <img src="assets/paiduser.png" width="20" /> nella barra degli strumenti in alto a destra.
+
+>[!ENDTABS]
+
+Per ulteriori informazioni, consulta il [riferimento API](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
 
 ## Convalidare con Assurance
 
 1. Consulta la sezione [istruzioni di installazione](assurance.md#connecting-to-a-session) per collegare il simulatore o il dispositivo ad Assurance.
 1. Esegui l’app per accedere e interagire con un prodotto.
 
-   1. Sposta l’icona Assurance a sinistra.
-   1. Seleziona **[!UICONTROL Home]** nella barra delle schede.
-   1. Per aprire il foglio di accesso, selezionare Pulsante <img src="assets/login.png" width="15" />
+>[!BEGINTABS]
 
-      <img src="./assets/mobile-app-events-1.png" width="300">
+>[!TAB iOS]
 
-   1. Per inserire un’e-mail casuale e un ID cliente, seleziona la Pulsante <img src="assets/insert.png" width="15" /> .
-   1. Seleziona **[!UICONTROL Accesso]**.
+1. Seleziona **[!UICONTROL Home]** nella barra delle schede.
+1. Sposta l’icona Assurance a sinistra.
+1. Per aprire il foglio di accesso, selezionare Pulsante <img src="assets/login.png" width="15" />
 
-      <img src="./assets/mobile-app-events-2.png" width="300">
+   <img src="./assets/mobile-app-events-1.png" width="300">
 
-   1. Selezionare **[!DNL Products]** nella barra delle schede.
-   1. Seleziona un prodotto.
-   1. Seleziona <img src="assets/saveforlater.png" width="15" />.
-   1. Seleziona <img src="assets/addtocart.png" width="20" />.
-   1. Seleziona <img src="assets/purchase.png" width="15" />.
+1. Per inserire un’e-mail casuale e un ID cliente, seleziona la Pulsante <img src="assets/insert.png" width="15" /> .
+1. Seleziona **[!UICONTROL Accesso]**.
 
-      <img src="./assets/mobile-app-events-3.png" width="300">
+   <img src="./assets/mobile-app-events-2.png" width="300">
 
-   1. Torna alla schermata **[!UICONTROL Home]**. Dovresti notare che è stato aggiunto un badge <img src="assets/person-badge-icon.png" width="15" />.
+1. Selezionare **[!DNL Products]** nella barra delle schede.
+1. Seleziona un prodotto.
+1. Seleziona <img src="assets/saveforlater.png" width="15" />.
+1. Seleziona <img src="assets/addtocart.png" width="20" />.
+1. Seleziona <img src="assets/purchase.png" width="15" />.
 
-      <img src="./assets/personbadges.png" width="300">
+   <img src="./assets/mobile-app-events-3.png" width="300">
+
+1. Torna alla schermata **[!UICONTROL Home]**. Dovresti notare che è stato aggiunto un badge <img src="assets/person-badge-icon.png" width="15" />.
+
+   <img src="./assets/personbadges.png" width="300">
 
 
+>[!TAB Android]
 
-1. Nell&#39;interfaccia utente di Assurance, dovresti visualizzare un **[!UICONTROL UserProfileUpdate]** e **[!UICONTROL getUserAttributes]** eventi con il valore `profileMap` aggiornato.
-   ![convalida profilo](assets/profile-validate.png)
+1. Seleziona **[!UICONTROL Home]** nella barra delle schede.
+1. Sposta l’icona Assurance a sinistra.
+1. Per aprire il foglio di accesso, selezionare Pulsante <img src="assets/login.png" width="15" />
+
+   <img src="./assets/mobile-app-events-1-android.png" width="300">
+
+1. Per inserire un’e-mail casuale e un ID cliente, seleziona la Pulsante <img src="assets/insert.png" width="15" /> .
+1. Seleziona **[!UICONTROL Accesso]**.
+
+   <img src="./assets/mobile-app-events-2-android.png" width="300">
+
+1. Selezionare **[!DNL Products]** nella barra delle schede.
+1. Seleziona un prodotto.
+1. Seleziona<img src="assets/heart.png" width="25" />.
+1. Seleziona <img src="assets/addtocart.png" width="20" />.
+1. Seleziona <img src="assets/purchase.png" width="15" />.
+
+   <img src="./assets/mobile-app-events-3-android.png" width="300">
+
+1. Torna alla schermata **[!UICONTROL Home]**. Dovresti vedere che l’icona della persona è stata aggiornata.
+
+   <img src="./assets/personbadges-android.png" width="300">
+
+>[!ENDTABS]
+
+
+Nell&#39;interfaccia utente di Assurance, dovresti visualizzare **[!UICONTROL UserProfileUpdate]** e **[!UICONTROL getUserAttributes]** eventi con il valore `profileMap` aggiornato.
+
+![convalida profilo](assets/profile-validate.png){zoomable="yes"}
 
 >[!SUCCESS]
 >
->Ora hai impostato la tua app per aggiornare gli attributi dei profili nell’Edge Network e (se configurato) con Adobe Experience Platform.
+>Ora hai impostato la tua app per aggiornare gli attributi dei profili in Edge Network e (se configurato) in Adobe Experience Platform.
 >
->Grazie per aver dedicato il tuo tempo all’apprendimento dell’SDK di Adobe Experience Platform Mobile. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [Experience League post di discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Mobile SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Successivo: **[Usa luoghi](places.md)**
