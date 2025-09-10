@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
+source-git-commit: ceb8d1ca1efdd94d608eca41ec60b6d96cb207ff
 workflow-type: tm+mt
-source-wordcount: '3788'
+source-wordcount: '3787'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Di seguito è riportato un esempio di codici di risposta comuni:
 
 ## 1.1.1.3 Esplora firefly.adobe.com - fase 1
 
-Cominciamo ad esplorare Adobe Firefly Services. Per ulteriori informazioni, inizia con un esempio di generazione di immagini CitiSignal. Il team di progettazione di CitiSignal desidera generare una versione al neon del marchio CitiSignal. Vorrebbe usare Adobe Firefly Services per farlo.
+Cominciamo ad esplorare Adobe Firefly Services. A scopo di esplorazione, inizierai con un esempio di generazione di immagini CitiSignal. Il team di progettazione di CitiSignal desidera generare una versione al neon del marchio CitiSignal. Vorrebbe usare Adobe Firefly Services per farlo.
 
 La prima cosa che serve per ottenere questo risultato è una versione in bianco e nero del marchio CitiSignal, qualcosa di simile al seguente:
 
@@ -158,7 +158,7 @@ Ora hai imparato a utilizzare Firefly per risolvere un problema di progettazione
 
 Vai a [https://firefly.adobe.com/generate/image](https://firefly.adobe.com/generate/image). Dovresti vedere questo. Fare clic sull&#39;elenco a discesa **Modello**. Sono disponibili 3 versioni di Adobe Firefly Services:
 
-- Immagine Firefly 3
+- Firefly Image 3
 - Immagine Firefly 4
 - Firefly Image 4 Ultra
 
@@ -168,7 +168,7 @@ Vai a [https://firefly.adobe.com/generate/image](https://firefly.adobe.com/gener
 >
 >Firefly Image 3 e Image 4 sono disponibili per tutti coloro che utilizzano Adobe Firefly Services, mentre Firefly Image 4 Ultra richiede una licenza Firefly Pro.
 
-Fare clic per selezionare **Immagine Firefly 3** per questo esercizio.
+Fare clic per selezionare **Firefly Image 3** per questo esercizio.
 
 ![Postman](./images/ffui1a.png)
 
@@ -407,9 +407,9 @@ Con la recente versione di Firefly Image Model 4, sono stati resi disponibili di
 
 - Firefly Image Model 4 offre un output con risoluzione 2K con definizione e dettagli migliorati.
 - Firefly Image Model 4 offre miglioramenti significativi nel rendering del testo, negli esseri umani, negli animali e nell’architettura.
-- Firefly Image Model 4 conferma l&#39;impegno di Adobe per un&#39;intelligenza artificiale generativa compatibile con le reti IP e commercialmente sicura.
+- Firefly Image Model 4 mantiene l&#39;impegno di Adobe per un&#39;intelligenza artificiale generativa compatibile con le reti IP e commercialmente sicura.
 
-Firefly Image Model 4 offre immagini eccezionali di persone, animali e scene dettagliate e consente di utilizzare Image Model 4 Ultra per generare immagini con interazioni umane iperrealistiche, elementi architettonici e paesaggi complessi&#x200B;
+Firefly Image Model 4 offre immagini eccezionali di persone, animali e scene dettagliate. È possibile utilizzare Image Model 4 Ultra per generare immagini con interazioni umane iperrealistiche, elementi architettonici e paesaggi complessi&#x200B;
 
 ### 1.1.1.8.1 image4_standard
 
