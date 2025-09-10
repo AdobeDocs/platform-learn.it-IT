@@ -43,7 +43,7 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 ## Creare un set di dati
 
-Tutti i dati acquisiti correttamente in Adobe Experience Platform vengono memorizzati nel data lake come set di dati. Un set di dati è un costrutto di archiviazione e gestione per una raccolta di dati (in genere una tabella) che contiene uno schema (colonne) e dei campi (righe). I set di dati contengono anche metadati che descrivono vari aspetti dei dati memorizzati. Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview).
+Tutti i dati acquisiti correttamente in Adobe Experience Platform vengono memorizzati nel data lake come set di dati. Un set di dati è un costrutto di archiviazione e gestione per una raccolta di dati (in genere una tabella) che contiene uno schema (colonne) e dei campi (righe). I set di dati contengono anche metadati che descrivono vari aspetti dei dati memorizzati. Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experience-platform/catalog/datasets/overview).
 
 1. Passa all’interfaccia utente di Experience Platform. Seleziona **[!UICONTROL Experience Platform]** dal menu App ![App](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) in alto a destra.
 
@@ -106,7 +106,7 @@ Apri il set di dati nell’interfaccia di Platform. Dovresti visualizzare i dati
 Dovresti inoltre visualizzare record e campi di esempio utilizzando la funzionalità **[!UICONTROL Anteprima set di dati]**:
 ![convalida ciclo di vita inviato al set di dati della piattaforma](assets/lifecycle-platform-dataset.png){zoomable="yes"}
 
-Uno strumento più affidabile per la convalida dei dati è il [servizio query](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) di Platform.
+Uno strumento più affidabile per la convalida dei dati è il [servizio query](https://experienceleague.adobe.com/it/docs/platform-learn/tutorials/queries/explore-data) di Platform.
 
 ## Abilita Real-Time Customer Profile
 

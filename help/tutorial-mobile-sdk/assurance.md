@@ -35,7 +35,7 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 ## Conferma accesso
 
-Conferma che la tua organizzazione abbia accesso ad Assurance. Come utente, devi essere aggiunto al profilo per Adobe Experience Platform. Per ulteriori informazioni, consulta [Accesso utente](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/user-access) nella guida di Assurance.
+Conferma che la tua organizzazione abbia accesso ad Assurance. Come utente, devi essere aggiunto al profilo per Adobe Experience Platform. Per ulteriori informazioni, consulta [Accesso utente](https://experienceleague.adobe.com/it/docs/experience-platform/assurance/user-access) nella guida di Assurance.
 
 ## Implementazione
 

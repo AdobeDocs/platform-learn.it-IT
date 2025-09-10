@@ -17,7 +17,7 @@ Scopri come raccogliere i dati di identità in un’app mobile.
 
 Il servizio Adobe Experience Platform Identity consente di avere una visione migliore dei clienti e dei loro comportamenti. I servizi uniscono le identità tra dispositivi e sistemi, consentendo di fornire esperienze digitali personali e di impatto in tempo reale. I campi di identità e gli spazi dei nomi sono l’associazione che unisce diverse origini di dati per creare il profilo cliente in tempo reale a 360 gradi.
 
-Ulteriori informazioni sull&#39;[estensione Identity](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) e sul [servizio Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) sono disponibili nella documentazione.
+Ulteriori informazioni sull&#39;[estensione Identity](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) e sul [servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home) sono disponibili nella documentazione.
 
 ## Prerequisiti
 
@@ -35,7 +35,7 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 ## Impostare uno spazio dei nomi di identità personalizzato
 
-Gli spazi dei nomi delle identità sono componenti di [Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) che fungono da indicatori del contesto a cui si riferisce un&#39;identità. Ad esempio, distinguono un valore di `name@email.com` come indirizzo e-mail o `443522` come ID CRM numerico.
+Gli spazi dei nomi delle identità sono componenti di [Identity Service](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home) che fungono da indicatori del contesto a cui si riferisce un&#39;identità. Ad esempio, distinguono un valore di `name@email.com` come indirizzo e-mail o `443522` come ID CRM numerico.
 
 >[!NOTE]
 >
@@ -179,7 +179,7 @@ Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzat
 
 ## Rimuovere un’identità
 
-È possibile utilizzare l&#39;API [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) per rimuovere l&#39;identità dalla mappa delle identità lato client archiviata. L’estensione Identity non invia più l’identificatore ad Edge Network. L’utilizzo di questa API non rimuove l’identificatore dal grafico delle identità lato server. Per ulteriori informazioni sui grafici delle identità, vedere [Visualizza grafici delle identità](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/view-identity-graphs).
+È possibile utilizzare l&#39;API [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) per rimuovere l&#39;identità dalla mappa delle identità lato client archiviata. L’estensione Identity non invia più l’identificatore ad Edge Network. L’utilizzo di questa API non rimuove l’identificatore dal grafico delle identità lato server. Per ulteriori informazioni sui grafici delle identità, vedere [Visualizza grafici delle identità](https://experienceleague.adobe.com/it/docs/platform-learn/tutorials/identities/view-identity-graphs).
 
 
 >[!BEGINTABS]

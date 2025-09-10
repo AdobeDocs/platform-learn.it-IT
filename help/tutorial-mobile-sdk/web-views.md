@@ -27,7 +27,7 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 ## Potenziali problemi di tracciamento
 
-Gli ECID separati (Experience Cloud Identity) vengono generati quando invii dati dalla parte nativa dell’app e da un WebView all’interno dell’app. Questi ECID separati generano hit disconnessi e dati gonfiati su visite e visitatori. Ulteriori informazioni sull&#39;ECID sono disponibili nella [panoramica ECID](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid).
+Gli ECID separati (Experience Cloud Identity) vengono generati quando invii dati dalla parte nativa dell’app e da un WebView all’interno dell’app. Questi ECID separati generano hit disconnessi e dati gonfiati su visite e visitatori. Ulteriori informazioni sull&#39;ECID sono disponibili nella [panoramica ECID](https://experienceleague.adobe.com/it/docs/experience-platform/identity/features/ecid).
 
 Per risolvere gli hit disconnessi e i dati gonfiati, devi passare l’ECID dell’utente dalla parte nativa dell’app a un WebView che potresti voler utilizzare nell’app.
 

@@ -15,7 +15,7 @@ ht-degree: 6%
 
 Scopri come creare uno stream di dati in Experience Platform.
 
-Un flusso di dati è una configurazione lato server in Platform Edge Network. Lo stream di dati assicura che i dati in arrivo in Platform Edge Network vengano instradati in modo appropriato alle applicazioni e ai servizi Adobe Experience Cloud. Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) o questo [video](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/configure-datastreams).
+Un flusso di dati è una configurazione lato server in Platform Edge Network. Lo stream di dati assicura che i dati in arrivo in Platform Edge Network vengano instradati in modo appropriato alle applicazioni e ai servizi Adobe Experience Cloud. Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experience-platform/datastreams/overview) o questo [video](https://experienceleague.adobe.com/it/docs/platform-learn/data-collection/edge-network/configure-datastreams).
 
 ![Architettura](assets/architecture.png){zoomable="yes"}
 
@@ -102,7 +102,7 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->L’abilitazione di ciascuno dei servizi utilizzati dalla tua organizzazione garantisce che i dati raccolti nell’app mobile possano essere utilizzati ovunque. Per ulteriori informazioni, vedere [impostazioni dello stream di dati](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview).
+>L’abilitazione di ciascuno dei servizi utilizzati dalla tua organizzazione garantisce che i dati raccolti nell’app mobile possano essere utilizzati ovunque. Per ulteriori informazioni, vedere [impostazioni dello stream di dati](https://experienceleague.adobe.com/it/docs/experience-platform/datastreams/overview).
 
 Quando implementi Platform Mobile SDK nella tua app, devi creare tre flussi di dati da mappare ai tre ambienti di tag (sviluppo, stage e produzione). Se utilizzi Platform Mobile SDK con applicazioni basate su Platform, ad esempio Adobe Real-Time Customer Data Platform o Adobe Journey Optimizer, assicurati di creare tali flussi di dati nelle sandbox appropriate.
 

@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Scopri come configurare una proprietà tag nell’interfaccia [!UICONTROL Raccolta dati].
 
-I tag in Adobe Experience Platform costituiscono la soluzione Adobe di nuova generazione per la gestione dei tag. I tag offrono ai clienti un modo semplice di implementare e gestire i tag di analisi, marketing e annunci pubblicitari necessari per fornire ai clienti esperienze personalizzate. Ulteriori informazioni su [Tag](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home) sono disponibili nella documentazione del prodotto.
+I tag in Adobe Experience Platform costituiscono la soluzione Adobe di nuova generazione per la gestione dei tag. I tag offrono ai clienti un modo semplice di implementare e gestire i tag di analisi, marketing e annunci pubblicitari necessari per fornire ai clienti esperienze personalizzate. Ulteriori informazioni su [Tag](https://experienceleague.adobe.com/it/docs/experience-platform/tags/home) sono disponibili nella documentazione del prodotto.
 
 ## Prerequisiti
 
@@ -23,7 +23,7 @@ Per completare la lezione, devi disporre dell’autorizzazione per creare una pr
 
 >[!NOTE]
 >
-> Platform Launch (lato client) è ora [Tag](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
+> Platform Launch (lato client) è ora [Tag](https://experienceleague.adobe.com/it/docs/experience-platform/tags/home)
 
 ## Obiettivi di apprendimento
 

@@ -18,7 +18,7 @@ I dati degli eventi delle app mobili, che hai raccolto e inviato a Platform Edge
 
 A differenza di Adobe Analytics, Customer Journey Analytics *utilizza* dati dei set di dati creati in Experience Platform. I dati non vengono inviati direttamente a Customer Journey Analytics utilizzando Adobe Experience Platform Mobile SDK, ma vengono inviati a set di dati. Le connessioni vengono quindi configurate in Customer Journey Analytics per selezionare i set di dati da utilizzare nei progetti di reporting e analisi.
 
-Questa lezione nell’esercitazione si concentra sul reporting e l’analisi dei dati acquisiti dall’app di esercitazione Luma. Una delle funzionalità esclusive di Customer Journey Analytics è la combinazione di dati provenienti da più origini (CRM, punto vendita, applicazione fedeltà, call center) e canali (web, mobile, offline) per ottenere informazioni approfondite sui percorsi dei clienti. Questa capacità va oltre lo scopo di questa lezione. Per ulteriori informazioni, vedere [Panoramica di Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview).
+Questa lezione nell’esercitazione si concentra sul reporting e l’analisi dei dati acquisiti dall’app di esercitazione Luma. Una delle funzionalità esclusive di Customer Journey Analytics è la combinazione di dati provenienti da più origini (CRM, punto vendita, applicazione fedeltà, call center) e canali (web, mobile, offline) per ottenere informazioni approfondite sui percorsi dei clienti. Questa capacità va oltre lo scopo di questa lezione. Per ulteriori informazioni, vedere [Panoramica di Customer Journey Analytics](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-overview/cja-overview).
 
 
 ## Prerequisiti
@@ -113,7 +113,7 @@ Dopo aver aggiunto i record dai set di dati a Customer Journey Analytics, puoi c
 
 Una visualizzazione dati è un contenitore specifico di Customer Journey Analytics che consente di determinare come interpretare i dati di una connessione. Puoi configurare campi standard e di schema da qualsiasi set di dati definito nella Connessione come componenti (dimensioni, metriche) in Analysis Workspace.
 
-Una visualizzazione dati in Customer Journey Analytics offre un’enorme flessibilità per configurare e definire correttamente i dati dalla connessione. In questo tutorial utilizzi solo la funzionalità necessaria per le attività di reporting e analisi. Per ulteriori informazioni, vedi [Visualizzazioni dati](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views).
+Una visualizzazione dati in Customer Journey Analytics offre un’enorme flessibilità per configurare e definire correttamente i dati dalla connessione. In questo tutorial utilizzi solo la funzionalità necessaria per le attività di reporting e analisi. Per ulteriori informazioni, vedi [Visualizzazioni dati](https://experienceleague.adobe.com/it/docs/analytics-platform/using/cja-dataviews/data-views).
 
 
 Per creare la visualizzazione dati:
@@ -213,7 +213,7 @@ Hai definito la tua visualizzazione dati e tutto è pronto per iniziare a creare
 
 ## Creare un progetto
 
-I progetti Workspace vengono utilizzati in Customer Journey Analytics per creare rapporti e visualizzazioni. Ci sono molte possibilità per creare rapporti completi e visualizzazioni coinvolgenti, ma questo esula dall&#39;ambito di questa esercitazione. Per ulteriori informazioni, vedere [Panoramica di Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) e [Creare un nuovo progetto](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project).
+I progetti Workspace vengono utilizzati in Customer Journey Analytics per creare rapporti e visualizzazioni. Ci sono molte possibilità per creare rapporti completi e visualizzazioni coinvolgenti, ma questo esula dall&#39;ambito di questa esercitazione. Per ulteriori informazioni, vedere [Panoramica di Workspace](https://experienceleague.adobe.com/it/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) e [Creare un nuovo progetto](https://experienceleague.adobe.com/it/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project).
 
 In questa sezione della lezione, crei un progetto che mostra rapporti e visualizzazioni su:
 
