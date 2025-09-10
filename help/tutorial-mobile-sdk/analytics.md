@@ -193,7 +193,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >
 >I campi personalizzati si trovano sotto l’identificatore dell’organizzazione Experience Cloud.
 >
-Il nome tenant `_techmarketingdemos` è sostituito con il valore univoco dell&#39;organizzazione.
+>Il nome tenant `_techmarketingdemos` è sostituito con il valore univoco dell&#39;organizzazione.
 
 
 

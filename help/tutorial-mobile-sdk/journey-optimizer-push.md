@@ -419,7 +419,7 @@ Come descritto nelle lezioni precedenti, l’installazione di un’estensione ta
 >[!IMPORTANT]
 >
 >**Solo per iOS**: `MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])` determina se le notifiche push utilizzano una sandbox APNs o un server di produzione per l&#39;invio di notifiche push. Quando esegui il test dell&#39;app nel simulatore o su un dispositivo, assicurati che `messaging.useSandbox` sia impostato su `true` in modo da ricevere le notifiche push. Quando distribuisci l&#39;app per la produzione per testare l&#39;utilizzo di Testflight di Apple, assicurati di impostare `messaging.useSandbox` su `false`, altrimenti l&#39;app di produzione non sarà in grado di ricevere notifiche push.<br/><br/>
->>Firebase Cloud Messaging (FCM) non supporta **not** il concetto di sandbox per le notifiche push.
+>&#x200B;>Firebase Cloud Messaging (FCM) non supporta **not** il concetto di sandbox per le notifiche push.
 
 
 ## Creare una notifica push personalizzata
