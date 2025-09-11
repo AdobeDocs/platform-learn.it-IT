@@ -8,22 +8,22 @@ role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: 6a6d8dcceead2421c79a0727e18bec97dfe3d9cb
+source-git-commit: 323702d37425b22b0a5270d410e8b000aa0d5434
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 70%
+source-wordcount: '79'
+ht-degree: 72%
 
 ---
 
 
-# Implementare l’Experience Cloud nelle app per dispositivi mobili {#implement-mobile-sdk}
+# Implementare Experience Cloud nelle app per dispositivi mobili {#implement-mobile-sdk}
 
 + [Panoramica del tutorial](overview.md)
 + Configurazione iniziale {#initial-configuration}
    + [Crea uno schema](create-schema.md)
    + [Creare un flusso di dati](create-datastream.md)
    + [Configurare i tag](configure-tags.md)
-+ Implementazione app{#app-implementation}
++ Implementazione dell’app{#app-implementation}
    + [Installare gli SDK](install-sdks.md)
    + [Assurance](assurance.md)
    + [Consenso](consent.md)
@@ -33,7 +33,7 @@ ht-degree: 70%
    + [Identità](identity.md)
    + [Profilo](profile.md)
    + [Places](places.md)
-+ Experience Cloud {#experience-cloud}
++ Experience Cloud{#experience-cloud}
    + [Analytics](analytics.md)
    + [Experience Platform](platform.md)
    + Journey Optimizer{#journey-optimizer}
@@ -42,5 +42,6 @@ ht-degree: 70%
       + [Gestione delle decisioni](journey-optimizer-offers.md)
    + [Target](target.md)
    + [Customer Journey Analytics](customer-journey-analytics.md)
+   + [Test](test.md)
 + [Conclusione](conclusion.md)
 
