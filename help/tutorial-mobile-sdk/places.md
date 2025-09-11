@@ -3,7 +3,7 @@ title: Utilizzare Places con Platform Mobile SDK
 description: Scopri come utilizzare il servizio di geolocalizzazione Places nella tua app mobile.
 jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '1825'
 ht-degree: 2%
@@ -400,15 +400,15 @@ Per convalidare le funzioni di geolocalizzazione nell’app:
 
 1. Sposta (trascina) la mappa per assicurarti che il cerchio blu centrale sia sopra uno dei punti di interesse, ad esempio Londra.
 
-1. Tocca <img src="assets/geobutton.png" width="20" /> finché la categoria e il nome non vengono visualizzati nell&#39;etichetta nella posizione rossa con il pin.
+1. Tocca <img src="assets/geobutton.png" width="20"> finché la categoria e il nome non vengono visualizzati nell&#39;etichetta nella posizione rossa con il pin.
 
 1. Tocca l&#39;etichetta del punto di interesse, che apre il foglio **[!UICONTROL POI nelle vicinanze]**.
 
-   <img src="assets/appgeolocation.png" width="300" />
+   <img src="assets/appgeolocation.png" width="300">
 
 1. Premi i pulsanti **[!UICONTROL Entrata]** o **[!UICONTROL Uscita]** per simulare eventi di entrata recinto geografico e uscita recinto geografico dall&#39;app.
 
-   <img src="assets/appentryexit.png" width="300" />
+   <img src="assets/appentryexit.png" width="300">
 
 1. Dovresti visualizzare gli eventi nell’interfaccia utente di Assurance. Sia negli eventi che negli eventi del servizio Places.
 
@@ -420,12 +420,12 @@ Per convalidare le funzioni di geolocalizzazione nell’app:
 
 1. Toccare in un punto qualsiasi all&#39;interno del cerchio rosso visualizzato.
 
-   <img src="assets/appgeolocation-android.png" width="300" />
+   <img src="assets/appgeolocation-android.png" width="300">
 
 
 1. Premi i pulsanti **[!UICONTROL Entrata]** o **[!UICONTROL Uscita]** per simulare eventi di entrata recinto geografico e uscita recinto geografico dall&#39;app.
 
-   <img src="assets/appentryexit-android.png" width="300" />
+   <img src="assets/appentryexit-android.png" width="300">
 
 1. Dovresti visualizzare gli eventi nell’interfaccia utente di Assurance.
 

@@ -3,7 +3,7 @@ title: Raccogliere dati profilo con Platform Mobile SDK
 description: Scopri come raccogliere i dati del profilo in un’app mobile.
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 2%
@@ -123,7 +123,7 @@ Dopo aver aggiornato l’attributo di un utente, questo è disponibile per altri
    Questo codice:
 
    1. Chiama l&#39;API [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) con il nome attributo `isPaidUser` come singolo elemento nell&#39;array `attributeNames`.
-   1. Poi controlla il valore dell&#39;attributo `isPaidUser` e quando `yes`, inserisce un badge sul Icona <img src="assets/paiduser.png" width="20" /> nella barra degli strumenti in alto a destra.
+   1. Poi controlla il valore dell&#39;attributo `isPaidUser` e quando `yes`, inserisce un badge sul Icona <img src="assets/paiduser.png" width="20"> nella barra degli strumenti in alto a destra.
 
 >[!TAB Android]
 
@@ -139,7 +139,7 @@ Dopo aver aggiornato l’attributo di un utente, questo è disponibile per altri
    Questo codice:
 
    1. Chiama l&#39;API [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) con il nome attributo `isPaidUser` come singolo elemento nell&#39;array `attributeNames`.
-   1. Verifica quindi il valore dell&#39;attributo `isPaidUser`. Quando `yes`, il codice sostituisce l&#39;icona della persona con un distintivo sul Icona <img src="assets/paiduser.png" width="20" /> nella barra degli strumenti in alto a destra.
+   1. Verifica quindi il valore dell&#39;attributo `isPaidUser`. Quando `yes`, il codice sostituisce l&#39;icona della persona con un distintivo sul Icona <img src="assets/paiduser.png" width="20"> nella barra degli strumenti in alto a destra.
 
 >[!ENDTABS]
 
@@ -168,7 +168,7 @@ Per ulteriori informazioni, consulta il [riferimento API](https://developer.adob
 1. Selezionare **[!DNL Products]** nella barra delle schede.
 1. Seleziona un prodotto.
 1. Seleziona <img src="assets/saveforlater.png" width="15" />.
-1. Seleziona <img src="assets/addtocart.png" width="20" />.
+1. Seleziona <img src="assets/addtocart.png" width="20">.
 1. Seleziona <img src="assets/purchase.png" width="15" />.
 
    <img src="./assets/mobile-app-events-3.png" width="300">
@@ -193,8 +193,8 @@ Per ulteriori informazioni, consulta il [riferimento API](https://developer.adob
 
 1. Selezionare **[!DNL Products]** nella barra delle schede.
 1. Seleziona un prodotto.
-1. Seleziona<img src="assets/heart.png" width="25" />.
-1. Seleziona <img src="assets/addtocart.png" width="20" />.
+1. Seleziona<img src="assets/heart.png" width="25">.
+1. Seleziona <img src="assets/addtocart.png" width="20">.
 1. Seleziona <img src="assets/purchase.png" width="15" />.
 
    <img src="./assets/mobile-app-events-3-android.png" width="300">

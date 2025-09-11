@@ -3,7 +3,7 @@ title: Gestire WebViews con Platform Mobile SDK
 description: Scopri come gestire la raccolta dati con WebViews in un’app mobile.
 jira: KT-14632
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 1%
@@ -27,7 +27,7 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 ## Potenziali problemi di tracciamento
 
-Gli ECID separati (Experience Cloud Identity) vengono generati quando invii dati dalla parte nativa dell’app e da un WebView all’interno dell’app. Questi ECID separati generano hit disconnessi e dati gonfiati su visite e visitatori. Ulteriori informazioni sull&#39;ECID sono disponibili nella [panoramica ECID](https://experienceleague.adobe.com/it/docs/experience-platform/identity/features/ecid).
+Gli ECID separati (Experience Cloud Identity) vengono generati quando invii dati dalla parte nativa dell’app e da un WebView all’interno dell’app. Questi ECID separati generano hit disconnessi e dati gonfiati su visite e visitatori. Ulteriori informazioni sull&#39;ECID sono disponibili nella [panoramica ECID](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid).
 
 Per risolvere gli hit disconnessi e i dati gonfiati, devi passare l’ECID dell’utente dalla parte nativa dell’app a un WebView che potresti voler utilizzare nell’app.
 
@@ -110,11 +110,11 @@ Per eseguire il codice:
 
 >[!TAB iOS]
 
-<img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
+<img src="./assets/tou1.png" width="300"> <img src="./assets/tou2.png" width="300">
 
 >[!TAB Android]
 
-<img src="./assets/tou1-android.png" width="300" /> <img src="./assets/tou2-android.png" width="300" />
+<img src="./assets/tou1-android.png" width="300"> <img src="./assets/tou2-android.png" width="300">
 
 >[!ENDTABS]
 
