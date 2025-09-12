@@ -3,9 +3,9 @@ title: Raccogliere dati profilo con Platform Mobile SDK
 description: Scopri come raccogliere i dati del profilo in un’app mobile.
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
+source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '787'
 ht-degree: 1%
 
 ---
@@ -160,7 +160,7 @@ Per ulteriori informazioni, consulta il [riferimento API](https://developer.adob
 
    <img src="./assets/mobile-app-events-1.png" width="300">
 
-1. Per inserire un’e-mail casuale e un ID cliente, seleziona il pulsante > .
+1. Per inserire un&#39;e-mail casuale e un ID cliente, selezionare **[!UICONTROL A Pulsante |]** .
 1. Seleziona **[!UICONTROL Accesso]**.
 
    <img src="./assets/mobile-app-events-2.png" width="300">

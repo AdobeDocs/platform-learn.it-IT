@@ -4,7 +4,7 @@ description: Scopri come implementare l’estensione Assurance in un’app mobil
 feature: Mobile SDK,Assurance
 jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
 workflow-type: tm+mt
 source-wordcount: '1660'
 ht-degree: 4%
@@ -35,7 +35,7 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 ## Conferma accesso
 
-Conferma che la tua organizzazione abbia accesso ad Assurance. Come utente, devi essere aggiunto al profilo per Adobe Experience Platform. Per ulteriori informazioni, consulta [Accesso utente](https://experienceleague.adobe.com/it/docs/experience-platform/assurance/user-access) nella guida di Assurance.
+Conferma che la tua organizzazione abbia accesso ad Assurance. Come utente, devi essere aggiunto al profilo per Adobe Experience Platform. Per ulteriori informazioni, consulta [Accesso utente](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/user-access) nella guida di Assurance.
 
 ## Implementazione
 
@@ -105,7 +105,7 @@ Devi fornire un identificatore univoco del bundle per l’app.
 
 Assicurati di utilizzare un identificatore bundle _univoco_ e sostituisci l&#39;identificatore bundle `com.adobe.luma.tutorial.swiftui`, in quanto ogni identificatore bundle deve essere univoco. In genere si utilizza un formato DNS inverso per le stringhe ID bundle, come `com.organization.brand.uniqueidentifier`. La versione finale di questa esercitazione, ad esempio, utilizza `com.adobe.luma.tutorial.swiftui`.
 
-![Funzionalità di firma Xcode](assets/xcode-signing-capabilities.png){zoomable="yes"}{zoomable="yes"}
+![Funzionalità di firma Xcode](assets/xcode-signing-capabilities.png){zoomable="yes"}
 
 >[!TAB Android]
 
