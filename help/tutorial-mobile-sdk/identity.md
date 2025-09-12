@@ -4,9 +4,9 @@ description: Scopri come raccogliere i dati di identità in un’app mobile.
 feature: Mobile SDK,Identities
 jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '962'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Scopri come raccogliere i dati di identità in un’app mobile.
 
 Il servizio Adobe Experience Platform Identity consente di avere una visione migliore dei clienti e dei loro comportamenti. I servizi uniscono le identità tra dispositivi e sistemi, consentendo di fornire esperienze digitali personali e di impatto in tempo reale. I campi di identità e gli spazi dei nomi sono l’associazione che unisce diverse origini di dati per creare il profilo cliente in tempo reale a 360 gradi.
 
-Ulteriori informazioni sull&#39;[estensione Identity](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) e sul [servizio Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home) sono disponibili nella documentazione.
+Ulteriori informazioni sull&#39;[estensione Identity](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) e sul [servizio Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) sono disponibili nella documentazione.
 
 ## Prerequisiti
 
@@ -35,7 +35,7 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 ## Impostare uno spazio dei nomi di identità personalizzato
 
-Gli spazi dei nomi delle identità sono componenti di [Identity Service](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home) che fungono da indicatori del contesto a cui si riferisce un&#39;identità. Ad esempio, distinguono un valore di `name@email.com` come indirizzo e-mail o `443522` come ID CRM numerico.
+Gli spazi dei nomi delle identità sono componenti di [Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) che fungono da indicatori del contesto a cui si riferisce un&#39;identità. Ad esempio, distinguono un valore di `name@email.com` come indirizzo e-mail o `443522` come ID CRM numerico.
 
 >[!NOTE]
 >
@@ -179,7 +179,7 @@ Desideri aggiornare sia l’identità standard (e-mail) che quella personalizzat
 
 ## Rimuovere un’identità
 
-È possibile utilizzare l&#39;API [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) per rimuovere l&#39;identità dalla mappa delle identità lato client archiviata. L’estensione Identity non invia più l’identificatore ad Edge Network. L’utilizzo di questa API non rimuove l’identificatore dal grafico delle identità lato server. Per ulteriori informazioni sui grafici delle identità, vedere [Visualizza grafici delle identità](https://experienceleague.adobe.com/it/docs/platform-learn/tutorials/identities/view-identity-graphs).
+È possibile utilizzare l&#39;API [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) per rimuovere l&#39;identità dalla mappa delle identità lato client archiviata. L’estensione Identity non invia più l’identificatore ad Edge Network. L’utilizzo di questa API non rimuove l’identificatore dal grafico delle identità lato server. Per ulteriori informazioni sui grafici delle identità, vedere [Visualizza grafici delle identità](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/view-identity-graphs).
 
 
 >[!BEGINTABS]
@@ -233,7 +233,7 @@ MobileSDK.shared.removeIdentities(
 1. Consulta la sezione [istruzioni di installazione](assurance.md#connecting-to-a-session) per collegare il simulatore o il dispositivo ad Assurance.
 1. Nell’app Luma
    1. Seleziona la scheda **[!UICONTROL Home]** e sposta l&#39;icona Assurance a sinistra.
-   1. Seleziona la Icona <img src="assets/login.png" width="15" /> in alto a destra.
+   1. Seleziona l&#39;icona ![Utente](/help/assets/icons/User.svg) in alto a destra.
 
 >[!BEGINTABS]
 
@@ -248,7 +248,7 @@ MobileSDK.shared.removeIdentities(
 >[!ENDTABS]
 
 1. Specifica un indirizzo e-mail e un ID del sistema di gestione delle relazioni con i clienti, oppure
-1. Seleziona <img src="assets/insert.png" width="15" /> (iOS) o **[!UICONTROL Genera e-mail casuale]** (Android) per generare in modo casuale **[!UICONTROL E-mail]** e **[!UICONTROL ID CRM]**.
+1. Seleziona **[!UICONTROL A |]** (iOS) o **[!UICONTROL Genera e-mail casuale]** (Android) per generare in modo casuale **[!UICONTROL E-mail]** e **[!UICONTROL ID CRM]**.
 1. Seleziona **[!UICONTROL Accesso]**.
 
 >[!BEGINTABS]

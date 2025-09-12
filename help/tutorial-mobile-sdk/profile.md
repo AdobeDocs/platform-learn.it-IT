@@ -3,10 +3,10 @@ title: Raccogliere dati profilo con Platform Mobile SDK
 description: Scopri come raccogliere i dati del profilo in un’app mobile.
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
+source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 2%
+source-wordcount: '786'
+ht-degree: 1%
 
 ---
 
@@ -62,7 +62,7 @@ Sarebbe utile che il targeting e la personalizzazione dell’app sapessero rapid
 
    1. Utilizza il dizionario `profileMap` come valore per il parametro `attributeDict` della chiamata API [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes).
 
-1. Passa a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** nel navigatore progetti Xcode e trova la chiamata a `updateUserAttributes` (nel codice per gli acquisti <img src="assets/purchase.png" width="15" />). Aggiungi il seguente codice:
+1. Passa a **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** nel navigatore progetti Xcode e trova la chiamata a `updateUserAttributes` (all&#39;interno del codice per il pulsante Acquisti ![Carta di credito](/help/assets/icons/CreditCard.svg)). Aggiungi il seguente codice:
 
    ```swift
    // Update attributes
@@ -87,7 +87,7 @@ Sarebbe utile che il targeting e la personalizzazione dell’app sapessero rapid
 
    1. Utilizza la mappa `profileMap` come valore per il parametro `attributeDict` della chiamata API [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes).
 
-1. Passa a **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL visualizzazioni]** > **[!UICONTROL ProductView.kt]** e trova la chiamata a `updateUserAttributes` (nel codice per gli acquisti <img src="assets/purchase.png" width="15" />). Aggiungi il seguente codice:
+1. Passa a **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL visualizzazioni]** > **[!UICONTROL ProductView.kt]** e trova la chiamata a `updateUserAttributes` (all&#39;interno del codice per il pulsante Acquisti ![CreditCard](/help/assets/icons/CreditCard.svg)). Aggiungi il seguente codice:
 
    ```kotlin
    // Update attributes
@@ -123,7 +123,7 @@ Dopo aver aggiornato l’attributo di un utente, questo è disponibile per altri
    Questo codice:
 
    1. Chiama l&#39;API [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) con il nome attributo `isPaidUser` come singolo elemento nell&#39;array `attributeNames`.
-   1. Poi controlla il valore dell&#39;attributo `isPaidUser` e quando `yes`, inserisce un badge sul Icona <img src="assets/paiduser.png" width="20"> nella barra degli strumenti in alto a destra.
+   1. Verifica quindi il valore dell&#39;attributo `isPaidUser` e, quando `yes`, inserisce un badge nell&#39;icona ![UserCheckedOut](/help/assets/icons/UserCheckedOut.svg) nella barra degli strumenti in alto a destra.
 
 >[!TAB Android]
 
@@ -139,7 +139,7 @@ Dopo aver aggiornato l’attributo di un utente, questo è disponibile per altri
    Questo codice:
 
    1. Chiama l&#39;API [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) con il nome attributo `isPaidUser` come singolo elemento nell&#39;array `attributeNames`.
-   1. Verifica quindi il valore dell&#39;attributo `isPaidUser`. Quando `yes`, il codice sostituisce l&#39;icona della persona con un distintivo sul Icona <img src="assets/paiduser.png" width="20"> nella barra degli strumenti in alto a destra.
+   1. Verifica quindi il valore dell&#39;attributo `isPaidUser`. Quando `yes`, il codice sostituisce l&#39;icona della persona con un&#39;icona del badge nella barra degli strumenti in alto a destra.
 
 >[!ENDTABS]
 
@@ -156,24 +156,24 @@ Per ulteriori informazioni, consulta il [riferimento API](https://developer.adob
 
 1. Seleziona **[!UICONTROL Home]** nella barra delle schede.
 1. Sposta l’icona Assurance a sinistra.
-1. Per aprire il foglio di accesso, selezionare Pulsante <img src="assets/login.png" width="15" />
+1. Per aprire il foglio di accesso, selezionare il pulsante ![Utente](/help/assets/icons/User.svg).
 
    <img src="./assets/mobile-app-events-1.png" width="300">
 
-1. Per inserire un’e-mail casuale e un ID cliente, seleziona la Pulsante <img src="assets/insert.png" width="15" /> .
+1. Per inserire un’e-mail casuale e un ID cliente, seleziona il pulsante > .
 1. Seleziona **[!UICONTROL Accesso]**.
 
    <img src="./assets/mobile-app-events-2.png" width="300">
 
 1. Selezionare **[!DNL Products]** nella barra delle schede.
 1. Seleziona un prodotto.
-1. Seleziona <img src="assets/saveforlater.png" width="15" />.
-1. Seleziona <img src="assets/addtocart.png" width="20">.
-1. Seleziona <img src="assets/purchase.png" width="15" />.
+1. Seleziona ![Cuore](/help/assets/icons/Heart.svg).
+1. Seleziona ![ShoppingCart](/help/assets/icons/ShoppingCart.svg).
+1. Seleziona ![Carta di credito](/help/assets/icons/CreditCard.svg).
 
    <img src="./assets/mobile-app-events-3.png" width="300">
 
-1. Torna alla schermata **[!UICONTROL Home]**. Dovresti notare che è stato aggiunto un badge <img src="assets/person-badge-icon.png" width="15" />.
+1. Torna alla schermata **[!UICONTROL Home]**. Dovresti notare che è stato aggiunto un distintivo ![UserCheckedOut](/help/assets/icons/UserCheckedOut.svg).
 
    <img src="./assets/personbadges.png" width="300">
 
@@ -182,20 +182,20 @@ Per ulteriori informazioni, consulta il [riferimento API](https://developer.adob
 
 1. Seleziona **[!UICONTROL Home]** nella barra delle schede.
 1. Sposta l’icona Assurance a sinistra.
-1. Per aprire il foglio di accesso, selezionare Pulsante <img src="assets/login.png" width="15" />
+1. Per aprire il foglio di accesso, selezionare il pulsante ![Utente](/help/assets/icons/User.svg).
 
    <img src="./assets/mobile-app-events-1-android.png" width="300">
 
-1. Per inserire un’e-mail casuale e un ID cliente, seleziona la Pulsante <img src="assets/insert.png" width="15" /> .
+1. Per inserire un&#39;e-mail casuale e un ID cliente, seleziona **[!UICONTROL Genera e-mail casuale]**.
 1. Seleziona **[!UICONTROL Accesso]**.
 
    <img src="./assets/mobile-app-events-2-android.png" width="300">
 
 1. Selezionare **[!DNL Products]** nella barra delle schede.
 1. Seleziona un prodotto.
-1. Seleziona<img src="assets/heart.png" width="25">.
-1. Seleziona <img src="assets/addtocart.png" width="20">.
-1. Seleziona <img src="assets/purchase.png" width="15" />.
+1. Seleziona ![ThumbUp](/help/assets/icons/ThumbUp.svg)
+1. Seleziona ![ShoppingCart](/help/assets/icons/ShoppingCart.svg).
+1. Seleziona ![Carta di credito](/help/assets/icons/CreditCard.svg).
 
    <img src="./assets/mobile-app-events-3-android.png" width="300">
 
