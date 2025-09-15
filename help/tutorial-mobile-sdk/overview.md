@@ -4,9 +4,9 @@ description: Scopri come implementare le app mobili Adobe Experience Cloud. Ques
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 9129d7ab2ac33626240b0375e6424c0f6943290f
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1018'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Experience Platform Mobile SDK è un SDK lato client che consente ai clienti di 
 ![Architettura](assets/architecture.png){zoomable="yes"}
 
 
-Questa esercitazione ti guida attraverso l’implementazione di Platform Mobile SDK in un’app di esempio denominata Luma. L&#39;app [Luma](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) dispone di funzionalità che consentono di creare un&#39;implementazione realistica. Dopo aver completato questa esercitazione, dovresti essere in grado di iniziare a implementare tutte le soluzioni di marketing tramite Experience Platform Mobile SDK nelle tue app mobili.
+Questa esercitazione ti guida attraverso l’implementazione di Platform Mobile SDK in un’app di esempio denominata Luma. L’app Luma dispone di funzionalità che consentono di realizzare un’implementazione realistica. Dopo aver completato questa esercitazione, dovresti essere in grado di iniziare a implementare tutte le soluzioni di marketing tramite Experience Platform Mobile SDK nelle tue app mobili.
 
 Le lezioni sono pensate per:
 
@@ -64,7 +64,7 @@ In queste lezioni, si presume che tu sia in possesso di un Adobe Id e delle auto
    * **[!UICONTROL Diritti proprietà]**—elementi di autorizzazione per **[!UICONTROL Sviluppa]**, **[!UICONTROL Approva]**, **[!UICONTROL Pubblica]**, **[!UICONTROL Gestisci estensioni]** e **[!UICONTROL Gestisci ambienti]**.
    * **[!UICONTROL Diritti azienda]**—autorizzazioni per **[!UICONTROL Gestione proprietà]**
 
-     Per ulteriori informazioni sulle autorizzazioni dei tag, vedere [Autorizzazioni utente per i tag](https://experienceleague.adobe.com/it/docs/experience-platform/tags/admin/user-permissions){target="_blank"} nella documentazione del prodotto.
+     Per ulteriori informazioni sulle autorizzazioni dei tag, vedere [Autorizzazioni utente per i tag](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions){target="_blank"} nella documentazione del prodotto.
 * In Experience Platform, devi disporre di:
    * **[!UICONTROL Modellazione dati]**: elementi di autorizzazione per gestire e visualizzare gli schemi.
    * **[!UICONTROL Identity Management]**: elementi di autorizzazione per gestire e visualizzare gli spazi dei nomi delle identità.
@@ -74,7 +74,7 @@ In queste lezioni, si presume che tu sia in possesso di un Adobe Id e delle auto
       * **[!UICONTROL Gestione dati]**: elementi di autorizzazione per gestire e visualizzare i set di dati.
       * Una **sandbox** di sviluppo che puoi utilizzare per questa esercitazione.
 
-   * Per le lezioni di Journey Optimizer, è necessario disporre delle autorizzazioni per configurare il **servizio di notifica push** e per creare una **superficie app**, un **percorso**, un **messaggio** e **predefiniti messaggio**. Inoltre, per la gestione delle decisioni, è necessario disporre delle autorizzazioni appropriate per **gestire offerte** e **decisioni**, come descritto in [Livelli di autorizzazione](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/access-control/high-low-permissions).
+   * Per le lezioni di Journey Optimizer, è necessario disporre delle autorizzazioni per configurare il **servizio di notifica push** e per creare una **superficie app**, un **percorso**, un **messaggio** e **predefiniti messaggio**. Inoltre, per la gestione delle decisioni, è necessario disporre delle autorizzazioni appropriate per **gestire offerte** e **decisioni**, come descritto in [Livelli di autorizzazione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions).
 
 * Con Adobe Analytics, devi sapere quali **suite di rapporti** puoi utilizzare per completare questa esercitazione.
 
@@ -119,9 +119,8 @@ Sono disponibili per il download due versioni dell’app di esempio. È possibil
 
 Si utilizza Android come piattaforma, [!DNL Kotlin]+[!DNL Java] come linguaggio di programmazione, [!DNL JetPack Compose] come framework dell&#39;interfaccia utente e [!DNL Android Studio] come ambiente di sviluppo integrato (IDE). Tuttavia, molti dei concetti di implementazione illustrati sono simili per altre piattaforme di sviluppo. Molti hanno già completato con successo questa esercitazione con poca o nessuna esperienza precedente di composizione Android/Kotlin+Java/JetPack. Non devi essere un esperto per completare le lezioni, ma puoi ottenere di più dalle lezioni se sei in grado di leggere e comprendere il codice senza difficoltà.
 
-Puoi scaricare una versione di prova finale prodotta dell’app da Google Play.
+Se preferisci, puoi [partecipare a un test per una versione prodotta](https://play.google.com/apps/internaltest/4700642199234438150) dell&#39;app da Google Play.
 
-[![Scarica](assets/download-app-android.svg)](https://play.google.com/store/apps/details?id=com.adobe.luma.tutorial.android)
 
 >[!ENDTABS]
 
