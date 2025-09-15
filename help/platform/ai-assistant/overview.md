@@ -12,7 +12,7 @@ exl-id: 15b9a4e3-0971-4460-859b-45118d382f64
 source-git-commit: f003a65188c0201030b8ecca0c0838088c814e47
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -51,7 +51,7 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
                     <p class="is-size-6">Scopri come impostare l’accesso e le autorizzazioni per l’Assistente per l’intelligenza artificiale in Adobe Experience Platform.</p>
                 </div>
                 <a href="access.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Osserva</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>
         </div>
@@ -61,7 +61,7 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discoverability-panel.md" title="Utilizzare il pannello individuabilità in AI Assistant" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440970/?format=jpeg&nocache=1748392732984&captions=ita" alt="Utilizzare il pannello individuabilità in AI Assistant"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440962/?format=jpeg&nocache=1748392732984" alt="Utilizzare il pannello individuabilità in AI Assistant"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -74,7 +74,7 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
                     <p class="is-size-6">Scopri come utilizzare il pannello di individuabilità in AI Assistant.</p>
                 </div>
                 <a href="discoverability-panel.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Osserva</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>
         </div>
@@ -84,7 +84,7 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-responses.md" title="Convalidare le risposte dall’Assistente AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441747/?format=jpeg&nocache=1748392733006&captions=ita" alt="Convalidare le risposte dall’Assistente AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441738/?format=jpeg&nocache=1748392733006" alt="Convalidare le risposte dall’Assistente AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -97,7 +97,7 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
                     <p class="is-size-6">Scopri come verificare e convalidare le risposte fornite dall’Assistente IA in Adobe Experience Platform.</p>
                 </div>
                 <a href="validate-responses.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Osserva</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>
         </div>
@@ -122,7 +122,7 @@ Ci sono molti altri casi d’uso in cui l’Assistente AI può aiutarti a gestir
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="operational-insights.md" title="Ottenere informazioni operative con l’Assistente AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444040/?format=jpeg&nocache=1748392734347&captions=ita" alt="Ottenere informazioni operative con l’Assistente AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444031/?format=jpeg&nocache=1748392734347" alt="Ottenere informazioni operative con l’Assistente AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -135,7 +135,7 @@ Ci sono molti altri casi d’uso in cui l’Assistente AI può aiutarti a gestir
                     <p class="is-size-6">Scopri come utilizzare l’Assistente AI per scoprire informazioni operative su oggetti aziendali come pubblico, set di dati, schemi, destinazioni e percorsi in Adobe Experience Platform</p>
                 </div>
                 <a href="operational-insights.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Osserva</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>
         </div>
@@ -145,7 +145,7 @@ Ci sono molti altri casi d’uso in cui l’Assistente AI può aiutarti a gestir
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="find-unused-audiences.md" title="Assistente AI: caso di utilizzo per la pulizia del pubblico" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441995/?format=jpeg&nocache=1748392734324&captions=ita" alt="Assistente AI: caso di utilizzo per la pulizia del pubblico"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435532/?format=jpeg&nocache=1748392734324" alt="Assistente AI: caso di utilizzo per la pulizia del pubblico"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -158,7 +158,7 @@ Ci sono molti altri casi d’uso in cui l’Assistente AI può aiutarti a gestir
                     <p class="is-size-6">Scopri come identificare i tipi di pubblico non utilizzati con l’Assistente AI per eliminarli e rendere più efficienti le operazioni di marketing.</p>
                 </div>
                 <a href="find-unused-audiences.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Osserva</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>
         </div>
@@ -168,7 +168,7 @@ Ci sono molti altri casi d’uso in cui l’Assistente AI può aiutarti a gestir
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="impact-analysis.md" title="Analisi dell’impatto con l’Assistente AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441688/?format=jpeg&nocache=1748392734336&captions=ita" alt="Analisi dell’impatto con l’Assistente AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441680/?format=jpeg&nocache=1748392734336" alt="Analisi dell’impatto con l’Assistente AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -181,7 +181,7 @@ Ci sono molti altri casi d’uso in cui l’Assistente AI può aiutarti a gestir
                     <p class="is-size-6">Scopri in che modo l’Assistente AI può aiutarti a rilevare potenziali impatti prima di modificare oggetti condivisi. Le modifiche agli oggetti condivisi, come attributi e tipi di pubblico, possono interrompere i flussi di lavoro per altri team, complicando i processi e rischiando di compromettere le attività di marketing più importanti.</p>
                 </div>
                 <a href="impact-analysis.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Osserva</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>
         </div>
@@ -204,7 +204,7 @@ L’Assistente AI è uno strumento utile per imparare nuovi prodotti o per otten
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-knowledge.md" title="Scopri le applicazioni Experience Platform con l’Assistente AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441032/?format=jpeg&nocache=1748392735046&captions=ita" alt="Scopri le applicazioni Experience Platform con l’Assistente AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441024/?format=jpeg&nocache=1748392735046" alt="Scopri le applicazioni Experience Platform con l’Assistente AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -217,7 +217,7 @@ L’Assistente AI è uno strumento utile per imparare nuovi prodotti o per otten
                     <p class="is-size-6">Scopri le applicazioni Adobe Experience Platform da AI Assistant.</p>
                 </div>
                 <a href="product-knowledge.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Osserva</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>
         </div>
@@ -240,7 +240,7 @@ L’Assistente AI è uno strumento utile per imparare nuovi prodotti o per otten
                     <p class="is-size-6">Scopri come utilizzare l’Assistente AI per acquisire rapidamente nuove funzioni e ridurre i tempi di onboarding.</p>
                 </div>
                 <a href="onboard.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Osserva</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>
         </div>
@@ -262,7 +262,7 @@ Risolvere i problemi e aprire i ticket di assistenza clienti.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-support-agent.md" title="Agente di supporto prodotto" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443191/?format=jpeg&nocache=1748392735554&captions=ita" alt="Agente di supporto prodotto"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443183/?format=jpeg&nocache=1748392735554" alt="Agente di supporto prodotto"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -275,7 +275,7 @@ Risolvere i problemi e aprire i ticket di assistenza clienti.
                     <p class="is-size-6">L’agente di supporto del prodotto può contribuire a risolvere i problemi sfruttando un’ampia gamma di risorse di conoscenza curate dai team di supporto esperti di Adobe e persino i tuoi dati. Se hai bisogno di ulteriore assistenza, l’agente di supporto del prodotto può ora creare un caso di supporto con informazioni contestuali dettagliate.</p>
                 </div>
                 <a href="product-support-agent.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Osserva</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>
         </div>
@@ -297,7 +297,7 @@ Scopri le funzioni di sicurezza di AI Assistant.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="security-overview.md" title="Panoramica sulla sicurezza di AI Assistant" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441088/?format=jpeg&nocache=1748392736016&captions=ita" alt="Panoramica sulla sicurezza di AI Assistant"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441066/?format=jpeg&nocache=1748392736016" alt="Panoramica sulla sicurezza di AI Assistant"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -310,7 +310,7 @@ Scopri le funzioni di sicurezza di AI Assistant.
                     <p class="is-size-6">Questa è una panoramica delle funzioni di sicurezza per l’Assistente AI in base alla scheda informativa sulla sicurezza.</p>
                 </div>
                 <a href="security-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Osserva</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>
         </div>
