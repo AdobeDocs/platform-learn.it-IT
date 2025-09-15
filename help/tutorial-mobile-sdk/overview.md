@@ -64,7 +64,7 @@ In queste lezioni, si presume che tu sia in possesso di un Adobe Id e delle auto
    * **[!UICONTROL Diritti proprietà]**—elementi di autorizzazione per **[!UICONTROL Sviluppa]**, **[!UICONTROL Approva]**, **[!UICONTROL Pubblica]**, **[!UICONTROL Gestisci estensioni]** e **[!UICONTROL Gestisci ambienti]**.
    * **[!UICONTROL Diritti azienda]**—autorizzazioni per **[!UICONTROL Gestione proprietà]**
 
-     Per ulteriori informazioni sulle autorizzazioni dei tag, vedere [Autorizzazioni utente per i tag](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions){target="_blank"} nella documentazione del prodotto.
+     Per ulteriori informazioni sulle autorizzazioni dei tag, vedere [Autorizzazioni utente per i tag](https://experienceleague.adobe.com/it/docs/experience-platform/tags/admin/user-permissions){target="_blank"} nella documentazione del prodotto.
 * In Experience Platform, devi disporre di:
    * **[!UICONTROL Modellazione dati]**: elementi di autorizzazione per gestire e visualizzare gli schemi.
    * **[!UICONTROL Identity Management]**: elementi di autorizzazione per gestire e visualizzare gli spazi dei nomi delle identità.
@@ -74,7 +74,7 @@ In queste lezioni, si presume che tu sia in possesso di un Adobe Id e delle auto
       * **[!UICONTROL Gestione dati]**: elementi di autorizzazione per gestire e visualizzare i set di dati.
       * Una **sandbox** di sviluppo che puoi utilizzare per questa esercitazione.
 
-   * Per le lezioni di Journey Optimizer, è necessario disporre delle autorizzazioni per configurare il **servizio di notifica push** e per creare una **superficie app**, un **percorso**, un **messaggio** e **predefiniti messaggio**. Inoltre, per la gestione delle decisioni, è necessario disporre delle autorizzazioni appropriate per **gestire offerte** e **decisioni**, come descritto in [Livelli di autorizzazione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions).
+   * Per le lezioni di Journey Optimizer, è necessario disporre delle autorizzazioni per configurare il **servizio di notifica push** e per creare una **superficie app**, un **percorso**, un **messaggio** e **predefiniti messaggio**. Inoltre, per la gestione delle decisioni, è necessario disporre delle autorizzazioni appropriate per **gestire offerte** e **decisioni**, come descritto in [Livelli di autorizzazione](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/access-control/high-low-permissions).
 
 * Con Adobe Analytics, devi sapere quali **suite di rapporti** puoi utilizzare per completare questa esercitazione.
 
