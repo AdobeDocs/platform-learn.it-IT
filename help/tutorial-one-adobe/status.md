@@ -3,9 +3,9 @@ title: Stato contenuto
 description: Stato contenuto
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: d3f1a571cdb937c49b39cc149ce3f07f0f10dfab
+source-git-commit: 28553f8042be7bfc0b553272a6c72e6677fe1cb3
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '444'
 ht-degree: 12%
 
 ---
@@ -45,6 +45,7 @@ Di seguito è riportata una panoramica dello stato del contenuto in questa eserc
 | ---------------------- | ------------ | ------------ |------------ |
 | [1.1 Adobe Experience Manager Cloud Service e Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 01/05/2025 | Sì | - |
 | [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"} | 20/08/2025 | Sì | - |
+| [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 19/09/2025 | Sì | - |
 
 ## &#x200B;4. Consegna e attivazione
 
