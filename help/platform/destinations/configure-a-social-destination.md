@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Configurare una destinazione social
 
-Scopri come connettere e attivare i tipi di pubblico per una destinazione social. Questo video illustra il flusso di lavoro utilizzando una destinazione LinkedIn Matched Audiences in Adobe Real-Time Customer Data Platform.  Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/overview).
+Scopri come connettere e attivare i tipi di pubblico per una destinazione social. Questo video illustra il flusso di lavoro utilizzando una destinazione LinkedIn Matched Audiences in Adobe Real-Time Customer Data Platform.  Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/social/overview).
 
 >[!VIDEO](https://video.tv.adobe.com/v/332599/?learn=on&enablevpops)
 
