@@ -4,14 +4,14 @@ description: AEM CS - Blocco personalizzato avanzato
 kt: 5342
 doc-type: tutorial
 exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '998'
 ht-degree: 0%
 
 ---
 
-# 1.1.5 Blocco personalizzato avanzato
+# 1.1.4 Blocco personalizzato avanzato
 
 Nell&#39;esercizio precedente, hai configurato un blocco personalizzato di base denominato **Offerta Fibra** che mostra campi come **Testo offerta**, **CTA offerte** e **Immagine offerta** sul tuo sito Web.
 
@@ -19,7 +19,7 @@ Ora puoi continuare a lavorare su questo blocco.
 
 ![AEMCS](./images/nav7.png){zoomable="yes"}
 
-## 1.1.5.1 Personalizza lo stile del blocco
+## 1.1.4.1 Personalizza lo stile del blocco
 
 Ora che hai un blocco **fiberoffer** funzionante puoi applicarvi uno stile.
 
@@ -115,7 +115,7 @@ Dovresti visualizzarlo con lo stile applicato alla pagina.
 
 ![Blocca](./images/blockadv13.png){zoomable="yes"}
 
-## 1.1.5.2 Aggiungere logica e caricare dati da un endpoint esterno
+## 1.1.4.2 Aggiungere logica e caricare dati da un endpoint esterno
 
 Per questo esercizio eseguirai una configurazione non elaborata del Web SDK di Adobe e richiederai la migliore offerta successiva da Adobe Journey Optimizer Offer Decisioning.
 
@@ -345,7 +345,7 @@ Dovresti vedere questo.
 
 ![Blocca](./images/blockadv20.png){zoomable="yes"}
 
-Passaggio successivo: [1.1.6 Plug-in AEM Edge Delivery Services MarTech](./ex6.md){target="_blank"}
+Passaggio successivo: [Plug-in AEM Edge Delivery Services MarTech](./ex6.md){target="_blank"}
 
 Torna a [Adobe Experience Manager Cloud Service e Edge Delivery Services](./aemcs.md){target="_blank"}
 

@@ -4,16 +4,16 @@ description: AEM CS - Blocco personalizzato di base
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '812'
 ht-degree: 1%
 
 ---
 
-# 1.1.4 Sviluppare un blocco personalizzato di base
+# 1.1.3 Sviluppare un blocco personalizzato di base
 
-## 1.1.4.1 Imposta l&#39;ambiente di sviluppo locale
+## 1.1.3.1 Imposta l&#39;ambiente di sviluppo locale
 
 Vai a [https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}, scarica e installa **Github Desktop**.
 
@@ -43,7 +43,7 @@ La cartella verrà aperta in Visual Studio Code e sarà possibile creare un nuov
 
 ![Blocca](./images/block7.png){zoomable="yes"}
 
-## 1.1.4.2 Crea un blocco personalizzato di base
+## 1.1.3.2 Crea un blocco personalizzato di base
 
 Adobe consiglia di sviluppare blocchi in un approccio in tre fasi:
 
@@ -145,7 +145,7 @@ Salva le modifiche.
 
 ![Blocca](./images/block15.png){zoomable="yes"}
 
-## 1.1.4.3 Eseguire il commit delle modifiche
+## 1.1.3.3 Eseguire il commit delle modifiche
 
 Hai ora apportato diverse modifiche al progetto che devono essere salvate nell’archivio GitHub. Per farlo, apri **GitHub Desktop**.
 
@@ -169,7 +169,7 @@ Nel browser, vai all’account GitHub e all’archivio creato per CitiSignal. Do
 
 ![Blocca](./images/block20.png){zoomable="yes"}
 
-## 1.1.4.4 Aggiungi il blocco a una pagina
+## 1.1.3.4 Aggiungi il blocco a una pagina
 
 Ora che il blocco delle virgolette di base è definito e confermato nel progetto CitiSignal, puoi aggiungere un blocco **fiberoffer** a una pagina esistente.
 
@@ -249,7 +249,7 @@ Fai di nuovo clic su **Pubblica**.
 
 La nuova pagina è stata pubblicata.
 
-## 1.1.4.5 Aggiungi la nuova pagina al menu di navigazione
+## 1.1.3.5 Aggiungi la nuova pagina al menu di navigazione
 
 Nella panoramica di AEM Sites, vai a **CitiSignal** > **Frammenti** e seleziona la casella di controllo per **Intestazione**. Fai clic su **Modifica**.
 
@@ -284,7 +284,7 @@ Questo è il blocco personalizzato di base, ma ora è incluso nel rendering sul 
 
 ![AEMCS](./images/nav7.png){zoomable="yes"}
 
-Passaggio successivo: [1.1.5 Blocco personalizzato avanzato](./ex5.md){target="_blank"}
+Passaggio successivo: [Blocco personalizzato avanzato](./ex5.md){target="_blank"}
 
 Torna a [Adobe Experience Manager Cloud Service e Edge Delivery Services](./aemcs.md){target="_blank"}
 

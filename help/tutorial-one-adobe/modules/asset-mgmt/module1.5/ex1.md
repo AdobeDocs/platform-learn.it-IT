@@ -3,10 +3,10 @@ title: Guida introduttiva ad Adobe Commerce as a Cloud Service
 description: Guida introduttiva ad Adobe Commerce as a Cloud Service
 kt: 5342
 doc-type: tutorial
-source-git-commit: 28553f8042be7bfc0b553272a6c72e6677fe1cb3
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 16%
+source-wordcount: '688'
+ht-degree: 15%
 
 ---
 
@@ -100,6 +100,16 @@ Fai clic su **Salva visualizzazione archivio**.
 Dovresti visualizzare questo messaggio. Fai clic su **OK**.
 
 ![AEM Assets](./images/accs15.png)
+
+Allora dovresti tornare qui. Fare clic sul sito Web **CitiSignal** per aprirlo.
+
+![AEM Assets](./images/accs16.png)
+
+Selezionare la casella di controllo per impostare il sito Web come sito Web predefinito.
+
+Fare clic su **Salva sito Web**.
+
+![AEM Assets](./images/accs16a.png)
 
 Allora dovresti tornare qui.
 

@@ -4,9 +4,9 @@ description: Creazione del programma Cloud Manager
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 7b9df90424c1d8c2fbe7672f00e9b2ce0ec66d19
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '344'
 ht-degree: 3%
 
 ---
@@ -17,14 +17,14 @@ Vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){tar
 
 ![AEMCS](./images/aemcs1.png)
 
-Per il **nome programma**, utilizzare `--aepUserLdap-- - CitiSignal`. Seleziona l&#39;opzione **Configura una sandbox**. Fai clic su **Continua**.
+Per il **nome programma**, utilizzare `--aepUserLdap-- - CitiSignal AEM+ACCS`. Seleziona l&#39;opzione **Configura una sandbox**. Fai clic su **Continua**.
 
 ![AEMCS](./images/aemcs2.png)
 
 Accertati che siano selezionate le seguenti opzioni:
 
 - Siti
-- Forms
+- Moduli
 - Risorse
 
 Fare clic sulla freccia per **Assets** per aprire l&#39;elenco delle opzioni.
@@ -51,8 +51,6 @@ Fai clic su **Crea**.
 La creazione dell’ambiente richiede un po’ di tempo, 10-20 minuti.
 
 ![AEMCS](./images/aemcs4.png)
-
-Mentre attendi, puoi già iniziare con l&#39;esercizio [1.1.2 Crea il tuo sito Web basato su documenti](./ex2.md){target="_blank"}.
 
 Una volta creati gli ambienti e pronti per l’uso, riceverai una conferma e-mail dopo la quale potrai tornare qui.
 
@@ -107,7 +105,7 @@ Dopo circa 10 minuti verrà eseguita l&#39;attivazione di **Dynamic Media**.
 
 Al termine dell’esecuzione della pipeline, puoi continuare con l’esercizio successivo.
 
-Passaggio successivo: [1.1.2 Creare il sito Web basato su documenti](./ex2.md){target="_blank"}
+Passaggio successivo: [Configurare l&#39;ambiente AEM CS](./ex3.md){target="_blank"}
 
 Torna a [Adobe Experience Manager Cloud Service e Edge Delivery Services](./aemcs.md){target="_blank"}
 
