@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial tecnico su Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1403'
 ht-degree: 3%
 
 ---
@@ -93,10 +93,10 @@ ht-degree: 3%
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
       + [Panoramica](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/aemcs.md)
       + [1.1.1 Creare un programma Cloud Manager](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex1.md)
-      + [1.1.2 Configurare l’ambiente AEM CS](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex3.md)
-      + [1.1.3 Blocco personalizzato di base](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex4.md)
-      + [1.1.4 Blocco personalizzato avanzato](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
-      + [1.1.5 Plug-in AEM Edge Delivery Services MarTech](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
+      + [1.1.2 Configurare l’ambiente AEM CS](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex2.md)
+      + [1.1.3 Blocco personalizzato di base](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex3.md)
+      + [1.1.4 Blocco personalizzato avanzato](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex4.md)
+      + [1.1.5 Plug-in AEM Edge Delivery Services MarTech](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
       + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/summary.md)
    + 1.2 Adobe Experience Manager Assets {#assetm2}
       + [Panoramica](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
@@ -270,3 +270,11 @@ ht-degree: 3%
          + [Panoramica](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Guida introduttiva a Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
++ [WIP - IA agente](/help/tutorial-one-adobe/ai.md)
++ WIP - IA agente {#agenticai}
+   + 1.1 Guida introduttiva ad agenti e IA {#agenticai1}
+      + [Panoramica](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/agenticai.md)
+      + [1.1.1 Guida introduttiva all’intelligenza artificiale](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/ex1.md)
+   + 1.2 Collaboration agente {#agenticai2}
+      + [Panoramica](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/agentcollaboration.md)
+      + [1.2.1 Guida introduttiva di Agent Collaboration](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/ex1.md)
