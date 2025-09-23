@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Journey Agent utilizza l’intelligenza artificiale per creare, analizzare e ottimizzare i percorsi B2B/B2C tramite un’interfaccia di conversazione.
 
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
+<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/it/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
 
 
 
