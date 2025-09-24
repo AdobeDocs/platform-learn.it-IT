@@ -4,9 +4,9 @@ description: Configurare l’ambiente AEM CS
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1178'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ Fai clic su **Commit changes**.
 
 Il file `fstab.yaml` è stato aggiornato.
 
-## 1.1.2.3 Carica risorse CitiSignal
+## 1.1.2.3 Carica risorse e sito CitiSignal
 
 Vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Fai clic sul **Programma** per aprirlo.
 
@@ -163,11 +163,11 @@ Fare clic su **Carica pacchetto**.
 
 Fai clic su **Sfoglia** per individuare il pacchetto da caricare.
 
-Il pacchetto da caricare si chiama **citisignal-assets.zip** e può essere scaricato qui: [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip){target="_blank"}.
+Il pacchetto da caricare si chiama **citisignal-assets.zip** e può essere scaricato qui: [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal_aem_accs.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal_aem_accs.zip){target="_blank"}.
 
 ![AEMCS](./images/aemcssetup23.png)
 
-Selezionare il pacchetto e fare clic su **Apri**.
+Selezionare il pacchetto `citisignal_aem_accs.zip` e fare clic su **Apri**.
 
 ![AEMCS](./images/aemcssetup24.png)
 
@@ -175,11 +175,7 @@ Fare clic su **OK**.
 
 ![AEMCS](./images/aemcssetup25.png)
 
-Il pacchetto verrà quindi caricato.
-
-![AEMCS](./images/aemcssetup26.png)
-
-Fai clic su **Installa** nel pacchetto appena caricato.
+Il pacchetto verrà quindi caricato. Fai clic su **Installa** nel pacchetto appena caricato.
 
 ![AEMCS](./images/aemcssetup27.png)
 
@@ -229,61 +225,66 @@ Fai clic su **Pubblica**.
 
 Le risorse sono state pubblicate.
 
-## 1.1.2.5 Crea sito Web CitiSignal
+## Sito Web CitiSignal di pubblicazione 1.1.2.5
 
-Vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Fai clic sul **Programma** per aprirlo.
+Fai clic sul nome del prodotto **Adobe Experience Manager** nell&#39;angolo superiore sinistro dello schermo, quindi fai clic sulla **freccia** accanto a **Assets**.
 
-![AEMCS](./images/aemcs6.png)
+![AEMCS](./images/aemcssetup30a.png)
 
-Quindi, fai clic sull’URL dell’ambiente di authoring.
-
-![AEMCS](./images/aemcssetup18.png)
-
-Fai clic su **Accedi con Adobe**.
-
-![AEMCS](./images/aemcssetup19.png)
-
-Viene quindi visualizzato l’ambiente di authoring. Fare clic su **Sites**.
+Fare clic su **Sites**.
 
 ![AEMCS](./images/aemcssetup30.png)
 
-Fare clic su **Crea** e quindi su **Sito da modello**.
+Dovresti quindi visualizzare il sito Web **CitiSignal** creato dopo l&#39;installazione del pacchetto precedente.
 
 ![AEMCS](./images/aemcssetup31.png)
 
-Fai clic su **Importa**.
+Per collegare il sito all&#39;archivio GitHub creato in precedenza, è necessario creare una **configurazione Edge Delivery Services**.
+
+Il primo passaggio consiste nel creare una **configurazione cloud**.
+
+A tale scopo, fai clic sul nome del prodotto **Adobe Experience Manager** nell&#39;angolo superiore sinistro dello schermo, quindi fai clic sull&#39;icona **strumenti** e seleziona **Generale**. Fare clic per aprire **Browser configurazioni**.
+
+![AEMCS](./images/aemcssetup31a.png)
+
+Dovresti vedere questo. Fai clic su **Crea**
+
+![AEMCS](./images/aemcssetup31b.png)
+
+Imposta i campi **Titolo** e **Nome** su `CitiSignal`. Abilita la casella di controllo per **Configurazioni cloud**.
+
+Fai clic su **Crea**.
+
+![AEMCS](./images/aemcssetup31c.png)
+
+Dovresti avere questo.
+
+![AEMCS](./images/aemcssetup31d.png)
+
+Successivamente, devi aggiornare alcuni campi della **configurazione cloud** appena creata.
+
+A tale scopo, fai clic sul nome del prodotto **Adobe Experience Manager** nell&#39;angolo in alto a sinistra dello schermo, quindi fai clic sull&#39;icona **strumenti** e seleziona **Servizi cloud**. Fare clic per aprire **Configurazione Edge Delivery Services**.
 
 ![AEMCS](./images/aemcssetup32.png)
 
-Ora devi importare un modello preconfigurato per il sito. Puoi scaricare il modello [qui](./../../../assets/aem/citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip){target="_blank"}. Salva il file sul desktop.
+Seleziona **CitiSignal**, fai clic su **Crea** e seleziona **Configurazione**.
 
-Selezionare il file `citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip` e fare clic su **Apri**.
+![AEMCS](./images/aemcssetup31e.png)
+
+È ora necessario compilare i campi **Organizzazione** e **Nome sito**. Per farlo, controlla innanzitutto l’URL dell’archivio GitHub.
+
+![AEMCS](./images/aemcssetup31f.png)
+
+- **Organizzazione**: utilizza il nome dell&#39;organizzazione GitHub; in questo esempio è `woutervangeluwe`
+- **Nome sito**: utilizzare il nome dell&#39;archivio GitHub, che deve essere `citisignal-aem-accs`.
+
+Fai clic su **Salva e chiudi**.
 
 ![AEMCS](./images/aemcssetup33.png)
 
-Poi vedrai questo. Fai clic per selezionare il modello appena caricato, quindi fai clic su **Avanti**.
+Dovresti avere questo. Abilita la casella di controllo davanti alla configurazione cloud di Edge appena creata e fai clic su **Pubblica**.
 
 ![AEMCS](./images/aemcssetup34.png)
-
-Ora devi compilare alcuni dettagli.
-
-- Titolo sito: utilizza **CitiSignal**
-- Nome sito: utilizzare **CitiSignal**
-- URL GitHub: copia l’URL dell’archivio GitHub utilizzato in precedenza
-
-![AEMCS](./images/aemcssetup35.png)
-
-Allora avrai questo. Fai clic su **Crea**.
-
-![AEMCS](./images/aemcssetup36.png)
-
-Creazione del sito in corso. L&#39;operazione potrebbe richiedere alcuni minuti. Fare clic su **OK**.
-
-![AEMCS](./images/aemcssetup37.png)
-
-Dopo alcuni minuti, aggiorna lo schermo e vedrai il tuo nuovo sito Web CitiSignal creato.
-
-![AEMCS](./images/aemcssetup38.png)
 
 ## 1.1.2.6 Aggiorna percorsi file.json
 
@@ -308,6 +309,10 @@ Fai clic su **Commit Changes**.
 Il file `paths.json` è stato aggiornato.
 
 ## Sito Web CitiSignal di pubblicazione 1.1.2.7
+
+Fai clic sul nome del prodotto **Adobe Experience Manager** nell&#39;angolo superiore sinistro dello schermo, quindi seleziona **Sites**.
+
+![AEMCS](./images/aemcssetup38.png)
 
 Fare clic sulla casella di controllo davanti a **CitiSignal**. Quindi fare clic su **Gestisci pubblicazione**.
 
@@ -364,7 +369,7 @@ Vedrai quindi che il tuo sito web, sia nella visualizzazione per dispositivi mob
 
 ![AEMCS](./images/aemcssetup50.png)
 
-Passaggio successivo: [sviluppare un blocco personalizzato](./ex4.md){target="_blank"}
+Passaggio successivo: [sviluppare un blocco personalizzato](./ex3.md){target="_blank"}
 
 Torna a [Adobe Experience Manager Cloud Service e Edge Delivery Services](./aemcs.md){target="_blank"}
 

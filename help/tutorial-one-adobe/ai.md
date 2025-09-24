@@ -2,7 +2,8 @@
 title: Panoramica di Agentic AI Tech Labs
 description: Panoramica di Agentic AI Tech Labs
 doc-type: multipage-overview
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
+source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 I laboratori tecnici di IA per l’analisi degli agenti sono un’attività in corso e saranno rilasciati a novembre/dicembre 2025.
 
-## 1.1 Guida introduttiva ad agenti e IA
+[1.1 Guida introduttiva ad agenti e IA](./modules/agentic-ai/module1.1/agenticai.md)
 
 **Obiettivo**
 
@@ -37,7 +38,7 @@ Elementi tecnici:
 - Server MCP, notebook Python
 - API di Adobe
 
-## 1.2 Collaboration agente
+[1.2 Collaboration agente](./modules/agentic-ai/module1.2/agentcollaboration.md)
 
 **Obiettivo**
 
