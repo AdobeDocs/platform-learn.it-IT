@@ -16,6 +16,6 @@ ht-degree: 28%
 
 # Analizzare e visualizzare informazioni omni-channel in Tableau utilizzando Query Service
 
-Scopri come utilizzare Adobe Experience Platform Query Service con strumenti di visualizzazione dati esterni utilizzando un esempio di analisi dell’abbandono. Per ulteriori informazioni, visitare la [documentazione di Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
+Scopri come utilizzare Adobe Experience Platform Query Service con strumenti di visualizzazione dati esterni utilizzando un esempio di analisi dell’abbandono. Per ulteriori informazioni, visitare la [documentazione di Query Service](https://experienceleague.adobe.com/it/docs/experience-platform/query/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/342115?learn=on&enablevpops)

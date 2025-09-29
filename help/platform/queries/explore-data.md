@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Convalidare i dati con Query Service
 
-Scopri come convalidare i dati acquisiti utilizzando le funzioni SQL. Per ulteriori informazioni, visitare la [documentazione di Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
+Scopri come convalidare i dati acquisiti utilizzando le funzioni SQL. Per ulteriori informazioni, visitare la [documentazione di Query Service](https://experienceleague.adobe.com/it/docs/experience-platform/query/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on&enablevpops)
