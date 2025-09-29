@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Le dashboard di monitoraggio della capacità e dello streaming offrono alle aziende visibilità e controllo sull’utilizzo della piattaforma. Consentono di allocare la velocità effettiva, rilevare picchi o sottoutilizzi e fornire informazioni in tempo reale sulle prestazioni, consentendo decisioni proattive e avvisi per evitare il sovraccarico e garantire la stabilità dei servizi critici.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475272/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475281/?learn=on&enablevpops&captions=ita)

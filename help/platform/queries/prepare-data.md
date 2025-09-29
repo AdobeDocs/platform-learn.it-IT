@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Scopri come i data engineer possono utilizzare il servizio di query per trasformare i dati e generare nuovi set di dati. Esegui queste query in base a una pianificazione per potenziare dashboard e segmentazione automatizzati. Per ulteriori informazioni, visitare la [documentazione di Query Service](https://experienceleague.adobe.com/it/docs/experience-platform/query/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414068?learn=on&enablevpops&captions=ita)
