@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Panoramica dell’agente di sperimentazione
 
-L’agente di sperimentazione velocizza l’ottimizzazione digitale grazie a informazioni approfondite, configurazione guidata e analisi automatizzata per gli esperti di marketing, gli analisti e gli amministratori. Per ulteriori informazioni, consulta la [documentazione di Experiment Accelerator](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator).
+L’agente di sperimentazione velocizza l’ottimizzazione digitale grazie a informazioni approfondite, configurazione guidata e analisi automatizzata per gli esperti di marketing, gli analisti e gli amministratori. Per ulteriori informazioni, consulta la [documentazione di Experiment Accelerator](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator).
 
 >[!SLIDE](experimentation-agent-overview)
