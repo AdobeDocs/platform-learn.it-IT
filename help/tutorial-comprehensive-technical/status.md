@@ -16,7 +16,7 @@ Di seguito è riportata una panoramica dello stato del contenuto in questa eserc
 
 | Nome | Ultimo aggiornamento | Lavorativo al 100% | Osservazioni |
 | ---------------------- | ------------ | ------------ |------------ |
-| [. Introduzione ](./modules/gettingstarted/gettingstarted/getting-started.md) | 14/11/2024 | Sì | - |
+| [. Introduzione &#x200B;](./modules/gettingstarted/gettingstarted/getting-started.md) | 14/11/2024 | Sì | - |
 | [1.1 Foundation - Configurazione di Adobe Experience Platform Data Collection e Web SDK](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md) | 18/11/2024 | Sì | - |
 | [1.2 Foundation - Acquisizione dei dati](./modules/datacollection/module1.2/data-ingestion.md) | 18/11/2024 | Sì | - |
 | [1.3 Federated Audience Composition](./modules/datacollection/module1.3/fac.md) | 07/01/2025 | Sì | - |

@@ -18,7 +18,7 @@ Di seguito è riportata una panoramica dello stato del contenuto in questa eserc
 
 | Nome | Ultimo aggiornamento | Lavorativo al 100% | Osservazioni |
 | ---------------------- | ------------ | ------------ |------------ |
-| [. Introduzione ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Sì | - |
+| [. Introduzione &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Sì | - |
 
 ## &#x200B;1. Flusso di lavoro e pianificazione
 

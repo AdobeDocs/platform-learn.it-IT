@@ -101,7 +101,7 @@ Per trovare gli identificatori, aprire uno schema e controllare l&#39;oggetto `_
 
 ![demo](./images/commerce.png)
 
-- Visualizza in anteprima tutti i [set di dati](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) e osserva i dati
+- Visualizza in anteprima tutti i [set di dati](https://experience.adobe.com/platform/dataset/browse?limit=50&page=1&sortDescending=1&sortField=created) e osserva i dati
 
 Ora puoi iniziare a utilizzare l’interfaccia utente del Customer Journey Analytics.
 

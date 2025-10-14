@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## Installare PostBuster
 
-Vai a [https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542).
+Vai a [https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542).
 
 Fai clic per scaricare l&#39;ultima versione di **PostBuster**.
 

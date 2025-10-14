@@ -95,7 +95,7 @@ Trascina e rilascia 3 volte una **colonna 1:1** nell&#39;area di lavoro, 1 volta
 
 ![Journey Optimizer](./images/campaign8.png)
 
-Nel menu a sinistra, vai a **Frammenti**. Trascinare l&#39;intestazione creata in precedenza nell&#39;esercizio [ 3.1.2.1](./../ajob2c-1/ex2.md) sul primo componente dell&#39;area di lavoro. Trascinare il piè di pagina creato in precedenza nell&#39;esercizio [ sull&#39;ultimo componente dell&#39;area di lavoro.3.1.2.2](./../ajob2c-1/ex2.md)
+Nel menu a sinistra, vai a **Frammenti**. Trascinare l&#39;intestazione creata in precedenza nell&#39;esercizio [&#x200B; 3.1.2.1](./../ajob2c-1/ex2.md) sul primo componente dell&#39;area di lavoro. Trascinare il piè di pagina creato in precedenza nell&#39;esercizio [&#x200B; sull&#39;ultimo componente dell&#39;area di lavoro.3.1.2.2](./../ajob2c-1/ex2.md)
 
 ![Journey Optimizer](./images/campaign9.png)
 
