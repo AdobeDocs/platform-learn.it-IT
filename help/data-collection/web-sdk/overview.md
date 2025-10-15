@@ -24,7 +24,7 @@ Scopri come Adobe Experience Platform Web SDK e la rete Edge consentono ai clien
 
 >[!NOTE]
 >
->Questo video è un estratto della sessione di Adobe Summit 2020 *[Meet Alloy.js and Never Tag for an eVar or Mbox Again](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
+>Questo video è un estratto della sessione di Adobe Summit 2020 *[Meet Alloy.js and Never Tag for an eVar or Mbox Again](https://business.adobe.com/it/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
 >
 >La funzionalità di inoltro lato server descritta in questo video è ora generalmente disponibile per tutti i clienti con licenza. Consulta la [documentazione sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it)
 

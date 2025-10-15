@@ -49,4 +49,4 @@ order by price desc)D;
 
 >[!NOTE]
 >
->Questo video è un estratto della sessione di Adobe Summit 2020 *[Ricarica dei dati omnichannel per esperienze elettrificanti](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*.
+>Questo video è un estratto della sessione di Adobe Summit 2020 *[Ricarica dei dati omnichannel per esperienze elettrificanti](https://business.adobe.com/it/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*.

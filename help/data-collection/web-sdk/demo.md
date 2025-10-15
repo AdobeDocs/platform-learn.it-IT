@@ -24,4 +24,4 @@ Consulta Adobe Experience Platform Web SDK e Edge Network in azione, con una sin
 
 >[!NOTE]
 >
->Questo video è un estratto della sessione di Adobe Summit 2020 *[Meet Alloy.js and Never Tag for an eVar or Mbox Again](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
+>Questo video è un estratto della sessione di Adobe Summit 2020 *[Meet Alloy.js and Never Tag for an eVar or Mbox Again](https://business.adobe.com/it/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
