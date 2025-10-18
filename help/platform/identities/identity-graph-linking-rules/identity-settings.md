@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Scopri come abilitare e configurare le regole di collegamento del grafo delle identità in Adobe Experience Platform per creare profili cliente precisi. Questo video illustra la definizione delle priorità dello spazio dei nomi, le impostazioni di univocità e la convalida, per iniziare a utilizzare efficacemente queste funzioni nelle sandbox. Per ulteriori informazioni, vedere la [Guida dell&#39;interfaccia utente per le impostazioni delle identità](https://experienceleague.adobe.com/it/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-settings-ui).
 
->[!VIDEO](https://video.tv.adobe.com/v/3458487/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475970/?captions=ita&learn=on&enablevpops)

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Scopri come impostare l’accesso e le autorizzazioni per l’Assistente per l’intelligenza artificiale in Adobe Experience Platform. Per ulteriori informazioni, vedere [Accedere all&#39;Assistente di IA in Experience Platform](https://experienceleague.adobe.com/it/docs/experience-platform/ai-assistant/access).
 
->[!VIDEO](https://video.tv.adobe.com/v/3436470/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475927/?captions=ita&learn=on&enablevpops)

@@ -22,5 +22,5 @@ Scopri come impostare una connessione e inviare dati alla destinazione di archiv
 
 Per ulteriori informazioni, visita la [documentazione](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob).
 
->[!VIDEO](https://video.tv.adobe.com/v/331082/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346818/?captions=ita&learn=on&enablevpops)
 

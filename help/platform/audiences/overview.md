@@ -290,7 +290,7 @@ Scopri i tipi di pubblico in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/overview-of-federated-audience-composition.md" title="Panoramica di Federated Audience Composition" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432261/?format=jpeg&nocache=1740173579477" alt="Panoramica di Federated Audience Composition"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450892/?captions=ita&format=jpeg&nocache=1740173579477" alt="Panoramica di Federated Audience Composition"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -313,7 +313,7 @@ Scopri i tipi di pubblico in Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/connect-and-configure-federated-audience-composition.md" title="Connettere e configurare Federated Audience Composition" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433246/?format=jpeg&nocache=1740173579488" alt="Connettere e configurare Federated Audience Composition"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451564/?captions=ita&format=jpeg&nocache=1740173579488" alt="Connettere e configurare Federated Audience Composition"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
