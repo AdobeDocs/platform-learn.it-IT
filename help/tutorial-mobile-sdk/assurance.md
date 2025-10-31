@@ -4,9 +4,9 @@ description: Scopri come implementare l’estensione Assurance in un’app mobil
 feature: Mobile SDK,Assurance
 jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
+source-git-commit: 2784282b91692832786aa478363374f5f4066662
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1661'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 ## Conferma accesso
 
-Conferma che la tua organizzazione abbia accesso ad Assurance. Come utente, devi essere aggiunto al profilo per Adobe Experience Platform. Per ulteriori informazioni, consulta [Accesso utente](https://experienceleague.adobe.com/it/docs/experience-platform/assurance/user-access) nella guida di Assurance.
+Conferma che la tua organizzazione abbia accesso ad Assurance. Come utente, devi essere aggiunto al profilo per Adobe Experience Platform. Per ulteriori informazioni, consulta [Accesso utente](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/user-access) nella guida di Assurance.
 
 ## Implementazione
 
@@ -172,7 +172,7 @@ Assurance funziona aprendo un URL tramite un browser o un codice QR. Tale URL in
 
 Assicurati di specificare un `android:scheme` (ad esempio. `lumatutorialandroid`) e `android:host` (ad esempio `default`) per definire l&#39;URL di base.
 
-Per ulteriori informazioni sui collegamenti profondi in Android, consulta [Creare collegamenti profondi al contenuto dell&#39;app](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
+Per ulteriori informazioni sui collegamenti profondi in Android, consulta [Creare collegamenti profondi](https://developer.android.com/training/app-links/create-deeplinks){target="_blank"} nella documentazione di Android.
 
 Assurance funziona aprendo un URL tramite un browser o un codice QR. Tale URL inizia con l’URL di base, che apre l’app e contiene parametri aggiuntivi. Questi parametri univoci vengono utilizzati per connettere la sessione.  Nell&#39;app di esempio, il collegamento profondo è `lumatutorialandroid://default`.
 
