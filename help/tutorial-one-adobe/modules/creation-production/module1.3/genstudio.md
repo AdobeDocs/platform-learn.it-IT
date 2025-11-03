@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
-source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
+source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '533'
 ht-degree: 2%
 
 ---
@@ -34,6 +34,16 @@ In questo modulo imparerai a eseguire autonomamente tutti i passaggi precedenti 
 - Accesso ad Adobe Workfront e Adobe Workfront Planning
 - Accesso a una sandbox di Adobe Experience Manager Cloud Service con Content Hub abilitato
 
+## Video
+
+Questo video illustra e illustra tutti i passaggi di questo esercizio.
+
+>[!NOTE]
+>
+>Questo video non ha ancora l&#39;audio. Quando l&#39;audio è disponibile, viene caricata una nuova versione.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476497?quality=12&learn=on)
+
 ## Esercizi
 
 Configurazione di [1.3.1: marchi](./ex1.md){target="_blank"}
@@ -44,9 +54,9 @@ Configurazione di [1.3.2: utenti tipo, prodotti e modelli](./ex2.md){target="_bl
 
 In questo esercizio configurerai utenti tipo, prodotti e modelli in GenStudio for Performance Marketing.
 
-[Attivazione campagna 1.3.3 in formato Meta](./ex3.md){target="_blank"}
+Attivazione campagna [1.3.3 in Meta](./ex3.md){target="_blank"}
 
-In questo esercizio creerai una campagna. Puoi anche configurare una connessione a Meta e seguire tutti i passaggi necessari per creare un annuncio, approvare un annuncio tramite Adobe Workfront e pubblicare un annuncio su Meta.
+In questo esercizio creerai una campagna. Puoi anche configurare una connessione a Meta e seguire tutti i passaggi necessari per creare un annuncio, approvarlo con Adobe Workfront e pubblicarlo in Meta.
 
 [1.3.4 Crea esperienza e-mail per AJO](./ex4.md){target="_blank"}
 
