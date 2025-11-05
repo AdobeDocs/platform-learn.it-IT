@@ -6,14 +6,14 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: 31ff3c9764b07f29d1235ac146d1631529b6038f
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
 source-wordcount: '3352'
 ht-degree: 1%
 
 ---
 
-# 1.2.5 Frame.io e Workfront Fusion
+# 1.2.3 Frame.io e Workfront Fusion
 
 Nell&#39;esercizio precedente è stato configurato lo scenario `--aepUserLdap-- - Firefly + Photoshop` e un webhook in ingresso per attivare lo scenario e una risposta del webhook al completamento dello scenario. Hai quindi utilizzato Postman per attivare tale scenario. Postman è un ottimo strumento per i test, ma in uno scenario di business reale, gli utenti aziendali non utilizzerebbero Postman per attivare uno scenario. Al contrario, utilizzerebbero un’altra applicazione e si aspetterebbero che quest’ultima attivi uno scenario in Workfront Fusion. In questo esercizio, questo è esattamente ciò che si farà con Frame.io.
 
@@ -21,11 +21,11 @@ Nell&#39;esercizio precedente è stato configurato lo scenario `--aepUserLdap-- 
 >
 >Questo esercizio è stato creato per Frame.io V4. Alcune delle seguenti funzionalità utilizzate nell’esercizio sono attualmente in formato alfa e non sono ancora generalmente disponibili.
 
-## 1.2.5.1 Prerequisiti
+## 1.2.3.1 Prerequisiti
 
 Prima di continuare con questo esercizio, devi aver completato la configurazione di [il tuo progetto Adobe I/O](./../../../modules/getting-started/gettingstarted/ex6.md), inclusa l&#39;aggiunta dell&#39;API **Frame.io** al progetto Adobe I/O, nonché aver configurato un&#39;applicazione per interagire con le API, ad esempio [Postman](./../../../modules/getting-started/gettingstarted/ex7.md) o [PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md).
 
-## 1.2.5.2 Accesso a Frame.io
+## 1.2.3.2 Accesso a Frame.io
 
 Vai a [https://next.frame.io/](https://next.frame.io/){target="_blank"}.
 
@@ -61,7 +61,7 @@ Il file **citisignal-fiber.psd** sarà quindi disponibile nella cartella appena 
 
 ![I/O fotogrammi](./images/framev4_7.png)
 
-## 1.2.5.3 Workfront Fusion e Frame.io
+## 1.2.3.3 Workfront Fusion e Frame.io
 
 Nell&#39;esercizio precedente è stato creato lo scenario `--aepUserLdap-- - Firefly + Photoshop`, che è iniziato con un webhook personalizzato e si è concluso con una risposta del webhook. L’utilizzo dei webhook è stato quindi testato utilizzando Postman, ma ovviamente, il punto di tale scenario è essere chiamato da un’applicazione esterna. Come indicato in precedenza, Frame.io sarà quell&#39;esercizio, ma tra Frame.io e `--aepUserLdap-- - Firefly + Photoshop` è necessario un altro scenario Workfront Fusion. ora configurerai quello scenario.
 
@@ -97,7 +97,7 @@ Dovresti vedere questo. Lascia aperta e inalterata questa schermata come ti serv
 
 ![I/O fotogrammi](./images/frame10.png)
 
-## 1.2.5.4 API azioni personalizzate Frame.io V4
+## 1.2.3.4 API azioni personalizzate Frame.io V4
 
 Vai a Postman e apri la richiesta **POST - Ottieni token di accesso** nella raccolta **Adobe IO - OAuth**. Verifica il campo **ambito** in **Parametri**. Il campo **ambito** deve includere l&#39;ambito `frame.s2s.all`. Se manca, aggiungilo. Fai clic su **Invia** per richiedere un nuovo **access_token**.
 
@@ -177,7 +177,7 @@ La vista dettagliata della bolla mostra i dati ricevuti da Frame.io. Dovresti vi
 
 Ora che è stata stabilita la comunicazione tra Frame.io e Workfront Fusion, è possibile continuare la configurazione.
 
-## 1.2.5.5 Fornitura di una risposta del modulo personalizzato a Frame.io
+## 1.2.3.5 Fornitura di una risposta del modulo personalizzato a Frame.io
 
 Quando l&#39;azione personalizzata viene richiamata in Frame.io, Frame.io prevede di ricevere una risposta da Workfront Fusion. Se si ripensa allo scenario creato nell&#39;esercizio precedente, sono necessarie diverse variabili per aggiornare il file Photoshop PSD standard. Tali variabili sono definite nel payload utilizzato:
 
@@ -321,7 +321,7 @@ Torna a Workfront Fusion e fai clic sul fumetto nel modulo **Webhook personalizz
 
 ![I/O fotogrammi](./images/frame43.png)
 
-## 1.2.5.6 Recupera percorso file da Frame.io
+## 1.2.3.6 Recupera percorso file da Frame.io
 
 Come già accennato, per il corretto funzionamento di questo scenario sono necessari campi come **prompt**, **cta**, **button** e **psdTemplate**. I primi 3 campi sono già disponibili, ma manca ancora il **psdTemplate** da utilizzare. **psdTemplate** farà ora riferimento a una posizione Frame.io poiché il file **citisignal-fiber.psd** è ospitato in Frame.io. Per recuperare la posizione del file, è necessario configurare e utilizzare la connessione Frame.io in Workfront Fusion.
 
@@ -437,7 +437,7 @@ Le informazioni specifiche necessarie per questo caso d&#39;uso sono l&#39;URL d
 
 Sono ora disponibili tutte le informazioni (**prompt**, **cta**, **button** e **psdTemplate**) necessarie per il funzionamento di questo caso d&#39;uso.
 
-## 1.2.5.7 richiama scenario Workfront
+## 1.2.3.7 richiama scenario Workfront
 
 Nell&#39;esercizio precedente è stato configurato lo scenario `--aepUserLdap-- - Firefly + Photoshop`. Ora è necessario apportare una modifica minore a tale scenario.
 
@@ -502,7 +502,7 @@ Fai clic su **Salva** per salvare le modifiche.
 
 ![I/O fotogrammi](./images/frame73.png)
 
-## 1.2.5.8 Salva nuova risorsa in Frame.io
+## 1.2.3.8 Salva nuova risorsa in Frame.io
 
 Una volta richiamato l’altro scenario Workfront Fusion, verrà generato un nuovo modello Photoshop PSD disponibile. Il file PSD deve essere memorizzato nuovamente in Frame.io, che è l&#39;ultimo passaggio di questo scenario.
 
@@ -527,9 +527,9 @@ Per la configurazione del modulo **Frame.io - Effettuare una chiamata API person
 >[!NOTE]
 >
 >Come indicato in precedenza, è possibile specificare manualmente le variabili in Workfront Fusion utilizzando la sintassi seguente: `{{1.account_id}}` e `{{4.body.data.parent_id}}`. Il numero nella variabile fa riferimento al modulo nello scenario.
->&#x200B;>In questo esempio, puoi vedere che il primo modulo nello scenario è denominato **Webhook** e ha un numero di sequenza di **1**. Ciò significa che la variabile `{{1.account_id}}` accederà a tale campo dal modulo con il numero di sequenza 1.
->&#x200B;>In questo esempio, puoi vedere che il quarto modulo nello scenario è denominato **Frame.io - Effettua una chiamata API personalizzata** e ha un numero di sequenza **4**. Ciò significa che la variabile `{{4.body.data.parent_id}}` accederà a tale campo dal modulo con il numero di sequenza 4.
->&#x200B;>Se i numeri di sequenza dei moduli sono diversi, dovrai aggiornare le variabili nell’URL precedente per collegarle al modulo corretto.
+>In questo esempio, puoi vedere che il primo modulo nello scenario è denominato **Webhook** e ha un numero di sequenza di **1**. Ciò significa che la variabile `{{1.account_id}}` accederà a tale campo dal modulo con il numero di sequenza 1.
+>In questo esempio, puoi vedere che il quarto modulo nello scenario è denominato **Frame.io - Effettua una chiamata API personalizzata** e ha un numero di sequenza **4**. Ciò significa che la variabile `{{4.body.data.parent_id}}` accederà a tale campo dal modulo con il numero di sequenza 4.
+>Se i numeri di sequenza dei moduli sono diversi, dovrai aggiornare le variabili nell’URL precedente per collegarle al modulo corretto.
 
 ![I/O fotogrammi](./images/frame78.png)
 
@@ -549,7 +549,7 @@ Copia e incolla il frammento JSON seguente nel campo **Body**.
 >[!NOTE]
 >
 >È possibile specificare manualmente le variabili in Workfront Fusion utilizzando la seguente sintassi: `{{6.data.newPsdTemplate}}`. Il numero nella variabile fa riferimento al modulo nello scenario. In questo esempio, puoi vedere che il sesto modulo nello scenario si chiama **HTTP - Fai una richiesta** e ha un numero di sequenza di **6**. Ciò significa che la variabile `{{6.data.newPsdTemplate}}` accederà al campo **data.newPsdTemplate** dal modulo con numero di sequenza 6.
->&#x200B;>Se i numeri di sequenza del modulo sono diversi, dovrai aggiornare la variabile nell’URL precedente per collegarla al modulo corretto.
+>Se i numeri di sequenza del modulo sono diversi, dovrai aggiornare la variabile nell’URL precedente per collegarla al modulo corretto.
 
 Fai clic su **OK**.
 
@@ -559,7 +559,7 @@ Fai clic su **Salva** per salvare le modifiche.
 
 ![I/O fotogrammi](./images/frame81.png)
 
-## 1.2.5.9 Verifica il tuo caso d&#39;uso end-to-end
+## 1.2.3.9 Verifica il tuo caso d&#39;uso end-to-end
 
 Fai clic su **Esegui una volta** nello scenario `--aepUserLdap-- - Frame IO Custom Action`.
 

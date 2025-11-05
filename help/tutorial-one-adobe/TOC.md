@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial tecnico su Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1388'
 ht-degree: 3%
 
 ---
@@ -56,17 +56,15 @@ ht-degree: 3%
    + 1.2 Automazione dei flussi di lavoro Creative con Workfront Fusion {#crpr2}
       + [Panoramica](/help/tutorial-one-adobe/modules/creation-production/module1.2/automation.md)
       + [1.2.1 Guida introduttiva di Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex1.md)
-      + [1.2.2 Utilizzare le API di Adobe in Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex2.md)
-      + [1.2.3 Automazione dei processi con Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex3.md)
-      + [1.2.4 Automazione tramite connettori](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
-      + [1.2.5 Frame.io e Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
-      + [Da 1.2.6 Frame.io a Workfront Fusion a AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
+      + [1.2.2 Automazione tramite connettori](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
+      + [1.2.3 Frame.io e Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
+      + [Da 1.2.4 Frame.io a Workfront Fusion a AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
       + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
    + 1.3 GenStudio for Performance Marketing {#crpr3}
       + [Panoramica](/help/tutorial-one-adobe/modules/creation-production/module1.3/genstudio.md)
       + [1.3.1 Configurazione: marchi](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
       + [1.3.2 Configurazione: utenti tipo, prodotti e modelli](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
-      + [1.3.3 Attivazione della campagna per l’metadati](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
+      + [1.3.3 Attivazione di campagne su Meta](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
       + [1.3.4 Creare esperienze e-mail per AJO](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex4.md)
       + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
    + 1.4 Adobe Express e Adobe Experience Cloud {#crpr4}

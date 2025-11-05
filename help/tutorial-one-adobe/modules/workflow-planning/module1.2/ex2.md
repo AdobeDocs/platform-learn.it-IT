@@ -4,9 +4,9 @@ description: Verifica con Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
+source-git-commit: 919bfdb5f047669f670482695edfa7820e0aad93
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1293'
 ht-degree: 0%
 
 ---
@@ -197,25 +197,25 @@ Dovresti vedere questo.
 
 Come parte di questa attività, devi creare una nuova immagine e quindi caricarla come documento in Workfront. Ora creerai la risorsa da solo utilizzando Adobe Express.
 
-## 1.2.2.5 Aggiungi un nuovo documento all&#39;attività e avvia il flusso di approvazione
+## 1.2.2.5 Aggiungi un nuovo documento al progetto e avvia il flusso di approvazione
 
 Per questo esercizio, devi scaricare e utilizzare questa risorsa: [timetravelnow.png](./images/timetravelnow.png)
 
 ![WF](./images/timetravelnow.png)
 
-Torna alla schermata **Dettagli attività**. Vai a **Documenti**. Fai clic su **+ Aggiungi nuovo**, quindi seleziona l&#39;archivio AEM Assets CS, che deve essere denominato `--aepUserLdap-- - CitiSignal`.
+Torna alla schermata **Dettagli progetto**. Vai a **Documenti**. Fare clic su **+ Aggiungi nuovo** e quindi selezionare **Documento**.
 
 ![WF](./images/wfp10.png)
 
-Fare doppio clic per aprire la cartella `--aepUserLdap-- CitiSignal Fiber Campaign`.
+Fare clic per selezionare il file `timetravelnow.png`. Fai clic su **Apri**.
 
 ![WF](./images/wfp10a.png)
 
-Selezionare il file creato nel passaggio precedente, denominato **CitiSignal - Neon rabbit - Timetravel Now!.png**. Fai clic su **Seleziona**.
+Dovresti avere questo.
 
-![WF](./images/2048x2048.png){width="50px" align="left"}
+![WF](./images/wfp10b.png)
 
-Dovresti avere questo. Passa il cursore del mouse sul documento caricato. Fai clic su **Crea bozza** e scegli **Advanced Proof**.
+Passa il cursore del mouse sul documento caricato. Fai clic su **Crea bozza** e scegli **Advanced Proof**.
 
 ![WF](./images/wfp13.png)
 
