@@ -4,7 +4,7 @@ description: Guida introduttiva a Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 0867d7fd-4d12-46d8-a5ae-bb8db1575635
-source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
+source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 1%
@@ -109,7 +109,7 @@ Fare clic su **Crea cartella**.
 
 ![WF](./images/wfbaem3a.png)
 
-Assegna un nome alla cartella `--aepUserLdap-- - CitiSignal Fiber Launch Assets` e fai clic su **Crea**.
+Assegna un nome alla cartella `--aepUserLdap-- - CitiSignal Fiber Campaign` e fai clic su **Crea**.
 
 ![WF](./images/wfbaem4.png)
 
@@ -161,7 +161,7 @@ Quindi, seleziona il quarto campo e fai di nuovo clic sull&#39;icona **Schema** 
 
 ![WF](./images/wfbaem11a.png)
 
-Poi vedrai di nuovo questo popup. Nel campo di ricerca, immettere `wm:document` e selezionare il campo **ID progetto**. Fai clic su **Seleziona**.
+Poi vedrai di nuovo questo popup. Nel campo di ricerca, immettere `wm:document`, quindi selezionare il campo **Stato documento**. Fai clic su **Seleziona**.
 
 ![WF](./images/wfbaem101.png)
 
@@ -173,7 +173,7 @@ Quindi, seleziona il quinto campo e fai di nuovo clic sull&#39;icona **Schema** 
 
 ![WF](./images/wfbaem103.png)
 
-Poi vedrai di nuovo questo popup. Nel campo di ricerca, immettere `wm:document` e selezionare il campo **ID progetto**. Fai clic su **Seleziona**.
+Poi vedrai di nuovo questo popup. Nel campo di ricerca, immettere `wm:document` e selezionare il campo **Nome documento**. Fai clic su **Seleziona**.
 
 ![WF](./images/wfbaem104.png)
 
@@ -221,7 +221,7 @@ Successivamente, devi assegnare il modulo metadati alla cartella creata in prece
 
 ![WF](./images/wfbaem15.png)
 
-Selezionare la cartella, che deve essere denominata `--aepUserLdap-- - CitiSignal Fiber Launch Assets`. Fai clic su **Assegna**.
+Selezionare la cartella, che deve essere denominata `--aepUserLdap-- - CitiSignal Fiber Campaign`. Fai clic su **Assegna**.
 
 ![WF](./images/wfbaem16.png)
 
