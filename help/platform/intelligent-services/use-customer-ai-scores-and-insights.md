@@ -17,7 +17,7 @@ ht-degree: 51%
 
 # Utilizzare punteggi e informazioni di Customer AI
 
-Scopri come utilizzare i punteggi e le informazioni sulla propensione di Customer AI per convertire e fidelizzare i clienti. Per ulteriori informazioni, visita la [documentazione di Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=it).
+Scopri come utilizzare i punteggi e le informazioni sulla propensione di Customer AI per convertire e fidelizzare i clienti. Per ulteriori informazioni, visita la [documentazione di Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/36624?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/32666?learn=on&enablevpops)
 

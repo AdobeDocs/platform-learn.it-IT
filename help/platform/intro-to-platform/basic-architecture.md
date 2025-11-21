@@ -18,6 +18,6 @@ ht-degree: 80%
 
 Scopri l’architettura ad alto livello di Adobe Experience Platform tramite una guida dettagliata di un diagramma di panoramica.
 
->[!VIDEO](https://video.tv.adobe.com/v/3422782?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/32456?learn=on&enablevpops)
 
 

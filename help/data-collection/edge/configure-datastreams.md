@@ -17,4 +17,4 @@ ht-degree: 36%
 
 Scopri come creare e configurare i flussi di dati per le implementazioni Web e Mobile SDK. Per ulteriori informazioni, visita la [documentazione sugli stream di dati](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/344993?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/340825?learn=on&enablevpops)

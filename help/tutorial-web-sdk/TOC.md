@@ -10,12 +10,12 @@ recommendations: noDisplay,noCatalog
 source-git-commit: 4ed0c204613e283bbd9f51f4225215068284ac69
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 24%
+ht-degree: 29%
 
 ---
 
 
-# Tutorial sull’implementazione di Adobe Experience Cloud con Web SDK. {#implement-web-sdk}
+# Esercitazione sull’implementazione di Adobe Experience Cloud con Web SDK. {#implement-web-sdk}
 
 + [Panoramica del tutorial](overview.md)
 + Configurazione iniziale {#initial-configuration}
@@ -31,10 +31,10 @@ ht-degree: 24%
    + [Convalida con Debugger](validate-with-debugger.md)
    + [Convalidare con Assurance](validate-with-assurance.md)
 
-+ Installazione applicazioni {#applications-setup}
-   + [Experience Platform configurazione](setup-experience-platform.md)
++ Impostazione applicazioni {#applications-setup}
+   + [Configurare Experience Platform](setup-experience-platform.md)
    + [Configurare Adobe Analytics](setup-analytics.md)
-   + [Audience Manager configurazione](setup-audience-manager.md)
+   + [Configurare Audience Manager](setup-audience-manager.md)
    + [Configurare Target](setup-target.md)
    + [Configurare Journey Optimizer Web Channel](setup-web-channel.md)
    + [Configurare Journey Optimizer Decision Management](setup-decision-management.md)

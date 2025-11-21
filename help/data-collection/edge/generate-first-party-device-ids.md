@@ -18,10 +18,10 @@ ht-degree: 0%
 Tradizionalmente, le applicazioni Adobe Experience Cloud generano cookie per memorizzare gli ID dispositivo utilizzando diverse tecnologie, tra cui:
 
 1. Cookie di terze parti
-1. Cookie di prime parti impostati da un server di Adobe utilizzando la configurazione CNAME di un nome di dominio
+1. Cookie di prime parti impostati da un server Adobe utilizzando la configurazione CNAME di un nome di dominio
 1. Cookie di prime parti impostati da JavaScript
 
-Le modifiche recenti apportate al browser limitano la durata di questi tipi di cookie. I cookie di prime parti sono più efficaci quando vengono impostati utilizzando un server di proprietà del cliente che utilizza un record A/AAAA DNS anziché un CNAME DNS. La funzionalità [ID dispositivo di prime parti (FPID)](https://experienceleague.adobe.com/it/docs/experience-platform/web-sdk/identity/first-party-device-ids) consente ai clienti che implementano Adobe Experience Platform Web SDK di utilizzare gli ID dispositivo nei cookie dei server che utilizzano i record A/AAAA DNS. Questi ID possono quindi essere inviati ad Adobe e utilizzati come seed per generare gli ID Experience Cloud (ECID), che rimangono l’identificatore primario nelle applicazioni Adobe Experience Cloud.
+Le modifiche recenti apportate al browser limitano la durata di questi tipi di cookie. I cookie di prime parti sono più efficaci quando vengono impostati utilizzando un server di proprietà del cliente che utilizza un record A/AAAA DNS anziché un CNAME DNS. La funzionalità [ID dispositivo di prime parti (FPID)](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/first-party-device-ids) consente ai clienti che implementano Adobe Experience Platform Web SDK di utilizzare gli ID dispositivo nei cookie dei server che utilizzano i record A/AAAA DNS. Questi ID possono quindi essere inviati ad Adobe e utilizzati come seed per generare Experience Cloud ID (ECID), che rimane l’identificatore primario nelle applicazioni Adobe Experience Cloud.
 
 Di seguito è riportato un rapido esempio di come funziona la funzionalità:
 
@@ -30,10 +30,10 @@ Di seguito è riportato un rapido esempio di come funziona la funzionalità:
 1. Il browser di un utente finale richiede una pagina web dal server web o dalla rete CDN di un cliente.
 1. Il cliente genera un ID dispositivo (FPID) sul proprio server web o CDN (il server web deve essere associato al record A/AAAA DNS del nome di dominio).
 1. Il cliente imposta un cookie di prima parte per memorizzare l’FPID nel browser dell’utente finale.
-1. L’implementazione Adobe Experience Platform Web SDK del cliente invia una richiesta all’Edge Network di Platform e:
+1. L’implementazione di Adobe Experience Platform Web SDK del cliente invia una richiesta all’Edge Network della piattaforma e:
    1. Include l&#39;FPID nella mappa di identità.
-   1. Configura un CNAME per le loro richieste Web SDK e configura il loro stream di dati con il nome del loro cookie FPID.
-1. L’Edge Network di Experience Platform riceve l’FPID e lo utilizza per generare un ID di Experience Cloud (ECID).
+   1. Configura un CNAME per le richieste Web SDK e configura il relativo stream di dati con il nome del cookie FPID.
+1. Experience Platform Edge Network riceve l’FPID e lo utilizza per generare un Experience Cloud ID (ECID).
 1. La risposta di Platform Web SDK invia nuovamente l’ECID al browser dell’utente finale.
 1. Se `idMigrationEnabled=true`, Platform Web SDK utilizza JavaScript per memorizzare l&#39;ECID come cookie `AMCV_` nel browser dell&#39;utente finale.
 1. Nel caso in cui il cookie `AMCV_` scada, il processo si ripete. Se è disponibile lo stesso ID dispositivo di prima parte, viene creato un nuovo cookie `AMCV_` con lo stesso valore ECID di prima.
@@ -146,10 +146,10 @@ Il passaggio finale consiste nell’utilizzare PHP per copiare il valore del coo
 Convalida l’implementazione confermando che lo stesso ECID viene generato dal tuo ID dispositivo di prime parti:
 
 1. Genera un cookie FPID.
-1. Invia una richiesta all’Edge Network di Platform tramite Platform Web SDK.
+1. Invia una richiesta a Platform Edge Network utilizzando Platform Web SDK.
 1. È stato generato un cookie con il formato `AMCV_<IMSORGID@AdobeOrg>`. Questo cookie contiene l’ECID.
 1. Prendere nota del valore del cookie generato, quindi eliminare tutti i cookie del sito ad eccezione del cookie `FPID`.
-1. Invia un’altra richiesta all’Edge Network di Platform.
+1. Invia un’altra richiesta a Platform Edge Network.
 1. Confermare che il valore nel cookie `AMCV_<IMSORGID@AdobeOrg>` è uguale al valore `ECID` del cookie `AMCV_` eliminato. Se il valore del cookie è lo stesso per un determinato FPID, il processo di seeding per l’ECID è riuscito.
 
-Per ulteriori informazioni su questa funzione, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=it).
+Per ulteriori informazioni su questa funzione, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html).
