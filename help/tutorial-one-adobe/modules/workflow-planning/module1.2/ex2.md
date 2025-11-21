@@ -4,9 +4,9 @@ description: Verifica con Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
+source-git-commit: 9af7cc3e221ddacd8b6ddc02a2215b7d9c134d0a
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,8 @@ Fai clic su **Continua**.
 
 ![WF](./images/blueprint3.png)
 
+Cambia il **nome modello di progetto** in `--aepUserLdap-- - Integrated Campaign Execution`.
+
 Fare clic su **Installa come è...**.
 
 ![WF](./images/blueprint4.png)
@@ -89,7 +91,7 @@ Nel tuo programma, vai a **Progetti**. Fare clic su **+ Nuovo progetto** e quind
 
 ![WF](./images/wfp6.png)
 
-Seleziona il modello **Esecuzione campagna integrata** e fai clic su **Usa modello**.
+Selezionare il modello `--aepUserLdap-- - Integrated Campaign Execution` e fare clic su **Usa modello**.
 
 ![WF](./images/wfp6g.png)
 

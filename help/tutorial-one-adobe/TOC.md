@@ -4,7 +4,7 @@ breadcrumb-title: Tutorial tecnico su Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
+source-git-commit: d295b93f2370b2f464d4e52714029ca70880d71d
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 + [Panoramica del tutorial](/help/tutorial-one-adobe/overview.md)
 + [Abilitazione tecnica di GenStudio for Content Supply Chain](/help/tutorial-one-adobe/genstudiocsc.md)
 + [Stato contenuto](/help/tutorial-one-adobe/status.md)
-+ [Completamento](/help/tutorial-one-adobe/completion.md)
++ [Architettura](/help/tutorial-one-adobe/architecture.md)
 
 + Introduzione {#gettingstarted}
    + Introduzione {#gettingstarted}
@@ -268,8 +268,8 @@ ht-degree: 3%
          + [Panoramica](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Guida introduttiva a Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
-+ [WIP - IA agente](/help/tutorial-one-adobe/ai.md)
-+ WIP - IA agente {#agenticai}
++ (WIP) Agentic AI {#agenticai}
+   + [Panoramica di IA agente](/help/tutorial-one-adobe/ai.md)
    + 1.1 Guida introduttiva ad agenti e IA {#agenticai1}
       + [Panoramica](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/agenticai.md)
       + [1.1.1 Guida introduttiva all’intelligenza artificiale](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/ex1.md)

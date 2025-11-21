@@ -1,19 +1,19 @@
 ---
-title: Attivazione di GenStudio for Performance Marketing Campaign per metadati
-description: Attivazione di GenStudio for Performance Marketing Campaign per metadati
+title: Attivazione di GenStudio for Performance Marketing Campaign in Meta
+description: Attivazione di GenStudio for Performance Marketing Campaign in Meta
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2c7ef715-b8af-4a5b-8873-5409b43d7cb0
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: 9af7cc3e221ddacd8b6ddc02a2215b7d9c134d0a
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1333'
 ht-degree: 0%
 
 ---
 
-# 1.3.3 Attivazione della campagna per l’metadati
+# 1.3.3 Attivazione di campagne su Meta
 
 >[!IMPORTANT]
 >
@@ -103,7 +103,7 @@ Per il campo **Fine**, impostalo su una data che cade tra un mese.
 
 Per il campo **Stato**, impostarlo su **Attivo**.
 
-Per il campo **Canali**, impostarlo su **Meta**, **E-mail**, **Supporti a pagamento**, **Visualizzazione**.
+Per il campo **Canali**, impostarlo su **Meta**, **E-mail**, **File multimediali a pagamento**, **Visualizzazione**.
 
 Per il campo **Aree**, selezionare un&#39;area di scelta.
 
@@ -131,7 +131,7 @@ Dovresti quindi visualizzare un calendario delle campagne che offre un’idea pi
 
 >[!IMPORTANT]
 >
->Per configurare la connessione a Meta, è necessario disporre di un account utente Meta disponibile e tale account utente deve essere aggiunto a un account Meta Business.
+>Per configurare la connessione a Meta, è necessario disporre di un account utente di Meta e tale account utente deve essere aggiunto a un account aziendale di Meta.
 
 Per impostare la connessione a Meta, fare clic sui tre punti **...** e selezionare **Impostazioni**.
 
@@ -145,7 +145,7 @@ Accedi con il tuo account Meta. Fai clic su **Continua**.
 
 ![GSPeM](./images/gsconnection3.png)
 
-Se il tuo account è collegato a un account Meta Business, potrai selezionare il portfolio aziendale configurato in Meta.
+Se l&#39;account è collegato a un account aziendale di Meta, sarà possibile selezionare il portfolio aziendale configurato in Meta.
 
 ![GSPeM](./images/gsconnection5.png)
 
@@ -153,7 +153,7 @@ Una volta stabilita la connessione, fare clic sulla riga che indica **X account 
 
 ![GSPeM](./images/gsconnection4.png)
 
-Dovresti quindi visualizzare i dettagli dell’account Meta Business connesso a GenStudio for Performance Marketing.
+Dovresti quindi visualizzare i dettagli dell’account aziendale di Meta connesso a GenStudio for Performance Marketing.
 
 ![GSPeM](./images/gsconnection6.png)
 
@@ -191,7 +191,7 @@ Seleziona **AEM Assets**.
 
 ![GSPeM](./images/gsasset8.png)
 
-Fare clic su **Seleziona cartella**.
+Fare clic su **Seleziona cartella**. Cambia il nome della risorsa in `--aepUserLdap-- - neon rabbit`.
 
 ![GSPeM](./images/gsasset9.png)
 
@@ -231,7 +231,7 @@ Torna a GenStudio for Performance Marketing. Nel menu a sinistra, vai a **Assets
 
 ![GSPeM](./images/gsasset18.png)
 
-## 1.3.3.4 Crea e approva Meta Ad
+## 1.3.3.4 Crea e approva annuncio Meta
 
 Nel menu a sinistra, vai a **Crea**. Seleziona **Meta**.
 
@@ -298,11 +298,11 @@ Fare clic su **Apri nel contenuto**.
 
 ![GSPeM](./images/gsad14.png)
 
-I 4 metadati sono ora disponibili in **Contenuto** > **Esperienze**.
+I 4 annunci Meta ora sono disponibili in **Contenuto** > **Esperienze**.
 
 ![GSPeM](./images/gsad15.png)
 
-## Pubblicazione annuncio 1.3.3.5 in formato Meta
+## 1.3.3.5 Pubblica annuncio in Meta
 
 Selezionare uno degli annunci e fare clic su **Attiva**.
 
@@ -312,7 +312,7 @@ Scegli un **Call to action** dall&#39;elenco e immetti un URL di esempio. Fai cl
 
 ![GSPeM](./images/gsmetaad3.png)
 
-Seleziona l’account Meta, la pagina Facebook collegata, la Meta Campaign e il Meta Ad Set.
+Seleziona l’account Meta, la pagina Facebook collegata, la campagna Meta e il set di annunci Meta.
 
 Assegna un nome all&#39;aggiunta e utilizza `--aepUserLdap-- Fiber Max Ad`.
 
@@ -332,17 +332,17 @@ Lo stato dell&#39;annuncio è ora impostato su **Pubblicazione**, che potrebbe r
 
 ![GSPeM](./images/gsmetaad7.png)
 
-Dopo alcuni minuti, lo stato dell&#39;annuncio passerà a **Pubblicato**. Questo significa che l’annuncio è stato inviato da GenStudio for Performance Marketing a Meta. Non significa che l’annuncio sia già stato pubblicato in Meta! Ci sono ancora una serie di passaggi da fare nell’account Meta Business per prendere l’annuncio e pubblicarlo in modo che possa essere visto dagli utenti sulle varie piattaforme Meta.
+Dopo alcuni minuti, lo stato dell&#39;annuncio passerà a **Pubblicato**. Questo significa che l’annuncio è stato inviato da GenStudio for Performance Marketing a Meta. Non significa che l’annuncio sia già stato pubblicato in Meta. Nell’account Meta Business è ancora necessario compiere diversi passi per creare l’annuncio e pubblicarlo, in modo che possa essere visualizzato dagli utenti sulle varie piattaforme Meta.
 
 Fare clic su **Visualizza dettagli**.
 
 ![GSPeM](./images/gsmetaad8.png)
 
-Fai clic su **Apri** per passare al tuo account Meta Business.
+Fai clic su **Apri** per accedere al tuo account Meta Business.
 
 >[!IMPORTANT]
 >
->Se non hai accesso all’account Meta Business connesso al tuo ambiente, non potrai visualizzare questo annuncio in Meta.
+>Se non hai accesso all’account aziendale di Meta connesso al tuo ambiente, non potrai visualizzare questo annuncio in Meta.
 
 ![GSPeM](./images/gsmetaad9.png)
 

@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
+source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 1%
@@ -170,11 +170,11 @@ Una volta eseguito lo scenario, lo schermo dovrebbe essere simile al seguente:
 
 ![WF Fusion](./images/wffusion30.png)
 
-Selezionare l&#39;icona **punto interrogativo** nell&#39;oggetto **Imposta più variabili** per visualizzare l&#39;evento che si è verificato durante l&#39;esecuzione dell&#39;oggetto.
+Selezionare l&#39;icona della **lente di ingrandimento** nell&#39;oggetto **Imposta più variabili** per visualizzare l&#39;evento che si è verificato durante l&#39;esecuzione dell&#39;oggetto.
 
 ![WF Fusion](./images/wffusion31.png)
 
-Seleziona l&#39;icona **punto interrogativo** sull&#39;oggetto **HTTP - Richiedi** per visualizzare l&#39;evento che si è verificato durante l&#39;esecuzione dell&#39;oggetto. Nel **OUTPUT**, vedi il **access_token** restituito da Adobe I/O.
+Selezionare l&#39;icona della **lente di ingrandimento** sull&#39;oggetto **HTTP - Richiedere** per visualizzare l&#39;evento che si è verificato durante l&#39;esecuzione dell&#39;oggetto. Nel **OUTPUT**, vedi il **access_token** restituito da Adobe I/O.
 
 ![WF Fusion](./images/wffusion32.png)
 
@@ -206,7 +206,7 @@ Seleziona di nuovo **Esegui**.
 
 ![WF Fusion](./images/wffusion39.png)
 
-Una volta eseguito lo scenario, selezionare l&#39;icona **punto interrogativo** sull&#39;ultimo oggetto **Imposta più variabili**. Il token di accesso viene archiviato nella variabile `bearer_token`.
+Una volta eseguito lo scenario, selezionare l&#39;icona della **lente di ingrandimento** sull&#39;ultimo oggetto **Imposta più variabili**. Il token di accesso viene archiviato nella variabile `bearer_token`.
 
 ![WF Fusion](./images/wffusion40.png)
 

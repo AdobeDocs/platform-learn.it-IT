@@ -4,7 +4,7 @@ description: Guida introduttiva a Workfront Planning
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 42c9c3bbf0958794d5a65c37d4771345c6ff584c
+source-git-commit: 9af7cc3e221ddacd8b6ddc02a2215b7d9c134d0a
 workflow-type: tm+mt
 source-wordcount: '1258'
 ht-degree: 1%
@@ -115,7 +115,7 @@ Fare quindi clic sull&#39;icona **+** per aggiungere un nuovo campo. Scorri vers
 
 Imposta **Name** del campo su `Business Unit Lead` e imposta la descrizione del campo su `Business Unit Lead responsible for budget and resources (VP, Head).`
 
-Fai clic su **Salva**.
+Fai clic su **Crea**.
 
 ![Pianificazione Workfront](./images/wfpl17.png)
 

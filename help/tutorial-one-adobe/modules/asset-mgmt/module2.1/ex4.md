@@ -4,7 +4,7 @@ description: AEM CS - Blocco personalizzato avanzato
 kt: 5342
 doc-type: tutorial
 exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 179b83b733f3314280d307e5eee0db9600a173b0
+source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 0%
@@ -106,10 +106,10 @@ Nel browser, vai all’account GitHub e all’archivio creato per CitiSignal. Do
 
 ![Blocca](./images/blockadv12.png){zoomable="yes"}
 
-Potrai visualizzare le modifiche apportate al tuo sito web andando su `main--citisignal--XXX.aem.page/us/en/` e/o `main--citisignal--XXX.aem.live/us/en/`, dopo aver sostituito XXX con il tuo account utente GitHub, che in questo esempio è `woutervangeluwe`.
+Potrai visualizzare le modifiche apportate al tuo sito web andando su `main--citisignal-aem-accs--XXX.aem.page` e/o `main--citisignal-aem-accs--XXX.aem.live`, dopo aver sostituito XXX con il tuo account utente GitHub, che in questo esempio è `woutervangeluwe`.
 
 In questo esempio, l’URL completo diventa:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en/` e/o `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` e/o `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`.
 
 Dovresti visualizzarlo con lo stile applicato alla pagina.
 
@@ -336,10 +336,10 @@ Fare clic su **Origine push**.
 
 ![Blocca](./images/blockadv19.png){zoomable="yes"}
 
-Potrai visualizzare le modifiche apportate al tuo sito web andando su `main--citisignal--XXX.aem.page/us/en/` e/o `main--citisignal--XXX.aem.live/us/en/`, dopo aver sostituito XXX con il tuo account utente GitHub, che in questo esempio è `woutervangeluwe`.
+Potrai visualizzare le modifiche apportate al tuo sito web andando su `main--citisignal-aem-accs--XXX.aem.page` e/o `main--citisignal-aem-accs--XXX.aem.live`, dopo aver sostituito XXX con il tuo account utente GitHub, che in questo esempio è `woutervangeluwe`.
 
 In questo esempio, l’URL completo diventa:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en/` e/o `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` e/o `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`.
 
 Dovresti vedere questo.
 
