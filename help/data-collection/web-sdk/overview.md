@@ -20,7 +20,7 @@ ht-degree: 41%
 
 Scopri come Adobe Experience Platform Web SDK e la rete Edge consentono ai clienti di utilizzare una libreria JavaScript e un beacon per inviare dati ad applicazioni Adobe e a destinazioni di terze parti.
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37267?captions=ita&learn=on&enablevpops)
 
 >[!NOTE]
 >

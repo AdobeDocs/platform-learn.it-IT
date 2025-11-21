@@ -23,4 +23,4 @@ Scopri come creare un’istanza di Customer AI per prevedere il comportamento de
 >
 >IA per l’analisi dei clienti supporta sia i set di dati di Adobe Analytics che quelli di Adobe Audience Manager senza la necessità di effettuare l’ETL dei dati per conformarsi allo schema Consumer Experience Event (CEE). Per ulteriori informazioni, consulta la [Guida alla preparazione dei dati di Intelligent Services](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/data-preparation.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/32665?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36625?captions=ita&learn=on&enablevpops)

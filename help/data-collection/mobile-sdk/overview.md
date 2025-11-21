@@ -20,4 +20,4 @@ Scopri in che modo Adobe Experience Platform Mobile SDK potenzia il coinvolgimen
 >
 > Il lancio è ora **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/28948?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34900?captions=ita&learn=on&enablevpops)

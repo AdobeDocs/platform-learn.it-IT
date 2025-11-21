@@ -18,4 +18,4 @@ ht-degree: 46%
 
 Scopri come creare un’istanza di Attribution AI per comprendere l’impatto dei canali e delle campagne di marketing. Per ulteriori informazioni, visita la [documentazione di IA per l&#39;attribuzione](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/32668?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36623?captions=ita&learn=on&enablevpops)

@@ -19,5 +19,5 @@ ht-degree: 51%
 
 Scopri come utilizzare i punteggi e le informazioni sulla propensione di Customer AI per convertire e fidelizzare i clienti. Per ulteriori informazioni, visita la [documentazione di Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/32666?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36624?captions=ita&learn=on&enablevpops)
 
