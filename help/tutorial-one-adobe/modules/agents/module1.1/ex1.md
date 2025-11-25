@@ -3,9 +3,9 @@ title: Guida introduttiva ad Agent Orchestrator
 description: Guida introduttiva ad Agent Orchestrator
 kt: 5342
 doc-type: tutorial
-source-git-commit: 9011c4093b5fd6612426baf7003cd7b99523b6e8
+source-git-commit: ffdc6b34a82c945c142f433f65a4f2f8d5cdcd18
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1514'
 ht-degree: 0%
 
 ---
@@ -373,15 +373,13 @@ Elimina se è presente l&#39;abbonato Fibre Channel corrente o un ticket per l&#
 
 Rispetta le preferenze di rinuncia.
 
-Piano di misurazione (CJA):
+**Piano di misurazione (CJA)**:
 
 Tracciamento: consegna, apertura, clic, visualizzazione PDP, inizio pagamento, completamento ordine.
 
 KPI: tasso di conversione a Fibre Max, uplift vs control, timetoinstall.
 
 Diagnostica: rapporto di fallout per segmento dispositivo/genere.
-
-Forma
 
 Come tutto questo si inserisce (il modello mentale dell’addetto marketing)
 
@@ -395,11 +393,103 @@ Convalida dei punti di attrito (fallout CJA sul percorso SciFi).
 
 Attiva contro i segmenti ad alta propensione (Download pesanti ∩ SciFi).
 
+Vai a [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+
+Dovresti vedere questo. Assicurati di essere nell&#39;organizzazione **Experience Platform International**.
+
+Fare clic sulla finestra **contesto**.
+
+![Agent Orchestrator](./images/ao2.png)
+
+Imposta il contesto su:
+
+- **Documentazione di Source**: **Journey Optimizer**
+- **Sandbox**: **Accelera**
+- **Visualizzazione dati**: **Accelerare il B2C del 2026**
+
+Fare clic su **Imposta contesto**.
+
+![Agent Orchestrator](./images/aoea3.png)
+
 Immetti il seguente **Prompt** e fai clic sul pulsante **generate**.
 
 ```javascript
 Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
 ```
+
+![Agent Orchestrator](./images/aocj1.png)
+
+Dovresti vedere questo. Immettere `yes` e fare clic su genera.
+
+![Agent Orchestrator](./images/aocj2.png)
+
+Dovresti vedere questo. Immettere `yes` e fare clic su genera.
+
+![Agent Orchestrator](./images/aocj3.png)
+
+Dovresti vedere questo. Immettere `The first one` e fare clic su genera.
+
+![Agent Orchestrator](./images/aocj4.png)
+
+Dovresti vedere questo. Immettere `yes` e fare clic su genera.
+
+![Agent Orchestrator](./images/aocj5.png)
+
+Rivedi la risposta. Immettere `yes` e fare clic su genera.
+
+![Agent Orchestrator](./images/aocj6.png)
+
+Fai clic su **Rivedi**.
+
+![Agent Orchestrator](./images/aocj7.png)
+
+Aggiorna il nome del percorso con il tuo LDAP per renderlo univoco. Fai clic su **Salva**.
+
+![Agent Orchestrator](./images/aocj8.png)
+
+Il percorso è stato creato in modalità bozza.
+
+![Agent Orchestrator](./images/aocj9.png)
+
+## 1.1.1.10 esperimenti
+
+Vai a [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+
+Dovresti vedere questo. Assicurati di essere nell&#39;organizzazione **Experience Platform International**.
+
+Fare clic sulla finestra **contesto**.
+
+![Agent Orchestrator](./images/ao2.png)
+
+Imposta il contesto su:
+
+- **Documentazione di Source**: **Journey Optimizer**
+- **Sandbox**: **Accelera**
+- **Visualizzazione dati**: **Accelerare il B2C del 2026**
+
+Fare clic su **Imposta contesto**.
+
+![Agent Orchestrator](./images/aoea3.png)
+
+Immetti il seguente **Prompt** e fai clic sul pulsante **generate**.
+
+```javascript
+How are the experiments performing for the journey named 'CitiSignal - Fiber Max Launch Promotion'?
+```
+
+![Agent Orchestrator](./images/aoea0.png)
+
+Dovresti quindi vedere quanto segue:
+
+![Agent Orchestrator](./images/aoea1.png)
+
+Fare clic sul suggerimento per confrontare i tassi di conversione di ogni trattamento e quindi fare clic su **genera**.
+
+![Agent Orchestrator](./images/aoea2.png)
+
+Dovresti quindi vedere un confronto dettagliato come questo:
+
+![Agent Orchestrator](./images/aoea4.png)
 
 Torna a [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 
