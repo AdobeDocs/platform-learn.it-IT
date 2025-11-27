@@ -3,9 +3,9 @@ title: Guida introduttiva ad Agent Orchestrator
 description: Guida introduttiva ad Agent Orchestrator
 kt: 5342
 doc-type: tutorial
-source-git-commit: dee5b0855eeeb455bf22f511d11cd13f7e904889
+source-git-commit: bb31fe8a36f1c9ee9d212500e2e58e01be1129b8
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1375'
 ht-degree: 0%
 
 ---
@@ -26,9 +26,17 @@ Fare clic sulla finestra **contesto**.
 
 Imposta il contesto su:
 
-- **Documentazione di Source**: **Customer Journey Analytics**
-- **Sandbox**: **Accelera**
+- **Documentazione di Source**: **Journey Optimizer**
+
+L’impostazione Documentation Source consente di assegnare una preferenza all’insieme di documenti Experience League da verificare per domande relative alla conoscenza del prodotto/Experience League.
+
+- **Sandbox**: **Prod - Accelerate (VA7)**
+
+L’impostazione Sandbox consente di identificare quale sandbox AI Assistant deve esaminare quando si pongono domande.
+
 - **Visualizzazione dati**: **Accelerare il B2C del 2026**
+
+L’impostazione Visualizzazione dati consente di identificare quale visualizzazione dati deve essere esaminata dall’Assistente IA per l’analisi dei dati quando si pongono domande.
 
 Fare clic su **Imposta contesto**.
 
@@ -60,15 +68,29 @@ Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
 Dovresti vedere questo, che approfondisce le tendenze specifiche della fibra.
 
-**Azione**: annota la curva di crescita e i picchi regionali.
-
 ![Agent Orchestrator](./images/ao7.png)
 
 ## 1.1.1.3 Correlazione degli ordini con le preferenze del contenuto
 
 **Intento**
 
-Testare l&#39;ipotesi che la preferenza dei contenuti (ad esempio, SciFi, Sport, Drammatico) preveda il comportamento di aggiornamento della banda larga, in particolare per le esigenze di larghezza di banda elevata.
+Testare l&#39;ipotesi che una preferenza per un genere specifico (ad esempio, SciFi, Sport, Drammatico) preveda il comportamento di aggiornamento della banda larga, in particolare per le esigenze di larghezza di banda elevata.
+
+Innanzitutto, devi scoprire quale campo viene utilizzato per memorizzare la preferenza di genere.
+
+Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
+
+```javascript
+Which field is used to store the preferred genre?
+```
+
+![Agent Orchestrator](./images/ao7a.png)
+
+Dovresti visualizzarlo, il che mostra che il campo utilizzato per il genere è **_experienceplatform.individualCharacteristics.preferences.preferredGenre**.
+
+![Agent Orchestrator](./images/ao7b.png)
+
+Con tali informazioni, puoi iniziare a espandere i dati di acquisto.
 
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
@@ -78,9 +100,13 @@ Show me ordersYTD by preferredGenre for the last 2 months
 
 ![Agent Orchestrator](./images/ao8.png)
 
-Dovresti quindi vedere quanto segue:
+Dovresti vedere questo. Fai clic sull&#39;icona nel blocco **Ragionamento completato** per capire cosa accade dietro le quinte in Agent Orchestrator.
 
 ![Agent Orchestrator](./images/ao9.png)
+
+Dovresti vedere una spiegazione simile.
+
+![Agent Orchestrator](./images/ao10.png)
 
 ## 1.1.1.4 Identificare Percorsi Fibre Esistenti
 
@@ -96,15 +122,19 @@ What journeys exist?
 
 ![Agent Orchestrator](./images/ao12.png)
 
-Dovresti quindi vedere quanto segue:
+Dovresti vedere questo. Fai clic su **Mostra altro**.
 
 ![Agent Orchestrator](./images/ao13.png)
 
-Elenca i percorsi attivi o passati con la messaggistica Fibre Channel.
+Dovresti quindi visualizzare un elenco più ampio di percorsi attivi o passati. Fai clic sull&#39;icona **scarica** per scaricare un elenco di questi percorsi.
 
-Azione: selezionare percorsi con prestazioni elevate per la clonazione.
+![Agent Orchestrator](./images/ao13a.png)
 
-Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
+Verrà generato un file CSV contenente tutti gli output dell’Assistente AI.
+
+![Agent Orchestrator](./images/ao13b.png)
+
+Fare clic per chiudere il riquadro destro. Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
 ```javascript
 Which of these journeys has 'Fiber' in its name?
@@ -112,21 +142,27 @@ Which of these journeys has 'Fiber' in its name?
 
 ![Agent Orchestrator](./images/ao14.png)
 
-Dovresti quindi vedere quanto segue:
+Dovresti vedere questo. Fare clic sul collegamento di uno dei percorsi e selezionare **Dettagli Percorso**.
 
 ![Agent Orchestrator](./images/ao15.png)
 
-## 1.1.1.5 Controllare il valore seed
+Verrà aperta una nuova finestra e verrà visualizzata immediatamente la panoramica dei dettagli del Percorso.
+
+![Agent Orchestrator](./images/ao15a.png)
+
+## 1.1.1.5 Controllare il pubblico utilizzato
 
 **Intento**:
 
 Comprendi la definizione di seed del percorso &quot;CitiSignal - Fibre Max Launch Promotion&quot;, ossia le caratteristiche che hanno guidato il targeting (ad esempio, &quot;Preferenza di genere SciFi&quot;, &quot;4+ dispositivi&quot;, &quot;streaming ≥ 300 GB/mese&quot;).
 
-Immetti il seguente **Prompt**, quindi digita **+CitiSignal fib** per abilitare il completamento automatico. Seleziona il percorso **CitiSignal - Promozione lancio massimo Fibre Channel**.
+Immetti il seguente **Prompt**:
 
 ```javascript
 What was the initial audience in the journey named 
 ```
+
+Digitare quindi manualmente in `+CitiSignal fib` per abilitare il completamento automatico. Seleziona il percorso **CitiSignal - Promozione lancio massimo Fibre Channel**.
 
 ![Agent Orchestrator](./images/ao16.png)
 
@@ -142,11 +178,7 @@ Dovresti vedere questo.
 
 **Intento**
 
-Creare un funnel graduale in Customer Journey Analytics
-
-Consegnato → aperto → Clic → Landed → Product View → Aggiungi al carrello → Checkout → Ordine completato
-
-Includi viste SKU relative a Fibre come ramo.
+Desideri comprendere l’abbandono delle prestazioni del percorso per sapere se nel percorso sono presenti nodi o condizioni che riscontrano una grande percentuale di profili eliminati. Questo è utile per capire se sono necessari ulteriori aggiustamenti nel percorso.
 
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
@@ -156,19 +188,29 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 
 ![Agent Orchestrator](./images/ao19.png)
 
+Dovresti vedere questo.
+
+![Agent Orchestrator](./images/ao20.png)
+
+Scorri verso il basso un po&#39;. È ora possibile rivedere la tabella esaminando ogni nodo e i rispettivi numeri di immissione, numeri di abbandono e tasso di abbandono.
+
+L’Assistente AI fornisce osservazioni e consigli.
+
+Fai clic sulla frase **Ecco come ho ottenuto i risultati**.
+
+![Agent Orchestrator](./images/ao21.png)
+
+Puoi quindi vedere i passaggi seguiti da AI Assistant per arrivare ai risultati.
+
+![Agent Orchestrator](./images/ao22.png)
+
 ## 1.1.1.7 Crea un nuovo pubblico
 
 **Intento**
 
-Sulla base dei risultati di cui sopra, esiste una correlazione tra i clienti che consumano molti dati e che hanno un genere preferito di fantascienza o fantasy. Ora combinerai questi attributi in un pubblico.
-
-Vai a [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+Sulla base dei risultati e delle ricerche di cui sopra, esiste una correlazione tra i clienti che consumano molti dati e che hanno un genere preferito di fantascienza o fantasy. Ora combinerai questi attributi in un pubblico.
 
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
-
->[!NOTE]
->
->Verifica che il contesto dell&#39;assistente punti alla sandbox **Accelerate** e alla visualizzazione dati **Accelerate 2026 B2C**
 
 ```javascript
 Create an audience that combines people with an average download per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
@@ -177,6 +219,10 @@ Create an audience that combines people with an average download per month of ov
 ![Agent Orchestrator](./images/ao32.png)
 
 Rivedi il piano. Immetti `yes` e fai clic su **invia**.
+
+>[!NOTE]
+>
+>Questo piano viene generato in base a una guida di riferimento nel sistema. I clienti potranno personalizzare i piani e aggiungerne di propri, ma per ora sono statici.
 
 ![Agent Orchestrator](./images/ao33.png)
 
@@ -202,7 +248,7 @@ Il pubblico è stato creato.
 
 >[!NOTE]
 >
->Durante la creazione di un nuovo pubblico, sono necessarie 24 ore prima che il pubblico sia disponibile per l’assistente per un ulteriore utilizzo.
+>Durante la creazione di un nuovo pubblico, sono necessarie 24 ore prima che il pubblico sia disponibile per l’Assistente AI per un ulteriore utilizzo.
 
 ## 1.1.1.8 Trova i tipi di pubblico esistenti allineati all&#39;utilizzo elevato e verifica se sono in uso
 
@@ -212,17 +258,9 @@ Individua qualsiasi pubblico denominato con &quot;download pesanti&quot;, defini
 
 >[!NOTE]
 >
->Nella versione precedente hai creato un nuovo pubblico, ricorda che ci vorranno 24 ore prima che il pubblico sia disponibile per un ulteriore utilizzo da parte dell’assistente. Ora dovresti utilizzare invece un altro pubblico già esistente.
-
-Vai a [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
-
-Dovresti vedere questo. Assicurati di essere nell&#39;organizzazione **Experience Platform International**.
+>Nel passaggio precedente, hai creato un nuovo pubblico. Tieni presente che saranno necessarie 24 ore prima che il pubblico sia disponibile per un ulteriore utilizzo per l’Assistente AI. Ora dovresti utilizzare invece un altro pubblico già esistente.
 
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
-
->[!NOTE]
->
->Verifica che il contesto dell&#39;assistente punti alla sandbox **Accelerate** e alla visualizzazione dati **Accelerate 2026 B2C**
 
 ```javascript
 Is there an audience that has "heavy downloaders" in the title?
@@ -230,9 +268,27 @@ Is there an audience that has "heavy downloaders" in the title?
 
 ![Agent Orchestrator](./images/ao30.png)
 
-Dovresti vedere questo.
+Dovresti vedere questo. Ora vuoi vedere tutti i tuoi tipi di pubblico e quanto sono cambiati negli ultimi giorni.
+
+Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
+
+```javascript
+List how much these audiences changed over the last few days.
+```
 
 ![Agent Orchestrator](./images/ao31.png)
+
+Dovresti vedere questo. Fai clic su **Mostra altro**.
+
+![Agent Orchestrator](./images/ao31a.png)
+
+Dovresti vedere questo. Fare clic per chiudere il riquadro destro.
+
+![Agent Orchestrator](./images/ao31b.png)
+
+Scorri verso il basso un po&#39; per rivedere i passaggi eseguiti dall&#39;Assistente all&#39;intelligenza artificiale.
+
+![Agent Orchestrator](./images/ao31c.png)
 
 Ci sono già alcuni tipi di pubblico per i &quot;downloader pesanti&quot;. Vediamo se sono già in uso.
 
@@ -251,12 +307,12 @@ Dovresti vedere qualcosa di simile a questo.
 È ora necessario verificare se il percorso è attivo. Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
 ```javascript
-Which of the above are used in a journey? 
+Are these journeys active? 
 ```
 
 ![Agent Orchestrator](./images/ao52.png)
 
-Dovresti vedere qualcosa di simile a questo. Il percorso non è in esecuzione al momento.
+Dovresti vedere qualcosa di simile a questo. Nessuno di questi percorsi è attualmente in esecuzione.
 
 ![Agent Orchestrator](./images/ao53.png)
 
@@ -268,17 +324,9 @@ Per il prossimo lancio di Fibre Max, è ora necessario creare un nuovo percorso.
 
 Crea un nuovo percorso destinato al pubblico composto:
 
-Download pesanti ∩ preferenza SciFi (chiave pubblico kbaa_5207bf).
-
-Vai a [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
-
-Dovresti vedere questo. Assicurati di essere nell&#39;organizzazione **Experience Platform International**.
+Download pesanti ∩ preferenza SciFi.
 
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
-
->[!NOTE]
->
->Verifica che il contesto dell&#39;assistente punti alla sandbox **Accelerate** e alla visualizzazione dati **Accelerate 2026 B2C**
 
 ```javascript
 Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
@@ -294,15 +342,15 @@ Dovresti vedere questo. Immettere `yes` e fare clic su genera.
 
 ![Agent Orchestrator](./images/aocj3.png)
 
-Dovresti vedere questo. Immettere `The first one` e fare clic su genera.
+Dovresti vedere questo. Immettere `The first one` e fare clic su Invia.
 
 ![Agent Orchestrator](./images/aocj4.png)
 
-Dovresti vedere questo. Immettere `yes` e fare clic su genera.
+Dovresti vedere questo. Immettere `yes` e fare clic su Invia.
 
 ![Agent Orchestrator](./images/aocj5.png)
 
-Rivedi la risposta. Immettere `yes` e fare clic su genera.
+Rivedi la risposta. Immettere `yes` e fare clic su Invia.
 
 ![Agent Orchestrator](./images/aocj6.png)
 
@@ -320,15 +368,7 @@ Il percorso è stato creato in modalità bozza.
 
 ## Gestione dei conflitti di Percorso di 1.1.1.10
 
-Vai a [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
-
-Dovresti vedere questo. Assicurati di essere nell&#39;organizzazione **Experience Platform International**.
-
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
-
->[!NOTE]
->
->Verifica che il contesto dell&#39;assistente punti all&#39;origine della documentazione **Journey Optimizer**, alla sandbox **Accelerate** e alla visualizzazione dati **Accelerate 2026 B2C**
 
 ```javascript
 How can I manage journey conflicts?
@@ -347,10 +387,16 @@ Scorri verso il basso e seleziona **Origini** per verificare che le informazioni
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
 ```javascript
-List any conflicts for "CitiSignal - Fiber Max Launch Promotion" journey
+List any conflicts for the journey +CitiSignal Fiber Max
 ```
 
+Quindi seleziona manualmente il percorso **CitiSignal - Fibre Max Launch Promotion** dall&#39;elenco.
+
 ![Agent Orchestrator](./images/aocj70.png)
+
+Dovresti vedere questo. Fai clic su **invia**.
+
+![Agent Orchestrator](./images/aocj70a.png)
 
 Esaminare le informazioni sul conflitto di percorso.
 
@@ -362,15 +408,7 @@ Scorri verso il basso per trovare ulteriori dettagli sui conflitti di percorso.
 
 ## 1.1.1.11 esperimenti
 
-Vai a [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
-
-Dovresti vedere questo. Assicurati di essere nell&#39;organizzazione **Experience Platform International**.
-
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
-
->[!NOTE]
->
->Verifica che il contesto dell&#39;assistente punti alla sandbox **Accelerate** e alla visualizzazione dati **Accelerate 2026 B2C**
 
 ```javascript
 How are the experiments performing for the journey named 'CitiSignal - Fiber Max Launch Promotion'?
@@ -382,13 +420,19 @@ Dovresti quindi vedere quanto segue:
 
 ![Agent Orchestrator](./images/aoea1.png)
 
-Fare clic sul suggerimento per confrontare i tassi di conversione di ogni trattamento e quindi fare clic su **invia**.
+Scorri verso il basso e fai clic su uno dei suggerimenti. Fai clic su **invia**.
+
+>[!NOTE]
+>
+>I suggerimenti sono dinamici, pertanto è necessario aspettarsi di visualizzare suggerimenti diversi ogni volta che viene generata una risposta. I suggerimenti saranno probabilmente diversi da quelli mostrati in questa schermata.
 
 ![Agent Orchestrator](./images/aoea2.png)
 
-Dovresti quindi vedere un confronto dettagliato come questo:
+Dovresti quindi vedere una risposta dettagliata relativa al suggerimento scelto.
 
 ![Agent Orchestrator](./images/aoea4.png)
+
+Ora hai completato il laboratorio.
 
 Torna a [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 
