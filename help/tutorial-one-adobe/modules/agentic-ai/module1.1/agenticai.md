@@ -4,10 +4,10 @@ description: IA agentica
 kt: 5342
 doc-type: tutorial
 exl-id: 434e7c16-92ef-4c2f-b958-3549d5150301
-source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
+source-git-commit: 0a329e63dec0f5819e2c9baea0257e86c66247c8
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 10%
+source-wordcount: '64'
+ht-degree: 12%
 
 ---
 
@@ -22,10 +22,6 @@ In questo modulo, creerai il tuo agente ed esplorerai i vari elementi architetto
 - ...
 
 ## Esercizi
-
-[1.1.1 Guida introduttiva ad Agentic AI](./ex1.md){target="_blank"}
-
-In questo esercizio, ...
 
 ![Informazioni tecniche](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
