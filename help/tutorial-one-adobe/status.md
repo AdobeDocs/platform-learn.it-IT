@@ -3,9 +3,9 @@ title: Stato contenuto
 description: Stato contenuto
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 8b05c619c8101e4ba8e5c301954d15b27fe395cf
+source-git-commit: 6642acb3fdce2c9d3a9b919d5c9457191e4780a6
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '548'
 ht-degree: 10%
 
 ---
@@ -18,7 +18,7 @@ Di seguito è riportata una panoramica dello stato del contenuto in questa eserc
 
 | Nome | Ultimo aggiornamento | Lavorativo al 100% | Osservazioni | Investimento nel tempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [. Introduzione &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Sì | - | 45 min |
+| [. Introduzione ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Sì | - | 45 min |
 
 ## &#x200B;1. Flusso di lavoro e pianificazione
 
@@ -82,9 +82,10 @@ Di seguito è riportata una panoramica dello stato del contenuto in questa eserc
 
 | Nome | Ultimo aggiornamento | Lavorativo al 100% | Osservazioni | Investimento nel tempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 25/11/2025 | No | Work In Progress | Da definire |
+| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 25/11/2025 | Sì | - | 30 min |
 | [1.2 IA agente](./modules/agents/module1.2/agenticai.md){target="_blank"} | 25/11/2025 | No | Work In Progress | Da definire |
 | [1.3 Agente Collaboration](./modules/agents/module1.3/agentcollaboration.md){target="_blank"} | 25/11/2025 | No | Work In Progress | Da definire |
+| [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 25/11/2025 | No | Work In Progress | Da definire |
 
 {style="table-layout:auto"}
 
