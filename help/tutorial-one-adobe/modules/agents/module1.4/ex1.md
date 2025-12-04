@@ -3,18 +3,14 @@ title: Guida introduttiva a Brand Concierge
 description: Guida introduttiva a Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: 75b76978c2ec2f5b89900dea75083932af608bf4
+source-git-commit: ea5fa4694205a94f63d277fdcf2018951fa31fbc
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '988'
 ht-degree: 1%
 
 ---
 
 # 1.4.1 Guida introduttiva a Brand Concierge
-
->[!IMPORTANT]
->
->Questo esercizio è in fase di elaborazione e non è ancora terminato.
 
 ## Video
 
@@ -211,6 +207,34 @@ Allora tornerai qui.
 
 ![Brand Concierge](./images/bc25.png)
 
+Dopo 10-20 minuti, lo **Stato** di entrambe le origini di conoscenza deve essere **Completato**. Fare clic su **Home**.
+
+![Brand Concierge](./images/bc27.png)
+
+Dovresti vedere questo. Fai clic su **+ Connect** nella scheda **Collegamenti al sito Web**.
+
+![Brand Concierge](./images/bc28.png)
+
+Seleziona l&#39;origine della conoscenza **Sito Web CitiSignal** e fai clic su **Salva**.
+
+![Brand Concierge](./images/bc29.png)
+
+Dovresti vedere questo. Fai clic su **+ Connect** nella scheda **Catalogo prodotti**.
+
+![Brand Concierge](./images/bc30.png)
+
+Selezionare l&#39;origine della Knowledge Base **Prodotti CitiSignal** e fare clic su **Salva**.
+
+![Brand Concierge](./images/bc31.png)
+
+Dovresti vedere questo. Fai clic su **Anteprima** per iniziare a interagire con il tuo Brand Concierge.
+
+![Brand Concierge](./images/bc32.png)
+
+Ora puoi iniziare a porre domande relative alle fonti di conoscenza fornite.
+
+![Brand Concierge](./images/bc33.png)
+
 ## 1.4.1.3 passaggi per l&#39;onboarding di AEP
 
 Brand Concierge utilizza Adobe Experience Platform per memorizzare i dati di interazione provenienti dalle conversazioni. La connessione tra Brand Concierge e Experience Platform richiede che Brand Concierge configuri e utilizzi un flusso di dati.
@@ -242,6 +266,10 @@ Lo stream di dati è ora configurato. Copia il nome e l’ID dello stream di dat
 ### API di gestione della configurazione di Brand Concierge
 
 Il passaggio successivo consiste nell’abilitare l’API di gestione della configurazione di Brand Concierge per configurare lo stream di dati appena creato. Questa operazione è necessaria per risolvere elementi come l’ID organizzazione IMS e i dettagli della sandbox durante l’elaborazione della richiesta.
+
+Questo è attualmente un passaggio interno di Adobe che deve essere eseguito. Questo passaggio è necessario, altrimenti la configurazione dello stream di dati non è corretta per l’utilizzo da parte di Brand Concierge.
+
+Passaggio successivo: [Implementare Brand Concierge nel sito Web](./ex2.md){target="_blank"}
 
 Torna a [Brand Concierge](./brandconcierge.md){target="_blank"}
 
