@@ -3,14 +3,18 @@ title: Guida introduttiva a Brand Concierge
 description: Guida introduttiva a Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6642acb3fdce2c9d3a9b919d5c9457191e4780a6
+source-git-commit: 75b76978c2ec2f5b89900dea75083932af608bf4
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '864'
 ht-degree: 1%
 
 ---
 
 # 1.4.1 Guida introduttiva a Brand Concierge
+
+>[!IMPORTANT]
+>
+>Questo esercizio è in fase di elaborazione e non è ancora terminato.
 
 ## Video
 
@@ -73,7 +77,7 @@ Dovresti vedere questo. Fai clic sul menu **selezione sandbox**.
 
 ![Brand Concierge](./images/bc2.png)
 
-Scegli la sandbox che ti è stata assegnata. La sandbox deve essere denominata `--aepUserLdap--`.
+Scegli la sandbox che ti è stata assegnata. La sandbox deve essere denominata `--aepUserLdap-- - bc`.
 
 ![Brand Concierge](./images/bc3.png)
 
@@ -129,15 +133,21 @@ Dovresti vedere questo. Fai clic su **Inizia** nella scheda **Product Advisory p
 
 ![Brand Concierge](./images/bc12.png)
 
+Dovresti vedere questo. Compila i campi seguenti utilizzando il testo seguente.
 
+**Cosa deve sapere il consulente sul prodotto o sul pubblico prima di formulare consigli?**
 
 ```
 CitiSignal is a telecommunications company that sells devices such as phones and watches and that sells internet services such as their lead product CitiSignal Fiber Max. On top of that, CitiSignal sells entertainment services that offer premium streaming services at a discounted price. CitiSignal is targeting these 3 personas primarily: Smart Home Families, Online Gamers and Remote Professionals.
 ```
 
+**Esistono regole o limitazioni aziendali che il portinaio deve seguire quando formula i consigli?**
+
 ```
 Prioritize positioning the CitiSignal Fiber Max offering.
 ```
+
+**Esistono parole chiave o frasi specifiche che il portinaio deve seguire o evitare?**
 
 ```
 Competitor pricing, competitor products
@@ -151,7 +161,7 @@ Dovresti vedere questo. Fai clic su **Inizia** per personalizzare l&#39;espressi
 
 ![Brand Concierge](./images/bc14.png)
 
-Puoi effettuare le tue scelte nella pagina **Espressione marchio**.
+Puoi effettuare le tue scelte nella pagina **Espressione marchio**, assicurati che sia selezionata un&#39;opzione per ogni domanda.
 
 ![Brand Concierge](./images/bc15.png)
 
@@ -165,6 +175,73 @@ Scorri verso l&#39;alto e fai clic sulla **freccia** per tornare alla schermata 
 
 ![Brand Concierge](./images/bc17.png)
 
+Allora tornerai qui. Fare clic su **Origini informazioni**.
+
+![Brand Concierge](./images/bc18.png)
+
+Fai clic su **Genera le tue origini di conoscenza**.
+
+![Brand Concierge](./images/bc19.png)
+
+Seleziona **Catalogo prodotti** e fai clic su **Continua**.
+
+![Brand Concierge](./images/bc20.png)
+
+Dovresti vedere questo. Immetti `CitiSignal Products` come nome per l&#39;origine della conoscenza.
+
+![Brand Concierge](./images/bc21.png)
+
+Ora devi caricare un file csv contenente i collegamenti del tuo sito web. Scarica il catalogo di prodotti [CitiSignal](./assets/CitiSignal-catalog.json.zip) sul desktop e decomprimi.
+
+![Brand Concierge](./images/bc26.png)
+
+Fare clic su **Sfoglia file** e selezionare **Sfoglia dal dispositivo**.
+
+![Brand Concierge](./images/bc22.png)
+
+Seleziona il file **CitiSignal-catalog.json** e fai clic su **Apri**.
+
+![Brand Concierge](./images/bc23.png)
+
+Dovresti vedere questo. Fai clic su **Aggiungi**.
+
+![Brand Concierge](./images/bc24.png)
+
+Allora tornerai qui.
+
+![Brand Concierge](./images/bc25.png)
+
+## 1.4.1.3 passaggi per l&#39;onboarding di AEP
+
+Brand Concierge utilizza Adobe Experience Platform per memorizzare i dati di interazione provenienti dalle conversazioni. La connessione tra Brand Concierge e Experience Platform richiede che Brand Concierge configuri e utilizzi un flusso di dati.
+
+### Stream di dati
+
+Vai a [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Apri **Experience Platform**.
+
+![Brand Concierge](./images/aep1.png)
+
+Verifica di aver selezionato la sandbox corretta, che deve essere denominata `--aepUserLdap-- - bc`. Nel menu a sinistra, scorri verso il basso e seleziona **Flussi di dati**.
+
+![Brand Concierge](./images/aep2.png)
+
+Fare clic su **Nuovo flusso di dati**.
+
+![Brand Concierge](./images/aep3.png)
+
+Immettere il nome **Datastream** `--aepUserLdap-- - Brand Concierge`, quindi selezionare lo **Schema di mappatura** `cja-brand-concierge-sb-XXX`.
+
+Fai clic su **Salva**.
+
+![Brand Concierge](./images/aep4.png)
+
+Lo stream di dati è ora configurato. Copia il nome e l’ID dello stream di dati e scrivili in un file di testo sul computer.
+
+![Brand Concierge](./images/aep5.png)
+
+### API di gestione della configurazione di Brand Concierge
+
+Il passaggio successivo consiste nell’abilitare l’API di gestione della configurazione di Brand Concierge per configurare lo stream di dati appena creato. Questa operazione è necessaria per risolvere elementi come l’ID organizzazione IMS e i dettagli della sandbox durante l’elaborazione della richiesta.
 
 Torna a [Brand Concierge](./brandconcierge.md){target="_blank"}
 
