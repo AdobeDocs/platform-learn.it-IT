@@ -25,4 +25,4 @@ Quando individui un partner strategico con cui condividere i dati, è importante
 > * Per i clienti di Stati Uniti, Canada, EMEA, Australia e Nuova Zelanda: Adobe consiglia ai clienti di Real-Time CDP Prime e Ultimate di trasferire i casi di utilizzo della collaborazione sui dati da Segment Match a Real-Time CDP Collaboration. Visualizza la [documentazione](https://experienceleague.adobe.com/it/docs/real-time-cdp-collaboration/using/home){target="_blank"} e la [guida rapida](https://experienceleague.adobe.com/it/docs/real-time-cdp-collaboration/using/quick-start-guide){target="_blank"} per Real-Time CDP Collaboration e contatta il team del tuo account Adobe per ulteriori informazioni.
 > * Per i clienti in tutte le altre aree geografiche: Segment Match è l’opzione consigliata fino al rilascio di Real-Time CDP Collaboration in tali aree geografiche nel 2026.
 
->[!VIDEO](https://video.tv.adobe.com/v/342378/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346345/?captions=ita&learn=on&enablevpops)
