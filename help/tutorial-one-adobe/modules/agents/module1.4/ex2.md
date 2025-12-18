@@ -3,9 +3,9 @@ title: Implementare Brand Concierge sul sito web
 description: Implementare Brand Concierge sul sito web
 kt: 5342
 doc-type: tutorial
-source-git-commit: ea5fa4694205a94f63d277fdcf2018951fa31fbc
+source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1347'
 ht-degree: 0%
 
 ---
@@ -180,7 +180,9 @@ Visualizzerai quindi i dettagli dell’ambiente. Fai clic sull&#39;URL dell&#39;
 
 >[!NOTE]
 >
->È possibile che l’ambiente sia ibernato. In questo caso, devi prima riattivare l’ambiente.
+>È possibile che l’ambiente sia ibernato. In questo caso, devi prima riattivare l’ambiente. Nel video seguente trovi le istruzioni per riattivare la funzione.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478141?quality=12&learn=on)
 
 ![AEMCS](./images/aemcs10.png)
 

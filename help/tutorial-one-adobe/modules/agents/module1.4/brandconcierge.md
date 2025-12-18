@@ -3,9 +3,9 @@ title: Brand Concierge
 description: Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: b384842ce17731e241a1404a1d5c41cc70b434ff
+source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '211'
 ht-degree: 2%
 
 ---
@@ -18,10 +18,16 @@ Brand Concierge è un compagno digitale basato sull’intelligenza artificiale c
 
 Scopri come utilizzare gli agenti Adobe Experience Platform e Brand Concierge per:
 
+## Video
+
+Questo video illustra e illustra tutti i passaggi di questo esercizio.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478139?quality=12&learn=on)
+
 ## Prerequisiti
 
 - Accesso a Adobe Journey Optimizer e Customer Journey Analytics
-- Familiarità con [concetti di Brand Concierge](https://experienceleague.adobe.com/it/docs/brand-concierge/content/home)
+- Familiarità con [concetti di Brand Concierge](https://experienceleague.adobe.com/en/docs/brand-concierge/content/home)
 - Accesso ai dati dimostrativi di CitiSignal: acquisti, ordini, tipi di pubblico, Percorsi
 
 ## Esercizi
