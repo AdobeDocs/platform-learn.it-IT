@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial tecnico su Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b384842ce17731e241a1404a1d5c41cc70b434ff
+source-git-commit: fe8716bfae92588a3f0ec0ca1c5d37bf1296f6f6
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1423'
 ht-degree: 3%
 
 ---
@@ -273,6 +273,7 @@ ht-degree: 3%
    + 1.1 Agent Orchestrator {#agents1}
       + [Panoramica](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
       + [1.1.1 Guida introduttiva ad Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
+      + [1.1.2 Adobe Marketing Agent con ChatGPT](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
    + 1.2 Guida introduttiva ad agenti e IA {#agents2}
       + [Panoramica](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Guida introduttiva all’intelligenza artificiale](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
