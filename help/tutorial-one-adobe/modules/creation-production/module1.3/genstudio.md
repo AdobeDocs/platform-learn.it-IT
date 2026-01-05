@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
-source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
+source-git-commit: 815bea1378de139f8d19b6f46669f4d53b5775b4
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '517'
 ht-degree: 2%
 
 ---
@@ -37,10 +37,6 @@ In questo modulo imparerai a eseguire autonomamente tutti i passaggi precedenti 
 ## Video
 
 Questo video illustra e illustra tutti i passaggi di questo esercizio.
-
->[!NOTE]
->
->Questo video non ha ancora l&#39;audio. Quando l&#39;audio è disponibile, viene caricata una nuova versione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3476497?quality=12&learn=on)
 
