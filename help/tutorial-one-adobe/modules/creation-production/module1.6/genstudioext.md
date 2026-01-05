@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2860dcb7-4f7a-4b48-93d4-141cd7f4899e
-source-git-commit: 980d7cf882d5fde499d843fe969a3690ef84bb5f
+source-git-commit: ffcb8b0eaff3c5017962b9d67c869b90375b375f
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -32,6 +32,7 @@ I componenti aggiuntivi di GenStudio for Performance Marketing sono le app App B
 Questo video illustra e illustra tutti i passaggi di questo esercizio.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3476498?quality=12&learn=on)
+
 
 ## Esercizi
 
