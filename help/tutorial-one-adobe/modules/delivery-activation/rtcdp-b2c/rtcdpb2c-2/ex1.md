@@ -4,7 +4,7 @@ description: 'IA per l’analisi dei clienti: preparazione dei dati (acquisizion
 kt: 5342
 doc-type: tutorial
 exl-id: 2b49d86a-af75-4ecd-ab3f-0182f3b8da2f
-source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
+source-git-commit: fff1930bed3b8b0a059217b67f0a0b00a359a019
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 1%
@@ -112,7 +112,7 @@ Una volta configurati lo **Schema** e il **Set di dati**, puoi acquisire i dati 
 
 I dati preparati per gli eventi esperienza in questo esercizio devono essere conformi ai requisiti e allo schema del [gruppo di campi XDM per eventi esperienza del consumatore](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md).
 
-Scarica il file zip con i dati demo da questa posizione: [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip).
+Scarica il file zip con i dati demo da questa posizione: [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM_CAI_EVENTS-WEB.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM_CAI_EVENTS-WEB.zip).
 
 È stato scaricato il file **CUSTOM-CAI-EVENTS-WEB.zip**. Posiziona il file sul desktop del computer e decomprimi, dopodiché visualizzerai la cartella **CUSTOM-CAI-EVENTS-WEB**.
 
