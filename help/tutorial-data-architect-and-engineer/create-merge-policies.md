@@ -140,7 +140,7 @@ Un caso d’uso chiave per i criteri di unione è la governance dei dati. Ad ese
 
 ## Risorse aggiuntive
 
-* [Documentazione sui criteri di unione](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
+* [Documentazione sui criteri di unione](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=it)
 * [Riferimento API per i criteri di unione (parte di Real-Time Customer Profile API)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Passiamo ora al [framework di governance dei dati](apply-data-governance-framework.md).
