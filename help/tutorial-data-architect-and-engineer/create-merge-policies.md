@@ -11,9 +11,9 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 10d36ee194c8da937f667c1ba438681959c5fc68
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '991'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Per questa lezione verrà utilizzata l’interfaccia utente, ma sono disponibili
 **Gli architetti di dati** dovranno creare criteri di unione al di fuori di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sui criteri di unione:
->[!VIDEO](https://video.tv.adobe.com/v/345077?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## Autorizzazioni richieste
 
@@ -122,7 +122,7 @@ ID CRM è un campo di identità in `Luma Loyalty Dataset`, ma solo le identità 
 1. Seleziona il pulsante **[!UICONTROL Mostra profilo]**
 1. Seleziona l’ID profilo per aprire il profilo
 1. Passa alla scheda **[!UICONTROL Attributi]**
-1. Altri dettagli del profilo dal set di dati CRM, come il numero di telefono cellulare e l’indirizzo e-mail, non sono disponibili perché solo
+1. Altri dettagli del profilo dal set di dati di gestione delle relazioni con i clienti, come il numero di telefono cellulare e l&#39;indirizzo e-mail, non sono disponibili perché il criterio di unione `Loyalty Only` non include il set di dati di gestione delle relazioni con i clienti.
    ![I dati CRM non sono visualizzabili nel criterio Solo fedeltà](assets/mergepolicies-loyaltyOnly-attributes.png)
 1. Passa alla scheda **[!UICONTROL Eventi]**
 1. I dati ExperienceEvent sono disponibili nonostante non siano stati inclusi esplicitamente nei set di dati dei criteri di unione:
@@ -140,7 +140,7 @@ Un caso d’uso chiave per i criteri di unione è la governance dei dati. Ad ese
 
 ## Risorse aggiuntive
 
-* [Documentazione sui criteri di unione](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=it)
+* [Documentazione sui criteri di unione](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
 * [Riferimento API per i criteri di unione (parte di Real-Time Customer Profile API)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Passiamo ora al [framework di governance dei dati](apply-data-governance-framework.md).
