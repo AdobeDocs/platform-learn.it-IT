@@ -14,7 +14,7 @@ ht-degree: 19%
 
 # Creare una regola per l’inoltro degli eventi
 
-Scopri come creare una regola per l’inoltro degli eventi in Raccolta dati. Per ulteriori informazioni, visita la [documentazione sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Scopri come creare una regola per l’inoltro degli eventi in Raccolta dati. Per ulteriori informazioni, visita la [documentazione sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it).
 
 >[!NOTE]
 >

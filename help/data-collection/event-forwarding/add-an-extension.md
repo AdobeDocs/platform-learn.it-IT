@@ -14,7 +14,7 @@ ht-degree: 19%
 
 # Aggiungere un’estensione per l’inoltro degli eventi
 
-Scopri come aggiungere un’estensione per l’inoltro di eventi in Raccolta dati. Per ulteriori informazioni, visita la [documentazione sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
+Scopri come aggiungere un’estensione per l’inoltro di eventi in Raccolta dati. Per ulteriori informazioni, visita la [documentazione sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/it/docs/experience-platform/tags/event-forwarding/overview).
 
 >[!NOTE]
 >

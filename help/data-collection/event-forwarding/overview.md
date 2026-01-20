@@ -14,7 +14,7 @@ ht-degree: 41%
 
 # Panoramica sull’inoltro degli eventi
 
-Scopri come l’inoltro degli eventi centralizza la raccolta dei dati, riduce la quantità di codice necessario nelle app web e mobili e invia i dati a soluzioni non Adobe tramite Adobe Experience Platform Edge Network. Per ulteriori informazioni, visita la [documentazione sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
+Scopri come l’inoltro degli eventi centralizza la raccolta dei dati, riduce la quantità di codice necessario nelle app web e mobili e invia i dati a soluzioni non Adobe tramite Adobe Experience Platform Edge Network. Per ulteriori informazioni, visita la [documentazione sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/it/docs/experience-platform/tags/event-forwarding/overview).
 
 >[!NOTE]
 >

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Acquisire dati utilizzando il connettore dati Adobe Audience Manager
 
-In questo video sull’integrazione, scopri come utilizzare il connettore dati di Audience Manager per inserire in Platform caratteristiche e segmenti da AAM e combinarli con altri dati avanzati. Per ulteriori informazioni, consulta la [documentazione del connettore di origine Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html).
+In questo video sull’integrazione, scopri come utilizzare il connettore dati di Audience Manager per inserire in Platform caratteristiche e segmenti da AAM e combinarli con altri dati avanzati. Per ulteriori informazioni, consulta la [documentazione del connettore di origine Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on&enablevpops)
 

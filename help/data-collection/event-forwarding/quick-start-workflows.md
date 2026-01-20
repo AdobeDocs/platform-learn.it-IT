@@ -22,6 +22,6 @@ Questo video illustra due casi d’uso avanzati per ottenere il massimo dai flus
 1. Utilizzo del flusso di lavoro per creare oggetti di riferimento. 
 1. Copia degli oggetti di riferimento in un&#39;implementazione esistente.
 
-Per ulteriori informazioni sul flusso di lavoro con avvio rapido dell&#39;API Meta Conversions, visita [la documentazione](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/meta/overview#quick-start).
+Per ulteriori informazioni sul flusso di lavoro con avvio rapido dell&#39;API Meta Conversions, visita [la documentazione](https://experienceleague.adobe.com/it/docs/experience-platform/tags/extensions/server/meta/overview#quick-start).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424501?learn=on&enablevpops)
