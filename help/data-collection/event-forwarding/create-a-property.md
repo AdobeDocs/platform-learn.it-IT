@@ -24,4 +24,4 @@ Scopri come creare una proprietà di inoltro degli eventi in Raccolta dati. Per 
 > * Platform Launch Server Side è ora **[!DNL event forwarding]**
 > * Le configurazioni di Edge sono ora **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331938?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410367?captions=ita&learn=on&enablevpops)

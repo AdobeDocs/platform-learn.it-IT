@@ -24,4 +24,4 @@ Scopri come l’inoltro degli eventi centralizza la raccolta dei dati, riduce la
 > * Platform Launch Server Side è ora **[!DNL event forwarding]**
 > * Le configurazioni di Edge sono ora **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331937?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410922?captions=ita&learn=on&enablevpops)

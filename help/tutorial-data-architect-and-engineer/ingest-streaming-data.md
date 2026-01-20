@@ -31,9 +31,9 @@ Nell’interfaccia di Data Collection è necessario completare due attività pri
 
 Prima di iniziare gli esercizi, guarda questi due brevi video per ulteriori informazioni sull’acquisizione di dati in streaming e sul Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36263?captions=ita&learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37267?captions=ita&learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ Experience Platform Debugger è un’estensione disponibile per Chrome che conse
 
 Se non hai mai utilizzato il debugger prima, e questo è diverso dal precedente Adobe Experience Cloud Debugger, potresti voler guardare questo video di panoramica di cinque minuti:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36164?captions=ita&learn=on&enablevpops)
 
 ### Apri il sito web Luma.
 

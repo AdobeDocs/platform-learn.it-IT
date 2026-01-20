@@ -24,4 +24,4 @@ Scopri come aggiungere un’estensione per l’inoltro di eventi in Raccolta dat
 > * Platform Launch Server Side è ora **[!DNL event forwarding]**
 > * Le configurazioni di Edge sono ora **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331941?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410379?captions=ita&learn=on&enablevpops)

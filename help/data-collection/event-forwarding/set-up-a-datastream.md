@@ -25,4 +25,4 @@ Scopri come impostare un flusso di dati per l’inoltro di eventi. Per ulteriori
 > * Platform Launch Server Side è ora **[!DNL event forwarding]**
 > * Le configurazioni di Edge sono ora **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331939?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410361?captions=ita&learn=on&enablevpops)
