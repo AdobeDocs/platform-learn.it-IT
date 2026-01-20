@@ -91,7 +91,7 @@ Ricarica la pagina di esempio. La pagina verrà nascosta per tre secondi prima d
 * `body {opacity: 0 !important}` specifica la definizione CSS da utilizzare per il pre-hiding fino al caricamento di Target. Per impostazione predefinita, l’intero corpo è nascosto. Se ad esempio disponi di una struttura DOM coerente con un elemento contenitore facilmente identificato che racchiude tutti i contenuti inclusi nella navigazione e non desideri testare o personalizzare la navigazione, potresti utilizzare questa impostazione per limitare il pre-hiding per quell’elemento contenitore.
 * `3000` specifica l’impostazione di timeout per il pre-hiding. Per impostazione predefinita, se Target non viene caricato in tre secondi, la pagina verrà visualizzata. Questo dovrebbe accadere di rado.
 
-Per ulteriori dettagli e per ottenere il frammento pre-hiding non minimizzato, consulta [l’estensione Adobe Target con implementazione asincrona ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html#adobe-target-extension-with-an-asynchronous-deployment).
+Per ulteriori dettagli e per ottenere il frammento pre-hiding non minimizzato, consulta [l’estensione Adobe Target con implementazione asincrona &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html#adobe-target-extension-with-an-asynchronous-deployment).
 
 ## Aggiungere l’estensione Target
 
