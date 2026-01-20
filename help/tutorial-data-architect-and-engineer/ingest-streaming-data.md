@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: d70d5df8b11c8500dbe4764b08e2627893f436f0
 workflow-type: tm+mt
-source-wordcount: '3272'
+source-wordcount: '3266'
 ht-degree: 0%
 
 ---
@@ -31,15 +31,15 @@ Nell’interfaccia di Data Collection è necessario completare due attività pri
 
 Prima di iniziare gli esercizi, guarda questi due brevi video per ulteriori informazioni sull’acquisizione di dati in streaming e sul Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/36263?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/37267?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
 >Questo tutorial è incentrato sull&#39;acquisizione in streaming da siti Web con Web SDK, ma puoi anche eseguire lo streaming dei dati utilizzando [Adobe Mobile SDK](https://developer.adobe.com/client-sdks/documentation/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect) e altri meccanismi.
 
-## Autorizzazioni richieste
+## Autorizzazioni obbligatorie
 
 Nella lezione [Configurare le autorizzazioni](configure-permissions.md) è possibile impostare tutti i controlli di accesso necessari per completare la lezione.
 
@@ -248,14 +248,13 @@ Come puoi vedere nella schermata [!UICONTROL Flusso di pubblicazione], il proces
 
 ### Aggiungere Adobe Experience Platform Debugger
 
-Experience Platform Debugger è un’estensione disponibile per i browser Chrome e Firefox che consente di visualizzare la tecnologia Adobe implementata nelle pagine web. Scarica la versione per il browser preferito:
+Experience Platform Debugger è un’estensione disponibile per Chrome che consente di visualizzare la tecnologia Adobe implementata nelle pagine web. Scarica la versione per il browser preferito:
 
-* [Estensione Firefox](https://addons.mozilla.org/it/firefox/addon/adobe-experience-platform-dbg/)
 * [Estensione Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 Se non hai mai utilizzato il debugger prima, e questo è diverso dal precedente Adobe Experience Cloud Debugger, potresti voler guardare questo video di panoramica di cinque minuti:
 
->[!VIDEO](https://video.tv.adobe.com/v/36164?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Apri il sito web Luma.
 
@@ -348,7 +347,7 @@ Ora mapperemo il nome della nostra pagina al Web SDK.
 >[!IMPORTANT]
 >
 >Per completare questa attività, è necessario assicurarsi che l’utente abbia prima accesso alla sandbox di Prod. Se non hai già accesso alla sandbox Prod da un profilo di prodotto diverso, apri rapidamente il profilo `Luma Tutorial Platform` e aggiungi l&#39;elemento di autorizzazione **[!UICONTROL Sandbox]** > **[!UICONTROL Prod]**. Dopo aver eseguito questa operazione, effettua un MAIUSC-Ricarica nella pagina Elementi dati per cancellare la cache
->&#x200B;>![Aggiungi la sandbox Prod](assets/websdk-property-permissionToLoadSchema.png)
+>![Aggiungi la sandbox Prod](assets/websdk-property-permissionToLoadSchema.png)
 
 Nella pagina **[!UICONTROL Elementi dati]**:
 
@@ -356,7 +355,7 @@ Nella pagina **[!UICONTROL Elementi dati]**:
 1. Come **[!UICONTROL Nome]**, immetti `XDM Object`
 1. Come **[!UICONTROL Estensione]**, seleziona `Adobe Experience Platform Web SDK`
 1. Come **[!UICONTROL Tipo di elemento dati]**, selezionare `XDM object`
-1. Seleziona la sandbox `Luma Tutorial` come **[!UICONTROL Sandbox]**
+1. Seleziona la sandbox **[!UICONTROL come]** Sandbox`Luma Tutorial`
 1. Come **[!UICONTROL Schema]**, seleziona `Luma Web Events Schema`
 1. Seleziona il campo `web.webPageDetails.name`
 1. Come **[!UICONTROL Valore]**, seleziona l&#39;icona per aprire la selezione modale dell&#39;elemento dati e scegli l&#39;elemento dati `Page Name`

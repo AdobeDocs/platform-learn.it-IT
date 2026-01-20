@@ -4,9 +4,8 @@ description: Scopri come impostare un flusso di dati per l’inoltro di eventi.
 feature: Event Forwarding, Datastreams
 level: Intermediate
 jira: KT-6421
-thumbnail: 331939.jpeg
 exl-id: 20e30a36-3d56-4d15-acb7-b1bd560bb94d
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 18%
@@ -15,7 +14,7 @@ ht-degree: 18%
 
 # Configurare un flusso di dati per l’inoltro di eventi
 
-Scopri come impostare un flusso di dati per l’inoltro di eventi. Per ulteriori informazioni, visita [la documentazione sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=it#create-a-datastream)
+Scopri come impostare un flusso di dati per l’inoltro di eventi. Per ulteriori informazioni, visita [la documentazione sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
 
 
 >[!NOTE]
@@ -26,4 +25,4 @@ Scopri come impostare un flusso di dati per l’inoltro di eventi. Per ulteriori
 > * Platform Launch Server Side è ora **[!DNL event forwarding]**
 > * Le configurazioni di Edge sono ora **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/3410361?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/331939?learn=on&enablevpops)

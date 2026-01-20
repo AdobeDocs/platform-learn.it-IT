@@ -4,9 +4,8 @@ description: Scopri come creare una proprietà di inoltro degli eventi in Raccol
 feature: Event Forwarding
 level: Intermediate
 jira: KT-6420
-thumbnail: 331938.jpeg
 exl-id: 63a578d3-1220-4588-b289-7310f4905d52
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 19%
@@ -15,7 +14,7 @@ ht-degree: 19%
 
 # Creare una proprietà di inoltro degli eventi
 
-Scopri come creare una proprietà di inoltro degli eventi in Raccolta dati. Per ulteriori informazioni, visitare la [documentazione relativa alla creazione di una proprietà di inoltro eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=it#create-an-event-forwarding-property).
+Scopri come creare una proprietà di inoltro degli eventi in Raccolta dati. Per ulteriori informazioni, visitare la [documentazione relativa alla creazione di una proprietà di inoltro eventi](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-an-event-forwarding-property).
 
 >[!NOTE]
 >
@@ -25,4 +24,4 @@ Scopri come creare una proprietà di inoltro degli eventi in Raccolta dati. Per 
 > * Platform Launch Server Side è ora **[!DNL event forwarding]**
 > * Le configurazioni di Edge sono ora **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/3410367?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/331938?learn=on&enablevpops)

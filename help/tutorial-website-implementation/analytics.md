@@ -1,9 +1,9 @@
 ---
 title: Aggiungere Adobe Analytics
-description: Scopri come implementare Adobe Analytics utilizzando l’estensione tag Adobe Analytics, inviare il beacon di visualizzazione della pagina, aggiungere variabili, tenere traccia degli eventi e aggiungere plug-in. Questa lezione fa parte dell’esercitazione Implementare l’Experience Cloud su siti web.
+description: Scopri come implementare Adobe Analytics utilizzando l’estensione tag Adobe Analytics, inviare il beacon di visualizzazione della pagina, aggiungere variabili, tenere traccia degli eventi e aggiungere plug-in. Questa lezione fa parte dell’esercitazione Implementare Experience Cloud nei siti web.
 solution: Data Collection, Analytics
 exl-id: dababaf2-ff8f-4178-8eaf-04a707b4ab05
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: d70d5df8b11c8500dbe4764b08e2627893f436f0
 workflow-type: tm+mt
 source-wordcount: '3827'
 ht-degree: 69%
@@ -12,7 +12,7 @@ ht-degree: 69%
 
 # Aggiungere Adobe Analytics
 
-In questa lezione, implementerai [l’estensione Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=it) e creerai regole per inviare dati ad Adobe Analytics.
+In questa lezione, implementerai [l’estensione Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) e creerai regole per inviare dati ad Adobe Analytics.
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=it) è una soluzione leader di settore che ti consente di comprendere i tuoi clienti come persone e gestire la tua attività grazie alle informazioni sul cliente.
 
@@ -20,8 +20,8 @@ In questa lezione, implementerai [l’estensione Adobe Analytics](https://experi
 >
 >Adobe Experience Platform Launch viene integrato in Adobe Experience Platform come suite di tecnologie per la raccolta dati. Nell’interfaccia sono state introdotte diverse modifiche terminologiche di cui tenere conto quando si utilizza questo contenuto:
 >
-> * Il platform launch (lato client) è ora **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)**
-> * Platform Launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it)**
+> * Platform Launch (lato client) è ora **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)**
+> * Platform Launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Le configurazioni di Edge sono ora **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)**
 
 ## Finalità di apprendimento
@@ -37,11 +37,11 @@ Alla fine di questa lezione, potrai:
 
 Puoi implementare molti elementi per Analytics nei tag. Questa lezione non è esaustiva, ma fornisce una panoramica delle tecniche principali necessarie da implementare nel tuo sito.
 
-## Prerequisiti 
+## Prerequisiti
 
 Devi avere già completato le lezioni in [Configura tag](create-a-property.md) e [Aggiungi il servizio Identity](id-service.md).
 
-Inoltre, devi disporre di almeno un ID suite per report e del tracking server. Se non hai una suite per report test/dev che puoi usare per questa esercitazione, creane una. Se non sai come farlo, consulta [la documentazione](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html?lang=it). Puoi recuperare il tracking server dalla tua implementazione corrente dall’Adobe Consultant o dal rappresentante dell’Assistenza clienti.
+Inoltre, devi disporre di almeno un ID suite per report e del tracking server. Se non hai una suite per report test/dev che puoi usare per questa esercitazione, creane una. Se non sai come farlo, consulta [la documentazione](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite). Puoi recuperare il tracking server dalla tua implementazione corrente dall’Adobe Consultant o dal rappresentante dell’Assistenza clienti.
 
 ## Aggiungi l’estensione Analytics
 
@@ -127,7 +127,7 @@ Hai già creato una regola &quot;All Pages - Library Loaded&quot; in [Aggiungi u
 Dopo aver creato una regola per inviare un beacon Analytics, dovresti essere in grado di visualizzare la richiesta in Experience Cloud Debugger.
 
 1. Apri il [sito Luma](https://luma.enablementadobe.com/content/luma/us/en.html) nel browser Chrome.
-1. Fai clic sull&#39;icona Debugger ![Apri il Experience Cloud Debugger](images/analytics-debuggerIcon.png) per aprire **[!UICONTROL Adobe Experience Cloud Debugger]**
+1. Fai clic sull&#39;icona Debugger ![Apri Experience Cloud Debugger](images/analytics-debuggerIcon.png) per aprire **[!UICONTROL Adobe Experience Cloud Debugger]**
 1. Accertati che Debugger mappi la proprietà tag nell&#39;ambiente di sviluppo *your*, come descritto nella [lezione precedente](switch-environments.md)
 
    ![L&#39;ambiente di sviluppo dei tag visualizzato in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
@@ -281,7 +281,7 @@ Adesso, utilizza i nuovi elementi di dati e l’estensione per generare la regol
 
 1. Apri il [sito Luma](https://luma.enablementadobe.com/content/luma/us/en.html) nel browser Chrome.
 1. Vai a qualsiasi pagina dei dettagli del prodotto.
-1. Fai clic sull&#39;icona Debugger ![Apri il Experience Cloud Debugger](images/analytics-debuggerIcon.png) per aprire **[!UICONTROL Adobe Experience Cloud Debugger]**
+1. Fai clic sull&#39;icona Debugger ![Apri Experience Cloud Debugger](images/analytics-debuggerIcon.png) per aprire **[!UICONTROL Adobe Experience Cloud Debugger]**
 1. Fai clic sulla scheda Analytics.
 1. Espandi la suite per report.
 1. Nota le variabili Product Detail attualmente presenti nel debugger, in particolare che `eVar1` è stato impostato su “product detail page”, che la variabile `Events` è stata impostata su “event1” e “prodView” e che la variabile prodotti è impostata con l’ID prodotto del prodotto che stai visualizzando e che il nome pagina è ancora impostato dall’estensione di Analytics.
@@ -360,7 +360,7 @@ Per questo caso d&#39;uso, vuoi sapere se le persone stanno scorrendo sulla nost
 Ora è necessario assicurarsi che questo hit venga inserito quando si scorre verso il basso fino alla sezione Prodotti in primo piano della home page del nostro sito. Quando carichi la pagina iniziale, la richiesta non dovrebbe essere effettuata, ma dopo lo scorrimento verso il basso e la visualizzazione della sezione, l’hit dovrebbe venire attivato con i nuovi valori specificati.
 
 1. Apri il [sito Luma](https://luma.enablementadobe.com/content/luma/us/en.html) nel browser Chrome e accertati di essere nella parte superiore della pagina iniziale.
-1. Fai clic sull&#39;icona **[!UICONTROL debugger]** ![Apri il Experience Cloud Debugger](images/analytics-debuggerIcon.png) per aprire [!UICONTROL Adobe Experience Cloud Debugger]
+1. Fai clic sull&#39;**[!UICONTROL icona del debugger]** ![Apri Experience Cloud Debugger](images/analytics-debuggerIcon.png) per aprire [!UICONTROL Adobe Experience Cloud Debugger]
 1. Fai clic sulla scheda Analytics.
 1. Espandi l’hit della suite per report.
 1. Osservate l’hit della visualizzazione pagina normale per la pagina iniziale con il nome della pagina, ecc. (ma niente in eVar3 o prop3).
@@ -426,7 +426,7 @@ Con questo codice chiamerai due plug-in, ma uno di questi è incorporato nella l
 
 Lo scopo di questo plug-in consiste nell’evitare che i valori vengano duplicati erroneamente nel codice quando un visitatore aggiorna una pagina o utilizza il pulsante Indietro del browser per tornare a una pagina in cui è stato impostato un valore. In questa lezione, lo utilizzerai per evitare che l’evento `clickthrough` venga duplicato.
 
-Il codice di questo plug-in è disponibile nella [documentazione Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html?lang=it), ma è incluso qui per semplificare la funzione di copia/incolla.
+Il codice di questo plug-in è disponibile nella [documentazione Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html), ma è incluso qui per semplificare la funzione di copia/incolla.
 
 1. Copia il seguente codice.
 
@@ -476,7 +476,7 @@ Ora puoi verificare che i plug-in funzionino.
 **Convalida dei plug-in**
 
 1. Apri il [sito Luma](https://luma.enablementadobe.com/content/luma/us/en.html) nel browser Chrome.
-1. Fai clic sull&#39;icona Debugger ![Apri il Experience Cloud Debugger](images/analytics-debuggerIcon.png) per aprire **[!UICONTROL Adobe Experience Cloud Debugger]**
+1. Fai clic sull&#39;icona Debugger ![Apri Experience Cloud Debugger](images/analytics-debuggerIcon.png) per aprire **[!UICONTROL Adobe Experience Cloud Debugger]**
 1. Fai clic sulla scheda Analytics.
 1. Espandi la suite per report.
 1. Nota che la hit Analytics non ha una variabile Campaign.
