@@ -61,7 +61,7 @@ Ci sono probabilmente molti modi per eseguire questo processo di migrazione, ma 
 Durante l’esecuzione dei passaggi, è importante comprendere alcune avvertenze:
 
 1. Innanzitutto, tutti questi passaggi possono essere necessari o meno. Ad esempio, esiste una lezione sulla migrazione del codice personalizzato. Se disponi di un’implementazione di Tag che non utilizza codice personalizzato (incluso l’utilizzo di plug-in), questa lezione non sarà necessaria. Abbiamo cercato di includere le lezioni che sarebbero state necessarie alla maggior parte degli utenti, quindi leggi almeno le lezioni per vedere se è necessario apportare modifiche al sito durante la migrazione.
-1. Inoltre, non c’è modo di creare un tutorial sulla migrazione che copra il 100% dei casi d’uso che tutti utilizzano. Come affermato nell&#39;articolo precedente, abbiamo cercato di includere le lezioni di cui la maggior parte delle persone avrà bisogno, e che riguarderanno la maggior parte dei casi d&#39;uso principali. Tuttavia, ci saranno sicuramente casi d’uso non trattati in questa esercitazione. In questo caso, verifica se le lezioni incluse ti danno una buona idea di come eseguire la migrazione per il tuo caso d’uso. Puoi anche chiedere ai tuoi colleghi della [Community Experience League di raccogliere dati](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/ct-p/adobe-launch-community).
+1. Inoltre, non c’è modo di creare un tutorial sulla migrazione che copra il 100% dei casi d’uso che tutti utilizzano. Come affermato nell&#39;articolo precedente, abbiamo cercato di includere le lezioni di cui la maggior parte delle persone avrà bisogno, e che riguarderanno la maggior parte dei casi d&#39;uso principali. Tuttavia, ci saranno sicuramente casi d’uso non trattati in questa esercitazione. In questo caso, verifica se le lezioni incluse ti danno una buona idea di come eseguire la migrazione per il tuo caso d’uso. Puoi anche chiedere ai tuoi colleghi della [Community Experience League di raccogliere dati](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/ct-p/adobe-launch-community?profile.language=it).
 
 Il processo di migrazione prevede i seguenti passaggi chiave:
 
@@ -81,5 +81,5 @@ Il processo di migrazione prevede i seguenti passaggi chiave:
 
 >[!NOTE]
 >
->Ci impegniamo per aiutarti a completare con successo la migrazione di Analytics a Web SDK. Se incontri ostacoli con la migrazione o ritieni che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308#M604){target="_blank"}.
+>Ci impegniamo per aiutarti a completare con successo la migrazione di Analytics a Web SDK. Se incontri ostacoli con la migrazione o ritieni che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308?profile.language=it#M604){target="_blank"}.
 

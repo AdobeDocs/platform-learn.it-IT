@@ -681,6 +681,6 @@ Dopo aver raccolto gli eventi e averli inviati a Platform Edge Network, vengono 
 >
 >Ora hai configurato l’app per monitorare gli eventi di e-commerce, interazione tra app e tracciamento dello schermo nell’Edge Network di Adobe Experience Platform. E a tutti i servizi definiti nel flusso di dati.
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Mobile SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Mobile SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=it).
 
 Successivo: **[Gestione visualizzazioni Web](web-views.md)**

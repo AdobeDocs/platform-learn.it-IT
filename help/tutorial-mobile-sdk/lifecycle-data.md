@@ -150,6 +150,6 @@ Dovresti visualizzare **[!UICONTROL Eventi di chiusura applicazione (in backgrou
 >
 >Ora hai impostato l’app per inviare eventi relativi allo stato dell’applicazione (in primo piano, in background) all’Edge Network di Adobe Experience Platform e a tutti i servizi definiti nello stream di dati.
 >
-> Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Mobile SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+> Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Mobile SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=it)
 
 Successivo: **[Tracciare i dati evento](events.md)**

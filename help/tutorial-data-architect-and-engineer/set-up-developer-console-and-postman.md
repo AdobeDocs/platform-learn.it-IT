@@ -196,6 +196,6 @@ Si spera di aver ricevuto una risposta `200 OK` corretta contenente un elenco de
 
 ![Prima chiamata API in Postman](assets/postman-firstAPICall.png)
 
-Se la chiamata non ha avuto esito positivo, attendi un attimo a eseguire il debug utilizzando i dettagli della risposta di errore della chiamata API e controlla i passaggi precedenti. Se ti blocchi, chiedi aiuto nel [Forum della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community) oppure utilizza il collegamento sul lato destro della pagina per &quot;Segnalare un problema&quot;.
+Se la chiamata non ha avuto esito positivo, attendi un attimo a eseguire il debug utilizzando i dettagli della risposta di errore della chiamata API e controlla i passaggi precedenti. Se ti blocchi, chiedi aiuto nel [Forum della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community?profile.language=it) oppure utilizza il collegamento sul lato destro della pagina per &quot;Segnalare un problema&quot;.
 
 Con le autorizzazioni di Platform, la sandbox e [!DNL Postman] configurate, puoi [modellare i dati negli schemi](model-data-in-schemas.md).
