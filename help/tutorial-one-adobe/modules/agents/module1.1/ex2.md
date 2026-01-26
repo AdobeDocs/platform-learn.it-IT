@@ -3,14 +3,21 @@ title: Adobe Marketing Agent con ChatGPT
 description: Adobe Marketing Agent con ChatGPT
 kt: 5342
 doc-type: tutorial
-source-git-commit: 9663ef2838024e293acc72c203b1e3578911d57f
+source-git-commit: 1eafbf27de93b45288bec8cb3cd70f04e8cc715e
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
 
 # 1.1.2 Adobe Marketing Agent con ChatGPT
+
+[!BADGE Beta]
+
++++Vedi i dettagli
+Utilizzando Adobe Marketing Agent con ChatGPT Beta, l&#39;Utente riconosce che il Beta viene fornito &quot;così com&#39;è&quot; senza alcuna garanzia. Adobe non ha alcun obbligo di mantenere, correggere, aggiornare, modificare, modificare o supportare in altro modo Beta. Si consiglia di usare cautela e di non fare affidamento in alcun modo sul corretto funzionamento o sulle prestazioni di tale Beta e/o dei materiali di accompagnamento. Beta è considerata un&#39;informazione riservata di Adobe.  Qualsiasi &quot;Feedback&quot; (informazioni relative a Beta, compresi, a titolo esemplificativo e non esaustivo, problemi o difetti riscontrati durante l’utilizzo di Beta, suggerimenti, miglioramenti e raccomandazioni) fornito dall’Utente a Adobe viene assegnato ad Adobe, inclusi tutti i diritti, i titoli e gli interessi relativi a tale Feedback.
+
++++
 
 >[!IMPORTANT]
 >
@@ -30,7 +37,7 @@ Questo video illustra e illustra tutti i passaggi di questo esercizio.
 >- una versione a pagamento di OpenAI&#39;s ChatGPT
 >- utilizzo del client web ChatGPT
 
-Vai all’indirizzo https://chatgpt.com/ e accedi utilizzando i dettagli del tuo account. Una volta effettuato l’accesso, dovresti visualizzarlo. Fai clic sul nome utente.
+Vai a [https://chatgpt.com/](https://chatgpt.com/){target="_blank"} e accedi utilizzando i dettagli del tuo account. Una volta effettuato l’accesso, dovresti visualizzarlo. Fai clic sul nome utente.
 
 ![ChatGPT](./images/chatgpt1.png)
 
@@ -86,11 +93,11 @@ Per questo esercizio, il contesto deve essere impostato per utilizzare:
 
 - **Sandbox**: **Prod - Accelerate (VA7)**
 
-L’impostazione Sandbox consente di identificare quale sandbox AI Assistant deve esaminare quando si pongono domande.
+L’impostazione Sandbox consente di identificare quale sandbox ChatGPT deve esaminare quando si pongono domande.
 
 - **Visualizzazione dati**: **Accelerare il B2C del 2026**
 
-L’impostazione Visualizzazione dati consente di identificare quale visualizzazione dati deve essere esaminata dall’Assistente IA per l’analisi dei dati quando si pongono domande.
+L’impostazione Visualizzazione dati consente di identificare la visualizzazione dati che ChatGPT deve esaminare quando pone domande.
 
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
@@ -122,9 +129,9 @@ list dataviews
 
 ![Agent Orchestrator](./images/chatgpt14.png)
 
-Dovresti quindi visualizzare un elenco simile delle sandbox disponibili. La sandbox corrente in questo esempio è impostata su **prod**.
+Dovresti quindi visualizzare un elenco simile delle visualizzazioni dati disponibili.
 
-Per modificare la sandbox da utilizzare, immetti il seguente **Prompt** e fai clic sul pulsante **send**.
+Per impostare la visualizzazione dati da utilizzare, immetti il seguente **Prompt** e fai clic sul pulsante **send**.
 
 ```javascript
 switch to Accelerate 2026 B2C

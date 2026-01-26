@@ -3,9 +3,9 @@ title: Panoramica di Agentic AI Tech Labs
 description: Panoramica di Agentic AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 350292be24f19462abe3c5ea1a795b4bd93b613f
+source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -51,25 +51,16 @@ Elementi tecnici:
 - Server MCP, notebook Python
 - API di Adobe
 
-[1.3 Collaboration agente](./modules/agents/module1.3/agentcollaboration.md)
-
->[!NOTE]
->
->Questo modulo non è ancora stato rilasciato.
+[1.3 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
 **Obiettivo**
 
-Connetti il tuo agente agli agenti di Adobe. Gli Allievi configureranno il protocollo Agent2Agent (A2A) per collegare i loro agenti ad AEP Agent Orchestrator.
+Brand Concierge è un compagno digitale basato sull’intelligenza artificiale che trasforma il modo in cui i brand interagiscono con i visitatori del loro sito web. A differenza dei chatbot generici, Brand Concierge offre esperienze personalizzate e conversazionali personalizzate in base all’intento di ogni visitatore. Aiuta i visitatori a scoprire i prodotti, confrontare le opzioni, ottenere risposte immediate e ricevere consigli guidati in tempo reale. La piattaforma funziona sia per il B2C che per il B2B e funge da estensione intelligente del brand su qualsiasi canale digitale, preservando al contempo la voce del brand, l’integrità dei contenuti e la conformità.
 
-- Concatenamento agenti
-- Collaboration agente
+In questo esercizio imparerai a:
 
-Qual è l’architettura alla base di un agente Adobe?
-Qual è l&#39;architettura dietro A2A?
-
-Elementi tecnici:
-
-- Interoperabilità degli agenti con il protocollo A2A di Google
+- Configurare l’istanza di Brand Concierge nella sandbox Adobe Experience Platform
+- Implementare Brand Concierge sul sito Web AEM CS/EDS
 
 ![Informazioni tecniche](./assets/images/techinsiders.png){width="50px" align="left"}
 

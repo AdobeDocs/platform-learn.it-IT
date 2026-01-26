@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Collegare i set di dati di Adobe Exper
 kt: 5342
 doc-type: tutorial
 exl-id: 0f8dbf05-c96f-4cb9-b038-7576a4a91bcb
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '714'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 - Comprendere l’unione di ID persona e dati
 - Scopri il concetto di streaming dei dati in Customer Journey Analytics
 
-## 1.1.2.1 Connessione
+## Connessione 1.1.2.1
 
 Vai a [analytics.adobe.com](https://analytics.adobe.com) per accedere a Customer Journey Analytics.
 
@@ -50,7 +50,7 @@ Dopo aver selezionato la sandbox, puoi iniziare ad aggiungere i set di dati. Far
 
 ![demo](./images/cjasb1.png)
 
-## 1.1.2.2 Seleziona set di dati di Adobe Experience Platform
+## 1.1.2.2 Seleziona set di dati Adobe Experience Platform
 
 Cercare il set di dati `Demo System - Event Dataset for Website (Global v1.1)`. Abilita la casella per questo set di dati per aggiungerlo a questa connessione.
 
@@ -62,7 +62,7 @@ Allora avrai questo. Fai clic su **Avanti**.
 
 ![demo](./images/cja9.png)
 
-## 1.1.2.3 ID persona e unione dei dati
+## 1.1.2.3 ID persona e unione dati
 
 ### ID persona
 
@@ -78,11 +78,11 @@ Tuttavia, puoi ancora influenzare l’identificatore che verrà utilizzato per u
 
 ![demo](./images/cja14.png)
 
-Come accennato, puoi impostare ID persona diversi per ogni set di dati. Questo consente di unire in CJA diversi set di dati da più origini. Immagina di inserire in NPS o dati di sondaggi che sarebbero molto interessanti e utili per capire il contesto e perché è successo qualcosa.
+Come accennato, puoi impostare ID persona diversi per ogni set di dati. Questo consente di unire in CJA set di dati diversi da più origini. Immagina di inserire in NPS o dati di sondaggi che sarebbero molto interessanti e utili per capire il contesto e perché è successo qualcosa.
 
-Il nome del campo ID persona non è importante, purché il valore nei campi ID persona corrisponda. Supponiamo di avere `email` in un set di dati e `emailAddress` in un altro set di dati definito come ID persona. Se `delaigle@adobe.com` è lo stesso valore per il campo ID persona in entrambi i set di dati, CJA sarà in grado di unire i dati.
+Il nome del campo ID persona non è importante, purché il valore nei campi ID persona corrisponda. Supponiamo di avere `email` in un set di dati e `emailAddress` in un altro set di dati definito come ID persona. Se `delaigle@adobe.com` è lo stesso valore per il campo ID persona in entrambi i set di dati, CJA potrà unire i dati.
 
-Consulta le domande frequenti su CJA qui per comprendere le sfumature con l’unione di identità: [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=it).
+Consulta le domande frequenti su CJA qui per comprendere le sfumature con unione di identità: [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
 
 ### Unione dei dati utilizzando l’ID persona
 
@@ -122,13 +122,13 @@ Fare clic su **Aggiungi set di dati**.
 
 Fai clic su **Salva** e passa all&#39;esercizio successivo.
 
-Dopo aver creato la **connessione**, potrebbero essere necessarie alcune ore prima che i dati siano disponibili in CJA.
+Dopo aver creato la **Connessione**, potrebbero essere necessarie alcune ore prima che i dati siano disponibili in CJA.
 
 ![demo](./images/cja20.png)
 
 ## Passaggi successivi
 
-Vai a [1.1.3 Crea una visualizzazione dati](./ex3.md)(./ex2.md){target="_blank"}
+Vai a [1.1.3 Creare una visualizzazione dati](./ex3.md){target="_blank"}
 
 Torna a [Customer Journey Analytics](./customer-journey-analytics-build-a-dashboard.md){target="_blank"}
 

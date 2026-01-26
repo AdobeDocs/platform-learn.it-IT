@@ -3,7 +3,7 @@ title: Brand Concierge
 description: Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: 0bbc806a4eb41ac8e51a10f6418cfa4795543316
+source-git-commit: f3a0f2d0b06d93f51ee2ed4904eb4a8e1f42beb4
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 2%
@@ -30,7 +30,7 @@ Questo video illustra e illustra tutti i passaggi di questo esercizio.
 ## Prerequisiti
 
 - Accesso a Adobe Journey Optimizer e Customer Journey Analytics
-- Familiarità con [concetti di Brand Concierge](https://experienceleague.adobe.com/it/docs/brand-concierge/content/home)
+- Familiarità con [concetti di Brand Concierge](https://experienceleague.adobe.com/en/docs/brand-concierge/content/home)
 - Accesso ai dati dimostrativi di CitiSignal: acquisti, ordini, tipi di pubblico, Percorsi
 
 ## Esercizi
@@ -39,7 +39,7 @@ Questo video illustra e illustra tutti i passaggi di questo esercizio.
 
 In questo esercizio esplorerai le funzionalità di Brand Concierge.
 
-[1.4.2 Implementa Brand Concierge sul tuo sito Web](./ex1.md){target="_blank"}
+[1.4.2 Implementa Brand Concierge sul tuo sito Web](./ex2.md){target="_blank"}
 
 In questo esercizio, implementerai l’istanza di Brand Concierge sul tuo sito web.
 
