@@ -23,7 +23,7 @@ Experience Platform Debugger è un’estensione disponibile per i browser Chrome
 
 Se non hai mai utilizzato il debugger in precedenza (e questo è diverso dal precedente Adobe Experience Cloud Debugger), guarda questo video introduttivo di cinque minuti:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36164?captions=ita&quality=12&learn=on)
 
 Poiché il sito web demo verrà caricato in modalità di navigazione in incognito, è necessario assicurarsi che Experience Platform Debugger sia disponibile anche in modalità di navigazione in incognito. Per farlo, vai a **chrome://extensions** nel browser e apri l&#39;estensione Experience Platform Debugger.
 
