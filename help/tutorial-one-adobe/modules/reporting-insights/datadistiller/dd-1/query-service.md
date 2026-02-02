@@ -1,12 +1,12 @@
 ---
-title: Query Service
-description: Query Service
+title: Servizio Query Service
+description: Servizio Query Service
 kt: 5342
 doc-type: tutorial
 exl-id: 881dcff5-3637-4b67-9e61-88690babe83b
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '531'
 ht-degree: 1%
 
 ---
@@ -32,10 +32,6 @@ Utilizzeremo i dati che sono stati inseriti in Platform utilizzando i dati di in
 - Set di dati (set di dati utilizzati durante il laboratorio, precaricati per te)
 - PostgreSQL
 - Tableau o Microsoft Power BI Desktop
-- **Scarica queste risorse**:
-   - [JSON - Dati di esempio: interazioni con il sito web](./../../../../assets/json/ee.json)
-   - [JSON - Dati di esempio: interazioni con il call center](./../../../../assets/json/callcenter.json)
-   - [JSON - Dati di esempio: fedeltà](./../../../../assets/json/loyalty.json)
 
 >[!NOTE]
 >

@@ -3,9 +3,9 @@ title: CJA e Claude.ai con server MCP
 description: CJA e Claude.ai con server MCP
 kt: 5342
 doc-type: tutorial
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,9 @@ Utilizzando CJA &amp; Claude.ai con il server MCP Alpha, l&#39;utente riconosce 
 
 Questo video illustra e illustra tutti i passaggi di questo esercizio.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479159?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3479561?quality=12&learn=on)
 
-## 1.5.1.1 Creazione di un&#39;app personalizzata in Claude.ai per CJA
+## 1.5.2.1 Creazione di un&#39;app personalizzata in Claude.ai per CJA
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Fai clic su **Aggiungi**.
 
 ![Claude.ai](./images/claude4.png)
 
-Dovresti vedere questo. Fai clic su **Aggiungi**.
+Dovresti vedere questo. Fai clic su **Connetti**.
 
 ![Claude.ai](./images/claude5.png)
 
@@ -75,8 +75,7 @@ Ora puoi iniziare l’analisi dei dati.
 
 ![Claude.ai](./images/claude7.png)
 
-
-## 1.5.1.2 Imposta contesto in CJA
+## 1.5.2.2 Imposta contesto in CJA
 
 Prima di interagire ulteriormente con CJA tramite Claude.ai, è necessario impostare il contesto.
 
@@ -120,7 +119,7 @@ Dovresti vedere questo.
 
 Il contesto è ora impostato correttamente, quindi puoi iniziare a inviare successivamente richieste specifiche.
 
-## 1.5.1.3 Esplora la visualizzazione dati
+## 1.5.2.3 Esplora la visualizzazione dati
 
 >[!NOTE]
 >
@@ -142,7 +141,7 @@ Dovresti quindi visualizzare questa risposta, che include le metriche e le dimen
 
 ![Claude.ai e CJA](./images/claude102.png)
 
-## Tabella a forma libera 1.5.1.4 - Visualizzazioni prodotto
+## Tabella a forma libera 1.5.2.4 - Visualizzazioni prodotto
 
 Ora puoi iniziare a esplorare i dati. Inizia immettendo il seguente prompt e fai clic su **invia** per inviare la richiesta di report.
 
@@ -212,7 +211,7 @@ Dovresti vedere questo.
 
 ![Claude.ai e CJA](./images/claude117.png)
 
-## Visualizzazione Abbandono 1.5.1.5
+## Visualizzazione Abbandono 1.5.2.5
 
 Immetti il seguente **prompt** e fai clic sul pulsante **invia**.
 
@@ -225,6 +224,8 @@ can you create a fallout visualization for the product interaction funnel, start
 Dovresti quindi vedere qualcosa di simile, che include una visualizzazione generata da Claude.ai basata sui dati forniti da Customer Journey Analytics.
 
 ![Claude.ai e CJA](./images/claude119.png)
+
+Passaggio successivo: [Adobe Analytics e Claude.ai con server MCP](./ex3.md){target="_blank"}
 
 Torna a [Analytics e agenti](./analyticsagents.md){target="_blank"}
 

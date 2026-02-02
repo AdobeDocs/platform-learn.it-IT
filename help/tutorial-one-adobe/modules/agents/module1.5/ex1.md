@@ -3,9 +3,9 @@ title: CJA e ChatGPT con server MCP
 description: CJA e ChatGPT con server MCP
 kt: 5342
 doc-type: tutorial
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -251,17 +251,7 @@ Ora puoi vedere la visualizzazione dell’analisi dell’abbandono.
 
 ![ChatGPT e CJA](./images/chatgpt122.png)
 
-Immetti il seguente **prompt** e fai clic sul pulsante **invia**.
-
-```javascript
-break down the fallout analysis at the touchpoint of the add to carts
-```
-
-![ChatGPT e CJA](./images/chatgpt123.png)
-
-Selezionare **RunReport**.
-
-![ChatGPT e CJA](./images/chatgpt124.png)
+Passaggio successivo: [CJA e Claude.ai con server MCP](./ex2.md){target="_blank"}
 
 Torna a [Analytics e agenti](./analyticsagents.md){target="_blank"}
 

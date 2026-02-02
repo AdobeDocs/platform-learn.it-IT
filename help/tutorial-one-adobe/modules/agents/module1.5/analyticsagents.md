@@ -3,7 +3,7 @@ title: Analytics e agenti
 description: Analytics e agenti
 kt: 5342
 doc-type: tutorial
-source-git-commit: f3a0f2d0b06d93f51ee2ed4904eb4a8e1f42beb4
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 1%
@@ -31,9 +31,9 @@ In questo esercizio, configurerai un server MCP personalizzato in ChatGPT per co
 
 In questo esercizio, configurerai un server MCP personalizzato in Claude.ai per collegare Claude.ai direttamente a Customer Journey Analytics e inizierai ad analizzare i tuoi dati ospitati in Adobe Customer Journey Analytics (CJA) direttamente da Claude.ai.
 
-[1.5.3 Adobe Analytics e ChatGPT con il server MCP](./ex3.md){target="_blank"}
+[1.5.3 Adobe Analytics e Claude.ai con server MCP](./ex3.md){target="_blank"}
 
-In questo esercizio, configurerai un server MCP personalizzato in ChatGPT per collegare ChatGPT direttamente ad Adobe Analytics e inizierai ad analizzare i tuoi dati ospitati in Adobe Analytics (AA) direttamente da ChatGPT.
+In questo esercizio, configurerai un server MCP personalizzato in Claude.ai per collegare Claude.ai direttamente ad Adobe Analytics e inizierai ad analizzare i tuoi dati ospitati in Adobe Analytics (AA) direttamente da Claude.ai.
 
 ![Informazioni tecniche](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
