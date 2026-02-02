@@ -3,9 +3,9 @@ title: Panoramica di Agentic AI Tech Labs
 description: Panoramica di Agentic AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Elementi tecnici:
 - Server MCP, notebook Python
 - API di Adobe
 
-[1.3 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
+[1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
 **Obiettivo**
 
@@ -61,6 +61,17 @@ In questo esercizio imparerai a:
 
 - Configurare l’istanza di Brand Concierge nella sandbox Adobe Experience Platform
 - Implementare Brand Concierge sul sito Web AEM CS/EDS
+
+[1.5 Analytics e agenti](./modules/agents/module1.5/analyticsagents.md)
+
+**Obiettivo**
+
+In qualità di analista dati, sviluppatore di IA o architetto di applicazioni AI, imparerai a automatizzare le attività di reporting, come la creazione di rapporti e la pianificazione dell’analisi utilizzando agenti esterni. Scoprirai come estrarre dati aggiornati sulla campagna, sul pubblico o sulle prestazioni nei flussi di lavoro degli agenti.
+
+In questo esercizio imparerai a:
+
+- Connetti ChatGPT e/o Claude.ai a **Customer Journey Analytics** ed esegui attività di analisi dei dati
+- Connetti ChatGPT e/o Claude.ai a **Adobe Analytics** ed esegui attività di analisi dei dati
 
 ![Informazioni tecniche](./assets/images/techinsiders.png){width="50px" align="left"}
 

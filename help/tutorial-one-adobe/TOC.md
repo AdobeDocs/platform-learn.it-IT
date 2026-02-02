@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial tecnico su Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 44d0e98ae4c7568411cb0e01ed8eff38b4a34137
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1459'
 ht-degree: 3%
 
 ---
@@ -86,8 +86,11 @@ ht-degree: 3%
       + [1.6.3 Creare e distribuire l’app DAM esterna](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
       + [1.6.4 Pubblicare l’app in privato](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
+   + 1.7 Workflow Builder {#crpr7}
+      + [Panoramica](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
+      + [1.7.1 Guida introduttiva a Workflow Builder](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
 
-+ Gestione risorse {#assetmgmt}
++ Gestione delle risorse {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
       + [Panoramica](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/aemcs.md)
       + [1.1.1 Creare un programma Cloud Manager](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex1.md)
@@ -268,6 +271,7 @@ ht-degree: 3%
          + [Panoramica](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Guida introduttiva a Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
+
 + Agenti {#agents}
    + [Panoramica di IA agente](/help/tutorial-one-adobe/ai.md)
    + 1.1 Agent Orchestrator {#agents1}

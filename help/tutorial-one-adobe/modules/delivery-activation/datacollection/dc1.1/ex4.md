@@ -4,9 +4,9 @@ description: Foundation - Configurazione di Adobe Experience Platform Data Colle
 kt: 5342
 doc-type: tutorial
 exl-id: 6ba82c35-1087-45c5-85a3-8bca7408cfec
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,11 @@ ht-degree: 0%
 
 Experience Platform Debugger è un’estensione disponibile per i browser Chrome e Firefox che consente di visualizzare la tecnologia Adobe implementata nelle pagine web. Installa la versione per il browser preferito:
 
-- [Estensione Firefox](https://addons.mozilla.org/it/firefox/addon/adobe-experience-platform-dbg/)
-
 - [Estensione Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 Se non hai mai utilizzato il debugger in precedenza (e questo è diverso dal precedente Adobe Experience Cloud Debugger), guarda questo video introduttivo di cinque minuti:
 
->[!VIDEO](https://video.tv.adobe.com/v/36164?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
 
 Poiché il sito web demo verrà caricato in modalità di navigazione in incognito, è necessario assicurarsi che Experience Platform Debugger sia disponibile anche in modalità di navigazione in incognito. Per farlo, vai a **chrome://extensions** nel browser e apri l&#39;estensione Experience Platform Debugger.
 
@@ -72,29 +70,29 @@ Verrà aperto Debugger e verranno visualizzati i dettagli dell’implementazione
 
 Fai clic sul pulsante **[!UICONTROL Accedi]** in alto a destra per eseguire l&#39;autenticazione. Se disponi già di una scheda del browser aperta con l’interfaccia di Adobe Experience Platform Data Collection, il passaggio di autenticazione sarà automatico e non dovrai immettere nuovamente il nome utente e la password.
 
-![Debugger AEP](./images/validate2.png)
+![AEP Debugger](./images/validate2.png)
 
 In seguito, potrai accedere al Debugger.
 
-![Debugger AEP](./images/validate2ab.png)
+![AEP Debugger](./images/validate2ab.png)
 
 Premi il pulsante Ricarica sul sito web demo per collegare il debugger a quella scheda specifica.
 
-![Debugger AEP](./images/validate2a.png)
+![AEP Debugger](./images/validate2a.png)
 
 Conferma che il debugger è **[!UICONTROL connesso alla Home]** come illustrato in precedenza, quindi fai clic sull&#39;icona **[!UICONTROL blocca]** per bloccare il debugger sul sito Web demo. Se non esegui questa operazione, il debugger continuerà a passare per esporre i dettagli di implementazione di qualsiasi scheda del browser attiva, il che può creare confusione. Una volta bloccato il debugger, l&#39;icona diventerà **Sblocca**.
 
-![Debugger AEP](./images/validate3.png)
+![AEP Debugger](./images/validate3.png)
 
 Quindi, vai a qualsiasi pagina del sito web demo, ad esempio la pagina della categoria **Piani**.
 
-![Estensione AEP Web SDK per AEP Debugger](./images/validate4.png)
+![Estensione AEP Debugger AEP Web SDK](./images/validate4.png)
 
 Fare clic su **[!UICONTROL Experience Platform Web SDK]** nell&#39;area di navigazione a sinistra per visualizzare le **[!UICONTROL richieste di rete]**.
 
 Ogni richiesta contiene una riga **[!UICONTROL events]**.
 
-![Estensione AEP Web SDK per AEP Debugger](./images/validate5.png)
+![Estensione AEP Debugger AEP Web SDK](./images/validate5.png)
 
 Fare clic per aprire una riga di **[!UICONTROL eventi]**. Nota come visualizzare l&#39;evento **web.webpagedetails.pageViews** e altre variabili predefinite conformi al formato **Web SDK ExperienceEvent XDM**.
 
