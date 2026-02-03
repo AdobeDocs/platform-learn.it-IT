@@ -3,9 +3,9 @@ title: Stato contenuto
 description: Stato contenuto
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 72fbe8d1dfddd83b85bcb423167cdf4f6e44886d
+source-git-commit: c8607416fbff6970bd348ff5d52656902c14317b
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '553'
 ht-degree: 9%
 
 ---
@@ -18,7 +18,7 @@ Di seguito è riportata una panoramica dello stato del contenuto in questa eserc
 
 | Nome | Ultimo aggiornamento | Lavorativo al 100% | Osservazioni | Investimento nel tempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [. Introduzione &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Sì | - | 45 min |
+| [. Introduzione ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Sì | - | 45 min |
 
 ## &#x200B;1. Flusso di lavoro e pianificazione
 
@@ -37,6 +37,8 @@ Di seguito è riportata una panoramica dello stato del contenuto in questa eserc
 | [1.4 Adobe Express e Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 01/04/2025 | Sì | - | 45 min |
 | [1.5 Semplifica il flusso di lavoro con Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 02/08/2025 | Sì | - | 1 ora |
 | [1.6 GenStudio for Performance Marketing - Estensibilità](./modules/creation-production/module1.6/genstudioext.md){target="_blank"} | 21/08/2025 | Sì | - | 1 ora e 30 min |
+| [1.7 Generatore di flussi di lavoro](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"} | 02/02/2026 | No | Contenuto in fase di sviluppo | - |
+| [1.8 Enterprise Storage Management](./modules/creation-production/module1.8/esm.md){target="_blank"} | 02/02/2026 | No | Contenuto in fase di sviluppo | - |
 
 
 ## &#x200B;3. Gestione degli attivi
@@ -82,10 +84,10 @@ Di seguito è riportata una panoramica dello stato del contenuto in questa eserc
 
 | Nome | Ultimo aggiornamento | Lavorativo al 100% | Osservazioni | Investimento nel tempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 23/01/2026 | Sì | - | 90 min |
-| [1.2 IA agente](./modules/agents/module1.2/agenticai.md){target="_blank"} | 23/01/2026 | No | Contenuti in fase di sviluppo | Da definire |
+| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 02/02/2026 | Sì | - | 60 min |
+| [1.2 IA agente](./modules/agents/module1.2/agenticai.md){target="_blank"} | 02/02/2026 | No | Contenuti in fase di sviluppo | Da definire |
 | [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 23/01/2026 | Sì | - | 90 min |
-| [1.5 Analytics e agenti](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 23/01/2026 | No | Contenuti in fase di sviluppo | Da definire |
+| [1.5 Analytics e agenti](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 02/02/2026 | Sì | - | 45 min |
 
 {style="table-layout:auto"}
 
