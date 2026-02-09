@@ -205,7 +205,7 @@ Se un visitatore decide di dare il consenso (accettare i cookie di tracciamento)
 
    ![L&#39;utente della condizione della regola fa clic su &quot;Tutto a posto&quot;](assets/consent-optIn-clickEvent.png)
 
-1. Aggiungi un&#39;azione tramite l&#39;estensione [!UICONTROL  di Experience Platform Web SDK, ]Tipo azione **[!UICONTROL di]** Imposta consenso **[!UICONTROL ,]** Consenso generale **[!UICONTROL come]** In **[!UICONTROL .]**
+1. Aggiungi un&#39;azione tramite l&#39;estensione [!UICONTROL &#x200B; di Experience Platform Web SDK, &#x200B;]Tipo azione **[!UICONTROL di]** Imposta consenso **[!UICONTROL ,]** Consenso generale **[!UICONTROL come]** In **[!UICONTROL .]**
 
    ![Azione Di Consenso Alla Regola Di Consenso](assets/consent-rule-optin-action.png)
 

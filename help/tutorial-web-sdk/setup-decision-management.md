@@ -179,7 +179,7 @@ Per creare il posizionamento, effettuate le seguenti operazioni:
 1. Una volta creato, il posizionamento viene visualizzato nell’elenco dei posizionamenti.
 1. Seleziona la riga contenente il nuovo posizionamento e prendi nota dell’ID posizionamento, in quanto potrebbe essere necessario per la configurazione all’interno dell’ambito decisionale.
 
-   ![Vedere ID posizionamento ](assets/decisioning-placement-id.png)
+   ![Vedere ID posizionamento &#x200B;](assets/decisioning-placement-id.png)
 
 ### Regole di decisione per lo stato di fedeltà
 
