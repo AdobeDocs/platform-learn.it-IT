@@ -1,12 +1,12 @@
 ---
 title: Aggiungere Adobe Audience Manager
-description: Scopri come implementare Adobe Audience Manager sul tuo sito web utilizzando Server-Side Forwarding e i tag. Questa lezione fa parte dell’esercitazione Implementare l’Experience Cloud su siti web.
+description: Scopri come implementare Adobe Audience Manager sul tuo sito web utilizzando Server-Side Forwarding e i tag. Questa lezione fa parte dell’esercitazione Implementare Experience Cloud nei siti web.
 solution: Data Collection, Audience Manager
 exl-id: ddc77dc5-bfb5-4737-b6b6-47d37c9f0528
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1749'
-ht-degree: 73%
+source-wordcount: '1781'
+ht-degree: 69%
 
 ---
 
@@ -16,12 +16,17 @@ Questa lezione illustra i passaggi necessari per abilitare Adobe Audience Manage
 
 [Adobe Audience Manager](https://docs.adobe.com/content/help/it-IT/experience-cloud/user-guides/home.translate.html) (AAM) offre servizi leader di settore per la gestione online dei dati di audience, fornendo agli inserzionisti digitali e agli editori gli strumenti necessari per controllare e sfruttare le risorse dati per favorire il successo delle vendite.
 
+
+>[!WARNING]
+>
+> Il sito web Luma utilizzato in questa esercitazione dovrebbe essere sostituito durante la settimana del 16 febbraio 2026. Il lavoro svolto come parte di questo tutorial potrebbe non essere applicabile al nuovo sito web.
+
 >[!NOTE]
 >
 >Adobe Experience Platform Launch viene integrato in Adobe Experience Platform come suite di tecnologie per la raccolta dati. Nell’interfaccia sono state introdotte diverse modifiche terminologiche di cui tenere conto quando si utilizza questo contenuto:
 >
-> * Il platform launch (lato client) è ora **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)**
-> * Platform Launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it)**
+> * Platform Launch (lato client) è ora **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)**
+> * Platform Launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Le configurazioni di Edge sono ora **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)**
 
 ## Finalità di apprendimento
@@ -32,7 +37,7 @@ Alla fine di questa lezione, potrai:
 1. Aggiungere Audience Manager tramite Server-Side Forwarding del beacon Analytics.
 1. Convalidare l’implementazione di Audience Manager.
 
-## Prerequisiti 
+## Prerequisiti
 
 Per completare questa lezione, è necessario:
 
@@ -40,11 +45,11 @@ Per completare questa lezione, è necessario:
 
 1. Aver effettuato l’accesso come admin ad Adobe Analytics, così da poter abilitare Server-Side Forwarding per la suite per report che stai utilizzando per questa esercitazione. In alternativa, puoi chiedere a un amministratore esistente nella tua compagnia di farlo, seguendo le istruzioni di seguito.
 
-1. L’“Audience Manager Subdomain” (noto anche come “Partner Name” “Partner ID” o “Partner Subdomain”). Se hai già implementato Audience Manager sul tuo sito web, il modo più semplice per ottenere questo risultato è passare al sito web effettivo e aprire Debugger. Il sottodominio è disponibile nella scheda Riepilogo, nella sezione Audience Manager:
+1. Il &quot;Sottodominio Audience Manager&quot; (noto anche come &quot;Nome partner&quot; &quot;ID partner&quot; o &quot;Sottodominio partner&quot;). Se hai già implementato Audience Manager sul tuo sito web, il modo più semplice per ottenere questo risultato è passare al sito web effettivo e aprire Debugger. Il sottodominio è disponibile nella scheda Riepilogo, nella sezione Audience Manager:
 
    ![Puoi usare il debugger per trovare il sottodominio Audience Manager nel tuo sito web](images/aam-debugger-partner.png)
 
-Se Audience Manager non è già stato implementato, segui queste istruzioni per [ottenere il tuo sottodominio di Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=it).
+Se Audience Manager non è già stato implementato, segui queste istruzioni per [ottenere il tuo sottodominio di Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html).
 
 ## Opzioni di implementazione
 
@@ -73,7 +78,7 @@ Per iniziare a inoltrare i dati da Adobe Analytics ad Adobe Audience Manager è 
 
    ![Accedere ad Adobe Analytics](images/aam-logIntoAnalytics.png)
 
-1. Nella navigazione in alto di Analytics, scegli **[!UICONTROL Amministratore > Suite per report]** e, dall&#39;elenco, seleziona (o effettua una selezione multipla) le suite per report da inoltrare a Audience Manager.
+1. Nella navigazione in alto di Analytics, scegli **[!UICONTROL Amministratore > Suite per report]** e, dall&#39;elenco, seleziona (o effettua una selezione multipla) le suite per report da inoltrare ad Audience Manager.
 
    ![Fare clic su Admin Console](images/aam-analyticsAdminConsoleReportSuites.png)
 
@@ -95,17 +100,17 @@ Per iniziare a inoltrare i dati da Adobe Analytics ad Adobe Audience Manager è 
 >
 >Poiché SSF deve essere abilitato tramite suite per report, non dimenticare di ripetere questo passaggio per le suite per report reali quando distribuisci SSF nella suite per report del sito effettivo.
 >
->Inoltre, se l’opzione SSF è disattivata, per abilitare l’opzione dovrai mappare le suite per report alla tua organizzazione Experience Cloud. Questo è spiegato [nella documentazione](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=it).
+>Inoltre, se l’opzione SSF è disattivata, per abilitare l’opzione dovrai mappare le suite per report alla tua organizzazione Experience Cloud. Questo è spiegato [nella documentazione](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
 
-Una volta completato questo passaggio e se hai abilitato Adobe Experience Platform Identity Service, i dati saranno inoltrati da Analytics ad AAM. Tuttavia, per completare la procedura in modo che la risposta torni correttamente dall’AAM alla pagina (e anche ad Analytics tramite la funzione di Audience Analytics), devi completare quanto segue anche nei tag. Non preoccuparti, è una procedura incredibilmente facile.
+Una volta completato questo passaggio e se hai abilitato Adobe Experience Platform Identity Service, i dati saranno inoltrati da Analytics ad AAM. Tuttavia, per completare la procedura in modo che la risposta torni correttamente da AAM alla pagina (e anche ad Analytics tramite la funzione Audience Analytics), devi completare quanto segue anche nei tag. Non preoccuparti, è una procedura incredibilmente facile.
 
 ### Abilitare l’inoltro lato server nei tag
 
-Questo è il secondo dei due passaggi per abilitare SSF. Hai già attivato lo switch nell’Admin Console di Analytics e ora devi solo aggiungere il codice, operazione che eseguirai se selezioni semplicemente la casella a destra.
+Questo è il secondo dei due passaggi per abilitare SSF. Hai già attivato lo switch nell’Admin Console di Analytics e ora devi solo aggiungere il codice, operazione che effettuerai con i tag selezionando semplicemente la casella a destra.
 
 >[!NOTE]
 >
->Per implementare il Server-Side Forwarding dei dati di Analytics in AAM, in realtà modificheremo/configureremo l&#39;estensione Analytics nei tag, **non** l&#39;estensione AAM. L’estensione AAM è utilizzata esclusivamente per le implementazioni DIL lato client, per coloro che non dispongono di Adobe Analytics. Pertanto, i passaggi seguenti sono corretti quando ti inviano nell’estensione Analytics per effettuare questa configurazione.
+>Per implementare il Server-Side Forwarding dei dati di Analytics in AAM, in realtà modificheremo/configureremo l&#39;estensione Analytics nei tag, **non** nell&#39;estensione AAM. L’estensione AAM è utilizzata esclusivamente per le implementazioni DIL lato client, per coloro che non dispongono di Adobe Analytics. Pertanto, i passaggi seguenti sono corretti quando ti inviano nell’estensione Analytics per effettuare questa configurazione.
 
 #### Per abilitare SSF nei tag
 
@@ -117,7 +122,7 @@ Questo è il secondo dei due passaggi per abilitare SSF. Hai già attivato lo sw
 
 1. Seleziona la casella per **[!UICONTROL condividere automaticamente i dati di Analytics con Audience Manager]**. Questo aggiungerà il “modulo” di Audience Manager (codice) all’implementazione `AppMeasurement.js` di Analytics.
 
-1. Aggiungi “Audience Manager Subdomain” (noto anche come “Partner Name” “Partner ID” o “Partner Subdomain”). Segui queste istruzioni per [ottenere il tuo sottodominio Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=it).
+1. Aggiungi il &quot;Sottodominio Audience Manager&quot; (noto anche come &quot;Nome partner&quot;, &quot;ID partner&quot; o &quot;Sottodominio partner&quot;). Segui queste istruzioni per [ottenere il tuo sottodominio Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html).
 
 1. Fai clic su **[!UICONTROL Salva nella libreria e genera]**
 
@@ -131,19 +136,19 @@ Il modo principale per verificare che Server-Side Forwarding sia in esecuzione, 
 
 #### Verificare che il codice sia caricato correttamente
 
-Il codice che installa i tag per gestire l’inoltro, e soprattutto la risposta dall’AAM alla pagina, è denominato Audience Manager
+Il codice che installa i tag per gestire l’inoltro, e soprattutto la risposta da AAM alla pagina, è denominato Audience Manager
 &quot;Modulo&quot;. Possiamo utilizzare Experience Cloud Debugger per assicurarci che sia stato caricato.
 
 1. Apri il sito Luma.
 1. Fai clic sull’icona del debugger nel browser per aprire Experience Cloud Debugger.
 1. Nella scheda Riepilogo, scorri verso il basso fino alla sezione Analytics.
-1. Verifica che **Gestione dell&#39;audience** sia elencato nella sezione Moduli.
+1. Verifica che **AudienceManagement** sia elencato nella sezione Moduli.
 
    ![Convalidare il modulo AAM nel Debugger](images/aam-verifyAAMmodule.png)
 
 #### Verificare l’ID Partner nel debugger
 
-Quindi, possiamo anche verificare che il debugger stia rilevando l’ID partner corretto (sottodominio partner, ecc.) dal codice.
+Successivamente, possiamo anche verificare che il debugger stia scegliendo l’ID partner corretto (sottodominio partner, ecc.) dal codice.
 
 1. Sempre nel debugger e sempre nella scheda Riepilogo, scorri verso il basso fino alla sezione Audience Manager.
 1. Verifica il tuo Partner ID/Subdomain in “Partner”.
@@ -175,8 +180,8 @@ Purtroppo, al momento, Experience Cloud Debugger non supporta la visualizzazione
 
 >[!WARNING]
 >
->Attenzione alle false operazioni riuscite - Se ricevi una risposta e tutto sembra funzionare, assicurati **di** di disporre dell&#39;oggetto &quot;stuff&quot;. In caso contrario, potresti visualizzare un messaggio nella risposta che indica come “status”:“SUCCESS”. Per quanto sembri folle, questa è la prova che **NON** funziona correttamente. Questo significa che hai completato questo secondo passaggio (il codice nei tag ), ma che non hai ancora completato l’inoltro nell’Admin Console di Analytics (primo passaggio di questa sezione). In questo caso devi verificare di aver attivato SSF nell’Admin Console di Analytics. Se lo hai abilitato da non più di 4 ore, attendi.
+>Attenzione alle false operazioni riuscite - Se ricevi una risposta e tutto sembra funzionare, assicurati **di** di disporre dell&#39;oggetto &quot;stuff&quot;. In caso contrario, potresti visualizzare un messaggio nella risposta che indica come “status”:“SUCCESS”. Per quanto sembri folle, questa è la prova che **NON** funziona correttamente. Questo significa che hai completato questo secondo passaggio (il codice nei tag ), ma che non hai ancora completato l’inoltro nell’Admin Console di Analytics (primo passaggio di questa sezione). In questo caso devi verificare di aver abilitato SSF nell’Admin Console di Analytics. Se lo hai abilitato da non più di 4 ore, attendi.
 
 ![Risposta AA: falsa operazione riuscita](images/aam-responseFalseSuccess.png)
 
-[Avanti &quot;Integrazioni di Experience Cloud&quot; >](integrations.md)
+[Avanti &quot;Integrazioni Experience Cloud&quot; >](integrations.md)

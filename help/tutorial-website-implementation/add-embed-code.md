@@ -1,11 +1,11 @@
 ---
 title: Aggiungere il codice di incorporamento
-description: Scopri come ottenere i codici da incorporare della proprietà tag e implementarli nel sito web. Questa lezione fa parte dell’esercitazione Implementare l’Experience Cloud su siti web.
+description: Scopri come ottenere i codici da incorporare della proprietà tag e implementarli nel sito web. Questa lezione fa parte dell’esercitazione Implementare Experience Cloud nei siti web.
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
-source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 45%
+source-wordcount: '1069'
+ht-degree: 43%
 
 ---
 
@@ -13,12 +13,17 @@ ht-degree: 45%
 
 In questa lezione, implementerai il codice di incorporamento asincrono dell’ambiente di sviluppo della proprietà tag. Lungo il percorso verranno illustrati due concetti principali dei tag: Ambienti e Codici di incorporamento.
 
+
+>[!WARNING]
+>
+> Il sito web Luma utilizzato in questa esercitazione dovrebbe essere sostituito durante la settimana del 16 febbraio 2026. Il lavoro svolto come parte di questo tutorial potrebbe non essere applicabile al nuovo sito web.
+
 >[!NOTE]
 >
 >Adobe Experience Platform Launch viene integrato in Adobe Experience Platform come suite di tecnologie per la raccolta dati. Nell’interfaccia sono state introdotte diverse modifiche terminologiche di cui tenere conto quando si utilizza questo contenuto:
 >
-> * Il platform launch (lato client) è ora **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)**
-> * Platform Launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it)**
+> * Platform Launch (lato client) è ora **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)**
+> * Platform Launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Le configurazioni di Edge sono ora **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)**
 
 ## Finalità di apprendimento
@@ -30,19 +35,19 @@ Alla fine di questa lezione, potrai:
 * Aggiungere un codice di incorporamento di tag a un documento HTML
 * Spiega la posizione ottimale del codice di incorporamento del tag in relazione ad altro codice nel `<head>` di un documento html
 
-## Copiare il codice di incorporamento
+## Copiare il codice da incorporare
 
 Il codice di incorporamento è un tag `<script>` inserito nelle pagine Web per caricare ed eseguire la logica generata nei tag. Se carichi la libreria in modo asincrono, il browser continua a caricare la pagina, recupera la libreria di tag ed esegue le operazioni in parallelo. In questo caso, esiste un solo codice da incorporare, che collochi in `<head>`. (Quando i tag vengono distribuiti in modo sincrono, esistono due codici di incorporamento, uno inserito in `<head>` e un altro che hai inserito prima di `</body>`).
 
-Dalla schermata Panoramica della proprietà, fai clic su **[!UICONTROL Ambienti]** nel menu di navigazione a sinistra per passare alla pagina degli ambienti. Vi sono già stati creati gli ambienti di sviluppo, staging e produzione.
+Dalla schermata Panoramica della proprietà, fai clic su **[!UICONTROL Ambienti]** nel menu di navigazione a sinistra per passare alla pagina degli ambienti. Vi sono già stati creati gli ambienti di sviluppo, di staging e di produzione.
 
-![Selezione di Ambienti nell’area di navigazione in alto](images/launch-environments.png)
+![Clic su Ambienti nell’area di navigazione in alto](images/launch-environments.png)
 
-Gli ambienti di sviluppo, staging e produzione corrispondono agli ambienti tipici nel processo di sviluppo e rilascio del codice. Il codice viene scritto per la prima volta dallo sviluppatore in un ambiente di sviluppo. Una volta completato il lavoro, l’utente lo invierà a un ambiente di staging per il QA e ad altri team per la revisione. Una volta effettuato correttamente il QA e quando i team si ritengono soddisfatti, il codice viene quindi pubblicato nell’ambiente di produzione, che è l’ambiente rivolto al pubblico sperimentato dai visitatori quando accedono al sito web.
+Gli ambienti di sviluppo, di staging e di produzione corrispondono agli ambienti tipici nel processo di sviluppo e rilascio del codice. Il codice viene scritto per la prima volta dallo sviluppatore in un ambiente di sviluppo. Una volta completato il lavoro, l’utente lo invierà a un ambiente di staging per il QA e ad altri team per la revisione. Una volta effettuato correttamente il QA e quando i team si ritengono soddisfatti, il codice viene quindi pubblicato nell’ambiente di produzione, che è l’ambiente rivolto al pubblico sperimentato dai visitatori quando accedono al sito web.
 
 I tag consentono ulteriori ambienti di sviluppo ed è utile nelle grandi organizzazioni in cui più sviluppatori lavorano contemporaneamente su progetti diversi.
 
-Questi sono gli unici ambienti necessari per completare l’esercitazione. Gli ambienti consentono di disporre di diverse versioni di lavoro delle librerie di tag ospitate su URL diversi. Puoi aggiungere nuove funzioni e renderle disponibili per gli utenti interessati (ad esempio sviluppatori, ingegneri QA, pubblico e così via). al momento giusto.
+Questi sono gli unici ambienti necessari per completare l’esercitazione. Gli ambienti consentono di disporre di diverse versioni di lavoro delle librerie di tag ospitate su URL diversi. Puoi aggiungere nuove funzioni e renderle disponibili per gli utenti interessati (ad esempio sviluppatori, ingegneri QA, pubblico e così via) al momento giusto.
 
 Ora copiamo il codice da incorporare:
 
@@ -56,9 +61,9 @@ Ora copiamo il codice da incorporare:
 
    ![Icona di installazione](images/launch-copyInstallCode.png)
 
-## Implementare il codice di incorporamento nell’`<head>` della pagina HTML di esempio
+## Implementare il codice da incorporare nell’elemento `<head>` della pagina HTML di esempio
 
-Il codice di incorporamento deve essere implementato nell’elemento `<head>` di tutte le pagine HTML che condivideranno la proprietà. Potresti avere uno o più file di modelli che controllano `<head>` globalmente in tutto il sito, rendendolo un processo semplice per aggiungere i tag.
+Il codice da incorporare deve essere implementato nell’elemento `<head>` di tutte le pagine HTML che condivideranno la proprietà. Potresti avere uno o più file di modelli che controllano `<head>` globalmente in tutto il sito, rendendolo un processo semplice per aggiungere i tag.
 
 Se non lo hai già fatto, copia il codice della pagina HTML di esempio e incollalo in un editor di codice. [Brackets](https://brackets.io/) è un editor gratuito open source, se necessario.
 
@@ -104,14 +109,14 @@ Se non lo hai già fatto, copia il codice della pagina HTML di esempio e incolla
 <body>
     <h1>Tags: Sample HTML Page</h1>
     <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
-    <p>See <a href="https://docs.adobe.com/content/help/it-IT/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+    <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
 </body>
 </html>
 ```
 
 +++
 
-Sostituisci il codice di incorporamento esistente alla riga 34 o vicino con quello presente negli Appunti e salva la pagina. Ora apri la pagina in un browser web. Se carichi la pagina utilizzando il protocollo `file://`, dovrai aggiungere &quot;https:&quot; all’inizio dell’URL del codice di incorporamento nell’editor di codice). Le linee 33-36 della pagina di esempio possono essere così:
+Sostituisci il codice da incorporare esistente alla riga 34 o vicino con quello presente negli Appunti e salva la pagina. Ora apri la pagina in un browser web. Se carichi la pagina utilizzando il protocollo `file://`, dovrai aggiungere &quot;https:&quot; all’inizio dell’URL del codice da incorporare nell’editor di codice). Le linee 33-36 della pagina di esempio possono essere così:
 
 ```html
     <!--Tags Header Embed Code: REPLACE LINE 39 WITH THE EMBED CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
@@ -122,7 +127,7 @@ Sostituisci il codice di incorporamento esistente alla riga 34 o vicino con quel
 Apri gli strumenti di sviluppo del browser web e passa alla scheda Rete. A questo punto, dovresti visualizzare un errore 404 per l’URL dell’ambiente di tag:
 ![Errore 404](images/samplepage-404.png)
 
-L’errore 404 è previsto perché non hai ancora generato una libreria in questo ambiente di tag. Scoprirai come farlo nella lezione successiva. Se compare un messaggio &quot;failed&quot; invece di un errore 404, probabilmente hai dimenticato di aggiungere il protocollo `https://` nel codice di incorporamento. Di nuovo, devi solo specificare il protocollo `https://` solo se si sta cari cando la pagina di esempio utilizzando il protocollo `file://`. Effettua la modifica e ricarica la pagina finché non viene visualizzato l&#39;errore 404.
+L’errore 404 è previsto perché non hai ancora generato una libreria in questo ambiente di tag. Scoprirai come farlo nella lezione successiva. Se compare un messaggio “non riuscito” invece di un errore 404, probabilmente hai dimenticato di aggiungere il protocollo `https://` al codice da incorporare. Di nuovo, devi solo specificare il protocollo `https://` solo se si sta cari cando la pagina di esempio utilizzando il protocollo `file://`. Effettua la modifica e ricarica la pagina finché non viene visualizzato l&#39;errore 404.
 
 ## Best practice per l’implementazione dei tag
 

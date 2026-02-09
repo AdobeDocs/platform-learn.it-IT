@@ -4,9 +4,9 @@ description: Scopri come configurare gli spazi dei nomi delle identità da utili
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '686'
 ht-degree: 12%
 
 ---
@@ -15,9 +15,13 @@ ht-degree: 12%
 
 Scopri come configurare gli spazi dei nomi di identità da utilizzare con Adobe Experience Platform Web SDK.
 
-Il servizio [Adobe Experience Cloud Identity](https://experienceleague.adobe.com/it/docs/id-service/using/home) imposta un ID visitatore comune (ECID) nelle applicazioni Adobe basate su SDK per abilitare le funzionalità di Experience Cloud, ad esempio la condivisione del pubblico tra le applicazioni. Puoi anche inviare i tuoi ID cliente personalizzati al Servizio per abilitare il targeting su più dispositivi e le integrazioni con altri sistemi, come il sistema di gestione delle relazioni con i clienti (CRM).
+Il servizio [Adobe Experience Cloud Identity](https://experienceleague.adobe.com/en/docs/id-service/using/home) imposta un ID visitatore comune (ECID) nelle applicazioni Adobe basate su SDK per abilitare le funzionalità di Experience Cloud, ad esempio la condivisione del pubblico tra le applicazioni. Puoi anche inviare i tuoi ID cliente personalizzati al Servizio per abilitare il targeting su più dispositivi e le integrazioni con altri sistemi, come il sistema di gestione delle relazioni con i clienti (CRM).
 
-Il servizio [Adobe Experience Platform Identity](https://experienceleague.adobe.com/it/docs/experience-platform/identity/home) (sì, ce ne sono due!) utilizza gli ECID e gli ID cliente per generare grafici delle identità, che consentono di unire attributi e comportamenti in profili cliente in tempo reale.
+Il servizio [Adobe Experience Platform Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (sì, ce ne sono due!) utilizza gli ECID e gli ID cliente per generare grafici delle identità, che consentono di unire attributi e comportamenti in profili cliente in tempo reale.
+
+>[!WARNING]
+>
+> Il sito web Luma utilizzato in questa esercitazione dovrebbe essere sostituito durante la settimana del 16 febbraio 2026. Il lavoro svolto come parte di questo tutorial potrebbe non essere applicabile al nuovo sito web.
 
 >[!NOTE]
 >
@@ -45,7 +49,7 @@ Devi avere già completato le lezioni precedenti:
 >
 >L&#39;estensione [Experience Cloud ID](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) non è necessaria per l&#39;implementazione di Adobe Experience Platform Web SDK, in quanto la libreria Web SDK JavaScript contiene la funzionalità del servizio ID visitatori.
 >
-> Se il sito web utilizza già il servizio Experience Cloud ID sul sito web, tramite l’API Visitor o l’estensione tag del servizio Experience Cloud ID, e desideri continuare a utilizzarlo durante la migrazione a Adobe Experience Platform Web SDK, devi utilizzare la versione più recente dell’API Visitor o l’estensione tag del servizio Experience Cloud ID. Per ulteriori informazioni, consulta [Migrazione ID](https://experienceleague.adobe.com/it/docs/experience-platform/edge/identity/overview).
+> Se il sito web utilizza già il servizio Experience Cloud ID sul sito web, tramite l’API Visitor o l’estensione tag del servizio Experience Cloud ID, e desideri continuare a utilizzarlo durante la migrazione a Adobe Experience Platform Web SDK, devi utilizzare la versione più recente dell’API Visitor o l’estensione tag del servizio Experience Cloud ID. Per ulteriori informazioni, consulta [Migrazione ID](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview).
 
 ## Creare uno spazio dei nomi delle identità
 
@@ -53,7 +57,7 @@ In questo esercizio creerai uno spazio dei nomi delle identità per il campo di 
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sull’identità in Adobe Experience Platform:
 
->[!VIDEO](https://video.tv.adobe.com/v/3422773?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 Ora crea uno spazio dei nomi per l’ID CRM Luma:
 
@@ -98,4 +102,4 @@ Ora che le identità sono presenti, è possibile configurare lo stream di dati.
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=it)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

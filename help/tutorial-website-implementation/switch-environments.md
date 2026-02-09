@@ -1,17 +1,22 @@
 ---
 title: Cambiare ambienti di tag con Adobe Experience Cloud Debugger
-description: Scopri come utilizzare il Experience Cloud Debugger per caricare diversi codici di incorporamento di tag. Questa lezione fa parte dell’esercitazione Implementare l’Experience Cloud su siti web.
+description: Scopri come utilizzare Experience Cloud Debugger per caricare diversi codici di incorporamento di tag. Questa lezione fa parte dell’esercitazione Implementare Experience Cloud nei siti web.
 exl-id: 29972a00-e5e0-4fe0-a71c-c2ca106938be
-source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 24%
+source-wordcount: '620'
+ht-degree: 23%
 
 ---
 
-# Cambiare ambienti di tag con il Experience Cloud Debugger
+# Cambiare ambienti di tag con Experience Cloud Debugger
 
-In questa lezione verrà utilizzata l&#39;estensione [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) per sostituire la proprietà di tag di codifica fissa nel [sito demo Luma](https://luma.enablementadobe.com/content/luma/us/en.html) con la tua proprietà.
+In questa lezione verrà utilizzata l&#39;estensione [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) per sostituire la proprietà di tag di codifica fissa nel [sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html) con la tua proprietà.
+
+
+>[!WARNING]
+>
+> Il sito web Luma utilizzato in questa esercitazione dovrebbe essere sostituito durante la settimana del 16 febbraio 2026. Il lavoro svolto come parte di questo tutorial potrebbe non essere applicabile al nuovo sito web.
 
 Questa tecnica è denominata cambio di ambiente e sarà utile in un secondo momento, quando lavorerai con i tag sul tuo sito web. Potrai caricare il tuo sito Web di produzione nel browser, ma con il tuo ambiente tag *development*. Questo ti consente di creare e convalidare le modifiche ai tag in modo indipendente dalle regolari versioni del codice.  Dopo tutto, questa separazione tra versioni di tag di marketing e versioni di codice è uno dei motivi principali per cui i clienti utilizzano i tag.
 
@@ -19,8 +24,8 @@ Questa tecnica è denominata cambio di ambiente e sarà utile in un secondo mome
 >
 >Adobe Experience Platform Launch viene integrato in Adobe Experience Platform come suite di tecnologie per la raccolta dati. Nell’interfaccia sono state introdotte diverse modifiche terminologiche di cui tenere conto quando si utilizza questo contenuto:
 >
-> * Il platform launch (lato client) è ora **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)**
-> * Platform Launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it)**
+> * Platform Launch (lato client) è ora **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)**
+> * Platform Launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Le configurazioni di Edge sono ora **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)**
 
 ## Finalità di apprendimento
@@ -56,7 +61,7 @@ Alla fine di questa lezione, potrai:
 
 1. Passa alla scheda Strumenti
 1. Scorri fino alla sezione **[!UICONTROL Sostituisci codice di incorporamento Launch]**
-1. Assicurati che la scheda Chrome con il sito Luma sia visibile dietro a Debugger (non dietro alla scheda con questa esercitazione o a quella con l’interfaccia di Data Collection).  Incolla nel campo di input il codice di incorporamento presente negli Appunti
+1. Assicurati che la scheda Chrome con il sito Luma sia visibile dietro a Debugger (non dietro alla scheda con questa esercitazione o a quella con l’interfaccia di Data Collection).  Incolla nel campo di input il codice da incorporare presente negli Appunti
 1. Attiva la funzione &quot;Applica in luma.enablementadobe.com&quot; in modo che tutte le pagine del sito Luma vengano mappate sulla proprietà tag
 1. Fai clic sul pulsante **[!UICONTROL Salva]**
 

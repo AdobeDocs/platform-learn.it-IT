@@ -4,18 +4,23 @@ description: Scopri come configurare Adobe Analytics utilizzando Experience Plat
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '2903'
+source-wordcount: '2935'
 ht-degree: 1%
 
 ---
 
 # Configurare Adobe Analytics con Adobe Experience Platform Web SDK
 
-Scopri come configurare Adobe Analytics utilizzando [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/it/docs/platform-learn/data-collection/web-sdk/overview), creare regole di tag per inviare dati ad Adobe Analytics e verificare che Analytics stia acquisendo i dati come previsto.
+Scopri come configurare Adobe Analytics utilizzando [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview), creare regole di tag per inviare dati ad Adobe Analytics e verificare che Analytics stia acquisendo i dati come previsto.
 
 [Adobe Analytics](https://experienceleague.adobe.com/it/docs/analytics) è un&#39;applicazione leader di settore che ti consente di comprendere i tuoi clienti come persone e gestire la tua attività grazie alle informazioni sul cliente.
+
+
+>[!WARNING]
+>
+> Il sito web Luma utilizzato in questa esercitazione dovrebbe essere sostituito durante la settimana del 16 febbraio 2026. Il lavoro svolto come parte di questo tutorial potrebbe non essere applicabile al nuovo sito web.
 
 ![Diagramma da Web SDK ad Adobe Analytics](assets/dc-websdk-aa.png)
 
@@ -35,7 +40,7 @@ Per completare questa lezione, devi prima:
 
 * Acquisisci familiarità con Adobe Analytics e accedi ad esso.
 
-* Avere almeno un ID suite per report test/dev. Se non hai una suite per report test/dev che puoi usare per questa esercitazione, [creane una](https://experienceleague.adobe.com/it/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* Avere almeno un ID suite per report test/dev. Se non hai una suite per report test/dev che puoi usare per questa esercitazione, [creane una](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Completa le lezioni precedenti nelle sezioni Configurazione iniziale e Configurazione tag di questa esercitazione.
 
@@ -78,7 +83,7 @@ A partire da maggio 2024, non è più necessario creare uno schema XDM per imple
 
 ### Campi mappati automaticamente
 
-Molti campi XDM vengono mappati automaticamente alle variabili di Analytics. Per l&#39;elenco aggiornato dei mapping, vedere [Mappatura delle variabili di Analytics in Adobe Experience Edge](https://experienceleague.adobe.com/it/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
+Molti campi XDM vengono mappati automaticamente alle variabili di Analytics. Per l&#39;elenco aggiornato dei mapping, vedere [Mappatura delle variabili di Analytics in Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
 Ciò si verifica se _anche se non hai definito uno schema personalizzato_. Experience Platform Web SDK raccoglie automaticamente alcuni dati e li invia a Platform Edge Network come campi XDM. Web SDK, ad esempio, legge l&#39;URL della pagina corrente e lo invia come campo XDM `web.webPageDetails.URL`. Questo campo viene inoltrato ad Adobe Analytics e automaticamente popola i rapporti URL pagina in Adobe Analytics.
 
@@ -106,8 +111,8 @@ Le singole sezioni della stringa di prodotto Analytics sono impostate tramite di
 >[!NOTE]
 >
 >A partire dal 18 agosto 2022, `productListItems[].SKU` ha la priorità per il mapping al nome del prodotto nella variabile s.products.
->&#x200B;>Il valore impostato su `productListItems[].name` è mappato al nome del prodotto solo se `productListItems[].SKU` non esiste. In caso contrario, non è mappato ed è disponibile nei dati contestuali.
->&#x200B;>Non impostare una stringa vuota o null su `productListItems[].SKU`. Questo ha l’effetto indesiderato di mappare al nome del prodotto nella variabile s.products.
+>Il valore impostato su `productListItems[].name` è mappato al nome del prodotto solo se `productListItems[].SKU` non esiste. In caso contrario, non è mappato ed è disponibile nei dati contestuali.
+>Non impostare una stringa vuota o null su `productListItems[].SKU`. Questo ha l’effetto indesiderato di mappare al nome del prodotto nella variabile s.products.
 
 
 ### Impostare le variabili nell’oggetto dati
@@ -489,4 +494,4 @@ Congratulazioni! Ce l&#39;hai fatta! Questa è la fine della lezione e ora puoi 
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=it)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

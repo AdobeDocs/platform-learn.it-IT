@@ -4,9 +4,9 @@ description: Scopri come inviare un evento a Platform Edge Network con l’ogget
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1982'
+source-wordcount: '2014'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,11 @@ ht-degree: 2%
 # Creare regole di tag
 
 Scopri come inviare eventi all’Edge Network di Adobe Experience Platform con l’oggetto XDM utilizzando le regole di tag. Una regola di tag è una combinazione di eventi, condizioni e azioni che indica alla proprietà tag di eseguire un&#39;operazione. Con Platform Web SDK, le regole vengono utilizzate per inviare eventi a Platform Edge Network con i dati corretti.
+
+
+>[!WARNING]
+>
+> Il sito web Luma utilizzato in questa esercitazione dovrebbe essere sostituito durante la settimana del 16 febbraio 2026. Il lavoro svolto come parte di questo tutorial potrebbe non essere applicabile al nuovo sito web.
 
 ## Obiettivi di apprendimento
 
@@ -70,7 +75,7 @@ Tutte queste regole verranno sequenziate correttamente utilizzando l&#39;opzione
 
 Questo video offre una panoramica del processo:
 
->[!VIDEO](https://video.tv.adobe.com/v/3454035/?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### Campi di configurazione globali
 
@@ -238,7 +243,7 @@ Confrontare l&#39;elemento dati con la struttura `productListItems` (suggeriment
 >[!IMPORTANT]
 >
 >Si noti come le variabili numeriche vengono convertite, con valori stringa nel livello dati come `price` e `qty` riformattati in numeri nell&#39;elemento dati. Questi requisiti di formato sono importanti per l&#39;integrità dei dati in Platform e vengono determinati durante il passaggio [configura schemi](configure-schemas.md). Nell&#39;esempio, **[!UICONTROL quantity]** utilizza il tipo di dati **[!UICONTROL Integer]**.
->&#x200B;> ![Tipo di dati dello schema XDM](assets/set-up-analytics-quantity-integer.png)
+> ![Tipo di dati dello schema XDM](assets/set-up-analytics-quantity-integer.png)
 
 Ora associamo il nostro array all’oggetto XDM:
 
@@ -395,4 +400,4 @@ Ora puoi convalidare i dati nella richiesta utilizzando Adobe Experience Platfor
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=it)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

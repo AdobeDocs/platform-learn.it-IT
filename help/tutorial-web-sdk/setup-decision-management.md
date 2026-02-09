@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Decision Management,Offers
 jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2543'
 ht-degree: 1%
 
 ---
@@ -19,6 +19,10 @@ Scopri come implementare la funzionalità di gestione delle decisioni di Adobe J
 
 Seguendo questa esercitazione, gli utenti di Journey Optimizer possono utilizzare le funzioni di gestione delle decisioni, migliorando la personalizzazione e la rilevanza delle interazioni con i clienti.
 
+
+>[!WARNING]
+>
+> Il sito web Luma utilizzato in questa esercitazione dovrebbe essere sostituito durante la settimana del 16 febbraio 2026. Il lavoro svolto come parte di questo tutorial potrebbe non essere applicabile al nuovo sito web.
 
 ![Diagramma Web SDK e Adobe Analytics](assets/dc-websdk-ajo.png)
 
@@ -56,7 +60,7 @@ Le offerte basate su eventi non sono attualmente supportate in Adobe Journey Opt
 
 ## Concedere l’accesso alla gestione delle decisioni
 
-Per concedere l&#39;accesso alla funzionalità di gestione delle decisioni, devi creare un **profilo di prodotto** e assegnare le autorizzazioni corrispondenti ai tuoi utenti. [Ulteriori informazioni sulla gestione di utenti e autorizzazioni di Journey Optimizer sono disponibili in questa sezione](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
+Per concedere l&#39;accesso alla funzionalità di gestione delle decisioni, devi creare un **profilo di prodotto** e assegnare le autorizzazioni corrispondenti ai tuoi utenti. [Ulteriori informazioni sulla gestione di utenti e autorizzazioni di Journey Optimizer sono disponibili in questa sezione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## Configurare lo stream di dati
 
@@ -175,7 +179,7 @@ Per creare il posizionamento, effettuate le seguenti operazioni:
 1. Una volta creato, il posizionamento viene visualizzato nell’elenco dei posizionamenti.
 1. Seleziona la riga contenente il nuovo posizionamento e prendi nota dell’ID posizionamento, in quanto potrebbe essere necessario per la configurazione all’interno dell’ambito decisionale.
 
-   ![Vedere ID posizionamento &#x200B;](assets/decisioning-placement-id.png)
+   ![Vedere ID posizionamento ](assets/decisioning-placement-id.png)
 
 ### Regole di decisione per lo stato di fedeltà
 
@@ -339,7 +343,7 @@ Per iniziare il test, seleziona la scheda **Simulazioni** dal menu **Offerte**.
 
 ### Verifica delle offerte fedeltà
 
-1. Seleziona un profilo di test da utilizzare per la simulazione. Fare clic su **Gestisci profilo**. [Per creare o designare un nuovo profilo di test per il test delle offerte, seguire questa guida](https://experienceleague.adobe.com/it/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
+1. Seleziona un profilo di test da utilizzare per la simulazione. Fare clic su **Gestisci profilo**. [Per creare o designare un nuovo profilo di test per il test delle offerte, seguire questa guida](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -371,7 +375,7 @@ L&#39;estensione **Adobe Experience Platform Debugger**, disponibile sia per Chr
 
 Puoi utilizzare il debugger sul sito Luma per convalidare la logica decisionale in produzione. Questa convalida è una buona pratica una volta che il caso di utilizzo dei premi fedeltà è attivo e in esecuzione, per garantire che tutto sia configurato correttamente.
 
-[Scopri come configurare il debugger nel browser utilizzando la guida qui](https://experienceleague.adobe.com/it/docs/platform-learn/data-collection/debugger/overview).
+[Scopri come configurare il debugger nel browser utilizzando la guida qui](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 Per iniziare la convalida tramite il debugger:
 
@@ -402,4 +406,4 @@ Per iniziare la convalida tramite il debugger:
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=it)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

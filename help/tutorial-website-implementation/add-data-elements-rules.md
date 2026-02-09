@@ -1,11 +1,11 @@
 ---
 title: Aggiungere un elemento dati, una regola e una libreria
-description: Scopri come creare elementi dati, regole e una libreria nei tag. Questa lezione fa parte dell’esercitazione Implementare l’Experience Cloud su siti web.
+description: Scopri come creare elementi dati, regole e una libreria nei tag. Questa lezione fa parte dell’esercitazione Implementare Experience Cloud nei siti web.
 exl-id: 4d9eeb52-144a-4876-95d3-83d8eec4832f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 54%
+source-wordcount: '1473'
+ht-degree: 53%
 
 ---
 
@@ -15,12 +15,17 @@ In questa lezione, creerai i tuoi primi elemento dati, regola e libreria.
 
 Gli elementi e le regole di dati sono gli elementi costitutivi di base dei tag. Gli elementi dati memorizzano gli attributi che desideri inviare alle tue soluzioni di marketing e pubblicitarie, mentre le richieste a tali soluzioni vengono inviate dalle Regole in giuste condizioni. Le librerie sono file JavaScript caricati nella pagina per eseguire tutto il lavoro. In questa lezione, utilizzerai tutti e tre per fare in modo che la nostra pagina di esempio esegua un’operazione.
 
+
+>[!WARNING]
+>
+> Il sito web Luma utilizzato in questa esercitazione dovrebbe essere sostituito durante la settimana del 16 febbraio 2026. Il lavoro svolto come parte di questo tutorial potrebbe non essere applicabile al nuovo sito web.
+
 >[!NOTE]
 >
 >Adobe Experience Platform Launch viene integrato in Adobe Experience Platform come suite di tecnologie per la raccolta dati. Nell’interfaccia sono state introdotte diverse modifiche terminologiche di cui tenere conto quando si utilizza questo contenuto:
 >
-> * Il platform launch (lato client) è ora **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)**
-> * Platform Launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it)**
+> * Platform Launch (lato client) è ora **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)**
+> * Platform Launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Le configurazioni di Edge sono ora **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)**
 
 ## Finalità di apprendimento
@@ -123,7 +128,7 @@ Nella pagina Regole dovresti visualizzare la nuova regola:
 
 Dopo aver configurato una raccolta di estensioni, elementi dati e regole nell’interfaccia di Data Collection, devi creare un pacchetto di tali funzionalità e logica in un set di codice JavaScript da distribuire sul sito web, in modo che i tag di marketing vengano attivati quando i visitatori arrivano sul sito. Una libreria è il set di codice JavaScript che esegue questa operazione.
 
-In una lezione precedente, hai implementato il codice di incorporamento dell’ambiente di sviluppo nella pagina di esempio. Quando si caricava la pagina di esempio, veniva restituito un errore 404 per l’URL del codice di incorporamento, poiché una libreria di tag non era stata ancora generata e assegnata all’ambiente. Ora, inserirai il nuovo elemento dati e la regola in una libreria in modo che la pagina di esempio possa fare qualcosa.
+In una lezione precedente, hai implementato il codice da incorporare dell’ambiente di sviluppo nella pagina di esempio. Quando si caricava la pagina di esempio, veniva restituito un errore 404 per l’URL del codice di incorporamento, poiché una libreria di tag non era stata ancora generata e assegnata all’ambiente. Ora, inserirai il nuovo elemento dati e la regola in una libreria in modo che la pagina di esempio possa fare qualcosa.
 
 **Aggiungere e creare una libreria**
 
@@ -195,4 +200,4 @@ Attendi che il punto verde venga nuovamente visualizzato accanto al menu a disce
 
 Si tratta di un metodo di lavoro molto più veloce: userai questo approccio per il resto dell’esercitazione.
 
-[Avanti &quot;Cambiare ambienti con il Experience Cloud Debugger&quot; >](switch-environments.md)
+[Avanti &quot;Cambiare ambienti con Experience Cloud Debugger&quot; >](switch-environments.md)

@@ -1,24 +1,29 @@
 ---
-title: Publish, proprietà tag
-description: Scopri come pubblicare la proprietà tag dall’ambiente di sviluppo agli ambienti di staging e produzione. Questa lezione fa parte dell’esercitazione Implementare l’Experience Cloud su siti web.
+title: Pubblicare la proprietà tag
+description: Scopri come pubblicare la proprietà tag dall’ambiente di sviluppo agli ambienti di staging e produzione. Questa lezione fa parte dell’esercitazione Implementare Experience Cloud nei siti web.
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
-source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 58%
+source-wordcount: '603'
+ht-degree: 55%
 
 ---
 
-# Publish, proprietà tag
+# Pubblicare la proprietà tag
 
 Ora che hai implementato alcune soluzioni chiave di Adobe Experience Cloud nell’ambiente di sviluppo, è ora di imparare il flusso di lavoro di pubblicazione.
+
+
+>[!WARNING]
+>
+> Il sito web Luma utilizzato in questa esercitazione dovrebbe essere sostituito durante la settimana del 16 febbraio 2026. Il lavoro svolto come parte di questo tutorial potrebbe non essere applicabile al nuovo sito web.
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch viene integrato in Adobe Experience Platform come suite di tecnologie per la raccolta dati. Nell’interfaccia sono state introdotte diverse modifiche terminologiche di cui tenere conto quando si utilizza questo contenuto:
 >
-> * Il platform launch (lato client) è ora **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)**
-> * Platform Launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it)**
+> * Platform Launch (lato client) è ora **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)**
+> * Platform Launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Le configurazioni di Edge sono ora **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)**
 
 ## Finalità di apprendimento
@@ -41,7 +46,7 @@ Ora che hai creato e convalidato la libreria nell’ambiente di sviluppo, è nec
 
 1. Fai clic sul pulsante **[!UICONTROL Invia]** nella finestra di dialogo:
 
-   ![Selezionare Invia nel modale](images/publishing-submit.png)
+   ![Clic su Invia nella finestra modale](images/publishing-submit.png)
 
 1. La libreria verrà ora visualizzata nella colonna [!UICONTROL Inviato] in uno stato non generato:
 
@@ -98,17 +103,17 @@ In uno scenario, dopo che il team di QA ha dato l’approvazione esaminando le m
 
 1. Fai clic sul pulsante **[!UICONTROL Approva]** nella finestra di dialogo:
 
-   ![Selezione di Approva](images/publishing-approve.png)
+   ![Clic su Approva](images/publishing-approve.png)
 
 1. La libreria verrà ora visualizzata nella colonna [!UICONTROL Approvato] in uno stato non generato (punto giallo):
 
-1. Apri il menu a discesa e seleziona **[!UICONTROL Genera e Publish in produzione]**:
+1. Apri il menu a discesa e seleziona **[!UICONTROL Genera e pubblica in produzione]**:
 
-   ![Selezione di Build &amp; Publish to Production](images/publishing-buildAndPublishToProduction.png)
+   ![Clic su Genera e pubblica in Produzione](images/publishing-buildAndPublishToProduction.png)
 
-1. Fai clic su **[!UICONTROL Publish]** nella finestra di dialogo:
+1. Fai clic su **[!UICONTROL Pubblica]** nella finestra di dialogo:
 
-   ![Selezione di Pubblica](images/publishing-publish.png)
+   ![Clic su Pubblica](images/publishing-publish.png)
 
 1. La libreria verrà ora visualizzata nella colonna [!UICONTROL Pubblicato]:
 

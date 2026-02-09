@@ -4,9 +4,9 @@ description: Scopri come abilitare uno stream di dati e configurare le soluzioni
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '567'
 ht-degree: 8%
 
 ---
@@ -15,7 +15,11 @@ ht-degree: 8%
 
 Scopri come configurare uno stream di dati per Adobe Experience Platform Web SDK.
 
-[Datastream](https://experienceleague.adobe.com/it/docs/experience-platform/datastreams/overview) indica ad Adobe Experience Platform Edge Network dove inviare i dati raccolti da Platform Web SDK. Nella configurazione dei flussi di dati, abilita le applicazioni Experience Cloud, l’account Experience Platform e l’inoltro di eventi.
+[Datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) indica ad Adobe Experience Platform Edge Network dove inviare i dati raccolti da Platform Web SDK. Nella configurazione dei flussi di dati, abilita le applicazioni Experience Cloud, l’account Experience Platform e l’inoltro di eventi.
+
+>[!WARNING]
+>
+> Il sito web Luma utilizzato in questa esercitazione dovrebbe essere sostituito durante la settimana del 16 febbraio 2026. Il lavoro svolto come parte di questo tutorial potrebbe non essere applicabile al nuovo sito web.
 
 ![SDK Web, flussi di dati e diagramma di Edge Network](assets/dc-websdk-datastreams.png)
 
@@ -65,7 +69,7 @@ Nella schermata successiva, è possibile aggiungere al flusso di dati servizi co
 
 ## Sostituire uno stream di dati
 
-Le [sostituzioni dello stream di dati](https://experienceleague.adobe.com/it/docs/experience-platform/datastreams/overrides) consentono di definire configurazioni aggiuntive per lo stream di dati e quindi di ignorare la configurazione predefinita in determinate condizioni.
+Le [sostituzioni dello stream di dati](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) consentono di definire configurazioni aggiuntive per lo stream di dati e quindi di ignorare la configurazione predefinita in determinate condizioni.
 
 La sostituzione della configurazione dello stream di dati è un processo in due fasi:
 
@@ -78,4 +82,4 @@ Ora puoi installare l’estensione Platform Web SDK nella proprietà tag.
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=it)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

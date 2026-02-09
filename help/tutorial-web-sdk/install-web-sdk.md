@@ -4,16 +4,21 @@ description: Scopri come installare e configurare l’estensione tag Platform We
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 11%
+source-wordcount: '638'
+ht-degree: 10%
 
 ---
 
 # Installare l&#39;estensione tag Adobe Experience Platform Web SDK
 
 Scopri come installare e configurare l’estensione tag Adobe Experience Platform Web SDK. Il modo più semplice per implementare Web SDK consiste nell’utilizzare i tag di Adobe Manager (precedentemente noti come Launch). L&#39;estensione tag di Platform Web SDK è l&#39;_unica estensione tag_ necessaria per inviare dati a _tutte le applicazioni Adobe Experience Cloud_, incluse [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-Time Customer Data Platform e [Journey Optimizer](setup-web-channel.md).
+
+
+>[!WARNING]
+>
+> Il sito web Luma utilizzato in questa esercitazione dovrebbe essere sostituito durante la settimana del 16 febbraio 2026. Il lavoro svolto come parte di questo tutorial potrebbe non essere applicabile al nuovo sito web.
 
 ## Obiettivi di apprendimento
 
@@ -71,7 +76,7 @@ Lascia la maggior parte delle impostazioni predefinite e aggiornale in un second
 
    ![Selezione dello stream di dati](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Per ulteriori informazioni su ciascuna sezione dell&#39;estensione, vedere [Configurare l&#39;estensione Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/it/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+Per ulteriori informazioni su ciascuna sezione dell&#39;estensione, vedere [Configurare l&#39;estensione Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
@@ -85,4 +90,4 @@ Dopo aver installato Platform Web SDK e averlo associato allo stream di dati, è
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=it)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

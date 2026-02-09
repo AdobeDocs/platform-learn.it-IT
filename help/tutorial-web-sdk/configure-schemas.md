@@ -4,9 +4,9 @@ description: Scopri come creare uno schema XDM per i dati web nell’interfaccia
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1541'
+source-wordcount: '1573'
 ht-degree: 3%
 
 ---
@@ -18,6 +18,11 @@ Scopri come creare uno schema XDM per i dati web nell’interfaccia di raccolta 
 Gli schemi Experience Data Model (XDM) sono gli elementi costitutivi, i principi e le best practice per la raccolta di dati in Adobe Experience Platform.
 
 Platform Web SDK utilizza lo schema per standardizzare i dati dell’evento web, inviarli a Platform Edge Network e infine inoltrarli a qualsiasi applicazione Experience Cloud configurata nello stream di dati. Questo passaggio è fondamentale in quanto definisce un modello dati standard necessario per acquisire i dati sulla customer experience in Experience Platform e abilita servizi e applicazioni a valle basati su questi standard.
+
+
+>[!WARNING]
+>
+> Il sito web Luma utilizzato in questa esercitazione dovrebbe essere sostituito durante la settimana del 16 febbraio 2026. Il lavoro svolto come parte di questo tutorial potrebbe non essere applicabile al nuovo sito web.
 
 >[!NOTE]
 >
@@ -49,16 +54,16 @@ Ad esempio, molte aziende gestiscono gli ordini. E se, collettivamente, queste a
 }
 ```
 
-Se tutte le aziende che gestiscono gli ordini decidessero di modellare i propri dati in modo coerente per i termini comuni nel settore, potrebbero iniziare a verificarsi eventi magici. Lo scambio di informazioni all’interno e all’esterno dell’organizzazione può essere più fluido, invece di continuare a interpretare e tradurre i dati (prop ed evar, qualcuno?). L&#39;apprendimento automatico è in grado di capire più facilmente il significato dei dati _1&rbrace; e fornire informazioni utili._ Le interfacce utente per la visualizzazione di dati rilevanti potrebbero diventare più intuitive. I dati possono essere integrati direttamente con partner e fornitori che seguono lo stesso modello.
+Se tutte le aziende che gestiscono gli ordini decidessero di modellare i propri dati in modo coerente per i termini comuni nel settore, potrebbero iniziare a verificarsi eventi magici. Lo scambio di informazioni all’interno e all’esterno dell’organizzazione può essere più fluido, invece di continuare a interpretare e tradurre i dati (prop ed evar, qualcuno?). L&#39;apprendimento automatico è in grado di capire più facilmente il significato dei dati _1} e fornire informazioni utili._ Le interfacce utente per la visualizzazione di dati rilevanti potrebbero diventare più intuitive. I dati possono essere integrati direttamente con partner e fornitori che seguono lo stesso modello.
 
-Questo è l&#39;obiettivo del [Experience Data Model](https://business.adobe.com/it/products/experience-platform/experience-data-model.html) di Adobe. XDM fornisce una modellazione prescrittiva per i dati comune nel settore, consentendo al contempo di estendere il modello in base alle tue esigenze specifiche. Adobe Experience Platform è basato su XDM e, come tale, i dati inviati ad Experience Platform devono essere in XDM. Invece di pensare a dove e come trasformare i modelli di dati correnti in XDM prima di inviare i dati ad Experience Platform, considera l’adozione più diffusa di XDM all’interno dell’organizzazione, in modo che la traduzione abbia raramente bisogno di essere eseguita.
+Questo è l&#39;obiettivo del [Experience Data Model](https://business.adobe.com/products/experience-platform/experience-data-model.html) di Adobe. XDM fornisce una modellazione prescrittiva per i dati comune nel settore, consentendo al contempo di estendere il modello in base alle tue esigenze specifiche. Adobe Experience Platform è basato su XDM e, come tale, i dati inviati ad Experience Platform devono essere in XDM. Invece di pensare a dove e come trasformare i modelli di dati correnti in XDM prima di inviare i dati ad Experience Platform, considera l’adozione più diffusa di XDM all’interno dell’organizzazione, in modo che la traduzione abbia raramente bisogno di essere eseguita.
 
 
 >[!NOTE]
 >
 > A scopo dimostrativo, gli esercizi di questa lezione generano uno schema di esempio per acquisire i contenuti visualizzati e i prodotti acquistati dai clienti nel [sito dimostrativo Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Anche se puoi utilizzare questi passaggi per creare uno schema diverso per le tue finalità, ti consigliamo di seguire prima la creazione dello schema di esempio per scoprire le funzionalità dell’editor schema.
 
-Per ulteriori informazioni sugli schemi XDM, consulta la playlist [Modellare i dati sull&#39;esperienza del cliente con XDM](https://experienceleague.adobe.com/it/playlists/experience-platform-model-your-customer-experience-data-with-xdm) oppure la [panoramica del sistema XDM](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/home).
+Per ulteriori informazioni sugli schemi XDM, consulta la playlist [Modellare i dati sull&#39;esperienza del cliente con XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) oppure la [panoramica del sistema XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
 
 ## Obiettivi di apprendimento
 
@@ -74,7 +79,7 @@ Tutte le autorizzazioni utente e di provisioning necessarie per Data Collection 
 
 ## Creare uno schema XDM
 
-Gli schemi XDM sono il modo standard per descrivere i dati in Experience Platform, consentendo di riutilizzare tutti i dati conformi agli schemi in un’organizzazione senza conflitti, o anche di condividerli tra più organizzazioni. Per ulteriori informazioni, consulta le [nozioni di base sulla composizione dello schema](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/schema/composition).
+Gli schemi XDM sono il modo standard per descrivere i dati in Experience Platform, consentendo di riutilizzare tutti i dati conformi agli schemi in un’organizzazione senza conflitti, o anche di condividerli tra più organizzazioni. Per ulteriori informazioni, consulta le [nozioni di base sulla composizione dello schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition).
 
 In questo esercizio creerai uno schema XDM utilizzando i gruppi di campi della linea di base consigliati per l’acquisizione dei dati dell’evento web nel [sito dimostrativo Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
 
@@ -107,13 +112,13 @@ In questo esercizio creerai uno schema XDM utilizzando i gruppi di campi della l
 
 ## Aggiungi gruppi di campi
 
-Come indicato in precedenza, XDM è il framework principale che standardizza i dati sull’esperienza del cliente fornendo strutture e definizioni comuni da utilizzare nei servizi Adobe Experience Platform a valle. Aderendo agli standard XDM, _tutti i dati sulla customer experience_ possono essere incorporati in una rappresentazione comune. Questo approccio consente di ottenere informazioni preziose dalle azioni dei clienti, definire i tipi di pubblico dei clienti attraverso i segmenti ed esprimere gli attributi dei clienti a scopo di personalizzazione utilizzando dati provenienti da più origini. Per ulteriori informazioni, consulta [Best practice per la modellazione dei dati](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/schema/best-practices).
+Come indicato in precedenza, XDM è il framework principale che standardizza i dati sull’esperienza del cliente fornendo strutture e definizioni comuni da utilizzare nei servizi Adobe Experience Platform a valle. Aderendo agli standard XDM, _tutti i dati sulla customer experience_ possono essere incorporati in una rappresentazione comune. Questo approccio consente di ottenere informazioni preziose dalle azioni dei clienti, definire i tipi di pubblico dei clienti attraverso i segmenti ed esprimere gli attributi dei clienti a scopo di personalizzazione utilizzando dati provenienti da più origini. Per ulteriori informazioni, consulta [Best practice per la modellazione dei dati](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices).
 
-Quando possibile, si consiglia di utilizzare i gruppi di campi esistenti e di aderire a un modello indipendente dal prodotto e alle convenzioni di denominazione. Per i dati specifici dell’organizzazione che non rientrano nei gruppi di campi predefiniti qui sopra, puoi creare un gruppo di campi personalizzato. Consulta [Creazione di uno schema tramite l&#39;Editor di schema](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/tutorials/create-schema-ui#create) per i passaggi più dettagliati sugli schemi personalizzati.
+Quando possibile, si consiglia di utilizzare i gruppi di campi esistenti e di aderire a un modello indipendente dal prodotto e alle convenzioni di denominazione. Per i dati specifici dell’organizzazione che non rientrano nei gruppi di campi predefiniti qui sopra, puoi creare un gruppo di campi personalizzato. Consulta [Creazione di uno schema tramite l&#39;Editor di schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#create) per i passaggi più dettagliati sugli schemi personalizzati.
 
 >[!TIP]
 > 
->In questo esercizio aggiungerai i gruppi di campi predefiniti consigliati per la raccolta dati Web: _&#x200B;**[!UICONTROL AEP Web SDK ExperienceEvent]**&#x200B;_ e _&#x200B;**[!UICONTROL Consumer Experience Event]**&#x200B;_.
+>In questo esercizio aggiungerai i gruppi di campi predefiniti consigliati per la raccolta dati Web: _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ e _**[!UICONTROL Consumer Experience Event]**_.
 >
 
 
@@ -133,7 +138,7 @@ Con entrambi i gruppi di campi, puoi accedere alle coppie chiave-valore più com
 
 ![Gruppi di campi schema](assets/schema-consumer-experience-event.png)
 
-Questa lezione è solo un punto di partenza. Quando crei uno schema di eventi web personalizzato, devi esplorare e documentare i requisiti aziendali. Questo processo è simile alla creazione di un [documento sui requisiti aziendali](https://experienceleague.adobe.com/it/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document) e di un [riferimento di progettazione della soluzione](https://experienceleague.adobe.com/it/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr) per un&#39;implementazione di Adobe Analytics, ma deve includere i requisiti per _tutti i destinatari dei dati downstream_ come Platform, Target e le destinazioni di inoltro degli eventi.
+Questa lezione è solo un punto di partenza. Quando crei uno schema di eventi web personalizzato, devi esplorare e documentare i requisiti aziendali. Questo processo è simile alla creazione di un [documento sui requisiti aziendali](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document) e di un [riferimento di progettazione della soluzione](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr) per un&#39;implementazione di Adobe Analytics, ma deve includere i requisiti per _tutti i destinatari dei dati downstream_ come Platform, Target e le destinazioni di inoltro degli eventi.
 
 
 ### Oggetto identityMap
@@ -147,11 +152,11 @@ Si tratta di un oggetto obbligatorio per qualsiasi raccolta di dati relativi al 
 
 >[!IMPORTANT]
 >
-> È possibile abilitare **[!UICONTROL Profilo]** per uno schema prima di salvarlo. **Non** attivarlo a questo punto. Una volta abilitato lo schema per il profilo, non è possibile disattivarlo o eliminarlo senza ripristinare l’intera sandbox. A questo punto non è possibile rimuovere i campi dagli schemi, anche se è possibile [rendere obsoleti i campi nell&#39;interfaccia utente](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Queste implicazioni sono importanti da tenere presenti in un secondo momento quando si lavora con i propri dati nell’ambiente di produzione.
+> È possibile abilitare **[!UICONTROL Profilo]** per uno schema prima di salvarlo. **Non** attivarlo a questo punto. Una volta abilitato lo schema per il profilo, non è possibile disattivarlo o eliminarlo senza ripristinare l’intera sandbox. A questo punto non è possibile rimuovere i campi dagli schemi, anche se è possibile [rendere obsoleti i campi nell&#39;interfaccia utente](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Queste implicazioni sono importanti da tenere presenti in un secondo momento quando si lavora con i propri dati nell’ambiente di produzione.
 >
 >
 >Questa impostazione viene discussa ulteriormente durante la lezione [Configurazione di Experience Platform](setup-experience-platform.md).
->&#x200B;>![Schema profilo](assets/schema-profile.png)
+>![Schema profilo](assets/schema-profile.png)
 
 Per completare questa lezione, seleziona **[!UICONTROL Salva]** in alto a destra.
 
@@ -162,4 +167,4 @@ Ora è possibile fare riferimento a questo schema quando si aggiunge l’estensi
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=it)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

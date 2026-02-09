@@ -3,9 +3,9 @@ title: Trasmettere i dati a Adobe Experience Platform con Platform Web SDK
 description: Scopri come inviare dati web a Adobe Experience Platform tramite Web SDK. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '2306'
+source-wordcount: '2338'
 ht-degree: 4%
 
 ---
@@ -15,6 +15,11 @@ ht-degree: 4%
 Scopri come trasferire i dati web in streaming a Adobe Experience Platform con Platform Web SDK.
 
 Experience Platform è la spina dorsale di tutte le nuove applicazioni Experience Cloud, come Adobe Real-Time Customer Data Platform, Adobe Customer Journey Analytics e Adobe Journey Optimizer. Queste applicazioni sono progettate per utilizzare Platform Web SDK come metodo ottimale di raccolta dei dati web.
+
+
+>[!WARNING]
+>
+> Il sito web Luma utilizzato in questa esercitazione dovrebbe essere sostituito durante la settimana del 16 febbraio 2026. Il lavoro svolto come parte di questo tutorial potrebbe non essere applicabile al nuovo sito web.
 
 ![Diagramma Web SDK e Adobe Experience Platform](assets/dc-websdk-aep.png)
 
@@ -44,7 +49,7 @@ Per completare questa lezione, devi prima:
 
 ## Creare un set di dati
 
-Tutti i dati acquisiti correttamente in Adobe Experience Platform vengono memorizzati nel data lake come set di dati. Un [set di dati](https://experienceleague.adobe.com/it/docs/experience-platform/catalog/datasets/overview) è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella che contiene uno schema (colonne) e campi (righe). I set di dati contengono anche metadati che descrivono vari aspetti dei dati memorizzati.
+Tutti i dati acquisiti correttamente in Adobe Experience Platform vengono memorizzati nel data lake come set di dati. Un [set di dati](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella che contiene uno schema (colonne) e campi (righe). I set di dati contengono anche metadati che descrivono vari aspetti dei dati memorizzati.
 
 Configuriamo un set di dati per i dati dell’evento web Luma:
 
@@ -66,7 +71,7 @@ Configuriamo un set di dati per i dati dell’evento web Luma:
 
 1. Fornisci un **[!UICONTROL Nome]** e una **[!UICONTROL Descrizione]** facoltativi per il set di dati. Per questo esercizio, utilizza `Luma Web Event Data`, quindi seleziona **[!UICONTROL Fine]**
 
-   ![Nome set di dati &#x200B;](assets/experience-platform-create-dataset-schema-name.png)
+   ![Nome set di dati ](assets/experience-platform-create-dataset-schema-name.png)
 
 Ora è configurato un set di dati per iniziare a raccogliere dati dall’implementazione di Platform Web SDK.
 
@@ -128,7 +133,7 @@ Per verificare che i dati siano stati inseriti nel data lake di Platform, un&#39
 
 1. Nell&#39;interfaccia [Experience Platform](https://experience.adobe.com/platform/), seleziona **[!UICONTROL Gestione dati > Set di dati]** nel menu di navigazione a sinistra per aprire il dashboard **[!UICONTROL Set di dati]**.
 
-   Il dashboard elenca tutti i set di dati disponibili per l’organizzazione. Vengono visualizzati i dettagli di ciascun set di dati elencato, compreso il nome, lo schema a cui il set di dati aderisce e lo stato dell’esecuzione di acquisizione più recente.
+   Il dashboard elenca tutti i set di dati disponibili per l’organizzazione. Vengono visualizzati i dettagli di ciascun set di dati elencato, compresi il nome, lo schema a cui il set di dati aderisce e lo stato dell’ultima esecuzione di acquisizione.
 
 1. Seleziona il set di dati `Luma Web Event Data` per aprirne la schermata **[!UICONTROL Attività set di dati]**.
 
@@ -160,14 +165,14 @@ Per verificare che i dati siano stati inseriti nel data lake di Platform, un&#39
 
 >[!INFO]
 >
->  Per ulteriori dettagli sul servizio query di Adobe Experience Platform, vedi [Esplora i dati](https://experienceleague.adobe.com/it/docs/platform-learn/tutorials/queries/explore-data) nella sezione Esercitazioni di Platform.
+>  Per ulteriori dettagli sul servizio query di Adobe Experience Platform, vedi [Esplora i dati](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) nella sezione Esercitazioni di Platform.
 
 
 ## Abilitare il set di dati e lo schema per Real-Time Customer Profile
 
 Per i clienti di Real-Time Customer Data Platform e Journey Optimizer, il passaggio successivo consiste nell’abilitare il set di dati e lo schema per Real-Time Customer Profile. Lo streaming di dati da Web SDK sarà una delle molte origini dati che fluiranno in Platform e desideri unire i tuoi dati web con altre origini dati per creare profili cliente a 360 gradi. Per ulteriori informazioni su Real-Time Customer Profile, guarda questo breve video:
 
->[!VIDEO](https://video.tv.adobe.com/v/36266?learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
 >[!CAUTION]
 >
@@ -340,4 +345,4 @@ Poiché si tratta di un pubblico molto semplice, possiamo utilizzare il metodo d
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=it)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
