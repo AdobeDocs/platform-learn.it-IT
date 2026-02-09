@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial tecnico su Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: bed1141b0b51063637684a29a9bd946c934fc2ba
+source-git-commit: 9d3e39cf99f3cfa6c1198c53f30b21fa8fbf7854
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1529'
 ht-degree: 3%
 
 ---
@@ -89,11 +89,10 @@ ht-degree: 3%
    + 1.7 Workflow Builder {#crpr7}
       + [Panoramica](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
       + [1.7.1 Guida introduttiva a Workflow Builder](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
-   + 1.8 Gestione dello storage aziendale {#crpr8}
+   + 1.8 Valutazione e approvazione unificate con Workfront, Frame.io e Enterprise Storage Management {#crpr8}
       + [Panoramica](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
-      + [1.8.1 Workfront ed ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
-      + [1.8.2 Frame.io ed ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
-      + [1.8.3 Adobe Express ed ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex3.md)
+      + [1.8.1 Guida introduttiva a Workfront, Frame.io ed ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
+      + [1.8.2 Creare una nuova risorsa, rivederla e approvarla](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
 
 + Gestione delle risorse {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
