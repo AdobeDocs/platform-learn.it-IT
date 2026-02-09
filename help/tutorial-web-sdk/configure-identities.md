@@ -57,7 +57,7 @@ In questo esercizio creerai uno spazio dei nomi delle identità per il campo di 
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sull’identità in Adobe Experience Platform:
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422773?captions=ita&learn=on&enablevpops)
 
 Ora crea uno spazio dei nomi per l’ID CRM Luma:
 

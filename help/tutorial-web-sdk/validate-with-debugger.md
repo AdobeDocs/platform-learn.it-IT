@@ -26,7 +26,7 @@ Experience Platform Debugger è un’estensione disponibile per Chrome che conse
 
 Se non hai mai utilizzato il debugger in precedenza, guarda questo video introduttivo di cinque minuti:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36164?captions=ita&learn=on&enablevpops)
 
 In questa lezione, utilizzi l&#39;estensione [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) per sostituire la proprietà di tag di codifica fissa nel [sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html) con la tua proprietà.
 
