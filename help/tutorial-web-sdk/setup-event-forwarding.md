@@ -15,7 +15,7 @@ ht-degree: 3%
 
 Scopri come utilizzare l’inoltro degli eventi con i dati di Adobe Experience Platform Web SDK.
 
-L’inoltro degli eventi è un nuovo tipo di proprietà disponibile in Raccolta dati. L’inoltro degli eventi consente di inviare dati a fornitori di terze parti non Adobe direttamente dall’Edge Network di Adobe Experience Platform invece del browser tradizionale lato client. Ulteriori informazioni sui vantaggi dell&#39;inoltro degli eventi nella [Panoramica sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
+L’inoltro degli eventi è un nuovo tipo di proprietà disponibile in Raccolta dati. L’inoltro degli eventi consente di inviare dati a fornitori di terze parti non Adobe direttamente dall’Edge Network di Adobe Experience Platform invece del browser tradizionale lato client. Ulteriori informazioni sui vantaggi dell&#39;inoltro degli eventi nella [Panoramica sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/it/docs/experience-platform/tags/event-forwarding/overview).
 
 
 >[!WARNING]
@@ -28,7 +28,7 @@ Per utilizzare l’inoltro degli eventi in Adobe Experience Platform, i dati dev
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/it/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]
@@ -327,4 +327,4 @@ Congratulazioni! Hai configurato l’inoltro degli eventi.
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=it)

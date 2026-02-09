@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Scopri come configurare Adobe Audience Manager utilizzando Adobe Experience Platform Web SDK e convalidare l’implementazione utilizzando una destinazione cookie.
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) è la soluzione Adobe Experience Cloud che fornisce tutto il necessario per raccogliere informazioni rilevanti dal punto di vista commerciale sui visitatori del sito, creare segmenti commerciabili e distribuire pubblicità e contenuti mirati al pubblico giusto.
+[Adobe Audience Manager](https://experienceleague.adobe.com/it/docs/audience-manager) è la soluzione Adobe Experience Cloud che fornisce tutto il necessario per raccogliere informazioni rilevanti dal punto di vista commerciale sui visitatori del sito, creare segmenti commerciabili e distribuire pubblicità e contenuti mirati al pubblico giusto.
 
 
 >[!WARNING]
@@ -37,11 +37,11 @@ Alla fine di questa lezione, potrai:
 Per completare questa lezione, devi prima:
 
 * Completa le lezioni precedenti nelle sezioni Configurazione iniziale e Configurazione tag di questa esercitazione.
-* Accedi a Adobe Audience Manager e disponi delle autorizzazioni appropriate per creare, leggere e scrivere caratteristiche, segmenti e destinazioni. Per ulteriori informazioni, rivedere [Controllo dell&#39;accesso basato sul ruolo di Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
+* Accedi a Adobe Audience Manager e disponi delle autorizzazioni appropriate per creare, leggere e scrivere caratteristiche, segmenti e destinazioni. Per ulteriori informazioni, rivedere [Controllo dell&#39;accesso basato sul ruolo di Audience Manager](https://experienceleague.adobe.com/it/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 ## Configurare lo stream di dati
 
-L&#39;implementazione di Audience Manager tramite Platform Web SDK è diversa dall&#39;implementazione tramite [Server-Side Forwarding (SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). L’inoltro lato server trasmette i dati della richiesta di Adobe Analytics ad Audience Manager. Un’implementazione di Platform Web SDK trasmette i dati XDM inviati ad Edge Network Platform ad Audience Manager. Audience Manager è abilitato nello stream di dati:
+L&#39;implementazione di Audience Manager tramite Platform Web SDK è diversa dall&#39;implementazione tramite [Server-Side Forwarding (SSF)](https://experienceleague.adobe.com/it/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). L’inoltro lato server trasmette i dati della richiesta di Adobe Analytics ad Audience Manager. Un’implementazione di Platform Web SDK trasmette i dati XDM inviati ad Edge Network Platform ad Audience Manager. Audience Manager è abilitato nello stream di dati:
 
 1. Vai all&#39;interfaccia [Raccolta dati](https://experience.adobe.com/#/data-collection){target="blank"}
 1. Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Flussi di dati]**
@@ -58,7 +58,7 @@ L&#39;implementazione di Audience Manager tramite Platform Web SDK è diversa da
 
 ## Creare un’origine dati
 
-Quindi, crea un [Data Source](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings), uno strumento fondamentale per organizzare i dati all&#39;interno di Audience Manager:
+Quindi, crea un [Data Source](https://experienceleague.adobe.com/it/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings), uno strumento fondamentale per organizzare i dati all&#39;interno di Audience Manager:
 
 1. Passa all&#39;interfaccia [Audience Manager](https://experience.adobe.com/#/audience-manager/)
 1. Seleziona **[!UICONTROL Dati pubblico]** dalla navigazione superiore
@@ -78,7 +78,7 @@ Quindi, crea un [Data Source](https://experienceleague.adobe.com/en/docs/audienc
 
 ## Creare una caratteristica
 
-Dopo il salvataggio del Data Source, imposta una [caratteristica](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/traits/traits-overview). Le caratteristiche sono una combinazione di uno o più segnali in Audience Manager. Creare una caratteristica per i visitatori della homepage.
+Dopo il salvataggio del Data Source, imposta una [caratteristica](https://experienceleague.adobe.com/it/docs/audience-manager/user-guide/features/traits/traits-overview). Le caratteristiche sono una combinazione di uno o più segnali in Audience Manager. Creare una caratteristica per i visitatori della homepage.
 
 >[!NOTE]
 >
@@ -188,4 +188,4 @@ Dopo aver completato questa lezione, dovresti essere in grado di vedere in che m
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=it)

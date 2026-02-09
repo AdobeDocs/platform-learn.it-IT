@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Configurare il canale web Journey Optimizer con Web SDK
 
-Scopri come implementare il [canale web](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) di Adobe Journey Optimizer utilizzando Adobe Experience Platform Web SDK. Questa lezione descrive i prerequisiti fondamentali per il canale web, i passaggi dettagliati per la configurazione e un approfondimento su un caso d’uso incentrato sullo stato di fedeltà.
+Scopri come implementare il [canale web](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/web/get-started-web) di Adobe Journey Optimizer utilizzando Adobe Experience Platform Web SDK. Questa lezione descrive i prerequisiti fondamentali per il canale web, i passaggi dettagliati per la configurazione e un approfondimento su un caso d’uso incentrato sullo stato di fedeltà.
 
 Seguendo questa lezione, gli utenti di Journey Optimizer possono utilizzare il canale web per la personalizzazione online avanzata utilizzando il web designer di Journey Optimizer.
 
@@ -57,7 +57,7 @@ Per completare le lezioni in questa sezione, devi prima:
   > 1. Il sito web è incorporato in un iframe.
   > 1. Il sito per il controllo qualità o il sito di staging del cliente non è accessibile esternamente (è un sito interno).
 
-* Durante la creazione di esperienze web e l&#39;inclusione di contenuto dalla libreria Adobe Experience Manager Assets Essentials, è necessario [configurare il sottodominio per la pubblicazione di questo contenuto](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
+* Durante la creazione di esperienze web e l&#39;inclusione di contenuto dalla libreria Adobe Experience Manager Assets Essentials, è necessario [configurare il sottodominio per la pubblicazione di questo contenuto](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
 * Se utilizzi la funzione di sperimentazione dei contenuti, assicurati che il set di dati web sia incluso anche nella configurazione di reporting.
 * Attualmente, sono supportati due tipi di implementazioni per abilitare l’authoring e la distribuzione di campagne canale web sulle proprietà web:
    * Solo lato client: per modificare il sito Web, è necessario implementare Adobe Experience Platform Web SDK.
@@ -128,7 +128,7 @@ Per configurare l’opzione nel criterio di unione:
 
 Per utilizzare esperimenti sui contenuti nelle campagne per canali web, devi assicurarti che il set di dati web utilizzato sia incluso anche nella configurazione di reporting. Il sistema di reporting di Journey Optimizer utilizza il set di dati in modalità di sola lettura per popolare i rapporti di sperimentazione dei contenuti preconfigurati.
 
-[L&#39;aggiunta di set di dati per il reporting dell&#39;esperimento sui contenuti è descritta in questa sezione](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets).
+[L&#39;aggiunta di set di dati per il reporting dell&#39;esperimento sui contenuti è descritta in questa sezione](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets).
 
 ## Panoramica del caso d’uso: premi fedeltà
 
@@ -307,7 +307,7 @@ L’estensione Adobe Experience Platform Debugger, disponibile sia per Chrome ch
 
 Puoi utilizzare il debugger sul sito Luma per convalidare l’esperienza del canale web in produzione. Si tratta di una best practice una volta che il caso di utilizzo Fedeltà e premi è attivo e in esecuzione, per garantire che tutto sia configurato correttamente.
 
-[Scopri come configurare il debugger nel browser utilizzando la guida qui](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
+[Scopri come configurare il debugger nel browser utilizzando la guida qui](https://experienceleague.adobe.com/it/docs/platform-learn/data-collection/debugger/overview).
 
 Per iniziare la convalida tramite il debugger:
 
@@ -342,4 +342,4 @@ Per iniziare la convalida tramite il debugger:
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=it)

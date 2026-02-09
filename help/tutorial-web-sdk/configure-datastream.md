@@ -15,7 +15,7 @@ ht-degree: 8%
 
 Scopri come configurare uno stream di dati per Adobe Experience Platform Web SDK.
 
-[Datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) indica ad Adobe Experience Platform Edge Network dove inviare i dati raccolti da Platform Web SDK. Nella configurazione dei flussi di dati, abilita le applicazioni Experience Cloud, l’account Experience Platform e l’inoltro di eventi.
+[Datastream](https://experienceleague.adobe.com/it/docs/experience-platform/datastreams/overview) indica ad Adobe Experience Platform Edge Network dove inviare i dati raccolti da Platform Web SDK. Nella configurazione dei flussi di dati, abilita le applicazioni Experience Cloud, l’account Experience Platform e l’inoltro di eventi.
 
 >[!WARNING]
 >
@@ -69,7 +69,7 @@ Nella schermata successiva, è possibile aggiungere al flusso di dati servizi co
 
 ## Sostituire uno stream di dati
 
-Le [sostituzioni dello stream di dati](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) consentono di definire configurazioni aggiuntive per lo stream di dati e quindi di ignorare la configurazione predefinita in determinate condizioni.
+Le [sostituzioni dello stream di dati](https://experienceleague.adobe.com/it/docs/experience-platform/datastreams/overrides) consentono di definire configurazioni aggiuntive per lo stream di dati e quindi di ignorare la configurazione predefinita in determinate condizioni.
 
 La sostituzione della configurazione dello stream di dati è un processo in due fasi:
 
@@ -82,4 +82,4 @@ Ora puoi installare l’estensione Platform Web SDK nella proprietà tag.
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=it)

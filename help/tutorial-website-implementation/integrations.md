@@ -33,12 +33,12 @@ Prima di seguire le istruzioni fornite in questa lezione, è necessario completa
 >
 >Esistono molti requisiti di autorizzazioni utente, configurazioni account e passaggi di provisioning necessari per utilizzare completamente queste integrazioni e che vanno oltre l’ambito di questa esercitazione. Se non utilizzi già queste integrazioni nell’implementazione corrente di Experience Cloud, prendi in considerazione quanto segue:
 >
->* Verifica tutti i requisiti delle [integrazioni dei Servizi Core](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)
->* Verifica i requisiti completi dell&#39;[integrazione di Analytics for Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)
+>* Verifica tutti i requisiti delle [integrazioni dei Servizi Core](https://experienceleague.adobe.com/it/docs/core-services/interface/services/getting-started)
+>* Verifica i requisiti completi dell&#39;[integrazione di Analytics for Target](https://experienceleague.adobe.com/it/docs/target/using/integrate/a4t/before-implement)
 
 ## Tipi di pubblico
 
-[Audiences](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview) fa parte del servizio core Persone e consente di condividere i tipi di pubblico tra le soluzioni. Ad esempio, puoi creare un tipo di pubblico in Audience Manager e utilizzarlo per distribuire contenuti personalizzati con Target.
+[Audiences](https://experienceleague.adobe.com/it/docs/core-services/interface/services/audiences/overview) fa parte del servizio core Persone e consente di condividere i tipi di pubblico tra le soluzioni. Ad esempio, puoi creare un tipo di pubblico in Audience Manager e utilizzarlo per distribuire contenuti personalizzati con Target.
 
 I requisiti principali per implementare A4T, operazione che hai già eseguito, sono i seguenti:
 
@@ -76,7 +76,7 @@ Questi passaggi di convalida si concentreranno sulla parte critica visibile nell
 
 ## Analytics for Target (A4T)
 
-L’integrazione [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) ti consente di sfruttare i dati di Analytics come origine per le metriche di reporting in Target.
+L’integrazione [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=it) ti consente di sfruttare i dati di Analytics come origine per le metriche di reporting in Target.
 
 I requisiti principali per implementare A4T, operazione che hai già eseguito, sono i seguenti:
 
