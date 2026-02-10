@@ -4,10 +4,10 @@ description: Creare le risorse e il modello Dynamic Media
 kt: 5342
 doc-type: tutorial
 exl-id: 3867f23b-9b88-4971-a892-5821800e39ac
-source-git-commit: 3c56760cee47197130cdf7bfc32540c208a86917
+source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
 workflow-type: tm+mt
-source-wordcount: '1580'
-ht-degree: 1%
+source-wordcount: '2241'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +47,7 @@ Dovresti vedere questo.
 
 ![AEM Assets Dynamic Media](./images/aaemassdmcomp4.png)
 
-A questo punto dovresti ricevere un&#39;e-mail simile a quella riportata di seguito, contenente la tua password temporanea. Per modificare la password o recuperarla nel caso in cui non sia stato ricevuto un messaggio di posta elettronica, installare l&#39;**app desktop Adobe Dynamic Media Classic**. Le istruzioni di installazione sono disponibili qui: [https://experienceleague.adobe.com/it/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app](https://experienceleague.adobe.com/it/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app).
+A questo punto dovresti ricevere un&#39;e-mail simile a quella riportata di seguito, contenente la tua password temporanea. Per modificare la password o recuperarla nel caso in cui non sia stato ricevuto un messaggio di posta elettronica, installare l&#39;**app desktop Adobe Dynamic Media Classic**. Le istruzioni di installazione sono disponibili qui: [https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app).
 
 Segui le istruzioni e torna qui una volta che l’app è installata sul tuo sistema.
 
@@ -134,17 +134,63 @@ Questa è la versione per Parigi.
 
 Potenzialmente, ci saranno molte altre città in cui Citisegnale distribuirà Fibre Max in modo che in futuro possano essere creati nuovi livelli in questo file. Per il momento l&#39;attenzione si concentra sulle 3 città già menzionate.
 
-Per utilizzare queste varianti in combinazione con AEM Assets Dynamic Media, i livelli di ciascuna città devono essere esportati come immagini. A tale scopo, passare a **File** > **Esporta** > **Livelli in file...**.
+Per utilizzare queste varianti in combinazione con AEM Assets Dynamic Media, i livelli di ciascuna città devono essere esportati come immagini separatamente senza il file di sfondo e deve essere eseguita un’altra esportazione per il livello di sfondo senza includere alcuna città.
+
+Ora dovete nascondere e mostrare solo uno dei livelli. Il primo livello da mostrare è il livello **Parigi** e tutti gli altri livelli devono essere nascosti.
+
+Per esportare il livello, passare a **File** > **Esporta** > **Esporta con nome...**.
 
 ![AEM Assets Dynamic Media](./images/aemdm4.png)
 
-Dovresti vedere qualcosa del genere. Selezionare un percorso in cui esportare i file, selezionare il tipo di file **PNG-8** e fare clic su **Esegui**.
+Dovresti vedere questo. Selezionare il tipo di file **PNG**, verificare che **Transparency** sia abilitato e quindi fare clic su **Export**.
 
 ![AEM Assets Dynamic Media](./images/aemdm5.png)
 
-Dopo un paio di secondi, dovresti vederlo. Fai clic su **OK**.
+Cambia il nome del file in `citisignal-fiber-max-is-coming-paris.png` e fai clic su **Esporta**.
 
 ![AEM Assets Dynamic Media](./images/aemdm6.png)
+
+Il livello successivo da visualizzare è il livello **Dubai** e tutti gli altri livelli devono essere nascosti.
+
+Per esportare il livello, passare a **File** > **Esporta** > **Esporta con nome...**.
+
+![AEM Assets Dynamic Media](./images/aemdm4a.png)
+
+Dovresti vedere questo. Selezionare il tipo di file **PNG**, verificare che **Transparency** sia abilitato e quindi fare clic su **Export**.
+
+![AEM Assets Dynamic Media](./images/aemdm5a.png)
+
+Cambia il nome del file in `citisignal-fiber-max-is-coming-dubai.png` e fai clic su **Esporta**.
+
+![AEM Assets Dynamic Media](./images/aemdm6a.png)
+
+Il livello successivo da visualizzare è il livello **New York** e tutti gli altri livelli devono essere nascosti.
+
+Per esportare il livello, passare a **File** > **Esporta** > **Esporta con nome...**.
+
+![AEM Assets Dynamic Media](./images/aemdm4b.png)
+
+Dovresti vedere questo. Selezionare il tipo di file **PNG**, verificare che **Transparency** sia abilitato e quindi fare clic su **Export**.
+
+![AEM Assets Dynamic Media](./images/aemdm5b.png)
+
+Cambia il nome del file in `citisignal-fiber-max-is-coming-newyork.png` e fai clic su **Esporta**.
+
+![AEM Assets Dynamic Media](./images/aemdm6b.png)
+
+Il livello successivo da visualizzare è il livello **sfondo** e tutti gli altri livelli devono essere nascosti.
+
+Per esportare il livello, passare a **File** > **Esporta** > **Esporta con nome...**.
+
+![AEM Assets Dynamic Media](./images/aemdm4c.png)
+
+Dovresti vedere questo. Selezionare il tipo di file **PNG**, verificare che **Transparency** sia abilitato e quindi fare clic su **Export**.
+
+![AEM Assets Dynamic Media](./images/aemdm5c.png)
+
+Cambia il nome del file in `citisignal-fiber-max-is-coming-background` e fai clic su **Esporta**.
+
+![AEM Assets Dynamic Media](./images/aemdm6c.png)
 
 Dovresti quindi avere questi file disponibili nel percorso di esportazione selezionato.
 
@@ -318,9 +364,72 @@ Modificando alcune variabili, ora viene visualizzata un’altra immagine.
 
 Modificando più variabili, ora viene visualizzata un’altra immagine.
 
-![AEM Assets Dynamic Media](./images/aemdm48.png)
+Per utilizzare questo modello con Adobe Journey Optimizer e soddisfare i requisiti di questo caso d’uso, è necessario aggiungere un ulteriore livello che verrà utilizzato per modificare dinamicamente il percorso del file da visualizzare, in base a un campo che fa parte di Real-Time Customer Profile in Adobe Experience Platform.
 
-Il modello Dynamic Media è ora configurato correttamente. Nell’esercizio successivo, utilizzerai tale modello in combinazione con una campagna e-mail in Adobe Journey Optimizer.
+Durante il processo di creazione dati, è stato creato un campo in Schema Adobe Experience Platform per memorizzare la **città di rollout più vicina** per un cliente. Il percorso del campo è `--aepTenantId--.individualCharacteristics.fiber_rollout.closest_rollout_city`.
+
+>[!NOTE]
+>
+>La schermata seguente dello schema Adobe Experience Platform ha valore puramente informativo. Non è necessario passare ad AEP per visualizzarlo.
+
+![AEM Assets Dynamic Media](./images/aemdm50.png)
+
+Nell’esercizio successivo, utilizzerai quel campo per selezionare dinamicamente quale immagine mostrare a quale cliente.
+
+Per renderlo possibile, devi aggiungere un nuovo livello immagine.
+
+Per prima cosa, nascondiamo gli altri livelli che contengono immagini per le città di rollout.
+
+![AEM Assets Dynamic Media](./images/aemdm51.png)
+
+Quindi, vai a **Immagini** e seleziona un&#39;immagine casuale di una città, aggiungila all&#39;area di lavoro e accertati che sia adatta all&#39;intera area di lavoro. Non importa quale immagine della città scegli, poiché il percorso verrà modificato dinamicamente da AJO nel prossimo esercizio.
+
+![AEM Assets Dynamic Media](./images/aemdm52.png)
+
+
+![AEM Assets Dynamic Media](./images/aemdm53.png)
+
+Vai a **Parametri**.
+
+Fai clic sull&#39;icona **commutatore** in modo che il campo **Nascondi** sia abilitato. Cambia il **Nome parametro** in `dynamic_city_hide`.
+
+Fai clic sull&#39;icona **commutatore** in modo che il campo **Nascondi** sia abilitato. Cambia il **Nome parametro** in `dynamic_city_image`.
+
+Fai clic su **Salva**.
+
+![AEM Assets Dynamic Media](./images/aemdm54.png)
+
+Fare clic su **Anteprima**.
+
+![AEM Assets Dynamic Media](./images/aemdm55.png)
+
+Dovresti vedere questo. Abilita l&#39;icona del commutatore su **Includi tutti i parametri**. Modifica alcune variabili di input come indicato nella schermata. Dovresti vedere la tua immagine cambiare dinamicamente in base all’input fornito. I campi statici **city_paris**, **city_dubai** e **city_ny** devono essere impostati su 1, il che significa che queste immagini saranno nascoste.
+
+Il campo **dynamic_city_hide** deve essere impostato su 0, ovvero verrà visualizzato.
+
+Il campo **dynamic_city_image** ora contiene l&#39;URL dell&#39;immagine di Parigi, che si presenta così: `vangeluwCitiSignalDM/citisignal-fiber-max-is-coming_citisignal-paris-1`.
+
+![AEM Assets Dynamic Media](./images/aemdm56.png)
+
+Selezionare la parola **paris** nell&#39;URL.
+
+![AEM Assets Dynamic Media](./images/aemdm57.png)
+
+Cambia **paris** in `newyork` e quindi fai clic in un altro punto dell&#39;interfaccia utente per visualizzare la modifica dell&#39;immagine nella città di New York.
+
+![AEM Assets Dynamic Media](./images/aemdm58.png)
+
+Seleziona la parola **newyork** e modificala in `dubai`, quindi fai clic in un altro punto dell&#39;interfaccia utente per visualizzare la modifica dell&#39;immagine nella città di Dubai.
+
+Infine, fare clic su **Pubblica**.
+
+![AEM Assets Dynamic Media](./images/aemdm60.png)
+
+Dovresti vedere questo. Fare clic su **Sì**.
+
+![AEM Assets Dynamic Media](./images/aemdm61.png)
+
+Il modello Dynamic Media è ora configurato e pubblicato correttamente. Nell’esercizio successivo, utilizzerai tale modello in combinazione con una campagna e-mail in Adobe Journey Optimizer.
 
 ## Passaggi successivi
 
