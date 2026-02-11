@@ -4,7 +4,7 @@ description: Configurazione dell’ambiente di sviluppo
 kt: 5342
 doc-type: tutorial
 exl-id: c9bfb327-362f-4475-89da-8e9788940d56
-source-git-commit: ce3ee3dde103383a6f7897cba36d548058879ea7
+source-git-commit: 25901342e8d9c46b0edce3b2092b9f1d66ba5849
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Seleziona **App Builder**.
 
 ![Estendibilità GSPeM](./images/commerceagent2.png)
 
-Immettere il nome `--aepUserLdap-- vangeluw Commerce Events`. Fai clic su **Salva**.
+Immettere il nome `--aepUserLdap-- Commerce Events`. Fai clic su **Salva**.
 
 ![Estendibilità GSPeM](./images/commerceagent4.png)
 
@@ -175,7 +175,7 @@ Ora hai impostato gli elementi di base per poter eseguire un progetto App Builde
 
 ## Passaggi successivi
 
-Vai a [Usa Cursor.ai per sviluppare il progetto](./ex2.md){target="_blank"}
+Vai a [Usa il cursore per sviluppare il progetto](./ex2.md){target="_blank"}
 
 Torna a [Strumenti per sviluppatori intelligenti per Adobe Commerce](./aiassisteddev.md){target="_blank"}
 

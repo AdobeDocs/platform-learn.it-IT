@@ -3,7 +3,7 @@ title: Panoramica di Agentic AI Tech Labs
 description: Panoramica di Agentic AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
+source-git-commit: 79e869a8764224b630c1523d272316e37c93d65a
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -77,7 +77,7 @@ In questo esercizio imparerai a:
 
 **Obiettivo**
 
-In questo modulo utilizzerai strumenti per sviluppatori intelligenti come Cursor.ai per sviluppare un’estensione per il tuo ambiente Adobe Commerce as a Cloud Service. L’obiettivo di tale estensione è quello di inoltrare gli eventi di ordine in arrivo a un endpoint di terze parti. L’inoltro degli eventi in Adobe Commerce as a Cloud Service si basa su Adobe I/O App Builder, Adobe I/O Events e Adobe I/O Runtime. La configurazione di tutti questi servizi sarà assistita da Cursor.ai.
+In questo modulo utilizzerai strumenti di sviluppo intelligenti come Cursore per sviluppare un’estensione per l’ambiente Adobe Commerce as a Cloud Service. L’obiettivo di tale estensione è quello di inoltrare gli eventi di ordine in arrivo a un endpoint di terze parti. L’inoltro degli eventi in Adobe Commerce as a Cloud Service si basa su Adobe I/O App Builder, Adobe I/O Events e Adobe I/O Runtime. La configurazione di tutti questi servizi sarà assistita dal cursore.
 
 ![Informazioni tecniche](./assets/images/techinsiders.png){width="50px" align="left"}
 
