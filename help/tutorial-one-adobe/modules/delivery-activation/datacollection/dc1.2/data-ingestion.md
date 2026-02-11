@@ -4,9 +4,9 @@ description: Foundation - Acquisizione dati
 kt: 5342
 doc-type: tutorial
 exl-id: 0fa38179-637b-4dda-a4e4-754a4cdd61a8
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '386'
 ht-degree: 1%
 
 ---
@@ -54,11 +54,7 @@ In questo esercizio, andrai sul sito web e sull’app mobile e ti comporterai co
 
 [1.2.5 Data Landing Zone](./ex5.md)
 
-Configura il connettore Source Data Landing Zone con l’archiviazione BLOB di Azure.
-
-[Riepilogo e vantaggi](./summary.md)
-
-Riepilogo di questo modulo e panoramica dei vantaggi.
+Imposta il connettore Source Data Landing Zone con l’archiviazione BLOB di Azure.
 
 ![Informazioni tecniche](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

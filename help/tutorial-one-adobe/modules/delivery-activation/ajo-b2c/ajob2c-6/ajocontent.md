@@ -3,9 +3,10 @@ title: Gestione dei contenuti Adobe Journey Optimizer
 description: Gestione dei contenuti Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
-source-git-commit: 37e7d88e77f424d30e4f7c210f703cd1748a6c13
+exl-id: 43161ace-b2bc-418c-8f2b-a8fe0e3d0ebf
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '185'
 ht-degree: 2%
 
 ---
@@ -35,10 +36,6 @@ In questo esercizio configurerai e utilizzerai le pagine di destinazione in Adob
 [3.6.3 AJO e GenStudio for Performance Marketing](./ex3.md)
 
 In questo esercizio, importerai un modello di marchio da GenStudio for Performance Marketing e lo utilizzerai in Adobe Journey Optimizer, utilizzerai l’intelligenza artificiale generativa in GenStudio for Performance Marketing per creare un’esperienza e-mail e poi lo utilizzerai in Adobe Journey Optimizer.
-
-[Riepilogo e vantaggi](./summary.md)
-
-Riepilogo di questo modulo e panoramica dei vantaggi.
 
 ![Informazioni tecniche](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

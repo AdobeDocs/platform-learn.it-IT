@@ -4,9 +4,9 @@ description: Real-time CDP - Destinazioni SDK
 kt: 5342
 doc-type: tutorial
 exl-id: c18acbf5-92f5-4cd2-a5aa-a5e9debb98c9
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1126'
 ht-degree: 5%
 
 ---
@@ -160,7 +160,7 @@ Sostituire il segnaposto **{{body}}** con il codice seguente:
         }
     ],
     "uiAttributes": {
-        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=it",
+        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en",
         "category": "streaming",
         "connectionType": "Server-to-server",
         "frequency": "Streaming"
@@ -299,8 +299,6 @@ Torna al webhook aperto su [https://eodts05snjmjz67.m.pipedream.net](https://eod
 ![Acquisizione dei dati](./images/destsdk10.png)
 
 ## Passaggi successivi
-
-Vai a [Riepilogo e vantaggi](./summary.md){target="_blank"}
 
 Torna a [Real-time CDP - Crea un pubblico e intervieni](./real-time-cdp-build-a-segment-take-action.md){target="_blank"}
 

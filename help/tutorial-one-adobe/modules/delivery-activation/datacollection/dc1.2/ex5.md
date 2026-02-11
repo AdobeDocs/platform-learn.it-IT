@@ -4,9 +4,9 @@ description: Foundation - Acquisizione dei dati - Acquisizione dei dati da origi
 kt: 5342
 doc-type: tutorial
 exl-id: 9fce6ece-f454-45de-9c95-35d604b3ae95
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '767'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 In questo esercizio, l’obiettivo è quello di configurare il connettore Source Data Landing Zone con l’archiviazione BLOB di Azure.
 
-Data Landing Zone è un’interfaccia di archiviazione Azure Blob fornita da Adobe Experience Platform che consente di accedere a una struttura di archiviazione dei file sicura e basata su cloud per portare i file in Platform. Data Landing Zone supporta l’autenticazione basata su SAS e i suoi dati sono protetti con i meccanismi di sicurezza standard dell’archiviazione BLOB di Azure a riposo e in transito. L’autenticazione basata su SAS consente di accedere in modo sicuro al contenitore della Data Landing Zone tramite una connessione Internet pubblica.
+Data Landing Zone è un’interfaccia di archiviazione Azure Blob fornita da Adobe Experience Platform che consente di accedere a una struttura di archiviazione dei file sicura e basata su cloud per inserire i file in Platform. Data Landing Zone supporta l’autenticazione basata su SAS e i suoi dati sono protetti con i meccanismi standard di sicurezza dello storage Azure Blob a riposo e in transito. L’autenticazione basata su SAS consente di accedere in modo sicuro al contenitore della Data Landing Zone tramite una connessione Internet pubblica.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Per copiare BLOB o file nell’area di destinazione dati di Adobe Experience Pla
 
 ![dlz-unzip-azcopy.png](./images/dlzunzipazcopy.png)
 
-## 1.2.5.2 Collegare Data Landing Zone a Adobe Experience Platform
+## 1.2.5.2 Connettere la zona di destinazione dati a Adobe Experience Platform
 
 Accedi a Adobe Experience Platform da questo URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
@@ -64,11 +64,11 @@ Fare clic sull&#39;icona come indicato per copiare **SASUri**.
 
 ![dlz-copy-sas-uri.png](./images/dlzcopysasuri.png)
 
-## Copia il file csv nella zona di destinazione dati AEP
+## Copia il file csv nell’area di destinazione dati di AEP
 
-Ora è possibile acquisire i dati in Adobe Experience Platform utilizzando gli strumenti della riga di comando di Azure utilizzando AZCopy.
+Ora è possibile acquisire i dati in Adobe Experience Platform utilizzando gli strumenti per riga di comando di Azure mediante AZCopy.
 
-Apri un terminale nel percorso di installazione di azcopy ed esegui il seguente comando per copiare un file nella zona di destinazione dati di AEP:
+Apri un terminale nel percorso di installazione di azcopy ed esegui il seguente comando per copiare un file nell’area di destinazione dati di AEP:
 
 ``./azcopy copy <your-local-file> <your SASUri>``
 
@@ -114,7 +114,7 @@ Ora è possibile mappare i dati di origine in arrivo dal file csv ai campi di de
 >
 > Non preoccuparti dei potenziali errori di mappatura. La mappatura verrà corretta nel passaggio successivo.
 
-## Mappa campi
+## Mappare i campi
 
 Innanzitutto, fai clic sul pulsante **Cancella tutte le mappature**. Puoi quindi iniziare con una mappatura pulita.
 
@@ -138,7 +138,7 @@ Selezionare il campo ``--aepTenantId--``.identifier.core.ecid nella struttura de
 
 Devi mappare un paio di altri campi, fai clic su **+ Nuovo tipo di campo** seguito da **Aggiungi nuovo campo** e aggiungi i campi per questa mappatura
 
-| sorgente | destinazione |
+| sorgente | target |
 |---|---|
 | resource.info.pagename | web.webPageDetails.name |
 | timestamp | timestamp |
@@ -169,8 +169,6 @@ Il caricamento dei dati può richiedere alcuni minuti. Al termine, lo stato visu
 ![dlz-monitor-dataflow-result.png](./images/dlzmonitordataflowresult.png)
 
 ## Passaggi successivi
-
-Vai a [Riepilogo e vantaggi](./summary.md){target="_blank"}
 
 Torna a [Acquisizione dati](./data-ingestion.md){target="_blank"}
 

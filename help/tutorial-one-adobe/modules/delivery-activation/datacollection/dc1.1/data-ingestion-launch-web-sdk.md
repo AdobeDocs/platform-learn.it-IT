@@ -4,9 +4,9 @@ description: 'Foundation: configurazione di Raccolta dati di Adobe Experience Pl
 kt: 5342
 doc-type: tutorial
 exl-id: 8c613648-9007-49fb-898f-039c366297da
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ Questo modulo introduce alcuni concetti e tecnologie che hanno un impatto che va
 - Scopri i flussi di dati utilizzati da un brand per acquisire i dati dai suoi prodotti Adobe.
 - Scopri come inviare dati a Adobe Experience Platform e ad altri prodotti tramite Adobe Experience Platform Edge Network.
 - Scopri come creare elementi dati e regole che raccolgono dati da web e dispositivi mobili.
-- Scopri gli eventi di tracciamento di [Web SDK](https://experienceleague.adobe.com/it/docs/experience-platform/web-sdk/home) e come eseguirne il debug.
+- Scopri gli eventi di tracciamento di [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) e come eseguirne il debug.
 - Scopri cos’è un livello dati e cosa consiglia Adobe quando ne implementa uno.
-- Scopri i passaggi necessari per implementare [Web SDK](https://experienceleague.adobe.com/it/docs/experience-platform/web-sdk/home) da zero.
+- Scopri i passaggi necessari per implementare [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) da zero.
 - Scopri la differenza tra un’implementazione web e mobile.
 
 ## Prerequisiti
@@ -67,10 +67,6 @@ In questo esercizio, configura un’attività in Adobe Target, implementata tram
 [Requisiti dello schema XDM 1.1.7 in Adobe Experience Platform](./ex7.md)
 
 Affinché il Web SDK possa acquisire i dati in Adobe Experience Platform, è necessario che un mixin XDM specifico faccia parte dello schema XDM in Adobe Experience Platform.
-
-[Riepilogo e vantaggi](./summary.md)
-
-Riepilogo di questo modulo e panoramica dei vantaggi.
 
 ![Informazioni tecniche](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

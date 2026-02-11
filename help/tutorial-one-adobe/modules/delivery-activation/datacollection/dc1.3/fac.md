@@ -4,9 +4,9 @@ description: Raccolta dati - Composizione federata del pubblico
 kt: 5342
 doc-type: tutorial
 exl-id: a2449e72-794a-4ff0-a208-28303fd574d1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -47,10 +47,6 @@ In questo esercizio configurerai il modello dati in AEP per i dati federati.
 [1.3.3 Creare una composizione federata](./ex3.md)
 
 In questo esercizio configurerai il modello dati in AEP per i dati federati.
-
-[Riepilogo e vantaggi](./summary.md)
-
-Riepilogo di questo modulo e panoramica dei vantaggi.
 
 ![Informazioni tecniche](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

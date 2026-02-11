@@ -6,9 +6,9 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: fcf4fd2d-8225-408c-b394-539860ee2997
-source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '217'
 ht-degree: 3%
 
 ---
@@ -44,10 +44,6 @@ In questo esercizio configurerai il tuo percorso che distribuirà le notifiche p
 [3.3.3 Configurare una campagna con messaggi in-app](./ex3.md)
 
 In questo esercizio configurerai una campagna che distribuisce messaggi in-app ai clienti.
-
-[Riepilogo e vantaggi](./summary.md)
-
-Riepilogo di questo modulo e panoramica dei vantaggi.
 
 ![Informazioni tecniche](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

@@ -4,24 +4,24 @@ description: Hub eventi da Audience Activation a Microsoft Azure - Azione
 kt: 5342
 doc-type: tutorial
 exl-id: bff4d2ee-eaff-4b56-9fa0-4ffc3c368141
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
 
 # 2.4.7 Scenario completo
 
-## Avvia trigger dell’hub eventi di Azure
+## Avvia trigger hub eventi di Azure
 
-Per mostrare il payload inviato da Adobe Experience Platform Real-time CDP al nostro Azure Event Hub dopo la qualifica del pubblico, è necessario avviare la semplice funzione di attivazione dell’Azure Event Hub. Questa funzione semplifica il dump del payload nella console in Visual Studio Code. Ma ricorda che questa funzione può essere estesa in qualsiasi modo per interfacciarsi con tutti i tipi di ambienti utilizzando API e protocolli dedicati.
+Per mostrare il payload inviato da Adobe Experience Platform Real-time CDP al nostro Azure Event Hub al momento della qualificazione del pubblico, dobbiamo avviare la semplice funzione di trigger dell’Azure Event Hub. Questa funzione semplifica il dump del payload nella console in Visual Studio Code. Ma ricorda che questa funzione può essere estesa in qualsiasi modo per interfacciarsi con tutti i tipi di ambienti utilizzando API e protocolli dedicati.
 
 ### Avviare Visual Studio Code e avviare il progetto
 
 Assicurarsi che il progetto Visual Studio Code sia aperto e in esecuzione
 
-Per avviare, arrestare e riavviare la funzione di Azure in Visual Studio Code, fare riferimento all&#39;esercizio precedente.
+Per avviare, arrestare o riavviare la funzione Azure in Visual Studio Code, fare riferimento all&#39;esercizio precedente.
 
 Il **Terminal** del codice Visual Studio deve menzionare un elemento simile al seguente:
 
@@ -109,8 +109,6 @@ Se osservi attentamente il payload del pubblico, noterai che `--aepUserLdap-- - 
 Uno stato di pubblico di **realized** indica che il tuo profilo fa parte del pubblico, mentre lo stato di **exited** indica che il nostro profilo è stato rimosso dal pubblico.
 
 ## Passaggi successivi
-
-Vai a [Riepilogo e vantaggi](./summary.md){target="_blank"}
 
 Torna a [Real-Time CDP: da Audience Activation a Microsoft Azure Event Hub](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
 

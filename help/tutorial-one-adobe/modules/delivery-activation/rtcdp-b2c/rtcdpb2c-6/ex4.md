@@ -4,9 +4,9 @@ description: Installare e configurare Kafka Connect e il connettore Adobe Experi
 kt: 5342
 doc-type: tutorial
 exl-id: 51ddfdfc-fa5c-4bf4-bfc2-b4a88b0b8a4d
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1075'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Poi vedrai questo. Fai clic sul pulsante blu **Invia**, dopo il quale dovresti v
 
 ![Kafka](./images/kc11.png)
 
-Per creare un connettore, fare clic per aprire la seconda richiesta nella raccolta Kafka, **POST Crea connettore sink AEP** e passare a **Body**. Poi vedrai questo. Nella riga 11, dove è indicato **&quot;aep.endpoint&quot;: &quot;**, è necessario incollare l&#39;URL dell&#39;endpoint di streaming API HTTP ricevuto al termine di uno degli esercizi precedenti. L&#39;URL dell&#39;endpoint di streaming API HTTP è simile al seguente: `https://dcs.adobedc.net/collection/63751d0f299eeb7aa48a2f22acb284ed64de575f8640986d8e5a935741be9067`.
+Per creare un connettore, fare clic per aprire la seconda richiesta nella raccolta Kafka, **POST Creare il connettore AEP Sink** e passare a **Body**. Poi vedrai questo. Nella riga 11, dove è indicato **&quot;aep.endpoint&quot;: &quot;**, è necessario incollare l&#39;URL dell&#39;endpoint di streaming API HTTP ricevuto al termine di uno degli esercizi precedenti. L&#39;URL dell&#39;endpoint di streaming API HTTP è simile al seguente: `https://dcs.adobedc.net/collection/63751d0f299eeb7aa48a2f22acb284ed64de575f8640986d8e5a935741be9067`.
 
 ![Kafka](./images/kc12a.png)
 
@@ -232,8 +232,6 @@ Quindi, torna al tuo sito web demo e aggiorna la pagina. Ora dovresti visualizza
 Hai finito questo esercizio.
 
 ## Passaggi successivi
-
-Vai a [Riepilogo e vantaggi](./summary.md){target="_blank"}
 
 Torna a [Trasmetti dati da Apache Kafka a Adobe Experience Platform](./aep-apache-kafka.md){target="_blank"}
 

@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
 exl-id: d5eb2a8d-f6cb-4f35-b8d7-ac0b92ba9f85
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '258'
 ht-degree: 3%
 
 ---
@@ -46,10 +46,6 @@ In questo esercizio imparerai a configurare un messaggio e-mail.
 [3.1.3 Aggiorna la proprietà Data Collection e verifica il percorso](./ex4.md)
 
 Questo ti guiderà attraverso la configurazione di Launch per attivare l&#39;evento e fornire il payload corretto; infine, potrai inviare un’e-mail a te stesso.
-
-[Riepilogo e vantaggi](./summary.md)
-
-Riepilogo di questo modulo e panoramica dei vantaggi.
 
 ![Informazioni tecniche](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

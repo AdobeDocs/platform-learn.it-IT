@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 18b22ac4-313b-4b54-b480-dd6c27858e31
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '346'
 ht-degree: 1%
 
 ---
@@ -53,10 +53,6 @@ In questo esercizio creerai un segmento utilizzando il Generatore di segmenti di
 [2.1.5 Consultare Real-time Customer Profile in azione nel call center](./ex5.md)
 
 In questo esercizio impersonerai un dipendente del call center che riceve una chiamata da un cliente. Per avere un impatto reale sull&#39;esperienza del cliente, è necessario accedere a tutte le informazioni disponibili in tempo reale.
-
-[Riepilogo e vantaggi](./summary.md)
-
-Riepilogo di questo modulo e panoramica dei vantaggi.
 
 ![Informazioni tecniche](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

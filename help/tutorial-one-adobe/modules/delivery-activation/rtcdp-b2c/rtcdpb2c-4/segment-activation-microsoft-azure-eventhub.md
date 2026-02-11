@@ -4,30 +4,30 @@ description: Hub eventi da Audience Activation a Microsoft Azure
 kt: 5342
 doc-type: tutorial
 exl-id: c1f5566d-0f57-4554-95ee-950d66373716
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
 
 # 2.4 Real-Time CDP: da Audience Activation a Microsoft Azure Event Hub
 
-In questo modulo verrà impostata una destinazione Microsoft Azure EventHub come destinazione in tempo reale per Adobe Experience Platform Real-time CDP. Puoi anche configurare e distribuire una funzione di Azure che verrà attivata in tempo reale ogni volta che Adobe Experience Platform distribuisce un payload di pubblico alla destinazione di Azure EventHub. La funzione di Azure che verrà attivata mostrerà il meccanismo delle funzionalità di attivazione di Adobe Experience Platform Real-time CDP.
+In questo modulo, configurerai una destinazione Microsoft Azure EventHub come destinazione in tempo reale per Adobe Experience Platform Real-time CDP. Puoi anche configurare e distribuire una funzione Azure che verrà attivata in tempo reale ogni volta che Adobe Experience Platform distribuisce un payload di pubblico alla destinazione Azure EventHub. La funzione Azure che verrà attivata mostrerà il meccanismo delle funzionalità di attivazione di Adobe Experience Platform Real-time CDP.
 
 Come parte di questo modulo, comprenderai anche cosa attiva Real-time CDP per consegnare effettivamente un payload a una destinazione specifica. Discuteremo anche dello stato di qualifica di un pubblico e di come si relaziona all’attivazione.
 
 Adobe Experience Platform Real-time CDP supporta l’attivazione dei dati nelle destinazioni di archiviazione cloud in streaming, consentendoti di esportare i dati e gli eventi del pubblico in tempo reale in queste destinazioni in formato JSON. Puoi quindi descrivere la logica di business oltre a questi eventi nelle tue destinazioni
 
-Microsoft Azure Event Hubs è un servizio di acquisizione dati in tempo reale, completamente gestito, semplice, affidabile e scalabile. Trasmetti milioni di eventi al secondo da qualsiasi origine per creare pipeline di dati dinamiche e rispondere immediatamente alle sfide aziendali.
+Microsoft Azure Event Hubs è un servizio di acquisizione dei dati in tempo reale, completamente gestito e semplice da utilizzare, affidabile e scalabile. Trasmetti milioni di eventi al secondo da qualsiasi origine per creare pipeline di dati dinamiche e rispondere immediatamente alle sfide aziendali.
 
 ## Finalità di apprendimento
 
-- Acquisisci familiarità con gli hub eventi di Microsoft Azure
-- Configurare una destinazione RTCDP nell&#39;hub eventi di Microsoft Azure
+- Acquisisci familiarità con gli hub eventi Microsoft Azure
+- Configurare una destinazione RTCDP nell’hub eventi Microsoft Azure
 - Comprendere quando Real-time CDP si attiva e come si presenta il payload di attivazione
-- Configurare il codice Visual Studio per sviluppare, testare e distribuire il progetto Azure
-- Crea e distribuisci una funzione di Azure che utilizza i requisiti del pubblico forniti in tempo reale da RTCDP
+- Configurare Visual Studio Code per sviluppare, testare e distribuire il progetto Azure
+- Creare e distribuire una funzione Azure che utilizzi i requisiti del pubblico forniti in tempo reale da RTCDP
 
 ## Prerequisiti
 
@@ -42,11 +42,11 @@ Microsoft Azure Event Hubs è un servizio di acquisizione dati in tempo reale, c
 
 [2.4.1 Configurare l’ambiente](./ex1.md)
 
-In questo esercizio verrà configurato l&#39;ambiente Microsoft Azure.
+In questo esercizio configurerai l’ambiente Microsoft Azure.
 
 [2.4.2 Configurare l’ambiente Microsoft Azure EventHub](./ex2.md)
 
-In questo esercizio verrà configurato l’ambiente Microsoft Azure EventHub.
+In questo esercizio configurerai l’ambiente Microsoft Azure EventHub.
 
 [2.4.3 Configurare la destinazione dell’hub eventi di Azure in Adobe Experience Platform](./ex3.md)
 
@@ -62,15 +62,11 @@ In questo esercizio attiverai il pubblico nella destinazione EventHub.
 
 [2.4.6 Creare il progetto Microsoft Azure](./ex6.md)
 
-In questo esercizio creerai una funzione di Azure che verrà attivata in tempo reale quando Adobe Experience Platform rilascerà i requisiti del pubblico alla destinazione corrispondente dell’hub eventi di Azure.
+In questo esercizio creerai una funzione di Azure che verrà attivata in tempo reale quando Adobe Experience Platform rilascerà i requisiti di pubblico alla destinazione corrispondente dell’hub eventi di Azure.
 
 [2.4.7 Scenario completo](./ex7.md)
 
-A questo punto, tutto è pronto. Ora puoi esplorare il sito web demo e ottenere i requisiti del pubblico per la funzione Trigger dell’hub eventi di Microsoft Azure.
-
-[Riepilogo e vantaggi](./summary.md)
-
-Riepilogo di questo modulo e panoramica dei vantaggi.
+A questo punto, tutto è pronto. Ora puoi effettuare un po’ di navigazione sul sito web demo e ottenere le qualifiche del pubblico per la funzione Microsoft Azure Event Hub Trigger.
 
 ![Informazioni tecniche](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

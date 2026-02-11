@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer - Origini dati esterne e azioni personalizz
 kt: 5342
 doc-type: tutorial
 exl-id: 5c8cbec6-58c1-4992-a0c7-1a2b7c34e5b6
-source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '633'
 ht-degree: 1%
 
 ---
@@ -120,8 +120,6 @@ Un paio di secondi dopo, vedrai il messaggio di Adobe Journey Optimizer apparire
 ![Demo](./images/smsdemo4.png)
 
 ## Passaggi successivi
-
-Vai a [Riepilogo e vantaggi](./summary.md){target="_blank"}
 
 Torna a [Adobe Journey Optimizer: origini dati esterne e azioni personalizzate](journey-orchestration-external-weather-api-sms.md){target="_blank"}
 

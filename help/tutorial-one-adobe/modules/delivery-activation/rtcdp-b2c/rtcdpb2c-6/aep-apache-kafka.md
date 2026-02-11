@@ -4,9 +4,9 @@ description: In questo modulo imparerai a configurare il tuo cluster Apache Kafk
 kt: 5342
 doc-type: tutorial
 exl-id: 28c63675-272e-46ff-88fc-6cd4096d66ca
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '356'
 ht-degree: 1%
 
 ---
@@ -49,10 +49,6 @@ In questo esercizio configurerai un connettore Source API HTTP in Adobe Experien
 [2.6.4 Installare e configurare Kafka Connect e il connettore Adobe Experience Platform Sink](./ex4.md)
 
 In questo esercizio utilizzerai Kafka Connect per installare e utilizzare il connettore Adobe Experience Platform Sink e invierai gli eventi a Adobe Experience Platform manualmente.
-
-[Riepilogo e vantaggi](./summary.md)
-
-Riepilogo di questo modulo e panoramica dei vantaggi.
 
 ![Informazioni tecniche](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

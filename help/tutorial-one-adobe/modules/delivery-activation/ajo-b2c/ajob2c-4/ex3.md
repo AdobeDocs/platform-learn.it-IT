@@ -4,9 +4,9 @@ description: Questo esercizio spiega come utilizzare la personalizzazione dei se
 kt: 5342
 doc-type: tutorial
 exl-id: a1ad649e-d0c4-4e87-b784-1e2d99f34a2e
-source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '388'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ Poi vedrai questo.
 
 ![Journey Optimizer](./images/sbp5.png)
 
-Apri **Componenti contenuto** e trascina una **colonna 1:1** sopra l&#39;offerta AirPods.
+Apri **Componenti contenuto** e trascina una **1:1 colonna** sopra l&#39;offerta AirPods.
 
 ![Journey Optimizer](./images/sbp6.png)
 
@@ -71,12 +71,12 @@ Selezionare il segmento `--aepUserLdap-- - Interest in Plans` e fare clic sull&#
 
 Lasciare quindi invariata la prima riga e sostituire le righe 2 e 3 con questo codice:
 
-&grave;&grave;
+``
     PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
     PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
-&grave;&grave;
+``
 
 Allora avrai questo. Fai clic su **Salva**.
 
@@ -107,8 +107,6 @@ Se ti qualifichi per il segmento utilizzato, lo vedrai nell’e-mail che ricever
 Hai finito questo esercizio.
 
 ## Passaggi successivi
-
-Vai a [Riepilogo e vantaggi](./summary.md){target="_blank"}
 
 Torna a [Adobe Journey Optimizer](journeyoptimizer.md){target="_blank"}
 

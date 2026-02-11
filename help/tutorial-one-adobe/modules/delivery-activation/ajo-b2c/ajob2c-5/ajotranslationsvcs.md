@@ -4,9 +4,9 @@ description: Servizi di traduzione Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
 exl-id: c0b3e37f-69f5-41e3-8663-0dcf736d1fc0
-source-git-commit: b407941266a3d6151363f07592bd445034d44909
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '142'
 ht-degree: 2%
 
 ---
@@ -35,10 +35,6 @@ In questo esercizio, configurerai il provider di traduzioni utilizzando Microsof
 [3.5.3 Aggiungere lingue all’e-mail](./ex3.md)
 
 In questo esercizio aggiungerai le lingue all’e-mail nella campagna.
-
-[Riepilogo e vantaggi](./summary.md)
-
-Riepilogo di questo modulo e panoramica dei vantaggi.
 
 ![Informazioni tecniche](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

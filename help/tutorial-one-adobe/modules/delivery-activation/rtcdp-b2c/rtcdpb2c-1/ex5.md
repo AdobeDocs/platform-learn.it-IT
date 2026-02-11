@@ -4,10 +4,10 @@ description: Visualizza Real-time Customer Profile in azione nel call center
 kt: 5342
 doc-type: tutorial
 exl-id: d3bd34a1-5577-4da7-a5a5-0f186b1a73c2
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 3%
+source-wordcount: '315'
+ht-degree: 6%
 
 ---
 
@@ -43,7 +43,7 @@ Quindi, devi selezionare una delle tue identità e il namespace corrispondente e
 
 ![Profilo cliente](./images/identities.png)
 
-| Identità | Namespace |
+| Identità | Spazio dei nomi |
 |:-------------:| :---------------:|
 | Experience Cloud ID (ECID) | 79943948563923140522865572770524243489 |
 | Experience Cloud ID (ECID) | 70559351147248820114888181867542007989 |
@@ -57,8 +57,6 @@ Ora vedrai le informazioni che idealmente verrebbero visualizzate nel Call Cente
 ![Demo](./images/20.png)
 
 ## Passaggi successivi
-
-Vai a [Riepilogo e vantaggi](./summary.md){target="_blank"}
 
 Torna a [Profilo cliente in tempo reale](./real-time-customer-profile.md){target="_blank"}
 

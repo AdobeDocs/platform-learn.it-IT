@@ -4,9 +4,9 @@ description: In questo modulo utilizzerai i set di dati, gli schemi e le proprie
 kt: 5342
 doc-type: tutorial
 exl-id: dbf5e995-9c2e-4f72-b336-e942cb22cde5
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -58,10 +58,6 @@ In questo esercizio creerai e configurerai una funzione cloud di Google e inizie
 [2.5.5 Inoltrare gli eventi ad AWS Kinesis e AWS S3](./ex5.md)
 
 In questo esercizio configurerai l’ambiente AWS utilizzando AWS IAM, AWS Kinesis, AWS Firehose e AWS S3, dopodiché inizierai a inoltrare i dati evento raccolti da Web SDK.
-
-[Riepilogo e vantaggi](./summary.md)
-
-Riepilogo di questo modulo e panoramica dei vantaggi.
 
 ![Informazioni tecniche](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

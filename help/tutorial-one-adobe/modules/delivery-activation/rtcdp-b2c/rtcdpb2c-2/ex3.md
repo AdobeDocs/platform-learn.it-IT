@@ -4,9 +4,9 @@ description: Customer AI - Dashboard e segmentazione del punteggio (Predict & Ta
 kt: 5342
 doc-type: tutorial
 exl-id: a6df3ff1-f907-4185-8189-f0b39c67c943
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '269'
 ht-degree: 1%
 
 ---
@@ -60,8 +60,6 @@ Per assicurarsi che nell&#39;ambiente non vengano conservati dati demo non neces
 ![Profilo](./images/cleanup.png)
 
 ## Passaggi successivi
-
-Vai a [Riepilogo e vantaggi](./summary.md){target="_blank"}
 
 Torna a [Intelligent Services](./intelligent-services.md){target="_blank"}
 

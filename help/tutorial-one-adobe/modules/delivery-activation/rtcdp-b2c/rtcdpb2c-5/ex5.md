@@ -4,10 +4,10 @@ description: Inoltra gli eventi verso l’ecosistema AWS
 kt: 5342
 doc-type: tutorial
 exl-id: 9b5f1466-d173-40a0-beed-d4e859e64e40
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '1571'
-ht-degree: 2%
+source-wordcount: '1566'
+ht-degree: 3%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 ## Buono a sapersi
 
 Adobe Experience Platform supporta vari servizi Amazon come destinazione.
-Kinesis e S3 sono entrambe [destinazioni di esportazione profilo](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=it) e possono essere utilizzate come parte di Adobe Experience Platform Real-Time CDP.
+Kinesis e S3 sono entrambe [destinazioni di esportazione profilo](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=en) e possono essere utilizzate come parte di Adobe Experience Platform Real-Time CDP.
 Puoi inserire facilmente eventi di segmento di alto valore e gli attributi di profilo associati nei sistemi preferiti.
 
 In questo esercizio imparerai a configurare il tuo flusso Amazon Kinesis per inviare in streaming i dati dell’evento provenienti dall’ecosistema Adobe Experience Platform Edge a una destinazione di archiviazione cloud, come Amazon S3. Questa funzione è utile quando desideri raccogliere eventi di esperienza da proprietà web e mobili e inviarli nel data lake per l’analisi e il reporting operativo. I Datalake generalmente acquisiscono i dati in modalità batch con importazioni giornaliere di file di grandi dimensioni, non espongono un endpoint http pubblico che potrebbe essere utilizzato insieme all’inoltro di eventi.
@@ -344,8 +344,6 @@ Quando scarichi tale file e lo apri utilizzando un editor di testo, vedrai che c
 >Una volta che la configurazione funziona come previsto, non dimenticare di attivare AWS Kinesis Data Stream e Data Firehose per evitare di essere caricati!
 
 ## Passaggi successivi
-
-Vai a [Riepilogo e vantaggi](./summary.md){target="_blank"}
 
 Torna a [Connessioni Real-Time CDP: Inoltro eventi](./aep-data-collection-ssf.md){target="_blank"}
 

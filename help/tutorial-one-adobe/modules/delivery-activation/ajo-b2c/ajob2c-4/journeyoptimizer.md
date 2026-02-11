@@ -4,9 +4,9 @@ description: In questo modulo imparerai tutto quello che c’è da sapere su Jou
 kt: 5342
 doc-type: tutorial
 exl-id: b1422971-ffce-4f4f-9bd8-986f5f1537c3
-source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '240'
 ht-degree: 2%
 
 ---
@@ -44,10 +44,6 @@ In questo esercizio configurerai una campagna e-mail tradizionale.
 [3.4.3 Applicare la personalizzazione basata sui segmenti in un messaggio e-mail](./ex3.md)
 
 In questo esercizio, utilizzerai le appartenenze ai segmenti per definire quale contenuto verrà visualizzato all’interno di un’e-mail.
-
-[Riepilogo e vantaggi](./summary.md)
-
-Riepilogo di questo modulo e panoramica dei vantaggi.
 
 ![Informazioni tecniche](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
