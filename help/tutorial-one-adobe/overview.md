@@ -3,9 +3,9 @@ title: Panoramica - Tutorial tecnico completo - Un Adobe
 description: Tutorial tecnico completo - Un Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1325'
 ht-degree: 2%
 
 ---
@@ -72,7 +72,7 @@ In questo modulo configurerai e utilizzerai Adobe Workfront per gestire i flussi
 
 [1.1 Panoramica di Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
 
-In questo modulo verranno utilizzate le API di Adobe Firefly Services, le API di Photoshop e i servizi di archiviazione di Microsoft Azure per generare immagini e memorizzarle a livello di programmazione.
+In questo modulo utilizzerai le API di Adobe Firefly Services, le API di Photoshop e i servizi di archiviazione Microsoft Azure per generare immagini e memorizzarle a livello di programmazione.
 
 [1.2 Automazione del flusso di lavoro di Creative con Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
@@ -94,6 +94,14 @@ In questo modulo utilizzerai Adobe Frame.io in combinazione con Adobe Premiere P
 
 In questo modulo, verrà creata un’applicazione personalizzata per estendere le funzionalità in GenStudio for Performance Marketing, utilizzando Adobe IO e App Builder.
 
+[1.7 Generatore di flussi di lavoro](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
+
+In questo modulo utilizzerai Workflow Builder per risolvere casi d’uso ripetibili di progettazione creativa e automazione.
+
+[1.8 Revisione e approvazione unificate con Workfront, Frame.io e Enterprise Storage Management](./modules/creation-production/module1.8/esm.md){target="_blank"}
+
+In questo modulo, collegherai le funzionalità di gestione dei progetti e del lavoro di Workfront direttamente all’esperienza di revisione in tempo reale e collaborazione di Frame.io.
+
 ### &#x200B;3. Gestione degli asset e siti
 
 [1.1 Adobe Experience Manager Cloud Service e Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
@@ -103,6 +111,10 @@ In questo modulo configurerai il programma Adobe Experience Manager Cloud Servic
 [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
 
 In questo modulo esplorerai AEM Assets.
+
+[1.4 Adobe Experience Manager Assets e Dynamic Media](./modules/asset-mgmt/module1.4/aemassetsdm.md){target="_blank"}
+
+In questo modulo, configurerai AEM Assets Dynamic Media e utilizzerai il modello Dynamic Media in Adobe Journey Optimizer.
 
 [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"}
 
@@ -140,7 +152,7 @@ In questo modulo, puoi configurare un pubblico e attivarlo in diverse destinazio
 
 [2.4 Real-Time CDP: da Audience Activation a Microsoft Azure Event Hub](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
 
-In questo modulo verrà impostata una destinazione Microsoft Azure EventHub come destinazione in tempo reale per Adobe Experience Platform Real-time CDP.
+In questo modulo, configurerai una destinazione Microsoft Azure EventHub come destinazione in tempo reale per Adobe Experience Platform Real-time CDP.
 
 [2.5 Connessioni Real-Time CDP: Inoltro eventi](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md)
 
