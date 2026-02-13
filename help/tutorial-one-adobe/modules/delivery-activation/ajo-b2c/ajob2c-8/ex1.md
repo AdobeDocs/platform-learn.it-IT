@@ -4,9 +4,9 @@ description: Configurazione della base dati relazionali
 kt: 5342
 doc-type: tutorial
 exl-id: 532e5f2c-971f-488f-bef4-3a8141408cc8
-source-git-commit: 7a595d9b1fb3dc6a3b5b413e65dbaaaf5ac143c4
+source-git-commit: 9373f13336165d3fd49deebc450e3046f0471900
 workflow-type: tm+mt
-source-wordcount: '1805'
+source-wordcount: '1806'
 ht-degree: 2%
 
 ---
@@ -685,6 +685,6 @@ Tutti i dati vengono ora acquisiti. Nel prossimo esercizio inizierai a utilizzar
 
 Vai a [Crea la tua campagna orchestrata](./ex2.md){target="_blank"}
 
-Torna a [Adobe Journey Optimizer: Campagne](./ajocampaigns.md){target="_blank"}
+Torna a [Adobe Journey Optimizer: campagne orchestrate](./ajocampaigns.md){target="_blank"}
 
 Torna a [Tutti i moduli](./../../../../overview.md){target="_blank"}
