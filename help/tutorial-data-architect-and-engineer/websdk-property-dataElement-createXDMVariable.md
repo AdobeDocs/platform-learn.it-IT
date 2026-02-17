@@ -41,7 +41,7 @@ Prima di iniziare gli esercizi, guarda questi due brevi video per ulteriori info
 
 >[!NOTE]
 >
->Questo tutorial è incentrato sull&#39;acquisizione in streaming da siti Web con Web SDK, ma è anche possibile eseguire lo streaming dei dati utilizzando [Mobile SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview), [Edge Network Server API](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/server-api/overview) e [HTTP API](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/streaming/http).
+>Questo tutorial è incentrato sull&#39;acquisizione in streaming da siti Web con Web SDK, ma è anche possibile eseguire lo streaming dei dati utilizzando [Mobile SDK](https://experienceleague.adobe.com/it/docs/platform-learn/implement-mobile-sdk/overview), [Edge Network Server API](https://experienceleague.adobe.com/it/docs/platform-learn/data-collection/server-api/overview) e [HTTP API](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/streaming/http).
 
 ## Autorizzazioni obbligatorie
 
