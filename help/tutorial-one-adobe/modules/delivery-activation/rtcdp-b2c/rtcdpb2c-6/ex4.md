@@ -4,7 +4,7 @@ description: Installare e configurare Kafka Connect e il connettore Adobe Experi
 kt: 5342
 doc-type: tutorial
 exl-id: 51ddfdfc-fa5c-4bf4-bfc2-b4a88b0b8a4d
-source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
+source-git-commit: 38a5f35d337a67b5abe4b9c97319bc3d5d0897c7
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 0%
@@ -198,7 +198,7 @@ Dovresti quindi avere qualcosa del genere:
 
 ![Kafka](./images/kc21.png)
 
-Quindi, copia l’evento di esperienza completo negli Appunti. È necessario eliminare lo spazio vuoto del payload JSON e a tale scopo verrà utilizzato uno strumento online. Vai a [http://jsonviewer.stack.hu/](http://jsonviewer.stack.hu/) per farlo.
+Quindi, copia l’evento di esperienza completo negli Appunti. È necessario eliminare lo spazio vuoto del payload JSON e a tale scopo verrà utilizzato uno strumento online. Vai a [https://jsonviewer.stack.hu/](https://jsonviewer.stack.hu/) per farlo.
 
 Incolla l&#39;evento esperienza nell&#39;editor e fai clic su **Rimuovi spazio vuoto**.
 
