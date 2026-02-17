@@ -3,10 +3,10 @@ title: Stato contenuto
 description: Stato contenuto
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: c8607416fbff6970bd348ff5d52656902c14317b
+source-git-commit: 1e20509f0005c6060764fa3f572acbd14fb76600
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 9%
+source-wordcount: '581'
+ht-degree: 10%
 
 ---
 
@@ -18,16 +18,16 @@ Di seguito è riportata una panoramica dello stato del contenuto in questa eserc
 
 | Nome | Ultimo aggiornamento | Lavorativo al 100% | Osservazioni | Investimento nel tempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [. Introduzione &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Sì | - | 45 min |
+| [. Introduzione ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Sì | - | 45 min |
 
-## &#x200B;1. Flusso di lavoro e pianificazione
+## Flusso di lavoro e pianificazione
 
 | Nome | Ultimo aggiornamento | Lavorativo al 100% | Osservazioni | Investimento nel tempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
 | [1.1 Adobe Workfront Planning](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 02/08/2025 | Sì | - | 45 min |
 | [1.2 Gestione dei flussi di lavoro con Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 02/08/2025 | Sì | Contenuto non ancora terminato | 1 ora e 30 min |
 
-## &#x200B;2. Creazione e produzione
+## Creazione e produzione
 
 | Nome | Ultimo aggiornamento | Lavorativo al 100% | Osservazioni | Investimento nel tempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
@@ -37,17 +37,18 @@ Di seguito è riportata una panoramica dello stato del contenuto in questa eserc
 | [1.4 Adobe Express e Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 01/04/2025 | Sì | - | 45 min |
 | [1.5 Semplifica il flusso di lavoro con Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 02/08/2025 | Sì | - | 1 ora |
 | [1.6 GenStudio for Performance Marketing - Estensibilità](./modules/creation-production/module1.6/genstudioext.md){target="_blank"} | 21/08/2025 | Sì | - | 1 ora e 30 min |
-| [1.7 Generatore di flussi di lavoro](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"} | 02/02/2026 | No | Contenuto in fase di sviluppo | - |
-| [1.8 Enterprise Storage Management](./modules/creation-production/module1.8/esm.md){target="_blank"} | 02/02/2026 | No | Contenuto in fase di sviluppo | - |
+| [1.7 Flussi di lavoro personalizzati Firefly](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"} | 17/02/2026 | Sì | - | - |
+| [1.8 Enterprise Storage Management](./modules/creation-production/module1.8/esm.md){target="_blank"} | 17/02/2026 | Sì | - | - |
 
 
-## &#x200B;3. Gestione degli attivi
+## Gestione delle risorse
 
 | Nome | Ultimo aggiornamento | Lavorativo al 100% | Osservazioni | Investimento nel tempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
 | [1.1 Adobe Experience Manager Cloud Service e Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 01/05/2025 | Sì | - | 1 ora e 30 min |
 | [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"} | 20/08/2025 | Sì | - | 30 min |
-| [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 23/09/2025 | Sì | - | 1 ora |
+| [1.4 Adobe Experience Manager Assets e Dynamic Media](./modules/asset-mgmt/module1.4/aemassetsdm.md){target="_blank"} | 17/02/2026 | Sì | - | 1 ora e 30 minuti |
+| [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 23/09/2025 | Sì | - | 1 ora e 30 minuti |
 
 ## &#x200B;4. Consegna e attivazione
 
@@ -69,9 +70,9 @@ Di seguito è riportata una panoramica dello stato del contenuto in questa eserc
 | [3.5 Adobe Journey Optimizer: Servizi di traduzione](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md){target="_blank"} | 03/07/2025 | Sì | - | 2 ore |
 | [3.6 Adobe Journey Optimizer: gestione dei contenuti](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md){target="_blank"} | 03/07/2025 | Sì | - | 2 ore |
 | [3.7 Adobe Journey Optimizer: Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md){target="_blank"} | 03/07/2025 | No | Contenuti in fase di sviluppo | Da definire |
-| [3.8 Adobe Journey Optimizer: Campagne](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md){target="_blank"} | 03/07/2025 | No | Contenuti in fase di sviluppo | Da definire |
+| [3.8 Adobe Journey Optimizer: Campagne](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md){target="_blank"} | 03/07/2025 | Sì | - | 1 ora e 30 minuti |
 
-## &#x200B;5. Reporting e informazioni
+## Reporting e approfondimenti
 
 | Nome | Ultimo aggiornamento | Lavorativo al 100% | Osservazioni | Investimento nel tempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
@@ -80,7 +81,7 @@ Di seguito è riportata una panoramica dello stato del contenuto in questa eserc
 | Servizio query [2.1](./modules/reporting-insights/datadistiller/dd-1/query-service.md){target="_blank"} | 04/12/2024 | Sì | - | 2 ore |
 | [3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md){target="_blank"} | 02/08/2025 | No | Contenuti in fase di sviluppo | Da definire |
 
-## &#x200B;6. IA per gli agenti
+## IA agentica
 
 | Nome | Ultimo aggiornamento | Lavorativo al 100% | Osservazioni | Investimento nel tempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
@@ -88,6 +89,8 @@ Di seguito è riportata una panoramica dello stato del contenuto in questa eserc
 | [1.2 IA agente](./modules/agents/module1.2/agenticai.md){target="_blank"} | 02/02/2026 | No | Contenuti in fase di sviluppo | Da definire |
 | [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 23/01/2026 | Sì | - | 90 min |
 | [1.5 Analytics e agenti](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 02/02/2026 | Sì | - | 45 min |
+| [1.6 Adobe Experience Manager e agenti](./modules/agents/module1.6/aemagents.md){target="_blank"} | 17/02/2026 | No | Contenuti in fase di sviluppo | Da definire |
+| [1.7 Strumenti per sviluppatori intelligenti per Adobe Commerce](./modules/agents/module1.7/aiassisteddev.md){target="_blank"} | 17/02/2026 | Sì | - | 45 min |
 
 {style="table-layout:auto"}
 
