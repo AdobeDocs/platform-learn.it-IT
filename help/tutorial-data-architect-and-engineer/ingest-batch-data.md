@@ -218,7 +218,7 @@ C&#39;è una cosa interessante che è appena successa che voglio sottolineare. A
 
 Congratulazioni, hai appena unito i profili.
 
-![Profilo unito ](assets/ingestion-crm-profileLinkedIdentities.png)
+![Profilo unito &#x200B;](assets/ingestion-crm-profileLinkedIdentities.png)
 
 #### Convalida con eventi di acquisizione dati
 
