@@ -3,20 +3,20 @@ title: Abilitazione tecnica di GenStudio for Content Supply Chain
 description: Abilitazione tecnica di GenStudio for Content Supply Chain
 doc-type: multipage-overview
 exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
-source-git-commit: 42f6d8a07baa03a9ab31cff0ef518ae2c5ad930e
+source-git-commit: 9ff92b0c295f854219631f1463c3ccabc1a65938
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Panoramica - Abilitazione tecnica di GenStudio for Content Supply Chain
+# Panoramica - Abilitazione tecnica di GenStudio for Content Supply chain
 
 ![Informazioni tecniche](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Panoramica
 
-Se stai partecipando a uno dei nostri workshop in diretta incentrati su GenStudio per l’abilitazione tecnica della catena di fornitura dei contenuti, questo è il punto di partenza per i Tech Labs che prenderai.
+Se stai partecipando a uno dei nostri workshop in diretta incentrati su GenStudio for Content Supply chain Technical Enablement, questo è il punto di partenza per i Tech Labs che prenderai.
 
 All’interno dei Tech Labs, come parte di questo workshop di abilitazione tecnica, imparerai in modo pratico le seguenti applicazioni:
 
@@ -28,7 +28,7 @@ All’interno dei Tech Labs, come parte di questo workshop di abilitazione tecni
 
 I Tech Labs a cui parteciperai fanno parte di un tutorial One Adobe più ampio, dove puoi saperne di più sulle soluzioni Adobe Creative Cloud e Adobe Experience Cloud. Se sei interessato a scoprire cosa è disponibile, consulta: [Panoramica di un tutorial su Adobe](./overview.md)
 
-## Laboratori tecnici GenStudio per la supply chain dei contenuti
+## GenStudio per Content Supply chain Tech Labs
 
 Di seguito sono riportati i Tech Labs che parteciperai come parte di questo workshop di abilitazione tecnica.
 
@@ -62,7 +62,7 @@ In questo modulo fondamentale utilizzerai Adobe Express per creare immagini e vi
 
 In questo modulo utilizzerai Adobe Frame.io in combinazione con Adobe Premiere Pro per collaborare e rivedere immagini e video.
 
-### Gestione risorse
+### Gestione delle risorse
 
 [Adobe Experience Manager Cloud Service e Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 

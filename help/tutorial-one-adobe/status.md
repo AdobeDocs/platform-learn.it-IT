@@ -3,9 +3,9 @@ title: Stato contenuto
 description: Stato contenuto
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 1e20509f0005c6060764fa3f572acbd14fb76600
+source-git-commit: 877965ea9e83d39faff4d05eeb7dd66eb8cbac5a
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '595'
 ht-degree: 10%
 
 ---
@@ -18,7 +18,7 @@ Di seguito è riportata una panoramica dello stato del contenuto in questa eserc
 
 | Nome | Ultimo aggiornamento | Lavorativo al 100% | Osservazioni | Investimento nel tempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [. Introduzione &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Sì | - | 45 min |
+| [. Introduzione ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Sì | - | 45 min |
 
 ## Flusso di lavoro e pianificazione
 
@@ -47,6 +47,7 @@ Di seguito è riportata una panoramica dello stato del contenuto in questa eserc
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
 | [1.1 Adobe Experience Manager Cloud Service e Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 01/05/2025 | Sì | - | 1 ora e 30 min |
 | [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"} | 20/08/2025 | Sì | - | 30 min |
+| [1.3 Adobe Experience Manager Forms con Edge Delivery Services](./modules/asset-mgmt/module1.3/aemforms.md){target="_blank"} | 23/02/2026 | Sì | - | 60 min |
 | [1.4 Adobe Experience Manager Assets e Dynamic Media](./modules/asset-mgmt/module1.4/aemassetsdm.md){target="_blank"} | 17/02/2026 | Sì | - | 1 ora e 30 minuti |
 | [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 23/09/2025 | Sì | - | 1 ora e 30 minuti |
 
