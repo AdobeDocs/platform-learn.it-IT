@@ -3,7 +3,8 @@ title: Creare il primo modulo
 description: Creare il primo modulo
 kt: 5342
 doc-type: tutorial
-source-git-commit: 9aad8cb1fdfa739d1660bc25376b874fa8ed8c89
+exl-id: 288e113f-2e9e-4352-8ddd-ca231b552b70
+source-git-commit: d2b746d50ec559e0b29a7adb27c3521b0e00d386
 workflow-type: tm+mt
 source-wordcount: '1109'
 ht-degree: 9%
@@ -100,7 +101,7 @@ Verifica la configurazione dell&#39;archivio Github, in particolare nel file **p
 
 Con questi requisiti, puoi creare il primo modulo.
 
-## 1.3.1.1 Crea modulo
+## 1.3.1.2 Crea modulo
 
 Vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. L&#39;organizzazione da selezionare è `--aepImsOrgName--`. Apri l’ambiente.
 
@@ -270,7 +271,7 @@ Dopo la pubblicazione, il modulo è ora disponibile anche nel dominio Edge Deliv
 
 ![AEM Forms](./images/aemforms29.png)
 
-## 1.3.1.2 Invia modulo
+## 1.3.1.3 Invia modulo
 
 Per inviare il modulo, sono necessari 2 elementi:
 

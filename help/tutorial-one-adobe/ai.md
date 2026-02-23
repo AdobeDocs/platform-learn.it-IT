@@ -3,9 +3,9 @@ title: Panoramica di Agentic AI Tech Labs
 description: Panoramica di Agentic AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 79e869a8764224b630c1523d272316e37c93d65a
+source-git-commit: 1abfd8d1f270a810dd65d9921c69834df2a9147d
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,20 @@ In questo esercizio imparerai a:
 
 - Connetti ChatGPT e/o Claude.ai a **Customer Journey Analytics** ed esegui attività di analisi dei dati
 - Connetti ChatGPT e/o Claude.ai a **Adobe Analytics** ed esegui attività di analisi dei dati
+
+[1.6 AEM e agenti](./modules/agents/module1.6/aemagents.md){target="_blank"}
+
+**Obiettivo**
+
+Adobe Experience Manager ora include diversi agenti appositamente progettati per svolgere lavori che hanno richiesto un notevole impegno manuale. Non si tratta di assistenti di intelligenza artificiale generici, ma di agenti formati sul dominio che comprendono a fondo AEM e operano su contenuti, codice, risorse, governance e ottimizzazione.
+
+- **Experience Production Agent**, che accelera gli aggiornamenti, le modifiche al contenuto e persino le migrazioni complete dei siti.
+- **Agente di governance**, applica automaticamente brand, diritti e regole di conformità.
+- **Discovery Agent**, prepara il contenuto per l&#39;individuazione nativa dell&#39;intelligenza artificiale e funge da stratega intelligente.
+- **Agente di ottimizzazione dei contenuti** crea immediatamente varianti di risorse specifiche per il canale e pronte per le prestazioni.
+- **Agente di sviluppo**, accelera gli sviluppatori con la risoluzione dei problemi basata sull&#39;intelligenza artificiale e l&#39;ottimizzazione delle prestazioni.
+
+In questo esercizio imparerai a utilizzare questi agenti utilizzando sia l’Assistente AI che il Cursore tramite la configurazione del server MCP personalizzato.
 
 [1.7 Strumenti per sviluppatori intelligenti per Adobe Commerce](./modules/agents/module1.7/aiassisteddev.md)
 
