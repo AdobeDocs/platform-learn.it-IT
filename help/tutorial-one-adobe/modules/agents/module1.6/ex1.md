@@ -4,9 +4,9 @@ description: Guida introduttiva agli agenti AEM
 kt: 5342
 doc-type: tutorial
 exl-id: cb1bf6f0-f329-4e38-ba64-36ffdc3b8bd4
-source-git-commit: abec60dbd2a67228fb5bbcedaadc7494e0057eda
+source-git-commit: c7108c2818ee7fad820af33b99f277181bcf6a02
 workflow-type: tm+mt
-source-wordcount: '1636'
+source-wordcount: '1674'
 ht-degree: 1%
 
 ---
@@ -461,7 +461,24 @@ Dovresti quindi ottenere una conferma della pubblicazione delle modifiche.
 
 ### Aggiornamento contenuto - Creazione modulo
 
-L’abilità di Creazione di moduli consente agli utenti di creare moduli adattivi attraverso prompt in linguaggio naturale senza dipendere dai team di sviluppo o IT. Questa funzionalità accelera lo sviluppo dei moduli mantenendo al contempo la coerenza del marchio e consentendo agli utenti aziendali di creare moduli senza una profonda conoscenza tecnica dei prodotti.
+Nel modulo [Adobe Experience Manager Forms con Edge Delivery Services](./../../asset-mgmt/module1.3/aemforms.md){target="_blank"} puoi trovare i passaggi necessari per creare un modulo in modo manuale.
+
+L’abilità di Creazione di moduli ora consente agli utenti di creare moduli adattivi attraverso prompt in linguaggio naturale senza dipendere dai team di sviluppo o IT. Questa funzionalità accelera lo sviluppo dei moduli mantenendo al contempo la coerenza del marchio e consentendo agli utenti aziendali di creare moduli senza una profonda conoscenza tecnica dei prodotti.
+
+Vai a [https://experience.adobe.com/#/ai-assistant/chat](https://experience.adobe.com/#/ai-assistant/chat).
+
+![Agenti AEM](./images/aemagentsforms1.png)
+
+Immetti il seguente prompt e fai clic su **invia**.
+
+```
+Create a new adaptive form using Edge Delivery Services with the following details:
+- Form name: "citisignal-fiber-max-interest-2"
+- Form fields: 4 text input fields are needed, for "first-name", "last-name", "email" and "city"
+- When the form is submitted, send the submission to a spreadsheet, with this URL: https://docs.google.com/spreadsheets/d/1WwKrcM8mZ2d_W3sMheUAw3nFhP_OFk05TsqxhHkudfQ/edit?usp=sharing.
+```
+
+
 
 ## Passaggi successivi
 
