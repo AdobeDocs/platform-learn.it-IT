@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Scopri come configurare e utilizzare la destinazione Snowflake Batch in Adobe Real-Time CDP per distribuire istantanee giornaliere del pubblico con aggiornamento completo nel tuo account Snowflake. Scopri il flusso di lavoro end-to-end in Adobe Experience Platform, come i dati vengono visualizzati come tabella dinamica in Snowflake e i passaggi di configurazione e le convalide chiave per garantire un’integrazione corretta.
 
-Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch).
+Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch).
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3480182/?learn=on&enablevpops)
