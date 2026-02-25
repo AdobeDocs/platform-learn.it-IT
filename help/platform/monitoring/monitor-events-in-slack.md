@@ -4,18 +4,16 @@ description: Scopri come ricevere le notifiche di Experience Platform in Slack t
 feature: Monitoring
 role: Developer, Admin
 level: Intermediate
-doc-type: Tutorial
-duration: 0
+duration: 519
 last-substantial-update: 2026-02-24T00:00:00Z
 jira: KT-20339
-thumbnail: KT-20339.jpeg
-source-git-commit: 268df348b1151394acde869ba4814b658a27e8ff
+exl-id: 6d4a072c-9eef-4a38-9459-9e1cbd66bfb5
+source-git-commit: 4ec7a800ef963f9b1257e2f246428abff32e9b94
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1539'
 ht-degree: 0%
 
 ---
-
 
 # Monitorare gli eventi di Experience Platform in Slack
 
@@ -95,7 +93,7 @@ Innanzitutto, crea un progetto con il modello App Builder in Adobe Developer Con
 1. Immettere un titolo per il progetto, ad esempio `Slack webhook integration`
 1. Seleziona **[!UICONTROL Salva]**
 
-### Passaggio 2: inizializzare l’ambiente di runtime
+### Inizializzare l’ambiente di runtime
 
 Esegui i seguenti comandi nel terminale per creare la struttura del progetto:
 
@@ -105,7 +103,7 @@ Esegui i seguenti comandi nel terminale per creare la struttura del progetto:
 aio login
 ```
 
-#### Inizializzare un nuovo progetto App Builder
+#### Passaggio 2: inizializzare un nuovo progetto App Builder
 
 ```
 aio app init slack-webhook-proxy
@@ -143,7 +141,7 @@ aio app add action
 2. Vedere l&#39;azione **[!UICONTROL publish-events]** nella tabella visualizzata; premere **Space** per selezionare l&#39;azione. Se il cerchio accanto al nome viene riempito come mostrato nell&#39;esercitazione video, premi **Invio**
 3. Denomina l&#39;azione `webhook-proxy`
 
-### Passaggio 3: codice dell&#39;azione proxy
+### Passaggio 3: aggiornare il codice dell’azione proxy
 
 In un IDE o in un editor di testo, creare/modificare il file `actions/webhook-proxy/index.js` con il codice seguente. Questa implementazione inoltra gli eventi a Slack. La verifica della firma e la gestione della verifica della verifica sono automatiche quando si utilizza la registrazione delle azioni di runtime.
 
@@ -298,7 +296,7 @@ Quando utilizzi un’azione non web e la registri tramite l’opzione &quot;Azio
 
 Questo significa che il codice deve gestire solo la logica di business (inoltro a Slack).
 
-### Passaggio 5: Variabili di ambiente
+### Passaggio 4: aggiornare le variabili di ambiente
 
 Per gestire in modo sicuro le credenziali, vengono utilizzate le variabili di ambiente. Crea/modifica il file `.env` nella directory principale del progetto per aggiungere l&#39;URL del webhook di Slack. Assicurarsi di visualizzare i file nascosti nel sistema se il file `.env` non è visualizzato:
 
@@ -308,7 +306,7 @@ Per gestire in modo sicuro le credenziali, vengono utilizzate le variabili di am
 SLACK_WEBHOOK_URL=https://hooks.slack.com/services/YOUR/WEBHOOK/URL
 ```
 
-### Passaggio 6: distribuisci
+### Passaggio 5: distribuire l’azione
 
 Una volta impostate le variabili di ambiente, distribuisci l’azione. Assicurati di trovarti nella directory principale del progetto, ovvero `slack-webhook-proxy`, quando esegui questo comando nel terminale.
 
@@ -318,7 +316,7 @@ aio app deploy
 
 L&#39;azione viene distribuita in Adobe I/O Runtime ed è disponibile in Developer Console per la registrazione.
 
-### Passaggio 7: Registrazione finale (Adobe Developer Console)
+### Passaggio 6: registrare l’azione in Adobe Developer Console
 
 Una volta implementata l’azione, registrala come destinazione per gli eventi Adobe.
 
@@ -328,7 +326,7 @@ Una volta implementata l’azione, registrala come destinazione per gli eventi A
 1. Seleziona **[!UICONTROL Adobe Experience Platform]** come prodotto.
 1. Seleziona **[!UICONTROL Notifiche piattaforma]** come tipo di eventi.
 1. Seleziona gli eventi specifici (o tutti) di cui vuoi ricevere una notifica in Slack e seleziona **[!UICONTROL Successivo]**.
-1. Seleziona o [crea le tue credenziali OAuth](https://experienceleague.adobe.com/it/docs/platform-learn/tutorials/api/platform-api-authentication){target=_blank}.
+1. Seleziona o [crea le tue credenziali OAuth](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/api/platform-api-authentication){target=_blank}.
 1. Configura **[!UICONTROL Dettagli registrazione evento]**:
    1. **[!UICONTROL Nome registrazione]**: assegna alla registrazione un nome descrittivo.
    1. **[!UICONTROL Descrizione registrazione]**: assicurarsi che sia esplicito in modo che altri collaboratori possano essere a conoscenza delle operazioni eseguite.
@@ -338,9 +336,9 @@ Una volta implementata l’azione, registrala come destinazione per gli eventi A
 1. Seleziona **[!UICONTROL Salva eventi configurati]**.
 
 
-### Passaggio 8: convalida con un evento di esempio
+### Passaggio 7: convalidare con un evento di esempio
 
-Puoi verificare l’intero flusso end-to-end facendo clic sul pulsante &quot;Invia evento di esempio&quot; accanto a qualsiasi evento configurato.
+Puoi verificare l’intero flusso end-to-end facendo clic sull’icona &quot;Invia evento di esempio&quot; accanto a qualsiasi evento configurato.
 
 L’evento di esempio viene inviato sul canale configurato durante la creazione dell’app Slack e del webhook. Dovresti trovare qualcosa di simile al seguente:
 
