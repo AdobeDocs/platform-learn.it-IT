@@ -6,7 +6,7 @@ jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
 source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '1541'
+source-wordcount: '1547'
 ht-degree: 3%
 
 ---
@@ -91,6 +91,7 @@ In questo esercizio creerai uno schema XDM utilizzando i gruppi di campi della l
 1. Seleziona il pulsante **[!UICONTROL Crea schema]** in alto a destra
 
    ![Crea schema](assets/schema-xdm-create-schema.png)
+1. Seleziona **[!UICONTROL Manuale]** nella schermata successiva
 1. Seleziona **[!UICONTROL Evento esperienza]** nella seguente schermata
 1. Seleziona **[!UICONTROL Avanti]**
 
@@ -103,7 +104,7 @@ In questo esercizio creerai uno schema XDM utilizzando i gruppi di campi della l
    >Una convenzione di denominazione comune per gli schemi XDM consiste nel denominare lo schema dopo l’origine dei dati.
 
 
-1. Seleziona fine
+1. Seleziona **[!UICONTROL Fine]**
 
    ![Fine evento esperienza schema](assets/schema-name-schema.png)
 

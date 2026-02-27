@@ -3,9 +3,9 @@ title: Trasmettere i dati a Adobe Experience Platform con Platform Web SDK
 description: Scopri come inviare dati web a Adobe Experience Platform tramite Web SDK. Questa lezione fa parte del tutorial Implementare Adobe Experience Cloud con Web SDK.
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '2338'
+source-wordcount: '2321'
 ht-degree: 4%
 
 ---
@@ -17,9 +17,6 @@ Scopri come trasferire i dati web in streaming a Adobe Experience Platform con P
 Experience Platform è la spina dorsale di tutte le nuove applicazioni Experience Cloud, come Adobe Real-Time Customer Data Platform, Adobe Customer Journey Analytics e Adobe Journey Optimizer. Queste applicazioni sono progettate per utilizzare Platform Web SDK come metodo ottimale di raccolta dei dati web.
 
 
->[!WARNING]
->
-> Il sito web Luma utilizzato in questa esercitazione dovrebbe essere sostituito durante la settimana del 16 febbraio 2026. Il lavoro svolto come parte di questo tutorial potrebbe non essere applicabile al nuovo sito web.
 
 ![Diagramma Web SDK e Adobe Experience Platform](assets/dc-websdk-aep.png)
 
@@ -49,7 +46,7 @@ Per completare questa lezione, devi prima:
 
 ## Creare un set di dati
 
-Tutti i dati acquisiti correttamente in Adobe Experience Platform vengono memorizzati nel data lake come set di dati. Un [set di dati](https://experienceleague.adobe.com/it/docs/experience-platform/catalog/datasets/overview) è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella che contiene uno schema (colonne) e campi (righe). I set di dati contengono anche metadati che descrivono vari aspetti dei dati memorizzati.
+Tutti i dati acquisiti correttamente in Adobe Experience Platform vengono memorizzati nel data lake come set di dati. Un [set di dati](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella che contiene uno schema (colonne) e campi (righe). I set di dati contengono anche metadati che descrivono vari aspetti dei dati memorizzati.
 
 Configuriamo un set di dati per i dati dell’evento web Luma:
 
@@ -71,7 +68,7 @@ Configuriamo un set di dati per i dati dell’evento web Luma:
 
 1. Fornisci un **[!UICONTROL Nome]** e una **[!UICONTROL Descrizione]** facoltativi per il set di dati. Per questo esercizio, utilizza `Luma Web Event Data`, quindi seleziona **[!UICONTROL Fine]**
 
-   ![Nome set di dati &#x200B;](assets/experience-platform-create-dataset-schema-name.png)
+   ![Nome set di dati ](assets/experience-platform-create-dataset-schema-name.png)
 
 Ora è configurato un set di dati per iniziare a raccogliere dati dall’implementazione di Platform Web SDK.
 
@@ -81,20 +78,22 @@ Ora puoi configurare il [!UICONTROL flusso di dati] per inviare dati a [!UICONTR
 
 1. Apri l&#39;interfaccia di [Data Collection](https://experience.adobe.com/#/data-collection){target="blank"}
 1. Seleziona **[!UICONTROL Datastreams]** dal menu di navigazione a sinistra
-1. Apri lo stream di dati creato nella lezione [Configurare uno stream di dati](configure-datastream.md), `Luma Web SDK`
+1. Apri lo stream di dati creato nella lezione [Configurare uno stream di dati](configure-datastream.md), `Luma Web SDK: Development Environment`
 
    ![Seleziona lo stream di dati di SDK Web Luma](assets/datastream-luma-web-sdk-development.png)
 
 1. Seleziona **[!UICONTROL Aggiungi servizio]**
    ![Aggiungi un servizio allo stream di dati](assets/experience-platform-addService.png)
 1. Seleziona **[!UICONTROL Adobe Experience Platform]** come **[!UICONTROL Servizio]**
+1. Seleziona **[!UICONTROL Abilitato]**
 1. Seleziona `Luma Web Event Data` come **[!UICONTROL Set di dati evento]**
+1. Abilita **[!UICONTROL Segmentazione Edge]**.
 
 1. Seleziona **[!UICONTROL Salva]**.
 
    ![Configurazione flusso di dati](assets/experience-platform-datastream-config.png)
 
-Quando generi traffico sul [sito demo Luma](https://luma.enablementadobe.com/content/luma/us/en.html) mappato alla proprietà tag, i dati popolano il set di dati in Experience Platform.
+Quando generi traffico sul [sito demo Luma](https://newluma.enablementadobe.com) mappato alla proprietà tag, i dati popolano il set di dati in Experience Platform.
 
 ## Convalidare il set di dati
 
@@ -108,15 +107,13 @@ Questo passaggio è fondamentale per assicurarsi che i dati siano arrivati nel s
 
 Questi passaggi sono più o meno gli stessi della lezione di [Debugger](validate-with-debugger.md). Tuttavia, poiché i dati verranno inviati a Platform solo dopo averli abilitati nello stream di dati, devi generare altri dati di esempio:
 
-1. Apri il [sito di dimostrazione Luma](https://luma.enablementadobe.com/content/luma/us/en.html) e seleziona l&#39;icona dell&#39;estensione [!UICONTROL Experience Platform Debugger]
+1. Apri il [sito di dimostrazione Luma](https://newluma.enablementadobe.com) e seleziona l&#39;icona dell&#39;estensione [!UICONTROL Experience Platform Debugger]
 
 1. Configura il debugger per mappare la proprietà tag nell&#39;ambiente di sviluppo *your*, come descritto nella lezione [Convalida con debugger](validate-with-debugger.md)
 
    ![Il tuo ambiente di sviluppo di Launch mostrato in Debugger](assets/experience-platform-debugger-dev.png)
 
-1. Accedi al sito Luma utilizzando le credenziali `test@test.com`/`test`
-
-1. Torna alla [home page di Luma](https://luma.enablementadobe.com/content/luma/us/en.html)
+1. Accedi al sito Luma utilizzando le credenziali `test@test.com`/`test` (se ricevi un messaggio di posta elettronica o password non valida, crea un account con tali credenziali)
 
 1. All’interno dei beacon di rete di Platform Web SDK mostrati dal debugger, seleziona la riga &quot;events&quot; (eventi) per espandere i dettagli in un pop-up
 
@@ -165,14 +162,14 @@ Per verificare che i dati siano stati inseriti nel data lake di Platform, un&#39
 
 >[!INFO]
 >
->  Per ulteriori dettagli sul servizio query di Adobe Experience Platform, vedi [Esplora i dati](https://experienceleague.adobe.com/it/docs/platform-learn/tutorials/queries/explore-data) nella sezione Esercitazioni di Platform.
+>  Per ulteriori dettagli sul servizio query di Adobe Experience Platform, vedi [Esplora i dati](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) nella sezione Esercitazioni di Platform.
 
 
 ## Abilitare il set di dati e lo schema per Real-Time Customer Profile
 
 Per i clienti di Real-Time Customer Data Platform e Journey Optimizer, il passaggio successivo consiste nell’abilitare il set di dati e lo schema per Real-Time Customer Profile. Lo streaming di dati da Web SDK sarà una delle molte origini dati che fluiranno in Platform e desideri unire i tuoi dati web con altre origini dati per creare profili cliente a 360 gradi. Per ulteriori informazioni su Real-Time Customer Profile, guarda questo breve video:
 
->[!VIDEO](https://video.tv.adobe.com/v/36266?learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
 >[!CAUTION]
 >
@@ -236,7 +233,7 @@ Innanzitutto devi generare più dati campione. Ripeti i passaggi precedenti di q
 1. Nell&#39;interfaccia [Experience Platform](https://experience.adobe.com/platform/), seleziona **[!UICONTROL Cliente]** > **[!UICONTROL Profili]** nell&#39;area di navigazione a sinistra
 
 1. Poiché lo spazio dei nomi **[!UICONTROL Identity]** utilizza `lumaCRMId`
-1. Copia e incolla il valore di `lumaCRMId` passato nella chiamata esaminata in Experience Platform Debugger, in questo caso `b642b4217b34b1e8d3bd915fc65c4452`.
+1. Copia e incolla il valore di `lumaCRMId` passato nella chiamata esaminata in Experience Platform Debugger, in questo caso `f660ab912ec121d1b1e928a0bb4bc61b`.
 
    ![Profilo](assets/experience-platform-validate-dataset-profile.png)
 
@@ -345,4 +342,4 @@ Poiché si tratta di un pubblico molto semplice, possiamo utilizzare il metodo d
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=it)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
