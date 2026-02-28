@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 45fec5b2a82e12bdc4a9d017664e8c11d5625cef
+source-git-commit: 97fba09ddba62cffe4428592ce25e4f26c3a5850
 workflow-type: tm+mt
 source-wordcount: '3316'
 ht-degree: 0%
@@ -38,13 +38,13 @@ Nell’interfaccia di Data Collection è necessario completare due attività pri
 
 Prima di iniziare gli esercizi, guarda questi due brevi video per ulteriori informazioni sull’acquisizione di dati in streaming e sul Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/36263?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/37267?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
->Questo tutorial è incentrato sull&#39;acquisizione in streaming da siti Web con Web SDK, ma è anche possibile eseguire lo streaming dei dati utilizzando [Mobile SDK](https://experienceleague.adobe.com/it/docs/platform-learn/implement-mobile-sdk/overview), [Edge Network Server API](https://experienceleague.adobe.com/it/docs/platform-learn/data-collection/server-api/overview) e [HTTP API](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/streaming/http).
+>Questo tutorial è incentrato sull&#39;acquisizione in streaming da siti Web con Web SDK, ma è anche possibile eseguire lo streaming dei dati utilizzando [Mobile SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview), [Edge Network Server API](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/server-api/overview) e [HTTP API](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/streaming/http).
 
 ## Autorizzazioni obbligatorie
 
@@ -263,13 +263,13 @@ Experience Platform Debugger è un’estensione disponibile per Chrome che conse
 
 Se non hai mai utilizzato il debugger prima, e questo è diverso dal precedente Adobe Experience Cloud Debugger, potresti voler guardare questo video di panoramica di cinque minuti:
 
->[!VIDEO](https://video.tv.adobe.com/v/36164?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Apri il sito web Luma.
 
 Per questo tutorial, utilizziamo una versione del sito web demo Luma in hosting pubblico. Apriamolo e aggiungiamo un segnalibro:
 
-1. In una nuova scheda del browser, apri il [sito Web Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
+1. In una nuova scheda del browser, apri il [sito Web Luma](https://newluma.enablementadobe.com).
 1. Aggiungi ai segnalibri la pagina da utilizzare nel resto dell’esercitazione
 
 Per questo sito in hosting abbiamo utilizzato `enablementadobe.com` nel campo [!UICONTROL Domini] della configurazione iniziale della proprietà tag e `data.enablementadobe.com` come dominio di prime parti nell&#39;estensione [!UICONTROL Adobe Experience Platform Web SDK]. Vedi, avevo un piano!
@@ -456,7 +456,7 @@ Dopo aver acquisito il valore ID CRM, è necessario associarlo a un tipo di elem
 
 Per verificare che l’ID del sistema di gestione delle relazioni con i clienti sia ora inviato dal Web SDK:
 
-1. Apri il [sito Web Luma](https://luma.enablementadobe.com/content/luma/us/en.html)
+1. Apri il [sito Web Luma](https://newluma.enablementadobe.com)
 1. Mappare il file alla proprietà tag utilizzando Debugger, come indicato nelle istruzioni precedenti
 1. Seleziona il collegamento **Accesso** in alto a destra nel sito Web Luma
 1. Accedi utilizzando le credenziali `test@test.com`/`test`
