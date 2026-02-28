@@ -24,4 +24,4 @@ Scopri come configurare e utilizzare la destinazione Snowflake Batch in Adobe Re
 Per ulteriori informazioni, consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3480182/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480192/?captions=ita&learn=on&enablevpops)
