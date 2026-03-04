@@ -4,7 +4,7 @@ description: Scopri come convalidare l’implementazione di Platform Web SDK con
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
+source-git-commit: 9985ee11daf48c181cbf209b2a354f5762d31b40
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 7%
@@ -26,14 +26,14 @@ Alla fine di questa lezione, potrai:
 
 ## Prerequisiti
 
-Conosci i tag di raccolta dati e il [sito di dimostrazione Luma](https://newluma.enablementadobe.com){target="_blank"} e hai completato le lezioni precedenti nell’esercitazione:
+Conosci i tag di raccolta dati e il [sito di dimostrazione Luma](https://luma.enablementadobe.com){target="_blank"} e hai completato le lezioni precedenti nell’esercitazione:
 
 * [Configurare uno schema XDM](configure-schemas.md)
 * [Configurare uno spazio dei nomi delle identità](configure-identities.md)
 * [Configurare uno stream di dati](configure-datastream.md)
 * [Estensione Web SDK installata nella proprietà tag](install-web-sdk.md)
 * [Creare elementi dati](create-data-elements.md)
-* [Creare identità](create-identities.md)
+* [Acquisire le identità](create-identities.md)
 * [Creare una regola di tag](create-tag-rule.md)
 * [Convalida con Debugger](validate-with-debugger.md)
 
@@ -48,7 +48,7 @@ Ogni volta che abiliti Edge Trace in Adobe Experience Platform Debugger, viene a
 
 Rivedi come abbiamo fatto questo nella lezione di Debugger:
 
-1. Vai al [sito demo Luma](https://newluma.enablementadobe.com) e utilizza il debugger per [passare la proprietà tag sul sito alla tua proprietà di sviluppo](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Vai al [sito demo Luma](https://luma.enablementadobe.com) e utilizza il debugger per [passare la proprietà tag sul sito alla tua proprietà di sviluppo](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Nel menu di navigazione a sinistra di **[!UICONTROL Experience Platform Debugger]** seleziona **[!UICONTROL Registri]**
 1. Seleziona la scheda **[!UICONTROL Edge]** e seleziona **[!UICONTROL Connetti]**
 
@@ -67,7 +67,7 @@ Rivedi come abbiamo fatto questo nella lezione di Debugger:
    ![Crea una sessione Assurance](assets/assurance-create-session.png)
 1. Seleziona Inizio
 1. Assegna un nome alla sessione, ad esempio `Luma Web SDK validation`
-1. Come **[!UICONTROL URL di base]** immettere `https://newluma.enablementadobe.com/`
+1. Come **[!UICONTROL URL di base]** immettere `https://luma.enablementadobe.com/`
    ![Assegna un nome alla sessione di Assurance](assets/assurance-name-session.png)
 1. Nella schermata successiva, seleziona **[!UICONTROL Copia collegamento]**
 1. Seleziona l’icona per copiare il collegamento negli Appunti
@@ -95,4 +95,4 @@ Ora che un oggetto XDM viene attivato su una pagina e sai come convalidare la ra
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=it)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

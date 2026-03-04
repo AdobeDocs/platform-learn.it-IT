@@ -7,7 +7,7 @@ role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: cecf8a4dcbf41ce23fd6b04c8401ba2dbb824f39
+source-git-commit: 9985ee11daf48c181cbf209b2a354f5762d31b40
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 31%
@@ -26,7 +26,7 @@ ht-degree: 31%
 + Configurazione tag {#tags-configuration}
    + [Installare l’estensione Web SDK](install-web-sdk.md)
    + [Creare elementi dati](create-data-elements.md)
-   + [Creare identità](create-identities.md)
+   + [Acquisire le identità](create-identities.md)
    + [Creare regole di tag](create-tag-rule.md)
    + [Convalida con Debugger](validate-with-debugger.md)
    + [Convalidare con Assurance](validate-with-assurance.md)

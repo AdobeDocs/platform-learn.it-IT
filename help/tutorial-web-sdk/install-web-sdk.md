@@ -4,10 +4,10 @@ description: Scopri come installare e configurare l’estensione tag Platform We
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
+source-git-commit: 6e04d7cc2e0bc2b5e080d7501f1d330cdb4edc5f
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 11%
+source-wordcount: '635'
+ht-degree: 10%
 
 ---
 
@@ -33,7 +33,7 @@ Devi aver completato le lezioni precedenti in questa esercitazione:
 
 ### Aggiungi una proprietà tag
 
-Innanzitutto devi avere una proprietà tag. Una proprietà è un contenitore per tutte le JavaScript, le regole e le altre funzioni necessarie per raccogliere i dettagli da una pagina web e inviarli a varie posizioni.
+Una proprietà tag è un contenitore per tutte le JavaScript, le regole e le altre funzioni necessarie per raccogliere i dettagli da una pagina web e inviarla a varie posizioni.
 
 Crea una nuova proprietà tag per l’esercitazione:
 
@@ -53,6 +53,7 @@ Con la creazione dello schema XDM, dello stream di dati e della proprietà tag, 
 1. Apri la nuova proprietà tag
 1. Vai a **[!UICONTROL Estensioni]** > **[!UICONTROL Catalogo]**
 1. Cerca `Adobe Experience Platform Web SDK`
+1. Seleziona l&#39;estensione `Adobe Experience Platform Web SDK` per aprire la barra laterale
 1. Seleziona **[!UICONTROL Installa]**
 
    ![Installa estensione Web SDK](assets/extension-platform-web-sdk.png)
@@ -60,7 +61,7 @@ Con la creazione dello schema XDM, dello stream di dati e della proprietà tag, 
 
 ## Collegare l’estensione allo stream di dati
 
-Lascia la maggior parte delle impostazioni predefinite e aggiornale in un secondo momento, in base alle esigenze. L’unica cosa da fare ora è collegare l’estensione allo stream di dati:
+Lascia la maggior parte delle impostazioni predefinite e aggiornale in un secondo momento, in base alle esigenze. L’unica cosa da fare ora è collegare l’estensione allo stream di dati. Questo aggiunge lo stream di dati/ID di configurazione corretto alle chiamate di rete effettuate dal browser, in modo che le chiamate vengano instradate allo stream di dati corretto quando arrivano in Platform Edge Network:
 
 1. In **[!UICONTROL Datastreams]**, seleziona il metodo di input **[!UICONTROL Scegli dall&#39;elenco]**
 1. Configura l&#39;**[!UICONTROL ambiente di produzione]**. (Gli altri ambienti di tag nella proprietà ereditano le impostazioni di produzione):
@@ -70,7 +71,7 @@ Lascia la maggior parte delle impostazioni predefinite e aggiornale in un second
 
    ![Selezione dello stream di dati](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Per ulteriori informazioni su ciascuna sezione dell&#39;estensione, vedere [Configurare l&#39;estensione Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/it/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+Per ulteriori informazioni su ciascuna sezione dell&#39;estensione, vedere [Configurare l&#39;estensione Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
@@ -84,4 +85,4 @@ Dopo aver installato Platform Web SDK e averlo associato allo stream di dati, è
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=it)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
