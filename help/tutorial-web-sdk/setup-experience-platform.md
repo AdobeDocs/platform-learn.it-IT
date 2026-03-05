@@ -66,7 +66,7 @@ Configuriamo un set di dati per i dati dell’evento web Luma:
 
 1. Fornisci un **[!UICONTROL Nome]** e una **[!UICONTROL Descrizione]** facoltativi per il set di dati. Per questo esercizio, utilizza `Luma Web Event Data`, quindi seleziona **[!UICONTROL Fine]**
 
-   ![Nome set di dati ](assets/experience-platform-create-dataset-schema-name.png)
+   ![Nome set di dati &#x200B;](assets/experience-platform-create-dataset-schema-name.png)
 
 Ora è configurato un set di dati per iniziare a raccogliere dati dall’implementazione di Platform Web SDK.
 
@@ -154,7 +154,7 @@ Ora, diamo un’occhiata al set di dati! Un&#39;opzione rapida consiste nell&#39
 
 1. Verrà eseguita una query per richiamare 100 righe di dati recenti dal set di dati. Puoi espandere i singoli campi XDM, ad esempio web.webPageDetails.name:
 
-   ![Anteprima set di dati ](assets/experience-platform-dataset-preview.png)
+   ![Anteprima set di dati &#x200B;](assets/experience-platform-dataset-preview.png)
 
 
 ### Eseguire una query sui dati
