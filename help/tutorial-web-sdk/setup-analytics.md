@@ -4,7 +4,7 @@ description: Scopri come configurare Adobe Analytics utilizzando Experience Plat
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 17adeb23768ee005428a204a98d18f4e76b9d945
+source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
 workflow-type: tm+mt
 source-wordcount: '2895'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Configurare Adobe Analytics con Adobe Experience Platform Web SDK
 
-Scopri come configurare Adobe Analytics utilizzando [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/it/docs/platform-learn/data-collection/web-sdk/overview), creare regole di tag per inviare dati ad Adobe Analytics e verificare che Analytics stia acquisendo i dati come previsto.
+Scopri come configurare Adobe Analytics utilizzando [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview), creare regole di tag per inviare dati ad Adobe Analytics e verificare che Analytics stia acquisendo i dati come previsto.
 
 [Adobe Analytics](https://experienceleague.adobe.com/it/docs/analytics) è un&#39;applicazione leader di settore che ti consente di comprendere i tuoi clienti come persone e gestire la tua attività grazie alle informazioni sul cliente.
 
@@ -37,7 +37,7 @@ Per completare questa lezione, devi prima:
 
 * Acquisisci familiarità con Adobe Analytics e accedi ad esso.
 
-* Avere almeno un ID suite per report test/dev. Se non hai una suite per report test/dev che puoi usare per questa esercitazione, [creane una](https://experienceleague.adobe.com/it/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* Avere almeno un ID suite per report test/dev. Se non hai una suite per report test/dev che puoi usare per questa esercitazione, [creane una](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Completa le lezioni precedenti nelle sezioni Configurazione iniziale e Configurazione tag di questa esercitazione.
 
@@ -80,7 +80,7 @@ A partire da maggio 2024, non è più necessario creare uno schema XDM per imple
 
 ### Campi mappati automaticamente
 
-Molti campi XDM vengono mappati automaticamente alle variabili di Analytics. Per l&#39;elenco aggiornato dei mapping, vedere [Mappatura delle variabili di Analytics in Adobe Experience Edge](https://experienceleague.adobe.com/it/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
+Molti campi XDM vengono mappati automaticamente alle variabili di Analytics. Per l&#39;elenco aggiornato dei mapping, vedere [Mappatura delle variabili di Analytics in Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
 Ciò si verifica se _anche se non hai definito uno schema personalizzato_. Experience Platform Web SDK raccoglie automaticamente alcuni dati e li invia a Platform Edge Network come campi XDM. Web SDK, ad esempio, legge l&#39;URL della pagina corrente e lo invia come campo XDM `web.webPageDetails.URL`. Questo campo viene inoltrato ad Adobe Analytics e automaticamente popola i rapporti URL pagina in Adobe Analytics.
 
@@ -193,7 +193,7 @@ Creiamo una regola per inviare una chiamata aggiuntiva di visualizzazione della 
 
 1. A destra, lascia l&#39;opzione **[!UICONTROL Regex]** disabilitata
 
-1. In **[!UICONTROL percorso è uguale a]** set `/` `OR` `/index.html`. Per il sito di dimostrazione Luma, assicura che la regola venga attivata solo sulla pagina Home
+1. In **[!UICONTROL percorso è uguale a]** set `/` `OR` `/index.html`. Per il sito web di dimostrazione Luma, assicura che la regola venga attivata solo sulla pagina Home
 
 1. Seleziona **[!UICONTROL Mantieni modifiche]**
 
@@ -250,7 +250,7 @@ Per verificare che Analytics stia acquisendo correttamente i dati tramite Experi
 
 ### Convalida Experience Cloud ID
 
-1. Vai al [sito demo Luma](https://luma.enablementadobe.com){target="_blank"}
+1. Vai al [sito Web di dimostrazione Luma](https://luma.enablementadobe.com){target="_blank"}
 1. Seleziona il pulsante di accesso in alto a destra e utilizza le credenziali u: test@test.com p: test per autenticare
 1. Apri Experience Platform Debugger e [imposta la proprietà tag sul sito sulla tua proprietà di sviluppo](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 
@@ -426,4 +426,4 @@ Congratulazioni! Ce l&#39;hai fatta! Questa è la fine della lezione e ora puoi 
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=it)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

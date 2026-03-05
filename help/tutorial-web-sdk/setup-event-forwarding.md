@@ -4,7 +4,7 @@ description: Scopri come utilizzare la proprietà di inoltro degli eventi utiliz
 feature: Web SDK,Tags,Event Forwarding
 jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 9985ee11daf48c181cbf209b2a354f5762d31b40
+source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
 workflow-type: tm+mt
 source-wordcount: '1872'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Scopri come utilizzare l’inoltro degli eventi con i dati di Adobe Experience Platform Web SDK.
 
-L’inoltro degli eventi è un nuovo tipo di proprietà disponibile in Raccolta dati. L’inoltro degli eventi consente di inviare dati a fornitori di terze parti non Adobe direttamente dall’Edge Network di Adobe Experience Platform invece del browser tradizionale lato client. Ulteriori informazioni sui vantaggi dell&#39;inoltro degli eventi nella [Panoramica sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/it/docs/experience-platform/tags/event-forwarding/overview).
+L’inoltro degli eventi è un nuovo tipo di proprietà disponibile in Raccolta dati. L’inoltro degli eventi consente di inviare dati a fornitori di terze parti non Adobe direttamente dall’Edge Network di Adobe Experience Platform invece del browser tradizionale lato client. Ulteriori informazioni sui vantaggi dell&#39;inoltro degli eventi nella [Panoramica sull&#39;inoltro degli eventi](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
 
 
@@ -25,7 +25,7 @@ Per utilizzare l’inoltro degli eventi in Adobe Experience Platform, i dati dev
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/it/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]
@@ -291,7 +291,7 @@ Crea una libreria e crea tutte le modifiche nell’ambiente di sviluppo per l’
 
 Ora puoi convalidare la proprietà di inoltro degli eventi utilizzando Platform Debugger e Webhook.site:
 
-1. Segui i passaggi per [cambiare la libreria di tag](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) sul [sito dimostrativo Luma](https://luma.enablementadobe.com/category-men.html) nella proprietà tag di Web SDK a cui hai mappato la proprietà di inoltro degli eventi nello stream di dati.
+1. Segui i passaggi per [cambiare la libreria di tag](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) sul [sito Web di dimostrazione Luma](https://luma.enablementadobe.com/category-men.html) nella proprietà tag di Web SDK in cui hai mappato la proprietà di inoltro degli eventi nello stream di dati.
 
 1. Prima di ricaricare la pagina, nel debugger di Experience Platform apri **[!UICONTROL Registri]** dal menu di navigazione a sinistra
 
@@ -324,4 +324,4 @@ Congratulazioni! Hai configurato l’inoltro degli eventi.
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=it)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

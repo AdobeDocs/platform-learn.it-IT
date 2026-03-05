@@ -4,7 +4,7 @@ description: Scopri come convalidare l’implementazione di Platform Web SDK con
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 4e5fe50c1ec7a867fed57700b35851b859680fef
+source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 2%
@@ -23,9 +23,9 @@ Experience Platform Debugger è un&#39;estensione di [Chrome](https://chromewebs
 
 Se non hai mai utilizzato il debugger in precedenza, guarda questo video introduttivo di cinque minuti:
 
->[!VIDEO](https://video.tv.adobe.com/v/36164?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
-In questa lezione, utilizzi l&#39;estensione [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) per sostituire la proprietà di tag di codifica fissa nel [sito di dimostrazione Luma](https://luma.enablementadobe.com) con la tua proprietà.
+In questa lezione, utilizzi l&#39;estensione [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) per sostituire la proprietà di tag di codifica fissa nel [sito Web di dimostrazione Luma](https://luma.enablementadobe.com) con la tua proprietà.
 
 Questa tecnica è denominata cambio di ambiente e sarà utile in un secondo momento, quando lavorerai con i tag sul tuo sito web. Ti consente di caricare il tuo sito Web di produzione nel browser, ma con la libreria di tag *sviluppo*. Questa funzionalità ti consente di creare e convalidare le modifiche ai tag in modo indipendente dalle regolari versioni del codice. Dopo tutto, questa separazione tra versioni di tag di marketing e versioni di codice è uno dei motivi principali per cui i clienti utilizzano i tag.
 
@@ -39,7 +39,7 @@ Alla fine di questa lezione, potrai utilizzare il debugger per:
 
 ## Prerequisiti
 
-Conosci i tag di raccolta dati e il [sito di dimostrazione Luma](https://luma.enablementadobe.com/){target="_blank"} e hai completato le lezioni precedenti nell’esercitazione:
+Hai familiarità con i tag di raccolta dati e con il [sito Web di dimostrazione Luma](https://luma.enablementadobe.com/){target="_blank"} e hai completato le lezioni precedenti nell&#39;esercitazione:
 
 * [Configurare uno schema XDM](configure-schemas.md)
 * [Configurare uno spazio dei nomi delle identità](configure-identities.md)
@@ -182,4 +182,4 @@ Quindi, scopri come convalidare queste richieste di rete quando vengono ricevute
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=it)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

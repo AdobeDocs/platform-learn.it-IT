@@ -4,7 +4,7 @@ description: Scopri come convalidare l’implementazione di Platform Web SDK con
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 4e5fe50c1ec7a867fed57700b35851b859680fef
+source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 5%
@@ -29,7 +29,7 @@ Alla fine di questa lezione, potrai:
 
 ## Prerequisiti
 
-Conosci i tag di raccolta dati e il [sito di dimostrazione Luma](https://luma.enablementadobe.com){target="_blank"} e hai completato le lezioni precedenti nell’esercitazione:
+Hai familiarità con i tag di raccolta dati e con il [sito Web di dimostrazione Luma](https://luma.enablementadobe.com){target="_blank"} e hai completato le lezioni precedenti nell&#39;esercitazione:
 
 * [Configurare uno schema XDM](configure-schemas.md)
 * [Configurare uno spazio dei nomi delle identità](configure-identities.md)
@@ -50,7 +50,7 @@ Esistono diversi modi per avviare una sessione Assurance.
 
 Per abilitare Edge Trace:
 
-1. Vai al [sito demo Luma](https://luma.enablementadobe.com) e utilizza il debugger per [passare la proprietà tag sul sito alla tua proprietà di sviluppo](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Vai al [sito Web di dimostrazione Luma](https://luma.enablementadobe.com) e utilizza il debugger per [passare la proprietà tag sul sito alla tua proprietà di sviluppo](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Assicurati di aver effettuato l’accesso al Debugger con il nome dell’organizzazione visualizzato. Se invece viene visualizzato il nome utente, disconnettiti e prova a riaccedere.
 1. Nel menu di navigazione a sinistra di **[!UICONTROL Experience Platform Debugger]** seleziona **[!UICONTROL Registri]**
 1. Seleziona la scheda **[!UICONTROL Edge]** e seleziona **[!UICONTROL Connetti]**
@@ -124,4 +124,4 @@ Ora che un oggetto XDM viene attivato su una pagina e sai come convalidare la ra
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=it)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

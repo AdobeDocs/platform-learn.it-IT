@@ -4,7 +4,7 @@ description: Scopri come configurare le impostazioni di privacy dell’estension
 feature: Web SDK,Tags,Consent
 jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
+source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
 workflow-type: tm+mt
 source-wordcount: '1605'
 ht-degree: 1%
@@ -122,7 +122,7 @@ Ora configurerai e implementerai il consenso per questo scenario:
 
 
 2. Salva e genera questa modifica nella libreria tag
-3. Caricare la libreria di tag nel sito di dimostrazione Luma
+3. Carica la libreria di tag sul sito web di dimostrazione Luma
 4. Abilita il debug dei tag durante la visita al sito Luma e ricarica la pagina. Nella console per sviluppatori del browser, dovresti notare che defaultConsent è uguale a **[!UICONTROL In]**
 5. Con questa configurazione, l’estensione Experience Platform Web SDK invia richieste di rete a Platform Edge Network finché un visitatore non decide di rifiutare i cookie e la rinuncia:
 
@@ -167,7 +167,7 @@ Se un visitatore decide di rinunciare (rifiutare i cookie di tracciamento), devi
 
 Ora, quando un visitatore rinuncia, la regola configurata nel modo precedente si attiva e imposta il consenso di Web SDK come **[!UICONTROL Out]**.
 
-Per eseguire la convalida, accedi al sito di dimostrazione Luma, rifiuta i cookie e verifica che non venga attivata alcuna richiesta di Web SDK dopo la rinuncia.
+Convalida andando sul sito web di dimostrazione Luma, rifiuta i cookie e conferma che nessuna richiesta di Web SDK viene attivata dopo la rinuncia.
 
 ### Scenario 2: rinuncia implicita
 
@@ -202,7 +202,7 @@ Se un visitatore decide di dare il consenso (accettare i cookie di tracciamento)
 
    ![L&#39;utente della condizione della regola fa clic su &quot;Tutto a posto&quot;](assets/consent-optIn-clickEvent.png)
 
-1. Aggiungi un&#39;azione tramite l&#39;estensione [!UICONTROL &#x200B; di Experience Platform Web SDK, &#x200B;]Tipo azione **[!UICONTROL di]** Imposta consenso **[!UICONTROL ,]** Consenso generale **[!UICONTROL come]** In **[!UICONTROL .]**
+1. Aggiungi un&#39;azione tramite l&#39;estensione [!UICONTROL  di Experience Platform Web SDK, ]Tipo azione **[!UICONTROL di]** Imposta consenso **[!UICONTROL ,]** Consenso generale **[!UICONTROL come]** In **[!UICONTROL .]**
 
    ![Azione Di Consenso Alla Regola Di Consenso](assets/consent-rule-optin-action.png)
 
@@ -215,7 +215,7 @@ Dopo aver impostato questa regola, la raccolta di eventi deve iniziare quando un
 ![Consenso post visitatore Optin](assets/consent-post-user-optin.png)
 
 
-Per ulteriori informazioni sul consenso in Web SDK, consulta [Preferenze di supporto del consenso dei clienti](https://experienceleague.adobe.com/it/docs/experience-platform/edge/consent/supporting-consent).
+Per ulteriori informazioni sul consenso in Web SDK, consulta [Preferenze di supporto del consenso dei clienti](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 >[!TIP]
 >
@@ -223,8 +223,8 @@ Per ulteriori informazioni sul consenso in Web SDK, consulta [Preferenze di supp
 
 
 
-Per ulteriori informazioni sull&#39;azione [!UICONTROL Imposta consenso], vedere [Imposta consenso](https://experienceleague.adobe.com/it/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
+Per ulteriori informazioni sull&#39;azione [!UICONTROL Imposta consenso], vedere [Imposta consenso](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=it)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

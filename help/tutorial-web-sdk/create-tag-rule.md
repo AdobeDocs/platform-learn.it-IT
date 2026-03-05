@@ -4,9 +4,9 @@ description: Scopri come inviare un evento a Platform Edge Network utilizzando l
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: d15ce3b51424dba51b5b621b6d92eff85edd5b27
+source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1863'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Alla fine di questa lezione, sarai in grado di:
 
 ## Prerequisiti
 
-Conosci i tag di raccolta dati e il [sito di dimostrazione Luma](https://luma.enablementadobe.com) e hai completato le lezioni precedenti nell’esercitazione:
+Hai familiarità con i tag di raccolta dati e con il [sito Web di dimostrazione Luma](https://luma.enablementadobe.com) e hai completato le lezioni precedenti nell&#39;esercitazione:
 
 * [Configurare uno schema XDM](configure-schemas.md)
 * [Configurare uno spazio dei nomi delle identità](configure-identities.md)
@@ -91,7 +91,7 @@ Tutte queste regole verranno sequenziate correttamente utilizzando l&#39;opzione
 
 Questo video offre una panoramica del processo:
 
->[!VIDEO](https://video.tv.adobe.com/v/3454035/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### Campi di configurazione globali
 
@@ -329,7 +329,7 @@ Dopo aver impostato le variabili, puoi creare la regola per inviare l&#39;oggett
 
 Nella proprietà dovrebbero essere presenti le seguenti regole:
 
-    ![Verifica elenco regole](assets/create-rule-list-of-rules.png)
+![Verifica elenco regole](assets/create-rule-list-of-rules.png)
 
 ## Pubblicare le regole in una libreria
 
@@ -364,4 +364,4 @@ Ora puoi convalidare i dati nella richiesta utilizzando Adobe Experience Platfor
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=it)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
