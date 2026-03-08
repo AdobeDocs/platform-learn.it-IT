@@ -17,4 +17,4 @@ ht-degree: 15%
 
 Scopri come aggiungere il livello dati a un nuovo stream di dati in Raccolta dati. Inoltre, scopri come eseguire le funzioni di mappatura di base utilizzando la funzione Preparazione per la raccolta dati. Per ulteriori informazioni, consulta la [documentazione sulla preparazione dei dati per la raccolta dati](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it#data-prep).
 
->[!VIDEO](https://video.tv.adobe.com/v/342120/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345565/?captions=ita&learn=on&enablevpops)

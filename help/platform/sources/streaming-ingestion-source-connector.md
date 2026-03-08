@@ -19,7 +19,7 @@ ht-degree: 2%
 Scopri come eseguire lo streaming dei dati in tempo reale da un’origine di archiviazione cloud a Platform e utilizzarli in tempo reale per il coinvolgimento dei clienti.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/331943?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410104?captions=ita&learn=on&enablevpops)
 
 ## Risorse aggiuntive
 

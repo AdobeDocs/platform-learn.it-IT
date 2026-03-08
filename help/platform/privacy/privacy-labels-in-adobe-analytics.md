@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Scopri come aggiungere etichette Privacy dei dati alle variabili di Analytics, inclusa una suddivisione di cosa significa e quando usarle ogni tipo di etichetta. Per ulteriori informazioni, visitare la [documentazione di Privacy Services](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/336077?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3450670?captions=ita&learn=on&enablevpops)

@@ -20,4 +20,4 @@ ht-degree: 0%
 Esplora il scansiono, segui, esegui il framework per far progredire dati, pubblico, percorso, misurazione e personalizzazione dei contenuti.
 
 <!-- 85_S651_3442537_240_evolving-customer-experience-maturity -->
->[!VIDEO](https://video.tv.adobe.com/v/3458293/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460180/?captions=ita&learn=on&enablevpops=true)
