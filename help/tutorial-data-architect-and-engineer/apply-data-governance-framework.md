@@ -3,12 +3,12 @@ title: Applicare il framework di governance dei dati
 seo-title: Apply the data governance framework | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Applicare il framework di governance dei dati
 description: In questa lezione, applicherai il framework di governance dei dati ai dati acquisiti nella sandbox.
-role: Data Architect
+role: Developer
 feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 1%
@@ -24,9 +24,9 @@ In questa lezione, applicherai il framework di governance dei dati ai dati acqui
 La governance dei dati di Adobe Experience Platform consente di gestire i dati dei clienti e di garantire la conformità alle normative, alle restrizioni e alle politiche applicabili all’utilizzo dei dati. Svolge un ruolo chiave all’interno di Experience Platform a vari livelli, incluso il controllo dell’utilizzo dei dati.
 
 Prima di iniziare gli esercizi, guarda questi brevi video sulla governance dei dati:
->[!VIDEO](https://video.tv.adobe.com/v/41161?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/35476?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
 
 <!--
 ## Permissions required

@@ -2,11 +2,11 @@
 user-guide-title: Guida introduttiva ad Experience Platform per architetti e ingegneri di dati
 breadcrumb-title: Guida introduttiva per architetti e ingegneri di dati
 user-guide-description: Un tutorial pratico per avviare l’implementazione di Platform. Sono forniti dati e risorse di esempio.
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 40%

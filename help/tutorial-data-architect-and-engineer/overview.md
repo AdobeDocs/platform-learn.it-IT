@@ -2,13 +2,13 @@
 title: Guida introduttiva di Adobe Experience Platform per architetti di dati e data engineer
 description: Guida introduttiva di Adobe Experience Platform per architetti di dati e data engineer.
 breadcrumb-title: Panoramica
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-4348
 thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 0%
@@ -26,7 +26,7 @@ _Guida introduttiva di Adobe Experience Platform per architetti di dati e ingegn
 
 ## Finalità di apprendimento
 
-Gli architetti di dati e i data engineer devono collaborare strettamente per una corretta distribuzione degli Experienci Platform. Questa esercitazione pratica illustra le attività chiave eseguite da _entrambi i ruoli_ per consentirti di iniziare a implementare Platform per la tua attività. Sarai guidato attraverso esercizi che ti presenteranno la terminologia chiave, le funzioni, l’interfaccia e le API di Experience Platform. Anche i clienti di applicazioni Adobe Experience Cloud come Real-time Customer Data Platform, Customer Journey Analytics e Journey Optimizer troveranno utili tali contenuti, in quanto i servizi Platform sono fondamentali per tali applicazioni.
+Gli architetti di dati e i data engineer devono collaborare strettamente per una corretta implementazione di Experience Platform. Questa esercitazione pratica illustra le attività chiave eseguite da _entrambi i ruoli_ per consentirti di iniziare a implementare Platform per la tua attività. Sarai guidato attraverso esercizi che ti presenteranno la terminologia chiave, le funzioni, l’interfaccia e le API di Experience Platform. Anche i clienti di applicazioni Adobe Experience Cloud come Real-Time Customer Data Platform, Customer Journey Analytics e Journey Optimizer troveranno utili tali contenuti, in quanto i servizi Platform sono fondamentali per tali applicazioni.
 
 ![Adobe Experience Cloud marketecture che evidenzia i servizi Platform descritti in questo tutorial: identità, profilo, segmentazione, acquisizione, query e governance](assets/marketecture.png)
 
@@ -48,7 +48,7 @@ Adobe Experience Platform è una piattaforma tecnica progettata per aiutarti a r
 
 ## Prerequisiti
 
-* Hai guardato la [Introduzione alla playlist di Adobe Experience Platform](https://experienceleague.adobe.com/it/playlists/experience-platform-introduction) su Experience League e conosci le funzionalità di Platform
+* Hai guardato la [Introduzione alla playlist di Adobe Experience Platform](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction) su Experience League e conosci le funzionalità di Platform
 * Hai accesso a un account fornito con Adobe Experience Platform (o un’applicazione basata su Platform come Real-Time CDP o Journey Optimizer) e Data Collection (precedentemente Launch).
 * L&#39;utente è un amministratore di sistema dell&#39;account oppure può disporre di un [autorizzazione utente](configure-permissions.md).
 
@@ -58,7 +58,7 @@ Questa esercitazione combina attività per data engineer e architetti di dati. T
 
 Mentre crei vari elementi di Platform durante questa esercitazione, cerca di attenersi il più possibile ai nomi che ti consiglio. Tuttavia, esistono alcuni nomi di elementi di alto livello che è possibile personalizzare nel caso in cui più persone dell’organizzazione partecipino contemporaneamente a questa esercitazione. Ad esempio, potrebbe essere utile denominare la sandbox Platform &quot;Luma Tutorial Platform - Ignatius J Reilly&quot; invece di &quot;Luma Tutorial Platform&quot;.
 
-Se ti blocchi, prova a leggere di nuovo le istruzioni, quindi utilizza il collegamento ![Segnala un problema](https://experienceleague.adobe.com/assets/img/feedback.svg?lang=it) nella barra laterale di ogni pagina per contattarmi.
+Se ti blocchi, prova a leggere di nuovo le istruzioni, quindi utilizza il collegamento ![Segnala un problema](https://experienceleague.adobe.com/assets/img/feedback.svg) nella barra laterale di ogni pagina per contattarmi.
 
 ## Note tecniche
 

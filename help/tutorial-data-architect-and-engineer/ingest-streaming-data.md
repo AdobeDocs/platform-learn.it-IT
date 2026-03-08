@@ -3,12 +3,12 @@ title: Acquisire dati in streaming
 seo-title: Ingest streaming data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Acquisire dati in streaming
 description: In questa lezione, invierai dati in streaming ad Experience Platform utilizzando il Web SDK.
-role: Data Engineer
+role: Developer
 feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 97fba09ddba62cffe4428592ce25e4f26c3a5850
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '3316'
 ht-degree: 0%
@@ -38,13 +38,13 @@ Nell’interfaccia di Data Collection è necessario completare due attività pri
 
 Prima di iniziare gli esercizi, guarda questi due brevi video per ulteriori informazioni sull’acquisizione di dati in streaming e sul Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/36263?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/37267?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
->Questo tutorial è incentrato sull&#39;acquisizione in streaming da siti Web con Web SDK, ma è anche possibile eseguire lo streaming dei dati utilizzando [Mobile SDK](https://experienceleague.adobe.com/it/docs/platform-learn/implement-mobile-sdk/overview), [Edge Network Server API](https://experienceleague.adobe.com/it/docs/platform-learn/data-collection/server-api/overview) e [HTTP API](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/streaming/http).
+>Questo tutorial è incentrato sull&#39;acquisizione in streaming da siti Web con Web SDK, ma è anche possibile eseguire lo streaming dei dati utilizzando [Mobile SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview), [Edge Network Server API](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/server-api/overview) e [HTTP API](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/streaming/http).
 
 ## Autorizzazioni obbligatorie
 
@@ -263,7 +263,7 @@ Experience Platform Debugger è un’estensione disponibile per Chrome che conse
 
 Se non hai mai utilizzato il debugger prima, e questo è diverso dal precedente Adobe Experience Cloud Debugger, potresti voler guardare questo video di panoramica di cinque minuti:
 
->[!VIDEO](https://video.tv.adobe.com/v/36164?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Apri il sito web Luma.
 

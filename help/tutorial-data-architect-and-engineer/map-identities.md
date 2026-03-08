@@ -3,12 +3,12 @@ title: Mappare le identità
 seo-title: Map identities | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Mappare le identità
 description: In questa lezione, creeremo spazi dei nomi di identità e aggiungeremo campi di identità ai nostri schemi.
-role: Data Architect
+role: Developer
 feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 73645b8b088cfdfe6f256c187b3c510dcc2386fc
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 6%
@@ -26,7 +26,7 @@ Il servizio Adobe Experience Platform Identity consente di ottenere una visione 
 **Gli architetti di dati** dovranno mappare le identità all&#39;esterno di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sull’identità in Adobe Experience Platform:
->[!VIDEO](https://video.tv.adobe.com/v/3422773?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informaz
 <!--explain identity maps-->
 <!--explain the strategy behind the identity selection, how these identities will join all the data together-->
 
-## Autorizzazioni richieste
+## Autorizzazioni obbligatorie
 
 Nella lezione [Configurare le autorizzazioni](configure-permissions.md) è possibile impostare tutti i controlli di accesso necessari per completare la lezione.
 
@@ -49,7 +49,7 @@ Nella lezione [Configurare le autorizzazioni](configure-permissions.md) è possi
 
 ## Crea spazio dei nomi identità
 
-In questo esercizio creeremo spazi dei nomi di identità per i campi di identità personalizzati di Luma, `loyaltyId`, `crmId` e `productSku`. Gli spazi dei nomi delle identità svolgono un ruolo fondamentale nella creazione di profili cliente in tempo reale, in quanto due valori corrispondenti nello stesso spazio dei nomi consentono a due origini di dati di formare un grafo identità.
+In questo esercizio creeremo spazi dei nomi di identità per i campi di identità personalizzati di Luma, `loyaltyId`, `crmId` e `productSku`. Gli spazi dei nomi delle identità svolgono un ruolo fondamentale nella creazione di profili cliente in tempo reale, in quanto due valori corrispondenti nello stesso spazio dei nomi consentono a due origini di dati di formare un grafo di identità.
 
 
 ### Creare spazi dei nomi nell’interfaccia utente
@@ -113,7 +113,7 @@ Creiamo lo spazio dei nomi dell&#39;identità `Luma CRM Id`:
    ![Spazio dei nomi identità](assets/identity-createUsingApi.png)
 
 Se torni all’interfaccia utente, ora dovresti visualizzare i tre nuovi spazi dei nomi personalizzati:
-![Spazio dei nomi identità &#x200B;](assets/identity-newIdentities.png)
+![Spazio dei nomi identità ](assets/identity-newIdentities.png)
 
 
 ## Etichettare i campi di identità negli schemi
@@ -136,7 +136,7 @@ Aggiungiamo un&#39;identità primaria a `Luma Loyalty Schema`:
 1. Seleziona **[!UICONTROL Applica]**
 1. Seleziona **[!UICONTROL Salva]**
 
-   ![Identità primaria &#x200B;](assets/identity-loyalty-primary.png)
+   ![Identità primaria ](assets/identity-loyalty-primary.png)
 
 Ripeti il processo per alcuni degli altri schemi:
 

@@ -4,7 +4,7 @@ description: Real-time CDP - Destinazioni SDK
 kt: 5342
 doc-type: tutorial
 exl-id: c18acbf5-92f5-4cd2-a5aa-a5e9debb98c9
-source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 5%
@@ -70,7 +70,7 @@ Per farlo, apri l&#39;applicazione Postman e vai a **API di authoring delle dest
 >
 >Se non disponi della raccolta Postman, torna all&#39;esercizio 3 [del modulo 2.1](../rtcdpb2c-1/ex3.md) e segui le istruzioni per configurare Postman con le raccolte Postman fornite.
 
-Poi vedrai questo. In **Intestazioni**, devi aggiornare manualmente il valore per la chiave **x-sandbox-name** e impostarlo su `--aepSandboxName--`. Selezionare il valore **{{SANDBOX_NAME}}**.
+Poi vedrai questo. In **Intestazioni**, devi aggiornare manualmente il valore per la chiave **x-sandbox-name** e impostarlo su `--aepSandboxName--`. Selezionare il valore **`{{SANDBOX_NAME}}`**.
 
 ![Acquisizione dei dati](./images/sdkpm1.png)
 
@@ -124,7 +124,7 @@ Dopo aver fatto clic su **Invia**, verrà creato il modello del server e come pa
 
 ## Creare la configurazione di destinazione
 
-In Postman, in **Destination Authoring API**, vai a **Destination configurations** e fai clic per aprire la richiesta **POST - Create a destination configuration**. Poi vedrai questo. In **Intestazioni**, devi aggiornare manualmente il valore per la chiave **x-sandbox-name** e impostarlo su `--aepSandboxName--`. Selezionare il valore **{{SANDBOX_NAME}}** e sostituirlo con `--aepSandboxName--`.
+In Postman, in **Destination Authoring API**, vai a **Destination configurations** e fai clic per aprire la richiesta **POST - Create a destination configuration**. Poi vedrai questo. In **Intestazioni**, devi aggiornare manualmente il valore per la chiave **x-sandbox-name** e impostarlo su `--aepSandboxName--`. Selezionare il valore **`{{SANDBOX_NAME}}`** e sostituirlo con `--aepSandboxName--`.
 
 ![Acquisizione dei dati](./images/sdkpm7.png)
 
@@ -160,7 +160,7 @@ Sostituire il segnaposto **{{body}}** con il codice seguente:
         }
     ],
     "uiAttributes": {
-        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=it",
+        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en",
         "category": "streaming",
         "connectionType": "Server-to-server",
         "frequency": "Streaming"

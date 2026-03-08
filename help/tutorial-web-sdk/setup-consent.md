@@ -4,9 +4,9 @@ description: Scopri come configurare le impostazioni di privacy dell’estension
 feature: Web SDK,Tags,Consent
 jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1604'
 ht-degree: 1%
 
 ---
@@ -54,12 +54,14 @@ Prima di passare alle configurazioni di tag, scopri di più sulla piattaforma di
    * Per il CCPA, il consenso predefinito è in genere impostato su `true`. Stai per fare riferimento a questo scenario come **consenso implicito** in questa esercitazione
    * Per il RGPD, il consenso predefinito è comunemente impostato su `false`. Stai per fare riferimento a questo scenario come **Rinuncia implicita** in questa esercitazione.
 1. Attiva la configurazione
-<!--
+
+   <!--
     This consent value can be verified by returning the JavaScript object ```klaro.getManager().consents``` in the browser's developer console.
--->
-    >[!NOTE]
-    >
-    >In genere, i passaggi sopra indicati vengono eseguiti e gestiti dal team o dalla persona responsabile della gestione della CMP, ad esempio OneTrust o TrustArc.
+    -->
+
+   >[!NOTE]
+   > 
+   >In genere, i passaggi sopra indicati vengono eseguiti e gestiti dal team o dalla persona responsabile della gestione della CMP, ad esempio OneTrust o TrustArc.
 
 ## Iniettare una CMP
 
@@ -202,7 +204,7 @@ Se un visitatore decide di dare il consenso (accettare i cookie di tracciamento)
 
    ![L&#39;utente della condizione della regola fa clic su &quot;Tutto a posto&quot;](assets/consent-optIn-clickEvent.png)
 
-1. Aggiungi un&#39;azione tramite l&#39;estensione [!UICONTROL &#x200B; di Experience Platform Web SDK, &#x200B;]Tipo azione **[!UICONTROL di]** Imposta consenso **[!UICONTROL ,]** Consenso generale **[!UICONTROL come]** In **[!UICONTROL .]**
+1. Aggiungi un&#39;azione tramite l&#39;estensione [!UICONTROL  di Experience Platform Web SDK, ]Tipo azione **[!UICONTROL di]** Imposta consenso **[!UICONTROL ,]** Consenso generale **[!UICONTROL come]** In **[!UICONTROL .]**
 
    ![Azione Di Consenso Alla Regola Di Consenso](assets/consent-rule-optin-action.png)
 
@@ -215,7 +217,7 @@ Dopo aver impostato questa regola, la raccolta di eventi deve iniziare quando un
 ![Consenso post visitatore Optin](assets/consent-post-user-optin.png)
 
 
-Per ulteriori informazioni sul consenso in Web SDK, consulta [Preferenze di supporto del consenso dei clienti](https://experienceleague.adobe.com/it/docs/experience-platform/edge/consent/supporting-consent).
+Per ulteriori informazioni sul consenso in Web SDK, consulta [Preferenze di supporto del consenso dei clienti](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 >[!TIP]
 >
@@ -223,8 +225,8 @@ Per ulteriori informazioni sul consenso in Web SDK, consulta [Preferenze di supp
 
 
 
-Per ulteriori informazioni sull&#39;azione [!UICONTROL Imposta consenso], vedere [Imposta consenso](https://experienceleague.adobe.com/it/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
+Per ulteriori informazioni sull&#39;azione [!UICONTROL Imposta consenso], vedere [Imposta consenso](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 >[!NOTE]
 >
->Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=it)
+>Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Web SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

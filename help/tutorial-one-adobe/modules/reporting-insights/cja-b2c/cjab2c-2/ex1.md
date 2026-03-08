@@ -4,9 +4,9 @@ description: Acquisire e analizzare i dati Google Analytics in Adobe Experience 
 kt: 5342
 doc-type: tutorial
 exl-id: ba830c8c-e3e6-4e7e-ab53-5b7eb031ad29
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -32,13 +32,13 @@ Utilizza il connettore Source GCP/BigQuery per...
 - tieni traccia del comportamento dei clienti sul sito web e carica tali dati in Adobe Experience Platform per l’analisi, la scienza dei dati e i casi d’uso di personalizzazione che non richiedono attivazione in tempo reale.
 - caricare i dati storici di Google Analytics in Adobe Experience Platform, ancora una volta per casi di utilizzo di analisi e data science
 
-## 1.2.1.2 Account Google
+## 1.2.1.2 il tuo account Google
 
 >[!NOTE]
 >
 >Per questo esercizio, devi accedere a un ambiente della piattaforma Google Cloud. Se non hai ancora accesso a GCP, crea un nuovo account utilizzando il tuo indirizzo e-mail personale.
 
-## 1.2.1.3 Selezionare o creare un progetto
+## 1.2.1.3 Seleziona o crea un progetto
 
 Vai a [https://console.cloud.google.com/](https://console.cloud.google.com/).
 

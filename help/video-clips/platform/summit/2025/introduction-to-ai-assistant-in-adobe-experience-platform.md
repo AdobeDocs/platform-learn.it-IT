@@ -7,7 +7,8 @@ index: false
 hide: true
 hidefromtoc: true
 recommendations: noCatalog, noDisplay
-source-git-commit: 5e8749451b8bd8ed97c8e4f768d082b26e092e0b
+exl-id: cd1c2d9d-c8f1-4b62-a80f-5606ee27df20
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 0%
@@ -19,4 +20,4 @@ ht-degree: 0%
 Scopri in che modo l’Assistente AI in Adobe Experience Platform funge da compagno di produttività, aiutando gli utenti a risolvere i problemi, cercare e ottimizzare i flussi di lavoro.
 
 <!--  -->
->[!VIDEO](https://video.tv.adobe.com/v/3462061?learn=on&enablevpops=true&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3459306?learn=on&enablevpops=true)

@@ -4,9 +4,9 @@ description: Acquisire e analizzare i dati Google Analytics in Adobe Experience 
 kt: 5342
 doc-type: tutorial
 exl-id: f58af1cf-6f2e-420c-9eed-29382806a9f4
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '720'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ Fai clic su **Avanti**.
 
 ![demo](./images/datasets1.png)
 
-## 1.2.4.2 Mappatura XDM
+## Mappatura XDM di 1.2.4.2
 
 Ora visualizzerai questo:
 
@@ -68,7 +68,7 @@ Scorri verso il basso. Ora devi mappare ogni **Campo Source** da Google Analytic
 Utilizzare la tabella di mapping riportata di seguito per questo esercizio.
 
 | Campo origine | Campo di destinazione |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `_id` | `_id` |
 | `_id` | canale._id |
 | `timeStamp` | timestamp |
@@ -88,7 +88,7 @@ Utilizzare la tabella di mapping riportata di seguito per questo esercizio.
 Per alcuni campi, è necessario rimuovere la mappatura originale e crearne una nuova, per un **Campo calcolato**.
 
 | Campo calcolato | Campo di destinazione |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `iif(Unique_Purchases == null, 0, Unique_Purchases)` | commerce.purchases.value |
 | `iif(Product_Detail_Views == null, 0, Product_Detail_Views)` | commerce.productViews.value |
 | `iif(Adds_To_Cart == null, 0, Adds_To_Cart)` | commerce.productListAdds.value |
@@ -111,7 +111,7 @@ Fai clic su **Avanti**.
 
 ![demo](./images/xdm34.png)
 
-## 1.2.4.3 Connessione e pianificazione dell’acquisizione dei dati
+## Connessione 1.2.4.3 e pianificazione dell&#39;acquisizione dei dati
 
 Verrà visualizzata la scheda **Pianificazione**:
 
@@ -134,7 +134,7 @@ Fai clic su **Avanti**.
 
 ![demo](./images/ex437.png)
 
-## 1.2.4.4 Revisione e avvio della connessione
+## 1.2.4.4 Rivedi e avvia la connessione
 
 Ora viene visualizzata una panoramica dettagliata della connessione. Assicurati che tutto sia corretto prima di continuare, poiché alcune impostazioni non possono più essere modificate in seguito, come ad esempio la mappatura XDM.
 

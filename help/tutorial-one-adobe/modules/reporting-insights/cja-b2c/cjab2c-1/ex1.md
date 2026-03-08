@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Customer Journey Analytics 101
 kt: 5342
 doc-type: tutorial
 exl-id: ea1469a4-cbfd-4633-8678-9467c2146a2a
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '851'
 ht-degree: 1%
 
 ---
@@ -15,21 +15,21 @@ ht-degree: 1%
 
 ## Obiettivi
 
-- Comprendere il servizio dell’applicazione CJA
+- Comprendere il servizio applicativo CJA
 - Scopri come posizionare CJA
-- Comprendere il flusso di lavoro di CJA: dalla connessione dati agli approfondimenti
+- Flusso di lavoro di CJA: dalla connessione dati agli approfondimenti
 
-## 1.1.1.1 Cos’è Customer Journey Analytics?
+## 1.1.1.1 Cos&#39;è Customer Journey Analytics?
 
-Customer Journey Analytics (CJA) fornisce un toolkit ai team di business intelligence e data science per l’unione e l’analisi dei dati cross-channel (online e offline). Le funzionalità di CJA forniscono contesto e chiarezza al complesso percorso di clienti multicanale. Il contesto fornito consente di ottenere informazioni utili per eliminare i punti critici dal processo di conversione del cliente e per progettare e distribuire esperienze eccezionali nei momenti più importanti.
+Customer Journey Analytics (CJA) fornisce un toolkit ai team di business intelligence e data science per l’unione e l’analisi dei dati cross-channel (online e offline). Le funzionalità di CJA forniscono contesto e chiarezza al complesso percorso di clienti multicanale. Il contesto fornito consente ad insight di eliminare i punti critici dal processo di conversione dei clienti e di progettare e distribuire esperienze eccezionali per i momenti più importanti.
 
-CJA porta Analysis Workspace al di sopra di Adobe Experience Platform. Adobe Experience Platform è il cervello per la comunicazione e l’orchestrazione e con CJA, i brand possono ora contestualizzare e visualizzare tutti i dati, in modo che i team di Business e Insight possano imparare da esso analizzando il percorso completo dei clienti online e offline.
+CJA porta Analysis Workspace al di sopra di Adobe Experience Platform. Adobe Experience Platform è il cervello per la comunicazione e l’orchestrazione e con CJA i brand possono ora contestualizzare e visualizzare tutti i dati, in modo che i team aziendali e Insight possano imparare da esso analizzando il percorso completo dei clienti online e offline.
 
-I team di Business e Insight possono parlare con CJA, porre domande e ottenere risposte rapide con l’interfaccia utente di Analysis Workspace semplice da usare e con funzionalità di trascinamento della selezione.
+I team aziendali e di Insight possono parlare con CJA, porre domande e ottenere risposte rapide con l’interfaccia utente di Analysis Workspace semplice da usare e con funzionalità di trascinamento della selezione.
 
 ![demo](./images/cja-adv-analysis1.png)
 
-## 1.1.1.2 Vantaggi chiave
+## Vantaggi chiave di 1.1.1.2
 
 I tre principali vantaggi per i clienti sono:
 
@@ -39,8 +39,8 @@ I tre principali vantaggi per i clienti sono:
 
 ## 1.1.1.3 Perché scegliere Customer Journey Analytics?
 
-CJA non intende sostituire un’applicazione BI corrente come Power BI, Microstrategy, Locker o Tableau. Queste applicazioni BI hanno lo scopo di visualizzare i dati per creare dashboard aziendali in modo che tutti gli utenti di un’organizzazione possano rapidamente esaminare metriche importanti.\
-L’obiettivo di CJA è di fornire ai team di marketing e business una potenza di analisi, rendendola uno strumento di analisi &quot;obbligatorio&quot; per questi utenti tipo.
+CJA non è destinato a sostituire un&#39;applicazione BI corrente come Power BI, Microstrategy, Locker o Tableau. Queste applicazioni BI hanno lo scopo di visualizzare i dati per creare dashboard aziendali in modo che tutti gli utenti di un’organizzazione possano rapidamente esaminare metriche importanti.\
+L’obiettivo di CJA è di dare potenza di analisi ai team di marketing e business, rendendolo uno strumento di analisi &quot;obbligatorio&quot; per questi utenti tipo.
 
 In passato, le applicazioni BI non erano in grado di fornire informazioni reali sui clienti:
 
@@ -53,13 +53,13 @@ In passato, le applicazioni BI non erano in grado di fornire informazioni reali 
 
 Per questi motivi, gli utenti aziendali e gli analisti hanno raggiunto quasi immediatamente un vicolo cieco, rendendo l&#39;analisi costosa, lenta, inflessibile e scollegata dai sistemi di azione.
 
-Con CJA puoi avere una visione a 360 del percorso dei clienti, utilizzando dati offline e online, con gli strumenti giusti per ridurre il tempo necessario per acquisire informazioni approfondite, rendendo gli utenti aziendali indipendenti nel comprendere perché è successo qualcosa e come rispondervi.
+Con CJA puoi avere una visione a 360 del percorso dei clienti, utilizzando dati offline e online, con gli strumenti giusti per ridurre i tempi di insight, rendendo gli utenti aziendali indipendenti nel comprendere perché è successo qualcosa e come rispondervi.
 
 ![demo](./images/cja-use-case.png)
 
-## 1.1.1.4 Comprendere il flusso di lavoro Customer Journey Analytics
+## 1.1.1.4 Comprendere il flusso di lavoro di Customer Journey Analytics
 
-Prima di iniziare gli esercizi successivi, è fondamentale comprendere quali passaggi sono necessari per inserire in CJA i dati provenienti da Adobe Experience Platform, al fine di visualizzarli e ottenere informazioni approfondite. È quello che chiamiamo flusso di lavoro CJA. Diamo un&#39;occhiata:
+Prima di iniziare gli esercizi successivi, è fondamentale comprendere quali passaggi sono necessari per portare in CJA i dati da Adobe Experience Platform, al fine di visualizzarli e ottenere informazioni approfondite. È quello che chiamiamo flusso di lavoro CJA. Diamo un&#39;occhiata:
 
 ![demo](./images/cja-work-flow.jpg)
 
@@ -82,7 +82,7 @@ Prima di continuare, devi selezionare una **sandbox**. La sandbox da selezionare
 Dai un&#39;occhiata a questi schemi e set di dati in Adobe Experience Platform.
 
 | Set di dati | Schema |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | Sistema di dimostrazione - Set di dati di eventi per il sito web (Global v1.1) | Sistema di dimostrazione - Schema eventi per il sito web (Global v1.1) |
 | Sistema demo - Set di dati evento per Call Center (Global v1.1) | Sistema demo - Schema eventi per Call Center (Global v1.1) |
 | Sistema demo - Set di dati evento per assistenti vocali (Global v1.1) | Sistema demo - Schema eventi per assistenti vocali (Global v1.1) |

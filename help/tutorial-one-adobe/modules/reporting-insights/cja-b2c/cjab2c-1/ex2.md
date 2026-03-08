@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Collegare i set di dati di Adobe Exper
 kt: 5342
 doc-type: tutorial
 exl-id: 0f8dbf05-c96f-4cb9-b038-7576a4a91bcb
-source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 1%
@@ -82,7 +82,7 @@ Come accennato, puoi impostare ID persona diversi per ogni set di dati. Questo c
 
 Il nome del campo ID persona non è importante, purché il valore nei campi ID persona corrisponda. Supponiamo di avere `email` in un set di dati e `emailAddress` in un altro set di dati definito come ID persona. Se `delaigle@adobe.com` è lo stesso valore per il campo ID persona in entrambi i set di dati, CJA potrà unire i dati.
 
-Consulta le domande frequenti su CJA qui per comprendere le sfumature con unione di identità: [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=it).
+Consulta le domande frequenti su CJA qui per comprendere le sfumature con unione di identità: [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
 
 ### Unione dei dati utilizzando l’ID persona
 
@@ -97,7 +97,7 @@ Vai a ogni set di dati per aggiornare l’ID persona. Compilare ora il campo ID 
 Dopo aver unito i due set di dati, puoi continuare.
 
 | set di dati | ID persona |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | Sistema di dimostrazione - Set di dati di eventi per il sito web (Global v1.1) | e-mail |
 | Sistema demo - Set di dati evento per Call Center (Global v1.1) | e-mail |
 

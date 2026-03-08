@@ -4,10 +4,10 @@ description: 'Customer Journey Analytics: preparazione dei dati in Analysis Work
 kt: 5342
 doc-type: tutorial
 exl-id: 0bc05318-154a-425c-9e8c-3ddcfe8ad19c
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 1%
+source-wordcount: '759'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 - Comprendere i concetti di preparazione dei dati in Analysis Workspace
 - Scopri come eseguire i calcoli dei dati
 
-## 1.1.4.1 Interfaccia utente di Analysis Workspace in CJA
+## Interfaccia utente di 1.1.4.1 Analysis Workspace in CJA
 
 Analysis Workspace rimuove tutte le limitazioni tipiche di un singolo rapporto Analytics. Fornisce un’area di lavoro solida e flessibile per la creazione di progetti di analisi personalizzati. Trascina e rilascia a un progetto un numero qualsiasi di tabelle di dati, visualizzazioni e componenti (dimensioni, metriche, segmenti e granularità temporali). Crea all’istante raggruppamenti e segmenti, crea coorti per l’analisi, crea avvisi, confronta segmenti, esegue analisi di flusso e di abbandono e cura e pianifica rapporti da condividere con chiunque nella tua azienda.
 
@@ -29,11 +29,11 @@ Customer Journey Analytics aggiunge questa soluzione ai dati di Platform. Consig
 
 Se non hai utilizzato Analysis Workspace in precedenza, ti consigliamo di guardare questo video:
 
->[!VIDEO](https://video.tv.adobe.com/v/328627?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
 
 ### Crea il progetto
 
-Ora è il momento di creare la tua prima area di lavoro CJA. Vai alla scheda **Workspace** in CJA.
+Ora è il momento di creare la tua prima area di lavoro CJA. Vai alla scheda **Workspace** all&#39;interno di CJA.
 Fare clic su **Crea progetto**.
 
 ![demo](./images/prmenu.png)
@@ -53,7 +53,7 @@ Innanzitutto, assicurati di selezionare la visualizzazione dati corretta nell’
 Ora salverai il progetto e gli assegnerai un nome. Per salvare, puoi utilizzare il seguente comando:
 
 | Sistema operativo | Scelta rapida |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | Windows | Ctrl+S |
 | Mac | Comando+S |
 
@@ -64,14 +64,14 @@ Vedrai questo pop-up:
 Utilizza questa convenzione per i nomi:
 
 | Nome | Descrizione |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `--aepUserLdap-- - Omnichannel Analysis` | `--aepUserLdap-- - Omnichannel Analysis` |
 
 Fare clic su **Salva**.
 
 ![demo](./images/prsave2.png)
 
-## 1.1.4.2 Metriche calcolate
+## 1.1.4.2 metriche calcolate
 
 Anche se abbiamo organizzato tutti i componenti nella visualizzazione dati, è ancora necessario adattarne alcuni, in modo che gli utenti aziendali siano pronti per iniziare l’analisi. Inoltre, durante qualsiasi analisi puoi creare metriche calcolate per approfondire i risultati delle informazioni.
 
@@ -110,7 +110,7 @@ Il tasso di conversione è comunemente rappresentato in percentuale. Quindi, cam
 Infine, modifica il nome e la descrizione della metrica calcolata:
 
 | Titolo | Descrizione | ID esterno |
-| ----------------- |-------------| -------------| 
+| ----------------- |-------------| -------------|
 | Tasso di conversione | Tasso di conversione | conversionRate |
 
 A quel punto si otterrà questo. Fai clic su **Salva**.
@@ -121,7 +121,7 @@ Fai di nuovo clic su **Salva**.
 
 ![demo](./images/calcbuildercr6a.png)
 
-## 1.1.4.3 Dimensioni calcolate: filtri (segmentazione) e intervalli di date
+## 1.1.4.3 dimensioni calcolate: filtri (segmentazione) e intervalli di date
 
 ### Filtri: dimensioni calcolate
 

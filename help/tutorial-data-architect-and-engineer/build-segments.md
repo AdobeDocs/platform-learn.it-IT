@@ -3,12 +3,12 @@ title: Generare segmenti
 seo-title: Build segments | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Generare segmenti
 description: In questa lezione, creeremo alcuni segmenti basati sui dati del profilo che abbiamo acquisito nelle lezioni precedenti.
-role: Data Architect
+role: Developer
 feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-build-segments.jpg
 exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 1%
@@ -25,10 +25,10 @@ Una volta che disponi di Profili cliente in tempo reale, puoi creare segmenti di
 **Gli architetti di dati** dovranno creare segmenti al di fuori di questo tutorial e supportare i colleghi con questa attività.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sulla creazione di segmenti:
->[!VIDEO](https://video.tv.adobe.com/v/36265?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on&enablevpops)
 
 
-## Autorizzazioni richieste
+## Autorizzazioni obbligatorie
 
 Nella lezione [Configurare le autorizzazioni](configure-permissions.md) è possibile impostare tutti i controlli di accesso necessari per completare la lezione, in particolare:
 

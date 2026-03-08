@@ -4,7 +4,7 @@ description: Guida introduttiva - Configurazione di Postman
 kt: 5342
 doc-type: tutorial
 exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
-source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 1%
@@ -115,7 +115,7 @@ In caso di esito positivo, nella sezione **Body** di Postman verrà visualizzata
 Dovresti vedere una risposta simile contenente le seguenti informazioni:
 
 | Chiave | Valore |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | token_type | **portatore** |
 | access_token | **eyJhbGciOiJSUz...** |
 | expires_in | **86399** |

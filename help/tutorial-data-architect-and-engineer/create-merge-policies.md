@@ -3,7 +3,7 @@ title: Creare criteri di unione
 seo-title: Create merge policies | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Creare criteri di unione
 description: In questa lezione verranno creati criteri di unione per determinare il modo in cui i dati vengono uniti nei profili.
-role: Data Architect, Data Engineer
+role: Developer
 feature: Profiles
 jira: KT-4348
 audience: data architect
@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 48a38fd96ea9072d207173a1b51153c6498090e0
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Per questa lezione verrà utilizzata l’interfaccia utente, ma sono disponibili
 **Gli architetti di dati** dovranno creare criteri di unione al di fuori di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sui criteri di unione:
->[!VIDEO](https://video.tv.adobe.com/v/345077?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## Autorizzazioni obbligatorie
 
@@ -140,7 +140,7 @@ Un caso d’uso chiave per i criteri di unione è la governance dei dati. Ad ese
 
 ## Risorse aggiuntive
 
-* [Documentazione sui criteri di unione](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=it)
+* [Documentazione sui criteri di unione](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
 * [Riferimento API per i criteri di unione (parte di Real-Time Customer Profile API)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Passiamo ora al [framework di governance dei dati](apply-data-governance-framework.md).

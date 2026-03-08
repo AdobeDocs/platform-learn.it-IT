@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Visualizzazione tramite Customer Journ
 kt: 5342
 doc-type: tutorial
 exl-id: 40498a6d-c306-47db-ae12-4cfea6983f03
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Contesto
 
-In questi esercizi utilizzerai Analysis Workspace all’interno di CJA per analizzare le visualizzazioni dei prodotti, i funnel di prodotto, l’abbandono, ecc.
+In questi esercizi utilizzerai Analysis Workspace in CJA per analizzare le visualizzazioni dei prodotti, i funnel di prodotto, l’abbandono, ecc.
 
 Copriremo alcune delle query eseguite nel Modulo 7 - Query Service in modo da vedere quanto è facile eseguire le stesse query e altro ancora, ma senza utilizzare SQL e affidandosi solo alla filosofia di trascinamento della selezione di Analysis Workspace.
 
@@ -80,7 +80,7 @@ Quali sono i primi 5 prodotti visualizzati?
 Ricorda di salvare il progetto di tanto in tanto.
 
 | Sistema operativo | Scelta rapida |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | Windows | Ctrl+S |
 | Mac | Comando+S |
 
@@ -125,10 +125,10 @@ Quindi, fai clic su **Blocca selezione** per bloccare questa visualizzazione in 
 
 Ulteriori informazioni sulle visualizzazioni con Analysis Workspace disponibili qui:
 
-- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=it](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=it)
-- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html?lang=it](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html?lang=it)
+- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)
+- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html)
 
-## Funnel di interazione del prodotto, dalla visualizzazione all’acquisto
+## Interazione prodotto funnel, dalla visualizzazione all’acquisto
 
 Ci sono molti modi per risolvere questa domanda. Una di queste consiste nell’utilizzare il tipo di interazione prodotto e utilizzarlo in una tabella a forma libera. Un altro modo consiste nell&#39;utilizzare una **Visualizzazione di fallout**. Usiamo l’ultimo dato che vogliamo visualizzare e analizzare allo stesso tempo.
 
@@ -168,7 +168,7 @@ Fai lo stesso con **commerce.productListAdds** e **commerce.purchases** e rilasc
 
 ![demo](./images/props1.png)
 
-Puoi fare molte cose qui. Alcuni esempi: confronta nel tempo, confronta ogni passaggio per dispositivo o confronta per fedeltà. Tuttavia, se desideri analizzare aspetti interessanti, come il motivo per cui i clienti non acquistano dopo aver aggiunto un articolo al carrello, possiamo utilizzare il migliore strumento in CJA: fai clic con il pulsante destro del mouse.
+Puoi fare molte cose qui. Alcuni esempi: confronta nel tempo, confronta ogni passaggio per dispositivo o confronta per fedeltà. Tuttavia, se desideri analizzare aspetti interessanti come il motivo per cui i clienti non acquistano dopo aver aggiunto un articolo al carrello, possiamo utilizzare il migliore strumento in CJA: fai clic con il pulsante destro del mouse.
 
 Fai clic con il pulsante destro del mouse sul punto di contatto **commerce.productListAdds**. Quindi fai clic su **Abbandono raggruppamento in questo punto di contatto**.
 
@@ -241,7 +241,7 @@ Segmentiamo innanzitutto i dati per ottenere solo gli utenti con **chiamate posi
 All’interno del Generatore di filtri, assegna un nome al filtro
 
 | Nome | Descrizione |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | Sentimento di chiamata - Positivo | Sentimento di chiamata - Positivo |
 
 ![demo](./images/pro47.png)
@@ -282,7 +282,7 @@ Fai lo stesso con **Persone**, **Aggiungi al carrello** e **Acquisti**. Finirai 
 
 ![demo](./images/pro55.png)
 
-Grazie alla prima analisi di flusso, mi è venuta in mente una nuova domanda. Quindi abbiamo deciso di creare questa tabella e confrontare alcuni KPI con un segmento per rispondere a quella domanda. Come è possibile notare, il tempo necessario per ottenere informazioni approfondite è molto più veloce rispetto all&#39;utilizzo di SQL o di altre soluzioni BI.
+Grazie alla prima analisi di flusso, mi è venuta in mente una nuova domanda. Quindi abbiamo deciso di creare questa tabella e confrontare alcuni KPI con un segmento per rispondere a quella domanda. Come puoi vedere, il tempo necessario per insight è molto più veloce rispetto all’utilizzo di SQL o di altre soluzioni BI.
 
 ## Ricapitolazione di Customer Journey Analytics e Analysis Workspace
 

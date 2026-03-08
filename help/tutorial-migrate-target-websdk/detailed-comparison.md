@@ -2,10 +2,10 @@
 title: 'Confronto di at.js 2.x con Web SDK: migrazione di Target da at.js 2.x a Web SDK'
 description: Scopri le differenze tra at.js 2.x e Platform Web SDK, incluse funzioni, impostazioni e flusso di dati.
 exl-id: b6f0ac2b-0d8e-46ce-8e9f-7bbc61eb20ec
-source-git-commit: 7d3c1728925e322f9313cf71f081500e0c0bac0b
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '2018'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -46,8 +46,8 @@ Se hai poca esperienza con Platform Web SDK, non preoccuparti: gli elementi ripo
 | Decisioning sul dispositivo | Supportato | Non attualmente supportato |
 | Preacquisizione di Mbox | Supportato per ambiti personalizzati e Compositore esperienza visivo per applicazioni a pagina singola | Preacquisizione è la modalità predefinita per Web SDK |
 | Eventi personalizzati | Supportato | Non supportato. Per informazioni sullo stato corrente, consulta la [roadmap pubblica](https://github.com/orgs/adobe/projects/18/views/1?pane=item&itemId=17372355{target="_blank"}). |
-| Token di risposta | Supportato | Supportato. Consulta la [documentazione dedicata sui token di risposta](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=it) per esempi di codice e differenze tra at.js e Platform Web SDK |
-| Fornitori di dati | Supportato | Non supportato. Il codice personalizzato può essere utilizzato per attivare un comando Platform Web SDK `sendEvent` dopo il recupero dei dati da un altro provider. |
+| Token di risposta | Supportato | Supportato. Consulta la [documentazione dedicata sui token di risposta](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) per esempi di codice e differenze tra at.js e Platform Web SDK |
+| Fornitori dati  | Supportato | Non supportato. Il codice personalizzato può essere utilizzato per attivare un comando Platform Web SDK `sendEvent` dopo il recupero dei dati da un altro provider. |
 
 
 ## Callout rilevanti
@@ -59,28 +59,28 @@ Se hai poca esperienza con Platform Web SDK, non preoccuparti: gli elementi ripo
 | Rendering manuale del contenuto | Le funzioni `applyOffer()` e `applyOffers()` supportano l&#39;impostazione solo di HTML | Il comando `applyPropositions` supporta l&#39;impostazione, la sostituzione o l&#39;aggiunta di HTML per una maggiore flessibilità |
 | Tracciamento degli eventi personalizzati | Supportato con `trackEvent()` e `sendNotifications()` funzioni. Queste funzioni sono specifiche di Target e non influiscono sulle metriche di Adobe Analytics. | Tutti i dati dalle chiamate di Platform Web SDK `sendEvent` vengono inoltrati a Target. I dati supplementari necessari specificatamente per Target devono essere inclusi con il comando `sendEvent` con eventType `decisioning.propositionDisplay` o `decisioning.propositionInteract` per garantire che le metriche di Adobe Analytics non siano interessate. |
 | CNAME di destinazione | Supportato. Questo è separato dal CNAME utilizzato per Analytics e dal servizio Experience Cloud ID. | Non più rilevante. Un singolo CNAME può essere utilizzato per tutte le chiamate di Platform Web SDK. |
-| Debug | I parametri URL `mboxDisable`, `mboxDebug` e `mboxTrace` possono essere utilizzati per il debug con gli strumenti di sviluppo del browser.<br><br>Adobe Experience Platform Debugger è anche uno strumento di debug supportato. | I parametri URL `mboxDisable`, `mboxDebug` e `mboxTrace` non sono supportati.<br><br>Puoi attivare il debug di Web SDK aggiungendo `alloy_debug=true` alla stringa di query o eseguendo `alloy("setDebug", { "enabled": true });` nella console per sviluppatori.<br><br>L&#39;estensione del browser Adobe Experience Platform Debugger può essere utilizzata per avviare una traccia Edge per il debug.<br><br>Per ulteriori informazioni, consultare la [documentazione relativa al debug di Platform Web SDK](debugging.md). |
+| Eseguire il debug | I parametri URL `mboxDisable`, `mboxDebug` e `mboxTrace` possono essere utilizzati per il debug con gli strumenti di sviluppo del browser.<br><br>Adobe Experience Platform Debugger è anche uno strumento di debug supportato. | I parametri URL `mboxDisable`, `mboxDebug` e `mboxTrace` non sono supportati.<br><br>Puoi attivare il debug di Web SDK aggiungendo `alloy_debug=true` alla stringa di query o eseguendo `alloy("setDebug", { "enabled": true });` nella console per sviluppatori.<br><br>L&#39;estensione del browser Adobe Experience Platform Debugger può essere utilizzata per avviare una traccia Edge per il debug.<br><br>Per ulteriori informazioni, consultare la [documentazione relativa al debug di Platform Web SDK](debugging.md). |
 | Analytics for Target (A4T) | Utilizza i valori SDID per unire le chiamate di Target e Analytics | Supportato in modalità nativa senza necessità di unione |
 
 >[!NOTE]
 >
 >La migrazione di Target a Platform Web SDK durante il mantenimento di un’implementazione AppMeasurement Adobe Analytics esistente per una determinata pagina non è supportata.
 >
-> È possibile migrare l’implementazione at.js (e AppMeasurement.js) a Platform Web SDK una pagina alla volta. Se si utilizza questo approccio, è consigliabile impostare le opzioni [`idMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=it#id-migration-enabled) e [`targetMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=it#targetMigrationEnabled) su `true` con il comando `configure`.
+> È possibile migrare l’implementazione at.js (e AppMeasurement.js) a Platform Web SDK una pagina alla volta. Se si utilizza questo approccio, è consigliabile impostare le opzioni [`idMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#id-migration-enabled) e [`targetMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#targetMigrationEnabled) su `true` con il comando `configure`.
 
 ## Funzioni di at.js ed equivalenti di Platform Web SDK
 
 Molte funzioni di at.js hanno un approccio equivalente che utilizza Platform Web SDK descritto nella tabella seguente. Per ulteriori dettagli sulle [funzioni at.js](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/atjs-functions/), consulta la Guida per gli sviluppatori di Adobe Target.
 
 | Funzione at.js 2.x | Equivalente di Platform Web SDK |
-| --- | --- | 
-| `getOffer()` e `getOffers()` | Per richiedere e [eseguire automaticamente il rendering](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=it#automatically-rendering-content) delle esperienze basate sul Compositore esperienza visivo di Target, utilizzare il comando `sendEvent` e impostare l&#39;opzione `renderDecisions` su true.<br><br>Per richiedere esperienze basate su moduli o per [eseguire manualmente il rendering del contenuto](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=it#manually-rendering-content), specifica una matrice di `decisionScopes` (mbox) con il comando `sendEvent`. |
-| `applyOffer()` e `applyOffers()` | Utilizzare il comando [`applyPropositions`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=it#applypropositions) per applicare il contenuto. È possibile scegliere di impostare, sostituire o aggiungere HTML a un selettore specifico. |
-| `triggerView()` | Platform Web SDK attiva automaticamente una [modifica della visualizzazione](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html?lang=it#how-to-trigger-a-view-change-in-a-single-page-application) ai fini del Compositore esperienza visivo per applicazioni a pagina singola se la proprietà `web.webPageDetails.viewName` è impostata nell&#39;opzione `xdm` del comando `sendEvent`. |
-| `trackEvent()` e `sendNotifications()` | Utilizza il comando `sendEvent` con un set [`eventType` &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html?lang=it#how-to-track-events) specifico:<br><br>`decisioning.propositionDisplay` segnala il rendering di un&#39;attività<br><br>`decisioning.propositionInteract` segnala un&#39;interazione dell&#39;utente con un&#39;attività, come un clic del mouse. |
+| --- | --- |
+| `getOffer()` e `getOffers()` | Per richiedere e [eseguire automaticamente il rendering](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#automatically-rendering-content) delle esperienze basate sul Compositore esperienza visivo di Target, utilizzare il comando `sendEvent` e impostare l&#39;opzione `renderDecisions` su true.<br><br>Per richiedere esperienze basate su moduli o per [eseguire manualmente il rendering del contenuto](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content), specifica una matrice di `decisionScopes` (mbox) con il comando `sendEvent`. |
+| `applyOffer()` e `applyOffers()` | Utilizzare il comando [`applyPropositions`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#applypropositions) per applicare il contenuto. È possibile scegliere di impostare, sostituire o aggiungere HTML a un selettore specifico. |
+| `triggerView()` | Platform Web SDK attiva automaticamente una [modifica della visualizzazione](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html#how-to-trigger-a-view-change-in-a-single-page-application) ai fini del Compositore esperienza visivo per applicazioni a pagina singola se la proprietà `web.webPageDetails.viewName` è impostata nell&#39;opzione `xdm` del comando `sendEvent`. |
+| `trackEvent()` e `sendNotifications()` | Utilizza il comando `sendEvent` con un set [`eventType` ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html#how-to-track-events) specifico:<br><br>`decisioning.propositionDisplay` segnala il rendering di un&#39;attività<br><br>`decisioning.propositionInteract` segnala un&#39;interazione dell&#39;utente con un&#39;attività, come un clic del mouse. |
 | `targetGlobalSettings()` | Nessun equivalente diretto. Per ulteriori dettagli, consulta il [confronto delle impostazioni di Target](detailed-comparison.md). |
-| `targetPageParams()` e `targetPageParamsAll()` | Tutti i dati passati nell&#39;opzione `xdm` del comando `sendEvent` sono mappati ai parametri mbox di Target. Poiché i parametri mbox sono denominati utilizzando la notazione con punti serializzati, la migrazione a Platform Web SDK potrebbe richiedere l’aggiornamento dei tipi di pubblico e delle attività esistenti per l’utilizzo dei nuovi nomi di parametri mbox. <br><br>I dati passati come parte di `data.__adobe.target` del comando `sendEvent` sono mappati a [Parametri specifici del profilo di destinazione e della funzione Consigli](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html?lang=it#single-profile-update). |
-| Eventi personalizzati at.js | Non supportato. Per informazioni sullo stato corrente, consulta la [roadmap pubblica](https://github.com/orgs/adobe/projects/18/views/1?pane=item&itemId=17372355{target="_blank"}). [I token di risposta](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html?lang=it) sono esposti come parte di `propositions` nella risposta della chiamata `sendEvent`. |
+| `targetPageParams()` e `targetPageParamsAll()` | Tutti i dati passati nell&#39;opzione `xdm` del comando `sendEvent` sono mappati ai parametri mbox di Target. Poiché i parametri mbox sono denominati utilizzando la notazione con punti serializzati, la migrazione a Platform Web SDK potrebbe richiedere l’aggiornamento dei tipi di pubblico e delle attività esistenti per l’utilizzo dei nuovi nomi di parametri mbox. <br><br>I dati passati come parte di `data.__adobe.target` del comando `sendEvent` sono mappati a [Parametri specifici del profilo di destinazione e della funzione Consigli](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html#single-profile-update). |
+| Eventi personalizzati at.js | Non supportato. Per informazioni sullo stato corrente, consulta la [roadmap pubblica](https://github.com/orgs/adobe/projects/18/views/1?pane=item&itemId=17372355{target="_blank"}). [I token di risposta](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) sono esposti come parte di `propositions` nella risposta della chiamata `sendEvent`. |
 
 ## Impostazioni di at.js ed equivalenti di Platform Web SDK
 
@@ -88,12 +88,12 @@ La libreria at.js può essere configurata e scaricata con varie impostazioni nel
 
 | Impostazione at.js | Equivalente di Platform Web SDK |
 | --- | --- |
-| `bodyHiddenStyle` | Imposta [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=it#prehidingStyle) con il comando `configure` |
+| `bodyHiddenStyle` | Imposta [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) con il comando `configure` |
 | `bodyHidingEnabled` | Se un `prehidingStyle` è definito con il comando `configure`, questa funzione è abilitata. Se non è definito uno stile, Platform Web SDK non tenta di nascondere alcun contenuto. |
 | `clientCode` | Configurazione automatica |
 | `cookieDomain` | Non applicabile |
 | `crossDomain` | Imposta l&#39;opzione `thirdPartyCookiesEnabled` su `true` con il comando `configure` per abilitare i cookie di prime e terze parti per i casi di utilizzo tra domini diversi |
-| `cspScriptNonce` e `cspStyleNonce` | Consulta la documentazione per [configurazione di un CSP](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-a-csp.html?lang=it) |
+| `cspScriptNonce` e `cspStyleNonce` | Consulta la documentazione per [configurazione di un CSP](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-a-csp.html) |
 | `dataProviders` | Non supportato |
 | `decisioningMethod` | Tutti i comandi di Platform Web SDK `sendEvent` utilizzano le decisioni lato server. Le decisioni ibride e su dispositivo non sono supportate. |
 | `defaultContentHiddenStyle` e `defaultContentVisibleStyle` | Applicabile solo con at.js 1.x. Simile a at.js 2.x, qualsiasi mitigazione della visualizzazione momentanea di altri contenuti per esperienze basate su moduli può essere ottenuta utilizzando un codice personalizzato. |
@@ -101,7 +101,7 @@ La libreria at.js può essere configurata e scaricata con varie impostazioni nel
 | `enabled` | La funzionalità di destinazione è abilitata o disabilitata con la configurazione del flusso di dati |
 | `globalMboxAutoCreate` | Imposta l&#39;opzione `renderDecisions` su `true` con il comando `sendEvent` per recuperare ed eseguire automaticamente il rendering delle esperienze basate sul Compositore esperienza visivo.<br><br>Richiedi `decisionScope` per `__view__` se preferisci eseguire manualmente il rendering delle esperienze basate su Compositore esperienza visivo. |
 | `imsOrgId` | Imposta `orgId` con il comando `configure` |
-| `optinEnabled` e `optoutEnabled` | Consulta le [opzioni per la privacy](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=it) di Platform Web SDK. L&#39;opzione `defaultConsent` si applica a tutte le soluzioni Adobe supportate da Platform Web SDK. |
+| `optinEnabled` e `optoutEnabled` | Consulta le [opzioni per la privacy](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) di Platform Web SDK. L&#39;opzione `defaultConsent` si applica a tutte le soluzioni Adobe supportate da Platform Web SDK. |
 | `overrideMboxEdgeServer` e `overrideMboxEdgeServerTimeout` | Non applicabile. Tutte le richieste di Platform Web SDK utilizzano la rete Adobe Experience Platform Edge. |
 | `pageLoadEnabled` | Imposta l&#39;opzione `renderDecisions` su `true` con il comando `sendEvent` |
 | `secureOnly` | Non supportato. Platform Web SDK imposta tutti i cookie con gli attributi `secure` e `sameSite="none"`. |
@@ -128,9 +128,9 @@ Comportamento di ![at.js 2.0 al caricamento della pagina](assets/target-at-js-2x
 | 3 | Viene effettuata una richiesta di caricamento della pagina, con tutti i parametri configurati, ECID, SDID e ID cliente. |
 | 4 | Gli script di profilo vengono eseguiti e inseriti nell’archivio profili. L’archivio richiede un pubblico idoneo dalla libreria Pubblico (ad esempio, pubblico condiviso da Analytics, Audience Manager e così via). Gli attributi del cliente vengono inviati all’archivio profili in un processo batch. |
 | 5 | In base all’URL, ai parametri di richiesta e ai dati di profilo, Target decide quali attività ed esperienze restituire al visitatore per la pagina corrente e le viste future. |
-| 6 | Contenuto di destinazione rinviato alla pagina, includendo facoltativamente i valori di profilo per ulteriore personalizzazione.<br><br>Il contenuto di destinazione nella pagina corrente viene mostrato il più rapidamente possibile senza che venga visualizzato momentaneamente il contenuto predefinito.<br><br>Il contenuto di destinazione per le viste future di un&#39;applicazione a pagina singola è memorizzato nella cache del browser, quindi può essere applicato immediatamente senza una chiamata al server aggiuntiva quando si attivano le viste. |
+| 6 | Contenuto di destinazione rinviato alla pagina, includendo facoltativamente i valori di profilo per ulteriore personalizzazione.<br><br>Il contenuto mirato sulla pagina corrente viene mostrato il più rapidamente possibile senza che venga visualizzato momentaneamente il contenuto predefinito.<br><br>Il contenuto di destinazione per le viste future di un&#39;applicazione a pagina singola è memorizzato nella cache del browser, quindi può essere applicato immediatamente senza una chiamata al server aggiuntiva quando si attivano le viste. |
 | 7 | Dati di Analytics inviati dalla pagina ai server di raccolta dati. |
-| 8 | I dati di Target vengono confrontati con i dati di Analytics tramite SDID ed elaborati nell’archivio dei rapporti di Analytics. I dati di Analytics possono quindi essere visualizzati sia in Analytics che in Target tramite i rapporti A4T. |
+| 8 | I dati di Target vengono confrontati con i dati di Analytics tramite SDID e vengono elaborati nell’archivio dei rapporti di Analytics. È quindi possibile visualizzare i dati di Analytics sia in Analytics che in Target tramite i rapporti A4T. |
 
 Per ulteriori informazioni su come [implementare Target utilizzando at.js per applicazioni a pagina singola](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application/), consulta la guida per sviluppatori.
 
@@ -148,10 +148,10 @@ Per ulteriori informazioni su come [implementare Target utilizzando at.js per ap
 | 6 | a. La rete Edge invia nuovamente la risposta di personalizzazione alla pagina, includendo facoltativamente i valori di profilo per ulteriore personalizzazione. Il contenuto personalizzato nella pagina corrente viene mostrato il più rapidamente possibile senza che venga visualizzato momentaneamente il contenuto predefinito.<br><br> b. Il contenuto personalizzato per le viste mostrate come risultato delle azioni dell’utente in un’applicazione a pagina singola viene memorizzato nella cache per il rendering immediato senza chiamate al server aggiuntive.<br><br>c. La rete Edge invia l’ID visitatore e altri valori nei cookie (ad esempio consenso, ID sessione, identità, controllo dei cookie, personalizzazione e così via). |
 | 7 | La rete Edge inoltra i dettagli di Analytics for Target (A4T) (metadati di attività, esperienza e conversione) al server Edge di Analytics. |
 
-Per ulteriori informazioni su come [implementare Target utilizzando Platform Web SDK per applicazioni a pagina singola](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/spa-implementation.html?lang=it), consultare la guida per gli sviluppatori.
+Per ulteriori informazioni su come [implementare Target utilizzando Platform Web SDK per applicazioni a pagina singola](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/spa-implementation.html), consultare la guida per gli sviluppatori.
 
 Dopo aver acquisito una buona conoscenza tecnica dell&#39;implementazione corrente di Target e delle funzionalità utilizzate, il passaggio successivo consiste nell&#39;eseguire la [configurazione iniziale](initial-setup.md).
 
 >[!NOTE]
 >
->Ci impegniamo ad aiutarti con la migrazione di Target da at.js a Web SDK. Se incontri ostacoli con la migrazione o pensi che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=it#M463).
+>Ci impegniamo ad aiutarti con la migrazione di Target da at.js a Web SDK. Se incontri ostacoli con la migrazione o pensi che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

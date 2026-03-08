@@ -4,10 +4,10 @@ description: Customer Journey Analytics - Creare una visualizzazione dati
 kt: 5342
 doc-type: tutorial
 exl-id: 048e4f0f-4713-4249-a118-88906b3ba5c0
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 3%
+source-wordcount: '1591'
+ht-degree: 1%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 3%
 - Comprendere le impostazioni di base della definizione della visita
 - Comprendere l’attribuzione e la persistenza all’interno di una visualizzazione dati
 
-## 1.1.3.1 Visualizzazione dati
+## Visualizzazione dati 1.1.3.1
 
-Una volta stabilita la connessione, ora puoi passare a influenzare la visualizzazione. Una differenza tra Adobe Analytics e CJA è che CJA necessita di una visualizzazione dati per pulire e preparare i dati prima della visualizzazione.
+Una volta stabilita la connessione, ora puoi passare a influenzare la visualizzazione. Una differenza tra Adobe Analytics e CJA è che CJA ha bisogno di una Visualizzazione dati per pulire e preparare i dati prima della visualizzazione.
 
 Una visualizzazione dati è simile al concetto di suite di rapporti virtuali in Adobe Analytics, in cui si definiscono le definizioni di visita in base al contesto, i filtri e anche il modo in cui vengono chiamati i componenti.
 
@@ -40,7 +40,7 @@ Verrai reindirizzato al flusso di lavoro **Crea visualizzazione dati**.
 
 ![demo](./images/0v2.png)
 
-## 1.1.3.2 Definizione della visualizzazione dati
+## Definizione visualizzazione dati 1.1.3.2
 
 Ora puoi configurare le definizioni di base per la visualizzazione dati.
 
@@ -55,12 +55,12 @@ Assegnare quindi un nome alla visualizzazione dati seguendo questa convenzione d
 Immettere lo stesso valore per la descrizione: `--aepUserLdap-- – Omnichannel Data View`.
 
 | Nome | Descrizione | ID esterno |
-| ----------------- |-------------|-------------| 
+| ----------------- |-------------|-------------|
 | `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap--123` |
 
 ![demo](./images/1v2.png)
 
-Per il **fuso orario**, selezionare il fuso orario **Ora di Greenwich; Monrovia, Casablanca [GMT]**. Si tratta di un contesto molto interessante in quanto alcune aziende operano in paesi e aree geografiche diversi. Assegnare il fuso orario giusto a ciascun paese eviterebbe di commettere errori tipici nei dati, come credere, ad esempio, che in Perù la maggior parte della gente compri magliette alle 4 del mattino.
+Per il **fuso orario**, selezionare il fuso orario **Ora di Greenwich; Monrovia, Casablanca [GMT]**. Si tratta di un contesto molto interessante in quanto alcune aziende operano in paesi e aree geografiche diversi. L&#39;assegnazione del fuso orario corretto per ogni paese evita gli errori tipici nei dati, come credere, ad esempio, che in Perù la maggior parte delle persone acquisti magliette alle 4:00 del mattino.
 
 ![demo](./images/ext7.png)
 
@@ -78,7 +78,7 @@ Fai clic su **Salva**.
 
 ![demo](./images/12v2a.png)
 
-## 1.1.3.3 Componenti della visualizzazione dati
+## 1.1.3.3 componenti visualizzazione dati
 
 In questo esercizio configurerai i componenti necessari per analizzare i dati e visualizzarli utilizzando Analysis Workspace. In questa interfaccia utente sono disponibili tre aree principali:
 
@@ -108,12 +108,12 @@ Un elemento molto importante è **Impostazioni di persistenza**. Il concetto di 
 
 Se non modifichi queste impostazioni, CJA interpreterà la dimensione come **Prop** (livello hit). Inoltre, possiamo cambiare la persistenza per rendere la dimensione un **eVar** (mantenere il valore in tutto il percorso).
 
-Se non conosci eVar e proprietà, puoi [ulteriori informazioni su di esse nella documentazione](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html?lang=it).
+Se non conosci eVar e proprietà, puoi [ulteriori informazioni su di esse nella documentazione](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
 
 Lasciamo Nome pagina come proprietà. Non è quindi necessario modificare le **impostazioni di persistenza**.
 
 | Nome componente da cercare | Nuovo nome | Impostazioni persistenza |
-| ----------------- |-------------| --------------------| 
+| ----------------- |-------------| --------------------|
 | Nome (web.webPageDetails.name) | Nome pagina |          |
 
 Quindi, scegli la dimensione **phoneNumber** e rilasciala nell&#39;area di lavoro. Il nuovo nome deve essere **Numero di telefono**.
@@ -129,7 +129,7 @@ Per modificare la persistenza, scorri verso il basso nel menu a destra e apri la
 Seleziona la casella di controllo per modificare le impostazioni di persistenza. Seleziona **Most Recent** (Più recente) e l&#39;ambito **Person (Finestra di reporting)** (Persona), in quanto ci interessa solo l&#39;ultimo numero di cellulare di quella persona. Se il cliente non compila il dispositivo mobile nelle visite future, vedrai comunque questo valore popolato.
 
 | Nome componente da cercare | Nuovo nome | Impostazioni persistenza |
-| ----------------- |-------------| --------------------| 
+| ----------------- |-------------| --------------------|
 | phoneNumber | Numero di telefono | Più recente, finestra di reporting per persona |
 
 ![demo](./images/6v2.png)
@@ -141,7 +141,7 @@ Nel menu a sinistra, cercare `web.webPageDetails.pageViews.value`. Trascina e ri
 Cambia il nome in **Visualizzazioni pagina** nelle **Impostazioni componente**.
 
 | Nome componente da cercare | Nuovo nome | Impostazioni di attribuzione |
-| ----------------- |-------------| --------------------| 
+| ----------------- |-------------| --------------------|
 | web.webPageDetails.pageViews.value | Page Views |         |
 
 ![demo](./images/7v2.png)
@@ -156,7 +156,7 @@ Successivamente, dovrai configurare molte dimensioni e metriche, come indicato n
 
 
 | Nome componente da cercare | Nuovo nome | Impostazioni persistenza |
-| ----------------- |-------------| --------------------| 
+| ----------------- |-------------| --------------------|
 | brandName | Marchio | Più recente, sessione |
 | sentimento di chiamata | Sentimento di chiamata |          |
 | ID chiamata | Tipo di interazione chiamata |          |
@@ -164,10 +164,10 @@ Successivamente, dovrai configurare molte dimensioni e metriche, come indicato n
 | ecid | ECID | Più recente, finestra di reporting per persona |
 | e-mail | ID e-mail | Più recente, finestra di reporting per persona |
 | Tipo di pagamento | Tipo di pagamento |          |
-| Metodo di aggiunta del prodotto | Metodo di aggiunta del prodotto | Più recente, sessione |
+| Metodo di aggiunta prodotto | Metodo di aggiunta prodotto | Più recente, sessione |
 | Tipo evento | Tipo evento |         |
-| Nome (productListItems.name) | nome del prodotto |         |
-| SKU (Stock Keeping Unit) | SKU (sessione) | Più recente, sessione |
+| Nome (productListItems.name) | Nome prodotto |         |
+| SKU | SKU (sessione) | Più recente, sessione |
 | ID transazione | ID transazione |         |
 | URL (web.webPageDetails.URL) | URL |         |
 | Agente utente | Agente utente | Più recente, sessione |
@@ -175,7 +175,7 @@ Successivamente, dovrai configurare molte dimensioni e metriche, come indicato n
 ### METRICHE
 
 | Nome componente da cercare | Nuovo nome | Impostazioni di attribuzione |
-| ----------------- |-------------| --------------------| 
+| ----------------- |-------------| --------------------|
 | Quantità | Quantità |          |
 | commerce.order.priceTotal | Ricavi |         |
 
@@ -183,7 +183,7 @@ La configurazione dovrebbe quindi essere simile alla seguente. Non dimenticare d
 
 ![demo](./images/11v2.png)
 
-## 1.1.3.4 Metriche calcolate
+## 1.1.3.4 metriche calcolate
 
 
 Anche se hai organizzato tutti i componenti nella visualizzazione dati, devi comunque adattarne alcuni, in modo che gli utenti aziendali siano pronti per iniziare la loro analisi.
@@ -201,7 +201,7 @@ Fare clic per selezionare la nuova metrica **Tipo evento**.
 Ora modifica il nome e la descrizione del componente con i seguenti valori:
 
 | Nome componente | Descrizione componente |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | Visualizzazioni prodotto | Visualizzazioni prodotto |
 
 ![demo](./images/calcmetr3.png)
@@ -262,7 +262,7 @@ La configurazione finale dovrebbe quindi essere simile a questa. Fai clic su **S
 
 ![demo](./images/calcmetr8.png)
 
-## 1.1.3.5 Impostazioni della visualizzazione dati
+## Impostazioni visualizzazione dati 1.1.3.5
 
 Dovresti essere reindirizzato a questa schermata:
 

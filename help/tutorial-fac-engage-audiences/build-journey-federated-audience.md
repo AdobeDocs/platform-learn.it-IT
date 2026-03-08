@@ -3,14 +3,14 @@ title: Creare un percorso con un pubblico federato
 seo-title: Build a journey with a Federated Audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Creare un percorso con un pubblico federato
 description: In questo esercizio, un pubblico federato viene utilizzato in un percorso Journey Optimizer.
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '419'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -70,7 +70,7 @@ Per continuare con la storia di SecurFinancial, in particolare il caso di utiliz
 
 11. Ora che è stata aggiunta la personalizzazione del nome, aggiungi `Hi, ` davanti alla variabile di personalizzazione. Quindi fai clic su **Salva**.
 
-    ![percorso-e-mail-salva](assets/journey-email-save.png)
+   ![percorso-e-mail-salva](assets/journey-email-save.png)
 
 12. Fai clic due volte sul pulsante **Indietro** per tornare all&#39;area di lavoro del percorso. Quindi nel menu **Azione: e-mail** a destra, fai clic su **Salva**.
 

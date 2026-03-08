@@ -2,14 +2,14 @@
 title: Connettere e configurare Federated Audience Composition
 description: Scopri come connettersi al tuo data warehouse e configurare tale connessione per Federated Audience Composition.
 feature: Audiences
-role: Admin, Data Architect, Data Engineer
+role: Admin, Developer
 level: Intermediate
 doc-type: Feature Video
 duration: 0
 last-substantial-update: 2024-08-30T00:00:00Z
 jira: KT-16120
 exl-id: 993b514a-67ea-4d71-8c6b-e0e4f600b603
-source-git-commit: 6abeaf0a2fb246655b3f6c55fd6785b7619bd456
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '54'
 ht-degree: 1%
@@ -20,4 +20,4 @@ ht-degree: 1%
 
 Scopri come connettersi al tuo data warehouse e configurare tale connessione per Federated Audience Composition. Per ulteriori informazioni, visita la [documentazione Federated Audience Composition](https://experienceleague.adobe.com/it/docs/federated-audience-composition/using/home){target="_blank"}.
 
->[!VIDEO](https://video.tv.adobe.com/v/3451564/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3433246/?learn=on&enablevpops)

@@ -5,11 +5,11 @@ user-guide-description: Video ed tutorial utili per utilizzare al meglio la funz
 solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
-role: Developer, Data Engineer
-source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
+role: Developer
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 31%
+ht-degree: 32%
 
 ---
 
@@ -24,17 +24,17 @@ ht-degree: 31%
    + [Utilizzare ambienti e codici di incorporamento](tags/use-environments-and-embed-codes.md)
    + [Aggiungere e configurare le estensioni](tags/add-and-configure-extensions.md)
    + [Creare elementi dati](tags/create-data-elements.md)
-   + [Creare regole](tags/build-rules.md)
+   + [Creare le regole](tags/build-rules.md)
    + [Regole dello stack](tags/stack-rules.md)
    + [Creare e pubblicare una libreria](tags/build-and-publish-a-library.md)
    + [Implementazione in siti Web con Web SDK](https://experienceleague.adobe.com/it/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
-   + [Implementazione in siti Web con SDK della soluzione](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=it){target="_blank"}
-   + [Implementazione nelle app per dispositivi mobili](https://experienceleague.adobe.com/it/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+   + [Implementazione in siti Web con SDK della soluzione](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
+   + [Implementazione nelle app per dispositivi mobili](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
 + Web SDK{#web-sdk}
    + [Panoramica](web-sdk/overview.md)
    + [Demo](web-sdk/demo.md)
    + [Esercitazione sull&#39;implementazione (con tag)](https://experienceleague.adobe.com/it/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
-   + [Esercitazione sulla migrazione di Target](https://experienceleague.adobe.com/it/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
+   + [Esercitazione sulla migrazione di Target](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
    + [Esercitazione sulla migrazione ad Analytics](https://experienceleague.adobe.com/it/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
    + Consenso{#consent}
       + [Panoramica](web-sdk/consent/overview.md)
@@ -46,7 +46,7 @@ ht-degree: 31%
    + [Panoramica](mobile-sdk/overview.md)
    + [Creare proprietà mobili](mobile-sdk/create-mobile-properties.md)
    + [Utilizzare i manager delle dipendenze](mobile-sdk/use-dependency-managers.md)
-   + [Implementazione nelle app per dispositivi mobili](https://experienceleague.adobe.com/it/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+   + [Implementazione nelle app per dispositivi mobili](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
 
    + [Esercitazione sulla migrazione di Target](https://experienceleague.adobe.com/it/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview){target="_blank"}
 + API server{#server-api}

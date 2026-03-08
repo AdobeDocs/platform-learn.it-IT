@@ -4,10 +4,10 @@ description: Foundation - Real-time Customer Profile - Visualizzare il proprio p
 kt: 5342
 doc-type: tutorial
 exl-id: dd80f379-76f2-4023-b958-6ee558e23e88
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '2346'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -29,7 +29,7 @@ Nel pannello Visualizzatore profili del sito web puoi trovare più identità. Og
 
 Nel pannello a raggi X, possiamo vedere 4 diverse combinazioni di ID e namespace:
 
-| Identità | Namespace |
+| Identità | Spazio dei nomi |
 |:-------------:| :---------------:|
 | Experience Cloud ID (ECID) | 79943948563923140522865572770524243489 |
 | Experience Cloud ID (ECID) | 70559351147248820114888181867542007989 |
@@ -72,7 +72,7 @@ Seleziona i profili di prodotto richiesti.
 
 >[!NOTE]
 >
-> I nomi dei profili di prodotto variano nell’istanza Adobe Experience Platform in quanto sono specifici per l’istanza. Devi selezionare almeno un profilo di prodotto con i diritti di accesso appropriati, impostati in Adobe Admin Console e nell’interfaccia utente delle autorizzazioni AEP.
+> I nomi dei profili di prodotto variano nell’istanza Adobe Experience Platform in quanto sono specifici per l’istanza. Devi selezionare almeno un profilo di prodotto con i diritti di accesso appropriati, impostati in Adobe Admin Console e nell’interfaccia utente delle autorizzazioni di AEP.
 
 Fare clic su **Salva API configurata**.
 
@@ -108,7 +108,7 @@ L’integrazione con Adobe I/O è terminata.
 >
 >È necessario un ulteriore passaggio per garantire che questo progetto Adobe I/O abbia accesso alle impostazioni delle autorizzazioni di Adobe Experience Platform. Le credenziali API del progetto devono essere aggiunte all’interfaccia utente Autorizzazioni di Adobe Experience Platform, per la quale sono necessari i diritti di accesso di amministratore di sistema. I passaggi sono documentati di seguito, ma potrebbe essere necessario contattare l’amministratore di sistema per eseguire l’elaborazione nel caso in cui non si disponga dei diritti di accesso richiesti.
 
-## Autorizzazioni AEP per le credenziali API
+## Autorizzazioni di AEP per le credenziali API
 
 >[!IMPORTANT]
 >
@@ -120,7 +120,7 @@ Vai a **Autorizzazioni**, a **Ruoli** e fai clic sul relativo profilo di prodott
 
 >[!NOTE]
 >
-> I nomi dei profili di prodotto variano nell’istanza Adobe Experience Platform in quanto sono specifici per l’istanza. Devi selezionare almeno un profilo di prodotto con i diritti di accesso appropriati, impostati in Adobe Admin Console e nell’interfaccia utente delle autorizzazioni AEP.
+> I nomi dei profili di prodotto variano nell’istanza Adobe Experience Platform in quanto sono specifici per l’istanza. Devi selezionare almeno un profilo di prodotto con i diritti di accesso appropriati, impostati in Adobe Admin Console e nell’interfaccia utente delle autorizzazioni di AEP.
 
 ![Autorizzazioni](./images/perm1.png)
 
@@ -210,7 +210,7 @@ Dopo un paio di secondi, dovresti visualizzare una risposta nella sezione **Body
 Se la configurazione è andata a buon fine, dovresti vedere una risposta simile che contiene le seguenti informazioni:
 
 | Chiave | Valore |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | token_type | **portatore** |
 | access_token | **eyJhbGciOiJSU...jrNZ6mdaQ** |
 | expires_in | **86399** |
@@ -223,7 +223,7 @@ Il token ricevuto è ora valido per 24 ore. Ciò significa che dopo 24 ore, se d
 
 Ora puoi procedere e inviare la tua prima richiesta alle API Real-time Customer Profile di Platform.
 
-In Postman, individua la raccolta **Tutorial AEP**.
+In Postman, individua la raccolta **AEP Tutorial**.
 
 ![Postman](./images/coll_enablement.png)
 
@@ -234,7 +234,7 @@ In **1. Servizio profili unificati**, fare clic sulla prima richiesta denominata
 Per questa richiesta, sono necessarie tre variabili:
 
 | Chiave | Valore | Definizione |
-|:-------------:| :---------------:| :---------------:| 
+|:-------------:| :---------------:| :---------------:|
 | entityId | **id** | l’ID cliente specifico |
 | entityIdNS | **spazio dei nomi** | lo spazio dei nomi specifico applicabile all’ID |
 | schema.name | **_xdm.context.profile** | lo schema specifico per il quale si desidera ricevere informazioni |
@@ -242,7 +242,7 @@ Per questa richiesta, sono necessarie tre variabili:
 Pertanto, se desideri che le API di Adobe Experience Platform ti forniscano tutte le informazioni sul profilo per il tuo ECID, devi configurare la richiesta come segue:
 
 | Chiave | Valore |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | entityId | **tuoECID** |
 | entityIdNS | **ecid** |
 | schema.name | **_xdm.context.profile** |
@@ -398,7 +398,7 @@ Torniamo a Postman e fingiamo di essere il call center e inviamo una richiesta a
 Pertanto, se desideri chiedere alle API di Platform di restituirti tutte le informazioni sul profilo per un telefono specifico, dovrai configurare la richiesta come segue:
 
 | Chiave | Valore |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | entityId | **numero di telefono** |
 | entityIdNS | **telefono** (sostituisci ecid con telefono) |
 | schema.name | **_xdm.context.profile** |
@@ -433,7 +433,7 @@ Facciamo la stessa cosa per il tuo indirizzo e-mail specificando lo spazio dei n
 Pertanto, se desideri chiedere alle API di Platform di restituirti tutte le informazioni sul profilo per un indirizzo e-mail specifico, dovrai configurare la richiesta come segue:
 
 | Chiave | Valore |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | entityId | **messaggio** |
 | entityIdNS | **e-mail** (sostituisci telefono con e-mail) |
 | schema.name | **_xdm.context.profile** |
@@ -476,7 +476,7 @@ Il Call Center non sa necessariamente che tipo di identificatore viene utilizzat
 
 Dopo aver eseguito correttamente la query sulle API di Platform per i dati del profilo, facciamo lo stesso con i dati ExperienceEvent.
 
-In Postman, individua la raccolta **Tutorial AEP**.
+In Postman, individua la raccolta **AEP Tutorial**.
 
 ![Postman](./images/coll_enablement.png)
 
@@ -487,7 +487,7 @@ In **1. Servizio profili unificati**, selezionare la seconda richiesta denominat
 Per questa richiesta, sono necessarie quattro variabili:
 
 | Chiave | Valore | Definizione |
-|:-------------:| :---------------:|  :---------------:| 
+|:-------------:| :---------------:|  :---------------:|
 | schema.name | **_xdm.context.experienceevent** | lo schema specifico per il quale desideri ricevere informazioni. In questo caso, stiamo cercando i dati mappati sullo schema ExperienceEvent. |
 | relatedSchema.name | **_xdm.context.profile** | Durante la ricerca di dati mappati sullo schema ExperienceEvent, è necessario specificare un’identità per la quale ricevere i dati. Lo schema che ha accesso all’identità è Profile-schema, quindi relatedSchema è Profile-schema. |
 | relatedEntityId | **id** | lo specifico ID cliente |
@@ -496,7 +496,7 @@ Per questa richiesta, sono necessarie quattro variabili:
 Pertanto, se desideri che le API di Platform ti forniscano tutte le informazioni di profilo per il tuo ecid, devi configurare la richiesta come segue:
 
 | Chiave | Valore |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | schema.name | **_xdm.context.experienceevent** |
 | relatedSchema.name | **_xdm.context.profile** |
 | relatedEntityId | **tuoECID** |

@@ -4,9 +4,9 @@ description: Acquisire e analizzare i dati Google Analytics in Adobe Experience 
 kt: 5342
 doc-type: tutorial
 exl-id: 9380c621-34b0-4d14-baf6-9b6fedd63d5f
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '3114'
+source-wordcount: '3110'
 ht-degree: 2%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 2%
 
 ## Obiettivi
 
-- Connettere il set di dati BigQuery a Customer Journey Analytics (CJA)
+- Collegare il set di dati BigQuery a Customer Journey Analytics (CJA)
 - Connetti e unisciti a Google Analytics con Dati fedeltà.
-- Acquisire familiarità con l’interfaccia utente di CJA
+- Acquisisci familiarità con l’interfaccia utente di CJA
 
-## 1.2.5.1 Creare una connessione
+## 1.2.5.1 Crea una connessione
 
 Vai a [analytics.adobe.com](https://analytics.adobe.com) per accedere a Customer Journey Analytics.
 
@@ -71,15 +71,15 @@ Allora sarai qui. Fai clic su **Salva**.
 
 ![demo](./images/d4.png)
 
-Dopo aver creato la **connessione**, potrebbero essere necessarie alcune ore prima che i dati siano disponibili in CJA.
+Dopo aver creato la **Connessione**, potrebbero essere necessarie alcune ore prima che i dati siano disponibili in CJA.
 
 La connessione verrà quindi visualizzata nell&#39;elenco delle connessioni disponibili.
 
 ![demo](./images/d5.png)
 
-## 1.2.5.2 Creare una visualizzazione dati
+## 1.2.5.2 Crea una visualizzazione dati
 
-Una volta stabilita la connessione, ora puoi passare a influenzare la visualizzazione. Una differenza tra Adobe Analytics e CJA è che CJA necessita di una visualizzazione dati per pulire e preparare i dati prima della visualizzazione.
+Una volta stabilita la connessione, ora puoi passare a influenzare la visualizzazione. Una differenza tra Adobe Analytics e CJA è che CJA ha bisogno di una visualizzazione dati per pulire e preparare i dati prima della visualizzazione.
 
 Una visualizzazione dati è simile al concetto di suite di rapporti virtuali in Adobe Analytics, in cui puoi definire le definizioni delle visite in base al contesto, filtrare e anche chiamare i componenti.
 
@@ -110,8 +110,8 @@ Immettere lo stesso valore per la descrizione: `--aepUserLdap-- - GA + Loyalty D
 Prima di eseguire un’analisi o una visualizzazione è necessario creare una visualizzazione dati con tutti i campi, le dimensioni e le metriche e le relative impostazioni di attribuzione.
 
 | Campo | Convenzione di denominazione |
-| ----------------- |-------------|  
-| Nome connessione | `--aepUserLdap-- - GA + Loyalty Data View` | vangeluw - GA + Visualizzazione dati fedeltà |
+| ----------------- |-------------|
+| Nome connessione | `--aepUserLdap-- - GA + Loyalty Data View` \| vangeluw - GA + Visualizzazione dati fedeltà |
 | Descrizione | `--aepUserLdap-- - GA + Loyalty Data View` |
 | ID esterno | `--aepUserLdap--GA` |
 
@@ -141,7 +141,7 @@ Aggiungi i seguenti componenti alla visualizzazione dati. Assicurati anche di ag
 | Dimensione | livello | Livello di fedeltà | `_experienceplatform.loyaltyDetails.level` |
 | Dimensione | channel.mediaType | Medium traffico | `channel.mediaType` |
 | Dimensione | channel.typeAtSource | Traffic Source | `channel.typeAtSource` |
-| Dimensione | Codice di tracking | Canale di marketing | `marketing.trackingCode` |
+| Dimensione | Codice di tracciamento | Canale di marketing | `marketing.trackingCode` |
 | Dimensione | gaid | ID GOOGLE ANALYTICS | `_experienceplatform.identification.core.gaid` |
 | Dimensione | web.webPageDetails.name | Titolo pagina | `web.webPageDetails.name` |
 | Dimensione | Fornitore | Browser | `environment.browserDetails.vendor` |
@@ -149,7 +149,7 @@ Aggiungi i seguenti componenti alla visualizzazione dati. Assicurati anche di ag
 | Dimensione | loyaltyId | ID fedeltà | `_experienceplatform.identification.core.loyaltyId` |
 | Dimensione | commerce.order.payments.transactionID | ID transazione | `commerce.order.payments.transactionID` |
 | Dimensione | eventType | Tipo evento | `eventType` |
-| Dimensione | timestamp | Timestamp | `timestamp` |
+| Dimensione | timestamp | Marca temporale | `timestamp` |
 | Dimensione | `_id` | Identificatore | `_id` |
 
 Avrai quindi qualcosa di simile a questo:
@@ -183,7 +183,7 @@ Nella schermata **Impostazioni** non sono richieste modifiche. Fai clic su **Sal
 
 Ora puoi analizzare i dati di Google Analytics all’interno di Adobe Analytics Analysis Workspace. Passiamo all&#39;esercizio successivo.
 
-## 1.2.5.3 Creare il progetto
+## 1.2.5.3 Crea il tuo progetto
 
 In Customer Journey Analytics, vai a **Workspace**. Fai clic su **Crea progetto**
 
@@ -200,14 +200,14 @@ Ora disponi di un progetto vuoto:
 Innanzitutto, salva il progetto e assegna un nome. Per salvare, puoi utilizzare il seguente comando:
 
 | Sistema operativo | Scelta rapida |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | Windows | Ctrl+S |
 | Mac | Comando+S |
 
 Vedrete questo pop-up. Utilizza questa convenzione per i nomi:
 
 | Nome | Descrizione |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `--aepUserLdap-- – GA + Loyalty Workspace` | `--aepUserLdap-- – GA + Loyalty Workspace` |
 
 Fare clic su **Salva**.
@@ -238,7 +238,7 @@ Selezionare innanzitutto l&#39;intervallo di date corretto (**Oggi**) sul lato d
 
 >[!NOTE]
 >
->Se hai appena creato la **connessione dati** e la **visualizzazione dati**, potresti dover attendere un paio d&#39;ore. CJA richiede un po’ di tempo per recuperare i dati storici in presenza di una grande quantità di record di dati.
+>Se hai appena creato la **connessione dati** e la **visualizzazione dati**, potresti dover attendere un paio d&#39;ore. CJA ha bisogno di un po’ di tempo per recuperare i dati storici in presenza di una grande quantità di record di dati.
 
 Trasciniamo alcune dimensioni e metriche per analizzare i canali di marketing. Utilizza innanzitutto la dimensione **Canale di marketing** e trascinala nell&#39;area di lavoro della **tabella a forma libera**. (Fai clic su **Mostra tutto** nel caso in cui la metrica non venga visualizzata immediatamente nel menu Metriche)
 
@@ -338,7 +338,7 @@ Possiamo continuare a suddividere le righe con segmenti o intervalli di date spe
 
 Ottenere lo stesso risultato finale con SQL e quindi con uno strumento di visualizzazione di terze parti è piuttosto difficile. Soprattutto quando si fanno domande e si cerca di ottenere risposte rapide. Customer Journey Analytics non ha questo problema e consente agli analisti di dati di eseguire query sui dati in modo flessibile e in tempo reale.
 
-## 1.2.5.3.2 Analisi del funnel o dell’abbandono
+## 1.2.5.3.2 Funnel o analisi dell&#39;abbandono
 
 I funnel sono un ottimo meccanismo per comprendere i passaggi principali di un percorso di clienti. Questi passaggi possono provenire anche da interazioni offline (ad esempio, dal call center) e possono essere combinati con punti di contatto digitali nello stesso funnel.
 
@@ -349,16 +349,16 @@ Customer Journey Analytics ti consente di farlo e molto altro. Se ricordi il Mod
 - Visualizzare la tendenza in qualsiasi fase di una visualizzazione con grafico a linee
 
 
-Vediamo un’altra cosa che puoi fare: come va il mio funnel di Percorso del cliente questo mese rispetto al mese precedente? E per quanto riguarda i dispositivi mobili e desktop?
+Vediamo un’altra cosa che puoi fare: come va il mio Funnel di Percorso del cliente questo mese rispetto al mese precedente? E per quanto riguarda i dispositivi mobili e desktop?
 
 Di seguito sono riportati due pannelli:
 
 - Analisi funnel (gennaio)
 - Analisi funnel (febbraio)
 
-Vedrai che stiamo confrontando un funnel in diversi periodi di tempo (gennaio e febbraio) suddivisi per tipo di dispositivo.
+Si vedrà che stiamo confrontando un funnel in diversi periodi di tempo (gennaio e febbraio) suddivisi per tipo di dispositivo.
 
-Questo tipo di analisi non è possibile nell’interfaccia utente di Google Analytics oppure è molto limitato. Pertanto, CJA ancora una volta aggiunge molto valore ai dati acquisiti da Google Analytics.
+Questo tipo di analisi non è possibile nell’interfaccia utente di Google Analytics oppure è molto limitato. CJA aggiunge ancora una volta molto valore ai dati acquisiti da Google Analytics.
 
 Creare la prima visualizzazione dell’abbandono. Chiudi il pannello corrente per iniziare da con uno nuovo.
 
@@ -374,9 +374,9 @@ Ora seleziona la visualizzazione **Abbandono**.
 
 ![demo](./images/pro36.png)
 
-In qualità di analista, immagina di voler capire cosa sta succedendo con il funnel di e-commerce principale: Home > Ricerca interna > Dettagli prodotto > Pagamento > Acquisto.
+In qualità di analista, immagina di voler capire cosa sta succedendo con il tuo principale funnel di e-commerce: Home > Ricerca interna > Dettagli prodotto > Pagamento > Acquisto.
 
-Iniziamo aggiungendo alcuni nuovi passaggi al funnel. Per eseguire questa operazione, aprire la dimensione **Nome pagina**.
+Iniziamo con l’aggiungere alcuni nuovi passaggi al funnel. Per eseguire questa operazione, aprire la dimensione **Nome pagina**.
 
 ![demo](./images/pro37.png)
 
@@ -437,7 +437,7 @@ Ad esempio, fai clic con il pulsante destro del mouse in un passaggio dell’abb
 
 ![demo](./images/pro52.png)
 
-## 1.2.5.3.3 Analisi di flusso e visualizzazione
+## Analisi e visualizzazione del flusso di 1.2.5.3.3
 
 Se desideri eseguire analisi di flusso avanzate utilizzando Google Analytics, devi utilizzare SQL per estrarre i dati e quindi utilizzare una soluzione di terze parti per la parte di visualizzazione. Customer Journey Analytics ti aiuterà.
 
@@ -526,7 +526,7 @@ Ora disponi di un potente kit per analizzare i funnel ed esplorare i percorsi de
 
 Non dimenticare di salvare le modifiche.
 
-## 1.2.5.4 Condividere il progetto
+## 1.2.5.4 Condividi il progetto
 
 >[!IMPORTANT]
 >

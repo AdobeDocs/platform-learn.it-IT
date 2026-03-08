@@ -3,15 +3,15 @@ title: Iscriviti agli eventi di acquisizione dati
 seo-title: Subscribe to data ingestion events | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Iscriviti agli eventi di acquisizione dati
 description: In questa lezione, ti abbonerai a eventi di acquisizione dati configurando un webhook con Adobe Developer Console e uno strumento di sviluppo di webhook online. Seguirai questi eventi per monitorare lo stato dei processi di acquisizione dei dati nelle lezioni successive.
-role: Data Engineer
+role: Developer
 feature: Data Management
 jira: KT-4348
 thumbnail: 4348-subscribe-to-data-ingestion-events.jpg
 exl-id: f4b90832-4415-476f-b496-2f079b4fcbbc
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '501'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ In questa lezione, ti abbonerai a eventi di acquisizione dati configurando un we
 **I Data Engineer** vorranno abbonarsi a eventi di acquisizione dati al di fuori di questa esercitazione.
 **Gli architetti di dati** _possono saltare questa lezione_ e passare alla [lezione di acquisizione batch](ingest-batch-data.md).
 
-## Autorizzazioni richieste
+## Autorizzazioni obbligatorie
 
 Nella lezione [Configurare le autorizzazioni](configure-permissions.md) è possibile impostare tutti i controlli di accesso necessari per completare la lezione, in particolare:
 
@@ -45,7 +45,7 @@ In questo esercizio creeremo un webhook utilizzando uno strumento online denomin
 
    ![Sito Web](assets/ioevents-webhook-home.png)
 1. Seleziona il pulsante **Modifica** nella navigazione superiore
-1. Come corpo della risposta, immettere `$request.query.challenge$`. Le notifiche degli eventi Adobi I/O configurate più avanti in questa lezione inviano una sfida al webhook e richiedono che venga incluso nel corpo della risposta.
+1. Come corpo della risposta, immettere `$request.query.challenge$`. Le notifiche di Adobe I/O Events configurate più avanti in questa lezione inviano una sfida al webhook e richiedono che venga incluso nel corpo della risposta.
 1. Seleziona il pulsante **Salva**
 
    ![Modifica la risposta](assets/ioevents-webhook-editResponse.png)
@@ -81,7 +81,7 @@ Per il momento, acquisirai ulteriori informazioni su queste notifiche nelle pros
 ## Risorse aggiuntive
 
 * [Sito Web](https://webhook.site/)
-* [Documentazione delle notifiche di acquisizione dati](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=it)
-* [Guida introduttiva agli eventi Adobe I/O](https://www.adobe.io/apis/experienceplatform/events/docs.html)
+* [Documentazione delle notifiche di acquisizione dati](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html)
+* [Guida introduttiva alla documentazione di Adobe I/O Events](https://www.adobe.io/apis/experienceplatform/events/docs.html)
 
 Ok, iniziamo finalmente [l&#39;acquisizione dei dati](ingest-batch-data.md)!

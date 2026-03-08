@@ -1,27 +1,27 @@
 ---
-title: Ottimizzare il processo di Firefly utilizzando Microsoft Azure e gli URL predefiniti
-description: Scopri come ottimizzare il processo di Firefly utilizzando Microsoft Azure e gli URL prefirmati
+title: Ottimizzare il processo Firefly utilizzando Microsoft Azure e gli URL prefirmati
+description: Scopri come ottimizzare il processo Firefly utilizzando Microsoft Azure e gli URL prefirmati
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1944'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# 1.1.2 Ottimizzare il processo Firefly utilizzando Microsoft Azure e gli URL prefirmati
+# 1.1.2 Ottimizza il processo Firefly utilizzando Microsoft Azure e gli URL prefirmati
 
-Scopri come ottimizzare il processo di Firefly utilizzando Microsoft Azure e gli URL prefirmati.
+Scopri come ottimizzare il processo Firefly utilizzando Microsoft Azure e gli URL prefirmati.
 
 ## 1.1.2.1 Cosa sono gli URL prefirmati?
 
 Un URL preceduto è un URL che consente l&#39;accesso temporaneo a un oggetto specifico in un percorso di archiviazione. Utilizzando l’URL, un utente può ad esempio LEGGERE l’oggetto o SCRIVERE un oggetto (o aggiornare un oggetto esistente). L’URL contiene parametri specifici impostati dall’applicazione.
 
-Nel contesto della creazione dell&#39;automazione della supply chain dei contenuti, spesso è necessario eseguire più operazioni sui file per un caso d&#39;uso specifico. Ad esempio, potrebbe essere necessario modificare lo sfondo di un file, il testo di vari livelli, ecc. Non è sempre possibile eseguire tutte le operazioni sui file contemporaneamente, il che rende necessario un approccio in più passaggi. Dopo ogni passaggio intermedio, l’output è quindi un file temporaneo necessario per l’esecuzione del passaggio successivo. Una volta eseguito il passaggio successivo, il file temporaneo perde rapidamente valore e spesso non è più necessario, pertanto deve essere eliminato.
+Nel contesto della creazione di contenuti per l’automazione di supply chain, spesso è necessario eseguire più operazioni sui file per un caso d’uso specifico. Ad esempio, potrebbe essere necessario modificare lo sfondo di un file, il testo di vari livelli, ecc. Non è sempre possibile eseguire tutte le operazioni sui file contemporaneamente, il che rende necessario un approccio in più passaggi. Dopo ogni passaggio intermedio, l’output è quindi un file temporaneo necessario per l’esecuzione del passaggio successivo. Una volta eseguito il passaggio successivo, il file temporaneo perde rapidamente valore e spesso non è più necessario, pertanto deve essere eliminato.
 
 Adobe Firefly Services attualmente supporta i seguenti domini:
 
@@ -40,7 +40,7 @@ Di conseguenza, gli URL prefirmati vengono utilizzati in combinazione con le ope
 
 Un URL prefirmato utilizza tre parametri per limitare l’accesso all’utente:
 
-- Percorso di archiviazione: potrebbe trattarsi di un percorso bucket AWS S3, un percorso account di archiviazione Microsoft Azure con contenitore
+- Percorso di archiviazione: potrebbe trattarsi di una posizione bucket AWS S3, una posizione account di archiviazione Microsoft Azure con contenitore
 - Nome file: il file specifico che deve essere letto, aggiornato ed eliminato.
 - Parametro stringa query: un parametro stringa query inizia sempre con un punto interrogativo ed è seguito da una serie complessa di parametri
 
@@ -49,17 +49,17 @@ Esempio:
 - **Amazon AWS**: `https://bucket.s3.eu-west-2.amazonaws.com/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AXXXXXXXXXX%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250510T171315Z&X-Amz-Expires=1800&X-Amz-Signature=XXXXXXXXX&X-Amz-SignedHeaders=host`
 - **Microsoft Azure**: `https://storageaccount.blob.core.windows.net/container/image.png?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=XXXXXX%3D`
 
-## 1.1.2.2 Crea una sottoscrizione Azure
+## 1.1.2.2 Crea un abbonamento Azure
 
 >[!NOTE]
 >
->Se disponi già di una sottoscrizione Azure, puoi saltare questo passaggio. Procedere con l&#39;esercizio successivo in questo caso.
+>Se disponi già di un abbonamento Azure, puoi saltare questo passaggio. Procedere con l&#39;esercizio successivo in questo caso.
 
 >[!NOTE]
 >
->Se segui questa esercitazione come parte di un workshop guidato di persona o di un corso di formazione guidato su richiesta, probabilmente hai già accesso a un account di archiviazione di Microsoft Azure. In tal caso, non è necessario creare un account personale: utilizza l’account fornito come parte del corso di formazione.
+>Se segui questa esercitazione come parte di un workshop guidato di persona o di un corso di formazione guidato on-demand, probabilmente hai già accesso a un account di archiviazione Microsoft Azure. In tal caso, non è necessario creare un account personale: utilizza l’account fornito come parte del corso di formazione.
 
-Vai a [https://portal.azure.com](https://portal.azure.com){target="_blank"} e accedi con il tuo account di Azure. Se non ne hai uno, utilizza il tuo indirizzo e-mail personale per creare il tuo account di Azure.
+Vai a [https://portal.azure.com](https://portal.azure.com){target="_blank"} e accedi con il tuo account Azure. Se non ne hai uno, utilizza il tuo indirizzo e-mail personale per creare il tuo account Azure.
 
 ![Archiviazione Azure](./images/02azureportalemail.png){zoomable="yes"}
 
@@ -67,13 +67,13 @@ Dopo aver effettuato l’accesso, viene visualizzata la seguente schermata:
 
 ![Archiviazione Azure](./images/03azureloggedin.png){zoomable="yes"}
 
-Nel menu a sinistra, seleziona **Tutte le risorse**. Se non hai ancora effettuato l&#39;abbonamento, viene visualizzata la schermata dell&#39;abbonamento di Azure.
+Nel menu a sinistra, seleziona **Tutte le risorse**. Se non sei ancora iscritto, viene visualizzata la schermata di iscrizione ad Azure.
 
-Se non sei abbonato, seleziona **Inizia con una versione di valutazione gratuita di Azure**.
+Se non sei abbonato, seleziona **Inizia con una versione di prova gratuita di Azure**.
 
 ![Archiviazione Azure](./images/04azurestartsubscribe.png){zoomable="yes"}
 
-Compila il modulo di abbonamento Azure e fornisci il telefono cellulare e la carta di credito per l’attivazione (avrai un livello gratuito per 30 giorni e non ti verrà addebitato alcun importo, a meno che non esegui l’aggiornamento).
+Compila il modulo di abbonamento ad Azure e fornisci il tuo telefono cellulare e la tua carta di credito per l&#39;attivazione (avrai un livello gratuito per 30 giorni e non ti verrà addebitato alcun costo, a meno che non esegui l&#39;aggiornamento).
 
 Al termine del processo di abbonamento, sei a posto.
 
@@ -135,11 +135,11 @@ Selezionare **Sottoscrizione**.
 
 ![Archiviazione Azure](./images/az12.png){zoomable="yes"}
 
-Selezionare **Azure** e quindi **Next**.
+Seleziona **Azure** e quindi **Next**.
 
 ![Archiviazione Azure](./images/az13.png){zoomable="yes"}
 
-Selezionare l&#39;account di Microsoft Azure e completare il processo di autenticazione.
+Seleziona il tuo account Microsoft Azure e completa il processo di autenticazione.
 
 ![Archiviazione Azure](./images/az14.png){zoomable="yes"}
 
@@ -147,7 +147,7 @@ Dopo l’autenticazione, viene visualizzato questo messaggio.
 
 ![Archiviazione Azure](./images/az15.png){zoomable="yes"}
 
-Nell&#39;app Microsoft Azure Storage Explorer, selezionare la sottoscrizione e scegliere **Apri Explorer**.
+Nell&#39;app Microsoft Azure Storage Explorer, seleziona la sottoscrizione e scegli **Apri Explorer**.
 
 >[!NOTE]
 >
@@ -211,7 +211,7 @@ Un&#39;altra immagine viene visualizzata con `horses in a field`, ma questa volt
 
 ## Caricamento file programmatico 1.1.2.6
 
-Per utilizzare il caricamento di file a livello di programmazione con gli account di archiviazione di Azure, è necessario creare un nuovo token **firma di accesso condiviso (SAS)** con autorizzazioni che consentono di scrivere un file.
+Per utilizzare il caricamento di file a livello di programmazione con gli account di archiviazione Azure, è necessario creare un nuovo token **firma di accesso condiviso (SAS)** con autorizzazioni che consentono di scrivere un file.
 
 In Azure Storage Explorer, fare clic con il pulsante destro del mouse sul contenitore e selezionare **Ottieni firma di accesso condiviso**.
 
@@ -221,7 +221,7 @@ In **Autorizzazioni**, seleziona le seguenti autorizzazioni richieste:
 
 - **Letto**
 - **Aggiungi**
-- **Crea**
+- **Creare**
 - **Scrittura**
 - **Elenco**
 
@@ -233,7 +233,7 @@ Dopo aver ricevuto la **firma di accesso condiviso**, seleziona **Copia** per co
 
 ![Archiviazione Azure](./images/az29.png){zoomable="yes"}
 
-Utilizza l&#39;**URL del token SAS** per caricare un file nell&#39;account di archiviazione di Azure.
+Utilizza l&#39;**URL del token SAS** per caricare un file nell&#39;account di archiviazione Azure.
 
 In Postman, seleziona la cartella **FF - Firefly Services Tech Insiders**, quindi **...** nella cartella **Firefly**, quindi seleziona **Aggiungi richiesta**.
 
@@ -272,7 +272,7 @@ Cambia il nome del file in `gradient2-p.jpg` e cambia l&#39;URL in modo da inclu
 Quindi, vai a **Intestazioni** per aggiungere manualmente una nuova intestazione come questa:
 
 | Chiave | Valore |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `x-ms-blob-type` | `BlockBlob` |
 
 
@@ -286,17 +286,17 @@ Successivamente, questa risposta vuota viene visualizzata in Postman, il che sig
 
 ![Archiviazione Azure](./images/az37.png){zoomable="yes"}
 
-In Azure Storage Explorer aggiorna il contenuto della cartella e viene visualizzato il file appena caricato.
+In Azure Storage Explorer, aggiorna il contenuto della cartella e viene visualizzato il file appena caricato.
 
 ![Archiviazione Azure](./images/az38.png){zoomable="yes"}
 
 ## 1.1.2.7 utilizzo file programmatico
 
-Per leggere a livello di programmazione i file dagli account di archiviazione di Azure nel lungo termine, è necessario creare un nuovo token **firma di accesso condiviso (SAS)**, con autorizzazioni che consentono di leggere un file. Tecnicamente puoi utilizzare il token SAS creato nell&#39;esercizio precedente, ma è consigliabile disporre di un token separato con solo autorizzazioni **Lettura** e un token separato con solo autorizzazioni **Scrittura**.
+Per leggere a livello di programmazione i file dagli account di archiviazione Azure nel lungo termine, è necessario creare un nuovo token **firma di accesso condiviso (SAS)**, con autorizzazioni che consentono di leggere un file. Tecnicamente puoi utilizzare il token SAS creato nell&#39;esercizio precedente, ma è consigliabile disporre di un token separato con solo autorizzazioni **Lettura** e un token separato con solo autorizzazioni **Scrittura**.
 
 ### Token SAS lettura a lungo termine
 
-Torna ad Azure Storage Explorer, fai clic con il pulsante destro del mouse sul contenitore, quindi seleziona **Ottieni firma di accesso condiviso**.
+Torna a Azure Storage Explorer, fai clic con il pulsante destro del mouse sul contenitore, quindi seleziona **Ottieni firma di accesso condiviso**.
 
 ![Archiviazione Azure](./images/az27.png){zoomable="yes"}
 
@@ -327,7 +327,7 @@ Puoi derivare un paio di valori dall’URL precedente:
 
 ### Token SAS scrittura a lungo termine
 
-Torna ad Azure Storage Explorer, fai clic con il pulsante destro del mouse sul contenitore e seleziona **Ottieni firma di accesso condiviso**.
+Torna a Azure Storage Explorer, fai clic con il pulsante destro del mouse sul contenitore e seleziona **Ottieni firma di accesso condiviso**.
 
 ![Archiviazione Azure](./images/az27.png){zoomable="yes"}
 
@@ -336,7 +336,7 @@ In **Autorizzazioni**, seleziona le seguenti autorizzazioni richieste:
 - **Letto**
 - **Elenco**
 - **Aggiungi**
-- **Crea**
+- **Creare**
 - **Scrittura**
 
 Imposta **Scadenza** su 1 anno a partire da ora.
@@ -403,7 +403,7 @@ Aprire PostBuster. Seleziona **Ambiente base**, quindi fai clic sull&#39;icona *
 
 ![Archiviazione Azure](./images/pbbe1.png)
 
-Vedrai quindi 4 variabili vuote. Immetti qui i dettagli dell’account di archiviazione Azure.
+Vedrai quindi 4 variabili vuote. Inserisci qui i dettagli dell&#39;account di archiviazione Azure.
 
 ![Archiviazione Azure](./images/pbbe2.png)
 

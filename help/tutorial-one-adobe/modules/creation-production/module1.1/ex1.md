@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: ceb8d1ca1efdd94d608eca41ec60b6d96cb207ff
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '3787'
 ht-degree: 0%
@@ -248,7 +248,7 @@ La richiesta che utilizzerai è una richiesta **asincrona**, che ti fornisce una
 Selezionare la richiesta denominata **POST - Firefly - T2I V3 asincrona** dalla raccolta **FF - Firefly Services Tech Insiders**. Vai a **Intestazioni** e verifica le combinazioni chiave/valore.
 
 | Chiave | Valore |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `x-api-key` | `{{API_KEY}}` |
 | `Authorization` | `Bearer {{ACCESS_TOKEN}}` |
 

@@ -3,15 +3,15 @@ title: Creare una sandbox
 seo-title: Create a sandbox | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Creare una sandbox
 description: In questa lezione verrà creato un ambiente di sviluppo sandbox da utilizzare per il resto dell’esercitazione.
-role: Data Architect, Data Engineer
+role: Developer
 feature: Sandboxes
 jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '398'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -26,9 +26,9 @@ Le sandbox forniscono ambienti isolati in cui è possibile provare le funzionali
 **Gli architetti di dati** e **i data engineer** dovranno creare delle sandbox al di fuori di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sulle sandbox:
->[!VIDEO](https://video.tv.adobe.com/v/3430300/?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)
 
-## Autorizzazioni richieste
+## Autorizzazioni obbligatorie
 
 Nella lezione [Configurare le autorizzazioni](configure-permissions.md) è possibile impostare tutti i controlli di accesso necessari per completare la lezione.
 

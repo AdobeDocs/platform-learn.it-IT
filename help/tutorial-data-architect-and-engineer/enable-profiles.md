@@ -3,14 +3,14 @@ title: Abilita profili cliente in tempo reale
 seo-title: Enable Real-Time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Abilita profili cliente in tempo reale
 description: In questa lezione, abiliterai gli schemi e i set di dati per Real-Time Customer Profile.
-role: Data Architect
+role: Developer
 feature: Profiles
 jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
@@ -26,16 +26,16 @@ Con Real-Time Customer Profile puoi visualizzare una visualizzazione olistica di
 
 Per quanto sorprendente possa sembrare, non devi attivare *tutti i tuoi dati* per il profilo. In realtà, devi abilitare solo i dati necessari per i casi di utilizzo dell’attivazione. Abilita i dati che desideri utilizzare per casi di utilizzo di marketing, integrazioni di call center e così via, dove devi accedere rapidamente a un solido profilo cliente. Se carichi i dati solo per l’analisi, è probabile che non sia necessario abilitarli per il profilo.
 
-Esistono [guardrail importanti per i dati del Profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it) che dovresti esaminare quando decidi quali dei tuoi dati abilitare per il profilo.
+Esistono [guardrail importanti per i dati del Profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) che dovresti esaminare quando decidi quali dei tuoi dati abilitare per il profilo.
 
 <!--is this accurate. Are there other considerations to point out? -->
 
 **Gli architetti di dati** dovranno abilitare Real-Time Customer Profile all&#39;esterno di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sul profilo cliente in tempo reale:
->[!VIDEO](https://video.tv.adobe.com/v/36266?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
 
-## Autorizzazioni richieste
+## Autorizzazioni obbligatorie
 
 Nella lezione [Configurare le autorizzazioni](configure-permissions.md) è possibile impostare tutti i controlli di accesso necessari per completare la lezione.
 
@@ -80,7 +80,7 @@ Facile, vero? Ripeti i passaggi precedenti per questi altri schemi:
 
 Ora è il momento di abilitare `Luma CRM Schema` con l&#39;API. Se desideri saltare questo esercizio e abilitarlo nell’interfaccia utente, procedi subito.
 
-### Ottenere il meta:altId dello schema
+### Ottieni il meta:altId dello schema
 
 Ottieni `meta:altId` di `Luma CRM Schema`:
 
@@ -90,7 +90,7 @@ Ottieni `meta:altId` di `Luma CRM Schema`:
 1. Seleziona il pulsante **Invia**
 1. Dovresti ricevere una risposta 200
 1. Cerca nella risposta per l&#39;elemento `Luma CRM Schema` e copia il valore `meta:altId`
-   ![Copia il meta:altIid](assets/profile-crm-getMetaAltId.png)
+   ![Copia meta:altIid](assets/profile-crm-getMetaAltId.png)
 
 ### Abilita lo schema
 

@@ -3,15 +3,15 @@ title: Eseguire query
 seo-title: Run queries | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Eseguire query
 description: In questa lezione imparerai a impostare, scrivere ed eseguire query per convalidare i dati acquisiti.
-role: Data Architect, Data Engineer
+role: Developer
 feature: Queries
 jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '314'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -25,9 +25,9 @@ Adobe Experience Platform Query Service consente di interpretare i dati in modo 
 **Gli architetti di dati** e **i data engineer** dovranno utilizzare il servizio query all&#39;esterno di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni su Query Service:
->[!VIDEO](https://video.tv.adobe.com/v/39649?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
-## Autorizzazioni richieste
+## Autorizzazioni obbligatorie
 
 Nella lezione [Configurare le autorizzazioni](configure-permissions.md) è possibile impostare tutti i controlli di accesso necessari per completare la lezione.
 

@@ -1,8 +1,8 @@
 ---
-title: Migrare Target da at.js 2.x a Web SDK
+title: Migrazione di Target da at.js 2.x a Web SDK
 description: Scopri come migrare un’implementazione di Adobe Target da at.js 2.x a Adobe Experience Platform Web SDK. Gli argomenti includono panoramica della libreria, differenze di implementazione e altri callout degni di nota.
 exl-id: 43b9ae91-4524-4071-9eb4-12a0a8aec242
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 1%
@@ -49,7 +49,7 @@ adobe.target.getOffer({
 
 +++
 
-+++Equivalente di Platform Web SDK utilizzando il comando `applyPropositions`:
++++Equivalente di Platform Web SDK utilizzando il comando `applyPropositions`: 
 
 1. Esegui il comando `sendEvent` per richiedere offerte (proposte) per una o più posizioni (ambiti)
 1. Esegui il comando `applyPropositions` con l&#39;oggetto metadati che fornisce istruzioni su come applicare il contenuto alla pagina per ogni ambito
@@ -92,7 +92,7 @@ alloy("sendEvent", {
 
 +++
 
-Platform Web SDK offre un controllo maggiore per l&#39;applicazione di attività basate su moduli alla pagina utilizzando il comando `applyPropositions` con `actionType` specificato:
+Platform Web SDK offre un maggiore controllo per l&#39;applicazione di attività basate su moduli alla pagina utilizzando il comando `applyPropositions` con `actionType` specificato:
 
 | `actionType` | Descrizione | at.js `applyOffer()` | Platform Web SDK `applyPropositions` |
 | --- | --- | --- | --- |
@@ -100,13 +100,13 @@ Platform Web SDK offre un controllo maggiore per l&#39;applicazione di attività
 | `replaceHtml` | Rimuovere il contenitore e sostituirlo con l’offerta | No | Sì |
 | `appendHtml` | Aggiunge l&#39;offerta dopo il selettore specificato | No | Sì |
 
-Per ulteriori opzioni ed esempi di rendering, consulta la [documentazione dedicata](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=it) sul rendering del contenuto tramite Platform Web SDK.
+Per ulteriori opzioni ed esempi di rendering, consulta la [documentazione dedicata](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) sul rendering del contenuto tramite Platform Web SDK.
 
 ## Esempio di implementazione
 
 La pagina di esempio seguente si basa sull&#39;implementazione descritta nella sezione precedente, ma aggiunge ambiti aggiuntivi al comando `sendEvent`.
 
-+++Esempio Platform Web SDK con più ambiti
++++Esempio di Platform Web SDK con più ambiti
 
 ```HTML
 <!doctype html>
@@ -197,8 +197,10 @@ La pagina di esempio seguente si basa sull&#39;implementazione descritta nella s
 </html>
 ```
 
++++
+
 Successivamente, scopri come [passare i parametri di Target utilizzando Platform Web SDK](send-parameters.md).
 
 >[!NOTE]
 >
->Ci impegniamo ad aiutarti con la migrazione di Target da at.js a Web SDK. Se incontri ostacoli con la migrazione o pensi che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=it#M463).
+>Ci impegniamo ad aiutarti con la migrazione di Target da at.js a Web SDK. Se incontri ostacoli con la migrazione o pensi che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

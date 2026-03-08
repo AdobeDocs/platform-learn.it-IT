@@ -4,9 +4,9 @@ description: 'Acquisire e analizzare i dati Google Analytics in Adobe Experience
 kt: 5342
 doc-type: tutorial
 exl-id: 681f50d4-3c3f-43ae-a87e-36aff2840b88
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '540'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Quando i dati di Google Analytics sono in BigQuery, dimensioni, metriche e altre
 
 La soluzione a questo problema consiste nel trasformare i dati di Google Analytics in un formato leggibile per semplificare l’acquisizione in Adobe Experience Platform.
 
-## 1.2.2.1 Creare un set di dati per salvare nuove tabelle BigQuery
+## 1.2.2.1 Crea un set di dati per salvare nuove tabelle BigQuery
 
 Passa alla [console BigQuery](https://console.cloud.google.com/bigquery).
 
@@ -47,7 +47,7 @@ Sul lato destro dello schermo viene visualizzato il menu **Crea set di dati**.
 Per l&#39;**ID set di dati**, utilizzare la convenzione di denominazione seguente. Per gli altri campi, lascia le impostazioni predefinite.
 
 | Denominazione | Esempio |
-| ----------------- | ------------- | 
+| ----------------- | ------------- |
 | `--aepUserLdap--_BigQueryDataSet` | vangeluw_BigQueryDataSet |
 
 Fare clic su **CREA SET DI DATI**.
@@ -58,7 +58,7 @@ Tornerai quindi alla console BigQuery con il set di dati creato.
 
 ![demo](./images/ex38.png)
 
-## 1.2.2.2 Creare il primo BigQuery SQL
+## 1.2.2.2 Crea la prima BigQuery SQL
 
 Successivamente, creerai la tua prima query in BigQuery. L’obiettivo di questa query è di prendere i dati di esempio di Google Analytics e trasformarli in modo che possano essere acquisiti in Adobe Experience Platform. Passa alla scheda **Query senza titolo**.
 
@@ -252,13 +252,13 @@ Come percorso per l&#39;output, selezionare **Tabella BigQuery**.
 Verrà quindi visualizzata una nuova finestra a comparsa in cui i valori **Nome progetto** e **Nome set di dati** sono precompilati. Il nome del set di dati deve essere il set di dati creato all’inizio di questo esercizio, con questa convenzione di denominazione:
 
 | Denominazione | Esempio |
-| ----------------- | ------------- | 
+| ----------------- | ------------- |
 | `--aepUserLdap--_BigQueryDataSet` | `vangeluw_BigQueryDataSet` |
 
 È ora necessario immettere il nome di una tabella. Utilizza questa convenzione per i nomi:
 
 | Denominazione | Esempio |
-| ----------------- |------------- | 
+| ----------------- |------------- |
 | `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
 
 Fai clic su **SALVA**.

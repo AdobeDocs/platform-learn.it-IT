@@ -2,14 +2,14 @@
 title: Migliorare il ruolo dell’addetto marketing come amministratore dei dati
 description: Le forze di mercato in forte oscillazione e i diversi requisiti in materia di privacy dei consumatori possono presentare scenari complessi per l’addetto al marketing digitale. Per mantenere le campagne al giusto livello delle normative, i team di marketing hanno bisogno che le controparti IT abbiano un processo semplificato per garantire il futuro del processo di governance dei dati, che idealmente consenta a tutti di seguire e applicare le regole sull’uso responsabile dei dati dei consumatori. Ascolta le considerazioni di Adobe e di Scotiabank Digital sulla gestione responsabile dei dati.
 feature: Privacy
-role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
+role: User, Developer, Admin, Leader
 level: Beginner, Intermediate, Experienced
 doc-type: Event
 thumbnail: 338292.jpg
 jira: KT-9301
 type: Event
 exl-id: 12c258c5-cf91-4403-99bd-6322a92aabfe
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 18%

@@ -2,9 +2,9 @@
 title: 'Sostituire SDK: esegui la migrazione dell’implementazione di Adobe Target nell’app mobile all’estensione Offer Decisioning e Target'
 description: Scopri come sostituire SDK durante la migrazione da Adobe Target all’estensione per dispositivi mobili Offer Decisioning e Target.
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
-source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '725'
 ht-degree: 2%
 
 ---
@@ -62,7 +62,7 @@ implementation 'com.adobe.marketing.mobile:userprofile'
 
 >[!ENDTABS]
 
-+++
++++ 
 
 +++ Esempio di iOS
 
@@ -269,7 +269,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 Molte API di estensione di Target hanno un approccio equivalente che utilizza l’estensione di Offer Decisioning e Target descritta nella tabella seguente. Per ulteriori dettagli sulle [funzioni](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/), consulta il riferimento API.
 
 | Estensione Target | Estensione Offer Decisioning e Target | Note |
-| --- | --- | --- | 
+| --- | --- | --- |
 | [prefetchContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#prefetchcontent){target=_blank} | [aggiornaProposte](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandlerandtimeout){target=_blank} |  |
 | [retrieveLocationContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [getPropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#getpropositionswithtimeout){target=_blank} | Quando si utilizza l&#39;API `getPropositions`, non viene effettuata alcuna chiamata remota per recuperare ambiti non memorizzati in cache in SDK. |
 | [percorsi visualizzati](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [Offerta -> visualizzata()](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-direct-offer-class-methods){target=_blank} | È inoltre possibile utilizzare il metodo di offerta `generateDisplayInteractionXdm` per generare XDM per la visualizzazione degli elementi. Successivamente, l’API sendEvent della rete Edge SDK può essere utilizzata per allegare dati XDM aggiuntivi in formato libero e inviare un evento esperienza al remoto. |
@@ -288,4 +288,4 @@ Quindi, scopri come [richiedere ed eseguire il rendering delle attività](retrie
 
 >[!NOTE]
 >
->Ci impegniamo ad aiutarti con la migrazione di Target per dispositivi mobili dall’estensione Target all’estensione Offer Decisioning e Target. Se incontri ostacoli con la migrazione o pensi che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=it#M625).
+>Ci impegniamo ad aiutarti con la migrazione di Target per dispositivi mobili dall’estensione Target all’estensione Offer Decisioning e Target. Se incontri ostacoli con la migrazione o pensi che in questa guida manchino informazioni critiche, inviaci [questa discussione della community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625).

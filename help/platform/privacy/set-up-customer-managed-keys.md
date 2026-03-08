@@ -2,16 +2,16 @@
 title: Configurare le chiavi gestite dal cliente (CMK)
 description: Gestire la crittografia data-at-rest utilizzando le proprie chiavi di crittografia.
 feature: Privacy
-role: Admin, Data Architect, Data Engineer, Developer
+role: Admin, Developer, Developer
 level: Experienced
 jira: KT-11382
 thumbnail: 3410673.jpeg
 last-substantial-update: 2024-06-28T00:00:00Z
 exl-id: 04cb1aeb-3260-4259-bb02-8392d9d787a2
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '94'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 Gestire la crittografia data-at-rest utilizzando le proprie chiavi di crittografia. Per ulteriori informazioni, visita la [documentazione sulle chiavi gestite dal cliente](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/3413983/?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on&enablevpops)
 
 >[!IMPORTANT]
 >
@@ -27,4 +27,4 @@ Gestire la crittografia data-at-rest utilizzando le proprie chiavi di crittograf
 
 >[!WARNING]
 >
->Dopo aver configurato la CMK, non è possibile ripristinare le chiavi gestite dal sistema. L’utente è responsabile della gestione sicura delle chiavi e dell’accesso all’insieme di credenziali delle chiavi, alla chiave e all’app CMK in Azure per evitare di perdere l’accesso ai dati.
+>Dopo aver configurato la CMK, non è possibile ripristinare le chiavi gestite dal sistema. È tua responsabilità gestire in modo sicuro le chiavi e fornire accesso all’app Key Vault, Key e CMK in Azure per evitare di perdere l’accesso ai tuoi dati.

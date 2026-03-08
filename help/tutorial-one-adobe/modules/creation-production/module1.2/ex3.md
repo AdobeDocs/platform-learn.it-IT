@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: c9807ef0787f4390d12bc7285cfe71260aa3eabf
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '3353'
 ht-degree: 1%
@@ -372,7 +372,7 @@ Fare clic su **+ Aggiungi elemento** in **Stringa di query**.
 Immetti questi valori e fai clic su **Aggiungi**.
 
 | Chiave | Valore |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `include` | `media_links.original` |
 
 ![I/O fotogrammi](./images/frame58.png)
@@ -441,7 +441,7 @@ Sono ora disponibili tutte le informazioni (**prompt**, **cta**, **button** e **
 
 Nell&#39;esercizio precedente è stato configurato lo scenario `--aepUserLdap-- - Firefly + Photoshop`. Ora è necessario apportare una modifica minore a tale scenario.
 
-Apri lo scenario `--aepUserLdap-- - Firefly + Photoshop` in un&#39;altra scheda e fai clic sul primo modulo **Adobe Photoshop - Applica modifiche PSD**. È ora possibile vedere che il file di input è configurato per utilizzare una posizione dinamica in Microsoft Azure. Dato che per questo caso d’uso il file di input non viene più archiviato in Microsoft Azure, ma utilizza invece l’archiviazione Frame.io, devi modificare queste impostazioni.
+Apri lo scenario `--aepUserLdap-- - Firefly + Photoshop` in un&#39;altra scheda e fai clic sul primo modulo **Adobe Photoshop - Applica modifiche PSD**. Ora dovresti notare che il file di input è configurato per l’utilizzo di una posizione dinamica in Microsoft Azure. Dato che per questo caso d’uso, il file di input non viene più memorizzato in Microsoft Azure ma utilizza invece l’archiviazione Frame.io, devi modificare queste impostazioni.
 
 ![I/O fotogrammi](./images/frame63.png)
 

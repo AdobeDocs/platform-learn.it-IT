@@ -2,13 +2,13 @@
 title: Configurare le autorizzazioni
 seo-title: Configure permissions | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Configurare le autorizzazioni
-description: In questa lezione, configurerai le autorizzazioni utente di Adobe Experience Platform utilizzando l’Admin Console di Adobe.
-role: Data Architect, Data Engineer
+description: In questa lezione, configurerai le autorizzazioni utente di Adobe Experience Platform utilizzando Adobe Admin Console.
+role: Developer
 feature: Access Control
 jira: KT-4348
 thumbnail: 4348-configure-permissions.jpg
 exl-id: ca01f99e-f10c-4bf0-bef2-b011ac29a565
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1196'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 In questa lezione verranno configurate le autorizzazioni utente di Adobe Experience Platform utilizzando [!DNL Adobe's Admin Console] e la schermata [!UICONTROL Autorizzazioni] nell&#39;interfaccia di Platform.
 
-Il controllo degli accessi è una funzionalità chiave per la privacy di Experience Platform e consigliamo di limitare le autorizzazioni al minimo necessario per consentire alle persone di eseguire le proprie funzioni lavorative. Per ulteriori informazioni, vedere la [documentazione sul controllo degli accessi](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=it).
+Il controllo degli accessi è una funzionalità chiave per la privacy in Experience Platform e consigliamo di limitare le autorizzazioni al minimo necessario per consentire alle persone di eseguire le proprie funzioni lavorative. Per ulteriori informazioni, vedere la [documentazione sul controllo degli accessi](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=it).
 
 Gli architetti di dati e i data engineer sono utenti avanzati di Adobe Experience Platform e avrai bisogno di molte autorizzazioni per completare questa esercitazione e successivamente nel tuo lavoro quotidiano. Gli architetti di dati saranno probabilmente coinvolti nell&#39;amministrazione di *altri utenti di Platform* presso la propria azienda, ad esempio addetti al marketing, analisti e data scientist. Mentre completi questa lezione, pensa a come potresti utilizzare queste funzioni per gestire altri utenti della tua azienda.
 
@@ -31,15 +31,15 @@ Gli architetti di dati e i data engineer sono utenti avanzati di Adobe Experienc
 >
 >Un amministratore di sistema dei prodotti Adobe Experience Cloud deve completare alcuni dei passaggi descritti in questa lezione, descritti nei titoli delle sezioni. Se non sei l&#39;amministratore di sistema, rivolgiti a un amministratore della tua azienda e chiedi di completare queste attività. È inoltre necessario completare un&#39;attività durante la lezione [Configurazione di Developer Console e Postman](set-up-developer-console-and-postman.md).
 
-## Informazioni sull’Admin Console
+## Informazioni su Admin Console
 
-[!DNL Admin Console] è l&#39;interfaccia utilizzata per amministrare l&#39;accesso degli utenti a tutti i prodotti Adobe Experience Cloud. Per accedere a Platform, è necessario aggiungere un utente o nell’Admin Console, quindi tutti i relativi elementi di autorizzazione granulari vengono gestiti nella schermata Autorizzazioni di Adobe Experience Platform.
+[!DNL Admin Console] è l&#39;interfaccia utilizzata per amministrare l&#39;accesso degli utenti a tutti i prodotti Adobe Experience Cloud. Per accedere a Platform, è necessario aggiungere un utente o in Admin Console e quindi gestire tutti i relativi elementi di autorizzazione granulari nella schermata Autorizzazioni di Adobe Experience Platform.
 
 
 Di seguito è riportato un rapido riepilogo dei ruoli esistenti per Platform:
 
 * **Gli utenti** di un profilo di prodotto possono completare attività nell&#39;interfaccia utente di Platform in base alle autorizzazioni assegnate nel profilo di prodotto.
-* **Gli sviluppatori** possono creare credenziali API e progetti in Adobe Developer Console per iniziare a utilizzare Experience Platform API
+* **Gli sviluppatori** possono creare credenziali API e progetti in Adobe Developer Console per iniziare a utilizzare l&#39;API Experience Platform
 * **Gli amministratori di prodotto** possono aggiungere utenti e sviluppatori al prodotto Adobe Experience Platform in Adobe Admin Console, nonché gestire l&#39;accesso utente granulare nella schermata Autorizzazioni dell&#39;interfaccia di Platform.
 * **Gli amministratori di sistema** possono aggiungere gli amministratori di prodotto e amministrare essenzialmente qualsiasi autorizzazione per tutti i prodotti Adobe Experience Cloud.
 
@@ -49,7 +49,7 @@ In questo esercizio, l’utente o l’amministratore di sistema o l’amministra
 
 >[!NOTE]
 >
->Se sei un amministratore di sistema che assiste un collega che segue questa esercitazione, puoi aggiungere il tuo collega come *amministratore di prodotto* per Adobe Experience Platform. In qualità di amministratore di prodotto, in futuro potrebbe completare questi passaggi da solo e amministrare altri utenti Experienci Platform.
+>Se sei un amministratore di sistema che assiste un collega che segue questa esercitazione, puoi aggiungere il tuo collega come *amministratore di prodotto* per Adobe Experience Platform. In qualità di amministratore di prodotto, potrebbe completare questi passaggi da solo e amministrare altri utenti di Experience Platform in futuro.
 
 Per aggiungere il partecipante all&#39;esercitazione come [!UICONTROL Utente] e [!UICONTROL Sviluppatore]:
 
@@ -57,7 +57,7 @@ Per aggiungere il partecipante all&#39;esercitazione come [!UICONTROL Utente] e 
 1. Seleziona **[!UICONTROL Prodotti]** nella navigazione superiore
 1. Seleziona **Adobe Experience Platform**
    ![Seleziona Adobe Experience Platform](assets/adminconsole-experiencePlatform.png)
-1. Potresti avere già diversi profili nell’istanza Experience Platform. Seleziona il profilo `AEP-Default-All-Users`
+1. Potresti avere già diversi profili nell’istanza di Experience Platform. Seleziona il profilo `AEP-Default-All-Users`
    ![Seleziona Aggiungi nuovo profilo](assets/adminconsole-newProfile.png)
 
 1. Vai alla scheda **[!UICONTROL Utenti]**
@@ -73,7 +73,7 @@ Per aggiungere il partecipante all&#39;esercitazione come [!UICONTROL Utente] e 
 
 ## Aggiungere un ruolo in Adobe Experience Platform (richiede un amministratore di sistema o un amministratore di prodotto)
 
-Le autorizzazioni granulari di Experience Platform vengono gestite nella schermata Autorizzazioni dell’interfaccia di Platform. Solo gli amministratori di sistema e di prodotto hanno accesso a questa schermata, quindi se non disponi dei privilegi di amministratore, avrai bisogno dell’assistenza di qualcuno che lo fa.
+Le autorizzazioni granulari per Experience Platform vengono gestite nella schermata Autorizzazioni dell’interfaccia di Platform. Solo gli amministratori di sistema e di prodotto hanno accesso a questa schermata, quindi se non disponi dei privilegi di amministratore, avrai bisogno dell’assistenza di qualcuno che lo fa.
 
 Le autorizzazioni vengono gestite in Ruoli. Crea un Ruolo per l&#39;esercitazione:
 
@@ -81,10 +81,10 @@ Le autorizzazioni vengono gestite in Ruoli. Crea un Ruolo per l&#39;esercitazion
 1. Seleziona **[!UICONTROL Autorizzazioni]** nella barra di navigazione a sinistra per passare alla schermata [!UICONTROL Ruoli]
 1. Seleziona **[!UICONTROL Crea ruolo]**
 
-   ![Crea una mansione in Experience Platform](assets/permissions-addRole.png)
+   ![Crea un ruolo in Experience Platform](assets/permissions-addRole.png)
 1. Assegna un nome al ruolo `Luma Tutorial Platform` (aggiungi alla fine il nome del partecipante all&#39;esercitazione, se più persone della tua azienda stanno seguendo questa esercitazione) e seleziona **[!UICONTROL Conferma]**
 
-   ![Crea una mansione in Experience Platform](assets/permissions-nameRole.png)
+   ![Crea un ruolo in Experience Platform](assets/permissions-nameRole.png)
 
 
 1. Aggiungi tutti gli elementi di autorizzazione per le risorse seguenti utilizzando **[!UICONTROL +]** e **[!UICONTROL Aggiungi tutti]**:
@@ -94,7 +94,7 @@ Le autorizzazioni vengono gestite in Ruoli. Crea un Ruolo per l&#39;esercitazion
    1. Gestione profilo
    1. Identity Management
    1. Amministrazione sandbox
-   1. Servizio query
+   1. Servizio Query Service
    1. Raccolta dati
    1. Governance dei dati
    1. Dashboard

@@ -2,12 +2,12 @@
 title: Imponi consenso
 description: Scopri come applicare il consenso
 feature: Consent
-role: User, Developer, Data Architect, Admin
+role: User, Developer, Admin
 level: Beginner
 jira: KT-10362
 thumbnail: 345677.jpeg
 exl-id: 08213d4a-195b-4f5f-b8f6-a516e6b52df4
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 Scopri come creare criteri per applicare le preferenze di consenso del cliente. Per ulteriori informazioni, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/3412100?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/345677?learn=on&enablevpops)
 
 >[!IMPORTANT]
 >

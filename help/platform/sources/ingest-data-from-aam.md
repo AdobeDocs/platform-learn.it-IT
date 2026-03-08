@@ -4,12 +4,12 @@ description: Scopri come utilizzare il connettore dati di Audience Manager per i
 feature: Sources
 topic: Integrations
 badgeIntegration: label="Integrazione" type="positive"
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Intermediate
 thumbnail: 331214.jpg
 jira: KT-7111
 exl-id: 43688e44-c0ea-4107-ba74-1e630990f732
-source-git-commit: ad7ae1f2c6dc6ea943f56e74107b9aa8245b35ac
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Acquisire dati utilizzando il connettore dati Adobe Audience Manager
 
-In questo video sull’integrazione, scopri come utilizzare il connettore dati di Audience Manager per inserire in Platform caratteristiche e segmenti da AAM e combinarli con altri dati avanzati. Per ulteriori informazioni, consulta la [documentazione del connettore di origine Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=it).
+In questo video sull’integrazione, scopri come utilizzare il connettore dati di Audience Manager per inserire in Platform caratteristiche e segmenti da AAM e combinarli con altri dati avanzati. Per ulteriori informazioni, consulta la [documentazione del connettore di origine Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/346985/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on&enablevpops)
 
 Quando riconfiguri i processi e il personale per passare da Adobe Audience Manager a Real-Time Customer Data Platform (Real-Time CDP), puoi utilizzare il connettore dati di Audience Manager per inserire caratteristiche e segmenti da AAM nella piattaforma, combinarli con altri dati avanzati (inclusi i dati PII) e inviarli ai partner di destinazione. Questo video illustra la configurazione del connettore dati di AAM per Real-Time CDP.
 

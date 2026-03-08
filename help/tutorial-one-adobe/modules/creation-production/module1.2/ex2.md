@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Torna al primo nodo, seleziona **Inizializza costanti**, quindi scegli **Aggiung
 ![WF Fusion](./images/wffusion69.png)
 
 | Chiave | Esempio di valore |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `AZURE_STORAGE_URL` | `https://vangeluw.blob.core.windows.net` |
 | `AZURE_STORAGE_CONTAINER` | `vangeluw` |
 | `AZURE_STORAGE_SAS_READ` | `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D` |
@@ -287,7 +287,7 @@ Dovresti vedere questo. Fai clic sul fumetto nel modulo **Adobe Photoshop - Appl
 
 ![WF Fusion](./images/wffc33b.png)
 
-È ora possibile vedere che un nuovo file PSD è stato generato correttamente e archiviato nell&#39;account di archiviazione di Microsoft Azure.
+Ora puoi vedere che un nuovo file PSD è stato generato correttamente e memorizzato nell’account di archiviazione Microsoft Azure.
 
 ![WF Fusion](./images/wffc33c.png)
 
@@ -309,7 +309,7 @@ Dovresti vedere questo. Selezionare innanzitutto la connessione Adobe Photoshop 
 
 ![WF Fusion](./images/wffc37.png)
 
-Per il **file di input**, selezionare **Azure** per **Archiviazione file di input** e assicurarsi di selezionare l&#39;output della richiesta precedente, **Adobe Photoshop - Applica modifiche PSD**, che è possibile definire come segue: ``{{XX.data[].`_links`.renditions[].href}}`` (sostituire XX con il numero di sequenza del modulo precedente Adobe Photoshop - Applica modifiche PSD).
+Per il **file di input**, seleziona **Azure** per **Archiviazione file di input** e assicurati di selezionare l&#39;output della richiesta precedente, **Adobe Photoshop - Applica modifiche PSD**, che puoi definire in questo modo: ``{{XX.data[].`_links`.renditions[].href}}`` (sostituisci XX con il numero di sequenza del modulo precedente Adobe Photoshop - Applica modifiche PSD).
 
 Fare clic su **+Aggiungi elemento** in **Livelli** per iniziare ad aggiungere i livelli di testo da aggiornare.
 
@@ -423,7 +423,7 @@ Come promemoria: una volta che lo scenario è stato eseguito in Workfront Fusion
 
 ![WF Fusion](./images/wffc59.png)
 
-Utilizzando Azure Storage Explorer, è quindi possibile trovare e aprire il file PSD appena creato facendo doppio clic su di esso in Azure Storage Explorer.
+Utilizzando Azure Storage Explorer, è possibile trovare e aprire il file PSD appena creato facendo doppio clic su di esso in Azure Storage Explorer.
 
 ![WF Fusion](./images/wffc60.png)
 

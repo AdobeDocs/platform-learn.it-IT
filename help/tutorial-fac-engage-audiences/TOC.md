@@ -2,14 +2,14 @@
 user-guide-title: Coinvolgi i tipi di pubblico direttamente dal tuo data warehouse utilizzando la Federated Audience Composition
 breadcrumb-title: Composizione di pubblico federato
 user-guide-description: Una guida per ridurre al minimo la copia dei dati sfruttando il tuo stack tecnologico esistente per creare e arricchire i tipi di pubblico utilizzando la Federated Audience Composition.
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 

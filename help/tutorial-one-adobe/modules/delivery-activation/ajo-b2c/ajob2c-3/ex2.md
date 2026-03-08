@@ -4,7 +4,7 @@ description: Configurare un percorso con messaggi push
 kt: 5342
 doc-type: tutorial
 exl-id: 63d7ee24-b6b5-4503-b104-a345c2b26960
-source-git-commit: fb14ba45333bdd5834ff0c6c2dc48dda35cfe85f
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 1%
@@ -103,11 +103,11 @@ Poi vedrai questo. Fai clic sull&#39;icona **personalization** per il campo **Ti
 
 Poi vedrai questo. Ora puoi selezionare qualsiasi attributo di profilo direttamente da Real-time Customer Profile.
 
-Cerca il campo **Nome**, quindi fai clic sull&#39;icona **+** accanto al campo **Nome**. Verrà quindi visualizzato il token di personalizzazione per First Name aggiunto: **{{profile.person.name.firstName}}**.
+Cerca il campo **Nome**, quindi fai clic sull&#39;icona **+** accanto al campo **Nome**. Verrà quindi visualizzato il token di personalizzazione per First Name aggiunto: **`{{profile.person.name.firstName}}`**.
 
 ![Invia](./images/bp9.png)
 
-Quindi, aggiungi il testo **, benvenuto nel nostro store!** dietro **{{profile.person.name.firstName}}**.
+Quindi, aggiungi il testo **, benvenuto nel nostro store!** dietro **`{{profile.person.name.firstName}}`**.
 
 Fai clic su **Salva**.
 
