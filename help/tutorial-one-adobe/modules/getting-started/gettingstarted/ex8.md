@@ -25,7 +25,7 @@ Questo video illustra e illustra tutti i passaggi di questo esercizio.
 
 ## Installare PostBuster
 
-Vai a [https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}.
+Vai a [https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}.
 
 Fai clic per scaricare l&#39;ultima versione di **PostBuster**.
 

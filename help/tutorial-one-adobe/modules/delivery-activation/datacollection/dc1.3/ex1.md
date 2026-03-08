@@ -528,7 +528,7 @@ SELECT user_id,
    AND p.household_id = h.household_id;
 ```
 
-Dovresti vedere questo. Fare clic per aprire l&#39;elenco a discesa **1}, quindi selezionare** Esegui tutto **per eseguire tutte le query.**
+Dovresti vedere questo. Fare clic per aprire l&#39;elenco a discesa **1&rbrace;, quindi selezionare** Esegui tutto **per eseguire tutte le query.**
 
 ![FAC](./images/dataload3.png)
 

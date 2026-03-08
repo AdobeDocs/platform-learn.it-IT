@@ -275,7 +275,7 @@ Per creare rapporti sugli schermi visualizzati nell’app:
 
 1. Seleziona **[!UICONTROL Mostra tutti]** sotto l&#39;elenco **[!UICONTROL METRICHE]**.
 
-1. Trascina e rilascia il componente **[!UICONTROL Visualizzazioni schermo]** in [!UICONTROL _Rilascia qui (o in qualsiasi altro componente **)**una_ metrica].
+1. Trascina e rilascia il componente **[!UICONTROL Visualizzazioni schermo]** in [!UICONTROL _Rilascia qui (o in qualsiasi altro componente **)**&#x200B;una_ metrica].
    ![Progetti CJA 7](assets/cja-projects-7.png){zoomable="yes"}
 La tabella a forma libera ora mostra le visualizzazioni dello schermo per ogni giorno per il periodo di tempo selezionato. Tuttavia, vuoi mostrare il numero di visualizzazioni dello schermo per ciascuna delle diverse schermate utilizzate nell’app.
 
@@ -305,7 +305,7 @@ Successivamente, creerai una tabella a forma libera per segnalare il modo in cui
 
 1. Rinomina **[!UICONTROL Tabella a forma libera (2)]** in `App Interactions`.
 
-1. Trascina e rilascia la metrica **[!UICONTROL Interazioni app]** su [!UICONTROL _Rilascia una **metrica**qui (o qualsiasi altro componente_)].
+1. Trascina e rilascia la metrica **[!UICONTROL Interazioni app]** su [!UICONTROL _Rilascia una **metrica**&#x200B;qui (o qualsiasi altro componente_)].
 
 1. Trascina e rilascia la dimensione **[!UICONTROL Nome interazione app]** nell&#39;intestazione **[!UICONTROL Day]** per sostituire questa dimensione.
 
@@ -337,7 +337,7 @@ Ora vuoi segnalare, in un pannello separato, gli eventi di e-commerce che si ver
 
 1. Rinomina **[!UICONTROL Tabella a forma libera]** in `Commerce Events`.
 
-1. Trascina e rilascia la metrica **[!UICONTROL Visualizzazioni prodotto]** su [!UICONTROL _Rilascia una **metrica**qui (o qualsiasi altro componente_)].
+1. Trascina e rilascia la metrica **[!UICONTROL Visualizzazioni prodotto]** su [!UICONTROL _Rilascia una **metrica**&#x200B;qui (o qualsiasi altro componente_)].
 
 1. Trascina e rilascia la metrica **[!UICONTROL Product Add To Lists]** a destra della colonna **[!UICONTROL Product Views]** per inserire questa colonna nella tabella a forma libera. Accertati che **[!UICONTROL + Add]** (in blu) sia visualizzato durante l&#39;inserimento della colonna.
    ![Progetti CJA 15](assets/cja-projects-15.png){zoomable="yes"}
@@ -390,7 +390,7 @@ Desideri generare rapporti sul numero di offerte e sulle offerte visualizzate ag
 
 1. Rinomina la **[!UICONTROL tabella a forma libera]** in `Monthly Overview`.
 
-1. Trascina e rilascia la metrica **[!UICONTROL Visualizzazione]** su [!UICONTROL _Rilascia una **metrica**qui (o qualsiasi altro componente_)].
+1. Trascina e rilascia la metrica **[!UICONTROL Visualizzazione]** su [!UICONTROL _Rilascia una **metrica**&#x200B;qui (o qualsiasi altro componente_)].
 
 1. Trascina e rilascia la dimensione **[!UICONTROL Mese]** nella colonna **[!UICONTROL Giorno]** per sostituire la dimensione.
 
@@ -411,7 +411,7 @@ Desideri inoltre disporre di un rapporto che mostri quali offerte sono state mos
 
 1. Rinomina **[!UICONTROL Tabella a forma libera (2)]** in `People`.
 
-1. Trascina e rilascia la metrica **[!UICONTROL Persone]** su [!UICONTROL _Rilascia una **metrica**qui (o qualsiasi altro componente_)].
+1. Trascina e rilascia la metrica **[!UICONTROL Persone]** su [!UICONTROL _Rilascia una **metrica**&#x200B;qui (o qualsiasi altro componente_)].
 
 1. Trascina e rilascia **[!UICONTROL Nome attività]** nella colonna **[!UICONTROL Giorno]** per sostituire la dimensione.
 
@@ -443,7 +443,7 @@ Infine, vuoi generare rapporti sulle visite ai negozi.
 
 1. Rinomina **[!UICONTROL Tabella a forma libera]** in `Store Entries / Exits Across Cities`.
 
-1. Trascina e rilascia la metrica **[!UICONTROL Eventi posizione]** su [!UICONTROL _Rilascia una **metrica**qui (o qualsiasi altro componente_)]. Il rapporto ora mostra una panoramica giornaliera di tutti gli eventi di posizione che si sono verificati nell’app. Ricorda come hai configurato in modo specifico questa dimensione come parte della [visualizzazione dati](#create-a-data-view).
+1. Trascina e rilascia la metrica **[!UICONTROL Eventi posizione]** su [!UICONTROL _Rilascia una **metrica**&#x200B;qui (o qualsiasi altro componente_)]. Il rapporto ora mostra una panoramica giornaliera di tutti gli eventi di posizione che si sono verificati nell’app. Ricorda come hai configurato in modo specifico questa dimensione come parte della [visualizzazione dati](#create-a-data-view).
 
 1. Trascina e rilascia la dimensione **[!UICONTROL Città]** nell&#39;intestazione di colonna **[!UICONTROL Giorno]** per sostituire la dimensione. Il rapporto ora mostra le città per gli eventi di posizione.
 
