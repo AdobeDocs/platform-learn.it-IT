@@ -26,4 +26,4 @@ L’eliminazione del set di dati consente agli amministratori di dati e ai data 
 
 >[!NOTE]
 >
-> Tutti i clienti Platform possono [eliminare i set di dati su richiesta](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#delete). La pianificazione dell’eliminazione del set di dati è attualmente disponibile solo per i clienti di Healthcare Shield o Privacy and Security Shield.
+> Tutti i clienti Platform possono [eliminare i set di dati su richiesta](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=it#delete). La pianificazione dell’eliminazione del set di dati è attualmente disponibile solo per i clienti di Healthcare Shield o Privacy and Security Shield.

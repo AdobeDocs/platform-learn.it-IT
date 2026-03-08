@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Derivare dati con Data Distiller
 
-Scopri come i data engineer possono utilizzare il servizio di query per trasformare i dati e generare nuovi set di dati. Esegui queste query in base a una pianificazione per potenziare dashboard e segmentazione automatizzati. Per ulteriori informazioni, visitare [Genera set di dati di output dai risultati della query](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/create-datasets).
+Scopri come i data engineer possono utilizzare il servizio di query per trasformare i dati e generare nuovi set di dati. Esegui queste query in base a una pianificazione per potenziare dashboard e segmentazione automatizzati. Per ulteriori informazioni, visitare [Genera set di dati di output dai risultati della query](https://experienceleague.adobe.com/it/docs/experience-platform/query/ui/create-datasets).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)

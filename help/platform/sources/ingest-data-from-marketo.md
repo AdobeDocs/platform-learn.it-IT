@@ -35,5 +35,5 @@ Scopri come configurare il connettore di origine per Marketo utilizzando il flus
 >[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on&enablevpops)
 
 Per ulteriori informazioni, consulta la seguente documentazione:
-* [Documentazione del connettore di origine Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
-* [Crea un flusso di dati di origini utilizzando i modelli nell&#39;interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)
+* [Documentazione del connettore di origine Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=it).
+* [Crea un flusso di dati di origini utilizzando i modelli nell&#39;interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html?lang=it#)

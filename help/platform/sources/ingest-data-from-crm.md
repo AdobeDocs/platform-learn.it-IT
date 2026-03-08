@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Acquisire dati utilizzando i connettori di origine del CRM
 
-Scopri come acquisire facilmente in batch i dati dalle origini CRM per inserirli direttamente nel data lake e nel profilo cliente in tempo reale di Adobe Experience Platform. Per una documentazione del prodotto più dettagliata, vedere [Customer Relationship Management (CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) nella pagina di panoramica di Source Connectors.
+Scopri come acquisire facilmente in batch i dati dalle origini CRM per inserirli direttamente nel data lake e nel profilo cliente in tempo reale di Adobe Experience Platform. Per una documentazione del prodotto più dettagliata, vedere [Customer Relationship Management (CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=it#access-control-for-sources-in-data-ingestion) nella pagina di panoramica di Source Connectors.
 
 ## Flusso di lavoro standard
 
@@ -32,6 +32,6 @@ Scopri come configurare il connettore di origine per Salesforce CRM utilizzando 
 >[!VIDEO](https://video.tv.adobe.com/v/3419422?learn=on&enablevpops)
 
 Per ulteriori informazioni, consulta la seguente documentazione:
-* [Creazione di una documentazione di connessione in Salesforce](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).
-* [Crea un flusso di dati di origine utilizzando i modelli nell&#39;interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#).
+* [Creazione di una documentazione di connessione in Salesforce](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html?lang=it).
+* [Crea un flusso di dati di origine utilizzando i modelli nell&#39;interfaccia utente](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html?lang=it#).
 

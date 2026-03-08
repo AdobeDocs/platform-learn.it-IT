@@ -21,7 +21,7 @@ Questo video mostra come inviare dati ad Adobe Experience Platform in streaming 
 
 ## Informazioni aggiuntive
 
-* [Creare una connessione in streaming utilizzando la documentazione API](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html).
-* [Trasmetti i dati del record utilizzando la documentazione delle API Streaming Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html)
-* [Trasmetti dati di serie temporali utilizzando la documentazione delle API Streaming Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html)
-* [Inviare più messaggi in un&#39;unica richiesta HTTP](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html)
+* [Creare una connessione in streaming utilizzando la documentazione API](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html?lang=it).
+* [Trasmetti i dati del record utilizzando la documentazione delle API Streaming Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html?lang=it)
+* [Trasmetti dati di serie temporali utilizzando la documentazione delle API Streaming Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html?lang=it)
+* [Inviare più messaggi in un&#39;unica richiesta HTTP](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html?lang=it)

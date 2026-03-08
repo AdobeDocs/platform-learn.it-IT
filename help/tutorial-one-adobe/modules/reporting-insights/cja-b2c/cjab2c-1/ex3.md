@@ -108,7 +108,7 @@ Un elemento molto importante è **Impostazioni di persistenza**. Il concetto di 
 
 Se non modifichi queste impostazioni, CJA interpreterà la dimensione come **Prop** (livello hit). Inoltre, possiamo cambiare la persistenza per rendere la dimensione un **eVar** (mantenere il valore in tutto il percorso).
 
-Se non conosci eVar e proprietà, puoi [ulteriori informazioni su di esse nella documentazione](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
+Se non conosci eVar e proprietà, puoi [ulteriori informazioni su di esse nella documentazione](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html?lang=it).
 
 Lasciamo Nome pagina come proprietà. Non è quindi necessario modificare le **impostazioni di persistenza**.
 

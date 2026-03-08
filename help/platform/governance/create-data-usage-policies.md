@@ -16,6 +16,6 @@ ht-degree: 48%
 
 # Creare criteri di utilizzo dei dati
 
-Scopri come creare e gestire i criteri di utilizzo dei dati nell’interfaccia utente di Adobe Experience Platform. I criteri di utilizzo dei dati consentono di limitare l’utilizzo dei dati a scopi specifici in base all’etichettatura dei dati. Per informazioni sull&#39;approccio basato su API, vedere [creare criteri di utilizzo dei dati con l&#39;API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/create.html).
+Scopri come creare e gestire i criteri di utilizzo dei dati nell’interfaccia utente di Adobe Experience Platform. I criteri di utilizzo dei dati consentono di limitare l’utilizzo dei dati a scopi specifici in base all’etichettatura dei dati. Per informazioni sull&#39;approccio basato su API, vedere [creare criteri di utilizzo dei dati con l&#39;API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/create.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32977?learn=on&enablevpops)

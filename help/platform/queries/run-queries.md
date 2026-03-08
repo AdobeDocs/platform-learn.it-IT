@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Eseguire query
 
-Scopri come utilizzare Adobe Experience Platform Query Editor per creare, eseguire e gestire le query SQL in modo efficiente. I visualizzatori impareranno a utilizzare funzioni quali il browser di oggetti, il completamento automatico, le query con parametri e gli strumenti di pianificazione per semplificare i flussi di lavoro dei dati e generare informazioni fruibili all’interno dell’organizzazione. Per ulteriori informazioni, visitare la [documentazione di Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
+Scopri come utilizzare Adobe Experience Platform Query Editor per creare, eseguire e gestire le query SQL in modo efficiente. I visualizzatori impareranno a utilizzare funzioni quali il browser di oggetti, il completamento automatico, le query con parametri e gli strumenti di pianificazione per semplificare i flussi di lavoro dei dati e generare informazioni fruibili all’interno dell’organizzazione. Per ulteriori informazioni, visitare la [documentazione di Query Service](https://experienceleague.adobe.com/it/docs/experience-platform/query/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29796?learn=on&enablevpops)

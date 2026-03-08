@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Connettere Tableau a Query Service
 
-Scopri come connettersi a Query Service da diverse applicazioni client desktop che supportano il protocollo PostgreSQL e come utilizzare gli strumenti e i driver PostgreSQL per connettersi e scrivere query. Per ulteriori informazioni, visitare la [documentazione di Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
+Scopri come connettersi a Query Service da diverse applicazioni client desktop che supportano il protocollo PostgreSQL e come utilizzare gli strumenti e i driver PostgreSQL per connettersi e scrivere query. Per ulteriori informazioni, visitare la [documentazione di Query Service](https://experienceleague.adobe.com/it/docs/experience-platform/query/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333702?learn=on&enablevpops)
