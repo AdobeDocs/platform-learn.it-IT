@@ -9,9 +9,9 @@ duration: 143
 last-substantial-update: 2024-06-14T00:00:00Z
 jira: KT-15749
 exl-id: 15b9a4e3-0971-4460-859b-45118d382f64
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: 98efc766c55531ab61f5404b8d0c71708854e796
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1134'
 ht-degree: 18%
 
 ---
@@ -38,7 +38,7 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="access.md" title="Ottenere l’accesso all’Assistente AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475927/?captions=ita&format=jpeg&nocache=1770666472991" alt="Ottenere l’accesso all’Assistente AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1770666472991" alt="Ottenere l’accesso all’Assistente AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -61,7 +61,7 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discoverability-panel.md" title="Utilizzare il pannello individuabilità in AI Assistant" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440970/?captions=ita&format=jpeg&nocache=1770666473011" alt="Utilizzare il pannello individuabilità in AI Assistant"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440962/?format=jpeg&nocache=1770666473011" alt="Utilizzare il pannello individuabilità in AI Assistant"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -84,7 +84,7 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-responses.md" title="Convalidare le risposte dall’Assistente AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441747/?captions=ita&format=jpeg&nocache=1770666473002" alt="Convalidare le risposte dall’Assistente AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441738/?format=jpeg&nocache=1770666473002" alt="Convalidare le risposte dall’Assistente AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -111,15 +111,16 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
 
     {cta = Watch}
 
-* agent-orchestrator-overview.md{image = https://experienceleague.adobe.com/it/slides/media_1d2b433325c0dfdecbc4922914e1f9d6a98c5aef8.png}
-* agent-orchestrator-ui.md{image = https://experienceleague.adobe.com/it/slides/media_15931ca6fc3ef5476b48e5115287b29ea428c0c9f.png}
-* audience-agent-overview.md{image = https://experienceleague.adobe.com/it/slides/media_14af5c26b64191840493b1db2fc5e38614616a73b.png}
-* journey-agent-overview.md{image = https://experienceleague.adobe.com/it/slides/media_1159b3236497fdc53bfa497701e7d069d90601185.png }
-* data-insights-agent-overview.md{image=https://experienceleague.adobe.com/it/slides/media_1bb9671564e4a2ca068e553b65399dec7c5dbf44c.png}
-* experimentation-agent-overview.md{image=https://experienceleague.adobe.com/it/slides/media_1f3bbb2504538557076c2a223692b140a51fef20c.png?width=2000&format=webply&optimize=medium}
-* https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25
-* https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26
-* https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-30-25
+* agent-orchestrator-overview.md{image = https://experienceleague.adobe.com/en/slides/media_1d2b433325c0dfdecbc4922914e1f9d6a98c5aef8.png}
+* agent-orchestrator-ui.md{image = https://experienceleague.adobe.com/en/slides/media_15931ca6fc3ef5476b48e5115287b29ea428c0c9f.png}
+* audience-agent-overview.md{image = https://experienceleague.adobe.com/en/slides/media_14af5c26b64191840493b1db2fc5e38614616a73b.png}
+* journey-agent-overview.md{image = https://experienceleague.adobe.com/en/slides/media_1159b3236497fdc53bfa497701e7d069d90601185.png }
+* data-insights-agent-overview.md{image=https://experienceleague.adobe.com/en/slides/media_1bb9671564e4a2ca068e553b65399dec7c5dbf44c.png}
+* experimentation-agent-overview.md{image=https://experienceleague.adobe.com/en/slides/media_1f3bbb2504538557076c2a223692b140a51fef20c.png?width=2000&format=webply&optimize=medium}
+* https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-03-03-26
+* https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25
+* https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26
+* https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-30-25
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -128,7 +129,7 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="agent-orchestrator-overview.md" title="Panoramica di Agent Orchestrator" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/it/slides/media_1d2b433325c0dfdecbc4922914e1f9d6a98c5aef8.png" alt="Panoramica di Agent Orchestrator"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_1d2b433325c0dfdecbc4922914e1f9d6a98c5aef8.png" alt="Panoramica di Agent Orchestrator"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -151,7 +152,7 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="agent-orchestrator-ui.md" title="Utilizzare l’interfaccia di Adobe Experience Platform Agent Orchestrator" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/it/slides/media_15931ca6fc3ef5476b48e5115287b29ea428c0c9f.png" alt="Utilizzare l’interfaccia di Adobe Experience Platform Agent Orchestrator"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_15931ca6fc3ef5476b48e5115287b29ea428c0c9f.png" alt="Utilizzare l’interfaccia di Adobe Experience Platform Agent Orchestrator"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -174,7 +175,7 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-agent-overview.md" title="Panoramica di Audience Agent" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/it/slides/media_14af5c26b64191840493b1db2fc5e38614616a73b.png" alt="Panoramica di Audience Agent"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_14af5c26b64191840493b1db2fc5e38614616a73b.png" alt="Panoramica di Audience Agent"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -197,7 +198,7 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="journey-agent-overview.md" title="Panoramica sull’agente Journey" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/it/slides/media_1159b3236497fdc53bfa497701e7d069d90601185.png" alt="Panoramica sull’agente Journey"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_1159b3236497fdc53bfa497701e7d069d90601185.png" alt="Panoramica sull’agente Journey"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -220,7 +221,7 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="data-insights-agent-overview.md" title="Panoramica di Data Insights Agent" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/it/slides/media_1bb9671564e4a2ca068e553b65399dec7c5dbf44c.png" alt="Panoramica di Data Insights Agent"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_1bb9671564e4a2ca068e553b65399dec7c5dbf44c.png" alt="Panoramica di Data Insights Agent"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -243,7 +244,7 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="experimentation-agent-overview.md" title="Panoramica sull’agente di sperimentazione" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/it/slides/media_1f3bbb2504538557076c2a223692b140a51fef20c.png?width=400&format=webply&optimize=medium" alt="Panoramica sull’agente di sperimentazione"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_1f3bbb2504538557076c2a223692b140a51fef20c.png?width=400&format=webply&optimize=medium" alt="Panoramica sull’agente di sperimentazione"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -265,7 +266,7 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" title="Esperienze cliente di nuova generazione ed efficienza con Adobe Experience Platform Agent Orchestrator" target="_blank" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" title="Esperienze cliente di nuova generazione ed efficienza con Adobe Experience Platform Agent Orchestrator" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3476153/?format=jpeg&nocache=1770666473854" alt="Esperienze cliente di nuova generazione ed efficienza con Adobe Experience Platform Agent Orchestrator"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -274,11 +275,11 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" target="_blank" rel="referrer" title="Esperienze cliente di nuova generazione ed efficienza con Adobe Experience Platform Agent Orchestrator">Esperienze cliente di nuova generazione ed efficienza con Adobe Experience Platform Agent Orchestrator</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" target="_blank" rel="referrer" title="Esperienze cliente di nuova generazione ed efficienza con Adobe Experience Platform Agent Orchestrator">Esperienze cliente di nuova generazione ed efficienza con Adobe Experience Platform Agent Orchestrator</a>
                     </p>
                     <p class="is-size-6">Experience Platform Agent Orchestrator potenzia l’intelligenza e il ragionamento alla base degli esperti Adobe Experience Platform Agent appositamente creati, consentendo loro di eseguire attività di processo decisionale complesse e di risoluzione dei problemi in modo rapido e su larga scala.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>
@@ -288,7 +289,7 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" title="Agenti al lavoro - Creazione e attivazione di tipi di pubblico e percorsi" target="_blank" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" title="Agenti al lavoro - Creazione e attivazione di tipi di pubblico e percorsi" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3479512/?format=jpeg&nocache=1770666473650" alt="Agenti al lavoro - Creazione e attivazione di tipi di pubblico e percorsi"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -297,11 +298,11 @@ Configurati con l’Assistente AI e scopri le sue funzioni di base.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" target="_blank" rel="referrer" title="Agenti al lavoro - Creazione e attivazione di tipi di pubblico e percorsi">Agenti al lavoro - Creazione e attivazione di tipi di pubblico e percorsi</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" target="_blank" rel="referrer" title="Agenti al lavoro - Creazione e attivazione di tipi di pubblico e percorsi">Agenti al lavoro - Creazione e attivazione di tipi di pubblico e percorsi</a>
                     </p>
                     <p class="is-size-6">Consulta Audience Agent: scoprire informazioni sul pubblico e creare tipi di pubblico pronti in pochi minuti. Poi, guarda Journey Agent trasformare i prompt in linguaggio naturale in percorsi in più passaggi, dalla qualificazione del pubblico all’attivazione cross-channel.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>
@@ -350,7 +351,7 @@ Ci sono molti altri casi d’uso in cui l’Assistente AI può aiutarti a gestir
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="operational-insights.md" title="Ottenere informazioni operative con l’Assistente AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444040/?captions=ita&format=jpeg&nocache=1770666474551" alt="Ottenere informazioni operative con l’Assistente AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444031/?format=jpeg&nocache=1770666474551" alt="Ottenere informazioni operative con l’Assistente AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -373,7 +374,7 @@ Ci sono molti altri casi d’uso in cui l’Assistente AI può aiutarti a gestir
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="find-unused-audiences.md" title="Assistente AI: caso di utilizzo per la pulizia del pubblico" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441995/?captions=ita&format=jpeg&nocache=1770666474555" alt="Assistente AI: caso di utilizzo per la pulizia del pubblico"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435532/?format=jpeg&nocache=1770666474555" alt="Assistente AI: caso di utilizzo per la pulizia del pubblico"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -396,7 +397,7 @@ Ci sono molti altri casi d’uso in cui l’Assistente AI può aiutarti a gestir
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="impact-analysis.md" title="Analisi dell’impatto con l’Assistente AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441688/?captions=ita&format=jpeg&nocache=1770666474559" alt="Analisi dell’impatto con l’Assistente AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441680/?format=jpeg&nocache=1770666474559" alt="Analisi dell’impatto con l’Assistente AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -432,7 +433,7 @@ L’Assistente AI è uno strumento utile per imparare nuovi prodotti o per otten
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-knowledge.md" title="Scopri le applicazioni Experience Platform con l’Assistente AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441032/?captions=ita&format=jpeg&nocache=1770666474659" alt="Scopri le applicazioni Experience Platform con l’Assistente AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441024/?format=jpeg&nocache=1770666474659" alt="Scopri le applicazioni Experience Platform con l’Assistente AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -455,7 +456,7 @@ L’Assistente AI è uno strumento utile per imparare nuovi prodotti o per otten
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="onboard.md" title="Utilizza l’Assistente AI per ridurre i tempi di onboarding" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475938/?captions=ita&format=jpeg&nocache=1770666474665" alt="Utilizza l’Assistente AI per ridurre i tempi di onboarding"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1770666474665" alt="Utilizza l’Assistente AI per ridurre i tempi di onboarding"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -482,7 +483,7 @@ Risolvere i problemi e aprire i ticket di assistenza clienti.
 
 <!-- CARDS
 * product-support-agent.md
-* https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25
+* https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -491,7 +492,7 @@ Risolvere i problemi e aprire i ticket di assistenza clienti.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-support-agent.md" title="Agente di supporto prodotto" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443191/?captions=ita&format=jpeg&nocache=1770666474768" alt="Agente di supporto prodotto"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443183/?format=jpeg&nocache=1770666474768" alt="Agente di supporto prodotto"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -513,7 +514,7 @@ Risolvere i problemi e aprire i ticket di assistenza clienti.
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" title="Semplificare la risoluzione dei problemi e la gestione dei casi di supporto con l&apos;agente di supporto del prodotto" target="_blank" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" title="Semplificare la risoluzione dei problemi e la gestione dei casi di supporto con l&apos;agente di supporto del prodotto" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3477984/?format=jpeg&nocache=1770666474994" alt="Semplificare la risoluzione dei problemi e la gestione dei casi di supporto con l&apos;agente di supporto del prodotto"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -522,11 +523,11 @@ Risolvere i problemi e aprire i ticket di assistenza clienti.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" target="_blank" rel="referrer" title="Semplificare la risoluzione dei problemi e la gestione dei casi di supporto con l&apos;agente di supporto del prodotto">Semplificare la risoluzione dei problemi e la gestione dei casi di supporto con l'agente di supporto del prodotto</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" target="_blank" rel="referrer" title="Semplificare la risoluzione dei problemi e la gestione dei casi di supporto con l&apos;agente di supporto del prodotto">Semplificare la risoluzione dei problemi e la gestione dei casi di supporto con l'agente di supporto del prodotto</a>
                     </p>
                     <p class="is-size-6">Grazie alla tecnologia di Adobe Experience Platform Agent Orchestrator, l'agente di supporto del prodotto è progettato per questi team nelle loro applicazioni Adobe Experience Platform, fornendo un metodo interattivo per risolvere i problemi, diagnosticarli ed escalation, consentendo risoluzioni più rapide ed una maggiore efficienza operativa.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>
@@ -535,12 +536,13 @@ Risolvere i problemi e aprire i ticket di assistenza clienti.
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-## Sicurezza
+## Sicurezza e amministrazione
 
 Scopri le funzioni di sicurezza di AI Assistant.
 
 <!-- CARDS
 * security-overview.md
+* ai-credits.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -549,7 +551,7 @@ Scopri le funzioni di sicurezza di AI Assistant.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="security-overview.md" title="Panoramica sulla sicurezza di AI Assistant" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441088/?captions=ita&format=jpeg&nocache=1770666475529" alt="Panoramica sulla sicurezza di AI Assistant"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441066/?format=jpeg&nocache=1770666475529" alt="Panoramica sulla sicurezza di AI Assistant"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
