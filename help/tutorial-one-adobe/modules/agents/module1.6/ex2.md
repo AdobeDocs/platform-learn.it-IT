@@ -4,9 +4,9 @@ description: Server e cursore MCP di AEM
 kt: 5342
 doc-type: tutorial
 exl-id: c966623f-3b8b-451a-b5fb-5569ef50c88f
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: 726d2d9e6a6faff88128e31d60c95b83ef346406
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '754'
 ht-degree: 1%
 
 ---
@@ -210,6 +210,8 @@ Dovresti vedere qualcosa del genere.
 ![Cursore + AEM](./images/cursoraiz12.png)
 
 ## Passaggi successivi
+
+Vai a [1.6.3 Scalare i frammenti di contenuto con ChatGPT e MCP Server](./ex3.md){target="_blank"}
 
 Torna a [AEM e agenti](./aemagents.md){target="_blank"}
 

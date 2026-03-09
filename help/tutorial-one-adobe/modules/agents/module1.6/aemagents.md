@@ -4,9 +4,9 @@ description: Adobe Experience Manager e agenti
 kt: 5342
 doc-type: tutorial
 exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
-source-git-commit: d2b746d50ec559e0b29a7adb27c3521b0e00d386
+source-git-commit: 726d2d9e6a6faff88128e31d60c95b83ef346406
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '279'
 ht-degree: 1%
 
 ---
@@ -47,6 +47,9 @@ In questo esercizio esplorerai **Discovery Agent** e **Experience Production Age
 
 In questo esercizio, collegherai l’ambiente Cursor ad AEM utilizzando il server MCP di AEM.
 
+[1.6.3 Scalabilità dei frammenti di contenuto con ChatGPT e il server MCP](./ex3.md)
+
+In questo esercizio creerai, gestirai e tradurrai frammenti di contenuto utilizzando ChatGPT e la funzionalità server MCP personalizzata.
 
 ![Informazioni tecniche](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

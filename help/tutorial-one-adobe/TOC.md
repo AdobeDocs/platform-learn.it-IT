@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial tecnico su Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 13a411645ea4e06d06ee6ab27e4f726e87dbbf22
+source-git-commit: 161950ccf1f253913612b9f264e584ca3537b0cd
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1540'
 ht-degree: 3%
 
 ---
@@ -290,6 +290,7 @@ ht-degree: 3%
       + [Panoramica](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
       + [1.6.1 Guida introduttiva agli agenti AEM](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
       + [1.6.2 Server e cursore MCP AEM](/help/tutorial-one-adobe/modules/agents/module1.6/ex2.md)
+      + [1.6.3 Scalabilità dei frammenti di contenuto con ChatGPT e il server MCP](/help/tutorial-one-adobe/modules/agents/module1.6/ex3.md)
    + 1.7 Strumenti per sviluppatori intelligenti per Adobe Commerce {#agents7}
       + [Panoramica](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
       + [1.7.1 Configurazione dell’ambiente di sviluppo](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
