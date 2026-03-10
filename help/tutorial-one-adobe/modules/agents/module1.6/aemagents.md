@@ -4,9 +4,9 @@ description: Adobe Experience Manager e agenti
 kt: 5342
 doc-type: tutorial
 exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
-source-git-commit: 726d2d9e6a6faff88128e31d60c95b83ef346406
+source-git-commit: deea7c9e7e6fa70843b3bf621d51c5502d46a431
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '278'
 ht-degree: 1%
 
 ---
@@ -43,13 +43,13 @@ Questo video illustra e illustra tutti i passaggi di questo esercizio.
 
 In questo esercizio esplorerai **Discovery Agent** e **Experience Production Agent**.
 
-[1.6.2 Server e cursore MCP AEM](./ex2.md)
+[1.6.2 Server e cursore MCP di AEM](./ex2.md)
 
 In questo esercizio, collegherai l’ambiente Cursor ad AEM utilizzando il server MCP di AEM.
 
-[1.6.3 Scalabilità dei frammenti di contenuto con ChatGPT e il server MCP](./ex3.md)
+[1.6.3 Scalabilità dei frammenti di contenuto con ChatGPT e MCP Server](./ex3.md)
 
-In questo esercizio creerai, gestirai e tradurrai frammenti di contenuto utilizzando ChatGPT e la funzionalità server MCP personalizzata.
+In questo esercizio creerai, gestirai e tradurrai frammenti di contenuto utilizzando la funzionalità ChatGPT e la funzionalità server MCP personalizzata.
 
 ![Informazioni tecniche](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
@@ -57,4 +57,4 @@ In questo esercizio creerai, gestirai e tradurrai frammenti di contenuto utilizz
 >
 >Se hai domande, vuoi condividere feedback generali su suggerimenti in merito a contenuti futuri, contatta direttamente Tech Insiders, inviando un&#39;e-mail a **techinsiders@adobe.com**.
 
-[Torna a tutti i moduli](../../../overview.md){target="_blank"} AEM
+[Torna a tutti i moduli](../../../overview.md){target="_blank"}
