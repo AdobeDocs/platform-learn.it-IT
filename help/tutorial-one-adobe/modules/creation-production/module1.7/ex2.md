@@ -109,7 +109,7 @@ Dopo aver apportato le modifiche al payload, dovrebbe presentarsi così. Al term
 
 ![Flussi di lavoro personalizzati Firefly](./images/ffcw66.png)
 
-Nel payload di risposta ora puoi trovare un paio di collegamenti. Questi collegamenti consentono di eseguire una query sullo **stato** del flusso di lavoro e, una volta completato lo stato ****, è possibile utilizzare l&#39;URL **risultati** per recuperare l&#39;immagine e il video generati.
+Nel payload di risposta ora puoi trovare un paio di collegamenti. Questi collegamenti consentono di eseguire una query sullo **stato** del flusso di lavoro e, una volta completato lo stato **&#x200B;**, è possibile utilizzare l&#39;URL **risultati** per recuperare l&#39;immagine e il video generati.
 
 Seleziona l&#39;URL **status** e copialo.
 
