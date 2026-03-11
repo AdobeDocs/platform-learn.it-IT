@@ -4,9 +4,9 @@ description: Adobe Marketing Agent per Microsoft 365 CopilotCopilot
 kt: 5342
 doc-type: tutorial
 exl-id: 9cab0e72-4d46-46ee-8dee-e5ca83889523
-source-git-commit: 88f0121cd0bf73f2456c349908a7f8193ebddafa
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
@@ -280,6 +280,10 @@ Dovresti vedere questo.
 ![Agent Orchestrator](./images/copilot41.png)
 
 Ora hai completato il laboratorio.
+
+## Passaggi successivi
+
+Vai a [Adobe Marketing Agent per Google Gemini](./ex4.md){target="_blank"}
 
 Torna a [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 

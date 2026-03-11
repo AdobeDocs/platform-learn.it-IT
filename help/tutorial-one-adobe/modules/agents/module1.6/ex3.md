@@ -3,9 +3,10 @@ title: Scalabilità dei frammenti di contenuto con ChatGPT e il server MCP
 description: Scalabilità dei frammenti di contenuto con ChatGPT e il server MCP
 kt: 5342
 doc-type: tutorial
-source-git-commit: 161950ccf1f253913612b9f264e584ca3537b0cd
+exl-id: b7105351-e9de-4b2c-b3d7-2d4c8627f852
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '937'
 ht-degree: 1%
 
 ---
@@ -280,6 +281,34 @@ Dovresti vedere questo. La variante di frammento è stata creata correttamente.
 Ora puoi visualizzare anche la nuova variante nell’interfaccia utente di AEM.
 
 ![Agent Orchestrator](./images/chatgpt17.png)
+
+Quindi, utilizza ChatGPT per tradurre il frammento di contenuto in più varianti. Immetti il seguente prompt e fai clic su **Invia**.
+
+```
+now do the same thing for the 5 top country's languages that CitiSignal does business with
+```
+
+![Agent Orchestrator](./images/chatgpt18.png)
+
+Conferma la lingua scelta.
+
+![Agent Orchestrator](./images/chatgpt23.png)
+
+Fare clic su **CreaVarianteFrammento**.
+
+![Agent Orchestrator](./images/chatgpt22.png)
+
+Fare clic su **AggiornaFrammento**.
+
+![Agent Orchestrator](./images/chatgpt24.png)
+
+Ripetere la procedura per ciascuna lingua selezionata. Una volta fatto, dovresti vedere qualcosa del genere.
+
+![Agent Orchestrator](./images/chatgpt26.png)
+
+Torna all’interfaccia utente di AEM e aggiorna lo schermo. Ora puoi visualizzare le nuove varianti nel frammento di contenuto.
+
+![Agent Orchestrator](./images/chatgpt27.png)
 
 ## Passaggi successivi
 

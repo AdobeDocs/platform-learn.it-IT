@@ -3,9 +3,10 @@ title: Guida introduttiva ad Agent Orchestrator
 description: Guida introduttiva ad Agent Orchestrator
 kt: 5342
 doc-type: tutorial
-source-git-commit: 121cbb5ea8f8b713c6ebae008f7f0d9b3a79e476
+exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '1393'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
@@ -441,6 +442,10 @@ Dovresti quindi vedere una risposta dettagliata relativa al suggerimento scelto.
 ![Agent Orchestrator](./images/aoea4.png)
 
 Ora hai completato il laboratorio.
+
+## Passaggi successivi
+
+Vai a [Adobe Marketing Agent per ChatGPT Enterprise](./ex2.md){target="_blank"}
 
 Torna a [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 

@@ -4,10 +4,10 @@ breadcrumb-title: Tutorial tecnico su Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 161950ccf1f253913612b9f264e584ca3537b0cd
+source-git-commit: 27804d5124fb1024c515b9ab22e5bbd40c4c80b3
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 3%
+source-wordcount: '1550'
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,6 @@ ht-degree: 3%
 # Tutorial tecnico su Adobe {#tutorial-one-adobe}
 
 + [Panoramica del tutorial](/help/tutorial-one-adobe/overview.md)
-+ [Abilitazione tecnica di GenStudio for Content Supply Chain](/help/tutorial-one-adobe/genstudiocsc.md)
 + [Stato contenuto](/help/tutorial-one-adobe/status.md)
 + [Architettura](/help/tutorial-one-adobe/architecture.md)
 
@@ -31,6 +30,35 @@ ht-degree: 3%
       + [Opzione 1: configurazione del Postman](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex7.md)
       + [Opzione 2: configurazione di PostBuster](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
       + [Applicazioni da installare](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
+
++ IA agentica {#agents}
+   + 1.1 Agent Orchestrator {#agents1}
+      + [Panoramica](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
+      + [1.1.1 Guida introduttiva ad Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
+      + [1.1.2 Adobe Marketing Agent per ChatGPT Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
+      + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
+      + [1.1.4 Adobe Marketing Agent per Google Gemini](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
+   + 1.2 Guida introduttiva ad agenti e IA {#agents2}
+      + [Panoramica](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
+      + [1.2.1 Guida introduttiva all’intelligenza artificiale](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
+   + 1.4 Brand Concierge {#agents4}
+      + [Panoramica](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
+      + [1.4.1 Guida introduttiva a Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
+      + [1.4.2 Implementare Brand Concierge sul sito web](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
+   + 1.5 Analytics e agenti {#agents5}
+      + [Panoramica](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
+      + [1.5.1 CJA e ChatGPT con server MCP](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
+      + [1.5.2 CJA e Claude.ai con server MCP](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
+      + [1.5.3 Adobe Analytics e Claude.ai con server MCP](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
+   + 1.6 AEM e agenti {#agents6}
+      + [Panoramica](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
+      + [1.6.1 Guida introduttiva agli agenti AEM](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
+      + [1.6.2 Server e cursore MCP AEM](/help/tutorial-one-adobe/modules/agents/module1.6/ex2.md)
+      + [1.6.3 Scalabilità dei frammenti di contenuto con ChatGPT e il server MCP](/help/tutorial-one-adobe/modules/agents/module1.6/ex3.md)
+   + 1.7 Strumenti per sviluppatori intelligenti per Adobe Commerce {#agents7}
+      + [Panoramica](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
+      + [1.7.1 Configurazione dell’ambiente di sviluppo](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
+      + [1.7.2 Usare il cursore per sviluppare il progetto](/help/tutorial-one-adobe/modules/agents/module1.7/ex2.md)
 
 + Flusso di lavoro e pianificazione {#wfplanning}
    + 1.1 Pianificazione Workfront {#wfpl1}
@@ -93,6 +121,9 @@ ht-degree: 3%
       + [Panoramica](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
       + [1.8.1 Guida introduttiva a Workfront, Frame.io ed ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
       + [1.8.2 Creare una nuova risorsa, rivederla e approvarla](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
+   + 1.9 Schede madri Firefly {#crpr9}
+      + [Panoramica](/help/tutorial-one-adobe/modules/creation-production/module1.9/fireflyboards.md)
+      + [1.9.1 Guida introduttiva alle schede madri Firefly](/help/tutorial-one-adobe/modules/creation-production/module1.9/ex1.md)
 
 + Gestione delle risorse {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
@@ -266,32 +297,3 @@ ht-degree: 3%
          + [Panoramica](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Guida introduttiva a Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
-
-+ Agenti {#agents}
-   + [Panoramica di IA agente](/help/tutorial-one-adobe/ai.md)
-   + 1.1 Agent Orchestrator {#agents1}
-      + [Panoramica](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
-      + [1.1.1 Guida introduttiva ad Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
-      + [1.1.2 Adobe Marketing Agent per ChatGPT Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
-      + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
-   + 1.2 Guida introduttiva ad agenti e IA {#agents2}
-      + [Panoramica](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
-      + [1.2.1 Guida introduttiva all’intelligenza artificiale](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
-   + 1.4 Brand Concierge {#agents4}
-      + [Panoramica](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
-      + [1.4.1 Guida introduttiva a Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
-      + [1.4.2 Implementare Brand Concierge sul sito web](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
-   + 1.5 Analytics e agenti {#agents5}
-      + [Panoramica](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
-      + [1.5.1 CJA e ChatGPT con server MCP](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
-      + [1.5.2 CJA e Claude.ai con server MCP](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
-      + [1.5.3 Adobe Analytics e Claude.ai con server MCP](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
-   + 1.6 AEM e agenti {#agents6}
-      + [Panoramica](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
-      + [1.6.1 Guida introduttiva agli agenti AEM](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
-      + [1.6.2 Server e cursore MCP AEM](/help/tutorial-one-adobe/modules/agents/module1.6/ex2.md)
-      + [1.6.3 Scalabilità dei frammenti di contenuto con ChatGPT e il server MCP](/help/tutorial-one-adobe/modules/agents/module1.6/ex3.md)
-   + 1.7 Strumenti per sviluppatori intelligenti per Adobe Commerce {#agents7}
-      + [Panoramica](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
-      + [1.7.1 Configurazione dell’ambiente di sviluppo](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
-      + [1.7.2 Usare il cursore per sviluppare il progetto](/help/tutorial-one-adobe/modules/agents/module1.7/ex2.md)

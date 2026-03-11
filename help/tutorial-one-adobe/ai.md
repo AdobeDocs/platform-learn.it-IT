@@ -3,9 +3,9 @@ title: Panoramica di Agentic AI Tech Labs
 description: Panoramica di Agentic AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 1abfd8d1f270a810dd65d9921c69834df2a9147d
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -26,30 +26,6 @@ Scopri come utilizzare gli agenti Adobe Experience Platform e Agent Orchestrator
 - Identificare pubblici ad alta propensione
 - Convalidare le prestazioni del percorso
 - Creazione di un nuovo percorso per il rollout CitiSignal Fibre Max
-
-[1.2 Guida introduttiva ad agenti e IA](./modules/agents/module1.2/agenticai.md)
-
->[!NOTE]
->
->Questo modulo non è ancora stato rilasciato.
-
-**Obiettivo**
-
-Crea un tuo agente.
-
-Gli Allievi creeranno il proprio agente che utilizza un modulo LLM per analizzare le richieste. L’analisi della richiesta verrà quindi utilizzata per creare un piano contenente istruzioni, che verranno quindi eseguite singolarmente. Affinché ciò sia possibile, l’agente deve comprendere quali competenze sono disponibili. Gli Allievi creeranno personalmente una serie di competenze, competenze che verranno create utilizzando un server MCP e che utilizzeranno le API dei prodotti Adobe come Adobe Firefly Services, Workfront Fusion e altri.
-
-- GenAI immagine
-- GenAI testo
-
-Qual è l&#39;architettura alla base di un agente?
-
-Elementi tecnici:
-
-- Azure AI Foundry, LLM, Co-pilota
-- n8n
-- Server MCP, notebook Python
-- API di Adobe
 
 [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
