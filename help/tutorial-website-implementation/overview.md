@@ -48,7 +48,7 @@ Dopo aver completato questa esercitazione, sarai in grado di:
 
 In queste lezioni, si presume che tu sia in possesso di un Adobe ID e delle autorizzazioni necessarie per completare gli esercizi. In caso contrario, potresti dover contattare l’amministratore di Experience Cloud per richiedere l’accesso.
 
-* Per i tag, devi disporre delle autorizzazioni per sviluppare, approvare, pubblicare, gestire le estensioni e gestire gli ambienti. Per ulteriori informazioni sulle autorizzazioni per gli utenti tag, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* Per i tag, devi disporre delle autorizzazioni per sviluppare, approvare, pubblicare, gestire le estensioni e gestire gli ambienti. Per ulteriori informazioni sulle autorizzazioni per gli utenti tag, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=it).
 * Con Adobe Analytics, devi conoscere il tuo server di tracciamento e quali suite per report utilizzerai per completare questa esercitazione.
 * Con Audience Manager, devi conoscere il tuo sottodominio Audience Manager (noto anche come &quot;Nome partner&quot; &quot;ID partner&quot; o &quot;Sottodominio partner&quot;)
 
@@ -123,7 +123,7 @@ In queste lezioni, implementerai Adobe Experience Cloud in un finto sito web per
    <body>
        <h1>Tags: Sample HTML Page</h1>
        <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
-       <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+       <p>See <a href="https://docs.adobe.com/content/help/it-IT/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
    </body>
    </html>
    ```

@@ -12,7 +12,7 @@ ht-degree: 69%
 
 # Aggiungere Adobe Analytics
 
-In questa lezione, implementerai [l’estensione Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) e creerai regole per inviare dati ad Adobe Analytics.
+In questa lezione, implementerai [l’estensione Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=it) e creerai regole per inviare dati ad Adobe Analytics.
 
 
 >[!WARNING]
@@ -39,7 +39,7 @@ Puoi implementare molti elementi per Analytics nei tag. Questa lezione non è es
 
 Devi avere già completato le lezioni in [Configura tag](create-a-property.md) e [Aggiungi il servizio Identity](id-service.md).
 
-Inoltre, devi disporre di almeno un ID suite per report e del tracking server. Se non hai una suite per report test/dev che puoi usare per questa esercitazione, creane una. Se non sai come farlo, consulta [la documentazione](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite). Puoi recuperare il tracking server dalla tua implementazione corrente dall’Adobe Consultant o dal rappresentante dell’Assistenza clienti.
+Inoltre, devi disporre di almeno un ID suite per report e del tracking server. Se non hai una suite per report test/dev che puoi usare per questa esercitazione, creane una. Se non sai come farlo, consulta [la documentazione](https://experienceleague.adobe.com/it/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite). Puoi recuperare il tracking server dalla tua implementazione corrente dall’Adobe Consultant o dal rappresentante dell’Assistenza clienti.
 
 ## Aggiungi l’estensione Analytics
 
@@ -424,7 +424,7 @@ Con questo codice chiamerai due plug-in, ma uno di questi è incorporato nella l
 
 Lo scopo di questo plug-in consiste nell’evitare che i valori vengano duplicati erroneamente nel codice quando un visitatore aggiorna una pagina o utilizza il pulsante Indietro del browser per tornare a una pagina in cui è stato impostato un valore. In questa lezione, lo utilizzerai per evitare che l’evento `clickthrough` venga duplicato.
 
-Il codice di questo plug-in è disponibile nella [documentazione Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html), ma è incluso qui per semplificare la funzione di copia/incolla.
+Il codice di questo plug-in è disponibile nella [documentazione Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html?lang=it), ma è incluso qui per semplificare la funzione di copia/incolla.
 
 1. Copia il seguente codice.
 

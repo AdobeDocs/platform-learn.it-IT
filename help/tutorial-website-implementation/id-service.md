@@ -12,7 +12,7 @@ ht-degree: 62%
 
 # Aggiungere Adobe Experience Platform Identity Service
 
-Questa lezione illustra i passaggi necessari per implementare l’estensione [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html) e inviare gli ID cliente.
+Questa lezione illustra i passaggi necessari per implementare l’estensione [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=it) e inviare gli ID cliente.
 
 Il servizio [Adobe Experience Platform Identity](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=it) imposta un ID visitatore comune in tutte le soluzioni Adobe per abilitare le funzionalità di Experience Cloud, ad esempio la condivisione del pubblico tra le soluzioni. Puoi anche inviare i tuoi ID cliente personalizzati al servizio per abilitare il targeting su più dispositivi e le integrazioni con il tuo sistema di gestione delle relazioni con i clienti (CRM).
 
@@ -90,11 +90,11 @@ L’estensione del servizio Identity è una delle poche estensioni tag che effet
    1. Cerca il cookie AMCV_ sul lato destro. Potresti visualizzarne diversi poiché il sito Luma è stato caricato utilizzando sia la sua proprietà di tag di codifica fissa, sia quella mappata sulla tua.
       ![Verifica il cookie AMCV_](images/idservice-AMCVCookie.png)
 
-Tutto qui. Hai aggiunto la tua prima estensione! Per ulteriori informazioni sulle opzioni di configurazione di Identity Service, consulta [la documentazione](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html).
+Tutto qui. Hai aggiunto la tua prima estensione! Per ulteriori informazioni sulle opzioni di configurazione di Identity Service, consulta [la documentazione](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html?lang=it).
 
 ## Inviare ID cliente
 
-Successivamente, invierai un [ID cliente](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) a Identity Service. Questo ti consente di [integrare il CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=it) con Experience Cloud, nonché di tenere traccia dei visitatori tra i dispositivi.
+Successivamente, invierai un [ID cliente](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=it) a Identity Service. Questo ti consente di [integrare il CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=it) con Experience Cloud, nonché di tenere traccia dei visitatori tra i dispositivi.
 
 Nella lezione precedente, [Aggiungere elementi dati, regole e librerie](add-data-elements-rules.md) hai creato un elemento dati e lo hai utilizzato in una regola. Ora, utilizzerai le stesse tecniche per inviare un ID cliente quando il visitatore è autenticato.
 
