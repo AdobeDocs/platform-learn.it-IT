@@ -3,31 +3,24 @@ title: Aggiungere Adobe Analytics
 description: Scopri come implementare Adobe Analytics utilizzando l’estensione tag Adobe Analytics, inviare il beacon di visualizzazione della pagina, aggiungere variabili, tenere traccia degli eventi e aggiungere plug-in. Questa lezione fa parte dell’esercitazione Implementare Experience Cloud nei siti web.
 solution: Data Collection, Analytics
 exl-id: dababaf2-ff8f-4178-8eaf-04a707b4ab05
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '3859'
+source-wordcount: '3806'
 ht-degree: 69%
 
 ---
 
 # Aggiungere Adobe Analytics
 
-In questa lezione, implementerai [l’estensione Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=it) e creerai regole per inviare dati ad Adobe Analytics.
+In questa lezione, implementerai [l’estensione Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) e creerai regole per inviare dati ad Adobe Analytics.
 
 
 >[!WARNING]
 >
-> Il sito web Luma utilizzato in questa esercitazione dovrebbe essere sostituito durante la settimana del 16 febbraio 2026. Il lavoro svolto come parte di questo tutorial potrebbe non essere applicabile al nuovo sito web.
+> Questo tutorial e i relativi esercizi per il sito web Luma non vengono più mantenuti e si basano su librerie JavaScript meno recenti. Per scoprire la best practice corrente, utilizzare l&#39;esercitazione [Implementare Adobe Experience Cloud con Web SDK](https://experienceleague.adobe.com/it/docs/platform-learn/implement-web-sdk/overview).
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=it) è una soluzione leader di settore che ti consente di comprendere i tuoi clienti come persone e gestire la tua attività grazie alle informazioni sul cliente.
 
->[!NOTE]
->
->Adobe Experience Platform Launch viene integrato in Adobe Experience Platform come suite di tecnologie per la raccolta dati. Nell’interfaccia sono state introdotte diverse modifiche terminologiche di cui tenere conto quando si utilizza questo contenuto:
->
-> * Platform Launch (lato client) è ora **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)**
-> * Platform Launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it)**
-> * Le configurazioni di Edge sono ora **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)**
 
 ## Finalità di apprendimento
 
@@ -46,7 +39,7 @@ Puoi implementare molti elementi per Analytics nei tag. Questa lezione non è es
 
 Devi avere già completato le lezioni in [Configura tag](create-a-property.md) e [Aggiungi il servizio Identity](id-service.md).
 
-Inoltre, devi disporre di almeno un ID suite per report e del tracking server. Se non hai una suite per report test/dev che puoi usare per questa esercitazione, creane una. Se non sai come farlo, consulta [la documentazione](https://experienceleague.adobe.com/it/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite). Puoi recuperare il tracking server dalla tua implementazione corrente dall’Adobe Consultant o dal rappresentante dell’Assistenza clienti.
+Inoltre, devi disporre di almeno un ID suite per report e del tracking server. Se non hai una suite per report test/dev che puoi usare per questa esercitazione, creane una. Se non sai come farlo, consulta [la documentazione](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite). Puoi recuperare il tracking server dalla tua implementazione corrente dall’Adobe Consultant o dal rappresentante dell’Assistenza clienti.
 
 ## Aggiungi l’estensione Analytics
 
@@ -431,7 +424,7 @@ Con questo codice chiamerai due plug-in, ma uno di questi è incorporato nella l
 
 Lo scopo di questo plug-in consiste nell’evitare che i valori vengano duplicati erroneamente nel codice quando un visitatore aggiorna una pagina o utilizza il pulsante Indietro del browser per tornare a una pagina in cui è stato impostato un valore. In questa lezione, lo utilizzerai per evitare che l’evento `clickthrough` venga duplicato.
 
-Il codice di questo plug-in è disponibile nella [documentazione Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html?lang=it), ma è incluso qui per semplificare la funzione di copia/incolla.
+Il codice di questo plug-in è disponibile nella [documentazione Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html), ma è incluso qui per semplificare la funzione di copia/incolla.
 
 1. Copia il seguente codice.
 

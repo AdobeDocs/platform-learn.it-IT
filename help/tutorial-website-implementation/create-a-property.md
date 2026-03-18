@@ -2,10 +2,10 @@
 title: Creare una proprietà tag
 description: Scopri come accedere all’interfaccia di Data Collection e creare una proprietà tag. Questa lezione fa parte dell’esercitazione Implementare Experience Cloud nei siti web.
 exl-id: f83d374a-a831-4598-b9d3-6f183224b589
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 51%
+source-wordcount: '509'
+ht-degree: 52%
 
 ---
 
@@ -18,19 +18,12 @@ Una proprietà è fondamentalmente un contenitore che riempi con estensioni, reg
 
 >[!WARNING]
 >
-> Il sito web Luma utilizzato in questa esercitazione dovrebbe essere sostituito durante la settimana del 16 febbraio 2026. Il lavoro svolto come parte di questo tutorial potrebbe non essere applicabile al nuovo sito web.
+> Questo tutorial e i relativi esercizi per il sito web Luma non vengono più mantenuti e si basano su librerie JavaScript meno recenti. Per scoprire la best practice corrente, utilizzare l&#39;esercitazione [Implementare Adobe Experience Cloud con Web SDK](https://experienceleague.adobe.com/it/docs/platform-learn/implement-web-sdk/overview).
 
 ## Prerequisiti
 
-Per completare le lezioni successive, devi disporre dell’autorizzazione per sviluppare, approvare, pubblicare, gestire le estensioni e gli ambienti nei tag. Se non riesci a completare nessuna di queste operazioni perché le opzioni dell’interfaccia utente non sono disponibili, rivolgiti al tuo amministratore Experience Cloud per richiedere l’accesso. Per ulteriori informazioni sulle autorizzazioni per gli utenti tag, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=it).
+Per completare le lezioni successive, devi disporre dell’autorizzazione per sviluppare, approvare, pubblicare, gestire le estensioni e gli ambienti nei tag. Se non riesci a completare nessuna di queste operazioni perché le opzioni dell’interfaccia utente non sono disponibili, rivolgiti al tuo amministratore Experience Cloud per richiedere l’accesso. Per ulteriori informazioni sulle autorizzazioni per gli utenti tag, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 
->[!NOTE]
->
->Adobe Experience Platform Launch viene integrato in Adobe Experience Platform come suite di tecnologie per la raccolta dati. Nell’interfaccia sono state introdotte diverse modifiche terminologiche di cui tenere conto quando si utilizza questo contenuto:
->
-> * Platform Launch (lato client) è ora **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)**
-> * Platform Launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it)**
-> * Le configurazioni di Edge sono ora **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)**
 
 ## Finalità di apprendimento
 
@@ -56,7 +49,7 @@ Ora dovresti visualizzare la `Tags Properties` schermata (se non sono state crea
 
 ## Creare una proprietà
 
-Una proprietà è fondamentalmente un contenitore che riempi con estensioni, regole, elementi dati e librerie durante la distribuzione di tag sul sito. Una proprietà può essere un raggruppamento di uno o più domini e sottodomini. Puoi gestire e tenere traccia di queste risorse in modo simile. Ad esempio, supponi di disporre di più siti Web basati su un modello e di voler tenere traccia delle stesse risorse su tutti. Puoi applicare una proprietà a più domini. Per ulteriori informazioni sulla creazione di proprietà, consulta [&quot;Aziende e proprietà&quot;](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=it) nella documentazione del prodotto.
+Una proprietà è fondamentalmente un contenitore che riempi con estensioni, regole, elementi dati e librerie durante la distribuzione di tag sul sito. Una proprietà può essere un raggruppamento di uno o più domini e sottodomini. Puoi gestire e tenere traccia di queste risorse in modo simile. Ad esempio, supponi di disporre di più siti Web basati su un modello e di voler tenere traccia delle stesse risorse su tutti. Puoi applicare una proprietà a più domini. Per ulteriori informazioni sulla creazione di proprietà, consulta [&quot;Aziende e proprietà&quot;](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html) nella documentazione del prodotto.
 
 **Creare una proprietà**
 

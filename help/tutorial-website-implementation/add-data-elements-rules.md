@@ -2,9 +2,9 @@
 title: Aggiungere un elemento dati, una regola e una libreria
 description: Scopri come creare elementi dati, regole e una libreria nei tag. Questa lezione fa parte dell’esercitazione Implementare Experience Cloud nei siti web.
 exl-id: 4d9eeb52-144a-4876-95d3-83d8eec4832f
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1420'
 ht-degree: 53%
 
 ---
@@ -18,15 +18,8 @@ Gli elementi e le regole di dati sono gli elementi costitutivi di base dei tag. 
 
 >[!WARNING]
 >
-> Il sito web Luma utilizzato in questa esercitazione dovrebbe essere sostituito durante la settimana del 16 febbraio 2026. Il lavoro svolto come parte di questo tutorial potrebbe non essere applicabile al nuovo sito web.
+> Questo tutorial e i relativi esercizi per il sito web Luma non vengono più mantenuti e si basano su librerie JavaScript meno recenti. Per scoprire la best practice corrente, utilizzare l&#39;esercitazione [Implementare Adobe Experience Cloud con Web SDK](https://experienceleague.adobe.com/it/docs/platform-learn/implement-web-sdk/overview).
 
->[!NOTE]
->
->Adobe Experience Platform Launch viene integrato in Adobe Experience Platform come suite di tecnologie per la raccolta dati. Nell’interfaccia sono state introdotte diverse modifiche terminologiche di cui tenere conto quando si utilizza questo contenuto:
->
-> * Platform Launch (lato client) è ora **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)**
-> * Platform Launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it)**
-> * Le configurazioni di Edge sono ora **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)**
 
 ## Finalità di apprendimento
 

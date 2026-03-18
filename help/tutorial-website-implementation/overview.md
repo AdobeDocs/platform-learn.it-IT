@@ -3,9 +3,9 @@ title: Implementare Experience Cloud nei siti web con i tag
 description: L’implementazione di Experience Cloud nei siti web con i tag è il punto di partenza ideale per gli sviluppatori front-end o per gli esperti di marketing tecnico che desiderano imparare a implementare le soluzioni Adobe Experience Cloud sul loro sito web.
 recommendations: catalog, noDisplay
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '828'
 ht-degree: 36%
 
 ---
@@ -16,9 +16,9 @@ _L&#39;implementazione di Experience Cloud nei siti Web tramite Tag_ è il punto
 
 Ogni lezione contiene esercitazioni e informazioni fondamentali utili per implementare Experience Cloud e comprenderne il valore. Sono disponibili siti di dimostrazione per completare l’esercitazione e apprendere le tecniche di base in un ambiente sicuro. Dopo aver completato questa esercitazione, dovresti essere in grado di iniziare a implementare tutte le soluzioni di marketing tramite i tag sul tuo sito web.
 
->[!INFO]
+>[!WARNING]
 >
->Questa esercitazione utilizza estensioni e librerie specifiche per l’applicazione (AppMeasurement.js per Adobe Analytics, at.js per Adobe Target). Se desideri implementare Adobe Experience Platform Web SDK, consulta l&#39;esercitazione [Implementare Adobe Experience Cloud con Web SDK](/help/tutorial-web-sdk/overview.md).
+> Questo tutorial e i relativi esercizi per il sito web Luma non vengono più mantenuti e si basano su librerie JavaScript meno recenti. Per scoprire la best practice corrente, utilizzare l&#39;esercitazione [Implementare Adobe Experience Cloud con Web SDK](https://experienceleague.adobe.com/it/docs/platform-learn/implement-web-sdk/overview).
 
 
 Dopo aver completato questa esercitazione, sarai in grado di:
@@ -39,13 +39,6 @@ Dopo aver completato questa esercitazione, sarai in grado di:
 
 * Pubblicare modifiche tramite ambienti di sviluppo, staging e produzione
 
->[!NOTE]
->
->Adobe Experience Platform Launch viene integrato in Adobe Experience Platform come suite di tecnologie per la raccolta dati. Nell’interfaccia sono state introdotte diverse modifiche terminologiche di cui tenere conto quando si utilizza questo contenuto:
->
-> * Platform Launch (lato client) è ora **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)**
-> * Platform Launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it)**
-> * Le configurazioni di Edge sono ora **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)**
 
 >[!NOTE]
 >
@@ -55,7 +48,7 @@ Dopo aver completato questa esercitazione, sarai in grado di:
 
 In queste lezioni, si presume che tu sia in possesso di un Adobe ID e delle autorizzazioni necessarie per completare gli esercizi. In caso contrario, potresti dover contattare l’amministratore di Experience Cloud per richiedere l’accesso.
 
-* Per i tag, devi disporre delle autorizzazioni per sviluppare, approvare, pubblicare, gestire le estensioni e gestire gli ambienti. Per ulteriori informazioni sulle autorizzazioni per gli utenti tag, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=it).
+* Per i tag, devi disporre delle autorizzazioni per sviluppare, approvare, pubblicare, gestire le estensioni e gestire gli ambienti. Per ulteriori informazioni sulle autorizzazioni per gli utenti tag, consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 * Con Adobe Analytics, devi conoscere il tuo server di tracciamento e quali suite per report utilizzerai per completare questa esercitazione.
 * Con Audience Manager, devi conoscere il tuo sottodominio Audience Manager (noto anche come &quot;Nome partner&quot; &quot;ID partner&quot; o &quot;Sottodominio partner&quot;)
 
@@ -76,7 +69,7 @@ I tag sono anche una piattaforma che consente ai fornitori di terze parti di cre
 
 >[!WARNING]
 >
-> Il sito web Luma utilizzato in questa esercitazione dovrebbe essere sostituito durante la settimana del 16 febbraio 2026. Il lavoro svolto come parte di questo tutorial potrebbe non essere applicabile al nuovo sito web.
+> Questo tutorial e i relativi esercizi per il sito web Luma non vengono più mantenuti e si basano su librerie JavaScript meno recenti. Per scoprire la best practice corrente, utilizzare l&#39;esercitazione [Implementare Adobe Experience Cloud con Web SDK](https://experienceleague.adobe.com/it/docs/platform-learn/implement-web-sdk/overview).
 
 In queste lezioni, implementerai Adobe Experience Cloud in un finto sito web per la vendita al dettaglio denominato Luma. Il [sito Luma](https://luma.enablementadobe.com/content/luma/us/en.html) dispone di un livello dati e funzionalità avanzati che consentono di realizzare un’implementazione realistica. Genererai la tua proprietà tag nella tua organizzazione Experience Cloud e la mapperai al nostro sito Luma ospitato utilizzando Experience Cloud Debugger.
 
@@ -130,7 +123,7 @@ In queste lezioni, implementerai Adobe Experience Cloud in un finto sito web per
    <body>
        <h1>Tags: Sample HTML Page</h1>
        <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
-       <p>See <a href="https://docs.adobe.com/content/help/it-IT/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+       <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
    </body>
    </html>
    ```

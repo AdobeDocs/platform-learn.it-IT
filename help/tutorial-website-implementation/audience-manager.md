@@ -3,10 +3,10 @@ title: Aggiungere Adobe Audience Manager
 description: Scopri come implementare Adobe Audience Manager sul tuo sito web utilizzando Server-Side Forwarding e i tag. Questa lezione fa parte dell’esercitazione Implementare Experience Cloud nei siti web.
 solution: Data Collection, Audience Manager
 exl-id: ddc77dc5-bfb5-4737-b6b6-47d37c9f0528
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '1781'
-ht-degree: 69%
+source-wordcount: '1728'
+ht-degree: 70%
 
 ---
 
@@ -19,15 +19,8 @@ Questa lezione illustra i passaggi necessari per abilitare Adobe Audience Manage
 
 >[!WARNING]
 >
-> Il sito web Luma utilizzato in questa esercitazione dovrebbe essere sostituito durante la settimana del 16 febbraio 2026. Il lavoro svolto come parte di questo tutorial potrebbe non essere applicabile al nuovo sito web.
+> Questo tutorial e i relativi esercizi per il sito web Luma non vengono più mantenuti e si basano su librerie JavaScript meno recenti. Per scoprire la best practice corrente, utilizzare l&#39;esercitazione [Implementare Adobe Experience Cloud con Web SDK](https://experienceleague.adobe.com/it/docs/platform-learn/implement-web-sdk/overview).
 
->[!NOTE]
->
->Adobe Experience Platform Launch viene integrato in Adobe Experience Platform come suite di tecnologie per la raccolta dati. Nell’interfaccia sono state introdotte diverse modifiche terminologiche di cui tenere conto quando si utilizza questo contenuto:
->
-> * Platform Launch (lato client) è ora **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)**
-> * Platform Launch Server Side è ora **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=it)**
-> * Le configurazioni di Edge sono ora **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=it)**
 
 ## Finalità di apprendimento
 
@@ -49,7 +42,7 @@ Per completare questa lezione, è necessario:
 
    ![Puoi usare il debugger per trovare il sottodominio Audience Manager nel tuo sito web](images/aam-debugger-partner.png)
 
-Se Audience Manager non è già stato implementato, segui queste istruzioni per [ottenere il tuo sottodominio di Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=it).
+Se Audience Manager non è già stato implementato, segui queste istruzioni per [ottenere il tuo sottodominio di Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html).
 
 ## Opzioni di implementazione
 
@@ -100,7 +93,7 @@ Per iniziare a inoltrare i dati da Adobe Analytics ad Adobe Audience Manager è 
 >
 >Poiché SSF deve essere abilitato tramite suite per report, non dimenticare di ripetere questo passaggio per le suite per report reali quando distribuisci SSF nella suite per report del sito effettivo.
 >
->Inoltre, se l’opzione SSF è disattivata, per abilitare l’opzione dovrai mappare le suite per report alla tua organizzazione Experience Cloud. Questo è spiegato [nella documentazione](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=it).
+>Inoltre, se l’opzione SSF è disattivata, per abilitare l’opzione dovrai mappare le suite per report alla tua organizzazione Experience Cloud. Questo è spiegato [nella documentazione](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
 
 Una volta completato questo passaggio e se hai abilitato Adobe Experience Platform Identity Service, i dati saranno inoltrati da Analytics ad AAM. Tuttavia, per completare la procedura in modo che la risposta torni correttamente da AAM alla pagina (e anche ad Analytics tramite la funzione Audience Analytics), devi completare quanto segue anche nei tag. Non preoccuparti, è una procedura incredibilmente facile.
 
@@ -122,7 +115,7 @@ Questo è il secondo dei due passaggi per abilitare SSF. Hai già attivato lo sw
 
 1. Seleziona la casella per **[!UICONTROL condividere automaticamente i dati di Analytics con Audience Manager]**. Questo aggiungerà il “modulo” di Audience Manager (codice) all’implementazione `AppMeasurement.js` di Analytics.
 
-1. Aggiungi il &quot;Sottodominio Audience Manager&quot; (noto anche come &quot;Nome partner&quot;, &quot;ID partner&quot; o &quot;Sottodominio partner&quot;). Segui queste istruzioni per [ottenere il tuo sottodominio Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=it).
+1. Aggiungi il &quot;Sottodominio Audience Manager&quot; (noto anche come &quot;Nome partner&quot;, &quot;ID partner&quot; o &quot;Sottodominio partner&quot;). Segui queste istruzioni per [ottenere il tuo sottodominio Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html).
 
 1. Fai clic su **[!UICONTROL Salva nella libreria e genera]**
 
