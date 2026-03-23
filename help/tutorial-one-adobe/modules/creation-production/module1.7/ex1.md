@@ -47,7 +47,7 @@ Scorri verso l&#39;alto e passa a **Input e output**. Fare clic sul nodo **Immag
 
 ![Firefly Creative Production for Enterprise](./images/ffcw6.png)
 
-Dovresti avere questo. ************************
+Dovresti avere questo. **&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**
 
 ![](./images/ffcw7.png)
 
@@ -157,7 +157,7 @@ Nel menu, vai a **Input e Output**. Selezionare il nodo **Video di output** e tr
 
 Connetti il punto viola accanto a **Output video** del nodo **Genera video** al punto viola accanto a **Video** nel nodo **Video output**.
 
-****
+**&#x200B;**
 
 ![](./images/ffcw26.png)
 
@@ -188,7 +188,7 @@ Seleziona le 3 immagini scaricate. Fai clic su **Apri**.
 
 ![Firefly Creative Production for Enterprise](./images/ffcw31.png)
 
-You should then see this. ****
+You should then see this. **&#x200B;**
 
 ![](./images/ffcw32.png)
 
