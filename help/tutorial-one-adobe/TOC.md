@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial tecnico su Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 8231a25dbb45ab707bb0f4788000e5868cacb662
+source-git-commit: 7850713bf116c8a9aa9dc4e055d0e501aa783cb0
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1562'
 ht-degree: 3%
 
 ---
@@ -77,7 +77,7 @@ ht-degree: 3%
    + 1.1 Panoramica di Adobe Firefly Services {#crpr1}
       + [Panoramica](/help/tutorial-one-adobe/modules/creation-production/module1.1/firefly-services.md)
       + [1.1.1 Guida introduttiva a Firefly Services](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex1.md)
-      + [1.1.2 Ottimizza i processi Firefly con Microsoft Azure e gli URL prefirmati](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex2.md)
+      + [1.1.2 Ottimizza i processi Firefly con Microsoft Azure e URL prefirmati](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex2.md)
       + [1.1.3 Utilizzo delle API di Photoshop](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex3.md)
       + [API per modelli personalizzati Firefly 1.1.4](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex4.md)
       + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/creation-production/module1.1/summary.md)
@@ -114,9 +114,9 @@ ht-degree: 3%
       + [1.6.3 Creare e distribuire l’app DAM esterna](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
       + [1.6.4 Pubblicare l’app in privato](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
-   + 1.7 Flussi di lavoro personalizzati Firefly {#crpr7}
+   + 1.7 Firefly Creative Production for Enterprise {#crpr7}
       + [Panoramica](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
-      + [1.7.1 Guida introduttiva ai flussi di lavoro personalizzati Firefly](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
+      + [1.7.1 Guida introduttiva a Firefly Creative Production for Enterprise](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
       + [1.7.2 Eseguire il flusso di lavoro personalizzato a livello di programmazione](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex2.md)
    + 1.8 Valutazione e approvazione unificate con Workfront, Frame.io e Enterprise Storage Management {#crpr8}
       + [Panoramica](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
@@ -201,10 +201,10 @@ ht-degree: 3%
          + [Panoramica](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
          + [2.4.1 Configurare l’ambiente](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex1.md)
          + [2.4.2 Configurare l’ambiente Microsoft Azure EventHub](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex2.md)
-         + [2.4.3 Configurare la destinazione dell’hub eventi di Azure in Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex3.md)
+         + [2.4.3 Configurare la destinazione dell’hub eventi Azure in Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex3.md)
          + [2.4.4 Creare tipi di pubblico](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex4.md)
          + [2.4.5 Attivare il pubblico](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex5.md)
-         + [2.4.6 Creare il progetto Microsoft Azure](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex6.md)
+         + [2.4.6 Creare un progetto Microsoft Azure](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex6.md)
          + [2.4.7 Scenario completo](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex7.md)
       + 2.5 Connessioni Real-Time CDP: Inoltro eventi{#rtcdp25}
          + [Panoramica](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md)

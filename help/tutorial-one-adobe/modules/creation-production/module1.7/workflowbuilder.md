@@ -1,23 +1,23 @@
 ---
-title: Flussi di lavoro personalizzati Firefly
-description: Flussi di lavoro personalizzati Firefly
+title: Firefly Creative Production for Enterprise
+description: Firefly Creative Production for Enterprise
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f2447270-3ca1-4c60-abf4-c1276a2a8750
-source-git-commit: 008a7dd61fb6fd82a29779a2a72673b92b3a8634
+source-git-commit: 7850713bf116c8a9aa9dc4e055d0e501aa783cb0
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '274'
 ht-degree: 1%
 
 ---
 
-# 1.7 Flussi di lavoro personalizzati Firefly
+# 1.7 Firefly Creative Production for Enterprise
 
-I flussi di lavoro personalizzati di Firefly si concentrano principalmente su tecnici creativi e solution builder che creano e configurano i flussi di lavoro.
+L&#39;obiettivo principale di Firefly Creative Production for Enterprise è la creazione e la configurazione dei flussi di lavoro da parte di tecnici creativi e solution builder.
 
-Con i flussi di lavoro personalizzati di Firefly puoi:
+Con Firefly Creative Production for Enterprise è possibile:
 
 - Flussi di lavoro di creazione: crea flussi di lavoro di produzione in più passaggi utilizzando un’interfaccia visiva con assistenza manuale o basata su IA.
 - Esegui flussi di lavoro: esegui flussi di lavoro su larga scala, inclusa l’elaborazione batch, con un runtime affidabile che funziona all’esterno del browser.
@@ -33,7 +33,7 @@ I casi d’uso principali supportati includono:
 
 ## Prerequisiti
 
-- Accesso ai flussi di lavoro personalizzati di Firefly
+- Accesso a Firefly Creative Production for Enterprise
 
 ## Video
 
@@ -43,7 +43,7 @@ Questo video illustra e illustra tutti i passaggi di questo esercizio.
 
 ## Esercizi
 
-[1.7.1 Guida introduttiva ai flussi di lavoro personalizzati per Firefly](./ex1.md){target="_blank"}
+[1.7.1 Guida introduttiva a Firefly Creative Production for Enterprise](./ex1.md){target="_blank"}
 
 In questo esercizio inizierai a utilizzare Workflow Builder.
 
