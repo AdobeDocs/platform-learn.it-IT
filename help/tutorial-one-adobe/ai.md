@@ -1,11 +1,11 @@
 ---
-title: Panoramica di Agentic AI Tech Labs
-description: Panoramica di Agentic AI Tech Labs
+title: Laboratori tecnici di IA per l’analisi degli agenti
+description: Laboratori tecnici di IA per l’analisi degli agenti
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,23 @@ ht-degree: 0%
 
 ![Informazioni tecniche](./assets/images/techinsiders.png){width="50px" align="left"}
 
-## Panoramica - Work In Progress
+## Architettura IA agente
+
+Questo video illustra l’architettura della parte di IA per l’analisi dinamica dell’esercitazione One Adobe.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3481416?quality=12&learn=on)
+
+Scarica l’immagine di panoramica dell’architettura qui sotto:
+
+![Informazioni tecniche](./assets/images/architecture_agentic.jpg)
+
+### Guida introduttuva
+
+[Introduzione](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+
+In questo modulo fondamentale, preparerai tutto in modo da poter accedere e utilizzare l’ambiente demo.
+
+### Laboratori tecnici di IA per l’analisi degli agenti
 
 [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md)
 
@@ -26,6 +42,8 @@ Scopri come utilizzare gli agenti Adobe Experience Platform e Agent Orchestrator
 - Identificare pubblici ad alta propensione
 - Convalidare le prestazioni del percorso
 - Creazione di un nuovo percorso per il rollout CitiSignal Fibre Max
+
+Scoprirai anche come utilizzare Adobe Marketing Agent in combinazione con strumenti come Microsoft 365 Copilot, ChatGPT for Enterprise, Google Gemini Enterprise e Claude.
 
 [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 

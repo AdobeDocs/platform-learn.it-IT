@@ -4,9 +4,9 @@ description: Adobe Marketing Agent per Google Gemini Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 62b0b307-599b-4165-819b-cac61a8c5d28
-source-git-commit: 2b80701ddfd40896bc4dc149de1008f3ff86df4b
+source-git-commit: c1e6d2110ca242ae8b4ff62cbdc5838392ec130e
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1031'
 ht-degree: 0%
 
 ---
@@ -34,8 +34,6 @@ Per seguire i passaggi descritti in questa esercitazione, come documentato di se
 Questo video illustra e illustra tutti i passaggi di questo esercizio.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481322?quality=12&learn=on)
-
-Questo laboratorio è in fase di sviluppo.
 
 ## Accesso 1.1.4.1 a Google Gemini Enterprise
 
@@ -360,6 +358,10 @@ Dovresti vedere questo.
 ![Agent Orchestrator](./images/geminilab38.png)
 
 Ora hai completato il laboratorio.
+
+## Passaggi successivi
+
+Vai a [1.1.5 Adobe Marketing Agent per Claude](./ex5.md){target="_blank"}
 
 Torna a [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 
