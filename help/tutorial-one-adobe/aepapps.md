@@ -2,9 +2,9 @@
 title: AEP e Apps Tech Labs
 description: AEP e Apps Tech Labs
 doc-type: multipage-overview
-source-git-commit: 245bb4738d72ee52ef7e99fcb099953153b7b781
+source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '698'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,7 @@ Questo video illustra l’architettura alla base della parte relativa a Adobe Ex
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481415?quality=12&learn=on)
 
-Scarica l’immagine di panoramica dell’architettura qui sotto:
-
-![Informazioni tecniche](./assets/images/architecture_data.jpeg)
+Scarica l&#39;immagine di panoramica dell&#39;architettura [qui](./assets/images/architecture_data.jpeg).
 
 ### Guida introduttuva
 

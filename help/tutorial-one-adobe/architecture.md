@@ -3,9 +3,9 @@ title: 'Tutorial su un Adobe: panoramica dell’architettura'
 description: 'Tutorial su un Adobe: panoramica dell’architettura'
 doc-type: multipage-overview
 exl-id: a7dcbf33-79a2-41b4-b098-fdde9f6c8232
-source-git-commit: 245bb4738d72ee52ef7e99fcb099953153b7b781
+source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '75'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,11 @@ Questo video illustra l’architettura dell’esercitazione completa One Adobe.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481417?quality=12&learn=on)
 
-Scarica l’immagine di panoramica dell’architettura qui sotto:
+Scarica l&#39;immagine di panoramica dell&#39;architettura [qui](./assets/images/architecture_all.jpg).
 
-![Informazioni tecniche](./assets/images/architecture_all.jpg)
+## Script
+
+Lo script sarà presto disponibile qui.
 
 >[!NOTE]
 >

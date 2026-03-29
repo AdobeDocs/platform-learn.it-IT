@@ -3,9 +3,9 @@ title: Laboratori tecnici di IA per l’analisi degli agenti
 description: Laboratori tecnici di IA per l’analisi degli agenti
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
+source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,7 @@ Questo video illustra l’architettura della parte di IA per l’analisi dinamic
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481416?quality=12&learn=on)
 
-Scarica l’immagine di panoramica dell’architettura qui sotto:
-
-![Informazioni tecniche](./assets/images/architecture_agentic.jpg)
+Scarica l&#39;immagine di panoramica dell&#39;architettura [qui](./assets/images/architecture_agentic.jpg).
 
 ### Guida introduttuva
 
