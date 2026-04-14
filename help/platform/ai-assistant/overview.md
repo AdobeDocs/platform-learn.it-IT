@@ -113,16 +113,16 @@ CARDS
 
     {cta = Watch}
 
-* agent-orchestrator-overview.md{image = https://experienceleague.adobe.com/en/slides/media_1d2b433325c0dfdecbc4922914e1f9d6a98c5aef8.png}
-* agent-orchestrator-ui.md{image = https://experienceleague.adobe.com/en/slides/media_15931ca6fc3ef5476b48e5115287b29ea428c0c9f.png}
-* audience-agent-overview.md{image = https://experienceleague.adobe.com/en/slides/media_14af5c26b64191840493b1db2fc5e38614616a73b.png}
-* journey-agent-overview.md{image = https://experienceleague.adobe.com/en/slides/media_1159b3236497fdc53bfa497701e7d069d90601185.png }
-* data-insights-agent-overview.md{image=https://experienceleague.adobe.com/en/slides/media_1bb9671564e4a2ca068e553b65399dec7c5dbf44c.png}
-* experimentation-agent-overview.md{image=https://experienceleague.adobe.com/en/slides/media_1f3bbb2504538557076c2a223692b140a51fef20c.png?width=2000&format=webply&optimize=medium}
-* https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-03-03-26
-* https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25
-* https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26
-* https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-30-25
+* agent-orchestrator-overview.md{image = https://experienceleague.adobe.com/it/slides/media_1d2b433325c0dfdecbc4922914e1f9d6a98c5aef8.png}
+* agent-orchestrator-ui.md{image = https://experienceleague.adobe.com/it/slides/media_15931ca6fc3ef5476b48e5115287b29ea428c0c9f.png}
+* audience-agent-overview.md{image = https://experienceleague.adobe.com/it/slides/media_14af5c26b64191840493b1db2fc5e38614616a73b.png}
+* journey-agent-overview.md{image = https://experienceleague.adobe.com/it/slides/media_1159b3236497fdc53bfa497701e7d069d90601185.png }
+* data-insights-agent-overview.md{image=https://experienceleague.adobe.com/it/slides/media_1bb9671564e4a2ca068e553b65399dec7c5dbf44c.png}
+* experimentation-agent-overview.md{image=https://experienceleague.adobe.com/it/slides/media_1f3bbb2504538557076c2a223692b140a51fef20c.png?width=2000&format=webply&optimize=medium}
+* https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-03-03-26
+* https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25
+* https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26
+* https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-30-25
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -131,7 +131,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="agent-orchestrator-overview.md" title="Panoramica di Agent Orchestrator" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_1d2b433325c0dfdecbc4922914e1f9d6a98c5aef8.png" alt="Panoramica di Agent Orchestrator"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/it/slides/media_1d2b433325c0dfdecbc4922914e1f9d6a98c5aef8.png" alt="Panoramica di Agent Orchestrator"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -154,7 +154,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="agent-orchestrator-ui.md" title="Utilizzare l’interfaccia di Adobe Experience Platform Agent Orchestrator" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_15931ca6fc3ef5476b48e5115287b29ea428c0c9f.png" alt="Utilizzare l’interfaccia di Adobe Experience Platform Agent Orchestrator"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/it/slides/media_15931ca6fc3ef5476b48e5115287b29ea428c0c9f.png" alt="Utilizzare l’interfaccia di Adobe Experience Platform Agent Orchestrator"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -177,7 +177,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-agent-overview.md" title="Panoramica di Audience Agent" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_14af5c26b64191840493b1db2fc5e38614616a73b.png" alt="Panoramica di Audience Agent"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/it/slides/media_14af5c26b64191840493b1db2fc5e38614616a73b.png" alt="Panoramica di Audience Agent"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -200,7 +200,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="journey-agent-overview.md" title="Panoramica sull’agente Journey" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_1159b3236497fdc53bfa497701e7d069d90601185.png" alt="Panoramica sull’agente Journey"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/it/slides/media_1159b3236497fdc53bfa497701e7d069d90601185.png" alt="Panoramica sull’agente Journey"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -223,7 +223,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="data-insights-agent-overview.md" title="Panoramica di Data Insights Agent" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_1bb9671564e4a2ca068e553b65399dec7c5dbf44c.png" alt="Panoramica di Data Insights Agent"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/it/slides/media_1bb9671564e4a2ca068e553b65399dec7c5dbf44c.png" alt="Panoramica di Data Insights Agent"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -246,7 +246,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="experimentation-agent-overview.md" title="Panoramica sull’agente di sperimentazione" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/slides/media_1f3bbb2504538557076c2a223692b140a51fef20c.png?width=400&format=webply&optimize=medium" alt="Panoramica sull’agente di sperimentazione"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/it/slides/media_1f3bbb2504538557076c2a223692b140a51fef20c.png?width=400&format=webply&optimize=medium" alt="Panoramica sull’agente di sperimentazione"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -268,7 +268,7 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" title="Esperienze cliente di nuova generazione ed efficienza con Adobe Experience Platform Agent Orchestrator" target="_blank" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" title="Esperienze cliente di nuova generazione ed efficienza con Adobe Experience Platform Agent Orchestrator" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3476153/?format=jpeg&nocache=1770666473854" alt="Esperienze cliente di nuova generazione ed efficienza con Adobe Experience Platform Agent Orchestrator"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -277,11 +277,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" target="_blank" rel="referrer" title="Esperienze cliente di nuova generazione ed efficienza con Adobe Experience Platform Agent Orchestrator">Esperienze cliente di nuova generazione ed efficienza con Adobe Experience Platform Agent Orchestrator</a>
+                        <a href="https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" target="_blank" rel="referrer" title="Esperienze cliente di nuova generazione ed efficienza con Adobe Experience Platform Agent Orchestrator">Esperienze cliente di nuova generazione ed efficienza con Adobe Experience Platform Agent Orchestrator</a>
                     </p>
                     <p class="is-size-6">Experience Platform Agent Orchestrator potenzia l’intelligenza e il ragionamento alla base degli esperti Adobe Experience Platform Agent appositamente creati, consentendo loro di eseguire attività di processo decisionale complesse e di risoluzione dei problemi in modo rapido e su larga scala.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-10-22-25" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>
@@ -291,7 +291,7 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" title="Agenti al lavoro - Creazione e attivazione di tipi di pubblico e percorsi" target="_blank" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" title="Agenti al lavoro - Creazione e attivazione di tipi di pubblico e percorsi" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3479512/?format=jpeg&nocache=1770666473650" alt="Agenti al lavoro - Creazione e attivazione di tipi di pubblico e percorsi"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -300,11 +300,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" target="_blank" rel="referrer" title="Agenti al lavoro - Creazione e attivazione di tipi di pubblico e percorsi">Agenti al lavoro - Creazione e attivazione di tipi di pubblico e percorsi</a>
+                        <a href="https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" target="_blank" rel="referrer" title="Agenti al lavoro - Creazione e attivazione di tipi di pubblico e percorsi">Agenti al lavoro - Creazione e attivazione di tipi di pubblico e percorsi</a>
                     </p>
                     <p class="is-size-6">Consulta Audience Agent: scoprire informazioni sul pubblico e creare tipi di pubblico pronti in pochi minuti. Poi, guarda Journey Agent trasformare i prompt in linguaggio naturale in percorsi in più passaggi, dalla qualificazione del pubblico all’attivazione cross-channel.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-01-28-26" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>
@@ -488,7 +488,7 @@ Risolvere i problemi e aprire i ticket di assistenza clienti.
 <!--
 CARDS
 * product-support-agent.md
-* https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25
+* https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -519,7 +519,7 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" title="Semplificare la risoluzione dei problemi e la gestione dei casi di supporto con l&apos;agente di supporto del prodotto" target="_blank" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" title="Semplificare la risoluzione dei problemi e la gestione dei casi di supporto con l&apos;agente di supporto del prodotto" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3477984/?format=jpeg&nocache=1770666474994" alt="Semplificare la risoluzione dei problemi e la gestione dei casi di supporto con l&apos;agente di supporto del prodotto"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -528,11 +528,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" target="_blank" rel="referrer" title="Semplificare la risoluzione dei problemi e la gestione dei casi di supporto con l&apos;agente di supporto del prodotto">Semplificare la risoluzione dei problemi e la gestione dei casi di supporto con l'agente di supporto del prodotto</a>
+                        <a href="https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" target="_blank" rel="referrer" title="Semplificare la risoluzione dei problemi e la gestione dei casi di supporto con l&apos;agente di supporto del prodotto">Semplificare la risoluzione dei problemi e la gestione dei casi di supporto con l'agente di supporto del prodotto</a>
                     </p>
                     <p class="is-size-6">Grazie alla tecnologia di Adobe Experience Platform Agent Orchestrator, l'agente di supporto del prodotto è progettato per questi team nelle loro applicazioni Adobe Experience Platform, fornendo un metodo interattivo per risolvere i problemi, diagnosticarli ed escalation, consentendo risoluzioni più rapide ed una maggiore efficienza operativa.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/it/docs/events/experience-league-live-recordings/episodes/exl-live-episode-12-16-25" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>

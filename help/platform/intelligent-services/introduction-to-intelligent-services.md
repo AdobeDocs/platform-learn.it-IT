@@ -17,7 +17,7 @@ ht-degree: 45%
 
 # Introduzione a Intelligent Services
 
-Introduzione ad alto livello di Intelligent Services, che consente agli analisti e ai professionisti del marketing di sfruttare la potenza dell’intelligenza artificiale e dell’apprendimento automatico per ottimizzare l’esperienza del cliente, anche senza essere esperti di data science. Per ulteriori informazioni, visitare la [documentazione di Intelligent Services](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html).
+Introduzione ad alto livello di Intelligent Services, che consente agli analisti e ai professionisti del marketing di sfruttare la potenza dell’intelligenza artificiale e dell’apprendimento automatico per ottimizzare l’esperienza del cliente, anche senza essere esperti di data science. Per ulteriori informazioni, visitare la [documentazione di Intelligent Services](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=it).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32654?learn=on&enablevpops)
 

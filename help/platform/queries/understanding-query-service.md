@@ -16,7 +16,7 @@ ht-degree: 10%
 
 # Panoramica di Query Service e Data Distiller
 
-Adobe Experience Platform Query Service consente agli utenti di esplorare, convalidare e trasformare i dati sull’esperienza del cliente memorizzati nel data lake utilizzando SQL, con funzionalità avanzate come output e pianificazione dei dati disponibili tramite il componente aggiuntivo Data Distiller. Questo video fornisce una panoramica delle funzioni di base per aiutare gli utenti a comprendere come sfruttare Query Service in diverse applicazioni basate su Platform. Per ulteriori informazioni, visitare la [documentazione di Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
+Adobe Experience Platform Query Service consente agli utenti di esplorare, convalidare e trasformare i dati sull’esperienza del cliente memorizzati nel data lake utilizzando SQL, con funzionalità avanzate come output e pianificazione dei dati disponibili tramite il componente aggiuntivo Data Distiller. Questo video fornisce una panoramica delle funzioni di base per aiutare gli utenti a comprendere come sfruttare Query Service in diverse applicazioni basate su Platform. Per ulteriori informazioni, visitare la [documentazione di Query Service](https://experienceleague.adobe.com/it/docs/experience-platform/query/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
