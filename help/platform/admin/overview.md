@@ -36,7 +36,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-users.md" title="Aggiunta di utenti" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336081?format=jpeg&nocache=1740173302150" alt="Aggiunta di utenti"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475981?captions=ita&format=jpeg&nocache=1740173302150" alt="Aggiunta di utenti"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -59,7 +59,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-developers.md" title="Aggiungi sviluppatori" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426407?format=jpeg&nocache=1740173302176" alt="Aggiungi sviluppatori"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446406?captions=ita&format=jpeg&nocache=1740173302176" alt="Aggiungi sviluppatori"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -82,7 +82,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-product-administrators.md" title="Aggiungere amministratori" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1740173302208" alt="Aggiungere amministratori"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475949?captions=ita&format=jpeg&nocache=1740173302208" alt="Aggiungere amministratori"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -105,7 +105,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-attribute-based-access-control.md" title="Configurare il controllo degli accessi basato su attributi" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345641?format=jpeg&nocache=1740173302190" alt="Configurare il controllo degli accessi basato su attributi"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451846?captions=ita&format=jpeg&nocache=1740173302190" alt="Configurare il controllo degli accessi basato su attributi"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -128,7 +128,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/it/docs/platform-learn/data-collection/users-and-permissions" title="Aggiungere utenti alla raccolta dati" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28734/?format=jpeg&nocache=1740173302543" alt="Aggiungere utenti alla raccolta dati"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36420/?captions=ita&format=jpeg&nocache=1740173302543" alt="Aggiungere utenti alla raccolta dati"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -166,7 +166,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-sandboxes.md" title="Utilizzare le sandbox" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29838/?format=jpeg&nocache=1740173302789" alt="Utilizzare le sandbox"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430300/?captions=ita&format=jpeg&nocache=1740173302789" alt="Utilizzare le sandbox"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -189,7 +189,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="copy-objects-between-sandboxes.md" title="Copiare configurazioni tra sandbox" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3424763/?format=jpeg&nocache=1740173302776" alt="Copiare configurazioni tra sandbox"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446095/?captions=ita&format=jpeg&nocache=1740173302776" alt="Copiare configurazioni tra sandbox"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -212,7 +212,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="share-packages-across-orgs.md" title="Condivisione di pacchetti tra organizzazioni IMS" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435815/?format=jpeg&nocache=1740173302764" alt="Condivisione di pacchetti tra organizzazioni IMS"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443925/?captions=ita&format=jpeg&nocache=1740173302764" alt="Condivisione di pacchetti tra organizzazioni IMS"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -281,7 +281,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-alerts.md" title="Utilizzare gli avvisi" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336218?format=jpeg&nocache=1740173305172" alt="Utilizzare gli avvisi"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423920?captions=ita&format=jpeg&nocache=1740173305172" alt="Utilizzare gli avvisi"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

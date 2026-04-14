@@ -39,7 +39,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="access.md" title="Ottenere l’accesso all’Assistente AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1770666472991" alt="Ottenere l’accesso all’Assistente AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475927/?captions=ita&format=jpeg&nocache=1770666472991" alt="Ottenere l’accesso all’Assistente AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -62,7 +62,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discoverability-panel.md" title="Utilizzare il pannello individuabilità in AI Assistant" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440962/?format=jpeg&nocache=1770666473011" alt="Utilizzare il pannello individuabilità in AI Assistant"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440970/?captions=ita&format=jpeg&nocache=1770666473011" alt="Utilizzare il pannello individuabilità in AI Assistant"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -85,7 +85,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-responses.md" title="Convalidare le risposte dall’Assistente AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441738/?format=jpeg&nocache=1770666473002" alt="Convalidare le risposte dall’Assistente AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441747/?captions=ita&format=jpeg&nocache=1770666473002" alt="Convalidare le risposte dall’Assistente AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -354,7 +354,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="operational-insights.md" title="Ottenere informazioni operative con l’Assistente AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444031/?format=jpeg&nocache=1770666474551" alt="Ottenere informazioni operative con l’Assistente AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444040/?captions=ita&format=jpeg&nocache=1770666474551" alt="Ottenere informazioni operative con l’Assistente AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -377,7 +377,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="find-unused-audiences.md" title="Assistente AI: caso di utilizzo per la pulizia del pubblico" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435532/?format=jpeg&nocache=1770666474555" alt="Assistente AI: caso di utilizzo per la pulizia del pubblico"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441995/?captions=ita&format=jpeg&nocache=1770666474555" alt="Assistente AI: caso di utilizzo per la pulizia del pubblico"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -400,7 +400,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="impact-analysis.md" title="Analisi dell’impatto con l’Assistente AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441680/?format=jpeg&nocache=1770666474559" alt="Analisi dell’impatto con l’Assistente AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441688/?captions=ita&format=jpeg&nocache=1770666474559" alt="Analisi dell’impatto con l’Assistente AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -437,7 +437,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-knowledge.md" title="Scopri le applicazioni Experience Platform con l’Assistente AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441024/?format=jpeg&nocache=1770666474659" alt="Scopri le applicazioni Experience Platform con l’Assistente AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441032/?captions=ita&format=jpeg&nocache=1770666474659" alt="Scopri le applicazioni Experience Platform con l’Assistente AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -460,7 +460,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="onboard.md" title="Utilizza l’Assistente AI per ridurre i tempi di onboarding" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1770666474665" alt="Utilizza l’Assistente AI per ridurre i tempi di onboarding"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475938/?captions=ita&format=jpeg&nocache=1770666474665" alt="Utilizza l’Assistente AI per ridurre i tempi di onboarding"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -497,7 +497,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-support-agent.md" title="Agente di supporto prodotto" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443183/?format=jpeg&nocache=1770666474768" alt="Agente di supporto prodotto"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443191/?captions=ita&format=jpeg&nocache=1770666474768" alt="Agente di supporto prodotto"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -557,7 +557,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="security-overview.md" title="Panoramica sulla sicurezza di AI Assistant" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441066/?format=jpeg&nocache=1770666475529" alt="Panoramica sulla sicurezza di AI Assistant"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441088/?captions=ita&format=jpeg&nocache=1770666475529" alt="Panoramica sulla sicurezza di AI Assistant"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

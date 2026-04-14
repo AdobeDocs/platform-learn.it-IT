@@ -32,7 +32,7 @@ Per questa lezione verrà utilizzata l’interfaccia utente, ma sono disponibili
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sui criteri di unione:
 
->[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345077?captions=ita&learn=on&enablevpops)
 
 ## Autorizzazioni obbligatorie
 

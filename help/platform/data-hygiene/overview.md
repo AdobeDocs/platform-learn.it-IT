@@ -49,7 +49,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="data-prep-for-data-hygiene.md" title="Preparazione dei dati per l’igiene dei dati" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429485/?format=jpeg&nocache=1740251397387" alt="Preparazione dei dati per l’igiene dei dati"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449283/?captions=ita&format=jpeg&nocache=1740251397387" alt="Preparazione dei dati per l’igiene dei dati"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -112,7 +112,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../data-lifecycle/expire-datasets.md" title="Pianificare le eliminazioni dei set di dati" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345065?format=jpeg&nocache=1740251397716" alt="Pianificare le eliminazioni dei set di dati"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430311?captions=ita&format=jpeg&nocache=1740251397716" alt="Pianificare le eliminazioni dei set di dati"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -135,7 +135,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="pseudonymous-profile-and-event-expiration.md" title="Scadenze di profili pseudonimi ed eventi esperienza" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3428361?format=jpeg&nocache=1740251397705" alt="Scadenze di profili pseudonimi ed eventi esperienza"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449864?captions=ita&format=jpeg&nocache=1740251397705" alt="Scadenze di profili pseudonimi ed eventi esperienza"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -181,7 +181,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../privacy/introduction-to-privacy-services.md" title="Introduzione a Privacy Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336074?format=jpeg&nocache=1740251397727" alt="Introduzione a Privacy Service"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445719?captions=ita&format=jpeg&nocache=1740251397727" alt="Introduzione a Privacy Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -220,7 +220,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../profiles/update-a-specific-attribute-with-upsert.md" title="Aggiornare attributi di profilo specifici utilizzando &quot;upsert&quot;" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740251398874" alt="Aggiornare attributi di profilo specifici utilizzando &quot;upsert&quot;"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443449/?captions=ita&format=jpeg&nocache=1740251398874" alt="Aggiornare attributi di profilo specifici utilizzando &quot;upsert&quot;"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
