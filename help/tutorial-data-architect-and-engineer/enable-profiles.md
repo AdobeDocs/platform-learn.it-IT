@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '1085'
 ht-degree: 0%
@@ -26,21 +26,22 @@ Con Real-Time Customer Profile puoi visualizzare una visualizzazione olistica di
 
 Per quanto sorprendente possa sembrare, non devi attivare *tutti i tuoi dati* per il profilo. In realtà, devi abilitare solo i dati necessari per i casi di utilizzo dell’attivazione. Abilita i dati che desideri utilizzare per casi di utilizzo di marketing, integrazioni di call center e così via, dove devi accedere rapidamente a un solido profilo cliente. Se carichi i dati solo per l’analisi, è probabile che non sia necessario abilitarli per il profilo.
 
-Esistono [guardrail importanti per i dati del Profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=it) che dovresti esaminare quando decidi quali dei tuoi dati abilitare per il profilo.
+Esistono [guardrail importanti per i dati del Profilo cliente in tempo reale](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) che dovresti esaminare quando decidi quali dei tuoi dati abilitare per il profilo.
 
 <!--is this accurate. Are there other considerations to point out? -->
 
 **Gli architetti di dati** dovranno abilitare Real-Time Customer Profile all&#39;esterno di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sul profilo cliente in tempo reale:
->[!VIDEO](https://video.tv.adobe.com/v/36266?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
 
 ## Autorizzazioni obbligatorie
 
 Nella lezione [Configurare le autorizzazioni](configure-permissions.md) è possibile impostare tutti i controlli di accesso necessari per completare la lezione.
 
 
-<!--* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
+<!--
+* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
 * Permission items **[!UICONTROL Data Management]** > **[!UICONTROL View Datasets]** and **[!UICONTROL Manage Datasets]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile

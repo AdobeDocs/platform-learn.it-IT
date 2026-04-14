@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-3039
 thumbnail: 27841.jpg
 exl-id: 5e54cae9-9c78-4296-a28a-d043570811d4
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 15%
@@ -18,11 +18,12 @@ ht-degree: 15%
 
 Scopri le funzionalità chiave per la risoluzione delle identità in Adobe Experience Platform: raccolta di identità, grafici delle identità e API. Scopri in che modo il servizio Identity collega le identità disconnesse per fornire un’esperienza di connessione coerente tramite la costruzione di un profilo unificato. Per ulteriori informazioni, visita la [documentazione del servizio Identity](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/3422773?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 ## Configurazione delle identità
 
-<!-- CARDS
+<!--
+CARDS
 * label-ingest-and-verify-identity-data.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -32,7 +33,7 @@ Scopri le funzionalità chiave per la risoluzione delle identità in Adobe Exper
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="label-ingest-and-verify-identity-data.md" title="Etichettare, acquisire e verificare i dati di identità" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36264?captions=ita&format=jpeg&nocache=1740414775790" alt="Etichettare, acquisire e verificare i dati di identità"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28167?format=jpeg&nocache=1740414775790" alt="Etichettare, acquisire e verificare i dati di identità"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -55,7 +56,8 @@ Scopri le funzionalità chiave per la risoluzione delle identità in Adobe Exper
 
 ## Regole di collegamento del grafo identità
 
-<!-- CARDS
+<!--
+CARDS
 * identity-graph-linking-rules/graph-simulation.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -65,7 +67,7 @@ Scopri le funzionalità chiave per la risoluzione delle identità in Adobe Exper
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-graph-linking-rules/graph-simulation.md" title="Regole di collegamento del grafico delle identità - Simulazione del grafico" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444051/?captions=ita&format=jpeg&nocache=1740414776009" alt="Regole di collegamento del grafico delle identità - Simulazione del grafico"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1740414776009" alt="Regole di collegamento del grafico delle identità - Simulazione del grafico"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -88,7 +90,8 @@ Scopri le funzionalità chiave per la risoluzione delle identità in Adobe Exper
 
 ## Grafici delle identità
 
-<!-- CARDS
+<!--
+CARDS
 * view-identity-graphs.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -98,7 +101,7 @@ Scopri le funzionalità chiave per la risoluzione delle identità in Adobe Exper
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="view-identity-graphs.md" title="Visualizzare i grafici delle identità" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345655?captions=ita&format=jpeg&nocache=1740414776113" alt="Visualizzare i grafici delle identità"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331030?format=jpeg&nocache=1740414776113" alt="Visualizzare i grafici delle identità"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

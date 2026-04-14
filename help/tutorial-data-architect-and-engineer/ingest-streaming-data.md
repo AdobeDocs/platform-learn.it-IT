@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '3316'
 ht-degree: 0%
@@ -38,13 +38,13 @@ Nell’interfaccia di Data Collection è necessario completare due attività pri
 
 Prima di iniziare gli esercizi, guarda questi due brevi video per ulteriori informazioni sull’acquisizione di dati in streaming e sul Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/36263?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/37267?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
->Questo tutorial è incentrato sull&#39;acquisizione in streaming da siti Web con Web SDK, ma è anche possibile eseguire lo streaming dei dati utilizzando [Mobile SDK](https://experienceleague.adobe.com/it/docs/platform-learn/implement-mobile-sdk/overview), [Edge Network Server API](https://experienceleague.adobe.com/it/docs/platform-learn/data-collection/server-api/overview) e [HTTP API](https://experienceleague.adobe.com/it/docs/experience-platform/sources/connectors/streaming/http).
+>Questo tutorial è incentrato sull&#39;acquisizione in streaming da siti Web con Web SDK, ma è anche possibile eseguire lo streaming dei dati utilizzando [Mobile SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview), [Edge Network Server API](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/server-api/overview) e [HTTP API](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/streaming/http).
 
 ## Autorizzazioni obbligatorie
 
@@ -63,7 +63,8 @@ Nella lezione [Configurare le autorizzazioni](configure-permissions.md) è possi
 * User-role access to the `Luma Tutorial Platform` product profile
 -->
 
-<!--## Create a streaming source
+<!--
+## Create a streaming source
 
 1. Log into the [Experience Platform  user interface](https://experience.adobe.com/platform/)
 1. Go to **[!UICONTROL Sources]** in the left navigation
@@ -77,8 +78,7 @@ Nella lezione [Configurare le autorizzazioni](configure-permissions.md) è possi
     ![Select your dataset](assets/websdk-source-selectDataset.png)
 1. On the **[!UICONTROL Dataflow detail]** step, select the **[!UICONTROL Next]** button:
     ![Select Next](assets/websdk-source-dataflowName.png)
-    <!--What is a good practice for naming the data flow vs the source-->
-<!--
+    What is a good practice for naming the data flow vs the source
 1. On the **[!UICONTROL Review]** step, review your source details and select the **[!UICONTROL Finish]** button:
     ![Select Finish](assets/websdk-source-review.png)
 -->
@@ -263,7 +263,7 @@ Experience Platform Debugger è un’estensione disponibile per Chrome che conse
 
 Se non hai mai utilizzato il debugger prima, e questo è diverso dal precedente Adobe Experience Cloud Debugger, potresti voler guardare questo video di panoramica di cinque minuti:
 
->[!VIDEO](https://video.tv.adobe.com/v/36164?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Apri il sito web Luma.
 

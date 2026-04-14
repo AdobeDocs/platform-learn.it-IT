@@ -8,7 +8,7 @@ feature: Queries
 jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 1%
@@ -25,13 +25,14 @@ Adobe Experience Platform Query Service consente di interpretare i dati in modo 
 **Gli architetti di dati** e **i data engineer** dovranno utilizzare il servizio query all&#39;esterno di questa esercitazione.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni su Query Service:
->[!VIDEO](https://video.tv.adobe.com/v/39649?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
 ## Autorizzazioni obbligatorie
 
 Nella lezione [Configurare le autorizzazioni](configure-permissions.md) è possibile impostare tutti i controlli di accesso necessari per completare la lezione.
 
-<!-- Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
+<!-- 
+Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
 * Permission items Data Management > **[!UICONTROL View Datasets]** and  **[!UICONTROL Manage Datasets]**
 * Permission item Sandboxes > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
@@ -72,13 +73,15 @@ Iniziamo con alcune semplici query:
    ![Salvataggio della query](assets/queries-loyaltySelect-save.png)
 
 
-<!--SELECT COUNT(DISTINCT (_techmarketingdemos.systemIdentifier.loyaltyId)) FROM luma_loyalty_dataset 
+<!--
+SELECT COUNT(DISTINCT (_techmarketingdemos.systemIdentifier.loyaltyId)) FROM luma_loyalty_dataset 
 
 
 SELECT _techmarketingdemos.systemIdentifier.loyaltyId, COUNT(_techmarketingdemos.systemIdentifier.loyaltyId)
 FROM luma_loyalty_dataset 
 GROUP BY _techmarketingdemos.systemIdentifier.loyaltyId
-HAVING COUNT(_techmarketingdemos.systemIdentifier.loyaltyId) > 1;-->
+HAVING COUNT(_techmarketingdemos.systemIdentifier.loyaltyId) > 1;
+-->
 
 ## Esercizi aggiuntivi
 

@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '2619'
 ht-degree: 1%
@@ -43,22 +43,24 @@ Key terms:
 **Gli architetti di dati** dovranno creare schemi al di fuori di questa esercitazione, ma **i Data Engineer** lavoreranno a stretto contatto con gli schemi creati dall&#39;architetto di dati.
 
 Prima di iniziare gli esercizi, guarda questo breve video per ulteriori informazioni sugli schemi e sull’Experience Data Model (XDM):
->[!VIDEO](https://video.tv.adobe.com/v/38516?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
 
 >[!TIP]
 >
-> Per informazioni più approfondite sulla modellazione dei dati in Experience Platform, ti consigliamo di guardare la playlist [Modellare i dati sull&#39;esperienza del cliente con XDM](https://experienceleague.adobe.com/it/playlists/experience-platform-model-your-customer-experience-data-with-xdm), disponibile gratuitamente su Experience League.
+> Per informazioni più approfondite sulla modellazione dei dati in Experience Platform, ti consigliamo di guardare la playlist [Modellare i dati sull&#39;esperienza del cliente con XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm), disponibile gratuitamente su Experience League.
 
 ## Autorizzazioni obbligatorie
 
 Nella lezione [Configurare le autorizzazioni](configure-permissions.md) è possibile impostare tutti i controlli di accesso necessari per completare la lezione.
 
-<!--, specifically:
+<!--
+, specifically:
 
 * Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
-* Developer-role access to the `Luma Tutorial Platform` product profile (for API)-->
+* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
+-->
 
 
 <!--
@@ -86,7 +88,7 @@ In questo esercizio, creeremo uno schema per i dati fedeltà di Luma.
 
 Una volta creato lo schema, verrai reindirizzato all’editor schema, dove potrai aggiungere campi allo schema. Puoi aggiungere campi singoli direttamente allo schema o utilizzare gruppi di campi. È importante notare che tutti i singoli campi sono ancora associati a una classe o a un gruppo di campi. Puoi scegliere tra un ampio set di gruppi di campi standard del settore forniti da Adobe o crearne di personalizzati. Quando inizi a modellare i tuoi dati in Experience Platform, è bene acquisire familiarità con i gruppi di campi standard di settore forniti da Adobe. Quando possibile, è consigliabile utilizzarli in quanto a volte alimentano servizi a valle, come IA per l’analisi dei clienti, IA per l’attribuzione e Adobe Analytics.
 
-Quando lavori con i tuoi dati, un passaggio importante consisterà nel determinare quali dei tuoi dati devono essere acquisiti in Platform e come devono essere modellati. Questo argomento di grandi dimensioni viene discusso più approfonditamente nella playlist [Modellare i dati sull&#39;esperienza del cliente con XDM](https://experienceleague.adobe.com/it/playlists/experience-platform-model-your-customer-experience-data-with-xdm). In questa esercitazione, ti guiderò attraverso l&#39;implementazione di alcuni schemi predeterminati.
+Quando lavori con i tuoi dati, un passaggio importante consisterà nel determinare quali dei tuoi dati devono essere acquisiti in Platform e come devono essere modellati. Questo argomento di grandi dimensioni viene discusso più approfonditamente nella playlist [Modellare i dati sull&#39;esperienza del cliente con XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm). In questa esercitazione, ti guiderò attraverso l&#39;implementazione di alcuni schemi predeterminati.
 
 Per aggiungere gruppi di campi:
 

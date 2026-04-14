@@ -9,24 +9,25 @@ duration: 141
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14806
 exl-id: 66d8992b-e812-4a5c-a696-45f29106aaab
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 25%
+ht-degree: 28%
 
 ---
 
 # Panoramica sui playbook di casi d’uso
 
-Scopri come i playbook sui casi d’uso possono aiutare la clientela di Real-Time Customer Data Platform e Journey Optimizer a ottenere un time-to-value più rapido. Use Case Playbook è un catalogo di decine di modelli che coprono più settori e obiettivi di marketing. I playbook generano risorse tecniche come tipi di pubblico, percorsi e schemi, che possono quindi essere personalizzati e pubblicati in altre sandbox. Per ulteriori informazioni, consulta la [documentazione sui playbook di casi d&#39;uso](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=it).
+Scopri come i playbook sui casi d’uso possono aiutare la clientela di Real-Time Customer Data Platform e Journey Optimizer a ottenere un time-to-value più rapido. Use Case Playbook è un catalogo di decine di modelli che coprono più settori e obiettivi di marketing. I playbook generano risorse tecniche come tipi di pubblico, percorsi e schemi, che possono quindi essere personalizzati e pubblicati in altre sandbox. Per ulteriori informazioni, consulta la [documentazione sui playbook di casi d&#39;uso](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/3441823/?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on&enablevpops)
 
 ## Introduzione
 
 Scopri come configurare l’account Platform per i playbook con casi di utilizzo e quindi creare e pubblicare la prima istanza di un playbook.
 
-<!-- CARDS
+<!--
+CARDS
 * configure-a-playbook-sandbox.md
 * create-and-publish-a-playbook-instance.md
 -->
@@ -37,7 +38,7 @@ Scopri come configurare l’account Platform per i playbook con casi di utilizzo
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-a-playbook-sandbox.md" title="Configurare una sandbox del playbook" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449834/?format=jpeg&nocache=1739379898120&captions=ita" alt="Configurare una sandbox del playbook"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426987/?format=jpeg&nocache=1739379898120" alt="Configurare una sandbox del playbook"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -50,7 +51,7 @@ Scopri come configurare l’account Platform per i playbook con casi di utilizzo
                     <p class="is-size-6">Scopri come configurare una sandbox per i playbook basati su casi d’uso.</p>
                 </div>
                 <a href="configure-a-playbook-sandbox.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Osserva</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>
         </div>
@@ -68,12 +69,12 @@ Scopri come configurare l’account Platform per i playbook con casi di utilizzo
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="create-and-publish-a-playbook-instance.md" target="_blank" rel="referrer" title="Creare e pubblicare istanze del playbook">Crea e pubblica istanze playbook</a>
+                        <a href="create-and-publish-a-playbook-instance.md" target="_blank" rel="referrer" title="Creare e pubblicare istanze del playbook">Creare e pubblicare istanze playbook</a>
                     </p>
                     <p class="is-size-6">Scopri come trovare, creare, pubblicare e risolvere i problemi di un’istanza di un playbook di casi d’uso in questo video dimostrativo end-to-end.</p>
                 </div>
                 <a href="create-and-publish-a-playbook-instance.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Osserva</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Guarda</span>
                 </a>
             </div>
         </div>

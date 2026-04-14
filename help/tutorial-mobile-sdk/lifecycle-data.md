@@ -3,7 +3,7 @@ title: Raccolta dei dati del ciclo di vita con Platform Mobile SDK
 description: Scopri come raccogliere i dati del ciclo di vita in un’app mobile.
 jira: KT-14630
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: 7e7c7600457b361c2ba9616c067b9fe33fd70c5c
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 2%
@@ -28,7 +28,8 @@ In questa lezione verranno fornite le seguenti informazioni:
 
 <!--
 * Add lifecycle field group to the schema.
-* -->
+* 
+-->
 * Abilita metriche del ciclo di vita precise avviando/mettendo in pausa correttamente l’app mentre si sposta tra il primo piano e lo sfondo.
 * Invia dati dall’app a Platform Edge Network.
 * Convalida in Assurance.
@@ -150,6 +151,6 @@ Dovresti visualizzare **[!UICONTROL Eventi di chiusura applicazione (in backgrou
 >
 >Ora hai impostato l’app per inviare eventi relativi allo stato dell’applicazione (in primo piano, in background) all’Edge Network di Adobe Experience Platform e a tutti i servizi definiti nello stream di dati.
 >
-> Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Mobile SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=it)
+> Grazie per aver dedicato tempo all&#39;apprendimento di Adobe Experience Platform Mobile SDK. Se hai domande, vuoi condividere commenti generali o suggerimenti su contenuti futuri, condividili in questo [post di discussione della community Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Successivo: **[Tracciare i dati evento](events.md)**

@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-3800
 thumbnail: 29694.jpg
 exl-id: e38d643a-27ea-49f4-87c4-eccdb860ea92
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 13%
@@ -18,13 +18,14 @@ ht-degree: 13%
 
 Scopri come utilizzare le origini, o i connettori di origini, nell’interfaccia di Adobe Experience Platform. Le origini sono integrazioni facilmente configurabili che consentono di acquisire dati da applicazioni di Adobe e di prime e terze parti nel profilo cliente in tempo reale e nel data lake di Platform. Per ulteriori informazioni, consulta la [documentazione delle origini](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=it).
 
->[!VIDEO](https://video.tv.adobe.com/v/35691?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/29694?learn=on&enablevpops)
 
 <!--should have a whole section for data prep-->
 
 ## Acquisizione di dati da tipi comuni di origini Adobe di terze parti
 
-<!-- CARDS
+<!--
+CARDS
 * ingest-data-from-crm.md
 * ingest-data-from-cloud-storage.md
 * ingest-data-from-databases.md
@@ -38,7 +39,7 @@ Scopri come utilizzare le origini, o i connettori di origini, nell’interfaccia
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-crm.md" title="Acquisire dati utilizzando i connettori Source CRM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/35478?captions=ita&format=jpeg&nocache=1740415500926" alt="Acquisire dati utilizzando i connettori Source CRM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29711?format=jpeg&nocache=1740415500926" alt="Acquisire dati utilizzando i connettori Source CRM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -61,7 +62,7 @@ Scopri come utilizzare le origini, o i connettori di origini, nell’interfaccia
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-cloud-storage.md" title="Acquisire dati utilizzando i connettori Source per archiviazione cloud" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/35477?captions=ita&format=jpeg&nocache=1740415500914" alt="Acquisire dati utilizzando i connettori Source per archiviazione cloud"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29695?format=jpeg&nocache=1740415500914" alt="Acquisire dati utilizzando i connettori Source per archiviazione cloud"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -84,7 +85,7 @@ Scopri come utilizzare le origini, o i connettori di origini, nell’interfaccia
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-databases.md" title="Acquisire dati utilizzando un connettore di origine del database" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345122?captions=ita&format=jpeg&nocache=1740415500936" alt="Acquisire dati utilizzando un connettore di origine del database"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/329317?format=jpeg&nocache=1740415500936" alt="Acquisire dati utilizzando un connettore di origine del database"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -107,7 +108,7 @@ Scopri come utilizzare le origini, o i connettori di origini, nell’interfaccia
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="streaming-ingestion-source-connector.md" title="Trasmettere i dati utilizzando i connettori Source" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410104?captions=ita&format=jpeg&nocache=1740415500903" alt="Trasmettere i dati utilizzando i connettori Source"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331943?format=jpeg&nocache=1740415500903" alt="Trasmettere i dati utilizzando i connettori Source"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -130,7 +131,7 @@ Scopri come utilizzare le origini, o i connettori di origini, nell’interfaccia
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="streaming-ingestion-http-api.md" title="Acquisire dati utilizzando l’endpoint API di Streaming Connection HTTP" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410929?captions=ita&format=jpeg&nocache=1740415500889" alt="Acquisire dati utilizzando l’endpoint API di Streaming Connection HTTP"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331028?format=jpeg&nocache=1740415500889" alt="Acquisire dati utilizzando l’endpoint API di Streaming Connection HTTP"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -153,7 +154,8 @@ Scopri come utilizzare le origini, o i connettori di origini, nell’interfaccia
 
 ## Acquisizione di dati da origini Adobe
 
-<!-- CARDS
+<!--
+CARDS
 * ingest-data-from-adobe-analytics.md
 * ingest-data-from-marketo.md
 * ingest-data-from-aam.md
@@ -165,7 +167,7 @@ Scopri come utilizzare le origini, o i connettori di origini, nell’interfaccia
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-adobe-analytics.md" title="Acquisire dati utilizzando il connettore di origine Adobe Analytics" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430258?captions=ita&format=jpeg&nocache=1740415502122" alt="Acquisire dati utilizzando il connettore di origine Adobe Analytics"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740415502122" alt="Acquisire dati utilizzando il connettore di origine Adobe Analytics"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -188,7 +190,7 @@ Scopri come utilizzare le origini, o i connettori di origini, nell’interfaccia
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-marketo.md" title="Acquisire dati da Marketo Engage" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451868?captions=ita&format=jpeg&nocache=1740415502109" alt="Acquisire dati da Marketo Engage"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740415502109" alt="Acquisire dati da Marketo Engage"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -211,7 +213,7 @@ Scopri come utilizzare le origini, o i connettori di origini, nell’interfaccia
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-aam.md" title="Acquisire dati utilizzando il connettore dati Adobe Audience Manager" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346985/?captions=ita&format=jpeg&nocache=1740415502093" alt="Acquisire dati utilizzando il connettore dati Adobe Audience Manager"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331214/?format=jpeg&nocache=1740415502093" alt="Acquisire dati utilizzando il connettore dati Adobe Audience Manager"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -234,7 +236,8 @@ Scopri come utilizzare le origini, o i connettori di origini, nell’interfaccia
 
 ## Risoluzione dei problemi
 
-<!-- CARDS
+<!--
+CARDS
 * troubleshoot-sftp-connector.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -244,7 +247,7 @@ Scopri come utilizzare le origini, o i connettori di origini, nell’interfaccia
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="troubleshoot-sftp-connector.md" title="Risoluzione dei problemi - Impossibile connettersi al connettore di origine SFTP" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443482?captions=ita&format=jpeg&nocache=1740415502267" alt="Risoluzione dei problemi - Impossibile connettersi al connettore di origine SFTP"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416134?format=jpeg&nocache=1740415502267" alt="Risoluzione dei problemi - Impossibile connettersi al connettore di origine SFTP"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
