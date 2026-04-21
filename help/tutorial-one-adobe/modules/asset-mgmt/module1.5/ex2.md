@@ -4,9 +4,9 @@ description: Collegare ACS ad AEM Sites CS/EDS Storefront
 kt: 5342
 doc-type: tutorial
 exl-id: 81d826a8-c9f0-4e2a-9107-d6e06a4b8427
-source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
+source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 In questo esercizio collegherai la vetrina AEM Sites CS/EDS al backend ACS. Al momento, quando apri la tua vetrina AEM Sites CS/EDS e vai alla pagina dell&#39;elenco dei prodotti **Phone**, non trovi ancora alcun prodotto.
 
-Al termine di questo esercizio, i prodotti configurati nell&#39;esercizio precedente verranno visualizzati nella pagina dell&#39;elenco dei prodotti **Phone** dello store AEM Sites CS/EDS.
+Al termine di questo esercizio, i prodotti configurati nell&#39;esercizio precedente verranno visualizzati nella pagina dell&#39;elenco di prodotti **Telefoni/Orologi/Piani/Intrattenimento** dello Store AEM Sites CS/EDS.
 
 ![ACCS+AEM Sites](./images/accsaemsites0.png)
 
@@ -49,11 +49,11 @@ Fai clic su **Genera**.
 
 ![ACCS+AEM Sites](./images/accsaemsites4.png)
 
-Copia l’intero payload JSON generato.
+Fai clic su **Copia** per copiare il payload JSON completo.
 
 ![ACCS+AEM Sites](./images/accsaemsites5.png)
 
-Vai all’archivio GitHub creato durante la configurazione dell’ambiente AEM Sites CS/EDS. L&#39;archivio è stato creato nell&#39;esercizio [1.1.2 Configurare l&#39;ambiente AEM CS](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"} e deve essere denominato **citisignal-aem-accs**.
+Vai all’archivio GitHub creato durante la configurazione dell’ambiente AEM Sites CS/EDS. L&#39;archivio è stato creato nell&#39;esercizio [1.1.2 Configurare l&#39;ambiente AEM CS](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"} e deve essere denominato **citisignal-aem-accs** o **techinsidersodXX-citisignal-aem-accs** oppure, nel caso si partecipi a un corso di formazione live in-person, deve essere denominato **techinsidersXX-citisignal-aem-accs**.
 
 ![ACCS+AEM Sites](./images/accsaemsites6.png)
 
@@ -67,24 +67,33 @@ Fai clic sull&#39;icona **Modifica**.
 
 Rimuovi tutto il testo corrente e sostituiscilo incollando il payload JSON copiato nella pagina **Generatore di configurazioni**.
 
-Fare clic su **Commit modifiche...**.
+Fare clic su **Commit changes...**.
 
 ![ACCS+AEM Sites](./images/accsaemsites9.png)
 
-Fai clic su **Commit modifiche**.
+Fai clic su **Commit changes**.
 
 ![ACCS+AEM Sites](./images/accsaemsites10.png)
 
 Il file **config.json** è stato aggiornato. Dovresti vedere le modifiche sul sito web entro un paio di minuti. Per verificare se le modifiche sono state selezionate correttamente, vai alla pagina del prodotto **Telefoni**. Dovresti vedere **iPhone Air** visualizzato nella pagina.
 
-Per accedere al tuo sito web, devi passare a `main--citisignal-aem-accs--XXX.aem.page` e/o `main--citisignal-aem-accs--XXX.aem.live`, dopo aver sostituito XXX con il tuo account utente GitHub, che in questo esempio è `woutervangeluwe`.
-
-In questo esempio, l’URL completo diventa:
-`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` e/o `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`.
+Apri il tuo sito web utilizzando gli URL **.page** o **.live**, quindi vai a **Telefoni**. Dovresti vedere questo.
 
 ![ACCS+AEM Sites](./images/accsaemsites11.png)
 
-Ora che il prodotto è visualizzato correttamente, non è ancora disponibile un’immagine per il prodotto. Nel prossimo esercizio configurerai il collegamento con AEM Assets CS per le immagini del prodotto.
+Vai a **Orologi**. Dovresti vedere questo.
+
+![ACCS+AEM Sites](./images/accsaemsites12.png)
+
+Vai a **Piani**. Dovresti vedere questo.
+
+![ACCS+AEM Sites](./images/accsaemsites13.png)
+
+Vai a **Intrattenimento**. Dovresti vedere questo.
+
+![ACCS+AEM Sites](./images/accsaemsites14.png)
+
+Anche se i prodotti sono ora visualizzati correttamente, non è ancora disponibile un’immagine per questi prodotti. Nel prossimo esercizio configurerai il collegamento con AEM Assets CS per le immagini del prodotto.
 
 Passaggio successivo: [Connetti ACS ad AEM Assets CS](./ex3.md){target="_blank"}
 

@@ -4,9 +4,9 @@ description: Collegare ACS ad AEM Assets CS
 kt: 5342
 doc-type: tutorial
 exl-id: 2b944efe-3997-46a0-9eb0-61dfda67f5b9
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1688'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,11 @@ Dopo aver completato l’esercizio precedente, è stato possibile vedere un prod
 
 Vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. L&#39;organizzazione da selezionare è `--aepImsOrgName--`.
 
-Fare clic per aprire il programma Cloud Manager, che dovrebbe essere denominato `--aepUserLdap-- - CitiSignal AEM+ACCS`.
+Fai clic su per aprire il programma Cloud Manager, che deve essere denominato come uno dei seguenti:
+
+- `--aepUserLdap-- - CitiSignal AEM+ACCS`
+- Per sessioni di esercitazione tecniche di persona: **Approfondimenti tecnici - AEM + ACCS XX** (sostituire XX con il numero assegnato)
+- Per sessioni on-demand guidate: **Approfondimenti tecnici su richiesta - AEM + ACCS XX** (sostituisci XX con il numero assegnato a te)
 
 ![ACCS+AEM Assets](./images/accsaemassets1.png)
 
@@ -107,7 +111,7 @@ Aprire quindi **Microsoft Visual Studio Code** e aprire la cartella contenente l
 
 ![ACCS+AEM Assets](./images/accsaemassets18.png)
 
-Vai a **Cerca** nel menu a sinistra e cerca `<my-app>`. È necessario sostituire tutte le occorrenze di `<my-app>` con `--aepUserLdap--citisignalaemaccs`.
+Vai a **Cerca** nel menu a sinistra e cerca `<my-app>`. È necessario sostituire tutte le occorrenze di `<my-app>` con `techinsiderscitisignalaemaccs`.
 
 Fai clic sull&#39;icona **sostituisci tutto**.
 
@@ -121,15 +125,27 @@ I nuovi file sono ora pronti per essere caricati nuovamente nell’archivio Git 
 
 ![ACCS+AEM Assets](./images/accsaemassets21.png)
 
-Dovresti vedere questo. Incolla il comando `git add .` e premi **Invio**.
+Dovresti vedere questo. Incolla il seguente comando e premi **invio**.
+
+```
+git add .
+```
 
 ![ACCS+AEM Assets](./images/accsaemassets22.png)
 
-Dovresti vedere questo. Incolla il comando `git commit -m "add assets integration"` e premi **Invio**.
+Dovresti vedere questo. Incolla il seguente comando e premi **invio**.
+
+```
+git commit -m "add assets integration"
+```
 
 ![ACCS+AEM Assets](./images/accsaemassets23.png)
 
-Dovresti vedere questo. Incolla il comando `git push origin main` e premi **Invio**.
+Dovresti vedere questo. Incolla il seguente comando e premi **invio**.
+
+```
+git push origin main
+```
 
 ![ACCS+AEM Assets](./images/accsaemassets24.png)
 
@@ -159,19 +175,14 @@ Scorri verso il basso nel menu fino a **ADOBE SERVICES**, quindi apri **AEM Asse
 
 ![ACCS+AEM Assets](./images/accsaemassets50.png)
 
-Compila le seguenti variabili:
+Selezionare l&#39;ambiente dall&#39;elenco a discesa per **AEM Environment**.
 
-- **ID programma AEM Assets**: puoi prendere l&#39;ID programma dall&#39;URL dell&#39;autore di AEM CS. In questo esempio, l&#39;ID del programma è `166717`.
+Quindi, imposta **Proprietario visualizzazione** su `AEM Assets` (se necessario, disattiva la casella di controllo **usa valore di sistema**).
 
-![ACCS+AEM Assets](./images/accsaemassets50a.png)
+Quindi, impostare **Sincronizzazione abilitata** su `Yes` (se necessario, disabilitare la casella di controllo **Usa valore di sistema**).
 
-- **ID ambiente AEM Assets**: puoi prendere l&#39;ID ambiente dall&#39;URL di authoring di AEM CS. In questo esempio, l&#39;ID ambiente è `1786231`.
+Assicurati che queste impostazioni siano impostate come segue:
 
-![ACCS+AEM Assets](./images/accsaemassets50b.png)
-
-- **ID client IMS selettore risorse**: impostato su `1`
-- **Sincronizzazione abilitata**: impostata su `Yes`
-- **Proprietario visualizzazione**: `AEM Assets`
 - **Regola di corrispondenza risorse**: `Match by product SKU`
 - **Corrispondenza per nome attributo SKU prodotto**: `commerce:skus`
 
@@ -185,29 +196,19 @@ Dovresti vedere questo.
 
 ## 1.5.3.3 Aggiornamento config.json
 
-Vai all’archivio GitHub creato durante la configurazione dell’ambiente AEM Sites CS/EDS. L&#39;archivio è stato creato nell&#39;esercizio [1.1.2 Configurare l&#39;ambiente AEM CS](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"} e deve essere denominato **citisignal-aem-accs**.
+Vai all’archivio GitHub creato durante la configurazione dell’ambiente AEM Sites CS/EDS.
 
-Nella directory principale, scorrere verso il basso e fare clic per aprire il file **config.json**. Fai clic sull&#39;icona **modifica** per apportare modifiche al file.
+Nella directory principale, scorrere verso il basso e fare clic per aprire il file **config.json**.
 
-![ACCS+AEM Assets](./images/accsaemassets101.png)
-
-Aggiungere il frammento di codice seguente alla riga 5 `"commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/XXX/graphql",`:
+Dovresti visualizzare la riga seguente nel tuo file **config.json** (riga 17 in questa immagine), assicurati che sia impostato su **true**.
 
 ```json
  "commerce-assets-enabled": "true",
 ```
 
-Fare clic su **Commit Changes...**.
+![ACCS+AEM Assets](./images/accsaemassets101.png)
 
-![ACCS+AEM Assets](./images/accsaemassets102.png)
-
-Fai clic su **Commit Changes**.
-
-![ACCS+AEM Assets](./images/accsaemassets103.png)
-
-La modifica è stata salvata e verrà pubblicata a breve. Potrebbero essere necessari un paio di minuti prima che la modifica sia visibile sulla vetrina.
-
-![ACCS+AEM Assets](./images/accsaemassets104.png)
+Se il valore di **commerce-assets-enabled** è impostato su **false**, aggiorna il file e imposta il valore su **true**. Quindi, esegui il commit delle modifiche.
 
 ## 1.5.3.4 Verifica campi Commerce in AEM Assets CS
 
@@ -368,6 +369,22 @@ Ogni immagine di **iPhone Air** deve ora avere un pollice **verde in su**, che i
 
 ![ACCS+AEM Assets](./images/accsaemassets250.png)
 
+Ripetere questi passaggi per i prodotti rimanenti, utilizzando la tabella seguente. Non dimenticare di approvare ogni immagine, quindi di configurare il. sotto le impostazioni SKU nella scheda **Commerce**.
+
+| Nome prodotto | Chiave | Valore | Utilizzo |
+|:-------------:|:-------------:| :---------------:| :---------------:|
+| Apple Watch Ultra 3-Black | `Apple-Watch-Ultra-3-Black` | `1` | `thumbnail, image, swatch_image, small_image` |
+| Apple Watch Ultra 3-Natural | `Apple-Watch-Ultra-3-Natural` | `1` | `thumbnail, image, swatch_image, small_image` |
+| Fibra CitiSignal max | `CitiSignal-Fiber-Max` | `1` | `thumbnail, image, swatch_image, small_image` |
+| Apple One | `Apple-One` | `1` | `thumbnail, image, swatch_image, small_image` |
+| YouTube Premium | `YouTube-Premium` | `1` | `thumbnail, image, swatch_image, small_image` |
+| Disney Plus | `Disney` | `1` | `thumbnail, image, swatch_image, small_image` |
+| Netflix + HBO Max | `Netflix-HBO-Max` | `1` | `thumbnail, image, swatch_image, small_image` |
+
+Tutte le immagini devono quindi essere approvate.
+
+![ACCS+AEM Assets](./images/accsaemassets251.png)
+
 ## 1.5.3.5 Verifica immagini prodotto in AEM Sites CS/EDS Storefront
 
 >[!NOTE]
@@ -375,11 +392,6 @@ Ogni immagine di **iPhone Air** deve ora avere un pollice **verde in su**, che i
 >Potrebbero essere necessari fino a 15 minuti prima che le modifiche apportate in precedenza vengano distribuite correttamente. Se l&#39;immagine non viene ancora visualizzata, attendere 15 minuti e riprovare.
 
 Per verificare che l’integrazione funzioni, devi aprire il sito web di CitiSignal.
-
-Per accedere al tuo sito web, vai a `main--citisignal-aem-accs--XXX.aem.page` e/o `main--citisignal-aem-accs--XXX.aem.live`, dopo aver sostituito XXX con il tuo account utente GitHub, che in questo esempio è `woutervangeluwe`.
-
-In questo esempio, l’URL completo diventa:
-`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` e/o `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`.
 
 Dovresti vedere questo. Vai a **Telefoni**.
 
@@ -396,8 +408,6 @@ Dovresti vedere questo. Apporta una modifica alle opzioni di colore e archiviazi
 Di seguito è riportato un esempio di modifica del colore in **Light-Gold** e della dimensione di archiviazione in **256GB**.
 
 ![ACCS+AEM Assets](./images/accsaemassets153.png)
-
-Passaggio successivo: [Riepilogo e vantaggi](./summary.md){target="_blank"}
 
 Torna a [Adobe Commerce as a Cloud Service](./accs.md){target="_blank"}
 

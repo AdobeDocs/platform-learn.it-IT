@@ -4,9 +4,9 @@ description: Guida introduttiva ad Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
-source-git-commit: 8face7d2c69d1830e5151625d013fe86b83c31b3
+source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Questo video illustra e illustra tutti i passaggi di questo esercizio.
 
 Vai a [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
 
-Dovresti vedere questo. Assicurati di essere nell&#39;organizzazione **Experience Platform International**.
+Dovresti vedere questo. Assicurarsi di essere nell&#39;organizzazione `--aepImsOrgName--`.
 
 ![Agent Orchestrator](./images/ao1.png)
 
@@ -37,11 +37,11 @@ Imposta il contesto su:
 
 L’impostazione Documentation Source consente di assegnare una preferenza all’insieme di documenti Experience League da verificare per domande relative alla conoscenza del prodotto/Experience League.
 
-- **Sandbox**: **Prod - Accelerate (VA7)**
+- **Sandbox**: **Prod - Un Adobe (VA7)**
 
 L’impostazione Sandbox consente di identificare quale sandbox AI Assistant deve esaminare quando si pongono domande.
 
-- **Visualizzazione dati**: **Accelerare il B2C del 2026**
+- **Visualizzazione dati**: **Visualizzazione dati cliente unificata di AdobeOne**
 
 L’impostazione Visualizzazione dati consente di identificare quale visualizzazione dati deve essere esaminata dall’Assistente IA per l’analisi dei dati quando si pongono domande.
 
@@ -58,7 +58,7 @@ Ottieni un impulso a livello di toplevel sulla domanda di categoria: mobile, ret
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
 ```javascript
-Show me purchases by mainCategory over the last 7 months.
+Show me purchases by mainCategory over the last 2 months.
 ```
 
 ![Agent Orchestrator](./images/ao4.png)
@@ -70,7 +70,7 @@ Dovresti quindi vedere quanto segue:
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months per week
+Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
 ![Agent Orchestrator](./images/ao6.png)
@@ -95,7 +95,7 @@ Which field is used to store the preferred genre?
 
 ![Agent Orchestrator](./images/ao7a.png)
 
-Dovresti visualizzarlo, il che mostra che il campo utilizzato per il genere è **_experienceplatform.individualCharacteristics.preferences.preferredGenre**.
+Dovresti visualizzarlo, il che mostra che il campo utilizzato per il genere è **`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**.
 
 ![Agent Orchestrator](./images/ao7b.png)
 
@@ -104,7 +104,7 @@ Con tali informazioni, puoi iniziare a espandere i dati di acquisto.
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+Show me ordersYTD by preferred genre for the last 2 months
 ```
 
 ![Agent Orchestrator](./images/ao8.png)
@@ -131,7 +131,7 @@ What journeys exist?
 
 ![Agent Orchestrator](./images/ao12.png)
 
-Dovresti vedere questo. Fai clic su **Mostra altro**.
+Dovresti vedere questo. Fai clic su **Mostra tutti i risultati**.
 
 ![Agent Orchestrator](./images/ao13.png)
 
@@ -151,7 +151,19 @@ Which of these journeys has 'Fiber' in its name?
 
 ![Agent Orchestrator](./images/ao14.png)
 
-Dovresti vedere questo. Fare clic sul collegamento di uno dei percorsi e selezionare **Dettagli Percorso**.
+Dovresti vedere qualcosa del genere.
+
+![Agent Orchestrator](./images/ao14a.png)
+
+Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
+
+```javascript
+give more details about the first one
+```
+
+![Agent Orchestrator](./images/ao14b.png)
+
+Dovresti vedere questo. Fai clic sul collegamento per aprire il percorso.
 
 ![Agent Orchestrator](./images/ao15.png)
 

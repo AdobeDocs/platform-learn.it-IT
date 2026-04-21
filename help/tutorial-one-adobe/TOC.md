@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial tecnico su Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
+source-git-commit: b32d96f1d7cce7c22d56ef1783e7209796635758
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1576'
 ht-degree: 3%
 
 ---
@@ -155,7 +155,6 @@ ht-degree: 3%
       + [1.5.1 Guida introduttiva ad Adobe Commerce as a Cloud Service](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex1.md)
       + [1.5.2 Collegamento di ACS ad AEM Sites CS/EDS Storefront](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex2.md)
       + [1.5.3 Collegare ACS ad AEM Assets CS](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex3.md)
-      + [Riepilogo e vantaggi](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/summary.md)
 
 + Consegna e attivazione {#activation}
    + Raccolta dati {#dc}
