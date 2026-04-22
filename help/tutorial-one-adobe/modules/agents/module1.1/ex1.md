@@ -1,17 +1,17 @@
 ---
-title: Guida introduttiva ad Agent Orchestrator
-description: Guida introduttiva ad Agent Orchestrator
+title: Assistente AI e Agent Orchestrator
+description: Assistente AI e Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
-source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
+source-git-commit: 67ea511c48f2393fd671e4218852c8c3312eb440
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1387'
 ht-degree: 0%
 
 ---
 
-# 1.1.1 Guida introduttiva ad Agent Orchestrator
+# 1.1.1 Assistente AI e Agent Orchestrator
 
 ## Video
 
@@ -21,7 +21,7 @@ Questo video illustra e illustra tutti i passaggi di questo esercizio.
 
 ## 1.1.1.1 Imposta contesto in Agent Orchestrator
 
-Vai a [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+Vai a [https://experience.adobe.com/#/ai-assistant/chat](https://experience.adobe.com/#/ai-assistant/chat).
 
 Dovresti vedere questo. Assicurarsi di essere nell&#39;organizzazione `--aepImsOrgName--`.
 
@@ -32,10 +32,6 @@ Fare clic sulla finestra **contesto**.
 ![Agent Orchestrator](./images/ao2.png)
 
 Imposta il contesto su:
-
-- **Documentazione di Source**: **Journey Optimizer**
-
-L’impostazione Documentation Source consente di assegnare una preferenza all’insieme di documenti Experience League da verificare per domande relative alla conoscenza del prodotto/Experience League.
 
 - **Sandbox**: **Prod - Un Adobe (VA7)**
 
@@ -104,7 +100,7 @@ Con tali informazioni, puoi iniziare a espandere i dati di acquisto.
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
 ```javascript
-Show me ordersYTD by preferred genre for the last 2 months
+Show me purchases by preferred genre for the last 2 months
 ```
 
 ![Agent Orchestrator](./images/ao8.png)
@@ -131,7 +127,7 @@ What journeys exist?
 
 ![Agent Orchestrator](./images/ao12.png)
 
-Dovresti vedere questo. Fai clic su **Mostra tutti i risultati**.
+Dovresti vedere questo. Fai clic sull&#39;icona **anteprima**.
 
 ![Agent Orchestrator](./images/ao13.png)
 
@@ -180,7 +176,7 @@ Comprendi la definizione di seed del percorso &quot;CitiSignal - Fibre Max Launc
 Immetti il seguente **Prompt**:
 
 ```javascript
-What was the initial audience in the journey named 
+Which audiences are used by the journey named
 ```
 
 Digitare quindi manualmente in `+CitiSignal fib` per abilitare il completamento automatico. Seleziona il percorso **CitiSignal - Promozione lancio massimo Fibre Channel**.
@@ -217,11 +213,11 @@ Scorri verso il basso un po&#39;. È ora possibile rivedere la tabella esaminand
 
 L’Assistente AI fornisce osservazioni e consigli.
 
-Fai clic sulla frase **Ecco come ho ottenuto i risultati**.
+Fare clic sulla frase **Spiegazione**.
 
 ![Agent Orchestrator](./images/ao21.png)
 
-Puoi quindi vedere i passaggi seguiti da AI Assistant per arrivare ai risultati.
+Potrai quindi visualizzare ulteriori informazioni e contesto.
 
 ![Agent Orchestrator](./images/ao22.png)
 
@@ -247,7 +243,7 @@ Rivedi il piano. Immetti `yes` e fai clic su **invia**.
 
 ![Agent Orchestrator](./images/ao33.png)
 
-Rivedi l’espressione della query del segmento. Immetti `yes` e fai clic sul pulsante **invia**.
+Rivedi la **definizione pubblico**. Immetti `yes` e fai clic sul pulsante **invia**.
 
 ![Agent Orchestrator](./images/ao34.png)
 
@@ -259,17 +255,21 @@ Fai clic su **Rivedi**.
 
 ![Agent Orchestrator](./images/ao36.png)
 
-Rivedi la definizione del segmento. Fai clic su **Crea**.
+Rivedi la **proposta pubblico**. Fai clic su **Crea**.
 
 ![Agent Orchestrator](./images/ao37.png)
 
-Il pubblico è stato creato.
+Il pubblico è stato creato. Fai clic sul collegamento per aprire il pubblico.
 
 ![Agent Orchestrator](./images/ao38.png)
 
 >[!NOTE]
 >
 >Durante la creazione di un nuovo pubblico, sono necessarie 24 ore prima che il pubblico sia disponibile per l’Assistente AI per un ulteriore utilizzo.
+
+Dovresti vedere questo.
+
+![Agent Orchestrator](./images/ao38a.png)
 
 ## 1.1.1.8 Trova i tipi di pubblico esistenti allineati all&#39;utilizzo elevato e verifica se sono in uso
 
@@ -289,17 +289,21 @@ Is there an audience that has "heavy downloaders" in the title?
 
 ![Agent Orchestrator](./images/ao30.png)
 
-Dovresti vedere questo. Ora vuoi vedere tutti i tuoi tipi di pubblico e quanto sono cambiati negli ultimi giorni.
+Dovresti vedere questo.
+
+![Agent Orchestrator](./images/ao30a.png)
+
+Ora vuoi vedere tutti i tuoi tipi di pubblico e quanto sono cambiati negli ultimi giorni.
 
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
 ```javascript
-List how much these audiences changed over the last few days.
+List how much all my audiences changed over the last few days.
 ```
 
 ![Agent Orchestrator](./images/ao31.png)
 
-Dovresti vedere questo. Fai clic su **Mostra altro**.
+Dovresti vedere questo. Fai clic su **Mostra tutti i risultati**.
 
 ![Agent Orchestrator](./images/ao31a.png)
 
@@ -355,25 +359,21 @@ Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_k
 
 ![Agent Orchestrator](./images/aocj1.png)
 
-Dovresti vedere questo. Immettere `yes` e fare clic su genera.
+Dovresti vedere questo. Immettere `yes` e fare clic su Invia.
 
 ![Agent Orchestrator](./images/aocj2.png)
 
-Dovresti vedere questo. Immettere `yes` e fare clic su genera.
+Dovresti vedere questo. Immettere `yes` e fare clic su Invia.
 
 ![Agent Orchestrator](./images/aocj3.png)
 
-Dovresti vedere questo. Immettere `The first one` e fare clic su Invia.
+Dovresti vedere questo. Immettere `the first one` e fare clic su Invia.
 
 ![Agent Orchestrator](./images/aocj4.png)
 
 Dovresti vedere questo. Immettere `yes` e fare clic su Invia.
 
 ![Agent Orchestrator](./images/aocj5.png)
-
-Rivedi la risposta. Immettere `yes` e fare clic su Invia.
-
-![Agent Orchestrator](./images/aocj6.png)
 
 Fai clic su **Rivedi**.
 
@@ -383,9 +383,13 @@ Aggiorna il nome del percorso con il tuo LDAP per renderlo univoco. Fai clic su 
 
 ![Agent Orchestrator](./images/aocj8.png)
 
-Il percorso è stato creato in modalità bozza.
+Il percorso è stato creato in modalità bozza. Fare clic sul percorso per aprirlo.
 
 ![Agent Orchestrator](./images/aocj9.png)
+
+Dovresti vedere questo.
+
+![Agent Orchestrator](./images/aocj10.png)
 
 ## Gestione dei conflitti di Percorso di 1.1.1.10
 
@@ -419,13 +423,9 @@ Dovresti vedere questo. Fai clic su **invia**.
 
 ![Agent Orchestrator](./images/aocj70a.png)
 
-Esaminare le informazioni sul conflitto di percorso.
+Esaminare le informazioni sui potenziali conflitti di percorso.
 
 ![Agent Orchestrator](./images/aocj71.png)
-
-Scorri verso il basso per trovare ulteriori dettagli sui conflitti di percorso.
-
-![Agent Orchestrator](./images/aocj72.png)
 
 ## 1.1.1.11 esperimenti
 
