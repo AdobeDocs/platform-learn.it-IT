@@ -4,7 +4,7 @@ description: Adobe Marketing Agent per ChatGPT Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
-source-git-commit: 765d080e8a3bfe774478eaabfdb5c099701597df
+source-git-commit: 312af1518edd28b4eee577e4ab6b97943a56538d
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
@@ -93,7 +93,7 @@ L’impostazione Visualizzazione dati consente di identificare la visualizzazion
 
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
-```javascript
+```
 change context
 ```
 
@@ -113,7 +113,7 @@ Ottieni un impulso a livello di toplevel sulla domanda di categoria: mobile, ret
 
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
-```javascript
+```
 Show me purchases by mainCategory over the last 2 months.
 ```
 
@@ -125,7 +125,7 @@ Dovresti quindi vedere quanto segue:
 
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
-```javascript
+```
 Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
@@ -145,7 +145,7 @@ Innanzitutto, devi scoprire quale campo viene utilizzato per memorizzare la pref
 
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
-```javascript
+```
 Which field is used to store the preferred genre?
 ```
 
@@ -159,7 +159,7 @@ Con tali informazioni, puoi iniziare a espandere i dati di acquisto.
 
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
-```javascript
+```
 Show me purchases by favouriteGenre for the last 2 months
 ```
 
@@ -177,7 +177,7 @@ Scopri quali percorsi attivi o conclusi di recente includono &quot;Fibre&quot; n
 
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
-```javascript
+```
 What journeys exist? 
 ```
 
@@ -189,7 +189,7 @@ Dovresti vedere questo.
 
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
-```javascript
+```
 Which of these journeys has 'Fiber' in its name?
 ```
 
@@ -201,7 +201,7 @@ Dovresti vedere questo.
 
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
-```javascript
+```
 show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 ```
 
@@ -219,7 +219,7 @@ Desideri comprendere l’abbandono delle prestazioni del percorso per sapere se 
 
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
-```javascript
+```
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
