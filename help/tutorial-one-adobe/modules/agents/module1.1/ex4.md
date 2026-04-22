@@ -4,9 +4,9 @@ description: Adobe Marketing Agent per Google Gemini Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 62b0b307-599b-4165-819b-cac61a8c5d28
-source-git-commit: c1e6d2110ca242ae8b4ff62cbdc5838392ec130e
+source-git-commit: 8e6a4b67dc8c1ec19d81a25a6c1a51f17255fc6e
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1035'
 ht-degree: 0%
 
 ---
@@ -197,11 +197,11 @@ Prima di interagire ulteriormente con Adobe Marketing Agent tramite Copilot, è 
 
 Per questo esercizio, il contesto deve essere impostato per utilizzare:
 
-- **Sandbox**: **Prod - Accelerate (VA7)**
+- **Sandbox**: **Prod - Un Adobe (VA7)**
 
   L’impostazione sandbox consente di identificare quale sandbox AI Assistant deve esaminare quando si pongono domande.
 
-- **Visualizzazione dati**: **Accelerare il B2C del 2026**
+- **Visualizzazione dati**: **AdobeOne - Visualizzazione dati cliente unificata**
 
 L’impostazione della visualizzazione dati consente di identificare quale visualizzazione dati deve essere esaminata dall’Assistente IA per l’analisi dei dati quando si pongono domande.
 
@@ -213,19 +213,27 @@ list sandboxes
 
 ![Agent Orchestrator](./images/gemini28.png)
 
-Dovresti vedere qualcosa di simile a questo. Immettere il comando `switch to sandbox accelerate` e fare clic sul pulsante **Invia**.
+Dovresti vedere qualcosa di simile a questo. Immetti il comando seguente e fai clic sul pulsante **Invia**.
+
+```
+switch to sandbox One Adobe
+```
 
 ![Agent Orchestrator](./images/geminilab10.png)
 
 Dovresti vedere questo. Per modificare la visualizzazione dati, immettere il comando seguente e fare clic sul pulsante **invia**.
 
-```javascript
+```
 list dataviews
 ```
 
 ![Agent Orchestrator](./images/geminilab11.png)
 
-Dovresti vedere qualcosa di simile a questo. Immettere il comando `switch dataview to Accelerate 2026 B2C` e fare clic sul pulsante **Invia**.
+Dovresti vedere qualcosa di simile a questo. Immetti il comando seguente e fai clic sul pulsante **Invia**.
+
+```
+switch to AdobeOne - Unified Customer Data View
+```
 
 ![Agent Orchestrator](./images/geminilab12.png)
 
@@ -242,7 +250,7 @@ Ottieni un impulso a livello di toplevel sulla domanda di categoria: mobile, ret
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
 ```javascript
-Show me purchases by mainCategory over the last 7 months.
+Show me purchases by mainCategory over the last 2 months until today
 ```
 
 ![Agent Orchestrator](./images/geminilab18.png)
@@ -254,7 +262,7 @@ Dovresti quindi vedere quanto segue:
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months broken down by week
+Show me purchases by mainCategory = Fiber over the last 2 months until today, broken down by week
 ```
 
 ![Agent Orchestrator](./images/geminilab20.png)
@@ -279,7 +287,7 @@ Which field is used to store the preferred genre
 
 ![Agent Orchestrator](./images/geminilab22.png)
 
-Dovresti visualizzarlo, il che mostra che il campo utilizzato per il genere è **_experienceplatform.individualCharacteristics.preferences.preferredGenre**.
+Dovresti visualizzarlo, il che mostra che il campo utilizzato per il genere è **`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**.
 
 ![Agent Orchestrator](./images/geminilab23.png)
 
@@ -288,7 +296,7 @@ Con tali informazioni, puoi iniziare a espandere i dati di acquisto.
 Immetti il seguente **Prompt** e fai clic sul pulsante **invia**.
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+Show me purchases by preferred genre for the last 2 months until today
 ```
 
 ![Agent Orchestrator](./images/geminilab24.png)
