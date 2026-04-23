@@ -4,9 +4,9 @@ description: Adobe Marketing Agent per ChatGPT Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
-source-git-commit: 312af1518edd28b4eee577e4ab6b97943a56538d
+source-git-commit: d732dd6abdacc0ebcfa0ab8a09a49dc4b0f2b56b
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Fai clic su **Crea app**.
 Compila i campi in questo modo:
 
 - **Nome**: `Adobe Marketing Agent`
-- **URL server MCP**: `https://aep-ai-ama.adobe.io/mcp`
+- **URL server MCP**: chiedi al tuo rappresentante Adobe
 - **Autenticazione**: `OAuth`
 
 Seleziona la casella di controllo per **Ho capito e voglio continuare**.

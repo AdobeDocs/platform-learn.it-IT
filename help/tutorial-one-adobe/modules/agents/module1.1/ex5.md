@@ -3,9 +3,10 @@ title: Adobe Marketing Agent per Claude
 description: Adobe Marketing Agent per Claude
 kt: 5342
 doc-type: tutorial
-source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
+exl-id: 2563ca77-699b-4cd3-af51-1105cea03c79
+source-git-commit: 2339a3a9c122a3e757c59eec3a9be54acf8d9c1e
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '570'
 ht-degree: 1%
 
 ---
@@ -62,7 +63,7 @@ Fare clic su **+** e quindi selezionare **Aggiungi connettore personalizzato**.
 Compila i campi in questo modo:
 
 - **Nome**: `Adobe Marketing Agent`
-- **URL server MCP**: verifica con il tuo rappresentante Adobe
+- **URL server MCP**: chiedi al tuo rappresentante Adobe
 
 Fai clic su **Aggiungi**.
 
@@ -72,7 +73,7 @@ Dovresti vedere questo. Fai clic su **+** per avviare una nuova chat.
 
 ![Claude.ai](./images/claude5.png)
 
-Fai clic sull&#39;icona **+**, vai a **Connettori** e assicurati che **Adobe Marketing Agent** sia abilitato**.
+Fai clic sull&#39;icona **+**, vai a **Connettori** e assicurati che **Adobe Marketing Agent** sia abilitato.
 
 ![Claude.ai](./images/claude6.png)
 
