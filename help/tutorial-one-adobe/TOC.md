@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial tecnico su Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b30b61491d55d926b0279ed618aad29f98854187
+source-git-commit: d04fa5f7706817c004849678574e3b75699ca675
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1494'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 4%
 + [Labs di AEP &amp; Apps](/help/tutorial-one-adobe/aepapps.md)
 
 + Guida introduttiva {#gettingstarted}
-   + Guida introduttiva {#gettingstarted}
+   + Guida introduttiva - AEP e app {#gettingstarted}
       + [Panoramica](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/getting-started.md)
       + [Installare l’estensione Chrome per la documentazione di Experience League](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex1.md)
       + [Utilizza Demo System Next per configurare la proprietà client di Adobe Experience Platform Data Collection](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
@@ -37,6 +37,13 @@ ht-degree: 4%
       + [Installa l&#39;estensione Chrome per la documentazione di Experience League](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex1.md)
       + [Applicazioni da installare](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex2.md)
       + [Utilizza il sito web](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex3.md)
+   + Guida introduttiva a GenStudio {#gettingstartedgenstudio}
+      + [Panoramica](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/getting-started-genstudio.md)
+      + [Installare l’estensione Chrome per la documentazione di Experience League](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex1.md)
+      + [Configurare il progetto Adobe I/O](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex2.md)
+      + [Opzione 1: configurazione del Postman](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex3.md)
+      + [Opzione 2: configurazione di PostBuster](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex4.md)
+      + [Applicazioni da installare](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex5.md)
 
 + IA agentica {#agents}
    + 1.1 Agent Orchestrator {#agents1}

@@ -3,10 +3,10 @@ title: GenStudio Tech Labs
 description: GenStudio Tech Labs
 doc-type: multipage-overview
 exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
-source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
+source-git-commit: 2a552768bb4d0fcc46cb91e0e4afae247b946b16
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 1%
+source-wordcount: '697'
+ht-degree: 0%
 
 ---
 
@@ -40,9 +40,9 @@ Scarica l&#39;immagine di panoramica dell&#39;architettura [qui](./assets/images
 
 Di seguito sono riportati i Tech Labs che parteciperai come parte di questo workshop di abilitazione tecnica.
 
-### Guida introduttuva
+### Guida introduttiva a GenStudio
 
-[Introduzione](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+[Guida introduttiva](./modules/getting-started/gettingstarted-genstudio/getting-started-genstudio.md){target="_blank"}
 
 In questo modulo fondamentale, preparerai tutto in modo da poter accedere e utilizzare l’ambiente demo.
 
@@ -62,7 +62,7 @@ In questo modulo configurerai e utilizzerai Adobe Workfront per gestire i flussi
 
 In questo modulo utilizzerai le API di Adobe Firefly Services, le API di Photoshop e i servizi di archiviazione Microsoft Azure per generare immagini e memorizzarle a livello di programmazione.
 
-[1.2 Automazione del flusso di lavoro di Creative con Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}
+[1.2 Automazione dei flussi di lavoro Creative con Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
 In questo modulo utilizzerai Adobe Workfront Fusion per automatizzare e scalare i flussi di lavoro di creazione dei contenuti.
 
@@ -74,7 +74,7 @@ In questo modulo utilizzerai Adobe GenStudio for Performance Marketing, un’app
 
 In questo modulo utilizzerai Adobe Express per creare immagini e video e condividerai tali risorse con l’ecosistema Adobe Experience Cloud più ampio.
 
-[1.5 Semplifica il flusso di lavoro con Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+[1.5 Semplificate il vostro flusso di lavoro con Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"}
 
 In questo modulo utilizzerai Adobe Frame.io in combinazione con Adobe Premiere Pro per collaborare e rivedere immagini e video.
 
@@ -86,7 +86,7 @@ In questo modulo, verrà creata un’applicazione personalizzata per estendere l
 
 In questo modulo utilizzerai flussi di lavoro personalizzati in Firefly per risolvere casi di utilizzo ripetibili di progettazione creativa e automazione.
 
-[1.8 Revisione e approvazione unificate con Workfront, Frame.io e Enterprise Storage Management](./modules/creation-production/module1.8/esm.md){target="_blank"}
+[1.8 Valutazione e approvazione unificate con Workfront, Frame.io e Enterprise Storage Management](./modules/creation-production/module1.8/esm.md){target="_blank"}
 
 In questo modulo, collegherai le funzionalità di gestione dei progetti e del lavoro di Workfront direttamente all’esperienza di revisione in tempo reale e collaborazione di Frame.io.
 

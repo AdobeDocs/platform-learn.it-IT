@@ -3,9 +3,9 @@ title: Laboratori tecnici di IA per l’analisi degli agenti
 description: Laboratori tecnici di IA per l’analisi degli agenti
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
+source-git-commit: 2a552768bb4d0fcc46cb91e0e4afae247b946b16
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ Questo video illustra l’architettura della parte di IA per l’analisi dinamic
 
 Scarica l&#39;immagine di panoramica dell&#39;architettura [qui](./assets/images/architecture_agentic.jpg).
 
-### Guida introduttuva
+### Guida introduttiva - IA per agenti
 
-[Introduzione](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+[Guida introduttiva](./modules/getting-started/gettingstarted-agenticai/getting-started-agentic-ai.md){target="_blank"}
 
 In questo modulo fondamentale, preparerai tutto in modo da poter accedere e utilizzare l’ambiente demo.
 
@@ -51,39 +51,39 @@ Brand Concierge è un compagno digitale basato sull’intelligenza artificiale c
 
 In questo esercizio imparerai a:
 
-- Configurare l’istanza di Brand Concierge nella sandbox Adobe Experience Platform
-- Implementare Brand Concierge sul sito Web AEM CS/EDS
+- Configure your Brand Concierge instance in your Adobe Experience Platform sandbox
+- Implement your Brand Concierge on your AEM CS/EDS website
 
 [1.5 Analytics e agenti](./modules/agents/module1.5/analyticsagents.md)
 
 **Obiettivo**
 
-In qualità di analista dati, sviluppatore di IA o architetto di applicazioni AI, imparerai a automatizzare le attività di reporting, come la creazione di rapporti e la pianificazione dell’analisi utilizzando agenti esterni. Scoprirai come estrarre dati aggiornati sulla campagna, sul pubblico o sulle prestazioni nei flussi di lavoro degli agenti.
+As a Data Analyst, AI Developer or AI Application Architect, you&#39;ll learn how to automate reporting tasks like report creation, scheduling analysis using external agents. You&#39;ll learn how to pull fresh campaign data, audience data or performance data into your agentic workflows.
 
 In questo esercizio imparerai a:
 
-- Connetti ChatGPT e/o Claude.ai a **Customer Journey Analytics** ed esegui attività di analisi dei dati
-- Connetti ChatGPT e/o Claude.ai a **Adobe Analytics** ed esegui attività di analisi dei dati
+- Connect ChatGPT and/or Claude.ai to **Customer Journey Analytics** and perform data analysis tasks
+- Connect ChatGPT and/or Claude.ai to **Adobe Analytics** and perform data analysis tasks
 
 [1.6 AEM e agenti](./modules/agents/module1.6/aemagents.md){target="_blank"}
 
 **Obiettivo**
 
-Adobe Experience Manager ora include diversi agenti appositamente progettati per svolgere lavori che hanno richiesto un notevole impegno manuale. Non si tratta di assistenti di intelligenza artificiale generici, ma di agenti formati sul dominio che comprendono a fondo AEM e operano su contenuti, codice, risorse, governance e ottimizzazione.
+Adobe Experience Manager now includes several purpose-built agents, each designed to take on work that has historically required tons of manual effort. These are not generic AI assistants, they are domain-trained agents that understand AEM deeply and operate across content, code, assets, governance, and optimization.
 
-- **Experience Production Agent**, che accelera gli aggiornamenti, le modifiche al contenuto e persino le migrazioni complete dei siti.
-- **Agente di governance**, applica automaticamente brand, diritti e regole di conformità.
-- **Discovery Agent**, prepara il contenuto per l&#39;individuazione nativa dell&#39;intelligenza artificiale e funge da stratega intelligente.
-- **Agente di ottimizzazione dei contenuti** crea immediatamente varianti di risorse specifiche per il canale e pronte per le prestazioni.
-- **Agente di sviluppo**, accelera gli sviluppatori con la risoluzione dei problemi basata sull&#39;intelligenza artificiale e l&#39;ottimizzazione delle prestazioni.
+- **Experience Production Agent**, which accelerates updates, content changes, and even full site migrations.
+- **Governance Agent**, enforces brand, rights, and compliance rules automatically.
+- **Discovery Agent**, prepares content for AI-native discovery and acts as an intelligent strategist.
+- **Content Optimization Agent**, instantly creates performance-ready, channel-specific asset variations.
+- **Development Agent**, accelerates developers with AI-assisted troubleshooting and performance tuning.
 
-In questo esercizio imparerai a utilizzare questi agenti utilizzando sia l’Assistente AI che il Cursore tramite la configurazione del server MCP personalizzato.
+In this exercise you&#39;ll learn how to use these agents using both AI Assistant and Cursor through custom MCP server setup.
 
 [1.7 Strumenti per sviluppatori intelligenti per Adobe Commerce](./modules/agents/module1.7/aiassisteddev.md)
 
 **Obiettivo**
 
-In questo modulo utilizzerai strumenti di sviluppo intelligenti come Cursore per sviluppare un’estensione per l’ambiente Adobe Commerce as a Cloud Service. L’obiettivo di tale estensione è quello di inoltrare gli eventi di ordine in arrivo a un endpoint di terze parti. L’inoltro degli eventi in Adobe Commerce as a Cloud Service si basa su Adobe I/O App Builder, Adobe I/O Events e Adobe I/O Runtime. La configurazione di tutti questi servizi sarà assistita dal cursore.
+In this module you&#39;ll use intelligent developer tools such as Cursor to develop an extension to your Adobe Commerce as a Cloud Service environment. The goal of that extension is to forward incoming order events to a 3rd party endpoint. Event forwarding in Adobe Commerce as a Cloud Service relies on Adobe I/O App Builder, Adobe I/O Events and Adobe I/O Runtime. The configuration of all these services will be assisted by Cursor.
 
 ![Informazioni tecniche](./assets/images/techinsiders.png){width="50px" align="left"}
 
