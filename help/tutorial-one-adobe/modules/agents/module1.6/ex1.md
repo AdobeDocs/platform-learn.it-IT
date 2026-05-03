@@ -4,9 +4,9 @@ description: Guida introduttiva agli agenti AEM
 kt: 5342
 doc-type: tutorial
 exl-id: cb1bf6f0-f329-4e38-ba64-36ffdc3b8bd4
-source-git-commit: d2b746d50ec559e0b29a7adb27c3521b0e00d386
+source-git-commit: 22691d40708e3b48b9365841dff0d3643e041481
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1706'
 ht-degree: 1%
 
 ---
@@ -15,13 +15,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Per completare questo esercizio, devi avere accesso a un ambiente AEM Sites e Assets CS funzionante con EDS e i vari agenti AEM devono essere abilitati per l’organizzazione IMS in uso.
->
->Se non si dispone ancora di un ambiente di questo tipo, passare all&#39;esercizio [Adobe Experience Manager Cloud Service &amp; Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}. Segui le istruzioni e potrai accedere a tale ambiente.
-
->[!IMPORTANT]
->
->Se in precedenza hai configurato un programma AEM CS con un ambiente AEM Sites e Assets CS, è possibile che la sandbox AEM CS sia stata sospesa. Dato che la disattivazione di una sandbox di questo tipo richiede 10-15 minuti, sarebbe opportuno avviare subito il processo di disattivazione in modo da non doverlo attendere in un secondo momento.
+>La sandbox di AEM CS potrebbe essere sospesa. Dato che la deibernazione di una sandbox richiede 10-15 minuti, sarebbe opportuno avviare subito il processo di deiberazione in modo da non doverlo aspettare in un secondo momento.
 
 ## 1.6.1.1 agente di individuazione
 
@@ -33,7 +27,13 @@ Vai a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){tar
 
 ### Creare e utilizzare i tag con Assets
 
-Fare clic per aprire il programma Cloud Manager, che dovrebbe essere denominato `--aepUserLdap-- - CitiSignal AEM+ACCS`.
+Fai clic per aprire il programma Cloud Manager, che utilizza le seguenti opzioni di denominazione:
+
+- **`Tech Insiders - AEM + ACCS X`** dove X rappresenta il numero assegnato all&#39;utente.
+- **`Tech Insiders On Demand - AEM + ACCS X`** dove X rappresenta il numero assegnato all&#39;utente.
+- **`--aepUserLdap-- - CitiSignal AEM+ACCS`**, in questo caso non si dispone di un numero perché si sta utilizzando un programma AEM creato personalmente.
+
+In questo esempio, verrà utilizzato il programma **Approfondimenti tecnici - AEM + ACCS 100**. Dovresti utilizzare un programma personalizzato.
 
 ![Agenti AEM](./images/aemagents1.png)
 
@@ -41,7 +41,7 @@ Fai clic sull’URL dell’ambiente per aprirlo.
 
 ![Agenti AEM](./images/aemagents2.png)
 
-Fai clic sull&#39;icona **martello**.
+Fai clic sull&#39;icona **strumenti**.
 
 ![Agenti AEM](./images/aemagents3.png)
 
@@ -53,23 +53,23 @@ Dovresti vedere questo. Fai clic su **Crea**, quindi seleziona **Crea spazio dei
 
 ![Agenti AEM](./images/aemagents5.png)
 
-Nel campo **Titolo**, immetti: `CitiSignal`. Fai clic su **Crea**.
+Nel campo **Titolo**, immetti: `--aepUserLdap-- - CitiSignal`. Fai clic su **Crea**.
 
 ![Agenti AEM](./images/aemagents6.png)
 
-Espandere lo spazio dei nomi **CitiSignal** facendo clic su di esso. Fai clic su **Crea**, quindi seleziona **Crea tag**.
+Espandere lo spazio dei nomi **`--aepUserLdap-- - CitiSignal`** facendo clic su di esso. Fai clic su **Crea**, quindi seleziona **Crea tag**.
 
 ![Agenti AEM](./images/aemagents7.png)
 
-Nel campo **Titolo**, immetti: `Campaign`. Fai clic su **Invia**.
+Nel campo **Titolo**, immetti: `--aepUserLdap-- - Campaign`. Fai clic su **Invia**.
 
 ![Agenti AEM](./images/aemagents8.png)
 
-Selezionare il tag **Campaign** facendo clic su di esso. Fai clic su **Crea**, quindi seleziona **Crea tag**.
+Selezionare il tag **`--aepUserLdap-- - Campaign`** facendo clic su di esso. Fai clic su **Crea**, quindi seleziona **Crea tag**.
 
 ![Agenti AEM](./images/aemagents9.png)
 
-Nel campo **Titolo**, immetti: `Winter 2026`. Fai clic su **Invia**.
+Nel campo **Titolo**, immetti: `--aepUserLdap-- - Winter 2026`. Fai clic su **Invia**.
 
 ![Agenti AEM](./images/aemagents10.png)
 
@@ -77,7 +77,7 @@ Selezionare il tag **Campaign** facendo clic su di esso. Fai clic su **Crea**, q
 
 ![Agenti AEM](./images/aemagents11.png)
 
-Nel campo **Titolo**, immetti: `Spring 2026`. Fai clic su **Invia**.
+Nel campo **Titolo**, immetti: `--aepUserLdap-- - Spring 2026`. Fai clic su **Invia**.
 
 ![Agenti AEM](./images/aemagents12.png)
 
@@ -93,7 +93,7 @@ Fare clic su **File**.
 
 ![Agenti AEM](./images/aemagents15.png)
 
-Fare doppio clic sulla cartella **CitiSignal** per aprirla.
+Fare clic sulla cartella **CitiSignal** per aprirla.
 
 ![Agenti AEM](./images/aemagents16.png)
 
@@ -105,7 +105,7 @@ Scarica il file [citisignal-images-campaign.zip](./assets/citisignal-images-camp
 
 ![Agenti AEM](./images/aemagents17a.png)
 
-Seleziona. i 3 file appena scaricati e fare clic su **apri**.
+Seleziona i 3 file appena scaricati e fai clic su **apri**.
 
 ![Agenti AEM](./images/aemagents18.png)
 
@@ -117,7 +117,7 @@ Dovresti vedere questo.
 
 ![Agenti AEM](./images/aemagents20.png)
 
-Selezionare la prima immagine e quindi fare clic su **Proprietà**.
+Selezionare la prima immagine (citisignal_lion.png) e quindi fare clic su **Proprietà**.
 
 ![Agenti AEM](./images/aemagents21.png)
 
@@ -125,28 +125,33 @@ Fai clic sull&#39;icona **cartella** in Tag.
 
 ![Agenti AEM](./images/aemagents22.png)
 
-Seleziona il tag **Spring 2026** e fai clic su **Select**. Ripetere il processo per queste immagini:
-
-- citisignal_lion.png
-- citisignal_leopard.png
-- citisignal_gorilla.png
-- citisignal_rabbit.png
+Selezionare il tag **`--aepUserLdap-- - Spring 2026`** e fare clic su **Seleziona**.
 
 ![Agenti AEM](./images/aemagents23.png)
+
+Fai clic su **Salva e chiudi**.
+
+![Agenti AEM](./images/aemagents23a.png)
+
+Ripeti questi passaggi per queste immagini:
+
+- `citisignal_leopard.png`
+- `citisignal_gorilla.png`
+- `citisignal_neon_rabbit.png`
 
 Dopo aver selezionato il tag per tutte le immagini, passa a **Experience Manager Assets**.
 
 ![Agenti AEM](./images/aemagents24.png)
 
-Seleziona l’archivio in uso.
+Fai clic sull&#39;icona **profile** in alto a destra dello schermo. Fare clic su **Cambia visualizzazione**.
 
 ![Agenti AEM](./images/aemagents25.png)
 
-Vai a **Assets** e apri la cartella **CitiSignal**.
+Dovresti vedere questo.
 
 ![Agenti AEM](./images/aemagents26.png)
 
-Aprire la prima immagine.
+Fare doppio clic per aprire la prima immagine.
 
 ![Agenti AEM](./images/aemagents27.png)
 
@@ -169,7 +174,7 @@ Quindi, vai a **La mia area di lavoro** e fai clic per aprire **Assistente IA**.
 Immetti il seguente prompt e fai clic su **Invia**.
 
 ```javascript
-find all assets tagged with 'Spring 2026'
+find all assets tagged with '--aepUserLdap-- - Spring 2026'
 ```
 
 ![Agenti AEM](./images/aemagents32.png)
@@ -186,17 +191,13 @@ Rivedi le risposte.
 
 ![Agenti AEM](./images/aemagents36.png)
 
-Dall’interno della finestra dell’Assistente AI, puoi fare clic su per visualizzare queste risorse.
+Fai clic sull&#39;icona **Visualizza informazioni** su una delle risorse.
 
 ![Agenti AEM](./images/aemagents37.png)
 
-Verrai quindi portato direttamente in AEM Assets CS, all’immagine specifica.
+Viene quindi visualizzata una visualizzazione ingrandita della risorsa selezionata, con alcuni metadati.
 
 ![Agenti AEM](./images/aemagents38.png)
-
-Puoi quindi esaminare anche gli altri metadati disponibili.
-
-![Agenti AEM](./images/aemagents39.png)
 
 ## 1.6.1.2 agente di produzione esperienza
 
@@ -204,13 +205,13 @@ Puoi quindi esaminare anche gli altri metadati disponibili.
 
 L’abilità Aggiornamento contenuto aggiorna facilmente i contenuti esistenti, inclusi frammenti di contenuto, pagine, moduli e risorse. L’agente può eseguire azioni quali l’aggiornamento, la rimozione, la sostituzione o l’aggiunta di elementi di contenuto per mantenere le esperienze accurate e correnti. Gli input possono essere descrizioni in linguaggio naturale e, se utilizzati con Jira PDF e screenshot, possono fornire anche input.
 
-Torna alla schermata dell’Assistente AI.
+Torna alla schermata dell’Assistente AI. Chiudete il pannello laterale.
 
 ![Agenti AEM](./images/aemagents40.png)
 
-Immetti il seguente prompt e fai clic su **Invia**.
+Selezionare una delle richieste proposte e fare clic su **Invia**.
 
-`Generate multiple social media formats (Instagram 1080x1920, Facebook 1200x630, Twitter 1200x675) for the third image`
+`For the first image, generate renditions for Instagram and LinkedIn posts`
 
 ![Agenti AEM](./images/aemagents40a.png)
 
@@ -221,6 +222,16 @@ Dopo un paio di minuti, dovrebbe verificarsi una risposta simile.
 Rivedi le immagini generate.
 
 ![Agenti AEM](./images/aemagents42.png)
+
+Potete sperimentare altri prompt. Scorri verso l&#39;alto e seleziona uno degli altri prompt proposti oppure immetti un tuo e fai clic su **Invia**.
+
+`For the first image, generate a mirrored image`
+
+![Agenti AEM](./images/aemagents42a.png)
+
+Rivedi le immagini generate.
+
+![Agenti AEM](./images/aemagents42b.png)
 
 ### Aggiornamento contenuti - Pagine
 

@@ -4,9 +4,9 @@ description: Adobe Experience Manager e agenti
 kt: 5342
 doc-type: tutorial
 exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
-source-git-commit: deea7c9e7e6fa70843b3bf621d51c5502d46a431
+source-git-commit: 22691d40708e3b48b9365841dff0d3643e041481
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '350'
 ht-degree: 1%
 
 ---
@@ -22,6 +22,9 @@ Adobe Experience Manager ora include diversi agenti appositamente progettati per
 - **Agente di sviluppo**, accelera gli sviluppatori con la risoluzione dei problemi basata sull&#39;intelligenza artificiale e l&#39;ottimizzazione delle prestazioni.
 
 Insieme, questi agenti spostano AEM ben oltre le tradizionali funzionalità di CMS e in operazioni di esperienza automatizzate. Ognuno di questi agenti è progettato con gli esseri umani in controllo, garantendo accuratezza, fiducia e supervisione.
+>[!IMPORTANT]>
+Per completare questo esercizio, devi avere accesso a un ambiente AEM Sites e Assets CS funzionante con EDS e i vari agenti AEM devono essere abilitati per l’organizzazione IMS in uso.>
+Se non si dispone ancora di un ambiente di questo tipo, passare all&#39;esercizio [Adobe Experience Manager Cloud Service &amp; Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}. Segui le istruzioni e potrai accedere a tale ambiente.
 
 ## Finalità di apprendimento
 

@@ -2,9 +2,10 @@
 title: 'Guida introduttiva - IA per l’analisi degli agenti: utilizza il tuo sito web AEM e la sandbox di AEP'
 description: 'Guida introduttiva - IA per l’analisi degli agenti: utilizza il tuo sito web AEM e la sandbox di AEP'
 doc-type: multipage-overview
-source-git-commit: bdade61b2f64a5138807a47f73d8006ce9c564fc
+exl-id: bace13f5-51e4-4b1f-99fa-88f4756e79d3
+source-git-commit: 5884a7ae45251c4827ecd799990c93366a7a6662
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -30,9 +31,11 @@ Quando hai accesso all’ambiente di abilitazione, ti è stato assegnato un nume
 >
 >Tutte le schermate seguenti utilizzano il numero 1 solo a scopo illustrativo. Devi utilizzare il numero che ti è stato assegnato come parte dell’e-mail che hai ricevuto mentre segui i passaggi seguenti.
 
-Il programma AEM utilizza il numero assegnato a te nel nome. Il nome del programma AEM deve essere:
+Il programma AEM utilizza il numero assegnato a te nel nome. Il nome del programma AEM deve essere uno dei seguenti:
 
-- **Approfondimenti tecnici - AEM + ACCS X** dove X rappresenta il numero assegnato.
+- **`Tech Insiders - AEM + ACCS X`** dove X rappresenta il numero assegnato all&#39;utente.
+- **`Tech Insiders On Demand - AEM + ACCS X`** dove X rappresenta il numero assegnato all&#39;utente.
+- **`--aepUserLdap-- - CitiSignal AEM+ACCS`**, in questo caso non si dispone di un numero perché si sta utilizzando un programma AEM creato personalmente.
 
 ![DSN](./images/aem1.png)
 
@@ -70,14 +73,14 @@ Come parte del processo di onboarding prima dell’inizio delle sessioni del Tec
 
 Per accedere al tuo sito web, puoi utilizzare i seguenti URL predefiniti:
 
-- **https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.page/**
-- **https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.live/**
+- **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.page/`**
+- **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.live/`**
 
 Devi sostituire la X in questi URL con il numero che ti è stato assegnato.
 
 Inoltre, è stato creato un nome di dominio personalizzato per ciascun sito web, a cui è possibile accedere utilizzando questo URL:
 
-- **https://techinsidersX.adobedemosystem.com/**
+- **`https://techinsidersX.adobedemosystem.com/`**
 
 Devi sostituire la X in questi URL con il numero che ti è stato assegnato.
 

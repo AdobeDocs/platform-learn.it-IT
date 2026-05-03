@@ -3,9 +3,10 @@ title: 'Guida introduttiva: installare l’estensione Chrome per la documentazio
 description: 'Guida introduttiva: installare l’estensione Chrome per la documentazione di Experience League'
 kt: 5342
 doc-type: tutorial
-source-git-commit: bdade61b2f64a5138807a47f73d8006ce9c564fc
+exl-id: a6057d20-b005-47c9-b294-263eaaf78084
+source-git-commit: 5884a7ae45251c4827ecd799990c93366a7a6662
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '700'
 ht-degree: 1%
 
 ---
@@ -23,7 +24,7 @@ Di seguito è riportato un esempio di tali valori. Attualmente, questi valori no
 | Nome | Chiave | Esempio |
 |:-------------:| :---------------:| :---------------:|
 | ID organizzazione IMS | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
-| Nome organizzazione IMS | `--aepImsOrgName--` | `Experience Platform International` |
+| Nome organizzazione IMS | `--aepImsOrgName--` | `Adobe Tech Insiders` |
 | ID tenant AEP | `--aepTenantId--` | `_experienceplatform` |
 | Nome sandbox AEP | `--aepSandboxName--` | `one-adobe` |
 | Profilo Allievo LDAP | `--aepUserLdap--` | `vangeluw` |
@@ -58,7 +59,7 @@ Nel menu **extensions**, fai clic sull&#39;icona **puzzle** e aggiungi l&#39;est
 
 ## Configurare l&#39;estensione Chrome
 
-Vai a [https://experienceleague.adobe.com/it/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/it/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} e fai clic sull&#39;icona dell&#39;estensione per aprirla.
+Vai a [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} e fai clic sull&#39;icona dell&#39;estensione per aprirla.
 
 ![DSN](./images/tuthome.png)
 
@@ -70,9 +71,21 @@ Immetti i valori come indicato di seguito, che sono tutti relativi all’istanza
 
 ![DSN](./images/c8.png)
 
-**Il tuo LDAP**
+Se partecipi a uno degli eventi indicati di seguito, utilizza i valori riportati come indicato.
 
-Questo è il nome utente che verrà usato come parte dell&#39;esercitazione. In questo esempio, il protocollo LDAP si basa sull’indirizzo e-mail di questo utente. L&#39;indirizzo di posta elettronica è **vangeluw@adobe.com**, quindi LDAP diventa **vangeluw**.
+| Nome | Partner Tech Labs New Orleans | Workshop interno su Tech Insiders | Abilitazione on-demand di Tech Insiders |
+|:-------------:| :---------------:| :---------------:|:---------------:|
+| ID organizzazione IMS | `907075E95BF479EC0A495C73@AdobeOrg` | `907075E95BF479EC0A495C73@AdobeOrg` | `0B6930256441790E0A495FFE@AdobeOrg` |
+| Nome organizzazione IMS | `Adobe Tech Insiders` | `Adobe Tech Insiders` | `CXO Enablement Training LAB` |
+| ID tenant AEP | `_experienceplatform` | `_experienceplatform` | `_acsultimatesupport` |
+| Nome sandbox AEP | `one-adobe` | `one-adobe` | `one-adobe` |
+| Profilo Allievo LDAP | `XXX` | `XXX` | `XXX` |
+
+**Profilo Allievo LDAP**
+
+Questo è il nome utente che verrà usato come parte dell&#39;esercitazione. In questo esempio, il protocollo LDAP si basa sull’indirizzo e-mail di questo utente. Se l&#39;indirizzo di posta elettronica è **vangeluw@adobe.com**, il protocollo LDAP diventa **vangeluw**.
+
+Se stai partecipando all’evento Partner Tech Labs a New Orleans, applica la stessa logica e utilizza la prima parte del tuo indirizzo e-mail come LDAP.
 
 Il protocollo LDAP viene utilizzato per garantire che la configurazione che eseguirai sia collegata all’utente e non sia in conflitto con altri utenti che potrebbero utilizzare la stessa istanza e sandbox in uso.
 
@@ -91,7 +104,7 @@ Dopo aver attivato la configurazione, accanto alle iniziali dell’ambiente comp
 
 ## Verificare il contenuto del tutorial
 
-Come test, passa a [questa pagina](https://experienceleague.adobe.com/it/docs/platform-learn/tutorial-one-adobe/agents/agents1/ex1){target="_blank"}.
+Come test, passa a [questa pagina](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/agents/agents1/ex1){target="_blank"}.
 
 Ora tutte le **Variabili di ambiente** in questa pagina sono state sostituite dai loro valori effettivi, in base all&#39;ambiente attivato nell&#39;estensione chrome.
 
