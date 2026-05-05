@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial tecnico su Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: d04fa5f7706817c004849678574e3b75699ca675
+source-git-commit: 11ce179c0a94113dba391790ee6a86d70a7e9241
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1496'
 ht-degree: 4%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 4%
       + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
       + [1.1.4 Adobe Marketing Agent per Google Gemini Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
       + [1.1.5 Adobe Marketing Agent per Claude](/help/tutorial-one-adobe/modules/agents/module1.1/ex5.md)
-      + [1.1.6 ---](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
+      + [1.1.6 Sfruttamento dell&#39;intelligenza artificiale](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
    + 1.2 Guida introduttiva ad agenti e IA {#agents2}
       + [Panoramica](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Guida introduttiva all’intelligenza artificiale](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
