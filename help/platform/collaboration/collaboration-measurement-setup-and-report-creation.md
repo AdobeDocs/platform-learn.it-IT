@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Scopri come configurare la misurazione in Real-Time CDP Collaboration. Questa guida descrive i dati dell’evento di onboarding che consentono di creare rapporti collegati ai dati della campagna di pubblicazione. Una misurazione accurata consente di analizzare le prestazioni della campagna e di ottimizzare le strategie future. Guarda il video incorporato per passaggi dettagliati e informazioni approfondite.
 
->[!VIDEO](https://video.tv.adobe.com/v/3486343/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3486354/?captions=ita&learn=on&enablevpops)
