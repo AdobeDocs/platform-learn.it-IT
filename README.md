@@ -1,12 +1,10 @@
 ---
-source-git-commit: d60206d6bf4373ffdba8292c7169d1e3e961a74c
+source-git-commit: 43d59df61305bf6aba739580d28e1ada4a566989
 workflow-type: tm+mt
-source-wordcount: '13'
+source-wordcount: '7'
 ht-degree: 0%
 
 ---
-# platform-learn.en
+# ARCHIVIATO
 
-Tutorial collaborativi e materiali di abilitazione per Platform.
-
-repo pulito per ridurre le dimensioni ...
+Questo repository è stato migrato a <https://github.com/Adobe-Enterprise-Docs/platform-learn.en>.
